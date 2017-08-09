@@ -3,7 +3,7 @@ layout: LandingPage
 ---
 # Windows IoT Core developer documentation
 
-Windows IoT Core is a version of Windows 10 that is optimized for smaller devices iwth or without a display that run on both ARM and x86/x64 devices. The Windows IoT Core documentation provides information on connecting, managing, updating, and securing your devices, and more.
+Windows IoT Core is a version of Windows 10 that is optimized for smaller devices with or without a display that run on both ARM and x86/x64 devices. The Windows IoT Core documentation provides information on connecting, managing, updating, and securing your devices, and more.
 
 <ul class="panelContent cardsFTitle">
     <li>
