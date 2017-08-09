@@ -1,3 +1,6 @@
+---
+layout: LandingPage
+---
 # Windows IoT Core developer documentation
 
 Windows IoT Core is a version of Windows 10 that is optimized for smaller devices iwth or without a display that run on both ARM and x86/x64 devices. The Windows IoT Core documentation provides information on connecting, managing, updating, and securing your devices, and more.
@@ -10,7 +13,7 @@ Windows IoT Core is a version of Windows 10 that is optimized for smaller device
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_whats-new.svg" alt="What's new icon" />
+                            <img src="/media/common/i_whats-new.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -28,7 +31,7 @@ Windows IoT Core is a version of Windows 10 that is optimized for smaller device
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/common/i_road-map.svg" alt="Commercializaton icon" />
+                            <img src="/media/common/i_road-map.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -46,7 +49,7 @@ Windows IoT Core is a version of Windows 10 that is optimized for smaller device
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_vmm-cloud.svg" alt="Cloud icon" />
+                            <img src="/media/common/i_vmm-cloud.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -64,7 +67,7 @@ Windows IoT Core is a version of Windows 10 that is optimized for smaller device
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_lock.svg" alt="Secure lock icon" />
+                            <img src="/media/common/i_lock.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -82,7 +85,7 @@ Windows IoT Core is a version of Windows 10 that is optimized for smaller device
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/common/i_web.svgg" alt="Browser icon" />
+                            <img src="media/common/i_web.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -100,7 +103,7 @@ Windows IoT Core is a version of Windows 10 that is optimized for smaller device
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_tools.svg" alt="Tools icon" />
+                            <img src="/media/common/i_tools.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
