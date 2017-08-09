@@ -53,7 +53,7 @@
 ### [Creating images](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-basic-image)
 ### [Installing packages](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/add-a-provisioning-package-to-an-image)
 ### [Driver deployment](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/add-a-driver-to-an-image)
-### [Creating a board supported package] (https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-new-bsp)
+### [Creating a board supported package](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-new-bsp)
 ### [Updating apps on IoT Core devices]()
 ### [Go to market]()
 ### [Recovery]()
