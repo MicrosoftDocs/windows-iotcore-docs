@@ -10,22 +10,27 @@ Deploying and debugging your application is straightforward with Visual Studio. 
 > In order to use remote debugging, your IoT Core device must first be connected to same local network as your development PC.  
 >See the [Connecting to a device](https://developer.microsoft.com/en-us/windows/iot/Docs/ConnectToDevice) instructions.
 
-(csharp)
+<a name="csharp"/>
 
 ## Deploy a C# app to your Windows 10 IoT Core device 
 ___
 
-###Deploy your app###
 1. With the application open in Visual Studio, set the architecture in the toolbar dropdown. If you're building for Minnowboard Max, select
 `x86`. If you're building for Raspberry Pi 2, Raspberry Pi 3 or the Dragonboard, select `ARM`.
 
 2. Next, in the Visual Studio toolbar, click on the `Local Machine` dropdown and select `Remote Machine`.
 
-3. At this point, Visual Studio will present the **Remote Connections** dialog. If you previously used [PowerShell](../PowerShell.md) to set a unique
-name for your device, you can enter it here (in this example, we're using **my device**). Otherwise, use the IP address of your Windows IoT Core device.
+![[Remote machine in Visual Studio]]({../media/AppDeployment/cs-remote-machine-debugging.png})
 
-4. After entering the device name/IP select `Universal (Unencrypted Protocol)` Authentication Mode, then click **Select**. You can verify
-or modify these values by navigating to the project properties (select **Properties** in the Solution Explorer) and choosing the `Debug` tab on the left:
+3. At this point, Visual Studio will present the **Remote Connections** dialog. If you previously used [PowerShell](../PowerShell.md) to set a unique name for your device, you can enter it here (in this example, we're using **my device**). Otherwise, use the IP address of your Windows IoT Core device.
+
+4. After entering the device name/IP select `Universal (Unencrypted Protocol)` Authentication Mode, then click **Select**. 
+
+![[Universal authentication mode]]({../media/AppDeployment/cs-remote-connections.png})
+
+You can verify or modify these values by navigating to the project properties (select **Properties** in the Solution Explorer) and choosing the `Debug` tab on the left:
+
+![[Debug tab]]({../media/AppDeployment/cs-debug-project-properties.png})
 
 5. Now we're ready to deploy. Simply press F5 (or select Debug \| Start Debugging) to start debugging our app. You should see the app come up on your device's screen.
 
@@ -37,18 +42,23 @@ or modify these values by navigating to the project properties (select **Propert
 
 ## Deploy a C++ app to your Windows 10 IoT Core device
 
-1. With the application open in Visual Studio, set the architecture in the toolbar dropdown. If you're building for Minnowboard Max, select `86`.
-If you're building for Raspberry Pi 2 or 3, select `ARM`.
+1. With the application open in Visual Studio, set the architecture in the toolbar dropdown. If you're building for Minnowboard Max, select `86`. If you're building for Raspberry Pi 2 or 3, select `ARM`.
 
-2. Next, in the Visual Studio toolbar, click on the `Local Machine` dropdown and select `Remote Machine`<br/>
+2. Next, in the Visual Studio toolbar, click on the `Local Machine` dropdown and select `Remote Machine`
+
+![[Local machine in Visual Studio]]({../media/AppDeployment/cpp-remote-machine-debugging.png})
 
 3. Next, right click on your project in the **Solution Explorer** pane. Select **Properties**. 
 
+![[Properties in Visual Studio]]({../media/AppDeployment/cpp-project-properties.png})
+
 4. Under **Configuration Properties -> Debugging**, modify the following fields:
 
-	* **Machine Name**: If you previously used [PowerShell]({{site.baseurl}}/{{page.lang}}/Docs/PowerShell.htm) to set a unique name for your device, you can enter it here (in this example, we're using **my-device**). 
+	* **Machine Name**: If you previously used [PowerShell](../docs/PowerShell.md) to set a unique name for your device, you can enter it here (in this example, we're using **my-device**). 
 Otherwise, use the IP address of your Windows IoT Core device.
 	* **Authentication Mode**: Set to **Universal (Unencrypted Protocol)**
+	
+![[Universal authentication mode]]({../media/AppDeployment/cpp-debug-project-properties.png})
 
 5. Now we're ready to deploy. Simply press F5 (or select Debug \| Start Debugging) to start debugging our app. You should see the app come up in Windows IoT Core device screen.
 
@@ -62,15 +72,21 @@ Otherwise, use the IP address of your Windows IoT Core device.
 
 1. With the application open in Visual Studio, set the architecture in the toolbar dropdown. If you're building for MinnowBoard Max, select `x86`.  If you're building for Raspberry Pi 2 or 3, select `ARM`.
 
-2. In the Visual Studio toolbar, make sure the target dropdown is set to `Remote Machine`<br/>
+2. In the Visual Studio toolbar, make sure the target dropdown is set to `Remote Machine`
+
+![[Universal authentication mode]]({../media/AppDeployment/py-remote-machine-debugging.png})
 
 3. Next, right click on your project in the **Solution Explorer** pane. Select **Properties**.
+
+![[Universal authentication mode]]({../media/AppDeployment/py-project-properties.png})
 
 4. Under **UWP Project Settings**, modify the following fields:
 
 	* **Machine Name**: If you previously used [PowerShell]({{site.baseurl}}/{{page.lang}}/Docs/PowerShell.htm) to set a unique name for your device, you can enter it here (in this example, we're using **my-device**).
 	Otherwise, use the IP address of your Windows IoT Core device.
 	* **Remote Port**: Set to **5678**
+	
+![[Universal authentication mode]]({../media/AppDeployment/py-debug-project-properties.png})
 
 5. Now we're ready to deploy. Simply press F5 (or select Debug \| Start Debugging) to start debugging our app.You should see the app come up in Windows IoT Core device screen.
 
