@@ -1,4 +1,4 @@
-# [Windows IoT Core documentation BETA](index.md)
+# [Windows IoT Core documentation](index.md)
 ## [What's new](whats-new.md)
 ## [Learn about hardware]()
 ### [Suggested boards and SoCs]()
