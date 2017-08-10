@@ -21,7 +21,7 @@
 ### [PowerShell]()
 ### [SSH]()
 ### [Remote display]()
-### [Command-line utilities]()
+### [Command-line utilities](docs/commandlineutils.md)
 ### [Event tracing]()
 ### [Network packet capture]()
 ### [Embedded mode]()
