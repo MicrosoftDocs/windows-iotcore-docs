@@ -1,4 +1,4 @@
-# Supported languages and app types
+ # Supported languages and app types
 Learn about the languages that are supported on Windows 10 IoT Core as well as the UWP and non-UWP app types that are supported on IoT Core.
 
 ## Application Types
@@ -35,7 +35,7 @@ Each type of IBackgroundTask gets its own resource policy. This is usually restr
 
 The following sample shows the code necessary to build a C# Background App that blinks an LED:
 
-```
+```C#
 namespace BlinkyHeadlessCS
 {
     public sealed class StartupTask : IBackgroundTask
@@ -142,7 +142,7 @@ Our [Arduino Wiring Project Guide]({{site.baseurl}}/{{page.lang}}/Docs/ArduinoWi
 *Blinky Sample Code*
 The full [sample code and docs](../Samples/HelloBlinkyBackgroundWiring) are available in our samples page and you can find the full code below:
 
-```
+```javascript
 void setup()
 {
     // put your setup code here, to run once:
