@@ -14,7 +14,7 @@
 ### [Wi-Fi Direct]()
 ### [Wi-Fi]()
 ### [Windows File Sharing]()
-### [Bluetooth]()
+### [Bluetooth](docs/Bluetooth.md)
 ### [FTP]()
 ## [Manage your device]()
 ### [Windows Device Portal]()
