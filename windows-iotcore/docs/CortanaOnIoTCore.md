@@ -25,7 +25,6 @@ To use Cortana:
 This document describes how to enable and utilize Cortana on IoT Core. Makers and OEMs can now leverage the capabilities of Cortana to build even smarter, connected IoT devices.
 
 ### Hardware List
---------------
 
 Windows 10 IoT Core can be run on a [list of IoT devices](../docs/DeviceOptions).
 
@@ -58,32 +57,30 @@ your IoT device, please go to [Windows Insider Preview Downloads](https://www.mi
 
 ### Install Update
 
-Once the image boots up, please open Device Portal for your device and install updates. To do this, enter `http://*&lt;device
-IP&gt;*:8080/\#Windows%20Update` in a browser and click on **Check for
+Once the image boots up, please open Device Portal for your device and install updates. To do this, enter `http://[device
+IP]:8080/#Windows%20Update` in a browser and click on **Check for
 Updates**. Apply any updates if they are available. The update process will take approximately 30-40 minutes. 
 Once the updates have been downloaded and installed, click on **Restart Now**.
 
-{% include imageborder.html alt="Install Update" link="/Resources/images/cortana/InstallUpdate1.png" %}
+![Install update](../media/CortanaOnIoTCore/InstallUpdate1.png)
 
-{% include imageborder.html alt="Install Update" link="/Resources/images/cortana/InstallUpdate2.png" %}
+![Install update](../media/CortanaOnIoTCore/InstallUpdate2.png)
 
-{% include imageborder.html alt="Install Update" link="/Resources/images/cortana/InstallUpdate3.png" %}
+![Install update](../media/CortanaOnIoTCore/InstallUpdate3.png)
 
 ### Set Up the Peripherals
 
 Connect the microphone and speakers into the USB port on your device. If
 necessary, use a USB hub.
 
-Once connected, adjust the microphone and speaker settings in Device Portal. To do this, enter `http://*&lt;device
-IP&gt;*:8080/\#Device%20Settings` in a browser. Under **Audio Control**, check that the microphone and speakers displayed are the ones
-that are physically connected. In the image below, the speakers show **Speakers (2- USB AUDIO)** which is the **Logitech USB Speakers** and
-the microphone shows **Desktop Microphone (Microsoft LifeCam HD-3000)**which is the **Microsoft LifeCam HD 3000**.
+Once connected, adjust the microphone and speaker settings in Device Portal. To do this, enter `http://[device
+IP]:8080/#Device%20Settings` in a browser. Under **Audio Control**, check that the microphone and speakers displayed are the ones
+that are physically connected. In the image below, the speakers show **Speakers (2- USB AUDIO)** which is the **Logitech USB Speakers** and the microphone shows **Desktop Microphone (Microsoft LifeCam HD-3000)** which is the **Microsoft LifeCam HD 3000**.
 
 Adjust the volume settings for both to be within the range of 40-70%
 (Double-check that the Microphone setting is not 0.0)
 
-
-{% include imageborder.html alt="Audio Setup" link="/Resources/images/cortana/AudioSetup.png" %}
+![Audio setup](../media/CortanaOnIoTCore/AudioSetup.png)
 
 > [!NOTE]
 > This next step is only for Dragonboard 410c.
@@ -107,7 +104,7 @@ pop up to ask for permission. To accept, click **Sure**, Cortana will be launche
 > [!IMPORTANT]
 > If you deny consent, Cortana will not work. 
 
-![Consent]({{site.baseurl}}/Resources/images/cortana/Consent.png)
+![Constent from Cortana](../media/CortanaOnIoTCore/Consent.png)
 
 If you skip the acceptance, you need to go to Device Portal to enable Cortana later.
 
@@ -127,7 +124,7 @@ Settings, scroll to the bottom and check **"Start Cortana on Boot"** if it is no
 has a Power button with Restart option)
 
 
-{% include imageborder.html alt="Start Cortana" link="/Resources/images/cortana/StartCortana.png" %}
+![Start Cortana](../media/CortanaOnIoTCore/StartCortana.png)
 
 #### Grant Consent
 
@@ -143,12 +140,12 @@ To accept, click **Sure**:
 > [!IMPORTANT]
 > If you deny consent, Cortana will not work. 
 
-![Consent]({{site.baseurl}}/Resources/images/cortana/Consent2.png)
+![Consent from Cortana](../media/CortanaOnIoTCore/Consent2.png)
 
 If you deny consent at first and want to use Cortana later, you could go
 to Device Settings in the IoTCoreDefaultApp to turn on Cortana.
 
-![Enable KWS]({{site.baseurl}}/Resources/images/cortana/EnableKws.png)
+![Start Cortana](../media/CortanaOnIoTCore/EnableKws.png)
 
 ### Sign into MSA
 
@@ -163,14 +160,14 @@ do any personal information related action. If you click ‘Maybe later’,
 it will be popped up next time when you ask personal information related
 question.
 
-![MSA Sign in]({{site.baseurl}}/Resources/images/cortana/MSASignin.png)
+![Signing into MSA](../media/CortanaOnIoTCore/MSASignIn.png)
 
 ###  Sign out of MSA
 
 If you want to sign out your MSA, please go to Device Settings in the IoTCoreDefaultApp, click ‘About Me’, then the account icon at the bottom to
 sign out.
 
-![MSA Sign out]({{site.baseurl}}/Resources/images/cortana/MSASignout.png)
+![Signing out of MSA](../media/CortanaOnIoTCore/MSASignOut.png)
 
 ## Invoking and Stopping Cortana
 
