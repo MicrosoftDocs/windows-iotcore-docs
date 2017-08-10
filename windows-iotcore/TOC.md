@@ -36,7 +36,7 @@
 ### [Deploy your app](docs/AppDeployment.md)
 ### [Install your app](docs/AppInstaller.md)
 ### [Bus providers]()
-### [Language and app type support]()
+### [Supported languages and app types](docs/buildingappsforiotcore.md)
 ### [Localhost loopback]()
 ### [Fiddler]()
 ### [Lightning providers]()
