@@ -1,7 +1,7 @@
 # Cortana on IoT Core
 
 Cortana is a personal digital assistant working across all your devices to help you in your daily life. She learns about you; helps you get things done by completing tasks; interacts with you using natural language in a consistent, contextual way; and always looks out for you. Cortana has a consistent visual identity, personality, and voice.
-IoT Core is an edition of Windows 10, and is optimized for small footprint and low cost IoT devices. Cortana is enabled on IoT Core in the Windows 10 Creators Update.
+IoT Core is an edition of Windows 10, and is optimized for small footprint and low cost IoT devices. Cortana is enabled on IoT Core in the Windows 10 Creators Update. /s/s
 
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Cortana-on-Windows-10-IoT-Core/player]
 
@@ -85,7 +85,7 @@ Adjust the volume settings for both to be within the range of 40-70%
 > [!NOTE]
 > This next step is only for Dragonboard 410c.
 
-####  Dragonboard Only : Disable Audio Driver
+###  Dragonboard Only : Disable Audio Driver
 
 To enable USB audio, you will need to disable the Qualcomm audio driver.
 To do this, simply run this command in a PowerShell window under the IoT
@@ -102,11 +102,9 @@ pop up to ask for permission. To accept, click **Sure**, Cortana will be launche
 “Hey Cortana”. 
 
 > [!IMPORTANT]
-> If you deny consent, Cortana will not work. 
+> If you deny consent, Cortana will not work. If you skip the acceptance, you need to go to Device Portal to enable Cortana later.
 
 ![Constent from Cortana](../media/CortanaOnIoTCore/Consent.png)
-
-If you skip the acceptance, you need to go to Device Portal to enable Cortana later.
 
 MSA sign in will pop up after consent. If you'd like to sign in, follow
 her instructions on the sign in page.
@@ -116,7 +114,7 @@ Cortana should work now if you accept the Consent.
 If Cortana still doesn’t work, please do the following instructions to
 turn on Cortana manually.
 
-#### Start Cortana on Boot
+### Start Cortana on Boot
 
 Enter Device Portal again - to do this, enter: 
 `http://<deviceIP>:8080/\#Device%20Settings` into a browser. Under Device
@@ -126,7 +124,7 @@ has a Power button with Restart option)
 
 ![Start Cortana](../media/CortanaOnIoTCore/StartCortana.png)
 
-#### Grant Consent
+### Grant Consent
 
 Go to Apps Manager under Device Portal - to do this, enter:
 `http://<device IP>:8080/\#Apps%20manager` into a browser.
@@ -169,7 +167,7 @@ sign out.
 
 ![Signing out of MSA](../media/CortanaOnIoTCore/MSASignOut.png)
 
-## Invoking and Stopping Cortana
+### Invoking and Stopping Cortana
 
 You can now try Cortana.
 
@@ -240,17 +238,11 @@ Note that Cortana will only work when region, UI language and speech
 language are coherent, e.g.: `region = CA`, `UI language = en-CA` and `speech
 language = en-CA`.
 
-Cortana Feature ID
-------------------
+###Cortana Feature ID
 
-There is one [feature ID](<https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/iot/iot-core-feature-list>) for Cortana, `<Feature>IOT_CORTANA</Feature>`, OEM needs to add this feature ID in their OEMInput XML. 
+There is one [feature ID](<https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/iot/iot-core-feature-list>) for Cortana, `<Feature>IOT_CORTANA</Feature>` that an OEM needs to add this feature ID in their OEMInput XML. To enable ‘Start Cortana on Boot’ in an image, just add `<Feature>IOT_CORTANA_OBSCURELAUNCH></Feature>`; in OEMInput XML.
 
-
-### Enable ‘Start Cortana on Boot’ in Image
-
-Add `<Feature>IOT_CORTANA_OBSCURELAUNCH></Feature>`; in OEMInput XML.
-
-## Cortana Consent
+### Cortana Consent
 
 OEM should add the following snippet into their own code to make sure
 that consent will be launched before the user uses Cortana.
