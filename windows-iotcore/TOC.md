@@ -44,7 +44,7 @@
 ## [Extend your app]()
 ### [Cortana on IoT]()
 ### [Connect your app to the cloud]()
-### [Computer vision]()
+### [Computer vision](docs/computervision.md)
 ### [Speech apps]()
 ## [Commercialize your device]()
 ### [OEM license requirements]()
