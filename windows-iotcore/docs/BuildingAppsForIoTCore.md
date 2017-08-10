@@ -204,7 +204,7 @@ IoT Core also supports building Background Apps with Python. Support for the pyt
 
 This [app](../Samples/HelloBlinkyBackgroundPython) shows how to build a basic Python Background App that blinks an LED.
 
-```
+```python
 import _wingpio as gpio
 import time
 
