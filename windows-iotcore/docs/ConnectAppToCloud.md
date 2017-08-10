@@ -33,7 +33,7 @@ To create a UWP solution in Visual Studio, on the **File** menu, click **New** t
 
 ![New Project Creation](../media/ConnectAppToCloud/new_project_menu.png)
 
-In the New Project dialog that comes up, select **Blank App (Universal Windows) Visual C#**. Give your project a name (e.x. **MyFirstIoTCoreApp** ):
+In the New Project dialog that comes up, select **Blank App (Universal Windows) Visual C#**. Give your project a name (e.x. **MyFirstIoTCoreApp**):
 
 ![New Solution Dialog](../media/ConnectAppToCloud/new_solution.png)
 
