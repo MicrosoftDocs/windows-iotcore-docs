@@ -185,17 +185,6 @@ If you stop talking to Cortana, she will be dismissed. To start her up
 again, say "Hey Cortana" followed by your query. To stop Cortana, say
 "Hey Cortana, stop" to your microphone.
 
-## Make Cortana your Personal Assistant
-
-Cortana can be your personal assistant - to do so, you just need to
-sign-in with your MSA. If you declined to sign in when first launching
-Cortana, you can sign in at any time by asking Cortana a personal
-question. She will ask you to sign-in with your MSA.
-
-For example, "Hey Cortana, what is the traffic to my home?" Cortana will
-bring up the Sign In page. Follow her instructions for sign in and you
-will be all set up to go!
-
 ## Integrate Cortana in your Products
 
 As a OEM, if you want to build Cortana enabled products, please follow
