@@ -22,15 +22,15 @@ ___
 
 ![Remote machine in Visual Studio](media/AppDeployment/cs-remote-machine-debugging.png)
 
-3. At this point, Visual Studio will present the **Remote Connections** dialog. If you previously used [PowerShell](../PowerShell.md) to set a unique name for your device, you can enter it here (in this example, we're using **my device**). Otherwise, use the IP address of your Windows IoT Core device.
+3. At this point, Visual Studio will present the **Remote Connections** dialog. If you previously used [PowerShell](../docs/PowerShell.md) to set a unique name for your device, you can enter it here (in this example, we're using **my device**). Otherwise, use the IP address of your Windows IoT Core device.
 
 4. After entering the device name/IP select `Universal (Unencrypted Protocol)` Authentication Mode, then click **Select**. 
 
-![[Universal authentication mode]]({../media/AppDeployment/cs-remote-connections.png})
+![Universal authentication mode](../media/AppDeployment/cs-remote-connections.png)
 
 You can verify or modify these values by navigating to the project properties (select **Properties** in the Solution Explorer) and choosing the `Debug` tab on the left:
 
-![[Debug tab]]({/media/AppDeployment/cs-debug-project-properties.png})
+![Debug tab](/media/AppDeployment/cs-debug-project-properties.png)
 
 5. Now we're ready to deploy. Simply press F5 (or select Debug \| Start Debugging) to start debugging our app. You should see the app come up on your device's screen.
 
@@ -50,7 +50,7 @@ You can verify or modify these values by navigating to the project properties (s
 
 3. Next, right click on your project in the **Solution Explorer** pane. Select **Properties**. 
 
-![[Properties in Visual Studio]]({../media/AppDeployment/cpp-project-properties.png})
+![Properties in Visual Studio](../media/AppDeployment/cpp-project-properties.png)
 
 4. Under **Configuration Properties -> Debugging**, modify the following fields:
 
@@ -58,7 +58,7 @@ You can verify or modify these values by navigating to the project properties (s
 Otherwise, use the IP address of your Windows IoT Core device.
 	* **Authentication Mode**: Set to **Universal (Unencrypted Protocol)**
 	
-![[Universal authentication mode]]({../media/AppDeployment/cpp-debug-project-properties.png})
+![Universal authentication mode](../media/AppDeployment/cpp-debug-project-properties.png)
 
 5. Now we're ready to deploy. Simply press F5 (or select Debug \| Start Debugging) to start debugging our app. You should see the app come up in Windows IoT Core device screen.
 
@@ -74,19 +74,19 @@ Otherwise, use the IP address of your Windows IoT Core device.
 
 2. In the Visual Studio toolbar, make sure the target dropdown is set to `Remote Machine`
 
-![[Universal authentication mode]]({../media/AppDeployment/py-remote-machine-debugging.png})
+![Universal authentication mode](../media/AppDeployment/py-remote-machine-debugging.png)
 
 3. Next, right click on your project in the **Solution Explorer** pane. Select **Properties**.
 
-![[Universal authentication mode]]({../media/AppDeployment/py-project-properties.png})
+![Universal authentication mode](../media/AppDeployment/py-project-properties.png)
 
 4. Under **UWP Project Settings**, modify the following fields:
 
-	* **Machine Name**: If you previously used [PowerShell]({{site.baseurl}}/{{page.lang}}/Docs/PowerShell.htm) to set a unique name for your device, you can enter it here (in this example, we're using **my-device**).
+	* **Machine Name**: If you previously used [PowerShell](../Docs/PowerShell.htm) to set a unique name for your device, you can enter it here (in this example, we're using **my-device**).
 	Otherwise, use the IP address of your Windows IoT Core device.
 	* **Remote Port**: Set to **5678**
 	
-![[Universal authentication mode]]({../media/AppDeployment/py-debug-project-properties.png})
+![Universal authentication mode](../media/AppDeployment/py-debug-project-properties.png)
 
 5. Now we're ready to deploy. Simply press F5 (or select Debug \| Start Debugging) to start debugging our app.You should see the app come up in Windows IoT Core device screen.
 
