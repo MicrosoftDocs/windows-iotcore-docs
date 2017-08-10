@@ -202,9 +202,10 @@ function flipLed(){
 ### Python
 IoT Core also supports building Background Apps with Python. Support for the python languages and libaries is fully there, but the python language itself does not support calling UWP APIs and so we provide python libraries to call into critical platform features like GPIO, I2C, PWM, ...
 
-This [app]({{site.baseurl}}/{{page.lang}}/Samples/HelloBlinkyBackgroundPython) shows how to build a basic Python Background App that blinks an LED.
+This [app](../Samples/HelloBlinkyBackgroundPython) shows how to build a basic Python Background App that blinks an LED.
 
-`import _wingpio as gpio
+```
+import _wingpio as gpio
 import time
 
 led_pin = 5
@@ -222,7 +223,8 @@ while True:
 
     time.sleep(0.5)
 
-gpio.cleanup()`
+gpio.cleanup()
+```
 
 *Additional Interesting Samples*
 
