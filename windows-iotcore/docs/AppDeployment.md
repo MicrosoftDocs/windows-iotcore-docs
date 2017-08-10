@@ -46,7 +46,7 @@ You can verify or modify these values by navigating to the project properties (s
 
 2. Next, in the Visual Studio toolbar, click on the `Local Machine` dropdown and select `Remote Machine`
 
-![[Local machine in Visual Studio](../media/AppDeployment/cpp-remote-machine-debugging.png)
+![Local machine in Visual Studio](../media/AppDeployment/cpp-remote-machine-debugging.png)
 
 3. Next, right click on your project in the **Solution Explorer** pane. Select **Properties**. 
 
