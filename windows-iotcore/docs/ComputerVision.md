@@ -64,7 +64,7 @@ Want to run OpenCV on your IoT Core device? Visit our [tutorial](../Samples/Open
 ## Comparing OpenCV and Cognitive Services
 
 > [!div class="mx-tdBreakAll"]
-> | |Microsoft Cognitive Services|OpenCV|
+> |        |Microsoft Cognitive Services|OpenCV|
 > |-------------|----------|---------|---------|
 > |Easy to use on Windows|Yes|No
 > |Architecture support|ARM, x86, x64 | ARM, x86, x64|
@@ -81,6 +81,6 @@ Want to run OpenCV on your IoT Core device? Visit our [tutorial](../Samples/Open
 > |Supported cameras/hardware| Any USB or embedded camera | Any USB or embedded camera|
 > |Supported languages/frameworks| C#, Python, UWP | C/C++, Python, Java, C#, UWP|
 > |Startup time| Users can use code samples along with intuitive APIs directly from the documentation | OpenCV's power and flexibility means it also requires plenty of configuration and code to perform complex operations|
-> |Links| [Sample program](../samples/cognitiveservices)  [Cognitive Services Website](https://azure.microsoft.com/en-us/services/cognitive-services/) | [Sample program](../samples/opencv)  [OpenCV Website](http://opencv.org/)|
+> |Links| [Sample program](../samples/cognitiveservices)/s/s  [Cognitive Services Website](https://azure.microsoft.com/en-us/services/cognitive-services/) | [Sample program](../samples/opencv)/s/s  [OpenCV Website](http://opencv.org/)|
 
 
