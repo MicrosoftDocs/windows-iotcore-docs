@@ -35,7 +35,7 @@
 ## [Develop your app]()
 ### [Deploy your app](docs/AppDeployment.md)
 ### [Install your app](docs/AppInstaller.md)
-### [Bus providers]()
+### [Bus providers](docs/BusProviders.md)
 ### [Supported languages and app types](docs/buildingappsforiotcore.md)
 ### [Localhost loopback]()
 ### [Fiddler]()
