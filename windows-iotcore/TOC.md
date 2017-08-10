@@ -27,6 +27,7 @@
 ### [Embedded mode]()
 ### [Windows Debugger]()
 ### [Azure IoT Device Management]()
+### [Connect your device to the cloud]()
 ## [Secure your device]()
 ### [Building secure IoT devices](docs/buildingsecuredevices.md)
 ### [TPM on Windows 10 IoT Core]()
