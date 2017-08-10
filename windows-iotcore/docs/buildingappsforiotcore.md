@@ -19,12 +19,14 @@ There are a few additions to the traditional UWP app-model to support IoT scenar
 
 Inside the <Package> attribute of the manifest, you need to define the iot xmlns and add it to the IgnorableNamespaces list. The final xml should look like this: 
 
-`<Package
+```
+<Package
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10"
-  IgnorableNamespaces="uap mp iot">`
+  IgnorableNamespaces="uap mp iot">
+```
 
 ### Background Apps
 In addition to the traditional UI apps, IoT Core has added a new UWP app type called "Background Applications". These applications do not have a UI component, but instead have a class that implements the "IBackgroundTask" interface. They then register that class as a "StartupTask" to run at system boot. Since they are still UWP apps, they have access to the same set of APIs and are supported from the same language. The only difference is that there is no UI entry point.
@@ -32,7 +34,9 @@ In addition to the traditional UI apps, IoT Core has added a new UWP app type ca
 Each type of IBackgroundTask gets its own resource policy. This is usually restrictive to improve battery life and machine resources on devices where these background apps are secondary components of foreground UI apps. On IoT devices, Background Apps are often the primary function of the device and so these StartupTasks get a resource policy that mirrors foreground UI apps on other devices.
 
 The following sample shows the code necessary to build a C# Background App that blinks an LED:
-`namespace BlinkyHeadlessCS
+
+```
+namespace BlinkyHeadlessCS
 {
     public sealed class StartupTask : IBackgroundTask
     {
@@ -62,7 +66,8 @@ The following sample shows the code necessary to build a C# Background App that 
             pin.Write(value);
         }
     }
-}`
+}
+```
 
 You can find in-depth information on Background apps on [MSDN](https://developer.microsoft.com/en-us/windows/iot/docs/backgroundapplications)
 
@@ -109,13 +114,15 @@ Samples:
 ### Javascript
 You can use Javascript to build both UI and Background Apps. The UI apps work the same way they do on all UWP editions. The Background Apps are new for IoT Core but are very simple. The following sample code shows the output of a the *JS New Project Template*:
 
-`// The Background Application template is documented at http://go.microsoft.com/fwlink/?LinkID=533884&clcid=0x409
+```javascript
+// The Background Application template is documented at http://go.microsoft.com/fwlink/?LinkID=533884&clcid=0x409
 (function () {
     "use strict";
 
     // TODO: Insert code here for the startup task
 
-})();`
+})();
+```
 
 ### C++
 With C++ you can build Xaml or DirectX UI apps, as well as UWP Background projects and *non-UI* Win32 apps.
@@ -133,9 +140,10 @@ With Arduino Wiring support you can build apps in Arduino Wiring for many popula
 Our [Arduino Wiring Project Guide]({{site.baseurl}}/{{page.lang}}/Docs/ArduinoWiringProjectGuide) provides full instructions on how to get set up to build these apps. The samples copied and linked below will help you get started building your own.  You can even [build](https://github.com/ms-iot/samples/tree/develop/ArduinoLibraryBlinky) WinRT components in Arduino that can then be used from other languages. This is especially helpful for peripherals that have rich Arduino libraries like [LCD character displays](https://github.com/ms-iot/samples/tree/develop/ArduinoLibraryLcdDisplay).
 
 *Blinky Sample Code*
-The full [sample code and docs](../Samples/HelloBlinkyBackgroundWiring) are available in our samples page and you can find the full code below.
+The full [sample code and docs](../Samples/HelloBlinkyBackgroundWiring) are available in our samples page and you can find the full code below:
 
-`void setup()
+```
+void setup()
 {
     // put your setup code here, to run once:
 
@@ -150,14 +158,16 @@ void loop()
     delay(500);
     digitalWrite(GPIO5, HIGH);
     delay(500);
-}`
+}
+```
 
 ### Node.js
 With IoT Core's Node.js supports you can build your Background Apps using this popular language and many of its popular libraries and frameworks. There are a variety of Node.js samples avialable on our github site, but the samples below will give you a great introduction.
 
-The [headless blinky](https://github.com/ms-iot/samples/tree/develop/HelloBlinkyBackground/node.js) sample shows how easy it is to build your first IoT Core Node.js app.
+The [headless blinky](https://github.com/ms-iot/samples/tree/develop/HelloBlinkyBackground/node.js) sample shows how easy it is to build your first IoT Core Node.js app:
 
-`var http = require('http');
+```node.js
+var http = require('http');
 
 var uwp = require("uwp");
 uwp.projectNamespace("Windows");
@@ -178,7 +188,8 @@ function flipLed(){
     }
     pin.write(currentValue);
     setTimeout(flipLed, 500);
-}`
+}
+```
 
 
 *Additional Helpful Samples*
