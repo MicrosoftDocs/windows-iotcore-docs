@@ -1,6 +1,4 @@
-# App installer
-
-## Install the app using Windows Device Portal
+# Install your app using Windows Device Portal
 ___
 
 To install your application on the device please do the following:
