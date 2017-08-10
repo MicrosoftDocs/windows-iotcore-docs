@@ -34,7 +34,7 @@
 ### [Secure Boot, BitLocker, and Device Guard]()
 ## [Develop your app]()
 ### [App deployment](docs/AppDeployment.md)
-### [App installer]()
+### [App installer](docs/AppInstaller.md)
 ### [Bus providers]()
 ### [Language and app type support]()
 ### [Localhost loopback]()
