@@ -33,7 +33,7 @@
 ### [Using the Unified Writer Filter]()
 ### [Secure Boot, BitLocker, and Device Guard]()
 ## [Develop your app]()
-### [App deployment](AppDeployment.md)
+### [App deployment](docs/AppDeployment.md)
 ### [App installer]()
 ### [Bus providers]()
 ### [Language and app type support]()
