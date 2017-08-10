@@ -28,7 +28,7 @@
 ### [Windows Debugger]()
 ### [Azure IoT Device Management]()
 ## [Secure your device]()
-### [Enabling IoT Core security features]()
+### [Building secure IoT devices](docs/buildingsecuredevices.md)
 ### [TPM on Windows 10 IoT Core]()
 ### [Using the Unified Writer Filter]()
 ### [Secure Boot, BitLocker, and Device Guard]()
