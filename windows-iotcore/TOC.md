@@ -13,6 +13,7 @@
 ### [Windows IoT Dashboard](docs/IoTDashboard.md)
 ### [Wi-Fi Direct](docs/SetupWiFiDirect.md)
 ### [Wi-Fi](docs/SetupWifi.md)
+### [DISM](docs/DISM.md) 
 ### [Windows File Sharing](docs/WindowsFileSharing.md)
 ### [Bluetooth](docs/Bluetooth.md)
 ### [FTP](docs/FTP.md)
