@@ -16,7 +16,7 @@ You can use Deployment Image Servicing and Management(Dism.exe) to flash Windows
 	
     It should list all the storage devices attached to the computer. 
 	
-	![DISM List Disk](/Resources/images/Dism/DiskpartListDisk.png)
+	![DISM List Disk](../media/Dism/DiskpartListDisk.png)
 	
 	Note the disk number and type exit to exit diskpart. 
 
