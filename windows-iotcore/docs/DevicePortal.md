@@ -29,9 +29,6 @@ The rest of the documentation below will be IoT specific.
     Username: `Administrator`
     Password: `p@ssw0rd`
     
-   
-    
-
 ## IoT specific features
 
 ### Apps
@@ -86,7 +83,7 @@ To use this feature, your Windows 10 IoT Device needs to have access to the inte
 The SoftAP Settings allow you to control whether or not your device's SoftAP is enabled.  It also provides a means for configuring your SoftAP's SSID and the WPA2-PSK key which are necessary to connect the SoftAP from another device.
 
 **AllJoyn Onboarding Settings**
-The AllJoyn Onboarding Settings allow you to control whether or not your device's Wi-Fi connection can configured through your device's AllJoyn Onboarding Producer.  When a separate device running an AllJoyn Onboarding Consumer application connects to your Windows 10 IoT SoftAP, the AllJoyn Onboarding Consumer application can be used to configure your IoT device's Wi-Fi adapter.  When enabled, the AllJoyn Onboarding Producer app (IoTOnboarding) uses the ECDHE_NULL authentication method.  Refer to the [IoTOnboarding Sample]({{site.baseurl}}/{{page.lang}}/Samples/IotOnboarding.htm) for additional information.
+The AllJoyn Onboarding Settings allow you to control whether or not your device's Wi-Fi connection can configured through your device's AllJoyn Onboarding Producer.  When a separate device running an AllJoyn Onboarding Consumer application connects to your Windows 10 IoT SoftAP, the AllJoyn Onboarding Consumer application can be used to configure your IoT device's Wi-Fi adapter.  When enabled, the AllJoyn Onboarding Producer app (IoTOnboarding) uses the ECDHE_NULL authentication method.  Refer to the [IoTOnboarding Sample](../Samples/IotOnboarding.htm) for additional information.
 
 > [!NOTE]
 > To use AllJoyn Onboarding with Windows 10 IoT builds 10.0.14393 or earlier requires an update to the <strong>IotOnboarding</strong> 
