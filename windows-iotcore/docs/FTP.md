@@ -24,7 +24,7 @@ The File Transfer Protol (FTP) allows you to transfer files to and from your Win
 ## Accessing your files over FTP<a name="accessftp"/>
 * The FTP server on your IoT Core device starts automatically on boot.  In order to connect to it, you need the IP address of your device.  You can find the IP address on the default app that boots when your device starts.
 
-    ![DefaultApp on Windows IoT Core](../media/images/DefaultApp.png)
+    ![DefaultApp on Windows IoT Core](../media/ftp/DefaultApp.png)
     
 * Once you have the IP, open up **File Explorer** on your PC and type `ftp://<TARGET_DEVICE>`, where `<TARGET_DEVICE>` is either the name or the IP address of your device, then hit Enter.  Enter your administrator username and password if prompted.
 
@@ -46,7 +46,7 @@ The File Transfer Protol (FTP) allows you to transfer files to and from your Win
 
 * In order to make this change permanent, you need to edit the script that starts the FTP server when the device turns on.  To do this, open up **File Explorer** and type `\\<TARGET_DEVICE>\c$\Windows\System32`, where `<TARGET_DEVICE>` is either the name or the IP address of your device.
 
-    ![FTP explorer edit script](../media/images/ftp/ftp_edit_script.png)
+    ![FTP explorer edit script](../media/ftp/ftp_edit_script.png)
     
 * Find `IoTStartupOnBoot.cmd`, right-click it, and click **Edit**.
 
