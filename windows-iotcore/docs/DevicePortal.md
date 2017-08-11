@@ -77,7 +77,7 @@ To use this feature, your Windows 10 IoT Device needs to have access to the inte
 
 > [!NOTE]
 > ICS is disabled when a Wi-Fi profile exists on the device. 
->For example, ICS will be disabled if you connect to a Wi-Fi access point and check “Create profile (auto re-connect)”.' %}
+>For example, ICS will be disabled if you connect to a Wi-Fi access point and check “Create profile (auto re-connect)”.
 
 **SoftAP Settings**
 The SoftAP Settings allow you to control whether or not your device's SoftAP is enabled.  It also provides a means for configuring your SoftAP's SSID and the WPA2-PSK key which are necessary to connect the SoftAP from another device.
