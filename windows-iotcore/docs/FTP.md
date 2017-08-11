@@ -1,6 +1,9 @@
 # File Transfer Protocol
 The File Transfer Protol (FTP) allows you to transfer files to and from your Windows 10 IoT Core device
 
+> [!IMPORTANT]
+> FTP is recommended generally for developers to ease the initial development process. We do not recommend using FTP in retail devices.
+
 ## Starting the FTP server on your device
 * By default, the FTP server is disabled on your IoT Core device.  In order to start the FTP server on your device, first you need to connect to your device through [PowerShell]({{site.baseurl}}/{{page.lang}}/Docs/PowerShell) or [SSH]({{site.baseurl}}/{{page.lang}}/Docs/SSH).
 * Type `start C:\Windows\System32\ftpd.exe`
