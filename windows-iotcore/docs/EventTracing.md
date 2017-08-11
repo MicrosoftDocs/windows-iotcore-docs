@@ -3,14 +3,14 @@
 Event Tracing for Windows (ETW) provides developers the ability to start and stop event tracing sessions, instrument an application to provide trace events, and consume trace events.
 ETW on Windows IoT Core devices supports both manifest-based and classic events, and is no different than other Windows 10 devices.
 
-This section will provide useful links on the basics of writing and consuming events. Find more detailed information from the [Windows Event Tracing page](https://msdn.microsoft.com/library/windows/desktop/bb968803(v=vs.85).aspx){:target="_blank"}.
+This section will provide useful links on the basics of writing and consuming events. Find more detailed information from the [Windows Event Tracing page](https://msdn.microsoft.com/library/windows/desktop/bb968803(v=vs.85).aspx).
 
 ## Writing Events
 
-Find a UWP sample that implements the different methods of writing events as part of the [Windows Universal Samples Github](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Logging){:target="_blank"}.
+Find a UWP sample that implements the different methods of writing events as part of the [Windows Universal Samples Github](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Logging).
 This will run on Windows IoT Core devices and is also a great code reference.
 
-Detailed guide on writing events and obtaining GUIDs can be found [here](https://msdn.microsoft.com/library/windows/desktop/aa364161(v=vs.85).aspx){:target="_blank"}.
+Detailed guide on writing events and obtaining GUIDs can be found [here](https://msdn.microsoft.com/library/windows/desktop/aa364161(v=vs.85).aspx).
 
 ## Consuming Events
 
@@ -19,10 +19,10 @@ Use [FTP](/FTP.md) or [Windows File Sharing](WindowsFileSharing.md) to retrieve 
 
 ## Use Tools in Windows Assessment and Deployment Kit
 
-Windows Assessment and Deployment Kit includes 3 tools to help capture and analyze events. [Click here to download](http://go.microsoft.com/fwlink/p/?LinkId=526740){:target="_blank"}.
+Windows Assessment and Deployment Kit includes 3 tools to help capture and analyze events. [Click here to download](http://go.microsoft.com/fwlink/p/?LinkId=526740)
 
 
-1. **Windows Performance Analyzer** visualizes ETL files on desktop, with a step by step guide [here](https://msdn.microsoft.com/library/windows/hardware/dn927319(v=vs.85).aspx){:target="_blank"}.
+1. **Windows Performance Analyzer** visualizes ETL files on desktop, with a step by step guide [here](https://msdn.microsoft.com/library/windows/hardware/dn927319(v=vs.85).aspx).
 
 2. **Xperf command line tool** captures real-time events and writes them to an ETL file. This tool is already installed on Windows IoT Core devices, just run the following commands on the devices:
 
@@ -41,10 +41,10 @@ Windows Assessment and Deployment Kit includes 3 tools to help capture and analy
 
 ## Use Device Portal
 
-Device portal can capture events in real-time, with instructions [here](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal){:target="_blank"}.
+Device portal can capture events in real-time, with instructions [here](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal).
 Note this method does not produce an ETL file for further analysis, but requires minimal setup.
 
 ## Use Function Calls
 
 Enable an application to consume events from an ETL file or in real-time using function calls.
-Learn how to use these functions [here](https://msdn.microsoft.com/library/windows/desktop/aa363692(v=vs.85).aspx){:target="_blank"}.
+Learn how to use these functions [here](https://msdn.microsoft.com/library/windows/desktop/aa363692(v=vs.85).aspx).
