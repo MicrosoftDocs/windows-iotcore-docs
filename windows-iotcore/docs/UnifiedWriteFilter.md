@@ -25,8 +25,8 @@ ___
 ## How to include UWF in Your Custom FFU 
 ___
 
-*             Add **IOT_UNIFIED_WRITE_FILTER** feature id to the OEM Input file 
-*             Create the image\FFU. Read [Create a basic image](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/create-a-basic-image) for instructions.
+* Add **IOT_UNIFIED_WRITE_FILTER** feature id to the OEM Input file 
+* Create the image\FFU. Read [Create a basic image](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/create-a-basic-image) for instructions.
 
 
 ## How to Use UWF
