@@ -1,6 +1,6 @@
 # Network packet capture
 
-You can use [Microsoft Message Analyzer](http://www.microsoft.com/en-us/download/details.aspx?id=44226){:target="_blank"} to capture, display, and analyze protocol messaging traffic on your Windows 10 IoT Core device.
+You can use [Microsoft Message Analyzer](http://www.microsoft.com/en-us/download/details.aspx?id=44226) to capture, display, and analyze protocol messaging traffic on your Windows 10 IoT Core device.
 
 ![Message Analyzer](../media/NetworkPacketCapture/message-analyzer.png)
 
