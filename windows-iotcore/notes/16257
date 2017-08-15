@@ -17,8 +17,8 @@ You can review linked terms by pasting the forward link into your browser window
 ## What's new in this build: 
 * General bug fixes 
 * Fix a bug that blocked Cortana from enabling voice recognition
-* Multi-Lang packages are now available. You can create FFUs supporting multiple languages, see <a href="https://github.com/ms-iot/iot-adk-addonkit/tree/develop/Source-arm/Products/MultiLangSample">MultiLangSample</a> and <a href="https://github.com/ms-iot/iot-adk-addonkit/tree/develop/Source-arm/Products/SingleLangSample">SingleLangSample</a> for more information
-* You can change the system language using IoTSettings.exe. More information is available <a href="https://developer.microsoft.com/en-us/windows/iot/docs/cortanaoniotcore">here</a> in the Language Configuration section.
+* Multi-Lang packages are now available. You can create FFUs supporting multiple languages, see [MultiLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/develop/Source-arm/Products/MultiLangSample) and [SingleLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/develop/Source-arm/Products/SingleLangSample) for more information.
+* You can change the system language using IoTSettings.exe. More information is available [here](https://developer.microsoft.com/en-us/windows/iot/docs/cortanaoniotcore) in the Language Configuration section.
 * Enable the ability to create a WIFI AP without a password
 * Enable hardware keyword detection (HWKWS). 
 
@@ -33,8 +33,6 @@ You can review linked terms by pasting the forward link into your browser window
 * Joule may become unstable after 30-60 minutes due to an issue with the graphics driver. 
 * Image creation may fail due to InstallOemCerts.cmd command errors (13038321). 
 * Background tasks do not appear in the Apps Manager view in Windows Device Portal (WDP) (13037606). 
-
-
 
 ## Cortana Instructions and Known Issues 
 ### To try Cortana: 
