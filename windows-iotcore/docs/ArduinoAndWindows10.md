@@ -24,7 +24,7 @@ Windows Remote Arduino is an open-source Windows Runtime library which allows Ma
 
 ## Windows Virtual Shields for Arduino
 
-[![virtual shields for arduino](../media/ArduinoAndWindows10/Arduino_1.png)(WVSA)
+[![virtual shields for arduino](../media/ArduinoAndWindows10/Arduino_1.png)](WVSA)
 
 Windows Virtual Shields for Arduino is an open-source library primarily for the Arduino UNO which communicates with an open-source Universal Windows application running on all Windows 10 devices, including Windows Lumia phones. The library exposes Lumia phones' sensors and capabilities to the an Arduino Wiring Sketch.
 
