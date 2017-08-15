@@ -7,7 +7,7 @@ Windows IoT Core is a version of Windows 10 that is optimized for smaller device
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="../updates/updates2017.md">
+        <a href="updates/updates2017.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -43,7 +43,7 @@ Windows IoT Core is a version of Windows 10 that is optimized for smaller device
         </a>
     </li>
     <li>
-        <a href="../docs/ConnectAppToCloud">
+        <a href="docs/ConnectAppToCloud">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -61,7 +61,7 @@ Windows IoT Core is a version of Windows 10 that is optimized for smaller device
         </a>
     </li>
     <li>
-        <a href="../docs/BuildingSecureDevices">
+        <a href="docs/BuildingSecureDevices">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -79,7 +79,7 @@ Windows IoT Core is a version of Windows 10 that is optimized for smaller device
         </a>
     </li>
     <li>
-        <a href="/CortanaOnIoT">
+        <a href="docs/CortanaOnIoT">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -97,7 +97,7 @@ Windows IoT Core is a version of Windows 10 that is optimized for smaller device
         </a>
     </li>
     <li>
-        <a href="../docs/HardwareCompatList">
+        <a href="docs/HardwareCompatList">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
