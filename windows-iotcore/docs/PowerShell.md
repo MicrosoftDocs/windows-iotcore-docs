@@ -8,13 +8,13 @@ Make sure to follow these steps to correctly configure your device running Windo
 ## Initiating a PowerShell session
 1. To start a PowerShell session with your Windows 10 IoT Core device, you'll first need to create a trust relationship between your host PC and your device. After starting your Windows IoT Core device, an IP address will be shown on the screen attached to the device.
 
-    ![DefaultApp on Windows 10 IoT Core]({../media/PowerShell/DefaultApp.png)
+    ![DefaultApp on Windows 10 IoT Core](../media/PowerShell/DefaultApp.png)
 
    You can find the same information on the Windows 10 IoT Core Dashboard.
 
 2. Open an administrator PowerShell console on your local PC. Type **powershell** in the **Search the web and Windows** box near the Windows Start menu. Windows will find PowerShell on your PC.
 
-    ![Find PowerShell]({../media/PowerShell/start-ps.png)
+    ![Find PowerShell](../media/PowerShell/start-ps.png)
 
 3. To start PowerShell as an administrator, right-click **Windows PowerShell**, and then select **Run as administrator**.
 
