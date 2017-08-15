@@ -45,7 +45,7 @@
 ### [Localhost loopback](docs/Loopback.md)
 ### [Fiddler](docs/Fiddler.md)
 ### [Lightning providers](docs/LightningProviders.md)
-### [Windows IoT Lightning Performance](LightningPerformance.md)
+### [Windows IoT Lightning Performance](docs/LightningPerformance.md)
 ## [Extend your app]()
 ### [Cortana on IoT](docs/CortanaOnIoTCore.md)
 ### [Connect your app to the cloud](docs/ConnectAppToCloud.md)
