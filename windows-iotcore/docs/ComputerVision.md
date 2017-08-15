@@ -74,13 +74,13 @@ Want to run OpenCV on your IoT Core device? Visit our [tutorial](../Samples/Open
 > |Content detection| Detects general features rather than specific objects | Yes|
 > |Video stabilization| Yes | Yes|
 > |Motion detection| Yes | Yes|
-> |Community| Cognitive Services has many active users across multiple industries and a few popular websites, including how-old.net and celebslike.me | OpenCV is a very popular Open Source project; thousands of people have contributed to it and maintain it|
+> |Community| Cognitive Services has many active users across multiple industries and a few popular websites, including how-old.net and celebslike.me | OpenCV is a very popular Open Source project; thousands of people have contributed to it and maintained it|
 > |Documentation| Cognitive Services has overall clear and extensive documentation | There are many samples available online, but each sample is written by a different person and as a result can be inconsistent at times|
 > |Free| Yes, to an extent (more details [here](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/) | Yes|
 > |Performance| All operations and API calls require accessing data in the cloud | All algorithms are optimized and local, and using C++ rather than Python increases speeds even further|
 > |Supported cameras/hardware| Any USB or embedded camera | Any USB or embedded camera|
 > |Supported languages/frameworks| C#, Python, UWP | C/C++, Python, Java, C#, UWP|
 > |Startup time| Users can use code samples along with intuitive APIs directly from the documentation | OpenCV's power and flexibility means it also requires plenty of configuration and code to perform complex operations|
-> |Links| [Sample program](../samples/cognitiveservices)/s/s  [Cognitive Services Website](https://azure.microsoft.com/en-us/services/cognitive-services/) | [Sample program](../samples/opencv)/s/s  [OpenCV Website](http://opencv.org/)|
+> |Links| [Sample program](../samples/cognitiveservices), [Cognitive Services Website](https://azure.microsoft.com/en-us/services/cognitive-services/) | [Sample program](../samples/opencv),  [OpenCV Website](http://opencv.org/)|
 
 
