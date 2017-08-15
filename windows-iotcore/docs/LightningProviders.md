@@ -1,3 +1,4 @@
+
 # Working with lightning providers
 The Microsoft.IoT.Lightning.Providers library contains a set of providers to interface with the on board controller buses through the Lightning direct memory mapped driver (DMAP).
 
@@ -36,6 +37,7 @@ Additionally, it's straightforward to add the required Lightning providers Nuget
 ![NuGet Package Manager](../media/LightningProviders/nuget-package-manager.png)
 
 4. Follow any on-screen instructions if needed. When installation is complete, a reference to the Lightning SDK will be added to your project.
+
 ![Lightning SDK reference](../media/LightningProviders/lightning-sdk-added-to-solution.png)
 
 5. Add the code below to your manifest file, Package.appxmanifest.
