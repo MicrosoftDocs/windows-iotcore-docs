@@ -11,7 +11,6 @@
 ### [Universal Driver Creation](docs/DriverCreation.md)
 ### [Windows 10 IoT Core API Porting Tool](docs/IoTCorePortingTool.md)
 ### [Install USB peripheral drivers](docs/PeripheralDrivers.md)
-### [Making your 3D printer wireless](docs/3DPrintServer.md)
 ## [Connect your device]()
 ### [Windows IoT Dashboard](docs/IoTDashboard.md)
 ### [Wi-Fi Direct](docs/SetupWiFiDirect.md)
