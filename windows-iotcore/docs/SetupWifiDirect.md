@@ -12,7 +12,7 @@ A list of WiFi adapters that have been tested on Windows 10 IoT Core can be foun
 
 ## Basic sample for WiFi Direct
 
-You can easily test the WiFi Direct functionality with the WiFi Direct UWP [sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WiFiDirect){:target="_blank"}. We will use the C# version and run the sample of two devices.
+You can easily test the WiFi Direct functionality with the WiFi Direct UWP [sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WiFiDirect). We will use the C# version and run the sample of two devices.
 
 ### Set up the two devices
 * MinnowBoardMax (MBM) running Windows 10 IoT Core (see instructions here), with a CanaKit WiFi dongle
