@@ -6,7 +6,7 @@ Browse, search, and filter, peripherals that are known to be supported on Window
 
 This list is not exhaustive. There are many other peripherals not listed on this page that are compatible with Windows 10 IoT Core. We encourage you to contribute to this list to improve this resource!
 
-Looking for information about supported hardware platforms? Click here to be taken to a list of development boards compatible with Windows.
+Looking for information about supported hardware platforms? Click [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/windows-compatible-hardware-development-boards) for a list of development boards compatible with Windows.
 
 ## This page is under construction
 
