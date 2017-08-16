@@ -54,10 +54,10 @@
 ### [OEM license requirements](docs/OEMLicenseRequirements.md)
 ### [Managing devices](docs/ManagingDevices.md)
 ### [Installing and servicing apps](docs/InstallingAndServicing.md)
-### <a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-basic-image" target="_blank">Creating images</a>
-### <a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/add-a-provisioning-package-to-an-image" target="_blank">Installing packages</a>
-### <a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/add-a-driver-to-an-image" target="_blank">Driver deployment</a>
-### <a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-new-bsp" target="_blank">Creating a board supported package</a>
+### [Creating images](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-basic-image)
+### [Installing packages](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/add-a-provisioning-package-to-an-imag)
+### [Driver deploymet](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/add-a-driver-to-an-image)
+### [Creating a board supported package](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-new-bs)
 ### [Go to market](docs/GoToMarket.md)
 ### [Recovery](docs/Recovery.md)
 
