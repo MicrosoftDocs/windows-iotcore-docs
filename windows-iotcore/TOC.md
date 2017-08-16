@@ -4,7 +4,7 @@
 ## [Release notes]()
 ### [16257](notes/16257.md)
 ## [Learn about hardware]()
-### [Suggested boards and SoCs]()
+### [Suggested boards and SoCs](docs/SuggestedBoards.md)
 ### [Hardware compatibility list](docs/HardwareCompatList.md)
 ### [Headed and headless devices](docs/HeadlessMode.md)
 ### [Arduino and Windows 10](docs/ArduinoAndWindows10.md)
