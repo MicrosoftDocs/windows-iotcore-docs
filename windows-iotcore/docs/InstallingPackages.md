@@ -28,7 +28,7 @@ To create your own image (FFU), [get the tools needed to customize Windows IoT C
 ### Create a package with files and reg keys
 Below is an example for specifying files and reg keys.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00"
    Owner="OEMName"           OwnerType="OEM"
