@@ -45,7 +45,7 @@ If you are debugging on a device that is not running Windows IoT Core and you se
 To enable embedded mode you will need to create a provisioning package in Imaging and Configuration Designer (ICD) that sets AllowEmbeddedMode=1.  To install ICD you need to download and install the Windows ADK for Windows 10.
 
 * [Download the Windows ADK for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=526740)
-* <a href="https://msdn.microsoft.com/library/windows/hardware/dn927348(v=vs.85).aspx">Learn about what's new in the Windows ADK for Windows 10</a>
+* [Learn about what's new in the Windows ADK for Windows 10](https://msdn.microsoft.com/library/windows/hardware/dn927348(v=vs.85).aspx)
 
 1. When installing the ADK select **Imaging and Configuration Designer (ICD)**
 2. After installation is complete run Windows Imaging and Configuration Designer (WICD).
