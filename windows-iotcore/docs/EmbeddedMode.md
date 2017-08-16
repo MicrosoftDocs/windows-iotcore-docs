@@ -49,33 +49,40 @@ To enable embedded mode you will need to create a provisioning package in Imagin
 
 1. When installing the ADK select **Imaging and Configuration Designer (ICD)**
 2. After installation is complete run Windows Imaging and Configuration Designer (WICD).
+
     ![WICD Icon](../media/EmbeddedMode/WICD_Icon.png)
 
 3. Click **Advanced provisioning**.  Name the project **AllowEmbeddedMode** and click **Next**.
     ![Step3](../media/EmbeddedMode/Step3.png)
 
-4. Choose **Common to all Windows editions** then **Next**
+4. Choose **Common to all Windows editions** then **Next**.
     ![Step4](../media/EmbeddedMode/Step4.png)
 
-5. Click **Finish**
+5. Click **Finish**.
+
     ![Step5](../media/EmbeddedMode/Step5.png)
 
-6. In the search box type **EmbeddedMode** and then click on **AllowEmbeddedMode**
+6. In the search box type **EmbeddedMode** and then click on **AllowEmbeddedMode**.
+
     ![Step6](../media/EmbeddedMode/Step6.png)
 
 7. In the center pane set the value of **AllowEmbeddedMode** to **Yes**
     ![Step7](../media/EmbeddedMode/Step7.png)
 
-8. Click Export>Provisioning Package
+8. Click Export > Provisioning Package
+
     ![Step8](../media/EmbeddedMode/Step8.png)
 
-9. Click Next
+9. Click Next.
+
     ![Step9](../media/EmbeddedMode/Step9.png)
 
-10. Click Next
+10. Click Next.
+
     ![Step10]({../media/EmbeddedMode/Step10.png)
 
-11. Click Next
+11. Click Next.
+
     ![Step11](../media/EmbeddedMode/Step11.png)
 
 12. Click Build.
@@ -86,10 +93,12 @@ To enable embedded mode you will need to create a provisioning package in Imagin
     * If enabling embedded mode on mobile drag the PPKG and drop it on the windows phone icon in explorer.
     ![Step13](../media/EmbeddedMode/Step13.png)
 
-14. Click **Yes, add it**
+14. Click **Yes, add it**.
     * On standard windows click yes on the LUA dialog if it appears, and the click **Yes, add it** on the dialog.
     ![Step14Standard](../media/EmbeddedMode/Step14Standard.png)
+    
     * On mobile look at your phone and on the phone press the **Yes, add it** button.
+    
     ![Step14Mobile](../media/EmbeddedMode/Step14Mobile.png)
 
 
