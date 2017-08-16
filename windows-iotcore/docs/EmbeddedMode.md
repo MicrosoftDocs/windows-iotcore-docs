@@ -79,13 +79,14 @@ To enable embedded mode you will need to create a provisioning package in Imagin
 
 10. Click Next.
 
-    ![Step10]({../media/EmbeddedMode/Step10.png)
+    ![Step10](../media/EmbeddedMode/Step10.png)
 
 11. Click Next.
 
     ![Step11](../media/EmbeddedMode/Step11.png)
 
 12. Click Build.
+
     ![Step12](../media/EmbeddedMode/Step12.png)
 
 13. Install the provisioning package (PPKG).
