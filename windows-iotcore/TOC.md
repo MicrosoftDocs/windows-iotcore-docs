@@ -1,6 +1,6 @@
 # [Windows IoT Core documentation](index.md)
 ## [What's new]()
-### [2017](whats-new/2017.md)
+### [May 2017](whats-new/May2017.md)
 ## [Release notes]()
 ### [2017]()
 #### [16257](notes/16257.md)
