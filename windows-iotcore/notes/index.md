@@ -1,4 +1,4 @@
-## Release notes archive
+# Release notes archive
 
 View unabridged release notes from previous builds here. 
 
