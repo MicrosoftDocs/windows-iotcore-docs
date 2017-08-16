@@ -27,7 +27,7 @@
 ### [Network packet capture](docs/NetworkPacketCapture.md)
 ### [Embedded mode](docs/EmbeddedMode.md)
 ### [Windows Debugger](docs/WindowsDebugger.md)
-### [Azure IoT Device Management]()
+### [Azure IoT Device Management](docs/AzureIoTDM.md)
 ### [Connect your device to the cloud](docs/ConnectDeviceToCloud.md)
 ## [Secure your device]()
 ### [Building secure IoT devices](docs/BuildingSecureDevices.md)
