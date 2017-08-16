@@ -3,7 +3,7 @@
 ### [May 2017](whats-new/May2017.md)
 ## [Release notes]()
 ### [2017]()
-#### [16257](notes/16257.md)
+#### [16257](notes/2017/16257.md)
 ## [Learn about hardware]()
 ### [Suggested boards and SoCs](docs/SuggestedBoards.md)
 ### [Hardware compatibility list](docs/HardwareCompatList.md)
