@@ -19,7 +19,7 @@ You can easily test the WiFi Direct functionality with the WiFi Direct UWP [samp
 * Connect monitor, keyboard and mouse to the MBM
 * A Windows 10 PC running the latest Windows 10 Anniversary Update. The PC (or laptop) will need to have WiFi Direct support (e.g. a Microsoft Surface)
 * Install Visual Studio 2017 on your Windows 10 PC
-* Clone or download the WiFi Direct UWP [sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WiFiDirect){:target="_blank"} (root of the GitHub repo is [here](https://github.com/Microsoft/Windows-universal-samples){:target="_blank"})
+* Clone or download the WiFi Direct UWP [sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WiFiDirect)(root of the GitHub repo is [here](https://github.com/Microsoft/Windows-universal-samples)).
 * Load the C# version of the WiFi Direct UWP sample in Visual Studio 2017
 
 #### Run the sample on the two devices
@@ -40,7 +40,7 @@ You can easily test the WiFi Direct functionality with the WiFi Direct UWP [samp
 
     * The MBM will start advertising itself on the WiFi Direct channel
 
-        ![Advertiser Configuration Screen]({{site.baseurl}}/Resources/images/SetupWiFiDirect/Advertiser01.png)
+        ![Advertiser Configuration Screen](../media/SetupWiFiDirect/Advertiser01.png)
 
         Notice the "Advertisement Status" banner at the bottom of the app.
     
