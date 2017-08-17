@@ -127,7 +127,6 @@ Windows IoT Core is a version of Windows 10 that is optimized for smaller device
                 <div class="card">
                     <div class="cardText">
                         <p><a href="https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT">MSDN forum</a></p>
-                        <p><a href="http://forum.arduino.cc/">Arduino forum</a></p>
                         <p><a href="https://www.raspberrypi.org/forums/viewforum.php?f=105">Raspberry Pi for IoT Core forum</a></p>
                         </div>
                     </div>
