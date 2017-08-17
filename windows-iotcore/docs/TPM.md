@@ -32,62 +32,42 @@ The TPM provides cryptographic functions designed to provide trust in the platfo
 
 ## TPM solutions available on Windows IoT Core  
 ___
-_A few words about sTPM, fTPM, dTPM..._
+_A few words about Software TPM (sTPM), Firmware TPM (fTPM), Discrete TPM (dTPM)..._
 
 ### Firmware TPM (fTPM)  
 Firmware TPM (fTPM) requires special Processor/SoC support that is not currently implemented on Raspberry Pi 2 or 3. MinnowBoard Max needs firmware version 0.80 or higher. DragonBoard410c provides fTPM capabilities out of the box enabled by default.  
-Instructions on how to set up fTPM on Intel MBM are available [here][1].
 
 ### Discrete TPM (dTPM)  
 Discrete TPM (dTPM) is considered the utmost trustworthy solution by all means.  
 There are several manufacturers of dTPM chips and PCB modules that are supported on Windows IoT Core:
 
-{:.table.table-bordered}
-|------------------|---------------------------------|
-| TPM Manufacturer | Web Page                        |
-|------------------|---------------------------------|
-| Infineon         | [Infineon Trusted Computing][4] |
-| NationZ          | [NationZ info][5]               |
-| Nuvoton          | [Nuvoton homepage][6]           |
-| STMicro          | [STMicro TPM Secure MCUs][7]    |
-
-Instructions on how to set up dTPM on Windows IoT Core are available [here][2].
+> [!div class="mx-tdBreakAll"]
+> | TPM Manufacturer | Web Page|
+> |-------------|----------|
+> | Infineon | [Infineon Truted Computing](http://www.infineon.com/cms/en/product/security-ic/trusted-computing/channel.html?channel=db3a30433efacd9a013f10d2a7264daa)|
+> | NationZ | [NationZ information](http://www.trustedcomputinggroup.org/nationz-technologies-inc)|
+> | Nuvoton | [Nuvoton homepage](https://www.nuvoton.com/hq/products/cloud-computing/security/trusted-platform-module-tpm)|
+> | STMicro | [STMicro TPM Secure MCUs](http://www.st.com/web/en/catalog/mmc/FM143/CL1814/SC1522)|
 
 ### Software TPM (sTPM)  
 Software TPM (sTPM) is also referred to as TPM Simulator. It is platform-independent, supported on Windows IoT Core.  
-Note that **sTPM is intended for development purposes only and does not provide any real security benefits**.  
-Instructions on how to set up sTPM on Windows IoT Core are available [here][3].
 
-[1]: {{site.baseurl}}/{{page.lang}}/Docs/SetupTPM.htm#fTPM "Firmware TPM"
-[2]: {{site.baseurl}}/{{page.lang}}/Docs/SetupTPM.htm#dTPM "Discrete TPM"
-[3]: {{site.baseurl}}/{{page.lang}}/Docs/SetupTPM.htm#sTPM "TPM Simulator"
-[4]: http://www.infineon.com/cms/en/product/security-ic/trusted-computing/channel.html?channel=db3a30433efacd9a013f10d2a7264daa "Infineon"
-[5]: http://www.trustedcomputinggroup.org/nationz-technologies-inc "NationZ"
-[6]: https://www.nuvoton.com/hq/products/cloud-computing/security/trusted-platform-module-tpm "Nuvoton"
-[7]: http://www.st.com/web/en/catalog/mmc/FM143/CL1814/SC1522 "STMicro"
+> [!NOTE]
+> sTPM is intended for development purposes only and does not provide any real security benefits.  
 
-*[TBS]: TPM Base Services
-*[TCG]: Trusted Computing Group
-*[TSS]: TPM Software Stack
-*[RPC]: Remote Procedure Call
-*[sTPM]: Software TPM
-*[fTPM]: Firmware TPM
-*[dTPM]: Discrete TPM
- 
+
 ## Samples  
 ___
-* [TBSSample project C++]({{site.baseurl}}/{{page.lang}}/Samples/TBSSample){:target="_blank"}  
+* [TBSSample project C++](../Samples/TBSSample)
   This tutorial demonstrates how to create a basic C++ application that uses TBS to poll the TPM.  
-* [Urchin Library Sample]({{site.baseurl}}/{{page.lang}}/Samples/UrchinLibrary){:target="_blank"}  
-  This tutorial demonstrates how to create a sample C++ application that exercises the TPM functionality using the [Urchin library][8].  
+* [Urchin Library Sample](../Samples/UrchinLibrary)
+  This tutorial demonstrates how to create a sample C++ application that exercises the TPM functionality using the [Urchin library](https://github.com/ms-iot/securit).  
   Urchin is a spec-compliant library derived from the TPM 2.0 reference implementation. It provides to the client the functionality to marshal/unmarshal all data structures, properly calculate authorizations, perform parameter encryption and do auditing.
-  
-[8]: https://github.com/ms-iot/security "Urchin library"
 
 ## Additional Resources  
 ___
-* Trusted Platform Module (TPM) Specifications - [http://www.trustedcomputinggroup.org/developers/trusted_platform_module](http://www.trustedcomputinggroup.org/developers/trusted_platform_module){:target="_blank"}
-* TCG TPM 2.0 Library Specification - [http://www.trustedcomputinggroup.org/resources/tpm_library_specification](http://www.trustedcomputinggroup.org/resources/tpm_library_specification){:target="_blank"}
-* TPM Base Services - [https://msdn.microsoft.com/en-us/library/windows/desktop/aa446796(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/aa446796(v=vs.85).aspx){:target="_blank"}
-* Enabling Secure Boot and BitLocker - [{{site.baseurl}}/{{page.lang}}/Docs/SecureBootAndBitLocker.htm]({{site.baseurl}}/{{page.lang}}/Docs/SecureBootAndBitLocker){:target="_blank"}
+* [Trusted Platform Module (TPM) Specifications](http://www.trustedcomputinggroup.org/developers/trusted_platform_module) 
+* [TCG TPM 2.0 Library Specification](http://www.trustedcomputinggroup.org/resources/tpm_library_specification)
+* [TPM Base Services](https://msdn.microsoft.com/en-us/library/windows/desktop/aa446796(v=vs.85).aspx) 
+* [Enabling Secure Boot and BitLocker](SecureBootAndBitLocker.htm)
 
