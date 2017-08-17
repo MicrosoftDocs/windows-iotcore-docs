@@ -13,7 +13,7 @@ The rest of the documentation below will be IoT specific.
 ## Set up
 1. Connect your board to the internet
 
-    To get WDP up and running, you first need to connect your device to your network. See the [Get Started](../GetStarted) page for full instructions.
+    To get WDP up and running, you first need to connect your device to your network. See the [Get Started](https://developer.microsoft.com/en-us/windows/iot/getstarted) page for full instructions.
 
 2. Find your device in IoT Dashboard and connect.
    Right click and select **Open in Device Portal**.
@@ -83,14 +83,14 @@ To use this feature, your Windows 10 IoT Device needs to have access to the inte
 The SoftAP Settings allow you to control whether or not your device's SoftAP is enabled.  It also provides a means for configuring your SoftAP's SSID and the WPA2-PSK key which are necessary to connect the SoftAP from another device.
 
 **AllJoyn Onboarding Settings**
-The AllJoyn Onboarding Settings allow you to control whether or not your device's Wi-Fi connection can configured through your device's AllJoyn Onboarding Producer.  When a separate device running an AllJoyn Onboarding Consumer application connects to your Windows 10 IoT SoftAP, the AllJoyn Onboarding Consumer application can be used to configure your IoT device's Wi-Fi adapter.  When enabled, the AllJoyn Onboarding Producer app (IoTOnboarding) uses the ECDHE_NULL authentication method.  Refer to the [IoTOnboarding Sample](../Samples/IotOnboarding.htm) for additional information.
+The AllJoyn Onboarding Settings allow you to control whether or not your device's Wi-Fi connection can configured through your device's AllJoyn Onboarding Producer.  When a separate device running an AllJoyn Onboarding Consumer application connects to your Windows 10 IoT SoftAP, the AllJoyn Onboarding Consumer application can be used to configure your IoT device's Wi-Fi adapter.  When enabled, the AllJoyn Onboarding Producer app (IoTOnboarding) uses the ECDHE_NULL authentication method. 
 
 > [!NOTE]
 > To use AllJoyn Onboarding with Windows 10 IoT builds 10.0.14393 or earlier requires an update to the <strong>IotOnboarding</strong> 
 sample which may be [downloaded here](https://github.com/ms-iot/samples).
 
 ![Onboarding onto AllJoyn](../media/DevicePortal/OnboardingAllJoyn.png)
-![Onboarding onto ICS](..media/DevicePortal/OnboardingICS.png)
+![Onboarding onto ICS](../media/DevicePortal/OnboardingICS.png)
 
 > [!NOTE]
 > Access point adapter is the WiFi adapter that act as a WiFi access point (it usually has an IP address like 192.168.137.1).
@@ -104,7 +104,7 @@ sample which may be [downloaded here](https://github.com/ms-iot/samples).
 
 
 ### TPM configuration
-The Trusted Platform Module (TPM) is a cryptographic coprocessor including capabilities for random number generation, secure generation of cryptographic keys and limitation of their use. It also includes capabilities such as remote attestation and sealed storage. To learn about the TPM and security on IoT Core, visit the [Building secure devices]({{site.baseurl}}/en-US/Docs/BuildingSecureDevices) page and the [TPM]({{site.baseurl}}/en-US/Docs/TPM) page.
+The Trusted Platform Module (TPM) is a cryptographic coprocessor including capabilities for random number generation, secure generation of cryptographic keys and limitation of their use. It also includes capabilities such as remote attestation and sealed storage. To learn about the TPM and security on IoT Core, visit the [Building secure devices](BuildingSecureDevices.md) page and the [TPM](TPM.md) page.
 
 ### Remote
 The Windows IoT Remote Server allows users to see what their device is displaying without connecting a physical monitor to the keyboard.
@@ -114,7 +114,7 @@ The Windows IoT Remote Server allows users to see what their device is displayin
 
 ### Changing the default port
  
-1. Launch powershell and [connect to your device.]({{site.baseurl}}/{{page.lang}}/Docs/PowerShell)
+1. Launch powershell and [connect to your device.](PowerShell.md)
 2. Download [TakeRegistryOwnership](https://github.com/ms-iot/iot-utilities/tree/master/TakeRegistryOwnership) tool, build it, and copy it to your device. 
 3. Take ownership of the registry key for the service by running
 
