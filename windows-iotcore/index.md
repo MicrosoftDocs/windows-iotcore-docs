@@ -119,15 +119,16 @@ Windows IoT Core is a version of Windows 10 that is optimized for smaller device
 ---
 
 <h2>Forums</h2>
+<p>If anything comes up that the documentation doesn't answer, we have several different forums you can visit and ask questions.</p>
 <ul class="panelContent cardsW">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="http://forum.arduino.cc/">Arduino forum</a></p>
                         <p><a href="https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT">MSDN forum</a></p>
-                        <p><a href="https://www.raspberrypi.org/forums/viewforum.php?f=105">Raspberry Pi forum</a></p>
+                        <p><a href="http://forum.arduino.cc/">Arduino forum</a></p>
+                        <p><a href="https://www.raspberrypi.org/forums/viewforum.php?f=105">Raspberry Pi for IoT Core forum</a></p>
                         </div>
                     </div>
                 </div>
@@ -138,8 +139,8 @@ Windows IoT Core is a version of Windows 10 that is optimized for smaller device
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="https://www.reddit.com/r/windows10iot/">Reddit</a></p>
-                        <p><a href="https://stackoverflow.com/questions/tagged/WindowsIoT">StackOverflow</a></p>
+                        <p><a href="https://www.reddit.com/r/windows10iot/">Reddit for IoT Core</a></p>
+                        <p><a href="https://stackoverflow.com/questions/tagged/WindowsIoT">StackOverflow for IoT Core</a></p>
                     </div>
                 </div>
             </div>
