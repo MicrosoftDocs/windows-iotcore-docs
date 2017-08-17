@@ -65,8 +65,8 @@ Want to run OpenCV on your IoT Core device? Visit our [tutorial](../Samples/Open
 
 > [!div class="mx-tdBreakAll"]
 > |        |Microsoft Cognitive Services|OpenCV|
-> |-------------|----------|---------|---------|
-> |Easy to use on Windows|Yes|No
+> |---------------------|--------|------|
+> |Easy to use on Windows|Yes|No |
 > |Architecture support|ARM, x86, x64 | ARM, x86, x64|
 > |Facial recognition and tracking| Yes | Yes|
 > |Emotion recognition| Yes | Yes|
