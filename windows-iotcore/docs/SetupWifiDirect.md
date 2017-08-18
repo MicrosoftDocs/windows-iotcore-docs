@@ -8,7 +8,7 @@ WiFi Direct provides a solution for WiFi device-to-device connectivity without t
 
 ## <a name="WiFi_Devices"></a>Supported Adapters
 
-A list of WiFi adapters that have been tested on Windows 10 IoT Core can be found on our [Supported Hardware](HardwareCompatList.htm#WiFi-Dongles) page. Look in the notes for "WiFiDirect supported" to discover the WiFiDirect enabled adapters.
+A list of WiFi adapters that have been tested on Windows 10 IoT Core can be found on our [Supported Hardware](HardwareCompatList.md) page. Look in the notes for "WiFiDirect supported" to discover the WiFiDirect enabled adapters.
 
 ## Basic sample for WiFi Direct
 
