@@ -137,7 +137,7 @@ Samples:
 ### Arduino Wiring
 With Arduino Wiring support you can build apps in Arduino Wiring for many popular components and peripherals in the IoT ecosystem.
 
-Our [Arduino Wiring Project Guide]({{site.baseurl}}/{{page.lang}}/Docs/ArduinoWiringProjectGuide) provides full instructions on how to get set up to build these apps. The samples copied and linked below will help you get started building your own.  You can even [build WinRT components in Arduino](https://github.com/ms-iot/samples/tree/develop/ArduinoLibraryBlinky) that can then be used from other languages. 
+Our [Arduino Wiring Project Guide](ArduinoWiringProjectGuide.md) provides full instructions on how to get set up to build these apps. The samples copied and linked below will help you get started building your own.  You can even [build WinRT components in Arduino](https://github.com/ms-iot/samples/tree/develop/ArduinoLibraryBlinky) that can then be used from other languages. 
 
 *Blinky Sample Code*
 The full [sample code and docs](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinkybackgroundwiring) are available in our samples page and you can find the full code below:
