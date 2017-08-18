@@ -22,7 +22,8 @@ The publicly available boards below are some of the same devices Microsoft uses 
 > | Video Output | HDMI, DSI | HDMI, DSI | Micro HDMI	| HDMI, DSI |
 > | Audio Output | Analog via 3.5 mm jack | Analog via 3.5 mm jack | Digital via HDMI	| Digital via HDMI |
 > | GPS| No | No | No | Yes | 
-> | Peripherals | 24x GPIO pins | 24x GPIO pins | 10x GPIO pins | 11x GPIO pins |
+> | Peripherals |   Raspberry Pi 2 Pin Mappings | Rapsberry Pi 3 Pin Mappings | Minnowboard Max Pin Mappings | Dragonboard Pin Mappings |
+> |         | 24x GPIO pins | 24x GPIO pins | 10x GPIO pins | 11x GPIO pins |
 > |  | 1x Serial UART | 1x Serial mini UART | 2x Serial UARTs | 2x Serial UARTs |
 > |  | 2x SPI bus | 2x SPI bus | 1x SPI bus | 1x SPI bus |
 > |  | 1x I2C bus | 1x I2C bus | 1x I2C bus | 2x I2C bus |
