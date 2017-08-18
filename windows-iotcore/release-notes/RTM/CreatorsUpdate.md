@@ -135,7 +135,7 @@ The default administrator user name and password are hard coded in the Windows 1
 Hardware volume controls for USB microphones and speakers which depend on Windows system to change system volume are currently not supported on Windows 10 IoT Core. 
  
 #### USB Keyboards  
-Some USB keyboards and mice may not work on IoT Core. Use a different keyboard or mouse. A list of validated peripheral devices can be found [here]({{site.baseurl}}/{{page.lang}}/docs/HardwareCompatList).  
+Some USB keyboards and mice may not work on IoT Core. Use a different keyboard or mouse. A list of validated peripheral devices can be found [here](../../docs/HardwareCompatList.md).  
  
 #### Screen Orientation 
 Setting the orientation to “Portrait” may not be honored in a Universal App 
