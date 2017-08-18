@@ -39,12 +39,12 @@ To facilitate easy enablement of key secrutiy features on IoT Core devices, Micr
 * Reference platform - release hardware with shipping firmware, OS, drivers and applications will be required for final lockdown
 
 ### Development IoT Devices 
-Windows 10 IoT Core works with [several leading SoCs](../SoC) that are utilized in hundreds of devices. Of the [suggested IoT development devices](deviceoptions), the following provide firmware TPM functionality out of the box, along with Secure Boot, Measured Boot, BitLocker and Device Guard capabilities:
+Windows 10 IoT Core works with that are utilized in hundreds of devices. Of the [suggested IoT development devices](suggestedboards.md), the following provide firmware TPM functionality out of the box, along with Secure Boot, Measured Boot, BitLocker and Device Guard capabilities:
 * Qualcomm DragonBoard 410c
 * Intel MinnowBoardMax 
 
 **Notes:**
-* For Qualcomm's DragonBoard 410c, in order to enable Secure Boot, it may be necessary to provision RPMB. Once the eMMC has been flashed with Windows 10 IoT Core (as per instructions [here](../GetStarted), press [Power] + [Vol+] + [Vol-] simultaneously on the device when powering up and select "Provision RPMB" from the BDS menu. *Please note that this is an irreversible step.*
+* For Qualcomm's DragonBoard 410c, in order to enable Secure Boot, it may be necessary to provision RPMB. Once the eMMC has been flashed with Windows 10 IoT Core (as per instructions [here](https://developer.microsoft.com/en-us/windows/iot/getstarted), press [Power] + [Vol+] + [Vol-] simultaneously on the device when powering up and select "Provision RPMB" from the BDS menu. *Please note that this is an irreversible step.*
 * For Intel's MinnowBoard Max, firmware version must be 0.82 or higher (get the [latest firmware](https://firmware.intel.com/projects/minnowboard-max)). To enable TPM capabilities, power up board with a keyboard & display attached and press F2 to enter UEFI setup. Go to _Device Manager -> System Setup -> Security Configuration -> PTT_ and set it to _&lt;Enable&gt;_. Press F10 to save changes and proceed with a reboot of the platform.
 * For Qualcomm's DragonBoard 410c, in order to enable USB mass storage mode (if required):
   * disconnect everything from DragonBoard
@@ -86,7 +86,7 @@ Once the packages are generated, they can be installed with the final image crea
   * OEM.Security.BitLocker.cab
   * OEM.Security.SecureBoot.cab
   * OEM.Security.DeviceGuard.cab
-2. Connect to the device ([using SSH](SSH) or using [Powershell](PowerShell)
+2. Connect to the device ([using SSH](SSH.md) or using [Powershell](PowerShell.md)
 3. Initiate staging of the generated packages by issueing the following commands:
   * `applyupdate -stage c:\OemInstall\OEM.Custom.Cmd.cab`
   * `applyupdate -stage c:\OemInstall\OEM.Security.BitLocker.cab`
