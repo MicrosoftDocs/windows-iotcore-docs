@@ -12,7 +12,7 @@ Hardware interfaces for the Raspberry Pi 2 and Raspberry Pi 3 are exposed throug
 * **2x** - 3.3V power pins
 * **8x** - Ground pins
 
-##GPIO Pins
+## GPIO Pins
 
 Let's look at the GPIO available on this device.
 
