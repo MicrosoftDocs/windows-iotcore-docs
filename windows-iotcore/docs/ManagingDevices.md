@@ -5,7 +5,7 @@ Windows 10 IoT Core devices can be managed using a traditional OMA DM MDM server
  _Learn more about MDM and Windows 10 [here](https://msdn.microsoft.com/library/windows/hardware/dn914769(v=vs.85).aspx)._  
  _Learn more about Azure IoT Hub Device Management [here](https://azure.microsoft.com/en-us/documentation/articles/iot-hub-device-management-overview/)._  
 
-For devices that are managed using a OMA DM server the MDM policies for Windows 10 IoT Core align with the policies supported in other editions of Windows 10. To learn more about policies as well as what can be managed on IoT Core devices, see Configuration service provider reference for Windows 10 [https://aka.ms/csplist](here). The MDM support in Windows 10 is based on Open Mobile Alliance (OMA) Device Management (DM) protocol 1.2.1 specification.
+For devices that are managed using a OMA DM server the MDM policies for Windows 10 IoT Core align with the policies supported in other editions of Windows 10. To learn more about policies as well as what can be managed on IoT Core devices, see Configuration service provider reference for Windows 10 [here](https://aka.ms/csplist). The MDM support in Windows 10 is based on Open Mobile Alliance (OMA) Device Management (DM) protocol 1.2.1 specification.
 
 ## How do I enroll an IoT Core device into a MDM?
 ___
@@ -68,7 +68,7 @@ MDM enrollment of an IoT Core device is accomplished using a Provisioning packag
 
 8.  In the UPN field enter the account you wish to enroll your device under (i.e. trmck@contoso.co) and click **Add**.
 
-    ![Workplace enrollments filled](..media/ManagingDevices/WICD-Workplace-Enrollments-UPN-Filled.png)
+    ![Workplace enrollments filled](../media/ManagingDevices/WICD-Workplace-Enrollments-UPN-Filled.png)
 
 9. For AuthPolicy choose between Username Password based authentication (OnPremises) or Certificate based authentication.
 
@@ -81,7 +81,7 @@ MDM enrollment of an IoT Core device is accomplished using a Provisioning packag
     - OnPremises: The password for the account you're enrolling with  
     - Certificate: The thumbprint of the certificate
     
-    ![Filled OnPremise](../media/ManagingDevices/WICD-Workplace-Enrollments-UPN-Details-Filled-OnPremise.png)  
+    ![Filled OnPremise](../media/ManagingDevices/WICD-Workplace-Enrollments-UPN-Details-Filled-Premise.png)  
 
 12. At the top of WICD window click **Export > Provisioning package**.
 
