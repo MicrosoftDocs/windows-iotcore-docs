@@ -105,7 +105,7 @@ i2cDevice.Dispose(); // release I2C device
 var gpio2 = controller.OpenPin(2); // succeeds now that GPIO2 is available
 ```
 
-##Serial UART
+## Serial UART
 
 There is one Serial UART available on the RPi2/3: **UART0**
 
