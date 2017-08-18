@@ -26,7 +26,7 @@ This document describes how to enable and utilize Cortana on IoT Core. Makers an
 
 ### Hardware List
 
-Windows 10 IoT Core can be run on a [list of IoT devices](../docs/DeviceOptions).
+Windows 10 IoT Core can be run on a [list of IoT devices](SuggestedBoards.md).
 
 Any microphone and speaker you select to use with the your IoT devices should work with Cortana. For better speech recognition
 quality, here is a recommended list of hardware that has been tested.
@@ -52,7 +52,7 @@ To get started with Cortana on Windows 10 IoT Core, a few additional set up step
 
 ### Flash the IoT Device
 
-[Flash your IoT Core device](../docs/GetStarted) with the correct image. If you have trouble finding the image for
+[Flash your IoT Core device](https://developer.microsoft.com/en-us/windows/iot/getstarted) with the correct image. If you have trouble finding the image for
 your IoT device, please go to [Windows Insider Preview Downloads](https://www.microsoft.com/en-us/software-download/windowsiot) page.
 
 ### Install Update
