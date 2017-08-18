@@ -20,9 +20,9 @@ While the system will automatically restart background applications, system lock
 
 The lowLevelDevice Capability (only on IoT Core) gives access to low-level hardware interfaces like GPIO, SPI, and I2C. 
 
-* [Blinky Sample(GPIO)](../Samples/helloblinky)
-* [SPI Accelerometer Sample](../Samples/SPIAccelerometer)
-* [I2C Accelerometer Sample](../Samples/I2CAccelerometer) 
+* [Blinky Sample(GPIO)](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinky)
+* [SPI Accelerometer Sample](https://developer.microsoft.com/en-us/windows/iot/samples/SPIaccelerometer)
+* [I2C Accelerometer Sample](https://developer.microsoft.com/en-us/windows/iot/samples/I2Caccelerometer) 
 
 ## systemManagment Capability
 
@@ -32,7 +32,6 @@ When you enable the systemManagment capabilities for your appliction this is the
 * [Windows.System.TimeZoneSettings](https://msdn.microsoft.com/library/windows/apps/windows.system.timezonesettings.aspx)
 * [Windows.System.ShutdownManager](https://msdn.microsoft.com/library/windows/apps/windows.system.shutdownmanager.aspx)
 * [Windows.Globalization.Language.TrySetInputMethodLanguageTag](https://msdn.microsoft.com/library/windows/apps/windows.globalization.language.trysetinputmethodlanguagetag.aspx)
-* [AllJoyn loopback]({{site.baseurl}}/en-US/Docs/AllJoynTroubleshooting)
 
 ## Debugging Background Applications 
 
@@ -104,7 +103,7 @@ To enable embedded mode you will need to create a provisioning package in Imagin
 
 
 ## Configuring a Background Application to Run automatically
-1. To configure a Background Application to automatically run you will need to follow the directions to [create an MinnowBoardMax SD Card]({{site.baseurl}}/{{page.lang}}/GetStarted) and copy D:\windows\system32\iotstartup.exe (where D: is your SD Card).
+1. To configure a Background Application to automatically run you will need to follow the directions to [create an MinnowBoardMax SD Card](https://developer.microsoft.com/en-us/windows/iot/getstarted) and copy `D:\windows\system32\iotstartup.exe` (where D: is your SD Card).
 
 2. To get a list of installed Background Applications type:
 
