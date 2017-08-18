@@ -34,7 +34,7 @@ Now that your device is set up, let's connect to it using Microsoft Message Anal
 4. In the window that opens, click on the `Live Trace` button.
     ![Message Analyzer](../media/NetworkPacketCapture/message-analyzer-live-trace.png)
 5. Click on the `Edit...` button.
-    ![Message Analyzer]({../media/NetworkPacketCapture/message-analyzer-edit-button.png)
+    ![Message Analyzer](../media/NetworkPacketCapture/message-analyzer-edit-button.png)
 6. Replace Localhost with the name of your IoT device, and enter the administrator user name and password.  Then click `OK`.
     ![Message Analyzer](../media/NetworkPacketCapture/message-analyzer-edit-target-computers.png)
 7. Click on the `Select a trace scenario` dropdown and select `Local Network Interfaces`.
