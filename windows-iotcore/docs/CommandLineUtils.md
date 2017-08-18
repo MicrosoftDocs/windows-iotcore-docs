@@ -1,6 +1,6 @@
 # Windows 10 IoT Core Command Line Utils
 
-Looking to configure some of the settings on your device? The below tools all come pre-installed on your device to help you with that! Use PowerShell to run these commands after [connecting to your device]({{site.baseurl}}/{{page.lang}}/Docs/PowerShell).
+Looking to configure some of the settings on your device? The below tools all come pre-installed on your device to help you with that! Use PowerShell to run these commands after [connecting to your device](PowerShell.md).
 
 * **Update account password:**
 
