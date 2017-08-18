@@ -3,7 +3,7 @@
 ### [Insider Builds]()
 #### [Build 16257](release-notes/Insider/16257.md)
 ### [Public Builds]()
-#### [Build 15063 (Creators Update)](release-notes/RTM/CreatorsUpdate.md)
+#### [Creators Update (Build 15063)](release-notes/RTM/CreatorsUpdate.md)
 ## [Learn about hardware]()
 ### [Suggested boards and SoCs](docs/SuggestedBoards.md)
 ### [Hardware compatibility list](docs/HardwareCompatList.md)
