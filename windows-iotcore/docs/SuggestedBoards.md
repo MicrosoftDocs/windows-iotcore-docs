@@ -5,7 +5,7 @@
 Windows 10 IoT Core works with several leading System on Chips (SoCs) that are utilized in hundreds of devices. Below you can find suggested devices to get started quickly, additional devices that provide more silicon and form factor choies, as well as community devices that have been enabled independent of Microsoft involvement.
 
 ## Suggested devices
-The publicly available boards below are some of the same devices Microsoft uses as part of our operating system engineering efforts. These are also the devices Microsoft requires reported OS issues to reproduce on for engineering support. We provide an easy process for you to get started with these devices right away. Learn more about the features of each device below and check out the [supported hardware peripherals](HardwareCompatList) for each board to decide what device is right for you. If you don't see a device below that works to prorotype or commercialize your idea, please check additional devices or community devices.
+The publicly available boards below are some of the same devices Microsoft uses as part of our operating system engineering efforts. These are also the devices Microsoft requires reported OS issues to reproduce on for engineering support. We provide an easy process for you to get started with these devices right away. Learn more about the features of each device below and check out the [supported hardware peripherals](HardwareCompatList.md) for each board to decide what device is right for you. If you don't see a device below that works to prorotype or commercialize your idea, please check additional devices or community devices.
 
 > [!NOTE]
 > Hardware features listed below may not be fully supported in all configurations
