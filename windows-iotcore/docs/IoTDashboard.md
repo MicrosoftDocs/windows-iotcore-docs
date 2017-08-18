@@ -8,7 +8,7 @@ Windows 10 IoT Core Dashboard is the best way to download, set up and connect yo
 
 ## Set up a new device
 ___
-The IoT Dashboard makes it easy to set up a new device. For detailed instructions on how to get started, see the [Get Started](../GetStarted) page.
+The IoT Dashboard makes it easy to set up a new device. For detailed instructions on how to get started, see the [Get Started](https://developer.microsoft.com/en-us/windows/iot/getstarted) page.
 
 
 ![IoT Dashboard Setup Page](../media/IoTDashboard/IoTDashboard_SetupPage.PNG)
@@ -18,7 +18,7 @@ The IoT Dashboard makes it easy to set up a new device. For detailed instruction
 
 ### SD card
 The type, make and model of the SD card greatly affects both the performance and the quality of IoT Core.
-A slow card can take up to five times longer to boot than our [recommended cards](hardwarecompatlist#Storage).
+A slow card can take up to five times longer to boot than our [recommended cards](hardwarecompatlist.md).
 An older, less reliable SD card may not even work. If you continue to run into problems installing, consider replacing the SD card.
 
 ### Device Name
@@ -59,7 +59,7 @@ To find your device, go to **My Devices**. If your device is not listed, try reb
 
 
 ### Connect to your device
-Right click and select **Open in Device Portal**. This will launch the [Windows Device Portal](DevicePortal) page and is the best way to interact and manage your device.
+Right click and select **Open in Device Portal**. This will launch the [Windows Device Portal](DevicePortal.md) page and is the best way to interact and manage your device.
 
 ![IoTDashboard View Devices](../media/IoTDashboard/IoTDashboard_RightClickMenu.PNG)
 
@@ -77,14 +77,14 @@ ___
 Quick run samples do not require any code compilation, Visual studio installation or SDK download. They are great for quickly checking out what IoT Core can do.
 
 ### Network 3D Printer
-Use the Network 3D Printer sample to connect your 3D Printer to your board can make it discoverable over your home network. See the  [3D printer server sample](3DPrintServer) for more details.
+Use the Network 3D Printer sample to connect your 3D Printer to your board can make it discoverable over your home network. 
 
 ![IoTDashboard Network 3D Printer](../media/IoTDashboard/IoTDashboard_3DPrinter.PNG)
 
 ### Internet radio
 Turn your Windows 10 IoT Core device into an internet radio that can be controlled from anywhere in your home.
 
-![IoTDashboard Internet radio](../media/IoTDashboard/IoTDashboard_InternetRadio.PNG")
+![IoTDashboard Internet radio](../media/IoTDashboard/IoTDashboard_InternetRadio.PNG)
 
 ### IoT Core Blockly
 IoT Core Blockly sample lets your program a Raspberry Pi2 or 3 and a Raspberry Pi Sense hat using a "block" editor from your browser.
