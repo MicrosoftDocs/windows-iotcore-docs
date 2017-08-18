@@ -2,7 +2,7 @@
 
 This guide will walk through the creation, setup, and deployment of an Arduino Wiring project using Windows IoT Core!
 
-Arduino Wiring projects utilize the familiar, easy to use Arduino Wiring API with Windows IoT Lightning DMAP driver: a driver using direct memory mapping to provide significant [performance speeds]({{site.baseurl}}/{{page.lang}}/Docs/LightningPerformance). You can copy & paste Arduino sketches and libraries into your IoT Core Arduino Wiring projects and run them on supported IoT Core devices, including Raspberry Pi2, 3 and Minnowboard Max! See the <a href="#develop">develop section</a> of this page for more information.
+Arduino Wiring projects utilize the familiar, easy to use Arduino Wiring API with Windows IoT Lightning DMAP driver: a driver using direct memory mapping to provide significant [performance speeds](LightningPerformance.md). You can copy & paste Arduino sketches and libraries into your IoT Core Arduino Wiring projects and run them on supported IoT Core devices, including Raspberry Pi2, 3 and Minnowboard Max! See the <a href="#develop">develop section</a> of this page for more information.
 
 ## Install the Microsoft IoT Templates!
 
@@ -18,7 +18,7 @@ You will need to be running the Direct Memory Mapped Driver to write Arduino Wir
 <a name="develop"></a>
 
 ## Develop
-Complete one of the "Wiring" samples on the [Samples Page](https://developer.microsoft.com/en-us/windows/iot/sampless), or build your own project! Any of the samples we've created that are written using Arduino Wiring will be listed like so: [Blinky (Wiring)]({{site.baseurl}}/{{page.lang}}/Samples/helloblinkybackgroundwiring). Blinky, the cononical "Hello World" project for IoT projects, is a great place to start for your first project!
+Complete one of the "Wiring" samples on the [Samples Page](https://developer.microsoft.com/en-us/windows/iot/samples), or build your own project! Any of the samples we've created that are written using Arduino Wiring will be listed like so: [Blinky (Wiring)](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinkybackgroundwiring). Blinky, the cononical "Hello World" project for IoT projects, is a great place to start for your first project!
 
 ### Create a new Project
 Open Visual Studio. Select File -> New Project -> Visual C++ -> Windows -> Windows IoT Core -> Arduino Wiring Application for Windows IoT Core
