@@ -63,7 +63,6 @@ Want to run OpenCV on your IoT Core device? Visit our [tutorial](https://develop
 
 ## Comparing OpenCV and Cognitive Services
 
-> [!div class="mx-tdBreakAll"]
 > |        |Microsoft Cognitive Services|OpenCV|
 > |---------------------|--------|------|
 > |Easy to use on Windows|Yes|No |
