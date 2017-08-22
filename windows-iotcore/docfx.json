@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -27,9 +28,14 @@
         ]
       }
     ],
+    
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "layout": "Conceptual",
+      "breadcrumb_path": "/windows/iot-core/breadcrumb/toc.json",
+      "ms.locale": "en-us"
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "windows-iotcore"
