@@ -32,7 +32,7 @@ In addition to the suggested development devices, IoT Core-supported SoCs power 
 
 > | Broadcomm | Intel | Qualcomm |
 > |-------------|----------|---------|
-> | [Element 14 / Raspberry Pi Customization Service] (https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service)| [Intel commercialization devices](https://solutionsdirectory.intel.com/solutions-directory/processors/278/processors/309/processors/402/processors/782/processors/1107/processors/1110/processors/1175/processors/1344/processors/1348/processors/1349) | [Qualcomm-based devices](https://developer.qualcomm.com/hardware/snapdragon-410) |
+> | [Element 14 / Raspberry Pi Customization Service](https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service)| [Intel commercialization devices](https://solutionsdirectory.intel.com/solutions-directory/processors/278/processors/309/processors/402/processors/782/processors/1107/processors/1110/processors/1175/processors/1344/processors/1348/processors/1349) | [Qualcomm-based devices](https://developer.qualcomm.com/hardware/snapdragon-410) |
 
 ## Community Devices
 While Microsoft has engineered support for IoT Core with specific SoCs that enable hundreds of devices, several companies have independently enabled support for IoT Core on their devices with additional SoCs to address the broad needs of the IoT market.
