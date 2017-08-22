@@ -11,9 +11,9 @@
         topicHref: "/windows/iot-core/index"  
         items:
               - name: Learn about hardware
-                tocHref: /windows/iot-core/learn about hardware
+                tocHref: /windows/iot-core/docs
                 topicHref: "/windows/iot-core/docs/suggestedboards"  
               - name: Connect your device
-                tocHref: /windows/iot-core/Connect your device
+                tocHref: /windows/iot-core/docs
                 topicHref: "windows/iot-core/docs/iotdashboard" 
                
