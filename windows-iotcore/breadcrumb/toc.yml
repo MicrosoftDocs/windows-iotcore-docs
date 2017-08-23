@@ -11,9 +11,27 @@
         topicHref: "/windows/iot-core/index"  
         items:
               - name: Learn about hardware
-                tocHref: /windows/iot-core/docs
-                topicHref: "/windows/iot-core/docs/suggestedboards"  
+                tocHref: /windows/iot-core/learn-about-hardware
+                topicHref: "/windows/iot-core/learn-about-hardware/suggestedboards"  
               - name: Connect your device
-                tocHref: /windows/iot-core/docs
-                topicHref: "windows/iot-core/docs/iotdashboard" 
-               
+                tocHref: /windows/iot-core/connect-your-device
+                topicHref: "windows/iot-core/connect-your-device/iotdashboard" 
+              - name: Manage your device
+                tocHref: /windows/iot-core/manage-your-device
+                topicHref: "windows/iot-core/manage-your-device/deviceportal"
+              - name: Secure your device
+                tocHref: /windows/iot-core/secure-your-device
+                topicHref: "/windows/iot-core/secure-your-device/buildingsecuredevices"  
+              - name: Develop your app
+                tocHref: /windows/iot-core/develop-your-app
+                topicHref: "windows/iot-core/develop-your-app/appdeployment" 
+              - name: Extend your app
+                tocHref: /windows/iot-core/extend-your-app
+                topicHref: "windows/iot-core/extend-your-app/cortanaoniotcore"
+              - name: Commercialize your device
+                tocHref: /windows/iot-core/commercialize-your-device
+                topicHref: "windows/iot-core/commercialize-your-device/oemlicenserequirements" 
+              - name: Release notes
+                tocHref: /windows/iot-core/release-notes
+                topicHref: "windows/iot-core/release-notes/rtm/creatorsupdate"  
+                   
