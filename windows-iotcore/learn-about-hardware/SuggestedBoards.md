@@ -10,6 +10,7 @@ The publicly available boards below are some of the same devices Microsoft uses 
 > [!NOTE]
 > Hardware features listed below may not be fully supported in all configurations
 
+
 > |                      |Raspberry Pi 2 v1.1 boards and earlier|Raspberry Pi 3| MinnowBoard Max| DragonBoard 410c |
 > |----------------------|-------------------|--------------|-------------------|---------------|
 > |SoC  | Broadcom BCM2836 | Broadcom BCM2837 | [Intel Atom Processor E3825](http://ark.intel.com/products/78474/Intel-Atom-Processor-E3825-1M-Cache-1_33-GHz) | [Qualcomm Snapdragon 410](https://www.qualcomm.com/products/snapdragon/processors/410)
