@@ -11,57 +11,57 @@ Looking for information about supported hardware platforms? Click [here](https:/
 ## USB Devices
 
 ### WiFi Dongles
-> | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
+> | Part Name / No. | Compatible Boards | Description | Relevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|---------------|------------------------------|
-> | Official Raspberry Pi WiFi dongle | RPi2/RPi3 | The official Raspberry Pi WiFi dongle offers the best possible WiFi performance for its diminutive size. | &#10004; |  |
-> | Airlink Wireless N 150 Mini USB Adapter Adapter | MBM | Airlink 101 AWL5077 Golden 150Mbps Wireless Mini USB Adapter with WPA2, WPA, and WEP enhanced wireless security | &#10004; | | 
-> | Panda PAU06 | MBM |  Panda 300Mbps Wireless N USB Adapter with High Gain Antenna | &#10004; | | 
-> | TP-LINK TL_WN725N |  RPi2/RPi3, MBM | TP-LINK TL-WN725N Wireless N Nano USB Adapter 150 Mbps `(USB/VID_0BDA&PID_8179)` | &#10004; | | 
-> | NET-DYN USB WiFi Adapter | MBM | WiFi USB Adapter NET-DYN | &#10004; | | 
-> | Realtek 8191 USB Wireless WiFi | RPi2/RPi3, MBM | Realtek 8191 300Mbps 802.11n/g/b/ USB Wireless WiFi LAN Network Card Adapter | &#10004; | | 
-> | Realtek 8192 USB Wireless WiFi | RPi2/RPi3, MBM | Realtek Single-Chip IEEE 802.11b/g/n 2T2R WLAN Controller with USB 2.0 Interface | &#10004; | |
-> | CanaKit USB Wireless WiFi | MBM | Chipset Ralink 5370 | &#10004; | |
+> | Official Raspberry Pi WiFi dongle | RPi2/RPi3 | The official Raspberry Pi WiFi dongle offers the best possible WiFi performance for its diminutive size. | | &#10004;  |
+> | Airlink Wireless N 150 Mini USB Adapter Adapter | MBM | Airlink 101 AWL5077 Golden 150Mbps Wireless Mini USB Adapter with WPA2, WPA, and WEP enhanced wireless security | | &#10004;  
+> | Panda PAU06 | MBM |  Panda 300Mbps Wireless N USB Adapter with High Gain Antenna | |  &#10004;  
+> | TP-LINK TL_WN725N |  RPi2/RPi3, MBM | TP-LINK TL-WN725N Wireless N Nano USB Adapter 150 Mbps `(USB/VID_0BDA&PID_8179)` |  | &#10004;  
+> | NET-DYN USB WiFi Adapter | MBM | WiFi USB Adapter NET-DYN | |  &#10004;  
+> | Realtek 8191 USB Wireless WiFi | RPi2/RPi3, MBM | Realtek 8191 300Mbps 802.11n/g/b/ USB Wireless WiFi LAN Network Card Adapter | | &#10004;  
+> | Realtek 8192 USB Wireless WiFi | RPi2/RPi3, MBM | Realtek Single-Chip IEEE 802.11b/g/n 2T2R WLAN Controller with USB 2.0 Interface | | &#10004; |
+> | CanaKit USB Wireless WiFi | MBM | Chipset Ralink 5370 | | &#10004; 
 
 ### Bluetooth Dongles
-> | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
+> | Part Name / No. | Compatible Boards | Description | Relevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | CSR Mini USB Blueooth V 4.0 Adapter | RPi2/RPi3, MBM | Class 2 Bluetooth 4.0 Smart Ready Adapter, low energy, dual power | &#10004; | |
-> | ORICO BTA-403 Mini Bluetooth 4.0 USB Dongle | RPi2/RPi3, MBM | Low-energy Bluetooth 4.0 adapter USB Micro Adapter Dongle | &#10004; | |
-> | CSR Mini USB Bluetooth V 4.0 Adapter | MBM | Class 2 Bluetooth 4.0 Smart Ready Adapter, low energy, dual power | &#10004; | |
+> | CSR Mini USB Blueooth V 4.0 Adapter | RPi2/RPi3, MBM | Class 2 Bluetooth 4.0 Smart Ready Adapter, low energy, dual power |  | &#10004; 
+> | ORICO BTA-403 Mini Bluetooth 4.0 USB Dongle | RPi2/RPi3, MBM | Low-energy Bluetooth 4.0 adapter USB Micro Adapter Dongle |  | &#10004; 
+> | CSR Mini USB Bluetooth V 4.0 Adapter | MBM | Class 2 Bluetooth 4.0 Smart Ready Adapter, low energy, dual power |  | &#10004;|
 
 ### Cameras
-> | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
+> | Part Name / No. | Compatible Boards | Description | Relevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | Microsoft Lifecam 3000 USB Camera | RPi2/RPi3, MBM | USB Webcam | &#10004; |  [Home Security Camera Project](https://developer.microsoft.com/en-us/windows/iot/samples/webcamapp) |
-> | Microsoft Lifecam HD-5000 | RPi2/RPi3, MBM | Microsoft LifeCam HD-5000 720p HD Webcam | &#10004; | |
+> | Microsoft Lifecam 3000 USB Camera | RPi2/RPi3, MBM | USB Webcam | [Home Security Camera Project](https://developer.microsoft.com/en-us/windows/iot/samples/webcamapp)|&#10004;|
+> | Microsoft Lifecam HD-5000 | RPi2/RPi3, MBM | Microsoft LifeCam HD-5000 720p HD Webcam | | &#10004; |
 > | Microsoft® LifeCam Studio™ | RPi2/RPi3 | Microsoft® LifeCam Studio™ (model: 1425) 1080p HD Webcam | | |
-> | Logitech Webcam C210 | RPi2/RPi3, MBM | USB Webcam, 1.3mp photo | &#10004; | |
+> | Logitech Webcam C210 | RPi2/RPi3, MBM | USB Webcam, 1.3mp photo |  |&#10004; |
 
 ### Audio
 > | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | Sabrent USB External Stereo Sound Adapter, Model AU-EMAC1 | RPi2/RPi3, MBM | Converts USB to 3.5mm audio and microphone signals | &#10004; | |
+> | Sabrent USB External Stereo Sound Adapter, Model AU-EMAC1 | RPi2/RPi3, MBM | Converts USB to 3.5mm audio and microphone signals | | &#10004; 
 
 ### Miscellaneous
-> | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links |
+> | Part Name / No. | Compatible Boards | Description | Relevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | Aeon Labs Z-Wave Z-Stick Series 2 USB Dongle DSA02203-ZWUS | RPi2/RPi3 | Series 2 Z-Wave USB Z-Stick Controller | &#10004; | [ZWave Sample](https://developer.microsoft.com/en-us/windows/iot/samples/zwaveadapter) |
-> | [Chalkboard Electronics 7” LCD Capacitive Touchscreen Display](https://www.chalk-elec.com/?page_id=1280#!/7-black-frame-universal-HDMI-LCD-with-capacitive-multi-touch/p/21750201/category=3094861) | RPi2/RPi3 | | &#10004; | [Updating firmware](https://www.chalk-elec.com/?p=1826) |
-> | Vodafone (Huawei) K5150 | RPi2/RPi3, MBM | Vodafone (Huawei) K5150 150Mbps 4G LTE FDD USB Mobile Broadband Modem | &#10004; | | 
-> | Sierra Wireless Beam (AirCard 340U) | MBM | 	Sierra Wireless Beam (AirCard 340U) 4G LTE USB Mobile Broadband Modem | &#10004; | |
-> | Microsoft Xbox 360 Controller | RPi2/RPi3 | An HID-compliant USB gamepad for Microsoft's Xbox 360 | &#10004; | [Robot Kit](https://microsoft.hackster.io/en-US/windowsiot/robot-kit-6dd474) | 
-> | [MyTeletouch](http://www.myteletouch.com/) | RPi2/RPi3 | An HID-compliant USB wireless mouse, keyboard and gamepad | &#10004; | |
+> | [Chalkboard Electronics 7” LCD Capacitive Touchscreen Display](https://www.chalk-elec.com/?page_id=1280#!/7-black-frame-universal-HDMI-LCD-with-capacitive-multi-touch/p/21750201/category=3094861) | RPi2/RPi3 | [Updating firmware](https://www.chalk-elec.com/?p=1826) | &#10004; |
+> | Vodafone (Huawei) K5150 | RPi2/RPi3, MBM | Vodafone (Huawei) K5150 150Mbps 4G LTE FDD USB Mobile Broadband Modem |  | &#10004;  |
+> | Sierra Wireless Beam (AirCard 340U) | MBM | 	Sierra Wireless Beam (AirCard 340U) 4G LTE USB Mobile Broadband Modem |  |&#10004; |
+> | Microsoft Xbox 360 Controller | RPi2/RPi3 | An HID-compliant USB gamepad for Microsoft's Xbox 360 | [Robot Kit](https://microsoft.hackster.io/en-US/windowsiot/robot-kit-6dd474) |  &#10004; |
+> | [MyTeletouch](http://www.myteletouch.com/) | RPi2/RPi3 | An HID-compliant USB wireless mouse, keyboard and gamepad |  | &#10004; |
 
 ## Other Hardware Peripherals
 
 ### Storage Media
-> | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links |
+> | Part Name / No. | Compatible Boards | Description | Relevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | Samsung 32GB EVO Class 10 Micro SDHC | RPi2/RPi3, MBM | An SD card that’s known to support running Windows 10 IoT Core on both the Raspberry Pi 2 or 3 and MBM. | | [Amazon Product Info](https://www.amazon.com/gp/product/B00IVPU786) |
 > | SanDisk Ultra Micro SDHC 16GB | RPi2/RPi3, MBM | An SD card that’s known to support running Windows 10 IoT Core on both the Raspberry Pi 2 or 3 and MBM. | |  [Amazon Product Info](https://www.amazon.com/SanDisk-Ultra-Micro-SDHC-16GB/dp/9966573445) | 
 
 ### Pi Hats
-> | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
+> | Part Name / No. | Compatible Boards | Description | elevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | [Adafruit 16-Channel PWM](https://www.adafruit.com/product/2327#description-anchor) | RPi2/RPi3 | Adds the capability to control up to 16 servos with no additional Raspberry Pi processing overhead. Capable of doing PWM up to 1.6KHz with 12 bit precision. | | [Adafruit Tutorial C# IoT Sample](https://github.com/golaat/Adafruit.Pwm) | 
 > | [Dexter Industries GrovePi](https://www.dexterindustries.com/shop/grovepi-board/) | RPi2/RPi3 | You can connect hundreds of different sensors without soldering, so you can program them to monitor, control, and automate devices in your life. | | [GrovePi Samples](https://github.com/DexterInd/GrovePi/) |
@@ -70,7 +70,7 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | [FEZ Cream](https://www.ghielectronics.com/catalog/product/541) | RPi2/RPi3 | The FEZ Utility allows for a Fast and Easy (FEZ) way to connect all kinds of sensors and devices to the Raspberry Pi using on-board headers. It also includes the circuitry needed to provide PWM outputs and analog inputs. The FEZ Utility is compatible with the RPi 2 Model B. An entire C# driver is provided for immediate use with Windows 10. | | [Developer's Guide](https://www.ghielectronics.com/docs/332/fez-utility-developers-guide) |
 
 ### Sensors
-> | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
+> | Part Name / No. | Compatible Boards | Description | Relevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | DHT11 basic temperature-humidity sensor | RPi2/RPi3, MBM | A basic, ultra low-cost digital temperature and humidity sensor. It uses a capacities humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed).  | | [GpioOneWireSample (DHT11)](https://developer.microsoft.com/en-us/windows/iot/samples/gpioonewire)|
 > | DHT22 temperature-humidity sensor | RPi2/RPi3, MBM | A basic, ultra low-cost digital temperature and humidity sensor. It uses a capacities humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed).  | | [GpioOneWireSample (DHT11)](https://developer.microsoft.com/en-us/windows/iot/samples/gpioonewire) | 
@@ -83,19 +83,19 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | Honeywell HMC5883L digital 3-axis compass/magnetometer | RPi2/RPi3 | A small 3-axis magnetometer for digital compass use and magnetic field measurements | | [I2C Samples](https://github.com/mickut/Win10-IoT-Sensors) |
 
 ### Port Expanders
-> | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
+> | Part Name / No. | Compatible Boards | Description | Relevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | MCP23008 8-bit I/O Port Expander | RPi2/RPi3, MBM | I2C Interface Chip, GPIO Port Expander. 8 ports, 18-PDIP package | | [I2C Port Explander Sample](https://www.hackster.io/4803/i2c-port-expander-sample-0a6d4f) |
 > | MCP23S17 16-bit I/O Port Expander | RPi2/RPi3, MBM | I2C Interface Chip, GPIO Port Expander. 16 ports, 28-SPDIP package | | [Interactive Piano sample](https://www.hackster.io/windowsiot/build-2014-piano-3b449c) |
 
 ### NFC/RFID/Proximity
-> | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
+> | Part Name / No. | Compatible Boards | Description | Relevant Links | Microsoft Verified |
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | NXP OM5577 demo board | RPi2/RPi3 | Demo board for the NXP PN7120 NFC chip. | | [ProximityDevice documentation](https://docs.microsoft.com/en-us/uwp/api/Windows.Networking.Proximity.ProximityDevice) |
 > | NXP PN547/PN548/PN7120 | RPi2/RPi3, MBM | Supported NXP NFC chips. | | |
 
 ### Miscellaneous
-> | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
+> | Part Name / No. | Compatible Boards | Description | Relevant Links | Microsoft Verified | 
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | Monochrome 1.3” 128x64 OLED graphic display | RPi2/RPi3, MBM | 1.3” diagonal, high contrast B/W OLED display. 128x64 individual white OLED pixels, each one is turned on or off by the controller chip. | | [SPI Display Sample](https://developer.microsoft.com/en-us/windows/iot/samples/spidisplay) |
 > | SN74HC595N Shift Register IC | RPi2/RPi3, MBM | IC 8-BIT SHIFT REGISTER 16-DIP | | [Shift Register Sample](https://developer.microsoft.com/en-us/windows/iot/Samples/shiftregister) |
