@@ -40,17 +40,17 @@ Looking for information about supported hardware platforms? Click [here](https:/
 ### Audio
 > | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | Sabrent USB External Stereo Sound Adapter, Model AU-EMAC1 | RPi2/RPi3, MBM | Converts USB to 3.5mm audio and microphone signals | | |
+> | Sabrent USB External Stereo Sound Adapter, Model AU-EMAC1 | RPi2/RPi3, MBM | Converts USB to 3.5mm audio and microphone signals | &#10004; | |
 
 ### Miscellaneous
 > | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links |
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | Aeon Labs Z-Wave Z-Stick Series 2 USB Dongle DSA02203-ZWUS | RPi2/RPi3 | Series 2 Z-Wave USB Z-Stick Controller | | [ZWave Sample](https://developer.microsoft.com/en-us/windows/iot/samples/zwaveadapter) |
-> | Chalkboard Electronics 7” LCD Capacitive Touchscreen Display | RPi2/RPi3 | | [Product Information](https://www.chalk-elec.com/?page_id=1280#!/7-black-frame-universal-HDMI-LCD-with-capacitive-multi-touch/p/21750201/category=3094861)| | [Updating firmware](https://www.chalk-elec.com/?p=1826) |
-> | Vodafone (Huawei) K5150 | RPi2/RPi3, MBM | Vodafone (Huawei) K5150 150Mbps 4G LTE FDD USB Mobile Broadband Modem | | | 
-> | Sierra Wireless Beam (AirCard 340U) | MBM | 	Sierra Wireless Beam (AirCard 340U) 4G LTE USB Mobile Broadband Modem | | |
-> | Microsoft Xbox 360 Controller | RPi2/RPi3 | An HID-compliant USB gamepad for Microsoft's Xbox 360 | | [Robot Kit](https://microsoft.hackster.io/en-US/windowsiot/robot-kit-6dd474) | Access using [HidDevice](https://docs.microsoft.com/en-us/uwp/api/Windows.Devices.HumanInterfaceDevice.HidDevice) (not [Gamepad](https://docs.microsoft.com/en-us/uwp/api/Windows.Gaming.Input.Gamepad)) | 
-> | MyTeletouch | RPi2/RPi3 | An HID-compliant USB wireless mouse, keyboard and gamepad | | MyTeletouch Page (http://myteletouch.com/) | Access using your phone (Iphone, Android, Windows) |
+> | Aeon Labs Z-Wave Z-Stick Series 2 USB Dongle DSA02203-ZWUS | RPi2/RPi3 | Series 2 Z-Wave USB Z-Stick Controller | &#10004; | [ZWave Sample](https://developer.microsoft.com/en-us/windows/iot/samples/zwaveadapter) |
+> | [Chalkboard Electronics 7” LCD Capacitive Touchscreen Display](https://www.chalk-elec.com/?page_id=1280#!/7-black-frame-universal-HDMI-LCD-with-capacitive-multi-touch/p/21750201/category=3094861) | RPi2/RPi3 | | &#10004; | [Updating firmware](https://www.chalk-elec.com/?p=1826) |
+> | Vodafone (Huawei) K5150 | RPi2/RPi3, MBM | Vodafone (Huawei) K5150 150Mbps 4G LTE FDD USB Mobile Broadband Modem | &#10004; | | 
+> | Sierra Wireless Beam (AirCard 340U) | MBM | 	Sierra Wireless Beam (AirCard 340U) 4G LTE USB Mobile Broadband Modem | &#10004; | |
+> | Microsoft Xbox 360 Controller | RPi2/RPi3 | An HID-compliant USB gamepad for Microsoft's Xbox 360 | &#10004; | [Robot Kit](https://microsoft.hackster.io/en-US/windowsiot/robot-kit-6dd474) | 
+> | [MyTeletouch](http://www.myteletouch.com/) | RPi2/RPi3 | An HID-compliant USB wireless mouse, keyboard and gamepad | &#10004; | |
 
 ## Other Hardware Peripherals
 
