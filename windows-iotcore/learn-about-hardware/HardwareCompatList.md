@@ -46,11 +46,11 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | Notes |
 > |----------------|-------------------|-------------|--------|------------------------------|------------------------------------|
 > | Aeon Labs Z-Wave Z-Stick Series 2 USB Dongle DSA02203-ZWUS | RPi2/RPi3 | Series 2 Z-Wave USB Z-Stick Controller | [ZWave Sample](https://developer.microsoft.com/en-us/windows/iot/samples/zwaveadapter) | | Easy network creation with push button pairing |
-> | Chalkboard Electronics 7” LCD Capacitive Touchscreen Display | RPi2/RPi3 | | [Product Information](https://www.chalk-elec.com/?page_id=1280#!/7-black-frame-universal-HDMI-LCD-with-capacitive-multi-touch/p/21750201/category=3094861)|  To get this working with Windows 10 IoT Core, do the following: 
+> | Chalkboard Electronics 7” LCD Capacitive Touchscreen Display | RPi2/RPi3 | | [Product Information](https://www.chalk-elec.com/?page_id=1280#!/7-black-frame-universal-HDMI-LCD-with-capacitive-multi-touch/p/21750201/category=3094861)| | [Updating firmware](https://www.chalk-elec.com/?p=1826) | To get this working with Windows 10 IoT Core, do the following: 
 1. Follow the Firmware Update instructions on chalk-elec.com 
 2. Flash firmware version 7-bf-mt-v2-2.hex onto the touchscreen 
 3. Hookup the HDMI and USB cables to the RPi2 or RPi3 
-4. Power on the touchscreen first, then power on your RPi2 or RPi3 | [Updating firmware](https://www.chalk-elec.com/?p=1826) | 
+4. Power on the touchscreen first, then power on your RPi2 or RPi3 |
 > | Vodafone (Huawei) K5150 | RPi2/RPi3, MBM | Vodafone (Huawei) K5150 150Mbps 4G LTE FDD USB Mobile Broadband Modem | | | | 
 > | Sierra Wireless Beam (AirCard 340U) | MBM | 	Sierra Wireless Beam (AirCard 340U) 4G LTE USB Mobile Broadband Modem | | | |
 > | Microsoft Xbox 360 Controller | RPi2/RPi3 | An HID-compliant USB gamepad for Microsoft's Xbox 360 | | [Robot Kit](https://microsoft.hackster.io/en-US/windowsiot/robot-kit-6dd474) | Access using [HidDevice](https://docs.microsoft.com/en-us/uwp/api/Windows.Devices.HumanInterfaceDevice.HidDevice) (not [Gamepad](https://docs.microsoft.com/en-us/uwp/api/Windows.Gaming.Input.Gamepad)) | 
@@ -67,4 +67,11 @@ Looking for information about supported hardware platforms? Click [here](https:/
 ### Pi Hats
 > | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | Notes |
 > |----------------|-------------------|-------------|--------|------------------------------|------------------------------------|
-> | Adafruit 16-Channel PWM | RPi2/RPi3 | Adds the capability to control up to 16 servos with no additional Raspberry Pi processing overhead. Capable of doing PWM up to 1.6KHz with 12 bit precision. | | 
+> | [Adafruit 16-Channel PWM](https://www.adafruit.com/product/2327#description-anchor) | RPi2/RPi3 | Adds the capability to control up to 16 servos with no additional Raspberry Pi processing overhead. Capable of doing PWM up to 1.6KHz with 12 bit precision. | | [Adafruit Tutorial C# IoT Sample](https://github.com/golaat/Adafruit.Pwm) | | 
+> | [Dexter Industries GrovePi](https://www.dexterindustries.com/shop/grovepi-board/) | RPi2/RPi3 | You can connect hundreds of different sensors without soldering, so you can program them to monitor, control, and automate devices in your life. | | [GrovePi Samples](https://github.com/DexterInd/GrovePi/) | |
+> | Dexter Industries GoPiGo | RPi2/RPi3 | The GoPiGo is a delightful and complete robot for the Raspberry Pi that turns your Pi into a fully operating robot. GoPiGo is a mobile robotic platform for the Raspberry Pi developed by Dexter Industries. | | [GoPiGo Samples](https://github.com/DexterInd/GoPiGo/tree/master/Software/CSharp) | |
+> | [FEZ HAT](https://www.ghielectronics.com/catalog/product/500) | RPi2/RPi3 | The FEZ HAT allows for a Fast and Easy (FEZ) way to connect all kinds of sensors and devices to the Raspberry Pi. The FEZ HAT is compatible with the RPi 2 Model B. An entire C# driver is provided for immediate use with Windows 10. | | | Good for use with Azure labs. Includes analog and PWM, temperature and light sensors, multi-color LEDs and more. | [Azure Integration Sample](https://www.ghielectronics.com/docs/329/fez-hat-developers-guide) |
+> | [FEZ Cream](https://www.ghielectronics.com/catalog/product/541) | RPi2/RPi3 | The FEZ Utility allows for a Fast and Easy (FEZ) way to connect all kinds of sensors and devices to the Raspberry Pi using on-board headers. It also includes the circuitry needed to provide PWM outputs and analog inputs. The FEZ Utility is compatible with the RPi 2 Model B. An entire C# driver is provided for immediate use with Windows 10. | | [Developer's Guide](https://www.ghielectronics.com/docs/332/fez-utility-developers-guide) | Includes 5v-tolerant GPIO pins, 14 PWM outputs, 8 analog inputs, and 4 LEDs, plus all original PI pins. |
+
+### Sensors
+
