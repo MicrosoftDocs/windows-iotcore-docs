@@ -34,7 +34,7 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | Microsoft Lifecam 3000 USB Camera | RPi2/RPi3, MBM | USB Webcam | &#10004; |  [Home Security Camera Project](https://developer.microsoft.com/en-us/windows/iot/samples/webcamapp) |
 > | Microsoft Lifecam HD-5000 | RPi2/RPi3, MBM | Microsoft LifeCam HD-5000 720p HD Webcam | &#10004; | |
-> | Microsoft® LifeCam Studio™ | RPi2/RPi3 | Microsoft® LifeCam Studio™ (model: 1425) 1080p HD Webcam | USB 2.0 (max. 30 frames per second) | | |
+> | Microsoft® LifeCam Studio™ | RPi2/RPi3 | Microsoft® LifeCam Studio™ (model: 1425) 1080p HD Webcam | | |
 > | Logitech Webcam C210 | RPi2/RPi3, MBM | USB Webcam, 1.3mp photo | &#10004; | |
 
 ### Audio
