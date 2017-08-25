@@ -13,7 +13,7 @@ Looking for information about supported hardware platforms? Click [here](https:/
 ### WiFi Dongles
 > | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
 > |----------------|-------------------|-------------|---------------|------------------------------|
-> | Official Raspberry Pi WiFi dongle | RPi2/RPi3 | The official Raspberry Pi WiFi dongle offers the best possible WiFi performance for its diminutive size. | >[!div class="checklist"] > * |  |
+> | Official Raspberry Pi WiFi dongle | RPi2/RPi3 | The official Raspberry Pi WiFi dongle offers the best possible WiFi performance for its diminutive size. | |  |
 > | Airlink Wireless N 150 Mini USB Adapter Adapter | MBM | Airlink 101 AWL5077 Golden 150Mbps Wireless Mini USB Adapter with WPA2, WPA, and WEP enhanced wireless security | | | 
 > | Panda PAU06 | MBM |  Panda 300Mbps Wireless N USB Adapter with High Gain Antenna | | | 
 > | TP-LINK TL_WN725N |  RPi2/RPi3, MBM | TP-LINK TL-WN725N Wireless N Nano USB Adapter 150 Mbps `(USB/VID_0BDA&PID_8179)` | | | 
@@ -21,6 +21,8 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | Realtek 8191 USB Wireless WiFi | RPi2/RPi3, MBM | Realtek 8191 300Mbps 802.11n/g/b/ USB Wireless WiFi LAN Network Card Adapter | | | 
 > | Realtek 8192 USB Wireless WiFi | RPi2/RPi3, MBM | Realtek Single-Chip IEEE 802.11b/g/n 2T2R WLAN Controller with USB 2.0 Interface | | |
 > | CanaKit USB Wireless WiFi | MBM | Chipset Ralink 5370 | | |
+
+ >[!div class="checklist"] > *
 
 ### Bluetooth Dongles
 > | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
