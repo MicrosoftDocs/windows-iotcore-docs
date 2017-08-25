@@ -73,6 +73,35 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | DHT11 basic temperature-humidity sensor | RPi2/RPi3, MBM | A basic, ultra low-cost digital temperature and humidity sensor. It uses a capacities humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed).  | | [GpioOneWireSample (DHT11)](https://developer.microsoft.com/en-us/windows/iot/samples/gpioonewire)|
-> | DHT22 temperature-humidity sensor | RPi2/RPi3, MBM | A basic, ultra low-cost digital temperature and humidity sensor. It uses a capacities humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed). | [GpioOneWireSample (DHT11)](https://developer.microsoft.com/en-us/windows/iot/samples/gpioonewire) | 
+> | DHT22 temperature-humidity sensor | RPi2/RPi3, MBM | A basic, ultra low-cost digital temperature and humidity sensor. It uses a capacities humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed).  | | [GpioOneWireSample (DHT11)](https://developer.microsoft.com/en-us/windows/iot/samples/gpioonewire) | 
 > | SparkFun Triple Axis Accelerometer Breakout - ADXL345 | RPi2/RPi3, MBM | Small, thin, low power, 3-axis MEMS accelerometer with high resolution (13-bit) measurement at up to ±16 g. Digital output data is formatted as 16-bit twos complement and is accessible through either a SPI (3- or 4-wire) or I2C digital interface. | | [I2C Accelerometer Sample](https://developer.microsoft.com/en-us/windows/iot/Samples/I2CAccelerometer.htm#I2C_Accelerometer) |
-> Aafruit BMP280 Temperature and Barometric Sensor |
+> | Adafruit BMP280 Temperature and Barometric Sensor | RPi2/RPi3 | Bosch environmental sensor with temperature, barometric pressure | |   |
+> | [Adafruit TCS34725 Color Sensor](http://www.adafruit.com/products/1334) | RPi2/RPi3 | RGB Color Sensor with IR filter and white LED - TCS34725 | | |
+> | Rohm BH1750FVI ambient light sensor | RPi2/RPi3 | Small I2C sensor for ambient light measurement | | [I2C Samples](https://github.com/mickut/Win10-IoT-Sensors) |
+> | Bosch BMP180 temperature and barometric sensor | RPi2/RPi3 | Bosch environmental sensor with tempreature, barometric pressure | | [I2C Samples](https://github.com/mickut/Win10-IoT-Sensors) |
+> | Dorji DSTH01 relative humidity sensor | RPi2/RPi3 | I2C relative humidity sensor | | [I2C Samples](https://github.com/mickut/Win10-IoT-Sensors)|
+> | Honeywell HMC5883L digital 3-axis compass/magnetometer | RPi2/RPi3 | A small 3-axis magnetometer for digital compass use and magnetic field measurements | | [I2C Samples](https://github.com/mickut/Win10-IoT-Sensors) |
+
+### Port Expanders
+> | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
+> |----------------|-------------------|-------------|--------|------------------------------|
+> | MCP23008 8-bit I/O Port Expander | RPi2/RPi3, MBM | I2C Interface Chip, GPIO Port Expander. 8 ports, 18-PDIP package | | [I2C Port Explander Sample](https://www.hackster.io/4803/i2c-port-expander-sample-0a6d4f) |
+> | MCP23S17 16-bit I/O Port Expander | RPi2/RPi3, MBM | I2C Interface Chip, GPIO Port Expander. 16 ports, 28-SPDIP package | | [Interactive Piano sample](https://www.hackster.io/windowsiot/build-2014-piano-3b449c) |
+
+### NFC/RFID/Proximity
+> | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
+> |----------------|-------------------|-------------|--------|------------------------------|
+> | NXP OM5577 demo board | RPi2/RPi3 | Demo board for the NXP PN7120 NFC chip. | | [ProximityDevice documentation](https://docs.microsoft.com/en-us/uwp/api/Windows.Networking.Proximity.ProximityDevice) |
+> | NXP PN547/PN548/PN7120 | RPi2/RPi3, MBM | Supported NXP NFC chips. | | |
+
+### Miscellaneous
+> | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
+> |----------------|-------------------|-------------|--------|------------------------------|
+> | Monochrome 1.3” 128x64 OLED graphic display | RPi2/RPi3, MBM | 1.3” diagonal, high contrast B/W OLED display. 128x64 individual white OLED pixels, each one is turned on or off by the controller chip. | | [SPI Display Sample](https://developer.microsoft.com/en-us/windows/iot/samples/spidisplay) |
+> | SN74HC595N Shift Register IC | RPi2/RPi3, MBM | IC 8-BIT SHIFT REGISTER 16-DIP | | [Shift Register Sample](https://developer.microsoft.com/en-us/windows/iot/Samples/shiftregister) |
+> | Microchip Technology ADC MCP3002-I/P | RPi2/RPi3, MBM | MCP3002 10bit Analog to Digital converter. ||  [Potentiometer Sensor Sample](https://developer.microsoft.com/en-us/windows/iot/samples/potentiometer) |
+> | Microchip Technology ADC MCP3208-CI/P | RPi2/RPi3, MBM | MCP3208 12bit Analog to Digital converter. | | [Potentiometer Sensor Sample](https://developer.microsoft.com/en-us/windows/iot/samples/potentiometer) |
+> | ADS1115 | RPi2/RPi3, MBM | Ultra-small, low-power, 16-bit ADC | | [ADC Bus Providers](https://github.com/ms-iot/BusProviders/tree/develop/ADC) |
+> | CP2102 USB 2.0 to TTL Module Serial Converter | RPi2/RPi3, MBM | CP2102 USB 2.0 to TTL Module Serial Converter | | [Serial Port Sample](https://developer.microsoft.com/en-us/windows/iot/Samples/serialuart) |
+> | PCA9685 | RPi2/RPi3, MBM | 16-channel, 12-bit PWM Fm+ I2C-bus LED controller. | | [PWM Bus Providers](https://github.com/ms-iot/BusProviders/tree/develop/PWM) |
+
