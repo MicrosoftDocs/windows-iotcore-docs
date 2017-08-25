@@ -22,7 +22,9 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | Realtek 8192 USB Wireless WiFi | RPi2/RPi3, MBM | Realtek Single-Chip IEEE 802.11b/g/n 2T2R WLAN Controller with USB 2.0 Interface | | |
 > | CanaKit USB Wireless WiFi | MBM | Chipset Ralink 5370 | | |
 
- > [!div class="checklist"] > * yes
+> [!div class="checklist"]
+> * Log in to Azure
+> * Create a resource group
 
 ### Bluetooth Dongles
 > | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
