@@ -14,28 +14,28 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
 > |----------------|-------------------|-------------|---------------|------------------------------|
 > | Official Raspberry Pi WiFi dongle | RPi2/RPi3 | The official Raspberry Pi WiFi dongle offers the best possible WiFi performance for its diminutive size. | &#10004; |  |
-> | Airlink Wireless N 150 Mini USB Adapter Adapter | MBM | Airlink 101 AWL5077 Golden 150Mbps Wireless Mini USB Adapter with WPA2, WPA, and WEP enhanced wireless security | | | 
-> | Panda PAU06 | MBM |  Panda 300Mbps Wireless N USB Adapter with High Gain Antenna | | | 
-> | TP-LINK TL_WN725N |  RPi2/RPi3, MBM | TP-LINK TL-WN725N Wireless N Nano USB Adapter 150 Mbps `(USB/VID_0BDA&PID_8179)` | | | 
-> | NET-DYN USB WiFi Adapter | MBM | WiFi USB Adapter NET-DYN | | | 
-> | Realtek 8191 USB Wireless WiFi | RPi2/RPi3, MBM | Realtek 8191 300Mbps 802.11n/g/b/ USB Wireless WiFi LAN Network Card Adapter | | | 
-> | Realtek 8192 USB Wireless WiFi | RPi2/RPi3, MBM | Realtek Single-Chip IEEE 802.11b/g/n 2T2R WLAN Controller with USB 2.0 Interface | | |
-> | CanaKit USB Wireless WiFi | MBM | Chipset Ralink 5370 | | |
+> | Airlink Wireless N 150 Mini USB Adapter Adapter | MBM | Airlink 101 AWL5077 Golden 150Mbps Wireless Mini USB Adapter with WPA2, WPA, and WEP enhanced wireless security | &#10004; | | 
+> | Panda PAU06 | MBM |  Panda 300Mbps Wireless N USB Adapter with High Gain Antenna | &#10004; | | 
+> | TP-LINK TL_WN725N |  RPi2/RPi3, MBM | TP-LINK TL-WN725N Wireless N Nano USB Adapter 150 Mbps `(USB/VID_0BDA&PID_8179)` | &#10004; | | 
+> | NET-DYN USB WiFi Adapter | MBM | WiFi USB Adapter NET-DYN | &#10004; | | 
+> | Realtek 8191 USB Wireless WiFi | RPi2/RPi3, MBM | Realtek 8191 300Mbps 802.11n/g/b/ USB Wireless WiFi LAN Network Card Adapter | &#10004; | | 
+> | Realtek 8192 USB Wireless WiFi | RPi2/RPi3, MBM | Realtek Single-Chip IEEE 802.11b/g/n 2T2R WLAN Controller with USB 2.0 Interface | &#10004; | |
+> | CanaKit USB Wireless WiFi | MBM | Chipset Ralink 5370 | &#10004; | |
 
 ### Bluetooth Dongles
 > | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | CSR Mini USB Blueooth V 4.0 Adapter | RPi2/RPi3, MBM | Class 2 Bluetooth 4.0 Smart Ready Adapter, low energy, dual power | | |
-> | ORICO BTA-403 Mini Bluetooth 4.0 USB Dongle | RPi2/RPi3, MBM | Low-energy Bluetooth 4.0 adapter USB Micro Adapter Dongle | | |
-> | CSR Mini USB Bluetooth V 4.0 Adapter | MBM | Class 2 Bluetooth 4.0 Smart Ready Adapter, low energy, dual power | | |
+> | CSR Mini USB Blueooth V 4.0 Adapter | RPi2/RPi3, MBM | Class 2 Bluetooth 4.0 Smart Ready Adapter, low energy, dual power | &#10004; | |
+> | ORICO BTA-403 Mini Bluetooth 4.0 USB Dongle | RPi2/RPi3, MBM | Low-energy Bluetooth 4.0 adapter USB Micro Adapter Dongle | &#10004; | |
+> | CSR Mini USB Bluetooth V 4.0 Adapter | MBM | Class 2 Bluetooth 4.0 Smart Ready Adapter, low energy, dual power | &#10004; | |
 
 ### Cameras
 > | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | Microsoft Lifecam 3000 USB Camera | RPi2/RPi3, MBM | USB Webcam | |  [Home Security Camera Project](https://developer.microsoft.com/en-us/windows/iot/samples/webcamapp) | |
-> | Microsoft Lifecam HD-5000 | RPi2/RPi3, MBM | Microsoft LifeCam HD-5000 720p HD Webcam | USB 2.0 | |
+> | Microsoft Lifecam 3000 USB Camera | RPi2/RPi3, MBM | USB Webcam | &#10004; |  [Home Security Camera Project](https://developer.microsoft.com/en-us/windows/iot/samples/webcamapp) |
+> | Microsoft Lifecam HD-5000 | RPi2/RPi3, MBM | Microsoft LifeCam HD-5000 720p HD Webcam | &#10004; | |
 > | Microsoft® LifeCam Studio™ | RPi2/RPi3 | Microsoft® LifeCam Studio™ (model: 1425) 1080p HD Webcam | USB 2.0 (max. 30 frames per second) | | |
-> | Logitech Webcam C210 | RPi2/RPi3, MBM | USB Webcam, 1.3mp photo | | |
+> | Logitech Webcam C210 | RPi2/RPi3, MBM | USB Webcam, 1.3mp photo | &#10004; | |
 
 ### Audio
 > | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
