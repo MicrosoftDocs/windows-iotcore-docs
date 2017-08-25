@@ -70,4 +70,9 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | [FEZ Cream](https://www.ghielectronics.com/catalog/product/541) | RPi2/RPi3 | The FEZ Utility allows for a Fast and Easy (FEZ) way to connect all kinds of sensors and devices to the Raspberry Pi using on-board headers. It also includes the circuitry needed to provide PWM outputs and analog inputs. The FEZ Utility is compatible with the RPi 2 Model B. An entire C# driver is provided for immediate use with Windows 10. | | [Developer's Guide](https://www.ghielectronics.com/docs/332/fez-utility-developers-guide) |
 
 ### Sensors
-
+> | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
+> |----------------|-------------------|-------------|--------|------------------------------|
+> | DHT11 basic temperature-humidity sensor | RPi2/RPi3, MBM | A basic, ultra low-cost digital temperature and humidity sensor. It uses a capacities humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed).  | | [GpioOneWireSample (DHT11)](https://developer.microsoft.com/en-us/windows/iot/samples/gpioonewire)|
+> | DHT22 temperature-humidity sensor | RPi2/RPi3, MBM | A basic, ultra low-cost digital temperature and humidity sensor. It uses a capacities humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed). | [GpioOneWireSample (DHT11)](https://developer.microsoft.com/en-us/windows/iot/samples/gpioonewire) | 
+> | SparkFun Triple Axis Accelerometer Breakout - ADXL345 | RPi2/RPi3, MBM | Small, thin, low power, 3-axis MEMS accelerometer with high resolution (13-bit) measurement at up to ±16 g. Digital output data is formatted as 16-bit twos complement and is accessible through either a SPI (3- or 4-wire) or I2C digital interface. | | [I2C Accelerometer Sample](https://developer.microsoft.com/en-us/windows/iot/Samples/I2CAccelerometer.htm#I2C_Accelerometer) |
+> Aafruit BMP280 Temperature and Barometric Sensor |
