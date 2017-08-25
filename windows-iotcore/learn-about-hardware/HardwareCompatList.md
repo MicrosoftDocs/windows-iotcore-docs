@@ -38,14 +38,14 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | Logitech Webcam C210 | RPi2/RPi3, MBM | USB Webcam, 1.3mp photo |  |&#10004; |
 
 ### Audio
-> | Part Name / No. | Compatible Boards | Description | Microsoft Verified | Relevant Links | 
+> | Part Name / No. | Compatible Boards | Description | Relevant Links | Microsoft Verified |
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | Sabrent USB External Stereo Sound Adapter, Model AU-EMAC1 | RPi2/RPi3, MBM | Converts USB to 3.5mm audio and microphone signals | | &#10004; 
 
 ### Miscellaneous
-> | Part Name / No. | Compatible Boards | Description | Microsoft Verified  | Relevant Links |
+> | Part Name / No. | Compatible Boards | Description | Relevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | Aeon Labs Z-Wave Z-Stick Series 2 USB Dongle DSA02203-ZWUS | RPi2/RPi3 | Series 2 Z-Wave USB Z-Stick Controller | | [ZWave Sample](https://developer.microsoft.com/en-us/windows/iot/samples/zwaveadapter) | &#10004; |
+> | Aeon Labs Z-Wave Z-Stick Series 2 USB Dongle DSA02203-ZWUS | RPi2/RPi3 | Series 2 Z-Wave USB Z-Stick Controller | [ZWave Sample](https://developer.microsoft.com/en-us/windows/iot/samples/zwaveadapter) | &#10004; |
 > | [Chalkboard Electronics 7” LCD Capacitive Touchscreen Display](https://www.chalk-elec.com/?page_id=1280#!/7-black-frame-universal-HDMI-LCD-with-capacitive-multi-touch/p/21750201/category=3094861) | RPi2/RPi3 | | [Updating firmware](https://www.chalk-elec.com/?p=1826) | &#10004; |
 > | Vodafone (Huawei) K5150 | RPi2/RPi3, MBM | Vodafone (Huawei) K5150 150Mbps 4G LTE FDD USB Mobile Broadband Modem |  | &#10004;  |
 > | Sierra Wireless Beam (AirCard 340U) | MBM | 	Sierra Wireless Beam (AirCard 340U) 4G LTE USB Mobile Broadband Modem |  |&#10004; |
@@ -68,7 +68,7 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | Dexter Industries GoPiGo | RPi2/RPi3 | The GoPiGo is a delightful and complete robot for the Raspberry Pi that turns your Pi into a fully operating robot. GoPiGo is a mobile robotic platform for the Raspberry Pi developed by Dexter Industries. | [GoPiGo Samples](https://github.com/DexterInd/GoPiGo/tree/master/Software/CSharp) | |
 > | [FEZ HAT](https://www.ghielectronics.com/catalog/product/500) | RPi2/RPi3 | The FEZ HAT allows for a Fast and Easy (FEZ) way to connect all kinds of sensors and devices to the Raspberry Pi. The FEZ HAT is compatible with the RPi 2 Model B. An entire C# driver is provided for immediate use with Windows 10.| [Azure Integration Sample](https://www.ghielectronics.com/docs/329/fez-hat-developers-guide) | &#10004; |
 > | [FEZ Cream](https://www.ghielectronics.com/catalog/product/541) | RPi2/RPi3 | The FEZ Cream allows for a Fast and Easy (FEZ) way to connect all kinds of sensors and devices to the Raspberry Pi using .NET Gadgeteer style sockets. The FEZ Cream is compatible with the RPi 2 Model B. An entire C# driver is provided for immediate use with Windows 10.| [Developer's Guide](https://www.ghielectronics.com/docs/331/fez-cream-developers-guide) |  &#10004; |
-> | [FEZ Utility](https://www.ghielectronics.com/catalog/product/545) | RPi2/RPi3 | The FEZ Utility allows for a Fast and Easy (FEZ) way to connect all kinds of sensors and devices to the Raspberry Pi using on-board headers. It also includes the circuitry needed to provide PWM outputs and analog inputs. The FEZ Utility is compatible with the RPi 2 Model B. An entire C# driver is provided for immediate use with Windows 10. | | [Developer's Guide](https://www.ghielectronics.com/docs/332/fez-utility-developers-guide) |  |
+> | [FEZ Utility](https://www.ghielectronics.com/catalog/product/545) | RPi2/RPi3 | The FEZ Utility allows for a Fast and Easy (FEZ) way to connect all kinds of sensors and devices to the Raspberry Pi using on-board headers. It also includes the circuitry needed to provide PWM outputs and analog inputs. The FEZ Utility is compatible with the RPi 2 Model B. An entire C# driver is provided for immediate use with Windows 10. | | [Developer's Guide](https://www.ghielectronics.com/docs/332/fez-utility-developers-guide)  |
 
 ### Sensors
 > | Part Name / No. | Compatible Boards | Description | Relevant Links | Microsoft Verified  | 
