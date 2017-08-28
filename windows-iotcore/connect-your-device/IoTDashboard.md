@@ -30,7 +30,7 @@ The IoT Dashboard makes it easy to set up a new device. For detailed instruction
 
 ### SD card
 The type, make and model of the SD card greatly affects both the performance and the quality of IoT Core.
-A slow card can take up to five times longer to boot than our [recommended cards](hardwarecompatlist.md).
+A slow card can take up to five times longer to boot than our [recommended cards](../learn-about-hardware/hardwarecompatlist.md).
 An older, less reliable SD card may not even work. If you continue to run into problems installing, consider replacing the SD card.
 
 ### Device Name
@@ -71,7 +71,7 @@ To find your device, go to **My Devices**. If your device is not listed, try reb
 
 
 ### Connect to your device
-Right click and select **Open in Device Portal**. This will launch the [Windows Device Portal](DevicePortal.md) page and is the best way to interact and manage your device.
+Right click and select **Open in Device Portal**. This will launch the [Windows Device Portal](../manage-your-device/DevicePortal.md) page and is the best way to interact and manage your device.
 
 ![IoTDashboard View Devices](../media/IoTDashboard/IoTDashboard_RightClickMenu.PNG)
 
