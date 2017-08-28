@@ -1,3 +1,15 @@
+---
+title: Minnowboard Max Pin Mappings
+author: saraclay
+ms.author: saclayt
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Pin mappings for Minnowboard Max.
+keywords: windows iot, Minnowboard Max, pin mappings, GPIO
+---
+
 # MinnowBoard Max Pin Mappings
 
 ## Overview
