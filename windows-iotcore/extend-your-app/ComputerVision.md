@@ -1,3 +1,15 @@
+---
+title: Computer Vision
+author: derekameer
+ms.author: demeer
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn how to use Microosft Cognitive Services and OpenCV for your IoT device.
+keywords: windows iot, computer vision, Cognitive Services, OpenCV
+---
+
 # Computer Vision
 
 Humans perceive our three-dimensional world with relative ease. Starting from an early age, our brains can gather valuable insights including feature identification, obstacle avoidance, coordination, depth perception, and many others from visual stimuli. Computer vision is an attempt to use processors and cameras to do the same thing. It has countless applications for today's devices. A drone can use it to rapidly detect and avoid obstacles during flight; a factory can use it to detect cosmetic defects in the smallest components on the assembly line; and a person can use it to detect his or her heart rate without use of a monitor or doctor's equipment. Our data-focused world has made computer vision an incredibly active research area. Companies are utilizing it in ways considered improbable even ten years ago. As computers, cameras, and data becomes more ingrained in our society, tools to leverage computer vision's most exciting capabilites should be made as easy to access and use as possible. Windows 10 IoT Core attempts to satisfy this need through compatability with two offerings: Microsoft Cognitive Services and OpenCV.
