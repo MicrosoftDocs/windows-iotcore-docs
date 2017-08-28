@@ -1,3 +1,15 @@
+---
+title: Network packet capture
+author: saraclay
+ms.author: saclayt
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn how to use Microsoft Message Analyzer to enable network packet capture
+keywords: windows iot, network packet, network packet capture, Microsoft Message Analyzer, PowerShell
+---
+
 # Network packet capture
 
 You can use [Microsoft Message Analyzer](http://www.microsoft.com/en-us/download/details.aspx?id=44226) to capture, display, and analyze protocol messaging traffic on your Windows 10 IoT Core device.
