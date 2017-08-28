@@ -32,7 +32,7 @@ The functionality is easy-to-use, and is included out-of-box on the latest Insid
   
 ## Setup
 ___
-To get started, you'll need to set up a Windows 10 IoT Core device with the latest build of Windows 10 (Creators Update) - visit the [Get Started](/GetStarted) page to set up your board.
+To get started, you'll need to set up a Windows 10 IoT Core device with the latest build of Windows 10 (Creators Update) - visit the [Get Started](https://developer.microsoft.com/en-us/windows/iot/getstarted) page to set up your board.
 
 Setup is quick and easy - follow the three steps below to use the remote display technology.
 
