@@ -1,3 +1,15 @@
+---
+title: PowerShell
+author: paulmon
+ms.author: paulmonson
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn how to use PowerShell with Windows IoT Core.
+keywords: windows iot, PowerShell, Windows PowerShell, command line, command-line shell
+---
+
 # PowerShell
 
 Remotely configure and manage any Windows 10 IoT Core device by using Windows PowerShell.
