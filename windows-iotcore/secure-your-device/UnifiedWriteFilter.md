@@ -1,3 +1,15 @@
+---
+title: Building Secure Devices with Windows 10 IoT Core
+author: saraclay
+ms.author: saclayt
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn how to use the Unified Write Filter on Windows 10 IoT Core.
+keywords: windows iot, Unified Write Filter, security, memory, storage media
+---
+
 # Using the Unified Write Filter on Windows 10 IoT Core
 
 The Unified Write Filter (UWF) is a feature to protect physical storage media from data writes. UWF intercepts all write attempts to a protected volume and redirects those write attempts to a virtual overlay. This improves the reliability and stability of your device and reduces the wear on write-sensitive media, such as flash memory media like solid-state drives.
