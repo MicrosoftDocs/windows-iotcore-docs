@@ -24,7 +24,7 @@ ___
 ### On the device
 
 * Make sure that your device has an IoTCore image installed by following the [Get Started instructions](https://developer.microsoft.com/en-us/windows/iot/getstarted).
-* Connect to your device via [Powershell](PowerShell.md).
+* Connect to your device via [Powershell](../manage-your-device/PowerShell.md).
 
 ### On the PC
 
@@ -129,7 +129,7 @@ When Installation completes, the device will reboot again, and the VS Output scr
 1.  From the build window, make sure that the configurations are correct – the current build arch is the same as the target device arch.  This is where having the arch in the target name is valuable.  The target will be displayed in the view box on the menu bar in VS on the top-middle-right.
 2.  Press **F5**.  The target will be built, deployed, and attached to the VS Kernel Debugger.
 
-* After the reboot, make sure PowerShell is still connected to it, otherwise, re-connect to the target device using the [PowerShell `enter-pssession` command](PowerShell.md).
+* After the reboot, make sure PowerShell is still connected to it, otherwise, re-connect to the target device using the PowerShell `enter-pssession` command..
 
 
 ## Known Issues
