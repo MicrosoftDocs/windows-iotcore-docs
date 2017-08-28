@@ -1,4 +1,16 @@
-# TPM on Windows 10 IoT Core
+---
+title: Trusted Platform Module (TPM)
+author: saraclay
+ms.author: saclayt
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn about using a Trusted Platform Module on Windows 10 IoT Core.
+keywords: windows iot, security, Trusted Platform Module, TPM, cryptography, keys
+---
+
+# Trusted Platform Module (TPM) on Windows 10 IoT Core
 
 ## What is TPM?
 A Trusted Platform Module (TPM), is a cryptographic coprocessor including capabilities for random number generation, secure generation of cryptographic keys and limitation of their use. It also includes capabilities such as remote attestation and sealed storage.
