@@ -1,10 +1,22 @@
+---
+title: Lightning Setup Guide
+author: msalehmsft
+ms.author: msaleh
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn how to change the default controller driver to the Lightning DMAP driver on a device.
+keywords: windows iot, lightning, setup, lightning setup, Windows Device Portal
+---
+
 # Lightning Setup Guide
 
 This guide will walk you through the steps needed to change the default controller driver to the Lightning direct memory access mapped (DMAP) driver on a Windows IoT Core device. This will allow the use of Lightning-enabled applications on that device.
 
 ## Change the Default Controller Driver
 
-We will want to open the Windows Device Portal
+We will want to open the Windows Device Portal.
 
 1. Locate the IP address of your device, either by using the Windows 10 IoT Core Dashboard application or hooking up your board to a monitor.
 
