@@ -2,7 +2,7 @@
 title: Managing IoT Core Devices
 author: parameshbabu
 ms.author: pabab
-ms.date: 08/22/2017
+ms.date: 08/28/2017
 ms.topic: article
 ms.prod: Windows
 ms.technology: IoT
