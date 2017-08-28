@@ -1,3 +1,15 @@
+---
+title: Dragonboard Pin Mappings
+author: saraclay
+ms.author: saclayt
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Pin mappings for Dragonboard.
+keywords: windows iot, Dragonboard, pin mappings, GPIO
+---
+
 # Dragonboard Pin Mappings
 
 ![Dragonboard Pin Header](../media/PinMappingsDB/DB_Pinout.png)
