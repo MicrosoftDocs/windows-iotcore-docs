@@ -1,5 +1,5 @@
 ---
-title: Windows 10 IoT Core Recovery
+title: Using WiFi on your Windows 10 IoT Core device
 author: derekameer
 ms.author: demeer
 ms.date: 08/28/2017
