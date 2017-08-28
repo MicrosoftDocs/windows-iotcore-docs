@@ -1,4 +1,16 @@
- # Supported languages and app types
+---
+title: Support languages and app types for IoT Core
+author: msalehmsft
+ms.author: msaleh
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn about the languages and app types that are supported by IoT Core.
+keywords: windows iot, languages, app types, UWP, supported
+---
+
+# Supported languages and app types on IoT Core
 Learn about the languages that are supported on Windows 10 IoT Core as well as the UWP and non-UWP app types that are supported on IoT Core.
 
 ## Application Types
