@@ -1,3 +1,14 @@
+---
+title: Create and Install a package
+author: pabab
+ms.author: parameshbabu
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: How to create and install packages for IoT Core.
+keywords: windows iot, package creation, package installation, windows iot
+---
 
 # Create and install a package
 [Packages](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/iot-core-manufacturing-guide#Packages) are the logical building blocks of IoT Core. From device drivers to system files, every component must be contained in a package. This is the smallest servicable unit on the device.
