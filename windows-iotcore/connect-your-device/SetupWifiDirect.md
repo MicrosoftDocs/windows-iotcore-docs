@@ -1,5 +1,5 @@
 ---
-title: Windows 10 IoT Core Recovery
+title: Using WiFi Direct on your Windows 10 Iot Core Device
 author: derekameer
 ms.author: demeer
 ms.date: 08/28/2017
