@@ -18,7 +18,7 @@ Windows IoT Core is a version of Windows 10 that is optimized for smaller device
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="release-notes/rtm/creatorsupdate.md">
+        <a href="release-notes/commercial/creatorsupdate.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
