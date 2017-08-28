@@ -11,7 +11,7 @@ keywords: windows iot, bluetooth, bluetooth support, devices, device portal
 ---
 
 # Bluetooth Support
-Windows 10 IoT Core supports Bluetooth 4.0. A list of supported Bluetooth dongles can be found in the [Hardware Compatibility List](../docs/HardwareCompatList.md).
+Windows 10 IoT Core supports Bluetooth 4.0. A list of supported Bluetooth dongles can be found in the [Hardware Compatibility List](../learn-about-hardware/HardwareCompatList.md).
 
 ## Supported Bluetooth Profiles
 IoT Core supports the following Bluetooth profiles:
