@@ -1,3 +1,15 @@
+---
+title: Cortana on IoT Core
+author: zhuridartem
+ms.author: artemz
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn about how to enable Cortana on IoT Core.
+keywords: windows iot, Cortana, voice, AI, digital assistant
+---
+
 # Cortana on IoT Core
 
 Cortana is a personal digital assistant working across all your devices to help you in your daily life. She learns about you; helps you get things done by completing tasks; interacts with you using natural language in a consistent, contextual way; and always looks out for you. Cortana has a consistent visual identity, personality, and voice.
