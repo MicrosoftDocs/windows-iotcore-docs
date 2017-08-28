@@ -1,6 +1,19 @@
+---
+title: Windows 10 IoT Core Recovery
+author: parameshbabu
+ms.author: pabab
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn about device recovery and how it works for Windows 10 IoT Core devices.
+keywords: windows iot, recovery, device recovery, windows iot
+---
+
 # Windows 10 IoT Core Recovery
 
 Device recovery is a process to recover inoperable devices due to incorrect or bad storage state. This is done by booting into a known safe OS or recovery OS and re-flash the storage media.
+
 > [!NOTE]
 > This process does not recover from hardware failures of storage (e.g. catastrophic media failure).
 
