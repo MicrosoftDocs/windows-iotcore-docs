@@ -1,5 +1,5 @@
 ---
-title: Windows 10 IoT Core Recovery
+title: Use DISM to flash Windows 10 IoT Core
 author: bfjelds
 ms.author: Brian.Fjeldstad
 ms.date: 08/28/2017
