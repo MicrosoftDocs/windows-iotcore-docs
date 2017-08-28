@@ -1,3 +1,15 @@
+---
+title: Raspberry Pi 2 & 3 Pin Mappings
+author: saraclay
+ms.author: saclayt
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Pin mappings for Raspberry Pi 2 & 3.
+keywords: windows iot, Rasperry Pi 2, Raspberry Pi 3, pin mappings, GPIO
+---
+
 # Raspberry Pi 2 & 3 Pin Mappings
 
 ![Raspberry Pi 2 & 3 Pin Header](../media/PinMappingsRPI/RP2_Pinout.png)
@@ -20,7 +32,6 @@ Let's look at the GPIO available on this device.
 
 The following GPIO pins are accessible through APIs:
 
-> [!div class="mx-tdBreakAll"]
 > | GPIO# | Power-on Pull | Alternate Functions | Header Pin         |
 > |-------|---------------|---------------------|--------------------|
 > | 2     | PullUp        | I2C1 SDA            | 3                  |
@@ -173,7 +184,6 @@ Let's look at the I2C bus available on this device.
 
 There is one I2C controller **I2C1** exposed on the pin header with two lines **SDA** and **SCL**. 1.8K&#x2126; internal pull-up resistors are already installed on the board for this bus.
 
-> [!div class="mx-tdBreakAll"]
 > | Signal Name | Header Pin Number | Gpio Number |
 > |-------------|-------------------|-------------|
 > | SDA         | 3                 | 2           |
@@ -209,7 +219,6 @@ There are two SPI bus controllers available on the RPi2/3.
 
 ### SPI0
 
-> [!div class="mx-tdBreakAll"]
 > | Signal Name | Header Pin Number | Gpio Number |
 > |-------------|-------------------|-------------|
 > | MOSI        | 19                | 10          |
@@ -220,7 +229,6 @@ There are two SPI bus controllers available on the RPi2/3.
 
 ### SPI1
 
-> [!div class="mx-tdBreakAll"]
 > | Signal Name | Header Pin Number | Gpio Number |
 > |-------------|-------------------|-------------|
 > | MOSI        | 38                | 20          |
