@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: Windows
 ms.technology: IoT
 description: How to create and install packages for IoT Core.
-keywords: windows iot, package creation, package installation, windows iot
+keywords: windows iot, package creation, package installation
 ---
 
 # Create and install a package
