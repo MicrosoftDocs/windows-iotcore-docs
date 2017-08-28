@@ -1,5 +1,17 @@
+---
+title: Install USB Peripheral Drivers
+author: saraclay
+ms.author: saclayt
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn how to add third-party USB drivers for peripheral devices.
+keywords: windows iot, USB drivers, peripheral devices, USB
+---
+
 # Install USB peripheral drivers
-Follow the steps below to add 3rd party drivers (usb) for peripheral devices such as USB Mobile broadband modems, printers, scanners etc. 
+Follow the steps below to add third-party drivers (usb) for peripheral devices such as USB Mobile broadband modems, printers, scanners etc. 
 
 ## Step 1: Get Drivers from PC
 ___
