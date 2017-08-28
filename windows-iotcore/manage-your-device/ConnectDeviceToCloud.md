@@ -1,3 +1,15 @@
+---
+title: Connect your device to the cloud
+author: saraclay
+ms.author: saclayt
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn how to connect your deice to the cloud.
+keywords: windows iot, Azure, security, Trusted Platform Module, SoC
+---
+
 # Connect your device to the cloud
 
 Storing secure information such as a password or a certificate on a device could
