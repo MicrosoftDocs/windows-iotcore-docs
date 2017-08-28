@@ -1,3 +1,15 @@
+---
+title: Windows 10 IoT Core Recovery
+author: derekameer
+ms.author: demeer
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn how to use and setup wifi for Windows 10 IoT Core.
+keywords: windows iot, wifi, setup, devices
+---
+
 # Using WiFi on your Windows 10 IoT Core device
 
 WiFi is supported on Windows 10 IoT Core devices through the use of a USB WiFi adapter. Using WiFi provides all the functionality of a wired connection,
