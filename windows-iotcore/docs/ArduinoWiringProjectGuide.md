@@ -1,10 +1,22 @@
+---
+title: Arduino Wiring Project Guide
+author: saraclay
+ms.author: saclayt
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn about the creation, setup, and deployment of an Arduino Wiring project using Windows IoT Core.
+keywords: windows iot, Arduino, Arduino wiring, Lightning Performance, Visual Studio
+---
+
 # Arduino Wiring Project Guide
 
-This guide will walk through the creation, setup, and deployment of an Arduino Wiring project using Windows IoT Core!
+This guide will walk through the creation, setup, and deployment of an Arduino Wiring project using Windows IoT Core.
 
-Arduino Wiring projects utilize the familiar, easy to use Arduino Wiring API with Windows IoT Lightning DMAP driver: a driver using direct memory mapping to provide significant [performance speeds](LightningPerformance.md). You can copy & paste Arduino sketches and libraries into your IoT Core Arduino Wiring projects and run them on supported IoT Core devices, including Raspberry Pi2, 3 and Minnowboard Max! See the <a href="#develop">develop section</a> of this page for more information.
+Arduino Wiring projects utilize the familiar, easy to use Arduino Wiring API with Windows IoT Lightning DMAP driver: a driver using direct memory mapping to provide significant [performance speeds](LightningPerformance.md). You can copy & paste Arduino sketches and libraries into your IoT Core Arduino Wiring projects and run them on supported IoT Core devices, including Raspberry Pi2, 3 and Minnowboard Max! See the develop section of this page for more information.
 
-## Install the Microsoft IoT Templates!
+## Install the Microsoft IoT Templates
 
 We've provided a Visual Studio extension which will automatically install a VS template for the Arduino Wiring projects as well as other Microsoft IoT project types. 
 
@@ -14,8 +26,6 @@ We've provided a Visual Studio extension which will automatically install a VS t
 ## Change the Default Controller Driver
 
 You will need to be running the Direct Memory Mapped Driver to write Arduino Wiring solutions! Refer to the [Lightning Setup Guide](LightningSetup.md) for instructions!
-
-<a name="develop"></a>
 
 ## Develop
 Complete one of the "Wiring" samples on the [Samples Page](https://developer.microsoft.com/en-us/windows/iot/samples), or build your own project! Any of the samples we've created that are written using Arduino Wiring will be listed like so: [Blinky (Wiring)](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinkybackgroundwiring). Blinky, the cononical "Hello World" project for IoT projects, is a great place to start for your first project!
