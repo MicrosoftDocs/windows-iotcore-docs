@@ -1,10 +1,20 @@
+---
+title: Arduino Wiring Porting Guide
+author: saraclay
+ms.author: saclayt
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn about modifications and common issues that come up when deploying Arduino Wiring projects.
+keywords: windows iot, Arduino, wiring, Visual Studio, porting
+---
+
 # Arduino Wiring Porting Guide
 
-Arduino Wiring sketches and libraries can be copy/pasted into an Arduino Wiring project inside Visual Studio and run on Raspberry Pi 2, Raspberry Pi 3 or Minnowboard Max. Sometimes there are slight modifications that need to be made to these files in order to make them more compatible with the Windows environment, or the board you are working with. This guide will cover those modifications as well as common issues that you may run into when deploying Arduino Wiring projects!
+Arduino Wiring sketches and libraries can be copy/pasted into an Arduino Wiring project inside Visual Studio and run on Raspberry Pi 2, Raspberry Pi 3 or Minnowboard Max. Sometimes there are slight modifications that need to be made to these files in order to make them more compatible with the Windows environment, or the board you are working with. This guide will cover those modifications as well as common issues that you may run into when deploying Arduino Wiring projects.
 
 ## Porting
-
-<a name="port_pins"></a>
 
 ### Updating Pins
 
@@ -25,7 +35,7 @@ pinMode( GPIO5, OUTPUT );
 digitalWrite( GPIO5, HIGH );
 ```
 
-The pre-defined pin names can be found in [`pins_arduino.h'](https://github.com/ms-iot/lightning/blob/develop/source/pins_arduino.h) and included in every Arduino Wiring project, but since there will be different physical connector pins available depending on the hardware setup you are building for, we've also included a table here to describe which pin names are available for each device.
+The pre-defined pin names can be found in [pins_arduino.h](https://github.com/ms-iot/lightning/blob/develop/source/pins_arduino.h) and included in every Arduino Wiring project, but since there will be different physical connector pins available depending on the hardware setup you are building for, we've also included a table here to describe which pin names are available for each device.
 
 #### Raspberry Pi 2 and 3
 
