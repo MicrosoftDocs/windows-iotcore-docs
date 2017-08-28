@@ -34,7 +34,6 @@ Let's look at the GPIO available on this device.
 
 The following GPIO pins are accessible through APIs:
 
-{:.table.table-bordered}
 > | GPIO# | Header Pin         |
 > |-------|--------------------|
 > | 36    | 23                 |
