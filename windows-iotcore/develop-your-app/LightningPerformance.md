@@ -1,11 +1,21 @@
+---
+title: Lightning Performance Testing
+author: msalehmsft
+ms.author: msaleh
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn more about frequency for Windows IoT Lightning functionality.
+keywords: windows iot, lightning performance, lightning functionality, GPIO
+---
+
 # Windows IoT Lightning Performance Testing
 
 The GPIO performance was tested for Windows IoT Lightning functionality using a simple GPIO toggle app, [available here](https://github.com/ms-iot/lightning/tree/develop/PerformanceTestSuite). The tests were performed by toggling GPIO 5 between 0 and 1 at the fastest possible speed. The toggle frequency for each case was measured using a Tektronix TPS 2024 Oscilloscope.
 
 The following results were obtained from the analysis:
 
-
-> [!div class="mx-tdBreakAll"]
 > | Platform Tested                     | Language        | Frequency     |
 > | ----------------------------------- | --------------- | ------------- |
 > | Arduino Uno                         | Arduino Sketch  | 75.06 kHz     |
