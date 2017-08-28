@@ -1,3 +1,15 @@
+---
+title: Azure IoT Device Management
+author: saraclay
+ms.author: saclayt
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn about how to manage your devices using Azure.
+keywords: windows iot, Azure IoT, Azure Device Management, device management
+---
+
 # Azure IoT Device Management
 
 When it comes to connected devices, remote device management is one of the key features used by system operators. It enables operators to reconfigure and update software and parameters of the device remotely without the need to have local, physical access to the device. With Windows 10 IoT Core, OEMs can build devices that offer these capabilities out-of-the box. Windows 10 IoT Core, as well as other Windows 10 versions, already offers Mobile Device Management (MDM) based on [OMA DM](https://en.wikipedia.org/wiki/OMA_Device_Management). This is mainly utilized in enterprise solutions with management tools such as SCCM or Intune. While those solutions are well suited for devices placed in an enterprise setting, it has challenges in the more diverse settings that we see in IoT solutions. Those challenges are also seen in IoT devices requiring light weight device management. For those devices, Microsoft offers [device management through Azure IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-device-management-overview).
