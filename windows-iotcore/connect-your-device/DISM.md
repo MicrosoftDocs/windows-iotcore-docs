@@ -1,4 +1,16 @@
-# Use DISM to flash micro SD card for Windows IoT Core device
+---
+title: Windows 10 IoT Core Recovery
+author: bfjelds
+ms.author: Brian.Fjeldstad
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn how to use DISM to flash Windows 10 IoT Core onto a micro SD card.
+keywords: windows iot, DISM, Deployment Image Servicing Management, SD card, flash, OS
+---
+
+# Use DISM to flash Windows 10 IoT Core on your SD card
 
 ## An alternative method to IoT Dashboard
 
