@@ -36,7 +36,8 @@ Here is the list of the available services and API on Windows 10 IoT Core:
   * [Video](https://www.youtube.com/watch?v=vxUOTgechd4) 
   * [Code](https://www.hackster.io/AnuragVasanwala/speech-controlled-robot-49744c)
 
-* Home automation of controlling light with SRGS grammars [Video](https://www.youtube.com/watch?v=MN18Uo_063g)
+* Home automation of controlling light with SRGS grammars 
+  * [Video](https://www.youtube.com/watch?v=MN18Uo_063g)
 
 * [Speech translator sample](https://developer.microsoft.com/en-us/windows/iot/samples/speechtranslator)
 
