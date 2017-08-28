@@ -1,5 +1,5 @@
 ---
-title: Windows 10 IoT Core Recovery
+title: Windows File Sharing
 author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
