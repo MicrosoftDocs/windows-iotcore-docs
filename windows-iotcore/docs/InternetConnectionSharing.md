@@ -1,3 +1,15 @@
+---
+title: Internet Connection Sharing
+author: derekameer
+ms.author: demeer
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn how to enable and configure internet connection sharing.
+keywords: windows iot, Internet Connection Sharing, ICS, Device Portal
+---
+
 # Internet connection sharing
 
 This document describes how internet connection sharing (ICS) can be enabled on Windows 10 IoT Core. Developers can use the NetworkTetheringManager API to configure ICS programmatically. The API is described in the [NetworkOperatorTetheringManager](https://msdn.microsoft.com/en-us/library/windows/apps/windows.networking.networkoperators.networkoperatortetheringmanager.aspx){:target="_blank"} class.
