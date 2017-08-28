@@ -13,12 +13,12 @@ keywords: windows iot, wifi, setup, devices
 # Using WiFi on your Windows 10 IoT Core device
 
 WiFi is supported on Windows 10 IoT Core devices through the use of a USB WiFi adapter. Using WiFi provides all the functionality of a wired connection,
-including [SSH](SSH.md), [Powershell](PowerShell.md), [Windows Device Portal](DevicePortal.md), and application debugging and deployment.
+including [SSH](../manage-your-device/SSH.md), [Powershell](../manage-your-device/PowerShell.md), [Windows Device Portal](../manage-your-device/DevicePortal.md), and application debugging and deployment.
 
 Note: Plugging in a wired Ethernet cable will override WiFi as the default network interface
 
 ### Supported Adapters
-A list of WiFi adapters that have been tested on Windows 10 IoT Core can be found on our [Supported Hardware](HardwareCompatList.md) page
+A list of WiFi adapters that have been tested on Windows 10 IoT Core can be found on our [Supported Hardware](../learn-about-hardware/HardwareCompatList.md) page
 
 ### Configuring WiFi
 To use WiFi, you'll need to provide Windows 10 IoT core with the WiFi network credentials. There are a few different options for doing so:
@@ -49,7 +49,7 @@ An alternative way to configure WiFi is to use the default app. You can use this
 ### Option 1: Web-Based Configuration
 **Prerequisite:** Your device will already need to be connected to your local network through Ethernet and should have a USB WiFi Adapter plugged in
 
-If you have device a with no UI, display, or input devices, you can still configure it through the [Windows Device Portal](DevicePortal.md).
+If you have device a with no UI, display, or input devices, you can still configure it through the [Windows Device Portal](../manage-your-device/DevicePortal.md).
 In **Windows 10 IoT Core Dashboard**, *Click* on the **Open in Device Portal** icon for your device.
 
 <!-- This content is replicated at en-US/Docs/KitSetupRPI.md -->
@@ -87,11 +87,11 @@ Setting up WiFi using wireless profiles is supported in Windows 10 IoT Core. See
     ![SMB with File Explorer](../media/SetupWifi/cred1.png)
 
 > [!NOTE]
-> It is **highly recommended** that you update the default password for the Administrator account.  Please follow the instructions found [here](PowerShell.md).
+> It is **highly recommended** that you update the default password for the Administrator account.  Please follow the instructions found [here](../manage-your-device/PowerShell.md).
 
 3. Copy the exported WiFi profile XML file from the Windows PC to your Windows 10 IoT Core device
 
-4. Connect to your device using [PowerShell](PowerShell.md) and add the new WiFi profile to your device by executing the following commands
+4. Connect to your device using [PowerShell](../manage-your-device/PowerShell.md) and add the new WiFi profile to your device by executing the following commands
 
     * `netsh wlan add profile filename=<copied XML path>`
 
