@@ -1,7 +1,7 @@
 ---
 title: OEM License Requirements
-author: pabab
-ms.author: parameshbabu
+author: parameshbabu
+ms.author: pabab
 ms.date: 08/28/2017
 ms.topic: article
 ms.prod: Windows
