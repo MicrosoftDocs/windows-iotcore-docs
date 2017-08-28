@@ -1,3 +1,15 @@
+---
+title: Creating a Board Supported Package (BSP)
+author: namkedia
+ms.author: namkedia
+ms.date: 08/22/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: This is a description to create BSPs for IoT Core.
+keywords: windows iot, image creation, bsp, windows iot, board supported package 
+---
+
 # Windows 10 IoT Core BSPs
 Board Support Packages (BSP) is a collection of drivers/settings required to run IoT Core on a hardware platform.
 These are provided by the hardware vendors/silicon vendors.
