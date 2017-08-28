@@ -1,6 +1,18 @@
+---
+title: Windows 10 IoT Core Command Line Utilities
+author: bjfelds
+ms.author: Brian.Fjeldstad
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn the command line utilities to use with PowreShell after connecting to your device.
+keywords: windows iot, command line, command line utilities, PowerShell
+---
+
 # Windows 10 IoT Core Command Line Utils
 
-Looking to configure some of the settings on your device? The below tools all come pre-installed on your device to help you with that! Use PowerShell to run these commands after [connecting to your device](PowerShell.md).
+Looking to configure some of the settings on your device? The below tools all come pre-installed on your device to help you with that. Use PowerShell to run these commands after [connecting to your device](PowerShell.md).
 
 * **Update account password:**
 
