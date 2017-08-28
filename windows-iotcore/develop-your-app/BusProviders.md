@@ -1,3 +1,15 @@
+---
+title: Bus Providers
+author: msalehmsft
+ms.author: msaleh
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn about the different providers available through Windows 10 IoT Core.
+keywords: windows iot, providers, bus providers, UWP, Gpio, Spi
+---
+
 # Bus Providers
 
 Starting with Windows 10, Windows has had in-box UWP APIs that provide direct access to Gpio, Spi, or I2c busses located on-soc. This gives very easy access to this hardware from a high level API. However, there are many times when a device maker wants to use an off-soc controller to access a bus. It can be as simple as a cheap chip that adds 16 GPIO pins, or as rich as a full MCU (like an Arduino) that not only adds Gpio, SPI, and I2C pins, but also supports PWM and ADC. With the "Bus Provider" model, we give developers the ability to access these off-soc busses using the in-box APIs, using a user-mode provider that bridges the gap. 
