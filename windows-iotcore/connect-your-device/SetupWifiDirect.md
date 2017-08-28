@@ -1,3 +1,15 @@
+---
+title: Windows 10 IoT Core Recovery
+author: derekameer
+ms.author: demeer
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn how to use and setup WiFi Direct with Windows 10 IoT Core.
+keywords: windows iot, wifi direct, setup, wifi, devices
+---
+
 # Using WiFi Direct on your Windows 10 IoT Core device
 
 WiFi Direct is supported on Windows 10 IoT Core devices through the use of a WiFi Direct enabled USB WiFi adapter. To make sure that WiFi Direct is enabled two things need to be true:
