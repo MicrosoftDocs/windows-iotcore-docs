@@ -1,5 +1,16 @@
 ---
+title: Landing page
 layout: LandingPage
+author: saraclay
+ms.author: saclayt
+ms.date: 08/28/2017
+ms.topic: landing page
+ms.prod: Windows
+ms.technology: IoT
+description: This is the landing page for the Windows 10 IoT Core developer documentation
+keywords: windows iot, developer documentation, docs, IoT Core
+---
+
 ---
 # Windows IoT Core developer documentation
 
@@ -43,7 +54,7 @@ Windows IoT Core is a version of Windows 10 that is optimized for smaller device
         </a>
     </li>
     <li>
-        <a href="docs/ConnectAppToCloud.md">
+        <a href="docs/extend-your-app/ConnectAppToCloud.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
