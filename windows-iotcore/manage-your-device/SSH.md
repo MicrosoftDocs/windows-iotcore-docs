@@ -1,4 +1,16 @@
-# SSH
+---
+title: Secure Shell (SSH)
+author: paulmon
+ms.author: paul.monson
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn how to use secure shell to remotely administer and configure your IoT Core device.
+keywords: windows iot, secure shell, remote, SSH client, PuTTY, SSH
+---
+
+# Secure Shell (SSH)
 Secure Shell (SSH) allows you to remotely administer and configure your Windows IoT Core device
 
 ### Download a SSH client
