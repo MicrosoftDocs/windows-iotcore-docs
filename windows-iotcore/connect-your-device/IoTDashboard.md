@@ -1,3 +1,15 @@
+---
+title: Windows 10 IoT Core Dashboard
+author: saraclay
+ms.author: saclayt
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn about what the Windows 10 IoT Core Dashboard does and how to get started.
+keywords: windows iot, windows 10 iot core dashboard, windows iot dashboard, devices
+---
+
 # Windows 10 IoT Core Dashboard
 
 Windows 10 IoT Core Dashboard is the best way to download, set up and connect your Windows 10 IoT Core devices, all from your PC.
