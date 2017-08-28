@@ -1,3 +1,15 @@
+---
+title: Windows 10 IoT Core Recovery
+author: bjfelds
+ms.author: brian.fjeldstad
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn how to deploy an app using the Visual Studio remote debugging feature.
+keywords: windows iot, visual studio, app deployment, remote debugging
+---
+
 # Deploying an App with Visual Studio
 
 Deploying and debugging your application is straightforward with Visual Studio. We'll use the **Remote Debugging** feature to deploy the app to your locally connected Windows 10 IoT Core device. 
