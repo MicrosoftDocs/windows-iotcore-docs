@@ -1,6 +1,18 @@
+---
+title: Embedded mode
+author: lilyhou
+ms.author: lihou
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn how to configure Windows to allow embedded mode.
+keywords: windows iot, embedded mode, background applications
+---
+
 # Embedded mode
 
-Windows and Windows Mobile can be configured to allow embedded mode. Embedded Mode enables
+Windows and Windows Mobile can be configured to allow embedded mode. Embedded Mode enables:
 
 * Background Applications
 * Use of the lowLevelDevice capability
