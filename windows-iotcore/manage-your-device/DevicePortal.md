@@ -44,7 +44,7 @@ The rest of the documentation below will be IoT specific.
 
 ### Apps
 Provides install/uninstall functionality for AppX packages and bundles on your device.
-![App list](../media/DevicePortal/AppList.png}
+![App list](../media/DevicePortal/AppList.png)
 IoT Core is unique in that it only allows one foreground app to run at one time. The app list is modified to ensure that this is the case. Under the **STARTUP** column, you can select as many background applications to start by default, but can only set one foreground application.  
 
 ### App File Explorer
@@ -115,7 +115,7 @@ sample which may be [downloaded here](https://github.com/ms-iot/samples).
 
 
 ### TPM configuration
-The Trusted Platform Module (TPM) is a cryptographic coprocessor including capabilities for random number generation, secure generation of cryptographic keys and limitation of their use. It also includes capabilities such as remote attestation and sealed storage. To learn about the TPM and security on IoT Core, visit the [Building secure devices](BuildingSecureDevices.md) page and the [TPM](TPM.md) page.
+The Trusted Platform Module (TPM) is a cryptographic coprocessor including capabilities for random number generation, secure generation of cryptographic keys and limitation of their use. It also includes capabilities such as remote attestation and sealed storage. To learn about the TPM and security on IoT Core, visit the [Building secure devices](../secure-your-device/BuildingSecureDevices.md) page and the [TPM](../secure-your-device/TPM.md) page.
 
 ### Remote
 The Windows IoT Remote Server allows users to see what their device is displaying without connecting a physical monitor to the keyboard.
@@ -125,7 +125,7 @@ The Windows IoT Remote Server allows users to see what their device is displayin
 
 ### Changing the default port
  
-1. Launch powershell and [connect to your device.](PowerShell.md)
+1. Launch powershell and [connect to your device.](../manage-your-device/PowerShell.md)
 2. Download [TakeRegistryOwnership](https://github.com/ms-iot/iot-utilities/tree/master/TakeRegistryOwnership) tool, build it, and copy it to your device. 
 3. Take ownership of the registry key for the service by running
 
