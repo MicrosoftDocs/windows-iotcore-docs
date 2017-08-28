@@ -1,3 +1,15 @@
+---
+title: Windows 10 IoT Core Recovery
+author: saraclay
+ms.author: saclayt
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn ow to capture Fiddler Traces with Windows IoT Core.
+keywords: windows iot, Fiddler, traces, PuTTY, Fiddler traces
+---
+
 # Capturing Fiddler Traces on Windows IoT Core
 
 ## Assumptions 
