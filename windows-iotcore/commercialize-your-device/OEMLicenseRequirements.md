@@ -1,3 +1,15 @@
+---
+title: OEM License Requirements
+author: pabab
+ms.author: parameshbabu
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: A description of the OEM license requirements in order to commercialize with Windows 10 IoT.
+keywords: windows iot, license, license requirements, commercialization, OEM license requirements
+---
+
 # OEM license requirements
 
 The process of licensing Windows 10 IoTCore product and the OEM license agreement is provided at [Windows 10 IoT Core Commercialization](https://www.windowsforiotdevices.com/).
