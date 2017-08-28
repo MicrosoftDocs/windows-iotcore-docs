@@ -1,3 +1,14 @@
+---
+title: Windows 10 IoT Core Recovery
+author: zhuridartem
+ms.author: artemz
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn about Bluetooth support on Windows 10 IoT Core.
+keywords: windows iot, bluetooth, bluetooth support, devices, device portal
+---
 
 # Bluetooth Support
 Windows 10 IoT Core supports Bluetooth 4.0. A list of supported Bluetooth dongles can be found in the [Hardware Compatibility List](../docs/HardwareCompatList.md).
