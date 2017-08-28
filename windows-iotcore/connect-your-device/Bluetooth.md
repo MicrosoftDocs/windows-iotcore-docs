@@ -1,5 +1,5 @@
 ---
-title: Windows 10 IoT Core Recovery
+title: Bluetooth Support
 author: zhuridartem
 ms.author: artemz
 ms.date: 08/28/2017
