@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: Windows
 ms.technology: IoT
 description: Learn about device recovery and how it works for Windows 10 IoT Core devices.
-keywords: windows iot, recovery, device recovery, windows iot
+keywords: windows iot, recovery, device recovery
 ---
 
 # Windows 10 IoT Core Recovery
