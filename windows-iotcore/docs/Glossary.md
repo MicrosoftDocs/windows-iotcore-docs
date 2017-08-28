@@ -1,5 +1,17 @@
 
-# Glossary
+---
+title: Glossary
+author: saraclay
+ms.author: saclayt
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: A glossary for Windows 10 IoT Core-related terms.
+keywords: windows iot, glossary, terms, terminology, definitions
+---
+
+Glossary
 
 **AllJoyn**<br/>
 AllJoyn is an open source communication framework that enables apps and devices to communicate regardless of connection specifics and OS platform.
