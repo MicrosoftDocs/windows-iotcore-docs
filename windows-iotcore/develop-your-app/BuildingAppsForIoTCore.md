@@ -1,5 +1,5 @@
 ---
-title: Support languages and app types for IoT Core
+title: Supported languages and app types for IoT Core
 author: msalehmsft
 ms.author: msaleh
 ms.date: 08/28/2017
