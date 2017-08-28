@@ -1,5 +1,5 @@
 ---
-title: Windows 10 IoT Core Recovery
+title: Install your app using Windows Device Portal
 author: bfjelds
 ms.author: pabab
 ms.date: 08/28/2017
