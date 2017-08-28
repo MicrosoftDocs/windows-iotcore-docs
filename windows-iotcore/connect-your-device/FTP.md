@@ -1,3 +1,15 @@
+---
+title: File Transfer Protocol
+author: saraclay
+ms.author: saclayt
+ms.date: 08/28/2017
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Learn how to use FTP to transfer files to and from your devices.
+keywords: windows iot, FTP, file transfer protocol, file transfer, devices
+---
+
 # File Transfer Protocol
 The File Transfer Protol (FTP) allows you to transfer files to and from your Windows 10 IoT Core device
 
