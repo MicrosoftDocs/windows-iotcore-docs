@@ -34,7 +34,6 @@ Note that the MinnowBoard Max uses 3.3V logic levels on all IO pins. In addition
 
 The following GPIO pins are accessible through APIs:
 
-> [!div class="mx-tdBreakAll"]
 > | GPIO# | Header Pin         |
 > |-------|--------------------|
 > | 0     | 21                 |
