@@ -36,7 +36,7 @@ Enter your administrator username and password if prompted. The username should 
     ![Server start and stop](../media/WindowsFileSharing/smb_start_stop.png)
     
 ## Disabling and enabling the file sharing server on startup
-* Connect to your device through [PowerShell](powershell.md) or [SSH](ssh.md).
+* Connect to your device through [PowerShell](../connect-your-device/powershell.md) or [SSH](../connect-your-device/ssh.md).
 * By default the file sharing  server is started when the device is booted.
 * To disable the file sharing  server so that it does not start when the device starts, type `reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\lanmanserver /v Start /t REG_DWORD /d 0x3 /f`
 * To enable the file sharing  server so that starts when the device starts, type `reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\lanmanserver /v Start /t REG_DWORD /d 0x2 /f`
