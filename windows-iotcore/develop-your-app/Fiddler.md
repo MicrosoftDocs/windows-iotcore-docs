@@ -12,6 +12,8 @@ keywords: windows iot, Fiddler, traces, PuTTY, Fiddler traces
 
 # Capturing Fiddler Traces on Windows IoT Core
 
+Fiddler is a tool for debugging web traffic. It's particularly helpful because you can customize it for specific needs using extensions and add-ons, and the tool provides a lot of useful information specific to web traffic.
+
 ## Assumptions 
 
 * You have [PuTTY](http://www.putty.org/) on your developer box or an alternative for SSH
