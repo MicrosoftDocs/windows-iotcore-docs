@@ -27,7 +27,7 @@ Detailed guide on writing events and obtaining GUIDs can be found [here](https:/
 ## Consuming Events
 
 Events are either saved to an ETL file or captured in real-time.
-Use [FTP](/FTP.md) or [Windows File Sharing](WindowsFileSharing.md) to retrieve ETL files from Windows IoT Core devices.
+Use [FTP](../manage-your-device/FTP.md) or [Windows File Sharing](../manage-your-device/WindowsFileSharing.md) to retrieve ETL files from Windows IoT Core devices.
 
 ## Use Tools in Windows Assessment and Deployment Kit
 
