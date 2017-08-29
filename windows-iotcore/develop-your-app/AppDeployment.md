@@ -34,7 +34,7 @@ ___
 
 ![Remote machine in Visual Studio](../media/AppDeployment/cs-remote-machine-debugging.png)
 
-3. At this point, Visual Studio will present the **Remote Connections** dialog. If you previously used [PowerShell](../manage-your-device/PowerShell.md) to set a unique name for your device, you can enter it here (in this example, we're using **my device**). Otherwise, use the IP address of your Windows IoT Core device.
+3. At this point, Visual Studio will present the **Remote Connections** dialog. If you previously used [PowerShell](../connect-your-device/PowerShell.md) to set a unique name for your device, you can enter it here (in this example, we're using **my device**). Otherwise, use the IP address of your Windows IoT Core device.
 
 4. After entering the device name/IP select `Universal (Unencrypted Protocol)` Authentication Mode, then click **Select**. 
 
@@ -66,7 +66,7 @@ You can verify or modify these values by navigating to the project properties (s
 
 4. Under **Configuration Properties -> Debugging**, modify the following fields:
 
-	* **Machine Name**: If you previously used [PowerShell](../docs/PowerShell.md) to set a unique name for your device, you can enter it here (in this example, we're using **my-device**). 
+	* **Machine Name**: If you previously used [PowerShell](../connect-your-device/PowerShell.md) to set a unique name for your device, you can enter it here (in this example, we're using **my-device**). 
 Otherwise, use the IP address of your Windows IoT Core device.
 	* **Authentication Mode**: Set to **Universal (Unencrypted Protocol)**
 	
@@ -94,7 +94,7 @@ Otherwise, use the IP address of your Windows IoT Core device.
 
 4. Under **UWP Project Settings**, modify the following fields:
 
-	* **Machine Name**: If you previously used [PowerShell](../manage-your-device/PowerShell.md) to set a unique name for your device, you can enter it here (in this example, we're using **my-device**).
+	* **Machine Name**: If you previously used [PowerShell](../connect-your-device/PowerShell.md) to set a unique name for your device, you can enter it here (in this example, we're using **my-device**).
 	Otherwise, use the IP address of your Windows IoT Core device.
 	* **Remote Port**: Set to **5678**
 	
