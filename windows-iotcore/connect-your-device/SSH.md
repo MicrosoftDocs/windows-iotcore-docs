@@ -61,4 +61,4 @@ To do this, enter the following command in the PuTTY console, replacing `[new pa
         
 ### Commonly used utilities
 
-See the [Command Line Utils](CommandLineUtils.md) page for a list of commands and utilities you can use with SSH.
+See the [Command Line Utils](../manage-your-device/CommandLineUtils.md) page for a list of commands and utilities you can use with SSH.
