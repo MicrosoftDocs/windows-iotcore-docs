@@ -98,7 +98,7 @@ Once the packages are generated, they can be installed with the final image crea
   * OEM.Security.BitLocker.cab
   * OEM.Security.SecureBoot.cab
   * OEM.Security.DeviceGuard.cab
-2. Connect to the device ([using SSH](SSH.md) or using [Powershell](PowerShell.md)
+2. Connect to the device ([using SSH](../connect-your-device/SSH.md) or using [Powershell](../connect-your-device/PowerShell.md)
 3. Initiate staging of the generated packages by issueing the following commands:
   * `applyupdate -stage c:\OemInstall\OEM.Custom.Cmd.cab`
   * `applyupdate -stage c:\OemInstall\OEM.Security.BitLocker.cab`
