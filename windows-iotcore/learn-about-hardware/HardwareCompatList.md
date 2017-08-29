@@ -67,7 +67,7 @@ Looking for information about supported hardware platforms? Click [here](https:/
 ### Storage Media
 > | Part Name / No. | Compatible Boards | Description | Relevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | [Samsung 32GB EVO Class 10 Micro SDHC]((https://www.amazon.com/gp/product/B00IVPU786)) | RPi2/RPi3, MBM | An SD card that’s known to support running Windows 10 IoT Core on both the Raspberry Pi 2 or 3 and MBM. | | &#10004;|
+> | [Samsung 32GB EVO Class 10 Micro SDHC](https://www.amazon.com/gp/product/B00IVPU786) | RPi2/RPi3, MBM | An SD card that’s known to support running Windows 10 IoT Core on both the Raspberry Pi 2 or 3 and MBM. | | &#10004;|
 > | [SanDisk Ultra Micro SDHC 16GB](https://www.amazon.com/SanDisk-Ultra-Micro-SDHC-16GB/dp/9966573445) | RPi2/RPi3, MBM | An SD card that’s known to support running Windows 10 IoT Core on both the Raspberry Pi 2 or 3 and MBM. | | &#10004; |
 
 ### Pi Hats
