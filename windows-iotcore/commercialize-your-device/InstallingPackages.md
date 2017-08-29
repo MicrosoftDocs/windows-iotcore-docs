@@ -103,7 +103,7 @@ See also
 ## Step 3: Install on device
 ---
 
-* Connect to the device ([using SSH](../manage-your-device/SSH.md) or [using Powershell](../manage-your-device/powershell.md))
+* Connect to the device ([using SSH](../connect-your-device/SSH.md) or [using Powershell](../connect-your-device/powershell.md))
 * Copy the <filename>.cab file to the device to a directory say C:\OemInstall
 * Initiate staging of the package using `applyupdate -stage C:\OemInstall\<filename>.cab`. Note that this step is be repeated for each package, when you have multiple packages to install.
 * Commit the packages using `applyupdate -commit`.
