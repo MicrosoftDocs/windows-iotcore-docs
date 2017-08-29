@@ -54,7 +54,7 @@ The device will reboot into the update OS (showing gears) to install the package
 ## Step 4: Check status of driver
 ___
 
-* Launch the [Powershell](../manage-your-device/PowerShell.md)
+* Launch the [Powershell](../connect-your-device/PowerShell.md)
 * You can get the status of the installed drivers using the following Powershell commandlets
 
 	* [Get-PnpDevice](https://technet.microsoft.com/en-us/library/mt130248.aspx)
