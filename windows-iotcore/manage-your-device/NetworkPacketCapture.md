@@ -18,12 +18,12 @@ You can use [Microsoft Message Analyzer](http://www.microsoft.com/en-us/download
 
 ## Prerequisites
 
-Working PowerShell Connection (Step 1 to 8 described at [PowerShell](PowerShell.md).
+Working PowerShell Connection (Step 1 to 8 described at [PowerShell](../connect-your-device/PowerShell.md).
 
 ## Set up your device
 
-In order to connect to your device using Message Analyzer, you need to first rename your device.  This can be done through [SSH](SSH.md) or 
-[PowerShell](PowerShell.md) using the `setcomputername` command.
+In order to connect to your device using Message Analyzer, you need to first rename your device.  This can be done through [SSH](../connect-your-device/SSH.md) or 
+[PowerShell](../connect-your-device/PowerShell.md) using the `setcomputername` command.
 
 ![PowerShell Rename Device](../media/NetworkPacketCapture/powershell-rename-device.png)
 
