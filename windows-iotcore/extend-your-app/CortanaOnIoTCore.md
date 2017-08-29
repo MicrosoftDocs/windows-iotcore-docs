@@ -38,7 +38,7 @@ This document describes how to enable and utilize Cortana on IoT Core. Makers an
 
 ### Hardware List
 
-Windows 10 IoT Core can be run on a [list of IoT devices](SuggestedBoards.md).
+Windows 10 IoT Core can be run on a [list of IoT devices](../learn-about-hardware/SuggestedBoards.md).
 
 Any microphone and speaker you select to use with the your IoT devices should work with Cortana. For better speech recognition
 quality, here is a recommended list of hardware that has been tested.
@@ -363,7 +363,7 @@ Cortana to do more.
 
 -   Catered to devices with small- or medium-sized screens (e.g. thermostat or refrigerator), provide a voice response with optimized visual content.
 
--   Leverages the audio pipeline provided in the Windows 10 operating system which supports linear microphone arrays. Audio input devices should conform to the guidance outlined in the[Microsoft Speech Platform](https://msdn.microsoft.com/en-us/library/windows/hardware/dn915051(v=vs.85).aspx).
+-   Leverages the audio pipeline provided in the Windows 10 operating system which supports linear microphone arrays. Audio input devices should conform to the guidance outlined in the [Microsoft Speech Platform](https://msdn.microsoft.com/en-us/library/windows/hardware/dn915051(v=vs.85).aspx).
 
 -   To wake-up Cortana the user says “Hey, Cortana.” Keyword Spotting (KWS) runs locally to receive the voice input and complete the analysis. The audio is only sent to the cloud once the keyword is spotted. User consent is needed before enabling KWS. The KWS is optimized by the Windows Speech Platform and supports multiple
     languages and regions.
