@@ -44,7 +44,7 @@ See also: [Sample Driver Package](https://github.com/ms-iot/iot-adk-addonkit/blo
 ## Step 3: Install on device
 ___
 
-* Connect to the device ([using SSH](ssh.md) or [using Powershell](powershell.md))
+* Connect to the device ([using SSH](../manage-your-device/ssh.md) or [using Powershell](../manage-your-device/powershell.md))
 * Copy the <filename>.cab file to the device to a directory say C:\OemInstall
 * Initiate staging of the package using `applyupdate -stage C:\OemInstall\<filename>.cab`. Note that this step is be repeated for each package, when you have multiple packages to install.
 * Commit the packages using `applyupdate -commit`.
@@ -54,7 +54,7 @@ The device will reboot into the update OS (showing gears) to install the package
 ## Step 4: Check status of driver
 ___
 
-* Launch the [Powershell](PowerShell.md)
+* Launch the [Powershell](../manage-your-device/PowerShell.md)
 * You can get the status of the installed drivers using the following Powershell commandlets
 
 	* [Get-PnpDevice](https://technet.microsoft.com/en-us/library/mt130248.aspx)
