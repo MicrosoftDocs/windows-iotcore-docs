@@ -24,7 +24,7 @@ Headless mode has no UI.  Devices that don't need UI functionality can be set to
 > If you put your device into headless mode, then you can use the Windows 10 IoT Core Dashboard application, described below, to find its IP address.
 
 ## Changing the mode
-You can modify the headed/headless state of your device from a Windows PowerShell session or an SSH session. To learn more about PowerShell, see the [PowerShell for IoT Core](PowerShell.md) page. To learn more about SSH, see the [SSH for IoT Core](SSH.md) page.
+You can modify the headed/headless state of your device from a Windows PowerShell session or an SSH session. To learn more about PowerShell, see the [PowerShell for IoT Core](../connect-your-device/PowerShell.md) page. To learn more about SSH, see the [SSH for IoT Core](../connect-your-device/SSH.md) page.
 
 * To display the current state of your device, use the `setbootoption` utility:
 
