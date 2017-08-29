@@ -52,7 +52,7 @@ The File Transfer Protol (FTP) allows you to transfer files to and from your Win
 
     ![FTP Start with Parameter](../media/ftp/ftp_start_parameter.png)
     
-* Now when you [connect](#accessftp) to your device through FTP, you will see the contents of the root directory you set.
+* Now when you connect to your device through FTP, you will see the contents of the root directory you set.
 
     ![FTP explorer with new root directory](../media/ftp/ftp_explorer_parameter.png)
 
