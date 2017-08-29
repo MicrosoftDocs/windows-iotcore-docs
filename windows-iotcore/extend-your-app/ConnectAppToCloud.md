@@ -19,7 +19,7 @@ connects to Azure IoT Hub.
 ## Step 1: Prepare your device
 
 You can find instructions on how to prepare your device on the [Get Started Page](https://developer.microsoft.com/en-us/windows/iot/getstarted) 
-Make sure you [provision the TPM of your device](ConnectDeviceToCloud.md)
+Make sure you [provision the TPM of your device](../manage-your-device/ConnectDeviceToCloud.md)
 
 ## Step 2: Install Visual Studio 2017 and tools
 
