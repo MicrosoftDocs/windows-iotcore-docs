@@ -39,7 +39,7 @@ You'll need to import the Fiddler root certificate to your IoT image or device i
 2. Browse to the mainOS partition and create a _test_ folder at root (via SSH, use _md c:\test_)
 3. Copy FiddlerRoot.cer you generated above (should be on your desktop by default) to the test folder location
 4. If using a VHD, unmount it by ejecting any of the mounted drives and then start the IoT Core VM via HyperV
-5. Start an [SSH session](../manage-your-device/ssh.md) and login as administrator 
+5. Start an [SSH session](../connect-your-device/ssh.md) and login as administrator 
 6. Navigate to c:\test directory in your SSH session
 7. Import Fiddler Root Certificate via command:
 	* `certmgr -add FiddlerRoot.cer -r localmachine -s root`
