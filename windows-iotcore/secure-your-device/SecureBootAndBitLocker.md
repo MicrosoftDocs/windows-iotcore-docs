@@ -51,7 +51,7 @@ To facilitate easy enablement of key secrutiy features on IoT Core devices, Micr
 * Reference platform - release hardware with shipping firmware, OS, drivers and applications will be required for final lockdown
 
 ### Development IoT Devices 
-Windows 10 IoT Core works with that are utilized in hundreds of devices. Of the [suggested IoT development devices](suggestedboards.md), the following provide firmware TPM functionality out of the box, along with Secure Boot, Measured Boot, BitLocker and Device Guard capabilities:
+Windows 10 IoT Core works with that are utilized in hundreds of devices. Of the [suggested IoT development devices](../learn-about-hardware/suggestedboards.md), the following provide firmware TPM functionality out of the box, along with Secure Boot, Measured Boot, BitLocker and Device Guard capabilities:
 * Qualcomm DragonBoard 410c
 * Intel MinnowBoardMax 
 
