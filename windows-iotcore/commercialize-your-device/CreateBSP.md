@@ -47,7 +47,10 @@ Steps to create the drivers :
     * Run `buildpkg all` to process all cab files
 
 You can also recreate the cab files with the below script, the cab files will be created in the build output folder
-(set the DIR_ROOT value appropriately)
+(set the DIR_ROOT value appropriately and make sure it has run on IoTCoreShell Environment).
+
+1. Launch IoTCoreShell, select x86
+2. Create .cmd file copy below snippet and run from above launch shell window.
 
 
     @echo off
