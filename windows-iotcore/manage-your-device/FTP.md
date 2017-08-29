@@ -24,7 +24,7 @@ The File Transfer Protol (FTP) allows you to transfer files to and from your Win
     ![FTP Start](../media/ftp/ftp_start.png)
 
 ## Stopping the FTP server on your device<a name="stopftp"/>
-* In order to stop the FTP server on your IoT Core device, first you need to connect to your device through [PowerShell](../maconnectnage-your-device/PowerShell.md) or [SSH](../connect-your-device/SSH.md).  
+* In order to stop the FTP server on your IoT Core device, first you need to connect to your device through [PowerShell](../connect-your-device/PowerShell.md) or [SSH](../connect-your-device/SSH.md).  
 * If you connected using PowerShell, type `kill -processname ftpd*` to stop the FTP process.
 
     ![FTP PowerShell Stop](../media/ftp/ftp_kill_powershell.png)
