@@ -125,7 +125,7 @@ The Windows IoT Remote Server allows users to see what their device is displayin
 
 ### Changing the default port
  
-1. Launch powershell and [connect to your device.](../manage-your-device/PowerShell.md)
+1. Launch powershell and [connect to your device.](../connect-your-device/PowerShell.md)
 2. Download [TakeRegistryOwnership](https://github.com/ms-iot/iot-utilities/tree/master/TakeRegistryOwnership) tool, build it, and copy it to your device. 
 3. Take ownership of the registry key for the service by running
 
