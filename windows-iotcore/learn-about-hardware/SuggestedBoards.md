@@ -21,7 +21,6 @@ The publicly available boards below are some of the same devices Microsoft uses 
 
 > [!NOTE]
 > Hardware features listed below may not be fully supported in all configurations
-> 
 
 
 > |                      |Raspberry Pi 2 v1.1 boards and earlier|Raspberry Pi 3| MinnowBoard Max| DragonBoard 410c |
@@ -53,11 +52,10 @@ While Microsoft has engineered support for IoT Core with specific SoCs that enab
 
 > [!NOTE] 
 > IoT Core on these devices is not validated or supported by Microsoft. If you choose to use any of these solutions, please work with the listed vendor to ensure that they are able to adequately deliver support for the current and future updates of IoT Core.
->
 
 > [!TIP]
 > If you'd like to add your device to the community devices list, please submit a PR for this page.
-> 
+
 
 > | Device | SoC | Software image | Contact |
 > |-------------|----------|---------|---------|
