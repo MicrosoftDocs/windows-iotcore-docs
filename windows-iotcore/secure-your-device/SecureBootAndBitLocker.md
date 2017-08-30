@@ -108,7 +108,7 @@ The following are the important files to consider:
   * DETask.xml
   * Security.Bitlocker.pkg.xml
   * setup.bitlocker.cmd
-* ** b. Security.SecureBoot**
+* **b. Security.SecureBoot**
   * Security.SecureBoot.pkg.xml
   * SetVariable_db.bin
   * SetVariable_kek.bin
@@ -118,16 +118,16 @@ The following are the important files to consider:
   * Security.DevuceGuard.pkg.xml
   * SIPolicyOn.p7b
   * SIPolicyOff.p7b
-      
-   * Step 2.4: Add|Update TestOEMInput.xml with Lockdown Package Feature names
-        - `<Feature>Sec_BitLocker</Feature>`
-        - `<Feature>Sec_SecureBoot</Feature>`
-        - `<Feature>Sec_DeviceGuard</Feature>`
-   * Step 2.5: Re-generate Image
-        - `buildpkg all` (this generates new Lockdown packages based on above Policy Files)
-        - `buildimage SecureSample test`  (this generates new Flash.ffu)
-        - (Above example assuming that you are using Product:SecureSample and ImageType: test)
-   * Step 2.6: Flash the device with this new Flash.ffu
+  
+* Step 2.4: Add|Update TestOEMInput.xml with Lockdown Package Feature names
+  * `<Feature>Sec_BitLocker</Feature>`
+  * `<Feature>Sec_SecureBoot</Feature>`
+  * `<Feature>Sec_DeviceGuard</Feature>`
+* Step 2.5: Re-generate Image
+  * `buildpkg all` (this generates new Lockdown packages based on above Policy Files)
+  * `buildimage SecureSample test`  (this generates new Flash.ffu)
+  * (Above example assuming that you are using Product:SecureSample and ImageType: test)
+* Step 2.6: Flash the device with this new Flash.ffu
 
   **Result:** Expected device is ready with Lockdown.
 
@@ -141,8 +141,8 @@ First, download the [DeviceLockDown Script](https://github.com/ms-iot/security/t
 > [!NOTE]
 > Check the following Paths are valid as per your machine setup, if not find and update appropriate paths.
 > * settings.xml ( or QCDB.settings.xml or MBMx86_settings.xml or MBMx64_settings.xml )
->    - Windows10KitsRoot `(ex: <Windows10KitsRoot>C:\Program Files (x86)\Windows Kits\10\</Windows10KitsRoot> )`
->    - WindowsSDKVersion `(ex: <WindowsSDKVersion>10.0.15063.0</WindowsSDKVersion> )`
+>    - Windows10KitsRoot `(e.g. <Windows10KitsRoot>C:\Program Files (x86)\Windows Kits\10\</Windows10KitsRoot>)`
+>    - WindowsSDKVersion `(e.g. <WindowsSDKVersion>10.0.15063.0</WindowsSDKVersion>)`
 >      - Replace with SDK version installed on your machine and is found under `C:\Program Files (x86)\Windows Kits\10\`
 >    - Remaining settings are discussed in #4 below
 >
