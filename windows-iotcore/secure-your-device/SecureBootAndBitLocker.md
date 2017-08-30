@@ -96,29 +96,28 @@ Below, you can find different ways of generating and testing:
   * Step 2.2: Generate Lockdown Policy Files
   * Step 2.3: Copy generated Policy Files to appropriate folders 
       
-      **Secureboot:** copy \TurnkeySecurity\QCDB\Output\SecureBoot\*.bin to the pkgs folder of \iot-adk-addonkit\Common\Packages\Security.SecureBoot
+      **Secureboot:** copy `\TurnkeySecurity\QCDB\Output\SecureBoot\*.bin` to the pkgs folder of `\iot-adk-addonkit\Common\Packages\Security.SecureBoot`
       
-      **Bitlocker:** copy \TurnkeySecurity\QCDB\Output\Bitlocker\*.* to the pkgs folder of \iot-adk-addonkit\Common\Packages\Security.Bitlocker
+      **Bitlocker:** copy `\TurnkeySecurity\QCDB\Output\Bitlocker\*.*` to the pkgs folder of `\iot-adk-addonkit\Common\Packages\Security.Bitlocker`
       
-      **DeviceGuard:** copy \TurnkeySecurity\QCDB\Output\DeviceGuard\*.* to the pkgs folder of \iot-adk-addonkit\Common\Packages\Security.DeviceGuard
+      **DeviceGuard:** copy `\TurnkeySecurity\QCDB\Output\DeviceGuard\*.*` to the pkgs folder of `\iot-adk-addonkit\Common\Packages\Security.DeviceGuard`
 
 The following are the important files to consider:
-   a. Security.BitLocker
-      - DETask.xml
-      - Security.Bitlocker.pkg.xml
-      - setup.bitlocker.cmd
 
-   b. Security.SecureBoot
-      - Security.SecureBoot.pkg.xml
-      - SetVariable_db.bin
-      - SetVariable_kek.bin
-      - SetVariable_pk.bin
-      - setup.secureboot.cmd
-
-   c. Security.DeviceGuard
-      - Security.DevuceGuard.pkg.xml
-      - SIPolicyOn.p7b
-      - SIPolicyOff.p7b
+* **a. Security.BitLocker**
+  * DETask.xml
+  * Security.Bitlocker.pkg.xml
+  * setup.bitlocker.cmd
+* ** b. Security.SecureBoot**
+  * Security.SecureBoot.pkg.xml
+  * SetVariable_db.bin
+  * SetVariable_kek.bin
+  * SetVariable_pk.bin
+  * setup.secureboot.cmd
+* **c. Security.DeviceGuard**
+  * Security.DevuceGuard.pkg.xml
+  * SIPolicyOn.p7b
+  * SIPolicyOff.p7b
       
    * Step 2.4: Add|Update TestOEMInput.xml with Lockdown Package Feature names
         - `<Feature>Sec_BitLocker</Feature>`
