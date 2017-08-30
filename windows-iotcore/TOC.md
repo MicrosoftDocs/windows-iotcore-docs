@@ -37,6 +37,7 @@
 ### [Install your app](develop-your-app/AppInstaller.md)
 ### [Bus providers](develop-your-app/BusProviders.md)
 ### [Supported languages and app types](develop-your-app/BuildingAppsForIoTCore.md)
+### [IoT Core Shell overview](develop-your-app/IoTCoreShell.md)
 ### [Localhost loopback](develop-your-app/Loopback.md)
 ### [Fiddler](develop-your-app/Fiddler.md)
 ### [Lightning providers](develop-your-app/LightningProviders.md)
