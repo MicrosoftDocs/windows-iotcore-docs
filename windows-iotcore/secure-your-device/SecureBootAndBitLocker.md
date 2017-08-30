@@ -92,10 +92,10 @@ Below, you can find different ways of generating and testing:
 2. Generate Lockdown Image 
   This exercise is to create have a custom image created with Lockdown Packages pre-installed. This Process is suggested for Retail or Production Images.
   
-  **Pre-requisites Check:** Device should be flashed with new Custom Image ( Check [Custom Image Generation](https://github.com/ms-iot/iot-adk-addonkit) steps) without Lockdown features enabled or Packages and boot successfuly.
+  **Pre-requisites Check:** Device should be flashed with new Custom Image (Check [Custom Image Generation](https://github.com/ms-iot/iot-adk-addonkit) steps) without Lockdown features enabled or Packages and boot successfuly.
 
-    - Step 2.1: Flash the device with .ffu ( Pre-requisites )
-    - Step 2.2: Generate Lockdown Policy Files ( see below _Generating Necessary Lockdown Packages_ )  ( Policy Files mentioned below in Step 3 are important and Packages are **NOT** important in this process as they would be generated during Custom image generation during Step 5)
+    - Step 2.1: Flash the device with .ffu
+    - Step 2.2: Generate Lockdown Policy Files (see below _Generating Necessary Lockdown Packages_)  (Policy Files mentioned below in Step 3 are important and Packages are **NOT** important in this process as they would be generated during Custom image generation during Step 5)
     - Step 2.3: Copy generated Policy Files to appropriate folders 
       
       **Secureboot:** copy \TurnkeySecurity\QCDB\Output\SecureBoot\*.bin to the pkgs folder of \iot-adk-addonkit\Common\Packages\Security.SecureBoot
@@ -104,8 +104,7 @@ Below, you can find different ways of generating and testing:
       
       **DeviceGuard:** copy \TurnkeySecurity\QCDB\Output\DeviceGuard\*.* to the pkgs folder of \iot-adk-addonkit\Common\Packages\Security.DeviceGuard
 
-The following are the important files to consider
-
+The following are the important files to consider:
    a. Security.BitLocker
       - DETask.xml
       - Security.Bitlocker.pkg.xml
