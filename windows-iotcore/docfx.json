@@ -34,6 +34,8 @@
     "globalMetadata": {
       "layout": "Conceptual",
       "breadcrumb_path": "/windows/iot-core/breadcrumb/toc.json",
+      "uhfHeaderID": "win-iot-devcenter-header",
+      "searchScope": "windows-iot",
       "ms.locale": "en-us"
     },
     "fileMetadata": {},
