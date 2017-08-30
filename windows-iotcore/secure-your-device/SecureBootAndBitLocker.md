@@ -84,18 +84,16 @@ Below, you can find different ways of generating and testing:
     In this exercise, we are going to test Lockdown behavior by using the existing device which is already running Windows IoT Core. This is targetting for **Testing** the Lockdown Features and <b>NOT</b> the Production or Retail Scenario.
     
     **Pre-requisites Check:** Device is flashed with Latest build and successfully boot Windows IoT Core.
-    - Step 1.1: Generate Lockdown Policy Files and Packages (See below _Generating Necessary Lockdown Packages_ section )
-    - Step 1.2: Apply generated packages (see below _Installing Lockdown Packages_ section )
-         ( ex:  `\TurnkeySecurity\QCDB\PackageOutput` )
+    - Step 1.1: Generate Lockdown Policy Files and Packages.
+    - Step 1.2: Apply generated packages (e.g.  `\TurnkeySecurity\QCDB\PackageOutput`)
     - Step 1.3: Non-Lockdown device is now Lockdown Device
 
 2. Generate Lockdown Image 
   This exercise is to create have a custom image created with Lockdown Packages pre-installed. This Process is suggested for Retail or Production Images.
   
   **Pre-requisites Check:** Device should be flashed with new Custom Image (Check [Custom Image Generation](https://github.com/ms-iot/iot-adk-addonkit) steps) without Lockdown features enabled or Packages and boot successfuly.
-
     - Step 2.1: Flash the device with .ffu
-    - Step 2.2: Generate Lockdown Policy Files (see below _Generating Necessary Lockdown Packages_)  (Policy Files mentioned below in Step 3 are important and Packages are **NOT** important in this process as they would be generated during Custom image generation during Step 5)
+    - Step 2.2: Generate Lockdown Policy Files
     - Step 2.3: Copy generated Policy Files to appropriate folders 
       
       **Secureboot:** copy \TurnkeySecurity\QCDB\Output\SecureBoot\*.bin to the pkgs folder of \iot-adk-addonkit\Common\Packages\Security.SecureBoot
@@ -121,7 +119,6 @@ The following are the important files to consider:
       - Security.DevuceGuard.pkg.xml
       - SIPolicyOn.p7b
       - SIPolicyOff.p7b
-        
      - Step 2.4: Add|Update TestOEMInput.xml with Lockdown Package Feature names
         - `<Feature>Sec_BitLocker</Feature>`
         - `<Feature>Sec_SecureBoot</Feature>`
@@ -130,11 +127,9 @@ The following are the important files to consider:
         - `buildpkg all` (this generates new Lockdown packages based on above Policy Files)
         - `buildimage SecureSample test`  (this generates new Flash.ffu)
         - (Above example assuming that you are using Product:SecureSample and ImageType: test)
-	
     - Step 2.6: Flash the device with this new Flash.ffu
 
   **Result:** Expected device is ready with Lockdown.
-
 
 ### Generating Necessary Lockdown Packages
 First, download the [DeviceLockDown Script](https://github.com/ms-iot/security/tree/master/TurnkeySecurity) package, which contains all of the additional tools and scripts required for configuring and locking down devices
