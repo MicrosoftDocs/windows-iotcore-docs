@@ -24,7 +24,6 @@ Windows 10 IoT Core also implements a lightweight version of BitLocker Device En
 ### Device Guard on Windows IoT Core
 Most IoT devices are built as fixed-function devices.  This implies that device builders know exactly which firmware, operating system, drivers and applications should be running on a given device.  In turn, this information can be used to fully lockdown an IoT device by only allowing execution of known and trusted code.  Device Guard on Windows 10 IoT Core can help protect IoT devices by ensuring that unknown or untrusted executable code cannot be run on locked-down devices.
 
-
 ## Locking-down IoT Devices
 In order to lockdown a Windows IoT device, the following considerations must be made.
  
@@ -55,26 +54,31 @@ Windows 10 IoT Core works with that are utilized in hundreds of devices. Of the 
 * Qualcomm DragonBoard 410c
 * Intel MinnowBoardMax 
 
-**Notes:**
-* For Qualcomm's DragonBoard 410c, in order to enable Secure Boot, it may be necessary to provision RPMB. Once the eMMC has been flashed with Windows 10 IoT Core (as per instructions [here](https://developer.microsoft.com/en-us/windows/iot/getstarted), press [Power] + [Vol+] + [Vol-] simultaneously on the device when powering up and select "Provision RPMB" from the BDS menu. *Please note that this is an irreversible step.*
-* For Intel's MinnowBoard Max, firmware version must be 0.82 or higher (get the [latest firmware](https://firmware.intel.com/projects/minnowboard-max)). To enable TPM capabilities, power up board with a keyboard & display attached and press F2 to enter UEFI setup. Go to _Device Manager -> System Setup -> Security Configuration -> PTT_ and set it to _&lt;Enable&gt;_. Press F10 to save changes and proceed with a reboot of the platform.
 * For Qualcomm's DragonBoard 410c, in order to enable USB mass storage mode (if required):
-  * disconnect everything from DragonBoard
-  * be sure the dip switches are all on default (off) position
-  * connect Dragonboard's USB OTG Connector to your PC
-  * press S2 [power] and S4 [vol-] on your DragonBoard
-  * connect Power to your DragonBoard
-  * after ~ 10 sec you can release S2 and S4 (or as soon as the next step has begun)
+  * Disconnect everything from DragonBoard
+  * Be sure the dip switches are all on default (off) position
+  * Connect Dragonboard's USB OTG Connector to your PC
+  * Press S2 [power] and S4 [vol-] on your DragonBoard
+  * Connect Power to your DragonBoard
+  * After ~ 10 sec you can release S2 and S4 (or as soon as the next step has begun)
   * Windows should now have recognized an additional mass storage device and mounted a new drive
-* BitLocker functionality on Windows 10 IoT Core allows for automatic encryption of NTFS-based OS volume while binding all available NTFS data volumes to it.  For this, it’s necessary to ensure that the EFIESP volume GUID is set to _C12A7328-F81F-11D2-BA4B-00A0C93EC93B_.  
+
+> [!NOTE]
+> For Qualcomm's DragonBoard 410c, in order to enable Secure Boot, it may be necessary to provision RPMB. Once the eMMC has been flashed with Windows 10 IoT Core (as per instructions [here](https://developer.microsoft.com/en-us/windows/iot/getstarted), press [Power] + [Vol+] + [Vol-] simultaneously on the device when powering up and select "Provision RPMB" from the BDS menu. *Please note that this is an irreversible step.*
+
+> [!NOTE]
+> For Intel's MinnowBoard Max, firmware version must be 0.82 or higher (get the [latest firmware](https://firmware.intel.com/projects/minnowboard-max)). To enable TPM capabilities, power up board with a keyboard & display attached and press F2 to enter UEFI setup. Go to _Device Manager -> System Setup -> Security Configuration -> PTT_ and set it to _&lt;Enable&gt;_. Press F10 to save changes and proceed with a reboot of the platform.
+
+> [!TIP]
+> BitLocker functionality on Windows 10 IoT Core allows for automatic encryption of NTFS-based OS volume while binding all available NTFS data volumes to it.  For this, it’s necessary to ensure that the EFIESP volume GUID is set to _C12A7328-F81F-11D2-BA4B-00A0C93EC93B_.  
 
 ### Lockdown Behavior
 Locking down IoT devices is carried out in 3 step process.
-- Step 1: Prepare IoT Image without Lockdown Features  ( With out SecureBoot, Bitlocker, DeviceGuard )
-- Step 2: Generate SIPolicy Files
-- Step 3: Either Use the generated Lockdown Packages and Apply on top of Device ( Below Point (1) - <b>_Update Existing Device_</b> talks about that ) OR use the Generated SIPolicy files and re-generate new Image with Lockdown Features ( Point (2) - <b>_Generate Lockdown Image_</b> talks about it)
+1: Prepare IoT Image without Lockdown Features  (without SecureBoot, Bitlocker, DeviceGuard)
+2: Generate SIPolicy Files
+3: Either Use the generated Lockdown Packages and Apply on top of Device OR use the Generated SIPolicy files and re-generate new Image with Lockdown Feature.
 
-Below Outlines different ways of Generating and Testing
+Below, you can find different ways of generating and testing:
 
 1. Update Existing Device
     In this exercise, we are going to test Lockdown behavior by using the existing device which is already running Windows IoT Core. This is targetting for **Testing** the Lockdown Features and <b>NOT</b> the Production or Retail Scenario.
@@ -100,36 +104,37 @@ Below Outlines different ways of Generating and Testing
       
       **DeviceGuard:** copy \TurnkeySecurity\QCDB\Output\DeviceGuard\*.* to the pkgs folder of \iot-adk-addonkit\Common\Packages\Security.DeviceGuard
 
-          Following are the important files to consider
+The following are the important files to consider
 
-          a. Security.BitLocker
-            - DETask.xml
-            - Security.Bitlocker.pkg.xml
-            - setup.bitlocker.cmd
+   a. Security.BitLocker
+      - DETask.xml
+      - Security.Bitlocker.pkg.xml
+      - setup.bitlocker.cmd
 
-          b. Security.SecureBoot
-            - Security.SecureBoot.pkg.xml
-            - SetVariable_db.bin
-            - SetVariable_kek.bin
-            - SetVariable_pk.bin
-            - setup.secureboot.cmd
+   b. Security.SecureBoot
+      - Security.SecureBoot.pkg.xml
+      - SetVariable_db.bin
+      - SetVariable_kek.bin
+      - SetVariable_pk.bin
+      - setup.secureboot.cmd
 
-          c. Security.DeviceGuard
-            - Security.DevuceGuard.pkg.xml
-            - SIPolicyOn.p7b
-            - SIPolicyOff.p7b
+   c. Security.DeviceGuard
+      - Security.DevuceGuard.pkg.xml
+      - SIPolicyOn.p7b
+      - SIPolicyOff.p7b
         
      - Step 2.4: Add|Update TestOEMInput.xml with Lockdown Package Feature names
         - `<Feature>Sec_BitLocker</Feature>`
         - `<Feature>Sec_SecureBoot</Feature>`
         - `<Feature>Sec_DeviceGuard</Feature>`
     - Step 2.5: Re-generate Image
-        - `buildpkg all` ( this generates new Lockdown packages based on above Policy Files )
-        - `buildimage SecureSample test`  ( this generates new Flash.ffu)
-        - (Above example assuming that you are using Product:SecureSample and ImageType: test )
+        - `buildpkg all` (this generates new Lockdown packages based on above Policy Files)
+        - `buildimage SecureSample test`  (this generates new Flash.ffu)
+        - (Above example assuming that you are using Product:SecureSample and ImageType: test)
+	
     - Step 2.6: Flash the device with this new Flash.ffu
 
-  **Result:** Expected device is ready with Lockdown
+  **Result:** Expected device is ready with Lockdown.
 
 
 ### Generating Necessary Lockdown Packages
@@ -139,21 +144,21 @@ First, download the [DeviceLockDown Script](https://github.com/ms-iot/security/t
 
 1. Start an Administrative PowerShell (PS) console on your Windows 10 PC and navigate to the location of the downloaded script.
 
-** Note:**  Important files to understand
-  and Check the following Paths are valid as per your machine setup, if not find and update appropriate paths.
-  * settings.xml ( or QCDB.settings.xml or MBMx86_settings.xml or MBMx64_settings.xml )
-    - Windows10KitsRoot `(ex: <Windows10KitsRoot>C:\Program Files (x86)\Windows Kits\10\</Windows10KitsRoot> )`
-    - WindowsSDKVersion `(ex: <WindowsSDKVersion>10.0.15063.0</WindowsSDKVersion> )`
-      - Replace with SDK version installed on your machine and is found under `C:\Program Files (x86)\Windows Kits\10\`
-    - Remaining settings are discussed in #4 below
-
-  * IoTDeviceGuardUtils.psm1 
-    - $Win10KitsRoot\bin\$WindowsSDKVersion\x86\signtool.exe 
-    - $Win10KitsRoot\bin\$WindowsSDKVersion\x86\pvk2pfx.exe 
-    - $Win10KitsRootBinPath = "$Win10KitsRoot\Tools\bin\i386" 
-    - $PkgGenCmd = "$Win10KitsRootBinPath\pkggen.exe" 
-    - $PkgConfigXml = "$Win10KitsRootBinPath\pkggen.cfg.xml" 
-    - $ADKEnvCmd = "$Win10KitsRoot\Assessment and Deployment Kit\Deployment Tools\DandISetEnv.bat"
+> [!NOTE]
+> Check the following Paths are valid as per your machine setup, if not find and update appropriate paths.
+> * settings.xml ( or QCDB.settings.xml or MBMx86_settings.xml or MBMx64_settings.xml )
+>    - Windows10KitsRoot `(ex: <Windows10KitsRoot>C:\Program Files (x86)\Windows Kits\10\</Windows10KitsRoot> )`
+>    - WindowsSDKVersion `(ex: <WindowsSDKVersion>10.0.15063.0</WindowsSDKVersion> )`
+>      - Replace with SDK version installed on your machine and is found under `C:\Program Files (x86)\Windows Kits\10\`
+>    - Remaining settings are discussed in #4 below
+>
+>  * IoTDeviceGuardUtils.psm1 
+>    - $Win10KitsRoot\bin\$WindowsSDKVersion\x86\signtool.exe 
+>    - $Win10KitsRoot\bin\$WindowsSDKVersion\x86\pvk2pfx.exe 
+>    - $Win10KitsRootBinPath = "$Win10KitsRoot\Tools\bin\i386" 
+>    - $PkgGenCmd = "$Win10KitsRootBinPath\pkggen.exe" 
+>    - $PkgConfigXml = "$Win10KitsRootBinPath\pkggen.cfg.xml" 
+>    - $ADKEnvCmd = "$Win10KitsRoot\Assessment and Deployment Kit\Deployment Tools\DandISetEnv.bat"
 
 2. If using pre-generated keys (for development/testing), skip to #3 below.  If generating your own keys:
   * Update _GenerateKeys.ps1_ script (optional)
@@ -163,7 +168,8 @@ First, download the [DeviceLockDown Script](https://github.com/ms-iot/security/t
       _settings.xml_ is generic file provided with settings commonly used for generation of Lockdown Packages. 
   * For Convienence, we added some templated version for Qualcomm Dragonboard ( _QCDB_settings.xml_ ), Minnowboard ( _MBMx86_settings.xml_ & _MBMx64_settings.xml_ )
   
-**Note:** Raspberry Pi2|3 does not support TPM and so we cannot configure Lockdown scenarios.
+> [!NOTE]
+> Raspberry Pi 2 nor 3 do not support TPM and so we cannot configure Lockdown scenarios.
 
 3. Mount your reference hardware platform to your PC, through any appropriate means, including network share or via USB mass storage mode (if available).
   * Update the Device Path for IPAddress: a.b.c.d using 3.1 or 3.2
