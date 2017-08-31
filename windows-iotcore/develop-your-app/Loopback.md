@@ -12,7 +12,7 @@ keywords: windows iot, localhost, loopback, UWP, visual studio
 
 # Communicating with localhost (loopback)
 
-On **Windows IoT Core**, if you want to create a TCP/IP connection between 2 processes running on the same device and one of them is a UWP app you must enable localhost loopback.
+On Windows IoT Core, if you want to create a TCP/IP connection between 2 processes running on the same device and one of them is a UWP app you must enable localhost loopback.
 
 ## Loopback and the debugger 
 By default, running under the Visual Studio debugger enables outbound loopback automatically for that debug session only.  You shouldn’t have to do anything as long as the loopback checkbox is checked in the debugger settings for your startup project.  If you want to implement a socket listener the you must enable localhost loopback for inbound connections (see below).
