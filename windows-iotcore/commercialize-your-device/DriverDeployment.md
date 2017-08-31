@@ -65,6 +65,7 @@ ___
        * Select **Next**
        
        ![Configure Debug Settings](../media/DriverDeployment/confdbgsettings.png)
+       
     * The Raspberry Pi uses serial for kernel debugging.
        *  Connect the appropriate serial debugging cable to the PI and the host machine
        *  Select **Serial** for the connection type
@@ -74,7 +75,9 @@ ___
 * The WDK, through VS, will now provision the IoT device.  TAEF and WDTF will be installed on the device, and the device will be set up for kernel debugging per the settings provided above.
 
 * When complete, the device may reboot.  The progress screen on the **Device Configuration** will provide status, and shows complete when the IoT device has completed the installation. Press **Finish**.
+
 ![Configure Progress](../media/DriverDeployment/confprogress.png)
+
 * The device is now provisioned and the **Device test configuration** status shows **Configured for driver testing**
 
 ![ConfigureDevices](../media/DriverDeployment/ConfigureDevices.png)
@@ -84,15 +87,23 @@ ___
 1. Launch Visual Studio in the administrator mode and open the visual studio driver project.
 2. Make sure the Target Platform Version matches the SDK installed on your development machine. Select Project Properties from the Solution Explorer window.  Under General Configuration Properties assure that the Target Platform Version matches the SDK installed on your development computer.  You can check the version of the SDK from the **Control Panel > Programs > Programs and Features**.
 3. Under **Project > Add New Item > Visual C++ > Windows Driver**, select **Package Manifest** and Press **Add**.
+
 ![PackageManifest](../media/DriverDeployment/PackageManifest.png)
+
  `Package.pkg.xml` file will be added to the project. In this file, specify the Owner, Platform, Component and SubComponent tags. 
+ 
 ![Package-pkg-xml](../media/DriverDeployment/Package-pkg-xml.png)
  
 4. Set package version number at **Project Properties > PackageGen > Version**. Note that everytime you need to perform a Install/Reinstall of the driver, this version number has to be incremented.
+
 ![PackageVersion](../media/DriverDeployment/PackageVersion.png)
+
 5. Under **Project Properties > Driver Signing > Test Certificate**, select test certificate (Phone OEM Test Certificate)
+
 ![DriverSigning](../media/DriverDeployment/DriverTestSigning.png)
+
 6. Go to **Driver Install** and select **Deployment**
+
 ![InstallOptions](../media/DriverDeployment/installOptions.png)
 
 * From the **Target Device Name** dropdown, select the target created above in the provisioning process. Notice the two options for **Install / Reinstall** and **Fast Reinstall**. Choose an option and Click **Ok**.
@@ -120,7 +131,9 @@ Some users prefer to use the **Deploy** functionality and attach a different ker
 ### Deploy
 1.  Right-click on the project in the solution explorer
 2.  Select **Deploy**
+
 ![Deploy](../media/DriverDeployment/deploy.png) 
+
 3.  The deployment process should proceed.  The IoT device will be rebooted after deployment, and should show the “Gears” screen while installation is taking place.
 
 Build output is in the **Output** Window
