@@ -61,4 +61,8 @@ with, you can imprint the shared access key of that device on your TPM:
 
 ![Provision Device](../media/ConnectDeviceToCloud/Building_Secure_Apps_for_IoT_Core_Screen02.png)
 
-Your device is now ready to connect to Azure in a secure way. Read about [connecting your app to Azure](../extend-your-app/ConnectAppToCloud.md).
+Your device is now ready to connect to Azure in a secure way. 
+
+Helpful resources:
+* [Connecting your app to Azure](../extend-your-app/ConnectAppToCloud.md)
+* [Building secure apps for IoT Core](https://blogs.windows.com/buildingapps/2016/07/20/building-secure-apps-for-windows-iot-core/#oqFLXiWIL1iCF8j9.97)
