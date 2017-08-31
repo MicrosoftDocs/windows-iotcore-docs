@@ -28,7 +28,7 @@ keywords: windows iot, package creation, package installation
 * Select the required architecture in the `Set Environment for Architecture` prompt
 * Install test signing certificates using `InstallOEMCerts` . This is required *only once* for the PC.
 
-To create your own image (FFU), [get the tools needed to customize Windows IoT Core](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/set-up-your-pc-to-customize-iot-core).
+To create your own image (FFU), [follow the steps outlined in the "Create a basic image" lab in the IoT Manufacturing guide. (https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-basic-image).
 
 ## Step 2: Create a new package
 1. Create a **package definition xml file** (.pkg.xml file), and specify the files and reg keys you want to add.
