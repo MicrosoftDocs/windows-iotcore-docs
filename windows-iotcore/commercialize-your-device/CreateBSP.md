@@ -55,7 +55,7 @@ You can also recreate the cab files with the below script, the cab files will be
 1. Launch IoTCoreShell, select x86
 2. Create .cmd file copy below snippet and run from above launch shell window.
 
-
+    ```
     @echo off
 
     setlocal
@@ -70,7 +70,7 @@ You can also recreate the cab files with the below script, the cab files will be
     set DIR_ROOT=D:\IntelBSP\BYT\INTEL_HDGraphics_Win10IoTCore_v36.19.0_1227_PV
     call inf2cab.cmd %DIR_ROOT%\emgd_gfx_36_19_0_1227\igdlh.inf GFX.Build1227
     endlocal
-
+    ```
 
 ### Apollo Lake
 
