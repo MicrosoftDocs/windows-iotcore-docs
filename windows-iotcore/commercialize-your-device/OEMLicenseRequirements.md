@@ -41,4 +41,4 @@ See [SMBIOS Specification](https://msdn.microsoft.com/library/windows/hardware/d
 ## Compliance with minimum hardware requirements
 ___
 
-Review the IoTCore sections of [Minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086(v=vs.85).aspx)
+Review the IoT Core sections of [minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086(v=vs.85).aspx)
