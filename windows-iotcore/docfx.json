@@ -1,4 +1,4 @@
-{
+-{
   "build": {
     "content": [
       {
@@ -34,7 +34,7 @@
     "globalMetadata": {
       "layout": "Conceptual",
       "breadcrumb_path": "/windows/iot-core/breadcrumb/toc.json",
-      "uhfHeaderID": "MSDocsHeader-Windows IoT",
+      "uhfHeaderID": "MSDocsHeader-Windows-IoT",
       "searchScope": "windows-iot",
       "ms.locale": "en-us"
     },
