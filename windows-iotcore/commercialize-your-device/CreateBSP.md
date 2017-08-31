@@ -11,9 +11,19 @@ keywords: windows iot, image creation, bsp, windows iot, board supported package
 ---
 
 # Windows 10 IoT Core BSPs
-Board Support Packages (BSP) is a collection of drivers/settings required to run IoT Core on a hardware platform.
-These are provided by the hardware vendors/silicon vendors.
-Below you can find information on where you can get the BSPs for the supported platforms.
+Board Support Packages (BSP) is a collection of drivers/settings required to run IoT Core on a hardware platform. These are provided by the hardware vendors/silicon vendors.
+
+There are two steps to creating your own BSP.
+
+* First, find where you can get BSPs for supported platforms below.
+* Second, learn how to create your own BSP using the [IoT Manufacturing guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-new-bsp).
+
+## Other resources
+
+* [Windows ADK IoT Core Add-Ons Overview](https://go.microsoft.com/fwlink/p/?LinkId=735029)
+* [IoT Core Add-Ons command-line options](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/iot-core-adk-addons-command-line-options)
+* [IoT Core feature list](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/iot-core-feature-list)
+* [Channel9 Video on Manufacturing Guide](https://channel9.msdn.com/events/Build/2017/B8085)
 
 ## Raspberry Pi BSP
 Raspberry drivers are available at [ms-iot/bsp](https://github.com/ms-iot/bsp).
@@ -99,10 +109,3 @@ DragonBoard drivers are available at [DragonBoard 410C Software](https://develop
 > [!NOTE]
 > You can copy the BSP cab files to a different folder, say `C:\MyBSPs\, and set BSPPKG_DIR=C:\MyBSPs\` in the IoTCoreShell to use these files. You can also modify this setting in the setenv.cmd file.
 
-## See also
-
-* [IoT Core Manufacturing Guide](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/iot-core-manufacturing-guide)
-* [Windows ADK IoT Core Add-Ons Overview](https://go.microsoft.com/fwlink/p/?LinkId=735029)
-* [IoT Core Add-Ons command-line options](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/iot-core-adk-addons-command-line-options)
-* [IoT Core feature list](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/iot-core-feature-list)
-* [Channel9 Video on Manufacturing Guide](https://channel9.msdn.com/events/Build/2017/B8085)
