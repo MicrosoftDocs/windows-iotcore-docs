@@ -76,6 +76,7 @@ ___
 * When complete, the device may reboot.  The progress screen on the **Device Configuration** will provide status, and shows complete when the IoT device has completed the installation. Press **Finish**.
 ![Configure Progress](../media/DriverDeployment/confprogress.png)
 * The device is now provisioned and the **Device test configuration** status shows **Configured for driver testing**
+
 ![ConfigureDevices](../media/DriverDeployment/ConfigureDevices.png)
 
 ## Step 3 : Configure Visual Studio driver project
