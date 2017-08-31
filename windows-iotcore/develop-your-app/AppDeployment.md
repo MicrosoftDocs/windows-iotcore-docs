@@ -14,15 +14,9 @@ keywords: windows iot, visual studio, app deployment, remote debugging
 
 Deploying and debugging your application is straightforward with Visual Studio. We'll use the **Remote Debugging** feature to deploy the app to your locally connected Windows 10 IoT Core device. 
 
-* [C# App Deployment](#csharp)
-* [C++ App Deployment](#cpp)
-* [Python App Deployment](#python)
-
 > [!NOTE]
 > In order to use remote debugging, your IoT Core device must first be connected to same local network as your development PC.  
 >See the [Connecting to a device](https://developer.microsoft.com/en-us/windows/iot/Docs/ConnectToDevice) instructions.
-
-<a name="csharp"/>
 
 ## Deploy a C# app to your Windows 10 IoT Core device 
 ___
@@ -50,8 +44,6 @@ You can verify or modify these values by navigating to the project properties (s
 
 7. After successfully deploying and debugging your UWP application, create a Release version - change the Visual Studio toolbar configuration dropdown from `Debug` to `Release`.  You can now build and deploy your app to your device by selecting Build \| Rebuild Solution and Build \| Deploy Solution.
 
-<a name="cpp"/>
-
 ## Deploy a C++ app to your Windows 10 IoT Core device
 
 1. With the application open in Visual Studio, set the architecture in the toolbar dropdown. If you're building for Minnowboard Max, select `86`. If you're building for Raspberry Pi 2 or 3, select `ARM`.
@@ -77,8 +69,6 @@ Otherwise, use the IP address of your Windows IoT Core device.
 6. Once deployed, you can set breakpoints, see variable values, etc. To stop the app, press on the 'Stop Debugging' button (or select Debug \| Stop Debugging).
 
 7. Having successfully deployed and debugged your UWP application, create a Release version - change the Visual Studio toolbar configuration dropdown from `Debug` to `Release`.  You can now build and deploy your app to your device by selecting Build \| Rebuild Solution and Build \| Deploy Solution.
-
-<a name="python"/>
 
 ## Deploy a Python app to your Windows 10 IoT Core device
 
