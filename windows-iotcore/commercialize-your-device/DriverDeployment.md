@@ -64,7 +64,7 @@ ___
        * Select the host IP of the machine running visual studio.  Do not use the autonet (169.xxx) address.
        * Select **Next**
        
-       ![Configure Debug Settings](../media/DriverDeployment/confdbgsettings.png)
+  ![Configure Debug Settings](../media/DriverDeployment/confdbgsettings.png)
        
     * The Raspberry Pi uses serial for kernel debugging.
        *  Connect the appropriate serial debugging cable to the PI and the host machine
