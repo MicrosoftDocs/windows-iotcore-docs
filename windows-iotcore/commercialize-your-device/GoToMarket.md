@@ -16,11 +16,13 @@ On this page we will review the key items that needs to be considered in the **G
 ## Understand licensing requirements
 * See [Windows 10 IoT Core Commercialization](https://www.windowsforiotdevices.com/) to understand the licensing requirements.
 
+## Find a distributor
+Once you've understood the license requirements to use Windows 10 IoT Core commercially,  if you want to work with one of our distributors you can [learn more here](Windows_IoT_Distributor_Information.pdf).
+
 ## Create a retail image
 * [Learn how to create a custom image at Windows 10 IoT Core manufacturing guide](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/iot-core-manufacturing-guide)
 * [Learn how to lockdown your device at Building Secure Devices](../secure-your-device/BuildingSecureDevices.md)
 * [Learn how to configure your device for servicing at Service IoTCore](https://msdn.microsoft.com/windows/hardware/commercialize/service/iot/index)
-
 
 ## Arrange for device manufacturing  
 Get contact info for parts suppliers (SVs/IHVs/ODMs). Contact the supplier directly and follow their process to get components and licenses as necessary. Work directly with your SoC partner to locate an appropriate manufacturer.
