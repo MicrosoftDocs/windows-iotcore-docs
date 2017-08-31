@@ -16,7 +16,7 @@ Board Support Packages (BSP) is a collection of drivers/settings required to run
 There are two steps to creating your own BSP:
 
 * First, find where you can get BSPs for supported platforms **below**.
-* Second, learn how to create your own BSP using the [IoT Manufacturing guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-new-bsp).
+* Second, learn how to create your own BSP by following the steps listed in the [IoT Manufacturing guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-new-bsp).
 
 ## Raspberry Pi BSP
 Raspberry drivers are available at [ms-iot/bsp](https://github.com/ms-iot/bsp).
