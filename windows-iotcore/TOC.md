@@ -35,6 +35,7 @@
 ## [Develop your app]()
 ### [Deploy your app](develop-your-app/AppDeployment.md)
 ### [Install your app](develop-your-app/AppInstaller.md)
+### [Setup a default app](develop-your-app/SetupDefaultApp.md)
 ### [Bus providers](develop-your-app/BusProviders.md)
 ### [Supported languages and app types](develop-your-app/BuildingAppsForIoTCore.md)
 ### [IoT Core Shell overview](develop-your-app/IoTCoreShell.md)
