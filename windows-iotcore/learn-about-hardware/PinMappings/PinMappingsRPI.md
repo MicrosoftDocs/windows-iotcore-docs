@@ -12,7 +12,7 @@ keywords: windows iot, Rasperry Pi 2, Raspberry Pi 3, pin mappings, GPIO
 
 # Raspberry Pi 2 & 3 Pin Mappings
 
-![Raspberry Pi 2 & 3 Pin Header](../media/PinMappingsRPI/RP2_Pinout.png)
+![Raspberry Pi 2 & 3 Pin Header](../../media/PinMappingsRPI/RP2_Pinout.png)
 
 Hardware interfaces for the Raspberry Pi 2 and Raspberry Pi 3 are exposed through the 40-pin header **J8** on the board. Functionality includes:
 
@@ -161,10 +161,7 @@ public async void Serial()
 
 Note that you must add the following capability to the **Package.appxmanifest** file in your UWP project to run Serial UART code:
 
-    Visual Studio 2017 has a known bug in the Manifest Designer (the visual editor for appxmanifest files) that affects the serialcommunication capability.  If
-    your appxmanifest adds the serialcommunication capability, modifying your appxmanifest with the designer will corrupt your appxmanifest (the Device xml child
-    will be lost).  You can workaround this problem by hand editting the appxmanifest by right-clicking your appxmanifest and selecting View Code from the
-    context menu.
+Visual Studio 2017 has a known bug in the Manifest Designer (the visual editor for appxmanifest files) that affects the serialcommunication capability.  If your appxmanifest adds the serialcommunication capability, modifying your appxmanifest with the designer will corrupt your appxmanifest (the Device xml child will be lost).  You can workaround this problem by hand editting the appxmanifest by right-clicking your appxmanifest and selecting View Code from the context menu.
 
 ```xml
   <Capabilities>
