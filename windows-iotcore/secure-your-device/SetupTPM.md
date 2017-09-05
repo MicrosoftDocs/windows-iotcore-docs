@@ -1,5 +1,5 @@
 ---
-title: Setup TPM on Supported Platforms
+title: Setup TPM on Suggested Platforms
 author: saraclay
 ms.author: saclayt
 ms.date: 09/5/17
