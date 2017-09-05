@@ -30,6 +30,7 @@
 ## [Secure your device]()
 ### [Building secure IoT devices](secure-your-device/BuildingSecureDevices.md)
 ### [TPM on Windows 10 IoT Core](secure-your-device/TPM.md)
+### [Setup TPM](secure-your-device/setupTPM.md)
 ### [Using the Unified Write Filter](secure-your-device/UnifiedWriteFilter.md)
 ### [Secure Boot, BitLocker, and Device Guard](secure-your-device/SecureBootAndBitLocker.md)
 ## [Develop your app]()
