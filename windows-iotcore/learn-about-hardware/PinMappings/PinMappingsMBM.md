@@ -14,7 +14,7 @@ keywords: windows iot, Minnowboard Max, pin mappings, GPIO
 
 ## Overview
 
-![MinnowBoard Max Pin Header](../media/PinMappingsMBM/MBM_Pinout.png)
+![MinnowBoard Max Pin Header](../../media/PinMappingsMBM/MBM_Pinout.png)
 
 Hardware interfaces for the MinnowBoard Max are exposed through the 26-pin header **JP1** on the board. Functionality includes:
 
@@ -132,12 +132,9 @@ public async void Serial()
 
 Note that you must add the following capability to the **Package.appxmanifest** file in your UWP project to run Serial UART code:
 
-    Visual Studio 2017 has a known bug in the Manifest Designer (the visual editor for appxmanifest files) that affects the serialcommunication capability.  If 
-    your appxmanifest adds the serialcommunication capability, modifying your appxmanifest with the designer will corrupt your appxmanifest (the Device xml child 
-    will be lost).  You can workaround this problem by hand editting the appxmanifest by right-clicking your appxmanifest and selecting View Code from the 
-    context menu.
+Visual Studio 2017 has a known bug in the Manifest Designer (the visual editor for appxmanifest files) that affects the serialcommunication capability.  If your appxmanifest adds the serialcommunication capability, modifying your appxmanifest with the designer will corrupt your appxmanifest (the Device xml child will be lost).  You can workaround this problem by hand editting the appxmanifest by right-clicking your appxmanifest and selecting View Code from the context menu.
 
-```xml
+```
   <Capabilities>
     <DeviceCapability Name="serialcommunication">
       <Device Id="any">
@@ -190,7 +187,7 @@ public async void I2C()
 
 The MinnowBoard Max has a known issue with the I2C bus which causes communication problems with certain I2C devices. Normally, an I2C device will acknowledge its address during a bus request.
 However, under certain conditions this acknowledge fails to propagate back through the level shifters to the MBM, and as a result the CPU thinks the device did not respond and cancels the bus transaction.
-The issue seems to be related to the [TXS0104E](http://www.ti.com/product/txs0104e){:target="_blank"} level shifters on the IO pins, which can trigger prematurely due to voltage spikes on the line.
+The issue seems to be related to the [TXS0104E](http://www.ti.com/product/txs0104e) level shifters on the IO pins, which can trigger prematurely due to voltage spikes on the line.
 The current workaround is to insert a 100 ohm resistor in series with the I2C SCK line, which helps suppress spikes. Not all devices are affected, so this workaround is only required if you are having trouble
 getting a bus response. One device that is known to require this workaround is the HTU21D.
 
