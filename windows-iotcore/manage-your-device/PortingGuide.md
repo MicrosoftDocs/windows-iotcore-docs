@@ -63,7 +63,7 @@ Direct Port Manipulation
 - PIN[B/C/D] = digitalRead();
 
 
-- [SPI Registers](http://www.arduino.cc/en/Tutorial/SPIEEPROM) (Introduction to the Serial Peripheral Interface)
+- [SPI Registers](http://www.arduino.cc/en/Tutorial/SPIEEPROM):
 	  This fine grain level of control is not offered by the Windows Developer Program for IoT and in most cases, simply using the SPI library can replace this functionality.
 
 ### GCC
