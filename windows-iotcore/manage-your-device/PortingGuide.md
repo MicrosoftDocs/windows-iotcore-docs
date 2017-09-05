@@ -70,12 +70,12 @@ Direct Port Manipulation
 
 Non-portable GCC compiler commands/options
 
-- **`__atrribute__(__packed__)`**
+- `__atrribute__(__packed__)`
 This can be replaced by pushing a pack attribute on the data alignment stack [i.e. <code>#pragma pack(push, 1)</code>], then popping it off once your structs have been defined [e.g. `#pragma pack(pop)</code>`].
 
-   Check [MSDN](http://msdn.microsoft.com/en-us/library/vstudio/2e70t5y1(v=vs.100).aspx){:target="_blank"} for more details.
+   Check [MSDN](http://msdn.microsoft.com/en-us/library/vstudio/2e70t5y1(v=vs.100).aspx) for more details.
 
-- **`asm volatile("nop");`**
+- `asm volatile("nop");`
 The same functionality exists on Windows, however the syntax is different <code>__asm nop</code>. The MSVC compiler does not optimize around assembly, so the `volatile` is not valid.
 
    For a deeper discussion please check [StackOverflow](http://stackoverflow.com/questions/25878898/is-asm-nop-the-windows-equivalent-of-asm-volatilenop-from-gcc-compile).
