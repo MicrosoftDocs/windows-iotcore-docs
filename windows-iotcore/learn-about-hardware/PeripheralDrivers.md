@@ -37,7 +37,7 @@ The Driver package contains the references(InfSource)to the Inf file for the dri
 [`inf2cab.cmd` tool](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/inf2cab.cmd) creates the package xml file and also builds the cab file directly by invoking `buildpkg.cmd` internally.
 
 > [!NOTE]
-> Windows IoT Core supports Universal Inf only
+> Windows IoT Core supports Universal Inf only.
 
 See also: [Sample Driver Package](https://github.com/ms-iot/iot-adk-addonkit/blob/develop/Source-arm/BSP/CustomRpi2/Packages/CustomRPi2.GPIO/CustomRPi2.GPIO.pkg.xml) 
 
