@@ -12,7 +12,7 @@ keywords: windows iot, Dragonboard, pin mappings, GPIO
 
 # Dragonboard Pin Mappings
 
-![Dragonboard Pin Header](../media/PinMappingsDB/DB_Pinout.png)
+![Dragonboard Pin Header](../../media/PinMappingsDB/DB_Pinout.png)
 
 Hardware interfaces for the Dragonboard are exposed through the 40-pin header on the board. Functionality includes:
 
