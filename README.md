@@ -81,18 +81,8 @@ We have four different versions of notes currently styled:
 - TIP
 - IMPORTANT
 
-Respectively, those look like:
-
-![Note patterns](./media/notes.png)
-
-```
-> [!WARNING]
-> Hello.  Yes.  I am a warning note that has been automagically created. My text may wrap to more than one line when the Markdown is parsed, but I must include all my information within a single (sometimes very long line) in the Markdown itself.```
 
 For multi-line blockquote notes, use a > in front of each line of the notes as seen in the example below.
-
-```
-
 
 ## Images
 
