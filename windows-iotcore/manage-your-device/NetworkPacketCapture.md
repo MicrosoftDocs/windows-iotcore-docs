@@ -42,6 +42,7 @@ Now that your device is set up, let's connect to it using Microsoft Message Anal
 1. Download the [Microsoft Message Analyzer](http://www.microsoft.com/en-us/download/details.aspx?id=44226).
 2. Open Message Analyzer.
 3. Click on `New Session`.
+
     ![Message Analyzer](../media/NetworkPacketCapture/message-analyzer-new-session.png)
 4. In the window that opens, click on the `Live Trace` button.
     ![Message Analyzer](../media/NetworkPacketCapture/message-analyzer-live-trace.png)
