@@ -19,7 +19,7 @@ Arduino and Windows 10 work together to help you make amazing projects - get sta
 
 To enable the use of the familiar [Arduino Wiring](https://www.arduino.cc/en/Reference/HomePage) language on IoT Core devices, a Visual Studio project template for Arduino Wiring is provided. The Arduino Wiring project template enables developing, deploying and debugging Arduino Wiring sketches on supported IoT Core devices.
 	
-[Get started using Arduino Wiring](../docs/ArduinoWiring.md)   
+[Get started using Arduino Wiring](ArduinoWiring.md)   
 
 ## Windows Remote Arduino
 
