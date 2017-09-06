@@ -12,7 +12,7 @@ keywords: windows iot, Internet Connection Sharing, ICS, Device Portal
 
 # Internet Connection Sharing Tutorial (November 2015 Release)
 
-This document describes the steps to enable Internet Connection Sharing (ICS) on a device running Windows 10 IoT Core November 2015 Release. The objective is to share an Internet connection between a software Wi-Fi access point (SoftAP) and an Ethernet adapter. If you are using the Windows 10 IoT Core Anniversary Release please refer to the [Internet Connection Sharing Tutorial](InternetConnectionSharing).
+This document describes the steps to enable Internet Connection Sharing (ICS) on a device running Windows 10 IoT Core November 2015 Release. The objective is to share an Internet connection between a software Wi-Fi access point (SoftAP) and an Ethernet adapter. If you are using the Windows 10 IoT Core Anniversary Release please refer to the [Internet Connection Sharing Tutorial](InternetConnectionSharing.md).
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ This document describes the steps to enable Internet Connection Sharing (ICS) on
 
 	Record the SSID of the SoftAP network. You will need it later to connect to your IoT Core device via Wi-Fi. For IoT Onboarding application the SSID will start with "AJ\_SoftAPSsid\_" and can be changed in application's configuration [file](https://github.com/ms-iot/samples/blob/develop/IotOnboarding/IoTOnboardingTask/Config.xml).
 
-3.	Remotely connect to the IoT Core device [using ssh](ssh).
+3.	Remotely connect to the IoT Core device [using ssh](ssh.md).
 4.	Collect information about device networks by finding network device indexes and descriptions. This is needed to declare which networks to bridge.
 
 	On device, run **route print** and collect the following data:
@@ -42,7 +42,7 @@ This document describes the steps to enable Internet Connection Sharing (ICS) on
 
 	For example, the SoftAP is exposed through interface index 5, adapter description “Microsoft Wi-Fi Direct Virtual Adapter #2”.
 
-	![route print](../../media/InternetConnectionSharing/internetconnectionsharing_route.png)
+	![route print](../media/InternetConnectionSharing/internetconnectionsharing_route.png)
 
 	On device, run **ipconfig /all** and collect the following data:
 	
@@ -50,7 +50,7 @@ This document describes the steps to enable Internet Connection Sharing (ICS) on
 
     For example, running "ipconfig /all" finds the specific adapter named “Local Area Connection* 3” that has a description of “Microsoft Wi-Fi Direct Virtual Adapter #2”. Use this method to manually find Adapter Name from the Description returned in “route print”.
 
-	![ipconfig all](../../media/InternetConnectionSharing/internetconnectionsharing_ipconfig.png)
+	![ipconfig all](../media/InternetConnectionSharing/internetconnectionsharing_ipconfig.png)
 
 ### Step 2: Scripting Internet Connection Sharing trigger
 
@@ -138,7 +138,7 @@ This script will do everything but start/stop SharedAccess service, and does not
 #### Build the SharedAccessUtility application
 In Visual Studio with [Windows IoT Core Project Templates extensions](https://go.microsoft.com/fwlink/?linkid=847472) installed, create a new “Blank Windows IoT Core Console Application” Visual C++ project, named **SharedAccessUtility**.
 
-![VS new project](../../media/InternetConnectionSharing/internetconnectionsharing_vs.png)
+![VS new project](../media/InternetConnectionSharing/internetconnectionsharing_vs.png)
 
 Replace contents of ConsoleApplication.cpp with the following code:
 
