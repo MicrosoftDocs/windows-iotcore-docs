@@ -1,6 +1,6 @@
 ---
 title: Setup a Default App
-author: bjfelds
+author: bfjelds
 ms.author: brian.fjeldstad
 ms.date: 9/5/17
 ms.topic: article
@@ -20,13 +20,13 @@ During development / experimental phases, you can change the default app by foll
 ### Using Windows Device Portal
 
 You can click on **Startup** column corresponding to the app.
-![SetupDefaultAppWDP](../../media/SetupDefaultApp/DefaultAppWDP.png)
+![SetupDefaultAppWDP](../media/SetupDefaultApp/DefaultAppWDP.png)
 
 ### Using the shell
 
 Steps to set the default app using the shell 
 
-1. Connect to the device via [Powershell](../connect-your-device/PowerShell)
+1. Connect to the device via [Powershell](../connect-your-device/PowerShell.md)
 
 2. List the applications installed using `iotstartup list`
 
@@ -38,7 +38,7 @@ ___
 For large deployments, you can achieve this using provisioning package
 
 You can specify the StartupApp/Default setting in the WCD during the provisioning package creation.
-![SetupDefaultAppICD](../../media/SetupDefaultApp/DefaultAppICD.png)
+![SetupDefaultAppICD](../media/SetupDefaultApp/DefaultAppICD.png)
 
 See [Appx.IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/blob/develop/Source-arm/Packages/Appx.IoTCoreDefaultApp/customizations.xml) as an example. You can get the Application User Model ID (AUMID) of an appx using [GetAppxInfo tool](https://github.com/ms-iot/iot-adk-addonkit/blob/develop/Tools/GetAppxInfo.exe).
 
