@@ -25,7 +25,8 @@ You can use the tool by running `IoTAPIPortingTool.exe <Application path> [-os]`
 
 *  `-os` should be specified if you are not planning to use UWP.  By default, the tool validates your binaries against the Windows UWP platform.
 
-        NOTE: IoTAPIPortingTool.exe must be run from a Visual Studio Developer Command Prompt. You need to navigate to the folder that contains the IotAPIPortingTool.exe. 
+> [!NOTE] 
+> IoTAPIPortingTool.exe must be run from a Visual Studio Developer Command Prompt. You need to navigate to the folder that contains the IotAPIPortingTool.exe. 
 
         Sample command: C:\IoTAPIPortingTool\bin\Debug>IoTAPIPortingTool.exe C:\Sample\Sample.exe -os 
 
