@@ -28,7 +28,7 @@ This is the repository for Windows 10 IoT **documentation** hosted at [https://d
 If you would like to see new coverage or have feedback, please consider [**contributing**](/CONTRIBUTING.md).  You can edit the existing content, add new content, or simply create new [issues](https://github.com/MicrosoftDocs/windows-iotcore-docs/issues). We’ll take a look at your suggestions and will work together to incorporate them into the docs.
 
 # Conventions
-  - When adding a page, you must add an entry for it in [toc.md](windows-iotcore/toc.md) for it to appear.
+  - When adding a page, you must add an entry for it in [toc.md](windows-iotcore/TOC.md) for it to appear.
   - A folder can contain more folders or `readme.md`s
   - Folder/directory names are dash-separated (e.g., `f12-tools`) and lowercase. They are used in URLs on the docs.microsoft.com site. Don't use underscores or PascalCase/camelCase.
 
