@@ -1,6 +1,6 @@
 ---
 title: Deploying an App with Visual Studio
-author: bjfelds
+author: bfjelds
 ms.author: brian.fjeldstad
 ms.date: 08/28/2017
 ms.topic: article
