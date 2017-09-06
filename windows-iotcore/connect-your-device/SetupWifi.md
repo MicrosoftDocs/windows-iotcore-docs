@@ -115,7 +115,7 @@ Setting up WiFi using wireless profiles is supported in Windows 10 IoT Core. See
 If you need to connect to a WPA2-PSK Personal WiFi network, follow the instructions above first, but make the following changes to the XML file. The only difference is that when your Windows PC exports the XML it encrypts the password.
 
 > [!WARNING] 
-> This will make your connection insecure
+> This will make your connection insecure.
 
 Profile XML exported from Windows PC:
 
