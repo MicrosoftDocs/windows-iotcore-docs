@@ -33,7 +33,7 @@ A quick way to start coding using the Lightning providers is to start with one o
 
 Each of the samples references the Lightning SDK and is configured properly to use the Lightning providers library.
 
-**Note**, To run the samples, the DMAP driver need to be enabled using the Windows Devices Web Portal. Refer to the [Lightning Setup Guide](../docs/LightningSetup.md) for detailed information on how to enable it.
+**Note**, To run the samples, the DMAP driver need to be enabled using the Windows Devices Web Portal. Refer to the [Lightning Setup Guide](LightningSetup.md) for detailed information on how to enable it.
 
 ### Option 2: Referencing the library
 
@@ -193,7 +193,7 @@ You can download a Windows 10 IoT Core image from our [downloads page](https://d
  
 The APIs in the Lightning Provider library require the Lightning Direct Memory Mapped driver to be enabled on the target device. Both Raspberry Pi 2/3 and MinnowBoard Max have the driver available, but not enabled by default.
 
-The driver can be enabled using the Windows Devices Web Portal. Refer to the [Lightning Setup Guide](../docs/LightningSetup.md) for detailed information on how to enable the Lightning driver.
+The driver can be enabled using the Windows Devices Web Portal. Refer to the [Lightning Setup Guide](LightningSetup.md) for detailed information on how to enable the Lightning driver.
 
 ![Devices Page](../media/LightningProviders/dmap4.png)
 
