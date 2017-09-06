@@ -73,7 +73,7 @@ To deploy a Background Application, you can either:
 > [!NOTE]
 > This will not configure your Background Application to start when the device boots.
 
-* Create an AppX in Visual Studio by selecting Project > Store > Create App Packages.  Once you have created an AppX, you can use [Windows Device Portal](../manage-your-device/DevicePortal) to deploy it to your Windows 10 IoT Core device.
+* Create an AppX in Visual Studio by selecting Project > Store > Create App Packages.  Once you have created an AppX, you can use [Windows Device Portal](../manage-your-device/DevicePortal.md) to deploy it to your Windows 10 IoT Core device.
 
 To invoke a Background Application, you can either:
 
@@ -84,7 +84,7 @@ To invoke a Background Application, you can either:
 
 * For a Background Application that has been deployed to an IoT device, you can use the iotstartup.exe utility to configure your Background Application to start when the device boots.  To specify your Background Application as a Startup App, follow these instructions (**substitute your app's name** for `BackgroundApplication1` below):
 
-    1. Start a PowerShell (PS) session with your Windows IoT Core device as described [here](../connect-your-device/PowerShell).
+    1. Start a PowerShell (PS) session with your Windows IoT Core device as described [here](../connect-your-device/PowerShell.md).
 
     2. From the PS session, type:
 
