@@ -37,22 +37,22 @@ Before you start, you will need:
 ___
 * Plug-in your 3D printer to your Windows 10 IoT Core board using the USB cable.
 
-    ![Connect your 3D Printer to the device](../../media/3DPrintServer/connect-3d-printer.png)
+    ![Connect your 3D Printer to the device](../media/3DPrintServer/connect-3d-printer.png)
 
 * Open the IoT Dashboard app and verify that your device shows up in the **My devices** tab.
 
-    ![Verify that your device shows up in IoT Dashboard](../../media/3DPrintServer/selectDevice.png)
+    ![Verify that your device shows up in IoT Dashboard](../media/3DPrintServer/selectDevice.png)
     
 ## 3. Deploy the Network 3D Printer app
 ___
 * In IoT Dashboard, click on the **Try some samples** section.
 * Select the Network 3D Printer sample app.
 
-   ![Install 3D Network Printer](../../media/3dprintserver/dashboard-samples.png)
+   ![Install 3D Network Printer](../media/3dprintserver/dashboard-samples.png)
 
 * Select your 3D Printer model and press the **Deploy and run** button to deploy the app to your IoT Core device. 
 
-    ![Install 3D Network Printer](../../media/3dprintserver/dashboard-app.png)
+    ![Install 3D Network Printer](../media/3dprintserver/dashboard-app.png)
 
     [LulzBot TAZ 6 image](http://devel.lulzbot.com/TAZ/Olive/photos/TAZ_6_Angle_Rock2pus_transparent.png) by [Aleph Objects, Inc.](https://www.alephobjects.com/) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
     
@@ -61,11 +61,11 @@ ___
 * Go to your Windows 10 PC and go to **Settings** -> **Devices** -> **Printers & Scanners**.
 * Press **Add a printer or scanner**.
 
-     ![Windows Settings Add Device](../../media/3dprintserver/add-printer.png)
+     ![Windows Settings Add Device](../media/3dprintserver/add-printer.png)
 
 * Select your 3D Printer and press **Add device**. The printer will install automatically.
 
-     ![Windows Settings Add Device](../../media/3dprintserver/add-device.png)
+     ![Windows Settings Add Device](../media/3dprintserver/add-device.png)
 
 Congratulations your printer is now installed and will behave exactly as if it was connected with a USB cable.
 You can now print to it using [3D Builder](https://msdn.microsoft.com/windows/hardware/mt561568.aspx).
