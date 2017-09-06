@@ -2,7 +2,7 @@
 title: Setting up TPM on Suggested Platforms
 author: saraclay
 ms.author: saclayt
-ms.date: 09/5/17
+ms.date: 09/05/17
 ms.topic: article
 ms.prod: Windows
 ms.technology: IoT
