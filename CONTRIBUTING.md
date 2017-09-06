@@ -45,21 +45,19 @@ When you are happy with your changes and ready to submit a PR:
 
 After pushing your contribution to the remote repo, you will be sent an email from *Open Publishing Build Service* informing whether your contribution built successfully and linking to any error warnings such as broken links, click the links to see your content staged on the site.
 
-Once you have reviewed your contribution on the [Microsoft Edge Docs staging site](https://review.docs.microsoft.com/en-us/windows/iot-core/) and are confident that you would like your changes to be published live, you must file a Pull Request (PR).
+Once you have reviewed your contribution on the [Windows 10 IoT Docs staging site](https://review.docs.microsoft.com/en-us/windows/iot-core/) and are confident that you would like your changes to be published live, you must file a Pull Request (PR).
 
 Once your PR is submitted, a member of the Microsoft Edge docs team will review. When it is accepted, you will be able to view your changes on the [staging site](https://review.docs.microsoft.com/en-us/microsoft-edge). These updates will eventually be published live to [https://docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/microsoft-edge).
 
 ## Working with Branches
 
-The [Microsoft Edge Docs GitHub repository](https://github.com/MicrosoftDocs/edge-developer) utilizes two main parent branches: [Develop](https://github.com/MicrosoftDocs/edge-developer/tree/develop), this content can be reviewed on the [staging site](https://review.docs.microsoft.com/en-us/microsoft-edge), and [Live](https://github.com/MicrosoftDocs/edge-developer/tree/live), for content appearing on the [live site](https://docs.microsoft.com/en-us/microsoft-edge). 
+The [Windows 10 IoT Docs GitHub repository](https://github.com/MicrosoftDocs/windows-iotcore-docs) utilizes two main parent branches: [Develop](https://github.com/MicrosoftDocs/edge-developer/tree/develop), this content can be reviewed on the [staging site](https://review.docs.microsoft.com/en-us/windows/iot-core), and [Live](https://github.com/MicrosoftDocs/windows-iotcore-docs/tree/live), for content appearing on the [live site](https://docs.microsoft.com/en-us/windows/iot-core). 
 
 When making contributions, please submit your Pull Request (PR) to the **Develop** branch. This branch can be viewed on the staging site and should only contain contributions that are ready to be published live.
 
-**For internal Microsoft employees**: If you have content to contribute that is confidential or needs to be held back for future release, please email the Web Docs team at [webdocs@microsoft.com](webdocs@microsoft.com).
-
 ## Using issues to provide feedback on Microsoft Edge documentation
 
-To provide feedback rather than directly modifying actual documentation pages, [create an issue](https://github.com/MicrosoftDocs/edge-developer/issues).
+To provide feedback rather than directly modifying actual documentation pages, [create an issue](https://github.com/MicrosoftDocs/windows-iotcore-docs/issues).
 
 Be sure to include the topic title and the URL for the page.
 
