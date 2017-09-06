@@ -163,7 +163,6 @@ Windows IoT Core is a version of Windows 10 that is optimized for smaller device
 <h2>Questions?</h2>
 <p>If you have questions or want to file a bug, please file an issue or submit a pull request in the appropriate
     repository <a href="https://github.com/ms-iot">on our GitHub</a>.</p>
-<p>If you have feedback about anything Windows 10 IoT related, please <a href="windows-feedback:?contextid=441&metadata={">give us feedback</a>.</p>
 
 
 
