@@ -2,7 +2,7 @@
 title: Setup a Default App
 author: bfjelds
 ms.author: brian.fjeldstad
-ms.date: 9/5/17
+ms.date: 09/05/17
 ms.topic: article
 ms.prod: Windows
 ms.technology: IoT
