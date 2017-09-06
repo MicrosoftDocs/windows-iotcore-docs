@@ -36,7 +36,7 @@ The Vision category, the most valuable category for computer vision applications
 Cognitive Services is great for working with large amount of data, accessing Microsoft Azure, and greatly reducing you application's time-to-market, as the Vision APIs often prove to be time-consuming to develop independently. The model used for these APIs is well-trained and extensive thanks to the efforts of Microsoft Research. On the other hand, its cloud connectivity requirement reduces system performance and creates the requirement for an internet connection.
 
 #### Pricing
-Each API subscription comes with a set of free transactions every month (300 to 30,00, depending on the API). After exceeding this initial amount, the services come with a reasonable price. For example, the Emotion API provides the first 30,000 transactions for free and requires $0.10 or $0.25 every 1000 transaction after that depending on the subscription type.
+Each API subscription comes with a set of free transactions every month (300 to 30,000, depending on the API). After exceeding this initial amount, the services come with a reasonable price. For example, the Emotion API provides the first 30,000 transactions for free and requires $0.10 or $0.25 every 1000 transaction after that depending on the subscription type.
 
 More details about Cognitive Services pricing is found on their [website](https://www.microsoft.com/cognitive-services/en-us/pricing).
 
