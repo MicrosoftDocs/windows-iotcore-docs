@@ -12,9 +12,6 @@ keywords: windows iot, glossary, terms, terminology, definitions
 
 # Glossary
 
-**AllJoyn**<br/>
-AllJoyn is an open source communication framework that enables apps and devices to communicate regardless of connection specifics and OS platform.
-
 **Advanced Configuration & Power Interface (ACPI)**
 ACPI (Advanced Configuration and Power Interface) is an open industry specification co-developed by Hewlett-Packard, Intel, Microsoft, Phoenix, and Toshiba.  ACPI establishes industry-standard interfaces enabling OS-directed configuration, power management, and thermal management of mobile, desktop, and server platforms.
 
