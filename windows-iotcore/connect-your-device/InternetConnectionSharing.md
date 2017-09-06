@@ -16,7 +16,7 @@ This document describes how internet connection sharing (ICS) can be enabled on 
 When using one of the [Windows 10 IoT Core Release Image](https://developer.microsoft.com/en-us/windows/iot/downloads) ICS can also be configured using the device portal.
 
 ## Configuring ICS using the device portal
-See documentation on [Windows Device Portal](deviceportal.md) (WDP).
+See documentation on [Windows Device Portal](../manage-your-device/deviceportal.md) (WDP).
 
 ## ICS code sample
 The code sample below demonstrates how the [NetworkOperatorTetheringManager](https://msdn.microsoft.com/en-us/library/windows/apps/windows.networking.networkoperators.networkoperatortetheringmanager.aspx) API is used to start sharing an Ethernet connection over Wi-Fi. The CreateFromConnectionProfile method accepts arguments that specifies the public and private interface. In any cases of misconfiguration, such as the Wi-Fi radio is turned off, or Ethernet has limited connectivity, then the attempt to start internet sharing conveys an appropriate error code pertaining to this scenario.
@@ -49,4 +49,4 @@ if (ethernetConnectionProfile != null && targetNetworkAdapter != null)
 }
 ```
 
-Sharing Tutorial [Windows IoT Core November 2015 Release](InternetConnectionSharingNov2015) document.
+Sharing Tutorial [Windows IoT Core November 2015 Release](InternetConnectionSharingNov2015.md) document.
