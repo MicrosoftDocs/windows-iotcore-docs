@@ -28,7 +28,7 @@ Enter your administrator username and password if prompted. The username should 
 * Now you can access the files on your device using Windows file sharing.
 
 ## Starting and stopping the file sharing server
-* Connect to your device through [PowerShell](../connect-your-device/powershell) or [SSH](../connect-your-device/ssh).
+* Connect to your device through [PowerShell](../connect-your-device/powershell.md) or [SSH](../connect-your-device/ssh.md).
 * By default the file sharing  server is started when the device is booted.
 * To stop the file sharing  server, type `net stop Server /y`
 * To start the file sharing  server, type `net start Server`
