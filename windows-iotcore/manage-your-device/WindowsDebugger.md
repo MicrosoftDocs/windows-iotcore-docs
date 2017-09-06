@@ -1,6 +1,6 @@
 ---
 title: Windows Debugger
-author: bjfelds
+author: bfjelds
 ms.author: Brian.Fjeldstad
 ms.date: 08/28/2017
 ms.topic: article
@@ -36,7 +36,7 @@ In order to enable kernel debugging with WinDbg over a network, ensure that:
 
 * The MinnowBoard Max device has a valid IP address in your network
 
-* An active connection to the MinnowBoard Max device via [PowerShell](../connect-your-device/PowerShell) 
+* An active connection to the MinnowBoard Max device via [PowerShell](../connect-your-device/PowerShell.md) 
 
 Using the active PowerShell connection, execute the following commands on the MinnowBoard Max to enable debugging over the network.
 
