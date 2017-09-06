@@ -298,7 +298,7 @@ Note, you do NOT need to attach any peripheral to your serial pins such as an FT
 
 ![Debugger Output](../media/ArduinoWiringPortingGuide/debugger_output.png)
 
-The project templates have been updated on the [Windows IoT Core Project Templates extension page](https://go.microsoft.com/fwlink/?linkid=847472){:target="_blank"} to enable using Hardware `Serial` out of the box. However, if your Arduino Wiring application has already been created using an older project template version, you'll need to 1) <a href="#sdk_upgrade">Upgrade your project to the latest Lightning SDK, v1.1.0 or later,</a> and 2) add the required <a href="#serial_comm_device_caps">Hardware Serial device capability</a> to your AppxManifest to be able to use `Serial`.
+The project templates have been updated on the [Windows IoT Core Project Templates extension page](https://go.microsoft.com/fwlink/?linkid=847472) to enable using Hardware `Serial` out of the box. However, if your Arduino Wiring application has already been created using an older project template version, you'll need to 1) Upgrade your project to the latest Lightning SDK, v1.1.0 or later, and 2) add the required Hardware Serial device capability to your AppxManifest to be able to use `Serial`.
 
 ### Hardware Serial device capability requirements
 
