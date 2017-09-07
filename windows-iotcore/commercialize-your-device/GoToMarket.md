@@ -1,5 +1,5 @@
 ---
-title: Go to market
+title: Go to market with Windows IoT Core
 author: namkedia
 ms.author: namkedia
 ms.date: 08/22/2017
@@ -10,7 +10,7 @@ description: Description on commercializing Windows IoT Core.
 keywords: windows 10 IoT Core, commercialize, go to market
 ---
 
-# Go to market with Windows 10 IoT Core 
+# Go to market with Windows IoT Core 
 On this page we will review the key items that needs to be considered in the **Go to market** process. 
 
 ## Understand licensing requirements
