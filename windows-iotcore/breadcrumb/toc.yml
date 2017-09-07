@@ -27,7 +27,7 @@
                 topicHref: "windows/iot-core/develop-your-app/appdeployment.md" 
               - name: Connect to the cloud
                 tocHref: /windows/iot-core/connect-to-cloud
-                topicHref: "windows/iot-core/connect-to-cloud/overview.md
+                topicHref: "windows/iot-core/connect-to-cloud/overview.md"
               - name: Extend your app
                 tocHref: /windows/iot-core/extend-your-app
                 topicHref: "windows/iot-core/extend-your-app/cortanaoniotcore.md"
