@@ -4,8 +4,6 @@ author: saraclay
 ms.author: saclayt
 ms.date: 09/05/17
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn how to setup TPM on Windows 10 IoT Core.
 keywords: windows iot, security, setup, Trusted Platform Module, TPM, cryptography, keys
 ---
