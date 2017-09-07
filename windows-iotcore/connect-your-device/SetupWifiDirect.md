@@ -4,8 +4,6 @@ author: derekameer
 ms.author: demeer
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn how to use and setup WiFi Direct with Windows 10 IoT Core.
 keywords: windows iot, wifi direct, setup, wifi, devices
 ---
