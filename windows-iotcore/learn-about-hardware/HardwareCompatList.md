@@ -4,8 +4,6 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn about the peripheral interfaces and protocols that Windows 10 IoT Core best supports. 
 keywords: windows iot, peripherals, protocols, compatibility, busses, hardware
 ---
