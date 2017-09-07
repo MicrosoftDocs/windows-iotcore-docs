@@ -1,7 +1,7 @@
 ---
 title: Installing and servicing applications
-author: namkedia
-ms.author: namkedia
+author: parameshbabu
+ms.author: pabab
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: Windows
