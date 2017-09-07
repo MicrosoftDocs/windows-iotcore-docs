@@ -1,5 +1,5 @@
 ---
-title:Alljoyn Device System Bridge - API Guide
+title: Alljoyn Device System Bridge - API Guide
 author: saraclay
 ms.author: saclayt
 ms.date: 09/06/17
