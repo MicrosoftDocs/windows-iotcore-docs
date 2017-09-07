@@ -4,8 +4,6 @@ author: saraclay
 ms.author: saclayt
 ms.date: 09/05/17
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn about how to turn your Windows 10 IoT Core device into a print server and connect your 3D Printer to it.
 keywords: windows iot, 3D, 3D printer, print server, network 3D printer
 ---
