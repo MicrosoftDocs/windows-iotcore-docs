@@ -4,8 +4,6 @@ author: parameshbabu
 ms.author: pabab
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: This is a description to create BSPs for IoT Core.
 keywords: windows iot, image creation, bsp, windows iot, board supported package 
 ---
