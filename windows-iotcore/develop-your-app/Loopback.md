@@ -4,7 +4,7 @@ author: paulmon
 ms.author: paul.monson
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn how to enable and use localhost loopback.
+description: Learn how to create a TCP/IP connection with two processes by enabling localhost loopback.
 keywords: windows iot, localhost, loopback, UWP, visual studio
 ---
 
