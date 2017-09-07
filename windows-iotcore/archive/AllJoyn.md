@@ -10,6 +10,9 @@ description: Learn about AllJoyn, a common protocol for IoT devices, and how it 
 keywords: windows iot, AllJoyn
 ---
 
+> [!NOTE]
+> AllJoyn is no longer compatible with Windows 10 IoT. For questions, please open an issue on GitHub or leave us feedback in the comments below.
+
 # AllJoyn
 
 AllJoyn empowers the Internet of Things. AllJoyn defines a common protocol for devices and applications to discover and communicate with each other regardless of transport technology, platform or manufacturer.  AllJoyn is an open source standard driven by the [AllSeen Alliance](https://allseenalliance.org/), a cross-industry consortium dedicated to enabling the interoperability of billions of devices, services and applications for the Internet of Things.
@@ -74,18 +77,14 @@ The IoT Explorer for AllJoyn (previously known as AllJoyn Explorer) is a Windows
 
 **Samples**
 
-*[AllJoyn Producers](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AllJoyn/ProducerExperiences)
-*[AllJoyn Consumers](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AllJoyn/ConsumerExperiences)
-*[AllJoyn UWP Samples (MSDN)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AllJoyn/ConsumerExperiences)
+* [AllJoyn Producers](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AllJoyn/ProducerExperiences)
+* [AllJoyn Consumers](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AllJoyn/ConsumerExperiences)
+* [AllJoyn UWP Samples (MSDN)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AllJoyn/ConsumerExperiences)
 
 **Reference**
 
-- [AllJoyn APIs in Windows 10 (MSDN)](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/windows.devices.alljoyn.aspx){:target="_blank"}
-- [AllJoyn Architecture Details (Allseen Alliance)](https://allseenalliance.org/developers/learn/){:target="_blank"}
-- [AllJoyn Developer Resources (Allseen Alliance)](https://allseenalliance.org/developers/develop/){:target="_blank"}
-- [AllJoyn C API Reference Manual (Allseen Alliance)](https://allseenalliance.org/docs/api/c/index.html){:target="_blank"}
+* [AllJoyn APIs in Windows 10 (MSDN)](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/windows.devices.alljoyn.aspx)
+* [AllJoyn Architecture Details (Allseen Alliance)](https://allseenalliance.org/developers/learn/)
+* [AllJoyn Developer Resources (Allseen Alliance)](https://allseenalliance.org/developers/develop/)
+* [AllJoyn C API Reference Manual (Allseen Alliance)](https://allseenalliance.org/docs/api/c/index.html)
 
-**Informational only**
-
-- [Deprecated] [Channel 9: Building AllJoyn Apps on Windows 10 (MSDN)](https://channel9.msdn.com/Blogs/Internet-of-Things-Blog/Step-By-Step-Building-AllJoyn-Universal-Windows-Apps-for-Windows-10-Public-Preview){:target="_blank"}
-- [Deprecated] [AllJoyn CodeGen Tool]({{site.baseurl}}/en-US/Docs/AllJoynCodeGen){:target="_blank"}
