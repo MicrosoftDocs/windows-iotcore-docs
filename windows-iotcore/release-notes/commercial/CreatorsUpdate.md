@@ -10,7 +10,7 @@ description: Release notes for Creators Update.
 keywords: windows iot, Creators Update, release notes
 ---
 
-# Release Notes for Windows 10 IoT Core
+# Creators Update Release Notes for Windows 10 IoT Core
 Build Number 15063. April 2017
 
 Windows 10 IoT Core enables development of embedded or dedicated-purpose devices and is the choice for the OEMs and developers building Windows solutions for small devices.
