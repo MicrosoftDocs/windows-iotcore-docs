@@ -19,7 +19,7 @@ The [AllSeen Alliance](https://allseenalliance.org/) created AllJoyn to empower 
 
 Check this video out: 
 
-<iframe src="https://channel9.msdn.com/Events/Build/2015/2-623/player" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
+[!VIDEO https://channel9.msdn.com/Events/Build/2015/2-623/player]
 
 ## Understanding AllJoyn UWP App Development
 
@@ -255,7 +255,7 @@ For reference, please look to the AllJoyn Universal Windows Apps samples on the 
 
 For a detailed walkthrough of how to create an AllJoyn app, please watch the AllJoyn session 623:
 
-<iframe src="https://channel9.msdn.com/Events/Build/2015/2-623/player" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
+[!VIDEO https://channel9.msdn.com/Events/Build/2015/2-623/player]
 
 Note that AllJoyn communication between two UWP apps on the same machine is disabled by Windows policy unless they have enabled a loopback exception, such as when being directly deployed from Visual Studio.  For detailed instructions on enabling loopback exemption, see [here](https://msdn.microsoft.com/en-us/library/windows/apps/Hh780593.aspx).
 
