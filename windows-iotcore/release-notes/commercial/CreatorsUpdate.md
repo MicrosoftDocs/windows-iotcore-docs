@@ -4,7 +4,7 @@ author: zeeshanfurqan
 ms.author: zeeshan.furqan
 ms.date: 08/28/2017
 ms.topic: article
-description: Release notes for Creators Update.
+description: Read and learn about what's new in the Creators Update.
 keywords: windows iot, Creators Update, release notes
 ---
 
