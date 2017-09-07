@@ -4,7 +4,7 @@ author: zhuridartem
 ms.author: artemz
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn about how to enable Cortana on IoT Core.
+description: Learn how to use Cortana with IoT Core for your devices.
 keywords: windows iot, Cortana, voice, AI, digital assistant
 ---
 
