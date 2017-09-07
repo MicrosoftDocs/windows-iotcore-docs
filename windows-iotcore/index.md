@@ -54,7 +54,7 @@ Windows IoT Core is a version of Windows 10 that is optimized for smaller device
         </a>
     </li>
     <li>
-        <a href="extend-your-app/ConnectAppToCloud.md">
+        <a href="connect-to-cloud/ConnectAppToCloud.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
