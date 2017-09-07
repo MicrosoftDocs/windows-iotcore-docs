@@ -4,8 +4,6 @@ author: bfjelds
 ms.author: brian.fjeldstad
 ms.date: 09/05/17
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn how to setup a default app in Windows IoT Core.
 keywords: windows iot, default app, PowerShell, iot
 ---
