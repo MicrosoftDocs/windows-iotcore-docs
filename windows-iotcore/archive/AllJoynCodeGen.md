@@ -6,7 +6,7 @@ ms.date: 09/06/17
 ms.topic: article
 ms.prod: Windows
 ms.technology: IoT
-description: Learn about AllJoyn, a common protocol for IoT devices, and how it enables even more with Windows IoT.
+description: Learn about AllJoynCodeGen, a code generation tool that generates a complete Windows Runtime component using AllJoyn interfaces.
 keywords: windows iot, AllJoyn
 ---
 
@@ -30,7 +30,7 @@ The basic flow is as follows:
 
 The following workflow diagram illustrates this process:
 
-![AllJoyn CodeGen Diagram]({{site.baseurl}}/Resources/images/AllJoyn/alljoyncodegen.png)
+![AllJoyn CodeGen Diagram](../media/AllJoyn/alljoyncodegen.png)
 
 ## Running from the command line
 
@@ -48,16 +48,16 @@ The generated classes wrap functionality exposed by the Core C API. Because the 
 * `<Property>` is the name of a property, taken from the xml file
 
 
-| Windows Runtime Class |  | Description | Core C++ API |
-| ------------------------ | --- | --------- | ---------- |
-| `<Foo>`Watcher |  | Searches for producers that advertise the target service | *BusListener* class; *BusAttachment* class |
-| `<Foo>`JoinSessionResult |  | Reports the success or failure of joining a session, and exposes a `<Foo>Consumer` instance for the session if the join was successful. | *JoinSessionAsyncCB* class; *QStatus* |
-| `<Foo>`Producer |  | Advertises a service and exposes handlers for AllJoyn events. | *BusObject* class; *BusAttachment* class; *InterfaceDescription* class; *SessionPortListener* class; *Message* class |
-| `<Foo>`Signals |  | Exposes methods and handlers to send and receive signals. Used by both producers and consumers. | *BusObject* class; *InterfaceDescription* class; *Message* class |
-| `<Foo>`Consumer |  | Interacts with a service after it has been discovered. | *ProxyBusObject* class; *InterfaceDescription* class; *SessionListener* class; *Message* class |
-| `<Foo>``<Method>`CalledEventArgs |  | Arguments passed to methods in `EventAdapters.<Foo>ServiceEventAdapter`. | *Message* class |
-| `<Foo>``<Method>`Result |  | Used by method implementations in I<Foo>Service to report the success or failure of the call, as well as any return values. | *Message* class; *QStatus* |
-| `<Foo>``<Signal>`ReceivedEventArgs |  | Arguments passed to a signal in <Foo>Signals. | *Message* class |
+> | Windows Runtime Class |  | Description | Core C++ API |
+> | ------------------------ | --- | --------- | ---------- |
+> | `<Foo>`Watcher |  | Searches for producers that advertise the target service | *BusListener* class; *BusAttachment* class |
+> | `<Foo>`JoinSessionResult |  | Reports the success or failure of joining a session, and exposes a `<Foo>Consumer` instance for the session if the join was successful. | *JoinSessionAsyncCB* class; *QStatus* |
+> | `<Foo>`Producer |  | Advertises a service and exposes handlers for AllJoyn events. | *BusObject* class; *BusAttachment* class; *InterfaceDescription* class; *SessionPortListener* class; *Message* class |
+> | `<Foo>`Signals |  | Exposes methods and handlers to send and receive signals. Used by both producers and consumers. | *BusObject* class; *InterfaceDescription* class; *Message* class |
+> | `<Foo>`Consumer |  | Interacts with a service after it has been discovered. | *ProxyBusObject* class; *InterfaceDescription* class; *SessionListener* class; *Message* class |
+> | `<Foo>``<Method>`CalledEventArgs |  | Arguments passed to methods in `EventAdapters.<Foo>ServiceEventAdapter`. | *Message* class |
+> | `<Foo>``<Method>`Result |  | Used by method implementations in I<Foo>Service to report the success or failure of the call, as well as any return values. | *Message* class; *QStatus* |
+> | `<Foo>``<Signal>`ReceivedEventArgs |  | Arguments passed to a signal in <Foo>Signals. | *Message* class |
 
 
 ## Build guide
