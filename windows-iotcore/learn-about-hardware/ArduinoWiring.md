@@ -4,8 +4,6 @@ author: msalehmsft
 ms.author: msaleh
 ms.date: 09/06/17      
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn about Arduino Wiring as part of Windows 10 IoT Core.
 keywords: windows iot, Arduino, Arduino Wiring, template, IoT Core, UWP
 ---
