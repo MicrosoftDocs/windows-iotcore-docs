@@ -4,8 +4,6 @@ author: msalehmsft
 ms.author: msaleh
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn more about how you can use the Microosft Lightning Providers library. 
 keywords: windows iot, lightning providers, lightning performance testing, buses
 ---
