@@ -4,8 +4,6 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn about how Arduino and Windows 10 work together.
 keywords: windows iot, Arduino, Arduino wiring, Windows Remote Arduino
 ---
