@@ -29,7 +29,7 @@ pwmController = await PwmController.GetDefaultAsync();
 GpioPin pin = gpioController.OpenPin(LED_PIN, GpioSharingMode.Exclusive);`
 ```
 
-# Available Providers
+## Available Providers
 
 We currently have a number of providers available on the [Bus Providers](https://github.com/ms-iot/BusProviders) github repo. In addition to the code for the provider, each provider has a sample VS solution that demonstrates how a client would use that provider. 
 
