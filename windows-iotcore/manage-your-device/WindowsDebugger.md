@@ -4,8 +4,6 @@ author: bfjelds
 ms.author: Brian.Fjeldstad
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn how to use Windows Debugger to debug your Windows IoT Core device.
 keywords: windows iot, debugger, debugging, Windows Debugger, device, tools
 ---
