@@ -4,8 +4,6 @@ author: bfjelds
 ms.author: pabab
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn how to install your app using the Windows Device Portal.
 keywords: windows iot, app installation, Windows Device Portal, devices
 ---
