@@ -1,5 +1,5 @@
 ---
-title: Building Secure Devices with Windows 10 IoT Core
+title: Using the Unified Write Filter
 author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
