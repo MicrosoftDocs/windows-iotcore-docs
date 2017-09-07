@@ -4,8 +4,6 @@ author: parameshbabu
 ms.author: pabab
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description:  Windows 10 makes it easy to publish, install and service apps on IoT Core using Universal Windows Store.
 keywords: UWP, Windows Dev Center, OEM, Preinstall, App Store, Servicing
 ---
