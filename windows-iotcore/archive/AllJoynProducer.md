@@ -107,7 +107,7 @@ As of this writing, use SI units where possible and clearly denote intended unit
 The following table summarizes common units:
 
 
-> |*Quantity* || *Unit*|
+> |*Quantity* | *Unit*|
 > |-------- | ---- |
 > |**Absolute time (date & time)** | Seconds since UNIX Epoch (00:00:00 on January 1, 1970) |
 > |**Time of Day** | Seconds since midnight |
