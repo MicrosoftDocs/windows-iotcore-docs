@@ -4,8 +4,6 @@ author: bfjelds
 ms.author: Brian.Fjeldstad
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn how to use DISM to flash Windows 10 IoT Core onto a micro SD card.
 keywords: windows iot, DISM, Deployment Image Servicing Management, SD card, flash, OS
 ---
