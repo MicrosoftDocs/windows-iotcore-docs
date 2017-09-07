@@ -30,7 +30,7 @@
                 topicHref: "/windows/iot-core/connect-to-cloud/overview"
               - name: Extend your app
                 tocHref: /windows/iot-core/extend-your-app/
-                topicHref: "windows/iot-core/extend-your-app/cortanaoniotcore"
+                topicHref: "/windows/iot-core/extend-your-app/cortanaoniotcore"
               - name: Commercialize your device
                 tocHref: /windows/iot-core/commercialize-your-device/
                 topicHref: "/windows/iot-core/commercialize-your-device/oemlicenserequirements" 
