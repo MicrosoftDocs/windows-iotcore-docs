@@ -1,5 +1,5 @@
 ---
-title: Glossary
+title: Glossary for Windows IoT
 author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
@@ -10,8 +10,7 @@ description: A glossary for Windows 10 IoT Core-related terms.
 keywords: windows iot, glossary, terms, terminology, definitions
 ---
 
-# Glossary
-
+# Glossary for Windows IoT
 
 **Advanced Configuration & Power Interface (ACPI)**
 ACPI (Advanced Configuration and Power Interface) is an open industry specification co-developed by Hewlett-Packard, Intel, Microsoft, Phoenix, and Toshiba.  ACPI establishes industry-standard interfaces enabling OS-directed configuration, power management, and thermal management of mobile, desktop, and server platforms.
