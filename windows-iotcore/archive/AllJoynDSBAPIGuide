@@ -1,5 +1,5 @@
 ---
-title: AllJoyn Overview
+title:Alljoyn Device System Bridge - API Guide
 author: saraclay
 ms.author: saclayt
 ms.date: 09/06/17
@@ -12,13 +12,6 @@ keywords: windows iot, AllJoyn
 
 > [!NOTE]
 > You are viewing archived documentation. AllJoyn is no longer supported by Windows 10 IoT. For questions, please open an issue on GitHub or leave us feedback in the comments below.
-
----
-layout: default
-title: Alljoyn Device System Bridge - API Guide
-permalink: /en-US/Docs/AlljoynDsbApiGuide.htm
-lang: en-US
----
 
 # Mapping Bridge Interface Objects to AllJoyn
 
