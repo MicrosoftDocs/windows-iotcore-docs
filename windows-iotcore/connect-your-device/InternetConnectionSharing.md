@@ -4,8 +4,6 @@ author: derekameer
 ms.author: demeer
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn how to enable and configure internet connection sharing.
 keywords: windows iot, Internet Connection Sharing, ICS, Device Portal
 ---
