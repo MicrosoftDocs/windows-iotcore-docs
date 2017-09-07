@@ -4,8 +4,6 @@ author: msalehmsft
 ms.author: msaleh
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn more about frequency for Windows IoT Lightning functionality.
 keywords: windows iot, lightning performance, lightning functionality, GPIO
 ---
