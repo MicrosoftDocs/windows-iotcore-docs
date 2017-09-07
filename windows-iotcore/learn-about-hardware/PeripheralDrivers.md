@@ -4,8 +4,6 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn how to add third-party USB drivers for peripheral devices.
 keywords: windows iot, USB drivers, peripheral devices, USB
 ---
