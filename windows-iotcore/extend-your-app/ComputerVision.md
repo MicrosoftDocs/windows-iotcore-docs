@@ -4,8 +4,6 @@ author: derekameer
 ms.author: demeer
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn how to use Microosft Cognitive Services and OpenCV for your IoT device.
 keywords: windows iot, computer vision, Cognitive Services, OpenCV
 ---
