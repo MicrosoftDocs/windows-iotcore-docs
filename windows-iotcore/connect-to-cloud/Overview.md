@@ -4,8 +4,6 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn about the ways to use IoT on the cloud.
 keywords: windows iot, cloud, Azure, Azure IoT Hub, messaging, UWP, Universal Windows Platform
 ---
