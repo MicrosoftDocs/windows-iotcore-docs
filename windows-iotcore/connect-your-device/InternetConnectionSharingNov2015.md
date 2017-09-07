@@ -4,8 +4,6 @@ author: derekameer
 ms.author: demeer
 ms.date: 09/06/17
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn how to enable and configure internet connection sharing for the November 2015 release of Windows.
 keywords: windows iot, Internet Connection Sharing, ICS, Device Portal
 ---
