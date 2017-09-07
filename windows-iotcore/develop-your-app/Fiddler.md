@@ -1,5 +1,5 @@
 ---
-title: Fiddler
+title: Capturing Fiddler Traces
 author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
