@@ -4,8 +4,6 @@ author: zhuridartem
 ms.author: artemz
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn about how to enable Cortana on IoT Core.
 keywords: windows iot, Cortana, voice, AI, digital assistant
 ---
