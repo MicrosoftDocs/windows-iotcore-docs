@@ -1,5 +1,5 @@
 ---
-title: Windows IoT developer documentation
+title: Windows IoT Core developer documentation
 layout: LandingPage
 author: saraclay
 ms.author: saclayt
@@ -12,7 +12,7 @@ keywords: windows iot, developer documentation, docs, IoT Core
 ---
 
 ---
-# Windows IoT developer documentation
+# Windows IoT Core developer documentation
 
 Windows IoT is a version of Windows 10 that is optimized for smaller devices with or without a display that run on both ARM and x86/x64 devices. The Windows IoT Core documentation provides information on connecting, managing, updating, and securing your devices, and more.
 
