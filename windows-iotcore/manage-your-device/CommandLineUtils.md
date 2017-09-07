@@ -4,8 +4,6 @@ author: bfjelds
 ms.author: Brian.Fjeldstad
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn the command line utilities to use with PowreShell after connecting to your device.
 keywords: windows iot, command line, command line utilities, PowerShell
 ---
