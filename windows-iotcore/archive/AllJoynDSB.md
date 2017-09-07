@@ -75,19 +75,19 @@ The [Mapping DSB Objects to AllJoyn](AlljoynDsbApiGuide.md) document describes t
 
 ### Sample DSBs
 
-- [AllJoyn DSB Mock Adapter Tutorial and Sample](https://developer.microsoft.com/en-us/windows/iot/samples/alljoynmockadapter)
-This tutorial shows how to use the Device System Bridge app to connect your  IoT Core devices to mock BACnet devices.
-- [AllJoyn DSB Z-Wave Adapter Tutorial and Sample](https://developer.microsoft.com/en-us/windows/iot/samples/zwaveadapter)
-This tutorial shows how to use the Device System Bridge app to connect your  IoT Core devices to Z-Wave devices.
-- [AllJoyn DSB GPIO Adapter Tutorial C++](https://developer.microsoft.com/en-us/windows/iot/samples/alljoyndsb)
-This tutorial demonstrates how to use the AllJoyn Device System Bridge template to create a sample C++ app that exercises the device GPIO.
-- [AllJoyn DSB GPIO Adapter Tutorial C#](https://developer.microsoft.com/en-us/windows/iot/samples/alljoyndsbcs)
-This tutorial demonstrates how to use the AllJoyn Device System Bridge template to create a sample managed app that exercises the device GPIO.
-- [AllJoyn DSB ZigBee Adapter Tutorial and Sample](https://developer.microsoft.com/en-us/windows/iot/samples/ZigBeeAdapter)
- This tutorial shows how to use the Device System Bridge app to connect your IoT Core devices to ZigBee devices.
-- [AllJoyn DSB BACnet Adapter Tutorial and Sample](https://developer.microsoft.com/en-us/windows/iot/samples/BACnetAdapter)
-This tutorial shows how to use the Device System Bridge app to connect your IoT Core devices to BACnet devices.
-- [AllJoyn.JS Tutorial](https://developer.microsoft.com/en-us/windows/iot/samples/AllJoynJS)
-This tutorial shows how to run AllJoyn.JS application developed by Allseen Alliance as a Windows 10 application. AllJoyn.JS allows you to write JavaScript to create, monitor and control AllJoyn devices.
-- [AllJoyn DSB OIC Adapter Tutorial and Sample](https://developer.microsoft.com/en-us/windows/iot/samples/OICAdapter)
-This tutorial shows how to use the Device System Bridge app to connect your  IoT Core devices to IoTivity/OIC devices.
+* [AllJoyn DSB Mock Adapter Tutorial and Sample](https://developer.microsoft.com/en-us/windows/iot/samples/alljoynmockadapter)
+  * This tutorial shows how to use the Device System Bridge app to connect your  IoT Core devices to mock BACnet devices.
+* [AllJoyn DSB Z-Wave Adapter Tutorial and Sample](https://developer.microsoft.com/en-us/windows/iot/samples/zwaveadapter)
+  * This tutorial shows how to use the Device System Bridge app to connect your  IoT Core devices to Z-Wave devices.
+* [AllJoyn DSB GPIO Adapter Tutorial C++](https://developer.microsoft.com/en-us/windows/iot/samples/alljoyndsb)
+  * This tutorial demonstrates how to use the AllJoyn Device System Bridge template to create a sample C++ app that exercises the device GPIO.
+* [AllJoyn DSB GPIO Adapter Tutorial C#](https://developer.microsoft.com/en-us/windows/iot/samples/alljoyndsbcs)
+  * This tutorial demonstrates how to use the AllJoyn Device System Bridge template to create a sample managed app that exercises the device GPIO.
+* [AllJoyn DSB ZigBee Adapter Tutorial and Sample](https://developer.microsoft.com/en-us/windows/iot/samples/ZigBeeAdapter)
+  * This tutorial shows how to use the Device System Bridge app to connect your IoT Core devices to ZigBee devices.
+* [AllJoyn DSB BACnet Adapter Tutorial and Sample](https://developer.microsoft.com/en-us/windows/iot/samples/BACnetAdapter)
+  * This tutorial shows how to use the Device System Bridge app to connect your IoT Core devices to BACnet devices.
+* [AllJoyn.JS Tutorial](https://developer.microsoft.com/en-us/windows/iot/samples/AllJoynJS)
+  * This tutorial shows how to run AllJoyn.JS application developed by Allseen Alliance as a Windows 10 application. AllJoyn.JS allows you to write JavaScript to create, monitor and control AllJoyn devices.
+* [AllJoyn DSB OIC Adapter Tutorial and Sample](https://developer.microsoft.com/en-us/windows/iot/samples/OICAdapter)
+  * This tutorial shows how to use the Device System Bridge app to connect your  IoT Core devices to IoTivity/OIC devices.
