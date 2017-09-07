@@ -56,5 +56,5 @@ Continue reading about connecting your IoT Core device to Azure IoT Hub on the
 ## Additional Resources
 ___
 
-1.  [Cloud and Security Whitepaper](Windows10IoTCoreAzureConnectivityandSecurity.pdf)
+1.  [Cloud and Security Whitepaper](https://az835927.vo.msecnd.net/sites/iot/Resources/documents/Windows10IoTCoreAzureConnectivityandSecurity.pdf)
 
