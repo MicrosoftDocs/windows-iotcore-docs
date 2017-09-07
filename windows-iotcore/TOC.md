@@ -55,6 +55,7 @@
 ### [Lightning setup](develop-your-app/LightningSetup.md)
 ### [Windows IoT Lightning Performance](develop-your-app/LightningPerformance.md)
 ## [Connect to the cloud]()
+### [Overview](connect-to-cloud/Overview.md)
 ### [Connect your device](connect-to-cloud/ConnectDeviceToCloud.md)
 ### [Connect your app](connect-to-cloud/ConnectAppToCloud.md)
 ## [Extend your app]()
