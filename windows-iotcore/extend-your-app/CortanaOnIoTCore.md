@@ -4,7 +4,7 @@ author: zhuridartem
 ms.author: artemz
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn how to use Cortana with IoT Core for your devices.
+description: Learn how to get started and install updates for Cortana on Windows IoT Core.
 keywords: windows iot, Cortana, voice, AI, digital assistant
 ---
 
