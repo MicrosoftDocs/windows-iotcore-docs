@@ -1,5 +1,5 @@
 ---
-title: AllJoyn Producer
+title: AllJoyn Producers
 author: saraclay
 ms.author: saclayt
 ms.date: 09/07/17
