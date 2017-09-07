@@ -4,11 +4,11 @@ author: saraclay
 ms.author: saclayt
 ms.date: 09/05/17
 ms.topic: article
-description: Learn how to setup TPM on Windows 10 IoT Core.
+description: Learn how to make your device secure by following this guide on setting up TPM on suggested platforms.
 keywords: windows iot, security, setup, Trusted Platform Module, TPM, cryptography, keys
 ---
 
-# Setting up TPM on Supported Platforms
+# Setting up TPM on Suggested Platforms
 
 ## Setup firmware TPM (fTPM)
 Firmware TPM (fTPM) requires special Processor/SoC support and whence fTPM is not currently implemented on Raspberry Pi2.
