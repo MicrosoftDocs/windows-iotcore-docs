@@ -11,7 +11,7 @@ keywords: windows iot, AllJoyn
 ---
 
 > [!NOTE]
-> AllJoyn is no longer compatible with Windows 10 IoT. For questions, please open an issue on GitHub or leave us feedback in the comments below.# AllJoyn CodeGen Tool
+> You are viewing archived documentation. AllJoyn is no longer supported by Windows 10 IoT. For questions, please open an issue on GitHub or leave us feedback in the comments below.
 
 We've created a code generation tool, AllJoynCodeGen, that generates a complete Windows Runtime component using an XML description of one or more AllJoyn interfaces derived from a specification or device.
 
