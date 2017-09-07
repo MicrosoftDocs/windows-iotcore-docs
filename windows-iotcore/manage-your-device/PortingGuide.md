@@ -4,7 +4,7 @@ author: saraclay
 ms.author: saclayt
 ms.date: 09/05/17      
 ms.topic: article
-description: Learn how to migrate existing code to Windows.
+description: Learn the differences between technologies that will help to port existing code to Windows.
 keywords: windows iot, porting, AVR, quark, migrate, microcontroller, microprocessor
 ---
 
@@ -16,8 +16,8 @@ ___
 ### Real-time OS vs General OS
 The key difference between general-computing operating systems and real-time operating systems is the need for "deterministic" timing behavior in the real-time operating systems. - belhob.wordpress.com
 
-- [Real-time OS](http://en.wikipedia.org/wiki/Real-time_operating_system) - The scheduling algorithms guarantee deterministic timing (e.g. AVR)
-- [General OS](http://en.wikipedia.org/wiki/Operating_system) - The scheduling algorithms make no guarantees about timing (e.g. Windows)
+- [Real-time OS](http://en.wikipedia.org/wiki/Real-time_operating_system) - The scheduling algorithms guarantee deterministic timing (e.g. AVR).
+- [General OS](http://en.wikipedia.org/wiki/Operating_system) - The scheduling algorithms make no guarantees about timing (e.g. Windows).
 
 ___
 
