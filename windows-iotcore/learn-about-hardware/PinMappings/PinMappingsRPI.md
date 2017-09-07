@@ -4,8 +4,6 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Pin mappings for Raspberry Pi 2 & 3.
 keywords: windows iot, Rasperry Pi 2, Raspberry Pi 3, pin mappings, GPIO
 ---
