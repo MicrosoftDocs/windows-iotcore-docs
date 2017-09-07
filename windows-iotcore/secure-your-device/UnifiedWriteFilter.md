@@ -4,8 +4,6 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: Learn how to use the Unified Write Filter on Windows 10 IoT Core.
 keywords: windows iot, Unified Write Filter, security, memory, storage media
 ---
