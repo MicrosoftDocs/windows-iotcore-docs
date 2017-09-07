@@ -4,8 +4,6 @@ author: parameshbabu
 ms.author: pabab
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: The different ways to manage Windows 10 IoT Core devices.
 keywords: windows iot, device management, windows iot, Azure DM, Azure Hub, Azure IoT
 ---
