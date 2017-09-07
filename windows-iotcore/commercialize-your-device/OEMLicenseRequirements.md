@@ -4,8 +4,6 @@ author: parameshbabu
 ms.author: pabab
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
-ms.technology: IoT
 description: A description of the OEM license requirements in order to commercialize with Windows 10 IoT.
 keywords: windows iot, license, license requirements, commercialization, OEM license requirements
 ---
