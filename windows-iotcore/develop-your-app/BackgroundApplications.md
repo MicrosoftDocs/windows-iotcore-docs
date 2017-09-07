@@ -4,7 +4,7 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn how background applications are used.
+description: Learn how to develop background applications for your IoT device.
 keywords: windows iot, background applications
 ---
 
