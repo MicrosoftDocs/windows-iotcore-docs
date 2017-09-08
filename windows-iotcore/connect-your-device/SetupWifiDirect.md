@@ -4,7 +4,7 @@ author: derekameer
 ms.author: demeer
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn how to use and setup WiFi Direct with Windows 10 IoT Core.
+description: Learn how to setup, test, and use wifi direct on devices with an enabled USB wifi adapter.
 keywords: windows iot, wifi direct, setup, wifi, devices
 ---
 
