@@ -4,7 +4,7 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn about using a Trusted Platform Module on Windows 10 IoT Core.
+description: Learn how to use a Trusted Platform Module to enable cryptographic capabilities to better secure devices.
 keywords: windows iot, security, Trusted Platform Module, TPM, cryptography, keys
 ---
 
