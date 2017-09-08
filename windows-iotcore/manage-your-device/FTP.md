@@ -4,7 +4,7 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn how to use FTP to transfer files to and from your devices.
+description: Learn how to use File Transfer Protocol (FTP) to transfer files to and from your devices.
 keywords: windows iot, FTP, file transfer protocol, file transfer, devices
 ---
 
