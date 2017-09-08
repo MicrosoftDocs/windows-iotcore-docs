@@ -1,14 +1,14 @@
 ---
-title: Event Tracing for Windows 10 IoT Core
+title: Event Tracing for Windows IoT Core
 author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn how to use Event Tracing for Windows on Windows IoT Core.
+description: Learn how to use Event Tracing to write events and consume events for Windows IoT Core.
 keywords: windows iot, event tracing, ETW, event tracing for windows, devices
 ---
 
-# Event Tracing for Windows 10 IoT Core
+# Event Tracing for Windows IoT Core
 
 Event Tracing for Windows (ETW) provides developers the ability to start and stop event tracing sessions, instrument an application to provide trace events, and consume trace events.
 ETW on Windows IoT Core devices supports both manifest-based and classic events, and is no different than other Windows 10 devices.
@@ -52,7 +52,9 @@ Windows Assessment and Deployment Kit includes 3 tools to help capture and analy
 ## Use Device Portal
 
 Device portal can capture events in real-time, with instructions [here](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal).
-Note this method does not produce an ETL file for further analysis, but requires minimal setup.
+
+> [!NOTE]
+> This method does not produce an ETL file for further analysis, but requires minimal setup.
 
 ## Use Function Calls
 
