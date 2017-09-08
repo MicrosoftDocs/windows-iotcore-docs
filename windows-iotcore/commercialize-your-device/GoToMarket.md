@@ -4,7 +4,7 @@ author: parameshbabu
 ms.author: pabab
 ms.date: 08/22/2017
 ms.topic: article
-description: Description on commercializing Windows IoT Core.
+description: Learn and understand the steps to take your Windows IoT device to market.
 keywords: windows 10 IoT Core, commercialize, go to market
 ---
 
