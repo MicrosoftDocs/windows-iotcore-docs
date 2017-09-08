@@ -4,7 +4,7 @@ author: parameshbabu
 ms.author: pabab
 ms.date: 08/22/2017
 ms.topic: article
-description: This is a description to create BSPs for IoT Core.
+description: Learn how to create board supported packages in order to start assembling and manufacturing your device.
 keywords: windows iot, image creation, bsp, windows iot, board supported package 
 ---
 
