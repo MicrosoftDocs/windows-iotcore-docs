@@ -54,9 +54,13 @@ While Microsoft has engineered support for IoT Core with specific SoCs that enab
 > [!TIP]
 > If you'd like to add your device to the community devices list, please submit a PR for this page.
 
+| Device | SoC | Software image | Contact |
+|-------------|----------|---------|---------|
+| [Banana Pi M64](http://www.banana-pi.org/m64.html) | [Allwinner A64](http://www.allwinnertech.com/index.php?c=product&a=index&id=9) | [Get started tutorial](http://forum.banana-pi.org/c/BPI-M64/Win-10-IoT) | [Email](mailto:jasonye@banana-pi.com) |
+| [Pine 64](https://www.pine64.com/) | [Allwinner A64](http://www.allwinnertech.com/index.php?c=product&a=index&id=9) | [Download image](http://files.pine64.org/os/win10-iot/Windows10IoT_Pine64.ffu) | [Email](mailto:support@pine64.org) |
+| [Toradex Colibri T30](https://www.toradex.com/windows-iot-starter-kit) | [Nvidia Tegra 3](http://www.nvidia.com/object/tegra-3-processor.html) |[Get started tutorial](http://developer.toradex.com/knowledge-base/flashing-windows-10-iot-core) | [Email](mailto:support.arm@toradex.com) |
 
-> | Device | SoC | Software image | Contact |
-> |-------------|----------|---------|---------|
-> | [Banana Pi M64](http://www.banana-pi.org/m64.html) | [Allwinner A64](http://www.allwinnertech.com/index.php?c=product&a=index&id=9) | [Get started tutorial](http://forum.banana-pi.org/c/BPI-M64/Win-10-IoT) | [Email](mailto:jasonye@banana-pi.com) |
-> | [Pine 64](https://www.pine64.com/) | [Allwinner A64](http://www.allwinnertech.com/index.php?c=product&a=index&id=9) | [Download image](http://files.pine64.org/os/win10-iot/Windows10IoT_Pine64.ffu) | [Email](mailto:support@pine64.org) |
-> | [Toradex Colibri T30](https://www.toradex.com/windows-iot-starter-kit) | [Nvidia Tegra 3](http://www.nvidia.com/object/tegra-3-processor.html) |[Get started tutorial](http://developer.toradex.com/knowledge-base/flashing-windows-10-iot-core) | [Email](mailto:support.arm@toradex.com) |
+## Retired Devices
+There are several boards that are no longer supported on Windows IoT Core. If you see any boards you might use on this list, please provide us feedback and comment below for questions or concerns. 
+
+* Intel Joule
