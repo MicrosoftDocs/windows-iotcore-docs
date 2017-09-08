@@ -113,7 +113,7 @@ ___
 * **Fast Reinstall** can be used once a driver has been installed, and there are no subsequent changes to the drivers INF file which affect the registry.  This method bypasses the install process, shuts down all devnodes associated with the driver, copies the driver over, and restarts the devnode.  This takes a few (<20) seconds.
 
     
-> [!IMPORTANT]
+> [!WARNING]
 > This method is not guaranteed to succeed – If for some reason a devnode cannot be shutdown to release the driver, the operation will fail.  This can be due to faulty hardware, or an initial faulty implementation of the driver.  The Install/Reinstall option must be used in this case.
 
 
