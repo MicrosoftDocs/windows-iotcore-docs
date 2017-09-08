@@ -1,14 +1,14 @@
 ---
-title: Driver Creation
+title: Universal Driver Creation
 author: parameshbabu
 ms.author: pabab
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn about how to create universal drivers for your IoT Core device.
+description: Learn how to create Universal Drivers to enable single driver package creation across devices.
 keywords: windows iot, universal drivers, drivers, Windows 10, UWP
 ---
 
-# Driver Creation
+# Universal Driver Creation
 
 This document will walk you through the creation of Universal Drivers for your IoT Core device.
 
