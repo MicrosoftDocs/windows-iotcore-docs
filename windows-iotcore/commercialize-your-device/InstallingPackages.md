@@ -4,7 +4,7 @@ author: parameshbabu
 ms.author: pabab
 ms.date: 08/28/2017
 ms.topic: article
-description: How to create and install packages for IoT Core.
+description: Learn how to set up your environment and create and install packages for Windows IoT Core.
 keywords: windows iot, package creation, package installation
 ---
 
