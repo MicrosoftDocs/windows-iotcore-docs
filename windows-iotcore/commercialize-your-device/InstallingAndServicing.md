@@ -8,7 +8,7 @@ description:  Windows 10 makes it easy to publish, install and service apps on I
 keywords: UWP, Windows Dev Center, OEM, Preinstall, App Store, Servicing
 ---
 
-# Installing and Servicing apps on Windows 10 IoT Core
+# Installing and Servicing applications
 
 Microsoft makes it easy for OEMs to install and service UWP apps on Windows 10 IoT Core through the Universal Store. All store signed apps on Windows 10 devices are capable of receiving updates directly from the store. 
 
