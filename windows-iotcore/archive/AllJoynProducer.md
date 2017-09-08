@@ -6,7 +6,7 @@ ms.date: 09/07/17
 ms.topic: article
 ms.prod: Windows
 ms.technology: IoT
-description: Learn how to make a new AllJoyn producer.
+description: Learn how to make an AllJoyn producer by learning about and authoring Introspection XML and its different features.
 keywords: windows iot, AllJoyn
 ---
 
