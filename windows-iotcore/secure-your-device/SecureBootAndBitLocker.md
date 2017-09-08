@@ -132,7 +132,8 @@ The following are the important files to consider:
 ### Generating Necessary Lockdown Packages
 First, download the [DeviceLockDown Script](https://github.com/ms-iot/security/tree/master/TurnkeySecurity) package, which contains all of the additional tools and scripts required for configuring and locking down devices
 
-**Note:** The _settings.xml_ file contained in this package will allow you to configure various options.  Here, you can specify which keys to use for Secure Boot, specify a certificate for BitLocker data recovery as well as generate and specify signing keys for user-mode and kernel-mode applications and drivers. In order to assist with testing during the initial development cycle, Microsoft has provided pre-generated keys and certificates where appropriate.  This implies that Microsoft Test, Development and Pre-Release binaries are considered trusted.  During final product creation and image generation, be sure to remove these certifcates to ensure a fully locked down device.
+> [!NOTE]
+> The _settings.xml_ file contained in this package will allow you to configure various options.  Here, you can specify which keys to use for Secure Boot, specify a certificate for BitLocker data recovery as well as generate and specify signing keys for user-mode and kernel-mode applications and drivers. In order to assist with testing during the initial development cycle, Microsoft has provided pre-generated keys and certificates where appropriate.  This implies that Microsoft Test, Development and Pre-Release binaries are considered trusted.  During final product creation and image generation, be sure to remove these certifcates to ensure a fully locked down device.
 
 1. Start an Administrative PowerShell (PS) console on your Windows 10 PC and navigate to the location of the downloaded script.
 
