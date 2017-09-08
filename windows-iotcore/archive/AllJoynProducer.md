@@ -13,7 +13,7 @@ keywords: windows iot, AllJoyn
 > [!NOTE]
 > You are viewing archived documentation. AllJoyn is no longer supported by Windows 10 IoT. For questions, please open an issue on GitHub or leave us feedback in the comments below.
 
-# AllJoyn Producers and Authoring AllJoyn Introspection XML
+# AllJoyn Producers
 
 AllJoyn, created by the [AllSeen Alliance](https://allseenalliance.org/), provides a great framework for making connected devices and apps on a proximal network, and Windows provides the best experience for using AllJoyn with the [AllJoyn Studio](https://visualstudiogallery.msdn.microsoft.com/064e58a7-fb56-464b-bed5-f85914c89286) extension for Visual Studio.  While our tools excel at creating apps for producers and consumers, starting a new AllJoyn device from scratch can be quite confusing.
 
