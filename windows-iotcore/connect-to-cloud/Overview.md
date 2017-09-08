@@ -4,11 +4,11 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn about the ways to use IoT on the cloud.
+description: Learn about messaging, security, and device management with the cloud using Azure IoT.
 keywords: windows iot, cloud, Azure, Azure IoT Hub, messaging, UWP, Universal Windows Platform
 ---
 
-# Cloud programming
+# Overview of IoT on the Cloud
 
 The Internet of Things is built on cloud computing. The ability to communicate
 with the cloud and derive insight from the data is an essential part of any IoT
