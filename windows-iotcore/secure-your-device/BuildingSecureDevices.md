@@ -4,7 +4,7 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn how to build secure devices with Windows 10 IoT Core.
+description: Learn how to build secure devices by enabling secure boot, implementing TPMs, and more.
 keywords: windows iot, security, firmware, secure boot, TPM, Bitlocker, encryption
 ---
 
