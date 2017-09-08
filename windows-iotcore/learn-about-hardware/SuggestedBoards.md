@@ -4,7 +4,7 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn about the suggested boards to use IoT Core with.
+description: Learn about the hardware features for a variety of suggested boards and community devices.
 keywords: windows iot, development devices, boards, SOC, system on chips, Raspberry Pi 2, Raspberry Pi 3, Minnowboard Max, Dragonboard
 ---
 
