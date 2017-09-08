@@ -17,10 +17,6 @@ keywords: windows iot, AllJoyn
 
 The [AllSeen Alliance](https://allseenalliance.org/) created AllJoyn to empower the Internet of Things. Windows 10 has AllJoyn built natively into its platform, allowing developers to easily take advantage of AllJoyn to "IoT-enable" your Windows 10 apps. This article will outline the steps required to build apps for Windows 10 using the Universal Windows Platform (UWP) AllJoyn APIs and the Visual Studio 2017 [AllJoyn Studio](https://visualstudiogallery.msdn.microsoft.com/064e58a7-fb56-464b-bed5-f85914c89286) Extension.
 
-Check this video out: 
-
-> [!VIDEO https://channel9.msdn.com/Events/Build/2015/2-623/player]
-
 ## Understanding AllJoyn UWP App Development
 
 Three major components form AllJoyn UWP apps:
