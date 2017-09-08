@@ -6,7 +6,7 @@ ms.date: 09/06/17
 ms.topic: article
 ms.prod: Windows
 ms.technology: IoT
-description: Learn about AllJoyn, a common protocol for IoT devices, and how it enables even more with Windows IoT.
+description: Learn about AllJoyn, a common protocol for IoT devices, and how it enables other extensions and features with Windows IoT.
 keywords: windows iot, AllJoyn
 ---
 
