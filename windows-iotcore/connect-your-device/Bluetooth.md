@@ -4,7 +4,7 @@ author: zhuridartem
 ms.author: artemz
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn about Bluetooth support on Windows 10 IoT Core.
+description: Learn how to leverage Bluetooth for devices running Windows 10 IoT Core.
 keywords: windows iot, bluetooth, bluetooth support, devices, device portal
 ---
 
