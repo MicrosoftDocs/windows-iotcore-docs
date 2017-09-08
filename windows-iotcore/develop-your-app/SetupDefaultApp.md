@@ -4,7 +4,7 @@ author: bfjelds
 ms.author: brian.fjeldstad
 ms.date: 09/05/17
 ms.topic: article
-description: Learn how to setup a default app in Windows IoT Core.
+description: Learn how to setup a default app using the Windows Device Portal or the shell.
 keywords: windows iot, default app, PowerShell, iot
 ---
 
