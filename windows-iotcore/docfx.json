@@ -37,7 +37,8 @@
       "uhfHeaderId": "MSDocsHeader-Windows-IoT",
       "searchScope": ["windows-iot"],
       "md.prod": "windows-IoT",
-      "ms.technology": "internet-of-things"
+      "ms.technology": "internet-of-things",
+      "title": " - Windows IoT"
     },
     "fileMetadata": {},
     "template": [],
