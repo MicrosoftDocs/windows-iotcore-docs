@@ -6,7 +6,7 @@ ms.date: 08/28/2017
 ms.topic: article
 ms.prod: Windows
 ms.technology: IoT
-description: A glossary for Windows 10 IoT Core-related terms.
+description: Learn about the various Windows IoT Core-related terms through our documentation.
 keywords: windows iot, glossary, terms, terminology, definitions
 ---
 
