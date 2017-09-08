@@ -6,7 +6,7 @@ ms.date: 09/06/17
 ms.topic: article
 ms.prod: Windows
 ms.technology: IoT
-description: Learn how to map bridge interface objects to AllJoyn.
+description: Learn how to map bridge interface objects to AllJoyn using an IAdapter, representing the controller for a system of one or more devices that map to the AllJoyn bus.
 keywords: windows iot, AllJoyn
 ---
 
