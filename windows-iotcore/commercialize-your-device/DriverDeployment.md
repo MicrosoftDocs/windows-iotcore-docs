@@ -4,7 +4,7 @@ author: parameshbabu
 ms.author: pabab
 ms.date: 08/22/2017
 ms.topic: article
-description:  Deploy a driver on Windows 10 IoT Core with Visual Studio .
+description: Learn how to build and deploy a driver using Visual Studio.
 keywords: windows 10 IoT Core, driver deployment
 ---
 
