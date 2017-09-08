@@ -4,7 +4,7 @@ author: zhuridartem
 ms.author: artemz
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn how to configure IoT Core to be either headed or headless.
+description: Learn how to configure Windows IoT Core for either headed or headless mode for devices.
 keywords: windows iot, screens, headed, headless, UI
 ---
 
