@@ -30,7 +30,7 @@ To create your own image (FFU), follow the steps outlined in the ["Create a basi
 
 ## Step 2: Create a new package
 1. Create a **package definition xml file** (.pkg.xml file), and specify the files and reg keys you want to add.
-      Learn more at [Specifying components in a package](https://msdn.microsoft.com/en-us/library/dn789218) and [Elements and Attributes of a package](https://msdn.microsoft.com/en-us/library/dn756796)
+      Learn more at [Specifying components in a package](https://msdn.microsoft.com/en-us/library/dn789218) and [Elements and Attributes of a package](https://msdn.microsoft.com/en-us/library/dn756796).
 
 2. Build the package: `buildpkg.cmd filename.pkg.xml`. The .cab file will be created in the build directory `\IoT-ADK-AddonKit\Build\<arch>\pkgs`.
 
