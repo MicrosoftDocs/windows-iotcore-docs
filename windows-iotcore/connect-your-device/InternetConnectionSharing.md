@@ -47,4 +47,4 @@ if (ethernetConnectionProfile != null && targetNetworkAdapter != null)
 }
 ```
 
-Sharing Tutorial [Windows IoT Core November 2015 Release](InternetConnectionSharingNov2015.md) document.
+For the Sharing Tutorial, please view the [Windows IoT Core November 2015 Release](InternetConnectionSharingNov2015.md) document.
