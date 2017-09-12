@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -27,9 +28,18 @@
         ]
       }
     ],
+    
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "layout": "Conceptual",
+      "breadcrumb_path": "/windows/iot-core/breadcrumb/toc.json",
+      "uhfHeaderId": "MSDocsHeader-Windows-IoT",
+      "searchScope": ["windows-iot"],
+      "ms.prod": "windows-IoT",
+      "ms.technology": "internet-of-things",
+      "titleSuffix": "Windows IoT"
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "windows-iotcore"
