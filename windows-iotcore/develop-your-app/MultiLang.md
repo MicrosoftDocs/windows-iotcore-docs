@@ -113,19 +113,12 @@ Use the IoTSettings tool to change region, user language or speech language. Thi
 IoTSettings.exe \[Command\]
 
 * list uilanguage =&gt; list all UI languages
-
 * list speechlanguage =&gt; list all speech languages
-
 * get uilanguage =&gt; display current UI language
-
 * get speechlanguage =&gt; display current speech language
-
 * get region =&gt; display current region
-
 * set uilanguage language\_tag - (e.g.: fr-CA  =&gt; set default UI language French Canadian)
-
 * set speechlanguage language\_tag - (e.g.: fr-CA =&gt; set speech language French Canadian)
-
 * set region region\_code - (e.g.: CA =&gt; set default region to Canada)
 
 > [!TIP]
