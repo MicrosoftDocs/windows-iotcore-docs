@@ -44,7 +44,7 @@ Here's how to debug your IoT Core console application remotely in Visual Studio:
 
 * To stop the app, press on the 'Stop Debugging' button (or select Debug \| Stop Debugging).
 
-* You can now run the application.  Simply open a PowerShell/SSH connection (instructions can be found [here for powershell](../connect-your-device/PowerShell.md) and [here for SSH](../connect-your-device/SSH.md)) and enter the Remote Command you specified above.
+* You can now run the application.  Simply open a PowerShell/SSH connection (instructions can be found [here for PowerShell](../connect-your-device/PowerShell.md) and [here for SSH](../connect-your-device/SSH.md)) and enter the Remote Command you specified above.
 
     ![ConsoleApplication Output](../media/Console/console_output.png)
 
