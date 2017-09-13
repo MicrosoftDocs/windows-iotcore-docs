@@ -67,7 +67,7 @@
 ### [Speech apps](extend-your-app/Speech.md)
 ## [Commercialize your device]()
 ### [OEM license requirements](commercialize-your-device/OEMLicenseRequirements.md)
-### [Creating a board supported package](commercialize-your-device/CreateBSP.md)
+### [Create a board supported package](commercialize-your-device/CreateBSP.md)
 ### [Installing packages](commercialize-your-device/InstallingPackages.md)
 ### [Driver deployment](commercialize-your-device/DriverDeployment.md)
 ### [Installing and servicing apps](commercialize-your-device/InstallingAndServicing.md)
