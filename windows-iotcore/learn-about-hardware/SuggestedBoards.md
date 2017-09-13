@@ -11,8 +11,22 @@ keywords: windows iot, development devices, boards, SOC, system on chips, Raspbe
 # Device Options
 
 ## Windows 10 IoT Core Development Devices
+Below you can find Microsoft-enabled System on Chips (SoC) as well as suggested devices to get started quickly and community devices that have been enabled independent of Microsoft involvement.
 
-Windows 10 IoT Core works with several leading System on Chips (SoCs) that are utilized in hundreds of devices. Below you can find suggested devices to get started quickly, additional devices that provide more silicon and form factor choies, as well as community devices that have been enabled independent of Microsoft involvement.
+## Microsoft-enabled SoCs
+Microsoft works alongside Broadcom, Intel, and Qualcomm to verify support for Windows 10 IoT Core on several of the silicon vendors' SoC. These IoT Core-powered SoCs are used in hundreds of different devices that you can ues to prorotype and commercialize your idea with.
+
+| Broadcom | Intel | Qualcomm |
+|----------|-------|----------|
+| BCM2837  | [Intel® Joule™](https://software.intel.com/en-us/iot/hardware/joule) | [Snapdragon 212 (APQ8009)](https://www.qualcomm.com/products/snapdragon/processors/212) |
+| BCM2836  | [Intel® Atom™ processor E3900 series (Apollo Lake)](http://ark.intel.com/products/codename/80644/) | [Snapdragon 410 (APQ8016)](https://www.qualcomm.com/products/snapdragon/processors/410) |
+| | [Intel® Celeron® processor N3350 (Apollo Lake)](http://ark.intel.com/products/codename/80644/) | [Snapdragon 617 (APQ8052)](https://www.qualcomm.com/products/snapdragon/processors/617) |
+| | 	[Intel® Pentium® processor N4200 platform (Apollo Lake)](http://ark.intel.com/products/codename/80644/) | |
+| | 	[Intel® Pentium® and Celeron® Processor N3000 Series (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded) | |
+| | 	[	Intel® Atom® x5-E8000 Processor (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded) | |
+| | 	[Intel® Atom® x5-Z8300 Processor (Cherry Trail)](http://ark.intel.com/products/87383/Intel-Atom-x5-Z8300-Processor-2M-Cache-up-to-1_84-GHz) | |
+| | 	[Intel® Atom™ Processor E3800 Product Family (Bay Trail-I)](http://ark.intel.com/products/codename/55844/#@Embedded) | |
+| | 	[Intel® Pentium® and Celeron® Processor N and J Series (Bay Trail-M/D)](http://ark.intel.com/products/codename/55844/) | |
 
 ## Suggested devices
 The publicly available boards below are some of the same devices Microsoft uses as part of our operating system engineering efforts. These are also the devices Microsoft requires reported OS issues to reproduce on for engineering support. We provide an easy process for you to get started with these devices right away. Learn more about the features of each device below and check out the [supported hardware peripherals](HardwareCompatList.md) for each board to decide what device is right for you. If you don't see a device below that works to prorotype or commercialize your idea, please check additional devices or community devices.
