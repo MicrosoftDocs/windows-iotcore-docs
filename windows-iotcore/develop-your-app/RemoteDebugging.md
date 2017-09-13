@@ -26,7 +26,8 @@ Here's how to debug your IoT Core console application remotely in Visual Studio:
 
     ![ConsoleApplication Remote Machine Project Settings](../media/Console/console_project_settings.png)
 
-        Note: You can use the IP address instead of the Windows IoT Core device name.
+> [!TIP]
+> You can use the IP address instead of the Windows IoT Core device name.
 
 * The project configuration needs to be modified to enable deployment.  To do this, open the Configuration Manager by selecting the Configuration manger from the Solution Configuration drop-down menu on the toolbar.
 
