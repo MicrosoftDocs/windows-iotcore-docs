@@ -61,6 +61,6 @@ While Microsoft has engineered support for IoT Core with specific SoCs that enab
 | [Toradex Colibri T30](https://www.toradex.com/windows-iot-starter-kit) | [Nvidia Tegra 3](http://www.nvidia.com/object/tegra-3-processor.html) |[Get started tutorial](http://developer.toradex.com/knowledge-base/flashing-windows-10-iot-core) | [Email](mailto:support.arm@toradex.com) |
 
 ## Retired Devices
-There are several boards that are no longer supported on Windows IoT Core. If you see any boards you might use on this list, please provide us feedback and comment below for questions or concerns. 
+This is a list of boards that we no longer provide an FFU for, though the hardware will still work with IoT Core and the SoCs on these boards are still supported. For any questions or concerns, please open an issue on GitHub.
 
 * Intel Joule
