@@ -1,0 +1,36 @@
+---
+title: Hack the Home
+author: saraclay
+ms.author: saclayt
+ms.date: 09/12/17
+ms.topic: article
+ms.prod: Windows
+ms.technology: IoT
+description: Discover the different samples available to hack your home and help you make your home start working for you.
+keywords: windows iot, AllJoyn
+---
+
+> [!NOTE]
+> You are viewing archived documentation. For questions, please open an issue on GitHub or leave us feedback in the comments below.
+
+# Hack the Home
+A suite of open-source tools designed to help you make your home start working for you.
+
+## Featured Projects
+* [Security Camera](https://microsoft.hackster.io/en-US/windows-iot/security-camera-579b7f?ref=platform&ref_id=4087_trending___&offset=24)
+  * The security camera project uses Windows 10 IoT Core. A PiR Motion Sensor detects movement and triggers the camera accordingly, automatically
+    uploading the photos to OneDrive. This project utilizes the [USB camera](https://github.com/ms-iot/usb-camera), [OneDrive Connector](https://github.com/ms-iot/onedrive-connector), and [Motion Sensor](https://github.com/ms-iot/pir-sensor) components.
+* [Connected Clock Radio](https://microsoft.hackster.io/en-US/windows-iot/connected-clock-radio-85c9fc?ref=platform&ref_id=4087_trending___&offset=32)
+  * An internet-connected clock radio device with a Pi-powered LCD screen to display what's currently playing. This project utilizes the [TextDisplay](https://github.com/ms-iot/TextDisplay) and [Universal Media Engine](https://github.com/ms-iot/UniversalMediaEngine) components.
+* [IoT Weather Station](https://microsoft.hackster.io/en-US/windowsiot/build-hands-on-lab-iot-weather-station-using-windows-10-5b818f?ref=platform&ref_id=4087_trending___&offset=1)
+  * This project demonstrates how to leverage the power of Windows 10 IoT Core by creating a weather station using the Sparkfun weather shield. This project utilizes the [SparkFun Weather Shield](https://github.com/ms-iot/sparkfun-weather-shield) component.
+
+## Plug-and-Play Components
+* [SparkFun Weather Shield](https://github.com/ms-iot/sparkfun-weather-shield)
+* [HTU21D](https://github.com/ms-iot/htu21d)
+* [MPL3115A2](https://github.com/ms-iot/mpl3115a2)
+* [PIR Motion Sensor](https://github.com/ms-iot/pir-sensor)
+* [USB Camera](https://github.com/ms-iot/usb-camera)
+* [OneDrive Connector](https://github.com/ms-iot/onedrive-connector)
+* [Text Display](https://github.com/ms-iot/TextDisplay)
+* [Universal Media Engine](https://github.com/ms-iot/UniversalMediaEngine)
