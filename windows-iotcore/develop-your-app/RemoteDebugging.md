@@ -38,7 +38,8 @@ Here's how to debug your IoT Core console application remotely in Visual Studio:
 
 * Now we're ready to deploy to the remote Windows IoT Core device. Simply press F5 (or select Debug \| Start Debugging) to start debugging our app. You can also use Build \| Deploy Solution to simply deploy your application without starting a debug session.
 
-        NOTE: When run from Visual Studio, the output will not display anywhere, but you will be able to set breakpoints, see variable values, etc.
+> [!NOTE]
+> When run from Visual Studio, the output will not display anywhere, but you will be able to set breakpoints, see variable values, etc.
 
 * To stop the app, press on the 'Stop Debugging' button (or select Debug \| Stop Debugging).
 
@@ -48,5 +49,5 @@ Here's how to debug your IoT Core console application remotely in Visual Studio:
 
 * Once you are done debugging your application, remember to stop the remote debugger on the Windows IoT Core device. You can do this by navigating to Debug settings section of Windows Device Portal and clicking on the Stop Remote Debugger button.
 
-    ![WindowsDevicePortalDebugSettings Stop remote debugger](../media/Console/device_portal_stop_debugger.png)
+    ![WindowsDevicePortalDebugSettings Stop remote debugger](../media/Console/device_portal_stop_debugger.PNG)
 
