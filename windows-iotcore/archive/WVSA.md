@@ -1,5 +1,5 @@
 ---
-title: AllJoyn Overview
+title: Windows Virtual Shields for Arduino Overview
 author: saraclay
 ms.author: saclayt
 ms.date: 09/13/17
@@ -34,6 +34,7 @@ The Windows Virtual Shields for Arduino application can run on any Windows 10 de
  Windows Phone running Windows 10 - we recommend the [Lumia 520](http://www.microsoft.com/en-us/mobile/phone/lumia520) or [Lumia 635](http://www.microsoft.com/en-us/mobile/phone/lumia635).
 
 *Set up your Windows Phone*
+
 If your phone is not already running Windows 10, there are options to install preview versions of the software.  Windows Phone 8 users can go to the Microsoft Store app to download the "Windows Insider" application - this app allows the user to opt into receiving Windows 10 Technical Previews as updates.  Follow the prompts and instructions upon opening the app, and continue once your phone is successfully running Windows 10.
 
 ### Software
@@ -44,6 +45,7 @@ There are two options for installing the Windows Virtual Shields for Arduino UWP
 * Sideload the app using a PC and Visual Studio
 
 *Option 1: Download the app from the Microsoft Store*
+
 Follow this [link](https://www.microsoft.com/store/apps/9nblgggz0mld) to the Microsoft Store page for Windows Virtual Shields for Arduino, download the application, and then install. You can then open the application to ensure it runs properly.  Your device is now setup to be used as a "virtual shield" for an Arduino!  You can proceed to the next page.
 
 *Option 2: Sideload the app using a PC and Visual Studio*
