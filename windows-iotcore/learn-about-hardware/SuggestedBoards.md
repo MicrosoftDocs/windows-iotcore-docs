@@ -11,7 +11,7 @@ keywords: windows iot, development devices, boards, SOC, system on chips, Raspbe
 # Device Options
 
 ## Windows 10 IoT Core Development Devices
-Below you can find Microsoft-enabled System on Chips (SoC) as well as suggested devices to get started quickly and community devices that have been enabled independent of Microsoft involvement.
+While we suggest a few boards to get started on, if you want to work with something else for prototyping or development, we have a number of additional options in the ecosystem.
 
 ## Microsoft-enabled SoCs
 Microsoft works alongside Broadcom, Intel, and Qualcomm to verify support for Windows 10 IoT Core on several of the silicon vendors' SoC. These IoT Core-powered SoCs are used in hundreds of different devices that you can ues to prorotype and commercialize your idea with.
