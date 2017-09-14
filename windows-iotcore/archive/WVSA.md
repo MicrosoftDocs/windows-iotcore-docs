@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: Windows
 ms.technology: IoT
 description: Learn how to set up Windows Virtual Shields for Arduino and build your first Windows 10 IoT Core app.
-keywords: windows iot, WVSA, Windows Virtual Shields, Arduino
+keywords: windows iot, WVSA, Windows Virtual Shields, Arduino, app
 ---
 
 > [!NOTE]
