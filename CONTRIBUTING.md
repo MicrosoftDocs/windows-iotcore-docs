@@ -28,7 +28,7 @@ If you are unfamiliar with using Git, try the [Lynda.com Git Essentials training
 
 ## Authoring your contribution
 
-Once you have forked and cloned the repo to your local machine, you can begin authoring with the text editor of your choice.  We, of course, recommend [Visual Studio Code](https://code.visualstudio.com/), a free lightweight open source editor from Microsoft. If you are unfamiliar with markdown authoring, see [How to use Markdown](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-use-markdown) in the OPS Guide. 
+Once you have forked and cloned the repo to your local machine, you can begin authoring with the text editor of your choice.  We, of course, recommend [Visual Studio Code](https://code.visualstudio.com/), a free lightweight open source editor from Microsoft. For help with markdown authoring, check out this [Markdown is FUN for Everyone! Poster](windows-iotcore/media/DocsMarkdownPoster.pdf) with all of the basics you need to know. You can even print it and hang it on your wall as a reminder to contribute. 
 
 ## Submitting your contribution and filing a Pull Request (PR)
 
