@@ -35,15 +35,15 @@ Use either one of these apps as a starting point for your multi-app experience a
 
 ## Switching between apps with HID Injection Keys
 
-The below instructions show you how to turn on Hotkey support through entries to the registry. If you are building your own image and want to support hotkeys without needing to access the registry, you can include an optional feature package that handles these steps for you.
+The below instructions show you how to turn on Hotkey support through entries to the registry. If you are building your own image and want to support the below hotkeys (Home, previous app, and next app) without needing to access the registry, you can include an optional feature package that handles these steps for you.
 
-The feature package to look for is called: **Microsoft-OneCore-IoTUAP-Shell-HotKeys-Feature-Package.cab** and the feature is called **IOT_SHELL_HOTKEY_SUPPORT**
+The feature package to look for is called: **Microsoft-OneCore-IoTUAP-Shell-HotKeys-Feature-Package.cab** and the feature is called **IOT_SHELL_HOTKEY_SUPPORT**. See the [Settings.HotKey sample package](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Common/Packages/Settings.HotKey/Settings.HotKey.pkg.xml) for an example.
 
 The rest of this document covers how to implement this feature manually.
 
 ### Return Home
 
-The "GO HOME" key, which returns the default headed app to the foreground, is set to the release of the Windows Button on a keyboard. If you don't have a keyboard on your IoT Device and need to inject low-level keyboard events through [HID Injection](https://developer.microsoft.com/en-us/windows/iot/samples/hidinjection), or if you just want to re-map the "GO HOME" functionality to a different key in your app, you can adjust the key value in the registry. For example, to enable pressing the ESCAPE key (0x1B) to "GO HOME", enter the following command in the registry:
+With the Windows 10 IoT Anniversary Update (1607), the IoT Shell supports bringing the default application window to the foreground when another application is running by pressing the "GO HOME" key, which is set to the release of the Windows Button on a keyboard. If you don't have a keyboard on your IoT Device and need to inject low-level keyboard events through [HID Injection](https://developer.microsoft.com/en-us/windows/iot/samples/hidinjection), or if you just want to re-map the "GO HOME" functionality to a different key in your app, you can adjust the key value in the registry. For example, to enable pressing the ESCAPE key (0x1B) to "GO HOME", enter the following command in the registry:
 
 ``
 “HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\HotKeys” “HOME” QWORD    0x0000000 0000001B  
@@ -77,16 +77,12 @@ As a REG file, this looks as follows:
 
 The above REG file entries decode left to right as follows:
 
-- Bits 0-15: Virtual Key Code (i.e. 1B,00 for ESCAPE)
+- Bits 0-15: Virtual Key Code (i.e. 1B,00 for ESCAPE). See [Virtual Key Code](https://msdn.microsoft.com/library/windows/desktop/dd375731(v=vs.85).aspx) for the complete list of key code values
 - Bits 16-19: Modifier Key. 0x0 = No Modifier, 0x1 = ALT, 0x2 = CTRL, and 0x4 = SHIFT. Combining keys adds the values together (i.e. ALT+SHIFT is 0x5)
-- Bits 20-31: Reserved for future modifiers; must be 0
-- Bits 32-47: Reserved for future encoding control flags.
-    - Bit 32: 0 = OnRelease, 1 = OnPress
-    - Bit 33: 0 = Remotable, 1 = Not Remotable
-- Bits 48-63: Reserved for future encoding actions 
-    - Bits 48-62: Action
-        - 0 = Home
-        - 1 = Previous View
-        - 2 = Next View
-    - Bit 63: 0 = All System Actions, 1 = Reserved for Custom User Actions
+- Bits 20-47: Reserved for future use; must be 0
+- Bits 48-62:  Action
+    - 0 = Home
+    - 1 = Previous View (may not work in future releases)
+    - 2 = Next View (may not work in future releases)
+- Bit 63: Reserved; must be 0
 
