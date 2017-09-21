@@ -54,7 +54,7 @@ The File Transfer Protol (FTP) allows you to transfer files to and from your Win
 
     ![FTP explorer with new root directory](../media/ftp/ftp_explorer_parameter.png)
 
-* In order to make this change permanent, you need to edit the script that starts the FTP server when the device turns on.  To do this, open up **File Explorer** and type `\\<TARGET_DEVICE>\c$\Windows\System32`, where `<TARGET_DEVICE>` is either the name or the IP address of your device.
+* In order to make this change permanent, you need to edit a script and start the FTP server when the device turns on.  If you are using a prebuilt device image, open up **File Explorer** and type `\\<TARGET_DEVICE>\c$\Windows\System32`, where `<TARGET_DEVICE>` is either the name or the IP address of your device.
 
     ![FTP explorer edit script](../media/ftp/ftp_edit_script.png)
     
@@ -81,12 +81,19 @@ The File Transfer Protol (FTP) allows you to transfer files to and from your Win
 
     ![FTP security dialog](../media/ftp/ftp_security_warning.png)
     
-* Your default text editor should now open.  Find the line that contains `start ftpd.exe`.
+* Your default text editor should now open. After the block text that begins with `REM start W32time` add a block of text to call `start ftpd.exe <PATH_TO_DIRECTORY>` where `<PATH_TO_DIRECTORY>` is the absolute path to the directory you want to set as the root directory, such as `C:\Data\Users\DefaultAccount`.  Similar to the snippet below:
 
-    ![FTP command](../media/ftp/ftp_edit_command.png)
+``` 
+REM start W32Time
+if /i EXIST %SystemDrive%\Windows\System32\w32time.dll (
+  net start w32time >nul 2>&1
+)
 
-* Change it to `start ftpd.exe <PATH_TO_DIRECTORY>`, where `<PATH_TO_DIRECTORY>` is the absolute path to the directory you want to set as the root directory, such as `C:\Users\DefaultAccount`.  Then save the file and close the window.
+if /i EXIST %SystemDrive%\Windows\System32\ftpd.exe (
+  start ftpd.exe C:\Data\Users\DefaultAccount >nul 2>&1
+)
+```
 
-    ![FTP new command](../media/ftp/ftp_save.png)
-    
+Then save the file and close the window.
+
 * Now when you reboot your device, the FTP server will start with your new root directory.
