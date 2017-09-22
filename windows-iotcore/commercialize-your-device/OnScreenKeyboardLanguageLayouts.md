@@ -28,7 +28,7 @@ The RS2 and RS3 on-screen keyboard (OSK) supports layouts for the following lang
 
 By pressing and holding the OSK's "&123" button, the user can select which layout they want to use:
 
-![All languages](..\media\OnScreenKeyboard\AllLanguages.png)
+![All languages](../media/OnScreenKeyboard/AllLanguages.png)
  
 As an OEM, however, you can limit which layout choices are displayed to the user. To limit which layouts to show the user, first reference the guidance from https://technet.microsoft.com/en-us/library/cc978687.aspx.
  
@@ -65,7 +65,7 @@ goto :eof
 
 The resulting effect of the above command script will be:
 
-![North American languages](..\media\OnScreenKeyboard\NorthAmericanLanguages.png)
+![North American languages](../media/OnScreenKeyboard/NorthAmericanLanguages.png)
 
 ## Some things to note:
 *  The value names indicate a decimal sequence.
