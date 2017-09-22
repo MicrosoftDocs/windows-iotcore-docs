@@ -21,7 +21,7 @@ You can use Windows file sharing to transfer files to and from your device.
 
 Enter your administrator username and password if prompted. The username should be prefixed with the IP Address of your Windows IoT Core device. Example: **Username:** `192.168.1.118\Administrator`  **Password:** `{your_password}`.
 
-    ![File explorer](../media/WindowsFileSharing/smb_file_explorer.png)
+![File explorer](../media/WindowsFileSharing/smb_file_explorer.png)
 
 * Now you can access the files on your device using Windows file sharing.
 
