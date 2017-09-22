@@ -72,8 +72,8 @@ The resulting effect of the above command script will be:
 *  The values are string values (REG_SZ).
 *  The script text above, of course, could be added directly into the OEMCustomization.cmd script.
 *  **Do not** delete the "Preload" registry key since it has permissions set on it specifically to allow the on-screen keyboard application to read its values.
-*  A prerequisite for these instructions to be applicable, your image must include the following features:
+*  A prerequisite for these instructions to be applicable, is that your image must include the following features*:
    * IOT_SHELL_ONSCREEN_KEYBOARD
    * IOT_SHELL_ONSCREEN_KEYBOARD_FOLLOWFOCUS
 
-For more information about IoT Features, see [IoT Core Feature List](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-feature-list).
+*For more information about IoT Features, see [IoT Core Feature List](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-feature-list).
