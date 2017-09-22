@@ -17,7 +17,7 @@ ___
 The key difference between general-computing operating systems and real-time operating systems is the need for "deterministic" timing behavior in the real-time operating systems. - belhob.wordpress.com
 
 - [Real-time OS](http://en.wikipedia.org/wiki/Real-time_operating_system) - The scheduling algorithms guarantee deterministic timing (e.g. AVR).
-- [General OS](http://en.wikipedia.org/wiki/Operating_system) - The scheduling algorithms make no guarantees about timing (e.g. Windows).
+- [General OS](http://en.wikipedia.org/wiki/Operating_system) - The scheduling algorithms make no guarantees about timing.
 
 ___
 

@@ -28,7 +28,6 @@ The privacy statement for this version of the Windows operating system can be vi
    * Azure Device Management Support - OEMs can use the Windows IoT Azure DM client library to add device management capabilities to their Azure IoT hub connected devices.
    * Additional Silicon Support
       * Verified support for Windows 10 IoT Core on Intel Joule, Intel Pentium N4200, Intel Celeron N3350, upcoming Atom x5-E39xx processors (formerly Apollo Lake) and Raspberry Pi 3 SOMs.
-      * Toradex has enabled support for their Colibri T30 SOM using the NVIDIA Tegra 3. 
       * Allwinner has enabled support for their Pine 64 and Banana Pi devices using the Allwinner A64 SoC. 
    * Discovering your Remote Devices - No special software is needed to discover your devices that are signed in with your Microsoft Account.
    * New UWP APIs And controls for vibration, brightness, modern connected standby, power management, battery charge  and NFC (w/o HCE). 

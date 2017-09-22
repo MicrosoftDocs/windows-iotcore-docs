@@ -35,19 +35,25 @@ To enable the policy execute the following command on the **Windows IoT Core** d
 ## Enabling loopback for a UWP application
 Before you can enable loopback for an application you will need the package family name.  You can find the package family name for an installed application by running **iotstartup list**.  If the **iotstartup list** entry for the application is IoTCoreDefaultApp\_1w720vyc4ccym!App then the package family name is IoTCoreDefaultApp\_1w720vyc4ccym
 
-To enable loopback for client connections use **CheckNetIsolation.exe -a**.  CheckNetIsolation.exe will configure loopback for the application and exit. This will enable the application to make outbound connections to a server.
+To enable loopback for client connections use `CheckNetIsolation.exe -a -n=<AppContainer or Package Family>`.  CheckNetIsolation.exe will configure loopback for the application and exit. This will enable the application to make outbound connections to a server.
 
-        CheckNetIsolation.exe LoopbackExempt -a -n=<AppContainer or Package Family>
-        Example: CheckNetIsolation.exe LoopbackExempt -a -n=IoTCoreDefaultApp_1w720vyc4ccym
- 
+Example:
 
-To enable a server application to receive inbound connections use **CheckNetIsolation.exe -is**. Unlike outbound connection configuration, inbound connections require CheckNetIsolation.exe to run continuously while the server application is receiving connections.  This requires an OS build newer than 10.0.14393.
+```
+CheckNetIsolation.exe LoopbackExempt -a -n=IoTCoreDefaultApp_1w720vyc4ccym
+```
 
-        CheckNetIsolation.exe LoopbackExempt -is -n=<AppContainer or Package Family>
-        Example: CheckNetIsolation.exe LoopbackExempt -is -n=IoTCoreDefaultApp_1w720vyc4ccym
+To enable a server application to receive inbound connections use `CheckNetIsolation.exe -is -n=<AppContainer or Package Family>`. Unlike outbound connection configuration, inbound connections require CheckNetIsolation.exe to run continuously while the server application is receiving connections.  This requires an OS build newer than 10.0.14393.
+
+Example:
+```
+CheckNetIsolation.exe LoopbackExempt -is -n=IoTCoreDefaultApp_1w720vyc4ccym
+```
 
 The best way to run CheckNetIsolation.exe automatically on startup is to use schtasks.exe
 
-        Example: schtasks /create /tn MyTask /f /sc onstart /ru system /tr "checknetisolation LoopbackExempt -is -n=IoTCoreDefaultApp_1w720vyc4ccym"
+```
+schtasks /create /tn MyTask /f /sc onstart /ru system /tr "checknetisolation LoopbackExempt -is -n=IoTCoreDefaultApp_1w720vyc4ccym"
+```
 
 Upon rebooting you should be able to verify that checknetisolation.exe is running by using tlist.exe or [Windows Device Portal](https://developer.microsoft.com/en-us/windows/iot/docs/deviceportal)

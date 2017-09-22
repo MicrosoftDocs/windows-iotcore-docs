@@ -36,7 +36,7 @@ The lowLevelDevice Capability (only on IoT Core) gives access to low-level hardw
 
 ## systemManagment Capability
 
-When you enable the systemManagment capabilities for your appliction this is the set of APIs that gets unlocked:   
+When you enable the systemManagment capabilities for your application this is the set of APIs that gets unlocked:   
 
 * [Windows.System.ProcessLauncher](https://msdn.microsoft.com/library/windows/apps/windows.system.processlauncher.aspx)
 * [Windows.System.TimeZoneSettings](https://msdn.microsoft.com/library/windows/apps/windows.system.timezonesettings.aspx)
