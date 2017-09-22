@@ -9,7 +9,7 @@ keywords: windows iot, FTP, file transfer protocol, file transfer, devices
 ---
 
 # File Transfer Protocol
-The File Transfer Protol (FTP) allows you to transfer files to and from your Windows 10 IoT Core device
+The File Transfer Protocol (FTP) allows you to transfer files to and from your Windows 10 IoT Core device
 
 > [!IMPORTANT]
 > FTP is recommended generally for developers to ease the initial development process. We do not recommend using FTP in retail devices.
@@ -19,26 +19,26 @@ The File Transfer Protol (FTP) allows you to transfer files to and from your Win
 * Type `start C:\Windows\System32\ftpd.exe`
 * You can check that the server is running by typing `tlist`, which will list all the running processes.  If the FTP server is running, you should see `ftpd.exe` in the list.
 
-    ![FTP Start](../media/ftp/ftp_start.png)
+![FTP Start](../media/ftp/ftp_start.png)
 
 ## Stopping the FTP server on your device<a name="stopftp"/>
-* In order to stop the FTP server on your IoT Core device, first you need to connect to your device through [PowerShell](../connect-your-device/PowerShell.md) or [SSH](../connect-your-device/SSH.md).  
+* In order to stop the FTP server on your IoT Core device, first you need to connect to your device through [PowerShell](../connect-your-device/PowerShell.md) or [SSH](../connect-your-device/SSH.md).
 * If you connected using PowerShell, type `kill -processname ftpd*` to stop the FTP process.
 
-    ![FTP PowerShell Stop](../media/ftp/ftp_kill_powershell.png)
-    
+![FTP PowerShell Stop](../media/ftp/ftp_kill_powershell.png)
+
 * If you connected using SSH, type `kill ftpd*` to stop the FTP process.
 
-    ![FTP SSH Stop](../media/ftp/ftp_kill_ssh.png)
-	
+![FTP SSH Stop](../media/ftp/ftp_kill_ssh.png)
+
 ## Accessing your files over FTP
 * The FTP server on your IoT Core device starts automatically on boot.  In order to connect to it, you need the IP address of your device.  You can find the IP address on the default app that boots when your device starts.
 
-    ![DefaultApp on Windows IoT Core](../media/ftp/DefaultApp.png)
-    
+![DefaultApp on Windows IoT Core](../media/ftp/DefaultApp.png)
+
 * Once you have the IP, open up **File Explorer** on your PC and type `ftp://<TARGET_DEVICE>`, where `<TARGET_DEVICE>` is either the name or the IP address of your device, then hit Enter.  Enter your administrator username and password if prompted.
 
-    ![FTP explorer](../media/ftp/ftp_explorer.png)
+![FTP explorer](../media/ftp/ftp_explorer.png)
 
 * Now you can access the files on your device through FTP.
 
@@ -48,45 +48,11 @@ The File Transfer Protol (FTP) allows you to transfer files to and from your Win
 * [Stop](#stopftp) the FTP process if it's already running.
 * Type `start C:\Windows\System32\ftpd.exe <PATH_TO_DIRECTORY>`, where `<PATH_TO_DIRECTORY>` is the absolute path to the directory you want to set as the root directory, such as `C:\Users\DefaultAccount`.
 
-    ![FTP Start with Parameter](../media/ftp/ftp_start_parameter.png)
-    
-* Now when you connect to your device through FTP, you will see the contents of the root directory you set.
+![FTP Start with Parameter](../media/ftp/ftp_start_parameter.png)
 
-    ![FTP explorer with new root directory](../media/ftp/ftp_explorer_parameter.png)
+Now when you connect to your device through FTP, you will see the contents of the root directory you set.
 
-* In order to make this change permanent, you need to edit the script that starts the FTP server when the device turns on.  To do this, open up **File Explorer** and type `\\<TARGET_DEVICE>\c$\Windows\System32`, where `<TARGET_DEVICE>` is either the name or the IP address of your device.
+![FTP explorer with new root directory](../media/ftp/ftp_explorer_parameter.png)
 
-    ![FTP explorer edit script](../media/ftp/ftp_edit_script.png)
-    
-* Find `IoTStartupOnBoot.cmd`, right-click it, and click **Edit**.
-
-    ![FTP explorer right-click](../media/ftp/ftp_right_click.png)
-    
-* If a "Access is denied." dialog pops up right click it, and click **Properties**.
-
-  - Select the Security tab
-  - click Advanced *"Advanced Security Settings for IoTStartupOnBoot.cmd" dialog pops up*
-  - note the Owner **TrustedInstaller**
-  - click Change near Owner *"Select User or Group" dialog pops up*
-  - enter **Administrators**
-  - click Check Names
-  - click OK
-  - note the Owner **Administrators (yourdevicename\Administrators)**
-  - click Apply
-  - close both dialogs with OK
-
-  now the file can be edited
-
-* If a security dialog pops up, just click **Run**.
-
-    ![FTP security dialog](../media/ftp/ftp_security_warning.png)
-    
-* Your default text editor should now open.  Find the line that contains `start ftpd.exe`.
-
-    ![FTP command](../media/ftp/ftp_edit_command.png)
-
-* Change it to `start ftpd.exe <PATH_TO_DIRECTORY>`, where `<PATH_TO_DIRECTORY>` is the absolute path to the directory you want to set as the root directory, such as `C:\Users\DefaultAccount`.  Then save the file and close the window.
-
-    ![FTP new command](../media/ftp/ftp_save.png)
-    
-* Now when you reboot your device, the FTP server will start with your new root directory.
+In order to make this change permanent, you need to add
+a call to `start ftpd.exe <PATH_TO_DIRECTORY>` where `<PATH_TO_DIRECTORY>` is the absolute path to the directory you want to set as the root directory, such as `C:\Data\Users\DefaultAccount` to OEMCustomization.cmd and place it in `C:\Windows\System32`
