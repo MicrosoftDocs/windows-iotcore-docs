@@ -48,6 +48,7 @@
 ### [Developing background applications](develop-your-app/BackgroundApplications.md)
 ### [Multiple language support](develop-your-app/MultiLang.md)
 ### [Remote debugging](develop-your-app/RemoteDebugging.md)
+### [Investigate Memory Leaks](develop-your-app/InvestigateMemoryLeaks.md)
 ### [IoT Core Shell overview](develop-your-app/IoTCoreShell.md)
 ### [Bus providers](develop-your-app/BusProviders.md)
 ### [Supported programming languages and app types](develop-your-app/BuildingAppsForIoTCore.md)
