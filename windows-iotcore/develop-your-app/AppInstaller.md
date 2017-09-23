@@ -13,7 +13,7 @@ ___
 
 To install your application on the device please do the following:
 
-1. Open the [Windows Device Portal](https://developer.microsoft.com/en-us/windows/iot/docs/deviceportal) for your IoT device.
+1. Open the [Windows Device Portal](https://docs.microsoft.com/windows/iot-core/manage-your-device/deviceportal) for your IoT device.
 
 2. In the *Apps* menu add your UWP App Package, certificate and dependency App Packages(s).
  ![Install App](../media/AppInstaller/InstallApp.png)
@@ -27,6 +27,6 @@ To install your application on the device please do the following:
 ## Install the app as a part of the IoT core image   
 ___
 
-To add the application as a part of your device image follow the instructions outlined in the [manufacturing guide](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/iot/deploy-your-app-with-a-standard-board).
+To add the application as a part of your device image follow the instructions outlined in the [manufacturing guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/deploy-your-app-with-a-standard-board).
 
-A sample provisioning package with UWP application can be found in our [GitHub repo](https://github.com/ms-iot/iot-adk-addonkit/tree/develop/Source-arm/Packages/Appx.Main).
+A sample provisioning package with UWP application can be found in our [GitHub repo](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Source-arm/Packages/Appx.IoTCoreDefaultApp).
