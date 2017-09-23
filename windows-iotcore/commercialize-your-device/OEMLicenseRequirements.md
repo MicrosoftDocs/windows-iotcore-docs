@@ -30,7 +30,7 @@ These fields gain prominence as fields which will be used for identifying unique
 
 Design Notes: SKU Number has been moved to a required field in order to improve telemetry reporting. We encourage the OEM to be careful to fill in Manufacturer consistently and to fill in SKU Number with a value that can identify what the OEM considers a unique system configuration for telemetry and servicing.
 
-See [SMBIOS Specification](https://msdn.microsoft.com/library/windows/hardware/dn932824(v=vs.85).aspx#system_fundamentals_smbios_smbiosspecification) for more information.
+See [SMBIOS Specification](https://docs.microsoft.com/windows-hardware/design/compatibility/systems#system.fundamentals.smbios) for more information.
 
 > [!NOTE]
 > If you are re-using the BIOS/Firmware/UEFI, make sure make sure to update the entries.
