@@ -162,6 +162,6 @@ Look at row 2 in the Heap Size column. Click the second number with the plus sig
 
 ![Snapshot table](../media/MemoryLeaks/Snapshot2_1.PNG)
 
-Sort by size diff so that the largest number is at the top, then click the top row. Above the second detail table click **Referenced Types**.  The second table should now show **List<Byte[]>** as the source of all the memory usage.
+Sort by size diff so that the largest number is at the top, then click the top row. Above the second detail table click **Referenced Types**.  The second table should now show **List\<Byte[]\>** as the source of all the memory usage.
 
 ![Snapshot table](../media/MemoryLeaks/Snapshot2_2.PNG)
