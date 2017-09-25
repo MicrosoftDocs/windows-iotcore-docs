@@ -20,9 +20,9 @@ Once you've understood the license requirements to use Windows 10 IoT Core comme
 * [Find a distributor](https://az835927.vo.msecnd.net/sites/iot/Resources/documents/Windows_IoT_Distributor_Information.pdf)
 
 ## Create a retail image
-* [Learn how to create a custom image at Windows 10 IoT Core manufacturing guide](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/iot-core-manufacturing-guide)
+* [Learn how to create a custom image at Windows 10 IoT Core manufacturing guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)
 * [Learn how to lockdown your device at Building Secure Devices](../secure-your-device/BuildingSecureDevices.md)
-* [Learn how to configure your device for servicing at Service IoTCore](https://msdn.microsoft.com/windows/hardware/commercialize/service/iot/index)
+* [Learn how to configure your device for servicing at Service IoTCore](https://docs.microsoft.com/windows-hardware/service/iot/index)
 
 ## Arrange for device manufacturing  
 Get contact info for parts suppliers (SVs/IHVs/ODMs). Contact the supplier directly and follow their process to get components and licenses as necessary. Work directly with your SoC partner to locate an appropriate manufacturer.

@@ -9,7 +9,7 @@ keywords: windows iot, package creation, package installation
 ---
 
 # Create and install a package
-[Packages](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/iot-core-manufacturing-guide#Packages) are the logical building blocks of IoT Core. From device drivers to system files, every component must be contained in a package. This is the smallest servicable unit on the device.
+[Packages](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide#Packages) are the logical building blocks of IoT Core. From device drivers to system files, every component must be contained in a package. This is the smallest servicable unit on the device.
 
 ## Step 1: Get set up
 
@@ -17,7 +17,7 @@ keywords: windows iot, package creation, package installation
 
 1. [Windows Assessment and Deployment Kit(Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK)
 2. [IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)
-3. [Windows Driver Kit (WDK)](https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit)
+3. [Windows Driver Kit (WDK)](https://developer.microsoft.com/windows/hardware/windows-driver-kit)
 
 ### Set up your environment
 
@@ -26,7 +26,7 @@ keywords: windows iot, package creation, package installation
 * Select the required architecture in the `Set Environment for Architecture` prompt
 * Install test signing certificates using `InstallOEMCerts` . This is required *only once* for the PC.
 
-To create your own image (FFU), follow the steps outlined in the ["Create a basic image" lab in the IoT Manufacturing guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-basic-image).
+To create your own image (FFU), follow the steps outlined in the ["Create a basic image" lab in the IoT Manufacturing guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image).
 
 ## Step 2: Create a new package
 1. Create a **package definition xml file** (.pkg.xml file), and specify the files and reg keys you want to add.
@@ -74,7 +74,7 @@ You can also create the Appx component directly in the IoTCoreShell, using the f
 
 `fga` sets the appx as the foreground startup app, `bgt` sets the appx as the background task and `none` skips startup configuration.
 
-See [Appx.IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/blob/develop/Source-arm/Packages/Appx.IoTCoreDefaultApp/) as an example.
+See [Appx.IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Source-arm/Packages/Appx.IoTCoreDefaultApp/) as an example.
 
 When you have to install multiple applications signed with same certificate, you can add the certificate along with one app and for the remaining apps, you can skip adding the certificate using the skipcert flag.
 
@@ -82,7 +82,7 @@ When you have to install multiple applications signed with same certificate, you
 
 See also
 
-* [Lab 1b: Add an app to your image](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/deploy-your-app-with-a-standard-board)
+* [Lab 1b: Add an app to your image](https://docs.microsoft.com/windows-hardware/manufacture/iot/deploy-your-app-with-a-standard-board)
 
 
 ### Create a driver package
@@ -96,7 +96,7 @@ The driver package contains the references (InfSource) to the Inf file for the d
 
 See also
 
-* [Sample Driver Package](https://github.com/ms-iot/iot-adk-addonkit/blob/develop/Source-arm/BSP/CustomRpi2/Packages/CustomRPi2.GPIO/CustomRPi2.GPIO.pkg.xml)
+* [Sample Driver Package](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Source-arm/BSP/CustomRpi2/Packages/CustomRPi2.GPIO)
 
 ## Step 3: Install on device
 ---

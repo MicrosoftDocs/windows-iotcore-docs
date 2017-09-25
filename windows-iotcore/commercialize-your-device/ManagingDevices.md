@@ -58,7 +58,7 @@ MDM enrollment of an IoT Core device is accomplished using a Provisioning packag
 
 #### Other MDM Servers
 
-1.  Download and install the [Windows Assessment and Deployment Kit (Windows ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit).
+1.  Download and install the [Windows Assessment and Deployment Kit (Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
 
 2.  Open Windows Imaging and Configuration Designer (WICD).
     ![Windows Imaging and Configuration Designer](../media/ManagingDevices/WICD-Start-Page.png)
@@ -116,4 +116,4 @@ Take the Provisioning package that was exported from SCCM or WICD and copy the .
 
 #### Adding package to image
 
-See [Add a provisioning package to an image](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/iot/add-a-provisioning-package-to-an-image). Upon first boot the device will execute the package and start the enrollment process.
+See [Add a provisioning package to an image](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-provisioning-package-to-an-image). Upon first boot the device will execute the package and start the enrollment process.
