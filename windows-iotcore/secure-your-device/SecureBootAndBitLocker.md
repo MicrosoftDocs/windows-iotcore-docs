@@ -59,7 +59,7 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
     For Intel's MinnowBoard Max, firmware version must be 0.82 or higher (get the [latest firmware](https://firmware.intel.com/projects/minnowboard-max)). To enable TPM capabilities, power up board with a keyboard & display attached and press F2 to enter UEFI setup. Go to _Device Manager -> System Setup -> Security Configuration -> PTT_ and set it to _&lt;Enable&gt;_. Press F10 to save changes and proceed with a reboot of the platform.
 
 > [!NOTE]
-Raspberry Pi 2 nor 3 do not support TPM and so we cannot configure Lockdown scenarios.
+> Raspberry Pi 2 nor 3 do not support TPM and so we cannot configure Lockdown scenarios.
 
 ### Generate Lockdown Packages
 
@@ -86,7 +86,7 @@ Raspberry Pi 2 nor 3 do not support TPM and so we cannot configure Lockdown scen
     * Packaging : Specify the settings for the package generation
 
 > [!IMPORTANT]
-In order to assist with testing during the initial development cycle, Microsoft has provided pre-generated keys and certificates where appropriate.  This implies that Microsoft Test, Development and Pre-Release binaries are considered trusted.  During final product creation and image generation, be sure to remove these certifcates and use your own keys to ensure a fully locked down device.
+> In order to assist with testing during the initial development cycle, Microsoft has provided pre-generated keys and certificates where appropriate.  This implies that Microsoft Test, Development and Pre-Release binaries are considered trusted.  During final product creation and image generation, be sure to remove these certifcates and use your own keys to ensure a fully locked down device.
   
 6. Execute the following commands to generate required packages:
     * `Import-Module .\IotDeviceGuardPackage.psm1`
