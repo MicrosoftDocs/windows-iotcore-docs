@@ -37,23 +37,12 @@ Before you can enable loopback for an application you will need the package fami
 
 To enable loopback for client connections use `CheckNetIsolation.exe -a -n=<AppContainer or Package Family>`.  CheckNetIsolation.exe will configure loopback for the application and exit. This will enable the application to make outbound connections to a server.
 
-Example:
-
-```
-CheckNetIsolation.exe LoopbackExempt -a -n=IoTCoreDefaultApp_1w720vyc4ccym
-```
+Example: `CheckNetIsolation.exe LoopbackExempt -a -n=IoTCoreDefaultApp_1w720vyc4ccym`
 
 To enable a server application to receive inbound connections use `CheckNetIsolation.exe -is -n=<AppContainer or Package Family>`. Unlike outbound connection configuration, inbound connections require CheckNetIsolation.exe to run continuously while the server application is receiving connections.  This requires an OS build newer than 10.0.14393.
 
-Example:
-```
-CheckNetIsolation.exe LoopbackExempt -is -n=IoTCoreDefaultApp_1w720vyc4ccym
-```
+Example: `CheckNetIsolation.exe LoopbackExempt -is -n=IoTCoreDefaultApp_1w720vyc4ccym`
 
-The best way to run CheckNetIsolation.exe automatically on startup is to use schtasks.exe
-
-```
-schtasks /create /tn MyTask /f /sc onstart /ru system /tr "checknetisolation LoopbackExempt -is -n=IoTCoreDefaultApp_1w720vyc4ccym"
-```
+The best way to run CheckNetIsolation.exe automatically on startup is to use schtasks.exe: `schtasks /create /tn MyTask /f /sc onstart /ru system /tr "checknetisolation LoopbackExempt -is -n=IoTCoreDefaultApp_1w720vyc4ccym"`
 
 Upon rebooting you should be able to verify that checknetisolation.exe is running by using tlist.exe or [Windows Device Portal](https://developer.microsoft.com/en-us/windows/iot/docs/deviceportal)
