@@ -38,11 +38,11 @@ For large deployments, you can achieve this using provisioning package
 You can specify the StartupApp/Default setting in the WCD during the provisioning package creation.
 ![SetupDefaultAppICD](../media/SetupDefaultApp/DefaultAppICD.png)
 
-See [Appx.IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/blob/develop/Source-arm/Packages/Appx.IoTCoreDefaultApp/customizations.xml) as an example. You can get the Application User Model ID (AUMID) of an appx using [GetAppxInfo tool](https://github.com/ms-iot/iot-adk-addonkit/blob/develop/Tools/GetAppxInfo.exe).
+See [Appx.IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Source-arm/Packages/Appx.IoTCoreDefaultApp/customizations.xml) as an example. You can get the Application User Model ID (AUMID) of an appx using [GetAppxInfo tool](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/GetAppxInfo.exe).
 
 ## How to configure "Home" key
 ___
 
 Windows 10 IoT Anniversary Update (1607) provides shell support for bringing the default application window to the foreground when another application is currently running.
 
-To see how to enable the "Home" key, please visit our [IoT Shell page](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoreshell#switching-between-apps-with-hid-injection-keys)
+To see how to enable the "Home" key, please visit our [IoT Shell page](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoreshell#switching-between-apps-with-hid-injection-keys)

@@ -14,7 +14,7 @@ Board Support Packages (BSP) is a collection of drivers/settings required to run
 There are two steps to creating your own BSP:
 
 * First, find where you can get BSPs for supported platforms **below**.
-* Second, learn how to create your own BSP by following the steps listed in the [IoT Manufacturing guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-new-bsp).
+* Second, learn how to create your own BSP by following the steps listed in the [IoT Manufacturing guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-new-bsp).
 
 ## Raspberry Pi BSP
 Raspberry drivers are available at [ms-iot/bsp](https://github.com/ms-iot/bsp).
@@ -103,7 +103,7 @@ DragonBoard drivers are available at [DragonBoard 410C Software](https://develop
 
 ## Other helpful resources
 
-* [Windows ADK IoT Core Add-Ons Overview](https://go.microsoft.com/fwlink/p/?LinkId=735029)
+* [Windows ADK IoT Core Add-Ons Overview](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-adk-addons)
 * [IoT Core Add-Ons command-line options](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/iot-core-adk-addons-command-line-options)
-* [IoT Core feature list](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/iot-core-feature-list)
+* [IoT Core feature list](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-feature-list)
 * [Channel9 Video on Manufacturing Guide](https://channel9.msdn.com/events/Build/2017/B8085)

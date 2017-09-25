@@ -37,7 +37,7 @@ The Driver package contains the references(InfSource)to the Inf file for the dri
 > [!NOTE]
 > Windows IoT Core supports Universal Inf only.
 
-See also: [Sample Driver Package](https://github.com/ms-iot/iot-adk-addonkit/blob/develop/Source-arm/BSP/CustomRpi2/Packages/CustomRPi2.GPIO/CustomRPi2.GPIO.pkg.xml) 
+See also: [Sample Driver Package](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Source-arm/BSP/CustomRpi2/Packages/CustomRPi2.GPIO) 
 
 ## Step 3: Install on device
 ___
@@ -55,6 +55,6 @@ ___
 * Launch the [Powershell](../connect-your-device/PowerShell.md)
 * You can get the status of the installed drivers using the following Powershell commandlets
 
-	* [Get-PnpDevice](https://technet.microsoft.com/en-us/library/mt130248.aspx)
-	* [Get-PnpDeviceProperty](https://technet.microsoft.com/en-us/library/mt130249.aspx)
+	* [Get-PnpDevice](https://docs.microsoft.com/powershell/module/pnpdevice/get-pnpdevice?view=win10-ps)
+	* [Get-PnpDeviceProperty](https://docs.microsoft.com/powershell/module/pnpdevice/get-pnpdeviceproperty?view=win10-ps)
 	
