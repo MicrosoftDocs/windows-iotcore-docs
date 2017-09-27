@@ -1,5 +1,5 @@
 ---
-title: Supported Programming Languages and App Types
+title: Developing foreground applications
 author: msalehmsft
 ms.author: msaleh
 ms.date: 08/28/2017
@@ -8,7 +8,7 @@ description: Learn about the languages and app types that are supported by IoT C
 keywords: windows iot, languages, app types, UWP, supported
 ---
 
-# Supported Programming Languages and App Types
+# Developing foreground applications
 Learn about the languages that are supported on Windows 10 IoT Core as well as the UWP and non-UWP app types that are supported on IoT Core.
 
 ## Application Types
