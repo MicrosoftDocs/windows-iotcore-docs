@@ -1,14 +1,14 @@
 ---
-title: IoT Core Shell Overview
+title: IoT Shell Overview
 author: derekameer
 ms.author: demeer
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn about how to leverage the IoT Core Shell to navigate between navigations on your device.
+description: Learn about how to leverage the IoT Shell to navigate between navigations on your device.
 keywords: windows iot, IoT core shell, applications, foreground applications, background applications
 ---
 
-# IoT Core Shell Overview
+# IoT Shell Overview
 
 This document covers the IoT Core Shell, foreground and background applications, and how to navigate between these applications on your device.
 
