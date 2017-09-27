@@ -1,5 +1,5 @@
 ---
-title: Windows 10 IoT Core Development Devices
+title: Suggested Boards and SoCs for Windows 10 IoT Core
 author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
@@ -8,7 +8,7 @@ description: Learn about the hardware features for a variety of suggested boards
 keywords: windows iot, development devices, boards, SOC, system on chips, Raspberry Pi 2, Raspberry Pi 3, Minnowboard Max, Dragonboard
 ---
 
-# Device Options
+# Suggested Boards and SoCs
 
 ## Windows 10 IoT Core Development Devices
 While we suggest a few boards to get started on, if you want to work with something else for prototyping or development, we have a number of additional options in the ecosystem.
