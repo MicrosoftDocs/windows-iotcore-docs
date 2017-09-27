@@ -50,7 +50,7 @@
 ### [Language support](develop-your-app/MultiLang.md)
 ### [Remote debugging](develop-your-app/RemoteDebugging.md)
 ### [Investigate Memory Leaks](develop-your-app/InvestigateMemoryLeaks.md)
-### [IoT Core Shell overview](develop-your-app/IoTCoreShell.md)
+### [IoT Shell overview](develop-your-app/IoTCoreShell.md)
 ### [Bus providers](develop-your-app/BusProviders.md)
 ### [Localhost loopback](develop-your-app/Loopback.md)
 ### [Fiddler](develop-your-app/Fiddler.md)
