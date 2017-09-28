@@ -76,4 +76,4 @@ The resulting effect of the above command script will be:
    * IOT_SHELL_ONSCREEN_KEYBOARD
    * IOT_SHELL_ONSCREEN_KEYBOARD_FOLLOWFOCUS
 
-For more information about IoT Features, see [IoT Core Feature List](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-feature-list).
+* For more information about IoT Features, see [IoT Core Feature List](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-feature-list).
