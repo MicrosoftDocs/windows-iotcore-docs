@@ -67,7 +67,7 @@ The resulting effect of the above command script will be:
 
 ![North American languages](../media/OnScreenKeyboard/NorthAmericanLanguages.png)
 
-## Some things to note:
+### Some things to note:
 *  The value names indicate a decimal sequence.
 *  The values are string values (REG_SZ).
 *  The script text above, of course, could be added directly into the OEMCustomization.cmd script.
