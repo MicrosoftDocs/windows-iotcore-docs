@@ -8,7 +8,7 @@ description: Learn how to specify which on-screen keyboard language layouts are 
 keywords: windows 10 IoT Core, commercialize, osk onscreen keyboard language layouts
 ---
 
-# On-screen Keyboard Language Layouts
+# On-Screen Keyboard Language Layouts
 
 The RS2 and RS3 on-screen keyboard (OSK) supports layouts for the following languages:
 
