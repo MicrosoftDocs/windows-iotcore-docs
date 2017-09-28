@@ -28,16 +28,13 @@ In order for headless apps to meet store compliance there needs to be a "head" a
 
 1. Create a new Blank XAML project in Visual Studio.
 2. Build the new project under release configuration
-3. Navigate to \<New Project Folder>/bin/Release/<Architecture>/
-Locate file titled <Name of your project>.exe
-- If you are using Visual Studio 2017 it is required that you create a subdirectory in your project. In this sample we call it "exe". Then copy the file to the "exe" directory of your headless app project.
-- If you are using Visual Studio 2015 you just copy the file to the root directory of your app project.
+3. Navigate to \<New Project Folder\>/bin/Release/\<Architecture\>/
+4. Locate file titled \<Name of your project\>.exe and copy the file to the root directory of your app project.
 4. Include the newly added file to the Visual Studio project and set to "Copy Always"
 5. Open the Package.appxmanifest in Code mode (right-click and choose View Code) for the headless app and modify the following:  
-  - If you are using VS 2017 add the attribute _Executable="exe\\<Filename of .exe copied to project>.exe"_ to the element _Application_
-  - If you are using VS 2015 add the attribute _Executable="\<Filename of .exe copied to project>.exe"_ to the element _Application_
-  * Add the attribute _EntryPoint="\<Namespace of Blank XAML project>.App"_ to the element _Application_
-  * Remove the AppListEntry attribute from the element _uap:VisualElements_
+  - Add the attribute _Executable="\<Filename of .exe copied to project\>.exe"_ to the element _Application_
+  - Add the attribute _EntryPoint="\<Namespace of Blank XAML project\>.App"_ to the element _Application_
+  - Remove the AppListEntry attribute from the element _uap:VisualElements_
 
 ___
 3. With the app submission created the next step is to [package the UWP app](https://msdn.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps) and upload to the app submission in Windows Dev Center. For IoT Core it is important to set  **Generate app bundle** to **Never**. This will allow the Windows Dev Center to generate the correct package for preinstall on IoT Core.
