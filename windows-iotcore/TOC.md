@@ -72,6 +72,7 @@
 ### [Driver deployment](commercialize-your-device/DriverDeployment.md)
 ### [Installing and servicing apps](commercialize-your-device/InstallingAndServicing.md)
 ### [Go to market](commercialize-your-device/GoToMarket.md)
+### [On-screen keyboard layouts](commercialize-your-device/OnScreenKeyboardLanguageLayouts.md)
 ### [Managing devices](commercialize-your-device/ManagingDevices.md)
 ### [Recovery](commercialize-your-device/Recovery.md)
 ## [Release Notes]()
