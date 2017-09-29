@@ -96,7 +96,7 @@ Windows IoT is a version of Windows 10 that is optimized for smaller devices wit
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_tools.svg" alt="" />
+                            <img src="/media/common/i_setup.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -114,7 +114,7 @@ Windows IoT is a version of Windows 10 that is optimized for smaller devices wit
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_setup.svg" alt="" />
+                            <img src="/media/common/i_tools.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
