@@ -90,7 +90,7 @@ Windows IoT is a version of Windows 10 that is optimized for smaller devices wit
         </a>
     </li>
     <li>
-        <a href="extend-your-app/CortanaOnIoTCore.md">
+        <a href="https://github.com/ms-iot/iot-walkthrough">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -100,7 +100,7 @@ Windows IoT is a version of Windows 10 that is optimized for smaller devices wit
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Cortana on IoT</h3>
+                        <h3>Windows 10 IoT Core Walkthrough</h3>
                     </div>
                 </div>
             </div>
