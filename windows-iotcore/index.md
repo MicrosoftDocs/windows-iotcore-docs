@@ -36,7 +36,7 @@ Windows IoT is a version of Windows 10 that is optimized for smaller devices wit
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide" target="_blank">
+        <a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
