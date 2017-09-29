@@ -10,8 +10,6 @@ keywords: windows iot, Visual Studio, leaks, troubleshooting
 
 # Investigating Memory Leaks
 
-## Summary
-
 The best tool for investigating memory leaks on Windows IoT Core with Visual Studio is the integrated [Diagnostic Tools](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
 
 ![Diagnostic Tools](../media/MemoryLeaks/DiagnosticTools.PNG)
@@ -31,9 +29,9 @@ However, these tools don't work directly with a Windows IoT Core **Background Ap
 9. Take another snapshot
 10. Use the **Diagnostic Tools** window to diagnose the leak.
 
-# More Details
+## Create a test app
 
-Let's start with application that allocates memory and doesn't free it to simulate a leak.
+Let's start with an application that allocates memory and doesn't free it to simulate a leak.
 Begin by creating a new C# Background application: [Developing Background Applications](./BackgroundApplications.md)
 
 Replace the code in StartupTask.cs with this
