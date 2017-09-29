@@ -14,7 +14,7 @@ Looking to configure some of the settings on your device? The below tools all co
 
 ## IoT Core-specific Command Line Utils
 
-* **Setting startup app:**
+### **Setting startup app:**
 
 	Use the startup editor to configure startup apps on your Windows IoT Core device. Run `IotStartup` with any of the following options:
 
@@ -35,7 +35,7 @@ Looking to configure some of the settings on your device? The below tools all co
 
 	* For further help, try `IotStartup help`
 	
-* **Change settings for region and user or speech language**
+### **Change settings for region and user or speech language**
 
 The `IoTSettings` tool changes region, user language or speech language. This is a command line tool that can be invoked from an application using the ProcessLauncher API. These commands must be run as default account, not administrator.
 
@@ -51,7 +51,7 @@ The `IoTSettings` tool changes region, user language or speech language. This is
 > [!TIP]
 > `IoTSettings -list uiLanguage` will give back the list of supported UI language (in the version of Windows IoT core image it has been executed against)
 	
-* **Change default audio device and volume**
+### **Change default audio device and volume**
 
   The `IoTCoreAudioControlTool` tool controls audio related options, such as setting default capture and playback devices and changing the volume. For a full list of parameters, run `IoTCoreAudioControlTool h`.
 
