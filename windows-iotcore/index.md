@@ -46,7 +46,7 @@ Windows IoT is a version of Windows 10 that is optimized for smaller devices wit
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Commercialization guide</h3>
+                        <h3>IoT Core Manufacturing guide</h3>
                     </div>
                 </div>
             </div>
@@ -54,35 +54,17 @@ Windows IoT is a version of Windows 10 that is optimized for smaller devices wit
         </a>
     </li>
     <li>
-        <a href="connect-to-cloud/ConnectAppToCloud.md">
+        <a href="https://docs.microsoft.com/en-us/windows-hardware/service/iot/">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_vmm-cloud.svg" alt="" />
+                            <img src="/media/common/i_upgrade.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Connect to the cloud</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="secure-your-device/BuildingSecureDevices.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_lock.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Secure your device</h3>
+                        <h3>IoT Core Servicing</h3>
                     </div>
                 </div>
             </div>
@@ -96,11 +78,29 @@ Windows IoT is a version of Windows 10 that is optimized for smaller devices wit
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_web.svg" alt="" />
+                            <img src="/media/common/i_learn-about.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Windows 10 IoT Core Walkthrough</h3>
+                        <h3>IoT Core Walkthrough</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="learn-about-hardware/suggestedboards.md">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_tools.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Suggested boards and SoCs</h3>
                     </div>
                 </div>
             </div>
@@ -114,7 +114,7 @@ Windows IoT is a version of Windows 10 that is optimized for smaller devices wit
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_tools.svg" alt="" />
+                            <img src="/media/common/i_setup.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
