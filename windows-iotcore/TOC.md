@@ -49,7 +49,7 @@
 ### [Setup a default app](develop-your-app/SetupDefaultApp.md)
 ### [Language support](develop-your-app/MultiLang.md)
 ### [Remote debugging](develop-your-app/RemoteDebugging.md)
-### [Investigate Memory Leaks](develop-your-app/InvestigateMemoryLeaks.md)
+### [Investigate memory leaks](develop-your-app/InvestigateMemoryLeaks.md)
 ### [IoT Shell overview](develop-your-app/IoTCoreShell.md)
 ### [Bus providers](develop-your-app/BusProviders.md)
 ### [Localhost loopback](develop-your-app/Loopback.md)
