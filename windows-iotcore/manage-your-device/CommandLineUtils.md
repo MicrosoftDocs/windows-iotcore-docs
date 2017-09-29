@@ -12,33 +12,7 @@ keywords: windows iot, command line, command line utilities, PowerShell
 
 Looking to configure some of the settings on your device? The below tools all come pre-installed on your device to help you with that. Use PowerShell to run these commands after [connecting to your device](../connect-your-device/PowerShell.md).
 
-* **Update account password:**
-
-	It is highly recommended that you update the default password for the Administrator account. To do this, you can issue the following command: `net user Administrator [new password]` where `[new password]` represents a strong password of your choice.
-
-* **Create local user accounts:**
-
-	If you wish to give others access to your Windows IoT Core device, you can create additional local user accounts using PS by typing in `net user [username] [password] /add`. If you wish to add this user to other groups, such as the Administrator group, use `net localgroup Administrators [username] /add`.
-
-* **Set password**
-
-	To change the password on an account on your device, run `net user [account-username] [new-password]` to change the account password.
-
-* **Query and set device name:**
-
-	To identify your current device name, simply type `hostname`. To change the name of your Windows IoT Core device, type `SetComputerName [new machinename]`. You may need to restart your device for the name change to take effect.
-
-* **Basic network configuration:**
-
-	Many of the basic network configuration utilities you may already be familiar with are available in Windows IoT Core, including commands such as `ping.exe`, `netstat.exe`, `netsh.exe`, `ipconfig.exe`, `nslookup.exe`, `tracert.exe`, and `arp.exe`.
-
-* **Copy utilities:**
-
-	Microsoft is providing familiar tools, including `sfpcopy.exe` as well as `xcopy.exe`.
-
-* **Process Management:**
-
-	To view currently running processes, you can try either `get-process` or alternatively `tlist.exe`. To stop a running process, type `kill.exe [pid or process name]`.
+## IoT Core-specific Command Line Utils
 
 * **Setting startup app:**
 
@@ -73,6 +47,57 @@ Looking to configure some of the settings on your device? The below tools all co
     * `IotStartup startup headless [Task1]` lists headless applications registered for startup that match `Task1`
 
 	* For further help, try `IotStartup help`
+	
+* **Change settings for region and user or speech language**
+
+The `IoTSettings` tool changes region, user language or speech language. This is a command line tool that can be invoked from an application using the ProcessLauncher API. These commands must be run as default account, not administrator.
+
+* `list uilanguage` lists all UI languages
+* `list speechlanguage` lists all speech languages
+* `get uilanguage` displays current UI language
+* `get speechlanguage` displays current speech language
+* `get region` displays current region
+* `set uilanguage language\_tag - (e.g. fr-CA)` sets default UI language French Canadian)
+* `set speechlanguage language\_tag - (e.g. fr-CA)` sets speech language French Canadian)
+* `set region region\_code - (e.g. CA)` sets default region to Canada)
+
+> [!TIP]
+> `IoTSettings -list uiLanguage` will give back the list of supported UI language (in the version of Windows IoT core image it has been executed against)
+	
+* **Change default audio device and volume**
+
+  The `IoTCoreAudioControlTool` tool controls audio related options, such as setting default capture and playback devices and changing the volume. For a full list of parameters, run `IoTCoreAudioControlTool h`.
+
+## General Command Line Utils
+
+* **Update account password:**
+
+	It is highly recommended that you update the default password for the Administrator account. To do this, you can issue the following command: `net user Administrator [new password]` where `[new password]` represents a strong password of your choice.
+
+* **Create local user accounts:**
+
+	If you wish to give others access to your Windows IoT Core device, you can create additional local user accounts using PS by typing in `net user [username] [password] /add`. If you wish to add this user to other groups, such as the Administrator group, use `net localgroup Administrators [username] /add`.
+
+* **Set password**
+
+	To change the password on an account on your device, run `net user [account-username] [new-password]` to change the account password.
+
+* **Query and set device name:**
+
+	To identify your current device name, simply type `hostname`. To change the name of your Windows IoT Core device, type `SetComputerName [new machinename]`. You may need to restart your device for the name change to take effect.
+
+* **Basic network configuration:**
+
+	Many of the basic network configuration utilities you may already be familiar with are available in Windows IoT Core, including commands such as `ping.exe`, `netstat.exe`, `netsh.exe`, `ipconfig.exe`, `nslookup.exe`, `tracert.exe`, and `arp.exe`.
+
+* **Copy utilities:**
+
+	Microsoft is providing familiar tools, including `sfpcopy.exe` as well as `xcopy.exe`.
+
+* **Process Management:**
+
+	To view currently running processes, you can try either `get-process` or alternatively `tlist.exe`. To stop a running process, type `kill.exe [pid or process name]`.
+
 
 * **Set Boot Option (Headless vs. headed boot):**
 
@@ -119,7 +144,3 @@ Looking to configure some of the settings on your device? The below tools all co
 * **Set folder permissions for UWP apps**
 
 	Not all folders on your device are accesible by Universal Windows Apps. To make a folder accesible to a UWP app, you can use `FolderPermissions` tool. For example run `FolderPermissions c:\test -e` to give UWP apps access to `c:\test` folder. Note this will work only with native Win32 apis for eg. CreateFile2 and not with WinRT apis like StorageFolder, StorageFile etc.
-
-* **Change default audio device and volume**
-
-  The `IoTCoreAudioControlTool` tool controls audio related options, such as setting default capture and playback devices and changing the volume. For a full list of parameters, run `IoTCoreAudioControlTool h`.
