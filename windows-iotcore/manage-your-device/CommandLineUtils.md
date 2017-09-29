@@ -34,7 +34,7 @@ Use the startup editor to configure startup apps on your Windows IoT Core device
 
 	* For further help, try `IotStartup help`
 	
-### **Change settings for region and user or speech language**
+### **Change settings for region and user or speech language:**
 
 The `IoTSettings` tool changes region, user language or speech language. This is a command line tool that can be invoked from an application using the ProcessLauncher API. These commands must be run as default account, not administrator.
 
@@ -50,7 +50,7 @@ The `IoTSettings` tool changes region, user language or speech language. This is
 > [!TIP]
 > `IoTSettings -list uiLanguage` will give back the list of supported UI language (in the version of Windows IoT core image it has been executed against)
 	
-### **Change default audio device and volume**
+### **Change default audio device and volume:**
 
 The `IoTCoreAudioControlTool` tool controls audio related options, such as setting default capture and playback devices and changing the volume. For a full list of parameters, run `IoTCoreAudioControlTool h`.
 
@@ -64,7 +64,7 @@ It is highly recommended that you update the default password for the Administra
 
 If you wish to give others access to your Windows IoT Core device, you can create additional local user accounts using PS by typing in `net user [username] [password] /add`. If you wish to add this user to other groups, such as the Administrator group, use `net localgroup Administrators [username] /add`.
 
-### **Set password**
+### **Set password:**
 
 To change the password on an account on your device, run `net user [account-username] [new-password]` to change the account password.
 
@@ -120,14 +120,14 @@ To shut down your device, type `shutdown /s /t 0`. To restart the device, use th
 
 To adjust the resolution of a display connected to your Windows 10 IoT Core device, run `SetDisplayResolution [width] [height]`. To query the resolution, exclude the `[width]` and `[height]` parameters.
 
-### **Take screenshot**
+### **Take screenshot:**
 
 You can take the screenshot of your Windows IoTCore device by using `ScreenCapture.exe`. For example, run `ScreenCapture c:\folder\screencap.jpg` will take the screenshot and save it in screencap.jpg file.
 
-### **Get information about Network Adapters**
+### **Get information about Network Adapters:**
 
 To view the list of all the available network adapters, run `GetAdapterInfo` tool.
 
-### **Set folder permissions for UWP apps**
+### **Set folder permissions for UWP apps:**
 
 Not all folders on your device are accesible by Universal Windows Apps. To make a folder accesible to a UWP app, you can use `FolderPermissions` tool. For example run `FolderPermissions c:\test -e` to give UWP apps access to `c:\test` folder. Note this will work only with native Win32 apis for eg. CreateFile2 and not with WinRT apis like StorageFolder, StorageFile etc.
