@@ -197,47 +197,14 @@ again, say "Hey Cortana" followed by your query. To stop Cortana, say
 
 ## Integrate Cortana in your Products
 
-As a OEM, if you want to build Cortana enabled products, please follow
-the instructions below.
+To learn more about changing settings for region and user or speech language to build Cortana enabled products, please read our [Command Line Utils](../manage-your-device/CommandLineUtils.md) documentation.
 
- Language Configuration
-
-Use the IoTSettings tool to change region, user language or speech
-language. This is a command line tool that can be invoked from an
-application using the ProcessLauncher API. These commands must be run as default account, not administrator.
-
-```
-IoTSettings.exe \[Command\]
-
-        -list uilanguage =&gt; list all UI languages
-
-        -list speechlanguage =&gt; list all speech languages
-
-        -get uilanguage =&gt; display current UI language
-
-        -get speechlanguage =&gt; display current speech language
-
-        -get region =&gt; display current region
-
-        -set uilanguage language\_tag - (e.g.: fr-CA  =&gt; set default
-UI language French Canadian)
-
-        -set speechlanguage language\_tag - (e.g.: fr-CA =&gt; set
-speech language French Canadian)
-
-        -set region region\_code - (e.g.: CA =&gt; set default region to
-Canada)
-```
-
-e.g.: “IoTSettings -list uiLanguage” will give back the list of
-supported UI language (in the version of Windows IoT core image it has
-been executed against)
-
-Note that Cortana will only work when region, UI language and speech
+> [!NOTE]
+> Cortana will only work when region, UI language and speech
 language are coherent, e.g.: `region = CA`, `UI language = en-CA` and `speech
 language = en-CA`.
 
-###Cortana Feature ID
+### Cortana Feature ID
 
 There is one [feature ID](<https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/iot/iot-core-feature-list>) for Cortana, `<Feature>IOT_CORTANA</Feature>` that an OEM needs to add this feature ID in their OEMInput XML. To enable ‘Start Cortana on Boot’ in an image, just add `<Feature>IOT_CORTANA_OBSCURELAUNCH></Feature>`; in OEMInput XML.
 
