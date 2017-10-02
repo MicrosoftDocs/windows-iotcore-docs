@@ -108,18 +108,4 @@ If the application doesn’t have the corresponding resources, then fallback res
 
 ## IoTSettings.exe
 
-Use the IoTSettings tool to change region, user language or speech language. This is a command line tool that can be invoked from an application using the ProcessLauncher API. These commands must be run as default account, not administrator.
-
-IoTSettings.exe \[Command\]
-
-* list uilanguage =&gt; list all UI languages
-* list speechlanguage =&gt; list all speech languages
-* get uilanguage =&gt; display current UI language
-* get speechlanguage =&gt; display current speech language
-* get region =&gt; display current region
-* set uilanguage language\_tag - (e.g.: fr-CA  =&gt; set default UI language French Canadian)
-* set speechlanguage language\_tag - (e.g.: fr-CA =&gt; set speech language French Canadian)
-* set region region\_code - (e.g.: CA =&gt; set default region to Canada)
-
-> [!TIP]
-> “IoTSettings -list uiLanguage” will give back the list of supported UI language (in the version of Windows IoT core image it has been executed against)
+To learn more about changing settings for region and user or speech language to build Cortana enabled products, please read our [Command Line Utils](../manage-your-device/CommandLineUtils.md) documentation.
