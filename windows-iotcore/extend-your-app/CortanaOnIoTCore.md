@@ -197,14 +197,14 @@ again, say "Hey Cortana" followed by your query. To stop Cortana, say
 
 ## Integrate Cortana in your Products
 
-To learn more about changing settings for region and user or speech language to build Cortana enabled products, please read our [Command Line Utils](../manage-your-device/commandlineutils.md) documentation.
+To learn more about changing settings for region and user or speech language to build Cortana enabled products, please read our [Command Line Utils](../manage-your-device/CommandLineuUtils.md) documentation.
 
 > [!NOTE]
 > Cortana will only work when region, UI language and speech
 language are coherent, e.g.: `region = CA`, `UI language = en-CA` and `speech
 language = en-CA`.
 
-###Cortana Feature ID
+### Cortana Feature ID
 
 There is one [feature ID](<https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/iot/iot-core-feature-list>) for Cortana, `<Feature>IOT_CORTANA</Feature>` that an OEM needs to add this feature ID in their OEMInput XML. To enable ‘Start Cortana on Boot’ in an image, just add `<Feature>IOT_CORTANA_OBSCURELAUNCH></Feature>`; in OEMInput XML.
 
