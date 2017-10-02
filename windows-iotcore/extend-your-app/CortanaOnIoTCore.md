@@ -5,13 +5,17 @@ ms.author: artemz
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to get started and install updates for Cortana on Windows IoT Core.
-keywords: windows iot, Cortana, voice, AI, digital assistant
+keywords: windows iot, Cortana, voice, AI, digital assistant, language
+
 ---
 
 # Cortana on IoT Core
 
 Cortana is a personal digital assistant working across all your devices to help you in your daily life. She learns about you; helps you get things done by completing tasks; interacts with you using natural language in a consistent, contextual way; and always looks out for you. Cortana has a consistent visual identity, personality, and voice.
-IoT Core is an edition of Windows 10, and is optimized for small footprint and low cost IoT devices. Cortana is enabled on IoT Core in the Windows 10 Creators Update.  
+
+IoT Core is an edition of Windows 10 and is optimized for small-footprint and low-cost IoT devices. Cortana is enabled on IoT Core in the Windows 10 Creators Update. It is in preview now. 
+
+Cortana on IoT Core will focus on commercial scenarios in the future. Updates will come soon. 
 
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Cortana-on-Windows-10-IoT-Core/player]
 
