@@ -22,6 +22,14 @@ After you create the pull request, a member of the Windows 10 IoT team will revi
 
 To make substantial changes to an existing article, add or change images, or contribute a new article, we recommend forking the repo into your GitHub account (click the "Fork" button in the top-right corner of the [GitHub repo](https://github.com/MicrosoftDocs/windows-iotcore-docs), and then creating a local clone (click the green "Clone or download" button, copy to your clipboard, then in your commandline enter `git clone <paste your repo clone link>`).
 
+We also ask that before contributing a new article, to ask yourself the following questions...
+* Have I included one, and only one, #-level title (equivalent to H1 in HTML)? 
+* Is the verb tense (if applicable) in the title of my new article in the present tense and consistent with the other documentation?
+* Is all of my grammar correct?
+* Have I properly formatted URLs to [look like this](https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/master/CONTRIBUTING.md) instead of this: https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/master/CONTRIBUTING.md
+* Have you had at least two people review your new article?
+* Have you contacted Sara (saclayt) or Namrata (namkedia) if you're unsure about anything?
+
 For more info, see [Fork a Repo](https://help.github.com/articles/fork-a-repo/).
 
 If you are unfamiliar with using Git, try the [Lynda.com Git Essentials training](https://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html).
