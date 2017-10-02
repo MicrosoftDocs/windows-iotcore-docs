@@ -29,7 +29,6 @@
 ### [Command-line utilities](manage-your-device/CommandLineUtils.md)
 ### [Event tracing](manage-your-device/EventTracing.md)
 ### [FTP](manage-your-device/FTP.md)
-### [Porting on Windows 10 IoT Core](manage-your-device/PortingGuide.md)
 ### [Azure Device Management](manage-your-device/AzureIoTDM.md)
 ### [Embedded mode](manage-your-device/EmbeddedMode.md)
 ### [Network packet capture](manage-your-device/NetworkPacketCapture.md)
