@@ -28,6 +28,7 @@ We also ask that before contributing a new article, to ask yourself the followin
 * Is all of my grammar correct?
 * Have I properly formatted URLs to [look like this](https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/master/CONTRIBUTING.md) instead of this: https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/master/CONTRIBUTING.md
 * Have you had at least two people review your new article?
+* Have you contacted Sara (saclayt) or Namrata (namkedia) if you're unsure about anything?
 
 For more info, see [Fork a Repo](https://help.github.com/articles/fork-a-repo/).
 
