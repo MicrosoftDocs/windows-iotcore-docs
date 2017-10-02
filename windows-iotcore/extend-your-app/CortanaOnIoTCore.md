@@ -197,7 +197,7 @@ again, say "Hey Cortana" followed by your query. To stop Cortana, say
 
 ## Integrate Cortana in your Products
 
-To learn more about changing settings for region and user or speech language to build Cortana enabled products, please read our [Command Line Utils](../manage-your-device/CommandLineuUtils.md) documentation.
+To learn more about changing settings for region and user or speech language to build Cortana enabled products, please read our [Command Line Utils](../manage-your-device/CommandLineUtils.md) documentation.
 
 > [!NOTE]
 > Cortana will only work when region, UI language and speech
