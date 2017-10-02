@@ -108,4 +108,4 @@ If the application doesn’t have the corresponding resources, then fallback res
 
 ## IoTSettings.exe
 
-To learn more about changing settings for region and user or speech language to build Cortana enabled products, please read our [Command Line Utils](../manage-your-device/commandlineutils.md) documentation.
+To learn more about changing settings for region and user or speech language to build Cortana enabled products, please read our [Command Line Utils](../manage-your-device/CommandLineUtils.md) documentation.
