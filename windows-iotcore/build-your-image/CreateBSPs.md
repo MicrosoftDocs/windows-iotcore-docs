@@ -1,5 +1,5 @@
 ---
-title: Creating a Board Supported Package (BSP)
+title: Creating a Board Supported Packages (BSP)
 author: parameshbabu
 ms.author: pabab
 ms.date: 08/22/2017
