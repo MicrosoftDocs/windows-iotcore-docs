@@ -26,6 +26,7 @@ We also ask that before contributing a new article, to ask yourself the followin
 * Have I included one, and only one, #-level title (equivalent to H1 in HTML)? 
 * Is the verb tense (if applicable) in the title of my new article in the present tense and consistent with the other documentation?
 * Is all of my grammar correct?
+* Have I added my article - if contributing a new article - to the appropriate category as well as updated TOC.md?
 * Have I properly formatted URLs to [look like this](https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/master/CONTRIBUTING.md) instead of this: https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/master/CONTRIBUTING.md
 * Have you had at least two people review your new article?
 * Have you contacted Sara (saclayt) or Namrata (namkedia) if you're unsure about anything?
