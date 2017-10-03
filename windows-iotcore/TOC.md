@@ -31,7 +31,7 @@
 ### [FTP](manage-your-device/FTP.md)
 ### [Azure Device Management](manage-your-device/AzureIoTDM.md)
 ### [Embedded mode](manage-your-device/EmbeddedMode.md)
-### [Network packet capture](manage-your-device/NetworkPacketCapture.md)
+### [Network packet apture](manage-your-device/NetworkPacketCapture.md)
 ### [Windows Debugger](manage-your-device/WindowsDebugger.md)
 ### [Windows File Sharing](manage-your-device/WindowsFileSharing.md)
 ## [Secure your device]()

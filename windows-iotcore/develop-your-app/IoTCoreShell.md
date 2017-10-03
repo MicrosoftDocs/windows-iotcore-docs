@@ -10,7 +10,7 @@ keywords: windows iot, IoT core shell, applications, foreground applications, ba
 
 # IoT Shell Overview
 
-This document covers the IoT Core Shell, foreground and background applications, and how to navigate between these applications on your device.
+This document covers the IoT Shell, foreground and background applications, and how to navigate between these applications on your device.
 
 ## IoT Shell, Foreground, and Background Apps
 
