@@ -16,6 +16,9 @@
               - name: Connect your device
                 tocHref: /windows/iot-core/connect-your-device/
                 topicHref: "/windows/iot-core/connect-your-device/iotdashboard" 
+              - name: Build your image
+                tocHref: /windows/iot-core/build-your-image/
+                topicHref: "/windows/iot-core/build-your-image/createbsps" 
               - name: Manage your device
                 tocHref: /windows/iot-core/manage-your-device/
                 topicHref: "/windows/iot-core/manage-your-device/deviceportal"
