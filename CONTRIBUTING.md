@@ -31,7 +31,7 @@ We also ask that before contributing a new article, to ask yourself the followin
 * Have you had at least two people review your new article?
 * Have you contacted Sara (saclayt) or Namrata (namkedia) if you're unsure about anything?
 
-For more info, see [Fork a Repo](https://help.github.com/articles/fork-a-repo/).
+For more info, see [Fork a Repo](https://help.github.com/articles/fork-a-repo/). Please note that we will not merge any PRs that are on the live branch. Please make sure you are submitting a PR to the master branch.
 
 If you are unfamiliar with using Git, try the [Lynda.com Git Essentials training](https://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html).
 

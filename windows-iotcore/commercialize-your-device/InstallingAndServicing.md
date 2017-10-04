@@ -24,9 +24,12 @@ Members of the Windows Store OEM Preinstall program have special permissions in 
 
 ### Special Instructions for Headless Apps 
 ___
+> [!IMPORTANT]
+> Visual Studio 2017 Update 15.3 or greater 
+> OR Visual Studio 2015 is required for these instructions
 In order for headless apps to meet store compliance there needs to be a "head" associated with the app. In order to add this "head" to our headless app we need to 
 
-1. Create a new Blank XAML project in Visual Studio.
+1. Create a new **Blank App (Universal Windows)** project in Visual Studio.
 2. Build the new project under release configuration
 3. Navigate to \<New Project Folder\>/bin/Release/\<Architecture\>/
 4. Locate file titled \<Name of your project\>.exe and copy the file to the root directory of your app project.

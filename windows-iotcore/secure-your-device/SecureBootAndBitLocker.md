@@ -104,7 +104,7 @@ You can test the generated packages by manually installing them on a unlocked de
     * OEM.Security.DeviceGuard.cab
 4. Initiate staging of the generated packages by issueing the following commands:
     * `applyupdate -stage c:\OemInstall\OEM.Custom.Cmd.cab`
-      - If you are using custom image, then you will have to *skip* this file and manually edit the `c:\windows\system32\oemcustomisation.cmd` with the contents available in `Output\OEMCustomization\OEMCustomization.cmd` file.
+      - If you are using custom image, then you will have to *skip* this file and manually edit the `c:\windows\system32\oemcustomization.cmd` with the contents available in `Output\OEMCustomization\OEMCustomization.cmd` file.
     * `applyupdate -stage c:\OemInstall\OEM.Security.BitLocker.cab`
     * `applyupdate -stage c:\OemInstall\OEM.Security.SecureBoot.cab`
     * `applyupdate -stage c:\OemInstall\OEM.Security.DeviceGuard.cab`
