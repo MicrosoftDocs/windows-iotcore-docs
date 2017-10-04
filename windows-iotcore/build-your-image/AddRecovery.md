@@ -46,6 +46,7 @@ In the devicelayout.xml file, you add a new partition **MMOS** with the followin
     - MBR : 0x07
 
 Sample xml snippet given below for a GPT device
+
 ```xml
     <Partition>
       <Name>MMOS</Name>
@@ -69,20 +70,20 @@ The newly added MMOS partition needs to be defined as a bootable partition in th
 - Update the **\<bspname\>FM.xml** with the following changes (see [QCDB410CFM.xml sample](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Source-arm/BSP/QCDB410C/Packages/QCDB410CFM.xml))
 
     - Include the newly defined Recovery.WinPE package and define a feature id say RECOVERY_WINPE
-```xml
+     - ```xml
         <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Recovery.WinPE.cab">
             <FeatureIDs>
             <FeatureID>RECOVERY_WINPE</FeatureID>
             </FeatureIDs>
         </PackageFile>
- ```
+       ```
     - Include the new device layout package, specifying new SOC id.
- ```xml
+     - ```xml
         <DeviceLayoutPackages>
             <PackageFile SOC="QC8016" Path="%BSPPKG_DIR%" Name="Qualcomm.QC8916.DeviceLayout.cab" />
             <PackageFile SOC="QC8016-R" Path="%PKGBLD_DIR%" Name="%OEM_NAME%.bspname.DeviceLayout-R.cab" />
         </DeviceLayoutPackages>    
- ```
+        ```
 - Update the **\<productname\>/TestOEMInput.xml** (and RetailOEMInput.xml) with the following changes (see [Recovery sample](https://github.com/ms-iot/iot-adk-addonkit/blob/develop/Source-arm/Products/RecoverySample/TestOEMInput.xml)
 
     - Specify the SOC name as defined in the \<bspname\>FM.xml
