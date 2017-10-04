@@ -1,16 +1,16 @@
 ---
-title: Adding Recovery mechanism to IoTCore image
+title: Add a recovery mechanism to an IoT Core image
 author: parameshbabu
 ms.author: pabab
 ms.date: 10/03/2017
 ms.topic: article
-description: Learn how to add recovery mechanism to your IoTCore image.
+description: Learn how to add a recovery mechanism to your IoT Core image. 
 keywords: windows iot, image creation, windows iot, recovery
 ---
 
-# Add Recovery mechanism to your image
+# Add a recovery mechanism to your image
 
-You can add recovery mechanism to your image with **WinPE** as a Safe OS and **wim files** as Recovery SW from recovery partition, using the steps provided below.
+You can add a recovery mechanism to your image with **WinPE** as a Safe OS and **wim files** as Recovery SW from recovery partition, using the steps provided below.
 
 See [Windows 10 IoT Core Recovery](../commercialize-your-device/Recovery.md) for the details on the possible mechanisms.
 
