@@ -18,7 +18,6 @@ keywords: windows iot, package creation, package installation
 1. [Windows Assessment and Deployment Kit(Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK)
 2. [IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)
 
-
 ### Set up your environment
 
 * Edit `\IoT-ADK-AddonKit\Tools\setOEM.cmd` to set the OEM_NAME
