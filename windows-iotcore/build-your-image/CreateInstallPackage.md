@@ -17,7 +17,7 @@ keywords: windows iot, package creation, package installation
 
 1. [Windows Assessment and Deployment Kit(Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK)
 2. [IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)
-3. [Windows Driver Kit (WDK)](https://developer.microsoft.com/windows/hardware/windows-driver-kit)
+
 
 ### Set up your environment
 
