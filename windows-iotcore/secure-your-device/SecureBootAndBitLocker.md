@@ -151,10 +151,10 @@ Once the packages are generated and lockdown is activated, any binaries introduc
 
 ### Unlocking Encrypted Drives  
 During development and testing, when attempting to read contents from an encrypted device offline (e.g. SD card for MinnowBoardMax or DragonBoard's eMMC through USB mass storage mode), 'diskpart' may be used to assign a drive letter to MainOS and Data volume (let's assume v: for MainOS and w: for Data).
-The volumes will appear locked and need to be manually unlocked. This can be done on any machine that has the BitLockerDRA.pfx certificate installed (included in the downloaded package). Install the PFX and then run the following commands from an administrative CMD prompt:
+The volumes will appear locked and need to be manually unlocked. This can be done on any machine that has the OEM-DRA.pfx certificate installed (included in the [DeviceLockDown sample](https://github.com/ms-iot/security/tree/master/TurnkeySecurity)). Install the PFX and then run the following commands from an administrative CMD prompt:
 
-* `manage-bde -unlock v: -cert -cf BitLockerDRA.cer`
-* `manage-bde -unlock w: -cert -cf BitLockerDRA.cer`
+* `manage-bde -unlock v: -cert -cf OEM-DRA.cer`
+* `manage-bde -unlock w: -cert -cf OEM-DRA.cer`
 
 If the contents need to be frequently accessed offline, BitLocker autounlock can be set up for the volumes after the initial unlock using the following commands:
 
