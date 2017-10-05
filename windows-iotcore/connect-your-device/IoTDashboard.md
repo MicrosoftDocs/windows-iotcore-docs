@@ -52,6 +52,7 @@ Having your IoT Core device connect to the internet is essential. Many of the ne
 * Rebooting the device
 * Plugging in an Ethernet cable
 * Plugging in a monitor to the device. This will show you diagnostic information about your device
+
 > [!NOTE]
 > The official Raspberry Pi 2 Wi-Fi adapter can be unstable when connecting to Wi-Fi.
 
