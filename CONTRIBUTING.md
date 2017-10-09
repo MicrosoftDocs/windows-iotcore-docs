@@ -31,6 +31,10 @@ We also ask that before contributing a new article, to ask yourself the followin
 * Have you had at least two people review your new article?
 * Have you contacted Sara (saclayt) or Namrata (namkedia) if you're unsure about anything?
 
+When your new article does get accepted, we recommend the following:
+* Share the article with your team! Don't hide your accomplishment - let your peers know.
+* Follow the comments for your article by clicking the "Follow" button under the comment box. This way, you will stay updated on the comments your article may receive.
+
 For more info, see [Fork a Repo](https://help.github.com/articles/fork-a-repo/). Please note that we will not merge any PRs that are on the live branch. Please make sure you are submitting a PR to the master branch.
 
 If you are unfamiliar with using Git, try the [Lynda.com Git Essentials training](https://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html).
