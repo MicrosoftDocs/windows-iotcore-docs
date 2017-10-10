@@ -1,5 +1,5 @@
 ---
-title: Install your apps on IoT Core device
+title: Install your apps on an IoT Core device
 author: bfjelds
 ms.author: pabab
 ms.date: 08/28/2017
@@ -8,7 +8,7 @@ description: Learn how to install your app using the Windows Device Portal or as
 keywords: windows iot, app installation, Windows Device Portal, devices
 ---
 
-# Install your app in IoT Core device
+# Install your app on an IoT Core device
 You can install your app by various methods and they are listed below.
 
 ## Using Windows Device Portal
