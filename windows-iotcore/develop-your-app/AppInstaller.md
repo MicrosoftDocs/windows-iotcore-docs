@@ -1,5 +1,5 @@
 ---
-title: Install your apps on an IoT Core device
+title: Install your app on an IoT Core device
 author: bfjelds
 ms.author: pabab
 ms.date: 08/28/2017
