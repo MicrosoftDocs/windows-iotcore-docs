@@ -35,7 +35,9 @@ You can create a provisioning package with the app and install the provisioning 
 4. On the left hand side expand **Runtime Settings** and click on **Universal App Install > User Context App**
 
 5. Enter the Package Family Name of your app and click **Add**
-    - **Note:** The PFN can be found in the Windows Dev Center under **App Management > App Identity**
+
+> [!NOTE]
+> The PFN can be found in the Windows Dev Center under **App Management > App Identity**
 
 6. Under the newly added PFN
     - add the Appx and its dependencies
