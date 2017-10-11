@@ -1,6 +1,6 @@
 ---
 title: Install your app on an IoT Core device
-author: bfjelds
+author: parameshbabu
 ms.author: pabab
 ms.date: 08/28/2017
 ms.topic: article
