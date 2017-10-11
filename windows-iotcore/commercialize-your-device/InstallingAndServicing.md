@@ -11,7 +11,8 @@ keywords: UWP, Windows Dev Center, OEM, Preinstall, App Store, Servicing
 # Universal Store support for IoT Core UWP Apps
 
 Microsoft makes it easy for OEMs to install and service UWP apps on Windows 10 IoT Core through the Universal Store. 
-> [!Important]
+
+> [!IMPORTANT]
 > There is no support for Universal Store Client in IoT Core, i.e. you cannot browse and install applications from an IoT Core device and all required apps must be preinstalled or installed via other means such as OMA-DM/Azure DM.
 
 The key steps required to use Universal Store are outlined below.
@@ -48,7 +49,7 @@ Key elements to note here are
 ### Special Instructions for Headless Apps 
 
 > [!IMPORTANT]
-> Visual Studio 2017 Update 15.3 or greater is required for these instructions
+> Visual Studio 2017 Update 15.3 or greater is required for these instructions.
 
 In order for headless apps to meet store compliance there needs to be a "head" associated with the app. In order to add this "head" to our headless app we need to 
 
@@ -69,7 +70,7 @@ In order for headless apps to meet store compliance there needs to be a "head" a
 
 Now that an app has been published to the Universal Store the app has a store signed version that can be used to preinstall the app on devices.
 
-1. In the Windows Dev Center account click **App Management > Current Packages** on the left hand navigation bar
+1. In the Windows Dev Center account click **App Management > Current Packages** on the left hand navigation bar.
 2. Under the most recent App submission click **Download Windows 10 package**. This will download a zip file containing the app package, the dependency packages, and the license files.
 
 3. See [Install your apps on IoT Core device](../develop-your-app/AppInstaller.md) for various options to install the Store apps.
@@ -78,13 +79,13 @@ Now that an app has been published to the Universal Store the app has a store si
 
 Publishing an update to store is simple.
 
-1. In the Windows Dev Center, create a new App Submission for the app to be updated
+1. In the Windows Dev Center, create a new App Submission for the app to be updated.
 2. In Visual Studio, package the app as done earlier in Step 2 in the _Publish UWP App to Universal Store_ section. 
 
 > [!IMPORTANT]
 > Be sure to increment the version number for each new package.
 3. Upload the package to Windows Dev Center under the new submission and submit.
-4. After successful app certification process, the devices will receive the published version as updates. 
+4. After a successful app certification process, the devices will receive the published version as updates. 
 
 > [!NOTE]
 > App updates on devices can take up to 24 hours to receive latest version.
