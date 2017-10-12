@@ -10,9 +10,11 @@ keywords: windows iot, languages, app types, UWP, OS
 
 # Language Support
 
-Language support can be enabled at two levels , Application level and OS level, depending on the language resources made available on the image.
+Language support can be enabled at two levels, Application level and OS level, depending on the language resources made available on the image.
 
 ## Languages in UWP Applications
+UWP application languages are not limited to the languages included in the OS.  In fact, an IoT device that does not trigger shell UI or utilize speech resources can provide a device experience in many different languages through its UWP applications even though the underlying Windows 10 IoT Core OS is built simply in the en-US default mode. 
+
 UWP applications must provide the resources for the languages that are required to be supported. [Windows.Globalization.ApplicationLanguage](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.applicationlanguages) APIs can be used to specify the language-related preferences.
 
 See the below sample applications:
