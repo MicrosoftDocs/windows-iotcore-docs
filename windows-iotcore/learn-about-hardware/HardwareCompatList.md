@@ -28,6 +28,8 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | NET-DYN USB WiFi Adapter | MBM | WiFi USB Adapter NET-DYN | |  &#10004;  
 > | Realtek 8191 USB Wireless WiFi | RPi2/RPi3, MBM | Realtek 8191 300Mbps 802.11n/g/b/ USB Wireless WiFi LAN Network Card Adapter | | &#10004;  
 > | Realtek 8192 USB Wireless WiFi | RPi2/RPi3, MBM | Realtek Single-Chip IEEE 802.11b/g/n 2T2R WLAN Controller with USB 2.0 Interface | | &#10004; |
+> | Realtek 8188EU USB Wireless WiFi | RPi2/RPi3, MBM | Realtek RTL8188EU Wireless LAN 802.11n/g/b USB 2.0 Network Adapter | | &#10004; |
+> | Realtek 8192EU USB Wireless WiFi | RPi2/RPi3, MBM | Realtek RTL8192EU Wireless LAN 802.11n/g/b USB 2.0 Network Adapter | | &#10004; |
 > | CanaKit USB Wireless WiFi | MBM | Chipset Ralink 5370 | | &#10004; 
 
 ### Bluetooth Dongles
