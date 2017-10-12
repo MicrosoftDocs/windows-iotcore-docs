@@ -77,14 +77,13 @@ Now that an app has been published to the Universal Store the app has a store si
 
 ## Step 4 : Publish Update to Store
 
+> [!IMPORTANT]
+> Be sure to increment the version number for each new package.
+
 Publishing an update to store is simple.
 
 1. In the Windows Dev Center, create a new App Submission for the app to be updated.
 2. In Visual Studio, package the app as done earlier in Step 2 in the _Publish UWP App to Universal Store_ section. 
-
-> [!IMPORTANT]
-> Be sure to increment the version number for each new package.
-
 3. Upload the package to Windows Dev Center under the new submission and submit.
 4. After a successful app certification process, the devices will receive the published version as updates. 
 
