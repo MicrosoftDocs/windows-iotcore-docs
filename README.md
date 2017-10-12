@@ -51,6 +51,7 @@ _________________________
 
 Horizontal rules are available. We suggest using them sparingly to reduce clutter.
 Do not combine  horizontal rules with heading tags; some already used line styles for visual hierarchy.
+Also, do not combine notes (see below) in the middle of numbered lists. This messes with the numbering order.
 
 ## Displaying code
 
