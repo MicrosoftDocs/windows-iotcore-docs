@@ -73,7 +73,7 @@ While Microsoft has engineered support for IoT Core with specific SoCs that enab
 | [Banana Pi M64](http://www.banana-pi.org/m64.html) | [Allwinner A64](http://www.allwinnertech.com/index.php?c=product&a=index&id=9) | [Get started tutorial](http://forum.banana-pi.org/c/BPI-M64/Win-10-IoT) | [Email](mailto:jasonye@banana-pi.com) |
 | [Pine 64](https://www.pine64.org/) | [Allwinner A64](http://www.allwinnertech.com/index.php?c=product&a=index&id=9) | [Download image](http://files.pine64.org/os/win10-iot/Windows10IoT_Pine64.ffu) | [Email](mailto:support@pine64.org) |
 
-## Retired Devices
-This is a list of boards that we no longer provide an FFU for, though the hardware will still work with IoT Core and the SoCs on these boards are still supported. For any questions or concerns, please open an issue on GitHub.
+## Legacy Devices
+This is a list of boards that we no longer provide long-term support for. Developers may still use these devices, but will not receive the latest updates for them. For any questions or concerns, please open an issue on GitHub.
 
 * Intel Joule
