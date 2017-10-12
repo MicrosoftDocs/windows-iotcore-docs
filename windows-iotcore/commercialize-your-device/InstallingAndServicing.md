@@ -84,6 +84,7 @@ Publishing an update to store is simple.
 
 > [!IMPORTANT]
 > Be sure to increment the version number for each new package.
+
 3. Upload the package to Windows Dev Center under the new submission and submit.
 4. After a successful app certification process, the devices will receive the published version as updates. 
 
