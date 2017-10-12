@@ -1,5 +1,5 @@
 ---
-title: Installing and servicing applications
+title: Universal Store support for IoTCore Apps
 author: parameshbabu
 ms.author: pabab
 ms.date: 08/22/2017
@@ -8,24 +8,48 @@ description:  Windows 10 makes it easy to publish, install and service apps on I
 keywords: UWP, Windows Dev Center, OEM, Preinstall, App Store, Servicing
 ---
 
-# Installing and Servicing applications
+# Universal Store support for IoT Core UWP Apps
 
-Microsoft makes it easy for OEMs to install and service UWP apps on Windows 10 IoT Core through the Universal Store. All store signed apps on Windows 10 devices are capable of receiving updates directly from the store. 
+Microsoft makes it easy for OEMs to install and service UWP apps on Windows 10 IoT Core through the Universal Store. 
 
-> [!NOTE]
-> If you are an OEM wishing to preinstall apps on your IoT devices please visit our <a href='https://www.windowsforiotdevices.com'>Commercialization</a> page to get started. If you are developer wishing to preinstall apps for IoT you must seek sponsorship from an OEM enrolled in the program.
+> [!IMPORTANT]
+> There is no support for Universal Store Client in IoT Core, i.e. you cannot browse and install applications from an IoT Core device and all required apps must be preinstalled or installed via other means such as OMA-DM/Azure DM.
 
-## Publishing UWP to Universal Store
-___
-Members of the Windows Store OEM Preinstall program have special permissions in their Windows Dev Center account that allows a store signed version of an app to be downloaded. It is important to first be enrolled in the program before creating any app submissions. The publishing process following the additional permission is the same as other Windows 10 devices. The first step is to [create an app submission](https://msdn.microsoft.com/en-us/windows/uwp/publish/app-submissions). 
+The key steps required to use Universal Store are outlined below.
 
-> [!NOTE]
-> TargetDeviceFamily should be set to Windows.Universal to be able to publish the IoT UWP apps to Universal Store. Both Windows.IoT and Windows.IoTHeadless are not yet allowed for store publishing.
+## Step 1 : Setup 
+You will require an Windows Dev Center account and sign up for the OEM preinstall program to use this feature. See [Account types](https://docs.microsoft.com/windows/uwp/publish/account-types-locations-and-fees) for information on individual accounts and company accounts. You can signup for a developer account at [Register as an app developer](https://developer.microsoft.com/en-us/store/register).
+
+If you need multiple users to be managing the portal or if you need Special capabilities in your App,  See [Associate Azure Active Directory with your Dev Center account](https://docs.microsoft.com/windows/uwp/publish/associate-azure-ad-with-dev-center) for more details.
+
+### OEM Preinstall Program
+You should enroll for the Windows Store OEM Preinstall program to be able to download the Store signed appx bundle that you can pre-install in your device.
+
+The Steps for the enrollment are
+1.	Obtain and sign the IoT Commercialization Agreement (see [Commercialization portal](http://www.windowsforiotdevices.com/))
+2.	You will receive an email with Preinstall Permissions Request Form.
+3.	Sign into the Dev Center Portal and [reserve a name for your app](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name) 
+4.	Complete the form for the OEM App you want to publish and send email to partnerops@microsoft.com
+    - Provide OEM ID
+    - Provide Dev Center account 
+    - Provide the App ID (app identity Ex: https://www.microsoft.com/store/apps/1abcdefghi23)
+    - Provide the list of [special and restricted capabilities](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations#special-and-restricted-capabilities) that you use in your OEM apps for approval
+5.	Windows Store Partner OPS team verifies applications and enables permissions.
+    - All new app submissions (updates and new apps) to Dev Center following the granting of preinstall permission will be available for download from Dev Center
+    - All approved restricted capabilities will be permitted for all app submissions
+
+## Step 2 : Publish UWP App to Universal Store
+Once you have the approval for the preinstall program, you can proceed with [app submissions](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
+
+Key elements to note here are
+
+- **Visibility** : It is recommended that you hide your app in the store by setting the [visibility](https://docs.microsoft.com/windows/uwp/publish/set-app-pricing-and-availability#visibility) appropriately.
+- **TargetDeviceFamily** : TargetDeviceFamily should be set to **Windows.Universal**. Both *Windows.IoT* and *Windows.IoTHeadless* are not allowed for publishing.
 
 ### Special Instructions for Headless Apps 
-___
+
 > [!IMPORTANT]
-> Visual Studio 2017 Update 15.3 or greater is required for these instructions
+> Visual Studio 2017 Update 15.3 or greater is required for these instructions.
 
 In order for headless apps to meet store compliance there needs to be a "head" associated with the app. In order to add this "head" to our headless app we need to 
 
@@ -33,58 +57,35 @@ In order for headless apps to meet store compliance there needs to be a "head" a
 2. Build the new project under release configuration
 3. Navigate to \<New Project Folder\>/bin/\<Architecture\>/Release/ilc
 4. Locate files \<blank_app_name\>.exe and \<blank_app_name\>.dll and copy the files to the root directory of your background app project.
-4. Include the newly added file to the Visual Studio project and set to "Content"
-5. Open the Package.appxmanifest in Code mode (right-click and choose View Code) for the headless app and modify the following:  
-  - Add the attribute _Executable="\<Filename of .exe copied to project\>.exe"_ to the element _Application_
-  - Add the attribute _EntryPoint="\<Namespace of Blank XAML project\>.App"_ to the element _Application_
-  - Remove the AppListEntry attribute from the element _uap:VisualElements_
+5. Include the newly added file to the Visual Studio project and set to "Content"
+6. Open the Package.appxmanifest in Code mode (right-click and choose View Code) for the headless app and modify the following:  
+    - Add the attribute _Executable="\<Filename of .exe copied to project\>.exe"_ to the element _Application_
+    - Add the attribute _EntryPoint="\<Namespace of Blank XAML project\>.App"_ to the element _Application_
+    - Remove the AppListEntry attribute from the element _uap:VisualElements_
 
-___
-3. With the app submission created the next step is to [package the UWP app](https://msdn.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps) and upload to the app submission in Windows Dev Center. For IoT Core it is important to set  **Generate app bundle** to **Never**. This will allow the Windows Dev Center to generate the correct package for preinstall on IoT Core.
+7. With the app submission created the next step is to [package the UWP app](https://msdn.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps) and upload to the app submission in Windows Dev Center. For IoT Core it is important to set  **Generate app bundle** to **Never**. This will allow the Windows Dev Center to generate the correct package for preinstall on IoT Core.
+8. Submit the submission to being the certification process. The certification process usually will take 24-48hrs after which the app will either be immediately published or available to publish based on the publishing option chosen when creating your submission. 
 
-4. Submit the submission to being the certification process. The certification process usually will take 24-48hrs after which the app will either be immediately published or available to publish based on the publishing option chosen when creating your submission. 
+## Step 3 : Download and install
 
-## Preinstalling an App
-___
 Now that an app has been published to the Universal Store the app has a store signed version that can be used to preinstall the app on devices.
 
-1. In the Windows Dev Center account click App Management > Current Packages on the left hand navigation bar
-2. Under the most recent App submission click "Download Windows 10 package". This will download a zip file containing the app package, the dependency packages, and the license files
-3. There are two methods available to install an app to a device
+1. In the Windows Dev Center account click **App Management > Current Packages** on the left hand navigation bar.
+2. Under the most recent App submission click **Download Windows 10 package**. This will download a zip file containing the app package, the dependency packages, and the license files.
 
-### Method 1
-The first method is adding the app to the image during the imaging process. Check out the [Adding an App to your image](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/iot/deploy-your-app-with-a-standard-board) guide on MSDN. 
+3. See [Install your apps on IoT Core device](../develop-your-app/AppInstaller.md) for various options to install the Store apps.
 
-### Method 2
-The second method is using Windows Imaging and Configuration Designer (WICD) to create a provisioning package. The provisioning package will install the app upon boot. This method is more common to devices that have already been deployed.
+## Step 4 : Publish Update to Store
 
-1. Launch Windows Imaging and Configuration Designer (WICD)
-2. Select Advanced Provisioning
-3. Enter the project name and a description
-4. Choose Windows 10 IoT Core for the project settings
-5. Skip the provisioning package import
-6. On the left hand side expand Runtime Settings and click on Universal App Install > User Context App
-7. Enter the Package Family Name of your app and click Add  (**Note:** The PFN can be found in the Windows Dev Center under App Management > App Identity)
-8. Under the newly added PFN add the Appx and its dependencies
-9. Set the DeploymentOptions to "Force target application shutdown"
-10. Set the LicenseProductID under UserContextAppLicense to the LicenseID found in the XML file ending with license1.xml.
-11. Rename the license file found in previous steps changing its extension to .ms-windows-store-license.
-12. Select your License Product ID on the left hand side and browse your license file to assign LicenseInstall field.
-13. Export the package
-14. Copy the exported .ppkg file to _C:\Windows\Provisioning\Packages_ on the IoT device you wish to install the app on and reboot.
-15. Alternatively you can include the .ppkg file in your image when building. Check out the [Add a provisioning package to an image](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/iot/add-a-provisioning-package-to-an-image) guide on MSDN.
+Publishing an update to store is simple.
 
-## Updating an App
-___
-Updating apps on IoT Core are very simple.
-
-1. In the Windows Dev Center create a new App Submission for the app to be updated
-2. In Visual Studio package the app as done earlier in Step 3 in the _Publishing UWP to Universal Store_ section. 
+1. In the Windows Dev Center, create a new App Submission for the app to be updated.
+2. In Visual Studio, package the app as done earlier in Step 2 in the _Publish UWP App to Universal Store_ section. 
 
 > [!IMPORTANT]
 > Be sure to increment the version number for each new package.
 3. Upload the package to Windows Dev Center under the new submission and submit.
-4. Following the app certification process devices will update the app to the latest version. 
+4. After a successful app certification process, the devices will receive the published version as updates. 
 
 > [!NOTE]
 > App updates on devices can take up to 24 hours to receive latest version.

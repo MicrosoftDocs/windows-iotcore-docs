@@ -12,7 +12,7 @@ keywords: windows iot, default app, PowerShell, iot
 Here you'll learn the ways to set your application as the default application. The default application is the one that is launched when the system boots.  
 
 ## Runtime options
-___
+
 During development / experimental phases, you can change the default app by following means.
 
 ### Using Windows Device Portal
@@ -32,7 +32,7 @@ Steps to set the default app using the shell
 
 
 ## Build time option
-___
+
 For large deployments, you can achieve this using provisioning package
 
 You can specify the StartupApp/Default setting in the WCD during the provisioning package creation.
@@ -41,7 +41,6 @@ You can specify the StartupApp/Default setting in the WCD during the provisionin
 See [Appx.IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Source-arm/Packages/Appx.IoTCoreDefaultApp/customizations.xml) as an example. You can get the Application User Model ID (AUMID) of an appx using [GetAppxInfo tool](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/GetAppxInfo.exe).
 
 ## How to configure "Home" key
-___
 
 Windows 10 IoT Anniversary Update (1607) provides shell support for bringing the default application window to the foreground when another application is currently running.
 
