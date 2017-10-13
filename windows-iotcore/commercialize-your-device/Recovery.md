@@ -63,7 +63,9 @@ BSP Changes:
 
 This option is like earlier option, with only difference of storing the Recovery SW in the recovery partition itself. The device layout for this approach may differ in the size of the recovery partition (larger to accommodate the Recovery SW and potentially a backup Recovery SW).
 
-A key point to note about this approach is that the Recovery SW present in the device will become very old over time and the OS version after the recovery will fall-off the update train. One way to mitigate this issue is to refresh the Recovery SW image on the device using the BSP update path at a yearly cadence.
+> [!Important] 
+> A key point to note about this approach is that the Recovery SW present in the device will become *very old* over time and the OS version after the recovery may fall-off the update train. One way to mitigate this issue is to refresh the Recovery SW image on the device using the BSP update path at a yearly cadence.
+
 
 ### Recovery SW from cloud
 
