@@ -49,7 +49,7 @@
 ### [Develop foreground applications](develop-your-app/BuildingAppsForIoTCore.md)
 ### [Develop background applications](develop-your-app/BackgroundApplications.md)
 ### [Deploy your app](develop-your-app/AppDeployment.md)
-### [Remote debugging](develop-your-app/RemoteDebugging.md)
+### [Debug your app](develop-your-app/RemoteDebugging.md)
 ### [Install your app](develop-your-app/AppInstaller.md)
 ### [Setup a default app](develop-your-app/SetupDefaultApp.md)
 ### [Language support](develop-your-app/MultiLang.md)
