@@ -1,5 +1,5 @@
 ---
-title: Release Notes for The Creators Update
+title: Release Notes for The Fall Creators Update
 author: zeeshanfurqan
 ms.author: zeeshan.furqan
 ms.date: 08/28/2017
@@ -8,43 +8,35 @@ description: Read and learn about what's new in The Creators Update
 keywords: windows iot, Windows Insider, release notes
 ---
 
-# Release Notes for Build 16267
+# Fall Creators Update
+___
 
-_Build Number 16267. August 2017_
+With each iteration, Windows 10 IoT Core continues to enhance the tools needed to help device creators and OEMs scale from single function devices on premises to geo-distributed deployments connected to the cloud. And one of the most challenging aspects of any IoT project is bringing together all the pieces and technologies needed to make a complete solution.
 
-&copy; 2017 Microsoft Corporation. All rights reserved
+With the Fall Creators Update, we've simplified this process by integrating support for several new features directly into Windows 10 IoT Core. Head over to [Windows Dev Center](https://developer.microsoft.com/windows/iot/getstarted) to select your device and download Windows 10 IoT Fall Creators Update.
 
-This document provides late-breaking or other information that supplements the documentation included with the Windows 10 IoT Core.
+## New Major Features
+___ 
+* **.NET for UWP apps**, the set of managed types that can be used to [build Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/library/windows/apps/xaml/mt185501.aspx) using C# or Visual Basic, has been augmented with [thousands of new APIs](https://blogs.msdn.microsoft.com/dotnet/2017/08/25/uwp-net-standard-2-0-preview/) to make it compliant with .NET Standard 2.0. The additional APIs and tooling improvements make it easier to port existing .NET code and libraries to UWP apps on Windows 10 IoT Core.
+* We've streamlined localization of interfaces and UI resources by **expanding our language support**, including English (en-US and en-GB), French (fr-FR and fr-CA), Spanish (es-ES and es-MX), and Simplified Chinese (zh-CHS). You can create FFUs supporting multiple languages - see [MultiLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/develop/Source-arm/Products/MultiLangSample) and [SingleLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/develop/Source-arm/Products/SingleLangSample) for more information.
+* UWP is ideally suited for building apps with natural user interfaces and we've improved **ink support** on Windows 10 IoT Core with [pen interactions and Windows Ink](https://docs.microsoft.com/windows/uwp/input-and-devices/pen-and-stylus-interactions). With a compatible pen digitizer, you can now utilize DirectInk APIs for highlighter, pencil, and vector-based ink. We've also added XAML ink controls for UWP, including InkCanvas and InkToolbar, which enable stencils like rulers and protractors, and multi-modal interactions such as simultaneous pen and touch on compatible hardware.
+* On certain types of IoT devices such as Point of Sale solutions, low-power line displays are important for communicating essential information to customers. We've **extended support for controlling customer facing 2x20 line displays** by enabling customization of the cursor style, brightness, blink rate, and character sets. We've also added support for custom glyphs, transaction descriptors, and marquee mode for scrolling text.
 
-Thank you for downloading Windows 10 IoT Core. Windows 10 IoT Core is the version of Windows 10 intended for development of embedded or dedicated purpose devices and the choice for the Maker community. The packages within this release contain tools and content needed to install Windows 10 IoT Core on Minnowboard Max platform based on Intel Atom processers, Raspberry Pi 2/3 based on Broadcom 2836/2837, and Dragonboard 410c based on Qualcomm Snapdragon 400 series processors.
+## Preview Features for Dev and Test Scenarios
+___ 
+* **Component Update Service [Preview]** allows OEMs to globally manage their apps and push updates for the operating system, apps, settings, and files from the cloud to devices to keep them up to date and secure.
+* **Container Hosting** at the edge for [Nano Server Containers](https://docs.microsoft.com/virtualization/windowscontainers/about/index) on 64-bit editions of Windows 10 IoT Core enables applications and their data can be isolated from each other and quickly moved from development to production or cloud to the edge.
+* **Windows Device Health Attestation [Preview]** uses hardware features and cloud services to provide tamper proofing and remote attestation of device health based on hardware-level metrics and attested data.
+* **Azure IoT Edge on Windows 10 IoT Core [Preview]** allows IoT solutions to [orchestrate intelligence between the cloud and edge devices](https://azure.microsoft.com/campaigns/iot-edge/) to ensure applications and services can act on IoT data wherever it makes the most sense.
+* **Azure IoT Hub Device Provisioning Service [Preview]** enables Windows 10 IoT devices to be created with a common image during manufacturing and configured to [connect automatically at first boot to Azure IoT Hub](https://blogs.windows.com/buildingapps/2017/10/05/windows-10-iot-enables-complete-iot-lifecycle/) to retrieve device-specific provisioning information.
+* **Azure IoT Device Management [Preview]** enables IoT operators to [manage device configuration](https://docs.microsoft.com/windows/iot-core/manage-your-device/AzureIoTDM) such as installed applications, Windows updates, certificates, and network settings remotely from the cloud.
 
-## Privacy Statement
-The privacy statement for this version of the Windows operating system can be viewed [here](http://go.microsoft.com/fwlink/?LinkId=506737).
+## Additional Resources
+___ 
 
-You can review linked terms by pasting the forward link into your browser window.
+[Release Notes](https://docs.microsoft.com/en-us/windows/iot-core/release-notes/commercial/)
 
-## What's new in this build: 
-We have made huge improvements in Windows 10 IoT Core as part of the Creators Update, including improved developer tools, additional APIs, new code samples,
-and more. Download the newest [Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/?LinkID=708576) and see for yourself!
+[Downloads](https://developer.microsoft.com/en-us/windows/iot/Downloads)
 
-## New Hardware
-* Verified support for Windows 10 IoT Core on Intel Joule, Intel Pentium N4200, Intel Celeron N3350, and upcoming Atom x5-E39xx processors (formerly Apollo Lake).
-* Verified support for Raspberry Pi 3 SOMs.
+[Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)
 
-## New major features
-* [Project “Rome”](http://aka.ms/projectrome) - Support for Project Rome which enables communication with an app service on a remote device.
-* [Cortana on Windows IoT Core](https://developer.microsoft.com/en-us/windows/iot/Docs/CortanaOnIoTCore) - Cortana is now available on Windows 10 IoT Core. Ask Cortana a question.
-* [Azure Device Management Support](https://developer.microsoft.com/en-us/windows/iot/Docs/AzureDM) - Device Management of Azure IoT hub using Windows 10 IoT Core.
-* [Adafruit class library for Windows IoT Core](https://learn.adafruit.com/adafruit-class-library-for-windows-iot-core) - Adafruit Class Library is a special library package containing Windows IoT Core driver software for a variety of Adafruit products.
-* [IoT and AI Insider Lab](https://www.microsoftiotinsiderlabs.com) - Leverage Microsoft’s IoT and AI Insider Lab to accelerate bringing your IoT products to market.
-* New UWP APIs And Controls for Vibration, Brightness, Modern Connected Standby, Power Management, Battery Charge  and NFC (w/o HCE).
-* New busses and capabilities for ARM PCIe, USB Function Mode, Wi-Fi Direct and GPIO Interrupt counting API.
-* New Embedded features on Reset/Recovery, On-SOC PWM and Automatic USB provisioning
-* A variety of new update policies have been added to Windows 10 IoT Core.
-
-## Getting started
-* Intel Compute Stick now added to the [Getting Started](https://developer.microsoft.com/en-us/windows/iot/GetStarted) flow.
-
-## Improved Developer Tools
-* Updated [Windows Device Portal](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/DevicePortal) - Improved Windows Device Portal
-* [IoT Dashboard](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/IoTDashboard) - New features and stability fixes
