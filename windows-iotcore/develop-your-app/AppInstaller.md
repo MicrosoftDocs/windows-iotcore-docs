@@ -26,6 +26,10 @@ To install your application on the device please do the following:
 
 ## Using provisioning package from WCD
 You can create a provisioning package with the app and install the provisioning package on the device.
+
+> [!NOTE]
+> The Package Family Name (PFN) can be found in the Windows Dev Center under **App Management > App Identity**
+
 1. Open [Windows Configuration Designer (WICD)](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd)
 
 2. Select **Advanced Provisioning**, Enter the project name and a description
@@ -35,9 +39,6 @@ You can create a provisioning package with the app and install the provisioning 
 4. On the left hand side expand **Runtime Settings** and click on **Universal App Install > User Context App**
 
 5. Enter the Package Family Name of your app and click **Add**
-
-> [!NOTE]
-> The PFN can be found in the Windows Dev Center under **App Management > App Identity**
 
 6. Under the newly added PFN
     - add the Appx and its dependencies
