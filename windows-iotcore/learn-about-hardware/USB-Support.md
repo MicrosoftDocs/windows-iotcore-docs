@@ -25,13 +25,13 @@ To properly support USB OTG on Windows 10 IoT, several things need to be taken c
 
 OEMs need to supply components on both sides – for the USB device-side and possibly for the USB host-side.  
 
-[Components an OEM supplies](../../media/USB-Support/OEM-Components.png)
+[Components an OEM supplies](../media/USB-Support/OEM-Components.png)
 
 ### OEMs support for both sides
 
 Every USB device has unique VID and PID, which identify it. An OEM, as the manufacturer of a Windows IoT-based USB device, needs to supply those.  OEMs can apply to the USB Consortium and obtain their company VID (if they don't have one already) and then choose a PID that will be unique for that product. When Windows 10 IoT with USBFN functionality is connected to a PC it will act as USB device (of whatever functionality to choose as set in myUSBFN.sys), with those "VID_nnn" and "PID_NNN". This VID and PID combination is then used by the host PC to find the appropriate drivers to load (myUSB.sys). 
 
-[How USB functions come together](../../media/USB-Support/OEM-suppies.png)
+[How USB functions come together](../media/USB-Support/OEM-supplies.png)
 
 ### Supporting from the device side
 
@@ -83,7 +83,7 @@ By default, there is an empty default USB function configuration included in the
 
 This empty default configuration results in the IoT platform appearing as a Windows IoT device for which there is no driver on the host side installed.
 
-[Configurations for USBFN](../../media/USB-Support/config-screenshot.png)
+[Configurations for USBFN](../media/USB-Support/config-screenshot.png)
 
 Each configuration must specify certain properties, such as the Interface List. The IoT platform can operate as a USB device with different configurations, whic hare defined by USB interfaces
 that are exposed from USB device to USB host.
