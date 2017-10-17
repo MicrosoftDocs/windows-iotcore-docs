@@ -108,6 +108,7 @@ Looking for information about supported hardware platforms? Click [here](https:/
 ### Miscellaneous
 > | Part Name / No. | Compatible Boards | Description | Relevant Links | Microsoft Verified | 
 > |----------------|-------------------|-------------|--------|------------------------------|
+> | Official Pi display | RPi2/RPi3 | 7" 800x400 touch display. | [Raspberry Pi 7" Touch Screen](https://www.raspberrypi.org/products/raspberry-pi-touch-display/) | &#10004; |
 > | Monochrome 1.3” 128x64 OLED graphic display | RPi2/RPi3, MBM | 1.3” diagonal, high contrast B/W OLED display. 128x64 individual white OLED pixels, each one is turned on or off by the controller chip. | [SPI Display Sample](https://developer.microsoft.com/en-us/windows/iot/samples/spidisplay) | &#10004; |
 > | SN74HC595N Shift Register IC | RPi2/RPi3, MBM | IC 8-BIT SHIFT REGISTER 16-DIP | [Shift Register Sample](https://developer.microsoft.com/en-us/windows/iot/Samples/shiftregister) | &#10004; |
 > | Microchip Technology ADC MCP3002-I/P | RPi2/RPi3, MBM | MCP3002 10bit Analog to Digital converter. |  [Potentiometer Sensor Sample](https://developer.microsoft.com/en-us/windows/iot/samples/potentiometer) | &#10004; |
