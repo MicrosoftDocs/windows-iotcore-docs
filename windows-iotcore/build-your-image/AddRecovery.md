@@ -14,29 +14,7 @@ You can add a recovery mechanism to your image with **WinPE** as a Safe OS and *
 
 See [Windows 10 IoT Core Recovery](../commercialize-your-device/Recovery.md) for the details on the possible mechanisms.
 
-## Step 1 : Create WinPE image 
-Windows 10 ADK Release 1709 contains the Windows 10 Preinstall Environment for all architectures (x86/amd64 and arm).
-
-In this WinPE, you add the following
-
-- Recovery scripts (see [template\recovery](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Templates/recovery))
-    - startnet.cmd, startnet_recovery.cmd and diskpart txt files - the scripts that perform the actual recovery process
-- Recovery UI (optional)
-    - Optional recoveryUI.exe can be added and launched from startnet.cmd to hide the recovery shell
-- Bsp drivers (optional)
-    - You may need to add bsp drivers to winpe image to boot/write to storage. 
-
-You can create the WinPE image with these scripts and drivers in the IoTCoreShell using 
-``` 
-newwinpe.cmd <bspname> C:\bspdrivers
-```
-This script will create **Recovery.WinPE** directory under \<bspname\>/Packages directory with the following files
-
-- Recovery.WinPE.wm.xml : package definition file
-- startrecovery.cmd : script that launchs the recovery from MainOS ( for system reset )
-- winpe.wim : wim file with the recovery scripts and drivers included
-
-## Step 2 : Update device layout with Recovery partition
+## Step 1 : Update device layout with recovery partition
 
 In the devicelayout.xml file, you add a new partition **MMOS** with the following attributes
 - FAT32 filesystem
@@ -46,43 +24,58 @@ In the devicelayout.xml file, you add a new partition **MMOS** with the followin
     - MBR : 0x07
 
 Sample xml snippet given below for a GPT device
+
 ```xml
-    <Partition>
-      <Name>MMOS</Name>
-      <FileSystem>FAT32</FileSystem>
-      <TotalSectors>4096000</TotalSectors>
-      <Type>{ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}</Type>
-    </Partition>
+<Partition>
+    <Name>MMOS</Name>
+    <FileSystem>FAT32</FileSystem>
+    <TotalSectors>4096000</TotalSectors>
+    <Type>{ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}</Type>
+</Partition>
 ```
 See also [QCDB410C device layout](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Source-arm/BSP/QCDB410C/Packages/QCDB410C.DeviceLayout-R/DeviceLayout.xml)
 
-## Step 3 : Configure BCD settings
-The newly added MMOS partition needs to be defined as a bootable partition in the BCD settings and the recovery sequence needs to be enabled and configured to boot into this partition.
+## Step 2 : Configure BCD settings
+In this step, the newly added MMOS partition is defined as a bootable partition in the BCD settings and the recovery sequence is enabled and configured to boot into this partition. These settings are available in the below given packages that you can readily use.
 
 - [Recovery.GPT-BCD](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Recovery.GPT-BCD) package
-    - Recovery.BCD.xml declares the MMOS partition availability. Use this package as is (no changes required)
+    - Recovery.BCD.xml declares the MMOS partition availability.
 - [Recovery.GPT-BcdEdit](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Recovery.GPT-BcdEdit) package
-    - Recovery.BcdEdit.cmd enables recovery sequence and configures to boot into the MMOS partition. Use this package as is (no changes required)
+    - Recovery.BcdEdit.cmd enables recovery sequence and configures to boot into the MMOS partition.
+
+## Step 3 : Prepare WinPE image 
+Windows 10 ADK Release 1709 contains the Windows 10 Preinstall Environment for all architectures (x86/amd64 and arm).
+In this WinPE, you add the following
+
+- Recovery scripts used for recovery process on device
+    - `startnet.cmd`, `startnet_recovery.cmd`: predefined scripts from the template directory (see [template\recovery](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Templates/recovery)).
+    - config files : generated files based on the device layout, placed at `Build\<arch>\<bspname>\recovery`.
+- Recovery customizations files (optional)
+    - `RecoveryUI.exe` : Optional simple UI to hide the recovery shell prompt on the device. 
+    - `pre_recovery_hook.cmd` and `post_recovery_hook.cmd`: optional hooks to add additional actions before and after recovery process. 
+    - These files are placed in `Source-<arch>\bsp\<bspname>\WinPEExt\recovery` folder.
+
+- BSP drivers (optional)
+    - You may need to add bsp drivers to winpe image to boot/write to storage.
+    - These drivers are placed in `Source-<arch>\bsp\<bspname>\WinPEExt\drivers` folder.
+
+You can create the WinPE image for the bsp with the above contents using the below command in IoTCoreShell
+``` 
+newwinpe.cmd <bspname> <socname>
+```
+This script will output the winpe at  `Build\<arch>\<bspname>\winpe.wim`. 
+
 
 
 ## Step 4 : Update Feature manifest file and OEMInputFile
 - Update the **\<bspname\>FM.xml** with the following changes (see [QCDB410CFM.xml sample](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Source-arm/BSP/QCDB410C/Packages/QCDB410CFM.xml))
 
-    - Include the newly defined Recovery.WinPE package and define a feature id say RECOVERY_WINPE
-
-        ```xml
-        <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Recovery.WinPE.cab">
-            <FeatureIDs>
-            <FeatureID>RECOVERY_WINPE</FeatureID>
-            </FeatureIDs>
-        </PackageFile>
-       ```
-    - Include the new device layout package, specifying new SOC id.
+    - Include the new device layout package, specifying new SOC name, *QC8016-R* in the example below .
     
       ```xml
         <DeviceLayoutPackages>
-            <PackageFile SOC="QC8016" Path="%BSPPKG_DIR%" Name="Qualcomm.QC8916.DeviceLayout.cab" />
             <PackageFile SOC="QC8016-R" Path="%PKGBLD_DIR%" Name="%OEM_NAME%.bspname.DeviceLayout-R.cab" />
+            <PackageFile SOC="QC8016" Path="%BSPPKG_DIR%" Name="Qualcomm.QC8916.DeviceLayout.cab" />
         </DeviceLayoutPackages>    
         ```
 
@@ -99,7 +92,6 @@ The newly added MMOS partition needs to be defined as a bootable partition in th
         ```xml
         <OEM>
         ...
-        <Feature>RECOVERY_WINPE</Feature>
         <Feature>RECOVERY_BCD</Feature>
         ...
         </OEM>
@@ -119,5 +111,6 @@ The newly added MMOS partition needs to be defined as a bootable partition in th
 - `buildpkg.cmd all` - to build all packages 
     - if you have already built all packages before this change, you can also use `buildbsp \<bspname\>`, followed by `buildfm bsp \<bspname\>`
 - `buildrecovery.cmd \<productname\> Test` (or retail) - to build the image
-    - this will build the regular FFU first (`Flash.ffu`) , mount the ffu to extract the wim files and store them to the recovery partition, and save the modified ffu as `Flash_Recovery.ffu`
+    - this will build the winpe image for the specified device layout, the regular FFU first (`Flash.ffu`) , populate this FFU with the required recovery files and save as `Flash_Recovery.ffu`
+
 

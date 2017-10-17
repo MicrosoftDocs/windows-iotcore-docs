@@ -16,43 +16,43 @@ IoTCore has an inbox OOBE App that runs when the device boots up for the first t
 
 This OOBE app can be customised with a `settings.json` with the following attributes
 
-    - backgroundColor : Screen background color 
-    - background : Background image (jpg file)
-    - progressRingVisible : Spinning dots can be shown or hidden
-    - welcomeText : Text displayed in large font at the center of the screen
-    - pleaseWaitText : Text displayed below the spinning dots
-    - animation : Animation gif can be specified here
-    - animationMargin : Positioning of the animation gif
-        - left , top , right, bottom
+- backgroundColor : Screen background color 
+- background : Background image (jpg file)
+- progressRingVisible : Spinning dots can be shown or hidden
+- welcomeText : Text displayed in large font at the center of the screen
+- pleaseWaitText : Text displayed below the spinning dots
+- animation : Animation gif can be specified here
+- animationMargin : Positioning of the animation gif
+    - left , top , right, bottom
 
 All files referenced in the settings.json should be in the same folder as the settings.json file.
 A sample snippet is given below
 
-    ```
-        {
-        "backgroundColor":  "#FF0000FF",
-        "progressRingVisible": true,
-        "welcomeText": "Welcome to OOBE customization",
-        "pleaseWaitText": "please wait ..."
-        }
-    ```
+```
+{
+"backgroundColor":  "#FF0000FF",
+"progressRingVisible": true,
+"welcomeText": "Welcome to OOBE customization",
+"pleaseWaitText": "please wait ..."
+}
+```
 
-### Validate your settings manually 
+### Validate settings manually 
 
 1. Author the `settings.json` file with your required settings
 2. Connect to the IoT device ([using SSH](../connect-your-device/SSH.md) or [using Powershell](../connect-your-device/powershell.md)) and place the `settings.json` file along with all graphical assets in a directory, say `C:\Data\oobe`
-3. Configure the device to allow access to this directory from all appx files, using 
+3. Configure the device to allow access to this directory from all appx files, using
 
-        ```
-        folderpermissions C:\Data\oobe -e
-        ```
-    
+    ```
+    folderpermissions C:\Data\oobe -e
+    ```
+
 4. Launch the OOBE application using
 
-        ```
-        iotstartup add headed IoTUAPOOBE
-        ```
-        
+    ```
+    iotstartup add headed IoTUAPOOBE
+    ```
+
 5. Verify the user interface
 
 ### Add settings to IoT Core image
@@ -72,18 +72,18 @@ A sample snippet is given below
 For IoT Core products, it is recommended that you configure your devices to reboot on crash and also hide the crash dump screen (BSOD). 
 This is achieved with setting the following registry keys 
 
-    - HKLM\SOFTWARE\CurrentControlSet\Control\CrashControl
-        - AutoReboot set to 1
-        - DisplayDisabled set to 1
+- HKLM\SOFTWARE\CurrentControlSet\Control\CrashControl
+    - AutoReboot set to 1
+    - DisplayDisabled set to 1
 
 ### Validate settings manually
 
 1. Connect to your IoT device ([using SSH](../connect-your-device/SSH.md) or [using Powershell](../connect-your-device/powershell.md)) and set the following registry keys
 
-        ```
-        reg add "HKEY_LOCAL_MACHINE\SOFTWARE\CurrentControlSet\Control\CrashControl" /v AutoReboot /t REG_DWORD /d 1 /f
-        reg add "HKEY_LOCAL_MACHINE\SOFTWARE\CurrentControlSet\Control\CrashControl" /v DisplayDisabled /t REG_DWORD /d 1 /f
-        ```
+    ```
+    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\CurrentControlSet\Control\CrashControl" /v AutoReboot /t REG_DWORD /d 1 /f
+    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\CurrentControlSet\Control\CrashControl" /v DisplayDisabled /t REG_DWORD /d 1 /f
+    ```
 
 2. See [Forcing a System Crash from the keyboard](https://docs.microsoft.com/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard) and configure a key to force the system crash.
 3. Force a system crash using the configured key and verify that the device reboots automatically and does not show the crashdump screen.
@@ -98,19 +98,19 @@ Boot Configuration Database settings can be used to configure various features. 
 
 A few key features are listed below
 
-1. Disable Boot UX animation 
+### Disable Boot UX animation 
 
-    - manual setting can be done with the below command
-    
-        ```
-        bcdedit -set {bootmgr} nobootuxprogress true
-        ```
+1. Manual setting can be done with the below command
 
-    - Specify this setting in a `Custom.BCD.xml` file 
+    ```
+    bcdedit -set {bootmgr} nobootuxprogress true
+    ```
 
-        ```xml
-        <?xml version='1.0' encoding='utf-8' standalone='yes'?>
-        <BootConfigurationDatabase 
+2. Specify this setting in a `Custom.BCD.xml` file 
+
+    ```xml
+    <?xml version='1.0' encoding='utf-8' standalone='yes'?>
+    <BootConfigurationDatabase 
            xmlns="http://schemas.microsoft.com/phone/2011/10/BootConfiguration"
            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -122,10 +122,10 @@ A few key features are listed below
                 <Elements>
                     <Element>
                     <DataType>
-                        <WellKnownType>Boot UX Progress Animation Disable</WellKnownType>
+                      <WellKnownType>Boot UX Progress Animation Disable</WellKnownType>
                     </DataType>
                     <ValueType>
-                        <BooleanValue>true</BooleanValue>
+                      <BooleanValue>true</BooleanValue>
                     </ValueType>
                     </Element>
                 </Elements>
@@ -133,33 +133,33 @@ A few key features are listed below
             </Objects>
         </BootConfigurationDatabase>
         ```
-    - including this setting in the image using [Custom.BCD](https://github.com/ms-iot/iot-adk-addonkit/tree/wm.xml/Common/Packages/Custom.BCD) package and add feature id **CUSTOM_BCD** to OEMInput.xml file
+3. Include this setting in the image using [Custom.BCD](https://github.com/ms-iot/iot-adk-addonkit/tree/wm.xml/Common/Packages/Custom.BCD) package and add feature id **CUSTOM_BCD** to OEMInput.xml file
 
-2. Enable Flight Signing
+### Enable Flight Signing
 
-    - manual setting can be done with the below command
-        ```
+1. Manual setting can be done with the below command
+    ```
         bcdedit /set {bootmgr} flightsigning on
         bcdedit /set flightsigning on
         ```
-    - to include this setting in the image, you can add the below fragment to the `Custom.BCD.xml`
-        ```xml
+2. To include this setting in the image, you can add the below fragment to the `Custom.BCD.xml`
+
+    ```xml
         <!--  Allow Flight Signing Certificate -->
         <Object SaveKeyToRegistry="false">
          <FriendlyName>Global Settings Group</FriendlyName>
          <Elements>
           <Element>
             <DataType>
-                <WellKnownType>Allow Flight Signatures</WellKnownType>
+              <WellKnownType>Allow Flight Signatures</WellKnownType>
             </DataType>
             <ValueType>
-                <BooleanValue>true</BooleanValue>
+              <BooleanValue>true</BooleanValue>
             </ValueType>
           </Element>
          </Elements>
         </Object>
-        ```
-
+    ```
 
 ## Runtime customisations
 In addition to the static customisations discussed above, you can also customize during the runtime.
