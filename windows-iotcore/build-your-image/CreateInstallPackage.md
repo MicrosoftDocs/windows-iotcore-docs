@@ -117,6 +117,7 @@ See also
 * Initiate staging of the package using `applyupdate -stage C:\OemInstall\<filename>.cab`. Note that this step is be repeated for each package, when you have multiple packages to install.
 * Commit the packages using `applyupdate -commit`.
 
-> [!NOTE] You can also install the cab using **Windows Update > CAB Install** option in Windows Device Portal.
+> [!NOTE]
+> You can also install the cab using **Windows Update > CAB Install** option in Windows Device Portal.
 
 The device will reboot into the update OS (showing gears) to install the packages and will reboot again to main OS. This process can take a few minutes.
