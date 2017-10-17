@@ -18,7 +18,7 @@ Windows IoT is a version of Windows 10 that is optimized for smaller devices wit
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="release-notes/commercial/creatorsupdate.md">
+        <a href="release-notes/commercial/FallCreatorsUpdate.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

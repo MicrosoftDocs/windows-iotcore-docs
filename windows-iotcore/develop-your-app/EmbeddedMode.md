@@ -28,7 +28,7 @@ While the system will automatically restart background applications, system lock
 
 ## lowLevelDevice Capability
 
-The lowLevelDevice Capability (only on IoT Core) gives access to low-level hardware interfaces like GPIO, SPI, and I2C. 
+The lowLevelDevice Capability gives access to low-level hardware interfaces like GPIO, SPI, and I2C. 
 
 * [Blinky Sample(GPIO)](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinky)
 * [SPI Accelerometer Sample](https://developer.microsoft.com/en-us/windows/iot/samples/SPIaccelerometer)
