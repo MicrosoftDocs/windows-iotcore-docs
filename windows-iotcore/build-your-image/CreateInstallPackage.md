@@ -15,7 +15,7 @@ keywords: windows iot, package creation, package installation
 
 ### Install the tools
 
-1. [Windows Assessment and Deployment Kit(Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK)
+1. [Windows Assessment and Deployment Kit(Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 2. [IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)
 
 ### Set up your environment
@@ -28,45 +28,57 @@ keywords: windows iot, package creation, package installation
 To create your own image (FFU), follow the steps outlined in the ["Create a basic image" lab in the IoT Manufacturing guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image).
 
 ## Step 2: Create a new package
-1. Create a **package definition xml file** (.pkg.xml file), and specify the files and reg keys you want to add.
-      Learn more at [Specifying components in a package](https://msdn.microsoft.com/en-us/library/dn789218) and [Elements and Attributes of a package](https://msdn.microsoft.com/en-us/library/dn756796).
+1. Create a **package definition xml file** (.wm.xml file), and specify the files and reg keys you want to add. 
+      Learn more at [Windows Universal OEM Package Schema](https://docs.microsoft.com/windows-hardware/manufacture/iot/package-schema).
 
-2. Build the package: `buildpkg.cmd filename.pkg.xml`. The .cab file will be created in the build directory `\IoT-ADK-AddonKit\Build\<arch>\pkgs`.
+2. Build the package: `buildpkg.cmd filename.wm.xml`. The .cab file will be created in the build directory `\IoT-ADK-AddonKit\Build\<arch>\pkgs`.
 
 ### Create a package with files and reg keys
 Below is an example for specifying files and reg keys.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00"
-   Owner="OEMName"           OwnerType="OEM"
-   ReleaseType="Test"        Platform="PlaformName"
-   Component="ComponentName" SubComponent="SubName">
-   <Components>
-      <OSComponent>
-         <Files>
-            <File Source="$(_RELEASEDIR)\test_file1.dll"/>
-            <File Source="$(_RELEASEDIR)\toBeRenamed.dat"
-               DestinationDir="$(runtime.system32)\test" Name="test.dat"/>
-         </Files>
-         <RegKeys>
-            <RegKey KeyName="$(hklm.software)\OEMName\test">
-               <RegValue Name="StringValue" Value="Test string" Type="REG_SZ"/>
-               <RegValue Name="DWordValue" Value="12AB34CD" Type="REG_DWORD"/>
-               <RegValue Name="BinaryValue" Value="12,AB,CD,EF" Type="REG_BINARY"/>
-            </RegKey>
-            <RegKey KeyName="$(hklm.software)\OEMName\EmptyKey"/>
-         </RegKeys>
-      </OSComponent>
-   </Components>
-</Package>
+<identity xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    name="SUBNAME" namespace="COMPNAME" owner="Contoso"
+    legacyName="Contoso.COMPNAME.SUBNAME" xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00">
+    <onecorePackageInfo
+        targetPartition="MainOS"
+        releaseType="Production"
+        ownerType="OEM" />
+    <regKeys>
+        <regKey
+            keyName="$(hklm.software)\Contoso\Test">
+            <regValue
+                name="StringValue"
+                type="REG_SZ"
+                value="Test string" />
+            <regValue
+                name="DWordValue"
+                type="REG_DWORD"
+                value="0x12AB34CD" />
+            <regValue
+                name="BinaryValue"
+                type="REG_BINARY"
+                value="12ABCDEF" />
+        </regKey>
+        <regKey
+            keyName="$(hklm.software)\Contoso\EmptyKey" />
+    </regKeys>
+    --<files>
+        <file
+            destinationDir="$(runtime.system32)"
+            source="filename.txt" />
+        <file
+            destinationDir="$(runtime.bootDrive)\OEMInstall"
+            source="filename2.txt"
+            name="filename2.txt" />
+    </files>
+</identity>
 ```
 
 ### Create an Appx package
 
-Use [appx2pkg.cmd tool](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/appx2pkg.cmd) to generate the .pkg.xml file for a given appx file. This tool expects the appx dependencies in the sub directory named "dependencies" in the folder containing the appx file.
-
-You can also create the Appx component directly in the IoTCoreShell, using the following steps
+Use [newappxpkg.cmd](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/newappxpkg.cmd) to generate the .wm.xml file for a given appx file. This tool expects the appx dependencies in the sub directory named "dependencies" in the folder containing the appx file.
 
     > newappxpkg HelloWorld.appx fga Appx.HelloWorld
     > buildpkg Appx.HelloWorld
@@ -86,7 +98,7 @@ See also
 
 ### Create a driver package
 
-The driver package contains the references (InfSource) to the Inf file for the driver and also lists all the files referenced in the Inf file. You can author the driver .pkg.xml file manually or use [inf2pkg.cmd tool](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/inf2pkg.cmd) that generates package xml based on the input inf file.
+The driver package contains the references (InfSource) to the Inf file for the driver and also lists all the files referenced in the Inf file. You can author the driver .wm.xml file manually or use [inf2pkg.cmd tool](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/inf2pkg.cmd) that generates package xml based on the input inf file.
 
 [`inf2cab.cmd` tool](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/inf2cab.cmd) creates the package xml file and also builds the cab file directly by invoking `buildpkg.cmd` internally.
 
@@ -104,5 +116,7 @@ See also
 * Copy the <filename>.cab file to the device to a directory say C:\OemInstall
 * Initiate staging of the package using `applyupdate -stage C:\OemInstall\<filename>.cab`. Note that this step is be repeated for each package, when you have multiple packages to install.
 * Commit the packages using `applyupdate -commit`.
+
+> [!NOTE] You can also install the cab using **Windows Update > CAB Install** option in Windows Device Portal.
 
 The device will reboot into the update OS (showing gears) to install the packages and will reboot again to main OS. This process can take a few minutes.
