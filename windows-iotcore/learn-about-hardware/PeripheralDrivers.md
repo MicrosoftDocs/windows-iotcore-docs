@@ -30,7 +30,7 @@ The Step is to get the x86 version of the drivers from PC. For ARM, please conta
 ## Step 2: Create a driver package
 ___
 
-The Driver package contains the references(InfSource)to the Inf file for the driver and also lists all the files referenced in the Inf file. You can author the driver .pkg.xml file manually or use [`inf2pkg.cmd` tool](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/inf2pkg.cmd) that generates package xml based on the input inf file. 
+The Driver package contains the references(InfSource)to the Inf file for the driver and also lists all the files referenced in the Inf file. You can author the driver .wm.xml file manually or use [`inf2pkg.cmd` tool](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/inf2pkg.cmd) that generates package xml based on the input inf file. 
 
 [`inf2cab.cmd` tool](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/inf2cab.cmd) creates the package xml file and also builds the cab file directly by invoking `buildpkg.cmd` internally.
 

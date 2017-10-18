@@ -16,6 +16,9 @@ There are two steps to creating your own BSP:
 * First, find where you can get BSPs for supported platforms **below**.
 * Second, learn how to create your own BSP by following the steps listed in the [IoT Manufacturing guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-new-bsp).
 
+> [!NOTE]
+> You can copy the bsp cab files to a folder, say `C:\MyBSPs\`, and `set BSPPKG_DIR=C:\MyBSPs\` in the IoTCoreShell to use these files in the imaging process.
+
 ## Raspberry Pi BSP
 Raspberry drivers are available at [ms-iot/bsp](https://github.com/ms-iot/bsp).
 
@@ -96,10 +99,15 @@ The files will be available in the build output folder (`iot-adk-addonkit\Build\
 
 DragonBoard drivers are available at [DragonBoard 410C Software](https://developer.qualcomm.com/hardware/dragonboard-410c/software) under *Windows 10 IoT Core* section.
 
+Steps to create the drivers :
 
-> [!NOTE]
-> You can copy the BSP cab files to a different folder, say `C:\MyBSPs\, and set BSPPKG_DIR=C:\MyBSPs\` in the IoTCoreShell to use these files. You can also modify this setting in the setenv.cmd file.
+1. Download the *_db410c_BSP.zip and extract to a folder say `C:\download\DB410c_BSP`
+2. Launch IoTCoreShell, select arm
 
+    * Run `.\bsptools\QCDB410C\export.cmd C:\download\DB410c_BSP C:\MyBSPs\QCDB410C` to export the required bsp cab files to a directory say `C:\MyBSPs\QCDB410C`.
+    * `set BSPPKG_DIR=C:\MyBSPs\QCDB410C` to specify the location of the bsp cabs. See the BSPFM.xml file for the cab files it looks for in `BSPPKG_DIR`.
+    * Run `buildpkg all` to create the oem packages
+    * Run `buildimage <productname> <test> or <retail>` to build the image 
 
 ## Other helpful resources
 

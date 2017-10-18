@@ -30,6 +30,7 @@
 ### [Create board supported packages](build-your-image/CreateBSPs.md)
 ### [Create and install a package](build-your-image/CreateInstallPackage.md)
 ### [Add a recovery mechanism](build-your-image/AddRecovery.md)
+### [OS Customizations](build-your-image/OSCustomizations.md)
 ## [Manage your device]()
 ### [Windows Device Portal](manage-your-device/DevicePortal.md)
 ### [Remote display](manage-your-device/RemoteDisplay.md)
