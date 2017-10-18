@@ -87,7 +87,7 @@ This script will output the winpe at  `Build\<arch>\<bspname>\winpe.wim`.
         <SOC>QC8016-R</SOC>
         ```
 
-    - Include the RECOVERY_WINPE and RECOVERY_BCD feature in the OEM section
+    - Include the RECOVERY_BCD feature in the OEM section
 
         ```xml
         <OEM>
