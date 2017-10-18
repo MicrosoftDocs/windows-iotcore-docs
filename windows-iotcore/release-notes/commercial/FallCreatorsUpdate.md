@@ -15,6 +15,8 @@ Windows 10 IoT enables development of embedded or dedicated-purpose devices and 
 
 This document provides information that supplements other content and documentation for this release of Windows 10 IoT.
 
+To download this latest build as well as packages, please visit the [Windows Insider Preview Downloads page](https://www.microsoft.com/en-us/software-download/windowsiot).
+
 ## Privacy Statement
 
 The privacy statement for this version of the Windows operating system can be viewed at [https://go.microsoft.com/fwlink/?LinkId=521839](https://go.microsoft.com/fwlink/?LinkId=521839).
