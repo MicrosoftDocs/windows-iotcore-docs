@@ -53,17 +53,17 @@ In this WinPE, you add the following
 - Recovery customizations files (optional)
     - `RecoveryUI.exe` : Optional simple UI to hide the recovery shell prompt on the device. 
     - `pre_recovery_hook.cmd` and `post_recovery_hook.cmd`: optional hooks to add additional actions before and after recovery process. 
-    - These files are placed in `Source-<arch>\bsp\<bspname>\WinPEExt\recovery` folder.
+    - Place these files in `Source-<arch>\bsp\<bspname>\WinPEExt\recovery` folder.
 
 - BSP drivers (optional)
-    - You may need to add bsp drivers to winpe image to boot/write to storage.
-    - These drivers are placed in `Source-<arch>\bsp\<bspname>\WinPEExt\drivers` folder.
+    - You may need to add bsp drivers to winpe image to boot/write to storage, on your device platform.
+    - Place the required drivers in `Source-<arch>\bsp\<bspname>\WinPEExt\drivers` folder.
 
 You can create the WinPE image for the bsp with the above contents using the below command in IoTCoreShell
 ``` 
 newwinpe.cmd <bspname> <socname>
 ```
-This script will output the winpe at  `Build\<arch>\<bspname>\winpe.wim`. 
+This script will output the winpe at  `Build\<arch>\<bspname>\winpe.wim`.
 
 
 
@@ -108,9 +108,12 @@ This script will output the winpe at  `Build\<arch>\<bspname>\winpe.wim`.
 
 ## Step 5 : Build the image
 
-- `buildpkg.cmd all` - to build all packages 
-    - if you have already built all packages before this change, you can also use `buildbsp \<bspname\>`, followed by `buildfm bsp \<bspname\>`
-- `buildrecovery.cmd \<productname\> Test` (or retail) - to build the image
-    - this will build the winpe image for the specified device layout, the regular FFU first (`Flash.ffu`) , populate this FFU with the required recovery files and save as `Flash_Recovery.ffu`
+- `buildpkg.cmd all` - to build all packages.
+
+- `buildrecovery.cmd \<productname\> Test` (or retail) - to build the image. This will build the following
+    - winpe image for the specified device layout
+    - regular FFU (`Flash.ffu`)
+    - extract the required recovery files
+    - update the FFU with the recovery files and save as `Flash_Recovery.ffu`
 
 
