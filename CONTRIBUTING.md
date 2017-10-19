@@ -52,7 +52,7 @@ Once you are ready to add your changes to the remote repo so that they will be s
 - `git push origin <yourbranchname>`: This command pushes your changes to the remote repo that you forked on GitHub (the "origin") into the branch that you have specified. Because you have forked the repo to your own GitHub account, you are welcome to do your work in the **Develop** branch. 
 
 When you are happy with your changes and ready to submit a PR:
-- Go to your fork of the edge-develop repo: https://github.com/your-github-alias/windows-iotcore-docs.
+- Go to your fork of the IoT repo: https://github.com/your-github-alias/windows-iotcore-docs.
 - Click the "New pull request" button. (The "base fork:" will be listed as "MicrosoftDocs/windows-iotcore-docs", the "head fork:" should show your fork of the repo and the branch in which you made your changes.) You can review your changes here as well. 
 - Click the green "Create pull request" button. You will then be asked to give your Pull Request a title and description, then click the "Create pull request" button once more.
 
@@ -68,7 +68,7 @@ The [Windows 10 IoT Docs GitHub repository](https://github.com/MicrosoftDocs/win
 
 When making contributions, please submit your Pull Request (PR) to the **Develop** branch. This branch can be viewed on the staging site and should only contain contributions that are ready to be published live.
 
-## Using issues to provide feedback on Microsoft Edge documentation
+## Using issues to provide feedback on IoT documentation
 
 To provide feedback rather than directly modifying actual documentation pages, [create an issue](https://github.com/MicrosoftDocs/windows-iotcore-docs/issues).
 
