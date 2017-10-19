@@ -75,9 +75,9 @@ For IoT Core products, it is recommended that you configure your devices to rebo
 This is achieved with setting the following registry keys:
 
     ```
-    - HKLM\SOFTWARE\CurrentControlSet\Control\CrashControl
-    - AutoReboot set to 1
-    - DisplayDisabled set to 1
+    HKLM\SOFTWARE\CurrentControlSet\Control\CrashControl
+        AutoReboot set to 1
+        DisplayDisabled set to 1
     ```
 
 ### Validate settings manually
