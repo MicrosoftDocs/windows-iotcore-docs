@@ -14,10 +14,10 @@ The Unified Write Filter (UWF) is a feature to protect physical storage media fr
 
 Read [Unified Write Filter](https://docs.microsoft.com/windows-hardware/customize/enterprise/unified-write-filter) for more information.
 
-If you do not have IoT Core Kits yet, Download and install [IoT Core Kits](https://www.microsoft.com/en-us/download/details.aspx?id=55031).
+If you do not have IoT Core Kits yet, download and install [Windows 10 IoT Core Packages](https://www.microsoft.com/software-download/windows10iotcore).
 
 ## How to Install UWF on a device running Windows 10 IoT Core
-___
+
 * Launch [Powershell](../connect-your-device/PowerShell.md) or [SSH](../connect-your-device/SSH.md) and access your device running Windows 10 IoT Core.
 * From Powershell or SSH, do the following:
   * Create a temporary folder on the target machine (e.g. ```C:\UWFTemp```).
@@ -33,14 +33,13 @@ ___
 
 
 ## How to include UWF in Your Custom FFU 
-___
+
 
 * Add **IOT_UNIFIED_WRITE_FILTER** feature id to the OEM Input file 
 * Create the image\FFU. Read [Create a basic image](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image) for instructions.
 
 
 ## How to Use UWF
-___
 
 UWF can be configured using the uwfmgr.exe tool via a Powershell or SSH session.
 Read [`uwfmgr.exe` tool](https://docs.microsoft.com/windows-hardware/customize/enterprise/uwfmgrexe) for the available options with an exception of some commands listed below that are not supported in IoT Core.
@@ -61,7 +60,6 @@ UWF can also be configured via MDM channel using [Unified Write Filter CSP](http
 
 
 ## Protecting a Data Volume
-___
 
 Data volume in IoT Core can be protected using the GUID for the volume. 
 The GUID for the available volumes can be found through the following command
@@ -87,13 +85,15 @@ C:\Data\systemdata\nonetwlogs
 
 To add the exclusions:
   `uwfmgr.exe file Add-Exclusion <file/folder name>`
-  
-> [!WARNING]
-> We recommend disabling Windows Update when enabling UWF. Enabling UWF without disabling Windows Update may result in system instability.
+
+
 
 ## Servicing UWF protected devices
-___
-The following steps are required to service UWF protected devices.
+
+> [!Note]
+> Starting Windows 10 IoT Core Release 1709, version 16299, the main OS volume (C:\) can be protected with UWF and serviced *automatically* without any special steps.
+
+The following steps are required to service UWF protected devices with protected data volumes.
 
 * `uwfmgr.exe filter disable` Disable UWF
 * `shutdown /r /t 0` Reboot device to disable UWF
@@ -103,7 +103,7 @@ The following steps are required to service UWF protected devices.
 * `shutdown /r /t 0` Reboot device to enable UWF
 
 ## Unsupported uwfmgr.exe Commands
-___
+
 **UWF Servicing Mode** is not supported in IoT Core.
 
 `uwfmgr.exe` on Windows 10 IoT Core does not support commands listed below.
