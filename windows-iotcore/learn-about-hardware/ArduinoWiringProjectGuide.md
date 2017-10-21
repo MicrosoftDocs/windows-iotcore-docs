@@ -29,7 +29,15 @@ You will need to be running the Direct Memory Mapped Driver to write Arduino Wir
 Complete one of the "Wiring" samples on the [Samples Page](https://developer.microsoft.com/en-us/windows/iot/samples), or build your own project! Any of the samples we've created that are written using Arduino Wiring will be listed like so: [Blinky (Wiring)](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinkybackgroundwiring). Blinky, the cononical "Hello World" project for IoT projects, is a great place to start for your first project!
 
 ### Create a new Project
-Open Visual Studio. Select File -> New Project -> Visual C++ -> Windows -> Windows IoT Core -> Arduino Wiring Application for Windows IoT Core
+1. Open Visual Studio.
+
+2. Select File -> New -> Project...
+
+3. From the dialogue that appears, choose:  
+Visual C++ -> Windows -> Windows IoT Core -> Arduino Wiring Application for Windows IoT Core  
+(might appear instead as)  
+Visual C++ -> Windows IoT Core -> Arduino Wiring Application for Windows IoT Core 
+
 
 ![App Create](../media/ArduinoWiring/appcreate.png)
 
