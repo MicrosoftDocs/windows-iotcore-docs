@@ -59,7 +59,7 @@ Note that the settings.json file needs to be encoded in Unicode (UCS-2) encoding
 
 ### Add settings to IoT Core image
 
-1. Use [Custom.OOBEApp](https://github.com/ms-iot/iot-adk-addonkit/tree/wm.xml/Common/Packages/Custom.OOBEApp) package and modify the package xml file to add your graphical assets
+1. Use [Custom.OOBEApp](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Custom.OOBEApp) package and modify the package xml file to add your graphical assets
 
 2. Copy your settings.json and graphical assets to that package folder.
 
@@ -94,7 +94,7 @@ This is achieved with setting the following registry keys:
 
 ### Add settings to IoT Core image
 
-1. Use [Custom.Settings](https://github.com/ms-iot/iot-adk-addonkit/tree/wm.xml/Common/Packages/Custom.Settings) package
+1. Use [Custom.Settings](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Custom.Settings) package
 2. In the OEMInput.xml, include the feature id **CUSTOM_SETTINGS**, note that this is defined in the OEMCOMMONFM.xml.
 
 ## BCD Settings
@@ -137,7 +137,7 @@ A few key features are listed below
             </Objects>
         </BootConfigurationDatabase>
         ```
-3. Include this setting in the image using [Custom.BCD](https://github.com/ms-iot/iot-adk-addonkit/tree/wm.xml/Common/Packages/Custom.BCD) package and add feature id **CUSTOM_BCD** to OEMInput.xml file
+3. Include this setting in the image using [Custom.BCD](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Custom.BCD) package and add feature id **CUSTOM_BCD** to OEMInput.xml file
 
 ### Enable Flight Signing
 
