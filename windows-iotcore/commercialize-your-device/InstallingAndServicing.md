@@ -18,7 +18,7 @@ Microsoft makes it easy for OEMs to install and service UWP apps on Windows 10 I
 The key steps required to use Universal Store are outlined below.
 
 ## Step 1 : Setup 
-You will require an Windows Dev Center account and sign up for the OEM preinstall program to use this feature. See [Account types](https://docs.microsoft.com/windows/uwp/publish/account-types-locations-and-fees) for information on individual accounts and company accounts. You can signup for a developer account at [Register as an app developer](https://developer.microsoft.com/en-us/store/register).
+A Windows Dev Center account and sign-up for the OEM preinstall program are required to use this feature. See [Account types](https://docs.microsoft.com/windows/uwp/publish/account-types-locations-and-fees) for information on individual accounts and company accounts. You can signup for a developer account at [Register as an app developer](https://developer.microsoft.com/en-us/store/register).
 
 If you need multiple users to be managing the portal or if you need Special capabilities in your App,  See [Associate Azure Active Directory with your Dev Center account](https://docs.microsoft.com/windows/uwp/publish/associate-azure-ad-with-dev-center) for more details.
 
@@ -51,7 +51,7 @@ Key elements to note here are
 > [!IMPORTANT]
 > Visual Studio 2017 Update 15.3 or greater is required for these instructions.
 
-In order for headless apps to meet store compliance there needs to be a "head" associated with the app. In order to add this "head" to our headless app we need to 
+In order for headless apps to meet store compliance there needs to be a "head" associated with the app. In order to add this "head" to our headless app we need to:
 
 1. Create a new **Blank App (Universal Windows)** project in Visual Studio.
 2. Build the new project under release configuration
@@ -64,16 +64,18 @@ In order for headless apps to meet store compliance there needs to be a "head" a
     - Remove the AppListEntry attribute from the element _uap:VisualElements_
 
 7. With the app submission created the next step is to [package the UWP app](https://msdn.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps) and upload to the app submission in Windows Dev Center. For IoT Core it is important to set  **Generate app bundle** to **Never**. This will allow the Windows Dev Center to generate the correct package for preinstall on IoT Core.
-8. Submit the submission to being the certification process. The certification process usually will take 24-48hrs after which the app will either be immediately published or available to publish based on the publishing option chosen when creating your submission. 
+8. Submit the app to begin the certification process. The certification process usually will take 24-48 hours after which the app will either be immediately published or available to publish (based on the publishing option chosen when creating your submission) 
 
 ## Step 3 : Download and install
 
-Now that an app has been published to the Universal Store the app has a store signed version that can be used to preinstall the app on devices.
+Now that an app has been published to the Microsoft Store, the app has a store signed version that can be used to preinstall the app on devices.
 
 1. In the Windows Dev Center account click **App Management > Current Packages** on the left hand navigation bar.
 2. Under the most recent App submission click **Download Windows 10 package**. This will download a zip file containing the app package, the dependency packages, and the license files.
 
 3. See [Install your apps on IoT Core device](../develop-your-app/AppInstaller.md) for various options to install the Store apps.
+
+4. To manage the store app updates from your application, see [Download and install package updates for your app](https://docs.microsoft.com/en-us/windows/uwp/packaging/self-install-package-updates)
 
 ## Step 4 : Publish Update to Store
 
