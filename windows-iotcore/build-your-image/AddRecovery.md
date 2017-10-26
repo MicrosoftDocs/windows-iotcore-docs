@@ -10,7 +10,7 @@ keywords: windows iot, image creation, windows iot, recovery
 
 # Add a recovery mechanism to your image
 
-You can add a recovery mechanism to your image with **WinPE** as a Safe OS and **wim files** as Recovery SW from recovery partition, using the steps provided below.
+You can add a recovery mechanism to your image with **WinPE** as a Safe OS and **WIM files** as Recovery SW from recovery partition, using the steps provided below.
 
 See [Windows 10 IoT Core Recovery](../commercialize-your-device/Recovery.md) for the details on the possible mechanisms.
 
@@ -23,7 +23,7 @@ In the devicelayout.xml file, you add a new partition **MMOS** with the followin
     - GPT : {ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}
     - MBR : 0x07
 
-Sample xml snippet given below for a GPT device
+Sample xml snippet given below for a GPT device (assumes a sector size of 512)
 
 ```xml
 <Partition>
@@ -48,7 +48,7 @@ Windows 10 ADK Release 1709 contains the Windows 10 Preinstall Environment for a
 In this WinPE, you add the following
 
 - Recovery scripts used for recovery process on device
-    - `startnet.cmd`, `startnet_recovery.cmd`: predefined scripts from the template directory (see [template\recovery](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Templates/recovery)).
+    - `startnet.cmd`, `startnet_recovery.cmd`: predefined scripts from the templates directory (see [templates\recovery](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Templates/recovery)).
     - config files : generated files based on the device layout, placed at `Build\<arch>\<bspname>\recovery`.
 - Recovery customizations files (optional)
     - `RecoveryUI.exe` : Optional simple UI to hide the recovery shell prompt on the device. 
@@ -74,12 +74,12 @@ This script will output the winpe at  `Build\<arch>\<bspname>\winpe.wim`.
     
       ```xml
         <DeviceLayoutPackages>
-            <PackageFile SOC="QC8016-R" Path="%PKGBLD_DIR%" Name="%OEM_NAME%.bspname.DeviceLayout-R.cab" />
+            <PackageFile SOC="QC8016-R" Path="%PKGBLD_DIR%" Name="%OEM_NAME%.QCDB410C.DeviceLayout-R.cab" />
             <PackageFile SOC="QC8016" Path="%BSPPKG_DIR%" Name="Qualcomm.QC8916.DeviceLayout.cab" />
         </DeviceLayoutPackages>    
         ```
 
-- Update the **\<productname\>/TestOEMInput.xml** (and RetailOEMInput.xml) with the following changes (see [Recovery sample](https://github.com/ms-iot/iot-adk-addonkit/blob/develop/Source-arm/Products/RecoverySample/TestOEMInput.xml)
+- Update the **\<productname\>/TestOEMInput.xml** (and RetailOEMInput.xml) with the following changes (see [Recovery sample](https://github.com/ms-iot/iot-adk-addonkit/blob/develop/Source-arm/Products/RecoverySample/TestOEMInput.xml))
 
     - Specify the SOC name as defined in the \<bspname\>FM.xml
 
@@ -110,7 +110,7 @@ This script will output the winpe at  `Build\<arch>\<bspname>\winpe.wim`.
 
 - `buildpkg.cmd all` - to build all packages.
 
-- `buildrecovery.cmd \<productname\> Test` (or retail) - to build the image. This will build the following
+- `buildrecovery.cmd <productname> Test` (or Retail) - to build the image. This will build the following
     - winpe image for the specified device layout
     - regular FFU (`Flash.ffu`)
     - extract the required recovery files

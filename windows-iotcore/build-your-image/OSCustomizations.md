@@ -12,9 +12,9 @@ keywords: windows iot, image creation, image customizations, OEM customizations
 OEM can customize various aspects of the OS using the below specified methods.
 
 ## OOBE App
-IoTCore has an inbox OOBE App that runs when the device boots up for the first time. This is shown till all the provisioning packages are processed in the background and an OEM App is available to be launched as a startup app.
+IoTCore has an inbox OOBE App that runs when the device boots up for the first time. This is shown until all the provisioning packages are processed in the background and an OEM App is available to be launched as a startup app.
 
-This OOBE app can be customised with a `settings.json` with the following attributes
+This OOBE app can be customised with a `settings.json` with the following attributes:
 
 - backgroundColor : Screen background color 
 - background : Background image (jpg file)
@@ -37,6 +37,8 @@ A sample snippet is given below
 }
 ```
 
+Note that the settings.json file needs to be encoded in Unicode (UCS-2) encoding. UTF-8 will not work.
+
 ### Validate settings manually 
 
 1. Author the `settings.json` file with your required settings
@@ -57,7 +59,7 @@ A sample snippet is given below
 
 ### Add settings to IoT Core image
 
-1. Use [Custom.OOBEApp](https://github.com/ms-iot/iot-adk-addonkit/tree/wm.xml/Common/Packages/Custom.OOBEApp) package and modify the package xml file to add your graphical assets
+1. Use [Custom.OOBEApp](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Custom.OOBEApp) package and modify the package xml file to add your graphical assets
 
 2. Copy your settings.json and graphical assets to that package folder.
 
@@ -70,11 +72,13 @@ A sample snippet is given below
 ## Crash Settings
 
 For IoT Core products, it is recommended that you configure your devices to reboot on crash and also hide the crash dump screen (BSOD). 
-This is achieved with setting the following registry keys 
+This is achieved with setting the following registry keys:
 
-- HKLM\SOFTWARE\CurrentControlSet\Control\CrashControl
-    - AutoReboot set to 1
-    - DisplayDisabled set to 1
+    ```
+    HKLM\SOFTWARE\CurrentControlSet\Control\CrashControl
+        AutoReboot set to 1
+        DisplayDisabled set to 1
+    ```
 
 ### Validate settings manually
 
@@ -90,7 +94,7 @@ This is achieved with setting the following registry keys
 
 ### Add settings to IoT Core image
 
-1. Use [Custom.Settings](https://github.com/ms-iot/iot-adk-addonkit/tree/wm.xml/Common/Packages/Custom.Settings) package
+1. Use [Custom.Settings](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Custom.Settings) package
 2. In the OEMInput.xml, include the feature id **CUSTOM_SETTINGS**, note that this is defined in the OEMCOMMONFM.xml.
 
 ## BCD Settings
@@ -133,15 +137,17 @@ A few key features are listed below
             </Objects>
         </BootConfigurationDatabase>
         ```
-3. Include this setting in the image using [Custom.BCD](https://github.com/ms-iot/iot-adk-addonkit/tree/wm.xml/Common/Packages/Custom.BCD) package and add feature id **CUSTOM_BCD** to OEMInput.xml file
+3. Include this setting in the image using [Custom.BCD](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Custom.BCD) package and add feature id **CUSTOM_BCD** to OEMInput.xml file
 
 ### Enable Flight Signing
 
-1. Manual setting can be done with the below command
+1. Manual setting can be done with the below commands:
+
     ```
-        bcdedit /set {bootmgr} flightsigning on
-        bcdedit /set flightsigning on
-        ```
+    bcdedit /set {bootmgr} flightsigning on
+    bcdedit /set flightsigning on
+    ```
+
 2. To include this setting in the image, you can add the below fragment to the `Custom.BCD.xml`
 
     ```xml
@@ -174,7 +180,7 @@ In addition to the static customisations discussed above, you can also customize
     - To automatically process this provisioning package at boot time, this package is placed in `c:\windows\provisioning\packages`
     - In the iot-adk-addonkit, this file is created for each product under the product directory. Add feature id **PROV_AUTO** in the OEMInput xml file to include this in the image.
     - See [Provisioning.Auto](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Provisioning.Auto) package and [sample Customizations.xml](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Source-arm/Products/SampleA/prov/customizations.xml)
-    - For more details, refer to 
+    - For more details, refer to:
         - [Add a provisioning package](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-provisioning-package-to-an-image)
         - [Provisioning](https://aka.ms/iotcsplist) for supported Configuration Service Providers (CSPs) in IoT Core
 
