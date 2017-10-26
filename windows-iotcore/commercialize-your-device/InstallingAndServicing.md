@@ -1,21 +1,21 @@
 ---
-title: Universal Store support for IoTCore Apps
+title: Microsoft Store support for IoTCore Apps
 author: parameshbabu
 ms.author: pabab
 ms.date: 08/22/2017
 ms.topic: article
-description:  Windows 10 makes it easy to publish, install and service apps on IoT Core using Universal Windows Store.
+description:  Windows 10 makes it easy to publish, install and service apps on IoT Core using Microsoft Windows Store.
 keywords: UWP, Windows Dev Center, OEM, Preinstall, App Store, Servicing
 ---
 
-# Universal Store support for IoT Core UWP Apps
+# Microsoft Store support for IoT Core UWP Apps
 
-Microsoft makes it easy for OEMs to install and service UWP apps on Windows 10 IoT Core through the Universal Store. 
+Microsoft makes it easy for OEMs to install and service UWP apps on Windows 10 IoT Core through the Microsoft Store. 
 
 > [!IMPORTANT]
-> There is no support for Universal Store Client in IoT Core, i.e. you cannot browse and install applications from an IoT Core device and all required apps must be preinstalled or installed via other means such as OMA-DM/Azure DM.
+> There is no support for Microsoft Store Client in IoT Core, i.e. you cannot browse and install applications from an IoT Core device and all required apps must be preinstalled or installed via other means such as OMA-DM/Azure DM.
 
-The key steps required to use Universal Store are outlined below.
+The key steps required to use Microsoft Store are outlined below.
 
 ## Step 1 : Setup 
 A Windows Dev Center account and sign-up for the OEM preinstall program are required to use this feature. See [Account types](https://docs.microsoft.com/windows/uwp/publish/account-types-locations-and-fees) for information on individual accounts and company accounts. You can signup for a developer account at [Register as an app developer](https://developer.microsoft.com/en-us/store/register).
@@ -23,7 +23,7 @@ A Windows Dev Center account and sign-up for the OEM preinstall program are requ
 If you need multiple users to be managing the portal or if you need Special capabilities in your App,  See [Associate Azure Active Directory with your Dev Center account](https://docs.microsoft.com/windows/uwp/publish/associate-azure-ad-with-dev-center) for more details.
 
 ### OEM Preinstall Program
-You should enroll for the Windows Store OEM Preinstall program to be able to download the Store signed appx bundle that you can pre-install in your device.
+You should enroll for the Microsoft Store OEM Preinstall program to be able to download the Store signed appx bundle that you can pre-install in your device.
 
 The Steps for the enrollment are
 1.	Obtain and sign the IoT Commercialization Agreement (see [Commercialization portal](http://www.windowsforiotdevices.com/))
@@ -34,11 +34,11 @@ The Steps for the enrollment are
     - Provide Dev Center account 
     - Provide the App ID (app identity Ex: https://www.microsoft.com/store/apps/1abcdefghi23)
     - Provide the list of [special and restricted capabilities](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations#special-and-restricted-capabilities) that you use in your OEM apps for approval
-5.	Windows Store Partner OPS team verifies applications and enables permissions.
+5.	Microsoft Store Partner OPS team verifies applications and enables permissions.
     - All new app submissions (updates and new apps) to Dev Center following the granting of preinstall permission will be available for download from Dev Center
     - All approved restricted capabilities will be permitted for all app submissions
 
-## Step 2 : Publish UWP App to Universal Store
+## Step 2 : Publish UWP App to Microsoft Store
 Once you have the approval for the preinstall program, you can proceed with [app submissions](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
 
 Key elements to note here are
@@ -85,7 +85,7 @@ Now that an app has been published to the Microsoft Store, the app has a store s
 Publishing an update to store is simple.
 
 1. In the Windows Dev Center, create a new App Submission for the app to be updated.
-2. In Visual Studio, package the app as done earlier in Step 2 in the _Publish UWP App to Universal Store_ section. 
+2. In Visual Studio, package the app as done earlier in Step 2 in the _Publish UWP App to Microsoft Store_ section. 
 3. Upload the package to Windows Dev Center under the new submission and submit.
 4. After a successful app certification process, the devices will receive the published version as updates. 
 
