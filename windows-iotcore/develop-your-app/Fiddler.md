@@ -52,8 +52,8 @@ The steps below will allow your IoT VM or device to route traffic through your P
 1. Determine the IP of your development machine using a CMD console via _ipconfig_
 2. Start a new SSH session and this time, login as defaultUser (Username: _DefaultAccount_  Pwd: _[blank]_ )
 3. Set the proxy via the following commands:
-	* `reg add "hkcu\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyEnable /t REG\_DWORD /d 1`
-	* `reg add "hkcu\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyServer /t REG\_SZ /d [PC IP address]:8888`
+	* `reg add "hkcu\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyEnable /t REG_DWORD /d 1`
+	* `reg add "hkcu\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyServer /t REG_SZ /d [PC IP address]:8888`
 
 If not already running, start Fiddler on your PC, restart your VM or IoT Core device and traffic should now be routed through Fiddler. 
 
