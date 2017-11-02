@@ -47,3 +47,8 @@ The Graphics driver and chipset must support h.264 encoding and decoding to supp
 
 ## Windows IoT as a Miracast Sink
 ## Windows IoT as a Miracast Source
+
+> [!IMPORTANT]
+> Before trying to use your device as a Miracast Source, please turn off the IoTOnboardingTask app from the [Windows Device Portal](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/deviceportal) as shown below, which you'll only need to do once:
+> ![Turn off IoTOnboardingTask app](../media/Miracast/IoTOnboardingOff.gif)
+
