@@ -129,6 +129,11 @@ Windows IoT is a version of Windows 10 that is optimized for smaller devices wit
 
 ---
 
+<h2>Got Bugs?</h2>
+<p>If you'd like to report a bug, please use <a href="https://social.msdn.microsoft.com/Forums/en-US/fad1c6a0-e578-44a7-8e8d-95cc28c06ccd/need-logs-if-your-device-hasnt-updated-to-the-latest-iotcore-version?forum=WindowsIoT">the Feedback Hub app</a> or file an issue on <a href="https://github.com/MicrosoftDocs/windows-iotcore-docs">our GitHub</a>.
+
+---
+
 <h2>Forums</h2>
 <p>If anything comes up that the documentation doesn't answer, we have several different forums you can visit and ask questions.</p>
 <ul class="panelContent cardsW">
@@ -157,12 +162,5 @@ Windows IoT is a version of Windows 10 that is optimized for smaller devices wit
         </div>
     </li>
 </ul>
-
----
-
-<h2>Questions?</h2>
-<p>If you have questions or want to file a bug, please file an issue or submit a pull request in the appropriate
-    repository <a href="https://github.com/ms-iot">on our GitHub</a>.</p>
-
 
 
