@@ -58,3 +58,9 @@ The steps below will allow your IoT VM or device to route traffic through your P
 If not already running, start Fiddler on your PC, restart your VM or IoT Core device and traffic should now be routed through Fiddler. 
 
 Note: If you see https CONNECT in Fiddler but no data, the certificate was likely not installed correctly. Make sure you didn't miss the _Transfer and Import Fiddler Root Certificate_ steps above.
+
+Additonally, if you wish to turn the proxy back off note that the above reg keys get cached in a binary blob in another key. so, in addition to removing the keys just added in step 3 above you also need to do:
+
+	reg delete "hkcu\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections"
+	
+	
