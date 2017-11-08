@@ -24,14 +24,14 @@ The code sample below demonstrates how the [NetworkOperatorTetheringManager](htt
 ```
 using Windows.Networking.NetworkOperators;
 using Windows.Networking.Connectivity; 
-
-// Find the Ethernet profile
+ 
+// Find the Ethernet profile (IANA Type 6)
 var connectionProfiles = NetworkInformation.GetConnectionProfiles(); 
-var ethernetConnectionProfile = connectionProfiles.FirstOrDefault(x => x.IsEthernetConnectionProfile); 
+var ethernetConnectionProfile = connectionProfiles.FirstOrDefault(x => x.NetworkAdapter.IanaInterfaceType == 6); 
 
 // Find an 802.11 wireless network interface (IANA Type 71)
-var networkAdapters = NetworkInformation.GetNetworkAdapters();
-var targetNetworkAdapter = networkAdapters.FirstOrDefault(x => x.IanaInterfaceType == 71);
+var wirelessConnectionProfile = connectionProfiles.FirstOrDefault(x => x.NetworkAdapter.IanaInterfaceType == 71);
+var targetNetworkAdapter = wirelessConnectionProfile.NetworkAdapter;
 
 if (ethernetConnectionProfile != null && targetNetworkAdapter != null)
 {
