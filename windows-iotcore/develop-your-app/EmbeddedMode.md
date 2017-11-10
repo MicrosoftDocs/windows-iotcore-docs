@@ -2,7 +2,7 @@
 title: Embedded mode
 author: lilyhou
 ms.author: lihou
-ms.date: 08/28/2017
+ms.date: 11/10/2017
 ms.topic: article
 description: Learn how to configure Windows to allow embedded mode, enabling background applications and other capabilities.
 keywords: windows iot, embedded mode, background applications
@@ -10,40 +10,42 @@ keywords: windows iot, embedded mode, background applications
 
 # Embedded mode
 
-Windows and Windows Mobile can be configured to allow embedded mode. Embedded Mode enables:
+Embedded Mode is supported on Windows IoT Core and Windows IoT Enterprise. Embedded Mode enables:
 
-* Background Applications
+* [Background Applications (read more)](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/backgroundapplications)
 * Use of the lowLevelDevice capability
 * Use of systemManagement capability
 
-Embedded mode is only enabled by default on Window IoT Core and must be enabled on standard Windows and Windows Mobile.
+Embedded mode is always enabled on Window IoT Core.
+Embedded mode must be enabled by following the steps below on Windows IoT Enterprise.
 
 ## Background Applications
 
-Background Applications are created using the Background Application (IoT) template in Visual Studio.  For more information about the Background Application (IoT) template see [Windows IoT Core Project Templates](https://go.microsoft.com/fwlink/?linkid=847472).  
+Background Applications are created using the Background Application (IoT) template in Visual Studio.
+Read more about creating [Background Applications](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/backgroundapplications).
 
-Background applications run without stopping and have no resource limits enforced by resource manager. Also, if the background application stops for some reason and embedded mode is enabled the background application will be restarted by the system.  
+Background applications run without stopping and without resource limits. Also, if the background application stops for some reason and embedded mode is enabled the background application will be restarted by the system.
 
 While the system will automatically restart background applications, system lockdown features must be enabled to prevent users from stopping or interfering with the operation of Background Applications.
 
 ## lowLevelDevice Capability
 
-The lowLevelDevice Capability gives access to low-level hardware interfaces like GPIO, SPI, and I2C. 
+The lowLevelDevice Capability gives access to low-level hardware interfaces like GPIO, SPI, and I2C.
 
 * [Blinky Sample(GPIO)](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinky)
 * [SPI Accelerometer Sample](https://developer.microsoft.com/en-us/windows/iot/samples/SPIaccelerometer)
-* [I2C Accelerometer Sample](https://developer.microsoft.com/en-us/windows/iot/samples/I2Caccelerometer) 
+* [I2C Accelerometer Sample](https://developer.microsoft.com/en-us/windows/iot/samples/I2Caccelerometer)
 
 ## systemManagment Capability
 
-When you enable the systemManagment capabilities for your application this is the set of APIs that gets unlocked:   
+When you enable the systemManagment capabilities for your application this is the set of APIs that gets unlocked:  
 
 * [Windows.System.ProcessLauncher](https://msdn.microsoft.com/library/windows/apps/windows.system.processlauncher.aspx)
 * [Windows.System.TimeZoneSettings](https://msdn.microsoft.com/library/windows/apps/windows.system.timezonesettings.aspx)
 * [Windows.System.ShutdownManager](https://msdn.microsoft.com/library/windows/apps/windows.system.shutdownmanager.aspx)
 * [Windows.Globalization.Language.TrySetInputMethodLanguageTag](https://msdn.microsoft.com/library/windows/apps/windows.globalization.language.trysetinputmethodlanguagetag.aspx)
 
-## Debugging Background Applications 
+## Debugging Background Applications
 
 If you are debugging on a device that is not running Windows IoT Core and you see either of the following error messages you need to ensure AllowEmbeddedMode is enabled on the device and that the Embedded Mode service is running:
 
@@ -98,18 +100,11 @@ To enable embedded mode you will need to create a provisioning package in Imagin
 
     ![Step12](../media/EmbeddedMode/Step12.png)
 
-13. Install the provisioning package (PPKG).
-    * If enabling embedded mode on standard windows double-click on the PPKG. 
-    * If enabling embedded mode on mobile drag the PPKG and drop it on the windows phone icon in explorer.
-    ![Step13](../media/EmbeddedMode/Step13.png)
+13. To install the embedded mode .PPKG on Windows IoT Enterprise double-click on the .PPKG.
 
 14. Click **Yes, add it**.
-    * On standard windows click yes on the LUA dialog if it appears, and the click **Yes, add it** on the dialog.
+    Click yes on the LUA dialog if it appears, and the click **Yes, add it** on the dialog shown below.
     ![Step14Standard](../media/EmbeddedMode/Step14Standard.png)
-    
-    * On mobile look at your phone and on the phone press the **Yes, add it** button.
-    
-    ![Step14Mobile](../media/EmbeddedMode/Step14Mobile.png)
 
 
 ## Configuring a Background Application to Run automatically
