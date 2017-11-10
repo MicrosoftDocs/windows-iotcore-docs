@@ -16,7 +16,8 @@ Windows and Windows Mobile can be configured to allow embedded mode. Embedded Mo
 * Use of the lowLevelDevice capability
 * Use of systemManagement capability
 
-Embedded mode is only enabled by default on Window IoT Core and must be enabled on standard Windows and Windows Mobile.
+Embedded mode is always enabled on Window IoT Core.
+Embedded mode must be enabled by following the steps below on Windows IoT Enterprise.
 
 ## Background Applications
 
