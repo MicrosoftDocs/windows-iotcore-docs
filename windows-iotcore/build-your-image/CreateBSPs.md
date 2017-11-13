@@ -77,6 +77,27 @@ You can also recreate the cab files with the below script, the cab files will be
 
 [Apollo Lake](https://www.intel.com/content/www/us/en/embedded/products/apollo-lake/overview.html) drivers are available at [Apollo Lake BSP](https://www.intel.com/content/www/us/en/embedded/products/apollo-lake/technical-library.html#grouping=3)
 
+### Braswell / Cherry trail
+The BSP supporting Braswell/Cherry trail are available at [Braswell BSP](https://www.intel.com/content/www/us/en/embedded/products/braswell/software-and-drivers.html).
+
+> [!TIP]
+> The published BSP works with Windows 10 ADK release 1703 (15063 ).
+
+Follow the steps below to use this BSP with the Windows 10 ADK release 1709 (16299) with iot-adk-addonkit version 4.0 or later.
+
+1. Download the BSP package and install 
+2. Copy files 
+	- For x64, from `C:\Program Files (x86)\Intel IoT\Source-x64` to `iot-adk-addonkit\Source-x64` 
+	- For x86, from `C:\Program Files (x86)\Intel IoT\Source-x86` to `iot-adk-addonkit\Source-x86` 
+3. Launch IoTCoreShell, select arch (x64 / x86) as required 
+3. In the IoTCoreShell, run the below command to convert the BSP files to latest format and build
+	* For x64, 
+		- run `.\bsptools\BSWx64\convert.cmd`
+		- `buildbsp BSWx64`
+	* For x86, 
+		- run `.\bsptools\BSWx86\convert.cmd`
+		- `buildbsp BSWx86`
+
 ### Joule
 
 Joule drivers are available at [Joule BSP](https://downloadcenter.intel.com/download/26797/Windows-10-IoT-Core-Files-for-Intel-Joule-Compute-Module).
