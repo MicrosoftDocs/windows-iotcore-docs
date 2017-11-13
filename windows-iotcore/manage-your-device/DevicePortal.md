@@ -48,6 +48,7 @@ Provides install/uninstall functionality for AppX packages and bundles on your d
 IoT Core is unique in that it only allows one foreground app to run at one time. The app list is modified to ensure that this is the case. Under the **STARTUP** column, you can select as many background applications to start by default, but can only set one foreground application.  
 
 ### App File Explorer
+
 The app file explorer shows the directories that your apps can access.
 
 * CameraRoll is shared among all apps
@@ -84,7 +85,7 @@ IoT Onboarding provides support for configuring an IoT device's Wi-Fi connectivi
 
 **Internet Connection Sharing (ICS)**
 Internet Connection Sharing allows you to share the Internet access of your device with other devices connected to your device over the Wi-Fi SoftAP.
-To use this feature, your Windows 10 IoT Device needs to have access to the internet (e.g. through a wired LAN connection), an *Access Point Adapter* must be chosen (e.g. a Wi-Fi Adapter) and the SoftAP needs to be enabled.   You also need to start shared access.  Once started, connect a separate Wi-Fi enabled device to the SoftAP on your Windows 10 IoT device.  After a connection is established your separate Wi-Fi enabled device will be able to connect to the internet through your Windows 10 IoT device.
+To use this feature, your Windows 10 IoT Device needs to have access to the internet (e.g. through a wired LAN connection).  In 'Connectivity->Onboarding->SoftAP settings' click 'enable' and set SSID name and password.  Then in 'Connectivity->Internet connection sharing' for 'access point adapter' select "Microsoft Wi-FI Direct Virtual Adapter #2" and for 'shared network adapter' select your your wired ethernet adapter.  Finally, click 'start shared access.'  Once started, connect a separate Wi-Fi enabled device to the SoftAP on your Windows 10 IoT device.  After a connection is established your separate Wi-Fi enabled device will be able to connect to the internet through your Windows 10 IoT device.
 
 > [!NOTE]
 > ICS is disabled when a Wi-Fi profile exists on the device. 
