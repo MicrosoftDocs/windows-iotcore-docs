@@ -38,6 +38,7 @@
 ### [Event tracing](manage-your-device/EventTracing.md)
 ### [Azure Device Management](manage-your-device/AzureIoTDM.md)
 ### [Device management](manage-your-device/DeviceManagement.md)
+### [Project Rome](manage-your-device/ProjectRome.md)
 ### [Network packet capture](manage-your-device/NetworkPacketCapture.md)
 ### [Windows Debugger](manage-your-device/WindowsDebugger.md)
 ### [Windows File Sharing](manage-your-device/WindowsFileSharing.md)
