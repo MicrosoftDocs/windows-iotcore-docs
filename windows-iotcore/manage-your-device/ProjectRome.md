@@ -24,7 +24,7 @@ _Steps:_
 1. Run the RemoteSystems sample on your desktop 
 2. Under "1) Discovery," click "Search for systems" 
 
-![Search for systems](../images/SearchForSystems.gif)
+![Search for systems](../media/ProjectRome/SearchForSystems.gif)
  
 ## Control IoT Core devices with RemoteSystems.LaunchUri 
  
