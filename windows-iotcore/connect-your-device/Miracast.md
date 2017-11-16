@@ -51,4 +51,11 @@ The Graphics driver and chipset must support h.264 encoding and decoding to supp
 > [!IMPORTANT]
 > Before trying to use your device as a Miracast Source, please turn off the IoTOnboardingTask app from the [Windows Device Portal](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/deviceportal) as shown below, which you'll only need to do once:
 > ![Turn off IoTOnboardingTask app](../media/Miracast/IoTOnboardingOff.gif)
+> Afterwards, please restart the device
 
+You can set up Miracast casting on your compatible device through public APIs from the `Windows.Media.Casting` namespace in your app.
+
+To see these APIs in action, download the [BasicMediaCasting UWP sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/BasicMediaCasting) and run it on your device. The APIs in the sample cover the following scenarios, all of which run on Miracast-compatible IoT Core devices:
+1. Basic Media Casting, which uses the built-in casting to send content to Miracast, DLNA, and Bluetooth devices
+2. Casting Using the Casting Picker, which allows you to further customize the Device Picker
+3. Casting Using a Custom Picker, which illustrates how to build custom UX for selecting devices
