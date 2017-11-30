@@ -75,7 +75,7 @@ For IoT Core products, it is recommended that you configure your devices to rebo
 This is achieved with setting the following registry keys:
 
     ```
-    HKLM\SOFTWARE\CurrentControlSet\Control\CrashControl
+    HKLM\SYSTEM\CurrentControlSet\Control\CrashControl
         AutoReboot set to 1
         DisplayDisabled set to 1
     ```
@@ -85,8 +85,8 @@ This is achieved with setting the following registry keys:
 1. Connect to your IoT device ([using SSH](../connect-your-device/SSH.md) or [using Powershell](../connect-your-device/powershell.md)) and set the following registry keys
 
     ```
-    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\CurrentControlSet\Control\CrashControl" /v AutoReboot /t REG_DWORD /d 1 /f
-    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\CurrentControlSet\Control\CrashControl" /v DisplayDisabled /t REG_DWORD /d 1 /f
+    reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl" /v AutoReboot /t REG_DWORD /d 1 /f
+    reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl" /v DisplayDisabled /t REG_DWORD /d 1 /f
     ```
 
 2. See [Forcing a System Crash from the keyboard](https://docs.microsoft.com/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard) and configure a key to force the system crash.
