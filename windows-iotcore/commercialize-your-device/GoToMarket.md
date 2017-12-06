@@ -9,7 +9,7 @@ keywords: windows 10 IoT Core, commercialize, go to market
 ---
 
 # Go to market with Windows IoT Core 
-On this page we will review the key items that needs to be considered in the **Go to market** process. 
+On this page we will review the key items that need to be considered in the **Go to market** process. 
 
 ## Understand licensing requirements
 * See [Windows 10 IoT Core Commercialization](https://developer.microsoft.com/en-us/windows/iot/getstarted/commercialize/commercialterms) to understand the licensing requirements.
