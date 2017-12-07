@@ -59,3 +59,6 @@ To see these APIs in action, download the [BasicMediaCasting UWP sample](https:/
 1. Basic Media Casting, which uses the built-in casting to send content to Miracast, DLNA, and Bluetooth devices
 2. Casting Using the Casting Picker, which allows you to further customize the Device Picker
 3. Casting Using a Custom Picker, which illustrates how to build custom UX for selecting devices
+
+> [!NOTE]
+> Some Miracast sinks do not work at this time. We recommend using the [Microsoft Wireless Display Adapter](https://www.microsoft.com/accessories/en-us/products/adapters/wireless-display-adapter-2/p3q-00001) with a compatible monitor as your Miracast sink.
