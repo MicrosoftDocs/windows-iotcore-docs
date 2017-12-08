@@ -20,6 +20,7 @@
 ### [Windows IoT Dashboard](connect-your-device/IoTDashboard.md)
 ### [PowerShell](connect-your-device/PowerShell.md)
 ### [SSH](connect-your-device/SSH.md)
+### [MTP](connect-your-device/MTP.md)
 ### [FTP](connect-your-device/FTP.md)
 ### [DISM](connect-your-device/DISM.md) 
 ### [Wi-Fi Direct](connect-your-device/SetupWiFiDirect.md)
