@@ -54,6 +54,7 @@ To enable your device as a Miracast sink, you will need to enable the Connect ap
 To enable the Connect app, you'll need to include the **IOT_MIRACAST_RX_APP** to your image. See [this page](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-feature-list) for more details about how to add features to your image.
 
 ### Enable Miracast
+
 Connect to your device through [PowerShell](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/powershell) or the [Windows Device Portal](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/deviceportal) and run the following commands:
 ```
 reg add HKLM\Software\Microsoft\PlayToReceiver /v AutoEnabled /t REG_DWORD /d 1  
@@ -62,6 +63,7 @@ reg add HKLM\Software\Microsoft\MiracastReceiver /v NetworkQualificationEnabled 
 reg add HKLM\Software\Microsoft\MiracastReceiver /v EnabledOnACOnly /t REG_DWORD /d 1  
 ```
 This will enable Miracast without a consent notification, only on secure networks, and only while connected to A/C power. This is the recommended way to run a Miracast receiver on IoT Core.
+
 ## Windows IoT as a Miracast Source
 
 > [!IMPORTANT]
