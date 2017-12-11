@@ -46,6 +46,22 @@ The Wi-Fi driver and chipset for the device must support Wi-Fi Direct, among oth
 The Graphics driver and chipset must support h.264 encoding and decoding to support Miracast. If your device does not have a compatible graphics driver and/or chipset, you will have to pick a new device. Please consult the above matrix when choosing a Miracast-compatible device.
 
 ## Windows IoT as a Miracast Sink
+
+To enable your device as a Miracast sink, you will need to enable the Connect app on your device, then enable Miracast in the registry.
+
+### Enable the Connect App
+
+To enable the Connect app, you'll need to include the **Microsoft-Windows-Miracast-Receiver-API** package on your device. See [these instructions](https://docs.microsoft.com/en-us/windows/iot-core/build-your-image/createinstallpackage#step-3-install-on-device) to learn how.
+
+### Enable Miracast
+Connect to your device through [PowerShell](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/powershell) or the [Windows Device Portal](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/deviceportal) and run the following commands:
+```
+reg add HKLM\Software\Microsoft\PlayToReceiver /v AutoEnabled /t REG_DWORD /d 1  
+reg add HKLM\Software\Microsoft\MiracastReceiver /v  ConsentToast /t REG_DWORD /d 0  
+reg add HKLM\Software\Microsoft\MiracastReceiver /v NetworkQualificationEnabled /t REG_DWORD /d 1  
+reg add HKLM\Software\Microsoft\MiracastReceiver /v EnabledOnACOnly /t REG_DWORD /d 1  
+```
+This will enable Miracast without a consent notification, only on secure networks, and only while connected to A/C power. This is the recommended way to run a Miracast receiver on IoT Core.
 ## Windows IoT as a Miracast Source
 
 > [!IMPORTANT]
