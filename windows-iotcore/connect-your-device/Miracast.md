@@ -27,7 +27,7 @@ If the device supports Miracast, you should see the output below:
 
 ![Compatible Device Output](../media/Miracast/CompatibleDevice.png)
 
-The below table shows Miracast compatability for the IoT Core reference platforms:
+The below table shows Miracast compatibility for the IoT Core reference platforms:
 
 | Board | SoC | WiFi Drivers Present | Graphics Drivers Present | Miracast-Compatible |
 |-------|-----|----------------------|--------------------------|---------------------|
@@ -79,4 +79,4 @@ To see these APIs in action, download the [BasicMediaCasting UWP sample](https:/
 3. Casting Using a Custom Picker, which illustrates how to build custom UX for selecting devices
 
 > [!NOTE]
-> Some Miracast sinks do not work at this time. We recommend using the [Microsoft Wireless Display Adapter](https://www.microsoft.com/accessories/en-us/products/adapters/wireless-display-adapter-2/p3q-00001) with a compatible monitor as your Miracast sink.
+> Some Miracast sinks are incompatible with IoT Core casting devices. We recommend using the [Microsoft Wireless Display Adapter](https://www.microsoft.com/accessories/en-us/products/adapters/wireless-display-adapter-2/p3q-00001) with a compatible monitor as your Miracast sink.
