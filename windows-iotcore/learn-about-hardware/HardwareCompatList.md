@@ -15,6 +15,7 @@ Windows 10 IoT Core supports a variety of peripheral interfaces and protocols, i
 > [!NOTE]
 > This list is not exhaustive. There are many other peripherals not listed on this page that are compatible with Windows 10 IoT Core. If a device you don't see listed but is class-compliant with what's already supported in Windows 10 IoT Core, then it will work. 
 
+
 Looking for information about supported hardware platforms? Click [here](https://developer.microsoft.com/en-us/windows/iot/getstarted/prototype/selectdevice) for a list of development boards compatible with Windows.
 
 ## USB Devices
