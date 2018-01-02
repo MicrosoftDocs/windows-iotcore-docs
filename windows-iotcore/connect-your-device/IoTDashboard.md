@@ -80,7 +80,7 @@ You can also connect to the device using Windows PowerShell.
 ___
 IoT Dashboard lets you provision IoT Core devices with Azure IoT Hub. You can read more about it in this [blog post](https://blogs.windows.com/buildingapps/2016/07/20/building-secure-apps-for-windows-iot-core).
 
-[Learn how to use the IoT Dashboard with Azure](../media/IoTDashboard/IoTDashboard_Azure.PNG)
+[Learn how to use the IoT Dashboard with Azure](https://docs.microsoft.com/en-us/windows/iot-core/connect-to-cloud/connectdevicetocloud)
 
 ## Quick Run Samples
 ___
