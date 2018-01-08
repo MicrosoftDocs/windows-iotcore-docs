@@ -79,4 +79,4 @@ To see these APIs in action, download the [BasicMediaCasting UWP sample](https:/
 3. Casting Using a Custom Picker, which illustrates how to build custom UX for selecting devices
 
 > [!NOTE]
-> Some Miracast sinks are incompatible with IoT Core casting devices. We recommend using the [Microsoft Wireless Display Adapter](https://www.microsoft.com/accessories/en-us/products/adapters/wireless-display-adapter-2/p3q-00001) with a compatible monitor as your Miracast sink.
+> Some Miracast sinks (Surface Laptop, Surface Hub, PC with a Wireless Display Adapter) are incompatible with IoT Core casting devices. We recommend using the [Microsoft Wireless Display Adapter](https://www.microsoft.com/accessories/en-us/products/adapters/wireless-display-adapter-2/p3q-00001) with a compatible monitor as your Miracast sink.
