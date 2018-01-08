@@ -69,6 +69,7 @@
 ### [Overview](connect-to-cloud/Overview.md)
 ### [Connect your device](connect-to-cloud/ConnectDeviceToCloud.md)
 ### [Connect your app](connect-to-cloud/ConnectAppToCloud.md)
+### [Manage your devices](connect-to-cloud/ManageDevices.md)
 ## [Extend your app]()
 ### [Cortana on IoT](extend-your-app/CortanaOnIoTCore.md)
 ### [Computer vision](extend-your-app/ComputerVision.md) 
