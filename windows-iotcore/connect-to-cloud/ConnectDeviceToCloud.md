@@ -4,7 +4,7 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn how to connect your deice to the cloud.
+description: Learn how to connect your device to the cloud.
 keywords: windows iot, Azure, security, Trusted Platform Module, SoC
 ---
 
