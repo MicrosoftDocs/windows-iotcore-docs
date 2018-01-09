@@ -26,10 +26,6 @@ A complete solution requires the following:
   * The Windows IoT Azure DM Client (an open source SDK + runtime), in conjunction with Azure IoT Hub, can apply and report on a large set of common, sometimes critical, Windows configurations.
 
 * A Portal or an Application that will be used by the operator to configure and query the devices remotely.
-  * This must be customized for devices by the device OEM or operator. As part of this solution, we also provide an open source data model and implementation for easier interaction with the IoT Hub storage and the Windows IoT client.
+  * This must be customized for devices by the device OEM or operator. As part of this solution, we also provide an open source data model and sample implementation for easier interaction with the IoT Hub storage and the Windows IoT client.
 
-The links provided below will point to resources in the main [Device Management Client repo])https://github.com/ms-iot/iot-core-azure-dm-client/tree/develop) that will help you in managing your Windows devices.
-
-1. [Overview of the Device Management Client for Windows IoT Core](https://github.com/ms-iot/iot-core-azure-dm-client/tree/develop)
-2. [Overview of Device Health Attestation](https://github.com/ms-iot/iot-core-azure-dm-client/blob/develop/docs/device-health-attestation.md)
-3. [Device Health Attestation Architecture](https://github.com/ms-iot/iot-core-azure-dm-client/blob/develop/docs/dha-architecture.md)
+To learn more about device management for Windows devices, visit the main [Device Management Client repo])https://github.com/ms-iot/iot-core-azure-dm-client/tree/master).
