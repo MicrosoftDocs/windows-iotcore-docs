@@ -26,8 +26,8 @@ If you need multiple users to be managing the portal or if you need Special capa
 You should enroll for the Microsoft Store OEM Preinstall program to be able to download the Store signed appx bundle that you can pre-install in your device.
 
 The Steps for the enrollment are
-1.	Obtain and sign the IoT Commercialization Agreement (see [Commercialization portal](http://www.windowsforiotdevices.com/))
-2.	You will receive an email with Preinstall Permissions Request Form.
+1.	Fill out the [IoT Commercialization Agreement Interest form](https://developer.microsoft.com/en-us/windows/iot/getstarted/commercialize/commercialterms).
+2.	You will receive a DocuSign agreement over email. Once signed, you will need to fill out the [Preinstall Permissions Request Form](../media/InstallingAndServicing/Preinstall-Permissions-Request-Form_v3.0.docx).
 3.	Sign into the Dev Center Portal and [reserve a name for your app](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name) 
 4.	Complete the form for the OEM App you want to publish and send email to partnerops@microsoft.com
     - Provide OEM ID
