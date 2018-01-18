@@ -59,8 +59,8 @@ In order for headless apps to meet store compliance there needs to be a "head" a
 4. Locate files \<blank_app_name\>.exe and \<blank_app_name\>.dll and copy the files to the root directory of your background app project.
 5. Include the newly added file to the Visual Studio project and set to "Content"
 6. Open the Package.appxmanifest in Code mode (right-click and choose View Code) for the headless app and modify the following:  
-    - Add the attribute _Executable="\<Filename of .exe copied to project\>.exe"_ to the element _Application_
-    - Add the attribute _EntryPoint="\<Namespace of Blank XAML project\>.App"_ to the element _Application_
+    - Add the attribute _Executable="\<Filename of .exe copied to project\>.exe"_ to the element _Application_. Make sure the capitalization matches the .appxmanifest from the **Blank App** project. 
+    - Add the attribute _EntryPoint="\<Namespace of Blank XAML project\>.App"_ to the element _Application_. Make sure the capitalization matches the .appxmanifest from the **Blank App** project. 
     - Remove the AppListEntry attribute from the element _uap:VisualElements_
 
 7. With the app submission created the next step is to [package the UWP app](https://msdn.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps) and upload to the app submission in Windows Dev Center. For IoT Core it is important to set  **Generate app bundle** to **Never**. This will allow the Windows Dev Center to generate the correct package for preinstall on IoT Core.
