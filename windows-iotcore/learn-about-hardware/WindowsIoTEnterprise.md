@@ -25,6 +25,8 @@ Jason to fill in
 ## Differences between Windows 10 IoT Core and Windows 10 IoT Enterprise
 While Windows 10 IoT Core and Windows 10 IoT Enterprise are similar in name, there are quite a few differences in what they offer as well as what they support. Below is a feature list that highlights editions differences.
 
+For minimum requirement details, please visit [the Windows Hardware site](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
+
 > |             |  IoT Core  |  IoT Enterprise  |
 > |-------------|----------|---------|
 > | User experience | Single UWP app running at startup with supporting background apps and services. | Traditional Windows Shell with Advanced Lockdown Features |
