@@ -8,6 +8,7 @@
 ### [Headed and headless devices](learn-about-hardware/HeadlessMode.md)
 ### [Driver deployment](learn-about-hardware/DriverDeployment.md)
 ### [Universal Driver Creation](learn-about-hardware/DriverCreation.md)
+### [Windows 10 IoT Enterprise](learn-about-hardware/WindowsIoTEnterprise.md) 
 ### [Overview of USB Support](learn-about-hardware/USB-Support.md)
 ### [Windows 10 IoT Core API Porting Tool](learn-about-hardware/IoTCorePortingTool.md)
 ### [Install USB peripheral drivers](learn-about-hardware/PeripheralDrivers.md)
