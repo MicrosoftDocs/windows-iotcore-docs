@@ -1,6 +1,7 @@
 # [Windows IoT Core documentation](index.md)
 ## [Learn about hardware]()
 ### [Hardware compatibility list](learn-about-hardware/HardwareCompatList.md)
+### [Windows 10 IoT Enterprise](learn-about-hardware/WindowsIoTEnterprise.md)
 ### [Pin Mappings]()
 #### [Raspberry Pi 2 and 3](learn-about-hardware/PinMappings/PinMappingsRPI.md)
 #### [Dragonboard](learn-about-hardware/PinMappings/PinMappingsDB.md)
