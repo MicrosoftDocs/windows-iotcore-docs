@@ -5,7 +5,7 @@ ms.author: saclayt
 ms.date: 01/18/2017
 ms.topic: article
 description: Learn about what Windows 10 IoT Enterprise is and what you can do with it.
-keywords: windows 10 IoT Enterprise, Enterprise, binary, Windows
+keywords: Windows 10 IoT Enterprise, Enterprise, binary, Windows
 ---
 
 # An overview of Windows 10 IoT Enterprise
@@ -21,22 +21,22 @@ In order to start your journey in manufacturing with Windows 10 IoT Enterprise, 
 ## Fixed purpose devices 
 
 > [TIP]
-> See your licensing agreement for complete guidance on all Windows IoT Enterprise usage scenarios.
+> See your licensing agreement for complete guidance on all Windows 10 IoT Enterprise usage scenarios.
 
-The Windows IoT Enterprise edition is licensed to allow you to build fixed purpose devices like Thin Clients, ATM Machines, Point-of-Sale Terminals, Industrial Automation Systems, etc.  There are specific allowances and restrictions in the license agreement. 
+The Windows 10 IoT Enterprise edition is licensed to allow you to build fixed purpose devices like Thin Clients, ATM Machines, Point-of-Sale Terminals, Industrial Automation Systems, etc.  There are specific allowances and restrictions in the license agreement. 
 
 In general a fixed purpose device differs from a general purpose device in the following ways:  
 * The device is locked down to a single application or fixed set of applications through the Assigned Access or Shell Launcher features.  
 * The device powers-on immediately to the experience when recieved by the end-customer. This is achieved by configuring the device image to skip the normal Windows out-of-box experiences.
 * Keyboards, USB ports, and device policies are locked down to constrain the device to be used only in its fixed purpose.  
-* The OEM licenses the device to the user with the software attached to the device as a complete product and passes through specific Windows terms in thier own agreements.
+* The OEM licenses the device to the user with the software attached to the device as a complete product and passes through specific Windows terms in their own agreements.
 
 ## Differences between Windows 10 IoT Core and Windows 10 IoT Enterprise
 While Windows 10 IoT Core and Windows 10 IoT Enterprise are similar in name, there are differences in what they offer as well as what they support. Below is a feature list that highlights edition differences.
 
 For minimum requirement details, please visit [the Windows Hardware site](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
 
-> |             |  IoT Core  |  IoT Enterprise  |
+> |             | Windows 10 IoT Core  |  Windows 10 IoT Enterprise  |
 > |-------------|----------|---------|
 > | User experience | Single UWP app running at startup with supporting background apps and services. | Traditional Windows Shell with Advanced Lockdown Features |
 > | Headless supported | Yes | Yes |
