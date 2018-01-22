@@ -86,7 +86,7 @@ To invoke a Background Application, you can either:
 
     2. From the PS session, type:
             
-            [192.168.0.243]: PS C:\> iotstartup list BackgroundApplication1
+            [<your IP address>]: PS C:\> iotstartup list BackgroundApplication1
 
     3. You should see the full name of your Background Application, i.e. something like:
 
@@ -97,7 +97,7 @@ To invoke a Background Application, you can either:
 
     5. Now, it's easy to set this app as a 'Startup App'. Just type the command:
 
-            [192.168.0.243]: PS C:\> iotstartup add headless BackgroundApplication1
+            [<your IP address>]: PS C:\> iotstartup add headless BackgroundApplication1
 
     6. The utility will confirm that your Background Application has been added to the list of headless 'Startup Apps':
 
@@ -105,13 +105,13 @@ To invoke a Background Application, you can either:
 
     7. Go ahead and restart your Windows IoT Core device. From the PS session, you can issue the shutdown command:
 
-            [192.168.0.243]: PS C:\> shutdown /r /t 0
+            [<your IP address>]: PS C:\> shutdown /r /t 0
 
     8. Once the device has restarted, your Background Application will start automatically and Windows 10 IoT Core will make sure that it gets restarted anytime it stops.
 
     9. You can remove your Background Application from the list of headless Startup Apps by typing the command:
 
-            [192.168.0.243]: PS C:\> iotstartup remove headless BackgroundApplication1
+            [<your IP address>]: PS C:\> iotstartup remove headless BackgroundApplication1
 
     10. The utility will confirm that your Background Application has been removed from the list of headless 'Startup Apps':
 
