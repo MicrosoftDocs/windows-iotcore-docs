@@ -85,35 +85,35 @@ To invoke a Background Application, you can either:
     1. Start a PowerShell (PS) session with your Windows IoT Core device as described [here](../connect-your-device/PowerShell.md).
 
     2. From the PS session, type:
-
-            `[192.168.0.243]: PS C:\> iotstartup list BackgroundApplication1`
+            
+            [<your IP address>]: PS C:\> iotstartup list BackgroundApplication1
 
     3. You should see the full name of your Background Application, i.e. something like:
 
-            `Headed   : BackgroundApplication1-uwp_cqewk5knvpvee!App`
-            `Headless : BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee`
+            Headed   : BackgroundApplication1-uwp_cqewk5knvpvee!App
+            Headless : BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee
 
     4. The utility is confirming that your Background Application is an 'headless' application, and is installed correctly.  You will likely see a Headed entry as well for your Background Applications, but this can be disregarded.
 
     5. Now, it's easy to set this app as a 'Startup App'. Just type the command:
 
-            `[192.168.0.243]: PS C:\> iotstartup add headless BackgroundApplication1`
+            [<your IP address>]: PS C:\> iotstartup add headless BackgroundApplication1
 
     6. The utility will confirm that your Background Application has been added to the list of headless 'Startup Apps':
 
-           `Added Headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpveeplication1`
+           Added Headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpveeplication1
 
     7. Go ahead and restart your Windows IoT Core device. From the PS session, you can issue the shutdown command:
 
-            `[192.168.0.243]: PS C:\> shutdown /r /t 0`
+            [<your IP address>]: PS C:\> shutdown /r /t 0
 
     8. Once the device has restarted, your Background Application will start automatically and Windows 10 IoT Core will make sure that it gets restarted anytime it stops.
 
     9. You can remove your Background Application from the list of headless Startup Apps by typing the command:
 
-            `[192.168.0.243]: PS C:\> iotstartup remove headless BackgroundApplication1`
+            [<your IP address>]: PS C:\> iotstartup remove headless BackgroundApplication1
 
     10. The utility will confirm that your Background Application has been removed from the list of headless 'Startup Apps':
 
-            `Removed headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee`
+            Removed headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee
 
