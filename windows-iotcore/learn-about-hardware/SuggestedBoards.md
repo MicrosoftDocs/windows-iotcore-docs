@@ -35,7 +35,7 @@ The publicly available boards below are some of the same devices Microsoft uses 
 > Hardware features listed below may not be fully supported in all configurations
 
 
-|                      |Raspberry Pi 2 v1.1 boards and earlier|Raspberry Pi 3| UpSquared | DragonBoard 410c |
+|                      |Raspberry Pi 2 v1.1 boards and earlier|Raspberry Pi 3| Up Squared | DragonBoard 410c |
 |----------------------|-------------------|--------------|-------------------|---------------|
 |SoC  | Broadcom BCM2836 | Broadcom BCM2837 | [Intel® Celeron™ N3350 2.4 GHz](https://ark-care.intel.com/products/95598/Intel-Celeron-Processor-N3350-2M-Cache-up-to-2_4-GHz) | [Qualcomm Snapdragon 410](https://www.qualcomm.com/products/snapdragon/processors/410) |
 |BSPs | [Raspberry drivers](https://github.com/ms-iot/bsp) | [Raspberry drivers](https://github.com/ms-iot/bsp) | [Baytrail drivers](https://www.intel.com/content/www/us/en/embedded/products/bay-trail/software-and-drivers.html) | [Dragonboard 410c drivers](https://developer.qualcomm.com/hardware/dragonboard-410c/software) |
