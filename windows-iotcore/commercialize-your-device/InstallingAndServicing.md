@@ -26,8 +26,8 @@ If you need multiple users to be managing the portal or if you need Special capa
 You should enroll for the Microsoft Store OEM Preinstall program to be able to download the Store signed appx bundle that you can pre-install in your device.
 
 The Steps for the enrollment are
-1.	Obtain and sign the IoT Commercialization Agreement (see [Commercialization portal](http://www.windowsforiotdevices.com/))
-2.	You will receive an email with Preinstall Permissions Request Form.
+1.	Fill out the Commercialization Agreement Interest form [here](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4oorCHCXCJHla0pHy8o5GpUMlVHVkNZNVVON1ZTVUQ0T0lHS1pDV0JFVy4u). You will receive an agreement to sign via email.
+2.	Once the agreement is signed, you will receive an email with the Preinstall Permissions Request Form. Please email saclayt@microsoft.com if you do not receive this form.
 3.	Sign into the Dev Center Portal and [reserve a name for your app](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name) 
 4.	Complete the form for the OEM App you want to publish and send email to partnerops@microsoft.com
     - Provide OEM ID
@@ -59,8 +59,8 @@ In order for headless apps to meet store compliance there needs to be a "head" a
 4. Locate files \<blank_app_name\>.exe and \<blank_app_name\>.dll and copy the files to the root directory of your background app project.
 5. Include the newly added file to the Visual Studio project and set to "Content"
 6. Open the Package.appxmanifest in Code mode (right-click and choose View Code) for the headless app and modify the following:  
-    - Add the attribute _Executable="\<Filename of .exe copied to project\>.exe"_ to the element _Application_
-    - Add the attribute _EntryPoint="\<Namespace of Blank XAML project\>.App"_ to the element _Application_
+    - Add the attribute _Executable="\<Filename of .exe copied to project\>.exe"_ to the element _Application_. Make sure the capitalization matches the .appxmanifest from the **Blank App** project. 
+    - Add the attribute _EntryPoint="\<Namespace of Blank XAML project\>.App"_ to the element _Application_. Make sure the capitalization matches the .appxmanifest from the **Blank App** project. 
     - Remove the AppListEntry attribute from the element _uap:VisualElements_
 
 7. With the app submission created the next step is to [package the UWP app](https://msdn.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps) and upload to the app submission in Windows Dev Center. For IoT Core it is important to set  **Generate app bundle** to **Never**. This will allow the Windows Dev Center to generate the correct package for preinstall on IoT Core.
