@@ -11,8 +11,8 @@
         topicHref: "/windows/iot-core/index"  
         items:
               - name: Windows 10 IoT Enterprise
-                tocHref: /windows/iot-core/windowsiotenterprise
-                topicHref: "/windows/iot-core/windowsiotenterprise"  
+                tocHref: /windows/iot-core/windows-iot-enterprise
+                topicHref: "/windows/iot-core/windows-iot-enterprise/index"  
               - name: Learn about hardware
                 tocHref: /windows/iot-core/learn-about-hardware/
                 topicHref: "/windows/iot-core/learn-about-hardware/suggestedboards"  
