@@ -20,7 +20,7 @@ In order to start your journey in manufacturing with Windows 10 IoT Enterprise, 
 
 ## Fixed purpose devices 
 
-> [TIP]
+> [!TIP]
 > See your licensing agreement for complete guidance on all Windows 10 IoT Enterprise usage scenarios.
 
 The Windows 10 IoT Enterprise edition is licensed to allow you to build fixed purpose devices like Thin Clients, ATM Machines, Point-of-Sale Terminals, Industrial Automation Systems, etc.  There are specific allowances and restrictions in the license agreement. 
