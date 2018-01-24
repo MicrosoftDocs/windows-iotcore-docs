@@ -21,20 +21,19 @@ we've put together an overview on best practices and important considerations.
 When it comes to designing and developing with accessibility in mind, successful execution requires awareness and preparation.
 Accessibility should be considered initially when technical specifications are decided on. It's also helpful to keep in mind common accessibility bugs that often make a big difference when implemented.
 
-* Colors and contrast: Don't convey important information through the use of color alone.
+* **Colors and contrast**: Don't convey important information through the use of color alone.
 
 ![Image of color contrast do's and dont's](media/Accessibility/accessibility1.png)
 
-* Colors and contrast: Provide a minimum default contrast of 4.5:1. You can find this ratio using a color contrast analyzer ([download here](https://developer.paciellogroup.com/resources/contrastanalyser/))
-or any other color contrast tool available online.
+* **Colors and contrast**: Provide a minimum default contrast of 4.5:1. You can find this ratio using a color contrast analyzer ([download here](https://developer.paciellogroup.com/resources/contrastanalyser/)) or any other color contrast tool available online.
 
 ![Image of color contrast example](media/Accessibility/accessibility2.gif)
 
-* Keyboard accessibility: Keyboard focus needs to be clearly visible, with required contrast and colors. The tab/arrow path through the UI must be intuitive.
+* **Keyboard accessibility**: Keyboard focus needs to be clearly visible, with required contrast and colors. The tab/arrow path through the UI must be intuitive.
 
 ![Image of keyboard focus example](media/Accessibility/accessibility3.gif)
 
-* Programmatic accessibility: Use Windows desktop tools to learn about programmatic representation. 
+* **Programmatic accessibility**: Use Windows desktop tools to learn about programmatic representation. 
 
 ![Image of programmatic accessibility example](media/Accessibility/accessibility4.png)
 
