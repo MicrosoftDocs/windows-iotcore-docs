@@ -12,16 +12,14 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, accessibility, color c
 
 ## Introduction
 In addition to development, design, and testing, accessibility is another concept to take into account when publishing
-applications or manufacturing devices. Accessibility enables all people to leverage all of the functionalities your applications or devices
-offer, regardless of a user's abilities.
+applications or manufacturing devices. Accessibility enables all people to leverage all of the functionalities your applications or devices offer, regardless of a user's abilities.
 
 To ensure that applications and devices leveraging Windows IoT products offer accessibility-ready features and experiences,
 we've put together an overview on best practices and important considerations.
 
 ## Common Accessibility Bugs
 When it comes to designing and developing with accessibility in mind, successful execution requires awareness and preparation.
-Accessibility should be considered initially when technical specifications are decided on. It's also helpful to keep in mind common accessibility
-bugs that often make a big difference when implemented.
+Accessibility should be considered initially when technical specifications are decided on. It's also helpful to keep in mind common accessibility bugs that often make a big difference when implemented.
 
 * Colors and contrast: Don't convey important information through the use of color alone.
 
@@ -41,8 +39,7 @@ or any other color contrast tool available online.
 ![Image of programmatic accessibility example](media/Accessibility/accessibility4.png)
 
 ## Accessibility in UWP apps
-The UWP team at Microsoft has put together a comprehensive guide on accessiblity for UWP app design and development. For your convenience,
-we've included the list below, but you can also learn more by reading their [Usability in UWP apps documentation](https://docs.microsoft.com/en-us/windows/uwp/design/usability/).
+The UWP team at Microsoft has put together a comprehensive guide on accessiblity for UWP app design and development. For your convenience, we've included the list below, but you can also learn more by reading their [Usability in UWP apps documentation](https://docs.microsoft.com/en-us/windows/uwp/design/usability/).
 
 | Article | Description |
 |---------|-------------|
