@@ -11,7 +11,6 @@ description: This is the landing page for the Windows 10 IoT Core developer docu
 keywords: windows iot, developer documentation, docs, IoT Core
 ---
 
----
 # Windows 10 IoT documentation
 
 Windows 10 IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Enterprise - that allow the flexibility in choosing the right specifications for the devices that you want to build, whether they're headless, ARM-based devices or powerful, Win32-driven devices.
