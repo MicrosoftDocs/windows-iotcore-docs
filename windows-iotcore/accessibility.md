@@ -25,20 +25,20 @@ bugs that often make a big difference when implemented.
 
 * Colors and contrast: Don't convey important information through the use of color alone.
 
-![Image of color contrast do's and dont's](media/accessibility/accessibility1.png)
+![Image of color contrast do's and dont's](media/Accessibility/accessibility1.png)
 
 * Colors and contrast: Provide a minimum default contrast of 4.5:1. You can find this ratio using a color contrast analyzer ([download here](https://developer.paciellogroup.com/resources/contrastanalyser/))
 or any other color contrast tool available online.
 
-![Image of color contrast example](media/accessibility/accessibility2.gif)
+![Image of color contrast example](media/Accessibility/accessibility2.gif)
 
 * Keyboard accessibility: Keyboard focus needs to be clearly visible, with required contrast and colors. The tab/arrow path through the UI must be intuitive.
 
-![Image of keyboard focus example](media/accessibility/accessibility3.gif)
+![Image of keyboard focus example](media/Accessibility/accessibility3.gif)
 
 * Programmatic accessibility: Use Windows desktop tools to learn about programmatic representation. 
 
-![Image of programmatic accessibility example](media/accessibility/accessibility4.png)
+![Image of programmatic accessibility example](media/Accessibility/accessibility4.png)
 
 ## Accessibility in UWP apps
 The UWP team at Microsoft has put together a comprehensive guide on accessiblity for UWP app design and development. For your convenience,
