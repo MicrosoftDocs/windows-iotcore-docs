@@ -1,6 +1,6 @@
 # [Windows 10 IoT documentation](index.md)
 ## [Windows 10 IoT Enterprise](windows-iot-enterprise.md)
-## [Windows 10 IoT Core](index.md)
+## [Windows 10 IoT Core](https://docs.microsoft.com/en-us/windows/iot-core/)
 ## [Learn about hardware]()
 ### [Hardware compatibility list](learn-about-hardware/HardwareCompatList.md)
 ### [Pin Mappings]()
