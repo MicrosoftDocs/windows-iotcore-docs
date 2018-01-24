@@ -12,9 +12,9 @@ keywords: windows iot, developer documentation, docs, IoT Core
 ---
 
 ---
-# Windows IoT Core developer documentation
+# Windows 10 IoT developer documentation
 
-Windows IoT is a version of Windows 10 that is optimized for smaller devices with or without a display that run on both ARM and x86/x64 devices. The Windows IoT Core documentation provides information on connecting, managing, updating, and securing your devices, and more.
+Windows IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Enterprise - that allow the flexibility in choosing the right specifications for the devices that you want to build, whether they're headless devices or powerful, Win32-driven devices.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -28,7 +28,7 @@ Windows IoT is a version of Windows 10 that is optimized for smaller devices wit
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>What's new in IoT Core</h3>
+                        <h3>What's new in Windows 10 IoT</h3>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@ Windows IoT is a version of Windows 10 that is optimized for smaller devices wit
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>IoT Core Manufacturing guide</h3>
+                        <h3>Windows 10 IoT Core Manufacturing guide</h3>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@ Windows IoT is a version of Windows 10 that is optimized for smaller devices wit
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>IoT Core Servicing</h3>
+                        <h3>Windows 10 IoT Core Servicing</h3>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@ Windows IoT is a version of Windows 10 that is optimized for smaller devices wit
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>IoT Core Walkthrough</h3>
+                        <h3>Windows 10 IoT Core Walkthrough</h3>
                     </div>
                 </div>
             </div>
@@ -134,33 +134,7 @@ Windows IoT is a version of Windows 10 that is optimized for smaller devices wit
 
 ---
 
-<h2>Forums</h2>
-<p>If anything comes up that the documentation doesn't answer, we have several different forums you can visit and ask questions.</p>
-<ul class="panelContent cardsW">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p><a href="https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT">MSDN forum</a></p>
-                        <p><a href="https://www.raspberrypi.org/forums/viewforum.php?f=105">Raspberry Pi IoT Core forum</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p><a href="https://www.reddit.com/r/windows10iot/">Reddit for IoT Core</a></p>
-                        <p><a href="https://stackoverflow.com/questions/tagged/WindowsIoT">StackOverflow for IoT Core</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
+<h2>Got Questions?</h2>
+<p>If anything comes up that the documentation doesn't answer, you can submit your questions to our <a href="https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT">MSDN forum</a>.</p>
 
 

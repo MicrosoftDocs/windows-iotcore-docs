@@ -1,6 +1,6 @@
 # [Windows 10 IoT documentation](index.md)
 ## [Windows 10 IoT Enterprise](windows-iot-enterprise.md)
-## [Windows 10 IoT Core]()
+## [Windows 10 IoT Core](index.md)
 ## [Learn about hardware]()
 ### [Hardware compatibility list](learn-about-hardware/HardwareCompatList.md)
 ### [Pin Mappings]()
@@ -90,4 +90,5 @@
 ### [Commercial Release]()
 #### [Current: Fall Creators Update (Build 16299)](release-notes/commercial/FallCreatorsUpdate.md)
 #### [Creators Update (Build 15063)](release-notes/commercial/CreatorsUpdate.md)
+## [Accessibility](accessibility.md)
 ## [Glossary](Glossary.md)
