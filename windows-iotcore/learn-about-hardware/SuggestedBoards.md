@@ -35,14 +35,14 @@ The publicly available boards below are some of the same devices Microsoft uses 
 > Hardware features listed below may not be fully supported in all configurations
 
 
-|                      |Raspberry Pi 2 v1.1 boards and earlier|Raspberry Pi 3| MinnowBoard Max| DragonBoard 410c |
+|                      |Raspberry Pi 2 v1.1 boards and earlier|Raspberry Pi 3| Up Squared | DragonBoard 410c |
 |----------------------|-------------------|--------------|-------------------|---------------|
-|SoC  | Broadcom BCM2836 | Broadcom BCM2837 | [Intel Atom Processor E3825](http://ark.intel.com/products/78474/Intel-Atom-Processor-E3825-1M-Cache-1_33-GHz) | [Qualcomm Snapdragon 410](https://www.qualcomm.com/products/snapdragon/processors/410) |
+|SoC  | Broadcom BCM2836 | Broadcom BCM2837 | [Intel® Celeron™ N3350 2.4 GHz](https://ark-care.intel.com/products/95598/Intel-Celeron-Processor-N3350-2M-Cache-up-to-2_4-GHz) | [Qualcomm Snapdragon 410](https://www.qualcomm.com/products/snapdragon/processors/410) |
 |BSPs | [Raspberry drivers](https://github.com/ms-iot/bsp) | [Raspberry drivers](https://github.com/ms-iot/bsp) | [Baytrail drivers](https://www.intel.com/content/www/us/en/embedded/products/bay-trail/software-and-drivers.html) | [Dragonboard 410c drivers](https://developer.qualcomm.com/hardware/dragonboard-410c/software) |
 |CPU  | 900MHz Quad-Core ARM Cortex A7| 	1.2GHz Quad-Core ARM Cortex A53 | 1.3GHz x86/x64 | 	1.2GHz Quad-Core ARM Cortex A53 |
-|Memory| 1GB | 1GB | 2 GB| 1GB |
+|Memory| 1GB | 1GB | 2 GB/4 GB/8 GB LPDDR4 | 1GB |
 |GPU | Broadcom Video Core IV @ 250MHz (no DirectX or Hardware Acceleration support) | 	Broadcom Video Core IV @ 400MHz (no DirectX or Hardware Acceleration support) | Intel HD Graphics | Qualcomm Adreno 306 @ 400MHz (only 720p / 1280 x 720 supported) |
-| USB | 4x USB 2.0 | 4x USB 2.0 | 1x USB 2.0, 1x USB 3.0 | 2x USB 2.0 |
+| USB | 4x USB 2.0 | 4x USB 2.0 | 2x USB 2.0, 1x USB 3.0 | 2x USB 2.0 |
 | Networking | 10/100/1000 MBit/s Ethernet | Wi-Fi 802.11 b/g/n, 10/100/1000 MBit/s Ethernet, Bluetooth 4.1 | 10/100/1000 MBit/s Ethernet | Wi-Fi 802.11 a/b/g/n, Bluetooth 4.1 |
 | Video Output | HDMI, DSI | HDMI, DSI | Micro HDMI	| HDMI, DSI |
 | Audio Output | Analog via 3.5 mm jack | Analog via 3.5 mm jack | Digital via HDMI	| Digital via HDMI |

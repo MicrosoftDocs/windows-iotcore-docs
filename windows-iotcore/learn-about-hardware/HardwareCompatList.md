@@ -12,9 +12,11 @@ keywords: windows iot, peripherals, protocols, compatibility, busses, hardware
 
 Windows 10 IoT Core supports a variety of peripheral interfaces and protocols, including support for common busses like I2C, UART, USB, and more. This page lists known supported peripherals and is current as of the latest RTM release. Specific entries may only work on Insider releases and will be noted as such. We encourage you to contribute to this list on GitHub!
 
-This list is not exhaustive. There are many other peripherals not listed on this page that are compatible with Windows 10 IoT Core. If a device you don't see listed but is class-compliant with what's already supported in Windows 10 IoT Core, then it will work. 
+> [!NOTE]
+> This list is not exhaustive. There are many other peripherals not listed on this page that are compatible with Windows 10 IoT Core. If a device you don't see listed but is class-compliant with what's already supported in Windows 10 IoT Core, then it will work. 
 
-Looking for information about supported hardware platforms? Click [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/windows-compatible-hardware-development-boards) for a list of development boards compatible with Windows.
+
+Looking for information about supported hardware platforms? Click [here](https://developer.microsoft.com/en-us/windows/iot/getstarted/prototype/selectdevice) for a list of development boards compatible with Windows.
 
 ## USB Devices
 
@@ -30,7 +32,8 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | Realtek 8192 USB Wireless WiFi | RPi2/RPi3, MBM | Realtek Single-Chip IEEE 802.11b/g/n 2T2R WLAN Controller with USB 2.0 Interface | | &#10004; |
 > | Realtek 8188EU USB Wireless WiFi | RPi2/RPi3, MBM | Realtek RTL8188EU Wireless LAN 802.11n/g/b USB 2.0 Network Adapter | | &#10004; |
 > | Realtek 8192EU USB Wireless WiFi | RPi2/RPi3, MBM | Realtek RTL8192EU Wireless LAN 802.11n/g/b USB 2.0 Network Adapter | | &#10004; |
-> | CanaKit USB Wireless WiFi | MBM | Chipset Ralink 5370 | | &#10004; 
+> | CanaKit USB Wireless WiFi | MBM | Chipset Ralink 5370 | | &#10004;
+> | D-Link DWA-172 | RPi2/RPi3 | Wireless AC600 Dual-Band High-Gain USB Adapter | [Datasheet](ftp://ftp.dlink.de/dwa/dwa-172/documentation/DWA-172_ds_en_Datasheet.pdf) |
 
 ### Bluetooth Dongles
 > | Part Name / No. | Compatible Boards | Description | Relevant Links | Microsoft Verified  | 

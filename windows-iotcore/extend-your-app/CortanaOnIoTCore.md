@@ -13,7 +13,7 @@ keywords: windows iot, Cortana, voice, AI, digital assistant, language
 
 Cortana is a personal digital assistant working across all your devices to help you in your daily life. She learns about you; helps you get things done by completing tasks; interacts with you using natural language in a consistent, contextual way; and always looks out for you. Cortana has a consistent visual identity, personality, and voice.
 
-IoT Core is an edition of Windows 10 and is optimized for small-footprint and low-cost IoT devices. Cortana is enabled on IoT Core in the Windows 10 Creators Update. It is in preview now. 
+IoT Core is an edition of Windows 10 and is optimized for small-footprint IoT devices. Cortana is enabled on IoT Core in the Windows 10 Creators Update. It is in preview now and is not licensed for commercial use.
 
 Cortana on IoT Core will focus on commercial scenarios in the future. Updates will come soon. 
 
@@ -199,9 +199,11 @@ If you stop talking to Cortana, she will be dismissed. To start her up
 again, say "Hey Cortana" followed by your query. To stop Cortana, say
 "Hey Cortana, stop" to your microphone.
 
-## Integrate Cortana in your Products
+## Integrate Cortana in your IoT Core image
+> [!NOTE]
+> Cortana is only licensed for developer use and cannot be used in any commercial products.
 
-To learn more about changing settings for region and user or speech language to build Cortana enabled products, please read our [Command Line Utils](../manage-your-device/CommandLineUtils.md) documentation.
+To learn more about changing settings for region and user or speech language to build Cortana enabled images, please read our [Command Line Utils](../manage-your-device/CommandLineUtils.md) documentation.
 
 > [!NOTE]
 > Cortana will only work when region, UI language and speech
