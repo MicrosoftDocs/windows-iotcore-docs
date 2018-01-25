@@ -1,4 +1,4 @@
-# [Windows 10 IoT]()
+# [Windows 10 IoT](index.md)
 ## [Windows 10 IoT Enterprise](windows-iot-enterprise.md)
 ## [Windows 10 IoT Core](windows-iot-core.md)
 ## [Learn about hardware]()
