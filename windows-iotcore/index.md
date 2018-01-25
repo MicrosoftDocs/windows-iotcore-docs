@@ -1,5 +1,5 @@
 ---
-title: Windows IoT Core developer documentation
+title: Windows 10 IoT documentation
 layout: LandingPage
 author: saraclay
 ms.author: saclayt
@@ -11,10 +11,9 @@ description: This is the landing page for the Windows 10 IoT Core developer docu
 keywords: windows iot, developer documentation, docs, IoT Core
 ---
 
----
-# Windows 10 IoT developer documentation
+# Windows 10 IoT documentation
 
-Windows IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Enterprise - that allow the flexibility in choosing the right specifications for the devices that you want to build, whether they're headless devices or powerful, Win32-driven devices.
+Windows 10 IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Enterprise - that allow the flexibility in choosing the right specifications for the devices that you want to build, whether they're headless, ARM-based devices or powerful, Win32-driven devices.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -28,7 +27,7 @@ Windows IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Enterpr
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>What's new in Windows 10 IoT</h3>
+                        <h3>What's new?</h3>
                     </div>
                 </div>
             </div>
@@ -36,7 +35,7 @@ Windows IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Enterpr
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide">
+        <a href="https://docs.microsoft.com/en-us/windows/iot-core/windows-iot-enterprise">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -46,7 +45,7 @@ Windows IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Enterpr
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Windows 10 IoT Core Manufacturing guide</h3>
+                        <h3>Windows 10 IoT Enterprise</h3>
                     </div>
                 </div>
             </div>
@@ -54,7 +53,7 @@ Windows IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Enterpr
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/windows-hardware/service/iot/">
+        <a href="https://docs.microsoft.com/en-us/windows/iot-core/windows-iot-core">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -64,7 +63,7 @@ Windows IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Enterpr
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Windows 10 IoT Core Servicing</h3>
+                        <h3>Windows 10 IoT Core</h3>
                     </div>
                 </div>
             </div>
@@ -72,7 +71,7 @@ Windows IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Enterpr
         </a>
     </li>
     <li>
-        <a href="https://github.com/ms-iot/iot-walkthrough">
+        <a href="https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -82,7 +81,7 @@ Windows IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Enterpr
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Windows 10 IoT Core Walkthrough</h3>
+                        <h3>Hardware requirements</h3>
                     </div>
                 </div>
             </div>
@@ -136,5 +135,4 @@ Windows IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Enterpr
 
 <h2>Got Questions?</h2>
 <p>If anything comes up that the documentation doesn't answer, you can submit your questions to our <a href="https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT">MSDN forum</a>.</p>
-
 
