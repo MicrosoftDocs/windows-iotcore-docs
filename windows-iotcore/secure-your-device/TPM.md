@@ -50,13 +50,11 @@ Firmware TPM (fTPM) requires special Processor/SoC support that is not currently
 Discrete TPM (dTPM) is considered the utmost trustworthy solution by all means.  
 There are several manufacturers of dTPM chips and PCB modules that are supported on Windows IoT Core:
 
-> [!div class="mx-tdBreakAll"]
 > | TPM Manufacturer | Web Page|
 > |-------------|----------|
-> | Infineon | [Infineon Truted Computing](http://www.infineon.com/cms/en/product/security-ic/trusted-computing/channel.html?channel=db3a30433efacd9a013f10d2a7264daa)|
-> | NationZ | [NationZ information](http://www.trustedcomputinggroup.org/nationz-technologies-inc)|
-> | Nuvoton | [Nuvoton homepage](https://www.nuvoton.com/hq/products/cloud-computing/security/trusted-platform-module-tpm)|
-> | STMicro | [STMicro TPM Secure MCUs](http://www.st.com/web/en/catalog/mmc/FM143/CL1814/SC1522)|
+> | Infineon | [Infineon TPM](https://www.infineon.com/cms/en/product/evaluation-boards/iridium9670-tpm2.0-linux/)|
+> | Buy Zero | [Buy Zero TPM](https://buyzero.de/collections/andere-platinen/products/letstrust-hardware-tpm-trusted-platform-module)|
+
 
 ### Software TPM (sTPM)  
 Software TPM (sTPM) is also referred to as TPM Simulator. It is platform-independent, supported on Windows IoT Core.  
