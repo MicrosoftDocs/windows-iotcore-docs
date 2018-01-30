@@ -13,10 +13,6 @@ keywords: Windows 10 IoT Core, small footprint, headless
 ## What is Windows 10 IoT Core?
 Windows IoT Core is a version of Windows 10 that is optimized for smaller devices with or without a display that run on both ARM and x86/x64 devices. The Windows IoT Core documentation provides information on connecting, managing, updating, and securing your devices, and more. 
 
-
->[!VIDEO https://www.youtube.com/embed/PV785U-g_KM]
-
-
 ## Getting Started
 To get started with Windows 10 IoT Core, we've created a [Get Started walkthrough](https://developer.microsoft.com/en-us/windows/iot/GetStarted.htm) for [prototyping](https://developer.microsoft.com/en-us/windows/iot/getstarted/prototype/selectdevice) and [commercializing](https://developer.microsoft.com/en-us/windows/iot/getstarted/commercialize/selectplatform) devices that leverage Windows 10 IoT Core.
 
