@@ -35,11 +35,11 @@ To enable the policy execute the following command on the **Windows IoT Core** d
 ## Enabling loopback for a UWP application
 Before you can enable loopback for an application you will need the package family name.  You can find the package family name for an installed application by running **iotstartup list**.  If the **iotstartup list** entry for the application is IoTCoreDefaultApp\_1w720vyc4ccym!App then the package family name is IoTCoreDefaultApp\_1w720vyc4ccym
 
-To enable loopback for client connections use `CheckNetIsolation.exe -a -n=<AppContainer or Package Family>`.  CheckNetIsolation.exe will configure loopback for the application and exit. This will enable the application to make outbound connections to a server.
+To enable loopback for client connections use `CheckNetIsolation.exe LoopbackExempt -a -n=<AppContainer or Package Family>`.  CheckNetIsolation.exe will configure loopback for the application and exit. This will enable the application to make outbound connections to a server.
 
 Example: `CheckNetIsolation.exe LoopbackExempt -a -n=IoTCoreDefaultApp_1w720vyc4ccym`
 
-To enable a server application to receive inbound connections use `CheckNetIsolation.exe -is -n=<AppContainer or Package Family>`. Unlike outbound connection configuration, inbound connections require CheckNetIsolation.exe to run continuously while the server application is receiving connections.  This requires an OS build newer than 10.0.14393.
+To enable a server application to receive inbound connections use `CheckNetIsolation.exe LoopbackExempt -is -n=<AppContainer or Package Family>`. Unlike outbound connection configuration, inbound connections require CheckNetIsolation.exe to run continuously while the server application is receiving connections.  This requires an OS build newer than 10.0.14393.
 
 Example: `CheckNetIsolation.exe LoopbackExempt -is -n=IoTCoreDefaultApp_1w720vyc4ccym`
 
