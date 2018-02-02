@@ -11,9 +11,8 @@ keywords: windows iot, UWP, remote display, remote, UWP applications
 # Remote display
 View and control your Windows 10 IoT Core UWP applications remotely, from a Windows 10 desktop PC, tablet, or phone
 
-> [!IMPORTANT]
+> [!WARNING]
 > Windows IoT Remote Client is a developer only feature. It is not intended or supported for production devices.
-
 
 > [!IMPORTANT]
 > The Windows IoT Remote client does not work for Raspberry Pi. Use a board with accelerated graphics such as Minnowboard Max or Dragonboard or attach a monitor for local display.
