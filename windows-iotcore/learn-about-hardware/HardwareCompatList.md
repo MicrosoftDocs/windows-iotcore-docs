@@ -96,6 +96,7 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | Dorji DSTH01 relative humidity sensor | ARM, x32 | I2C relative humidity sensor | [I2C Samples](https://github.com/mickut/Win10-IoT-Sensors)| |
 > | Honeywell HMC5883L digital 3-axis compass/magnetometer | ARM, x32 | A small 3-axis magnetometer for digital compass use and magnetic field measurements | [I2C Samples](https://github.com/mickut/Win10-IoT-Sensors) | |
 
+
 ### Port Expanders
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
@@ -119,4 +120,5 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | ADS1115 | ARM, x32, x64, x86 | Ultra-small, low-power, 16-bit ADC | [ADC Bus Providers](https://github.com/ms-iot/BusProviders/tree/develop/ADC) | &#10004; |
 > | CP2102 USB 2.0 to TTL Module Serial Converter | ARM, x32, x64, x86 | CP2102 USB 2.0 to TTL Module Serial Converter | [Serial Port Sample](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/SerialUART) | &#10004; |
 > | PCA9685 | RPi2/RPi3, x64, x86 | 16-channel, 12-bit PWM Fm+ I2C-bus LED controller. | [PWM Bus Providers](https://github.com/ms-iot/BusProviders/tree/develop/PWM) | &#10004; |
+
 
