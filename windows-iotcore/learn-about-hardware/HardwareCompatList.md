@@ -25,8 +25,8 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > |----------------|-------------------|-------------|---------------|------------------------------|
 > | Official Raspberry Pi WiFi dongle | ARM, x32, x64, x86 | The official Raspberry Pi WiFi dongle offers the best possible WiFi performance for its diminutive size. | | &#10004;  |
 > | Airlink Wireless N 150 Mini USB Adapter Adapter | x64, x86 | Airlink 101 AWL5077 Golden 150Mbps Wireless Mini USB Adapter with WPA2, WPA, and WEP enhanced wireless security | | &#10004;  
-> | Panda PAU06 | MBM |  Panda 300Mbps Wireless N USB Adapter with High Gain Antenna | |  &#10004;  
-> | TP-LINK TL_WN725N |  RPi2/RPi3, MBM | TP-LINK TL-WN725N Wireless N Nano USB Adapter 150 Mbps `(USB/VID_0BDA&PID_8179)` |  | &#10004;  
+> | Panda PAU06 | x64, x86 |  Panda 300Mbps Wireless N USB Adapter with High Gain Antenna | |  &#10004;  
+> | TP-LINK TL_WN725N |  ARM, x32, x64, x86 | TP-LINK TL-WN725N Wireless N Nano USB Adapter 150 Mbps `(USB/VID_0BDA&PID_8179)` |  | &#10004;  
 > | NET-DYN USB WiFi Adapter | MBM | WiFi USB Adapter NET-DYN | |  &#10004;  
 > | Realtek 8191 USB Wireless WiFi | ARM, x32, x64, x86 | Realtek 8191 300Mbps 802.11n/g/b/ USB Wireless WiFi LAN Network Card Adapter | | &#10004;  
 > | Realtek 8192 USB Wireless WiFi | ARM, x32, x64, x86 | Realtek Single-Chip IEEE 802.11b/g/n 2T2R WLAN Controller with USB 2.0 Interface | | &#10004; |
@@ -58,7 +58,7 @@ Looking for information about supported hardware platforms? Click [here](https:/
 ### Miscellaneous
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | Aeon Labs Z-Wave Z-Stick Series 2 USB Dongle DSA02203-ZWUS | RPi2/RPi3 | Series 2 Z-Wave USB Z-Stick Controller | [ZWave Sample](https://developer.microsoft.com/en-us/windows/iot/samples/zwaveadapter) | &#10004; |
+> | Aeon Labs Z-Wave Z-Stick Series 2 USB Dongle DSA02203-ZWUS | ARM, x32 | Series 2 Z-Wave USB Z-Stick Controller | [ZWave Sample](https://developer.microsoft.com/en-us/windows/iot/samples/zwaveadapter) | &#10004; |
 > | [Chalkboard Electronics 7” LCD Capacitive Touchscreen Display](https://www.chalk-elec.com/?page_id=1280#!/7-black-frame-universal-HDMI-LCD-with-capacitive-multi-touch/p/21750201/category=3094861) | ARM, x32 | | [Updating firmware](https://www.chalk-elec.com/?p=1826) | &#10004; |
 > | Vodafone (Huawei) K5150 | ARM, x32, x64, x86 | Vodafone (Huawei) K5150 150Mbps 4G LTE FDD USB Mobile Broadband Modem |  | &#10004;  |
 > | Sierra Wireless Beam (AirCard 340U) | x64, x86 | 	Sierra Wireless Beam (AirCard 340U) 4G LTE USB Mobile Broadband Modem |  |&#10004; |
@@ -76,9 +76,9 @@ Looking for information about supported hardware platforms? Click [here](https:/
 ### Pi Hats
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | [Adafruit 16-Channel PWM](https://www.adafruit.com/product/2327#description-anchor) | ARM, x323 | Adds the capability to control up to 16 servos with no additional Raspberry Pi processing overhead. Capable of doing PWM up to 1.6KHz with 12 bit precision. | [Adafruit Tutorial C# IoT Sample](https://github.com/golaat/Adafruit.Pwm) | |
+> | [Adafruit 16-Channel PWM](https://www.adafruit.com/product/2327#description-anchor) | ARM, x32 | Adds the capability to control up to 16 servos with no additional Raspberry Pi processing overhead. Capable of doing PWM up to 1.6KHz with 12 bit precision. | [Adafruit Tutorial C# IoT Sample](https://github.com/golaat/Adafruit.Pwm) | |
 > | [Dexter Industries GrovePi](https://www.dexterindustries.com/shop/grovepi-board/) | ARM, x32 | You can connect hundreds of different sensors without soldering, so you can program them to monitor, control, and automate devices in your life. | [GrovePi Samples](https://github.com/DexterInd/GrovePi/) | |
-> | Dexter Industries GoPiGo | RPi2/RPi3 | The GoPiGo is a delightful and complete robot for the Raspberry Pi that turns your Pi into a fully operating robot. GoPiGo is a mobile robotic platform for the Raspberry Pi developed by Dexter Industries. | [GoPiGo Samples](https://github.com/DexterInd/GoPiGo/tree/master/Software/CSharp) | |
+> | Dexter Industries GoPiGo | ARM, x32 | The GoPiGo is a delightful and complete robot for the Raspberry Pi that turns your Pi into a fully operating robot. GoPiGo is a mobile robotic platform for the Raspberry Pi developed by Dexter Industries. | [GoPiGo Samples](https://github.com/DexterInd/GoPiGo/tree/master/Software/CSharp) | |
 > | [FEZ HAT](https://www.ghielectronics.com/catalog/product/500) | ARM, x32 | The FEZ HAT allows for a Fast and Easy (FEZ) way to connect all kinds of sensors and devices to the Raspberry Pi. The FEZ HAT is compatible with the RPi 2 Model B. An entire C# driver is provided for immediate use with Windows 10.| [Azure Integration Sample](https://www.ghielectronics.com/docs/329/fez-hat-developers-guide) | &#10004; |
 > | [FEZ Cream](https://www.ghielectronics.com/catalog/product/541) | ARM, x32 | The FEZ Cream allows for a Fast and Easy (FEZ) way to connect all kinds of sensors and devices to the Raspberry Pi using .NET Gadgeteer style sockets. The FEZ Cream is compatible with the RPi 2 Model B. An entire C# driver is provided for immediate use with Windows 10.| [Developer's Guide](https://www.ghielectronics.com/docs/331/fez-cream-developers-guide) |  &#10004; |
 > | [FEZ Utility](https://www.ghielectronics.com/catalog/product/545) | ARM, x32 | The FEZ Utility allows for a Fast and Easy (FEZ) way to connect all kinds of sensors and devices to the Raspberry Pi using on-board headers. It also includes the circuitry needed to provide PWM outputs and analog inputs. The FEZ Utility is compatible with the RPi 2 Model B. An entire C# driver is provided for immediate use with Windows 10. | [Developer's Guide](https://www.ghielectronics.com/docs/332/fez-utility-developers-guide)  | |
@@ -111,7 +111,7 @@ Looking for information about supported hardware platforms? Click [here](https:/
 ### Miscellaneous
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified | 
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | Official Pi display | RPi2/RPi3 | 7" 800x400 touch display. | [Raspberry Pi 7" Touch Screen](https://www.raspberrypi.org/products/raspberry-pi-touch-display/) | &#10004; |
+> | Official Pi display | ARM, x32 | 7" 800x400 touch display. | [Raspberry Pi 7" Touch Screen](https://www.raspberrypi.org/products/raspberry-pi-touch-display/) | &#10004; |
 > | Monochrome 1.3” 128x64 OLED graphic display |ARM, x32, x64, x86 | 1.3” diagonal, high contrast B/W OLED display. 128x64 individual white OLED pixels, each one is turned on or off by the controller chip. | [SPI Display Sample](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/SPIDisplay) | &#10004; |
 > | SN74HC595N Shift Register IC | ARM, x32, x64, x86 | IC 8-BIT SHIFT REGISTER 16-DIP | [Shift Register Sample](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/ShiftRegister) | &#10004; |
 > | Microchip Technology ADC MCP3002-I/P | ARM, x32, x64, x86 | MCP3002 10bit Analog to Digital converter. |  [Potentiometer Sensor Sample](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/PotentiometerSensor) | &#10004; |
