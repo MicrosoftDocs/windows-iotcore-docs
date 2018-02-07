@@ -17,7 +17,7 @@ Device recovery is a process to recover inoperable devices due to incorrect or b
 
 The key elements of recovery process are
 
-* **Safe OS** : Windows provides [Windows Preinstallation Environment (WinPE)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-intro) which is a minimal OS with basic graphics support and boots to a command prompt. This is delivered with Windows ADK for x86/AMD64 architectures. For ARM, WinPE can be obtained through Microsoft OEM channel. For certain hardware configurations and storage media types, specific drivers may be required to be added to WinPE to boot successfully. This OS can be configured to launch on boot, the flashing app with a predefined location for the recovery images.
+* **Safe OS** : Windows provides [Windows Preinstallation Environment (WinPE)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-intro) which is a minimal OS with basic graphics support and boots to a command prompt. This is delivered with Windows ADK. For certain hardware configurations and storage media types, specific drivers may be required to be added to WinPE to boot successfully. This OS can be configured to launch on boot, the flashing app with a predefined location for the recovery images.
 * **Recovery SW** : SW Image used to re-flash the devices
 * **Recovery design choice** : Based on the location of the Safe OS and the recovery software, various design choices are available. The design choice is influenced by the hardware available (eg. USB port). These require changes in the BSP to realize the complete functionality.
 
