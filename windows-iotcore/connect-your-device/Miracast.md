@@ -11,6 +11,9 @@ keywords: windows iot, miracast, connectivity
 
 This document will show you how to include Miracast functionality on your IoT Core device.
 
+> [!IMPORTANT]
+> This feature is only available on Insider Build 17093 and above
+
 ## Miracast Overview
 
 A Miracast connection is made up of two components: the Source and the Sink. The **Miracast Source** sends content to the **Miracast Sink**, which displays the content. To create the connection, the Sink advertises itself to the connected Wi-Fi network. The Source uses the **Device Picker** to select the Sink and request a connection. Once the connection is requested, a user at the Sink receives an alert that the source is attempting to make a connection and must verify that the connection should take place. Once this happens, the Source begins casting to the Sink until either the Source cancels the connection or the Sink stops advertising.
@@ -51,7 +54,8 @@ To enable your device as a Miracast sink, you will need to enable the Connect ap
 
 ### Enable the Connect App
 
-To enable the Connect app, you'll need to include the **IOT_MIRACAST_RX_APP** feature to your image. See [this page](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-feature-list) for more details about how to add features to your image.
+To enable the Connect app, you'll need to include the **IOT_MIRACAST_RX_APP** feature to your image. You'll also need to include 
+**Microsoft-Connect-Package.cab** and **Microsoft-Connect-Package_Lang_XXXX.cab** in your image (where XXXX is a language, i.e. "enUS"). See [this page](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/deploy-your-app-with-a-standard-board#update-the-feature-manifest) for more details about how to add features and packages to your image. You will also need to add the 
 
 ### Enable Miracast
 
