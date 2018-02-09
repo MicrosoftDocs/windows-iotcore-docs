@@ -54,8 +54,9 @@ To enable your device as a Miracast sink, you will need to enable the Connect ap
 
 ### Enable the Connect App
 
-To enable the Connect app, you'll need to include the **IOT_MIRACAST_RX_APP** feature to your image. You'll also need to include 
-**Microsoft-Connect-Package.cab** and **Microsoft-Connect-Package_Lang_XXXX.cab** in your image (where XXXX is a language, i.e. "enUS"). See [this page](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/deploy-your-app-with-a-standard-board#update-the-feature-manifest) for more details about how to add features and packages to your image. You will also need to add the 
+To enable the Connect app, you'll need to include the **IOT_MIRACAST_RX_APP** feature to your image. 
+You'll also need to include  **Microsoft-Connect-Package.cab** and **Microsoft-Connect-Package_Lang_XXXX.cab** in your image (where XXXX is a language, i.e. "enUS"). 
+See [this page](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/deploy-your-app-with-a-standard-board#update-the-feature-manifest) for more details about how to add features and packages to your image. You will also need to add the 
 
 ### Enable Miracast
 
