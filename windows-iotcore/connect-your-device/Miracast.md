@@ -20,7 +20,7 @@ A Miracast connection is made up of two components: the Source and the Sink. The
 
 ## Hardware requirements
 
-Both Source and Sink devices require Miracast-compatible Wi-Fi and Graphics drivers and chipsets to function properly. To find out if your device has Miracast-compatible hardware, run 
+Both Source and Sink devices require Miracast-compatible Wi-Fi and Graphics drivers and chipsets to function properly. To find out if your device has Miracast-compatible hardware, run: 
 ```
 netsh wlan show driver
 ```
@@ -56,7 +56,7 @@ To enable your device as a Miracast sink, you will need to enable the Connect ap
 
 To enable the Connect app, you'll need to include the **IOT_MIRACAST_RX_APP** feature to your image. 
 You'll also need to include  **Microsoft-Connect-Package.cab** and **Microsoft-Connect-Package_Lang_XXXX.cab** in your image (where XXXX is a language, i.e. "enUS"). 
-See [this page](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/deploy-your-app-with-a-standard-board#update-the-feature-manifest) for more details about how to add features and packages to your image. You will also need to add the 
+See [this page](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/deploy-your-app-with-a-standard-board#update-the-feature-manifest) for more details about how to add features and packages to your image.
 
 ### Enable Miracast
 
@@ -74,6 +74,7 @@ This will enable Miracast without a consent notification, only on secure network
 > [!IMPORTANT]
 > Before trying to use your device as a Miracast Source, please turn off the IoTOnboardingTask app from the [Windows Device Portal](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/deviceportal) as shown below, which you'll only need to do once:
 > ![Turn off IoTOnboardingTask app](../media/Miracast/IoTOnboardingOff.gif)
+>
 > Afterwards, please restart the device
 
 You can set up Miracast casting on your compatible device through public APIs from the `Windows.Media.Casting` namespace in your app.
