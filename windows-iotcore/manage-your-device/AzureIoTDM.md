@@ -20,7 +20,7 @@ With Windows IoT Core running in devices such as home appliances, HVAC systems a
 
 ## How does it work?
 
-The [Windows IoT Azure DM client library](https://aka.ms/iot-core-azure-dm-client) is linked in the host application. It shares the Azure IoT Hub connection with the host app. Thus making additional enrolment to enable device management unnecessary. The picture below shows the architecture for an Azure IoT Hub DM solution using the Windows IoT Azure DM client library. 
+The [Windows IoT Azure DM client library](https://aka.ms/iot-core-azure-dm-client) is linked in the host application. It shares the Azure IoT Hub connection with the host app. Thus making additional enrollment to enable device management unnecessary. The picture below shows the architecture for an Azure IoT Hub DM solution using the Windows IoT Azure DM client library. 
 
 ![Azure DM Flow Chart](../media/AzureIoTDM/flowChartAzureDM.PNG)
 
