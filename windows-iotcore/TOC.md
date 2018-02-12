@@ -27,6 +27,7 @@
 ### [Wi-Fi](connect-your-device/SetupWifi.md)
 ### [Bluetooth](connect-your-device/Bluetooth.md)
 ### [Internet Connection Sharing](connect-your-device/InternetConnectionSharing.md)
+### [Miracast](connect-your-device/Miracast.md)
 ## [Build your image]()
 ### [Create board supported packages](build-your-image/CreateBSPs.md)
 ### [Create and install a package](build-your-image/CreateInstallPackage.md)
