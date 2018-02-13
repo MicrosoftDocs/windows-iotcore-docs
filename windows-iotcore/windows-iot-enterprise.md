@@ -31,6 +31,12 @@ In general a fixed purpose device differs from a general purpose device in the f
 * Keyboards, USB ports, and device policies are locked down to constrain the device to be used only in its fixed purpose.  
 * The OEM licenses the device to the user with the software attached to the device as a complete product and passes through specific Windows terms in their own agreements. 
 
+## Long-term Servicing Channel (LTSC)
+
+Specialized systems—such as PCs that control medical equipment, point-of-sale systems, and ATMs—often require a longer servicing option because of their purpose. These devices typically perform a single important task and don’t need feature updates as frequently as other devices in the organization. It’s more important that these devices be kept as stable and secure as possible than up to date with user interface changes. The LTSC servicing model prevents Windows 10 Enterprise LTSB devices from receiving the usual feature updates and provides only quality updates to ensure that device security stays up to date. With this in mind, quality updates are still immediately available to Windows 10 Enterprise LTSB clients, but customers can choose to defer them by using one of the servicing tools mentioned in the section Servicing tools.
+
+* [Learn more about LTSC](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#long-term-servicing-channel)
+
 ## Helpful resources
 > [!NOTE]
 > Additional resources may be available from you distributor to explain Windows EPKEA OEM Activation and provide guidance in generating your manufacturing-ready Windows IoT Enterprise [WIM](https://msdn.microsoft.com/en-us/library/windows/desktop/dd861280.aspx) device image.
