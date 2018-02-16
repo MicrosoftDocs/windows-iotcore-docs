@@ -30,7 +30,7 @@ The Steps for the enrollment are
 2.	Once the agreement is signed, you will receive an email with the Preinstall Permissions Request Form. Please email saclayt@microsoft.com if you do not receive this form.
 3.	Sign into the Dev Center Portal and [reserve a name for your app](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name) 
 4.	Complete the form for the OEM App you want to publish and send email to partnerops@microsoft.com
-    - Provide OEM ID
+    - Provide OEM Name
     - Provide Dev Center account 
     - Provide the App ID (app identity Ex: https://www.microsoft.com/store/apps/1abcdefghi23)
     - Provide the list of [special and restricted capabilities](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations#special-and-restricted-capabilities) that you use in your OEM apps for approval
