@@ -112,7 +112,7 @@ Looking for information about supported hardware platforms? Click [here](https:/
 ### Miscellaneous
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified | 
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | Official Pi display | ARM32 | 7" 800x400 touch display. | [Raspberry Pi 7" Touch Screen](https://www.raspberrypi.org/products/raspberry-pi-touch-display/) | &#10004; |
+> | Official Pi display | ARM32 | 7" 800x480 touch display. | [Raspberry Pi 7" Touch Screen](https://www.raspberrypi.org/products/raspberry-pi-touch-display/) | &#10004; |
 > | Monochrome 1.3” 128x64 OLED graphic display |ARM, x32, x64, x86 | 1.3” diagonal, high contrast B/W OLED display. 128x64 individual white OLED pixels, each one is turned on or off by the controller chip. | [SPI Display Sample](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/SPIDisplay) | &#10004; |
 > | SN74HC595N Shift Register IC | ARM32, x64, x86 | IC 8-BIT SHIFT REGISTER 16-DIP | [Shift Register Sample](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/ShiftRegister) | &#10004; |
 > | Microchip Technology ADC MCP3002-I/P | AARM32, x64, x86 | MCP3002 10bit Analog to Digital converter. |  [Potentiometer Sensor Sample](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/PotentiometerSensor) | &#10004; |
