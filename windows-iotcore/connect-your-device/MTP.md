@@ -53,3 +53,12 @@ If MTP is the only interface under `InterfaceList` please use the value `2800000
 1. Add **IOT_MTP** feature ID to the OEM Input file
 2. Create the image\FFU. Read [this article](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image) for instructions.
 NOTE: make sure to apply the same changes to the device's USBFN configuration as mentioned in the previous section.
+
+## How to setup the MTP SD card filter
+
+By default MTP will enumerate all of the contents of an SD card, if it is present on the device. It is possible, however, to limit this enumeration to a specific subfolder. In order to do so, you must add a registry value `MTPSDFolderFilter` under the registry key `HKEY_LOCAL_MACHINE\Software\Microsoft\MTP`.
+The value is of type `REG_SZ` and should contain a relative path to the folder you would like MTP to enumerate. The folder will get automatically created if it does not already exist.
+
+*NOTE*: do NOT use an absolute path containing the drive letter like `C:\Some\Folder\Path` - this might prevent the SD from being enumerated at all.
+
+See [this link](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/add-a-registry-setting-to-an-image) for details about customizing your image with specific registry entries.
