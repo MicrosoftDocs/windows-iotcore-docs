@@ -56,8 +56,7 @@ namespace BlinkyHeadlessCS
         private GpioPin pin;
         private ThreadPoolTimer timer;
 
-        public void Run(IBackgroundTaskInstance taskInstance)
-        {
+        public void Run(IBackgroundTaskInstance taskInstance)        {
             deferral = taskInstance.GetDeferral();
             InitGPIO();
             timer = ThreadPoolTimer.CreatePeriodicTimer(Timer_Tick, TimeSpan.FromMilliseconds(500));
@@ -85,7 +84,7 @@ You can find in-depth information on Background apps on [MSDN](https://docs.micr
 IoT Core supports certain traditional Win32 app types such as Win32 Console Apps and NT Services. These apps are built and run the same way as on Windows 10 Desktop. Additionally, there is an IoT Core C++ Console project template to make it easy to build such apps using Visual Studio.
 
 There are two main limitations on these non-UWP applications:
-1. *No legacy Win32 UI support:* IoT Core does not contain APIs to create classic (HWND) windows. Legacy methods such as CreateWindow() and CreateWindowEx() or any other methods that deal with windows handles (HWNDs) are not available. Subsequently, frameworks that depend on such APIs; including MFC, Windows Forms and WPF, are not supported on IoT Core
+1. *No legacy Win32 UI support:* IoT Core does not contain APIs to create classic (HWND) Windows. Legacy methods such as CreateWindow() and CreateWindowEx() or any other methods that deal with Windows handles (HWNDs) are not available. Subsequently, frameworks that depend on such APIs including MFC, Windows Forms and WPF, are not supported on IoT Core
 2. *C++ Apps Only:* Currently, only C++ is supported for developing Win32 apps on IoT Core.
 
 ## Programming Languages
