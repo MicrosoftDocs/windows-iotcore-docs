@@ -1,10 +1,10 @@
----
+----
 title: Windows 10 IoT documentation
 layout: LandingPage
 author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
-ms.topic: landing page
+ms.topic: landing-page
 ms.prod: Windows
 ms.technology: IoT
 description: This is the landing page for the Windows 10 IoT Core developer documentation.
