@@ -13,7 +13,7 @@ keywords: windows iot, development devices, boards, SOC, system on chips, Raspbe
 ## Windows 10 IoT Core Development Devices
 While we [suggest a few boards to get started on](https://developer.microsoft.com/en-us/windows/iot/getstarted/prototype/selectdevice), if you want to work with something else for prototyping or development, we have hundreds of different devices in the ecosystem that you can use to prototype or commercialize your idea with.
 
-| Broadcomm | Intel | Qualcomm |
+| Broadcomm/Raspberry Pi | Intel | Qualcomm |
 |-------------|----------|---------|
 | [Element 14 / Raspberry Pi Customization Service](https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service)| [Intel commercialization devices](https://solutionsdirectory.intel.com/solutions-directory/processors/278/processors/309/processors/402/processors/782/processors/788/processors/1103/processors/1107/processors/1110/processors/1175/processors/1344/processors/1348/processors/1349) | [Qualcomm-based devices](https://developer.qualcomm.com/hardware/snapdragon-410) |
 
