@@ -18,9 +18,7 @@ It is essential that accessibility is considered during the design phase of the 
 For the developer, from an implementation perspective the good news is that Windows as a platform already does a lot of work to provide some level of accessibility by default. For example, standard controls are programmatically accessible by default through the UI Automation (UIA) API. If you choose not to use a standard control and instead build custom UI, the work required to make the UI accessibility can be much more time-consuming than simply building apps using standard controls provided by the platform. 
 
 ## Accessibility testing
-
-> [!NOTE]
-> The accessibility tools mentioned run on a PC, not on a phone.
+Below are tools we recommend to use while building your application. While these tools will help when it comes to auditing your own designs, please note that you will still need to account for features such as high contrast and text requirements.
 
 ### AccScope
 The [AccScope](https://msdn.microsoft.com/library/windows/desktop/Dn433239) tool enables developers and testers to evaluate the accessibility of their app during the app's development and design, potentially in earlier prototype phases, rather than in the late testing phases of an app's development cycle. It's particularly intended for testing Narrator accessibility scenarios with your app.
@@ -36,8 +34,8 @@ The UWP team at Microsoft has put together a comprehensive guide on accessibilit
  
 In addition, an introduction to the UI Automation API and some tools available to help you learn about the programmatic representation of your UI, is available below. 
  
-> [!VIDEO https://www.youtube.com/watch?v=6b0K2883rXA] 
- 
+> [!VIDEO https://www.youtube.com/embed/6b0K2883rXA]
+
  
 | Article | Description | 
 |---------|-------------| 
