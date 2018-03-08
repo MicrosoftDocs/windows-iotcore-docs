@@ -14,11 +14,11 @@ Windows 10 IoT Core supports Bluetooth 4.0. A list of supported Bluetooth dongle
 ## Supported Bluetooth Profiles
 IoT Core supports the following Bluetooth profiles:
 
-1.  Human Interface Device Profile [HID](https://www.microsoftstore.com/store/msusa/en_US/pdp/Microsoft-Universal-Foldable-Keyboard/productID.315201200)
+1.  Human Interface Device Profile **HID**  [HID Concepts](https://docs.microsoft.com/en-us/windows-hardware/drivers/hid/introduction-to-hid-concepts)
 
-2.  Radio Frequency Communication [RFCOMM](https://github.com/ms-iot/remote-wiring)
+2.  Radio Frequency Communication **RFCOMM**
 
-3.  Generic Attribute Profile [GATT](https://developer.microsoft.com/en-us/windows/iot/samples/blegatt)
+3.  Generic Attribute Profile **GATT**  [GATT Specification on Bluetooth.org](https://www.bluetooth.com/specifications/gatt/generic-attributes-overview)
 
 ## Connecting Bluetooth devices using the device portal
 When using one of the [Windows 10 IoT Core Release Image](https://developer.microsoft.com/en-us/windows/iot/downloads) Bluetooth devices can be paired with the Windows IoT Core device using the device portal. When navigating to the Bluetooth tab the device will look for Bluetooth devices and will also be discoverable to other Bluetooth devices. The picture below shows an incoming pairing request. 
