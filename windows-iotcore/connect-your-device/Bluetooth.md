@@ -28,3 +28,5 @@ When using one of the [Windows 10 IoT Core Release Image](https://developer.micr
 After the device is successfully paired it will be listed under the paired device section 
 
 ![Bluetooth Incoming Pairing](../media/Bluetooth/Portal_BT_3.png)
+
+**NB:** If you are pairing with a device that requires manual entry of pin, such as with an Arduino Bluetooth Shield, then in the Device Manager conetext you will be requested to enter the pin which you can do. Also, where a pin is not required you can use the Default IoT Core app to pair.
