@@ -61,7 +61,7 @@ namespace BlinkyHeadlessCS
             InitGPIO();
             timer = ThreadPoolTimer.CreatePeriodicTimer(Timer_Tick, TimeSpan.FromMilliseconds(500));
 
-        }
+cc        }
         private void InitGPIO()
         {
             pin = GpioController.GetDefault().OpenPin(LED_PIN);
@@ -114,10 +114,8 @@ C# and VB are both supported as UWP apps and have access to the portion of the .
 Samples:
 
 
-* [C# Blinky Headless with Full Documentation](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinkybackground)
-* [C# Blinky Headless Code Only](https://github.com/ms-iot/samples/tree/develop/HelloBlinkyBackground/CS)
-* [VB Blinky Headless Code Only](https://github.com/ms-iot/samples/tree/develop/HelloBlinkyBackground/VB)
-* [C# Blinky UI App](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinky)
+* [C# Blinky Headless with Full Documentation](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground/CS)
+* [VB Blinky Headless Code Only](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground/VB)
 
 
 ### Javascript
@@ -138,9 +136,9 @@ With C++ you can build Xaml or DirectX UI apps, as well as UWP Background projec
 
 Samples:
 
-* [Blinky Headless](https://github.com/ms-iot/samples/tree/develop/HelloBlinkyBackground/CPP)
-* [Blinky Headed](https://github.com/ms-iot/samples/tree/develop/HelloBlinky/Cpp)
-* [Console App](https://developer.microsoft.com/en-us/windows/iot/samples/memorystatus)
+* [Blinky Headless](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground/CPP)
+* [Blinky Headed](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinky/Cpp)
+* [Console App](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/MemoryStatus)
 
 
 ### Arduino Wiring
@@ -170,7 +168,7 @@ void loop()
 }
 ```
 
-### Node.js
+cc### Node.js
 With IoT Core's Node.js supports you can build your Background Apps using this popular language and many of its popular libraries and frameworks. There are a variety of Node.js samples avialable on our github site, but the samples below will give you a great introduction.
 
 The [headless blinky](https://github.com/ms-iot/samples/tree/develop/HelloBlinkyBackground/node.js) sample shows how easy it is to build your first IoT Core Node.js app:
@@ -204,9 +202,6 @@ function flipLed(){
 *Additional Helpful Samples*
 
  * [Weather Station Web Server](https://github.com/ms-iot/samples/tree/develop/WeatherStation/Node.js)
- * [Johnny-Five App](https://developer.microsoft.com/en-us/windows/iot/samples/j5servocontroller)
- * [Cylon App](https://developer.microsoft.com/en-us/windows/iot/samples/cylonservonode)
- * [Express App](https://developer.microsoft.com/en-us/windows/iot/samples/expressnodejs)
 
 ### Python
 IoT Core also supports building Background Apps with Python. Support for the python languages and libaries is fully there, but the python language itself does not support calling UWP APIs and so we provide python libraries to call into critical platform features like GPIO, I2C, PWM, ...
