@@ -37,7 +37,7 @@ RFCOMMM is the underlying serial communications for Classic Bluetooth. With UWP 
 Note that you need to manually specify these in the AppManifest.   
 See the [UWP-Bluetooth RFCOMM](https://docs.microsoft.com/en-us/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm.md) topic. Also see the [UWP-Bluetooth Rfcomm Chat Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/BluetoothRfcommChat.md)
 
-2.  [Radio Frequency Communication (RFCOMM
+3. Generic Attribute Profile (GATT)
 See the [UWP-Bluetooth Low Energy](lhttps://docs.microsoft.com/en-us/windows/uwp/devices-sensors/bluetooth-low-energy-overview.md) topic. 
 
 ## Connecting Bluetooth devices using the device portal
