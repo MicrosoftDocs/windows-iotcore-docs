@@ -12,10 +12,10 @@ keywords: windows iot, bluetooth, bluetooth support, devices, device portal
 Windows 10 IoT Core supports Bluetooth 4.0. A list of supported Bluetooth dongles can be found in the [Hardware Compatibility List](../learn-about-hardware/HardwareCompatList.md).
 
 # About Bluetooth
-TThere are two different bluetooth technologies that you can choose to implement in your app:
+There are two different bluetooth technologies that you can choose to implement in your app:
 
 ## Classic Bluetooth (RFCOMM)
-Before Bluetooth LE, devices commonly used this protocol to communicate using Bluetooth. This protocol is simple and useful for device-to-device communication without the need of energy savings. . Connectivity requires pairing.
+Before Bluetooth LE, devices commonly used this protocol to communicate using Bluetooth. This protocol is simple and useful for device-to-device communication without the need of energy savings. Connectivity requires pairing.
 
 ## Bluetooth Low-Energy (BLE/LE)
 Bluetooth Low Energy (LE) is a specification that defines protocols for discovery and communication between devices that have an efficient energy usage requirement. For more information including code samples, As per recent builds, a device can connect to to a BLE device without pairing.
@@ -24,7 +24,7 @@ Bluetooth Low Energy (LE) is a specification that defines protocols for discover
 Windows 10 IoT Core supports the following Bluetooth profiles:
 
 1.  **Human Interface Device Profiles Concepts (HID)**
-An HID device takes input from a human and presents output for human consumpation. Examples are keyboard, mouse, game controller, barcode reader,  LED, alphanumeric display. An IoT Core device can connect to an HID device over Bluetooth. See the general topic about HID in the Windows context: [Introduction to HID Concepts](https://docs.microsoft.com/en-us/windows-hardware/drivers/hid/introduction-to-hid-concepts). 
+An HID device takes input from a human and presents output for human consumpation. Examples are keyboard, mouse, game controller, barcode reader, LED, and alphanumeric display. A Windows 10 IoT Core device can connect to an HID device over Bluetooth. See the general topic about HID in the Windows context: [Introduction to HID Concepts](https://docs.microsoft.com/en-us/windows-hardware/drivers/hid/introduction-to-hid-concepts). 
 
 2.  **Radio Frequency Communication (RFCOMM)**
 RFCOMMM is the underlying serial communications for Classic Bluetooth. With UWP apps, the following RFCOMM services are supported:
