@@ -28,4 +28,4 @@ A complete solution requires the following:
 * A Portal or an Application that will be used by the operator to configure and query the devices remotely.
   * This must be customized for devices by the device OEM or operator. As part of this solution, we also provide an open source data model and sample implementation for easier interaction with the IoT Hub storage and the Windows IoT client.
 
-To learn more about device management for Windows devices, visit the main [Device Management Client repo])https://github.com/ms-iot/iot-core-azure-dm-client/tree/master).
+To learn more about device management for Windows devices, visit the main [Device Management Client repo](https://github.com/ms-iot/iot-core-azure-dm-client/tree/master).
