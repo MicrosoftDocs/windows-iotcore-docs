@@ -38,7 +38,7 @@ Note that you need to manually specify these in the AppManifest.
 See the [UWP-Bluetooth RFCOMM](https://docs.microsoft.com/en-us/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm.md) topic. Also see the [UWP-Bluetooth Rfcomm Chat Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/BluetoothRfcommChat.md)
 
 3. Generic Attribute Profile (GATT)
-See the [UWP-Bluetooth Low Energy](lhttps://docs.microsoft.com/en-us/windows/uwp/devices-sensors/bluetooth-low-energy-overview.md) topic. 
+See the [UWP-Bluetooth Low Energy](lhttps://docs.microsoft.com/en-us/windows/uwp/devices-sensors/bluetooth-low-energy-overview) topic. 
 
 ## Connecting Bluetooth devices using the device portal
 When using one of the [Windows 10 IoT Core Release Image](https://developer.microsoft.com/en-us/windows/iot/downloads) Bluetooth devices can be paired with the Windows IoT Core device using the device portal. When navigating to the Bluetooth tab the device will look for Bluetooth devices and will also be discoverable to other Bluetooth devices. The picture below shows an incoming pairing request. 
