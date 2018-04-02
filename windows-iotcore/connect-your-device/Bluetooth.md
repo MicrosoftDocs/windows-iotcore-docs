@@ -1,4 +1,3 @@
-
 ---
 title: Bluetooth Support
 author: zhuridartem
@@ -24,11 +23,11 @@ Bluetooth Low Energy (LE) is a specification that defines protocols for discover
 ## Supported Bluetooth Profiles
 Windows 10 IoT Core supports the following Bluetooth profiles:
 
-1.  [Human Interface Device Profiles Concepts (HID)]
+1.  **Human Interface Device Profiles Concepts (HID)**
 An HID device takes input from a human and presents output for human consumpation. Examples are keyboard, mouse, game controller, barcode reader,  LED, alphanumeric display. An IoT Core device can connect to an HID device over Bluetooth. See the general topic about HID in the Windows context: [Introduction to HID Concepts](https://docs.microsoft.com/en-us/windows-hardware/drivers/hid/introduction-to-hid-concepts). 
 
-2.  Radio Frequency Communication (RFCOMM)
-RFCOMMM is the underlying serial communications for Classic Bluetooth. With UWP apps, the following RFCOMM services are supported via the name value:
+2.  *Radio Frequency Communication (RFCOMM)*
+RFCOMMM is the underlying serial communications for Classic Bluetooth. With UWP apps, the following RFCOMM services are supported:
 - serialPort
 - obexObjectPush
 - obexFileTransfer
@@ -38,7 +37,7 @@ RFCOMMM is the underlying serial communications for Classic Bluetooth. With UWP 
 Note that you need to manually specify these in the AppManifest.   
 See the [UWP-Bluetooth RFCOMM](https://docs.microsoft.com/en-us/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm.md) topic. Also see the [UWP-Bluetooth Rfcomm Chat Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/BluetoothRfcommChat.md)
 
-3. Generic Attribute Profile (GATT)
+3. *Generic Attribute Profile (GATT)*
 See the [UWP-Bluetooth Low Energy](https://docs.microsoft.com/en-us/windows/uwp/devices-sensors/bluetooth-low-energy-overview) topic. 
 
 ## Connecting Bluetooth devices using the device portal
