@@ -25,7 +25,7 @@ Bluetooth Low Energy (LE) is a specification that defines protocols for discover
 Windows 10 IoT Core supports the following Bluetooth profiles:
 
 1.  [Human Interface Device Profiles Concepts (HID)]
-An HID device takes input from a human and presents output for human consumpation. Examples are keyboard, mouse, game controller, barcode reader,  LED, alphanumeric display. An IoT Core device can connect to an HID device over Bluetooth. See the general topic about HID in the Windows context: [Introduction to HID Concepts](https://docs.microsoft.com/en-us/windows-hardware/drivers/hid/introduction-to-hid-concepts).
+An HID device takes input from a human and presents output for human consumpation. Examples are keyboard, mouse, game controller, barcode reader,  LED, alphanumeric display. An IoT Core device can connect to an HID device over Bluetooth. See the general topic about HID in the Windows context: [Introduction to HID Concepts](https://docs.microsoft.com/en-us/windows-hardware/drivers/hid/introduction-to-hid-concepts). 
 
 2.  Radio Frequency Communication (RFCOMM)
 RFCOMMM is the underlying serial communications for Classic Bluetooth. With UWP apps, the following RFCOMM services are supported via the name value:
