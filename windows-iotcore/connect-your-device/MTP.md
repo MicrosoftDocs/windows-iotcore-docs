@@ -65,6 +65,7 @@ Sample paths:
 - \FirstLevelDirectory\SecondLevelDirectory;
 - Never\Before\Created\Directory.
 
-**NOTE**: do NOT use an absolute path containing the drive letter like `C:\Some\Folder\Path` - this might prevent the SD from being enumerated.
+> [!WARNING]
+> Do not use an absolute path containing the drive letter like `C:\Some\Folder\Path` - this might prevent the SD from being enumerated.
 
 See [this link](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/add-a-registry-setting-to-an-image) for details about customizing your image with specific registry entries.
