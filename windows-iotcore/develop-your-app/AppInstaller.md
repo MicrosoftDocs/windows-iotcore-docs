@@ -24,6 +24,9 @@ To install your application on the device please do the following:
 4. The application will now be visible on the list of applications on your device.
  ![App List](../media/AppInstaller/AppList.png)
 
+> [!NOTE] 
+> If you find that you're unable to start your app, ensure that your device has access to the Internet when installing and launching the app.
+
 ## Using provisioning package from WCD
 You can create a provisioning package with the app and install the provisioning package on the device.
 
