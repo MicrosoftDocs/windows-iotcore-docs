@@ -10,6 +10,8 @@ keywords: windows iot, visual studio, app deployment, remote debugging
 
 # Debug your app using Remote Console App Debugging
 
+## Overview
+
 Here's how to debug your IoT Core console application remotely in Visual Studio:
 
 * You will first need to setup the Remote Debugger on your Windows IoT Core device. First follow the steps [here](AppDeployment.md) to deploy any other Universal Windows Application on your device (try the HelloWorld project). This will copy all the required binaries to your device. 
@@ -52,3 +54,26 @@ Here's how to debug your IoT Core console application remotely in Visual Studio:
 
     ![WindowsDevicePortalDebugSettings Stop remote debugger](../media/Console/device_portal_stop_debugger.PNG)
 
+## Troubleshooting Visual Studio Remote Debugger
+___
+To be able to deploy applications from Visual Studio 2017, you will need to make sure that the Visual Studio Remote Debugger is running on your Windows IoT Core device. The remote debugger should open automatically when you start your computer. To double check, use the `tlist` command to list all the running processes from PowerShell. There should be two instances of msvsmon.exe running on the device.
+
+It is possible for the Visual Studio Remote Debugger to time out after long periods of inactivity. If Visual Studio cannot connect to your Windows IoT Core device, try restarting the device.
+
+### Configure your Windows IoT Core device
+
+If you want, you can rename your device. 
+
+1. To change the computer name, use the `setcomputername` utility:
+
+        setcomputername <new-name>
+
+2. Restart the device for the change to take effect. You can use the `shutdown` command as follows:
+
+        shutdown /r /t 0
+
+3. Because the computer name was changed, after you restart you will need to rerun this command to connect to your device using the new name:
+
+        Set-Item WSMan:\localhost\Client\TrustedHosts -Value <new-name>
+        
+Your Windows IoT Core device should now be properly configured and ready to use!
