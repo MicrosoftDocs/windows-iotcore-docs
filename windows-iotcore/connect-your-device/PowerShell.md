@@ -78,8 +78,10 @@ Make sure to follow these steps to correctly configure your device running Windo
 	        
 	        Enter-PSSession -ComputerName <machine-name or IP Address> -Credential <machine-name or IP Address or localhost>\Administrator
 
-## Troubleshooting Visual Studio Remote Debugger
-___
+## Commonly used PowerShell commands
+
+### Troubleshooting with Visual Studio Remote Debugger
+
 To be able to deploy applications from Visual Studio 2017, you will need to make sure that the Visual Studio Remote Debugger is running on your Windows IoT Core device. The remote debugger should open automatically when you start your computer. To double check, use the `tlist` command to list all the running processes from PowerShell. There should be two instances of msvsmon.exe running on the device.
 
 It is possible for the Visual Studio Remote Debugger to time out after long periods of inactivity. If Visual Studio cannot connect to your Windows IoT Core device, try restarting the device.
