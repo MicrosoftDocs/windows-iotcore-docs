@@ -3,7 +3,7 @@
 ## [Windows 10 IoT Core](windows-iot-core.md)
 ## [Get Started](GetStarted.md)
 ## [Learn about hardware]()
-### [Suggested boards, SoCs, and SoMs](learn-about-hardware/SuggestedBoard.md)
+### [Suggested boards, SoCs, and SoMs](learn-about-hardware/SuggestedBoards.md)
 ### [Device Set Up]()
 #### [Using SD Card](learn-about-hardware/DeviceSetup/SDCard.md)
 #### [Using eMMC](learn-about-hardware/DeviceSetup/eMMC.md)
