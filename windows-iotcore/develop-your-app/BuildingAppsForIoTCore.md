@@ -145,7 +145,7 @@ Samples:
 > [!NOTE]
 > For those who are planning to write their app in C++, you'll need to check the UWP C++ checkbox upon downloading.
 
-![C++ for Visual Studio](../../media/BuildingAppsForIoTCore/VS-CPP.jpg)
+![C++ for Visual Studio](../../media/BuildingAppsForIoTCore/VS_CPP.jpg)
 
 
 ### Arduino Wiring
