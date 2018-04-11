@@ -59,11 +59,6 @@ Have questions along the way? Please work with your Microsoft contact or post qu
 </tr>
 
 <tr class="odd">
-<td align="left"><p>[Developing foreground applications](develop-your-app/backgroundapplications.md)</p></td>
-<td align="left"><p>Learn how to create background applications for Windows 10 IoT Core.</p></td>
-</tr>
-
-<tr class="odd">
 <td align="left"><p>[Deploy an App with Visual Studio](develop-your-app/appdeployment.md)</p></td>
 <td align="left"><p>Learn how to deploy your different apps with Visual Studio to your Windows 10 IoT Core device.</p></td>
 </tr>
