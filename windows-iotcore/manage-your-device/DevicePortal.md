@@ -27,7 +27,7 @@ Documentation for the main features are found on the [Windows Device Portal over
 
 2. Find your device in IoT Dashboard and connect. Click on the ellipses under the "Actions" column.
 
-   ![IoTDashboard View Devices](../media/deviceportal/Dashboard_Action.gif)
+   ![IoTDashboard View Devices](../media/deviceportal/Dashboard-Action.gif)
 
    Enter the IP address into your browser. Add :8080 onto the end.
    ![Browser IP](../media/DevicePortal/browser_ip.png)
