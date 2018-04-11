@@ -142,6 +142,11 @@ Samples:
 * [Blinky Headed](https://github.com/ms-iot/samples/tree/develop/HelloBlinky/Cpp)
 * [Console App](https://developer.microsoft.com/en-us/windows/iot/samples/memorystatus)
 
+> [!NOTE]
+> For those who are planning to write their app in C++, you'll need to check the UWP C++ checkbox upon downloading.
+
+![C++ for Visual Studio](../../media/BuildingAppsForIoTCore/VS-CPP.jpg)
+
 
 ### Arduino Wiring
 With Arduino Wiring support you can build apps in Arduino Wiring for many popular components and peripherals in the IoT ecosystem.
