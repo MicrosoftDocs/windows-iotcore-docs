@@ -17,21 +17,19 @@ keywords: windows iot, Windows Device Portal, remote, device portal
 ![Device Portal Home](../media/deviceportal/deviceportal.png)
 
 ## Shared Documentation
-WDP is a developer tool shared among all Windows 10 devices. Each product has it's unique features, but the core functionality is the same.
-Documentation for the main features are found on the [Windows Device Portal overview page](https://msdn.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal)
-The rest of the documentation below will be IoT specific.
+WDP is a developer tool shared among all Windows 10 devices. Each product has its own unique features, but the core functionality is the same.
+Documentation for the main features are found on the [Windows Device Portal overview page](https://msdn.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal). The rest of the documentation below will be IoT specific.
 
 ## Set up
 1. Connect your board to the internet
 
-    To get WDP up and running, you first need to connect your device to your network. See the [Get Started](https://developer.microsoft.com/en-us/windows/iot/getstarted) page for full instructions.
+    To get WDP up and running, you first need to connect your device to your network.
 
-2. Find your device in IoT Dashboard and connect.
-   Right click and select **Open in Device Portal**.
+2. Find your device in IoT Dashboard and connect. Click on the ellipses under the "Actions" column.
 
-   ![IoTDashboard View Devices](../media/deviceportal/IoTDashboard_RightClickMenu.PNG)
+   ![IoTDashboard View Devices](../media/deviceportal/Dashboard_Action.gif)
 
-   You can enter the IP address into your browser. Add :8080 onto the end.
+   Enter the IP address into your browser. Add :8080 onto the end.
    ![Browser IP](../media/DevicePortal/browser_ip.png)
     
 3. Enter your credentials
@@ -45,6 +43,7 @@ The rest of the documentation below will be IoT specific.
 ### Apps
 Provides install/uninstall functionality for AppX packages and bundles on your device.
 ![App list](../media/DevicePortal/AppList.png)
+
 IoT Core is unique in that it only allows one foreground app to run at one time. The app list is modified to ensure that this is the case. Under the **STARTUP** column, you can select as many background applications to start by default, but can only set one foreground application.  
 
 ### App File Explorer
@@ -59,10 +58,12 @@ The app file explorer shows the directories that your apps can access.
 
 #### Kernel dumps
 ![Debugging with kernel dumps](../media/DevicePortal/Debug1.png)
+
 Any system crashes will automatically be logged and available to view through the web management tool.  You can then download the kernel dump and try to figure out what's going on.
 
 #### Process dumps
 ![Debugging with process dumps](../media/DevicePortal/Debug2.png)
+
 This is similar to Live kernel dumps, but for the user mode processes. 
 Clicking the **download** button will cause a 'minidump', and the entire state of that process will be downloaded. This is good for debugging hanging processes.
 
