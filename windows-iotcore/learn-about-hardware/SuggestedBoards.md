@@ -18,11 +18,11 @@ Below you'll find a few boards we suggest to help you get started with Windows 1
 
 | Boards | Information | Where To Buy | FFU Link | How To Set Up | Starter Kit (if available) |
 |-----------|----------|---------|---------|---------|---------|
-| Raspberry Pi 2 | https://www.raspberrypi.org/products/raspberry-pi-2-model-b/ | https://www.raspberrypi.org/products/raspberry-pi-2-model-b/ | http://go.microsoft.com/fwlink/?LinkId=733603 | [SD-Card](DeviceSetup/SDCard.md) | https://developer.microsoft.com/en-us/windows/iot/Docs/AdafruitMakerKit.htm |
-| Raspberry Pi 3 | https://www.raspberrypi.org/products/raspberry-pi-3-model-b/ | https://www.raspberrypi.org/products/raspberry-pi-3-model-b/ | http://go.microsoft.com/fwlink/?LinkId=733603 | [SD-Card](DeviceSetup/SDCard.md) | https://developer.microsoft.com/en-us/windows/iot/Docs/AdafruitMakerKit.htm |
-| DragonBoard 410c | https://developer.qualcomm.com/hardware/dragonboard-410c | https://www.arrow.com/en/products/dragonboard410c/arrow-development-tools | http://go.microsoft.com/fwlink/?LinkId=733603 | [SD-Card](DeviceSetup/SDCard.md) | N/A | 
-| AAEON Up Squared | http://www.up-board.org/upsquared/specifications-up2/ | https://up-shop.org/4-up-boards | https://downloads.up-community.org/?post_type=wpdmpro&p=204&preview=true | [eMMC](DeviceSetup/eMMC.md) | N/A |
-| MinnowBoard Turbot | https://minnowboard.org | https://minnowboard.org/get-a-board | http://go.microsoft.com/fwlink/?LinkId=733603 | [SD-Card](DeviceSetup/SDCard.md) | N/A |
+| Raspberry Pi 2 | [Raspberry Pi site](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/) | [Buy Raspberry Pi 2](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/) | [Download FFU](http://go.microsoft.com/fwlink/?LinkId=733603) | [SD-Card](DeviceSetup/SDCard.md) | [Adafruit Kit](https://developer.microsoft.com/en-us/windows/iot/Docs/AdafruitMakerKit.htm) |
+| Raspberry Pi 3 | [Raspberry Pi site](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) | [Buy Raspberry Pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) | [Download FFU](http://go.microsoft.com/fwlink/?LinkId=733603) | [SD-Card](DeviceSetup/SDCard.md) | [Adafruit Kit](https://developer.microsoft.com/en-us/windows/iot/Docs/AdafruitMakerKit.htm) |
+| DragonBoard 410c | [Qualcomm Site](https://developer.qualcomm.com/hardware/dragonboard-410c) | [Buy DragonBoard 410c](https://www.arrow.com/en/products/dragonboard410c/arrow-development-tools) | [Download FFU](http://go.microsoft.com/fwlink/?LinkId=733603) | [SD-Card](DeviceSetup/SDCard.md) | N/A | 
+| AAEON Up Squared | [Up Board site](http://www.up-board.org/upsquared/specifications-up2/) | [Buy Up Squared](https://up-shop.org/4-up-boards | https://downloads.up-community.org/?post_type=wpdmpro&p=204&preview=true) | [eMMC](DeviceSetup/eMMC.md) | N/A |
+| MinnowBoard Turbot | [MinnowBoard site](https://minnowboard.org) | [Buy MinnowBoard](https://minnowboard.org/get-a-board) | [Download FFU](http://go.microsoft.com/fwlink/?LinkId=733603) | [SD-Card](DeviceSetup/SDCard.md) | N/A |
 
 
 If you want to work with something else for prototyping or development, we have hundreds of different other devices that you can use to get started as well, as shown below.
