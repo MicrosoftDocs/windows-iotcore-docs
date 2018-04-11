@@ -17,7 +17,7 @@ Below you'll find a few boards we suggest to help you get started with Windows 1
 > Our licensing terms do not allow commercializing using FFU images downloaded from Microsoft.
 
 | Boards | Information | Where To Buy | FFU Link | How To Set Up | Starter Kit (if available) |
-|-------------|----------|---------|
+|-----------|----------|---------|---------|---------|---------|
 | Raspberry Pi 2 | https://www.raspberrypi.org/products/raspberry-pi-2-model-b/ | https://www.raspberrypi.org/products/raspberry-pi-2-model-b/ | http://go.microsoft.com/fwlink/?LinkId=733603 | [SD-Card](DeviceSetup/SDCard.md) | https://developer.microsoft.com/en-us/windows/iot/Docs/AdafruitMakerKit.htm |
 | Raspberry Pi 3 | https://www.raspberrypi.org/products/raspberry-pi-3-model-b/ | https://www.raspberrypi.org/products/raspberry-pi-3-model-b/ | http://go.microsoft.com/fwlink/?LinkId=733603 | [SD-Card](DeviceSetup/SDCard.md) | https://developer.microsoft.com/en-us/windows/iot/Docs/AdafruitMakerKit.htm |
 | DragonBoard 410c | https://developer.qualcomm.com/hardware/dragonboard-410c | https://www.arrow.com/en/products/dragonboard410c/arrow-development-tools | http://go.microsoft.com/fwlink/?LinkId=733603 | [SD-Card](DeviceSetup/SDCard.md) | N/A | 
