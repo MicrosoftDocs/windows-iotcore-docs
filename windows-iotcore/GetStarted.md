@@ -107,12 +107,12 @@ Have questions along the way? Please work with your Microsoft contact or post qu
 </tr>
 
 <tr class="odd">
-<td align="left"><p>[Create board supported packages](build-your-image/createbsps)</p></td>
+<td align="left"><p>[Create board supported packages](build-your-image/createbsps.md)</p></td>
 <td align="left"><p>Learn how to create board supported packages (BSPs) for Windows 10 IoT Core.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p>[Create and install a package](build-your-image/createinstallpackage)</p></td>
+<td align="left"><p>[Create and install a package](build-your-image/createinstallpackage.md)</p></td>
 <td align="left"><p>Learn how to create and install packages for your device.</p></td>
 </tr>
 
