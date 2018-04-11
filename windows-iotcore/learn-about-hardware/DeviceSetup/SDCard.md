@@ -15,7 +15,7 @@ keywords: Windows 10 IoT Core, SD Card, Windows 10 IoT Core Dashboard
 Devices that can be flashed with a SD card include Raspberry Pi boards and MinnowBoard Turbot boards. You'll want to grab the latest firmware update possible.
 
 > [!IMPORTANT]
-> The latest 64-bit firmware for Minnowboard Turbot can be found on the [Minnowboard website](Minnowboard website link goes here) (skip step 4 on the Minnowboard site's instructions).
+> The latest 64-bit firmware for Minnowboard Turbot can be found on the [Minnowboard website](https://minnowboard.org/tutorials/updating-the-firmware) (skip step 4 on the Minnowboard site's instructions).
 
 ## Using the Dashboard
 > [!Video https://www.youtube.com/embed/JPRUbGIyODY]
