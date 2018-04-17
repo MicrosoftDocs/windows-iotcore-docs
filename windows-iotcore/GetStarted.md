@@ -18,63 +18,10 @@ If you're already comfortable with this domain, take a look at all of the differ
 
 Have questions along the way? Please work with your Microsoft contact or post questions on our [Windows 10 IoT forum](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT).
 
-## Building a prototype
+## Build your first Windows 10 IoT device
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Topic</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
+Get started quickly and easily with our [Windows 10 IoT Core Quickstarter](Tutorials.md). 
 
-<tr class="odd">
-<td align="left"><p>[Suggested Boards, SoCs, and SoMs](learn-about-hardware/SuggestedBoards.md)</p></td>
-<td align="left"><p>Learn all about the different boards and devices in the Windows 10 IoT Ecosystem.</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>[Device Setup - SD Card](learn-about-hardware/DeviceSetup/SDCard.md)</p></td>
-<td align="left"><p>Learn how to set up your device using a SD card and the Windows 10 IoT Core Dashboard.</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>[Device Setup - eMMC](learn-about-hardware/DeviceSetup/eMMC.md)</p></td>
-<td align="left"><p>Learn how to set up your device using eMMC.</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>[Developing foreground applications](develop-your-app/buildingappsforiotcore.md)</p></td>
-<td align="left"><p>Learn about the different languages that are supported on Windows 10 IoT Core as well as the UWP and non-UWP app types that are supported.</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>[Developing background applications](develop-your-app/backgroundapplications.md)</p></td>
-<td align="left"><p>Learn about the different languages that are supported on Windows 10 IoT Core as well as the UWP and non-UWP app types that are supported.</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>[Deploy an App with Visual Studio](develop-your-app/appdeployment.md)</p></td>
-<td align="left"><p>Learn how to deploy your different apps with Visual Studio to your Windows 10 IoT Core device.</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>[Debug your app using Remote Console App Debugging](develop-your-app/remotedebugging.md)</p></td>
-<td align="left"><p>Learn how to debug your apps using Remote Console App Debugging in Visual Studio.</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>[Install your app on your Windows 10 IoT Core device](develop-your-app/appinstaller.md)</p></td>
-<td align="left"><p>Learn how to install your app to your Windows 10 IoT Core device.</p></td>
-</tr>
-
-</tbody>
-</table>
 
 ## Commercializing a device
 

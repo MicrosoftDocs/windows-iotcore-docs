@@ -10,27 +10,6 @@ keywords: windows iot, development devices, boards, SOC, SOM, system on chips, R
 
 # Suggested Boards, SoCs, and SoMs
 
-## Windows 10 IoT Core Development Devices
-Below you'll find a few boards we suggest to help you get started with Windows 10 IoT Core. Some of these boards offer a Full Flash Update (FFU) image, making prototyping faster with a ready-made image and making the process of flashing Windows 1 IoT Core a breeze.
-
-> [!IMPORTANT]
-> Our licensing terms do not allow commercializing using FFU images downloaded from Microsoft.
-
-| Boards | Information | Where To Buy | FFU Link | How To Set Up | Starter Kit |
-|-----------|----------|---------|---------|---------|---------|
-| Raspberry Pi 2 | [Raspberry Pi site](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/) | [Buy Raspberry Pi 2](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/) | [Download FFU](http://go.microsoft.com/fwlink/?LinkId=733603) | [SD-Card](DeviceSetup/SDCard.md) | [Adafruit Kit](https://developer.microsoft.com/en-us/windows/iot/Docs/AdafruitMakerKit.htm) |
-| Raspberry Pi 3 | [Raspberry Pi site](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) | [Buy Raspberry Pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) | [Download FFU](http://go.microsoft.com/fwlink/?LinkId=733603) | [SD-Card](DeviceSetup/SDCard.md) | [Adafruit Kit](https://developer.microsoft.com/en-us/windows/iot/Docs/AdafruitMakerKit.htm) |
-| DragonBoard 410c | [Qualcomm Site](https://developer.qualcomm.com/hardware/dragonboard-410c) | [Buy DragonBoard 410c](https://www.arrow.com/en/products/dragonboard410c/arrow-development-tools) | [Download FFU](http://go.microsoft.com/fwlink/?LinkId=733603) | [SD-Card](DeviceSetup/SDCard.md) | N/A | 
-| AAEON Up Squared | [Up Board site](http://www.up-board.org/upsquared/specifications-up2/) | [Buy Up Squared](https://up-shop.org/4-up-boards) | [Download FFU](https://downloads.up-community.org/?post_type=wpdmpro&p=204&preview=true) | [eMMC](DeviceSetup/eMMC.md) | N/A |
-| MinnowBoard Turbot | [MinnowBoard site](https://minnowboard.org) | [Buy MinnowBoard](https://minnowboard.org/get-a-board) | [Download FFU](http://go.microsoft.com/fwlink/?LinkId=733603) | [SD-Card](DeviceSetup/SDCard.md) | N/A |
-
-
-If you want to work with something else for prototyping or development, we have hundreds of different other devices that you can use to get started as well, as shown below.
-
-| Broadcomm/Raspberry Pi | Intel | Qualcomm |
-|-------------|----------|---------|
-| [Element 14 / Raspberry Pi Customization Service](https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service)| [Intel commercialization devices](https://solutionsdirectory.intel.com/solutions-directory/processors/278/processors/309/processors/402/processors/782/processors/788/processors/1103/processors/1107/processors/1110/processors/1175/processors/1344/processors/1348/processors/1349) | [Qualcomm-based devices](https://developer.qualcomm.com/hardware/snapdragon-410) |
-
 ## Microsoft-enabled SoCs
 Microsoft works alongside Broadcom, Intel, and Qualcomm to verify support for Windows 10 IoT Core on several of the silicon vendors' SoC. These IoT Core-powered SoCs are used in hundreds of different devices that you can use to prototype and commercialize your idea with. 
 
@@ -45,6 +24,14 @@ Microsoft works alongside Broadcom, Intel, and Qualcomm to verify support for Wi
 | | 	[Intel® Atom® x5-Z8350 Processor (Cherry Trail)](https://ark.intel.com/products/93361/Intel-Atom-x5-Z8350-Processor-2M-Cache-up-to-1_92-GHz) | | [i.MX 6SoloLite](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u) |
 | | 	[Intel® Atom™ Processor E3800 Product Family (Bay Trail-I)](http://ark.intel.com/products/codename/55844/#@Embedded) | | [i.MX 6SLL](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u) |
 | | 	[Intel® Pentium® and Celeron® Processor N and J Series (Bay Trail-M/D)](http://ark.intel.com/products/codename/55844/) | |
+
+
+If you want to work with something else that's not listed above, we have hundreds of different other devices that you can use to get started as well, as shown below.
+
+| Broadcomm/Raspberry Pi | Intel | Qualcomm |
+|-------------|----------|---------|
+| [Element 14 / Raspberry Pi Customization Service](https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service)| [Intel commercialization devices](https://solutionsdirectory.intel.com/solutions-directory/processors/278/processors/309/processors/402/processors/782/processors/788/processors/1103/processors/1107/processors/1110/processors/1175/processors/1344/processors/1348/processors/1349) | [Qualcomm-based devices](https://developer.qualcomm.com/hardware/snapdragon-410) |
+
 
 ## Manufacture a board
 If you're still looking at different options for your board, you also have the option of having your board built. The following companies specialize in building custom boards:
