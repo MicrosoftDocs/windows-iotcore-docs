@@ -16,6 +16,9 @@
               - name: Windows 10 IoT Core
                 tocHref: /windows/iot-core/windows-iot-core/
                 topicHref: "/windows/iot-core/windows-iot-core"
+              - name: Tutorials
+                tocHref: /windows/iot-core/Tutorials/
+                topicHref: "/windows/iot-core/Tutorials/PrototypeBoards.md"
               - name: Learn about hardware
                 tocHref: /windows/iot-core/learn-about-hardware/
                 topicHref: "/windows/iot-core/learn-about-hardware/suggestedboards"  
