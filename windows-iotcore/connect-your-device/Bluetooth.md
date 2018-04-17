@@ -28,14 +28,15 @@ An HID device takes input from a human and presents output for human consumpatio
 
 2.  **Radio Frequency Communication (RFCOMM)**
 RFCOMMM is the underlying serial communications for Classic Bluetooth. With UWP apps, the following RFCOMM services are supported:
-- serialPort
-- obexObjectPush
-- obexFileTransfer
-- phoneBookAccessPce
-- phoneBookAccessPse
-- genericFileTransfer
+* serialPort
+* obexObjectPush
+* obexFileTransfer
+* phoneBookAccessPce
+* phoneBookAccessPse
+* genericFileTransfer
 
-- Note that you need to manually specify these in the AppManifest.  See the [UWP-Bluetooth RFCOMM](https://docs.microsoft.com/en-us/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm) topic. Also see the [UWP-Bluetooth Rfcomm Chat Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/BluetoothRfcommChat)
+> [!NOTE]
+> You will need to manually specify these in the AppManifest.  See the [UWP-Bluetooth RFCOMM](https://docs.microsoft.com/en-us/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm) topic. Also see the [UWP-Bluetooth Rfcomm Chat Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/BluetoothRfcommChat) topic.
 
 3. **Generic Attribute Profile (GATT)**
 See the [UWP-Bluetooth Low Energy](https://docs.microsoft.com/en-us/windows/uwp/devices-sensors/bluetooth-low-energy-overview) topic. 
