@@ -19,3 +19,10 @@ Use this tutorial to get yourself comfortable with Windows 10 IoT quickly. You'l
 2.  [Setup your device](quickstarter/DeviceSetup.md)
 3.  [Add an app](quickstarter/DevelopApp.md)
 
+
+## Create a 3D Print Server
+
+Turn your Windows 10 IoT Core device into a print server and connect your 3D printer to it. You will be able to access your printer wirelessly from other devices.
+
+1. [Set up](3DPrint/SetUp.md)
+2. [Add printer](3DPrint/AddPrinter.md)
