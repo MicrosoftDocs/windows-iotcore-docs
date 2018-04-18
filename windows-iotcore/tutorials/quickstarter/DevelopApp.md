@@ -10,7 +10,27 @@ keywords: Windows 10 IoT Core, Get Started, develop apps, apps
 
 # Develop an app for your device
 
-Now that you have a working device with the default app running, you'll want to take your device to the next level by developing and deploying an app on your device. To get this working quickly, we recommend starting with the [Hello Blinky sample](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinky) or [any of our other samples](https://developer.microsoft.com/en-us/windows/iot/samples). But if you're ready to deploy your own app, we've provided helpful links below.
+Now that you have a working device with the default app running, you'll want to take your device to the next level by developing and deploying an app on your device. Before diving into any samples, you'll need a few things...
+
+* Download [Visual Studio 2017](https://www.visualstudio.com/downloads/) for development.
+* Download the [Windows IoT Core Extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-iot.windowsiot)
+
+If you're planning to use C++ for your projects, when downloading Visual Studio 2017, make sure to check the boxes the same way as the example below:
+
+![Essentials for C++ and Windows 10 IoT](../../media/DevelopApp/VS-CPP.jpg)
+
+And if you're interested in developing background, Arduino Wiring or console applications in the future, you'll also want to download project templates from the [Visual Studio Gallery](https://marketplace.visualstudio.com/items?itemName=MicrosoftIoT.WindowsIoTCoreProjectTemplatesforVS15).
+
+
+To get up and running with an app, we recommend starting with a suggested starter sample below. But if you're ready to deploy your own app, we've also provided helpful links in the section after.
+
+## Suggested starter samples
+
+* [Hello Blinky](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinky)
+* [Hello World](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloWorld)
+* [IoT Startup App sample](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTStartApp)
+* [RPi Cognitive Service sample](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/RPiCognitiveService) 
+
 
 Once you've deployed your app - congratulations, you've finished this quickstarter! Continue to play around or, if you have a few ideas bouncing around in your head, check out or documentation on commercializing with Windows 10 IoT. 
 
