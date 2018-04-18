@@ -14,6 +14,42 @@ Creating your own device is exciting. But at the same time, we understand that i
 
 Have questions along the way? Please work with your Microsoft contact or post questions on our [Windows 10 IoT forum](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT).
 
+## What is Windows 10 IoT?
+
+Want to learn more about our two offerings, Windows 10 IoT Enterprise and Windows 10 IoT Core? We've created documentation for you to learn more about what each product has to offer.  
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Topic</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+
+<tr class="odd">
+<td align="left"><p>[Windows IoT Overview](windows-iot.md)</p></td>
+<td align="left"><p>Compare our two Windows 10 IoT products and see which solution is the right fit for you.</p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p>[Windows 10 IoT Enterprise Overview](windows-iot-enterprise.md)</p></td>
+<td align="left"><p>Learn more about how to get started with Windows 10 IoT Enterprise..</p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p>[Windows 10 IoT Core Overview](windows-iot-core.md)</p></td>
+<td align="left"><p>Learn more about how to get started with Windows 10 IoT Core.</p></td>
+</tr>
+
+</tbody>
+</table>
+
+
 ## Build your first Windows 10 IoT device
 
 New to Windows 10 IoT? Get started quickly and easily with our [Windows 10 IoT Core Quickstarter](tutorials/Tutorials.md). 
