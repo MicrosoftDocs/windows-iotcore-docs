@@ -8,7 +8,7 @@ description: Learn about how to add and develop apps for your device
 keywords: Windows 10 IoT Core, Get Started, develop apps, apps
 --- 
 
-# Get Started with Windows 10 IoT Core
+# Develop an app for your device
 
 Now that you have a working device with the default app running, you'll want to take your device to the next level by developing and deploying an app on your device. To get this working quickly, we recommend starting with the [Hello Blinky sample](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinky) or [any of our other samples](https://developer.microsoft.com/en-us/windows/iot/samples). But if you're ready to deploy your own app, we've provided helpful links below.
 
