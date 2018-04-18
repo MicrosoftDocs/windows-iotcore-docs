@@ -12,7 +12,7 @@ keywords: Windows 10 IoT Core, 3D printer
 
 ## Get your equipment
 
-1. Before you start, you will need a board with the latest version of the Windows 10 IoT Core Insider Preview installed. Follow the [Windows 10 IoT Core Quickstarter](../prototypeboards.md) to get set up.
+1. Before you start, you will need a board with the latest version of the Windows 10 IoT Core Insider Preview installed. Follow the [Windows 10 IoT Core Quickstarter](../PrototypeBoards.md) to get set up.
 
 2. Once you have your board, you will also need a 3D printer compatible with our Network 3D Printer app:
 * Lulzbot Taz 6
