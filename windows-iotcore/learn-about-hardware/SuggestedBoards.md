@@ -14,7 +14,7 @@ keywords: windows iot, development devices, boards, SOC, SOM, system on chips, R
 Microsoft works alongside Broadcom, Intel, and Qualcomm to verify support for Windows 10 IoT Core on several of the silicon vendors' SoC. These IoT Core-powered SoCs are used in hundreds of different devices that you can use to prototype and commercialize your idea with. 
 
 > [!IMPORTANT]
-> You must create your own images and not use Microsoft-provided images if you plan to make your device publicly available and commercialized.
+> You must create your own images and not use the provided images below if you plan to commercialize your device.
 
 | Broadcom | Intel | Qualcomm | NXP (coming soon) |
 |----------|-------|----------|-----|

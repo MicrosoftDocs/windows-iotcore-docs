@@ -11,10 +11,11 @@ keywords: windows iot, development devices, boards, Raspberry Pi 2, Raspberry Pi
 # Suggested Prototype Boards
 
 ## Windows 10 IoT Core Development Devices
-Below you'll find a few boards we suggest to help you get started with Windows 10 IoT Core. These boards offer a Full Flash Update (FFU) image, making prototyping faster with a ready-made image and making the process of flashing Windows 10 IoT Core a breeze.
+Below you'll find boards we suggest to help you get started with Windows 10 IoT Core. These boards offer a Full Flash Update (FFU) image, making prototyping faster with a ready-made image and making the process of flashing Windows 10 IoT Core a breeze.
 
 > [!IMPORTANT]
-> You must create your own images and not use the provided images below if you plan to make your device publicly available and commercialized.
+> You must create your own images and not use the provided images below if you plan to commercialize your device.
+
 
 | Boards | Where To Buy | FFU Link | How To Set Up | Starter Kit |
 |-----------|----------|---------|---------|---------|---------|
