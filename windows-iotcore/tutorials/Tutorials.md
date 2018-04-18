@@ -14,7 +14,7 @@ Get familiar with and explore the world of Windows 10 IoT with our tutorials.
  
 ## Windows 10 IoT Core Quickstarter
 
-1. [Choose a board](PrototypeBoards.md)
-2.  [Setup your device](DeviceSetup.md)
-3.  [Add an app](DevelopApp.md)
+1. [Choose a board](quickstarter/PrototypeBoards.md)
+2.  [Setup your device](quickstarter/DeviceSetup.md)
+3.  [Add an app](quickstarter/DevelopApp.md)
 

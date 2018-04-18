@@ -9,16 +9,13 @@ keywords: Windows 10 IoT Core, SD Card, Windows 10 IoT Core Dashboard
 
 # Setting up your device
 
-Below you'll find two ways to flash your device with Windows 10 IoT Core: 1) using a SD card or 2) using eMMC. Based on the chart included in the [list of suggested boards for prototyping](PrototypeBoards.md), follow the appropriate directions.
+Below you'll find two ways to flash your device with Windows 10 IoT Core: 1) using a SD card or 2) using eMMC for Intel devices and 3) using eMMC for Qualcomm devices. Based on the chart included in the [list of suggested boards for prototyping](PrototypeBoards.md), follow the appropriate directions. Use the right column to navigate between these different flashing methods.
 
-## Using a SD Card
-
-Devices that can be flashed with a SD card include Raspberry Pi boards and MinnowBoard Turbot boards. You'll want to grab the latest firmware update possible.
+## Using the IoT Dashboard (Raspberry Pi and MinnowBoard)
 
 > [!IMPORTANT]
 > The latest 64-bit firmware for Minnowboard Turbot can be found on the [Minnowboard website](https://minnowboard.org/tutorials/updating-the-firmware) (skip step 4 on the Minnowboard site's instructions).
 
-### Using the Dashboard
 > [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 
 1. Download the Windows 10 IoT Core Dashboard [here](https://developer.microsoft.com/en-us/windows/iot/Downloads).
@@ -27,9 +24,9 @@ Devices that can be flashed with a SD card include Raspberry Pi boards and Minno
 > [!TIP]
 > We recommend using a high-performance SD card for increased stability.
 
-![Dashboard screenshot](../../media/SDCard/Dashboard-Screenshot.jpg)
+![Dashboard screenshot](../../media/DeviceSetup/Dashboard-Screenshot.jpg)
 
-3. Fill out all of the fields as indicated
+3. Fill out all of the fields as indicated.
 4. Accept the software license terms and click *Download and install*.
 
 > [!TIP]
@@ -58,11 +55,95 @@ If you haven't connected and display and would like to connect via Wi-Fi, you'll
 
 Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available. 
 
-## Setting up your device with eMMC
 
-Devices that can be flashed with a SD card include the AAEON Up Squared Board.
 
-### Flashing with eMMC
+## Using the IoT Dashboard (DragonBoard 410c)
+1. Download the Windows 10 IoT Core Dashboard [here](https://developer.microsoft.com/en-us/windows/iot/Downloads).
+2. Once downloaded, open the Dashboard and select "Qualcomm DragonBoard 410c". Then *sign in as a Windows Insider*. You need to be signed in as an insider in order to flash DragonBoard 410c. 
+3. Connect the Qualcomm board to the developer machine using a microUSB cable. Power on the DragonBoard to a 12V (> 1A) power supply.
+
+> [!TIP]
+> We recommend plugging your device into an external display to see the default application booting up.
+
+4. Turn the DragonBoard to flash mode by pressing the volume up (+) button while powering on the device. The device - when connected to a display - will show the image below when in flash mode.
+
+![Screen on flash mode](../../media/DeviceSetup/db3.png)
+
+5. Once in flash mode, the device will be visible on the Dashboard. Select the appropriate device.
+
+![DragonBoard in flash mode](../../media/DeviceSetup/db4.png)
+
+6. Accept the software license terms and click *Download and install*.
+
+### Connecting to a network
+
+#### Wired connection
+If your device comes with an Ethernet port or USB Ethernet adapter support to enable a wired connection, attach an Ethernet cable to connect it to your network.
+
+#### Wireless connection
+If your device supports Wi-Fi connectivity and you've connected a display to it, you'll need to:
+
+1. Go into your default application and click the settings button next to the clock.
+2. On the settings page, select *Network and Wi-Fi*.
+3. Your device will begin scanning for wireless networks.
+4. Once your network appears in this list, select it and click *Connect*.
+
+If you haven't connected and display and would like to connect via Wi-Fi, you'll need to:
+
+1. Go to the IoT Dashboard and click on *My Devices*.
+2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
+3. Click on *Configure Device* and enter your network credentials. This will connect your board to the network.
+
+### Connecting to Windows Device Portal
+
+Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available. 
+
+
+
+### Flashing with eMMC (for DragonBoard 410c, other Qualcomm devices)
+
+1. Download and install the DragonBoard Update Tool for your [x86](https://developer.qualcomm.com/download/db410c/windows-10-iot-update-tool-dragonboard-410c-x86.zip) or [x64](https://developer.qualcomm.com/download/db410c/windows-10-iot-update-tool-dragonboard-410c-x64.zip) machine.
+2. Download the [Windows 10 IoT Core DragonBoard FFU](http://go.microsoft.com/fwlink/?LinkId=733603).
+3. Double-click on the downloaded ISO file and locate the mounted Virtual CD-drive. This drive will contain an installer file (.msi); double-click on it. This creates a new directory on your PC under `C:\Program Files (x86)\Microsoft IoT\FFU\` in which you should see an image file, "flash.ffu".
+4. Ensure your DragonBoard is in download mode by setting the first boot switch on the board to USB Boot, as shown below. Then, connect DragonBoard the host PC via a microUSB cable, then plug in the DragonBoard to a 12V (> 1A) power supply.
+
+![DragonBoard in download mode](../../media/DeviceSetup/db1.png)
+
+5. Start the DragonBoard Update Tool, which should detect that the DragonBoard is connect to your PC with a green circle. "Browse" to the DragonBoard's FFU that you downloaded, then click the *Program* button.
+
+![DragonBoard in download mode](../../media/DeviceSetup/db2.png)
+
+6. Once the download is complete, disconnect the power supply and microUSB cable from the board and toggle the USB Boot switch back to *OFF*. Connect a HDMI display, a mouse, and a keyboard to the DragonBoard and rec-onnect the power supply. After a few minutes, you should see the Windows 10 IoT Core default application. 
+
+> [!NOTE]
+> Make sure the device is now booting from the eMMC memory by entering the BIOS setup again and switching the Boot Drive order to load from the Hard Drive instead of from the USB Drive.
+
+
+### Connecting to a network
+
+#### Wired connection
+If your device comes with an Ethernet port or USB Ethernet adapter support to enable a wired connection, attach an Ethernet cable to connect it to your network.
+
+#### Wireless connection
+If your device supports Wi-Fi connectivity and you've connected a display to it, you'll need to:
+
+1. Go into your default application and click the settings button next to the clock.
+2. On the settings page, select *Network and Wi-Fi*.
+3. Your device will begin scanning for wireless networks.
+4. Once your network appears in this list, select it and click *Connect*.
+
+If you haven't connected and display and would like to connect via Wi-Fi, you'll need to:
+
+1. Go to the IoT Dashboard and click on *My Devices*.
+2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
+3. Click on *Configure Device* and enter your network credentials. This will connect your board to the network.
+
+### Connecting to Windows Device Portal
+
+Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available. 
+
+
+### Flashing with eMMC (for Up Squared, other Intel devices)
 
 1. Download and install the [Windows Assessment and Deployment kit](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install) with the correlating version of Windows 10 you're running.
 2. Insert a USB drive into your machine.
