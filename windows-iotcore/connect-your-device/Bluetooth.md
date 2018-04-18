@@ -11,13 +11,13 @@ keywords: windows iot, bluetooth, bluetooth support, devices, device portal
 # Bluetooth Support
 Windows 10 IoT Core supports Bluetooth 4.0. A list of supported Bluetooth dongles can be found in the [Hardware Compatibility List](../learn-about-hardware/HardwareCompatList.md).
 
-# About Bluetooth
+## About Bluetooth
 There are two different bluetooth technologies that you can choose to implement in your app:
 
-## Classic Bluetooth (RFCOMM)
+* Classic Bluetooth (RFCOMM)
 Before Bluetooth LE, devices commonly used this protocol to communicate using Bluetooth. This protocol is simple and useful for device-to-device communication without the need of energy savings. Connectivity requires pairing.
 
-## Bluetooth Low-Energy (BLE/LE)
+* Bluetooth Low-Energy (BLE/LE)
 Bluetooth Low Energy (LE) is a specification that defines protocols for discovery and communication between devices that have an efficient energy usage requirement. For more information including code samples, As per recent builds, a device can connect to to a BLE device without pairing.
 
 ## Supported Bluetooth Profiles
@@ -28,6 +28,7 @@ An HID device takes input from a human and presents output for human consumpatio
 
 2.  **Radio Frequency Communication (RFCOMM)**
 RFCOMMM is the underlying serial communications for Classic Bluetooth. With UWP apps, the following RFCOMM services are supported:
+
 * serialPort
 * obexObjectPush
 * obexFileTransfer
@@ -49,4 +50,14 @@ When using one of the [Windows 10 IoT Core Release Image](https://developer.micr
 After the device is successfully paired it will be listed under the paired device section 
 
 ![Bluetooth Incoming Pairing](../media/Bluetooth/Portal_BT_3.png)
+
+## Bluetooth Onboarding
+
+Currently, we offer three different ways of allowing users to go about wifi onboarding. We've documented the benefits and drawbacks for each method of onboarding. 
+
+> | Samples | Description | Benefits  |  Drawbacks  |
+> |-------------|----------|---------|
+> | [Companion App](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/CompanionApp) | Create a simple app that can configure your device's Wi-Fi. | * Simple * Headed or headless for IoT Core Server * Doesn't require AllJoyn # Clients work across device types | * User is creating his or her own protocol * Insecure, needs customer to implement security |
+> | [IoT Onboarding with Bluetooth RFCOMM](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTOnboarding_RFCOMM) | Create solution to configure your headless IoT device to connect with your Wi-Fi using Bluetooth RFCOMM.  | * Designed for headless devices * Familiar technologies and concepts used * Does not require IoT device to start a SoftAP first * Does not need to adjust firewall settings | * Requires Bluetooth support for client and server devices * Sample only proivdes client app for Windows 10 * Server app pre-defines/hard-codes the names of the client device. |
+> | [IoT Onboarding with AllJoyn](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTOnboarding) | Remotely join your headless IoT device with your home Wi-Fi network. | * Works with AllJoyn | * Some support for AllJoyn is deprecated |
 
