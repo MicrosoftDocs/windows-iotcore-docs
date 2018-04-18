@@ -10,17 +10,15 @@ keywords: Windows 10 IoT Core, Get Started, images,
 
 # Get Started with Windows 10 IoT Core
 
-Creating your own device is exciting. But at the same time, we understand that it can also be intimidating. Before diving straight into bringing your device to market – what we like to call “commercialization” – it’s good to get a feel for this platform by building a prototype with Windows 10 IoT Core. 
- 
-We have a number of devices that will help you get started with prototyping. We have many more recommendations once you’re ready to commercialize, but for now, it’s important to get Windows 10 IoT Core running – especially if this is your first time. 
+Creating your own device is exciting. But at the same time, we understand that it can also be intimidating. If you aren't familiar with Windows 10 IoT Core, we highly recommend that you start out with our Quickstarter below before diving into the deep end. 
 
-If you're already comfortable with this domain, take a look at all of the different devices you can work with or, if you have certain specifications for your device, there are also options to have different companies build boards for you.
+On the other hand, if you're already comfortable with this platform, take a look at all of the different devices you can work with or, if you have certain specifications for your device, there are also options to have different companies build boards for you. We've included these resources below as well.
 
 Have questions along the way? Please work with your Microsoft contact or post questions on our [Windows 10 IoT forum](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT).
 
 ## Build your first Windows 10 IoT device
 
-Get started quickly and easily with our [Windows 10 IoT Core Quickstarter](Tutorials.md). 
+New to Windows 10 IoT? Get started quickly and easily with our [Windows 10 IoT Core Quickstarter](tutorials/Tutorials.md). 
 
 
 ## Commercializing a device
@@ -39,8 +37,13 @@ Get started quickly and easily with our [Windows 10 IoT Core Quickstarter](Tutor
 <tbody>
 
 <tr class="odd">
+<td align="left"><p>[Suggested Boards, SoCs, and SoMs](learn-about-hardware/suggestedboards.md)</p></td>
+<td align="left"><p>Learn about the different boards you can work with to build your Windows 10 IoT Core solution.</p></td>
+</tr>
+
+<tr class="odd">
 <td align="left"><p>[OEM License Requirements](commercialize-your-device/oemlicenserequirements.md)</p></td>
-<td align="left"><p>Sign the OEM license agreement and learn more about other requirements for commercialization..</p></td>
+<td align="left"><p>Sign the OEM license agreement and learn more about other requirements for commercialization.</p></td>
 </tr>
 
 <tr class="odd">

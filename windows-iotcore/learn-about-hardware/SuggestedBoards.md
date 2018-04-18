@@ -13,6 +13,9 @@ keywords: windows iot, development devices, boards, SOC, SOM, system on chips, R
 ## Microsoft-enabled SoCs
 Microsoft works alongside Broadcom, Intel, and Qualcomm to verify support for Windows 10 IoT Core on several of the silicon vendors' SoC. These IoT Core-powered SoCs are used in hundreds of different devices that you can use to prototype and commercialize your idea with. 
 
+> [!IMPORTANT]
+> You must create your own images and not use Microsoft-provided images if you plan to make your device publicly available and commercialized.
+
 | Broadcom | Intel | Qualcomm | NXP (coming soon) |
 |----------|-------|----------|-----|
 | BCM2837  | [Intel® Joule™](https://software.intel.com/en-us/iot/hardware/joule) | [Snapdragon 212 (APQ8009)](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 6QuadPlus](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u) |
@@ -32,7 +35,6 @@ If you want to work with something else that's not listed above, we have hundred
 |-------------|----------|---------|
 | [Element 14 / Raspberry Pi Customization Service](https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service)| [Intel commercialization devices](https://solutionsdirectory.intel.com/solutions-directory/processors/278/processors/309/processors/402/processors/782/processors/788/processors/1103/processors/1107/processors/1110/processors/1175/processors/1344/processors/1348/processors/1349) | [Qualcomm-based devices](https://developer.qualcomm.com/hardware/snapdragon-410) |
 
-
 ## Manufacture a board
 If you're still looking at different options for your board, you also have the option of having your board built. The following companies specialize in building custom boards:
 
@@ -41,4 +43,9 @@ If you're still looking at different options for your board, you also have the o
 * [Myro PCB](http://www.myropcb.com/)
 * [OSH PARK](https://oshpark.com/)
 * [seeed studio](https://www.seeedstudio.com/)
+
+## Azure-enabled devices
+If your device needs Azure support and connectivity, you can explore the different devices available on the [Azure IoT device catalog](https://catalog.azureiotsuite.com/).
+
+
 
