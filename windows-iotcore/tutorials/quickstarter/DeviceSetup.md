@@ -9,28 +9,28 @@ keywords: Windows 10 IoT Core, SD Card, Windows 10 IoT Core Dashboard
 
 # Setting up your device
 
-Below you'll find four different ways to flash your device with Windows 10 IoT Core. Based on the chart included in the [list of suggested boards for prototyping](PrototypeBoards.md), follow the appropriate directions. Use the right column to navigate between these different flashing methods.
+Below you'll find four different ways to flash your device with Windows 10 IoT Core. Based on the chart included in the [list of suggested boards for prototyping](PrototypeBoards.md), follow the appropriate directions. Use the right column to navigate between these different methods of flashing.
 
 ## Using the IoT Dashboard (Raspberry Pi and MinnowBoard)
+
+> [!Video https://www.youtube.com/embed/JPRUbGIyODY]
+
 
 > [!IMPORTANT]
 > The latest 64-bit firmware for Minnowboard Turbot can be found on the [Minnowboard website](https://minnowboard.org/tutorials/updating-the-firmware) (skip step 4 on the Minnowboard site's instructions).
 
 
-> [!Video https://www.youtube.com/embed/JPRUbGIyODY]
+> [!TIP]
+> We recommend using a high-performance SD card for increased stability as well as plugging your device into an external display to see the default application booting up.
 
 1. Download the Windows 10 IoT Core Dashboard [here](https://developer.microsoft.com/en-us/windows/iot/Downloads).
-2. Once downloaded, open the Dashboard and click on *set up a new device* and insert a SD card into your computer.
+2. Once downloaded, open the Dashboard and click on _set up a new device_ and insert a SD card into your computer.
 3. Fill out all of the fields as indicated.
-4. Accept the software license terms and click *Download and install*.
+4. Accept the software license terms and click _Download and install_.
 
-> [!TIP]
-> We recommend using a high-performance SD card for increased stability.
 
 ![Dashboard screenshot](../../media/DeviceSetup/Dashboard-Screenshot.jpg)
 
-> [!TIP]
-> We recommend plugging your device into an external display to see the default application booting up.
 
 ### Connecting to a network
 
@@ -41,13 +41,13 @@ If your device comes with an Ethernet port or USB Ethernet adapter support to en
 If your device supports Wi-Fi connectivity and you've connected a display to it, you'll need to:
 
 1. Go into your default application and click the settings button next to the clock.
-2. On the settings page, select *Network and Wi-Fi*.
+2. On the settings page, select _Network and Wi-Fi_.
 3. Your device will begin scanning for wireless networks.
 4. Once your network appears in this list, select it and click *Connect*.
 
 If you haven't connected and display and would like to connect via Wi-Fi, you'll need to:
 
-1. Go to the IoT Dashboard and click on *My Devices*.
+1. Go to the IoT Dashboard and click on _My Devices_.
 2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
 3. Click on *Configure Device* and enter your network credentials. This will connect your board to the network.
 
@@ -64,11 +64,11 @@ Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to con
 
 
 1. Download the Windows 10 IoT Core Dashboard [here](https://developer.microsoft.com/en-us/windows/iot/Downloads).
-2. Once downloaded, open the Dashboard and select "Qualcomm DragonBoard 410c". Then *sign in as a Windows Insider*. You need to be signed in as an insider in order to flash DragonBoard 410c. 
+2. Once downloaded, open the Dashboard and select "Qualcomm DragonBoard 410c". Then _sign in as a Windows Insider_. You need to be signed in as an insider in order to flash DragonBoard 410c. 
 3. Connect the Qualcomm board to the developer machine using a microUSB cable. Power on the DragonBoard to a 12V (> 1A) power supply.
 4. Turn the DragonBoard to flash mode by pressing the volume up (+) button while powering on the device. The device - when connected to a display - will show the image of a hammer, a lightning bolt, and a cog.
 5. Once in flash mode, the device will be visible on the Dashboard as shown below. Select the appropriate device.
-6. Accept the software license terms and click *Download and install*.
+6. Accept the software license terms and click _Download and install_.
 
 ![DragonBoard in flash mode](../../media/DeviceSetup/db4.png)
 
@@ -82,15 +82,15 @@ If your device comes with an Ethernet port or USB Ethernet adapter support to en
 If your device supports Wi-Fi connectivity and you've connected a display to it, you'll need to:
 
 1. Go into your default application and click the settings button next to the clock.
-2. On the settings page, select *Network and Wi-Fi*.
+2. On the settings page, select _Network and Wi-Fi_.
 3. Your device will begin scanning for wireless networks.
-4. Once your network appears in this list, select it and click *Connect*.
+4. Once your network appears in this list, select it and click _Connect_.
 
 If you haven't connected and display and would like to connect via Wi-Fi, you'll need to:
 
-1. Go to the IoT Dashboard and click on *My Devices*.
+1. Go to the IoT Dashboard and click on _My Devices_.
 2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
-3. Click on *Configure Device* and enter your network credentials. This will connect your board to the network.
+3. Click on _Configure Device_ and enter your network credentials. This will connect your board to the network.
 
 ### Connecting to Windows Device Portal
 
@@ -104,8 +104,8 @@ Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to con
 2. Download the [Windows 10 IoT Core DragonBoard FFU](http://go.microsoft.com/fwlink/?LinkId=733603).
 3. Double-click on the downloaded ISO file and locate the mounted Virtual CD-drive. This drive will contain an installer file (.msi); double-click on it. This creates a new directory on your PC under `C:\Program Files (x86)\Microsoft IoT\FFU\` in which you should see an image file, "flash.ffu".
 4. Ensure your DragonBoard is in download mode by setting the first boot switch on the board to USB Boot, as shown below. Then, connect DragonBoard the host PC via a microUSB cable, then plug in the DragonBoard to a 12V (> 1A) power supply.
-5. Start the DragonBoard Update Tool, which should detect that the DragonBoard is connect to your PC with a green circle. "Browse" to the DragonBoard's FFU that you downloaded, then click the *Program* button.
-6. Once the download is complete, disconnect the power supply and microUSB cable from the board and toggle the USB Boot switch back to *OFF*. Connect a HDMI display, a mouse, and a keyboard to the DragonBoard and rec-onnect the power supply. After a few minutes, you should see the Windows 10 IoT Core default application. 
+5. Start the DragonBoard Update Tool, which should detect that the DragonBoard is connect to your PC with a green circle. "Browse" to the DragonBoard's FFU that you downloaded, then click the _Program_ button.
+6. Once the download is complete, disconnect the power supply and microUSB cable from the board and toggle the USB Boot switch back to _OFF_. Connect a HDMI display, a mouse, and a keyboard to the DragonBoard and rec-onnect the power supply. After a few minutes, you should see the Windows 10 IoT Core default application. 
 
 ![DragonBoard in download mode](../../media/DeviceSetup/db1.png)
 
@@ -122,9 +122,9 @@ If your device comes with an Ethernet port or USB Ethernet adapter support to en
 If your device supports Wi-Fi connectivity and you've connected a display to it, you'll need to:
 
 1. Go into your default application and click the settings button next to the clock.
-2. On the settings page, select *Network and Wi-Fi*.
+2. On the settings page, select _Network and Wi-Fi_.
 3. Your device will begin scanning for wireless networks.
-4. Once your network appears in this list, select it and click *Connect*.
+4. Once your network appears in this list, select it and click _Connect_.
 
 If you haven't connected and display and would like to connect via Wi-Fi, you'll need to:
 
@@ -165,15 +165,15 @@ If your device comes with an Ethernet port or USB Ethernet adapter support to en
 If your device supports Wi-Fi connectivity and you've connected a display to it, you'll need to:
 
 1. Go into your default application and click the settings button next to the clock.
-2. On the settings page, select *Network and Wi-Fi*.
+2. On the settings page, select _Network and Wi-Fi_.
 3. Your device will begin scanning for wireless networks.
-4. Once your network appears in this list, select it and click *Connect*.
+4. Once your network appears in this list, select it and click _Connect_.
 
 If you haven't connected and display and would like to connect via Wi-Fi, you'll need to:
 
-1. Go to the IoT Dashboard and click on *My Devices*.
+1. Go to the IoT Dashboard and click on _My Devices_.
 2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
-3. Click on *Configure Device* and enter your network credentials. This will connect your board to the network.
+3. Click on _Configure Device_ and enter your network credentials. This will connect your board to the network.
 
 ### Connecting to Windows Device Portal
 

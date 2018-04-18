@@ -18,6 +18,9 @@ ACPI (Advanced Configuration and Power Interface) is an open industry specificat
 **Basic Input/Output System (BIOS)**
 The set of essential software routines that test hardware at startup, start the operating system, and support the transfer of data among hardware devices.
 
+**Commercialize**
+Developing and manufacturing a device with the intention of putting it out to the public commercially.
+
 **General-Purpose Input/Output (GPIO)**
 GPIO is a generic pin on an integrated circuit whose behavior, including whether it is an input or output pin, can be controlled by the user at run time.  You can use the Windows.Devices.Gpio namespace in your app to manipulate the GPIO pins on your board.
 
@@ -35,6 +38,9 @@ A LED is a two-lead semiconductor light source. It is a pn-junction diode, which
 
 **Microsoft Windows Kernel Mode Driver Framework (KMDF)**
 Microsoft development framework which allows driver developers to expose driver functionality in kernel mode, giving the driver access to system memory and hardware.
+
+**Prototype**
+Developing a more raw version of a final version of a device that you're hoping to create. Prototyping is highly recommended, if not an obligatory step in the manufacturing process. This stage should be used for testing any and all features you're hoping to use for the final version of your device.
 
 **Serial Peripheral Interface Bus (SPI)**
 The SPI bus is a synchronous serial communication interface specification used for short distance communication, primarily in embedded systems.  You can use the Windows.Devices.Spi namespace in your app to communicate with a device over SPI.

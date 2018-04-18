@@ -10,9 +10,7 @@ keywords: Windows 10 IoT Core, Get Started, images,
 
 # Get Started with Windows 10 IoT Core
 
-Creating your own device is exciting. But at the same time, we understand that it can also be intimidating. If you aren't familiar with Windows 10 IoT Core, we highly recommend that you start out with our Quickstarter below before diving into the deep end. 
-
-On the other hand, if you're already comfortable with this platform, take a look at all of the different devices you can work with or, if you have certain specifications for your device, there are also options to have different companies build boards for you. We've included these resources below as well.
+Creating your own device is exciting. But at the same time, we understand that it can also be intimidating. If you aren't familiar with Windows 10 IoT Core, we highly recommend that you start out with our Quickstarter below before diving into the deep end. On the other hand, if you're ready to go with Windows 10 IoT Core, jump down to the "Bring a device to market" section. 
 
 Have questions along the way? Please work with your Microsoft contact or post questions on our [Windows 10 IoT forum](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT).
 
@@ -21,7 +19,11 @@ Have questions along the way? Please work with your Microsoft contact or post qu
 New to Windows 10 IoT? Get started quickly and easily with our [Windows 10 IoT Core Quickstarter](tutorials/Tutorials.md). 
 
 
-## Commercializing a device
+## Bring a device to market
+
+Commercializing, or bringing a device to market, is on a different level from tinkering or prototyping. Commercializing requires a number of steps to ensure that your device - wherever they are in the world - can receive updates, are secure, and are compliant.  
+
+Follow the links below to start your commercialization journey. 
 
 <table>
 <colgroup>
@@ -47,11 +49,6 @@ New to Windows 10 IoT? Get started quickly and easily with our [Windows 10 IoT C
 </tr>
 
 <tr class="odd">
-<td align="left"><p>[Installing and servicing apps](commercialize-your-device/installingandservicing.md)</p></td>
-<td align="left"><p>Learn how to install and service UWP apps on Windows 10 IoT Core through the Microsoft Store.</p></td>
-</tr>
-
-<tr class="odd">
 <td align="left"><p>[Create board supported packages](build-your-image/createbsps.md)</p></td>
 <td align="left"><p>Learn how to create board supported packages (BSPs) for Windows 10 IoT Core.</p></td>
 </tr>
@@ -64,6 +61,11 @@ New to Windows 10 IoT? Get started quickly and easily with our [Windows 10 IoT C
 <tr class="odd">
 <td align="left"><p>[Creating test and retail images](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)</p></td>
 <td align="left"><p>With the Windows 10 IoT Core manufacturing guide, learn how to create test images - great for trying out new ideas and designs - and retail images - for more final device designs.</p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p>[Installing and servicing apps](commercialize-your-device/installingandservicing.md)</p></td>
+<td align="left"><p>Learn how to install and service UWP apps on Windows 10 IoT Core through the Microsoft Store.</p></td>
 </tr>
 
 <tr class="odd">
