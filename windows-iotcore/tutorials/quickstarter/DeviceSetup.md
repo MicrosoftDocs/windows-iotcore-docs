@@ -100,7 +100,7 @@ Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to con
 
 
 
-### Flashing with eMMC (for DragonBoard 410c, other Qualcomm devices)
+## Flashing with eMMC (for DragonBoard 410c, other Qualcomm devices)
 
 1. Download and install the DragonBoard Update Tool for your [x86](https://developer.qualcomm.com/download/db410c/windows-10-iot-update-tool-dragonboard-410c-x86.zip) or [x64](https://developer.qualcomm.com/download/db410c/windows-10-iot-update-tool-dragonboard-410c-x64.zip) machine.
 2. Download the [Windows 10 IoT Core DragonBoard FFU](http://go.microsoft.com/fwlink/?LinkId=733603).
@@ -143,7 +143,7 @@ If you haven't connected and display and would like to connect via Wi-Fi, you'll
 Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available. 
 
 
-### Flashing with eMMC (for Up Squared, other Intel devices)
+## Flashing with eMMC (for Up Squared, other Intel devices)
 
 1. Download and install the [Windows Assessment and Deployment kit](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install) with the correlating version of Windows 10 you're running.
 2. Insert a USB drive into your machine.
