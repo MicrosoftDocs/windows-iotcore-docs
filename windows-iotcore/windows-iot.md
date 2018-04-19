@@ -25,13 +25,13 @@ While Windows 10 IoT Core and Windows 10 IoT Enterprise are similar in name, the
 > | User experience | Single UWP app running at startup with supporting background apps and services. | Traditional Windows Shell with Advanced Lockdown Features |
 > | Headless supported | Yes | Yes |
 > | App architecture supported | UWP only | UWP and Win32 |
-> | Cortana | *Cortana SDK* | Yes |
+> | Cortana | [*Cortana SDK*](https://developer.microsoft.com/en-us/cortana/devices) | Yes |
 > | Domain join | AAD only | AAD and Traditional Domain |
 > | Management | MDM | MDM |
-> | Device Security Technologies | TPM, Secure Boot, BitLocker, Device Health Attestation, and Device Guard for IoT | TPM, Secure Boot, BitLocker, Device Guard, Defender ATP, and Device Health Attestation |
+> | Device Security Technologies | [TPM](https://docs.microsoft.com/en-us/windows/iot-core/secure-your-device/tpm), [Secure Boot, BitLocker, Device Guard](https://docs.microsoft.com/en-us/windows/iot-core/secure-your-device/securebootandbitlocker), and Device Health Attestation | TPM, [Secure Boot, BitLocker, Device Guard](https://docs.microsoft.com/en-us/windows/iot-core/secure-your-device/securebootandbitlocker), Defender ATP, and Device Health Attestation |
 > | CPU Architecture support | x86, x64, and ARM | x86 and x64 |
 > | Licensing | Online Licensing Agreement and Embedded OEM Agreements, Royalty-free | Direct and Indirect Embedded OEM Agreements |
-> | Usage scenarios | Digital Signage, Smart Building, IoT Gateway, HMI, Smart Home, Wearables | Industry Tablets, POS, Kiosk, Digital Signage, ATM, Medical Devices, Manufacturing Devices, Thin Client |
+> | Usage scenarios | [Digital Signage](https://www.microsoft.com/en-us/windowsforbusiness/digital-signage), Smart Building, IoT Gateway, HMI, Smart Home, Wearables | Industry Tablets, POS, Kiosk, [Digital Signage](https://www.microsoft.com/en-us/windowsforbusiness/digital-signage), ATM, Medical Devices, Manufacturing Devices, Thin Client |
 
 For minimum requirement details, please visit [the Windows Hardware site](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
 
