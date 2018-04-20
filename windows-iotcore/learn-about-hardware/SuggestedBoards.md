@@ -1,5 +1,5 @@
 ---
-title: Suggested Boards, SoCs, and SoMs for Windows 10 IoT Core
+title: Suggested Boards and SoCs for Windows 10 IoT Core
 author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
@@ -8,7 +8,7 @@ description: Learn about the hardware features for a variety of suggested boards
 keywords: windows iot, development devices, boards, SOC, SOM, system on chips, Raspberry Pi 2, Raspberry Pi 3, Minnowboard Max, Dragonboard
 ---
 
-# Suggested Boards, SoCs, and SoMs
+# Suggested Boards and SoCs
 
 ## Microsoft-enabled SoCs
 Microsoft works alongside Broadcom, Intel, and Qualcomm to verify support for Windows 10 IoT Core on several of the silicon vendors' SoC. These IoT Core-powered SoCs are used in hundreds of different devices that you can use to prototype and commercialize your idea with. 
@@ -39,6 +39,7 @@ If you want to work with something else that's not listed above, we have hundred
 If you're still looking at different options for your board, you also have the option of having your board built. The following companies specialize in building custom boards:
 
 * [All PCB](http://www.allpcb.com/)
+* [Geppetto/Gumstix](https://www.gumstix.com/geppetto/)
 * [JLC PCB](https://jlcpcb.com/)
 * [Myro PCB](http://www.myropcb.com/)
 * [OSH PARK](https://oshpark.com/)
