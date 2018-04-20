@@ -75,7 +75,7 @@ Follow the links below to start your commercialization journey.
 <tbody>
 
 <tr class="odd">
-<td align="left"><p>[Suggested Boards, SoCs, and SoMs](learn-about-hardware/suggestedboards.md)</p></td>
+<td align="left"><p>[Suggested Boards and SoCs](learn-about-hardware/suggestedboards.md)</p></td>
 <td align="left"><p>Learn about the different boards you can work with to build your Windows 10 IoT Core solution.</p></td>
 </tr>
 
