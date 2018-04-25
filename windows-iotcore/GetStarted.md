@@ -10,7 +10,7 @@ keywords: Windows 10 IoT Core, Get Started, images,
 
 # Get Started with Windows 10 IoT Core
 
-Creating your own device is exciting. But at the same time, we understand that it can also be intimidating. If you aren't familiar with Windows 10 IoT Core, we highly recommend that you start out with our [Windows 10 IoT Core Quickstarter](tutorials/Tutorials.md). On the other hand, if you already have experience with Windows 10 IoT Core, learn how to "Bring a device to market" section (can you link to a starting point in this flow vs the section). 
+Creating your own device is exciting. But at the same time, we understand that it can also be intimidating. If you aren't familiar with Windows 10 IoT Core, we highly recommend that you start out with our [Windows 10 IoT Core Quickstarter](tutorials/Tutorials.md). On the other hand, if you already have experience with Windows 10 IoT Core, you can start learning about [the commercialization process](https://docs.microsoft.com/en-us/windows/iot-core/commercialize-your-device/oemlicenserequirements) (with more details below). 
 
 Have questions along the way? Please work with your Microsoft contact or post questions on our [Windows 10 IoT forum](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT).
 
