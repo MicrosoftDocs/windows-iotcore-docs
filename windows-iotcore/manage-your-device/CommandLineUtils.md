@@ -131,3 +131,54 @@ To view the list of all the available network adapters, run `GetAdapterInfo` too
 ### **Set folder permissions for UWP apps:**
 
 Not all folders on your device are accesible by Universal Windows Apps. To make a folder accesible to a UWP app, you can use `FolderPermissions` tool. For example run `FolderPermissions c:\test -e` to give UWP apps access to `c:\test` folder. Note this will work only with native Win32 apis for eg. CreateFile2 and not with WinRT apis like StorageFolder, StorageFile etc.
+
+### **Work with Serial Ports:**
+[MinComm](https://github.com/ms-iot/samples/tree/develop/MinComm) allows you to work with serial ports from the command line. It is provided as a sample project in the ms-iot samples repo. 
+
+``` 
+Usage: MinComm.exe [-list] device_path [baud=<B>] [parity=<P>] [data=<D>] [stop=<S>] [xon={on|off}] [odsr={on|off}] [octs={on|off}] [dtr={on|off|hs}] [rts={on|off|hs|tg}] [idsr={on|off}]
+
+  -list                List all available serial ports on the system and exit.
+  device_path          Device path or COM port to open (e.g. COM1)
+  baud=<B>             Specifies the transmission rate in bits per second.
+  parity={n|e|o|m|s}   Specifies how the system uses the parity bit to check
+                       for transmission errors. The abbreviations stand for
+                       none, even, odd, mark, and space.
+  data={5|6|7|8}       Specifies the number of data bits in a character.
+  stop={1|1.5|2}       Specifies the number of stop bits that define the end of
+                       a character.
+  xon={on|off}         Specifies whether the xon or xoff protocol for data-flow
+                       control is on or off.
+  odsr={on|off}        Specifies whether output handshaking that uses the
+                       Data Set Ready (DSR) circuit is on or off.
+  octs={on|off}        Specifies whether output handshaking that uses the
+                       Clear To Send (CTS) circuit is on or off.
+  dtr={on|off|hs}      Specifies whether the Data Terminal Ready (DTR) circuit
+                       is on or off or set to handshake.
+  rts={on|off|hs|tg}   Specifies whether the Request To Send (RTS) circuit is
+                       set to on, off, handshake, or toggle.
+  idsr={on|off}        Specifies whether the DSR circuit sensitivity is on
+                       or off.
+
+Parameters that are not specified will default to the port's current
+configuration. For more information on the connection parameters, see the
+Technet documentation for the Mode command:
+  https://technet.microsoft.com/en-us/library/cc732236.aspx
+
+Examples:
+  Connect to the first serial port found in the port's current configuration:
+    MinComm.exe
+
+  List all serial ports on the system:
+    MinComm.exe -list
+
+  Open COM1 in 115200 8N1 configuration:
+    MinComm.exe COM1 baud=115200 parity=n data=8 stop=1
+
+  Open COM1 in 115200 8N1 configuration:
+    MinComm.exe \\.\COM1 baud=115200 parity=n data=8 stop=1
+
+  Open device interface in 115200 8N1 configuration:
+    MinComm.exe \\?\USB#VID_FFFF&PID_0005#{86e0d1e0-8089-11d0-9ce4-08003e301f73} baud=115200 parity=n data=8 stop=1```
+
+
