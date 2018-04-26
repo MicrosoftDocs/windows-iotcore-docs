@@ -51,6 +51,9 @@ If you haven't connected and display and would like to connect via Wi-Fi, you'll
 2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
 3. Click on *Configure Device* and enter your network credentials. This will connect your board to the network.
 
+> [!NOTE]
+> Wifi on your computer will need to be turned on in order to find other networks.
+
 ### Connecting to Windows Device Portal
 
 Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available. 
@@ -92,6 +95,9 @@ If you haven't connected and display and would like to connect via Wi-Fi, you'll
 2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
 3. Click on _Configure Device_ and enter your network credentials. This will connect your board to the network.
 
+> [!NOTE]
+> Wifi on your computer will need to be turned on in order to find other networks.
+
 ### Connecting to Windows Device Portal
 
 Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available. 
@@ -131,6 +137,9 @@ If you haven't connected and display and would like to connect via Wi-Fi, you'll
 1. Go to the IoT Dashboard and click on *My Devices*.
 2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
 3. Click on *Configure Device* and enter your network credentials. This will connect your board to the network.
+
+> [!NOTE]
+> Wifi on your computer will need to be turned on in order to find other networks.
 
 ### Connecting to Windows Device Portal
 
@@ -174,6 +183,9 @@ If you haven't connected and display and would like to connect via Wi-Fi, you'll
 1. Go to the IoT Dashboard and click on _My Devices_.
 2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
 3. Click on _Configure Device_ and enter your network credentials. This will connect your board to the network.
+
+> [!NOTE]
+> Wifi on your computer will need to be turned on in order to find other networks.
 
 ### Connecting to Windows Device Portal
 
