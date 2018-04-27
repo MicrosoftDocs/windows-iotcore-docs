@@ -102,7 +102,8 @@ Traditional UWP languages ship with support in Visual Studio by default. All of 
   * Visual Basic
 
 ### IoT Focused Languages
- The IoT targeted languages require the download of the "Windows IoT Core Project Templates" from the Visual Studio **Tools->Extensions and Updates** manager.  The IoT Focused languages support only Background Applications. You can also build *Windows Runtime Components* using C#, C++, or Visual Basic and then reference those libraries from any other language (except Python).
+ The IoT targeted languages require the download of the "Windows IoT Core Project Templates" from the Visual Studio **Tools->Extensions and Updates** manager.  The IoT Focused languages support only Background Applications. You can also build *Windows Runtime Components* using C#, C++, or Visual Basic and then reference those libraries from any other language.
+ 
 * Languages
  * Arduino Wiring
 
