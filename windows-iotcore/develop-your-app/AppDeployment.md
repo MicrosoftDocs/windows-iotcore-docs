@@ -68,28 +68,3 @@ Otherwise, use the IP address of your Windows IoT Core device.
 
 7. Having successfully deployed and debugged your UWP application, create a Release version - change the Visual Studio toolbar configuration dropdown from `Debug` to `Release`.  You can now build and deploy your app to your device by selecting Build \| Rebuild Solution and Build \| Deploy Solution.
 
-## Deploy a Python app to your Windows 10 IoT Core device
-
-1. With the application open in Visual Studio, set the architecture in the toolbar dropdown. If you're building for MinnowBoard Max, select `x86`.  If you're building for Raspberry Pi 2 or 3, select `ARM`.
-
-2. In the Visual Studio toolbar, make sure the target dropdown is set to `Remote Machine`
-
-![Universal authentication mode](../media/AppDeployment/py-remote-machine-debugging.png)
-
-3. Next, right click on your project in the **Solution Explorer** pane. Select **Properties**.
-
-![Universal authentication mode](../media/AppDeployment/py-project-properties.png)
-
-4. Under **UWP Project Settings**, modify the following fields:
-
-	* **Machine Name**: If you previously used [PowerShell](../connect-your-device/PowerShell.md) to set a unique name for your device, you can enter it here (in this example, we're using **my-device**).
-	Otherwise, use the IP address of your Windows IoT Core device.
-	* **Remote Port**: Set to **5678**
-	
-![Universal authentication mode](../media/AppDeployment/py-debug-project-properties.png)
-
-5. Now we're ready to deploy. Simply press F5 (or select Debug \| Start Debugging) to start debugging our app.You should see the app come up in Windows IoT Core device screen.
-
-6. Once deployed, you can set breakpoints, see variable values, etc. To stop the app, press on the 'Stop Debugging' button (or select Debug \| Stop Debugging).
-
-7. Having successfully deployed and debugged your UWP application, create a Release version - change the Visual Studio toolbar configuration dropdown from `Debug` to `Release`.  You can now build and deploy your app to your device by selecting Build \| Rebuild Solution and Build \| Deploy Solution.

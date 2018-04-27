@@ -105,8 +105,6 @@ Traditional UWP languages ship with support in Visual Studio by default. All of 
  The IoT targeted languages require the download of the "Windows IoT Core Project Templates" from the Visual Studio **Tools->Extensions and Updates** manager.  The IoT Focused languages support only Background Applications. You can also build *Windows Runtime Components* using C#, C++, or Visual Basic and then reference those libraries from any other language (except Python).
 * Languages
  * Arduino Wiring
- * Node.js
- * Python
 
 ### C# and Visual Basic (VB)
 C# and VB are both supported as UWP apps and have access to the portion of the .Net Framework available to UWP applications. They support UI apps built with Xaml as well as Background Apps. You can also build *Windows Runtime Components* that can be used from other supported languages.
@@ -174,73 +172,3 @@ void loop()
     delay(500);
 }
 ```
-
-### Node.js
-With IoT Core's Node.js supports you can build your Background Apps using this popular language and many of its popular libraries and frameworks. There are a variety of Node.js samples avialable on our github site, but the samples below will give you a great introduction.
-
-The [headless blinky](https://github.com/ms-iot/samples/tree/develop/HelloBlinkyBackground/node.js) sample shows how easy it is to build your first IoT Core Node.js app:
-
-```node.js
-var http = require('http');
-
-var uwp = require("uwp");
-uwp.projectNamespace("Windows");
-
-var gpioController = Windows.Devices.Gpio.GpioController.getDefault();
-var pin = gpioController.openPin(5);
-var currentValue = Windows.Devices.Gpio.GpioPinValue.high;
-pin.write(currentValue);
-pin.setDriveMode(Windows.Devices.Gpio.GpioPinDriveMode.output);
-setTimeout(flipLed, 500);
-
-
-function flipLed(){
-    if (currentValue == Windows.Devices.Gpio.GpioPinValue.high) {
-        currentValue = Windows.Devices.Gpio.GpioPinValue.low;
-    } else {
-        currentValue = Windows.Devices.Gpio.GpioPinValue.high;
-    }
-    pin.write(currentValue);
-    setTimeout(flipLed, 500);
-}
-```
-
-
-*Additional Helpful Samples*
-
- * [Weather Station Web Server](https://github.com/ms-iot/samples/tree/develop/WeatherStation/Node.js)
- * [Johnny-Five App](https://developer.microsoft.com/en-us/windows/iot/samples/j5servocontroller)
- * [Cylon App](https://developer.microsoft.com/en-us/windows/iot/samples/cylonservonode)
- * [Express App](https://developer.microsoft.com/en-us/windows/iot/samples/expressnodejs)
-
-### Python
-IoT Core also supports building Background Apps with Python. Support for the python languages and libaries is fully there, but the python language itself does not support calling UWP APIs and so we provide python libraries to call into critical platform features like GPIO, I2C, PWM, ...
-
-This [app](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinkybackgroundpython) shows how to build a basic Python Background App that blinks an LED.
-
-```python
-import _wingpio as gpio
-import time
-
-led_pin = 5
-pinValue = gpio.HIGH
-
-gpio.setup(led_pin, gpio.OUT, gpio.PUD_OFF, gpio.HIGH)
-
-while True:
-    if pinValue == gpio.HIGH:
-        pinValue = gpio.LOW
-        gpio.output(led_pin, pinValue)
-    else:
-        pinValue = gpio.HIGH
-        gpio.output(led_pin, pinValue)
-
-    time.sleep(0.5)
-
-gpio.cleanup()
-```
-
-*Additional Interesting Samples*
-
- * [Weather Station](https://github.com/ms-iot/samples/tree/develop/WeatherStation/Python/PythonWeatherStation)
- * [GoPiGo using an Xbox Controller](https://github.com/ms-iot/samples/tree/develop/GoPiGoXbox)
