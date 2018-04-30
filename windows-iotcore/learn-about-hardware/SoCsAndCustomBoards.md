@@ -45,7 +45,7 @@ Each of the platforms have unique quirks that need attention during implementati
 *Many companies below are large and complex.  If you have attempted to contact one of the partners and was unable to reach the right person, please email [winiotsomhelp@microsoft.com](mailto:winiotsomhelp@microsoft.com) and we'll connect you to the right people.*
 
 ## **Rasberry Pi derived custom design** 
-[Element 14] (https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service) offers board customization service for Rasberry Pi to allow you to add or remove connectivity options.  If you also need to make customizations to the BSP, you can leverage the [open source BSP code on Github](https://github.com/ms-iot/bsp).
+[Element 14](https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service) offers board customization service for Rasberry Pi to allow you to add or remove connectivity options.  If you also need to make customizations to the BSP, you can leverage the [open source BSP code on Github](https://github.com/ms-iot/bsp).
 
 ## **Intel based custom design**
 There is a vibrant ecosystem of [experienced Intel device builders](https://solutionsdirectory.intel.com/solutions-directory/processors/278/processors/309/processors/402/processors/782/processors/788/processors/1103/processors/1107/processors/1110/processors/1175/processors/1344/processors/1348/processors/1349) for Windows you can work with.  Compared to the more common Windows 10 PCs, an Intel device designed to run Windows 10 IoT Core have couple of differences: 
