@@ -11,7 +11,7 @@ keywords: windows iot, development devices, boards, SOC, SOM, system on chips, R
 # SoCs and Custom Boards
 
 ## Microsoft-enabled SoCs
-Microsoft works alongside Broadcom, Intel, Qualcomm to verify support for Windows 10 IoT Core on several of the silicon vendors' SoC. These IoT Core-powered SoCs are used in hundreds of different devices that you can use to prototype and commercialize your idea with. 
+Microsoft works alongside Broadcom, Intel, NXP, and Qualcomm to verify support for Windows 10 IoT Core on several of the silicon vendors' SoC. These IoT Core-powered SoCs are used in hundreds of different devices that you can use to prototype and commercialize your idea with. 
 
 | Broadcom | Intel | Qualcomm | NXP (coming soon) |
 |----------|-------|----------|-----|
@@ -26,7 +26,7 @@ Microsoft works alongside Broadcom, Intel, Qualcomm to verify support for Window
 
 Choosing which one to adopt will depend on considerations such as performance requirements, power profile, cost, physical connectivity options, long term support, operating conditions etc.
 
-You will also need to decide whether to use off-the-shelf board or device, or build a custom device using System-On-Module (SOM) modules + custom carrier board or a complete custom board.
+You will also need to decide whether to use off-the-shelf board or device, or build a custom device using System-On-Module (SOM) modules + custom carrier board or a complete custom board. Cost and the degree of customization are the key factors in this decision with both generally increasing as you customize further.
 
 ## Customized Boards
 If an off-the-shelf device is in a form factor with connectivity options that works for your scenarios, that will often be the most cost and time effective choice.  
@@ -42,13 +42,13 @@ Each of the platforms have unique quirks that need attention during implementati
 
 *If you are a SOM provider or an ODM and would like to be added to the list below, please send email to [winiotsomhelp@microsoft.com](mailto:winiotsomhelp@microsoft.com) or directly edit this page and submit a pull request.*
 
-*Many companies below are large and complex.  If you have attempted to contact one of the partners and was unable to reach the right person, please email [winiotsomhelp@microsoft.com](mailto:winiotsomhelp@microsoft.com) and we'll connect you to the right people.*
+*Many companies below are large and complex.  If you have attempted to contact one of the partners and was unable to reach the right person, please email [winiotsomhelp@microsoft.com](mailto:winiotsomhelp@microsoft.com) and we'll do our best to connect you to the right people.*
 
 ## **Rasberry Pi derived custom design** 
 [Element 14](https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service) offers board customization service for Rasberry Pi to allow you to add or remove connectivity options.  If you also need to make customizations to the BSP, you can leverage the [open source BSP code on Github](https://github.com/ms-iot/bsp).
 
 ## **Intel based custom design**
-There is a vibrant ecosystem of [experienced Intel device builders](https://solutionsdirectory.intel.com/solutions-directory/processors/278/processors/309/processors/402/processors/782/processors/788/processors/1103/processors/1107/processors/1110/processors/1175/processors/1344/processors/1348/processors/1349) for Windows you can work with.  Compared to the more common Windows 10 PCs, an Intel device designed to run Windows 10 IoT Core have couple of differences: 
+There is a vibrant ecosystem of [experienced Intel device builders](https://solutionsdirectory.intel.com/solutions-directory/processors/278/processors/309/processors/402/processors/782/processors/788/processors/1103/processors/1107/processors/1110/processors/1175/processors/1344/processors/1348/processors/1349) for Windows you can work with.  Compared to the more common Windows 10 PCs, an Intel device designed to run Windows 10 IoT Core have a couple of differences: 
 
 1.  If you need to provide user mode UWP API access to simple buses like I2C, GPIO and SPI, you need make sure that ACPI table in your UEFI firmware contains  appropriate entries for RHProxy. Please refer to [user mode access](https://docs.microsoft.com/en-us/windows/uwp/devices-sensors/enable-usermode-access) for more information.
 2.  You must ensure that the SMBIOS in the firmware contains information as listed in [OEM License Requirement](https://docs.microsoft.com/en-us/windows/iot-core/commercialize-your-device/oemlicenserequirements)
@@ -58,7 +58,7 @@ If you are building your own board, please contact your BIOS vendor if you need 
 ### *Experienced Partners*
 *  [Aaeon](http://www.aaeon.com/en/)
 *  [Advantech](http://www.advantech.com/)
-*  [Kontron](http://www.advantech.com/)
+*  [Kontron](http://www.kontron.com/)
 *  [Nexcom](http://www.nexcom.com/)
 
 ## **Qualcomm Dragonboard 410c (APQ8016) based custom design**
@@ -70,7 +70,7 @@ If you need additional hardware customizations, eg. using a specific MIPI-DSI di
 
 We suggest that:
 1.   If you're using SOM, work with an experienced SOM provider to enable customized component.
-2.   If you are building a custom board, we recommend that you work with a SOM vendors or an experienced Qualcomm BSP customization service provider such as [Intrynsic](https://www.intrinsyc.com/) or [Thundersoft](www.thundersoft.com/) for BSP customization.
+2.   If you are building a custom board, we recommend that you work with a SOM vendors or an experienced Qualcomm BSP customization service provider such as [Intrynsic](https://www.intrinsyc.com/) or [Thundersoft](www.thundersoft.com/) for BSP customization and design assistance.
 3.   If you expect to have very high volume (millions) [contact Qualcomm](https://assets.qualcomm.com/contact-sales-iot.html).
 
 ### *Experienced Partners*
@@ -86,5 +86,5 @@ You can also reach out to partners we're working with during preview.
 *  Aaeon [PICO-IMX6](http://www.aaeon.com/en/p/pico-itx-boards-pico-imx6/)
 *  Advantech [RSB-4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858)
 *  Keith & Koep [pConXS](http://wce.keith-koep.com/en/products/pconxs-ff/) with [Trizeps VII](http://wce.keith-koep.com/en/products/trizeps7-i.MX6/)
-* Solid Run [Hummingboard Edge](https://www.solid-run.com/product/hummingboard-edge-imx6s-wa-e/)
 * Kontron [SMARC-sAMX6i](https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html)
+* Solid Run [Hummingboard Edge](https://www.solid-run.com/imx6-win-10-iot-core/ )
