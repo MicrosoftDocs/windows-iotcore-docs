@@ -12,7 +12,7 @@ keywords: windows iot, peripherals, protocols, compatibility, busses, hardware
 
 Windows 10 IoT Core supports a variety of peripheral interfaces and protocols, including support for common busses like I2C, UART, USB, and more. This page lists known supported peripherals and is current as of the latest RTM release. Specific entries may only work on Insider releases and will be noted as such. We encourage you to contribute to this list on GitHub!
 
-> [!NOTE]
+> [!IMPORTANT]
 > This list is not exhaustive. There are many other peripherals not listed on this page that are compatible with Windows 10 IoT Core. If a device you don't see listed but is class-compliant with what's already supported in Windows 10 IoT Core, then it will work. 
 
 
