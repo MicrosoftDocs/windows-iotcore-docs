@@ -17,7 +17,7 @@ This document provides information that supplements other content and documentat
 
 The packages within this release contain tools and components needed to install Windows 10 IoT Core on Minnowboard Max platform based on Intel Atom processers, Raspberry Pi 2 based on ARM Cortex A7, and Dragonboard 410c based on Qualcomm Snapdragon 400 series processors.   
 
-[Other platforms and processors](../../learn-about-hardware/SuggestedBoards.md) may be available from partners.
+[Other platforms and processors](../../learn-about-hardware/SoCsAndCustomBoards.md) may be available from partners.
 
 ## Privacy Statement
 

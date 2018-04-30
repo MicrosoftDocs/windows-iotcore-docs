@@ -50,7 +50,7 @@ To facilitate easy enablement of key secrutiy features on IoT Core devices, Micr
 * Reference platform - release hardware with shipping firmware, OS, drivers and applications will be required for final lockdown
 
 ### Development IoT Devices 
-Windows 10 IoT Core works with various silicons that are utilized in hundreds of devices. Of the [suggested IoT development devices](../learn-about-hardware/suggestedboards.md), the following provide firmware TPM functionality out of the box, along with Secure Boot, Measured Boot, BitLocker and Device Guard capabilities:
+Windows 10 IoT Core works with various silicons that are utilized in hundreds of devices. Of the [suggested IoT development devices](../learn-about-hardware/SoCsAndCustomBoards.md), the following provide firmware TPM functionality out of the box, along with Secure Boot, Measured Boot, BitLocker and Device Guard capabilities:
 * Qualcomm DragonBoard 410c
 
     In order to enable Secure Boot, it may be necessary to provision RPMB. Once the eMMC has been flashed with Windows 10 IoT Core (as per instructions [here](https://developer.microsoft.com/en-us/windows/iot/getstarted), press [Power] + [Vol+] + [Vol-] simultaneously on the device when powering up and select "Provision RPMB" from the BDS menu. *Please note that this is an irreversible step.*

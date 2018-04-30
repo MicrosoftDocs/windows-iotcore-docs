@@ -27,7 +27,7 @@ Once you've understood the license requirements to use Windows 10 IoT Core comme
 ## Arrange for device manufacturing  
 Get contact info for parts suppliers (SVs/IHVs/ODMs). Contact the supplier directly and follow their process to get components and licenses as necessary. Work directly with your SoC partner to locate an appropriate manufacturer.
 
-* [See Supported boards and SoCs](../learn-about-hardware/SuggestedBoards.md)
+* [See Supported SoCs and Custom Boards](../learn-about-hardware/SoCsAndCustomBoards.md)
 
 ## Explore the IoT & AI Insider Labs
 Microsoft’s IoT & AI Insider Labs are facilities to help you develop, prototype and test IoT and AI solutions for market commercialization. Located in Redmond, USA; Munich, Germany; and Shenzhen, China; they are located at the heart of Microsoft’s product group, industrial and manufacturing solutions.
