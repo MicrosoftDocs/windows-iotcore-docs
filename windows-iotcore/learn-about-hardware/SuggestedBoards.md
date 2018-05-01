@@ -24,12 +24,15 @@ Microsoft works alongside Broadcom, Intel, NXP, and Qualcomm to verify support f
 | | 	[	Intel® Atom® x5-E8000 Processor (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded) | | [i.MX 6SoloX](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u) |
 | | [Intel® Pentium® and Celeron® Processor N and J Series (Bay Trail-M/D)](http://ark.intel.com/products/codename/55844/) | | [i.MX 6SoloLite](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u) |
 | | 	[Intel® Atom™ Processor E3800 Product Family (Bay Trail-I)](http://ark.intel.com/products/codename/55844/#@Embedded) | | [i.MX 6SLL](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u) |
+| |  | | [i.MX 7Solo](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u) |
+| |  | | [i.MX 7Dual](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u) |
+| |  | | [i.MX 7ULP](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u) |
 
 The SOCs above are used in hundreds of different SOMs and single board computers that you can use or customize to  when bringing your device to production.
 
-| Broadcomm/Raspberry Pi | Intel | Qualcomm |
+| Broadcomm/Raspberry Pi | Intel | Qualcomm | NXP
 |-------------|----------|---------|
-| [Element 14 / Raspberry Pi Customization Service](https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service)| [Intel commercialization devices](https://solutionsdirectory.intel.com/solutions-directory/processors/278/processors/309/processors/402/processors/782/processors/788/processors/1103/processors/1107/processors/1110/processors/1175/processors/1344/processors/1348/processors/1349) | [Qualcomm-based devices](https://developer.qualcomm.com/hardware/snapdragon-410) |
+| [Element 14 / Raspberry Pi Customization Service](https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service)| [Intel commercialization devices](https://solutionsdirectory.intel.com/solutions-directory/processors/278/processors/309/processors/402/processors/782/processors/788/processors/1103/processors/1107/processors/1110/processors/1175/processors/1344/processors/1348/processors/1349) | [Qualcomm-based devices](https://developer.qualcomm.com/hardware/snapdragon-410) | [NXP-based devices(coming soon)](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u) |
 
 ## Azure-enabled devices
 If your device needs Azure support and connectivity, you can explore the different devices available on the [Azure IoT device catalog](https://catalog.azureiotsuite.com/).
