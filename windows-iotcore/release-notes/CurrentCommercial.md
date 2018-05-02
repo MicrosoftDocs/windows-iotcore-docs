@@ -2,14 +2,14 @@
 title: April 2018 Update - Build 17134
 author: danharman
 ms.author: dan.harman
-ms.date: 5/1/2018
+ms.date: 05/01/2018
 ms.topic: article
 description: Learn about what's new in the April 2018 Update for Windows 10 IoT.
-keywords: Windows IoT, Spring Creators Update, release notes
+keywords: Windows IoT, April 2018 Update, release notes
 ---
 
 # April 2018 Update Release Notes for Windows 10 IoT
-Build Number 17134. April 2018
+Build Number 17134. May 2018
 
 Windows 10 IoT enables development of embedded or dedicated-purpose devices and is the choice for OEMs and developers building Windows solutions for smart devices.
 
@@ -19,7 +19,7 @@ This document provides information that supplements other content and documentat
 
 The privacy statement for this version of the Windows operating system can be viewed at [https://go.microsoft.com/fwlink/?LinkId=521839](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-## What's New in Fall Creators Update
+## What's New in April 2018 Update
 * The [Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2017/02/12/evolving-the-visual-studio-test-platform-part-4-together-in-the-open/) that ships with [Visual Studio 15.6 RTW](https://docs.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes#Win10_IoT_Core_Testing_Support) now supports testing on Windows 10 IoT Core. When [writing unit tests](https://blogs.msdn.microsoft.com/devops/2018/03/07/devops-for-iot-with-win10-iot-core-uwp-and-vsts/) for a project in Visual Studio 2017 which targets Windows 10 IoT Core, developers can now execute those unit tests remotely on the device directly from Visual Studio instead of having to deploy tests to the device and run them manually.
 * Developers can leverage the capabilities in the [Windows AI Platform](https://blogs.windows.com/buildingapps/2018/03/07/ai-platform-windows-developers/) on Windows 10 IoT to create more intelligent devices and accelerate ML model evaluation using CPU or GPU.
 * OEMs looking to bring a voice-enabled device to market quickly can integrate Cortana support into their device using the [preview of the Cortana Devices SDK](http://www.aka.ms/cortanadevices).
@@ -49,20 +49,20 @@ The privacy statement for this version of the Windows operating system can be vi
 * [Azure IoT Edge](https://azure.microsoft.com/campaigns/iot-edge/) on Windows IoT [Preview] allows IoT solutions to orchestrate intelligence between the cloud and edge devices to ensure applications and services can act on IoT data wherever it makes the most sense.
 * Azure IoT Hub [Device Provisioning Service [Preview]](https://blogs.windows.com/buildingapps/2017/10/05/windows-10-iot-enables-complete-iot-lifecycle/) enables Windows 10 IoT devices to be created with a common image during manufacturing and configured to connect automatically at first boot to Azure IoT Hub to retrieve device-specific provisioning information.
 
-
 ## Windows 10 IoT Core Reference Images
+___ 
 * Minnowboard Max
   * Processor: Intel Atom E3825
   * Architecture: x86
-  * BSP Version: 10.0.4.0
+
 * Raspberry Pi 3
   * Processor: Broadcom BCM2837
   * Architecture: ARM
-  * BSP Version: 10.0.16248.1001
+
 * DragonBoard 410c
   * Processor: Qualcomm Snapdragon 410
   * Architecture: ARM
-  * BSP Version: 2112.0.0.0
+  * BSP Version: 2118.0.0.0
 
 ## Additional Information
 * Based on the recent Intel announcement to stop producing the Intel Joule platform, FFUs for Intel Joule were discontinued in the previous release. Customers evaluating Intel Joule should identify an alternative platform using one of the other supported SoCs - see [Suggested Boards and SoCs](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/suggestedboards) for a list.
