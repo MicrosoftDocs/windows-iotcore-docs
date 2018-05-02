@@ -91,22 +91,6 @@ Follow the steps below to use this BSP with the Windows 10 ADK release 1709 (162
     * run `.\bsptools\<bspname>\convert.cmd`
     * `buildbsp <bspname>`
 
-### Joule
-
-Joule drivers are available at [Joule BSP](https://downloadcenter.intel.com/download/26797/Windows-10-IoT-Core-Files-for-Intel-Joule-Compute-Module).
-
-Steps to create the drivers :
-
-1. Download the Intel5xx_WinIoT_*_BSP.zip 
-2. Copy the Intel5xx folder from the zip file to (`iot-adk-addonkit\Source-x64\BSP\`)
-3. Launch IoTCoreShell, select x64
-
-    * Run `buildpkg all` to create all cab files, including the Joule BSP cab files. 
-    * Alternatively you can use `buildbsp Intel5xx` to build Joule BSP cabs only. 
-
-The files will be available in the build output folder (`iot-adk-addonkit\Build\x64\pkgs`) 
-
-
 ## Qualcomm BSPs
 
 ### DragonBoard 410C

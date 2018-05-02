@@ -12,7 +12,7 @@ keywords: windows iot, peripherals, protocols, compatibility, busses, hardware
 
 Windows 10 IoT Core supports a variety of peripheral interfaces and protocols, including support for common busses like I2C, UART, USB, and more. This page lists known supported peripherals and is current as of the latest RTM release. Specific entries may only work on Insider releases and will be noted as such. We encourage you to contribute to this list on GitHub!
 
-> [!NOTE]
+> [!IMPORTANT]
 > This list is not exhaustive. There are many other peripherals not listed on this page that are compatible with Windows 10 IoT Core. If a device you don't see listed but is class-compliant with what's already supported in Windows 10 IoT Core, then it will work. 
 
 
@@ -61,6 +61,7 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | Aeon Labs Z-Wave Z-Stick Series 2 USB Dongle DSA02203-ZWUS | ARM32 | Series 2 Z-Wave USB Z-Stick Controller | [ZWave Sample](https://developer.microsoft.com/en-us/windows/iot/samples/zwaveadapter) | &#10004; |
 > | [Chalkboard Electronics 7” LCD Capacitive Touchscreen Display](https://www.chalk-elec.com/?page_id=1280#!/7-black-frame-universal-HDMI-LCD-with-capacitive-multi-touch/p/21750201/category=3094861) | ARM32 | | [Updating firmware](https://www.chalk-elec.com/?p=1826) | &#10004; |
 > | Vodafone (Huawei) K5150 | ARM32, x64, x86 | Vodafone (Huawei) K5150 150Mbps 4G LTE FDD USB Mobile Broadband Modem |  | &#10004;  |
+> | Vodafone (Huawei) K5160 | ARM32, x64, x86 | Vodafone (Huawei) K5160 150Mbps GSM/EDGE/3G/HSPA+/LTE-CAT4 USB Mobile Broadband Modem |  | |
 > | Sierra Wireless Beam (AirCard 340U) | x64, x86 | 	Sierra Wireless Beam (AirCard 340U) 4G LTE USB Mobile Broadband Modem |  |&#10004; |
 > | Microsoft Xbox 360 Controller | ARM32 | An HID-compliant USB gamepad for Microsoft's Xbox 360 | [Robot Kit](https://microsoft.hackster.io/en-US/windowsiot/robot-kit-6dd474) |  &#10004; |
 > | [MyTeletouch](http://www.myteletouch.com/) | ARM, x32 | An HID-compliant USB wireless mouse, keyboard and gamepad |  | &#10004; |
