@@ -50,7 +50,7 @@ There is a vibrant ecosystem of [experienced Intel device builders](https://solu
 1.  If you need to provide user mode UWP API access to simple buses like I2C, GPIO and SPI, you need make sure that ACPI table in your UEFI firmware contains  appropriate entries for RHProxy. Please refer to [user mode access](https://docs.microsoft.com/en-us/windows/uwp/devices-sensors/enable-usermode-access) for more information.
 2.  You must ensure that the SMBIOS in the firmware contains information as listed in [OEM License Requirement](https://docs.microsoft.com/en-us/windows/iot-core/commercialize-your-device/oemlicenserequirements)
 
-If you are building your own board, please contact your BIOS vendor if you need guidance on ACPI or SMBIOS changes.=.
+If you are building your own board, please contact your BIOS vendor if you need guidance on ACPI or SMBIOS changes.
 
 > [!NOTE]
 > We're currently working to get a list of experience partners to share.
