@@ -64,7 +64,7 @@ If you need additional hardware customizations, eg. using a specific MIPI-DSI di
 
 We suggest that:
 1.   If you're using SOM, work with an experienced SOM provider to enable customized component.
-2.   If you are building a custom board, we recommend that you work with a SOM vendors or an experienced Qualcomm BSP customization service provider such as [Intrynsic](https://www.intrinsyc.com/) or [Thundersoft](www.thundersoft.com/) for BSP customization and design assistance.
+2.   If you are building a custom board, we recommend that you work with a SOM vendors or an experienced Qualcomm BSP customization service provider such as [Intrynsic](https://www.intrinsyc.com) or [Thundersoft](https://www.thundersoft.com) for BSP customization and design assistance.
 3.   If you expect to have very high volume (millions) [contact Qualcomm](https://assets.qualcomm.com/contact-sales-iot.html).
 
 > [!NOTE]
