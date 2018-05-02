@@ -10,7 +10,7 @@ keywords: windows iot, license, license requirements, commercialization, OEM lic
 
 # OEM license requirements
 
-The process of licensing Windows 10 IoT Core product and the OEM license agreement is provided at [Windows 10 IoT Core Commercialization](https://developer.microsoft.com/en-us/windows/iot/getstarted/commercialize/commercialterms). 
+In order to start your commercialization journey, you must request a license for the Windows 10 IoT Core product.
 
 You will need to request the license agreement [here](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4oorCHCXCJHla0pHy8o5GpUMlVHVkNZNVVON1ZTVUQ0T0lHS1pDV0JFVy4u). A member of the team will get back to you with the agreement form within 48 to 72 hours. 
 
