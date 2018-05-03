@@ -12,7 +12,8 @@ keywords: windows 10 IoT Core, commercialize, go to market
 On this page we will review the key items that need to be considered in the **Go to market** process. 
 
 ## Understand licensing requirements
-* See [Windows 10 IoT Core Commercialization](https://developer.microsoft.com/en-us/windows/iot/getstarted/commercialize/commercialterms) to understand the licensing requirements.
+* Request a the license agreement [here](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4oorCHCXCJHla0pHy8o5GpUMlVHVkNZNVVON1ZTVUQ0T0lHS1pDV0JFVy4u). A member of the team will get back to you with the agreement form within 48 to 72 hours. 
+
 
 ## Find a distributor
 Once you've understood the license requirements to use Windows 10 IoT Core commercially,  if you want to work with one of our distributors, please view our Distributor Information Guide.
