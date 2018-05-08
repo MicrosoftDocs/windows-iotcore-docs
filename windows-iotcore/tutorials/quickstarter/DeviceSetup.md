@@ -26,7 +26,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 1. Download the Windows 10 IoT Core Dashboard [here](https://developer.microsoft.com/en-us/windows/iot/Downloads).
 2. Once downloaded, open the Dashboard and click on _set up a new device_ and insert a SD card into your computer.
 3. Fill out all of the fields as indicated.
-4. Accept the software license terms and click _Download and install_.
+4. Accept the software license terms and click _Download and install_. You'll see that Windows 10 IoT Core is now flashing onto your device.
 
 
 ![Dashboard screenshot](../../media/DeviceSetup/Dashboard-Screenshot.jpg)
@@ -68,10 +68,11 @@ Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to con
 
 1. Download the Windows 10 IoT Core Dashboard [here](https://developer.microsoft.com/en-us/windows/iot/Downloads).
 2. Once downloaded, open the Dashboard and select "Qualcomm DragonBoard 410c". Then _sign in as a Windows Insider_. You need to be signed in as an insider in order to flash DragonBoard 410c. 
-3. Connect the Qualcomm board to the developer machine using a microUSB cable. Power on the DragonBoard to a 12V (> 1A) power supply.
-4. Turn the DragonBoard to flash mode by pressing the volume up (+) button while powering on the device. The device - when connected to a display - will show the image of a hammer, a lightning bolt, and a cog.
-5. Once in flash mode, the device will be visible on the Dashboard as shown below. Select the appropriate device.
-6. Accept the software license terms and click _Download and install_.
+3. Connect the Qualcomm board to the developer machine using a microUSB cable.
+4. Power on your Dragonboard using a 12V (>1A) power supply while holding down the volume up (+) button. The device - when connected to a display - should show the image of a hammer, a lightning bolt, and a cog. 
+5. The device should now be visible on the Dashboard as shown below. Select the appropriate device.
+6. Accept the software license terms and click _Download and install_. You'll see that Windows 10 IoT Core is now flashing onto your device.
+
 
 ![DragonBoard in flash mode](../../media/DeviceSetup/db4.png)
 
@@ -107,7 +108,7 @@ Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to con
 ## Flashing with eMMC (for DragonBoard 410c, other Qualcomm devices)
 
 1. Download and install the DragonBoard Update Tool for your [x86](https://developer.qualcomm.com/download/db410c/windows-10-iot-update-tool-dragonboard-410c-x86.zip) or [x64](https://developer.qualcomm.com/download/db410c/windows-10-iot-update-tool-dragonboard-410c-x64.zip) machine.
-2. Download the [Windows 10 IoT Core DragonBoard FFU](http://go.microsoft.com/fwlink/?LinkId=733603).
+2. Download the [Windows 10 IoT Core DragonBoard FFU](https://developer.microsoft.com/en-us/windows/iot/Downloads).
 3. Double-click on the downloaded ISO file and locate the mounted Virtual CD-drive. This drive will contain an installer file (.msi); double-click on it. This creates a new directory on your PC under `C:\Program Files (x86)\Microsoft IoT\FFU\` in which you should see an image file, "flash.ffu".
 4. Ensure your DragonBoard is in download mode by setting the first boot switch on the board to USB Boot, as shown below. Then, connect DragonBoard the host PC via a microUSB cable, then plug in the DragonBoard to a 12V (> 1A) power supply.
 5. Start the DragonBoard Update Tool, which should detect that the DragonBoard is connect to your PC with a green circle. "Browse" to the DragonBoard's FFU that you downloaded, then click the _Program_ button.
