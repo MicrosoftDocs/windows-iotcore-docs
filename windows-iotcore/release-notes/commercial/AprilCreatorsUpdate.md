@@ -55,7 +55,7 @@ ___
   * Processor: Intel Atom E3825
   * Architecture: x86
 
-* Raspberry Pi 3
+* Raspberry Pi 3 Model B
   * Processor: Broadcom BCM2837
   * Architecture: ARM
 
