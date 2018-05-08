@@ -70,6 +70,7 @@
 ### [Command-line utilities](manage-your-device/CommandLineUtils.md)
 ### [Event tracing](manage-your-device/EventTracing.md)
 ### [Azure Device Management](manage-your-device/AzureIoTDM.md)
+### [Intune Device Enrollment](manage-your-device/IntuneDeviceEnrollment.md)
 ### [Device management](manage-your-device/DeviceManagement.md)
 ### [Project Rome](manage-your-device/ProjectRome.md)
 ### [Network packet capture](manage-your-device/NetworkPacketCapture.md)
