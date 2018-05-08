@@ -26,7 +26,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 1. Download the Windows 10 IoT Core Dashboard [here](https://developer.microsoft.com/en-us/windows/iot/Downloads).
 2. Once downloaded, open the Dashboard and click on _set up a new device_ and insert a SD card into your computer.
 3. Fill out all of the fields as indicated.
-4. Accept the software license terms and click _Download and install_.
+4. Accept the software license terms and click _Download and install_. You'll see that Windows 10 IoT Core is now flashing onto your device.
 
 
 ![Dashboard screenshot](../../media/DeviceSetup/Dashboard-Screenshot.jpg)
@@ -68,10 +68,10 @@ Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to con
 
 1. Download the Windows 10 IoT Core Dashboard [here](https://developer.microsoft.com/en-us/windows/iot/Downloads).
 2. Once downloaded, open the Dashboard and select "Qualcomm DragonBoard 410c". Then _sign in as a Windows Insider_. You need to be signed in as an insider in order to flash DragonBoard 410c. 
-3. Connect the Qualcomm board to the developer machine using a microUSB cable. Power on the DragonBoard to a 12V (> 1A) power supply.
-4. Turn the DragonBoard to flash mode by pressing the volume up (+) button while powering on the device. The device - when connected to a display - will show the image of a hammer, a lightning bolt, and a cog.
+3. Connect the Qualcomm board to the developer machine using a 5V microUSB cable. Power on the DragonBoard to a 12V (> 1A) power supply.
+4. Before plugging in the microUSB cable, hold down the volume up (+) button then plug your microUSB cable in. The device - when connected to a display - will show the image of a hammer, a lightning bolt, and a cog.
 5. Once in flash mode, the device will be visible on the Dashboard as shown below. Select the appropriate device.
-6. Accept the software license terms and click _Download and install_.
+6. Accept the software license terms and click _Download and install_. You'll see that Windows 10 IoT Core is now flashing onto your device.
 
 ![DragonBoard in flash mode](../../media/DeviceSetup/db4.png)
 
