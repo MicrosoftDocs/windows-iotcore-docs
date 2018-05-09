@@ -20,7 +20,7 @@ Looking for information about supported hardware platforms? Click [here](https:/
 
 ## USB Devices
 
-### WiFi Dongles
+### WiFi Adapters
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|---------------|------------------------------|
 > | Official Raspberry Pi WiFi dongle | ARM32, x64, x86 | The official Raspberry Pi WiFi dongle offers the best possible WiFi performance for its diminutive size. | | &#10004;  |
