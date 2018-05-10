@@ -35,12 +35,26 @@ Sample xml snippet given below for a GPT device
 ```
 See also [QCDB410C device layout](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Source-arm/BSP/QCDB410C/Packages/QCDB410C.DeviceLayout-R/DeviceLayout.xml)
 
+Sample xml snippet given below for an MBR device
+
+```xml
+<Partition>
+    <Name>MMOS</Name>
+    <FileSystem>FAT32</FileSystem>
+    <TotalSectors>4096000</TotalSectors>
+    <Type>0x07</Type>
+</Partition>
+```
+See also [MBR 8GB Recovery device layout](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Common/Packages/DeviceLayout.MBR8GB-R/DeviceLayout.xml)
+
 ## Step 2 : Configure BCD settings
-In this step, the newly added MMOS partition is defined as a bootable partition in the BCD settings and the recovery sequence is enabled and configured to boot into this partition. These settings are available in the below given packages that you can readily use.
+In this step, the newly added MMOS partition is defined as a bootable partition in the BCD settings and the recovery sequence is enabled and configured to boot into this partition. These settings are available in the below given packages that you can readily use. Select GPT or MBR packages based on your device.
 
 - [Recovery.GPT-BCD](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Recovery.GPT-BCD) package
+- [Recovery.MBR-BCD](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Recovery.MBR-BCD) package
     - Recovery.BCD.xml declares the MMOS partition availability.
 - [Recovery.GPT-BcdEdit](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Recovery.GPT-BcdEdit) package
+- [Recovery.MBR-BcdEdit](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Recovery.MBR-BcdEdit) package
     - Recovery.BcdEdit.cmd enables recovery sequence and configures to boot into the MMOS partition.
 
 ## Step 3 : Prepare WinPE image 
