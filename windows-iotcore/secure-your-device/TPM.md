@@ -64,9 +64,10 @@ Software TPM (sTPM) is also referred to as TPM Simulator. It is platform-indepen
 
 
 ## Samples  
+<!--
 * [TBSSample project C++](https://developer.microsoft.com/en-us/windows/iot/samples/tbssample)
-  This tutorial demonstrates how to create a basic C++ application that uses TBS to poll the TPM.  
-* [Urchin Library Sample](https://developer.microsoft.com/en-us/windows/iot/samples/urchinlibrary) This tutorial demonstrates how to create a sample C++ application that exercises the TPM functionality using the [Urchin library](https://github.com/ms-iot/securit). Urchin is a spec-compliant library derived from the TPM 2.0 reference implementation. It provides to the client the functionality to marshal/unmarshal all data structures, properly calculate authorizations, perform parameter encryption and do auditing.
+  This tutorial demonstrates how to create a basic C++ application that uses TBS to poll the TPM.  -->
+* [Urchin Library Sample](https://github.com/ms-iot/security/tree/master/Urchin/Lib) This tutorial demonstrates how to create a sample C++ application that exercises the TPM functionality using the [Urchin library](https://github.com/ms-iot/security). Urchin is a spec-compliant library derived from the TPM 2.0 reference implementation. It provides to the client the functionality to marshal/unmarshal all data structures, properly calculate authorizations, perform parameter encryption and do auditing.
 
 ## Additional Resources  
 * [Trusted Platform Module (TPM) Specifications](http://www.trustedcomputinggroup.org/developers/trusted_platform_module) 
