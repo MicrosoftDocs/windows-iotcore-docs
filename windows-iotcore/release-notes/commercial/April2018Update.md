@@ -55,7 +55,7 @@ ___
   * Processor: Intel Atom E3825
   * Architecture: x86
 
-* Raspberry Pi 3
+* Raspberry Pi 3 Model B
   * Processor: Broadcom BCM2837
   * Architecture: ARM
 
@@ -70,3 +70,4 @@ ___
 ## Known Issues
 * F5 driver deployment from Visual Studio does not work on Windows 10 IoT Core. Drivers must be manually copied and registered on the device.
 * Devices that were installed via NOOBS cannot run the bcdedit tool to enable the kernel debugger.
+* The Windows IoT Remote client does not work for Raspberry Pi. Use a board with accelerated graphics such as Minnowboard Max or Dragonboard or attach a monitor for local display.
