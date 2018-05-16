@@ -75,3 +75,14 @@ NXP support for Windows 10 IoT Core is in private preview. Please sign up to exp
 
 > [!NOTE]
 > We're currently working to get a list of experience partners to share.
+
+
+## Other options
+If you find that you'd still like to create a custom board, we have provided a few suggestions of manufacturers below that can help with schematics and layout for a board.
+
+* [All PCB](http://www.allpcb.com/)
+* [Geppetto/Gumstix](https://www.gumstix.com/geppetto/)
+* [JLC PCB](https://jlcpcb.com/)
+* [Myro PCB](http://www.myropcb.com/)
+* [OSH PARK](https://oshpark.com/)
+* [seeed studio](https://www.seeedstudio.com/)

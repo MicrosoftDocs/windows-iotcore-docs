@@ -58,7 +58,7 @@ Looking for information about supported hardware platforms? Click [here](https:/
 ### Miscellaneous
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | Aeon Labs Z-Wave Z-Stick Series 2 USB Dongle DSA02203-ZWUS | ARM32 | Series 2 Z-Wave USB Z-Stick Controller | [ZWave Sample](https://developer.microsoft.com/en-us/windows/iot/samples/zwaveadapter) | &#10004; |
+> | Aeon Labs Z-Wave Z-Stick Series 2 USB Dongle DSA02203-ZWUS | ARM32 | Series 2 Z-Wave USB Z-Stick Controller |  | &#10004; |
 > | [Chalkboard Electronics 7” LCD Capacitive Touchscreen Display](https://www.chalk-elec.com/?page_id=1280#!/7-black-frame-universal-HDMI-LCD-with-capacitive-multi-touch/p/21750201/category=3094861) | ARM32 | | [Updating firmware](https://www.chalk-elec.com/?p=1826) | &#10004; |
 > | Vodafone (Huawei) K5150 | ARM32, x64, x86 | Vodafone (Huawei) K5150 150Mbps 4G LTE FDD USB Mobile Broadband Modem |  | &#10004;  |
 > | Vodafone (Huawei) K5160 | ARM32, x64, x86 | Vodafone (Huawei) K5160 150Mbps GSM/EDGE/3G/HSPA+/LTE-CAT4 USB Mobile Broadband Modem |  | |
