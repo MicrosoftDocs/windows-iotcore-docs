@@ -62,10 +62,9 @@ If you haven't connected and display and would like to connect via Wi-Fi, you'll
 Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available. 
 
 
-> [!Video https://www.youtube.com/embed/iPm57hGq-Q8]
-
-
 ## Using the IoT Dashboard (DragonBoard 410c)
+
+> [!Video https://www.youtube.com/embed/iPm57hGq-Q8]
 
 > [!TIP]
 > We recommend plugging your device into an external display to see the default application booting up.
