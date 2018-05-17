@@ -42,7 +42,7 @@ The Raspberry Pi 3B+ may not maintain Display Resolution if monitor is disconnec
 ### Video performance
 Video playback performance on the platform is not optimized.  Animated user elements including XAML-based dropdown menus may exhibit less than optimal performance.  
 
-## Camera support
+### Camera support
 Support for camera peripheral devices is limited. The PiCam device directly connected to the onboard camera bus is not supported due to limitations in the platform to support D3D Modern USB webcams produce data streams that are very demanding on the USB Host controller.  Even when used with low resolution settings webcams will require additional USB fine tuning and specialized control logic.  
 
 
@@ -57,10 +57,11 @@ reg add hklm\system\currentcontrolset\services\mpssvc\parameters /v IoTInboundLo
 checknetisolation loopbackexempt -a -n=<AppID for SoftAP App> 
 checknetisolation loopbackexempt -a -n=<AppID for Additional App>  
 For example:  checknetisolation loopbackexempt -a -n=IoTOnboardingTask-uwp_1w720vyc4ccym 
-Reboot 
 ```
 
-## Sensor Driver conflict in pre-built FFUs 
+Reboot.
+
+### Sensor Driver conflict in pre-built FFUs 
 There is a Sensor Driver Conflict in the provided FFUs. The Remote Sensor Framework installs drivers for Compass, Magnetometer, Accelerometer and Gyro. The UWP APIs for accessing these from an application assume just one is installed. If you are developing a driver for a physically attached device, the remote driver on the Microsoft provided FFUs will conflict.  
 
 To solve for this, the conflicting driver can be removed by connecting to the device via SSH or Powershell and using the tool devcon.exe to remove the remote sensor driver by typing: 
@@ -134,16 +135,15 @@ if crashes_seen > MaxFailureCount then __failfast;
 else  
   
 delay = (dword) ((float)BaseRetryDelayMs * (crashes_seen ** Fallback_exponent)) 
+```
 
+Wait for the delay and relaunch the app.
 
 #### Dragonboard SPI runs at 4.8Mhz
 The SPI on the Dragonboard will ignore the requested speed and always run at 4.8 Mhz.  
 
 #### Dragonboard Connected Standby 
-Connected Standby is not enabled on the Qualcomm Dragonboard by default.  To enable Connected Standby on DragonBoard the following registry key needs to be set to “1”:
-```
-
-Wait for the delay and relaunch the app.
+Connected Standby is not enabled on the Qualcomm Dragonboard by default.  To enable Connected Standby on DragonBoard the following registry key needs to be set to “1”.
 
 
 ### Time synchronization
