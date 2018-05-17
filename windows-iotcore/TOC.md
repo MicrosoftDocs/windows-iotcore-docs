@@ -95,6 +95,7 @@
 ## [Release Notes]()
 ### [Insider Previews](release-notes/CurrentInsider.md)
 #### [Current: Build 17661](release-notes/insider/17661.md)
+### [Raspberry Pi 3B+ Release](release-notes/insider/RPi3BP.md)
 #### [Build 17110](release-notes/insider/17110.md)
 #### [Build 17083](release-notes/insider/17083.md)
 #### [Build 17015](release-notes/insider/17015.md)
