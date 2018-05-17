@@ -9,14 +9,8 @@ keywords: windows iot, Windows Insider, release notes, Raspberry Pi 3B+
 ---
 
 # Release Notes for Raspberry Pi 3B+
-_Windows Insiders Release, Build RS_PRERELEASE - 17661.1001.180428-1349.  May 2018._
 
 &copy; 2018 Microsoft Corporation. All rights reserved.
-
-This document provides late-breaking or other information that supplements the documentation included with the Windows 10 IoT Core.
-
-Thank you for downloading Windows 10 IoT Core. Windows 10 IoT Core is the version of Windows 10 intended for development of embedded or dedicated purpose devices and the choice for the Maker community. The packages within this release contain tools and content needed to install Windows 10 IoT Core on Minnowboard Max platform based on Intel Atom processers, Raspberry Pi 2/3 based on Broadcom 2836/2837, and Dragonboard 410c based on Qualcomm Snapdragon 400 series processors.
-
 
 ## Privacy Statement
 
