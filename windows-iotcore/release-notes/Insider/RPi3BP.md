@@ -12,12 +12,6 @@ keywords: windows iot, Windows Insider, release notes, Raspberry Pi 3B+
 
 &copy; 2018 Microsoft Corporation. All rights reserved.
 
-## Privacy Statement
-
-The privacy statement for this version of the Windows operating system can be viewed [here](http://go.microsoft.com/fwlink/?LinkId=506737).
-
-You can review linked terms by pasting the forward link into your browser window.
-
 ## What's new in this build: 
 * General bug fixes
 
