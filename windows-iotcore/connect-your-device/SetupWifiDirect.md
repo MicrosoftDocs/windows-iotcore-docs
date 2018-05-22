@@ -16,9 +16,9 @@ WiFi Direct is supported on Windows 10 IoT Core devices through the use of a WiF
 
 WiFi Direct provides a solution for WiFi device-to-device connectivity without the need for either a Wireless Access Point (wireless AP) to setup the connection. Take a look at the UWP APIs available in the [Windows.Devices.WiFiDirect namespace](https://msdn.microsoft.com/en-us/library/windows/apps/windows.devices.wifidirect.aspx) to see what you can do with WiFiDirect.
 
-## <a name="WiFi_Devices"></a>Supported Adapters
+## Supported Adapters
 
-A list of WiFi adapters that have been tested on Windows 10 IoT Core can be found on our [Supported Hardware](../learn-about-hardware/HardwareCompatList.md) page. Look in the notes for "WiFiDirect supported" to discover the WiFiDirect enabled adapters.
+A list of WiFi adapters that have been tested on Windows 10 IoT Core can be found on our [Supported Hardware](../learn-about-hardware/HardwareCompatList.md) page. 
 
 ## Basic sample for WiFi Direct
 
