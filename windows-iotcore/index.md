@@ -89,7 +89,7 @@ Windows 10 IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Ente
         </a>
     </li>
     <li>
-        <a href="learn-about-hardware/suggestedboards.md">
+        <a href="learn-about-hardware/SoCsAndCustomBoards.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -99,7 +99,7 @@ Windows 10 IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Ente
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Suggested boards and SoCs</h3>
+                        <h3>SoCs and Custom Boards</h3>
                     </div>
                 </div>
             </div>

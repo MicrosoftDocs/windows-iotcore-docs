@@ -8,7 +8,7 @@
 #### [Setup your device](tutorials/quickstarter/DeviceSetup.md)
 #### [Add an app](tutorials/quickstarter/DevelopApp.md)
 ## [Learn about hardware]()
-### [SoCs and Custom Boards](learn-about-hardware/SuggestedBoards.md)
+### [SoCs and Custom Boards](learn-about-hardware/SoCsAndCustomBoards.md)
 ### [Hardware compatibility list](learn-about-hardware/HardwareCompatList.md)
 ### [Pin Mappings]()
 #### [Raspberry Pi 2 and 3](learn-about-hardware/PinMappings/PinMappingsRPI.md)
