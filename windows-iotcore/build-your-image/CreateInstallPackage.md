@@ -70,14 +70,14 @@ Below is an example for specifying files and reg keys.
 
 ### Create an Appx package
 
-Use [newappxpkg.cmd](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/newappxpkg.cmd) to generate the .wm.xml file for a given appx file. This tool expects the appx dependencies in the sub directory named "dependencies" in the folder containing the appx file.
+Use [newappxpkg.cmd](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/newappxpkg.cmd) to generate the .wm.xml file for a given appx file. This tool expects the appx dependencies in the sub directory named "dependencies" in the folder containing the appx file.
 
     newappxpkg HelloWorld.appx fga Appx.HelloWorld
     buildpkg Appx.HelloWorld
 
 `fga` sets the appx as the foreground startup app, `bgt` sets the appx as the background task and `none` skips startup configuration.
 
-See [Appx.IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Source-arm/Packages/Appx.IoTCoreDefaultApp/) as an example.
+See [Appx.IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Source-arm/Packages/Appx.IoTCoreDefaultApp/) as an example.
 
 When you have to install multiple applications signed with same certificate, you can add the certificate along with one app and for the remaining apps, you can skip adding the certificate using the skipcert flag.
 
@@ -90,16 +90,16 @@ See also
 
 ### Create a driver package
 
-The driver package contains the references (InfSource) to the Inf file for the driver and also lists all the files referenced in the Inf file. You can author the driver .wm.xml file manually or use [inf2pkg.cmd](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/inf2pkg.cmd) that generates package xml based on the input inf file.
+The driver package contains the references (InfSource) to the Inf file for the driver and also lists all the files referenced in the Inf file. You can author the driver .wm.xml file manually or use [inf2pkg.cmd](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/inf2pkg.cmd) that generates package xml based on the input inf file.
 
-[inf2cab.cmd](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/inf2cab.cmd) creates the package xml file and also builds the cab file directly by invoking `buildpkg.cmd` internally.
+[inf2cab.cmd](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/inf2cab.cmd) creates the package xml file and also builds the cab file directly by invoking `buildpkg.cmd` internally.
 
 > [!NOTE]
 > Windows IoT Core supports Universal Inf only.
 
 See also
 
-* [Sample Driver Package](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Source-arm/BSP/CustomRpi2/Packages/CustomRPi2.GPIO)
+* [Sample Driver Package](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Source-arm/BSP/CustomRpi2/Packages/CustomRPi2.GPIO)
 
 ## Step 3: Install on device
 ---

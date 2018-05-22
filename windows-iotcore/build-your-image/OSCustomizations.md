@@ -181,12 +181,12 @@ In addition to the static customisations discussed above, you can also customize
     - This command file is invoked by IoTCore Shell on every boot with system privileges, placed in `c:\windows\system32`
     - You can specify any customization actions here in this cmd file, though it is recommended to keep this as a last resort option for customizations
     - In the iot-adk-addonkit, this file is created for each product under the product directory. Add feature id **CUSTOM_CMD** in the OEMInput xml file to include this in the image.
-    - See [Custom.Cmd](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Custom.Cmd) package and [sample oemcustomizations.cmd](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Source-arm/Products/SampleA/oemcustomization.cmd) 
+    - See [Custom.Cmd](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/ProdPackages/Custom.Cmd) package and [sample oemcustomizations.cmd](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Source-arm/Products/SampleA/oemcustomization.cmd) 
 2. `Customizations.xml`
     - This is the settings file used to create the provisioning package
     - To automatically process this provisioning package at boot time, this package is placed in `c:\windows\provisioning\packages`
     - In the iot-adk-addonkit, this file is created for each product under the product directory. Add feature id **PROV_AUTO** in the OEMInput xml file to include this in the image.
-    - See [Provisioning.Auto](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Provisioning.Auto) package and [sample Customizations.xml](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Source-arm/Products/SampleA/prov/customizations.xml)
+    - See [Provisioning.Auto](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/ProdPackages/Provisioning.Auto) package and [sample Customizations.xml](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Source-arm/Products/SampleA/prov/customizations.xml)
     - For more details, refer to:
         - [Add a provisioning package](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-provisioning-package-to-an-image)
         - [Provisioning](https://aka.ms/iotcsplist) for supported Configuration Service Providers (CSPs) in IoT Core

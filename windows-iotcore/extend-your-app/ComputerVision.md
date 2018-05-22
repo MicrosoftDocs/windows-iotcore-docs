@@ -43,13 +43,13 @@ To employ Cognitive Services, users must sign up at the Congitive Services websi
 
 Documentation for each API can be found on the Cognitive Services [website](https://www.microsoft.com/cognitive-services/en-us/documentation).
 
-All Cognitive Services APIs can be implemented on any hardware platform using C# or Python.
+All Cognitive Services APIs can be implemented on any hardware platform using C#.
 
 Want to run Cognitive Services on your IoT Device? Visit our [tutorial](https://developer.microsoft.com/en-us/windows/iot/samples/cognitiveservices) to get started.
 
 ### OpenCV
 
-OpenCV is an open source computer vision and machine learning software library designed for computational efficiency and real-time applications. It is widely popular among developers and in industry due to its unprecedented efficiency, versatile tools, support for a wide range of platforms, and vibrant online community of developers. It is by far the most popular open source computer vision tool. OpenCV libraries are available for C/C++ Python, Java, and C#.
+OpenCV is an open source computer vision and machine learning software library designed for computational efficiency and real-time applications. It is widely popular among developers and in industry due to its unprecedented efficiency, versatile tools, support for a wide range of platforms, and vibrant online community of developers. It is by far the most popular open source computer vision tool. OpenCV libraries are available for C/C++, Java, and C#.
 
 The OpenCV [website](http://opencv.org/) provides additional details.
 
@@ -88,7 +88,7 @@ Want to run OpenCV on your IoT Core device? Visit our [tutorial](https://develop
 > |Free| Yes, to an extent (more details [here](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/) | Yes|
 > |Performance| All operations and API calls require accessing data in the cloud | All algorithms are optimized and local, and using C++ rather than Python increases speeds even further|
 > |Supported cameras/hardware| Any USB or embedded camera | Any USB or embedded camera|
-> |Supported languages/frameworks| C#, Python, UWP | C/C++, Python, Java, C#, UWP|
+> |Supported languages/frameworks| C#, UWP | C/C++, Python, Java, C#, UWP|
 > |Startup time| Users can use code samples along with intuitive APIs directly from the documentation | OpenCV's power and flexibility means it also requires plenty of configuration and code to perform complex operations|
 > |Links| [Sample program](https://developer.microsoft.com/en-us/windows/iot/samples/cognitiveservices) | [Sample program](https://developer.microsoft.com/en-us/windows/iot/samples/opencv) |
 > |    |   [Cognitive Services Website](https://azure.microsoft.com/en-us/services/cognitive-services/) |  [OpenCV Website](http://opencv.org/)

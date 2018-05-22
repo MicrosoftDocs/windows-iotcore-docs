@@ -33,7 +33,7 @@ The privacy statement for this version of the Windows operating system can be vi
    * New UWP APIs And controls for vibration, brightness, modern connected standby, power management, battery charge  and NFC (w/o HCE). 
    * New busses and capabilities for ARM PCIe, USB function mode, Wi-Fi Direct and  GPIO interrupt counting API. 
    * New Embedded features on Reset/Recovery, On-SOC PWM and Automatic USB provisioning 
-   * Improved Tools - VS Code, improved Node.js and Python support, New Windows Device Portal and IoT Dashboard features, VS 2017 support.
+   * Improved Tools - VS Code, New Windows Device Portal and IoT Dashboard features, VS 2017 support.
    * Cortana on Windows IoT Core - Cortana is now available on Windows 10 IoT Core. Ask Cortana a question.
    * IoT Dashboard Improvements - New features and stability bug fixes
       * Windows Insider Preview builds for Raspberry Pi and Minnowboard 

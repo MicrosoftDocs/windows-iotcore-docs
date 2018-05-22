@@ -10,7 +10,7 @@ keywords: windows iot, license, license requirements, commercialization, OEM lic
 
 # OEM license requirements
 
-The process of licensing Windows 10 IoT Core product and the OEM license agreement is provided at [Windows 10 IoT Core Commercialization](https://developer.microsoft.com/en-us/windows/iot/getstarted/commercialize/commercialterms). 
+In order to start your commercialization journey, you must request a license for the Windows 10 IoT Core product.
 
 You will need to request the license agreement [here](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4oorCHCXCJHla0pHy8o5GpUMlVHVkNZNVVON1ZTVUQ0T0lHS1pDV0JFVy4u). A member of the team will get back to you with the agreement form within 48 to 72 hours. 
 
@@ -33,7 +33,7 @@ These fields gain prominence as fields which will be used for identifying unique
 > [!TIP]
 > Design Notes: SKU Number has been moved to a required field in order to improve telemetry reporting. We encourage the OEM to be careful to fill in *Manufacturer* consistently and to fill in *SKU Number* with a value that can identify what the OEM considers a unique system configuration for telemetry and servicing.
 
-See [SMBIOS Specification](https://docs.microsoft.com/windows-hardware/design/compatibility/systems#system.fundamentals.smbios) for more information.
+See [SMBIOS Specification](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/whcp-specifications-policies) for more information.
 
 > [!IMPORTANT]
 > If you are re-using the BIOS/Firmware/UEFI, make sure make sure to update the entries.
