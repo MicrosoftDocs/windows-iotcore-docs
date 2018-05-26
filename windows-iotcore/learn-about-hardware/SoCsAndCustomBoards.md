@@ -35,7 +35,7 @@ For most people, developing a complete custom board would make sense when the pr
 
 Each of the platforms has unique quirks that need attention during implementation.  Below are some suggestions on how to get started. And while there are many companies building on Windows 10 IoT Core, here is a list of some that have proven experience working with Windows 10 IoT Core:
 
-* __[Rasberry Pi](#rasberry-pi-derived-custom-design)__
+* __[Raspberry Pi](#raspberry-pi-derived-custom-design)__
 * __[Intel](#intel-based-custom-design)__
 * __[Qualcomm](#qualcomm-dragonboard-410c-apq8016-based-custom-design)__
 * __[NXP](#nxp-preview)__
