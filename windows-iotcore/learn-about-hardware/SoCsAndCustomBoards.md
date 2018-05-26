@@ -5,7 +5,7 @@ ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn about the hardware features for a variety of suggested boards and community devices.
-keywords: windows iot, development devices, boards, SOC, SOM, system on chips, Raspberry Pi 2, Raspberry Pi 3, Minnowboard Max, Dragonboard
+keywords: windows iot, development devices, boards, SOC, SOM, system on chips, Raspberry Pi 2, Raspberry Pi 3, Minnowboard Max, DragonBoard
 ---
 
 # SoCs and custom boards
@@ -33,7 +33,7 @@ If an off-the-shelf device is in a form factor that includes the connectivity op
 
 For most people, developing a complete custom board would make sense when the product is expected to be sold in volumes greater than tens, or even hundreds, of thousands of units. For smaller volumes, using a SoM and designing a custom carrier board, instead of designing a completely new board, can significantly reduce your cost and time-to-market, as well as streamlining software development and integration.
 
-Each of the platforms has unique quirks that need attention during implementation.  Below are some suggestions on how to get started. And while there are many companies building on Windows 10 IoT Core, here is a list of some that have proven experience working with Windows IoT Core:
+Each of the platforms has unique quirks that need attention during implementation.  Below are some suggestions on how to get started. And while there are many companies building on Windows 10 IoT Core, here is a list of some that have proven experience working with Windows 10 IoT Core:
 
 * __[Rasberry Pi](#rasberry-pi-derived-custom-design)__
 * __[Intel](#intel-based-custom-design)__
@@ -44,8 +44,8 @@ Each of the platforms has unique quirks that need attention during implementatio
 
 *Many companies listed here are large and complex.  If you have trouble reaching the right person, please email [winiotsomhelp@microsoft.com](mailto:winiotsomhelp@microsoft.com) and we'll do our best to connect you to the right people.*
 
-### **Rasberry Pi-derived custom design** 
-[Element 14](https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service) offers board customization service for Rasberry Pi to allow you to add or remove connectivity options.  If you also need to make customizations to the BSP, you can leverage the [open source BSP code on Github](https://github.com/ms-iot/bsp).
+### **Raspberry Pi-derived custom design** 
+[Element 14](https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service) offers board customization service for Raspberry Pi to allow you to add or remove connectivity options. If you also need to make customizations to the BSP, you can leverage the [open source BSP code on Github](https://github.com/ms-iot/bsp).
 
 ### **Intel-based custom design**
 There is a vibrant ecosystem of [experienced Intel device builders](https://solutionsdirectory.intel.com/solutions-directory/processors/278/processors/309/processors/402/processors/782/processors/788/processors/1103/processors/1107/processors/1110/processors/1175/processors/1344/processors/1348/processors/1349) for Windows you can work with. An Intel device designed to run Windows 10 IoT Core has a couple of differences from the more common PCs: 
@@ -61,8 +61,8 @@ If you are building your own board, please contact your BIOS vendor if you need 
 *  [Kontron](http://www.kontron.com/) - martin.unverdorben@kontron.com
 *  [Nexcom](http://www.nexcom.com/)
 
-### **Qualcomm Dragonboard 410c (APQ8016)-based custom design**
-Binary BSP for Dragonboard 410c (based on Qualcomm AQP8016 SoC) can be downloaded from [Qualcomm Developer Network](https://developer.qualcomm.com/hardware/dragonboard-410c/software).  
+### **Qualcomm DragonBoard 410c (APQ8016)-based custom design**
+Binary BSP for DragonBoard 410c (based on Qualcomm AQP8016 SoC) can be downloaded from [Qualcomm Developer Network](https://developer.qualcomm.com/hardware/dragonboard-410c/software).  
 
 The BSP package includes the source code for ACPI to allow for simple hardware customizations that only require ACPI changes.  
 
