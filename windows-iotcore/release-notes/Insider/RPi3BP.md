@@ -19,7 +19,7 @@ keywords: windows iot, Windows Insider, release notes, Raspberry Pi 3B+
 * This image is only meant for RPi3B+ and will not boot on RPi2. 
 * F5 driver deployment from Visual Studio does not work on IoT Core. 
 * Onboard WIFI and Bluetooth do not work on RPI3B+. 
-* Ft5406 touch screen driver is disabled on and RPi3B+. 
+* Ft5406 touch screen driver is disabled on RPi3B+. 
 * SD card activity LED is disabled. 
 
 
