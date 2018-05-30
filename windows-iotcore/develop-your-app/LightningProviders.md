@@ -14,7 +14,7 @@ The Microsoft.IoT.Lightning.Providers library contains a set of providers to int
 
 ## About the direct memory mapped driver (DMAP)
 
-The DMAP driver is an in-developement driver that provides GPIO performance improvements over the default inbox driver. to learn more about these performance improvements visit the [Lightning Performance Testing](../develop-your-app/LightningPerformance.md) page.
+The DMAP driver is an in-developement driver that provides GPIO performance improvements over the default inbox driver. To learn more about these performance improvements visit the [Lightning Performance Testing](../develop-your-app/LightningPerformance.md) page.
 
 While DMAP driver offer GPIO performance improvements over the Inbox driver, controller commands are sent to the DMAP driver through user-mode memory mapped addresses for each of the controllers. An app that only uses the Lightning provider APIs or Microsoft.IoT.Lightning.Providers. However, a malicious app would be able to write directly to that memory and cause hardware/security issues. On a machine with only trusted apps, the DMAP is generally safe to use.   
 
