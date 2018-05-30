@@ -38,7 +38,7 @@ Want to learn more about our two offerings, Windows 10 IoT Enterprise and Window
 
 <tr class="odd">
 <td align="left"><p>[Windows 10 IoT Enterprise Overview](windows-iot-enterprise.md)</p></td>
-<td align="left"><p>Learn more about how to get started with Windows 10 IoT Enterprise..</p></td>
+<td align="left"><p>Learn more about how to get started with Windows 10 IoT Enterprise.</p></td>
 </tr>
 
 <tr class="odd">
