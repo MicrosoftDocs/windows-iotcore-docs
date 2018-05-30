@@ -20,7 +20,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 
 
 > [!IMPORTANT]
-> The latest 64-bit firmware for Minnowboard Turbot can be found on the [Minnowboard website](https://minnowboard.org/tutorials/updating-the-firmware) (skip step 4 on the Minnowboard site's instructions).
+> The latest 64-bit firmware for MinnowBoard Turbot can be found on the [MinnowBoard website](https://minnowboard.org/tutorials/updating-the-firmware) (skip step 4 on the MinnowBoard site's instructions).
 
 
 > [!TIP]
