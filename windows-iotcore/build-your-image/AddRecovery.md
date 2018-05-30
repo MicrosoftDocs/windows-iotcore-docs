@@ -33,7 +33,7 @@ Sample xml snippet given below for a GPT device (assumes a sector size of 512)
     <Type>{ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}</Type>
 </Partition>
 ```
-See also [QCDB410C device layout](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Source-arm/BSP/QCDB410C/Packages/QCDB410C.DeviceLayout-R/DeviceLayout.xml)
+See also [QCDB410C device layout](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Source-arm/BSP/QCDB410C/Packages/QCDB410C.DeviceLayout-R/DeviceLayout.xml)
 
 Sample xml snippet given below for an MBR device
 
@@ -45,7 +45,7 @@ Sample xml snippet given below for an MBR device
     <Type>0x07</Type>
 </Partition>
 ```
-See also [MBR 8GB Recovery device layout](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Common/Packages/DeviceLayout.MBR8GB-R/DeviceLayout.xml)
+See also [MBR 8GB Recovery device layout](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/DeviceLayout.MBR8GB-R/DeviceLayout.xml)
 
 ## Step 2 : Configure BCD settings
 In this step, the newly added MMOS partition is defined as a bootable partition in the BCD settings and the recovery sequence is enabled and configured to boot into this partition. These settings are available in the below given packages that you can readily use. Select GPT or MBR packages based on your device.
@@ -82,7 +82,7 @@ This script will output the winpe at  `Build\<arch>\<bspname>\winpe.wim`.
 
 
 ## Step 4 : Update Feature manifest file and OEMInputFile
-- Update the **\<bspname\>FM.xml** with the following changes (see [QCDB410CFM.xml sample](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Source-arm/BSP/QCDB410C/Packages/QCDB410CFM.xml))
+- Update the **\<bspname\>FM.xml** with the following changes (see [QCDB410CFM.xml sample](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Source-arm/BSP/QCDB410C/Packages/QCDB410CFM.xml))
 
     - Include the new device layout package, specifying new SOC name, *QC8016-R* in the example below .
     

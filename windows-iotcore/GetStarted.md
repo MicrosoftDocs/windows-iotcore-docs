@@ -38,7 +38,7 @@ Want to learn more about our two offerings, Windows 10 IoT Enterprise and Window
 
 <tr class="odd">
 <td align="left"><p>[Windows 10 IoT Enterprise Overview](windows-iot-enterprise.md)</p></td>
-<td align="left"><p>Learn more about how to get started with Windows 10 IoT Enterprise..</p></td>
+<td align="left"><p>Learn more about how to get started with Windows 10 IoT Enterprise.</p></td>
 </tr>
 
 <tr class="odd">
@@ -75,8 +75,8 @@ Follow the links below to start your commercialization journey.
 <tbody>
 
 <tr class="odd">
-<td align="left"><p>[Suggested Boards and SoCs](learn-about-hardware/suggestedboards.md)</p></td>
-<td align="left"><p>Learn about the different boards you can work with to build your Windows 10 IoT Core solution.</p></td>
+<td align="left"><p>[SoCs and Custom Boards](learn-about-hardware/SoCsAndCustomBoards.md)</p></td>
+<td align="left"><p>Learn about the different SoCs and SOMs you can work with to build your Windows 10 IoT Core solution.</p></td>
 </tr>
 
 <tr class="odd">
