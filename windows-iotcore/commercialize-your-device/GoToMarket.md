@@ -14,6 +14,8 @@ On this page we will review the key items that need to be considered in the **Go
 ## Understand licensing requirements
 * Request the license agreement [here](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4oorCHCXCJHla0pHy8o5GpUMlVHVkNZNVVON1ZTVUQ0T0lHS1pDV0JFVy4u). A member of the team will get back to you with the agreement form within 48 to 72 hours. 
 
+You can view a copy of this agreement before requesting to sign it [here](https://az835927.vo.msecnd.net/sites/iot/Resources/documents/Commercial-License.pdf).
+
 
 ## Find a distributor
 Once you've understood the license requirements to use Windows 10 IoT Core commercially,  if you want to work with one of our distributors, please view our Distributor Information Guide.
