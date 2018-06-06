@@ -67,7 +67,7 @@ OEMs get 10 years of support on Windows 10 IoT Core via access to monthly update
 
 Here's a diagram of the update flow in Device Update Center:
 
-![Diagram of Device Update Center](IoTCoreServicesOverview-DUC.png)
+![Diagram of Device Update Center](../media/Console/IoTCoreServicesOverview-DUC.png)
 
  
 ### Commercialize with Device Health Attestation
