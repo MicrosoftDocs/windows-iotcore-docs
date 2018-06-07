@@ -11,7 +11,7 @@ keywords: windows iot, Windows Device Portal, remote, device portal
 ---
 
 # Windows Device Portal
-   The Windows Device Portal (WDP) lets you configure and manage your device remotely over a network.
+   The Windows Device Portal (WDP) lets you configure and manage your device remotely over your local network.
    The main features are documented on the [Windows Device Portal overview page](https://msdn.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal)
 
 ![Device Portal Home](../media/deviceportal/deviceportal.png)
