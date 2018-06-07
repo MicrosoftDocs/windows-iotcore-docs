@@ -27,7 +27,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 > We recommend using a high-performance SD card for increased stability as well as plugging your device into an external display to see the default application booting up.
 
 1. Download the Windows 10 IoT Core Dashboard [here](https://developer.microsoft.com/en-us/windows/iot/Downloads).
-2. Once downloaded, open the Dashboard and click on _set up a new device_ and insert a SD card into your computer.
+2. Once downloaded, open the IoT Dashboard and click on _Set up a new device_ and insert a SD card into your computer.
 3. Fill out all of the fields as indicated.
 4. Accept the software license terms and click _Download and install_. You'll see that Windows 10 IoT Core is now flashing onto your device.
 
@@ -50,7 +50,7 @@ If your device supports Wi-Fi connectivity and you've connected a display to it,
 
 If you haven't connected and display and would like to connect via Wi-Fi, you'll need to:
 
-1. Go to the IoT Dashboard and click on _My Devices_.
+1. Go to the IoT Dashboard and click on _My devices_.
 2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
 3. Click on *Configure Device* and enter your network credentials. This will connect your board to the network.
 
@@ -70,12 +70,13 @@ Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to con
 > We recommend plugging your device into an external display to see the default application booting up.
 
 
-1. Download the Windows 10 IoT Core Dashboard [here](https://developer.microsoft.com/en-us/windows/iot/Downloads).
-2. Once downloaded, open the Dashboard and select "Qualcomm DragonBoard 410c". Then _sign in as a Windows Insider_. You need to be signed in as an insider in order to flash DragonBoard 410c. 
-3. Connect the Qualcomm board to the developer machine using a microUSB cable.
-4. Power on your Dragonboard using a 12V (>1A) power supply while holding down the volume up (+) button. The device - when connected to a display - should show the image of a hammer, a lightning bolt, and a cog. 
-5. The device should now be visible on the Dashboard as shown below. Select the appropriate device.
-6. Accept the software license terms and click _Download and install_. You'll see that Windows 10 IoT Core is now flashing onto your device.
+1. Download the Windows 10 IoT Core Dashboard [here](https://developer.microsoft.com/en-us/windows/iot/Downloads). 
+2. Once downloaded, open the IoT Dashboard and click on _Set up a new device_. 
+3. As _Device type_ select "Qualcomm [DragonBoard 410c]". 
+4. Connect the DragonBoard to the developer machine using a microUSB cable. 
+5. Power on your DragonBoard using a 12V (>1A) power supply while holding down the volume up (+) button. The device - when connected to a display - should show the image of a hammer, a lightning bolt, and a cog. 
+6. The device should now be visible on the IoT Dashboard as shown below.
+7. Accept the software license terms and click _Download and install_. You'll see that Windows 10 IoT Core is now flashing onto your device.
 
 
 ![DragonBoard in flash mode](../../media/DeviceSetup/db4.png)
@@ -96,7 +97,7 @@ If your device supports Wi-Fi connectivity and you've connected a display to it,
 
 If you haven't connected and display and would like to connect via Wi-Fi, you'll need to:
 
-1. Go to the IoT Dashboard and click on _My Devices_.
+1. Go to the IoT Dashboard and click on _My devices_.
 2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
 3. Click on _Configure Device_ and enter your network credentials. This will connect your board to the network.
 
@@ -139,7 +140,7 @@ If your device supports Wi-Fi connectivity and you've connected a display to it,
 
 If you haven't connected and display and would like to connect via Wi-Fi, you'll need to:
 
-1. Go to the IoT Dashboard and click on *My Devices*.
+1. Go to the IoT Dashboard and click on *My devices*.
 2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
 3. Click on *Configure Device* and enter your network credentials. This will connect your board to the network.
 
@@ -185,7 +186,7 @@ If your device supports Wi-Fi connectivity and you've connected a display to it,
 
 If you haven't connected and display and would like to connect via Wi-Fi, you'll need to:
 
-1. Go to the IoT Dashboard and click on _My Devices_.
+1. Go to the IoT Dashboard and click on _My devices_.
 2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
 3. Click on _Configure Device_ and enter your network credentials. This will connect your board to the network.
 
