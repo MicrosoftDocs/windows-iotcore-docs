@@ -8,7 +8,7 @@ description: Read and learn about what's new in Windows Insider Build Number 176
 keywords: windows iot, Windows Insider, release notes
 ---
 
-# Release Notes for Build 17661
+# Release Notes for Build 17672
 _Build Number 17672. May 2018._
 
 &copy; 2018 Microsoft Corporation. All rights reserved.
