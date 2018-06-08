@@ -1,7 +1,7 @@
 ---
 title: Cortana on IoT Core
-author: zhuridartem
-ms.author: artemz
+author: saraclay
+ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to get started and install updates for Cortana on Windows IoT Core.
@@ -13,10 +13,11 @@ keywords: windows iot, Cortana, voice, AI, digital assistant, language
 
 Cortana is a personal digital assistant working across all your devices to help you in your daily life. She learns about you; helps you get things done by completing tasks; interacts with you using natural language in a consistent, contextual way; and always looks out for you. Cortana has a consistent visual identity, personality, and voice.
 
-IoT Core is an edition of Windows 10 and is optimized for small-footprint IoT devices. Cortana is enabled on IoT Core in the Windows 10 Creators Update. It is in preview now and is not licensed for commercial use.
+To enable hands-free intelligent assistance in your device with the Cortana Device SDK, please visit [The Cortana Dev Center](http://www.aka.ms/cortanadevices).
 
 Cortana on IoT Core will focus on commercial scenarios in the future. Updates will come soon. 
 
+<!--
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Cortana-on-Windows-10-IoT-Core/player]
 
 To use Cortana:
@@ -346,4 +347,4 @@ Cortana to do more.
 Cortana custom skill provides the extensible capability for Cortana. The experts control the end-to-end experience, while Cortana brokers to relevant applications, websites, services and bots. Custom skills are created by developers, for example, OEM partners or ISVs.
 
 OEMs can write a [Voice Command Definition application](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CortanaVoiceCommand) that allows to add local commands to Cortana.
-
+-->
