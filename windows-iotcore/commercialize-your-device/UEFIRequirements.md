@@ -18,11 +18,10 @@ See [Windows ACPI design guide for SoC platforms](https://docs.microsoft.com/win
 
 ## Replacing Windows Boot Logo
 
-There are multiple ways to replace the boot logo that is displayed by the BIOS or UEFI.
-One way is to license the UEFI, or pay a board manufacturer vendor to do so, and make changes directly to the UEFI source code.
-Alternatively, on devices whose UEFI implementation supports signed loadable UEFI drivers there is a sample here:
-https://github.com/Microsoft/MS_UEFI/tree/share/MsIoTSamples
-that shows how to build a driver that replaces the boot logo and supply a BGRT table to bootmgr so that the Windows boot process leaves your logo in place during boot instead of replacing it with the Windows logo.
+There are multiple ways to replace the boot logo that is displayed by the BIOS or UEFI:
+
+* One way is to license the UEFI, or pay a board manufacturer vendor to do so, and make changes directly to the UEFI source code.
+* Alternatively, on devices whose UEFI implementation supports signed loadable UEFI drivers there is a sample [here](https://github.com/Microsoft/MS_UEFI/tree/share/MsIoTSamples) that shows how to build a driver that replaces the boot logo and supply a BGRT table to bootmgr so that the Windows boot process leaves your logo in place during boot instead of replacing it with the Windows logo.
 
 ## SMBIOS settings
 
