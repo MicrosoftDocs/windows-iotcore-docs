@@ -46,36 +46,6 @@ You can review linked terms by pasting the forward link into your browser window
 * Error installing Smart Display app.
 * MiraCast cannot connect to dongle (QDB -> Dongle).
 
-## Cortana Instructions and Known Issues 
-### To try Cortana: 
-* Please check “Start Cortana on Boot” on Device Settings of Windows Device Portal and restart the device.  
-* Navigate to Device Settings on top right of default application, click "Cortana & Search Settings", this will launch the consent page for Cortana. After you click "Sure" to accept the consent, you are all set for Cortana. 
-* When you want to check your reminder, or traffic near you, you will be prompted to sign in with MSA. Please sign in so that you will have full experience Cortana.  
-
-### You need to get one microphone and one speaker connected with your device.  
-* On the Device Settings page of Windows Device Portal, check if your microphone and speaker is the one displayed against speakers and microphone. Click the Refresh button and make sure the correct peripherals are displayed.  
-* Adjust the volume for both to be in the range 40-70%. (Please make sure the microphone is not 0.0)  
-* Please sign in with your MSA credentials when it is prompted. MSA is what you use to sign in to Microsoft services such as Windows, Office, Outlook.com, OneDrive, Skype, Xbox, Cortana and more. An MSA enables Cortana to be a smart and personal assistant, and leverages user information to provide a compelling and useful experience. 
-
-### Here is the hardware that we recommend:  
-* Microphone: Microsoft LifeCam HD 3000, Blue Snowball iCE Condenser Microphone, Cardioid, Sound Tech CM-1000USB Table Top Conference Meeting Microphone 
-* Speaker: Logitech S150 USB Speakers 
-
-### Questions you can ask: 
-* What is the traffic to my home? 
-* What song is this? 
-* How’s the weather? 
-* Tell me a joke. 
- 
-### How to exit Cortana 
-* Say “Hey, Cortana” and then say “Cancel” 
-
-### Not supported in IoT Cortana: 
-* Music playback 
-* Calendar 
-* Alarm 
-* Timer 
-
 ## IoT Core general known issues and work arounds
 
 ### For Raspberry Pi
