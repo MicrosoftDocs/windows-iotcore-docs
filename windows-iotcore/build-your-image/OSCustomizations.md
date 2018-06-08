@@ -174,8 +174,8 @@ that shows how to build a driver that replaces the boot logo and supply a BGRT t
         </Object>
     ```
 
-## Runtime customisations
-In addition to the static customisations discussed above, you can also customize during the runtime.
+## Runtime customizations
+In addition to the static customizations discussed above, you can also customize during the runtime.
 
 1. `OEMCustomizations.cmd`
     - This command file is invoked by IoTCore Shell on every boot with system privileges, placed in `c:\windows\system32`

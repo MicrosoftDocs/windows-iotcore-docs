@@ -57,9 +57,9 @@ New to Windows 10 IoT? Get started quickly and easily with our [Windows 10 IoT C
 
 ## Bring a device to market
 
-Commercializing, or bringing a device to market, is on a different level from tinkering or prototyping. Commercializing requires a number of steps to ensure that your device - wherever they are in the world - can receive updates, are secure, and are compliant.  
+Commercializing, or bringing a device to market, is on a different level from tinkering or prototyping. Commercializing requires a number of steps to ensure that your device - wherever they are in the world - can receive updates, are secure, and are compliant. 
 
-Follow the links below to start your commercialization journey. 
+Because this is a path that goes beyond educational or personal/non-commercial purposes, we ask that you follow the steps and complete the requirements listed in the documentation below.
 
 <table>
 <colgroup>
