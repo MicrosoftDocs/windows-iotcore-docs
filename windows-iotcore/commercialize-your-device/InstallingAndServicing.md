@@ -53,7 +53,7 @@ Key elements to note here are
 
 In order for headless apps to meet store compliance there needs to be a "head" associated with the app. In order to add this "head" to our headless app we need to:
 
-1. Create a new **Blank App (Universal Windows)** project in Visual Studio.
+1. Create a new **Blank App (Universal Windows)** project in Visual Studio.  The target version and minimum version must match the target version and minimum version that are configured for the headless app.
 2. Build the new project under release configuration
 3. Navigate to \<New Project Folder\>/bin/\<Architecture\>/Release/ilc
 4. Locate files \<blank_app_name\>.exe and \<blank_app_name\>.dll and copy the files to the root directory of your background app project.
