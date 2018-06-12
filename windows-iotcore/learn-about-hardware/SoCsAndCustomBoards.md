@@ -29,10 +29,11 @@ The SoC you choose to adopt will depend on considerations such as performance re
 You'll also need to decide whether you want to use an off-the-shelf board or device, build a custom device using a system on a module (SoM) plus a custom carrier board, or build a complete custom board. Cost and the degree of customization are the key factors in this decision, with both generally increasing as you customize further.
 
 ## Windows 10 IoT Core Features by Processor Family
-To help you select the right platform for your device, the table below shows the features that are supported by processor family with Windows 10 IoT Core. All features listed below are supported in Windows 10 IoT Core, however some SoCs may not have the specific IP included in their design, and are such indicated with "N/A". In such cases, a 3rd party solution can be incorporate into the design to provide the required functionality.  In a limited number of cases where a Windows 10 IoT Core feature is not implemented on a processor, the entry is left blank.
 
 > [!NOTE] 
 > This list takes into consideration processors that will be available in Fall 2018. 
+
+To help you select the right platform for your device, the table below shows the features that are supported by processor family with Windows 10 IoT Core. All features listed below are supported in Windows 10 IoT Core, however some SoCs may not have the specific IP included in their design, and are such indicated with "N/A". In such cases, a 3rd party solution can be incorporate into the design to provide the required functionality.  In a limited number of cases where a Windows 10 IoT Core feature is not implemented on a processor, the entry is left blank.
 
 
 > |    | Intel  |  Qualcomm  | NXP i.MX6 | NXP i.MX7 | Raspberry Pi 3B |
