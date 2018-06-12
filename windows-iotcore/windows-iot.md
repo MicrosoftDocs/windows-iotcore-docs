@@ -35,6 +35,33 @@ While Windows 10 IoT Core and Windows 10 IoT Enterprise are similar in name, the
 
 For minimum requirement details, please visit [the Windows Hardware site](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
 
+## Fall 2018 Long-Term Support Silicon Details
+
+For long-term support silicon details, refer to the list below. For Windows 10 IoT Core features by processor family, please see our documentation on [Windows 10 IoT Core](windows-iot-core.md).
+
+> | Windows 10 IoT Core  |  Windows 10 IoT Enterprise  |
+> |-------------|----------|---------|
+> | Broadcom® 2836 (Raspberry Pi 2) | AMD® 6th Generation Processors Series Ax-8xxx & E-Series Ex-8xxx & FX-870K | 
+ > | Broadcom® 2837 (Raspberry Pi 3) | AMD® 7th Generation Processors Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx | 
+ > | Intel® Atom™ processor E3900 series | AMD® Ryzen™ 3/5/7 1xxx | 
+ > | Intel® Atom™ x5-E8000 Processor | AMD® Ryzen™ 3/5/7 2xxx | 
+ > | Intel® Atom™ x5-Z8350 Processor | AMD® G-Series | 
+ > | Intel® Atom™ Processor E3800 Product Family | AMD® R-Series | 
+ > | Intel® Pentium® and Celeron® Processor N and J Series | AMD® V1xxx | 
+ > | NXP® i.MX 6QuadPlus | 4th Generation Intel® Core™ Processors | 
+ > | NXP® i.MX 6Quad | 5th Generation Intel® Core™ Processors |
+ > | NXP® i.MX 6DualPlus | 6th Generation Intel® Core™ Processors |
+ > | NXP® i.MX 6Dual | 7th Generation Intel® Core™ Processors |
+ > | NXP® i.MX 6DualLite | 8th Generation Intel® Core™ Processors |
+ > | NXP® i.MX 6SoloX | Intel® Atom™ processor E3900 series |
+ > | NXP® i.MX 6SoloLite | Intel® Atom™ x5-E8000 Processor |
+ > | NXP® i.MX 6SLL | Intel® Atom™ x5-Z8350 Processor |
+ > | NXP® i.MX 7Solo | Intel® Atom™ Processor E3800 Product Family |
+ > | NXP® i.MX 7ULP | Intel® Pentium® and Celeron® Processor N and J Series |
+ > | Qualcomm® Snapdragon™ 212 |  |
+ > | Qualcomm® Snapdragon™ 410E |  |
+
+
 ## Helpful resources
 * [Windows 10 IoT Enterprise](windows-iot-enterprise.md)
 * [Windows 10 IoT Core](windows-iot-core.md)
