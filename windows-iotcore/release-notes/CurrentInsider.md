@@ -8,8 +8,8 @@ description: Read and learn about what's new in Windows Insider Build Number 176
 keywords: windows iot, Windows Insider, release notes
 ---
 
-# Release Notes for Build 17672
-_Build Number 17672. May 2018._
+# Release Notes for Build 17686
+_Build Number 17686. May 2018._
 
 &copy; 2018 Microsoft Corporation. All rights reserved.
 
@@ -40,11 +40,14 @@ You can review linked terms by pasting the forward link into your browser window
 **	Run the command “bcdedit /store M:\EFI\Microsoft\boot\bcd /set {default} debug yes”
 **	Unmount the SD card.
 **	You should now be able to connect the debugger as usual
-* Node.js and Python cannot be used in UWP apps. Older samples in these languages may no longer function correctly. Microsoft is considering alternatives for a future release.
-* Cortana SDK will not respond to "Hey Cortana" on MinnowBoard Max/Turbot 64, Qualcomm DragonBoard.
-* CortanaSDK will not return web search results.
-* Error installing Smart Display app.
+* Node.js and Python cannot be used in UWP apps. Older samples in these languages may no longer function correctly. Microsoft is considering alternatives for a future release. 
+* Cortana SDK will not respond to "Hey Cortana" on MBM 64, QDB. 
+* CortanaSDK will not return web search results. 
+* Error installing Smart Display app. 
 * MiraCast cannot connect to dongle (QDB -> Dongle).
+* DMDashboard throws an exception trying to read device info after Azure enrollment.
+* OpenSSH is not working correctly with IoTCore.
+* Gears don't spin in UWF and on OS updates.
 
 ## IoT Core general known issues and work arounds
 
@@ -105,7 +108,6 @@ HKLM\System\Controlset001\Control\Power\CsEnabled=DWORD:1
 
 > [!NOTE]
 > Not all platforms have support for Connected Standby.  This may not work on all platforms.    
-
 
 ### For MinnowBoard
 #### Minnowboard Max Boot and Firmware Update 
