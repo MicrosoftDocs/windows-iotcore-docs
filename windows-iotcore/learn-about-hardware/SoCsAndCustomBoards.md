@@ -36,9 +36,9 @@ You'll also need to decide whether you want to use an off-the-shelf board or dev
 To help you select the right platform for your device, the table below shows the features that are supported by processor family with Windows 10 IoT Core. All features listed below are supported in Windows 10 IoT Core, however some SoCs may not have the specific IP included in their design, and are such indicated with "N/A". In such cases, a 3rd party solution can be incorporate into the design to provide the required functionality.  In a limited number of cases where a Windows 10 IoT Core feature is not implemented on a processor, the entry is left blank.
 
 
-> |    | Intel  |  Qualcomm  | NXP i.MX6 | NXP i.MX7 | Raspberry Pi 3B |
+> |    | Intel  |  Qualcomm  | NXP i.MX6 | NXP i.MX7 | Broadcom |
 > |----|--------|------------|-----------|-----------|-----------------|
-> | Audio | x | x | x | x | N/A |
+> | Audio | x | x | x | x | x |
 > | GPIO | x | x | x | x | x | 
 > | I2C | x | x | x | x | x |
 > | Ethernet | x | N/A | x | x | x |
@@ -46,7 +46,7 @@ To help you select the right platform for your device, the table below shows the
 > | Display | x | x | x | x | x |
 > | UART | x | x | x | x | x |
 > | USB | x | x | x | x | x |
-> | PCIe | x | N/A | x | Under development | |
+> | PCIe | x | N/A | x | Under development | N/A |
 > |MIPI-CSI | N/A | x | N/A | N/A | N/A |
 > | Graphics/Video | x | x | Software-rendered | Software-rendered | Software-rendered |
 > | GPS | N/A | x | N/A | N/A | N/A |
