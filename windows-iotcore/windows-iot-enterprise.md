@@ -42,24 +42,24 @@ Specialized systems—such as PCs that control medical equipment, point-of-sale 
 For long-term support silicon details, refer to the list below. 
 
 > | Windows 10 IoT Enterprise  |
-> |-------------|----------|---------|
+> |-------------|
 > | AMD® 6th Generation Processors Series Ax-8xxx & E-Series Ex-8xxx & FX-870K | 
- > | AMD® 7th Generation Processors Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx | 
- > | AMD® Ryzen™ 3/5/7 1xxx | 
- > | AMD® Ryzen™ 3/5/7 2xxx | 
- > | AMD® G-Series | 
- > | AMD® R-Series | 
- > | AMD® V1xxx | 
- > | 4th Generation Intel® Core™ Processors | 
- > | 5th Generation Intel® Core™ Processors |
- > | 6th Generation Intel® Core™ Processors |
- > | 7th Generation Intel® Core™ Processors |
- > | 8th Generation Intel® Core™ Processors |
- > | Intel® Atom™ processor E3900 series |
- > | Intel® Atom™ x5-E8000 Processor |
- > | Intel® Atom™ x5-Z8350 Processor |
- > | Intel® Atom™ Processor E3800 Product Family |
- > | Intel® Pentium® and Celeron® Processor N and J Series |
+> | AMD® 7th Generation Processors Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx | 
+> | AMD® Ryzen™ 3/5/7 1xxx | 
+> | AMD® Ryzen™ 3/5/7 2xxx | 
+> | AMD® G-Series | 
+> | AMD® R-Series | 
+> | AMD® V1xxx | 
+> | 4th Generation Intel® Core™ Processors | 
+> | 5th Generation Intel® Core™ Processors |
+> | 6th Generation Intel® Core™ Processors |
+> | 7th Generation Intel® Core™ Processors |
+> | 8th Generation Intel® Core™ Processors |
+> | Intel® Atom™ processor E3900 series |
+> | Intel® Atom™ x5-E8000 Processor |
+> | Intel® Atom™ x5-Z8350 Processor |
+> | Intel® Atom™ Processor E3800 Product Family |
+> | Intel® Pentium® and Celeron® Processor N and J Series |
 
 ## Helpful resources
 > [!NOTE]
