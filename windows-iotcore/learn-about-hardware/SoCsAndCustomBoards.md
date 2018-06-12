@@ -28,6 +28,37 @@ The SoC you choose to adopt will depend on considerations such as performance re
 
 You'll also need to decide whether you want to use an off-the-shelf board or device, build a custom device using a system on a module (SoM) plus a custom carrier board, or build a complete custom board. Cost and the degree of customization are the key factors in this decision, with both generally increasing as you customize further.
 
+## Windows 10 IoT Core Features by Processor Family
+To help you select the right platform for your device, the table below shows the features that are supported by processor family with Windows 10 IoT Core. All features listed below are supported in Windows 10 IoT Core, however some SoCs may not have the specific IP included in their design, and are such indicated with "N/A". In such cases, a 3rd party solution can be incorporate into the design to provide the required functionality.  In a limited number of cases where a Windows 10 IoT Core feature is not implemented on a processor, the entry is left blank.
+
+> [!NOTE] 
+> This list takes into consideration processors that will be available in Fall 2018. 
+
+
+> |    | Intel  |  Qualcomm  | NXP i.MX6 | NXP i.MX7 | Raspberry Pi 3B |
+> |----|--------|------------|-----------|-----------|-----------------|
+> | Audio | x | x | x | x | N/A |
+> | GPIO | x | x | x | x | x | 
+> | I2C | x | x | x | x | x |
+> | Ethernet | x | N/A | x | x | x |
+> | SPI | x | x | x | x | x |
+> | Display | x | x | x | x | x |
+> | UART | x | x | x | x | x |
+> | USB | x | x | x | x | x |
+> | PCIe | x | N/A | x | Under development | |
+> |MIPI-CSI | N/A | x | N/A | N/A | N/A |
+> | Graphics/Video | x | x | Software-rendered | Software-rendered | Software-rendered |
+> | GPS | N/A | x | N/A | N/A | N/A |
+> | Wi-Fi/BT | N/A | x | N/A | N/A | N/A |
+> | Trusted I/O | N/A | N/A | x | x | N/A |
+> | Processor power management |  | x | x | x | | 
+> | TPM | x | x | x | x | N/A | 
+> | Secure Boot | x | x | Under development | Under development | |
+> | PWM | x | N/A | x | x | |
+> | JTAG | x | N/A | x | x | | 
+> | eMMC | x | x | x | x | |
+> | SDHC | x | x | x | x | x |
+
 ## Customized boards
 If an off-the-shelf device is in a form factor that includes the connectivity options that work for your scenarios, that will often be the most cost- and time-effective choice.  
 
@@ -92,7 +123,6 @@ You can also reach out to partners we're working with during preview:
 *  Keith & Koep [pConXS](http://wce.keith-koep.com/en/products/pconxs-ff/) with [Trizeps VII](http://wce.keith-koep.com/en/products/trizeps7-i.MX6/) - contact@keith-koep.com
 *  Kontron [SMARC-sAMX6i](https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html) - Martin Unverdorben (martin.unverdorben@kontron.com)
 *  Solid Run [Hummingboard Edge](https://www.solid-run.com/imx6-win-10-iot-core/ )- Ilya Viten (ilya@solid-run.com)
-
 
 ## Other options
 If you find that you'd still like to create a custom board, we have provided a few suggestions of manufacturers below that can help with schematics and layout for a board.
