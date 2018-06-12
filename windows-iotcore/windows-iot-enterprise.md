@@ -37,9 +37,9 @@ Specialized systems—such as PCs that control medical equipment, point-of-sale 
 
 * [Learn more about LTSC](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#long-term-servicing-channel)
 
-## Fall 2018 Long-Term Support Silicon Details
+## Long-Term Support Silicon Details
 
-For long-term support silicon details, refer to the list below. 
+For long-term support silicon details for Windows 10 IoT Enterprise, refer to the list below. 
 
 > | Windows 10 IoT Enterprise  |
 > |-------------|
