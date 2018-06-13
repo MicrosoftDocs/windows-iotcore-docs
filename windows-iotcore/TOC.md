@@ -7,6 +7,7 @@
 #### [1. Choose a board](tutorials/quickstarter/PrototypeBoards.md)
 #### [2. Setup your device](tutorials/quickstarter/DeviceSetup.md)
 #### [3. Add an app](tutorials/quickstarter/DevelopApp.md)
+### [Microsoft IoT Pack]()
 ## [Learn about hardware]()
 ### [SoCs and Custom Boards](learn-about-hardware/SoCsAndCustomBoards.md)
 ### [Hardware compatibility list](learn-about-hardware/HardwareCompatList.md)
