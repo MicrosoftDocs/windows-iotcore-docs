@@ -15,9 +15,6 @@ keywords: windows iot, Raspberry Pi 3, Adafruit, starter pack
 
 _Not sure what this is about? Learn more about the Microsoft IoT Pack [here](https://www.adafruit.com/windows10iotpi2)._
 
-![Image of Microsoft IoT Pack](../media/adafruitkit/pack.jpg)
-
-
 ## Build your first app
 
 Learn how to get set up and going. Start [here](https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-raspberry-pi-and-minnowboard).
@@ -25,3 +22,5 @@ Learn how to get set up and going. Start [here](https://docs.microsoft.com/en-us
 ## Explore sample projects
 
 Once you're set up, try out samples from Hackster.io for Windows 10 IoT Core. View the starter projects [here](https://github.com/ms-iot/adafruitsample/blob/master/README.md).
+
+![Image of Microsoft IoT Pack](../media/adafruitkit/pack.jpg)
