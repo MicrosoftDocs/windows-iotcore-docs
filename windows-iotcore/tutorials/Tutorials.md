@@ -18,3 +18,6 @@ Use this tutorial to get yourself comfortable with Windows 10 IoT quickly. You'l
 1. [Choose a board](quickstarter/PrototypeBoards.md)
 2.  [Setup your device](quickstarter/DeviceSetup.md)
 3.  [Add an app](quickstarter/DevelopApp.md)
+
+## Microsoft IoT Pack
+If you recently bought the Microsoft IoT Pack for Raspberry Pi 3, this is where you'll get a chance to experiment with different samples using the supplies that the pack provides. 

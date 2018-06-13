@@ -50,10 +50,10 @@ Firmware TPM (fTPM) requires special Processor/SoC support that is not currently
 Discrete TPM (dTPM) is considered the utmost trustworthy solution by all means.  
 There are several manufacturers of dTPM chips and PCB modules that are supported on Windows IoT Core:
 
-> | TPM Manufacturer | Web Page|
-> |-------------|----------|
-> | Infineon | [Infineon TPM](https://www.infineon.com/cms/en/product/evaluation-boards/iridium9670-tpm2.0-linux/)|
-> | Buy Zero | [Buy Zero TPM](https://buyzero.de/collections/andere-platinen/products/letstrust-hardware-tpm-trusted-platform-module)|
+> | Manufacturer | Web Page | Modul Type | TPM Chip |
+> |-------------|----------|----------|----------| 
+> | Infineon | [Infineon TPM](https://www.infineon.com/cms/en/product/evaluation-boards/iridium9670-tpm2.0-linux/)| Evalboard | [Infineon SLB9670 TPM 2.0](https://www.infineon.com/cms/de/product/security-smart-card-solutions/optiga-embedded-security-solutions/optiga-tpm/slb-9670vq2.0/) |
+> | Pi3g | [Pi3g.com](https://pi3g.com/eigene-produkte/)| Mass Product & Evalboard | [Infineon SLB9670 TPM 2.0](https://www.infineon.com/cms/de/product/security-smart-card-solutions/optiga-embedded-security-solutions/optiga-tpm/slb-9670vq2.0/) |
 
 
 ### Software TPM (sTPM)  
