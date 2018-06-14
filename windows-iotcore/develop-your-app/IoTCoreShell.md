@@ -1,7 +1,7 @@
 ---
 title: IoT Shell Overview
-author: derekameer
-ms.author: demeer
+author: saraclay
+ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn about how to leverage the IoT Shell to navigate between navigations on your device.
@@ -25,13 +25,9 @@ Here are the main differences between foreground and background applications:
 
 ## Switching between apps with a Home App
 
-There are two approaches to create a home app for IoT Core which allows you to switch between different foreground applications. Each has an associated sample on GitHub.
-
-The **IoT Home App** ([sample](https://developer.microsoft.com/en-us/windows/iot/samples/iothomeapp) shows you how to create a simple "Home" app that can navigate back and forth between your other apps and the "Home" app.
+At the moment, the Startup App allows you to create a home app for Windows 10 IoT Core, which allows you to switch between different foreground applications. 
 
 The **IoT Startup App** ([sample](https://developer.microsoft.com/en-us/windows/iot/samples/iotstartapp) represents a simple startup app that lists the installed apps on your device, then launches one using the PackageManager APIs.
-
-Use either one of these apps as a starting point for your multi-app experience as you see fit.
 
 ## Switching between apps with HID Injection Keys
 
