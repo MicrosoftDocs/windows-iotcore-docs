@@ -46,6 +46,7 @@
 ## [Commercialize your device]()
 ### [OEM license requirements](commercialize-your-device/OEMLicenseRequirements.md)
 ### [Install and service apps](commercialize-your-device/InstallingAndServicing.md)
+### [Windows 10 IoT Core Services](commercialize-your-device/IoTCoreServicesOverview.md)
 ### [Go to market](commercialize-your-device/GoToMarket.md)
 ### [Recovery](commercialize-your-device/Recovery.md)
 ## [Build your image]()
