@@ -10,6 +10,8 @@ keywords: Windows 10 IoT Core Services, subscription, overview
 
 # Windows 10 IoT Core Commercialization Agreement Frequently Asked Questions (FAQ)
 
+If you're looking to get a few questions answered regarding the Commercialization Agreement, you've come to the right place. Not finding your question? Submit a suggested question below under "Feedback". 
+
 **Has Windows 10 IoT replaced embedded?**
 
 Windows 10 IoT is the replacement for the Windows Embedded product lines. 
@@ -33,9 +35,6 @@ Please contact [Kyle Olive](mailto:kyol@microsoft.com) for more information.
 **Do I have to use a specific version of Visual Studio when developing with Windows 10 IoT Core?**
 
 No, you can use any version of Visual Studio you’d like. 
-
-_Other questions? Submit them to "Issues" on GitHub._
-
 
 
 
