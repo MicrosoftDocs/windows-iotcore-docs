@@ -85,6 +85,11 @@ Because this is a path that goes beyond educational or personal/non-commercial p
 </tr>
 
 <tr class="odd">
+<td align="left"><p>[Commercialization Agreement FAQ](commercialize-your-device/Agreement-FAQ.md)</p></td>
+<td align="left"><p>Read some of the frequently-asked questions regarding the Windows 10 IoT Core Commercialization agreement.</p></td>
+</tr>
+
+<tr class="odd">
 <td align="left"><p>[Create board supported packages](build-your-image/createbsps.md)</p></td>
 <td align="left"><p>Learn how to create board supported packages (BSPs) for Windows 10 IoT Core.</p></td>
 </tr>

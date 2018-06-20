@@ -25,11 +25,12 @@ In order to start your journey in manufacturing with Windows 10 IoT Enterprise, 
 
 Windows is well known as the operating systems on laptop and desktops used by consumers and businesses worldwide.  What is less well known is that for years, Windows has also powered many ATM Machines, Point-of-Sale Terminals, Industrial Automation Systems, Thin Clients, Medical Devices, Digital Signage, Kiosks and other fixed purpose devices.  Windows 10 IoT Enterprise edition allows you to build fixed purpose devices with specific allowances and restrictions in the license agreement.  
 
-In general a fixed purpose device differs from a general purpose device in the following ways:  
+A fixed purpose device differs from a general purpose device in the following ways:  
 * The device is locked down to a single application or fixed set of applications through the Assigned Access or Shell Launcher features.  
 * The device powers-on immediately to the experience when received by the end-customer. This is achieved by configuring the device image to skip the normal Windows out-of-box experiences. 
 * Keyboards, USB ports, and device policies are locked down to constrain the device to be used only in its fixed purpose.  
-* The OEM licenses the device to the user with the software attached to the device as a complete product and passes through specific Windows terms in their own agreements. 
+* The OEM licenses the device to the user with the software attached to the device as a complete product and passes through specific Windows terms in their own agreements.
+* The OEM provides the end-customer support for their complete product including the functions performed by the operating system.
 
 ## Long-term Servicing Channel (LTSC)
 
@@ -63,7 +64,7 @@ The Fall 2018 release of Windows 10 IoT Enterprise will also be an LTSC release.
 
 ## Helpful resources
 > [!NOTE]
-> Additional resources may be available from you distributor to explain Windows EPKEA OEM Activation and provide guidance in generating your manufacturing-ready Windows IoT Enterprise [WIM](https://msdn.microsoft.com/en-us/library/windows/desktop/dd861280.aspx) device image.
+> Additional resources may be available from your distributor to explain Windows EPKEA OEM Activation and provide guidance in generating your manufacturing-ready Windows IoT Enterprise [WIM](https://msdn.microsoft.com/en-us/library/windows/desktop/dd861280.aspx) device image.
 
 * [Customizations for enterprise desktop](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/enterprise-custom-portal)
 * [Unified Write Filter for Windows 10](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/unified-write-filter)
