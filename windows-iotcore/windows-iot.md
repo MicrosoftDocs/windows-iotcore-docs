@@ -35,6 +35,7 @@ While Windows 10 IoT Core and Windows 10 IoT Enterprise are similar in name, the
 
 For minimum requirement details, please visit [the Windows Hardware site](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
 
+
 ## Helpful resources
 * [Windows 10 IoT Enterprise](windows-iot-enterprise.md)
 * [Windows 10 IoT Core](windows-iot-core.md)
