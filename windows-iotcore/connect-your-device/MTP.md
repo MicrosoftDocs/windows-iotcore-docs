@@ -38,21 +38,35 @@ The feature is part of the IoT Core Kits, which can be downloaded and installed 
 Once the device comes back to the MainOS, the USBFN configuration still needs to be updated to include MTP. In order to do that, you will need to add MTP to the interfaces enumerated by USBFN.
 The [USB registry settings](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-registry-settings-for-a-function-controller-driver) article explains the details of USB's configuration.
 
-Follow these steps to append the current configuration with MTP:
-1. Find the current configuration's registry key: check if the registry value `CurrentConfiguration` is present under the `HKEY_LOCAL_MACHINE\CurrentControlSet\Control\USBFN\Configurations` registry key. If so, your current configuration is present under `HKEY_LOCAL_MACHINE\CurrentControlSet\Control\USBFN\Configurations\[CurrentConfiguration]`.
-Otherwise, the current configuration is present under `HKEY_LOCAL_MACHINE\System\ControlSet001\Control\USBFN\Configurations\Default`.
-2. Append `MTP` to the current `InterfaceList` registry value present under your USBFN configuration.
-NOTE: that value is of type `REG_MULTI_SZ`, so you will actually have to append `\0MTP` to the existing value if the `InterfaceList` value already has some entries.
-If `InterfaceList` value is not present, create a new one containing only `MTP`.
-3. Add the MTP's Microsoft OS compatible descriptor to the `MSOSCompatIdDescriptor` value under your USBFN configuration.
-In order to create a valid descriptor containing all interfaces currently under the `InterfaceList` value (that now includes MTP after finishing the previous point), please follow the instructions available [here](https://msdn.microsoft.com/en-us/windows/hardware/gg463179.aspx).
-If MTP is the only interface under `InterfaceList` please use the value `2800000000010400010000000000000000014D545000000000000000000000000000000000000000`.
+While you can modify the default USBFN configuration available under the `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Configurations\Default` key, it is recommended to define your own, as they will not get overwritten by system updates.
+
+#### Creating a new USBFN configuration with the MTP interface
+
+Follow these steps to add a new configuration with MTP:
+1. Add a new key under `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Configurations`. Example: `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Configurations\MyConfiguration`.
+2. Under the new key create a `REG_MULTI_SZ` value `InterfaceList` equal to `MTP`.
+3. Under the same key create a `REG_BINARY` value `MSOSCompatIdDescriptor` equal to `2800000000010400010000000000000000014D545000000000000000000000000000000000000000`.
+4. Under `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN` add a new `REG_SZ` value `CurrentConfiguration` equal to the name of the newly created key. In this case it would be `MyConfiguration`.
+5. [**Optional**] Under `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN` add a new `REG_DWORD` value `IncludeDefaultCfg` equal to 1. This will make the USB driver enumerate the default interfaces along with MTP.
+
+> [!NOTE]
+> If you are already using a custom configuration you will have to modify it instead of creating a new one.
+
+#### Adding the MTP interface to an existing configuration
+
+Follow these steps to add MTP to an existing USBFN configuration:
+1. Find the current configuration by checking the `CurrentConfiguration` value under `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN`. If the value is present, then the current configuration can be found under `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Configurations\[CurrentConfiguration]`. Otherwise it is under `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Configurations\Default`.
+2. Under the current configuration key add `\0MTP` to the value of `InterfaceList`. The ***\0*** part is used as the type of `InterfaceList` is `REG_MULTI_SZ` and it requires this separator between values.
+3. Modify the `MSOSCompatIdDescriptor` value to include the MTP's descriptor. In order to create a valid descriptor containing all interfaces currently under the `InterfaceList` value, please follow the instructions documentation available at the bottom of [this page](https://msdn.microsoft.com/en-us/windows/hardware/gg463179.aspx). *OS_Desc_CompatID.doc* gives an explanation of the descriptor's format and an example of including multiple interfaces in the descriptor. MTP's compatible and sub-compatible IDs are also available on the same page and are used in one of the examples.
 
 ## How to include MTP in Your Custom FFU
 
-1. Add **IOT_MTP** feature ID to the OEM Input file
-2. Create the image\FFU. Read [this article](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image) for instructions.
-NOTE: make sure to apply the same changes to the device's USBFN configuration as mentioned in the previous section.
+1. Add **IOT_MTP** feature ID to the OEM Input file. This is an equivalent of following the steps from the "[**Provisioning the device with required packages**](#provisioning-the-device-with-required-packages)" section.
+2. Make sure to apply the same registry changes as mentioned in the "[**Creating a new USBFN configuration with the MTP interface**](#creating-a-new-usbfn-configuration-with-the-mtp-interface)" section. Follow [these instructions](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/add-a-registry-setting-to-an-image) to learn how to apply registry changes to an FFU.
+3. Create the image\FFU. Read [this article](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image) for instructions.
+
+> [!WARNING]
+> Modifying the default configuration should not be attempted through FFU customization. System-defined entries may be refreshed/changed by a system update and any custom settings will be lost.
 
 ## How to setup the MTP SD card filter
 
@@ -66,6 +80,6 @@ Sample paths:
 - Never\Before\Created\Directory.
 
 > [!WARNING]
-> Do not use an absolute path containing the drive letter like `C:\Some\Folder\Path` - this might prevent the SD from being enumerated.
+> Do not use an absolute path containing the drive letter like `C:\Some\Folder\Path` - this might prevent the SD card from being enumerated.
 
 See [this link](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/add-a-registry-setting-to-an-image) for details about customizing your image with specific registry entries.
