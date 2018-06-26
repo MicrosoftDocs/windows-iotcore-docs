@@ -15,6 +15,8 @@ In order to start your commercialization journey, you will need to sign a licens
 
 You can view a copy of this agreement before requesting to sign it [here](https://az835927.vo.msecnd.net/sites/iot/Resources/documents/Commercial-License.pdf).
 
+Have questions? Check out our Commercialization Agreement FAQ [here](Agreement-FAQ.md).
+
 Once you receive the agreement, you are required to sign it to meet the system requirements for the Windows 10 IoT Core device you are manufacturing and commercializing.
 
 ## SMBIOS Support
