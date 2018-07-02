@@ -26,7 +26,7 @@ Steps to create the drivers :
 
 1. Check out [ms-iot/bsp](https://github.com/ms-iot/bsp) project.
 2. Build the bcm2386 solution (Release or Debug)
-    * You can also download the prebuilt binaries from [rpibsp.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/RPiBSP/rpibsp.zip). 
+    * You can also download the prebuilt binaries from [rpibsp_wm.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/v4.4/rpibsp-wm.zip). 
 3. Launch [IoTCoreShell](https://github.com/ms-iot/iot-adk-addonkit), select arm
 
     * In ms-iot/bsp project folder, run `tools\binexport.cmd Release (or) Debug C:\RPiBSP` to export the binaries to `C:\RPiBSP` folder. If you are using prebuilt binaries, you can skip this step and unzip the binaries to `C:\RPiBSP`.
