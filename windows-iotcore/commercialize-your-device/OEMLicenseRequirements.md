@@ -36,7 +36,7 @@ These fields gain prominence as fields which will be used for identifying unique
 > [!TIP]
 > Design Notes: SKU Number has been moved to a required field in order to improve telemetry reporting. We encourage the OEM to be careful to fill in *Manufacturer* consistently and to fill in *SKU Number* with a value that can identify what the OEM considers a unique system configuration for telemetry and servicing.
 
-See [SMBIOS Specification](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/whcp-specifications-policies) for more information.
+For more information, see Section **System.Fundamentals.SMBIOS** in *WHCP-Systems-Specification.pdf* available at [Windows Hardware Compatibility Program Specifications and Policies](https://docs.microsoft.com/windows-hardware/design/compatibility/whcp-specifications-policies) .
 
 > [!IMPORTANT]
 > If you are re-using the BIOS/Firmware/UEFI, make sure make sure to update the entries.
