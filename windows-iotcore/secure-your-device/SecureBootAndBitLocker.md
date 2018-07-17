@@ -38,7 +38,7 @@ Configurable Code Integrity (CCI) is a feature in Windows 10 that allows device 
 To learn more about deploying code integrity policies, auditing and enforcement, check out the latest technet documentation [here](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/deploy-code-integrity-policies-steps).
 
 ## Turnkey Security on IoT Core
-To facilitate easy enablement of key secrutiy features on IoT Core devices, Microsoft is providing a turnkey 'Security Package' that allows device builders to build fully locked down IoT devices.  This package will help with:
+To facilitate easy enablement of key security features on IoT Core devices, Microsoft is providing a turnkey 'Security Package' that allows device builders to build fully locked down IoT devices.  This package will help with:
 * Provisioning Secure Boot keys and enabling the feature on supported IoT platforms
 * Setup and configuration of device encryption using BitLocker 
 * Initiating device lockdown to only allow execution of signed applications and drivers
