@@ -81,6 +81,3 @@ Failed connections can be caused by a number of issues, but we've run into a cou
   hdmi_group=2
   hdmi_mode=9
 ```
-
-### The performance on Raspberry Pi is low. 
-The Raspberry Pi does not have GPU support on Windows 10 IoT Core, thus the framerate of the remote display experience is lower than on other boards.  Enhanced CPU on the Raspberry Pi 3, as well as graphics capabilities on the MBM and Dragonboard, allow for a more stable experience.  Lowering the resolution to 800x600 will increase performance.
