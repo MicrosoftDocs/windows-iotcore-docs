@@ -149,6 +149,13 @@ If you want to use HTTPS, first take the ownership of the registry key as descri
         reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\webmanagement\service /v HttpsPort /t REG_DWORD /d <your port number> /f
         net stop webmanagement ; net start webmanagement
 
+### Provisoning Device Portal with a custom SSL certificate
+
+In the Windows 10 Creators Update, the Windows Device Portal added a way for device administrators to install a custom certificate for use in HTTPS communication.
+
+To learn more, [read the documentation under the Windows Device Portal docs](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal-ssl). 
+
+
 ## Additional Resources
 ___ 
 
