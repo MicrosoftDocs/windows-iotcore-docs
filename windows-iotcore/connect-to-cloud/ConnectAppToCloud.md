@@ -35,7 +35,7 @@ component required for writing apps Windows 10:
 The Connected Services for Azure IoT Hub Visual Studio extension allows you to
 connect and start interacting with Azure IoT Hub in less than a minute.
 
-You can install the extension from the [VS Gallery](https://aka.ms/azure-iot-hub-vs-cs-vs-gallery).
+You can install the extension from the [VS Gallery](https://aka.ms/azure-iot-hub-vs-2017-cs-vs-gallery).
 
 ## Step 4: Create a Visual Studio UWP solution
 

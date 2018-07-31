@@ -10,7 +10,7 @@ keywords: Windows 10 IoT Core Services, subscription, overview
 
 # Windows 10 IoT Core Services
 
-Windows 10 IoT Core Services is a new cloud services subscription that provides the essential services needed to commercialize a device on Windows 10 IoT Core. Through this subscription, OEMs have access to 10 years of support on Windows 10 IoT Core Long Term Servicing Channel (LTSC) along with services to manage device updates and assess device health.
+Windows 10 IoT Core Services is a new cloud services subscription that provides the essential services needed to commercialize a device on Windows 10 IoT Core. Through this subscription, OEMs have access to 10 years of support on Windows 10 IoT Core Long Term Servicing Channel (LTSC) releases along with services to manage device updates and assess device health.
 
 ## What's included with Windows 10 IoT Core Services?
 
@@ -18,14 +18,19 @@ A subscription to Windows 10 IoT Core Services comes with three main benefits:
 
 > | _Benefit_  |  _Description_  |
 > |----------|---------|
+<<<<<<< HEAD
+> | [10 years of support](https://docs.microsoft.com/windows/deployment/update/waas-overview#long-term-servicing-channel) | Access to Windows 10 IoT Core LTSC releases with security and quality updates only (no new features). |
+=======
 > | [10 years of support](https://docs.microsoft.com/windows/deployment/update/waas-overview#long-term-servicing-channel) | Access to Windows 10 IoT Core LTSC with security and quality updates only (no new features). |
+>>>>>>> live
 > | [Update control with Device Update Center](http://aka.ms/deviceupdatecenter) | Create and manage device updates at scale using cloud-side controls. |
 > | [Device Health Attestation (DHA)](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/docs/dha-architecture.md) | Rights to commercialize a device with DHA to affirm device health remotely. |
 
 ## 10 Years of Support
-OEMs get 10 years of support on Windows 10 IoT Core via access to monthly updates from the [Windows Long-Term Servicing Channel (LTSC)](https://docs.microsoft.com/windows/deployment/update/waas-overview#long-term-servicing-channel). This includes security and quality updates for the operating system to keep device security up to date. Devices using the LTSC release won’t receive feature updates, enabling OEMs to focus updates on stability by minimizing changes to the base operating system. Microsoft typically offers new LTSC releases every 2-3 years, with each release supported over a 10-year lifecycle.
+OEMs get 10 years of support on Windows 10 IoT Core via access to monthly updates from the [Windows Long-Term Servicing Channel (LTSC)](https://docs.microsoft.com/windows/deployment/update/waas-overview#long-term-servicing-channel) releases. This includes security and quality updates for the operating system to keep device security up to date. Devices using LTSC releases won’t receive feature updates, enabling OEMs to focus updates on stability by minimizing changes to the base operating system. Microsoft typically offers new LTSC releases every 2-3 years, with each release supported over a 10-year lifecycle.
 ## Update Control with Device Update Center
-[Update control](http://aka.ms/deviceupdatecenter/) with the newly announced Device Update Center (DUC) provides the ability to create, customize, and control device updates. These updates are distributed by the same Content Distribution Network (CDN) as Windows Update which is used daily by millions of Windows customers around the world. Updates can be applied to the operating system and device drivers as well as OEM-specific applications and files. Updates can be flighted to test devices prior to broader distribution.
+
+Update control with the newly announced [Device Update Center](http://aka.ms/deviceupdatecenter/) (DUC) provides the ability to create, customize, and control device updates. These updates are distributed by the same content distribution network (CDN) as Windows Update which is used daily by millions of Windows customers around the world. Updates can be applied to the operating system and device drivers as well as OEM-specific applications and files. Updates can be flighted to test devices prior to broader distribution.
 
 Here's a diagram of the update flow in Device Update Center:
 
@@ -38,7 +43,11 @@ Here's a diagram of the update flow in Device Update Center:
 
 ## Getting Started
 
+<<<<<<< HEAD
+Windows 10 IoT Core Services is currently available in preview through Azure at a discounted rate. For more information or to join the preview program, please visit the [Windows 10 IoT Core Services](http://aka.ms/iotservice) page on Azure.com.
+=======
 Windows 10 IoT Core Services is currently in limited preview with select partners. For questions or to join the preview program, please email [iotservices@microsoft.com](mailto:iotservices@microsoft.com). A broader preview will be ready in July 2018 with general availability later this year.
+>>>>>>> live
 
 Earlier in the year, [we announced](https://blogs.windows.com/business/2018/02/27/microsoft-doubles-down-on-windows-10-iot-with-added-support/) that with the next release of Windows 10 IoT, we will provide 10 years of support for both Windows 10 IoT Core and Windows 10 IoT Enterprise. We also announced a partnership with NXP to support Windows 10 IoT Core on their i.MX 6 and i.MX 7 processors. The Windows 10 IoT Core Services offering builds on these announcements, as we continue to evolve the Windows IoT platform and make investments to support the IoT devices of today and tomorrow.
 
