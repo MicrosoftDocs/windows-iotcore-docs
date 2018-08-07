@@ -155,7 +155,7 @@ Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to con
 
 1. Download and install the [Windows Assessment and Deployment kit](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install) with the correlating version of Windows 10 you're running.
 2. Insert a USB drive into your machine.
-3. Create a US-tootable WinPE image:
+3. Create a USB-bootable WinPE image:
 * Start the Deployment and Imaging Tools Environment `(C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools)` as an administrator.
 * Create a working copy of the Windows PE files. Specify either x86, amd64 or ARM: `Copype amd64 C:\WINPE_amd64`
 * Install Windows PE to the USB flash drive, specifying the WinPE drive letter below. More information can be found [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive). `MakeWinPEMedia\UFD C:\WinPE+amd64 P:`
