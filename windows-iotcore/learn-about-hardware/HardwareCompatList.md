@@ -38,7 +38,7 @@ Looking for information about supported hardware platforms? Click [here](https:/
 ### Bluetooth Dongles
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | CSR Mini USB Blueooth V 4.0 Adapter | ARM32, x64, x86 | Class 2 Bluetooth 4.0 Smart Ready Adapter, low energy, dual power |  | &#10004; 
+> | CSR Mini USB Bluetooth V 4.0 Adapter | ARM32, x64, x86 | Class 2 Bluetooth 4.0 Smart Ready Adapter, low energy, dual power |  | &#10004; 
 > | ORICO BTA-403 Mini Bluetooth 4.0 USB Dongle | ARM32, x64, x86 | Low-energy Bluetooth 4.0 adapter USB Micro Adapter Dongle |  | &#10004; 
 > | CSR Mini USB Bluetooth V 4.0 Adapter | x64, x86 | Class 2 Bluetooth 4.0 Smart Ready Adapter, low energy, dual power |  | &#10004;|
 

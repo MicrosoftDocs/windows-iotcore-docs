@@ -65,7 +65,7 @@ In this WinPE, you add the following
     - `startnet.cmd`, `startnet_recovery.cmd`: predefined scripts from the templates directory (see [templates\recovery](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Templates/recovery)).
     - config files : generated files based on the device layout, placed at `Build\<arch>\<bspname>\recovery`.
 - Recovery customizations files (optional)
-    - `RecoveryUI.exe` : Optional simple UI to hide the recovery shell prompt on the device. 
+    - `RecoveryGUI.exe` : Optional simple UI to hide the recovery shell prompt on the device. The recoveryGUI.exe can be a C++ application built for the target CPU or a .NET Framework 4 Windows from application. Newwinpe.cmd will have to be modified to add .NET Framework 4 capabilities to the WinPE image.
     - `pre_recovery_hook.cmd` and `post_recovery_hook.cmd`: optional hooks to add additional actions before and after recovery process. 
     - Place these files in `Source-<arch>\bsp\<bspname>\WinPEExt\recovery` folder.
 
