@@ -30,7 +30,7 @@ There is not a requirement that a device be connected to the internet. The licen
 
 **How can I use Cortana for my Windows 10 IoT Core device?**
 
-Please contact [Kyle Olive](mailto:kyol@microsoft.com) for more information.
+You can leverage the Cortana Devices SDK, which can be found [here](https://developer.microsoft.com/en-us/cortana/devices).
 
 **Do I have to use a specific version of Visual Studio when developing with Windows 10 IoT Core?**
 
