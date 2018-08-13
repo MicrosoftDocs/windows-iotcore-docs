@@ -71,4 +71,4 @@ The command line features allows you to send command lines directly to your devi
 ## Settings
 You'll be able to configure a number of settings here including wi-fi, bluetooth, power options, and more. 
 
-/*Will need to add documentation for telemetry*/
+/*Will need to add documentation for telemetry, including how to turn these things off*/
