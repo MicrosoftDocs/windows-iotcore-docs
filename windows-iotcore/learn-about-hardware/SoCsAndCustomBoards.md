@@ -124,6 +124,9 @@ You can also reach out to partners we're working with during preview:
 *  Keith & Koep [pConXS](http://wce.keith-koep.com/en/products/pconxs-ff/) with [Trizeps VII](http://wce.keith-koep.com/en/products/trizeps7-i.MX6/) - contact@keith-koep.com
 *  Kontron [SMARC-sAMX6i](https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html) - Martin Unverdorben (martin.unverdorben@kontron.com)
 *  Solid Run [Hummingboard Edge](https://www.solid-run.com/imx6-win-10-iot-core/ )- Ilya Viten (ilya@solid-run.com)
+*  Geniatech [SoM-iMX6Q-Q7](https://www.geniatech.com/product/som-imx6q-q7/) & [SoM-iMX7D](https://www.geniatech.com/product/som-imx7d/) - Mike Decker (mike.decker@geniatech.com) or Fang Jijun (Fjj@geniatech.com)
+*  VIA [VAB-820](https://www.viaembeddedstore.com/shop/boards/vab-820/) - Michael Fox (MichaelFox@via.com.tw) or Dream Ku (dreamku@via.com.tw)
+*  Phytec [phyBOARD-i.MX7](https://phytec.com/products/single-board-computers/phyboard-i.mx7/) - Brad Dodson (sales@phytec.com)
 
 ## Other options
 If you find that you'd still like to create a custom board, we have provided a few suggestions of manufacturers below that can help with schematics and layout for a board.
