@@ -13,7 +13,7 @@ keywords: windows iot, Windows Insider, release notes, Raspberry Pi 3B+
 &copy; 2018 Microsoft Corporation. All rights reserved.
 
 > [!NOTE]
-> This release for the Raspberry Pi 3B+ is a technical preview and is not suitable for commercialization. For commercialization, please use the Raspberry Pi 3B.  
+> This release for the Raspberry Pi 3B+ is a technical preview. Limited validation and enablement has been completed. For a better evaluation experience and for any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm, or NXP SoCs.
 
 ## What's new in this build: 
 * General bug fixes
