@@ -62,7 +62,7 @@
 ### [Device management](manage-your-device/DeviceManagement.md)
 ### [Project Rome](manage-your-device/ProjectRome.md)
 ### [Intune device enrollment](manage-your-device/IntuneDeviceEnrollment.md)
-## [Securing devices]()
+## [Secure devices]()
 ### [Security overview](secure-your-device/BuildingSecureDevices.md)
 ### [Use the Unified Write Filter](secure-your-device/UnifiedWriteFilter.md)
 ### [Secure Boot, BitLocker, and Device Guard](secure-your-device/SecureBootAndBitLocker.md)
