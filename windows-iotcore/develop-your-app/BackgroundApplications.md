@@ -107,7 +107,10 @@ Headless : BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee`
 
 `[<your IP address>]: PS C:\> shutdown /r /t 0`
 
-8. Once the device has restarted, your background application will start automatically and Windows 10 IoT Core will make sure that it gets restarted anytime it stops.  Note that once a background app is registered to run automatically if the app exits or crashes it will be automatically restarted.  The app isn't informed of the reason that it's being started or restarted so if you want to take special action on a restart you will need to track the app state in your app.
+8. Once the device has restarted, your background application will start automatically and Windows 10 IoT Core will make sure that it gets restarted anytime it stops.  
+
+> [!NOTE]
+> Once a background app is registered to run automatically, if the app exits or crashes it will be automatically restarted.  The app isn't informed of the reason that it's being started or restarted so if you want to take special action on a restart you will need to track the app state in your app.
 
 9. You can remove your background application from the list of headless Startup Apps by typing the command:
 
