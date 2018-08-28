@@ -28,9 +28,12 @@ This is the repository for Windows 10 IoT **documentation** hosted at [https://d
 If you would like to see new coverage or have feedback, please consider [**contributing**](/CONTRIBUTING.md).  You can edit the existing content, add new content, or simply create new [issues](https://github.com/MicrosoftDocs/windows-iotcore-docs/issues). We’ll take a look at your suggestions and will work together to incorporate them into the docs.
 
 To edit content, just click edit on the article you want to make changes to:
+
 ![Gif on how to edit docs](windows-iotcore/media/edit-doc.gif)
 
+
 You can also clone or download the repo to make changes:
+
 ![Gif on how to clone or download repo](windows-iotcore/media/download-repo.gif)
 
 # Conventions
