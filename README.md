@@ -36,6 +36,10 @@ You can also clone or download the repo to make changes:
 
 ![Gif on how to clone or download repo](windows-iotcore/media/download-repo.gif)
 
+You will also need to add a reviewer or reviews to your pull requests to get them approved:
+
+![Adding reviewers to your pull request](windows-iotcore/media/reviewers.gif)
+
 # Conventions
   - When adding a page, you must add an entry for it in [toc.md](windows-iotcore/TOC.md) for it to appear.
   - A folder can contain more folders or `readme.md`s
