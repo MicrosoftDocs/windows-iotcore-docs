@@ -11,6 +11,94 @@ keywords: windows iot, secure shell, remote, SSH client, PuTTY, SSH
 # Secure Shell (SSH)
 Secure Shell (SSH) allows you to remotely administer and configure your Windows IoT Core device
 
+## Using the Windows 10 OpenSSH client
+> [!IMPORTANT]
+> The Windows OpenSSH client requires that your SSH client host OS is Windows 10 version 1803(17134). Also, the Windows 10 IoT Core device must be running RS5 Windows Insider Preview release 17723 or greater.
+
+The **OpenSSH Client** was added to Windows 10 in 1803 (build 17134) as an optional feature. To install the client you will can search for **Manage Optional Features** in Windows 10 settings. If the **OpenSSH Client** is not listed in the list of installed features then choose **Add a feature**.
+
+    ![Add a feature](../media/SSH/add_a_feature.png)
+
+Next select **OpenSSH Client** in the list and click **Install**.
+
+    ![OpenSSH Client Install](../media/SSH/optional_features.png)
+
+To login with a username and password use the following command:
+
+```cmd
+ssh administrator@host
+```
+
+Where host is either the IP address of the Windows IoT Core device or the device name.
+
+The first time you connect you see a message like the following:
+
+```cmd
+The authenticity of host 'hostname (192.168.0.12)' can't be established.
+ECDSA key fingerprint is SHA256:RahZpBFpecRiPmw8NGSa+7VKs8mgqQi/j2i1Qr9lUNU.
+Are you sure you want to continue connecting (yes/no)?
+```
+
+Type **yes** and press **enter**.
+
+If you need to log in as **DefaultAccount** rather than as administrator you will need to generate a key and use the key to log in.
+
+```cmd
+ssh-keygen -t rsa -f id_rsa
+```
+
+Register the key with ssh-agent (optional, for single sign-on experience)
+
+```cmd
+net start ssh-agent
+ssh-add id_rsa
+```
+
+> [!TIP]
+> If you receive a message that the ssh-agent service is disabled you can enable it with **sc.exe config ssh-agent start=auto**
+
+To enable single sign append the public key to the Windows IoT Core device **authorized_keys** file.  Or if you only have one key you copy the public key file to the remote **authorized_keys** file.
+
+```cmd
+net use X: \\host\c$ /user:host\administrator
+if not exist x:\data\users\defaultaccount\.ssh md x:\data\users\defaultaccount\.ssh
+copy .\id_rsa.pub x:\data\users\defaultaccount\.ssh\authorized_keys
+```
+
+If the key is not registered with ssh-agent it must be specified on the command line to login: 
+
+```cmd
+ssh -i .\id_rsa DefaultAccount@host
+```
+
+If the private key is registered with ssh-agent then you only need to specify **DefaultAccount@host**:
+
+```cmd
+ssh DefaultAccount@host
+```
+
+The first time you connect you see a message like the following:
+
+```cmd
+The authenticity of host 'hostname (192.168.0.12)' can't be established.
+ECDSA key fingerprint is SHA256:RahZpBFpecRiPmw8NGSa+7VKs8mgqQi/j2i1Qr9lUNU.
+Are you sure you want to continue connecting (yes/no)?
+```
+
+Type **yes** and press **enter**.
+
+You should now be connected as **DefaultAccount**
+
+> [!TIP]
+> To use single sign-on with the **administrator** account append your public key to C:\data\users\administrator\.ssh\authorized_keys on the Windows IoT Core device.
+
+> [!NOTE]
+> If you see a **REMOTE HOST IDENTIFICATION CHANGED** message after making changes to the Windows 10 IoT Core device, then edit C:\Users\<username>\.ssh\known_hosts and remove the host that has changed.
+
+See also: [Win32-OpenSSH](https://github.com/PowerShell/Win32-OpenSSH/wiki/ssh.exe-examples)
+
+## Using PuTTY
+
 ### Download a SSH client
 In order to connect to your device using SSH, you'll first need to download a SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe).
 
