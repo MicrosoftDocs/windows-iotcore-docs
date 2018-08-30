@@ -17,7 +17,7 @@ keywords: windows iot, Windows Device Portal, remote, device portal
 ![Device Portal Home](../media/deviceportal/deviceportal.png)
 
 > [!NOTE]
-> There is currently no way to get a device's architecture in the windows Device Portal.
+> There is currently no way to get a device's architecture from the Windows Device Portal.
 
 ## Shared Documentation
 WDP is a developer tool shared among all Windows 10 devices. Each product has its own unique features, but the core functionality is the same.
