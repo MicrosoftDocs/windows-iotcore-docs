@@ -16,6 +16,9 @@ keywords: windows iot, Windows Device Portal, remote, device portal
 
 ![Device Portal Home](../media/deviceportal/deviceportal.png)
 
+> [!WARNING]
+> Live kernel debug is currently failing for ARM devices. We are working to get this fixed.
+
 > [!NOTE]
 > There is currently no way to get a device's architecture from the Windows Device Portal.
 
