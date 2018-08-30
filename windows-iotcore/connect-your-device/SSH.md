@@ -54,8 +54,8 @@ net start ssh-agent
 ssh-add id_rsa
 ```
 
-[!TIP]
-If you receive a message that the ssh-agent service is disabled you can enable it with **sc.exe config ssh-agent start=auto**
+> [!TIP]
+> If you receive a message that the ssh-agent service is disabled you can enable it with **sc.exe config ssh-agent start=auto**
 
 To enable single sign append the public key to the Windows IoT Core device **authorized_keys** file.  Or if you only have one key you copy the public key file to the remote **authorized_keys** file.
 
@@ -89,11 +89,11 @@ Type **yes** and press **enter**.
 
 You should now be connected as **DefaultAccount**
 
-[!TIP]
-To use single sign-on with the **administrator** account append your public key to C:\data\users\administrator\.ssh\authorized_keys on the Windows IoT Core device.
+> [!TIP]
+> To use single sign-on with the **administrator** account append your public key to C:\data\users\administrator\.ssh\authorized_keys on the Windows IoT Core device.
 
-[!NOTE]
-If you see a **REMOTE HOST IDENTIFICATION CHANGED** message after making changes to the Windows 10 IoT Core device, then edit C:\Users\<username>\.ssh\known_hosts and remove the host that has changed.
+> [!NOTE]
+> If you see a **REMOTE HOST IDENTIFICATION CHANGED** message after making changes to the Windows 10 IoT Core device, then edit C:\Users\<username>\.ssh\known_hosts and remove the host that has changed.
 
 See also: [Win32-OpenSSH](https://github.com/PowerShell/Win32-OpenSSH/wiki/ssh.exe-examples)
 
