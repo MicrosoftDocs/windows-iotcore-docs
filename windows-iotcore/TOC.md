@@ -102,6 +102,6 @@
 #### [Current: April 2018 Update (Build 17134)](release-notes/commercial/April2018Update.md)
 #### [Fall Creators Update (Build 16299)](release-notes/commercial/FallCreatorsUpdate.md)
 #### [Creators Update (Build 15063)](release-notes/commercial/CreatorsUpdate.md)
-## Troubleshooting (Troubleshooting.md)
+## [Troubleshooting](Troubleshooting.md)
 ## [Accessibility](Accessibility.md)
 ## [Glossary](Glossary.md)
