@@ -27,7 +27,7 @@
 },
 
 {
-"source_path": "windows/iot-core/commercialize-your-device/recovery.md",
+"source_path": "windows/iot-core/build-your-image/createbsps.md",
 "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/bsphardware",
 "redirect_document_id": true
 },
