@@ -19,9 +19,6 @@ keywords: windows iot, Windows Device Portal, remote, device portal
 > [!WARNING]
 > Live kernel debug is currently failing for ARM devices. We are working to get this fixed.
 
-> [!NOTE]
-> There is currently no way to get a device's architecture from the Windows Device Portal.
-
 ## Shared Documentation
 WDP is a developer tool shared among all Windows 10 devices. Each product has its own unique features, but the core functionality is the same.
 Documentation for the main features are found on the [Windows Device Portal overview page](https://msdn.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal). The rest of the documentation below will be IoT specific.
