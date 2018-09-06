@@ -8,11 +8,11 @@ description: Learn about getting started with Windows 10 IoT Core.
 keywords: Windows 10 IoT Core, Get Started, images, 
 --- 
 
-# Quickstarts
+# Windows 10 IoT Core Tutorials
 
 Get familiar with and explore the world of Windows 10 IoT with our tutorials. 
  
-## Prototype a device
+## Windows 10 IoT Core Quickstarter
 Use this tutorial to get yourself comfortable with Windows 10 IoT quickly. You'll learn how to flash a Windows 10 IoT Core image onto a device and how to deploy an app from your device.
 
 1. [Choose a board](quickstarter/PrototypeBoards.md)

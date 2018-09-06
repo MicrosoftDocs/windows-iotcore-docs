@@ -1,15 +1,15 @@
 ---
-title: Release Notes for Build 17744
+title: Release Notes for Build 17723
 author: zeeshanfurqan
 ms.author: zeeshan.furqan
-ms.date: 08/24/2018
+ms.date: 07/31/2018
 ms.topic: article
-description: Read and learn about what's new in Windows Insider Build Number 17744.
+description: Read and learn about what's new in Windows Insider Build Number 17723.
 keywords: windows iot, Windows Insider, release notes
 ---
 
-# Release Notes for Build 17744
-_Build Number 17744. August 2018._
+# Release Notes for Build 17723
+_Build Number 17723. July 2018._
 
 &copy; 2018 Microsoft Corporation. All rights reserved.
 
@@ -40,10 +40,7 @@ You can review linked terms by pasting the forward link into your browser window
 **	Run the command “bcdedit /store M:\EFI\Microsoft\boot\bcd /set {default} debug yes”
 **	Unmount the SD card.
 **	You should now be able to connect the debugger as usual
-* On occasion, PSSession will break when sending commands to IoT devices.
-* RPi3 will not pair BT + BTLE with onboard Bluetooth.
-* Unable to connect to internet through WIFI connection with SoftAp of Up2.
-* UWF is failing intermittently.
+* Node.js and Python cannot be used in UWP apps. Older samples in these languages may no longer function correctly. Microsoft is considering alternatives for a future release. 
 
 
 
@@ -83,21 +80,21 @@ You may disable WiFi with the following command:
 reg add hklm\system\controlset001\services\bcmsdh43xx /v Start /t REG_DWORD /d 4 
 ``` 
 
-### For DragonBoard
+### For Dragon Board
 
 #### Dragonboard 410c Shutdown
 On the DragonBoard, a shutdown command will not power off the board. The system will restart. Please power off the board by disconnecting the power.
 
-#### DragonBoard and windbg
+#### Dragon Board and windbg
 The GPIO/I2C/SPI/UART drivers will be disabled when connecting to the DragonBoard with windbg.
 
-#### DragonBoard headset & microphone jack
+#### Dragon Board headset & microphone jack
 The Dragonboard BSP has drivers for the headset jack and microphone jack, but it doesn't have either of these jacks on board.  
 
-#### DragonBoard SPI runs at 4.8Mhz
+#### Dragonboard SPI runs at 4.8Mhz
 The SPI on the Dragonboard will ignore the requested speed and always run at 4.8 Mhz.  
 
-#### DragonBoard Connected Standby 
+#### Dragonboard Connected Standby 
 Connected Standby is not enabled on the Qualcomm Dragonboard by default.  To enable Connected Standby on DragonBoard the following registry key needs to be set to “1”:
 
 ```
