@@ -38,14 +38,19 @@ Use the startup editor to configure startup apps on your Windows IoT Core device
 
 The `IoTSettings` tool changes region, user language or speech language. This is a command line tool that can be invoked from an application using the ProcessLauncher API. These commands must be run as default account, not administrator.
 
-* `list uilanguage` lists all UI languages
-* `list speechlanguage` lists all speech languages
-* `get uilanguage` displays current UI language
-* `get speechlanguage` displays current speech language
-* `get region` displays current region
-* `set uilanguage language\_tag - (e.g. fr-CA)` sets default UI language French Canadian)
-* `set speechlanguage language\_tag - (e.g. fr-CA)` sets speech language French Canadian)
-* `set region region\_code - (e.g. CA)` sets default region to Canada)
+* `IotSettings del account {all | username}` deletes all MSA or AAD accounts on the system or a specific account.  Specific accounts take the form username@provider.com
+* `IotSettings del diagnostics` deletes diagnostic information in the cloud for the current device.  Note that this removes the history up to the time of invocation.  New diagnostics information will continue to be logged.
+* `IotSettings list account` lists all MSA or AAD accounts that have been signed into the device.
+* `IotSettings list uilanguage` lists all UI languages
+* `IotSettings list speechlanguage` lists all speech languages
+* `IotSettings get uilanguage` displays current UI language
+* `IotSettings get speechlanguage` displays current speech language
+* `IotSettings get region` displays current region
+* `IotSettings set uilanguage language\_tag - (e.g. fr-CA)` sets default UI language French Canadian)
+* `IotSettings set speechlanguage language\_tag - (e.g. fr-CA)` sets speech language French Canadian)
+* `IotSettings set region region\_code - (e.g. CA)` sets default region to Canada)
+* `IotSettings set bluetoothpref {sink | source}` Specifies the Bluetooth role preference to select when devices built with both IOT_BLUETOOTH_A2DP_SOURCE and IOT_BLUETOOTH_A2DP_SINK features connect to another device that also supports both roles.
+* `IotSettings get bluetoothpref` returns the current Bluetooth role preference for devices built with both IOT_BLUETOOTH_A2DP_SOURCE and IOT_BLUETOOTH_A2DP_SINK.  The default is source.
 
 > [!TIP]
 > `IoTSettings -list uiLanguage` will give back the list of supported UI language (in the version of Windows IoT core image it has been executed against)
