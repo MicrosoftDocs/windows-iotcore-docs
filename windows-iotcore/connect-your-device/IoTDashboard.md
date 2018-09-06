@@ -12,9 +12,10 @@ keywords: windows iot, windows 10 iot core dashboard, windows iot dashboard, dev
 
 Windows 10 IoT Core Dashboard is the best way to download, set up and connect your Windows 10 IoT Core devices, all from your PC.
 
-<div class="btn-group">
-	<a href="http://go.microsoft.com/fwlink/?LinkID=708576" id="device-center-link" class="btn btn-primary">Download Dashboard</a>
-</div>
+You can download the [IoT Core Dashboard here](http://go.microsoft.com/fwlink/?LinkID=708576).
+
+> [!NOTE]
+> If you're finding that you're getting a white screen when opening the IoT Dashboard after downloading, it may due to a driver issue. To overcome this issue, you'll need to download the [zip format](https://downloadmirror.intel.com/27894/a08/win64_24.20.100.6229.zip) of the Intel Graphics Driver and install the driver manually. 
 
 ## Set up a new device
 ___
