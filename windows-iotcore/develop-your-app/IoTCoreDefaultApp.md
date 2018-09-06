@@ -50,8 +50,6 @@ The apps section showcases a number of different apps that you can launch from W
 
 /*I will need help here - I am getting blank screens for both Notifications and Logs so I'm not exactly sure what they do here.*/
 
-/*We will also need to add documentation here as to how to leverage app launch feature*/
-
 The GitHub tile will take you to where our open-source code for the Windows 10 IoT Core Default App is.
 
 ## Start Menu - Windows Device Portal
@@ -70,5 +68,3 @@ The command line features allows you to send command lines directly to your devi
 
 ## Settings
 You'll be able to configure a number of settings here including wi-fi, bluetooth, power options, and more. 
-
-/*Will need to add documentation for telemetry, including how to turn these things off*/

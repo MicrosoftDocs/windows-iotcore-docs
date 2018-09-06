@@ -17,7 +17,7 @@ Windows 10 IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Ente
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="release-notes/currentcommercial.md">
+        <a href="release-notes/commercial/FallCreatorsUpdate.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -134,5 +134,5 @@ Windows 10 IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Ente
 ---
 
 <h2>Got Questions?</h2>
-<p>If anything comes up that the documentation doesn't answer, you can submit your questions to our <a href="https://techcommunity.microsoft.com/t5/Windows-10-IoT/bd-p/Windows10IoT">Tech Community</a> or <a href="https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT">MSDN forums</a>.</p>
+<p>If anything comes up that the documentation doesn't answer, you can submit your questions to our <a href="https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT">MSDN forum</a>.</p>
 
