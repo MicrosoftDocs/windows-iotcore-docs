@@ -47,7 +47,7 @@ Other helpful software:
 
 * <b>A compression program such as 7-Zip</b>, which can uncompress Windows app packages.
 
-* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/), used to create an app in [Lab 1b: Add an app to your image](manufacturing-guide/AddApps.md).
+* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/), used to create an app in [Lab 1b: Add an app to your image](AddApps.md).
 
 ## Other software
 * <b>An app built for IoT Core</b>. Our samples use the [IoT Core Default](https://github.com/ms-iot/samples/tree/develop/IoTCoreDefaultApp) app, though you can use your own.
@@ -55,4 +55,4 @@ Other helpful software:
 * <b>A driver built for IoT Core</b>. Our samples use the [Hello, Blinky](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinky) driver, though you can use your own.
 
 ## Next steps
-[Lab 1a: Create a basic image](manufacturing-guide/CreateBasicImage.md)
+[Lab 1a: Create a basic image](CreateBasicImage.md)

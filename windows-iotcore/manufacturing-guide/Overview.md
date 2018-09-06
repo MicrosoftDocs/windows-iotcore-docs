@@ -24,15 +24,15 @@ You can add customizations, including apps, settings, hardware configurations an
 For OEM-style images, you'll wrap your customizations into package (.cab) files. Packages let OEMs, ODMs (Original Device Manufacturers), developers, and Microsoft work together to help deliver security and feature updates to your devices without stomping on each other's work.
 
 ## Scenarios
-* [Get the tools needed to customize Windows IoT Core](manufacturing-guide/ToolsNeeded.md)
-* [Lab 1a: Create a basic image](manufacturing-guide/CreateBasicImage.md)
-* [Lab 1b: Add an app to your image](manufacturing-guide/AddApps.md)
-* [Lab 1c: Add a file and a registry setting to an image](manufacturing-guide/AddFileOrRegistrySetting.md)
-* [Lab 1d: Add networking and other provisioning package settings to an image](manufacturing-guide/AddNetworkingOrProvPackage.md)
-* [Lab 1e: Add a driver to an image](manufacturing-guide/AddDriver.md)
-* [Lab 1f: Build a retail image](manufacturing-guide/BuildRetailImage.md)
-* [Lab 2: Creating your own board support package](manufacturing-guide/CreateBSP.md)
-* [Lab 3: Updating your apps](manufacturing-guide/UpdatingApps.md)
+* [Get the tools needed to customize Windows IoT Core](ToolsNeeded.md)
+* [Lab 1a: Create a basic image](CreateBasicImage.md)
+* [Lab 1b: Add an app to your image](AddApps.md)
+* [Lab 1c: Add a file and a registry setting to an image](AddFileOrRegistrySetting.md)
+* [Lab 1d: Add networking and other provisioning package settings to an image](AddNetworkingOrProvPackage.md)
+* [Lab 1e: Add a driver to an image](AddDriver.md)
+* [Lab 1f: Build a retail image](BuildRetailImage.md)
+* [Lab 2: Creating your own board support package](CreateBSP.md)
+* [Lab 3: Updating your apps](UpdatingApps.md)
 
 ## Concepts
 You can use the walkthrough as a guide to build both your test and retail images. In general terms:
@@ -114,7 +114,7 @@ For a sample, see %SRC_DIR%\Products\SampleA\TestOEMInput.xml from the Windows A
 Board Support Packages contain a set of software, drivers, and boot configurations for a particular board, typically supplied by a board manufacturer. The board manufacturer may periodically provide updates for the board, which your devices can receive and apply.
 
 ## OK, let's try it!
-Start here: [Get the tools needed to customize Windows IoT Core](manufacturing-guide/ToolsNeeded.md)
+Start here: [Get the tools needed to customize Windows IoT Core](ToolsNeeded.md)
 
 ## Related Topics
 
