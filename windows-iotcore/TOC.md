@@ -29,7 +29,7 @@
 ### [Deploy your console application](develop-your-app/RemoteDebugging.md)
 ### [Language support](develop-your-app/MultiLang.md)
 ### [Embedded mode](develop-your-app/EmbeddedMode.md)
-### [Bus proiders](develop-your-app/BusProviders.md)
+### [Bus providers](develop-your-app/BusProviders.md)
 ### [On-screen keyboard layouts](develop-your-app/OnScreenKeyboardLayouts.md)
 ### [Localhost loopback](develop-your-app/Loopback.md)
 ### [IoT Shell overview](develop-your-app/IoTCoreShell.md)
