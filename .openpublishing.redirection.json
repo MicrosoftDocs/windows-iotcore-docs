@@ -9,37 +9,37 @@
 },
 
 {
-"source_path": "windows-iot-core/commercialize-your-device/installingandservicing.md",
+"source_path": "windows-iotcore/commercialize-your-device/installingandservicing.md",
 "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/service/iot/servicing-msstore",
 "redirect_document_id": true
 },
 
 {
-"source_path": "windows-iot-core/commercialize-your-device/iotcoreservicesoverview.md",
+"source_path": "windows-iotcore/commercialize-your-device/iotcoreservicesoverview.md",
 "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview",
 "redirect_document_id": true
 },
 
 {
-"source_path": "windows-iot-core/commercialize-your-device/recovery.md",
+"source_path": "windows-iotcore/commercialize-your-device/recovery.md",
 "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/service/iot/recovery",
 "redirect_document_id": true
 },
 
 {
-"source_path": "windows-iot-core/build-your-image/createbsps.md",
+"source_path": "windows-iotcore/build-your-image/createbsps.md",
 "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/bsphardware",
 "redirect_document_id": true
 },
 
 {
-"source_path": "windows-iot-core/commercialize-your-device/OScustomizations.md",
+"source_path": "windows-iotcore/commercialize-your-device/OScustomizations.md",
 "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/oscustomizations",
 "redirect_document_id": true
 },
 
 {
-"source_path": "windows-iot-core/commercialize-your-device/agreement-faq.md",
+"source_path": "windows-iotcore/commercialize-your-device/agreement-faq.md",
 "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/commercializationfaq",
 "redirect_document_id": true
 }
