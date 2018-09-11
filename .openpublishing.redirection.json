@@ -39,12 +39,14 @@
 },
 
 {
+
 "source_path": "windows-iotcore/build-your-image/OScustomizations.md",
 "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/oscustomizations",
 "redirect_document_id": true
 },
   
 {
+
 "source_path": "windows-iotcore/build-your-image/addrecovery.md",
 "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/service/iot/recovery-mechanism",
 "redirect_document_id": true
@@ -54,7 +56,7 @@
 "source_path": "windows-iotcore/commercialize-your-device/gotomarket.md",
 "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/commercializationfaq",
 "redirect_document_id": true
-},
+}
 
 {
 "source_path": "windows-iotcore/commercialize-your-device/agreement-faq.md",
