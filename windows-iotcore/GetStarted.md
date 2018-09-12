@@ -49,10 +49,43 @@ Want to learn more about our two offerings, Windows 10 IoT Enterprise and Window
 </tbody>
 </table>
 
-
 ## Build your first Windows 10 IoT device
 
 New to Windows 10 IoT? Get started quickly and easily with our [Windows 10 IoT Core Quickstarter](tutorials/Tutorials.md). 
+
+## Windows 10 IoT Pricing
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Purpose</th>
+<th align="left">Pricing</th>
+</tr>
+</thead>
+<tbody>
+
+<tr class="odd">
+<td align="left"><p>Prototyping</p></td>
+<td align="left"><p>Free</p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p>Long-Term Servicing Channel (LTSC) for commercialization</p></td>
+<td align="left"><p>Small fee per device with access to 10 years of support, update control and Device Health Attestation (DHA). Learn more [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview).</p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p>Semi-Annual Channel (SAC) for commercialization</p></td>
+<td align="left"><p>Free, but you will not get access to 10 years of support, update control or DHA.</p></td>
+</tr>
+
+</tbody>
+</table>
+
 
 
 ## Bring a device to market
