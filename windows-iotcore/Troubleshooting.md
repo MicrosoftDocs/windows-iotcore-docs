@@ -15,6 +15,10 @@ This is an article that contains common troubleshooting issues that people have 
 > [!NOTE]
 > This documentation is a work in progress. 
 
+### ASUS Tinkerboard and Rockchip support
+
+While the ASUS Tinkerboard and Rockchip are not officially supported by us, there are cases where Rockchip has worked with other third parties to get SoC working on Windows 10 IoT Core.
+
 ### Issue when connecting a MBM device when roaming
 
 There are two things to consider when enabling roaming:
