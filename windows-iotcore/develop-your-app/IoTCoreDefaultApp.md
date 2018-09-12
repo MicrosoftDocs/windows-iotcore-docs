@@ -16,7 +16,11 @@ When you initially flash Windows 10 IoT Core, you will be presented with the Win
 
 The purpose of this application is not only to provide you with a friendly shell to interact with when you first boot up Windows 10 IoT Core, but we have open-sourced the code for this application [here](http://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTCoreDefaultApp/CS) so that you can plug and play with these features on your own custom application(s).
 
-This article will give you a rundown of the different features that the Windows 10 IoT Core Default App offers.
+This article will give you a rundown of the different features that the Windows 10 IoT Core Default App offers as well as how you can leverage these different features for your own applications.
+
+## Leveraging the IoT Core Default App 
+
+/*Duane/JC, can you take a first crack at this?*/
 
 ## Start Menu - Play
 
@@ -48,7 +52,7 @@ The apps section showcases a number of different apps that you can launch from W
 
 ![How to upload music files](../media/IoTCoreDefaultApp/restart.gif)
 
-/*I will need help here - I am getting blank screens for both Notifications and Logs so I'm not exactly sure what they do here.*/
+/*JC/JL - Can you take a crack at this? I am getting blank screens for both Notifications and Logs so I'm not exactly sure what they do here.*/
 
 /*We will also need to add documentation here as to how to leverage app launch feature*/
 
@@ -66,9 +70,9 @@ This section allows you to see the different features for your device including 
 
 The command line features allows you to send command lines directly to your device.
 
-/*I think this section might need more substance - help?*/
+/*Duane, can you take a crack at this? I think this section might need more substance*/
 
 ## Settings
 You'll be able to configure a number of settings here including wi-fi, bluetooth, power options, and more. 
 
-/*Will need to add documentation for telemetry, including how to turn these things off*/
+/*Duane/JC, can you take a crack at this? Need to add documentation for telemetry, including how to turn these things off*/
