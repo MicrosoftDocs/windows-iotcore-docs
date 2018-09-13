@@ -1,10 +1,10 @@
 # Create a basic image
 ## Commands Used
-  set OEM_NAME=Fabrikam
-  installoemcerts 
-  buildpkg all
-  newproduct NameOfImage ProductType(BSP Type)
-  buildimage NameOfImage Test(for Test)
+      set OEM_NAME=Fabrikam
+      installoemcerts 
+      buildpkg all
+      newproduct NameOfImage ProductType(BSP Type)
+      buildimage NameOfImage Test(for Test)
   
 
 ## Image Types
