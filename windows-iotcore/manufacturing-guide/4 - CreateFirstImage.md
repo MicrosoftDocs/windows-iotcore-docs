@@ -39,7 +39,7 @@ You can use as many FMs into an image as you want. In this guide, we refer to th
 
 The process is similar to that used by Windows 10 Mobile. To learn more, see Feature manifest file contents. 
 You'll list which of the features to add by using these tags: 
-* <BasePackages>: Packages that you always included in your images, for example, your base app. 
+* \<BasePackages\>: Packages that you always included in your images, for example, your base app. 
 * <Features>\<OEM>: Other individual packages that might be specific to a particular product design. 
 
 The Feature Merger tool generates the required feature identifier packages that are required for servicing the device. Run this tool whenever any changes are made to the FM files. After you change OEM FM or OEM COMMON FM files, run Buildfm oem. After you change bspfm files, run buildfm bsp **< bspname >**.
