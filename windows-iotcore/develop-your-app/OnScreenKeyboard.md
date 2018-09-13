@@ -16,12 +16,12 @@ for the better! IoT Core now uses the same touch keyboard components as the desk
 ## New features
 The new keyboard implementation provides the following benefits to your headed device development:
 
-* [The entire set of Windows keyboard language layouts](#Windows-keyboard-language-layouts)
-* [Support for input scopes (e.g., Email Address, Numeric PIN, Search Field, etc.)](#Support-for-input-scopes)
-* [Input Method Editor (IME)](#Input-Method-Editor-(IME))
-* [Non-obscured text input fields](#Non-obscured-text-input-fields)
-* [Dictation mode](#Dictation-mode)
-* [A selection of user interface preferences](#User-Interface-configuration)
+* [The entire set of Windows keyboard language layouts](#windows-keyboard-language-layouts)
+* [Support for input scopes (e.g., Email Address, Numeric PIN, Search Field, etc.)](#support-for-input-scopes)
+* [Input Method Editor (IME)](#input-Method-Editor-(IME))
+* [Non-obscured text input fields](#non-obscured-text-input-fields)
+* [Dictation mode](#dictation-mode)
+* [A selection of user interface preferences](#user-interface-configuration)
 
 ## Feature packages
 
@@ -71,7 +71,7 @@ no longer obscured by the touch keyboard.
 
 When the input language is set to the OS language, which is the default, the voice recognition input feature is available.
 To show the dictation button in the keyboard, refer to the following section on
-[User Interface configuration](#User-Interface-configuration).
+[User Interface configuration](#user-interface-configuration).
 
 ## User Interface configuration
 
@@ -83,9 +83,10 @@ setting registry values is the `OEMInput.xml` file discussed here:
 [Runtime customizations](/windows-hardware/manufacture/iot/oscustomizations#runtime-customizations)
 
 > [!NOTE]
-> Most of the registry settings documented here will take effect while the on-screen keyboard is visible. This allows you
-> during development to easily try different combinatations of settings values, immediately see the resulting changes in real time.
-> If a setting does not take effect immediately, you will need to reboot the device in order to see the changes to the keyboard UI.
+> Most of the registry settings documented here will take effect while the on-screen keyboard is visible.
+> This allows you during development to easily try different combinatations of settings values,
+> immediately seeing the resulting changes in real time. If a setting does not take effect immediately,
+> you will need to reboot the device in order to see the changes to the keyboard UI.
 
 ### Keyboard Height
 
@@ -98,23 +99,23 @@ it allows for pixel-level precision. Simply apply the following formula to calcu
 
 As an example, to change the height to 56.783%, you would set the following registry value:
 ```console
-set IoTRootKey=HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension
-reg.exe ADD "%IoTRootKey%\OSK" /v MaxHeightPercentage /t REG_SZ /d "56.783" /f
+set OskRootKey=HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\OSK
+reg.exe ADD "%OskRootKey%" /v MaxHeightPercentage /t REG_SZ /d "56.783" /f
 ```
 or from PowerShell:
 ```powershell
-set IoTRootKey "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension"
-cd $(IoTRootKey)\OSK
+set OskRootKey "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\OSK"
+cd $OskRootKey
 Set-ItemProperty -Path . -Name MaxHeightPercentage -Type String -Value 56.783
 ```
 
 > [!NOTE]
-> The registry value type must be a String (`REG_SZ`), so that the fractional values can be represented as a string.
-> Using DWord (`REG_DWORD`) will _not_ work, even for whole number percentages.
+> The registry value type must be a String (`REG_SZ`), so that the fractional values can be represented with.
+> a decimal point. Using DWord (`REG_DWORD`) will _not_ work, even for whole number percentages.
 
 ### Additional preferences
 
-The remaining set of preferences are in a Preferences subkey:
+The remaining set of preferences are String values in the Preferences subkey:
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\OSK\Preferences
 ```
@@ -142,12 +143,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShel
 
 As an example, to enable only `wide` keyboard mode, in PowerShell you could do the following:
 ```powershell
-set IoTRootKey "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension"
-cd $(IoTRootKey)\OSK
+set OskRootKey "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\OSK"
+cd $OskRootKey
 mkdir Preferences
 cd Preferences
-Set-ItemProperty . -Name KeyboardModeEnabled_full -Value "0"
+Set-ItemProperty . -Name KeyboardModeEnabled_full -Value "0"      # Optional, since the default is "0"
 Set-ItemProperty . -Name KeyboardModeEnabled_narrow -Value "0"
-Set-ItemProperty . -Name KeyboardModeEnabled_wide -Value "1"
+Set-ItemProperty . -Name KeyboardModeEnabled_wide -Value "1"      # Optional, since the default is "1"
 Set-ItemProperty . -Name SettingsMenuKey_Collapsed -Value "1"
 ```
