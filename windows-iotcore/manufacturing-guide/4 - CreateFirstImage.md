@@ -1,20 +1,20 @@
 --- 
-title: Get Started Overview
+title: Create your first IoT Core Image
 author: jadali, lmaung
 ms.author: jadali, lmaung
 ms.date: 09/05/2018 
 ms.topic: article 
-description: Overview for Windows IoT Core Manufacturing Guide.
+description: 
 keywords: Windows 10 IoT Core, 
 --- 
 
 # Create a basic image
 ## Image Types
-You can create test images, which include tools for quickly accessing and modifying devices. Test images are great for: 
+You can create **test images**, which include tools for quickly accessing and modifying devices. Test images are great for: 
 * Developers, hardware vendors, and manufacturers (OEMs) who are trying out new device designs. 
 * Hobbyists and organizations that are creating devices designed to run in non-networked or controlled network environments. 
 
-You can create retail images, which can be made more secure for public or corporate networks while still receiving updates. 
+You can create **retail images**, which can be made more secure for public or corporate networks while still receiving updates. 
 You can add customizations, including apps, settings, hardware configurations, and board support packages (BSPs). 
 For OEM-style images, you’ll wrap your customizations into package (.cab) files. Packages let OEMs, ODMs, developers, and Microsoft work together to help deliver security and feature updates to your devices without stomping on each other's work.
 
