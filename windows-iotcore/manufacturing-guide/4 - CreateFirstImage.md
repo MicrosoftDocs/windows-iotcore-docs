@@ -57,12 +57,12 @@ The image configuration file lists:
     * These builds also include developer tools such as debug transport, SSH, and PowerShell, that you can use to help troubleshoot issues. 
     * For a sample, see %SRC_DIR%\Products\SampleA\TestOEMInput.xml. 
 
-|         | Retail builds | Test builds  |
-| ------------- |:-------------:| -----:|
-| Image release type        | ReleaseType: **Production** | ReleaseType: **Test** |
-| Package release type      | Only Production Type packages are supported      |   Both Production Type or Test Type are supported |
-| Test-signed packages      | Not supported      |    Supported IOT_ENABLE_TESTSIGNING feature must be included. |
-| Code integrity check      | Supported. By default, this is enabled.      |    Supported. By default, no policy is enforced |
+> |             | Retail Builds  |  Test Builds  |
+> |-------------|----------|---------|
+> | Image Release Type | ReleaseType: <b>Production</b> | ReleaseType: <b>Test</b>
+> | Package Release Type | Only Production Type packages are supported | Both Production Type or Test Type are supported
+> | Test-signed packages | Not supported | Supported<p>IOT_ENABLE_TESTSIGNING feature must be included
+> | Code integrity check | Supported. By default, this is enabled. | Supported. By default, no policy is enforced.
 
 ## Board Support Packages 
 Board Support Packages contain a set of software, drivers, and boot configurations for a particular board, typically supplied by a board manufacturer. The board manufacturer may periodically provide updates for the board, which your devices can receive and apply 
