@@ -55,24 +55,24 @@ The image configuration file lists:
 * A Device identifier, which is used to select the device layout. The supported values for device are defined in the corresponding **bspfm.xml**, under **\<oemdeviceplatformpackages>**. 
 * The ReleaseType *\(either Production or Test)*. 
 
-    Retail builds: We recommend creating retail images early on in your development process to verify that everything will work when you are ready to ship. 
+    **Retail builds**: We recommend creating retail images early on in your development process to verify that everything will work when you are ready to ship. 
 
     * These builds contain all of the security features enabled. 
-    * To use this build type, all of your code must be signed using retail (not test) code signing certificates. 
-    *  For a sample, see %SRC_DIR%\Products\SampleA\RetailOEMInput.xml.
+    * To use this build type, all of your code *must be signed using retail (not test) code signing certificates*. 
+    *  For a sample, see **%SRC_DIR%\Products\SampleA\RetailOEMInput.xml**.
 
-    Test builds: Use these to try out new versions of your apps and drivers created by you and your hardware manufacturer partners. 
+   **Test builds**: Use these to try out new versions of your apps and drivers created by you and your hardware manufacturer partners. 
         
     * These builds have some security features disabled, which allows you to use either test-signed or production-signed packages.
-    * These builds also include developer tools such as debug transport, SSH, and PowerShell, that you can use to help troubleshoot issues. 
-    * For a sample, see %SRC_DIR%\Products\SampleA\TestOEMInput.xml. 
+    * These builds also *include developer tools* such as **debug transport**, **SSH**, and **PowerShell**, that you can use to help troubleshoot issues. 
+    * For a sample, see **%SRC_DIR%\Products\SampleA\TestOEMInput.xml**. 
 
-> |             | Retail Builds  |  Test Builds  |
-> |-------------|----------|---------|
-> | Image Release Type | ReleaseType: <b>Production</b> | ReleaseType: <b>Test</b>
-> | Package Release Type | Only Production Type packages are supported | Both Production Type or Test Type are supported
-> | Test-signed packages | Not supported | Supported<p>IOT_ENABLE_TESTSIGNING feature must be included
-> | Code integrity check | Supported. By default, this is enabled. | Supported. By default, no policy is enforced.
+     |             | Retail Builds  |  Test Builds  |
+     |-------------|----------|---------|
+     | Image Release Type | ReleaseType: <b>Production</b> | ReleaseType: <b>Test</b>
+     | Package Release Type | Only Production Type packages are supported | Both Production Type or Test Type are supported
+     | Test-signed packages | Not supported | Supported<p>IOT_ENABLE_TESTSIGNING feature must be included
+     | Code integrity check | Supported. By default, this is enabled. | Supported. By default, no policy is enforced.
 
 ## Board Support Packages 
 Board Support Packages contain a set of software, drivers, and boot configurations for a particular board, typically supplied by a board manufacturer. The board manufacturer may periodically provide updates for the board, which your devices can receive and apply 
