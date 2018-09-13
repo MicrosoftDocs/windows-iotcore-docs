@@ -18,7 +18,7 @@ You can create **retail images**, which can be made more secure for public or co
 You can add customizations, including apps, settings, hardware configurations, and board support packages (BSPs). 
 For OEM-style images, you’ll wrap your customizations into package (.cab) files. Packages let OEMs, ODMs, developers, and Microsoft work together to help deliver security and feature updates to your devices without stomping on each other's work.
 
-## Creation process names and their role
+## Creation process terms and their roles
 There are a few terms that we should familiarize ourselves with before we create our first image since we will be referring to these names and terms through out the process. 
 ### Packages 
 Packages are the logical building blocks of IoT Core. They contain all the files, libraries, registry settings, executables, and data on the device. From device drivers to system files, every component must be contained in a package. This modular architecture allows for precise control of updates: a package is the smallest serviceable unit on the device. 
@@ -27,15 +27,15 @@ Each package contains:
 * A package definition (.pkg.xml) file specifies the contents of the package and where they should be placed in the final image. See %SRC_DIR%\Packages\ directory for various samples of package files. 
 * A signature. This can be a test or retail certificate. 
 
-The pkggen tool combines these items into signed packages. Our samples include scripts: createpkg, and createprovpkg, which call pkggen to create packages for our drivers, apps, and settings. 
+The **pkggen** tool combines these items into signed packages. Our samples include scripts: **createpkg**, and **createprovpkg**, which call *pkggen* to create packages for our drivers, apps, and settings. 
 The process is similar to that used by Windows 10 Mobile. To learn more about creating packages, see Creating mobile packages.
 
 ## Feature manifests (FMs) 
 After you've put everything into packages, you'll use FM files to list which of your packages belong in the final image. 
 
 You can use as many FMs into an image as you want. In this guide, we refer to the following FMs: 
-* OEMFM.xml includes features an OEM might add to a device, such as the app and a provisioning package. 
-* BSPFM.xml includes features that a hardware manufacturer might use to define a board. For example, OEM_RPi2FM.xml includes all of the features used for the Raspberry Pi 2. 
+* **OEMFM.xm**l includes features an OEM might add to a device, such as the app and a provisioning package. 
+* **BSPFM.xml** includes features that a hardware manufacturer might use to define a board. For example, *OEM_RPi2FM.xml* includes all of the features used for the *Raspberry Pi 2*. 
 
 The process is similar to that used by Windows 10 Mobile. To learn more, see Feature manifest file contents. 
 You'll list which of the features to add by using these tags: 
