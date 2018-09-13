@@ -20,7 +20,7 @@ This article will give you a rundown of the different features that the Windows 
 
 ## Leveraging the IoT Core Default App 
 
-/*Duane/JC, can you take a first crack at this?*/
+/*Duane, can you take a first crack at this?*/
 
 ## Start Menu - Play
 
@@ -52,9 +52,8 @@ The apps section showcases a number of different apps that you can launch from W
 
 ![How to upload music files](../media/IoTCoreDefaultApp/restart.gif)
 
-/*JC/JL - Can you take a crack at this? I am getting blank screens for both Notifications and Logs so I'm not exactly sure what they do here.*/
-
-/*We will also need to add documentation here as to how to leverage app launch feature*/
+/*JL - Can you take a crack at this for Notifications and Logs?*/
+/*Could you also take a crack at how people can leverage the app launch feature and add their own apps to it? If that makes sense?*
 
 The GitHub tile will take you to where our open-source code for the Windows 10 IoT Core Default App is.
 
@@ -75,4 +74,4 @@ The command line features allows you to send command lines directly to your devi
 ## Settings
 You'll be able to configure a number of settings here including wi-fi, bluetooth, power options, and more. 
 
-/*Duane/JC, can you take a crack at this? Need to add documentation for telemetry, including how to turn these things off*/
+/*JC, can you take a crack at this? Need to add documentation for telemetry, including how to turn these things off*/
