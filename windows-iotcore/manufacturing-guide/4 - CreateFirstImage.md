@@ -51,9 +51,9 @@ These are the same tools used to create Windows 10 Mobile images. To learn more,
 
 The image configuration file lists: 
 * The feature manifests (FMs) and the packages that you want to install from each one. 
-* An SoC chip identifier, which is used to help set up the device partitions. The supported values for socare defined in the corresponding **bspfm.xml**, under \<devicelayoutpackages>. 
-* A Device identifier, which is used to select the device layout. The supported values for device are defined in the corresponding **bspfm.xml**, under <oemdeviceplatformpackages>. 
-* The ReleaseType (either Production or Test). 
+* An SoC chip identifier, which is used to help set up the device partitions. The supported values for socare defined in the corresponding **bspfm.xml**, under **\<devicelayoutpackages>**. 
+* A Device identifier, which is used to select the device layout. The supported values for device are defined in the corresponding **bspfm.xml**, under **\<oemdeviceplatformpackages>**. 
+* The ReleaseType *\(either Production or Test)*. 
 
     Retail builds: We recommend creating retail images early on in your development process to verify that everything will work when you are ready to ship. 
 
