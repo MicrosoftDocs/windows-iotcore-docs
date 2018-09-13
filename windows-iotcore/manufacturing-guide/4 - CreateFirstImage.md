@@ -67,7 +67,8 @@ The image configuration file lists:
     * These builds also *include developer tools* such as **debug transport**, **SSH**, and **PowerShell**, that you can use to help troubleshoot issues. 
     * For a sample, see **%SRC_DIR%\Products\SampleA\TestOEMInput.xml**. 
     
-
+    
+    
      |             | Retail Builds  |  Test Builds  |
      |-------------|----------|---------|
      | Image Release Type | ReleaseType: <b>Production</b> | ReleaseType: <b>Test</b>
@@ -75,8 +76,8 @@ The image configuration file lists:
      | Test-signed packages | Not supported | Supported<p>IOT_ENABLE_TESTSIGNING feature must be included
      | Code integrity check | Supported. By default, this is enabled. | Supported. By default, no policy is enforced.
 
-## [Board Support Packages](boardsupportpackages.md "Board Support Packages") 
-Board Support Packages contain a set of software, drivers, and boot configurations for a particular board, typically supplied by a board manufacturer. The board manufacturer may periodically provide updates for the board, which your devices can receive and apply. You must have a BPS for the hardware. Support BPS are listed [here](boardsupportpackages.md "Board Support Packages").
+## [Board Support Packages](3 - BoardSupportPackages.md  "Board Support Packages") 
+Board Support Packages contain a set of software, drivers, and boot configurations for a particular board, typically supplied by a board manufacturer. The board manufacturer may periodically provide updates for the board, which your devices can receive and apply. You must have a BPS for the hardware. Support BPS are listed [here](3 - BoardSupportPackages.md "Board Support Packages").
 
 # Creation of a test image 
 To get started, we'll create a basic Windows 10 IoT Core (IoT Core) image, flash it to a device (or micro SD card), and put it into a device to make sure that everything's working properly. 
