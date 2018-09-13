@@ -66,7 +66,7 @@ The image configuration file lists:
     * These builds have some security features disabled, which allows you to use either test-signed or production-signed packages.
     * These builds also *include developer tools* such as **debug transport**, **SSH**, and **PowerShell**, that you can use to help troubleshoot issues. 
     * For a sample, see **%SRC_DIR%\Products\SampleA\TestOEMInput.xml**. 
- 
+ </br>
     |             | Retail Builds  |  Test Builds  |
     |-------------|----------|---------|
     | Image Release Type | ReleaseType: <b>Production</b> | ReleaseType: <b>Test</b>
