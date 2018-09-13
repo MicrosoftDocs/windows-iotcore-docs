@@ -134,6 +134,7 @@ This builds an FFU file with your basic image at **C:\IoT-ADK-AddonKit\Build\< a
 
 ## Commands Used
 Following is the list of commands used in order. *Please keep in mind that you only need to set **OEM Name** once*. 
+
       set OEM_NAME=Fabrikam
       installoemcerts 
       buildpkg all
