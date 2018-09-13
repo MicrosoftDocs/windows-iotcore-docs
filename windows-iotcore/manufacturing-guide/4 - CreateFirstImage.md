@@ -1,4 +1,12 @@
 # Create a basic image
+## Commands Used
+  set OEM_NAME=Fabrikam
+  installoemcerts 
+  buildpkg all
+  newproduct NameOfImage ProductType(BSP Type)
+  buildimage NameOfImage Test(for Test)
+  
+
 ## Image Types
 You can create test images, which include tools for quickly accessing and modifying devices. Test images are great for: 
 * Developers, hardware vendors, and manufacturers (OEMs) who are trying out new device designs. 
