@@ -18,7 +18,7 @@ The new keyboard implementation provides the following benefits to your headed d
 
 * [The entire set of Windows keyboard language layouts](#windows-keyboard-language-layouts)
 * [Support for input scopes (e.g., Email Address, Numeric PIN, Search Field, etc.)](#support-for-input-scopes)
-* [Input Method Editor (IME)](#input-Method-Editor-(IME))
+* [Input Method Editor (IME)](#input-method-editor-ime)
 * [Non-obscured text input fields](#non-obscured-text-input-fields)
 * [Dictation mode](#dictation-mode)
 * [A selection of user interface preferences](#user-interface-configuration)
