@@ -66,7 +66,7 @@ The image configuration file lists:
     * These builds have some security features disabled, which allows you to use either test-signed or production-signed packages.
     * These builds also *include developer tools* such as **debug transport**, **SSH**, and **PowerShell**, that you can use to help troubleshoot issues. 
     * For a sample, see **%SRC_DIR%\Products\SampleA\TestOEMInput.xml**. 
- </br>
+
     |             | Retail Builds  |  Test Builds  |
     |-------------|----------|---------|
     | Image Release Type | ReleaseType: <b>Production</b> | ReleaseType: <b>Test</b>
@@ -133,6 +133,7 @@ From the IoT Core Shell, build a flashable test image using the default files. T
 This builds an FFU file with your basic image at **C:\IoT-ADK-AddonKit\Build\< arch >\ProductA\Test**.
 
 ## Commands Used
+Following is the list of commands used in order. *Please keep in mind that you only need to set **OEM Name** once*. 
       set OEM_NAME=Fabrikam
       installoemcerts 
       buildpkg all
