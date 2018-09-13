@@ -140,4 +140,14 @@ Following is the list of commands used in order. *Please keep in mind that you o
       buildpkg all
       newproduct NameOfImage ProductType(BSP Type)
       buildimage NameOfImage Test(for Test)
-  
+ 
+### DragonBoard 410C
+
+      set OEM_Name=Fabrikam
+      installoemcerts
+      C:\iot-adk-addonkit\Tools\bsptools\QCDB410C\export.cmd c:\BSPs\DB410c_BSP
+      newproduct QCIoT QCDB410C
+      buildpkg all
+      CreateImage QCIoT Test
+      
+### CherryTrail x64 (or x86)
