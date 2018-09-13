@@ -1,3 +1,13 @@
+--- 
+title: Get Started Overview
+author: jadali, lmaung
+ms.author: jadali, lmaung
+ms.date: 09/05/2018 
+ms.topic: article 
+description: Overview for Windows IoT Core Manufacturing Guide.
+keywords: Windows 10 IoT Core, 
+--- 
+
 # Board Support Packages
 
 A Board Support Package(BSP) includes a set of device drivers that are specific to the components/silicon used in the board. These are provided by the component vendors / silicon vendors, mostly in the form of .inf and associated .sys/.dll files. A BSP is a collection of drivers/settings required to run IoT Core on a hardware platform. These are provided by the hardware vendors/silicon vendors.
