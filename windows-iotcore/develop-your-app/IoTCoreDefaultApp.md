@@ -33,7 +33,7 @@ Using data from the National Weather Service, the weather app renders weather in
 The web browser allows you to pull up most sites from the web.
 
 ### Music
-The music player will play .mp3 and .wav files from the **Music Library**, that can be accessed via the [Windows Device Portal](../manage-your-device/DevicePortal.md).  To upload files to the music player, you will need to navigate to the Windows Device Portal, click on the "Apps" dropdown, navigate to "File Explorer", select "Music" and upload your files from there.
+The music player will play MP3 and WAV files from the **Music Library**, that can be accessed via the [Windows Device Portal](../manage-your-device/DevicePortal.md).  To upload files to the music player, you will need to navigate to the Windows Device Portal, click on the "Apps" dropdown, navigate to "File Explorer", select "Music" and upload your files from there.
 
 ![How to upload music files](../media/IoTCoreDefaultApp/music.gif)
 
