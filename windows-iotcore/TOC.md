@@ -30,7 +30,7 @@
 ### [Language support](develop-your-app/MultiLang.md)
 ### [Embedded mode](develop-your-app/EmbeddedMode.md)
 ### [Bus providers](develop-your-app/BusProviders.md)
-### [On-screen keyboard layouts](develop-your-app/OnScreenKeyboardLayouts.md)
+### [On-screen keyboard](develop-your-app/OnScreenKeyboard.md)
 ### [Localhost loopback](develop-your-app/Loopback.md)
 ### [IoT Shell overview](develop-your-app/IoTCoreShell.md)
 ## [Debug applications]()

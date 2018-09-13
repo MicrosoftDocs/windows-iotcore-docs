@@ -2,15 +2,20 @@
 title: Specify available on-screen keyboard language layouts
 author: johntasler
 ms.author: jtasler
-ms.date: 09/22/2017
+ms.date: 09/12/2018
 ms.topic: article
 description: Learn how to specify which on-screen keyboard language layouts are available to the users of your Windows IoT device.
 keywords: windows 10 IoT Core, commercialize, osk onscreen keyboard language layouts
 ---
+> [!IMPORTANT]
+> As of Windows 10 IoT Core, version 1809, this article is no longer applicable. Please see the
+> [On-screen keyboard for headed devices](./OnScreenKeyboard.md) page for the current
+> documentation.
 
 # On-Screen Keyboard Language Layouts
 
-The RS2 and RS3 on-screen keyboard (OSK) supports layouts for the following languages:
+The on-screen keyboard (OSK) in Windows 10 IoT Core, versions 1703, 1709, and 1803, supports
+layouts for the following languages:
 
 | Language Tag  | Description             | Layout Code |
 | :------------ | :---------------------- | -----------:|
@@ -34,13 +39,13 @@ As an OEM, however, you can limit which layout choices are displayed to the user
  
 For a concrete example, if you want to only allow North America language layouts (en-US, en-CA, es-MX, fr-CA), you could add the following to your OEMCustomization.cmd script:
 
-```` batch
+```console
 call "%~dp0\setKeyboardLanguages.cmd"
-````
+```
 
 Where setKeyboardLanguages.cmd is a script in the same directory containing this:
  
-```` batch
+```console
 @echo off
 
 set getDefaultAccountSID="wmic.exe useraccount where name='DefaultAccount' get sid"
@@ -61,7 +66,7 @@ goto :eof
   REG ADD %registryKey% /v "4" /d "00000C0C" /f
   @echo off
 goto :eof
-````
+```
 
 The resulting effect of the above command script will be:
 
