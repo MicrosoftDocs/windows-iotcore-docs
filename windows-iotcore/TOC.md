@@ -31,6 +31,7 @@
 ### [Embedded mode](develop-your-app/EmbeddedMode.md)
 ### [Bus providers](develop-your-app/BusProviders.md)
 ### [On-screen keyboard](develop-your-app/OnScreenKeyboard.md)
+### [Sign in dialog title bars](develop-your-app/SignInDialogTitleBars.md)
 ### [Localhost loopback](develop-your-app/Loopback.md)
 ### [IoT Shell overview](develop-your-app/IoTCoreShell.md)
 ## [Debug applications]()
