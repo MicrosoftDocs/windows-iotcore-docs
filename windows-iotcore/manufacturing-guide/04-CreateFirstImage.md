@@ -142,12 +142,31 @@ Following is the list of commands used in order. *Please keep in mind that you o
       buildimage *NameOfImage* Test(for Test)
  
 ### DragonBoard 410C
+The following is assumed in these steps:
 
-      set OEM_Name=Fabrikam *(One Time Command)*
-      installoemcerts
-      C:\iot-adk-addonkit\Tools\bsptools\QCDB410C\export.cmd c:\BSPs\DB410c_BSP
-      newproduct *QCIoT* **QCDB410C**
-      buildpkg all
-      CreateImage *QCIoT* Test
+1. OEM Name is **Fabrikam**.
+2. Product name is **MyIoTDevice**.
+3. BPS for Dragon board is unzipped to **C:\BSPs\DB410c_BSP**.
+
+        set OEM_Name=Fabrikam
+        installoemcerts
+        C:\iot-adk-addonkit\Tools\bsptools\QCDB410C\export.cmd C:\BSPs\DB410c_BSP
+        newproduct MyIoTDevice QCDB410C
+        buildpkg all
+        CreateImage MyIoTDevice Test
       
-### CherryTrail x64 (or x86)
+### Apollo Lake / Braswell / Cherry trail
+The BSP supporting Apollo Lake is available at Apollo Lake BSP.
+
+The BSP supporting Braswell/Cherry trail are available at Braswell BSP.
+Following commands creates a Test image for Braswell/Cherry trail boards. Replace the BSWxXX with your own board information.
+1. OEM Name is **Fabrikam**.
+2. Product name is **MyIoTDevice**.
+3. BPS for Braswell / Cherry trail board is unzipped to **C:\iot-adk-addonkit\Source-x64\BSP**.
+
+        set OEM_Name=Fabrikam
+        installoemcerts
+        C:\iot-adk-addonkit\Tools\bsptools\BSWx64\convert
+        newproduct MyIoTDevice BSWx64
+        buildpkg all
+        CreateImage MyIoTDevice Test

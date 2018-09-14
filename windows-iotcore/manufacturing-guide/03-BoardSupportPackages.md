@@ -52,9 +52,9 @@ DragonBoard drivers are available at DragonBoard 410C Software under Windows 10 
 
 Steps to create the drivers :
 
-1. Download the *_db410c_BSP.zip and extract to a folder say C:\download\DB410c_BSP
+1. Download the **db410c_BSP.zip** and extract to a folder say **C:\BSPs\DB410c_BSP**
 2. Launch IoTCoreShell, select arm
-    * Run .\bsptools\QCDB410C\export.cmd C:\download\DB410c_BSP C:\MyBSPs\QCDB410C to export the required bsp cab files to a directory say C:\MyBSPs\QCDB410C.
-    * set BSPPKG_DIR=C:\MyBSPs\QCDB410C to specify the location of the bsp cabs. See the BSPFM.xml file for the cab files it looks for in BSPPKG_DIR.
-    * Run buildpkg all to create the oem packages
-    * Run buildimage <productname> <test> or <retail> to build the image
+    * Run **.\bsptools\QCDB410C\export.cmd C:\PSPs\DB410c_BSP C:\MyBSPs\QCDB410C** to export the required bsp cab files to **C:\MyBSPs\QCDB410C** directory.
+    * set **BSPPKG_DIR=C:\MyBSPs\QCDB410C** to specify the location of the bsp cabs. See the **BSPFM.xml** file for the cab files it looks for in **BSPPKG_DIR**.
+    * Run **buildpkg all* to create the oem packages
+    * Run **buildimage \<productname> \<test>** or **\<retail>** to build the image
