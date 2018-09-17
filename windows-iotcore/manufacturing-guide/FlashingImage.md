@@ -1,14 +1,53 @@
 --- 
-title: Create your first IoT Core Image
+title: Flashing a Windows IoT Core Image
 author: jadali, lmaung
 ms.author: jadali, lmaung
 ms.date: 09/05/2018 
 ms.topic: article 
-description: 
+description: Steps on how to flash an FFU image file to a device
 keywords: Windows 10 IoT Core, 
 --- 
 
-# Flashing Windows IoT Core Image to device
+# Flashing a Windows IoT Core Image
+
+Once you have an FFU image file built, you can use that to flash and deploy the image to your device.
+
+Listed below are the steps to flash the FFU image file to specific manufacturer devices. 
+
+## Qualcomm
+### DragonBoard 410c
+Qualcomm has provided the [DragonboardUpdateTool](https://developer.qualcomm.com/hardware/dragonboard-410c/software) application, which we will use to flash the FFU image file to the Dragonboard 410c. You can download either the x86 or x64 version (we recommend x64).
+
+![Dashboard screenshot](../media/ManufacturingGuide/DragonBoardUpdateTool.jpg)
+
+Once you have installed the DragonBoard Update Tool, you must first place the DragonBoard device in programming mode. This is done by setting dipswitch #1 (on the backside of the device) to the ON position:
+
+![Dashboard screenshot](../media/ManufacturingGuide/DragonBoardDipswitch.jpg)
+
+Connect the DragonBoard device to your technician PC with a microUSB cable and power on the board.
+
+Run the DragonBoard Update Tool, browse for the FFU image file you are deploying, and press the Program button. You should see a green Connection Status, and a progress bar when the device is flashing the FFU file.
+
+![Dashboard screenshot](../media/ManufacturingGuide/DragonBoardUpdateTool1.jpg)
+![Dashboard screenshot](../media/ManufacturingGuide/DragonBoardUpdateTool2.jpg)
+
+Once the flashing process is complete, disconnect power from the board as well as the microUSB cable. You then need to flip the dipswitch #1 back to the OFF position. Reconnect the power to boot Windows IoT Core.
+
+## Raspberry Pi
+Since Raspberry Pi devices require a microSD card, you will need to flash the FFU file to this using Windows IoT Core Dashboard.
+
+1. Start Windows IoT Core Dashboard
+
+## Intel
+### Apollo Lake / Braswell / Cherry trail
+
+
+
+
+
+
+
+
 
 You can flash and deploy the image in number of ways. Raspberry Pi devices can only run on SD cards and should be only be deployed by flashing the image as follows:
 
