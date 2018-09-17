@@ -102,20 +102,20 @@ The following is assumed in these steps:
         buildpkg all
         buildimage MyIoTDevice Test
       
-### Apollo Lake / Braswell / Cherry trail
-The BSP supporting Apollo Lake is available at Apollo Lake BSP.
+### Apollo Lake / Braswell / Cherry Trail
+The following is assumed in these steps:
 
-The BSP supporting Braswell/Cherry trail are available at Braswell BSP.
-Following commands creates a Test image for Braswell/Cherry trail boards. Replace the BSWxXX with your own board information.
 1. OEM Name is **Fabrikam**.
 2. Product name is **MyIoTDevice**.
-3. BPS for Braswell / Cherry trail board is unzipped to **C:\iot-adk-addonkit\Source-x64\BSP**.
+3. Architecture is set to **x64**.
+4. BSP for Apollo Lake / Braswell / Cherry Trail is unzipped to **C:\iot-adk-addonkit\Source-x64\BSP**.
+5. These are the commands for Braswell. Replace with **APLx64** or **CHTx64** for Apollo Lake or Cherry Trail, respectively.
 
         installoemcerts
-        C:\iot-adk-addonkit\Tools\bsptools\BSWx64\convert
+        C:\iot-adk-addonkit\Tools\bsptools\BSWx64\convert.cmd
         newproduct MyIoTDevice BSWx64
         buildpkg all
-        CreateImage MyIoTDevice Test
+        buildimage MyIoTDevice Test
 
 ## Next Steps
 [Flashing a Windows IoT Core Image](FlashingImage.md)

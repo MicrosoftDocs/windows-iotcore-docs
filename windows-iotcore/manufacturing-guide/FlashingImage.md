@@ -54,81 +54,55 @@ Windows IoT Core Dashboard will now open a command window and use DISM (Deployme
 Once the flashing process is complete, eject the microSD card from the technician PC and insert it into the Raspberry Pi. Reconnect the power to boot Windows IoT Core.
 
 ## Intel
-### Apollo Lake / Braswell / Cherry trail
+### Apollo Lake / Braswell / Cherry Trail
+We will be using the **DISM (Deployment Image and Servicing Management Tool)** and a bootable USB stick to flash the FFU image file to the specified Intel device (Apollo Lake/Braswell/Cherry Trail). Additional information on **DISM** can be found [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).
 
+### Creating a USB Bootable Drive
+We first need to create a bootable USB drive that we can use to boot on the specified Intel hardware device. We can use **Window PE** (WinPE) for this (additional info on WinPE is [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro)).
 
+1. Install WinPE from the **Windows ADK Windows Preinstallation Environment Add-ons**
 
+   ![Dashboard screenshot](../media/ManufacturingGuide/WinPEInstall.jpg)
 
+2. Prepare USB Drive
 
+   The USB drive you wish to use must be properly formatted before we can load WinPE on it. Follow these steps to properly format your USB drive:
 
+   * Run the `diskpart` tool from and administrative command prompt
+   * Run `list disk` to see the list of available disks
+   * Run `Select Disk X`, where **X** corresponds to the disk number of your USB drive
+   * Run `Clean` to clean the selected disk 
+        * If you encounter the following error, run `convert mbr`:
 
+                ERROR: Failed to format "F:"; DiskPart errorlevel -2147212244.
 
+   * Run `Create Partition Primary` to create a primary partition on the disk
+   * Run `Format FS=fat32` to format the drive
+   * Run `Assign` to assign the drive
+   * Exit `diskpart`. Your USB drive is now formatted and ready to have WinPE installed.
 
-You can flash and deploy the image in number of ways. Raspberry Pi devices can only run on SD cards and should be only be deployed by flashing the image as follows:
+3. Create WinPE working files
+   We now need to create a working copy of the Windows PE files on the technician PC. This can be done using the **Deployment and Imaging Tools Environment** command line program.
 
-## Flash the image to a memory card
-Start the Windows IoT Core Dashboard.
-
-Plug your micro SD card into your technician PC, and select it in the tool.
-
-From Setup a new device, select Device Type: Custom.
-
-From Flash the pre-downloaded file (Flash.ffu) to the SD card, click Browse, browse to your FFU file 
-**\(C:\IoT-ADK-AddonKit\Build\<arch>\ProductA\Test\Flash.ffu)**, then click Next.
-
-
-Optional: Change the default device name (Default is minwinpc.)
-
-Enter your device password.
-
-Accept the license terms, and then click Install. The Windows IoT Core Dashboard formats the micro SD card and installs 
-the new image.
-
-## Create a bootable USB Drive to flash image.
-Some devices will require that you have a bootable USB drive as a flashing media. We will have to create a WinPE bootable USB drive for such instances. 
-
-### Create bootable WinPE media
-
-The Windows Assessment and Deployment Kit (ADK) includes the **CopyPE** and **MakeWinPEMedia** command line utilities. When run from the Deployment and Imaging Tools Environment, CopyPE creates a working set of WinPE files, that MakeWinPEMedia can use to create bootable WinPE media. MakeWinPEMedia can create bootable WinPE USB drives, virtual hard disks, or ISOs that allow you to boot a VHD or burn to a DVD or CD.
-
-#### Step 1: Getting drive ready    
-We have to create a bootable USB and format it so that it is WinPE ready.
-
-1. Start by running **diskpart** tool from administrative command prompt
-2. Run **Select DiskX** to select the right disk you want to format. 
-3. Run **Clean** command.
-> If you encounter the error below, run **convert mbr**.
-
-    ERROR: Failed to format "F:"; DiskPart errorlevel -2147212244.
-4. Run **Create Partition Primary** command.
-5. Run **Format FS=fat32 /quick** command to format the drive
-6. Run **Assign** command to assign the drive. Your drive is ready to go.
-
-#### Step 2: Create working files
-No matter what type of media you're going to create, the first thing to do is create a working set of WinPE files on your technician PC.
-
-1. Start the Deployment and Imaging Tools Environment as an administrator.
-2. Run **copype** to create a working copy of the Windows PE files. For more information about copype, see Copype command line options.
+   Run the **Deployment and Imaging Tools Environment** command line program as an administrator, and run the following command:
 
         copype amd64 C:\WinPE_amd64
 
-3. Prepare the drive by using MakeWinPEMedia \(*replace X with drive letter for the USB drive*):
+   This will create the working copy of Windows PE files at **C:\WinPE_amd64**.
+
+   Insert your USB drive on the technician PC and run this command to install Windows PE on the USB drive. Make sure you replace **X** with the drive letter of your USB drive:
 
         MakeWinPEMedia /UFD C:\WinPE_amd64 X:
 
-#### Step 3: Copy the FFU file
-Copy the FFU file from **\(C:\IoT-ADK-AddonKit\Build\<arch>\ProductA\Test\Flash.ffu)** to the root of the USB drive.
+4. Copy your FFU file to the root drive of your USB drive
+5. Insert your USB drive into your Intel hardware device and boot from the USB drive. YOu may have to enter the BIOS (or Boot Menu) of the hardware device to specify to boot from a USB drive.
+6. Once the Windows PE environment boots up, you will see a command window. Change the drive and current directory to the location of your FFU file and run the following command to flash the FFU image file:
 
-#### Step 4: Boot and Flash FFU
-Boot into the USB drive. You may have to access bios to change the boot drive order. Once device is booted, change directory to **D** drive.
+        dism.exe /Apply-Image /ImageFile:"D:\flash.ffu" /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
 
-Run the following DISM command:
+7. Once the flashing process is complete, power down the hardware device and remove the USB drive. Reconnect power to the hardware device to boot up Windows IoT Core.
 
-        dism.exe /Apply-Image /ImageFile:"D\flash.ffu" /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
-
-Reboot once complete and continue through the OOBE app from IoT Core device.
-
-### Diskpart Commands
+   #### Diskpart Commands
 
         C:\>diskpart
         Microsoft DiskPart version 10.0.17134.1
@@ -165,14 +139,12 @@ Reboot once complete and continue through the OOBE app from IoT Core device.
 
         DISKPART> exit
 
-### WinPE Commands
-        C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools>
-        
+   #### WinPE Commands
         copype amd64 C:\WinPE_amd64
-        
         MakeWinPEMedia /UFD C:\WinPE_amd64 X:
 
-### DISM Command
-        X:\WinPE>cd d:\
+   #### DISM Command (via WinPE on the Intel hardware device)
+        X:\WinPE>d:\
         
-        D:\>dism.exe /Apply-Image /ImageFile:"D\flash.ffu" /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
+        D:\>dism.exe /Apply-Image /ImageFile:"D:\flash.ffu" /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
+
