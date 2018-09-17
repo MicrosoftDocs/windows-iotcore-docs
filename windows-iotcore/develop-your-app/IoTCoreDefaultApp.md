@@ -20,7 +20,7 @@ This article will give you a rundown of the different features that the Windows 
 
 ## Leveraging the IoT Core Default App 
 
-/*Duane, can you take a first crack at this?*/
+/*Duane, can you take a first crack at this? Specifically about how to take parts of the IoT Core Default App and use them for your own application*/
 
 ## Start Menu - Play
 
