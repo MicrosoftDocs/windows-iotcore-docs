@@ -41,15 +41,17 @@ Are you sure you want to continue connecting (yes/no)?
 
 Type **yes** and press **enter**.
 
-If you need to log in as **DefaultAccount** rather than as administrator you will need to generate a key and use the key to log in.
+If you need to log in as **DefaultAccount** rather than as administrator you will need to generate a key and use the key to log in.  From the desktop that you intend to connect to your IoT Device from, open a powershell window and change to your personal data folder (e.g cd ~)
 
 ```cmd
+cd ~
 ssh-keygen -t rsa -f id_rsa
 ```
 
-Register the key with ssh-agent (optional, for single sign-on experience)
+Register the key with ssh-agent (optional, for single sign-on experience).  Note that ssh-add must be performed from a folder that is  ACL'd to you as the signed-in user (Builtin\Administrators and the NT_AUTHORITY\System user are also ok).  By default cd ~ from powershell should be sufficient as shown below.
 
 ```cmd
+cd ~
 net start ssh-agent
 ssh-add id_rsa
 ```
