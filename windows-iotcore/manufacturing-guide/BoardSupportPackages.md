@@ -19,14 +19,16 @@ Listed below are the steps required to extract the BSP files for specific manufa
 ### DragonBoard 410c
 The BSP files are available at [DragonBoard 410c Software](https://developer.qualcomm.com/hardware/dragonboard-410c/software) under the *Windows IoT Core* section. You will need to export the files from the zip file, using the `export.cmd` file (via the `IoTCoreShell.cmd` shell).
 
-1. Download the db410c_bsp.zip file from Qualcomm to the Technician PC
+1. Download the **db410c_bsp.zip** file from Qualcomm to the Technician PC
 
 2. Launch the `IoTCoreShell.cmd` shell and select the *ARM* architecture. Run the following command to export the required BSP .CAB files to a local file directory (for example **C:\BSPs\DB410c_BSP**).
 
         C:\iot-adk-addonkit\Tools\bsptools\QCDB410C\export.cmd C:\BSPs\DB410c_BSP
         
 ## Raspberry Pi
-
+1. Download the BSP zipfile located [here](https://github.com/ms-iot/iot-adk-addonkit/releases/download/RPiBSP/rpibsp.zip) and extract the zipfile to a local directory on the technician PC (for example, **C:\BSPs\rpibsp**).
+2. Launch IoT Core Shell and select the **ARM** architecture. 
+3. Run the following command from the directory you extracted the BSP files to (for example, **C:\BSPs\rpibsp**). This will build the .CAB files.
 
 ## Intel
 ### Apollo Lake / Braswell / Cherry trail

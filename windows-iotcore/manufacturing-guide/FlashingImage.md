@@ -36,7 +36,22 @@ Once the flashing process is complete, disconnect power from the board as well a
 ## Raspberry Pi
 Since Raspberry Pi devices require a microSD card, you will need to flash the FFU file to this using Windows IoT Core Dashboard.
 
-1. Start Windows IoT Core Dashboard
+1. Start **Windows IoT Core Dashboard**
+2. Plug your microSD card into the technician PC, and select it in the tool
+3. From the **Setup a New Device** section, select **Broadcomm [Raspberry Pi 2 & 3]** uner Device Type
+4. Select **Custom** under **OS Build**
+5. Click **Browse** and navigate and select the FFU file you created earlier
+6. Verify your microSD card is listed under the **Drive** selection
+7. Optionally you can set the **Device Name** and **Administrator Password** selections for your device
+8. Check the **I accept the software license terms** checkbox (lower right) and click **Install**
+
+![Dashboard screenshot](../media/ManufacturingGuide/RpiFlashFFU.jpg)
+
+Windows IoT Core Dashboard will now open a command window and use DISM (Deployment Image Servicing and Management Tool) to flash the FFU file to your microSD card.
+
+![Dashboard screenshot](../media/ManufacturingGuide/RpiFlashFFUDISM.jpg)
+
+Once the flashing process is complete, eject the microSD card from the technician PC and insert it into the Raspberry Pi. Reconnect the power to boot Windows IoT Core.
 
 ## Intel
 ### Apollo Lake / Braswell / Cherry trail

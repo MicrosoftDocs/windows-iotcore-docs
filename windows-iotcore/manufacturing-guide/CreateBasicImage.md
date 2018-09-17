@@ -48,7 +48,7 @@ From IoT Core Shell, get your environment ready to create products by building a
 ## Create a test project 
 From IoT Core Shell, create a new product folder that uses the BSP you are working with. This folder represents a new device we want to build an image for, and contains sample customization files that we can use to start our project. For example, to create a product folder called `MyRPiProduct` that uses the Raspberry Pi 3 BSP files, execute the following command:
 
-    newproduct MyRPiProduct rpi3 
+    newproduct MyRPiProduct rpi2 
 
 The BSP name is the same as the folder name for the BSP. You can see which BSPs are available by looking in the **C:\IoT-ADK-AddonKit\Source-\< arch >\BSP** folders. 
 
@@ -84,8 +84,8 @@ The following is assumed in these steps:
 3. BSP for the Raspberry Pi is unzipped to **C:\BSPs\RPi3**.
 
         installoemcerts
-        C:\iot-adk-addonkit\Tools\buildbsp.cmd rpi3
-        newproduct MyIoTDevice rpi3
+        C:\BSPs\RPi3\build.cmd
+        newproduct MyIoTDevice rpi2
         buildpkg all
         buildimage MyIoTDevice Test
       
@@ -111,7 +111,6 @@ Following commands creates a Test image for Braswell/Cherry trail boards. Replac
 2. Product name is **MyIoTDevice**.
 3. BPS for Braswell / Cherry trail board is unzipped to **C:\iot-adk-addonkit\Source-x64\BSP**.
 
-        set OEM_Name=Fabrikam
         installoemcerts
         C:\iot-adk-addonkit\Tools\bsptools\BSWx64\convert
         newproduct MyIoTDevice BSWx64
