@@ -10,7 +10,7 @@ keywords: Windows 10 IoT Core,
 
 # Flashing a Windows IoT Core Image
 
-Once you have an FFU image file built, you can use that to flash and deploy the image to your device.
+Once you have an FFU image file built, you can use this file to flash and deploy the image to your device.
 
 Listed below are the steps to flash the FFU image file to specific manufacturer devices. 
 
@@ -20,25 +20,25 @@ Qualcomm has provided the [DragonboardUpdateTool](https://developer.qualcomm.com
 
 ![Dashboard screenshot](../media/ManufacturingGuide/DragonBoardUpdateTool.jpg)
 
-Once you have installed the DragonBoard Update Tool, you must first place the DragonBoard device in programming mode. This is done by setting dipswitch #1 (on the backside of the device) to the ON position:
+Once you have installed the **DragonBoard Update Tool**, you must first place the DragonBoard device in programming mode. This is done by setting dipswitch #1 (on the backside of the device) to the **ON** position:
 
 ![Dashboard screenshot](../media/ManufacturingGuide/DragonBoardDipswitch.jpg)
 
 Connect the DragonBoard device to your technician PC with a microUSB cable and power on the board.
 
-Run the DragonBoard Update Tool, browse for the FFU image file you are deploying, and press the Program button. You should see a green Connection Status, and a progress bar when the device is flashing the FFU file.
+Run the **DragonBoard Update Tool**, browse for the FFU image file you are deploying, and press the **Program** button. You should see a green **Connection Status**, and a progress bar when the device is flashing the FFU file.
 
 ![Dashboard screenshot](../media/ManufacturingGuide/DragonBoardUpdateTool1.jpg)
 ![Dashboard screenshot](../media/ManufacturingGuide/DragonBoardUpdateTool2.jpg)
 
-Once the flashing process is complete, disconnect power from the board as well as the microUSB cable. You then need to flip the dipswitch #1 back to the OFF position. Reconnect the power to boot Windows IoT Core.
+Once the flashing process is complete, disconnect power from the board as well as the microUSB cable. You then need to flip the dipswitch #1 back to the **OFF** position. Reconnect the power to boot Windows IoT Core.
 
 ## Raspberry Pi
-Since Raspberry Pi devices require a microSD card, you will need to flash the FFU file to this using Windows IoT Core Dashboard.
+Since Raspberry Pi devices require a microSD card, you will need to flash the FFU file using Windows IoT Core Dashboard.
 
 1. Start **Windows IoT Core Dashboard**
 2. Plug your microSD card into the technician PC, and select it in the tool
-3. From the **Setup a New Device** section, select **Broadcomm [Raspberry Pi 2 & 3]** uner Device Type
+3. From the **Setup a New Device** section, select **Broadcomm [Raspberry Pi 2 & 3]** under **Device Type**
 4. Select **Custom** under **OS Build**
 5. Click **Browse** and navigate and select the FFU file you created earlier
 6. Verify your microSD card is listed under the **Drive** selection

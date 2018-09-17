@@ -54,7 +54,7 @@ The BSP name is the same as the folder name for the BSP. You can see which BSPs 
 
 This creates the folder: **C:\IoT-ADK-AddonKit\Source-< arch >\Products\\MyRPiProduct**. 
 
-Please note that for the DragonBoard 410c, the `newproduct.cmd` command will ask you to enter SMBIOS data. Pleas answer YES and enter values for `System SKU`, `Family` and `Baseboard Product`:
+Note that for the DragonBoard 410c, the `newproduct.cmd` command will ask you to enter SMBIOS data. Please answer YES and enter values for `System SKU`, `Family` and `Baseboard Product`:
 
 ![Dashboard screenshot](../media/ManufacturingGuide/DragonBoardNewProduct.jpg)
 
@@ -63,17 +63,17 @@ Eject any removable storage drives, including the microSD card and any USB flash
 
 Build the FFU image file by entering the following command in IoT Core Shell:
 
-    buildimage <fill in with product name> test 
+    buildimage <product name> test 
 
-This builds an FFU image file with your basic image at **C:\IoT-ADK-AddonKit\Build\\< arch >\\< fill in with product name >\Test**. This test image will include additional tools that can be used for debugging purposes. Building the final FFU file will take around 10-30 minutes to complete.
+This builds an FFU image file with your basic image at **C:\IoT-ADK-AddonKit\Build\\< arch >\\< product name >\Test**. This test image will include additional tools that can be used for debugging purposes. Building the final FFU file will take around 10-30 minutes to complete.
 
 ## Commands Used
 Listed here are the commands (in order) for creating a basic IoT Core image. Please keep in mind that you only need to run `installoemcerts` once. 
 
       installoemcerts 
       buildpkg all
-      newproduct <fill in with product name> <fill in with BSP type>
-      buildimage <fill in with product name> Test
+      newproduct <product name> <BSP type>
+      buildimage <product name> Test
 
 ## Examples 
 ### Raspberry Pi 2 or 3

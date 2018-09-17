@@ -28,7 +28,9 @@ The BSP files are available at [DragonBoard 410c Software](https://developer.qua
 ## Raspberry Pi
 1. Download the BSP zipfile located [here](https://github.com/ms-iot/iot-adk-addonkit/releases/download/RPiBSP/rpibsp.zip) and extract the zipfile to a local directory on the technician PC (for example, **C:\BSPs\rpibsp**).
 2. Launch IoT Core Shell and select the **ARM** architecture. 
-3. Run the following command from the directory you extracted the BSP files to (for example, **C:\BSPs\rpibsp**). This will build the .CAB files.
+3. Run the following command from the directory you extracted the BSP files to (for example, **C:\BSPs\rpibsp**). This will build the .CAB files and place them in the **\Build\arm\pkgs** subdirectory under where you installed the Windows ADK Toolkit.
+
+        C:\BSPs\rpibsp\build.cmd 
 
 ## Intel
 ### Apollo Lake / Braswell / Cherry trail
