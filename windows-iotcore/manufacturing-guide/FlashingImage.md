@@ -82,6 +82,7 @@ We first need to create a bootable USB drive that we can use to boot on the spec
    * Exit `diskpart`. Your USB drive is now formatted and ready to have WinPE installed.
 
 3. Create WinPE working files
+   
    We now need to create a working copy of the Windows PE files on the technician PC. This can be done using the **Deployment and Imaging Tools Environment** command line program.
 
    Run the **Deployment and Imaging Tools Environment** command line program as an administrator, and run the following command:
