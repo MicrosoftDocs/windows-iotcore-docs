@@ -64,5 +64,5 @@ Board Support Packages contain a set of software, drivers, and boot configuratio
 Full Flash Update (FFU) files are image files that can be deployed (aka "flashed") to a specific hardware device. When you flash a FFU file onto a device, all required software is installed on that device at the same time. An FFU image file bundles boot loaders, the Windows Operating System, drivers, peripheral images and any other required files into a single package.
 
 ## Next Steps
-[Get the tools needed to create Windows IoT Core Images](ToolsNeeded.md)
+[Get the tools needed to create Windows IoT Core Images](03-ToolsNeeded.md)
 

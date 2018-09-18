@@ -31,7 +31,7 @@ Run the **DragonBoard Update Tool**, browse for the FFU image file you are deplo
 ![Dashboard screenshot](../media/ManufacturingGuide/DragonBoardUpdateTool1.jpg)
 ![Dashboard screenshot](../media/ManufacturingGuide/DragonBoardUpdateTool2.jpg)
 
-Once the flashing process is complete, disconnect power from the board as well as the microUSB cable. You then need to flip the dipswitch #1 back to the **OFF** position. Reconnect the power to boot Windows IoT Core.
+Once the flashing process is complete, disconnect power from the board, as well as the microUSB cable. You then need to flip the dipswitch #1 back to the **OFF** position. Reconnect the power to boot Windows IoT Core.
 
 ## Raspberry Pi
 Since Raspberry Pi devices require a microSD card, you will need to flash the FFU file using Windows IoT Core Dashboard.
@@ -47,7 +47,7 @@ Since Raspberry Pi devices require a microSD card, you will need to flash the FF
 
 ![Dashboard screenshot](../media/ManufacturingGuide/RpiFlashFFU.jpg)
 
-Windows IoT Core Dashboard will now open a command window and use DISM (Deployment Image Servicing and Management Tool) to flash the FFU file to your microSD card.
+Windows IoT Core Dashboard will now open a command window and use **DISM (Deployment Image Servicing and Management Tool)** to flash the FFU file to your microSD card.
 
 ![Dashboard screenshot](../media/ManufacturingGuide/RpiFlashFFUDISM.jpg)
 
@@ -149,3 +149,6 @@ We first need to create a bootable USB drive that we can use to boot on the spec
         
         D:\>dism.exe /Apply-Image /ImageFile:"D:\flash.ffu" /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
 
+
+## Next Steps
+[Customizing a Windows IoT Core Image](05-CustomizeImage.md)

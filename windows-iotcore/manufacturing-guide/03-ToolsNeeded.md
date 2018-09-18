@@ -56,4 +56,4 @@ Other helpful software:
 * **An app built for IoT Core**. This walkthrough uses the [IoT Core Default](https://github.com/ms-iot/samples/tree/develop/IoTCoreDefaultApp) app, though you can use your own.
 
 ## Next Steps
-[Creating a Basic Windows IoT Core Image](CreateBasicImage.md)
+[Creating a Basic Windows IoT Core Image](04-CreateBasicImage.md)

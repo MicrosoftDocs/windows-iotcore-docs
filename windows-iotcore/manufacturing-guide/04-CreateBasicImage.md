@@ -12,7 +12,7 @@ keywords: Windows 10 IoT Core,
 To get started, we will detail the steps needed to create a basic Windows IoT Core image and flash it onto a specific hardware device.
 
 ## Prerequisites
-Make sure your technician PC has the necessary tools installed prior to creating an IoT Core image. See [Get the tools needed to create Windows IoT Core images](ToolsNeeded.md) for details.
+Make sure your technician PC has the necessary tools installed prior to creating an IoT Core image. See [Get the tools needed to create Windows IoT Core images](03-ToolsNeeded.md) for details.
 
 ## Set your OEM Name (one-time only)
 Edit the file **C:\IoT-ADK-AddonKit\Tools\setOEM.cmd**, and modify it with your company name. We've added this variable to help you create packages with names that are easy to differentiate from those provided from other manufacturers you're working with. Only alphanumeric characters are supported in the OEM_NAME variable, as this is used as a prefix for various generated file names.
@@ -36,9 +36,9 @@ You will need to select the appropriate architecture for the device you are work
     ![Dashboard screenshot](../media/ManufacturingGuide/InstallOEMCerts.jpg)
 
 ## Building BSPs 
-The next step is to take the Board Support Package files and extract their .CAB files to include in the FFU file. There are some differences in the steps to do this for the different BSPs, so please visit the appropriate section for the hardware device you are working with.
+The next step is to take the Board Support Package files and extract/build their .CAB files to include in the FFU file. There are some differences in the steps to do this for the different BSPs, so please visit the appropriate section for the hardware device you are working with.
 
-[Selecting a Board Support Package](BoardSupportPackages.md)
+[Selecting a Board Support Package](04a-BoardSupportPackages.md)
 
 ## Build Packages 
 From IoT Core Shell, get your environment ready to create products by building all of the packages in the working folders: 
@@ -46,7 +46,7 @@ From IoT Core Shell, get your environment ready to create products by building a
     buildpkg all 
 
 ## Create a test project 
-From IoT Core Shell, create a new product folder that uses the BSP you are working with. This folder represents a new device we want to build an image for, and contains sample customization files that we can use to start our project. For example, to create a product folder called `MyRPiProduct` that uses the Raspberry Pi 3 BSP files, execute the following command:
+From IoT Core Shell, create a new product folder that uses the BSP you are working with. This folder represents a new device we want to build an image for, and contains sample customization files that we can use to start our project. For example, to create a product folder called `MyRPiProduct` that uses the Raspberry Pi 2 or 3 BSP files, execute the following command:
 
     newproduct MyRPiProduct rpi2 
 
@@ -81,7 +81,7 @@ The following is assumed in these steps:
 
 1. OEM Name is **Fabrikam**.
 2. Product name is **MyIoTDevice**.
-3. BSP for the Raspberry Pi is unzipped to **C:\BSPs\RPi3**.
+3. BSP files for the Raspberry Pi are located at **C:\BSPs\RPi3**.
 
         installoemcerts
         C:\BSPs\RPi3\build.cmd
@@ -94,7 +94,7 @@ The following is assumed in these steps:
 
 1. OEM Name is **Fabrikam**.
 2. Product name is **MyIoTDevice**.
-3. BSP for the DragonBoard 410c is unzipped to **C:\BSPs\DB410c_BSP**.
+3. BSP files for the DragonBoard 410c are located at **C:\BSPs\DB410c_BSP**.
 
         installoemcerts
         C:\iot-adk-addonkit\Tools\bsptools\QCDB410C\export.cmd C:\BSPs\DB410c_BSP
@@ -108,7 +108,7 @@ The following is assumed in these steps:
 1. OEM Name is **Fabrikam**.
 2. Product name is **MyIoTDevice**.
 3. Architecture is set to **x64**.
-4. BSP for Apollo Lake / Braswell / Cherry Trail is unzipped to **C:\iot-adk-addonkit\Source-x64\BSP**.
+4. BSP files for Apollo Lake / Braswell / Cherry Trail are located at **C:\iot-adk-addonkit\Source-x64\BSP**.
 5. These are the commands for Braswell. Replace with **APLx64** or **CHTx64** for Apollo Lake or Cherry Trail, respectively.
 
         installoemcerts
@@ -118,5 +118,5 @@ The following is assumed in these steps:
         buildimage MyIoTDevice Test
 
 ## Next Steps
-[Flashing a Windows IoT Core Image](FlashingImage.md)
+[Flashing a Windows IoT Core Image](05-FlashingImage.md)
 
