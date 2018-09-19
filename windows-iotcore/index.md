@@ -129,7 +129,7 @@ Windows 10 IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Ente
 ---
 
 <h2>Got Bugs?</h2>
-<p>If you'd like to report a bug, please use <a href="https://social.msdn.microsoft.com/Forums/en-US/fad1c6a0-e578-44a7-8e8d-95cc28c06ccd/need-logs-if-your-device-hasnt-updated-to-the-latest-iotcore-version?forum=WindowsIoT">the Feedback Hub app</a> or file an issue on <a href="https://github.com/MicrosoftDocs/windows-iotcore-docs">our GitHub</a>.
+<p>If you'd like to report a bug, please use <a href="https://social.msdn.microsoft.com/Forums/en-US/fad1c6a0-e578-44a7-8e8d-95cc28c06ccd/need-logs-if-your-device-hasnt-updated-to-the-latest-iotcore-version?forum=WindowsIoT">the Feedback Hub app</a>. For anything else related to our documentation, file an issue on <a href="https://github.com/MicrosoftDocs/windows-iotcore-docs">our GitHub</a>.
 
 ---
 
