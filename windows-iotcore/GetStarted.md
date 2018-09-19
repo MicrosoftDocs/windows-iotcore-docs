@@ -82,7 +82,7 @@ New to Windows 10 IoT? Get started quickly and easily with our [Windows 10 IoT C
 
 <tr class="odd">
 <td align="left"><p>Semi-Annual Channel (SAC) for commercialization</p></td>
-<td align="left"><p>Free, but you will not get access to 10 years of support, update control or DHA. You will also need to sign our commercialization agreement. Request it [here]().</p></td>
+<td align="left"><p>Free, but you will not get access to 10 years of support, update control or DHA. You will also need to sign our commercialization agreement. Request it [here](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4oorCHCXCJHla0pHy8o5GpUMlVHVkNZNVVON1ZTVUQ0T0lHS1pDV0JFVy4u).</p></td>
 </tr>
 
 </tbody>
