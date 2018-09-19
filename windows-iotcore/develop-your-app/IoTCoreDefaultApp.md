@@ -48,14 +48,20 @@ The draw feature allows you to test out Windows 10 IoT Core's inking capabilitie
 ## Start Menu - Explore 
 
 ### Apps 
-The apps section showcases a number of different apps that you can launch from Windows 10 IoT Core Default. In order to close out of the app, you will need to navigate to the [Windows Device Portal](../manage-your-device/DevicePortal.md) and restart the Windows 10 IoT Core Default.
+This page allows you to launch other foreground applications installed on the device. Launching an application will suspend IoT Core Default App, which can be relaunched by using the App Manager in [Windows Device Portal](../manage-your-device/DevicePortal.md).
 
-![How to upload music files](../media/IoTCoreDefaultApp/restart.gif)
+Add your foreground application to the list by following the [app install instructions](../AppInstaller.md). After successful installation, re-navigate to the Apps feature page to refresh the list, which should show your newly installed foreground application.
 
-/*JL - Can you take a crack at this for Notifications and Logs?*/
-/*Could you also take a crack at how people can leverage the app launch feature and add their own apps to it? If that makes sense?*
+Note that there are a couple auto-generated OS related applications that we filter out, you can find the list [here](http://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTCoreDefaultApp/CS/Views/AppLauncherPage.xaml.cs).
 
-The GitHub tile will take you to where our open-source code for the Windows 10 IoT Core Default App is.
+### Notifications
+This page will list the past 20 notifications since IoT Core Default App was launched. When IoT Core Default App is running in debug mode, buttons are added that will create test notifications.
+
+### Logs
+This page will list any auto-generated crash or error logs.
+
+### GitHub
+take you to where our open-source code for the Windows 10 IoT Core Default App is.
 
 ## Start Menu - Windows Device Portal
 
