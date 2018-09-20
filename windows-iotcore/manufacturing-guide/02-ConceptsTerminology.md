@@ -63,6 +63,13 @@ Board Support Packages contain a set of software, drivers, and boot configuratio
 ### Full Flash Update Image Files
 Full Flash Update (FFU) files are image files that can be deployed (aka "flashed") to a specific hardware device. When you flash a FFU file onto a device, all required software is installed on that device at the same time. An FFU image file bundles boot loaders, the Windows Operating System, drivers, peripheral images and any other required files into a single package.
 
+### Foreground and Background Apps
+There are two types of applications that can run on Windows IoT Core.
+* Foreground apps - these apps have a UI. Only one app can be running on an IoT device as the foreground app
+* Background apps - these apps do not have a UI. Multiple apps can be running on an IoT device as background apps
+
+For more information, please see [Foreground Apps](..\develop-your-app\BuildingAppsForIoTCore.md) or [Background Apps](..\develop-your-app\BackgroundApplications.md).
+
 ## Next Steps
 [Get the tools needed to create Windows IoT Core Images](03-ToolsNeeded.md)
 

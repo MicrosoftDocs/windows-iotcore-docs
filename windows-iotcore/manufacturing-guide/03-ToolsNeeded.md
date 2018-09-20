@@ -50,7 +50,7 @@ Other helpful software:
 
 * **A compression program** such as [7-Zip](https://www.7-zip.org/), which can uncompress Windows app packages.
 
-* **[Visual Studio 2017](https://visualstudio.microsoft.com/vs/)**, which can be used to create apps in [Adding an App to an image](AddApps.md).
+* **[Visual Studio 2017](https://visualstudio.microsoft.com/vs/)**, which can be used to create apps in [Adding an App to an image](06a-AddingApps.md).
 
 ## Other software
 * **An app built for IoT Core**. This walkthrough uses the [IoT Core Default](https://github.com/ms-iot/samples/tree/develop/IoTCoreDefaultApp) app, though you can use your own.

@@ -29,11 +29,11 @@ For OEM-style images, you'll wrap your customizations into package (.cab) files.
 * [03-Get the tools needed to create Windows IoT Core Images](03-ToolsNeeded.md)
 * [04-Creating a Basic Windows IoT Core Image](04-CreateBasicImage.md)
 * [05-Flashing a Windows IoT Core Image](05-FlashingImage.md)
-* 06-Customizing a Windows IoT Core Image
-    * 06a-Adding an App to an image
-    * 06b-Creating a Provisioning Package
-    * 06c-Adding file(s) and registry settings to an image
-    * 06d-Adding a driver to an image
+* [06-Customizing a Windows IoT Core Image](06-CustomizeImageOverview.md)
+    * [06a-Adding an App to an image](06a-AddingApps.md)
+    * [06b-Creating a Provisioning Package](06b-CreateProvisioningPackage.md)
+    * [06c-Adding file(s) and registry settings to an image](06c-AddFileRegistrySettings.md)
+    * [06d-Adding a driver to an image](06d-AddingDrivers.md)
 * 07-Creating a Retail Windows IoT Core Image
 
 
