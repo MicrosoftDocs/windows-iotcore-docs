@@ -14,11 +14,10 @@ There are a number of different things you can do to customize a Windows IoT Cor
 
 
 ## Outline
-* [06-Customizing a Windows IoT Core Image(this doc)](06-CustomizeImageOverview.md)
-    * [06a-Adding an App to an image](06a-AddingApps.md)
-    * [06b-Creating a Provisioning Package](06b-CreateProvisioningPackage.md)
-    * [06c-Adding file(s) and registry settings to an image](06c-AddFileRegistrySettings.md)
-    * [06d-Adding a driver to an image](06d-AddingDrivers.md)
+* [06a-Adding an App to an image](06a-AddingApps.md)
+* [06b-Creating a Provisioning Package](06b-CreateProvisioningPackage.md)
+* [06c-Adding file(s) and registry settings to an image](06c-AddFileRegistrySettings.md)
+* [06d-Adding a driver to an image](06d-AddingDrivers.md)
 
 
 ## Next Steps
