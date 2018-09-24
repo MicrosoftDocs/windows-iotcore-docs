@@ -1,7 +1,7 @@
 --- 
 title: Flashing a Windows IoT Core Image
-author: jadali, lmaung
-ms.author: jadali, lmaung
+author: johnadali
+ms.author: johnadali
 ms.date: 09/05/2018 
 ms.topic: article 
 description: Steps on how to flash an FFU image file to a device
@@ -151,4 +151,4 @@ We first need to create a bootable USB drive that we can use to boot on the spec
 
 
 ## Next Steps
-[Customizing a Windows IoT Core Image](05-CustomizeImage.md)
+[Customizing a Windows IoT Core Image](05-FlashingImage.md)
