@@ -9,7 +9,7 @@ keywords: windows iot, app installation, Windows Device Portal, devices
 ---
 
 # Install your app on an IoT Core device
-You can install your app using the one of the two methods that are listed below.
+You can install your app using one of the two methods that are listed below.
 
 ## Using Windows Device Portal
 
