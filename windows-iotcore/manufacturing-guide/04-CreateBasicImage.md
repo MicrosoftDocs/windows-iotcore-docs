@@ -1,7 +1,7 @@
 --- 
 title: Creating a Basic IoT Core Image
-author: jadali, lmaung
-ms.author: jadali, lmaung
+author: johnadali
+ms.author: johnadali
 ms.date: 09/05/2018 
 ms.topic: article 
 description: Steps to create a basic Windows IoT Core image
