@@ -66,7 +66,7 @@ The Raspberry Pi3 built-in Bluetooth driver only supports low bandwidth devices.
 #### Serial Port Usage and Access on RPi2 
 Raspberry Pi 2 supports the serial transport for communication through the PL011 UART.  This is set by default in kernel debugging scenarios.  An application or device driver can use the PL011 UART to send and receive data with the PL011 device driver turning off the debugger using the following command:
 ```
-bcedit /set debug off 
+bcdedit /set debug off 
 ```
 
 #### Data breakpoints have been disabled on the Raspberry Pi2
