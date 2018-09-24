@@ -27,6 +27,20 @@
 },
 
 {
+"source_path": "windows/iot-core/build-your-image/createbsps.md",
+"redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/bsphardware",
+"redirect_document_id": true
+},
+
+{
+"source_path": "windows/iot-core/commercialize-your-device/OScustomizations.md",
+"redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/oscustomizations",
+"redirect_document_id": true
+},
+
+{
+"source_path": "windows/iot-core/commercialize-your-device/agreement-faq.md",
+=======
 "source_path": "windows-iotcore/build-your-image/createbsps.md",
 "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/bsphardware",
 "redirect_document_id": true
@@ -52,18 +66,18 @@
 "redirect_document_id": true
 },
   
-  {
+{
 "source_path": "windows-iotcore/commercialize-your-device/gotomarket.md",
 "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/commercializationfaq",
 "redirect_document_id": true
 },
+
 
 {
 "source_path": "windows-iotcore/commercialize-your-device/agreement-faq.md",
 "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/commercializationfaq",
 "redirect_document_id": true
 }
-
 
 ]
 }
