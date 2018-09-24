@@ -45,7 +45,6 @@
 ### [Event tracing](manage-your-device/EventTracing.md)
 ## [Developer tools]()
 ### [Windows 10 IoT Dashboard](connect-your-device/IoTDashboard.md)
-### [IoT Core Default App](develop-your-app/IoTCoreDefaultApp.md)
 ### [PowerShell](connect-your-device/PowerShell.md)
 ### [Remote display](manage-your-device/RemoteDisplay.md)
 ### [Command-line utilities](manage-your-device/CommandLineUtils.md)
