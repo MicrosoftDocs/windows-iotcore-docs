@@ -1,7 +1,7 @@
 --- 
 title: Adding an App to a Windows IoT Core Image
-author: jadali,lmaung
-ms.author: jadali, lmaung
+author: johnadali
+ms.author: johnadali
 ms.date: 09/20/2018 
 ms.topic: article 
 description: Description on how to add an App to a Windows IoT Core Image
@@ -14,7 +14,7 @@ We are now going to take an app (like the IoT Core sample [Hello World!](https:/
 Please note that this process is identical for both background and foreground apps. The only difference to be aware of is that only one foreground app can be selected as the startup app, and all other installed apps will run as background apps.
 
 ## Prerequisites
-Please make sure you've created a basic image from [Creating a Basic IoT Core Image](04-CreateImage.md) previously. For this example, we have created a basic image with the Qualcomm DragonBoard called *TestDragonBoardProduct*.
+Please make sure you've created a basic image from [Creating a Basic IoT Core Image](04-CreateBasicImage.md) previously. For this example, we have created a basic image with the Qualcomm DragonBoard called *TestDragonBoardProduct*.
 
 ## Create an Appx Package
 The first step is to create a **Universal Windows Platform (UWP)** application that will run on the IoT device. You may skip this section if you've already created and tested your UWP application.
@@ -161,7 +161,7 @@ You can now update your product configuration files to include your app in the F
 ```
 
 ## Build and Test Image
-Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateImage.md). You should only have to run the **buildimage** command:
+Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateBasicImage.md). You should only have to run the **buildimage** command:
 
     buildimage <product name> test 
 
