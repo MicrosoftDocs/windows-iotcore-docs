@@ -9,9 +9,12 @@ keywords: windows iot, app installation, Windows Device Portal, devices
 ---
 
 # Install your app on an IoT Core device
-You can install your app by various methods and they are listed below.
+You can install your app using the one of the two methods that are listed below.
 
 ## Using Windows Device Portal
+
+For this method, you will need to ensure that you are connected to the internet. If you do not have access to the internet, you can also have a peer-to-peer ethernet connection between the device and a client machine that doesn't include a path to access the open internet.
+
 To install your application on the device please do the following:
 
 1. Open the [Windows Device Portal](https://docs.microsoft.com/windows/iot-core/manage-your-device/deviceportal) for your IoT device.
@@ -24,11 +27,9 @@ To install your application on the device please do the following:
 4. The application will now be visible on the list of applications on your device.
  ![App List](../media/AppInstaller/AppList.png)
 
-> [!NOTE] 
-> If you find that you're unable to start your app, ensure that your device has access to the Internet when installing and launching the app.
 
 ## Using provisioning package from WCD
-You can create a provisioning package with the app and install the provisioning package on the device.
+You can create a provisioning package with the app and install the provisioning package on the device. This method is generally useful for OEMs that are building an image and want to include the PPKG in their image, with the license pre-installed. This enables factory scenarios where the device is not connected to the internet but the primary app is a store-signed UWP app.
 
 > [!NOTE]
 > The Package Family Name (PFN) can be found in the Windows Dev Center under **App Management > App Identity**
