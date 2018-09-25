@@ -42,3 +42,21 @@ See Register for the Hardware Program for the detailed instructions on the regis
 4. Create the IoTDeviceModel xml file: `exportidm <productname>` . This will prompt to enter the required SMBIOS fields.
 
  ![Dashboard screenshot](../media/ManufacturingGuide/smbiosentry.png)
+ 
+ ## Step 3: Register Device Model in Device Update Center
+In the Device Update Center portal, select **New Device Model**.
+
+ ![Dashboard screenshot](../media/ManufacturingGuide/newdevicemodel1.png)
+
+Browse your files and select the `IoTDeviceModel_<productname>.xml` from the iot-adk-addonkit folder.
+
+ ![Dashboard screenshot](../media/ManufacturingGuide/newdevicemodel2.png)
+
+Confirm the device model specification and press **Submit**.
+
+ ![Dashboard screenshot](../media/ManufacturingGuide/newdevicemodel3.png)
+
+A new device model entry will be added to device model table. You will also see a **download** link in that table.
+
+Download the zip file **(CUSConfig.zip)**
+
