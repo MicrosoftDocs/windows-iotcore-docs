@@ -29,17 +29,16 @@ See Register for the Hardware Program for the detailed instructions on the regis
 
 ## Step 2: Create a *new* product
 
-1. Create a new product: 
-    newproduct <productname> <bspname>
+1. Create a new product: `newproduct <productname> <bspname>`
 
-Configure the SMBIOS fields based on the format defined by the BSP (for Qualcomm, this is defined in a SMBIOS.cfg file), See OEM License Requirements. The key fields used in the update are:
+2. Configure the SMBIOS fields based on the format defined by the BSP (for Qualcomm, this is defined in a SMBIOS.cfg file). The key fields used in the update are:
 
-System Product Name, referred in the update portal as Device Model.
+  - **System Product Name**, referred in the update portal as **Device Model**.
 
-Base Board Product, referred in the update portal as Hardware Variant ID.
+  - **Base Board Product**, referred in the update portal as **Hardware Variant ID**.
 
-Set initial version of the packages: setversion 10.0.0.0.
+3. Set initial version of the packages: `setversion 10.0.0.0`.
 
-Create the IoTDeviceModel xml file: exportidm <productname> . This will prompt to enter the required SMBIOS fields.
+4. Create the IoTDeviceModel xml file: `exportidm <productname>` . This will prompt to enter the required SMBIOS fields.
 
 smbiosentry
