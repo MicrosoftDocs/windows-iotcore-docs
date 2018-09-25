@@ -4,6 +4,12 @@ Windows 10 IoT Core Services is a new cloud services subscription that provides 
 ## What is included with Windows 10 IoT Core Services?
 A subscription to Windows 10 IoT Core Services comes with three main benefits:
 
+ Benifit        | Description           
+ ------------- |:-------------
+ col 3 is      | right-aligned 
+ col 2 is      | centered      
+ zebra stripes | are neat      
+
 Benefit	| Description
 -----------------------
 10 years of support	| Access to Windows 10 IoT Core LTSC releases with security and quality updates only (no new features).
