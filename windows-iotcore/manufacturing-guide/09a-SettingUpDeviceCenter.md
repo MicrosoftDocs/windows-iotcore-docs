@@ -14,7 +14,7 @@ Please review the following requirements before you start the registration proce
 
 ## Step 1: Set up Device Update Center
 ### Sign up
-1. Create a Windows Harware Dev Center account to access the Device Update Center(DUC). You will need:
+1. Create a [Windows Harware Dev Center](http://aka.ms/ducregister) account to access the Device Update Center(DUC). You will need:
 
   - An Extended Validation (EV) code signing certificate: Used to validate the update cab file submitted for updates
   - An Azure Active Directory (AAD) account with administrator rights: Used to sign legal agreements
