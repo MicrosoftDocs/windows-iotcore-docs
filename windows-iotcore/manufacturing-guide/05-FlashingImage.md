@@ -151,4 +151,4 @@ We first need to create a bootable USB drive that we can use to boot on the spec
 
 
 ## Next Steps
-[Customizing a Windows IoT Core Image](05-CustomizeImage.md)
+[Customizing a Windows IoT Core Image](06-CustomizeImageOverview.md)

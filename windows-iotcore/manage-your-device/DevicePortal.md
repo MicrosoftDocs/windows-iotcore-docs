@@ -19,6 +19,9 @@ keywords: windows iot, Windows Device Portal, remote, device portal
 > [!WARNING]
 > Live kernel debug is currently failing for ARM devices. We are working to get this fixed.
 
+> [!IMPORTANT]
+> If you are building an open retail device for commercial deployment to a "specific/limited installation" (i.e. factory or retail store) where the end-user does the final configuration and you document your customers that they must [obtain a certificate for WDP and install it on both WDP and connecting browsers and passwords are changed on WDP](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal-ssl), then using WDP in this narrow commercial instance is acceptable. Retail images in this scenario should still *not* include IOT_TOOLKIT, but should use the IOT_WEBBEXTN package to pull in WDP. 
+
 ## Shared Documentation
 WDP is a developer tool shared among all Windows 10 devices. Each product has its own unique features, but the core functionality is the same.
 Documentation for the main features are found on the [Windows Device Portal overview page](https://msdn.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal). The rest of the documentation below will be IoT specific.
@@ -32,16 +35,23 @@ Documentation for the main features are found on the [Windows Device Portal over
 
    ![IoTDashboard View Devices](../media/deviceportal/Dashboard-Action.gif)
 
-   Enter the IP address into your browser. Add :8080 onto the end.
+   Enter the IP address into your browser. Add `:8080` onto the end.
    ![Browser IP](../media/DevicePortal/browser_ip.png)
     
 3. Enter your credentials
     Unless changed, the default credentials are:
 
-    Username: `Administrator`
+    Username: `Administrator`<br/>
     Password: `p@ssw0rd`
     
 ## IoT specific features
+
+### Device Settings
+
+IoT Core adds a checkbox to enable or disable the [on-screen keyboard](../develop-your-app/OnScreenKeyboard.md)
+> [!NOTE]
+> This checkbox has a known bug where it will "flash" from checked to non-checked. Please refresh the page (F5)
+> after clicking to ensure that the checkbox is showing your desired state.
 
 ### Apps
 Provides install/uninstall functionality for AppX packages and bundles on your device.

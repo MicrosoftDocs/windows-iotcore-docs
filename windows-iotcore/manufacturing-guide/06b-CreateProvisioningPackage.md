@@ -97,6 +97,7 @@ In order to create a provisioning package for your device, we need to create a p
 ## Build and Test Image
 Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateImage.md). You should only have to run the **buildimage** command:
 
+
     buildimage <product name> test 
 
 Once the FFU file has been built and you flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](05-FlashingImage.md), your provisioning package customizations should be applied when you power up the device. In our example, the default app is the [Hello World!](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/HelloWorld) app and will run when the device is booted up.
