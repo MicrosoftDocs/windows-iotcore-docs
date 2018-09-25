@@ -8,9 +8,9 @@ Device Update Center portal provides OEMs a way to:
 ## Prerequisit for Device Update Center
 Please review the following requirements before you start the registration process:
 
-- You must have an Extended Validation (EV) code signing certificate. Please check whether your company already has a code signing certificate. If your company already has a certificate, have the certificate available. You will need the certificate to sign files. If your company does not have a certificate, you will need to buy one as part of the registration process.
-- You will need to sign in as a global administrator in your organization's Azure Active Directory. If you do not know whether your organization has an Azure Active Directory, contact your IT department. If your organization does not have an Azure Active Directory, you will be able to create one for free in the next step.
-- You must have the authority to sign legal agreements on behalf of your organization.
+- **You must have an Extended Validation (EV) code signing certificate.** Please check whether your company already has a code signing certificate. **If your company already has a certificate, have the certificate available. You will need the certificate to sign files.** If your company does not have a certificate, you will need to buy one as part of the registration process.
+- **You will need to sign in as a global administrator in your organization's Azure Active Directory.** If you do not know whether your organization has an Azure Active Directory, contact your IT department. **If your organization does not have an Azure Active Directory, you will be able to create one for free.**
+- You **must** have the authority to sign legal agreements on behalf of your organization.
 
 ## Step 1: Set up Device Update Center
 ### Sign up
