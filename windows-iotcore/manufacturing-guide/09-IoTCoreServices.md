@@ -33,7 +33,4 @@ Here's a diagram of the update flow in Device Update Center:
 Device Health Attestation (DHA) enables enterprises and OEMs to raise the security bar of their organization's assets with hardware-attested security. Evaluating the trustworthiness of a device at boot time is essential for a trusted IoT system. However, a device cannot attest to its own trustworthiness - this must be done by an external entity such as the DHA cloud service. This service evaluates device health and can be combined with a device management system, such as Azure IoT Device Management. Based on DHA report data, the device management system can take corrective actions such as re-imaging the device, denying network access, or creating a service ticket.
 
 ## Outline
-* [06a-Adding an App to an image](06a-AddingApps.md)
-* [06b-Creating a Provisioning Package](06b-CreateProvisioningPackage.md)
-* [06c-Adding file(s) and registry settings to an image](06c-AddFileRegistrySettings.md)
-* [06d-Adding a driver to an image](06d-AddingDrivers.md)
+* [09a-Setting up Device Center](09a-SettingUpDeviceCenter.md)
