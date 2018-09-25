@@ -60,3 +60,21 @@ A new device model entry will be added to device model table. You will also see 
 
 Download the zip file **(CUSConfig.zip)**
 
+### Build a base image for the device
+1. In the IoTCoreShell, import the config file: 'importcfg <productname> <CUSConfig.zip>' This will also edit the OEMInputXML files for the inclusion of proper feature IDs.
+
+![Dashboard screenshot](../media/ManufacturingGuide/importcfg.png)
+
+2. Sign all required binaries with the code signing certificate using 'signbinaries.cmd' and for the bsp packages: 're-signcabs <src dir> <dst dir>'
+
+3. Build the base image using the below commands
+
+    a. Build the packages: 'buildpkg all'
+
+    b. Build the image:' buildimage <productname> <retail/test>'
+
+    This gives you the base image with the OCP version 10.0.0.0.
+
+    c. Optional: add a recovery image: 'buildrecovery <productname> <retail/test>'
+
+4. Validate this image on the device.
