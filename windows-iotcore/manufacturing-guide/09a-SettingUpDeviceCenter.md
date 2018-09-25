@@ -41,4 +41,4 @@ See Register for the Hardware Program for the detailed instructions on the regis
 
 4. Create the IoTDeviceModel xml file: `exportidm <productname>` . This will prompt to enter the required SMBIOS fields.
 
-smbiosentry
+ ![Dashboard screenshot](../media/ManufacturingGuide/smbiosentry.jpg)
