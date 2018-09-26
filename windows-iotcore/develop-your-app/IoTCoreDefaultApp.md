@@ -20,7 +20,7 @@ This article will give you a rundown of the different features that the Windows 
 
 ## Leveraging the IoT Core Default App 
 
-/*Duane, can you take a first crack at this? Specifically about how to take parts of the IoT Core Default App and use them for your own application*/
+The IoT Core Default App can be customized and extended, or you can use the source code as an example for your own app. To try this out for yourself, download the zip of our samples or check out the code for the IoT Core Default App [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp/CS). For any questions, please file an issue on our samples repo [here](https://github.com/Microsoft/Windows-iotcore-samples/issues). 
 
 ## Start Menu - Play
 
@@ -52,9 +52,6 @@ The apps section showcases a number of different apps that you can launch from W
 
 ![How to upload music files](../media/IoTCoreDefaultApp/restart.gif)
 
-/*JL - Can you take a crack at this for Notifications and Logs?*/
-/*Could you also take a crack at how people can leverage the app launch feature and add their own apps to it? If that makes sense?*
-
 The GitHub tile will take you to where our open-source code for the Windows 10 IoT Core Default App is.
 
 ## Start Menu - Windows Device Portal
@@ -67,9 +64,11 @@ This section allows you to see the different features for your device including 
 
 ## Command Line
 
-The command line features allows you to send command lines directly to your device.
+The command line features allows you to run commands directly on your device.
 
-/*Duane, can you take a crack at this? I think this section might need more substance*/
+To enable this feature you have to set a registry key so that the app can run the commands. The first time you try to run a command you will see a link that allows you to set the registry key using a call to Windows Device Portal. Click the link to enable your device to run commands.
+
+Some commands require administrator access. For security purposes the app uses a non-admin account by default to run commands. If you need to run a command as an admin you can type "RunAsAdmin <your command>" in the command line prompt.
 
 ## Settings
 You'll be able to configure a number of settings here including Wi-Fi, Bluetooth, power options, and more.
