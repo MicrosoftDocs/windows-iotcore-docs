@@ -121,9 +121,15 @@ You can make changes to the boot configuration of your Windows IoT Core device b
 
 To shut down your device, type `shutdown /s /t 0`. To restart the device, use the `/r` switch instead with the command `shutdown /r /t 0`.
 
-### **Set display resolution**
+### **Viewing and changing display settings**
+The SetDisplayResolution tool may be used for listing the current display settings and to show the list of supported values.  It can further be used for adjusting the display's resolution, refresh rate and/or orientation to values supported by your platform.  The utility accepts the following command line arguments:
 
-To adjust the resolution of a display connected to your Windows 10 IoT Core device, run `SetDisplayResolution [width] [height]`. To query the resolution, exclude the `[width]` and `[height]` parameters.
+* `SetDisplayResolution` Lists the current display resoltuion.
+* `SetDisplayResolution -list` Lists supported display resolutions.
+* `SetDisplayResolution -orientation:[n]` Change the display orientation, where n=0,90,180 or 270.
+* `SetDisplayResolution [width] [height]` Change the width and height in pixels 
+* `SetDisplayResolution [width] [height] [refreshrate]` Change width, height and refresh rate where width and height are in pixels and refreshrate in Hz 
+* `SetDisplayResolution [width] [height] [refreshrate] [orientation]` Change width, height, refreshrate and screen orientation where width and height are in pixels, refreshrate in Hz and orientation is one of 0, 90, 180 or 270.
 
 ### **Take screenshot:**
 
