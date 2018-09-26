@@ -1,7 +1,7 @@
 --- 
 title: Customizing a Windows IoT Core Image Overview
-author: johnadali
-ms.author: johnadali
+author: jadali,lmaung
+ms.author: jadali, lmaung
 ms.date: 09/18/2018 
 ms.topic: article 
 description: Overview for Customizing a Windows IoT Core Image.

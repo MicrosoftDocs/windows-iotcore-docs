@@ -1,7 +1,8 @@
 --- 
 title: Concepts and Terminology
-author: johnadali
-ms.author: johnadali
+
+author: jadali,lmaung
+ms.author: jadali, lmaung
 ms.date: 09/14/2018 
 ms.topic: article 
 description: Concepts and Terminology definitions for Windows IoT Core Manufacturing Guide.
@@ -58,7 +59,9 @@ The Feature Merger tool generates the required feature identifier packages that 
 
 
 ### Board Support Packages (BSPs)
+
 Board Support Packages contain a set of software, drivers, and boot configurations for a particular board, typically supplied by a board manufacturer. The board manufacturer may periodically provide updates for the board, which your devices can receive and apply. You can also create your own BSP if the board manufacturer does not provide one, and you have the corresponding set of software and driver files. Supported BSPs are listed [here](04a-BoardSupportPackages.md "Board Support Packages").
+
 
 ### Full Flash Update Image Files
 Full Flash Update (FFU) files are image files that can be deployed (aka "flashed") to a specific hardware device. When you flash a FFU file onto a device, all required software is installed on that device at the same time. An FFU image file bundles boot loaders, the Windows Operating System, drivers, peripheral images and any other required files into a single package.
