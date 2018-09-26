@@ -20,7 +20,7 @@ This article will give you a rundown of the different features that the Windows 
 
 ## Leveraging the IoT Core Default App 
 
-The IoT Core Default App can be customized and extended, or you can use the source code as an example for your own app.
+The IoT Core Default App can be customized and extended, or you can use the source code as an example for your own app. To try this out for yourself, download the zip of our samples or check out the code for the IoT Core Default App [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp/CS). For any questions, please file an issue on our samples repo [here](https://github.com/Microsoft/Windows-iotcore-samples/issues). 
 
 ## Start Menu - Play
 
