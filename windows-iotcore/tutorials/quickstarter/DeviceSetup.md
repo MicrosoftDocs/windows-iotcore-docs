@@ -14,7 +14,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 > [!IMPORTANT]
 > When the "format this disk" pop up comes up, do _not_ format the disk. We are working on a fix for this issue.
 
-## Using the IoT Dashboard (Raspberry Pi and MinnowBoard)
+## Using the IoT Dashboard (Raspberry Pi, MinnowBoard and NXP)
 
 > [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 
