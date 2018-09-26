@@ -13,7 +13,7 @@ You can install your app using one of the two methods that are listed below.
 
 ## Using Windows Device Portal
 
-For this method, you will need to ensure that you are connected to the internet. If you do not have access to the internet, you can also have a peer-to-peer ethernet connection between the device and a client machine that doesn't include a path to access the open internet. However, going about this the latter way will install the app but will wail to launch. If the device does not have internet access to the store update server, then the provisioning package method should be used.
+For this method, you will need to ensure that you are connected to the internet. If you do not have access to the internet, you can also have a peer-to-peer ethernet connection between the device and a client machine that doesn't include a path to access the open internet. However, going about the latter way will install the app but will fail to launch if the app is store-signed.
 
 To install your application on the device please do the following:
 
@@ -29,7 +29,7 @@ To install your application on the device please do the following:
 
 
 ## Using provisioning package from WCD
-You can create a provisioning package with the app and install the provisioning package on the device. This method works even on devices that do not have internet connection. For example, this enables factory scenarios where the device is not connected to the internet but the primary app is a store-signed UWP app.
+You can create a provisioning package with the app and install the provisioning package on the device. This method works even on devices that do not have internet connection, and is the preferred method for installing the store license file. For example, this enables factory scenarios where the device is not connected to the internet but the primary app is a store-signed UWP app.
 
 > [!NOTE]
 > The Package Family Name (PFN) can be found in the Windows Dev Center under **App Management > App Identity**
