@@ -7,12 +7,13 @@ ms.topic: article
 description: Learn how to specify which on-screen keyboard language layouts are available to the users of your Windows IoT device.
 keywords: windows 10 IoT Core, commercialize, osk onscreen keyboard language layouts
 ---
+
+# On-Screen Keyboard Language Layouts
+
 > [!IMPORTANT]
 > As of Windows 10 IoT Core, version 1809, this article is no longer applicable. Please see the
 > [On-screen keyboard for headed devices](./OnScreenKeyboard.md) page for the current
 > documentation.
-
-# On-Screen Keyboard Language Layouts
 
 The on-screen keyboard (OSK) in Windows 10 IoT Core, versions 1703, 1709, and 1803, supports
 layouts for the following languages:
