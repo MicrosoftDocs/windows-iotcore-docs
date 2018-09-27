@@ -13,7 +13,7 @@ keywords: windows iot, Windows Insider, release notes, Raspberry Pi 3B+
 &copy; 2018 Microsoft Corporation. All rights reserved.
 
 > [!NOTE]
-> This release for the Raspberry Pi 3B+ is a technical preview and there is no current timeline for a release version at the moment. Limited validation and enablement has been completed. For a better evaluation experience and for any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm, or NXP SoCs. If there are any reasons as to why you cannot use the 3B over the 3B+ for a production solution, please file an issue on our GitHub, [here](https://github.com/MicrosoftDocs/windows-iotcore-docs/issues). 
+> This release for the Raspberry Pi 3B+ is a technical preview and there is currently no timeline for a release version. Limited validation and enablement has been completed. For a better evaluation experience and for any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm, or NXP SoCs. If there are any reasons as to why you cannot use the 3B over the 3B+ for a production solution, please file an issue on our GitHub, [here](https://github.com/MicrosoftDocs/windows-iotcore-docs/issues). 
 
 ## What's new in this build: 
 * General bug fixes
