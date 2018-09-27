@@ -8,7 +8,10 @@ description: Learn how to use the Unified Write Filter to protect physical stora
 keywords: windows iot, Unified Write Filter, security, memory, storage media
 ---
 
-# Using the Unified Write Filter on Windows 10 IoT Core
+# Using the Unified Write Filter (UWF) on Windows 10 IoT Core
+
+> [!WARNING]
+> The dynamic disk is not supported for the UWF.
 
 The Unified Write Filter (UWF) is a feature that protects physical storage media from data writes. UWF intercepts all write attempts to a protected volume and redirects those write attempts to a virtual overlay. This improves the reliability and stability of your device and reduces the wear on write-sensitive media, such as flash memory media like solid-state drives.
 
