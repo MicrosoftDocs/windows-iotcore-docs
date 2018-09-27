@@ -27,6 +27,7 @@
 ### [Deploy your app](develop-your-app/AppDeployment.md)
 ### [Setup a default app](develop-your-app/SetupDefaultApp.md)
 ### [Install your app](develop-your-app/AppInstaller.md)
+### [IoT Core Default App](develop-your-app/IoTCoreDefaultApp.md)
 ### [Deploy your console application](develop-your-app/RemoteDebugging.md)
 ### [Language support](develop-your-app/MultiLang.md)
 ### [Embedded mode](develop-your-app/EmbeddedMode.md)
