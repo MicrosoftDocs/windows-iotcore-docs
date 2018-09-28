@@ -31,7 +31,6 @@
 ### [Deploy your console application](develop-your-app/RemoteDebugging.md)
 ### [Language support](develop-your-app/MultiLang.md)
 ### [Embedded mode](develop-your-app/EmbeddedMode.md)
-### [On-screen keyboard layouts](develop-your-app/OnScreenKeyboardLayouts.md)
 ### [Bus providers](develop-your-app/BusProviders.md)
 ### [On-screen keyboard](develop-your-app/OnScreenKeyboard.md)
 ### [Sign in dialog title bars](develop-your-app/SignInDialogTitleBars.md)

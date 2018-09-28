@@ -25,10 +25,10 @@ The new keyboard implementation provides the following benefits to your headed d
 
 ## Feature packages
 
-For prototyping (development) images, the on-screeen keyboard feature is already included, but you will need to
+For prototyping (development) images, the on-screen keyboard feature is already included, but you will need to
 enable it from Device Settings in the [Windows Device Portal](../manage-your-device/deviceportal.md#iot-specific-features).
 
-For commecialization, the following optional feature packages will add the on-screen keyboard to your image:
+For commercialization, the following optional feature packages will add the on-screen keyboard to your image:
 * IOT_SHELL_ONSCREEN_KEYBOARD
 * IOT_SHELL_ONSCREEN_KEYBOARD_FOLLOWFOCUS
 
