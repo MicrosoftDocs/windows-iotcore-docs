@@ -54,3 +54,10 @@ When building your Windows 10 IoT Core image final shipping device using ICD (Im
 Most users are familiar with the notion of taking "ownership" of devices like PCs and phones - the idea of personalizing the device when unboxed and setting up credentials to access the device. Unlike consumer PCs and phones, IoT devices are not intended to serve as general purpose computing devices. Instead, they are usually single-app, fixed purpose devices. Though Windows supports the notion of device administrators that can remotely connect to devices during a development cycle, such support on industry IoT devices can pose a threat, especially when weak passwords are used.  In general, Microsoft recommends that no "default" accounts or passwords should be created on Windows 10 IoT Core devices.
 
 
+## Outline
+08a-Use the Unified Write Filter
+08b-Secure Boot, BitLocker, and Device Guard
+08c-TPM
+
+## Next Steps
+Use the Unified Write Filter
