@@ -14,7 +14,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 > [!IMPORTANT]
 > When the "format this disk" pop up comes up, do _not_ format the disk. We are working on a fix for this issue.
 
-## Using the IoT Dashboard (Raspberry Pi, MinnowBoard and NXP)
+## Using the IoT Dashboard (Raspberry Pi, MinnowBoard)
 
 > [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 
@@ -33,33 +33,21 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 
 
 ![Dashboard screenshot](../../media/DeviceSetup/Dashboard-Screenshot.jpg)
+ 
 
-
-### Connecting to a network
-
-#### Wired connection
-If your device comes with an Ethernet port or USB Ethernet adapter support to enable a wired connection, attach an Ethernet cable to connect it to your network.
-
-#### Wireless connection
-If your device supports Wi-Fi connectivity and you've connected a display to it, you'll need to:
-
-1. Go into your default application and click the settings button next to the clock.
-2. On the settings page, select _Network and Wi-Fi_.
-3. Your device will begin scanning for wireless networks.
-4. Once your network appears in this list, select it and click *Connect*.
-
-If you haven't connected and display and would like to connect via Wi-Fi, you'll need to:
-
-1. Go to the IoT Dashboard and click on _My Devices_.
-2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
-3. Click on *Configure Device* and enter your network credentials. This will connect your board to the network.
+## Using the IoT Dashboard (NXP)
 
 > [!NOTE]
-> Wifi on your computer will need to be turned on in order to find other networks.
+> Flashing an image on NXP is very similar to doing some on Raspberry Pi or Minnowboard, except NXP will only take custom images.
 
-### Connecting to Windows Device Portal
+> [!TIP]
+> We recommend using a high-performance SD card, such as a SanDisk SD card, for increased stability as well as plugging your device into an external display to see the default application booting up.
 
-Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available. 
+1. Download the Windows 10 IoT Core Dashboard [here](https://developer.microsoft.com/en-us/windows/iot/Downloads).
+2. Once downloaded, open the Dashboard and click on _set up a new device_ and insert a SD card into your computer.
+3. You'll need to have a custom image to flash on NXP. To create a basic image, you can follow the instructions [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-basic-image) in our Manufacturing Guide. 
+4. Once you've created your image, fill out all of the fields as indicated.
+5. Accept the software license terms and click _Download and install_. You'll see that Windows 10 IoT Core is now flashing onto your device.
 
 
 ## Using the IoT Dashboard (DragonBoard 410c)
@@ -68,6 +56,9 @@ Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to con
 
 > [!TIP]
 > We recommend plugging your device into an external display to see the default application booting up.
+
+> [!IMPORTANT]
+> If you're looking to flash a custom image, select "Custom" from the OS Build dropdown, follow the instructions [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-basic-image) to create a basic image, and follow the rest of the instructions below to finish.
 
 
 1. Download the Windows 10 IoT Core Dashboard [here](https://developer.microsoft.com/en-us/windows/iot/Downloads).
@@ -79,34 +70,6 @@ Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to con
 
 
 ![DragonBoard in flash mode](../../media/DeviceSetup/db4.png)
-
-
-### Connecting to a network
-
-#### Wired connection
-If your device comes with an Ethernet port or USB Ethernet adapter support to enable a wired connection, attach an Ethernet cable to connect it to your network.
-
-#### Wireless connection
-If your device supports Wi-Fi connectivity and you've connected a display to it, you'll need to:
-
-1. Go into your default application and click the settings button next to the clock.
-2. On the settings page, select _Network and Wi-Fi_.
-3. Your device will begin scanning for wireless networks.
-4. Once your network appears in this list, select it and click _Connect_.
-
-If you haven't connected and display and would like to connect via Wi-Fi, you'll need to:
-
-1. Go to the IoT Dashboard and click on _My Devices_.
-2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
-3. Click on _Configure Device_ and enter your network credentials. This will connect your board to the network.
-
-> [!NOTE]
-> Wifi on your computer will need to be turned on in order to find other networks.
-
-### Connecting to Windows Device Portal
-
-Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available. 
-
 
 
 ## Flashing with eMMC (for DragonBoard 410c, other Qualcomm devices)
@@ -122,33 +85,6 @@ Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to con
 
 > [!NOTE]
 > Make sure the device is now booting from the eMMC memory by entering the BIOS setup again and switching the Boot Drive order to load from the Hard Drive instead of from the USB Drive.
-
-
-### Connecting to a network
-
-#### Wired connection
-If your device comes with an Ethernet port or USB Ethernet adapter support to enable a wired connection, attach an Ethernet cable to connect it to your network.
-
-#### Wireless connection
-If your device supports Wi-Fi connectivity and you've connected a display to it, you'll need to:
-
-1. Go into your default application and click the settings button next to the clock.
-2. On the settings page, select _Network and Wi-Fi_.
-3. Your device will begin scanning for wireless networks.
-4. Once your network appears in this list, select it and click _Connect_.
-
-If you haven't connected and display and would like to connect via Wi-Fi, you'll need to:
-
-1. Go to the IoT Dashboard and click on *My Devices*.
-2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
-3. Click on *Configure Device* and enter your network credentials. This will connect your board to the network.
-
-> [!NOTE]
-> Wifi on your computer will need to be turned on in order to find other networks.
-
-### Connecting to Windows Device Portal
-
-Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available. 
 
 
 ## Flashing with eMMC (for Up Squared, other Intel devices)
@@ -170,7 +106,7 @@ Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to con
 > Make sure the device is now booting from the eMMC memory by entering the BIOS setup again and switching the Boot Drive order to load from the Hard Drive instead of from the USB Drive.
 
 
-### Connecting to a network
+## Connecting to a network
 
 #### Wired connection
 If your device comes with an Ethernet port or USB Ethernet adapter support to enable a wired connection, attach an Ethernet cable to connect it to your network.
@@ -192,7 +128,7 @@ If you haven't connected and display and would like to connect via Wi-Fi, you'll
 > [!NOTE]
 > Wifi on your computer will need to be turned on in order to find other networks.
 
-### Connecting to Windows Device Portal
+## Connecting to Windows Device Portal
 
 Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available. 
 
