@@ -35,10 +35,12 @@ The web browser allows you to pull up most sites from the web.
 ### Music
 This page will play MP3 and WAV files from the **Music Library**, that can be accessed via the [Windows Device Portal](../manage-your-device/DevicePortal.md).  To upload files to the music player, you will need to navigate to the Windows Device Portal, click on the "Apps" dropdown, navigate to "File Explorer", select "Music" and upload your files from there.
 
+
 ![How to upload music files](../media/IoTCoreDefaultApp/music.gif)
 
 ### Slideshow
 This page will display any PNG or JPEG image files from the **Pictures Library**, that can be accessed via the [Windows Device Portal](../manage-your-device/DevicePortal.md). To upload images to the slideshow, you will need to navigate to the Windows Device Portal, click on the "Apps" dropdown, navigate to "File Explorer", select "Pictures" and upload your files from there.
+
 
 ![How to upload music files](../media/IoTCoreDefaultApp/slideshow.gif)
 
