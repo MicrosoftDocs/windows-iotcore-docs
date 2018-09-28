@@ -1,4 +1,4 @@
-# Building Secure Devices with Windows 10 IoT Core
+ # Building Secure Devices with Windows 10 IoT Core
 
 ## Introduction
 With the introduction of Windows 10 IoT Core, Microsoft is bringing strong enterprise grade security features that can be leveraged on smaller, resource constrained classes of IoT devices. In order for these security features to offer tangible benefits, the hardware platform must also provide a means to anchor them. This document provides high-level guidance to OEM device builders and security conscious 'Makers' who are looking to select appropriate hardware and build, configure, and ship a secure IoT device to their customers.
