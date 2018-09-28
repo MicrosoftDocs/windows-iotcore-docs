@@ -56,7 +56,9 @@ Most users are familiar with the notion of taking "ownership" of devices like PC
 
 ## Outline
 [08a-Use the Unified Write Filter](08a-UnifiedWriteFilter.md)
+
 [08b-Secure Boot, BitLocker, and Device Guard](08a-UnifiedWriteFilter.md)
+
 [08c-TPM](08a-UnifiedWriteFilter.md)
 
 ## Next Steps
