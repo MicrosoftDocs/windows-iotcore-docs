@@ -27,32 +27,41 @@ The IoT Core Default App can be customized and extended, or you can use the sour
 The Start Menu is where most plug and play features live.
 
 ### Weather
-Using data from the National Weather Service, the weather app renders weather information in your current location.
+Using data from the National Weather Service, the weather page renders weather information in your current location.
 
 ### Web Browser
 The web browser allows you to pull up most sites from the web.
 
 ### Music
-The music player will play MP3 and WAV files from the **Music Library**, that can be accessed via the [Windows Device Portal](../manage-your-device/DevicePortal.md).  To upload files to the music player, you will need to navigate to the Windows Device Portal, click on the "Apps" dropdown, navigate to "File Explorer", select "Music" and upload your files from there.
+This page will play MP3 and WAV files from the **Music Library**, that can be accessed via the [Windows Device Portal](../manage-your-device/DevicePortal.md).  To upload files to the music player, you will need to navigate to the Windows Device Portal, click on the "Apps" dropdown, navigate to "File Explorer", select "Music" and upload your files from there.
 
 ![How to upload music files](../media/IoTCoreDefaultApp/music.gif)
 
 ### Slideshow
-The slideshow feature will display any PNG or JPEG image files from the **Pictures Library**, that can be accessed via the [Windows Device Portal](../manage-your-device/DevicePortal.md). To upload images to the slideshow, you will need to navigate to the Windows Device Portal, click on the "Apps" dropdown, navigate to "File Explorer", select "Pictures" and upload your files from there.
+This page will display any PNG or JPEG image files from the **Pictures Library**, that can be accessed via the [Windows Device Portal](../manage-your-device/DevicePortal.md). To upload images to the slideshow, you will need to navigate to the Windows Device Portal, click on the "Apps" dropdown, navigate to "File Explorer", select "Pictures" and upload your files from there.
 
 ![How to upload music files](../media/IoTCoreDefaultApp/slideshow.gif)
 
 ### Draw
-The draw feature allows you to test out Windows 10 IoT Core's inking capabilities.
+This page allows you to test out Windows 10 IoT Core's inking capabilities.
 
 ## Start Menu - Explore 
 
 ### Apps 
-The apps section showcases a number of different apps that you can launch from Windows 10 IoT Core Default. In order to close out of the app, you will need to navigate to the [Windows Device Portal](../manage-your-device/DevicePortal.md) and restart the Windows 10 IoT Core Default.
+This page allows you to launch other foreground applications installed on the device. Launching an application will suspend IoT Core Default App, which can be relaunched by using App Manager in [Windows Device Portal](../manage-your-device/DevicePortal.md).
 
-![How to upload music files](../media/IoTCoreDefaultApp/restart.gif)
+Nothing special is needed to have your foreground application listed in the page, simply [install](AppInstaller.md) or [deploy](AppDeployment.md) the application. After successful installation or deployment, re-navigate to the Apps page to refresh the list of applications.
 
-The GitHub tile will take you to where our open-source code for the Windows 10 IoT Core Default App is.
+Note that there are a couple of auto-generated OS related applications that we filter out, you can find the list of app names [here](http://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTCoreDefaultApp/CS/Views/AppLauncherPage.xaml.cs).
+
+### Notifications
+This page will list the past 20 notifications since IoT Core Default App was launched. When IoT Core Default App is running in debug mode, buttons are added that will create test notifications.
+
+### Logs
+This page will list any auto-generated crash or error logs, which then can be taken off the device and analyzed.
+
+### GitHub
+This page will take you to the open-sourced GitHub location of the IoT Core Default App code.
 
 ## Start Menu - Windows Device Portal
 
@@ -60,11 +69,11 @@ The pages in this section leverage the Windows Device Portal REST APIs, which re
 
 ## Device Information
 
-This section allows you to see the different features for your device including Ethernet, OS version, connected devices, and more.
+This page allows you to see the different features for your device including Ethernet, OS version, connected devices, and more.
 
 ## Command Line
 
-The command line features allows you to run commands directly on your device.
+This page allows you to run commands directly on your device.
 
 To enable this feature you have to set a registry key so that the app can run the commands. The first time you try to run a command you will see a link that allows you to set the registry key using a call to Windows Device Portal. Click the link to enable your device to run commands.
 
