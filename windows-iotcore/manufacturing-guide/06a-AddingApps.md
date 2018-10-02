@@ -1,7 +1,7 @@
 --- 
 title: Adding an App to a Windows IoT Core Image
-author: johnadali
-ms.author: johnadali
+author: John Adali, Lwin Maung, Concurrency
+ms.author: John Adali, Lwin Maung, Concurrency
 ms.date: 09/20/2018 
 ms.topic: article 
 description: Description on how to add an App to a Windows IoT Core Image
@@ -182,5 +182,5 @@ Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-
 Once the FFU file has been built (it should now include your app), you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](05-FlashingImage.md).
 
 ## Next Steps
-[06b-Creating a Provisioning Package](06b-CreateProvisioningPackage.md)
+[Creating a Provisioning Package](06b-CreateProvisioningPackage.md)
 

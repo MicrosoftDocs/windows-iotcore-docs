@@ -1,7 +1,7 @@
 --- 
 title: Get the tools needed to create Windows IoT Core images
-author: jadali, lmaung
-ms.author: jadali, lmaung
+author: John Adali, Lwin Maung, Concurrency
+ms.author: John Adali, Lwin Maung, Concurrency
 ms.date: 09/05/2018 
 ms.topic: article 
 description: Describes the tools needed to create IoT Core images

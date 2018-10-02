@@ -1,7 +1,7 @@
 --- 
 title: Flashing a Windows IoT Core Image
-author: jadali, lmaung
-ms.author: jadali, lmaung
+author: John Adali, Lwin Maung, Concurrency
+ms.author: John Adali, Lwin Maung, Concurrency
 ms.date: 09/05/2018 
 ms.topic: article 
 description: Steps on how to flash an FFU image file to a device

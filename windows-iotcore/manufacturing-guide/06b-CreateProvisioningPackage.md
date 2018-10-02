@@ -1,7 +1,7 @@
 --- 
 title: Creating a Provisioning Package for a Windows IoT Core Image
-author: jadali,lmaung
-ms.author: jadali, lmaung
+author: John Adali, Lwin Maung, Concurrency
+ms.author: John Adali, Lwin Maung, Concurrency
 ms.date: 09/20/2018 
 ms.topic: article 
 description: Description on how to create a provisioning package for a Windows IoT Core Image
@@ -115,5 +115,5 @@ Once the FFU file has been built and you flash it to your hardware device as spe
 
 
 ## Next Steps
-[06c-Adding file(s) and registry settings to an image](06c-AddFileRegistrySettings.md)
+[Adding file(s) and registry settings to an image](06c-AddFileRegistrySettings.md)
 

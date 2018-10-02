@@ -1,7 +1,7 @@
 --- 
 title: Adding a driver to a Windows IoT Core Image
-author: johnadali
-ms.author: johnadali
+author: John Adali, Lwin Maung, Concurrency
+ms.author: John Adali, Lwin Maung, Concurrency
 ms.date: 09/29/2018 
 ms.topic: article 
 description: Description on how to add a driver to a Windows IoT Core Image
@@ -161,5 +161,5 @@ If you wish to import a different driver for a Board Support Package (BSP) that 
 
 
 ## Next Steps
-07-Creating a Retail Windows IoT Core Image
+Creating a Retail Windows IoT Core Image
 

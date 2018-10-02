@@ -1,7 +1,7 @@
 --- 
 title: Adding files and registry settings to a Windows IoT Core Image
-author: johnadali
-ms.author: johnadali
+author: John Adali, Lwin Maung, Concurrency
+ms.author: John Adali, Lwin Maung, Concurrency
 ms.date: 09/26/2018 
 ms.topic: article 
 description: Description on how to add files and registry settings to a Windows IoT Core Image
@@ -158,5 +158,5 @@ For verifying registry keys, follow these steps:
    The Output window should display your test values.
 
 ## Next Steps
-[06d-Adding a driver to an image](06d-AddingDrivers.md)
+[Adding a driver to an image](06d-AddingDrivers.md)
 
