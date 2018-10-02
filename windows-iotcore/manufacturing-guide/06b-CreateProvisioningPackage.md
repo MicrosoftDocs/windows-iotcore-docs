@@ -1,7 +1,7 @@
 --- 
 title: Creating a Provisioning Package for a Windows IoT Core Image
-author: johnadali
-ms.author: johnadali
+author: jadali,lmaung
+ms.author: jadali, lmaung
 ms.date: 09/20/2018 
 ms.topic: article 
 description: Description on how to create a provisioning package for a Windows IoT Core Image
@@ -106,7 +106,8 @@ In order to create a provisioning package for your device, we need to create a p
 ```
 
 ## Build and Test Image
-Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateBasicImage.md). You should only have to run the **buildimage** command:
+Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateImage.md). You should only have to run the **buildimage** command:
+
 
     buildimage <product name> test 
 

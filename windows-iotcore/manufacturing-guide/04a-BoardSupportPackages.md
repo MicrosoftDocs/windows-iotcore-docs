@@ -1,7 +1,7 @@
 --- 
 title: Board Support Packages
-author: johnadali
-ms.author: johnadali
+author: jadali, lmaung
+ms.author: jadali, lmaung
 ms.date: 09/16/2018 
 ms.topic: article 
 description: Listing and description of different supported BSPs.
@@ -13,6 +13,7 @@ keywords: Windows 10 IoT Core,
 A Board Support Package (BSP) is a collection of drivers/settings required to run IoT Core on a hardware platform. These are provided by the hardware/silicon vendors. The BSP also included a set of device drivers that are specific to the components/silicon used in the board, mostly in the form of .inf files and their associated .sys/.dll files.
 
 Listed below are the steps required to extract the BSP files for specific manufacturers. You will need these files extracted properly before you can build an FFU image file. Please see [04-Creating a Basic IoT Core Image](04-CreateBasicImage.md) after you successfully follow the steps below with the BSP files you are building an image for.
+
 
 
 ## Qualcomm
