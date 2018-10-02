@@ -14,6 +14,15 @@ Once you have an FFU image file built, you can use this file to flash and deploy
 
 Listed below are the steps to flash the FFU image file to specific manufacturer devices. 
 
+## Goals
+* Deploy the Full Flash Update (FFU) test image previously created to a device
+
+## Prerequisites/Requirements
+You will need the following tools installed to complete this section:
+* **[Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/p/?LinkId=708576) (Raspberry Pi only)**. This tool is used to perform the flashing of the FFU file to the Raspberry Pi device.
+* **[Dragonboard Update Tool](https://developer.qualcomm.com/hardware/dragonboard-410c/software) (Qualcomm DragonBoard only)**. This tool is used to perform the flashing of the FFU file to the DragonBoard device.
+* **Deployment Imaging and Servicing and Management (DISM) tool (Intel devices only)**. Part of the [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#winADK), this tool is used to perform the flashing of the FFU file to the Intel device.
+
 ## Qualcomm
 ### DragonBoard 410c
 Qualcomm has provided the [DragonboardUpdateTool](https://developer.qualcomm.com/hardware/dragonboard-410c/software) application, which we will use to flash the FFU image file to the Dragonboard 410c. You can download either the x86 or x64 version (we recommend x64).

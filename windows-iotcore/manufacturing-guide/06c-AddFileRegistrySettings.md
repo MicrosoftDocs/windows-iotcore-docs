@@ -11,8 +11,21 @@ keywords: Windows 10 IoT Core,
 # Adding file(s) and registry settings to a Windows IoT Core Image
 We will create some test files and registry keys to a Windows IoT Core image, and package them up so that they can be serviced after they are distributed to your customers. Since files and registry keys that you add to your image are often not specific to an architecture, we recommend creating a common package that you can use across all of your device architectures.
 
-## Prerequisites
+## Goals
+* Create a package that contains registry and file settings for your device
+* Package the registry/file settings package so it can be included in an FFU image
+* Modify IoT Addon Kit project configuration files to include your registry/file settings package
+* Build and deploy an FFU image that contains your registry/file settings package
+
+## Prerequisites/Requirements
 Please make sure you've created a basic image from [Creating a Basic IoT Core Image](04-CreateBasicImage.md) previously. For this example, we have created a basic image with the Qualcomm DragonBoard called *TestDragonBoardProduct*.
+
+You will need the following tools installed to complete this section:
+* **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows IoT Core.
+* **Iot Core Shell**. This is included with the Windows ADK and is the commandline window interface where you execute commands to build custom FFU images for Windows IoT Core.
+* **[Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore)** for your specific architecture. These provide the IoT Core packages and feature manifest files needed to build custom Windows IoT images for the specific architecture (ARM, ARM64, x86, x64).
+* **[IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)**. These provide the sample scripts and base structure for building custom Windows IoT Core images.
+* A text editor like **Notepad** or **VS Code**.
 
 ## Create your test files
 Create a few sample text files using Notepad and add some random text so that these files are not empty. For our example, we have created two files titled **TestFile1.txt** and **TestFile2.txt**.

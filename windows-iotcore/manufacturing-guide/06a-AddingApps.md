@@ -13,8 +13,22 @@ We are now going to take an app (like the IoT Core sample [Hello World!](https:/
 
 Please note that this process is identical for both background and foreground apps. The only difference to be aware of is that only one foreground app can be selected as the startup app, and all other installed apps will run as background apps.
 
-## Prerequisites
+## Goals
+* Create a custom Universal Windows Platform (UWP) application that will be installed on a device
+* Package the UWP application so it can be included in an FFU image
+* Modify IoT Addon Kit project configuration files to include your UWP application package
+* Build and deploy an FFU image that contains your UWP app package
+
+## Prerequisites/Requirements
 Please make sure you've created a basic image from [Creating a Basic IoT Core Image](04-CreateBasicImage.md) previously. For this example, we have created a basic image with the Qualcomm DragonBoard called *TestDragonBoardProduct*.
+
+You will need the following tools installed to complete this section:
+* **Visual Studio**. This is needed to create the UWP application that will be added to the custom FFU image.
+* **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows IoT Core.
+* **[Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore)** for your specific architecture. These provide the IoT Core packages and feature manifest files needed to build custom Windows IoT images for the specific architecture (ARM, ARM64, x86, x64).
+* **[IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)**. These provide the sample scripts and base structure for building custom Windows IoT Core images.
+* **Iot Core Shell**. This is included with the Windows ADK and is the commandline window interface where you execute commands to build custom FFU images for Windows IoT Core.
+* A text editor like **Notepad** or **VS Code**.
 
 ## Create an Appx Package
 The first step is to create a **Universal Windows Platform (UWP)** application that will run on the IoT device. You may skip this section if you've already created and tested your UWP application.
