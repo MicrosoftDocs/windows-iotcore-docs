@@ -1,7 +1,7 @@
 --- 
 title: Get Started Overview
-author: johnadali, lmaung
-ms.author: johnadali, lmaung
+author: johnadali
+ms.author: johnadali
 ms.date: 09/05/2018 
 ms.topic: article 
 description: Overview for Windows IoT Core Manufacturing Guide.
