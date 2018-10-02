@@ -1,7 +1,7 @@
 --- 
 title: Get the tools needed to create Windows IoT Core images
-author: jadali, lmaung
-ms.author: jadali, lmaung
+author: John Adali, Lwin Maung, Concurrency
+ms.author: John Adali, Lwin Maung, Concurrency
 ms.date: 09/05/2018 
 ms.topic: article 
 description: Describes the tools needed to create IoT Core images
@@ -10,7 +10,8 @@ keywords: Windows 10 IoT Core,
 
 # Get the tools needed to create Windows IoT Core images
 
-Here's the software you'll need to create custom OEM images using the Windows 10 IoT Core ADK Add-Ons:
+## Goals
+* Download and install all the tools needed to build Windows IoT Core OEM images
 
 ## PCs and devices
 
@@ -24,6 +25,8 @@ Here's the software you'll need to create custom OEM images using the Windows 10
 * A **microSD card**. Please note that this is dependent on the device you are using. Some devices require a microSD card, while others have onboard storage. Learn more about existing [supported storage](../learn-about-hardware/HardwareCompatList.md#other-hardware-peripherals) options.
 
 ## Software
+Here's the software you'll need to create custom OEM images using the Windows 10 IoT Core ADK Add-Ons:
+
 **Install the following tools on your Technician PC:**
 
 1. [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#winADK) including at least the features shown below. You'll use these tools to create images and provisioning packages.
@@ -32,7 +35,7 @@ Here's the software you'll need to create custom OEM images using the Windows 10
 
 2. [Windows Driver Kit (WDK) 10](https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk) (optional, required only if you are building drivers)
 
-3. [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore). The .iso package adds the IoT Core packages and feature manifests used to create IoT Core images. By default, these packages are installed to **C:\Program Files (x86)\Windows Kits\10\MSPackages\Retail**. Install one or more of the IoT Core packages, depending on the architecture you are building an image for (ARM, x86, x64).
+3. [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore). The .iso package adds the IoT Core packages and feature manifests used to create IoT Core images. By default, these packages are installed to **C:\Program Files (x86)\Windows Kits\10\MSPackages\Retail**. Install one or more of the IoT Core packages, depending on the architecture you are building an image for (ARM, ARM64, x86, x64).
 
 ![Dashboard screenshot](../media/ManufacturingGuide/IoTCorePackagesInstall.jpg)
 

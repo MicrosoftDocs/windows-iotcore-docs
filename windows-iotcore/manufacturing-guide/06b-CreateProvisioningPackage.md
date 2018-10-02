@@ -1,7 +1,7 @@
 --- 
 title: Creating a Provisioning Package for a Windows IoT Core Image
-author: jadali,lmaung
-ms.author: jadali, lmaung
+author: John Adali, Lwin Maung, Concurrency
+ms.author: John Adali, Lwin Maung, Concurrency
 ms.date: 09/20/2018 
 ms.topic: article 
 description: Description on how to create a provisioning package for a Windows IoT Core Image
@@ -11,9 +11,20 @@ keywords: Windows 10 IoT Core,
 # Creating a Provisioning Package for a Windows IoT Core Image
 A provisioning package allows you to apply customization settings over an existing Windows IoT Core installation image. We will describe the steps required to create a provisioning package that you can apply to your Windows 10 IoT Core FFU images.
 
+## Goals
+* Create a provisioning package that contains customizations for your device
+* Package the provisioning package so it can be included in an FFU image
+* Modify IoT Addon Kit project configuration files to include your provisioning package customizations
+* Build and deploy an FFU image that contains your provisioning package customizations
 
-## Prerequisites
+## Prerequisites/Requirements
 Please make sure you've created an image with your custom App from [06a-Adding an App to an image](06a-AddingApps.md) previously. For this example, we have created an image with the Qualcomm DragonBoard called *TestDragonBoardProduct* that contains the sample app [Hello World!](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/HelloWorld).
+
+You will need the following tools installed to complete this section:
+* **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows IoT Core.
+* **Windows Configuration Designer**. Part of the Windows ADK, this provides tooling to create custom provisioning packages for Windows IoT Core devices.
+* **Iot Core Shell**. This is included with the Windows ADK and is the commandline window interface where you execute commands to build custom FFU images for Windows IoT Core.
+* A text editor like **Notepad** or **VS Code**.
 
 ## Install Windows Configuration Designer
 We will be using **Windows Configuration Designer (WCD)** to create a provisioning package for our IoT Core image. Windows Configuration Designer allows you to create provisioning packages, which are used to configure devices running Windows 10 IoT Core.
@@ -104,5 +115,5 @@ Once the FFU file has been built and you flash it to your hardware device as spe
 
 
 ## Next Steps
-[06c-Adding file(s) and registry settings to an image](06c-AddFileRegistrySettings.md)
+[Adding file(s) and registry settings to an image](06c-AddFileRegistrySettings.md)
 

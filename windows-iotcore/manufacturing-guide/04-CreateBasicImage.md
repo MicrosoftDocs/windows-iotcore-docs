@@ -1,7 +1,7 @@
 --- 
 title: Creating a Basic IoT Core Image
-author: jadali, lmaung
-ms.author: jadali, lmaung
+author: John Adali, Lwin Maung, Concurrency
+ms.author: John Adali, Lwin Maung, Concurrency
 ms.date: 09/05/2018 
 ms.topic: article 
 description: Steps to create a basic Windows IoT Core image
@@ -11,8 +11,19 @@ keywords: Windows 10 IoT Core,
 # Creating a Basic IoT Core Image
 To get started, we will detail the steps needed to create a basic Windows IoT Core image and flash it onto a specific hardware device.
 
-## Prerequisites
+## Goals
+* Create a project using Windows ADK Toolkit that can be used to create Windows IoT Core images
+* Build a Full Flashable Update (FFU) file for a Windows IoT Core test image
+
+## Prerequisites/Requirements
 Make sure your technician PC has the necessary tools installed prior to creating an IoT Core image. See [Get the tools needed to create Windows IoT Core images](03-ToolsNeeded.md) for details.
+
+You will need the following tools installed to complete this section:
+* **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows IoT Core.
+* **[Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore)** for your specific architecture. These provide the IoT Core packages and feature manifest files needed to build custom Windows IoT images for the specific architecture (ARM, ARM64, x86, x64).
+* **[IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)**. These provide the sample scripts and base structure for building custom Windows IoT Core images.
+* **Iot Core Shell**. This is included with the Windows ADK and is the commandline window interface where you execute commands to build custom FFU images for Windows IoT Core.
+* A text editor like **Notepad** or **VS Code**.
 
 ## Set your OEM Name (one-time only)
 Edit the file **C:\IoT-ADK-AddonKit\Tools\setOEM.cmd**, and modify it with your company name. We've added this variable to help you create packages with names that are easy to differentiate from those provided from other manufacturers you're working with. Only alphanumeric characters are supported in the OEM_NAME variable, as this is used as a prefix for various generated file names.
