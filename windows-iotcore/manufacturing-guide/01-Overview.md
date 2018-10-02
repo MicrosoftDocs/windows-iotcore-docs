@@ -1,8 +1,7 @@
 --- 
 title: Get Started Overview
-author: johnadali, lmaung, Concurrency
-ms.author: johnadali, lmaung, Concurrency
-
+author: johnadali, lmaung
+ms.author: johnadali, lmaung
 ms.date: 09/05/2018 
 ms.topic: article 
 description: Overview for Windows IoT Core Manufacturing Guide.
