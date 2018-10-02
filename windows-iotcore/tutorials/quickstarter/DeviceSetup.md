@@ -39,7 +39,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 
 
 ![Dashboard screenshot](../../media/DeviceSetup/Dashboard-Screenshot.jpg)
-
+ 
 
 ## Using the IoT Dashboard (DragonBoard 410c)
 
