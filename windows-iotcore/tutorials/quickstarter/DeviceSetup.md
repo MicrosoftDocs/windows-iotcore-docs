@@ -14,7 +14,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 > [!IMPORTANT]
 > When the "format this disk" pop up comes up, do _not_ format the disk. We are working on a fix for this issue.
 
-## Using the IoT Dashboard (Raspberry Pi, MinnowBoard)
+## Using the IoT Dashboard (Raspberry Pi, MinnowBoard, NXP)
 
 > [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 
@@ -22,9 +22,15 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 > [!IMPORTANT]
 > The latest 64-bit firmware for MinnowBoard Turbot can be found on the [MinnowBoard website](https://minnowboard.org/tutorials/updating-the-firmware) (skip step 4 on the MinnowBoard site's instructions).
 
+> [!IMPORTANT]
+> If you're looking to flash a custom image, select "Custom" from the OS Build dropdown, follow the instructions [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-basic-image) to create a basic image, and follow the rest of the instructions below to finish.
+
+> [!NOTE]
+> NXP only supports custom images.
 
 > [!TIP]
 > We recommend using a high-performance SD card, such as a SanDisk SD card, for increased stability as well as plugging your device into an external display to see the default application booting up.
+
 
 1. Download the Windows 10 IoT Core Dashboard [here](https://developer.microsoft.com/en-us/windows/iot/Downloads).
 2. Once downloaded, open the Dashboard and click on _set up a new device_ and insert a SD card into your computer.
@@ -34,21 +40,6 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 
 ![Dashboard screenshot](../../media/DeviceSetup/Dashboard-Screenshot.jpg)
  
-
-## Using the IoT Dashboard (NXP)
-
-> [!NOTE]
-> Flashing an image on NXP is very similar to doing some on Raspberry Pi or Minnowboard, except NXP will only take custom images.
-
-> [!TIP]
-> We recommend using a high-performance SD card, such as a SanDisk SD card, for increased stability as well as plugging your device into an external display to see the default application booting up.
-
-1. Download the Windows 10 IoT Core Dashboard [here](https://developer.microsoft.com/en-us/windows/iot/Downloads).
-2. Once downloaded, open the Dashboard and click on _set up a new device_ and insert a SD card into your computer.
-3. You'll need to have a custom image to flash on NXP. To create a basic image, you can follow the instructions [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-basic-image) in our Manufacturing Guide. 
-4. Once you've created your image, fill out all of the fields as indicated.
-5. Accept the software license terms and click _Download and install_. You'll see that Windows 10 IoT Core is now flashing onto your device.
-
 
 ## Using the IoT Dashboard (DragonBoard 410c)
 
