@@ -1,7 +1,7 @@
 --- 
 title: Get Started Overview
-author: John Adali, Lwin Maung, Concurrency
-ms.author: John Adali, Lwin Maung, Concurrency
+author: johnadali, lmaung, Concurrency
+ms.author: johnadali, lmaung, Concurrency
 
 ms.date: 09/05/2018 
 ms.topic: article 
