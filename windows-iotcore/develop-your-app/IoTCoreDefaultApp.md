@@ -30,7 +30,7 @@ The Command Bar is the persistant horizonatal bar located at the bottom of the s
 - Advance shortcuts
 - Page specific buttons
 
-There are a lot buttons in the Command Bar, and sometimes those buttons can be confusing or hidden. To access those buttons and expand the Command Bar, please press the menu button located on the far right.
+There are a lot buttons in the Command Bar, and sometimes those buttons can be confusing or hidden. To expand the Command Bar and access those buttons, please press the menu button in the bottom right:
 
 ![How to expand Command Bar](../media/IoTCoreDefaultApp/CommandBar.gif)
 
