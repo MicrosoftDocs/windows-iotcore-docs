@@ -91,7 +91,7 @@ Type **yes** and press **enter**.
 
 You should now be connected as **DefaultAccount**
 
-To use single sign-on with the **administrator** account append your public key to c:\data\ProgramData\ssh\administrators_authorized_keys on the Windows IoT Core device. 
+To use single sign-on with the **administrator** account, append your public key to c:\data\ProgramData\ssh\administrators_authorized_keys on the Windows IoT Core device. 
 
 ```cmd
 net use X: \\host\c$ /user:host\administrator
