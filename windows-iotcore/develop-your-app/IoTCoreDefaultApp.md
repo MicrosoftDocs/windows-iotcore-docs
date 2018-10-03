@@ -20,7 +20,17 @@ This article will give you a rundown of the different features that the Windows 
 
 ## Leveraging the IoT Core Default App 
 
-The IoT Core Default App can be customized and extended, or you can use the source code as an example for your own app. To try this out for yourself, download the zip of our samples or check out the code for the IoT Core Default App [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp/CS). For any questions, please file an issue on our samples repo [here](https://github.com/Microsoft/Windows-iotcore-samples/issues). 
+The IoT Core Default App can be customized and extended, or you can use the source code as an example for your own app. To try this out for yourself, download the zip of our samples or check out the code for the IoT Core Default App [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp/CS). For any questions, please file an issue on our samples repo [here](https://github.com/Microsoft/Windows-iotcore-samples/issues).
+
+## Command Bar
+The Command Bar is the persistant horizonatal bar located at the bottom of the screen, which provides the following funtionality:
+- Forward and backward page navigation
+- Basic device info without leaving the current page
+- Toggle fullscreen mode
+- Page specific buttons
+
+Pressing the menu button ![Menu Button](../media/IoTCoreDefaultApp/CommandBarMenuIcon.png) will expand the Command Bar and expose all avaliable functionality.
+![How to expand Command Bar](../media/IoTCoreDefaultApp/CommandBar.gif)
 
 ## Start Menu - Play
 
