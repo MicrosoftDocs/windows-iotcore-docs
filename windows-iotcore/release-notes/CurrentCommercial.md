@@ -40,9 +40,10 @@ The privacy statement for this version of the Windows operating system can be vi
 
 
 ## Improvements in Assigned Access
-* Kiosks and digital signs are often place in public places where issues are widely seen by people. With built-in status reporting, device management systems are auomatically made aware of problems and can issue corrective actions like restarting the device or dispatching a service technician. 
+* Kiosks and digital signs are often place in public places where issues are widely seen by people. With built-in status reporting, device management systems are automatically made aware of problems and can issue corrective actions like restarting the device or dispatching a service technician. 
 * Reducing deployment and management costs are key drivers of ROI. Windows 10 IoT Enterprise has improved features for configuring a kiosk experience via a new wizard in the Settings app, managing multi-app kiosks and tailoring the [Microsoft Edge browser experience for kiosk devices](https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy).
 * While device builders have great flexibility to configure Assigned Access using provisioning packages, the Settings app, and mobile device management systems, some customers still need more. [Using a new set of Assigned Access APIs](https://docs.microsoft.com/en-us/uwp/api/windows.system.userprofile.assignedaccesssettings), developers can now configure Assigned Access programmatically from within their applications.
+* With the October 2018 release, customers can specify an auto-launch experience as part of the multi-app assigned access configuration so the end user can always have a default primary app experience. 
 * You can control what the user sees from the moment the device is turned on until it's powered off. Starting by showing your logo instead of the Windows logo at boot, or auto-restart apps without error messages after an app crash, a system issue or a power interruption. 
 * You can use the Unified Write Filter (UWF) feature to build a "read-only" device that returns to a known state after a power cycle by keeping disk changes in memory instead of writing them to disk. You can also combine UWF with the Hibernate Once, Resume Many (HORM) feature to resume to a predefined session. 
 
