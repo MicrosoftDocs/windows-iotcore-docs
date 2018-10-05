@@ -57,11 +57,8 @@ _Windows 10 IoT Enterprise_
 
 ## More Management Support
 
-_Windows 10 IoT Enterprise & Windows 10 IoT Core_
-
-* Azure IoT Hub offers lightweight device management features and an extensibility model that enable device and cloud developers to build robust device management solutions. Integration with [Azure IoT Device Management](https://docs.microsoft.com/windows/iot-core/manage-your-device/azureiotdm) is now available for both Windows 10 IoT Core and Enterprise. 
-
 _Windows 10 IoT Enterprise_
+* Azure IoT Hub offers lightweight device management features and an extensibility model that enable device and cloud developers to build robust device management solutions. Integration with [Azure IoT Device Management](https://docs.microsoft.com/windows/iot-core/manage-your-device/azureiotdm) is now available for both Windows 10 IoT Core and Enterprise. 
 * Windows Autopilot transforms a new Windows 10 IoT Enterprise device into a business-ready and cloud-manage state, without IT needng to touch the device. By integrating seamlessly with Azure Active Directory and Microosft Intune 2, Windows Autopilot lets IT provision an organization's policities, settings, and apps.
 * Since Windows 10 IoT Enterprise is the binary equivalent of Windows 10 Enterprise, it can be managed by the same tools used ot manage PCs and servers.
 
