@@ -46,6 +46,7 @@ _Windows 10 IoT Core_
 ## Improvements in Assigned Access 
 
 _Windows 10 IoT Enterprise_
+
 * Kiosks and digital signs are often place in public places where issues are widely seen by people. With built-in status reporting, device management systems are automatically made aware of problems and can issue corrective actions like restarting the device or dispatching a service technician. 
 * Reducing deployment and management costs are key drivers of ROI. Windows 10 IoT Enterprise has improved features for configuring a kiosk experience via a new wizard in the Settings app, managing multi-app kiosks and tailoring the [Microsoft Edge browser experience for kiosk devices](https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy).
 * While device builders have great flexibility to configure Assigned Access using provisioning packages, the Settings app, and mobile device management systems, some customers still need more. [Using a new set of Assigned Access APIs](https://docs.microsoft.com/en-us/uwp/api/windows.system.userprofile.assignedaccesssettings), developers can now configure Assigned Access programmatically from within their applications.
@@ -54,9 +55,10 @@ _Windows 10 IoT Enterprise_
 * You can use the Unified Write Filter (UWF) feature to build a "read-only" device that returns to a known state after a power cycle by keeping disk changes in memory instead of writing them to disk. You can also combine UWF with the Hibernate Once, Resume Many (HORM) feature to resume to a predefined session. 
 
 
-## More Management Support (Both)
+## More Management Support
 
 _Windows 10 IoT Enterprise & Windows 10 IoT Core_
+
 * Azure IoT Hub offers lightweight device management features and an extensibility model that enable device and cloud developers to build robust device management solutions. Integration with [Azure IoT Device Management](https://docs.microsoft.com/windows/iot-core/manage-your-device/azureiotdm) is now available for both Windows 10 IoT Core and Enterprise. 
 
 _Windows 10 IoT Enterprise_
