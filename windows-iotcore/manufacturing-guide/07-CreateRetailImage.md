@@ -91,7 +91,7 @@ If you have more than one application that you signed with the same certificate,
 > You can skip this section if you only have one application to include in your retail image.
 
 1. Create a new folder called **Appx.Certificates** under the **C:\iot-adk-addonkit\Source-< arch>\Packages\\** directory. In our example, we created this folder under **C:\iot-adk-addonkit\Source-arm\Packages\\**.
-2. Create a **customizations.xml** file and edit it to look like below, replacing **\HelloWorld.cer** with the name of your retail certificate:
+2. Create a **customizations.xml** file and edit it to look like below, replacing **HelloWorld.cer** with the name of your retail certificate:
 
    ```XML
    <?xml version="1.0" encoding="utf-8" ?>
@@ -109,7 +109,7 @@ If you have more than one application that you signed with the same certificate,
               <Certificates>
                 <RootCertificates>
                   <RootCertificate CertificateName="HelloWorld" Name="HelloWorld">
-                    <CertificatePath><HelloWorld.cer</CertificatePath>
+                    <CertificatePath>HelloWorld.cer</CertificatePath>
                   </RootCertificate>
                 </RootCertificates>
               </Certificates>
@@ -213,6 +213,6 @@ Listed here are the commands (in order) for creating a retail IoT Core image. Pl
       buildpkg all
       retailsign on
       re-sign.cmd C:\BSP.IN C:\BSP.OUT
-      xcopy C:\BSP.OUT\*.cab C:\IoT-ADK-AddOnToolkit\\Build\arm\pkgs\*.cab
+      xcopy C:\BSP.OUT\*.cab C:\IoT-ADK-AddOnToolkit\Build\arm\pkgs\*.cab
       buildimage <product name> Retail
 
