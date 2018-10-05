@@ -10,7 +10,7 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
  
 # Windows 10 IoT Resources
 
-## Community Resources
+## Learning Resources
 ### Find resources on how to get started or get trained with the help of the community.
 
 * [Microsoft MVP community](https://mvp.microsoft.com/)
@@ -32,7 +32,7 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Security](https://www.hackster.io/projects/tags/security+win10)
 * [Energy](https://www.hackster.io/projects/tags/energy+win10)
 
-## Community Videos
+## Videos
 ### From device management to security, check out a few videos from the Windows 10 IoT team.
 
 * [Getting started with Windows 10 IoT series](https://www.youtube.com/watch?v=A-kazyOiBvs&t)
@@ -41,7 +41,7 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Windows 10 IoT Core Walkthrough](https://channel9.msdn.com/Blogs/Seth-Juarez/Windows-IoT-Core-Walkthrough?term=windows%20iot%20core)
 * [Windows 10 IoT and Azure IoT Device Management Enhancement](https://channel9.msdn.com/Shows/Azure-Friday/Windows-10-IoT-and-Azure-IoT-Device-Management-Enhancements?term=windows%20iot%20core)
 
-## Community Blog Posts
+## Blog Posts
 ### Stay on top of our latest announcements for the Windows 10 IoT community.
 
 * [IoT in Action: Developing intelligent solutions that change the world](https://blogs.windows.com/windowsexperience/2018/09/05/iot-in-action-developing-intelligent-solutions-that-change-the-world/#GHq5SrW6ffImgLgv.97)

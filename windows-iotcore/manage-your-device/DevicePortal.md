@@ -132,6 +132,25 @@ sample which may be [downloaded here](https://github.com/ms-iot/samples).
 ### TPM configuration
 The Trusted Platform Module (TPM) is a cryptographic coprocessor including capabilities for random number generation, secure generation of cryptographic keys and limitation of their use. It also includes capabilities such as remote attestation and sealed storage. To learn about the TPM and security on IoT Core, visit the [Building secure devices](../secure-your-device/BuildingSecureDevices.md) page and the [TPM](../secure-your-device/TPM.md) page.
 
+> [!IMPORTANT]
+Limpet.exe used to be part of Windows IoT Core. Starting with October 2018, it is now available as an open source porject at [https://github.com/ms-iot/azure-dm-client](https://github.com/ms-iot/azure-dm-client).
+
+To make testing easier, we have a non-signed pre-built version of Limpet.exe available and can be downloaded right from WDP. You just need to go the 'TPM Configuration' tab and click the 'Install Latest' button. 
+
+> [!NOTE]
+> This version of Limpet.exe should not be shipped with your final product. Instead, you need to build the open source project, sign it, and package it with your image.
+
+### Azure Clients configuration
+
+IoT devices can be remotely managed through cloud services. Azure provides a very rich set of services to enable such scenarios. We have created a device management client that complements Azure's Device Provisioning Service (DPS) and Azure's IoT Hub service on the Windows platform and which also exposes several Windows manageability features.
+
+The clients will be provided as open source projects. To make testing them easier, we will be providing pre-built binaries. You can use the 'Azure Clients' tab in WDP to install and run those test binaries.
+
+> [!NOTE]
+> This version of the tools should not be shipped with your final product. Instead, you need to build the open source project, sign it, and package it with your image.
+
+We will update this documentation once the open source projects are available for consumption.
+
 ### Remote
 The Windows IoT Remote Server allows users to see what their device is displaying without connecting a physical monitor to the keyboard.
 

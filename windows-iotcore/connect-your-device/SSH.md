@@ -91,8 +91,27 @@ Type **yes** and press **enter**.
 
 You should now be connected as **DefaultAccount**
 
-> [!TIP]
-> To use single sign-on with the **administrator** account append your public key to C:\data\users\administrator\.ssh\authorized_keys on the Windows IoT Core device.
+To use single sign-on with the **administrator** account, append your public key to c:\data\ProgramData\ssh\administrators_authorized_keys on the Windows IoT Core device. 
+
+```cmd
+net use X: \\host\c$ /user:host\administrator
+copy .\id_rsa.pub x:\data\ProgramData\ssh\administrators_authorized_keys
+icacls x:\data\ProgramData\ssh\administrators_authorized_keys /remove "NT AUTHORITY\Authenticated Users"
+icaclsx:\data\ProgramData\ssh\administrators_authorized_keys /inheritance:r
+```
+
+You will also need to set the ACL for administrators_authorized_keys to match the ACL of ssh_host_dsa_key in the same directory.
+
+```cmd
+icacls x:\data\ProgramData\ssh\administrators_authorized_keys /remove "NT AUTHORITY\Authenticated Users"
+icacls x:\data\ProgramData\ssh\administrators_authorized_keys /inheritance:r
+```
+
+To set the ACL using powershell
+
+```cmd
+get-acl x:\data\ProgramData\ssh\ssh_host_dsa_key | set-acl x:\data\ProgramData\ssh\administrators_authorized_keys
+```
 
 > [!NOTE]
 > If you see a **REMOTE HOST IDENTIFICATION CHANGED** message after making changes to the Windows 10 IoT Core device, then edit C:\Users\<username>\.ssh\known_hosts and remove the host that has changed.
