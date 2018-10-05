@@ -161,5 +161,4 @@ If you wish to import a different driver for a Board Support Package (BSP) that 
 
 
 ## Next Steps
-Creating a Retail Windows IoT Core Image
-
+[Creating a Retail Windows IoT Core Image](07-CreateRetailImage.md)
