@@ -10,11 +10,10 @@ keywords: windows iot, DISM, Deployment Image Servicing Management, SD card, fla
 
 # Use DISM to flash Windows 10 IoT Core
 
-* Note: DISM offline servicing isn't supported. You will receive an error if you try to mount an FFU for IoT Core.
-	
-	    The request is not supported.
-	    The image doesn't have a name and it's likely to be a Mobile/Onecore FFU, which is currently not supported.
-	    FfuMountImage#160 failed with 0x80070032.
+> [!NOTE] DISM offline servicing isn't supported. You will receive the error error below if you try to mount an FFU for IoT Core:
+> The request is not supported.
+> The image doesn't have a name and it's likely to be a Mobile/Onecore FFU, which is currently not supported.
+> FfuMountImage#160 failed with 0x80070032.
 
 ## An alternative method to IoT Dashboard for Flashing an FFU
 
