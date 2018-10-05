@@ -30,7 +30,7 @@ Get the most up-to-date images under development to try out new features. To joi
 
 ## Latest Windows 10 IoT Core Builds
 
-### [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore)
+### [Windows 10 IoT Core Packages](https://go.microsoft.com/fwlink/?LinkId=2027600)
 Download the Windows 10 October 2018 Update for OS packages (custom and commercial FFUs).
 
 ### [Raspberry Pi 2 & 3](https://go.microsoft.com/fwlink/?LinkId=846058)
