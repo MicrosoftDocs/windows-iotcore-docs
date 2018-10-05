@@ -68,7 +68,7 @@ ___
 * DragonBoard 410c
   * Processor: Qualcomm Snapdragon 410
   * Architecture: ARM
-  * BSP Version: 2118.0.0.0
+  * BSP Version: 2120.0.0.0
 
 
 ## Known Issues
