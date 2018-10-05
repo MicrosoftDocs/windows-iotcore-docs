@@ -62,7 +62,7 @@ ___
 * DragonBoard 410c
   * Processor: Qualcomm Snapdragon 410
   * Architecture: ARM
-  * BSP Version: 2118.0.0.0
+  * BSP Version: 2120.0.0.0
 
 ## Additional Information
 * Based on the recent Intel announcement to stop producing the Intel Joule platform, FFUs for Intel Joule were discontinued in the previous release. Customers evaluating Intel Joule should identify an alternative platform using one of the other supported SoCs - see [Suggested Boards and SoCs](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/suggestedboards) for a list.
