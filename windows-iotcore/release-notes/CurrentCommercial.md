@@ -19,10 +19,14 @@ This document provides information that supplements other content and documentat
 
 The privacy statement for this version of the Windows operating system can be viewed at [https://go.microsoft.com/fwlink/?LinkId=521839](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-## What's New in October 2018 Update (IoT Core)
-* [Windows 10 IoT Core Services](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview) subscription is now generally available. This subscription comes with three main benefits including 10 years of OS support, update control with the [Device Update Center](https://docs.microsoft.com/en-us/windows-hardware/service/iot/using-device-update-center), and Device Health Attestation (DHA).
+## What's New in October 2018 Update
+
+_Windows 10 IoT Enterprise & Windows 10 IoT Core_
 * [Azure IoT Edge](https://docs.microsoft.com/azure/iot-edge/quickstart) is a fully managed service that delivers cloud intelligence locally by deploying and running artificial (AI) workloads, Azure services, and custom logic directly on Windows 10 IoT devices.
 * [Windows Machine Learning](https://docs.microsoft.com/windows/ai/) allows developers to use pretrained machine learning models in their applications. These models are typically trained in the cloud to be evaluated at the edge. Local evaluation on devices running Windows 10 IoT helps mitigate concerns of connectivity, bandwidth, and data privacy. 
+
+_Windows 10 IoT Core_
+* [Windows 10 IoT Core Services](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview) subscription is now generally available. This subscription comes with three main benefits including 10 years of OS support, update control with the [Device Update Center](https://docs.microsoft.com/en-us/windows-hardware/service/iot/using-device-update-center), and Device Health Attestation (DHA).
 * To meet growing customer and partner demand for silicon diversity, Microsoft, in close partnership with NXP, have added support for NXP i.MX 6, 7, and 8M series processors to Windows 10 IoT Core. 
 * Qualcomm and Microsoft have created a solution that combines Windows 10 IoT Enterprise with Snapdragon processors to build devices that consume less power, are always connected and wake instantly. Long battery life enables dedicated devices like mobile POS and line-of-business tablets to last a full day of heavy use. 
 * [The Windows 10 IoT Core Default App](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp) has more features that users can leverage for their own applications, especially when bringing their devices to market. These features include weather, inking capabilities, audio capabilities. 
@@ -39,7 +43,10 @@ The privacy statement for this version of the Windows operating system can be vi
 * The release for the Raspberry Pi 3B+ (the downloadable ISO can be found [here](http://go.microsoft.com/fwlink/?LinkID=708576)) is a technical preview and there is currently no timeline for a release version. For a better evaluation experience and fr any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm or NXP SoCs. 
 
 
-## Improvements in Assigned Access (IoT Enterprise)
+## Improvements in Assigned Access 
+
+_Windows 10 IoT Enterprise_
+
 * Kiosks and digital signs are often place in public places where issues are widely seen by people. With built-in status reporting, device management systems are automatically made aware of problems and can issue corrective actions like restarting the device or dispatching a service technician. 
 * Reducing deployment and management costs are key drivers of ROI. Windows 10 IoT Enterprise has improved features for configuring a kiosk experience via a new wizard in the Settings app, managing multi-app kiosks and tailoring the [Microsoft Edge browser experience for kiosk devices](https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy).
 * While device builders have great flexibility to configure Assigned Access using provisioning packages, the Settings app, and mobile device management systems, some customers still need more. [Using a new set of Assigned Access APIs](https://docs.microsoft.com/en-us/uwp/api/windows.system.userprofile.assignedaccesssettings), developers can now configure Assigned Access programmatically from within their applications.
@@ -48,11 +55,19 @@ The privacy statement for this version of the Windows operating system can be vi
 * You can use the Unified Write Filter (UWF) feature to build a "read-only" device that returns to a known state after a power cycle by keeping disk changes in memory instead of writing them to disk. You can also combine UWF with the Hibernate Once, Resume Many (HORM) feature to resume to a predefined session. 
 
 
-## More Management Support (Both)
+## More Management Support
+
+_Windows 10 IoT Enterprise & Windows 10 IoT Core_
+
 * Azure IoT Hub offers lightweight device management features and an extensibility model that enable device and cloud developers to build robust device management solutions. Integration with [Azure IoT Device Management](https://docs.microsoft.com/windows/iot-core/manage-your-device/azureiotdm) is now available for both Windows 10 IoT Core and Enterprise. 
-* Enterprises that use [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) for their device management can now manage Windows 10 IoT Core devices alongside their Windows 10 IoT Enterprise devices and other managed devices. This gives operators a consistent way to manage Windows 10 IoT devices using the same management interface and controls. 
+
+_Windows 10 IoT Enterprise_
 * Windows Autopilot transforms a new Windows 10 IoT Enterprise device into a business-ready and cloud-manage state, without IT needng to touch the device. By integrating seamlessly with Azure Active Directory and Microosft Intune 2, Windows Autopilot lets IT provision an organization's policities, settings, and apps.
 * Since Windows 10 IoT Enterprise is the binary equivalent of Windows 10 Enterprise, it can be managed by the same tools used ot manage PCs and servers.
+
+_Windows 10 IoT Core_
+* Enterprises that use [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) for their device management can now manage Windows 10 IoT Core devices alongside their Windows 10 IoT Enterprise devices and other managed devices. This gives operators a consistent way to manage Windows 10 IoT devices using the same management interface and controls. 
+
 
 
 ## Windows 10 IoT Core Reference Images
@@ -68,7 +83,7 @@ ___
 * DragonBoard 410c
   * Processor: Qualcomm Snapdragon 410
   * Architecture: ARM
-  * BSP Version: 2118.0.0.0
+  * BSP Version: 2120.0.0.0
 
 
 ## Known Issues
