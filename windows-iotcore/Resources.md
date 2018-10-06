@@ -44,6 +44,8 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 ## Blog Posts
 ### Stay on top of our latest announcements for the Windows 10 IoT community.
 
+* [Windows 10 IoT delivers innovation and intelligence at the edge with the October 2018 Update](https://blogs.windows.com/windowsexperience/2018/10/04/windows-10-iot-delivers-innovation-and-intelligence-at-the-edge-with-the-october-2018-update/#9g9hmmO2AdUB1C6F.97) 
+* [Bringing the power of Windows 10 to the Robot Operating System](https://blogs.windows.com/windowsexperience/2018/09/28/bringing-the-power-of-windows-10-to-the-robot-operating-system/#pqcOPjyO74t65LGb.97)
 * [IoT in Action: Developing intelligent solutions that change the world](https://blogs.windows.com/windowsexperience/2018/09/05/iot-in-action-developing-intelligent-solutions-that-change-the-world/#GHq5SrW6ffImgLgv.97)
 * [Windows 10 IoT - Tomorrow's IoT today](https://blogs.windows.com/windowsexperience/2018/06/05/windows-10-iot-tomorrows-iot-today/#wl3TcsFseJ6XROUZ.97)
 * [Do more at the intelligent edge with Windows 10 IoT](https://blogs.windows.com/windowsexperience/2018/05/07/do-more-at-the-intelligent-edge-with-windows-10-iot/#uDVaAtoBvz7BGrTf.97)
