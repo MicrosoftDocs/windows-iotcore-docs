@@ -65,7 +65,6 @@ _Windows 10 IoT Core_
 * Enterprises that use [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) for their device management can now manage Windows 10 IoT Core devices alongside their Windows 10 IoT Enterprise devices and other managed devices. This gives operators a consistent way to manage Windows 10 IoT devices using the same management interface and controls. 
 
 
-
 ## Windows 10 IoT Core Reference Images
 ___ 
 * Minnowboard Max
