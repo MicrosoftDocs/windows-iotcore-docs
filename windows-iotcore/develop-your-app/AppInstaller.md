@@ -63,4 +63,4 @@ You can create a provisioning package with the app and install the provisioning 
 ## Add to the IoT core image(.ffu)   
 You can add the app to be part of the IoT Core image itself. This is the widely used mechanism for OEMs. 
 
-See how to [add an app to your image](https://docs.microsoft.com/windows-hardware/manufacture/iot/deploy-your-app-with-a-standard-board) and a [sample app package](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Source-arm/Packages/Appx.IoTCoreDefaultApp).
+See how to [add an app to your image](https://docs.microsoft.com/windows-hardware/manufacture/iot/deploy-your-app-with-a-standard-board) and a [sample app package](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Packages/Appx.IoTCoreDefaultApp).
