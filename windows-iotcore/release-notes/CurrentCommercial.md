@@ -22,8 +22,9 @@ The privacy statement for this version of the Windows operating system can be vi
 ## What's New in October 2018 Update
 
 _Windows 10 IoT Enterprise & Windows 10 IoT Core_
+* The Windows 10 IoT October 2018 Update will have 10 years of support for both IoT Core and IoT Enterprise.
 * [Azure IoT Edge](https://docs.microsoft.com/azure/iot-edge/quickstart) is a fully managed service that delivers cloud intelligence locally by deploying and running artificial (AI) workloads, Azure services, and custom logic directly on Windows 10 IoT devices.
-* [Windows Machine Learning](https://docs.microsoft.com/windows/ai/) allows developers to use pretrained machine learning models in their applications. These models are typically trained in the cloud to be evaluated at the edge. Local evaluation on devices running Windows 10 IoT helps mitigate concerns of connectivity, bandwidth, and data privacy. 
+* [Windows Machine Learning](https://docs.microsoft.com/windows/ai/) allows developers to use pretrained machine learning models in their applications. These models are typically trained in the cloud to be evaluated at the edge. Local evaluation on devices running Windows 10 IoT helps mitigate concerns of connectivity, bandwidth, and data privacy.  
 
 _Windows 10 IoT Core_
 * [Windows 10 IoT Core Services](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview) subscription is now generally available. This subscription comes with three main benefits including 10 years of OS support, update control with the [Device Update Center](https://docs.microsoft.com/en-us/windows-hardware/service/iot/using-device-update-center), and Device Health Attestation (DHA).
@@ -57,13 +58,8 @@ _Windows 10 IoT Enterprise_
 
 ## More Management Support
 
-_Windows 10 IoT Enterprise & Windows 10 IoT Core_
-
-* Azure IoT Hub offers lightweight device management features and an extensibility model that enable device and cloud developers to build robust device management solutions. Integration with [Azure IoT Device Management](https://docs.microsoft.com/windows/iot-core/manage-your-device/azureiotdm) is now available for both Windows 10 IoT Core and Enterprise. 
-
 _Windows 10 IoT Enterprise_
-* Windows Autopilot transforms a new Windows 10 IoT Enterprise device into a business-ready and cloud-manage state, without IT needng to touch the device. By integrating seamlessly with Azure Active Directory and Microosft Intune 2, Windows Autopilot lets IT provision an organization's policities, settings, and apps.
-* Since Windows 10 IoT Enterprise is the binary equivalent of Windows 10 Enterprise, it can be managed by the same tools used ot manage PCs and servers.
+* Azure IoT Hub offers lightweight device management features and an extensibility model that enable device and cloud developers to build robust device management solutions. Integration with [Azure IoT Device Management](https://docs.microsoft.com/windows/iot-core/manage-your-device/azureiotdm) is now available for both Windows 10 IoT Core and Enterprise. 
 
 _Windows 10 IoT Core_
 * Enterprises that use [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) for their device management can now manage Windows 10 IoT Core devices alongside their Windows 10 IoT Enterprise devices and other managed devices. This gives operators a consistent way to manage Windows 10 IoT devices using the same management interface and controls. 
