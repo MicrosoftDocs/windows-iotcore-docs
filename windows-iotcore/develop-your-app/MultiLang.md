@@ -89,9 +89,9 @@ In the OEM Input xml file, the required speech data resources are specified as s
 > By default, en-US speech data is included in the image.
 
 ### Samples
-* See [MultiLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/develop/Source-arm/Products/MultiLangSample) for multiple languages support
-* See [SingleLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/develop/Source-arm/Products/SingleLangSample) for fr-FR language with en-US as fallback language.
-	* Note that when the boot UI language is changed, the `administrator` account name is also translated in the boot UI language. So, in fr-FR it is `administrateur`. See [OEMCustomization.cmd](https://github.com/ms-iot/iot-adk-addonkit/blob/develop/Source-arm/Products/SingleLangSample/oemcustomization.cmd)
+* See [MultiLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/MultiLangSample) for multiple languages support
+* See [SingleLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/SingleLangSample) for fr-FR language with en-US as fallback language.
+	* Note that when the boot UI language is changed, the `administrator` account name is also translated in the boot UI language. So, in fr-FR it is `administrateur`. See [OEMCustomization.cmd](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/SingleLangSample/oemcustomization.cmd)
 
 ## Changing user preferences (language, region, speech and voice)
 
