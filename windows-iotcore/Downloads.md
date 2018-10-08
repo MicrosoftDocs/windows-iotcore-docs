@@ -46,10 +46,10 @@ Download the Windows 10 IoT October 2018 update for MinnowBoard Turbot/Max (deve
 
 ### April 2018 Update
 
-* [Windows 10 IoT Core Packages](https://software-download.microsoft.com/download/pr/17133.1.180323-1312.rs4_release_amd64fre_IOTCORE_PACKAGES.iso)
-* [Raspberry Pi 2 & 3](https://software-download.microsoft.com/download/pr/17133.1.180323-1312.rs4_release_amd64fre_IOTCORE_RPi.iso)
-* [DragonBoard 410c](https://software-download.microsoft.com/download/pr/17133.1.180323-1312.rs4_release_amd64fre_IOTCORE_QCDB410C.iso)
-* [MinnowBoard Turbot/Max](https://software-download.microsoft.com/download/pr/17133.1.180323-1312.rs4_release_amd64fre_IOTCORE_MBM.iso)
+* [Windows 10 IoT Core Packages](https://software-download.microsoft.com/download/pr/17134.1.180410-1804.rs4_release_amd64fre_IOTCORE_PACKAGES.iso)
+* [Raspberry Pi 2 & 3](https://software-download.microsoft.com/download/pr/17134.1.180410-1804.rs4_release_amd64fre_IOTCORE_RPi.iso)
+* [DragonBoard 410c](https://software-download.microsoft.com/download/pr/17134.1.180410-1804.rs4_release_amd64fre_IOTCORE_QCDB410C.iso)
+* [MinnowBoard Turbot/Max](https://software-download.microsoft.com/download/pr/17134.1.180410-1804.rs4_release_amd64fre_IOTCORE_MBM.iso)
 
 
 ### Fall Creators Update
