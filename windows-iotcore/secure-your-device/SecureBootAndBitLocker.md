@@ -142,7 +142,7 @@ After validating that the lockdown packages are working as per the settings defi
     * `buildimage ProductName test(or)retail`  (this generates new Flash.ffu)
 4. Flash the device with this new Flash.ffu and validate the security features.
 
-See [SecureSample](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Source-arm/Products/SecureSample) as an example of a lockdown dragon board configuration.
+See [SecureSample](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/SecureSample) as an example of a lockdown dragon board configuration.
 
 
 ### Developing with CodeSigning Enforcement Enabled
