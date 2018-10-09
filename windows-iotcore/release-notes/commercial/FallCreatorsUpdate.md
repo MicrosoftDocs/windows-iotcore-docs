@@ -61,7 +61,7 @@ ___
   * BSP Version: 2112.0.0.0
 
 ## Additional Information
-* Based on the recent Intel announcement to stop producing the Intel Joule platform, FFUs for Intel Joule are discontinued in this release. Customers evaluating Intel Joule should identify an alternative platform using one of the other supported SoCs - see [Suggested Boards and SoCs](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/suggestedboards) for a list.
+* Based on the recent Intel announcement to stop producing the Intel Joule platform, FFUs for Intel Joule are discontinued in this release. Customers evaluating Intel Joule should identify an alternative platform using one of the other supported SoCs - see [Suggested Boards and SoCs](https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/prototypeboards) for a list.
 * The IOT_WEBB_EXTN feature has been refactored to remove the onboarding feature which is now available as IOT_ONBOARDING_APP. With this update, the onboarding feature will be removed and devices using this feature should be reflashed to get this feature again.
 
 ## Known Issues
