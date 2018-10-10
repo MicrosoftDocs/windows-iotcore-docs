@@ -97,6 +97,7 @@
 #### [Fall Creators Update (Build 16299)](release-notes/commercial/FallCreatorsUpdate.md)
 #### [Creators Update (Build 15063)](release-notes/commercial/CreatorsUpdate.md)
 ## [Troubleshooting](Troubleshooting.md)
+## [Downloads](Downloads.md)
 ## [Resources](Resources.md)
 ## [Accessibility](Accessibility.md)
 ## [Glossary](Glossary.md)
