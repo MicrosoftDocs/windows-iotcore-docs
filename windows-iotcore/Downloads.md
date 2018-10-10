@@ -22,6 +22,7 @@ _By downloading and using the Windows 10 IoT Core Dashboard you agree to the [li
 
 ![Image of the Windows 10 IoT Core Dashboard](media/IoTDashboard/DASHBOARD-800x450.jpg)
 
+
 ## Windows Insider Program
 
 Get the most up-to-date images under development to try out new features. To join the program, you'll first need to sign up for the Windows Insider Program before you're able to download the Insider Preview.
