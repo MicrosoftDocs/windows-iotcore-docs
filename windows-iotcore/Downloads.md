@@ -20,6 +20,11 @@ The Windows 10 IoT Dashboard makes flashing Windows 10 IoT Core onto your device
 
 _By downloading and using the Windows 10 IoT Core Dashboard you agree to the [license terms](http://go.microsoft.com/fwlink/?LinkID=703960&clcid=0x4809) and [privacy statement](http://go.microsoft.com/fwlink/?LinkId=521839) for the Windows 10 IoT Core Dashboard._
 
+<<<<<<< HEAD
+=======
+![Image of the Windows 10 IoT Core Dashboard](media/IoTDashboard/DASHBOARD-800x450.jpg)
+
+>>>>>>> 6dbf5aa2bf0ab01e767b8876f377e16f625061c6
 ## Windows Insider Program
 
 Get the most up-to-date images under development to try out new features. To join the program, you'll first need to sign up for the Windows Insider Program before you're able to download the Insider Preview.
@@ -42,6 +47,23 @@ Download the Windows 10 IoT October 2018 update for MinnowBoard Turbot/Max (deve
 
 ## Previous Windows 10 IoT Core Releases
 
+<<<<<<< HEAD
+=======
+### April 2018 Update
+
+* [Windows 10 IoT Core Packages](https://software-download.microsoft.com/download/pr/17134.1.180410-1804.rs4_release_amd64fre_IOTCORE_PACKAGES.iso)
+* [Raspberry Pi 2 & 3](https://software-download.microsoft.com/download/pr/17134.1.180410-1804.rs4_release_amd64fre_IOTCORE_RPi.iso)
+* [DragonBoard 410c](https://software-download.microsoft.com/download/pr/17134.1.180410-1804.rs4_release_amd64fre_IOTCORE_QCDB410C.iso)
+* [MinnowBoard Turbot/Max](https://software-download.microsoft.com/download/pr/17134.1.180410-1804.rs4_release_amd64fre_IOTCORE_MBM.iso)
+
+
+### Fall Creators Update
+
+* [Windows 10 IoT Core Packages](https://software-download.microsoft.com/download/pr/16299.15.170928-1534.rs3_release_amd64fre_IOTCORE_PACKAGES.iso)
+* [Raspberry Pi 2 & 3](http://download.microsoft.com/download/9/6/2/9629C69B-02B8-4A82-A4C8-860D6E880C66/16299.15.170928-1534.rs3_release_amd64fre_IOTCORE_RPi.iso)
+* [DragonBoard 410c](http://download.microsoft.com/download/1/0/C/10CAECC2-3B60-45BF-BF0D-D0BACF4072E5/16299.15.170928-1534.rs3_release_amd64fre_IOTCORE_QCDB410C.iso)
+* [MinnowBoard Turbot/Max](http://download.microsoft.com/download/5/F/9/5F917B68-020E-4993-A972-F1A7038510CF/16299.15.170928-1534.rs3_release_amd64fre_IOTCORE_MBM.iso)
+>>>>>>> 6dbf5aa2bf0ab01e767b8876f377e16f625061c6
 
 
 ## Other Downloads

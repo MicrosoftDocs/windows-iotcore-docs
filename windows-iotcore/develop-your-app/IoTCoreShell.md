@@ -33,7 +33,7 @@ The **IoT Startup App** ([sample](https://developer.microsoft.com/en-us/windows/
 
 The below instructions show you how to turn on Hotkey support through entries to the registry. If you are building your own image and want to support the below hotkeys (Home, previous app, and next app) without needing to access the registry, you can include an optional feature package that handles these steps for you.
 
-The feature package to look for is called: **Microsoft-OneCore-IoTUAP-Shell-HotKeys-Feature-Package.cab** and the feature is called **IOT_SHELL_HOTKEY_SUPPORT**. See the [Settings.HotKey sample package](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Settings.HotKey/Settings.HotKey.pkg.xml) for an example.
+The feature package to look for is called: **Microsoft-OneCore-IoTUAP-Shell-HotKeys-Feature-Package.cab** and the feature is called **IOT_SHELL_HOTKEY_SUPPORT**. See the [Settings.HotKey sample package](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Common/Packages/Settings.HotKey/Settings.HotKey.pkg.xml) for an example.
 
 The rest of this document covers how to implement this feature manually.
 
