@@ -10,7 +10,8 @@ keywords: windows iot, DISM, Deployment Image Servicing Management, SD card, fla
 
 # Use DISM to flash Windows 10 IoT Core
 
-> [!NOTE] DISM offline servicing isn't supported. You will receive the error error below if you try to mount an FFU for IoT Core:
+> [!NOTE]
+> DISM offline servicing isn't supported. You will receive the error error below if you try to mount an FFU for IoT Core:
 > The request is not supported.
 > The image doesn't have a name and it's likely to be a Mobile/Onecore FFU, which is currently not supported.
 > FfuMountImage#160 failed with 0x80070032.
@@ -24,23 +25,23 @@ You can use Deployment Image Servicing and Management(Dism.exe) to flash Windows
 * Plug-in your SD card to your machine. 
 
 * Find the disk number that your SD card is on your computer.  This will be used when the image is applied in the next step.  To do this, you can use the diskpart utility.  Run the following commands:
-	
-	    c:\FFUFolder>diskpart
-	    	
-	    DISKPART>list disk
-	
-    It should list all the storage devices attached to the computer. 
-	
-	![DISM List Disk](../media/Dism/DiskpartListDisk.png)
-	
-	Note the disk number and type exit to exit diskpart. 
 
-	    DISKPART>exit
-	
+        c:\FFUFolder>diskpart
+
+        DISKPART>list disk
+
+    It should list all the storage devices attached to the computer. 
+
+    ![DISM List Disk](../media/Dism/DiskpartListDisk.png)
+
+    Note the disk number and type exit to exit diskpart. 
+
+        DISKPART>exit
+
 * Using the administrator command prompt, apply the image to your SD card by running the following command (be sure to replace PhysicalDriveN with the value you found in the previous step, for example, in this case SD card is disk number 4, so we will use  `/ApplyDrive:\\.\PhysicalDrive4` below)
 
-	    dism.exe /Apply-Image /ImageFile:"[FULLPATH]\flash.ffu" /ApplyDrive:\\.\PhysicalDriveN /SkipPlatformCheck
-		
+        dism.exe /Apply-Image /ImageFile:"[FULLPATH]\flash.ffu" /ApplyDrive:\\.\PhysicalDriveN /SkipPlatformCheck
+
 * Click on the "Safely Remove Hardware" icon in your task tray and select your USB SD card reader to safely remove it from the system.  Failing to do this can cause corruption of the image.
 
 > [!NOTE]

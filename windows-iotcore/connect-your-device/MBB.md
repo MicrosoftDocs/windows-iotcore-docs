@@ -29,10 +29,10 @@ Mobile Broadband Connection is supported on [Windows 10 IoT Core](http://windows
    * [SSH](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/SSH)
 
 3. Switch to the folder where `MBBConnect.exe` is located. 
-```
-Command: MBBConnect.exe <APN name>
-<APN name>: It depends on your SIM card’s provider. 
-```
+   ```
+   Command: MBBConnect.exe <APN name>
+   <APN name>: It depends on your SIM card’s provider. 
+   ```
 
 ### Example
 The example below uses MBBConnect.exe in PowerShell. For example, if the APN of the SIM card is “Internet”, use `MBBConnect.exe Internet` to connect.

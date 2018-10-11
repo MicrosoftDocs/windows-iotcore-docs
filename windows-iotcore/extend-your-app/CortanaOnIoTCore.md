@@ -228,7 +228,7 @@ that consent will be launched before the user uses Cortana.
 
  var uri = new
  Uri(@"ms-cortana://CapabilitiesPrompt/?RequestedCapabilities=InputPersonalization,Microphone,Personalization&QuerySourceSecondaryId=IoT&QuerySource=Microphone&DismissAfterConsent=True");
- var success = await Windows.System.Launcher.LaunchUriAsync(uri);
+ var success = await Windows.System.Launcher.LaunchUriAsync(uri);
 ```
 
 ### Enable Voice Activation (Keyword Spotting)
