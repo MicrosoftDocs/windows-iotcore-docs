@@ -199,7 +199,7 @@ The driver can also be enabled with the DmapUtil command:
 
 DmapUtil: Utility to turn the DMAP direct memory mapper driver on or off
 Usage: dmaputil.exe status|enable|disable
-  status [-v]   Print out whether dmap is currently enabled. Pass the -v flag
-                for detailed configuration information.
-  enable        Enable dmap on next boot.
-  disable       Disable dmap on next boot.
+  status [-v]   Print out whether dmap is currently enabled. Pass the -v flag
+                for detailed configuration information.
+  enable        Enable dmap on next boot.
+  disable       Disable dmap on next boot.

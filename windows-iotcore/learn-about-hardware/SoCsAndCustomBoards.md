@@ -88,10 +88,10 @@ There is a vibrant ecosystem of [experienced Intel device builders](https://solu
 If you are building your own board, please contact your BIOS vendor if you need guidance on ACPI or SMBIOS changes.
 
 #### *Experienced partners*
-*  [Aaeon](http://www.aaeon.com/en/)
-*  [Advantech](http://www.advantech.com/) - buy@advantech.tw
-*  [Kontron](http://www.kontron.com/) - martin.unverdorben@kontron.com
-*  [Nexcom](http://www.nexcom.com/)
+* [Aaeon](http://www.aaeon.com/en/)
+* [Advantech](http://www.advantech.com/) - buy@advantech.tw
+* [Kontron](http://www.kontron.com/) - martin.unverdorben@kontron.com
+* [Nexcom](http://www.nexcom.com/)
 
 ### **Qualcomm DragonBoard 410c (APQ8016)-based custom design**
 Binary BSP for DragonBoard 410c (based on Qualcomm AQP8016 SoC) can be downloaded from [Qualcomm Developer Network](https://developer.qualcomm.com/hardware/dragonboard-410c/software).  
@@ -110,23 +110,23 @@ Recommendations:
 
 
 #### *Experienced partners*
-*  [Intrinsyc](https://www.intrinsyc.com/computing-platforms/410-som/) - Mark Waldenberg (mwaldenberg@intrinsyc.com)
-*  [Keith & Koep](https://keith-koep.com/en/products/products-som/myon-1-features-snapdragon-410/) - contact@keith-koep.com
-*  [Reycom](http://www.reycom.swiss/en/home-swiss.html) - welcome@reycom.swiss
-*  [Unitech](http://ute.com/products_info.php?pc1=4&pc2=461&rbu=0&pid=2395) - Sam (saml@tw.ute.com); Perry (perryt@te.ute.com)
+* [Intrinsyc](https://www.intrinsyc.com/computing-platforms/410-som/) - Mark Waldenberg (mwaldenberg@intrinsyc.com)
+* [Keith & Koep](https://keith-koep.com/en/products/products-som/myon-1-features-snapdragon-410/) - contact@keith-koep.com
+* [Reycom](http://www.reycom.swiss/en/home-swiss.html) - welcome@reycom.swiss
+* [Unitech](http://ute.com/products_info.php?pc1=4&pc2=461&rbu=0&pid=2395) - Sam (saml@tw.ute.com); Perry (perryt@te.ute.com)
 
 
 ### **NXP preview**
 NXP support for Windows 10 IoT Core is in private preview. Please sign up to express interest [here](http://aka.ms/iotnxp).
 
 You can also reach out to partners we're working with during preview:
-*  Advantech [RSB-4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858) - buy@advantech.tw
-*  Keith & Koep [pConXS](http://wce.keith-koep.com/en/products/pconxs-ff/) with [Trizeps VII](http://wce.keith-koep.com/en/products/trizeps7-i.MX6/) - contact@keith-koep.com
-*  Kontron [SMARC-sAMX6i](https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html) - Martin Unverdorben (martin.unverdorben@kontron.com)
-*  Solid Run [Hummingboard Edge](https://www.solid-run.com/imx6-win-10-iot-core/ )- Ilya Viten (ilya@solid-run.com)
-*  Geniatech [SoM-iMX6Q-Q7](https://www.geniatech.com/product/som-imx6q-q7/) & [SoM-iMX7D](https://www.geniatech.com/product/som-imx7d/) - Mike Decker (mike.decker@geniatech.com) or Fang Jijun (Fjj@geniatech.com)
-*  VIA [VAB-820](https://www.viaembeddedstore.com/shop/boards/vab-820/) - Michael Fox (MichaelFox@via.com.tw) or Dream Ku (dreamku@via.com.tw)
-*  Phytec [phyBOARD-i.MX7](https://phytec.com/products/single-board-computers/phyboard-i.mx7/) - Brad Dodson (sales@phytec.com)
+* Advantech [RSB-4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858) - buy@advantech.tw
+* Keith & Koep [pConXS](http://wce.keith-koep.com/en/products/pconxs-ff/) with [Trizeps VII](http://wce.keith-koep.com/en/products/trizeps7-i.MX6/) - contact@keith-koep.com
+* Kontron [SMARC-sAMX6i](https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html) - Martin Unverdorben (martin.unverdorben@kontron.com)
+* Solid Run [Hummingboard Edge](https://www.solid-run.com/imx6-win-10-iot-core/ )- Ilya Viten (ilya@solid-run.com)
+* Geniatech [SoM-iMX6Q-Q7](https://www.geniatech.com/product/som-imx6q-q7/) & [SoM-iMX7D](https://www.geniatech.com/product/som-imx7d/) - Mike Decker (mike.decker@geniatech.com) or Fang Jijun (Fjj@geniatech.com)
+* VIA [VAB-820](https://www.viaembeddedstore.com/shop/boards/vab-820/) - Michael Fox (MichaelFox@via.com.tw) or Dream Ku (dreamku@via.com.tw)
+* Phytec [phyBOARD-i.MX7](https://phytec.com/products/single-board-computers/phyboard-i.mx7/) - Brad Dodson (sales@phytec.com)
 
 ## Other options
 If you find that you'd still like to create a custom board, we have provided a few suggestions of manufacturers below that can help with schematics and layout for a board.

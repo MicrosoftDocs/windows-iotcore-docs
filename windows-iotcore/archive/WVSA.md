@@ -73,8 +73,8 @@ With our Windows 10 companion device properly set up, let's get our Arduino read
 * Optional: Wi-fi module - only needed if you choose to connect by wi-fi.
 
 * Set up your Arduino
-1. Prepare the Bluetooth module if necessary (the Bluetooth module may need to have headers soldered onto it).
-2. Except for the one different noted below, connected the Bluetooth module to the Arduino per [the wiring diagram](https://learn.sparkfun.com/tutorials/using-the-bluesmirf/hardware-hookup).
+* Prepare the Bluetooth module if necessary (the Bluetooth module may need to have headers soldered onto it).
+* Except for the one different noted below, connected the Bluetooth module to the Arduino per [the wiring diagram](https://learn.sparkfun.com/tutorials/using-the-bluesmirf/hardware-hookup).
 
   * Difference: Use pins 0 and 1 instead of 2 and 3:
     * The Bluetooth TX should connect to pin 0 (Arduino RX or RX0).
