@@ -24,7 +24,16 @@ The [Windows IoT Azure DM client library](https://aka.ms/iot-core-azure-dm-clien
 
 ![Azure DM Flow Chart](../media/AzureIoTDM/flowChartAzureDM.PNG)
 
-Microsoft provides two system components, CommProxy.exe and SystemConfigurator.exe, which the OEM needs to include in the device image. These components give access to the CSPs. The IoTDMClientLib maps the CSP interface to functions that can be consumed by Azure IoT Hub device management. It also provides DM functions that don’t use a CSP, e.g. set time zone. The IoTDMClientLib is provided as an open source component. OEMs can extend it to add DM capabilities that are specific to their device such as configurations for sensors or actuators.   
+Microsoft provides two system components, CommProxy.exe and SystemConfigurator.exe, which the OEM needs to include in the device image. These components give access to the CSPs. The IoTDMClientLib maps the CSP interface to functions that can be consumed by Azure IoT Hub device management. It also provides DM functions that don’t use a CSP, e.g. set time zone. The IoTDMClientLib is provided as an open source component. OEMs can extend it to add DM capabilities that are specific to their device such as configurations for sensors or actuators. 
+
+## Device Health Attestation
+For a secure operation of IoT devices it is essential to assess if a device is booted to a trusted and compliant state. With [Windows IoT Device Health Attestation (DHA)](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/docs/device-health-attestation.md) operators can verify the secure state of a device, and take appropriate remedial actions if necessary through [Azure IoT Hub Device Management](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/README.md). DHA is part of the Windows IoT Core Azure Device Management Client. To use the DHA capability in your solution it requires access to the Microsoft DHA service. A subscription to the service is available through the [Windows 10 IoT Core Services](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview).
+
+### Reference
+[Device Health Attestation for Azure IoT DM](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/docs/device-health-attestation.md)
+
+[Deploy Azure Resources for Device Health Attestation](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/docs/dha-deploy.md#deploy-azure-resources-for-device-health-attestation)
+
 
 ## How to get started?
 
