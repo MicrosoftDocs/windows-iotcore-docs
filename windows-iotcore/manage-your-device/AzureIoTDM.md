@@ -53,15 +53,19 @@ The [DM background application](https://aka.ms/iot-core-azure-dm-client-backgrou
 
 ### Toaster Application
 
-The [Toaster application](https://aka.ms/iot-core-azure-dm-client-toasterapp) , as the DM background app above, will enable Azure DM capabilities for a device. This app will run in the foreground and allows access to DM parameters and functions via the devices UI. 
+The [Toaster application](https://aka.ms/iot-core-azure-dm-client-toasterapp), as the device management background app above, will enable Azure DM capabilities for a device. This app will run in the foreground and allow access to DM parameters and functions via the devices UI. 
 
 ### Registering your device with the Azure Device Provision Service (DPS) 
 
-The Azure Device Provisioning Service (DPS) allows customers to automatically associate and configure a device with a specific IoT Hub at post production. For this process DPS will need a unique and challengeable ID to configure the device securely when it is put in operation. DPS uses the TPM’s public Endorsement Key (EKeyPub) for this purpose. To register the device with DPS, the EKeyPub needs to be harvested from the device. The preferred time for this step is during production, e.g. during end-of-line testing of the device. However, the process can also be done post production if needed.
+The Azure Device Provisioning Service allows customers to automatically associate and configure a device with an IoT Hub post-production. For this process Device Provisioning Service will need a unique and challengeable device ID to help configure the device securely when the device is put in operation. Device Provisioning Service uses the TPM’s public Endorsement Key (EKeyPub) for this purpose. To register the device with DPS, the EKeyPub needs to be harvested from the device. The preferred time for this step is during production (during end-of-line testing of the device). However, the process can also be done post-production if needed.  
 
-Microsoft provides the Limpet tool to simplify the extraction of the EKeyPub and the registration ID for Azure DPS enrolment. Limpet is available as open source and can be included as library into your project or your can use the provided console application. For more details on the DPS registration process with Limpet see the [Enroll the device in DPS](https://github.com/ms-iot/windows-iot-azure-dm-standalone-client/blob/master/docs/limpet/limpet.md#setup-azure-cloud-resources) section in the [Limpet documentation](https://github.com/ms-iot/azure-dm-client/blob/master/docs/limpet.md). Limpet is licensed under the MIT open source license.
+Microsoft provides the Limpet tool to streamline the Device Provisioning Service registration process. Depending on your manufacturing setup, if there is an online connection available, the device can be registered using Limpet directly with Device Provisioning Service, or Limpet can harvest the EKeyPub for a later, offline registration of the device with Device Provisioning Service.
 
-  [Limpet project repository](https://github.com/ms-iot/azure-dm-client)
+For more details on the Device Provisioning Service registration process with Limpet, see the Enroll the device in Device Provisioning Service  section in the Limpet documentation. 
+
+Project repository: Limpet project repository 
+License: Limpet is licensed under the MIT open source license 
+
   
   
 
