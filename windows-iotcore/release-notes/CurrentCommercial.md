@@ -1,15 +1,15 @@
 ---
-title: October 2018 Update - Build 17763
+title: April 2018 Update - Build 17134
 author: saraclay
 ms.author: saclayt
-ms.date: 10/02/2018
+ms.date: 05/01/2018
 ms.topic: article
-description: Learn about what's new in the October 2018 Update for Windows.
-keywords: Windows IoT, October 2018 Update, release notes
+description: Learn about what's new in the April 2018 Update for Windows 10 IoT.
+keywords: Windows IoT, April 2018 Update, release notes
 ---
 
-# October 2018 Update Release Notes for Windows 10 IoT
-Build Number 17763. October 2018
+# April 2018 Update Release Notes for Windows 10 IoT
+Build Number 17134. May 2018
 
 Windows 10 IoT enables development of embedded or dedicated-purpose devices and is the choice for OEMs and developers building Windows solutions for smart devices.
 
@@ -19,52 +19,35 @@ This document provides information that supplements other content and documentat
 
 The privacy statement for this version of the Windows operating system can be viewed at [https://go.microsoft.com/fwlink/?LinkId=521839](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-## What's New in October 2018 Update
+## What's New in April 2018 Update
+* The [Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2017/02/12/evolving-the-visual-studio-test-platform-part-4-together-in-the-open/) that ships with [Visual Studio 15.6 RTW](https://docs.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes#Win10_IoT_Core_Testing_Support) now supports testing on Windows 10 IoT Core. When [writing unit tests](https://blogs.msdn.microsoft.com/devops/2018/03/07/devops-for-iot-with-win10-iot-core-uwp-and-vsts/) for a project in Visual Studio 2017 which targets Windows 10 IoT Core, developers can now execute those unit tests remotely on the device directly from Visual Studio instead of having to deploy tests to the device and run them manually.
+* Developers can leverage the capabilities in the [Windows AI Platform](https://blogs.windows.com/buildingapps/2018/03/07/ai-platform-windows-developers/) on Windows 10 IoT to create more intelligent devices and accelerate ML model evaluation using CPU or GPU.
+* OEMs looking to bring a voice-enabled device to market quickly can integrate Cortana support into their device using the [preview of the Cortana Devices SDK](http://www.aka.ms/cortanadevices).
+* OEMs can leverage the rich set of CSPs available on Windows to perform remote configuration and management of devices at scale using [Azure IoT Device Management](https://github.com/ms-iot/iot-core-azure-dm-client). This new sample implementation combines a local client, cloud service, and management portal, enabling IoT operators to perform device management at cloud scale.
+* With this release, you can write [UWP console apps](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/console-uwp) that run in a console host, such as a command console or PowerShell. UWP console apps can also use Win32 APIs available to UWP apps and can be published and updated through the Microsoft Store.
+* We've added a new [Miracast feature package](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/miracast) for IoT Core along with a [set of casting APIs](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/BasicMediaCasting) to enable a device to act as a Miracast transmitter or receiver.
+* We've added support for the [Bluetooth A2DP-SRC](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/bluetooth) profile which allows a device to act as an audio source for Bluetooth streaming, including remote control capabilities over Bluetooth using the AVRCP profile.
+* One of our most popular Qualcomm boards, the DragonBoard 410c, has become far easier to flash with this release. Using the latest version of the [Windows 10 IoT Core Dashboard](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/iotdashboard), simply connect the board, put it into flash mode, and [flash the device](https://developer.microsoft.com/en-us/windows/iot/getstarted/prototype/setupdevice) directly from the dashboard.
+* For finding and connecting to WiFi networks, we've updated the [WiFi Connector sample](https://github.com/Microsoft/Windows-iotcore-samples/blob/develop/Samples/WiFiConnector/CS) to be on par with the netcmd command which was previously deprecated. This sample uses the [WiFiAdapter APIs](https://docs.microsoft.com/en-us/uwp/api/Windows.Devices.WiFi.WiFiAdapter) to manage wireless network connections and adapters.
+* We have new time-related APIs for automatically setting the system clock to the [local time](https://docs.microsoft.com/en-us/uwp/api/windows.system.datetimesettings.setsystemdatetime) and [time zone](https://docs.microsoft.com/en-us/uwp/api/windows.system.timezonesettings.autoupdatetimezoneasync#Windows_System_TimeZoneSettings_AutoUpdateTimeZoneAsync_Windows_Foundation_TimeSpan_) based on device location, enabling OEMs to create a more streamlined out of box experience.
+* We have new language APIs for setting the preferred user [language](https://docs.microsoft.com/uwp/api/windows.system.userprofile.globalizationpreferences.trysetlanguages#Windows_System_UserProfile_GlobalizationPreferences_TrySetLanguages_Windows_Foundation_Collections_IIterable_System_String__), [region](https://docs.microsoft.com/uwp/api/windows.system.userprofile.globalizationpreferences.trysethomegeographicregion#Windows_System_UserProfile_GlobalizationPreferences_TrySetHomeGeographicRegion_System_String_), default [speech](https://docs.microsoft.com/uwp/api/windows.media.speechrecognition.speechrecognizer.trysetsystemspeechlanguageasync) language, and default [voice](https://docs.microsoft.com/uwp/api/windows.media.speechsynthesis.speechsynthesizer.trysetdefaultvoiceasync).
+* With a new [MTP feature package](https://github.com/PawelWMS/windows-iotcore-docs/blob/MTP_Optional_Feature_Instructions/windows-iotcore/connect-your-device/MTP.md), you can transfer files to and from a Windows 10 IoT Core device over USB using the Media Transfer Protocol (MTP). This includes files located on the device's internal storage and SD card, if present.
+* We've published a new [sample on GitHub](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/Azure/IoTHubClients) and [Channel 9 video](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Connecting-Windows-IoT-Devices-To-IoT-Central) showing how easy it is to get a Windows 10 IoT device integrated into Azure IoT Central. We've also updated our documentation to describe [how to connect devices](https://docs.microsoft.com/en-us/azure/iot-central/howto-connect-windowsiotcore) running Windows 10 IoT Core to Azure IoT Central.
 
-_Windows 10 IoT Enterprise & Windows 10 IoT Core_
-* The Windows 10 IoT October 2018 Update will have 10 years of support for both IoT Core and IoT Enterprise.
-* [Azure IoT Edge](https://docs.microsoft.com/azure/iot-edge/quickstart) is a fully managed service that delivers cloud intelligence locally by deploying and running artificial (AI) workloads, Azure services, and custom logic directly on Windows 10 IoT devices.
-* [Windows Machine Learning](https://docs.microsoft.com/windows/ai/) allows developers to use pretrained machine learning models in their applications. These models are typically trained in the cloud to be evaluated at the edge. Local evaluation on devices running Windows 10 IoT helps mitigate concerns of connectivity, bandwidth, and data privacy.  
+## Improvements in Assigned Access
+* We've added support for multiple screens for digital signage use cases.
+* The Enrollment Status page now includes the ability to ensure all MDM configurations are enforced on the device prior to entering assigned access.
+* We've added the ability to configure and run Shell Launcher in addition to existing UWP Store apps.
+* Devices using assigned access can be configured to automatically enter a desired state after a reboot using a simplified process for creating and configuring an auto-logon account.
+* For multi-user devices, instead of specifying every user, it’s now possible to assign different assigned access configurations to Azure AD groups or Active Directory groups.
+* To help with troubleshooting, you can now view error reports generated if an assigned access-configured app has issues.
 
-_Windows 10 IoT Core_
-* [Windows 10 IoT Core Services](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview) subscription is now generally available. This subscription comes with three main benefits including 10 years of OS support, update control with the [Device Update Center](https://docs.microsoft.com/en-us/windows-hardware/service/iot/using-device-update-center), and Device Health Attestation (DHA).
-* To meet growing customer and partner demand for silicon diversity, Microsoft, in close partnership with NXP, have added support for NXP i.MX 6, 7, and 8M series processors to Windows 10 IoT Core. 
-* Qualcomm and Microsoft have created a solution that combines Windows 10 IoT Enterprise with Snapdragon processors to build devices that consume less power, are always connected and wake instantly. Long battery life enables dedicated devices like mobile POS and line-of-business tablets to last a full day of heavy use. 
-* [The Windows 10 IoT Core Default App](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp) has more features that users can leverage for their own applications, especially when bringing their devices to market. These features include weather, inking capabilities, audio capabilities. 
-* If you are building an open retail device for commercial deployment to a "specific/limited installation" (i.e. factory or retail store) where the end-user does the final configuration and you document your customers that they must [obtain a certificate for WDP and install it on both WDP and connecting browsers and passwords are changed on WDP](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal-ssl), then using WDP in this narrow commercial instance is acceptable. Retail images in this scenario should still not include IOT_TOOLKIT, but should use the IOT_WEBBEXTN package to pull in WDP. 
-* Limpet.exe is now available as an [open source project](https://github.com/ms-iot/azure-dm-client). To make testing easier, we have a non-signed, pre-built version of Limpet.exe available and can be downloaded right from WDP. Learn more about this feature from the [Windows Device Portal documentation](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/deviceportal).  
-* With RS5, developers are now able to flash custom FFUs onto their device using the Dashboard. This can be done with either the DragonBoard 410C or NXP. Learn more and get started [here](https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/devicesetup).
-* Windows 10 IoT Core now uses the same touch keyboard components as the desktop edition of Windows which allows for features like dictation mode, the entire set of Windows keyboard language layouts, and more. This new update also includes supprt for emoticons, most input "scopes", and better multi-lang support. Learn how to leverage these features [here](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/onscreenkeyboard).
-* Learn how to [configure your device to allow to be turned off](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/wakeontouch) while not in use and to be turned on when a user touches a screen.
-* Bluetooth A2DP-SINK is now optionally supported (e.g. Allows playback from remote source such as iPhone to IoT device) and Bluetooth A2DP-SRC is now an optional package (was available by default in the April 2018 Release). You can control Bluetooth A2DP-SRC and A2DP-SINK profile preferences when both profiles are present and when pairing with another device that also supports both. 
-* By design, Windows 10 IoT Core does not display an application frame around an application’s window – in order words, an application is shown as full screen. But with this release, developers have the option of [configuring title bars](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/signindialogtitlebars).
-* Bus tools that allow you to interact with Gpio, I2c, Spi and UART are now available in [our samples repository](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/BusTools). These tools will run on any edition of Windows including Windows 10 IoT Core and Windows Enterprise. 
-* [The Windows.System.Update Namespace API](https://docs.microsoft.com/en-us/uwp/api/windows.system.update) enables calls for interactive control of system updates. This namespace is only available for Windows 10 IoT Core.
-* If you're looking to use IoT Central as part of a Windows 10 IoT solution, you can now prepare and [connect a Windows 10 IoT Core device to your Azure IoT Central application](https://docs.microsoft.com/en-us/azure/iot-central/howto-connect-windowsiotcore). 
-* The release for the Raspberry Pi 3B+ (the downloadable ISO can be found [here](http://go.microsoft.com/fwlink/?LinkID=708576)) is a technical preview and there is currently no timeline for a release version. For a better evaluation experience and fr any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm or NXP SoCs. 
-
-
-## Improvements in Assigned Access 
-
-_Windows 10 IoT Enterprise_
-
-* Kiosks and digital signs are often place in public places where issues are widely seen by people. With built-in status reporting, device management systems are automatically made aware of problems and can issue corrective actions like restarting the device or dispatching a service technician. 
-* Reducing deployment and management costs are key drivers of ROI. Windows 10 IoT Enterprise has improved features for configuring a kiosk experience via a new wizard in the Settings app, managing multi-app kiosks and tailoring the [Microsoft Edge browser experience for kiosk devices](https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy).
-* While device builders have great flexibility to configure Assigned Access using provisioning packages, the Settings app, and mobile device management systems, some customers still need more. [Using a new set of Assigned Access APIs](https://docs.microsoft.com/en-us/uwp/api/windows.system.userprofile.assignedaccesssettings), developers can now configure Assigned Access programmatically from within their applications.
-* With the October 2018 release, customers can specify an auto-launch experience as part of the multi-app assigned access configuration so the end user can always have a default primary app experience.
-* You can control what the user sees from the moment the device is turned on until it's powered off. Starting by showing your logo instead of the Windows logo at boot, or auto-restart apps without error messages after an app crash, a system issue or a power interruption. 
-* You can use the Unified Write Filter (UWF) feature to build a "read-only" device that returns to a known state after a power cycle by keeping disk changes in memory instead of writing them to disk. You can also combine UWF with the Hibernate Once, Resume Many (HORM) feature to resume to a predefined session. 
-
-
-## More Management Support
-
-_Windows 10 IoT Enterprise_
-* Azure IoT Hub offers lightweight device management features and an extensibility model that enable device and cloud developers to build robust device management solutions. Integration with [Azure IoT Device Management](https://docs.microsoft.com/windows/iot-core/manage-your-device/azureiotdm) is now available for both Windows 10 IoT Core and Enterprise. 
-
-_Windows 10 IoT Core_
-* Enterprises that use [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) for their device management can now manage Windows 10 IoT Core devices alongside their Windows 10 IoT Enterprise devices and other managed devices. This gives operators a consistent way to manage Windows 10 IoT devices using the same management interface and controls. 
-
-
+## Features in Preview for Dev and Test Scenarios
+* Device Update Center [Preview] allows OEMs to globally manage their apps and push updates for the operating system, apps, settings, and files from the cloud to devices to keep them up to date and secure.
+* Support for hosting [Nano Server Containers](https://docs.microsoft.com/virtualization/windowscontainers/about/index) on 64-bit editions of Windows 10 IoT Core and Enterprise, enabling applications and their data can be isolated from each other and quickly moved from development to production or cloud to the edge.
+* Windows Device Health Attestation [Preview] service uses hardware features and cloud services to provide tamper proofing and remote attestation of device health based on hardware-level metrics and attested data.
+* [Azure IoT Edge](https://azure.microsoft.com/campaigns/iot-edge/) on Windows IoT [Preview] allows IoT solutions to orchestrate intelligence between the cloud and edge devices to ensure applications and services can act on IoT data wherever it makes the most sense.
+* Azure IoT Hub [Device Provisioning Service [Preview]](https://blogs.windows.com/buildingapps/2017/10/05/windows-10-iot-enables-complete-iot-lifecycle/) enables Windows 10 IoT devices to be created with a common image during manufacturing and configured to connect automatically at first boot to Azure IoT Hub to retrieve device-specific provisioning information.
 
 ## Windows 10 IoT Core Reference Images
 ___ 
@@ -81,6 +64,8 @@ ___
   * Architecture: ARM
   * BSP Version: 2120.0.0.0
 
+## Additional Information
+* Based on the recent Intel announcement to stop producing the Intel Joule platform, FFUs for Intel Joule were discontinued in the previous release. Customers evaluating Intel Joule should identify an alternative platform using one of the other supported SoCs - see [Suggested Boards and SoCs](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/suggestedboards) for a list.
 
 ## Known Issues
 * F5 driver deployment from Visual Studio does not work on Windows 10 IoT Core. Drivers must be manually copied and registered on the device.
