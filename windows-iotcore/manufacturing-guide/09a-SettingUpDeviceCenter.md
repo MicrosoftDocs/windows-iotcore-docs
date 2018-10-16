@@ -16,9 +16,9 @@ Please review the following requirements before you start the registration proce
 ### Sign up
 1. Create a [Windows Harware Dev Center](http://aka.ms/ducregister) account to access the Device Update Center(DUC). You will need:
 
-  - **An Extended Validation (EV) code signing certificate:** Used to validate the update cab file submitted for updates
-  - **An Azure Active Directory (AAD) account with administrator rights:** Used to sign legal agreements
-See Register for the Hardware Program for the detailed instructions on the registration process.
+   - **An Extended Validation (EV) code signing certificate:** Used to validate the update cab file submitted for updates
+   - **An Azure Active Directory (AAD) account with administrator rights:** Used to sign legal agreements
+   See Register for the Hardware Program for the detailed instructions on the registration process.
 
 2. Sign up for [Windows 10 IoT Core Services](http://aka.ms/iotcoreservices)
 
@@ -33,20 +33,20 @@ See Register for the Hardware Program for the detailed instructions on the regis
 
 2. Configure the SMBIOS fields based on the format defined by the BSP (for Qualcomm, this is defined in a SMBIOS.cfg file). The key fields used in the update are:
 
-  - **System Product Name**, referred in the update portal as **Device Model**.
+   - **System Product Name**, referred in the update portal as **Device Model**.
 
-  - **Base Board Product**, referred in the update portal as **Hardware Variant ID**.
+   - **Base Board Product**, referred in the update portal as **Hardware Variant ID**.
 
 3. Set initial version of the packages: `setversion 10.0.0.0`.
 
 4. Create the IoTDeviceModel xml file: `exportidm <productname>` . This will prompt to enter the required SMBIOS fields.
 
- ![Dashboard screenshot](../media/ManufacturingGuide/smbiosentry.png)
+   ![Dashboard screenshot](../media/ManufacturingGuide/smbiosentry.png)
  
- ## Step 3: Register Device Model in Device Update Center
-In the Device Update Center portal, select **New Device Model**.
+   ## Step 3: Register Device Model in Device Update Center
+   In the Device Update Center portal, select **New Device Model**.
 
- ![Dashboard screenshot](../media/ManufacturingGuide/newdevicemodel1.png)
+   ![Dashboard screenshot](../media/ManufacturingGuide/newdevicemodel1.png)
 
 Browse your files and select the `IoTDeviceModel_<productname>.xml` from the iot-adk-addonkit folder.
 

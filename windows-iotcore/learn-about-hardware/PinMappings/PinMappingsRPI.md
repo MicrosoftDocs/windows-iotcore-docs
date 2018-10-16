@@ -247,7 +247,7 @@ public async void SPI()
     // Set clock to 10MHz 
     settings.ClockFrequency = 10000000;
 
-    // Get a selector string that will return our wanted SPI controller
+    // Get a selector string that will return our wanted SPI controller
     string aqs = SpiDevice.GetDeviceSelector("SPI0");
     
     // Find the SPI bus controller devices with our selector string

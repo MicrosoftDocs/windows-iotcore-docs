@@ -24,28 +24,28 @@ MDM enrollment of an IoT Core device is accomplished using a Provisioning packag
 
 #### Microsoft System Center Configuration Manager (Standalone or SCCM+Intune Hybrid)
 
-1.  Open the Configuration Manager Management Console (ConfigMgr Console)
+1. Open the Configuration Manager Management Console (ConfigMgr Console)
 
-2.  Navigate to _Assets and Compliance > Compliance Settings > Company Resource Access > Certificate Profiles_
-![Certificate Profiles](../media/ManagingDevices/ConfigMgr-Certificate-Profiles.PNG)
+2. Navigate to _Assets and Compliance > Compliance Settings > Company Resource Access > Certificate Profiles_
+   ![Certificate Profiles](../media/ManagingDevices/ConfigMgr-Certificate-Profiles.PNG)
 
-3.  Click **Create Certificate Profile**
+3. Click **Create Certificate Profile**
 
-4.  Provide a name and description for the profile
-    - Name: ConfigMgr Example Trusted Root Certificate
+4. Provide a name and description for the profile
+   - Name: ConfigMgr Example Trusted Root Certificate
      - Type of certificate profile: Trusted CA certificate  
      ![Trusted certification](../media/ManagingDevices/ConfigMgr-Certificate-Profiles-Wizard.png)
 
-5.  Click **Next**.
+5. Click **Next**.
 
-6.  Import the certificate file.
+6. Import the certificate file.
 
-7.  Select **Computer certificate store - Root** for the **Destination Store**.
+7. Select **Computer certificate store - Root** for the **Destination Store**.
 
-8.  Click **Next**.
+8. Click **Next**.
 
-9.  Choose **Select all** for Supported Platforms
-    ![Supported platforms](../media/ManagingDevices/ConfigMgr-Certificate-Profiles-Wizard-Supported-Platforms.png)
+9. Choose **Select all** for Supported Platforms
+   ![Supported platforms](../media/ManagingDevices/ConfigMgr-Certificate-Profiles-Wizard-Supported-Platforms.png)
 
 10. Click **Summary, Next, and Close** to exit the wizard.
 
@@ -57,27 +57,27 @@ MDM enrollment of an IoT Core device is accomplished using a Provisioning packag
 
 #### Other MDM Servers
 
-1.  Download and install the [Windows Assessment and Deployment Kit (Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
+1. Download and install the [Windows Assessment and Deployment Kit (Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
 
-2.  Open Windows Imaging and Configuration Designer (WICD).
-    ![Windows Imaging and Configuration Designer](../media/ManagingDevices/WICD-Start-Page.png)
+2. Open Windows Imaging and Configuration Designer (WICD).
+   ![Windows Imaging and Configuration Designer](../media/ManagingDevices/WICD-Start-Page.png)
 
-3.  Choose **Advanced Provisioning**
+3. Choose **Advanced Provisioning**
 
-4.  Set a name for your package.
+4. Set a name for your package.
 
-5.  Choose settings common to Windows 10 IoT Core.
+5. Choose settings common to Windows 10 IoT Core.
 
-6.  Skip the Import Package step.
-    ![WICD-New-Project-Details](../media/ManagingDevices/WICD-Advanced-Provisioning-New-Project-Details.PNG) 
-    ![WICD-New-Project-Editions](../media/ManagingDevices/WICD-Advanced-Provisioning-New-Project-Editions.PNG) 
-    ![WICD-New-Project-Import](../media/ManagingDevices/WICD-Advanced-Provisioning-New-Project-Import.PNG)
+6. Skip the Import Package step.
+   ![WICD-New-Project-Details](../media/ManagingDevices/WICD-Advanced-Provisioning-New-Project-Details.PNG) 
+   ![WICD-New-Project-Editions](../media/ManagingDevices/WICD-Advanced-Provisioning-New-Project-Editions.PNG) 
+   ![WICD-New-Project-Import](../media/ManagingDevices/WICD-Advanced-Provisioning-New-Project-Import.PNG)
 
 7. Navigate to Workplace -> Enrollments.
 
-8.  In the UPN field enter the account you wish to enroll your device under (i.e. trmck@contoso.co) and click **Add**.
+8. In the UPN field enter the account you wish to enroll your device under (i.e. trmck@contoso.co) and click **Add**.
 
-    ![Workplace enrollments filled](../media/ManagingDevices/WICD-Workplace-Enrollments-UPN-Filled.png)
+   ![Workplace enrollments filled](../media/ManagingDevices/WICD-Workplace-Enrollments-UPN-Filled.png)
 
 9. For AuthPolicy choose between Username Password based authentication (OnPremises) or Certificate based authentication.
 

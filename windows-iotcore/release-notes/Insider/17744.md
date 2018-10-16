@@ -56,7 +56,7 @@ The Raspberry Pi may not maintain Display Resolution if monitor is disconnected.
 
 #### Raspberry Pi Video Performance 
 Video playback performance on the Raspberry Pi platform is not optimized.  Animated user elements including XAML-based dropdown menus may exhibit less than optimal performance. 
- 
+ 
 #### Raspberry Pi Camera Support 
 Support for camera peripheral devices is limited. The PiCam device directly connected to the onboard camera bus is not supported due to limitations in the platform to support D3D Modern USB webcams produce data streams that are very demanding on the USB Host controller.  Even when used with low resolution settings webcams will require additional USB fine tuning and specialized control logic. 
 

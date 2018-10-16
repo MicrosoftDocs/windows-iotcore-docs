@@ -72,7 +72,7 @@ Hardware volume controls for USB microphones and speakers which depend on Window
 
 ### USB keyboards
 Some USB keyboards and mice may not work on IoT Core. Use a different keyboard or mouse. A list of validated peripheral devices can be found in the documentation [here](http://go.microsoft.com/fwlink/?LinkId=619428).
- 
+ 
 ### Screen orientation
 Setting the orientation to “Portrait” may not be honored in a Universal App.
 
@@ -141,9 +141,9 @@ Connected Standby is not enabled on the Qualcomm Dragonboard by default.  To ena
 If time sync is failing or timing out this may be due to unreachable or a distant time server, the following can be done to add additional or local time servers. 
  
 1. From a command line on the device (eg. SSH, Powershell).
-```
-w32tm /config /syncfromflags:manual /manualpeerlist:"0.windows.time.com 1.pool.ntp.org 2.something else, ..."
-```
+   ```
+   w32tm /config /syncfromflags:manual /manualpeerlist:"0.windows.time.com 1.pool.ntp.org 2.something else, ..."
+   ```
 2. You may also make these additions to the registry via a boot script or a custom runtime configuration package included as part of the image creation process if needed. 
 
 ### Starting the FTP Server 

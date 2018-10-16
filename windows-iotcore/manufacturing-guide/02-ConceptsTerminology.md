@@ -70,7 +70,7 @@ There are two types of applications that can run on Windows IoT Core.
 * Foreground apps - these apps have a UI. Only one app can be running on an IoT device as the foreground app
 * Background apps - these apps do not have a UI. Multiple apps can be running on an IoT device as background apps
 
-For more information, please see [Foreground Apps](..\develop-your-app\BuildingAppsForIoTCore.md) or [Background Apps](..\develop-your-app\BackgroundApplications.md).
+For more information, please see [Foreground Apps](../develop-your-app/BuildingAppsForIoTCore.md) or [Background Apps](../develop-your-app/BackgroundApplications.md).
 
 ## Next Steps
 [Get the tools needed to create Windows IoT Core Images](03-ToolsNeeded.md)

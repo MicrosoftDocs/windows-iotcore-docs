@@ -23,32 +23,32 @@ This document describes the steps to enable Internet Connection Sharing (ICS) on
 
 ### Step 1: Gathering Network Information
 
-1.	Boot up device with Wi-Fi dongle plugged in, Ethernet cable plugged in.
-2.	Start SoftAP from the IoT Core device.
+1. Boot up device with Wi-Fi dongle plugged in, Ethernet cable plugged in.
+2. Start SoftAP from the IoT Core device.
 
-	By default, the Microsoft provided images start an IoT Onboarding application that will setup a SoftAP if Wi-Fi radio is capable and no WLAN profile has been added. To start SoftAP, UWP applications can use the [Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisher API](https://msdn.microsoft.com/en-us/library/windows/apps/windows.devices.wifidirect.wifidirectadvertisementpublisher.aspx). The source code for the IoT Onboarding application can be on GitHub [IoTOnboarding](https://github.com/ms-iot/samples/tree/develop/IotOnboarding).
+   By default, the Microsoft provided images start an IoT Onboarding application that will setup a SoftAP if Wi-Fi radio is capable and no WLAN profile has been added. To start SoftAP, UWP applications can use the [Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisher API](https://msdn.microsoft.com/en-us/library/windows/apps/windows.devices.wifidirect.wifidirectadvertisementpublisher.aspx). The source code for the IoT Onboarding application can be on GitHub [IoTOnboarding](https://github.com/ms-iot/samples/tree/develop/IotOnboarding).
 
-	Record the SSID of the SoftAP network. You will need it later to connect to your IoT Core device via Wi-Fi. For IoT Onboarding application the SSID will start with "AJ\_SoftAPSsid\_" and can be changed in application's configuration [file](https://github.com/ms-iot/samples/blob/develop/IotOnboarding/IoTOnboardingTask/Config.xml).
+   Record the SSID of the SoftAP network. You will need it later to connect to your IoT Core device via Wi-Fi. For IoT Onboarding application the SSID will start with "AJ\_SoftAPSsid\_" and can be changed in application's configuration [file](https://github.com/ms-iot/samples/blob/develop/IotOnboarding/IoTOnboardingTask/Config.xml).
 
-3.	Remotely connect to the IoT Core device [using ssh](ssh.md).
-4.	Collect information about device networks by finding network device indexes and descriptions. This is needed to declare which networks to bridge.
+3. Remotely connect to the IoT Core device [using ssh](ssh.md).
+4. Collect information about device networks by finding network device indexes and descriptions. This is needed to declare which networks to bridge.
 
-	On device, run **route print** and collect the following data:
+   On device, run **route print** and collect the following data:
 
-	* Record PUBLIC Interface network index for the Ethernet.
-  * Record PRIVATE Interface network index for the SoftAP (e.g. “Microsoft Wi-Fi Direct Virtual Adapter #2”).
+   * Record PUBLIC Interface network index for the Ethernet.
+   * Record PRIVATE Interface network index for the SoftAP (e.g. “Microsoft Wi-Fi Direct Virtual Adapter #2”).
 
-	For example, the SoftAP is exposed through interface index 5, adapter description “Microsoft Wi-Fi Direct Virtual Adapter #2”.
+   For example, the SoftAP is exposed through interface index 5, adapter description “Microsoft Wi-Fi Direct Virtual Adapter #2”.
 
-	![route print](../media/InternetConnectionSharing/internetconnectionsharing_route.png)
+   ![route print](../media/InternetConnectionSharing/internetconnectionsharing_route.png)
 
-	On device, run **ipconfig /all** and collect the following data:
+   On device, run **ipconfig /all** and collect the following data:
 	
-	* Record PRIVATE Interface network adapter name for the SoftAP
+   * Record PRIVATE Interface network adapter name for the SoftAP
 
-    For example, running "ipconfig /all" finds the specific adapter named “Local Area Connection* 3” that has a description of “Microsoft Wi-Fi Direct Virtual Adapter #2”. Use this method to manually find Adapter Name from the Description returned in “route print”.
+   For example, running "ipconfig /all" finds the specific adapter named “Local Area Connection* 3” that has a description of “Microsoft Wi-Fi Direct Virtual Adapter #2”. Use this method to manually find Adapter Name from the Description returned in “route print”.
 
-	![ipconfig all](../media/InternetConnectionSharing/internetconnectionsharing_ipconfig.png)
+   ![ipconfig all](../media/InternetConnectionSharing/internetconnectionsharing_ipconfig.png)
 
 ### Step 2: Scripting Internet Connection Sharing trigger
 
@@ -350,6 +350,6 @@ Build for target architecture, e.g. Release x86, and locate output **SharedAcces
 1. Copy **ConfigICS.cmd** script created in Step 2 to the device in some location, e.g. to `C:\test\`
 2. Copy **SharedAccessUtility.exe** created in Step 2 to the device in the same location, e.g. `C:\test`\
 3. On the device, run **C:\test\ConfigureICS.cmd start [public index] [private index] [private adapter name]**
-	In this example, this would mean **C:\test\ConfigureICS.cmd start 4 5 "Local Area Connection* 3"**
+    In this example, this would mean <strong>C:\test\ConfigureICS.cmd start 4 5 "Local Area Connection* 3"</strong>
 
 At this point the device has enabled Internet Connection Sharing for any client connected to the device’s advertised SSID.

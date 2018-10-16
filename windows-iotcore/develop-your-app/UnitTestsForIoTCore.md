@@ -22,13 +22,13 @@ ___
 
 1. Open Visual Studio
 
-1. Create a new unit test project
- ![Install App](../media/UnitTests/newproject.png)
+2. Create a new unit test project
+   ![Install App](../media/UnitTests/newproject.png)
 
-1. Update UnitTest.cs to include your test code
-```C#
-namespace UnitTestProject1
-{
+3. Update UnitTest.cs to include your test code
+   ```C#
+   namespace UnitTestProject1
+   {
     [TestClass]
     public class UnitTest1
     {
@@ -38,8 +38,8 @@ namespace UnitTestProject1
 		    // test code here
         }
     }
-}
-```
+   }
+   ```
 
 
 ### Remotely run unit test on Windows 10 IoT Core device
