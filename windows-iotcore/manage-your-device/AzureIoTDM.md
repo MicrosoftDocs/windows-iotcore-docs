@@ -53,4 +53,19 @@ The [DM background application](https://aka.ms/iot-core-azure-dm-client-backgrou
 
 ### Toaster Application
 
-The [Toaster application](https://aka.ms/iot-core-azure-dm-client-toasterapp) , as the DM background app above, will enable Azure DM capabilities for a device. This app will run in the foreground and allows access to DM parameters and functions via the devices UI.  
+The [Toaster application](https://aka.ms/iot-core-azure-dm-client-toasterapp), as the device management background app above, will enable Azure DM capabilities for a device. This app will run in the foreground and allow access to DM parameters and functions via the devices UI. 
+
+### Registering your device with the Azure Device Provision Service (DPS) 
+
+The Azure Device Provisioning Service allows customers to automatically associate and configure a device with an IoT Hub post-production. For this process Device Provisioning Service will need a unique and challengeable device ID to help configure the device securely when the device is put in operation. Device Provisioning Service uses the TPM’s public Endorsement Key (EKeyPub) for this purpose. To register the device with DPS, the EKeyPub needs to be harvested from the device. The preferred time for this step is during production (during end-of-line testing of the device). However, the process can also be done post-production if needed.  
+
+Microsoft provides the Limpet tool to streamline the Device Provisioning Service registration process. Depending on your manufacturing setup, if there is an online connection available, the device can be registered using Limpet directly with Device Provisioning Service, or Limpet can harvest the EKeyPub for a later, offline registration of the device with Device Provisioning Service.
+
+For more details on the Device Provisioning Service registration process with Limpet, see the Enroll the device in Device Provisioning Service  section in the Limpet documentation. 
+
+Project repository: Limpet project repository 
+License: Limpet is licensed under the MIT open source license 
+
+  
+  
+
