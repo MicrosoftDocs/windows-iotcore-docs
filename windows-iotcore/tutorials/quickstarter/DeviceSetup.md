@@ -110,7 +110,7 @@ If your device supports Wi-Fi connectivity and you've connected a display to it,
 3. Your device will begin scanning for wireless networks.
 4. Once your network appears in this list, select it and click _Connect_.
 
-If you haven't connected and display and would like to connect via Wi-Fi, you'll need to:
+If you haven't connected a display and would like to connect via Wi-Fi, you'll need to:
 
 1. Go to the IoT Dashboard and click on _My Devices_.
 2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
