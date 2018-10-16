@@ -64,6 +64,7 @@ Microsoft provides the Limpet tool to streamline the Device Provisioning Service
 For more details on the Device Provisioning Service registration process with Limpet, see the [Enroll the device in Device Provisioning Service](https://github.com/ms-iot/windows-iot-azure-dm-standalone-client/blob/master/docs/limpet/limpet.md#setup-azure-cloud-resources)  section in the [Limpet documentation](https://github.com/ms-iot/windows-iot-azure-dm-standalone-client/blob/master/docs/limpet/limpet.md). 
 
 Project repository: [Limpet project repository](https://github.com/ms-iot/windows-iot-azure-dm-standalone-client/blob/master/docs/limpet/limpet.md) 
+
 License: Limpet is licensed under the MIT open source license 
 
   
