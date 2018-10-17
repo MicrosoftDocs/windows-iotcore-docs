@@ -65,6 +65,7 @@ For more details on the Device Provisioning Service registration process with Li
 
 Project repository: [Limpet project repository](https://github.com/ms-iot/azure-dm-client/) 
 
+
 License: Limpet is licensed under the MIT open source license 
 
   
