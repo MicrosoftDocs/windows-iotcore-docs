@@ -66,11 +66,13 @@ These values specify the print bed dimensions of your 3d printer to the slicer w
 
 
 The value in the psk3dx:baudrate xml tag controls the specific baud rate to use while communicating with the 3d printer from the raspberry pi3. Set the appropriate baud rate specific to your 3d printer. 
+
+```
 \<psk3dx:baudrate\>115200</psk3dx:baudrate>
+```
 
 The other values in the PrintDeviceCapabilities xml are used to notify the slicer in the 3d print driver to fine tune how it works with your specific compatible printer.
-More information on all these values are provided here 
-https://docs.microsoft.com/en-us/windows-hardware/drivers/3dprint/slicer-settings
+More information on all these values are provided [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/3dprint/slicer-settings).
 
     
     
