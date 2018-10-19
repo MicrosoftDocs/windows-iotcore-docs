@@ -25,6 +25,15 @@ This article will give you a rundown of the different features that the Windows 
 
 The IoT Core Default App can be customized and extended, or you can use the source code as an example for your own app. To try this out for yourself, download the zip of our samples or check out the code for the IoT Core Default App [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp/CS). For any questions, please file an issue on our samples repo [here](https://github.com/Microsoft/Windows-iotcore-samples/issues).
 
+As shown under the [Settings section](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp#settings
+) below, in some cases, you may configure default settings and features on your customer system on behalf of the end user. However, if you turn these settings and features on by default or if diagnostics are above the basic setting, you must:
+
+* Notify the end user that these features have been enable and provide the end user with the link to Microsoft's Privacy Statement web page [here](http://go.microsoft.com/fwlink/?LinkId=521839). 
+* Secure consent from the relevant end user to enable such features by default (as required by applicable law).
+* Provide end users the ability to change the Diagnostics setting back to the basic setting.
+* If you enable Microsoft Accounts and you have access to end user data, if the end user deletes the Microsoft Account, you must enable simultaneous deletion of all the end user's Microsoft Account data on the device. 
+
+
 ## Command Bar
 The Command Bar is the persistant horizonatal bar located at the bottom of the screen. This provides easy access to the following funtionality:
 - Forward and backward page navigation
@@ -99,7 +108,7 @@ Some commands require administrator access. For security purposes the app uses a
 ## Settings
 You'll be able to configure a number of settings here including Wi-Fi, Bluetooth, power options, and more.
 
-#### App Settings
+### App Settings
 The **App Settings** section allows you to configure various settings for pages in the app.  
 
 Some of the settings you can customize are:
