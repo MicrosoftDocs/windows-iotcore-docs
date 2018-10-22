@@ -37,8 +37,8 @@ As shown under the [Settings section](https://docs.microsoft.com/en-us/windows/i
 
 The out-of-box experience for the IoT Core Default App is as lean as it gets. The first pages will ask for a default language and wi-fi settings. From there, in order for your app to be GDPR-compliant, you must have a diagnostic data screen and, if you're planning to track location, you will need to have a location permissions screen too. Examples of both are shown below. 
 
-![How to expand Command Bar](../media/IoTCoreDefaultApp/OOBE3.jpg)
-![How to expand Command Bar](../media/IoTCoreDefaultApp/OOBE4.jpg)
+![Location settings for OOBE](../media/IoTCoreDefaultApp/OOBE3.jpg)
+![Diagnostic settings for OOBE](../media/IoTCoreDefaultApp/OOBE4.jpg)
 
 ## Command Bar
 The Command Bar is the persistant horizonatal bar located at the bottom of the screen. This provides easy access to the following funtionality:
