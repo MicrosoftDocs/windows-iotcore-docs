@@ -22,6 +22,7 @@ _By downloading and using the Windows 10 IoT Core Dashboard you agree to the [li
 
 ![Image of the Windows 10 IoT Core Dashboard](media/IoTDashboard/DASHBOARD-800x450.jpg)
 
+
 ## Windows Insider Program
 
 Get the most up-to-date images under development to try out new features. To join the program, you'll first need to sign up for the Windows Insider Program before you're able to download the Insider Preview.
@@ -30,26 +31,31 @@ Get the most up-to-date images under development to try out new features. To joi
 
 ## Latest Windows 10 IoT Core Builds
 
-### [Windows 10 IoT Core Packages](https://go.microsoft.com/fwlink/?LinkId=2027600)
-Download the Windows 10 October 2018 Update for OS packages (custom and commercial FFUs).
+> [!IMPORTANT]
+> Due to an issue found on Desktop, we are currently validating new packages. 
 
-### [Raspberry Pi 2 & 3](https://go.microsoft.com/fwlink/?LinkId=846058)
-Download the Windows 10 October 2018 Update for Raspberry Pi 2 & 3 (development-only prototype device FFUs).
+<!-- ### [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore)
+Download the Windows 10 October 2018 Update for OS packages (custom and commercial FFUs).-->
 
-### [DragonBoard 410c](https://go.microsoft.com/fwlink/?LinkId=846059)
-Download the Windows 10 October 2018 Update for DragonBoard 410c (development-only prototype device FFUs).
+<!--### [Raspberry Pi 2 & 3](https://go.microsoft.com/fwlink/?LinkId=846058)
+Download the Windows 10 October 2018 Update for Raspberry Pi 2 & 3 (development-only prototype device FFUs).-->
 
-### [MinnowBoard Turbot/Max](https://go.microsoft.com/fwlink/?linkid=846057)
-Download the Windows 10 IoT October 2018 update for MinnowBoard Turbot/Max (development-only prototype device FFUs).
+<!--### [DragonBoard 410c](https://go.microsoft.com/fwlink/?LinkId=846059)
+Download the Windows 10 October 2018 Update for DragonBoard 410c (development-only prototype device FFUs).-->
+
+
+<!--### [MinnowBoard Turbot/Max](https://go.microsoft.com/fwlink/?linkid=846057)
+Download the Windows 10 IoT October 2018 update for MinnowBoard Turbot/Max (development-only prototype device FFUs).-->
+
 
 ## Previous Windows 10 IoT Core Releases
 
 ### April 2018 Update
 
-* [Windows 10 IoT Core Packages](https://software-download.microsoft.com/download/pr/17133.1.180323-1312.rs4_release_amd64fre_IOTCORE_PACKAGES.iso)
-* [Raspberry Pi 2 & 3](https://software-download.microsoft.com/download/pr/17133.1.180323-1312.rs4_release_amd64fre_IOTCORE_RPi.iso)
-* [DragonBoard 410c](https://software-download.microsoft.com/download/pr/17133.1.180323-1312.rs4_release_amd64fre_IOTCORE_QCDB410C.iso)
-* [MinnowBoard Turbot/Max](https://software-download.microsoft.com/download/pr/17133.1.180323-1312.rs4_release_amd64fre_IOTCORE_MBM.iso)
+* [Windows 10 IoT Core Packages](https://software-download.microsoft.com/download/pr/17134.1.180410-1804.rs4_release_amd64fre_IOTCORE_PACKAGES.iso)
+* [Raspberry Pi 2 & 3](https://software-download.microsoft.com/download/pr/17134.1.180410-1804.rs4_release_amd64fre_IOTCORE_RPi.iso)
+* [DragonBoard 410c](https://software-download.microsoft.com/download/pr/17134.1.180410-1804.rs4_release_amd64fre_IOTCORE_QCDB410C.iso)
+* [MinnowBoard Turbot/Max](https://software-download.microsoft.com/download/pr/17134.1.180410-1804.rs4_release_amd64fre_IOTCORE_MBM.iso)
 
 
 ### Fall Creators Update

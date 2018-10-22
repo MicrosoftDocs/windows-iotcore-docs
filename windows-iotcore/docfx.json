@@ -29,7 +29,6 @@
         ]
       }
     ],
-    
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
@@ -39,13 +38,16 @@
       "feedback_product_url": "windows-feedback:?contextid=441",
       "breadcrumb_path": "/windows/iot-core/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Windows-IoT",
-      "searchScope": ["windows-iot"],
+      "searchScope": [
+        "windows-iot"
+      ],
       "ms.prod": "windows-IoT",
       "ms.technology": "IoT",
       "titleSuffix": "Windows IoT"
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "windows-iotcore"
+    "dest": "windows-iotcore",
+    "markdownEngineName": "markdig"
   }
 }

@@ -73,7 +73,7 @@ If the key is not registered with ssh-agent it must be specified on the command 
 ssh -i .\id_rsa DefaultAccount@host
 ```
 
-If the private key is registered with ssh-agent then you only need to specify **DefaultAccount@host**:
+If the private key is registered with ssh-agent then you only need to specify <strong>DefaultAccount@host</strong>:
 
 ```cmd
 ssh DefaultAccount@host

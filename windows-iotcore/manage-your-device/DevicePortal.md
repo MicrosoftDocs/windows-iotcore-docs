@@ -133,7 +133,7 @@ sample which may be [downloaded here](https://github.com/ms-iot/samples).
 The Trusted Platform Module (TPM) is a cryptographic coprocessor including capabilities for random number generation, secure generation of cryptographic keys and limitation of their use. It also includes capabilities such as remote attestation and sealed storage. To learn about the TPM and security on IoT Core, visit the [Building secure devices](../secure-your-device/BuildingSecureDevices.md) page and the [TPM](../secure-your-device/TPM.md) page.
 
 > [!IMPORTANT]
-Limpet.exe used to be part of Windows IoT Core. Starting with October 2018, it is now available as an open source porject at [https://github.com/ms-iot/azure-dm-client](https://github.com/ms-iot/azure-dm-client).
+> Limpet.exe used to be part of Windows IoT Core. Starting with October 2018, it is now available as an open source porject at [https://github.com/ms-iot/azure-dm-client](https://github.com/ms-iot/azure-dm-client).
 
 To make testing easier, we have a non-signed pre-built version of Limpet.exe available and can be downloaded right from WDP. You just need to go the 'TPM Configuration' tab and click the 'Install Latest' button. 
 

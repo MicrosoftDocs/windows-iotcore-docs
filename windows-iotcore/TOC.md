@@ -28,6 +28,7 @@
 ### [Setup a default app](develop-your-app/SetupDefaultApp.md)
 ### [Install your app](develop-your-app/AppInstaller.md)
 ### [IoT Core Default App](develop-your-app/IoTCoreDefaultApp.md)
+### [Unit Tests](develop-your-app/UnitTestsForIoTCore.md)
 ### [Deploy your console application](develop-your-app/RemoteDebugging.md)
 ### [Language support](develop-your-app/MultiLang.md)
 ### [Embedded mode](develop-your-app/EmbeddedMode.md)
@@ -92,7 +93,7 @@
 #### [Build 16267](release-notes/insider/16267.md)
 #### [Build 16257](release-notes/insider/16257.md)
 ### [Commercial Releases](release-notes/CurrentCommercial.md)
-#### [Current: October 2018 Update (Build 17763)](release-notes/commercial/October2018Update.md)
+<!--#### [Current: October 2018 Update (Build 17763)](release-notes/commercial/October2018Update.md)-->
 #### [April 2018 Update (Build 17134)](release-notes/commercial/April2018Update.md)
 #### [Fall Creators Update (Build 16299)](release-notes/commercial/FallCreatorsUpdate.md)
 #### [Creators Update (Build 15063)](release-notes/commercial/CreatorsUpdate.md)
