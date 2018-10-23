@@ -17,7 +17,7 @@ Below you'll find boards we suggest to help you get started with Windows 10 IoT 
 > You must create your own images and not use the provided images below if you plan to commercialize your device.
 
 > [!NOTE]
-> The Raspberry Pi's USB driver - provided by a 3rd party - may have compatibility issues with devices, including ones like keyboard and mic. For more fully-fleshed scenarios, it is better to use a DragonBoard, Up Board or NXP device. 
+> The Raspberry Pi's USB driver - provided by a 3rd party - may have compatibility issues with devices, including ones like keyboard and mice. For more fully-fleshed scenarios, it is better to use a DragonBoard, Up Board or NXP device. 
 
 
 | Boards | Where To Buy | FFU Link | How To Set Up | Starter Kit |
