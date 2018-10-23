@@ -8,9 +8,9 @@ description: Leverage all of the resources in the Windows 10 IoT community.
 keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued Persons, videos, blog posts
 --- 
  
-# Windows 10 IoT Resources
+# Windows 10 IoT resources
 
-## Blog Posts
+## Blog posts
 ### Stay on top of our latest announcements for the Windows 10 IoT community.
 
 * [Windows 10 IoT delivers innovation and intelligence at the edge with the October 2018 Update](https://blogs.windows.com/windowsexperience/2018/10/04/windows-10-iot-delivers-innovation-and-intelligence-at-the-edge-with-the-october-2018-update/#9g9hmmO2AdUB1C6F.97) 
@@ -21,7 +21,7 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [DevOps for IoT with Windows 10 IoT Core, UWP, and VSTS](https://blogs.msdn.microsoft.com/devops/2018/03/07/devops-for-iot-with-win10-iot-core-uwp-and-vsts/)
 * [Microsoft doubles down on Windows 10 IoT with added support](https://blogs.windows.com/business/2018/02/27/microsoft-doubles-down-on-windows-10-iot-with-added-support/#l0XfUKmKrkyKd4AA.97)
 
-## Learning Resources
+## Learning resources
 ### Find resources on how to get started or get trained with the help of the community.
 
 * [Microsoft MVP community](https://mvp.microsoft.com/)
@@ -41,7 +41,7 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Windows 10 IoT Core Walkthrough](https://channel9.msdn.com/Blogs/Seth-Juarez/Windows-IoT-Core-Walkthrough?term=windows%20iot%20core)
 * [Windows 10 IoT and Azure IoT Device Management Enhancement](https://channel9.msdn.com/Shows/Azure-Friday/Windows-10-IoT-and-Azure-IoT-Device-Management-Enhancements?term=windows%20iot%20core)
 
-## Community Projects
+## Community projects
 ### Learn about the various verticals where Windows 10 IoT is being used in the Hackster community.
 
 * [Industrial automation](https://www.hackster.io/projects/tags/industrial+automation+win10)
@@ -52,8 +52,8 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Security](https://www.hackster.io/projects/tags/security+win10)
 * [Energy](https://www.hackster.io/projects/tags/energy+win10)
 
-## Our Technology Partners
-### These partners offer complementary technology such as apps, extensions and more that Windows 10 IoT can run.
+## Our technology partners
+### These partners offer complementary technology, such as apps, extensions, and more that Windows 10 IoT can run.
 
 * [Azure Systems](https://www.azul.com/)
 * [Codesys](https://de.codesys.com/)
