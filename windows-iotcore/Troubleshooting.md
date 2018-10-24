@@ -89,7 +89,7 @@ If you're looking to remove the image from your SD card and restore the card bac
 ```
 diskpart
 list disk (this command lists the drives you have connected to your computer. Take note of the disk number of your SD card)
-select disk <number> (Replace <number> with the disk number of your SD card from the previous step
+select disk <number> (Replace <number> with the disk number of your SD card from the previous step)
 clean
 create partition primary
 format fs=ntfs quick
