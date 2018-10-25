@@ -140,7 +140,7 @@ By combining logic between `localSettings` and `AppServiceConnection`, you can b
 
 **Cons**: Your test app is included with the retail image. If you may have security holes in your app. Please make sure that your test app is locked down as needed. Due to the nature of the app, you app may be able to modify features of the device.
 
-**What other options can I take?** If you do not want to launch the test app every time, you can create a console app and include it within the app in addition to the test app and run console app to take control of the registry and modify the registry to change the launch order of the app after the tests are successful. Please see [this] (https://github.com/ms-iot/iot-utilities/tree/master/TakeRegistryOwnership) project to create a console app to modify the registry keys. You will need to modify these registry keys:
+**What other options can I take?** If you do not want to launch the test app every time, you can create a console app and include it within the app in addition to the test app and run console app to take control of the registry and modify the registry to change the launch order of the app after the tests are successful. Please see [this](https://github.com/ms-iot/iot-utilities/tree/master/TakeRegistryOwnership) project to create a console app to modify the registry keys. You will need to modify these registry keys:
 ````
  HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run
  HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
