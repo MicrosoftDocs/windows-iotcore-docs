@@ -115,7 +115,7 @@ First, you must register the final app (com.concurrency.lwinsapp) with app servi
 ```Xaml
 <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="AppServiceProvider.App">
       <Extensions>
-        <uap:Extension Category="windows.appService" EntryPoint="MyAppService.UpdateService">
+        <uap:Extension Category="windows.appService" EntryPoint="MyAppService.AppLaunchService">
           <uap3:AppService Name="com.concurrency.lwinsapp" uap4:SupportsMultipleInstances="true" />
         </uap:Extension>
       </Extensions>
@@ -126,12 +126,16 @@ First, you must register the final app (com.concurrency.lwinsapp) with app servi
 Following code segment will launch a custom application:
 
 ````CSharp
-private AppServiceConnection updaterService;
+private AppServiceConnection appLaunchService;
 ...
-this.updaterService = new AppServiceConnection();
-this.updaterService.AppServiceName = "com.concurrency.lwinsapp";
-this.updaterService.PackageFamilyName = "f3a114f7-e099-4773-8c93-77abcba14f62_004hcn5rxyy0y";
-var status = await this.updaterService.OpenAsync();
+this.appLaunchService = new AppServiceConnection();
+this.appLaunchService.AppServiceName = "com.concurrency.lwinsapp";
+this.appLaunchService.PackageFamilyName = "f3a114f7-e099-4773-8c93-77abcba14f62_004hcn5rxyy0y";
+var status = await this.appLaunchService.OpenAsync();
 ````
 
 By combining logic between `localSettings` and `AppServiceConnection`, you can by pass the test app on every boot of the device. In essance, the test app runs every boot but pass thru to the final app on boot. If needed, you can set your logic in such a way that device will not continue to final app if tests fails on the test app on every boot. This might be helpful if you need to verify that device is fully tested and functional on every boot.
+
+**Pros**: You can test the device automatically on every boot to ensure that certain conditions are set correctly on every boot and the device is fully tested (and secure).
+
+**Cons**: Your test app is included with the retail image. If you may have security holes in your app. Please make sure that your test app is locked down as needed. Due to the nature of the app, you app may be able to modify features of the device.
