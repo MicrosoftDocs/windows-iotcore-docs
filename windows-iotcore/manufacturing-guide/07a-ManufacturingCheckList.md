@@ -90,7 +90,7 @@ So what types of actions can I take?
 - Launch another FGA app
 - Edit the Registry to modify the boot sequence
 
-####Launching another FGA app from test app
+#### Launching another FGA app from test app
 
 If you are launching a Microsoft store app, you can use the following code snippit to launch apps installed and updated thru the store.
 Additional information URI schemes can be found [here](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/launch-store-app).
