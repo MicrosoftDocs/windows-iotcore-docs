@@ -78,6 +78,25 @@ Example:
 
 You may get error **0x139f (ERROR_INVALID_STATE)** in the case when the device is roaming but the roaming policy disallows data roaming - error on a connect request sent to wwansvc.
 
+### Raspberry Pi 3B+
+
+If you're looking to work with the Raspberry Pi 3B+, one of our outstanding MVPs, Jiong Shi, came up with this tutorial that you can find on Hackster.io [here](https://www.hackster.io/JiongShi/windows-10-iot-core-for-raspberry-pi-3-model-b-92b1a3).
+
+Please keep in mind that for any device flashing, you will need to have Windows 10. Your SD card will need to be 8GB even though the Windows 10 IoT Core image is under 1 GB (so there's space to install additional content). 
+
+If you're looking to remove the image from your SD card and restore the card back for general use, you'll need to run a series of commands in an elevate command prompt (simply reformatting the card alone won't work):
+
+```
+diskpart
+list disk (this command lists the drives you have connected to your computer. Take note of the disk number of your SD card)
+select disk <number> (Replace <number> with the disk number of your SD card from the previous step)
+clean
+create partition primary
+format fs=ntfs quick
+exit
+```
+
+
 ### Yubikey support
 
 Windows 10 IoT Core does not have smart card support. However, smart cards are usually devices used for user identity and not device identity because they are secured with PINs and, in the case of the Yubikey, a button to press. This does not harmonize with an IoT device. If you're looking for an alternative, a TPM 2.0 on the device may serve better than a Yubikey or smart card. We have full certificate support for TPMs and they are meant to store devices as well as user certificates and Azure IoT access credentials (Limpets).
