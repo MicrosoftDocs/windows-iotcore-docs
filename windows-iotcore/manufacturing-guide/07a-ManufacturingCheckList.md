@@ -17,10 +17,10 @@ We will split the tasks into multiple sections.
 
 ## Test Image
 ### Basic Image
-- [ ] Download / Build BSPs for board
+- [ ] (Download / Build BSPs for board)[04a-BoardSupportPackages.md]
 - [ ] Select the correct Image Type (arm / x86 / x64)
-- [ ] Create basic image
-- [ ] Boot basic image 
+- [ ] (Create basic image)[04-CreateBasicImage.md]
+- [ ] (Boot basic image)[05-FlashingImage.md]
 ### Drivers
 - [ ] Add drivers for the Image (if required)
 - [ ] Boot test image with drivers
