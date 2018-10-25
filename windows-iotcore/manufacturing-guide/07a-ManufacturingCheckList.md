@@ -87,7 +87,7 @@ Object value = localSettings.Values["appRanOnce"];
 > [!NOTE]
 > For best result, only use `localSettings` to store the variables to store the settings values.
 > There is a possible chance of undesirable results from using `roamingSettings` features.
-> `localSettings` can only hold 64k of data at the time of this writing [More on Application Settings](https://docs.microsoft.com/en-us/windows/uwp/design/app-settings/store-and-retrieve-app-data)
+> `localSettings` can only hold 64k of data at the time of this writing [[More on Application Settings]](https://docs.microsoft.com/en-us/windows/uwp/design/app-settings/store-and-retrieve-app-data)
 
 Using the code block above, you can apply the logic on launch of the application so that on the subsequent launches, the application takes approperiate actions.
 
