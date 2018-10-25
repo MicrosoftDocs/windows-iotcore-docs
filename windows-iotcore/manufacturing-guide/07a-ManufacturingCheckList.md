@@ -100,10 +100,12 @@ Additional information URI schemes can be found here[https://docs.microsoft.com/
 
 ````CSharp
 // Following will launch the Microsoft store app and navigate to the Games section
-bool result = await Windows.System.Launcher.LaunchUriAsync(new Uri("ms-windows-store://navigatetopage/?Id=Games"));
+bool result = await Windows.System.Launcher.LaunchUriAsync(new Uri
+    ("ms-windows-store://navigatetopage/?Id=Games"));
 
 // Following will launch the One Note app using the package family name (PFN)
-bool result = await Windows.System.Launcher.LaunchUriAsync(new Uri("ms-windows-store://pdp/?PFN= Microsoft.Office.OneNote_8wekyb3d8bbwe"));
+bool result = await Windows.System.Launcher.LaunchUriAsync(new Uri
+    ("ms-windows-store://pdp/?PFN= Microsoft.Office.OneNote_8wekyb3d8bbwe"));
 `````
 
 If you are launching a custom (non Microsoft store) app, you can use `AppServiceConnection` to launch an app using package family name (PFN). 
