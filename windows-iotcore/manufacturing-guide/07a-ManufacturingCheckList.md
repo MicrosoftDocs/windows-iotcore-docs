@@ -60,3 +60,12 @@ We will split the tasks into multiple sections.
 ---
 
 ## Testing Retail Image
+A user can easily test the basic test image of IoT core just by turning on a device with the image flashed on the device. Once the device is running, you can run thru various checks to verify that the device is truly functional in all aspects. The ease of tests depends on levels of security factors baked into the image. On a basic test image, since there is no security protocols build in, you can use all development tools to test an IoT device. The task of testing becomes harder as all security protocols are baked into the device. Due to the nature of security protocols baked into the retail image, you may want to write a test application that can run on the IoT device that can  tests various areas and functions of the device. 
+
+The testing can be done in a few ways. 
+### Clean retail image test
+If you truly want to have a clean image, you will need to create two (2) retail images. The two images will be indentical except for one feature. The testing retail image will have the test app that will be configured as a Fore-Ground-App and you can use that to test the various features. Once features are tested, you can use the second image (without test app) for distribution.
+*Pros*: Final image will be totally clean and only the items that are deemed neccessary are baked into the image.
+*Cons*: There are potential user error while adding a test app to the retail image. There are potential modifications made to provisioning package(s) that could be totally different from final retail image.
+
+### One time only pass thru test
