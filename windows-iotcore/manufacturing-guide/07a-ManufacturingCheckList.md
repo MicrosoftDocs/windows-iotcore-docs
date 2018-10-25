@@ -78,10 +78,12 @@ In the case of a one time only pass thru image, test app is written and included
 Windows.Storage.ApplicationDataContainer localSettings = 
     Windows.Storage.ApplicationData.Current.LocalSettings;
     
-// Set variable as boolean, numbers, string
-localSettings.Values["appRanOnce"] = true;    
+// Set variable as boolean, numbers, or string values as needed at approperiate location within the test app
+localSettings.Values["appRanOnce"] = false;    
 
 // Read variable and verify value to check and apply logic
 Object value = localSettings.Values["appRanOnce"];
 
 ```
+
+Using the code block above, you can apply the logic on launch of the application so that on the subsequent launches, the application takes approperiate actions.
