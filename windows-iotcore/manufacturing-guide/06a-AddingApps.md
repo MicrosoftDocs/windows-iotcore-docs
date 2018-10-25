@@ -1,7 +1,7 @@
 --- 
 title: Adding an App to a Windows IoT Core Image
-author: John Adali, Lwin Maung, Concurrency
-ms.author: John Adali, Lwin Maung, Concurrency
+author: jadali,lmaung
+ms.author: jadali, lmaung
 ms.date: 09/20/2018 
 ms.topic: article 
 description: Description on how to add an App to a Windows IoT Core Image
@@ -22,6 +22,7 @@ Please note that this process is identical for both background and foreground ap
 ## Prerequisites/Requirements
 Please make sure you've created a basic image from [Creating a Basic IoT Core Image](04-CreateBasicImage.md) previously. For this example, we have created a basic image with the Qualcomm DragonBoard called *TestDragonBoardProduct*.
 
+
 You will need the following tools installed to complete this section:
 * **Visual Studio**. This is needed to create the UWP application that will be added to the custom FFU image.
 * **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows IoT Core.
@@ -29,6 +30,7 @@ You will need the following tools installed to complete this section:
 * **[IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)**. These provide the sample scripts and base structure for building custom Windows IoT Core images.
 * **Iot Core Shell**. This is included with the Windows ADK and is the commandline window interface where you execute commands to build custom FFU images for Windows IoT Core.
 * A text editor like **Notepad** or **VS Code**.
+
 
 ## Create an Appx Package
 The first step is to create a **Universal Windows Platform (UWP)** application that will run on the IoT device. You may skip this section if you've already created and tested your UWP application.
@@ -175,7 +177,8 @@ You can now update your product configuration files to include your app in the F
 ```
 
 ## Build and Test Image
-Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateBasicImage.md). You should only have to run the **buildimage** command:
+Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateImage.md). You should only have to run the **buildimage** command:
+
 
     buildimage <product name> test 
 
