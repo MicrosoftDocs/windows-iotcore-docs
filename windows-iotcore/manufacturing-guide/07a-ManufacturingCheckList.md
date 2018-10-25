@@ -20,10 +20,10 @@ We will split the tasks into multiple sections.
 - [ ] Download / Build BSPs for board [[link]](04a-BoardSupportPackages.md)
 - [ ] Select the correct Image Architecture [[link]](04-CreateBasicImage.md)
 - [ ] Create basic image [[link]](04-CreateBasicImage.md)
-- [ ] Boot basic image [[link]](05-FlashingImage.md)
+- [ ] Flash basic image [[link]](05-FlashingImage.md)
 ### Drivers
 - [ ] Add drivers for the Image (if required) [[link]](06d-AddingDrivers.md)
-- [ ] Boot test image with drivers [[link]](05-FlashingImage.md)
+- [ ] Flash test image with drivers [[link]](05-FlashingImage.md)
 ### Custom Apps
 - [ ] Add custom UWP app to image [[link]](06a-AddingApps.md)
 - [ ] Test Image with custom app [[link]](05-FlashingImage.md)
