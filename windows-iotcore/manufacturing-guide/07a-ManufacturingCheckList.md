@@ -17,26 +17,26 @@ We will split the tasks into multiple sections.
 
 ## Test Image
 ### Basic Image
-- [ ] [Download / Build BSPs for board](04a-BoardSupportPackages.md)
-- [ ] Select the correct Image Type (arm / x86 / x64)
-- [ ] Create basic image [link](04-CreateBasicImage.md)
+- [ ] Download / Build BSPs for board[[link]](04a-BoardSupportPackages.md)
+- [ ] Select the correct Image Architecture [[link]](04-CreateBasicImage.md)
+- [ ] Create basic image [[link]](04-CreateBasicImage.md)
 - [ ] Boot basic image [[link]](05-FlashingImage.md)
 ### Drivers
-- [ ] Add drivers for the Image (if required)
-- [ ] Boot test image with drivers
+- [ ] Add drivers for the Image (if required) [[link]] (06d-AddingDrivers.md)
+- [ ] Boot test image with drivers [[link]](05-FlashingImage.md)
 ### Custom Apps
-- [ ] Add custom UWP app to image
-- [ ] Test Image with custom app
+- [ ] Add custom UWP app to image [[link]] (06a-AddingApps.md)
+- [ ] Test Image with custom app [[link]](05-FlashingImage.md)
 ### Boot Sequence / Registry / Custom Provisioning
-- [ ] Create / Modify provisioning package for the image
-- [ ] Test Image with custom provisioning
+- [ ] Create / Modify provisioning package for the image 
+- [ ] Test Image with custom provisioning [[link]](05-FlashingImage.md)
 ### Boot Sequence / Registry / Custom Provisioning
-- [ ] Create / Modify provisioning package for the image
-- [ ] Test Image with custom provisioning
+- [ ] Create / Modify provisioning package for the image [[link]](06b-CreateProvisioningPackage.md)
+- [ ] Test Image with custom provisioning [[link]](05-FlashingImage.md)
 ### Test Image Recovery
 - [ ] Create recovery image
 - [ ] Flash recovery image
-- [ ] Test recovery image
+- [ ] Test recovery image 
 ---
 ## Retail Image
 ### Retail Image
