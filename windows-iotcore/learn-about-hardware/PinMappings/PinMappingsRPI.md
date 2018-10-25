@@ -65,7 +65,7 @@ The following GPIO pins are accessible through APIs:
 
 As an example, the following code opens **GPIO 5** as an output and writes a digital '**1**' out on the pin:
 
-```C#
+```csharp
 using Windows.Devices.Gpio;
 
 public void GPIO()
@@ -98,7 +98,7 @@ When a pin is closed, it reverts to its power-on state.
 
 Some GPIO pins can perform multiple functions. By default, pins are configured as GPIO inputs. When you open an alternate function by calling `I2cDevice.FromIdAsync()` or `SpiDevice.FromIdAsync()` , the pins required by the function are automatically switched ("muxed") to the correct function. When the device is closed by calling `I2cDevice.Dispose()` or `SpiDevice.Dispose()`, the pins revert back to their default function. If you try to use a pin for two different functions at once, an exception will be thrown when you try to open the conflicting function. For example,
 
-```C#
+```csharp
 var controller = GpioController.GetDefault();
 var gpio2 = controller.OpenPin(2);      // open GPIO2, shared with I2C1 SDA
 
@@ -124,7 +124,7 @@ There is one Serial UART available on the RPi2/3: **UART0**
 The example below initializes **UART0** and performs a write followed by a read:
 
 
-```C#
+```csharp
 using Windows.Storage.Streams;
 using Windows.Devices.Enumeration;
 using Windows.Devices.SerialCommunication;
@@ -186,7 +186,7 @@ There is one I2C controller **I2C1** exposed on the pin header with two lines **
 
 The example below initializes **I2C1** and writes data to an I2C device with address **0x40**:
 
-```C#
+```csharp
 using Windows.Devices.Enumeration;
 using Windows.Devices.I2c;
 
@@ -236,7 +236,7 @@ There are two SPI bus controllers available on the RPi2/3.
 
 An example of how to perform a SPI write on bus **SPI0** using chip select 0 is shown below:
 
-```C#
+```csharp
 using Windows.Devices.Enumeration;
 using Windows.Devices.Spi;
 
@@ -247,7 +247,7 @@ public async void SPI()
     // Set clock to 10MHz 
     settings.ClockFrequency = 10000000;
 
-    // Get a selector string that will return our wanted SPI controller
+    // Get a selector string that will return our wanted SPI controller
     string aqs = SpiDevice.GetDeviceSelector("SPI0");
     
     // Find the SPI bus controller devices with our selector string

@@ -35,7 +35,7 @@ For OEM-style images, you'll wrap your customizations into package (.cab) files.
     * [06b-Creating a Provisioning Package](06b-CreateProvisioningPackage.md)
     * [06c-Adding file(s) and registry settings to an image](06c-AddFileRegistrySettings.md)
     * [06d-Adding a driver to an image](06d-AddingDrivers.md)
-* 07-Creating a Retail Windows IoT Core Image
+* [07-Creating a Retail Windows IoT Core Image](07-CreateRetailImage.md)
 
 
 ## Next Steps

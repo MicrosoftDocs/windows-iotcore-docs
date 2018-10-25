@@ -76,7 +76,7 @@ The Raspberry Pi3 built-in Bluetooth driver only supports low bandwidth devices�
 #### Serial Port Usage and Access on Raspberry Pi 2 
 Raspberry Pi 2 supports the serial transport for communication through the PL011 UART.  This is set by default in kernel debugging scenarios.  An application or device driver can use the PL011 UART to send and receive data with the PL011 device driver turning off the debugger using the following command:   
 `bcedit /set debug off` 
- 
+ 
 ### Dragon Board 
 
 #### Dragonboard 410c Shutdown 
@@ -112,8 +112,8 @@ For confirmation / verification on an existing image connect with SSH or PowerSh
 The MinnowBoard Max will not boot unless the firmware is version .092 or later.  
 There may be network connectivity failures in MinnowBoard Max (MBM) firmware version 0.93.   The issue is fixed in firmware version 0.94.) 
 The minimum recommended version of the firmware is “MinnowBoard MAX 0.94 32-bit”. Firmware updates can be downloaded from [here](http://go.microsoft.com/fwlink/?LinkId=708613).
-  
- 
+  
+ 
 ### All Platforms 
 
 #### Mouse Pointer disappears while debugging 
@@ -136,36 +136,36 @@ To expose UAP applications via SoftAP the following changes must be made from th
 #### Sensor Driver conflict in pre-built FFUs 
 There is a Sensor Driver Conflict in the provided FFUs. The Remote Sensor Framework installs drivers for Compass, Magnetometer, Accelerometer and Gyro. The UWP APIs for accessing these from an application assume just 1 is installed. If you are developing a driver for a physically attached device, the remote driver on the Microsoft provided FFUs will conflict.  
 Resolution: The conflicting driver can be removed by connecting to the device via SSH or PowerShell and using the tool devcon.exe to remove the remote sensor driver by typing “devcon.exe remove @”ROOT\REMOTESENSORDRIVER*”. The remote sensor driver does not affect OEM created FFUs. 
- 
+ 
 #### Default Administrator User Name and Password 
 The default administrator user name and password are hard coded in the Windows 10 IoT Core image. This is a security risk for the device, and it should not be exposed to an open internet connection until the password has been changed. 
- 
+ 
 #### Volume Controls 
 Hardware volume controls for USB microphones and speakers which depend on Windows system to change system volume are currently not supported on Windows 10 IoT Core. 
- 
+ 
 #### USB Keyboards  
 Some USB keyboards and mice may not work on IoT Core. Use a different keyboard or mouse. A list of validated peripheral devices can be found [here](../../learn-about-hardware/HardwareCompatList.md).  
- 
+ 
 #### Screen Orientation 
 Setting the orientation to “Portrait” may not be honored in a Universal App 
- 
+ 
 #### Referencing Adapters with AllJoyn Templates 
 Attempting to add references to AllJoyn adapter projects may result in errors when using specific SDK versions.  To resolve these errors, change Visual Studio’s target platform to match the current SDK version, then reload the project. 
 
 #### Non-default drive mode  
 On Raspberry Pi and Dragonboard, switching from a non-default drive mode to a different non-default drive mode may produce a glitch on the GPIO pin. WORKAROUND: Set drive mode once at the beginning of the application. 
- 
+ 
 #### Application already running  
 The Default startup app may conflict with itself when it is also deployed from Visual Studio. WORKAROUND: Change the default startup app to an application other than that you wish to deploy. 
- 
+ 
 #### BackgroundMediaPlayer.MessageReceivedFromForeground may crash  
 The following line of code may crash: `BackgroundMediaPlayer.MessageReceivedFromForeground += OnMessageReceivedFromForeground;`.
 <br>
 To prevent the crash, add this code so that it is executed first `var player = BackgroundMediaPlayer.Current;` 
- 
+ 
 #### Azure Active Directory Authentication Support  
 The Azure Active Directory Authentication Library does not work on Windows 10 IoT Core.  
- 
+ 
 #### Shell Management of Application Crashes 
 IoT Core’s shell infrastructure monitors APPX-type applications running on the device for crashes, and restarts those applications when crashes occur.  If the restarted applications continue to crash, the shell will employ a __failfast – a system critical process that causes a bug check and reboot in an attempt to recover.  Comparable logic and handling is used to background tasks and foreground applications in a headed configuration.   
 
@@ -177,7 +177,7 @@ Software\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\CBTConfi
 * Dword:"MaxFailureCount". Default is 10.
 * DWord:"FallbackExponentNumerator", default is 31.
 * Dword:"FallbackExponentDenominator", default is 20.
- 
+ 
 ```C#
 Fallback_exponent = FallbackExponentNumerator / FallbackExponentDenominator;
 // default is 1.55
@@ -192,10 +192,10 @@ else
 delay = (dword) ((float)BaseRetryDelayMs * (crashes_seen ** Fallback_exponent))
 // wait for delay and relaunch app
 ```
- 
+ 
 #### Time Synchronization  
 If time sync is failing or timing out this may be due to unreachable or a distant time server, the following can be done to add additional or local time servers. 
- 
+ 
 * From a command line on the device (eg. SSH, PowerShell) 
 w32tm /config /syncfromflags:manual /manualpeerlist:"0.windows.time.com 1.pool.ntp.org 2.something else, ..." 
 * You may also make these additions to the registry via a boot script or a custom runtime configuration package included as part of the image creation process if needed. 
@@ -220,13 +220,13 @@ To run on every boot users should create a scheduler task. 
 ## Copyright Information 
 
 © Microsoft. All rights reserved. 
- 
+ 
 This document is provided “as-is”.  Information and views expressed in this document, including URL and other Internet Web site references may change without notice. 
 
 Some examples depicted herein are provided for illustration only and are fictitious.  No real association or connection is intended or should be inferred.  
 
 This document does not provide any legal rights to any intellectual property in any Microsoft product.  This document may be used for internal, references purposes. 
-  
+  
 Microsoft makes no warranties, express or implied.  
 
 Please refer to Microsoft Trademarks for a list of trademarked products. 
@@ -240,7 +240,7 @@ Bluetooth® is a trademark owned by Bluetooth SIG, Inc. USA and licensed to Micr
 Intel is a registered trademark of Intel Corporation. 
 
 Itanium is a registered trademark of Intel Corporation.
- 
+ 
 Portions of this software are based on MCSA Mosaic, developed by the National Center for Supercomputing Applications at the University of Illinois at Urbana-Champaign, distributed under a licensing agreement with Spyglass, Inc. 
 
 This product contains security software licensed from RSA Data Security, Inc. 

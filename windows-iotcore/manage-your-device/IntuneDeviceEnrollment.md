@@ -21,7 +21,9 @@ Intune enrollment of an IoT Core device is accomplished by using the Windows IoT
 2. Select **Mobility (MDM and MAM)**.
 
 
-     ![Selecting Mobility and Microsoft Intune](../media/IntuneDeviceEnrollment/iot-ap-mobility-intune.png)
+~~~
+ ![Selecting Mobility and Microsoft Intune](../media/IntuneDeviceEnrollment/iot-ap-mobility-intune.png)
+~~~
 1. Select **Microsoft Intune**. On the **Configure Microsoft Intune** page, next to **MDM user scope**, select **All**. This will allow your IoT Core device user to be enrolled in Intune after joining Azure AD.
 
 ### Create a setup SD card for the IoT Core device
@@ -30,23 +32,23 @@ Intune enrollment of an IoT Core device is accomplished by using the Windows IoT
      > The microSD card will be formatted during this process, so any data on the card will be deleted.
 2. Go to [Windows IoT Core Dashboard](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/iotdashboard) to download and install the dashboard.
 3. After the dashboard installs, open it and select **Set up a new device**.
-      
+
      ![Windows IoT Core Dashboard](../media/IntuneDeviceEnrollment/IoT-dashboard-my-devices.png)
-     
+
 4. Type a **Device name**.
 5. Enter a new administrator password. 
 6. If you want to enable Wi-Fi for the device, select the **Wi-Fi Network Connection** checkbox. Skip this if the device will use an ethernet network connection only.
-      
+
      ![Wi-Fi checkbox on the IoT dashboard](../media/IntuneDeviceEnrollment/IoT-dashboard-wifi-connection.png)
-     
+
 7. Select the **I accept the software license terms** checkbox, and then select **Download and Install**.
 8. When the confirmation message appears, select the option to **Format** the SD Card. 
      > [!NOTE]
      > Watch for the **Format** confirmation message during setup. The message could be hidden by another open application, but it’s important to select the Format option. If the drive isn't properly formatted, boot will fail.
 9. The message **Your SD card is ready** appears.
-      
+
      ![SD card ready message](../media/IntuneDeviceEnrollment/IoT-dashboard-sd-card-ready.png)
-     
+
 10. Minimize this page.  You'll come back to it later.
 
 ### Create a provisioning package for Intune enrollment
@@ -54,7 +56,7 @@ Intune enrollment of an IoT Core device is accomplished by using the Windows IoT
 
 2. Open the **Windows Imaging and Configuration Designer**.
 3. Choose **Provision desktop devices** to create a project 
- 
+
      ![Choosing Provision desktop services](../media/IntuneDeviceEnrollment/iot-wcd-provision-desktop-devices.png)
 
 4. Enter the **Project Details** as desired. Then select **Finish**.
@@ -66,39 +68,39 @@ Intune enrollment of an IoT Core device is accomplished by using the Windows IoT
 
 6. Next to **Bulk Token Expiry**, enter a a bulk token expiry date.
 7. Select **Get Bulk Token**. A sign-in message appears for connecting to Azure AD.
- 
+
      ![Azure AD sign-in page](../media/IntuneDeviceEnrollment/iot-wcd-sign-in.png)
 
 8. Enter your tenant username (for example, john@mycompany.onmicrosoft.com) and your password.   
 9. Agree to allow the Windows Configuration Design app to access your Azure AD information. 
 10. A message on the page shows that the Bulk AAD token was fetched successfully.
- 
+
      ![Bulk token successful message](../media/IntuneDeviceEnrollment/iot-wcd-bulk-token-successful.png)
 
 11. Select **Switch to advanced editor**, and then select *Yes*.
- 
+
      ![Switch to advanced editor confirmation page](../media/IntuneDeviceEnrollment/iot-wcd-switch-to-advanced-editor.png)
 
-11. Under **Selected customizations**, Leave the **Account** settings, but remove all other settings:
-12. Select **OOBE**, and then select **Remove**.
-13. If **SharedPC** is listed, select it, and then select **Remove**.
- 
+12. Under **Selected customizations**, Leave the **Account** settings, but remove all other settings:
+13. Select **OOBE**, and then select **Remove**.
+14. If **SharedPC** is listed, select it, and then select **Remove**.
+
      ![Removing customizations](../media/IntuneDeviceEnrollment/iot-wcd-select-customizations.png)
 
-14. Select **Export**, and then choose **Provisioning package**.
- 
+15. Select **Export**, and then choose **Provisioning package**.
+
      ![Choosing Provisioning package](../media/IntuneDeviceEnrollment/iot-wcd-export-provisioning-package.png)
 
-15. On the next page, accept the default settings and select **Next**.
-16. Again, on the next page, accept the default settings and select Next.
-17. Change the **Provisioning Package** destination or leave the default path, and then select **Next**.
-18. Select **Build**.
-19. Select the **Output Location** link so that you can locate the .ppkg file when it's ready.
+16. On the next page, accept the default settings and select **Next**.
+17. Again, on the next page, accept the default settings and select Next.
+18. Change the **Provisioning Package** destination or leave the default path, and then select **Next**.
+19. Select **Build**.
+20. Select the **Output Location** link so that you can locate the .ppkg file when it's ready.
 
      ![Output location links](../media/IntuneDeviceEnrollment/iot-wcd-all-done.png)
 
-20. Select **Finish**.
-21. Go to File Explorer and copy the provisioning package to your IoT Core device. Save it to the microSD card under the **MainOS** drive in the **c:\windows\provisioning\packages** folder.  You'll have to grant permissions to save the file in this folder.
+21. Select **Finish**.
+22. Go to File Explorer and copy the provisioning package to your IoT Core device. Save it to the microSD card under the **MainOS** drive in the **c:\windows\provisioning\packages** folder.  You'll have to grant permissions to save the file in this folder.
 
 ### Provision and enroll the IoT Core device in Intune
 1. Insert the microSD card into your IoT Core device.

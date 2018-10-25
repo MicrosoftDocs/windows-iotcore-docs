@@ -55,14 +55,14 @@ ___
   * Processor: Intel Atom E3825
   * Architecture: x86
 
-* Raspberry Pi 3
+* Raspberry Pi 3 Model B
   * Processor: Broadcom BCM2837
   * Architecture: ARM
 
 * DragonBoard 410c
   * Processor: Qualcomm Snapdragon 410
   * Architecture: ARM
-  * BSP Version: 2118.0.0.0
+  * BSP Version: 2120.0.0.0
 
 ## Additional Information
 * Based on the recent Intel announcement to stop producing the Intel Joule platform, FFUs for Intel Joule were discontinued in the previous release. Customers evaluating Intel Joule should identify an alternative platform using one of the other supported SoCs - see [Suggested Boards and SoCs](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/suggestedboards) for a list.
@@ -70,3 +70,4 @@ ___
 ## Known Issues
 * F5 driver deployment from Visual Studio does not work on Windows 10 IoT Core. Drivers must be manually copied and registered on the device.
 * Devices that were installed via NOOBS cannot run the bcdedit tool to enable the kernel debugger.
+* The Windows IoT Remote client does not work for Raspberry Pi. Use a board with accelerated graphics such as Minnowboard Max or Dragonboard or attach a monitor for local display.

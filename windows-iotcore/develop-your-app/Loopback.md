@@ -14,7 +14,7 @@ On Windows IoT Core, if you want to create a TCP/IP connection between 2 process
 
 ## Loopback and the debugger 
 By default, running under the Visual Studio debugger enables outbound loopback automatically for that debug session only.  You shouldn’t have to do anything as long as the loopback checkbox is checked in the debugger settings for your startup project.  If you want to implement a socket listener the you must enable localhost loopback for inbound connections (see below).
- 
+ 
 ## Enabling the inbound loopback policy
 The localhost inbound loopback policy for **Windows IoT Core** must be enabled for UWP apps that implement servers.  This policy is controlled by the following registry key:
 
@@ -30,7 +30,7 @@ To verify that the value is set execute the following command on the **Windows I
 To enable the policy execute the following command on the **Windows IoT Core** device:
 
         reg add hklm\system\currentcontrolset\services\mpssvc\parameters /v IoTInboundLoopbackPolicy /t REG_DWORD /d 1
- 
+ 
 
 ## Enabling loopback for a UWP application
 Before you can enable loopback for an application you will need the package family name.  You can find the package family name for an installed application by running **iotstartup list**.  If the **iotstartup list** entry for the application is IoTCoreDefaultApp\_1w720vyc4ccym!App then the package family name is IoTCoreDefaultApp\_1w720vyc4ccym

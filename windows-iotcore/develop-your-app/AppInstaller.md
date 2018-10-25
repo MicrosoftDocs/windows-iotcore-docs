@@ -9,9 +9,12 @@ keywords: windows iot, app installation, Windows Device Portal, devices
 ---
 
 # Install your app on an IoT Core device
-You can install your app by various methods and they are listed below.
+You can install your app using one of the two methods that are listed below.
 
 ## Using Windows Device Portal
+
+For this method, you will need to ensure that you are connected to the internet. If you do not have access to the internet, you can also have a peer-to-peer ethernet connection between the device and a client machine that doesn't include a path to access the open internet. However, going about the latter way will install the app but will fail to launch if the app is store-signed.
+
 To install your application on the device please do the following:
 
 1. Open the [Windows Device Portal](https://docs.microsoft.com/windows/iot-core/manage-your-device/deviceportal) for your IoT device.
@@ -24,11 +27,9 @@ To install your application on the device please do the following:
 4. The application will now be visible on the list of applications on your device.
  ![App List](../media/AppInstaller/AppList.png)
 
-> [!NOTE] 
-> If you find that you're unable to start your app, ensure that your device has access to the Internet when installing and launching the app.
 
 ## Using provisioning package from WCD
-You can create a provisioning package with the app and install the provisioning package on the device.
+You can create a provisioning package with the app and install the provisioning package on the device. This method works even on devices that do not have internet connection, and is the preferred method for installing the store license file. For example, this enables factory scenarios where the device is not connected to the internet but the primary app is a store-signed UWP app.
 
 > [!NOTE]
 > The Package Family Name (PFN) can be found in the Windows Dev Center under **App Management > App Identity**
@@ -62,4 +63,4 @@ You can create a provisioning package with the app and install the provisioning 
 ## Add to the IoT core image(.ffu)   
 You can add the app to be part of the IoT Core image itself. This is the widely used mechanism for OEMs. 
 
-See how to [add an app to your image](https://docs.microsoft.com/windows-hardware/manufacture/iot/deploy-your-app-with-a-standard-board) and a [sample app package](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Source-arm/Packages/Appx.IoTCoreDefaultApp).
+See how to [add an app to your image](https://docs.microsoft.com/windows-hardware/manufacture/iot/deploy-your-app-with-a-standard-board) and a [sample app package](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Packages/Appx.IoTCoreDefaultApp).

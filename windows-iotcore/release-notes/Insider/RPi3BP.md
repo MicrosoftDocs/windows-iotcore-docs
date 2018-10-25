@@ -13,7 +13,7 @@ keywords: windows iot, Windows Insider, release notes, Raspberry Pi 3B+
 &copy; 2018 Microsoft Corporation. All rights reserved.
 
 > [!NOTE]
-> This release for the Raspberry Pi 3B+ is a technical preview. Limited validation and enablement has been completed. For a better evaluation experience and for any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm, or NXP SoCs.
+> This release for the Raspberry Pi 3B+ is a technical preview and there is currently no timeline for a release version. Limited validation and enablement has been completed. For a better evaluation experience and for any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm, or NXP SoCs. If there are any reasons as to why you cannot use the 3B over the 3B+ for a production solution, please file an issue on our GitHub, [here](https://github.com/MicrosoftDocs/windows-iotcore-docs/issues). 
 
 ## What's new in this build: 
 * General bug fixes
@@ -72,7 +72,7 @@ Hardware volume controls for USB microphones and speakers which depend on Window
 
 ### USB keyboards
 Some USB keyboards and mice may not work on IoT Core. Use a different keyboard or mouse. A list of validated peripheral devices can be found in the documentation [here](http://go.microsoft.com/fwlink/?LinkId=619428).
- 
+ 
 ### Screen orientation
 Setting the orientation to “Portrait” may not be honored in a Universal App.
 
@@ -141,9 +141,9 @@ Connected Standby is not enabled on the Qualcomm Dragonboard by default.  To ena
 If time sync is failing or timing out this may be due to unreachable or a distant time server, the following can be done to add additional or local time servers. 
  
 1. From a command line on the device (eg. SSH, Powershell).
-```
-w32tm /config /syncfromflags:manual /manualpeerlist:"0.windows.time.com 1.pool.ntp.org 2.something else, ..."
-```
+   ```
+   w32tm /config /syncfromflags:manual /manualpeerlist:"0.windows.time.com 1.pool.ntp.org 2.something else, ..."
+   ```
 2. You may also make these additions to the registry via a boot script or a custom runtime configuration package included as part of the image creation process if needed. 
 
 ### Starting the FTP Server 

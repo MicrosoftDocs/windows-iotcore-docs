@@ -20,6 +20,7 @@ Please review the following requirements before you start the registration proce
   - **An Azure Active Directory (AAD) account with administrator rights:** Used to sign legal agreements
 See Register for the Hardware Program for the detailed instructions on the registration process.
 
+
 2. Sign up for [Windows 10 IoT Core Services](http://aka.ms/iotcoreservices)
 
 3. Login to Hardware Dev Center with the administrator role and specify roles for other users in your organisation. You will need:
@@ -36,6 +37,7 @@ See Register for the Hardware Program for the detailed instructions on the regis
   - **System Product Name**, referred in the update portal as **Device Model**.
 
   - **Base Board Product**, referred in the update portal as **Hardware Variant ID**.
+
 
 3. Set initial version of the packages: `setversion 10.0.0.0`.
 

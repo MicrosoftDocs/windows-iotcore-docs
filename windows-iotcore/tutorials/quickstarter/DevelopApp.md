@@ -51,27 +51,27 @@ Once you've deployed your app - congratulations, you've finished this quickstart
 <tbody>
 
 <tr class="odd">
-<td align="left"><p>[Developing foreground applications](../../develop-your-app/buildingappsforiotcore.md)</p></td>
+<td align="left"><p><a href="../../develop-your-app/buildingappsforiotcore.md" data-raw-source="[Developing foreground applications](../../develop-your-app/buildingappsforiotcore.md)">Developing foreground applications</a></p></td>
 <td align="left"><p>Learn about the different languages that are supported on Windows 10 IoT Core as well as the UWP and non-UWP app types that are supported.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p>[Developing background applications](../../develop-your-app/backgroundapplications.md)</p></td>
+<td align="left"><p><a href="../../develop-your-app/backgroundapplications.md" data-raw-source="[Developing background applications](../../develop-your-app/backgroundapplications.md)">Developing background applications</a></p></td>
 <td align="left"><p>Learn about the different languages that are supported on Windows 10 IoT Core as well as the UWP and non-UWP app types that are supported.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p>[Deploy an App with Visual Studio](../../develop-your-app/appdeployment.md)</p></td>
+<td align="left"><p><a href="../../develop-your-app/appdeployment.md" data-raw-source="[Deploy an App with Visual Studio](../../develop-your-app/appdeployment.md)">Deploy an App with Visual Studio</a></p></td>
 <td align="left"><p>Learn how to deploy your different apps with Visual Studio to your Windows 10 IoT Core device.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p>[Debug your app using Remote Console App Debugging](../../develop-your-app/remotedebugging.md)</p></td>
+<td align="left"><p><a href="../../develop-your-app/remotedebugging.md" data-raw-source="[Debug your app using Remote Console App Debugging](../../develop-your-app/remotedebugging.md)">Debug your app using Remote Console App Debugging</a></p></td>
 <td align="left"><p>Learn how to debug your apps using Remote Console App Debugging in Visual Studio.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p>[Install your app on your Windows 10 IoT Core device](../../develop-your-app/appinstaller.md)</p></td>
+<td align="left"><p><a href="../../develop-your-app/appinstaller.md" data-raw-source="[Install your app on your Windows 10 IoT Core device](../../develop-your-app/appinstaller.md)">Install your app on your Windows 10 IoT Core device</a></p></td>
 <td align="left"><p>Learn how to install your app to your Windows 10 IoT Core device.</p></td>
 </tr>
 

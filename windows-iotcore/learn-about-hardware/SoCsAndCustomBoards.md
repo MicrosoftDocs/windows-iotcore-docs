@@ -15,14 +15,14 @@ Microsoft works alongside Broadcom, Intel, NXP, and Qualcomm to verify support f
 
 | Broadcom | Intel | Qualcomm | NXP (coming soon) |
 |----------|-------|----------|-----|
-| BCM2837 | [Intel® Atom® processor E3900 series (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                | [Snapdragon 410 (APQ8016)](https://www.qualcomm.com/products/snapdragon/processors/410) | [i.MX 6QuadPlus](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u) |
-| BCM2836 | [Intel® Celeron® processor N3350 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 (APQ8009)](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 6Quad](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u)     |
-|         | [Intel® Pentium® processor N4200 platform (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 6DualPlus](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u) |
-|         | [Intel® Pentium® and Celeron® Processor N3000 Series (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded)                    |                                                                                         | [i.MX 6Dual](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u)     |
-|         | [Intel® Atom® x5-E8000 Processor (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded)                                        |                                                                                         | [i.MX 6DualLite](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u) |
-|         | [Intel® Atom® x5-Z8350 Processor (Cherry Trail)](https://ark.intel.com/products/93361/Intel-Atom-x5-Z8350-Processor-2M-Cache-up-to-1_92-GHz) |                                                                                         | [i.MX 6SoloX](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u)    |
-|         | [Intel® Atom® Processor E3800 Product Family (Bay Trail-I)](http://ark.intel.com/products/codename/55844/#@Embedded)	                 |                                                                                         | [i.MX 6SoloLite](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u) |
-|         | [Intel® Pentium® and Celeron® Processor N and J Series (Bay Trail-M/D)](http://ark.intel.com/products/codename/55844/)	                 |                                                                                         | [i.MX 6SLL](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u)      |
+| BCM2837 | [Intel® Atom® processor E3900 series (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                | [Snapdragon 410 (APQ8016)](https://www.qualcomm.com/products/snapdragon/processors/410) | [i.MX 6 Family](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u) |
+| BCM2836 | [Intel® Celeron® processor N3350 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 (APQ8009)](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 7 Family](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u)     |
+|         | [Intel® Pentium® processor N4200 platform (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 8M Family](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9XpjGK4S5xLp4jJORm7749UQVg4STc5UlcyR0ozWkkzUDYzMjI2RjhHVC4u) |
+|         | [Intel® Pentium® and Celeron® Processor N3000 Series (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded)                    |                                                                                         |      |
+|         | [Intel® Atom® x5-E8000 Processor (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded)                                        |                                                                                         |  |
+|         | [Intel® Atom® x5-Z8350 Processor (Cherry Trail)](https://ark.intel.com/products/93361/Intel-Atom-x5-Z8350-Processor-2M-Cache-up-to-1_92-GHz) |                                                                                         |     |
+|         | [Intel® Atom® Processor E3800 Product Family (Bay Trail-I)](http://ark.intel.com/products/codename/55844/#@Embedded)	                 |                                                                                         |  |
+|         | [Intel® Pentium® and Celeron® Processor N and J Series (Bay Trail-M/D)](http://ark.intel.com/products/codename/55844/)	                 |                                                                                         |       |
 
 The SoC you choose to adopt will depend on considerations such as performance requirements, power profile, cost, physical connectivity options, long term support, and operating conditions.
 
@@ -36,29 +36,29 @@ You'll also need to decide whether you want to use an off-the-shelf board or dev
 To help you select the right platform for your device, the table below shows the features that are supported by processor family with Windows 10 IoT Core. All features listed below are supported in Windows 10 IoT Core, however some SoCs may not have the specific IP included in their design, and are such indicated with "N/A". In such cases, a 3rd party solution can be incorporate into the design to provide the required functionality.  In a limited number of cases where a Windows 10 IoT Core feature is not implemented on a processor, the entry is left blank.
 
 
-> |    | Intel  |  Qualcomm  | NXP i.MX6 | NXP i.MX7 | Broadcom |
-> |----|--------|------------|-----------|-----------|-----------------|
-> | Audio | x | x | x | x | x |
-> | GPIO | x | x | x | x | x | 
-> | I2C | x | x | x | x | x |
-> | Ethernet | x | N/A | x | x | x |
-> | SPI | x | x | x | x | x |
-> | Display | x | x | x | x | x |
-> | UART | x | x | x | x | x |
-> | USB | x | x | x | x | x |
-> | PCIe | x | N/A | x | Under development | N/A |
-> |MIPI-CSI | N/A | x | N/A | N/A | N/A |
-> | Graphics/Video | x | x | Software-rendered | Software-rendered | Software-rendered |
-> | GPS | N/A | x | N/A | N/A | N/A |
-> | Wi-Fi/BT | N/A | x | N/A | N/A | N/A |
-> | Trusted I/O | N/A | N/A | x | x | N/A |
-> | Processor power management |  | x | x | x | | 
-> | TPM | x | x | x | x | N/A | 
-> | Secure Boot | x | x | Under development | Under development | |
-> | PWM | x | N/A | x | x | |
-> | JTAG | x | N/A | x | x | | 
-> | eMMC | x | x | x | x | |
-> | SDHC | x | x | x | x | x |
+> |    | Intel  |  Qualcomm  | NXP i.MX6 | NXP i.MX7 | NXP i.MX8M | Broadcom |
+> |----|--------|------------|-----------|-----------|------------|----------|
+> | Audio | x | x | x | x | x | x |
+> | GPIO | x | x | x | x | x | x | 
+> | I2C | x | x | x | x | x | x |
+> | Ethernet | x | N/A | x | x | x | x |
+> | SPI | x | x | x | x | x | x |
+> | Display | x | x | x | x | x | x |
+> | UART | x | x | x | x | x | x |
+> | USB | x | x | x | x | x | x |
+> | PCIe | x | N/A | x | Under development | Under development | N/A |
+> |MIPI-CSI | N/A | x | N/A | N/A | N/A | N/A |
+> | Graphics/Video | x | x | Software-rendered | Software-rendered | Software-rendered | Software-rendered |
+> | GPS | N/A | x | N/A | N/A | N/A | N/A |
+> | Wi-Fi/BT | N/A | x | N/A | N/A | N/A | N/A |
+> | Trusted I/O | N/A | N/A | x | x | x | N/A |
+> | Processor power management |  | x | x | x | Under development | | 
+> | TPM | x | x | x | x | x | N/A | 
+> | Secure Boot | x | x | Under development | Under development | Under development | |
+> | PWM | x | N/A | x | x | x | |
+> | JTAG | x | N/A | x | x | x | | 
+> | eMMC | x | x | x | x | x | |
+> | SDHC | x | x | x | x | x | x |
 
 ## Customized boards
 If an off-the-shelf device is in a form factor that includes the connectivity options that work for your scenarios, that will often be the most cost- and time-effective choice.  
@@ -88,10 +88,10 @@ There is a vibrant ecosystem of [experienced Intel device builders](https://solu
 If you are building your own board, please contact your BIOS vendor if you need guidance on ACPI or SMBIOS changes.
 
 #### *Experienced partners*
-*  [Aaeon](http://www.aaeon.com/en/)
-*  [Advantech](http://www.advantech.com/) - buy@advantech.tw
-*  [Kontron](http://www.kontron.com/) - martin.unverdorben@kontron.com
-*  [Nexcom](http://www.nexcom.com/)
+* [Aaeon](http://www.aaeon.com/en/)
+* [Advantech](http://www.advantech.com/) - buy@advantech.tw
+* [Kontron](http://www.kontron.com/) - martin.unverdorben@kontron.com
+* [Nexcom](http://www.nexcom.com/)
 
 ### **Qualcomm DragonBoard 410c (APQ8016)-based custom design**
 Binary BSP for DragonBoard 410c (based on Qualcomm AQP8016 SoC) can be downloaded from [Qualcomm Developer Network](https://developer.qualcomm.com/hardware/dragonboard-410c/software).  
@@ -110,23 +110,23 @@ Recommendations:
 
 
 #### *Experienced partners*
-*  [Intrinsyc](https://www.intrinsyc.com/computing-platforms/410-som/) - Mark Waldenberg (mwaldenberg@intrinsyc.com)
-*  [Keith & Koep](https://keith-koep.com/en/products/products-som/myon-1-features-snapdragon-410/) - contact@keith-koep.com
-*  [Reycom](http://www.reycom.swiss/en/home-swiss.html) - welcome@reycom.swiss
-*  [Unitech](http://ute.com/products_info.php?pc1=4&pc2=461&rbu=0&pid=2395) - Sam (saml@tw.ute.com); Perry (perryt@te.ute.com)
+* [Intrinsyc](https://www.intrinsyc.com/computing-platforms/410-som/) - Mark Waldenberg (mwaldenberg@intrinsyc.com)
+* [Keith & Koep](https://keith-koep.com/en/products/products-som/myon-1-features-snapdragon-410/) - contact@keith-koep.com
+* [Reycom](http://www.reycom.swiss/en/home-swiss.html) - welcome@reycom.swiss
+* [Unitech](http://ute.com/products_info.php?pc1=4&pc2=461&rbu=0&pid=2395) - Sam (saml@tw.ute.com); Perry (perryt@te.ute.com)
 
 
 ### **NXP preview**
 NXP support for Windows 10 IoT Core is in private preview. Please sign up to express interest [here](http://aka.ms/iotnxp).
 
 You can also reach out to partners we're working with during preview:
-*  Advantech [RSB-4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858) - buy@advantech.tw
-*  Keith & Koep [pConXS](http://wce.keith-koep.com/en/products/pconxs-ff/) with [Trizeps VII](http://wce.keith-koep.com/en/products/trizeps7-i.MX6/) - contact@keith-koep.com
-*  Kontron [SMARC-sAMX6i](https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html) - Martin Unverdorben (martin.unverdorben@kontron.com)
-*  Solid Run [Hummingboard Edge](https://www.solid-run.com/imx6-win-10-iot-core/ )- Ilya Viten (ilya@solid-run.com)
-*  Geniatech [SoM-iMX6Q-Q7](https://www.geniatech.com/product/som-imx6q-q7/) & [SoM-iMX7D](https://www.geniatech.com/product/som-imx7d/) - Mike Decker (mike.decker@geniatech.com) or Fang Jijun (Fjj@geniatech.com)
-*  VIA [VAB-820](https://www.viaembeddedstore.com/shop/boards/vab-820/) - Michael Fox (MichaelFox@via.com.tw) or Dream Ku (dreamku@via.com.tw)
-*  Phytec [phyBOARD-i.MX7](https://phytec.com/products/single-board-computers/phyboard-i.mx7/) - Brad Dodson (sales@phytec.com)
+* Advantech [RSB-4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858) - buy@advantech.tw
+* Keith & Koep [pConXS](http://wce.keith-koep.com/en/products/pconxs-ff/) with [Trizeps VII](http://wce.keith-koep.com/en/products/trizeps7-i.MX6/) - contact@keith-koep.com
+* Kontron [SMARC-sAMX6i](https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html) - Martin Unverdorben (martin.unverdorben@kontron.com)
+* Solid Run [Hummingboard Edge](https://www.solid-run.com/imx6-win-10-iot-core/ )- Ilya Viten (ilya@solid-run.com)
+* Geniatech [SoM-iMX6Q-Q7](https://www.geniatech.com/product/som-imx6q-q7/) & [SoM-iMX7D](https://www.geniatech.com/product/som-imx7d/) - Mike Decker (mike.decker@geniatech.com) or Fang Jijun (Fjj@geniatech.com)
+* VIA [VAB-820](https://www.viaembeddedstore.com/shop/boards/vab-820/) - Michael Fox (MichaelFox@via.com.tw) or Dream Ku (dreamku@via.com.tw)
+* Phytec [phyBOARD-i.MX7](https://phytec.com/products/single-board-computers/phyboard-i.mx7/) - Brad Dodson (sales@phytec.com)
 
 ## Other options
 If you find that you'd still like to create a custom board, we have provided a few suggestions of manufacturers below that can help with schematics and layout for a board.
