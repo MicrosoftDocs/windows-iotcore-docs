@@ -87,3 +87,49 @@ Object value = localSettings.Values["appRanOnce"];
 ```
 
 Using the code block above, you can apply the logic on launch of the application so that on the subsequent launches, the application takes approperiate actions.
+
+So what types of actions can I take?
+
+- Launch another FGA app
+- Edit the Registry to modify the boot sequence
+
+**** Launching another FGA app from test app
+
+If you are launching a Microsoft store app, you can use the following code snippit to launch apps installed and updated thru the store.
+Additional information URI schemes can be found here[https://docs.microsoft.com/en-us/windows/uwp/launch-resume/launch-store-app].
+
+````CSharp
+// Following will launch the Microsoft store app and navigate to the Games section
+bool result = await Windows.System.Launcher.LaunchUriAsync(new Uri("ms-windows-store://navigatetopage/?Id=Games"));
+
+// Following will launch the One Note app using the package family name (PFN)
+bool result = await Windows.System.Launcher.LaunchUriAsync(new Uri("ms-windows-store://pdp/?PFN= Microsoft.Office.OneNote_8wekyb3d8bbwe"));
+`````
+
+If you are launching a custom (non Microsoft store) app, you can use `AppServiceConnection` to launch an app using package family name (PFN). 
+
+
+First, you must register the final app (com.concurrency.lwinsapp) with app services within the system. You will need to modify the `Package.appxmanifest` file to include the following code block in the `<Applications>` section of the manifest.
+```Xaml
+<Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="AppServiceProvider.App">
+      <Extensions>
+        <uap:Extension Category="windows.appService" EntryPoint="MyAppService.UpdateService">
+          <uap3:AppService Name="com.concurrency.lwinsapp" uap4:SupportsMultipleInstances="true" />
+        </uap:Extension>
+      </Extensions>
+      ...
+</Application>
+```
+
+Following code segment will launch a custom application:
+
+````CSharp
+private AppServiceConnection updaterService;
+...
+this.updaterService = new AppServiceConnection();
+this.updaterService.AppServiceName = "com.concurrency.lwinsapp";
+this.updaterService.PackageFamilyName = "f3a114f7-e099-4773-8c93-77abcba14f62_004hcn5rxyy0y";
+var status = await this.updaterService.OpenAsync();
+````
+
+By combining logic between `localSettings` and `AppServiceConnection`, you can by pass the test app on every boot of the device. In essance, the test app runs every boot but pass thru to the final app on boot. If needed, you can set your logic in such a way that device will not continue to final app if tests fails on the test app on every boot. This might be helpful if you need to verify that device is fully tested and functional on every boot.
