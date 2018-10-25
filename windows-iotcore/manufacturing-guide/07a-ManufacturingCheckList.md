@@ -73,7 +73,7 @@ If you truly want to have a clean image, you will need to create two (2) retail 
 ### One time only pass thru test
 In the case of a one time only pass thru image, test app is written and included in final retail image. Once OOBE app is launched, test app is launched as FGA app. A conditional statement within the test app can be triggered so that the app is aware of the fact that it has ran before.
 
-```
+```CSharp
 // Declare variable
 Windows.Storage.ApplicationDataContainer localSettings = 
     Windows.Storage.ApplicationData.Current.LocalSettings;
