@@ -41,14 +41,16 @@ We will split the tasks into multiple sections.
 - [ ] Aquire cross-signing certificate that match your CA of code-signing certificate [[link]](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing)
 - [ ] Code Sign your custom UWP app [[link]](07-CreateRetailImage.md)
 - [ ] Create and include Certificates package (if needed - adding more then one UWP app, drivers, etc) [[link]](07-CreateRetailImage.md)
+- [ ] Turn on security features (see section below)
 - [ ] Turn on retailsign [[link]](07-CreateRetailImage.md)
 - [ ] Create retail image [[link]](07-CreateRetailImage.md)
-- [ ] Test retail Image (See Below)
+- [ ] Test retail Image (see below)
 ### Security
-- [ ] Enable secure boot
 - [ ] Enable TPM
-- [ ] Enable BitLocker
+- [ ] Enable Secure Boot
 - [ ] Enable UEFI Security
+- [ ] Enable Device Guard
+- [ ] Enable BitLocker
 - [ ] Test secure retail image
 ### Retail Image Recovery
 - [ ] Create recovery image
