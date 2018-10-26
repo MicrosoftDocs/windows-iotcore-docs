@@ -1,12 +1,7 @@
 ---
 title: Building Secure Devices with Windows 10 IoT Core
-<<<<<<< HEAD
 author: johnadali, lmaung
 ms.author: johnadali, lmaung
-=======
-author: saraclay, lmaung
-ms.author: saclayt, lmaung
->>>>>>> upstream/master
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to build secure devices by enabling secure boot, implementing TPMs, and more.
@@ -16,21 +11,12 @@ keywords: windows iot, security, firmware, secure boot, TPM, Bitlocker, encrypti
 # Building Secure Devices with Windows 10 IoT Core
 
 ## Introduction  
-<<<<<<< HEAD
 With the introduction of Windows 10 IoT Core, Microsoft is bringing strong enterprise grade security features that can be leveraged on smaller, resource-constrained classes of IoT devices.  In order for these security features to offer tangible benefits, the hardware platform must also provide a means to anchor them. This document provides high-level guidance to OEM device builders and security conscious "Makers" who are looking to select appropriate hardware and build, configure, and ship a secure IoT device to their customers. 
 
 ## Firmware  
 On general purpose computing devices that are "open", such as PCs, users can access firmware settings during device boot through various key combinations (e.g. F2 enters UEFI setup on most PCs today). This can allow users to make changes in how the platform boots as well as enable and disable various device ports, functions, and other potential security features available on the device.  
 
 Given the sensitive nature of such modifications, IoT devices should not function like "open devices", and should function more like "locked-down" devices, similar to mobile phones, where access to firmware is generally not permitted.  This can normally be accomplished by ensuring you are using locked-down firmware in your production device. Locked-down firmware should be available through your firmware provider.  At minimum, on devices where locked-down firmware is not available or potentially unsuitable, such as for use by Makers, consider protecting firmware settings access via a strong administrator password.
-=======
-With the introduction of Windows 10 IoT Core, Microsoft is bringing strong enterprise grade security features that can be leveraged on smaller, resource constrained classes of IoT devices.  In order for these security features to offer tangible benefits, the hardware platform must also provide a means to anchor them. This document provides high-level guidance to OEM device builders and security conscious 'Makers' who are looking to select appropriate hardware and build, configure, and ship a secure IoT device to their customers. 
-
-## Firmware  
-On general purpose computing devices that are "open," such as PCs, users can access firmware settings during device boot through various key combinations (e.g. F2 enters UEFI setup on most PCs today). This can allow users to make changes in how the platform boots as well as enable and disable various device ports, functions, and other potential security features available on the device.  
-
-Given the sensitive nature of such modifications, IoT devices should not function like “open devices,” and should function more like "locked-down" devices, similar to mobile phones, where access to firmware is generally not permitted.  This can normally be accomplished by ensuring you are using locked-down firmware in your production device. Locked-down firmware should be available through your firmware provider.  At minimum, on devices where locked-down firmware is not available or potentially unsuitable, such as for use by Makers, consider protecting firmware settings access via a strong administrator password.
->>>>>>> upstream/master
 
 ## Enabling Secure Boot
 Windows 10 IoT Core will boot on devices that implement Unified Extensible Firmware Interface (UEFI).  The UEFI standard implements a security feature known as Secure Boot. This allows a device to only boot trusted software by restricting the system to only allow execution of binaries signed by a specified authority.  When a device is powered-up, UEFI Secure Boot checks the signature of each piece of boot software, including firmware drivers and the OS.  If the signatures do not match (e.g. if an attacker were to replace the original image with a compromised OS) the platform will not boot. If the signatures are verified and good, the device continues to boot and then gives control to the operating system.  Note that while the limitation to a defined set of publishing authorities excludes all unknown code, it does not necessarily prevent known bad code from being executed (e.g. rollback attacks).  Enabling Secure Boot is strongly recommended if your firmware supports it. 
@@ -42,29 +28,17 @@ After these databases have been added, and after final firmware validation and t
 Device builders should contact their firmware manufacturer for tools and assistance in creating these databases. Visit this [TechNet article](https://technet.microsoft.com/en-us/library/dn747883.aspx) for more information about Secure Boot key creation and management.
 
 ## Implementing TPMs  
-<<<<<<< HEAD
 A Trusted Platform Module (TPM) is a cryptographic coprocessor including capabilities for random number generation, secure generation of cryptographic keys and limitation of their use. It also includes capabilities such as remote attestation and sealed storage. TPM’s technical specification is publicly available and is driven by a standards body called the Trusted Computing Group (TCG).  TPM 2.0 is available as a discrete component (from various manufacturers) as well as within some SOCs, implemented in firmware.
 
 Devices that incorporate a TPM can create cryptographic keys and encrypt them so that they can only be decrypted by the TPM. This process, often called "wrapping" or "binding" a key, can help protect the key from disclosure. Each TPM has a master "wrapping" key, called the storage root key (SRK), which is stored within the TPM itself. The private portion of a key created in a TPM is never exposed to any other component, software, process, or person. Furthermore, devices that incorporate a TPM can also create a key that has not only been wrapped but is also tied to certain platform measurements. This type of key can only be unwrapped when those platform measurements have the same values that they had when the key was created. This process is called "sealing" the key to the TPM, while decrypting the key is called "unsealing". The TPM can also seal and unseal data generated outside of the TPM. With this sealed key and software such as BitLocker Drive Encryption, you can lock data until specific hardware or software conditions are met. 
 
 With a TPM, private portions of key pairs are kept separate from the memory controlled by the operating system. Keys can be sealed to the TPM, and certain assurances about the state of a system (assurances that define the "trustworthiness" of a system) can be made before the keys are unsealed and released for use. Because the TPM uses its own internal firmware and logic circuits for processing instructions, it does not rely on the operating system and is not exposed to vulnerabilities that might exist in the operating system or application software.
-=======
-A Trusted Platform Module (TPM), is a cryptographic coprocessor including capabilities for random number generation, secure generation of cryptographic keys and limitation of their use. It also includes capabilities such as remote attestation and sealed storage. TPM’s technical specification is publicly available and is driven by a standards body called the Trusted Computing Group (TCG).  TPM 2.0 is available as a discrete component (from various manufacturers) as well as within some SOCs, implemented in firmware.
-
-Devices that incorporate a TPM can create cryptographic keys and encrypt them so that they can only be decrypted by the TPM. This process, often called “wrapping” or “binding” a key, can help protect the key from disclosure. Each TPM has a master “wrapping” key, called the storage root key (SRK), which is stored within the TPM itself. The private portion of a key created in a TPM is never exposed to any other component, software, process, or person. Furthermore, devices that incorporate a TPM can also create a key that has not only been wrapped but is also tied to certain platform measurements. This type of key can only be unwrapped when those platform measurements have the same values that they had when the key was created. This process is called “sealing” the key to the TPM while decrypting the key is called “unsealing.” The TPM can also seal and unseal data generated outside of the TPM. With this sealed key and software such as BitLocker Drive Encryption, you can lock data until specific hardware or software conditions are met. 
-
-With a TPM, private portions of key pairs are kept separate from the memory controlled by the operating system. Keys can be sealed to the TPM, and certain assurances about the state of a system (assurances that define the “trustworthiness” of a system) can be made before the keys are unsealed and released for use. Because the TPM uses its own internal firmware and logic circuits for processing instructions, it does not rely on the operating system and is not exposed to vulnerabilities that might exist in the operating system or application software.
->>>>>>> upstream/master
 
 > [!NOTE] 
 > Though some devices may incorporate an older TPM 1.2 chip, Windows 10 IoT Core only supports TPM 2.0.
 
 ## Enabling BitLocker Encryption  
-<<<<<<< HEAD
 In order to protect data at rest (i.e. date stored on a device), Microsoft brought its enterprise-grade BitLocker Drive Encryption technology to IoT devices in Windows 10 IoT Core.  BitLocker ensures that data stored on a device remains encrypted, even if the device is tampered with while the OS is not running.  This helps protect against "offline attacks", attacks made by disabling or circumventing the installed operating system, or made by physically separating the storage media from the device in order to attack the data separately. 
-=======
-In order to protect data at rest (i.e. date stored on a device), Microsoft brought its enterprise-grade BitLocker Drive Encryption technology to IoT devices in Windows 10 IoT Core.  BitLocker ensures that data stored on a device remains encrypted, even if the device is tampered with while the OS is not running.  This helps protect against "offline attacks," attacks made by disabling or circumventing the installed operating system, or made by physically separating the storage media from the device in order to attack the data separately. 
->>>>>>> upstream/master
 
 BitLocker uses a Trusted Platform Module (TPM) to provide enhanced protection for your data and to assure early boot component integrity. This helps protect your data from theft or unauthorized viewing by encrypting the entire Windows volume and any data partitions that might be present on your device.
 
@@ -81,7 +55,6 @@ Most users are familiar with the notion of taking "ownership" of devices like PC
 
 
 ## Outline
-<<<<<<< HEAD
 * [08-Building Secure Devices with Windows 10 IoT Core(this doc)](08-BuildingSecureDevices.md)
     * [08a-Secure Boot, BitLocker, and Device Guard](08a-SecureBootBitLockerDeviceGuard.md)
     * [08b-Using the Unified Write Filter](08b-UnifiedWriteFilter.md)
@@ -89,11 +62,3 @@ Most users are familiar with the notion of taking "ownership" of devices like PC
 
 ## Next Steps
 [Secure Boot, BitLocker, and Device Guard](08a-SecureBootBitLockerDeviceGuard.md)
-=======
-* [08a-Use the Unified Write Filter](08a-UnifiedWriteFilter.md)
-* [08b-Secure Boot, BitLocker, and Device Guard](08a-UnifiedWriteFilter.md)
-* [08c-TPM](08a-UnifiedWriteFilter.md)
-
-## Next Steps
-[Use the Unified Write Filter](08a-UnifiedWriteFilter.md)
->>>>>>> upstream/master
