@@ -1,7 +1,7 @@
 --- 
 title: Adding files and registry settings to a Windows IoT Core Image
-author: John Adali, Lwin Maung, Concurrency
-ms.author: John Adali, Lwin Maung, Concurrency
+author: johnadali
+ms.author: johnadali
 ms.date: 09/26/2018 
 ms.topic: article 
 description: Description on how to add files and registry settings to a Windows IoT Core Image
@@ -30,98 +30,79 @@ You will need the following tools installed to complete this section:
 ## Create your test files
 Create a few sample text files using Notepad and add some random text so that these files are not empty. For our example, we have created two files titled **TestFile1.txt** and **TestFile2.txt**.
 
-## Build a package for your test files
-We must now create a package so that your test files can be included when building our image. We will create a new common package file which can be used across all architectures:
 
-1. Open **IoT Core Shell** as an administrator.
-2. From IoT Core Shell, create a working folder for the registry keys and test files:
 
-        newcommonpkg Registry.FilesAndRegKeys
+## Build a Package for Test Files
+1. Open the IoT Core Shell: run C:\MyWorkspace\IoTCorePShell.cmd as an administrator and create a File package using [Add-IoTFilePackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTFilePackage.md):
 
-   In our example, this will create a new folder at **C:\IoT-ADK-Toolkit\Common\Packages\Registry.FilesAndRegKeys**
-
-3. Copy your sample files (in our example, **TestFile1.txt** and **TestFile2.txt**) into the new folder at **C:\IoT-ADK-Toolkit\Common\Packages\Registry.FilesAndRegKeys**.
-4. Update the package definition file.
-
-   a. This file is located at **C:\IoT-ADK-Toolkit\Common\Packages\Registry.FilesAndRegKeys\Registry.FilesAndRegKeys.wm.xml**
-
-   b. Remove the comment marks and instructions.
-
-   > [!NOTE]
-   > If you get an error "*The elementRegKeys in namespace urn:Microsoft.WindowsPhone/PackageSchema.v8.00 has incomplete content*", this is due to not removing the comments and instructions. If you have other XML elements that are commented out, you will need to remove these elements.
-
-   c. Update the values of **RegKey** to include a new **KeyName**, **Name**, and **Value**.
-
-    ```XML
-    <onecorePackageInfo
-        targetPartition="MainOS"
-        releaseType="Production"
-        ownerType="OEM" />
-    <regKeys>
-        <regKey
-            keyName="$(hklm.software)\$(OEMNAME)\Test">
-            <regValue name="StringValue" type="REG_SZ" value="Test string" />
-            <regValue name="DWordValue"  type="REG_DWORD" value="0x12AB34CD" />
-            <regValue name="BinaryValue" type="REG_BINARY" value="12ABCDEF" />
-        </regKey>
-        <regKey
-            keyName="$(hklm.software)\$(OEMNAME)\EmptyKey" />
-    </regKeys>
-    <files>
-        <file destinationDir="$(runtime.system32)" source="TestFile1.txt" />
-        <file
-            destinationDir="$(runtime.bootDrive)\OEMInstall" source="TestFile2.txt"
-            name="TestFile2.txt" />
-    </files>
-    ```
-   Please note that variables like *$(runtime.root)* and *$(runtime.system32)* are defined in **C:\Program Files(x86)\Windows Kits\10\Tools\bin\i386\pkggen.cfg.xml**.
-5. Build the package by running the following command:
-
-        buildpkg Registry.FilesAndRegKeys
-
-   This will build the **Registry.FilesAndRegKeys.cab** file under the **C:\IoT-ADK-Toolkit\Build\\< arch>\pkgs\\< your OEM name>** directory. In our example, this file is located in the **C:\IoT-ADK-Toolkit\Build\ARM\pkgs\Contoso** directory.
-
-> [!TIP]
-> To quickly rebuild for another architecture, use **setenv < arch>**, the run `buildpkg all` to rebuild everything for the other architecture. 
-
-## Update your Feature Manifest File
-You will need to modify the **OEMCommonFM.xml** file (located at **C:\IoT-ADK-AddonKit\Common\Packages**) to include the Registry.FilesAndRegKeys.cab package file you built previously.
-
-1. Open the common feature manifest file **C:\IoT-ADK-AddonKit\Common\Packages\OEMCommonFM.xml**.
-2. Create a new **PackageFile** section with your package file listed, and give it a new FeatureID. In our example, we named the FeatureID **CUSTOM_FilesAndRegKeys**.
-
-    ```XML
-          <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Registry.FilesAndRegKeys.cab">
-            <FeatureIDs>
-              <FeatureID>CUSTOM_FilesAndRegKeys</FeatureID>
-            </FeatureIDs>
-          </PackageFile>
-    ```
-
-3. Run `buildfm oem` to generate updated files in the **MergedFMs** folder. This should be done every time you modify a feature manifest file.
-
-## Update your Product Configuration File
-Add the FeatureID you just created into the **TestOEMInput.xml** file, located at **C:\IoT-ADK-AddonKit\Source-< arch>\Products\\< your product name>**. In our example, this is located at **C:\\IoT-ADK-AddonKit\Source-ARM\Products\TestDragonBoardProduct**.
-
-```XML
-  <Features>
-    <OEM>
-      <Feature>QC_UEFI_TEST</Feature>
-      <Feature>SBC</Feature>
-      <!-- Include OEM features -->
-      <Feature>CUSTOM_CMD</Feature>
-      <Feature>PROV_AUTO</Feature>
-      <Feature>CUSTOM_SMBIOS</Feature>
-      <Feature>CUSTOM_FilesAndRegKeys</Feature>
-    </OEM>
-  </Features>
+```powershell
+# Array of files with destinationDir, Source and destinationFilename
+$myfiles = @(
+    ("`$(runtime.system32)","C:\Temp\TestFile1.txt", ""),        
+    ("`$(runtime.bootDrive)\OEMInstall","C:\Temp\TestFile2.txt", "TestFile2.txt")
+    )
+Add-IoTFilePackage Files.Configs $myfiles
 ```
 
+This creates a new folder at `C:\MyWorkspace\Common\Packages\Files.Configs`.
+
+This also adds a FeatureID called **FILES_CONFIGS** to the `C:\MyWorkspace\Common\Packages\OEMCOMMONFM.xml` file.
+
+Variables like `$(runtime.system32)` are defined in `C:\Program Files (x86)\Windows Kits\10\Tools\bin\i386\pkggen.cfg.xml`.
+
+2. Create a Registry package using [Add-IoTRegistryPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTRegistryPackage.md):
+
+```powershell
+# Array of files with destinationDir, Source and destinationFilename
+$myregkeys = @(
+    ("`$(hklm.software)\`$(OEMNAME)\Test","StringValue", "REG_SZ", "Test string"),
+    ("`$(hklm.software)\`$(OEMNAME)\Test","DWordValue", "REG_DWORD", "0x12AB34CD")
+    )
+Add-IoTRegistryPackage Registry.Settings $myregkeys
+```
+
+This creates a new folder at `C:\MyWorkspace\Common\Packages\Registry.Settings`.
+
+This also adds a FeatureID **REGISTRY_SETTINGS** to the `C:\MyWorkspace\Common\Packages\OEMCOMMONFM.xml` file.
+
+3. Build the packages using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md). (The `buildpkg All` command builds everything in the source folders):
+
+```powershell
+New-IoTCabPackage Files.Configs
+(or) buildpkg Files.Configs
+New-IoTCabPackage Registry.Settings
+(or) buildpkg Registry.Settings
+```
+
+The package is built and is available at `C:\MyWorkspace\Build\<arch>\pkgs`.
+
+## Create a new product
+
+Create a new product folder using [Add-IoTProduct](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProduct.md):
+
+```powershell
+Add-IoTProduct ProductB RPi2
+(or) newproduct ProductB RPi2
+```
+
+This will prompt you to enter SMBIOS values.
+
+## Update the project's configuration files
+Update the product test configuration to include the features using [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md):
+
+```powershell
+Add-IoTProductFeature ProductB Test FILES_CONFIGS -OEM
+(or) addfid ProductB Test FILES_CONFIGS -OEM
+Add-IoTProductFeature ProductB Test REGISTRY_SETTINGS -OEM
+(or) addfid ProductB Test REGISTRY_SETTINGS -OEM
+```
 ## Build and Test Image
-Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateBasicImage.md). You should only have to run the **buildimage** command:
+Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
 
-    buildimage <product name> test 
-
+    ```powershell
+    New-IoTFFUImage <product name> Test
+    (or)buildimage <product name> Test 
+    ```
 Once the FFU file has been built, you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](05-FlashingImage.md).
 
 ## Verify Files and Registry Keys Added
