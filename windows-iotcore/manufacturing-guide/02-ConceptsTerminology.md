@@ -1,7 +1,7 @@
 --- 
 title: Concepts and Terminology
-author: jadali, lmaung
-ms.author: jadali, lmaung
+author: johnadali
+ms.author: johnadali
 ms.date: 09/14/2018 
 ms.topic: article 
 description: Concepts and Terminology definitions for Windows IoT Core Manufacturing Guide.

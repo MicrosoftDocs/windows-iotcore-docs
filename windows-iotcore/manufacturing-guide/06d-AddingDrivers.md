@@ -1,7 +1,7 @@
 --- 
 title: Adding a driver to a Windows IoT Core Image
-author: John Adali, Lwin Maung, Concurrency
-ms.author: John Adali, Lwin Maung, Concurrency
+author: johnadali
+ms.author: johnadali
 ms.date: 09/29/2018 
 ms.topic: article 
 description: Description on how to add a driver to a Windows IoT Core Image
@@ -41,87 +41,44 @@ You will need to build your driver files to include in the IoT Core image. We wi
 Once the driver files are created, we need to create a package that includes them, and then add that package to our Windows IoT Core image.
 
 1. Run **IoTCoreShell** as an administrator. Select your appropriate architecture.
-2. Create a new driver package, using the .inf file as a base. In our example, we are creating a package called **Drivers.TestDriver**.
+2. Create a **driver package** using [New-IoTDriverPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTDriverPackage.md):
 
-            newdrvpkg C:\gpiokmdfdemo\gpiokmdfdemo.inf Drivers.TestDriver
+```powershell
+Add-IoTDriverPackage C:\gpiokmdfdemo\gpiokmdfdemo.inf Drivers.TestDriver
+(or) newdrvpkg C:\gpiokmdfdemo\gpiokmdfdemo.inf Drivers.TestDriver
+```
+This creates a new folder at `C:\MyWorkspace\Source-<arch>\Packages\Drivers.TestDriver`.
+This also adds a FeatureID called **DRIVERS_TESTDRIVER** to the `C:\MyWorkspace\Source-<arch>\Packages\OEMFM.xml` file.
 
-   This will create a new folder under **C:\IoT-ADK-AddonKit\Source-\< arch>\Packages\Drivers.TestDriver**.
+3. Build the package using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md):
 
-3. Copy the ACPITABL.DAT file to the new folder, **C:\IoT-ADK-AddonKit\Source-\< arch>\Packages\Drivers.TestDriver**.
-
-4. Verify that the driver package are included in the package. Open the **C:\IoT-ADK-AddonKit\Source-\< arch>\Packages\Drivers.TestDriver\Drivers.TestDriver.wm.xml** file and make sure the ACPITABL.DAT file is included, as shown below.
-
-    ```XML
-    <?xml version="1.0" encoding="utf-8"?>
-    <identity xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        name="TestDriver"
-        namespace="Drivers"
-        owner="$(OEMNAME)"
-        legacyName="$(OEMNAME).Drivers.TestDriver" xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00">
-        <onecorePackageInfo
-            targetPartition="MainOS"
-            releaseType="Production"
-            ownerType="OEM" />
-        <drivers>
-            <driver>
-                <inf source="gpiokmdfdemo.inf" />
-            </driver>
-        </drivers>
-        <files>
-            <file source="ACPITABL.dat" destinationDir="$(runtime.system32)" name="ACPITABL.dat" />
-        </files>
-    </identity>
-    ```
-
-5. Build your driver package from IoT Core Shell. This will build the .CAB file under **C:\IoT-ADK-AddonKit\Build\\< arch>\pkgs**.
-
-            buildpkg Drivers.TestDriver
-
-## Update your Feature Manifest File
-You will need to modify the **OEMFM.xml** file (located at **C:\IoT-ADK-AddonKit\Source-< arch>\Packages**) to include the Drivers.TestDriver.cab package file.
-
-1. Open the **C:\IoT-ADK-AddonKit\Source-< arch>\Packages\OEMFM.xml** feature manifest file.
-2. Create a new **PackageFile** section with your package file listed, and give it a new FeatureID. In our example, we named the FeatureID **CUSTOM_TestDriver**.
-
-    ```XML
-          <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.TestDriver.cab">
-            <FeatureIDs>
-              <FeatureID>CUSTOM_TestDriver</FeatureID>
-            </FeatureIDs>
-          </PackageFile>
-    ```
-
-3. Run `buildfm oem` to generate updated files in the **MergedFMs** folder. This should be done every time you modify a feature manifest file.
+```powershell
+New-IoTCabPackage Drivers.TestDriver
+(or) buildpkg Drivers.TestDriver
+```
 
 ## Update your Product Configuration File
-Add the FeatureID you just created into the **TestOEMInput.xml** file, located at **C:\IoT-ADK-AddonKit\Source-< arch>\Products\\< your product name>**. In our example, this is located at **C:\\IoT-ADK-AddonKit\Source-ARM\Products\TestDragonBoardProduct**.
+Update the product test configuration file using [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md):
 
-```XML
-  <Features>
-    <OEM>
-      <Feature>QC_UEFI_TEST</Feature>
-      <Feature>SBC</Feature>
-      <!-- Include OEM features -->
-      <Feature>CUSTOM_CMD</Feature>
-      <Feature>PROV_AUTO</Feature>
-      <Feature>CUSTOM_SMBIOS</Feature>
-      <Feature>CUSTOM_TestDriver</Feature>
-    </OEM>
-  </Features>
+```powershell
+Add-IoTProductFeature <product name> Test DRIVERS_TESTDRIVER -OEM
+(or) addfid <product name> Test DRIVERS_TESTDRIVER -OEM
 ```
 
 ## Build and Test Image
-Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateBasicImage.md). You should only have to run the **buildimage** command:
+Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
 
-    buildimage <product name> test 
-
+    ```powershell
+    New-IoTFFUImage <product name> Test
+    (or)buildimage <product name> Test 
+    ```
 Once the FFU file has been built, you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](05-FlashingImage.md).
 
 ## Verify Driver is Installed Properly
 You can verify that the test driver was installed properly by following these steps:
 
 1. Boot up your Windows IoT Core device and make note of its IP address.
-2. On your technician PC, open **File Explorer** and in the address bar type in "**\\\<TARGET_DEVICE_IP>\c$\\**" and press Enter. **TARGET_DEVICE_IP** will correspond to the IP address of your device.
+2. On your technician PC, open **File Explorer** and in the address bar type in `\\<TARGET_DEVICE_IP>\c$` and press Enter. **TARGET_DEVICE_IP** will correspond to the IP address of your device.
 
 If you are prompted for credentials, please enter these and click **OK**. If you have not changed the default credentials use the following:
 
@@ -151,12 +108,17 @@ If you wish to import a different driver for a Board Support Package (BSP) that 
 4. Run **IoT Core Shell** as an administrator.
 5. Build all the packages by running the following command:
 
-        buildpkg all
+```powershell
+    New-IoTCabPackage All
+    (or) buildpkg all 
+```
 
 6.  Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateBasicImage.md). You should only have to run the **buildimage** command:
 
-        buildimage <product name> test 
-
+    ```powershell
+    New-IoTFFUImage <product name> Test
+    (or)buildimage <product name> Test 
+    ```
     Once the FFU file has been built, you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](05-FlashingImage.md).
 
 
