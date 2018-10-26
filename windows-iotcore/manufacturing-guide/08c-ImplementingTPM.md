@@ -488,5 +488,5 @@ Note that **sTPM is intended for development purposes only and does not provide 
 * [Trusted Platform Module (TPM) Specifications](http://www.trustedcomputinggroup.org/developers/trusted_platform_module) 
 * [TCG TPM 2.0 Library Specification](http://www.trustedcomputinggroup.org/resources/tpm_library_specification)
 * [TPM Base Services](https://msdn.microsoft.com/en-us/library/windows/desktop/aa446796(v=vs.85).aspx) 
-* [Enabling Secure Boot and BitLocker](SecureBootAndBitLocker.md)
+* [Enabling Secure Boot and BitLocker](08a-SecureBootBitLockerDeviceGuard.md)
 
