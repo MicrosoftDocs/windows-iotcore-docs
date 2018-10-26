@@ -31,7 +31,7 @@ Get the most up-to-date images under development to try out new features. To joi
 
 ## Latest Windows 10 IoT Core builds
 
-> [!IMPORTANT]
+> ![IMPORTANT]
 > Due to an issue found on Desktop, we are currently validating new packages. 
 
 <!-- ### [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore)

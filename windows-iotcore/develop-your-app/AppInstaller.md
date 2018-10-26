@@ -11,6 +11,9 @@ keywords: windows iot, app installation, Windows Device Portal, devices
 # Install your app on an IoT Core device
 You can install your app using one of the two methods that are listed below.
 
+> [!NOTE]
+> The method using the Windows Device Portal is only for developer scenarios. The other two methods are for production scenarios.
+
 ## Using Windows Device Portal
 
 For this method, you will need to ensure that you are connected to the internet. If you do not have access to the internet, you can also have a peer-to-peer ethernet connection between the device and a client machine that doesn't include a path to access the open internet. However, going about the latter way will install the app but will fail to launch if the app is store-signed.
