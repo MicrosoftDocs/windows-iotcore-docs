@@ -51,13 +51,3 @@ After the device is successfully paired it will be listed under the paired devic
 
 ![Bluetooth Incoming Pairing](../media/Bluetooth/Portal_BT_3.png)
 
-## Bluetooth Onboarding
-
-Currently, we offer three different ways of allowing users to go about wifi onboarding. We've documented the benefits and drawbacks for each method of onboarding. 
-
-> | Samples | Description | Benefits  |  Drawbacks  |
-> |-------------|----------|---------|---------|
-> | [Companion App](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/CompanionApp) | Create a simple app that can configure your device's Wi-Fi. |  Simple to use; Headed or headless for IoT Core Server; Doesn't require AllJoyn; Clients work across device types | User is creating his or her own protocol; insecure, needs customer to implement security |
-> | [IoT Onboarding with Bluetooth RFCOMM](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTOnboarding_RFCOMM) | Create solution to configure your headless IoT device to connect with your Wi-Fi using Bluetooth RFCOMM.  | Designed for headless devices; Uses familiar technologies and concepts; Does not require IoT device to start a SoftAP first; Does not need to adjust firewall settings | Requires Bluetooth support for client and server devices; Sample only provides client app for Windows 10; Server app pre-defines/hard-codes the names of the client device. |
-> | [IoT Onboarding with AllJoyn](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTOnboarding) | Remotely join your headless IoT device with your home Wi-Fi network. | Works with AllJoyn | Some support for AllJoyn is deprecated |
-
