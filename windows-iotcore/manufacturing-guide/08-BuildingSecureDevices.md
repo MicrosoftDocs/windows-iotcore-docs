@@ -55,6 +55,7 @@ Most users are familiar with the notion of taking "ownership" of devices like PC
 
 
 ## Outline
+
 * [08-Building Secure Devices with Windows 10 IoT Core(this doc)](08-BuildingSecureDevices.md)
     * [08a-Secure Boot, BitLocker, and Device Guard](08a-SecureBootBitLockerDeviceGuard.md)
     * [08b-Using the Unified Write Filter](08b-UnifiedWriteFilter.md)

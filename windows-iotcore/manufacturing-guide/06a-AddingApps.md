@@ -5,7 +5,7 @@ ms.author: johnadali
 ms.date: 09/20/2018 
 ms.topic: article 
 description: Description on how to add an App to a Windows IoT Core Image
-keywords: Windows 10 IoT Core, 
+keywords: Windows 10 IoT Core, images
 --- 
 
 # Adding an App to a Windows IoT Core Image
@@ -89,6 +89,7 @@ or addfid <product name> Test IOT_BERTHA
 ```
 
 ## Build and Test Image
+
 Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
 
     ```powershell
