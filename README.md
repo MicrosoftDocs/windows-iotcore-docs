@@ -63,7 +63,7 @@ These other text elements have styling available:
 _________________________
 
 Horizontal rules are available. We suggest using them sparingly to reduce clutter.
-Do not combine  horizontal rules with heading tags; some already used line styles for visual hierarchy.
+Do not combine horizontal rules with heading tags; some already used line styles for visual hierarchy.
 Also, do not combine notes (see below) in the middle of numbered lists. This messes with the numbering order.
 
 ## Displaying code
@@ -74,7 +74,7 @@ Or you can display blocks of code like so:
 
 ```css
 body {
-	background: #fff;
+    background: #fff;
 }
 ```
 
