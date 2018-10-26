@@ -66,51 +66,22 @@ In order to create a provisioning package for your device, we need to create a p
 
    c. Click **Build** to build the provisioning package. A dialog listing the output location will appear when the export is complete. Click **Finish**.
 
-8. Copy the exported provisioning package to your product's **prov** directory. For our example, this folder is located in *C:\IoT-ADK-Toolkit\Source-ARM\Products\TestDragonBoardProduct\prov*.
+8. Create a provisioning package using [Add-IoTProvisioningPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProvisioningPackage.md):
 
-9. Verify that the **OEMCommonFM.xml** from the **Windows ADK Toolkit** include the following package definition file and feature ID. These are needed to process provisioning packages.
-
-   ```XML
-      <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Provisioning.Auto.cab">
-        <FeatureIDs>
-          <FeatureID>OEM_ProvAuto</FeatureID>
-          <FeatureID>PROV_AUTO</FeatureID>
-        </FeatureIDs>
-      </PackageFile>
-   ```
-10. Verify that the **TestOEMInput.xml** file contains an entry to the **OEMCommonFM.xml** file, along with the **PROV_AUTO** feature ID in the **OEM** section.
-
-```XML
-  <AdditionalFMs>
-    <!-- Including BSP feature manifest -->
-    <AdditionalFM>%BLD_DIR%\MergedFMs\QCDB410CFM.xml</AdditionalFM>
-    <AdditionalFM>%BLD_DIR%\MergedFMs\QCDB410CTestFM.xml</AdditionalFM>
-    <!-- Including OEM feature manifest -->
-    <AdditionalFM>%BLD_DIR%\MergedFMs\OEMCommonFM.xml</AdditionalFM>
-    <AdditionalFM>%BLD_DIR%\MergedFMs\OEMFM.xml</AdditionalFM>
-    <!-- Including the test features -->
-    <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
-  </AdditionalFMs>
+```powershell
+Add-IoTProvisioningPackage Prov.TestProvPackage "C:\Users\<username>\Documents\Windows Imaging and Configuration Designer (WICD)\TestProvPackage\TestProvPackage.ppkg"
+(or) newprovpkg Prov.TestProvPackage "C:\Users\<username>\Documents\Windows Imaging and Configuration Designer (WICD)\TestProvPackage\TestProvPackage.ppkg"
 ```
-
-```XML
-    <OEM>
-      <Feature>QC_UEFI_TEST</Feature>
-      <Feature>SBC</Feature>
-      <!-- Include OEM features -->
-      <Feature>CUSTOM_CMD</Feature>
-      <Feature>PROV_AUTO</Feature>
-      <Feature>CUSTOM_SMBIOS</Feature>
-      <Feature>App_HelloWorld</Feature>
-    </OEM>
-```
+This creates a new folder at `C:\MyWorkspace\Common\Packages\Prov.TestProvPackage`.
+This also adds a FeatureID called **PROV_TESTPROVPACKAGE** to the `C:\MyWorkspace\Common\Packages\OEMCOMMONFM.xml` file.
 
 ## Build and Test Image
-Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateImage.md). You should only have to run the **buildimage** command:
+Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
 
-
-    buildimage <product name> test 
-
+    ```powershell
+    New-IoTFFUImage <product name> Test
+    (or)buildimage <product name> Test 
+    ```
 Once the FFU file has been built and you flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](05-FlashingImage.md), your provisioning package customizations should be applied when you power up the device. In our example, the default app is the [Hello World!](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/HelloWorld) app and will run when the device is booted up.
 
 
