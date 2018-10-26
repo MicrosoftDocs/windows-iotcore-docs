@@ -1,7 +1,7 @@
 --- 
 title: Adding a driver to a Windows IoT Core Image
-author: John Adali, Lwin Maung, Concurrency
-ms.author: John Adali, Lwin Maung, Concurrency
+author: johnadali
+ms.author: johnadali
 ms.date: 09/29/2018 
 ms.topic: article 
 description: Description on how to add a driver to a Windows IoT Core Image

@@ -1,7 +1,7 @@
 --- 
 title: Concepts and Terminology
-author: John Adali, Lwin Maung, Concurrency
-ms.author: John Adali, Lwin Maung, Concurrency
+author: johnadali
+ms.author: johnadali
 ms.date: 09/14/2018 
 ms.topic: article 
 description: Concepts and Terminology definitions for Windows IoT Core Manufacturing Guide.

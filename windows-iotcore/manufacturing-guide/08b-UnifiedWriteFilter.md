@@ -1,7 +1,7 @@
 ---
 title: Using the Unified Write Filter
-author: saraclay
-ms.author: saclayt
+author: johnadali
+ms.author: johnadali
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to use the Unified Write Filter to protect physical storage media from data writes.

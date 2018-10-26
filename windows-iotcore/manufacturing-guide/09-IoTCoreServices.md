@@ -1,7 +1,7 @@
 --- 
 title: Customizing a Windows IoT Core Image Overview
-author: Lwin Maung, John Adali, Concurrency
-ms.author: Lwin Maung, John Adali, Concurrency
+author: lmaung
+ms.author: lmaung
 ms.date: 09/18/2018 
 ms.topic: article 
 description: Overview for Customizing a Windows IoT Core Image.

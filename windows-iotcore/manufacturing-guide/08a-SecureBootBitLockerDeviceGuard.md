@@ -1,7 +1,7 @@
 ---
 title: Enabling Secure Boot, BitLocker, and Device Guard on Windows 10 IoT Core
-author: saraclay
-ms.author: saclayt
+author: johnadali
+ms.author: johnadali
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to enable Secure Boot, BitLocker, and Device Guard on Windows 10 IoT Core

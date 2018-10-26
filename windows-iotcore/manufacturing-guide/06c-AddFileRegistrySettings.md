@@ -1,7 +1,7 @@
 --- 
 title: Adding files and registry settings to a Windows IoT Core Image
-author: John Adali, Lwin Maung, Concurrency
-ms.author: John Adali, Lwin Maung, Concurrency
+author: johnadali
+ms.author: johnadali
 ms.date: 09/26/2018 
 ms.topic: article 
 description: Description on how to add files and registry settings to a Windows IoT Core Image

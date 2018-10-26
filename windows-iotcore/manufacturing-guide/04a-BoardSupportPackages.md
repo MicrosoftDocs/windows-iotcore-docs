@@ -1,7 +1,7 @@
 --- 
 title: Board Support Packages
-author: John Adali, Lwin Maung, Concurrency
-ms.author: John Adali, Lwin Maung, Concurrency
+author: johnadali
+ms.author: johnadali
 ms.date: 09/16/2018 
 ms.topic: article 
 description: Listing and description of different supported BSPs.
