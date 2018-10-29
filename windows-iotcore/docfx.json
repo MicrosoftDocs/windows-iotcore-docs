@@ -41,7 +41,7 @@
       "searchScope": [
         "windows-iot"
       ],
-      "ms.prod": "windows-IoT",
+      "ms.prod": "windows-iot",
       "ms.technology": "IoT",
       "titleSuffix": "Windows IoT"
     },
