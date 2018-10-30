@@ -24,7 +24,7 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 ## Videos
 ### From device management to security, check out a few videos from the Windows 10 IoT team.
 
-[!Video https://www.youtube.com/embed/A-kazyOiBvs]
+>[!Video https://www.youtube.com/embed/A-kazyOiBvs]
 
 * [Getting started with Windows 10 IoT series](https://www.youtube.com/watch?v=A-kazyOiBvs&t)
 * [Accelerate the Intelligent Edge with the Windows AI Platform](https://www.youtube.com/watch?v=7bFAg6w4J00)
@@ -44,7 +44,7 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Window 10 IoT Core HATs](https://www.turta.io/iothat)
 
 ## Commercialized projects
-### To learn more about projects that have commercialized with Windows 10 IoT, visit the [Windows for Business site](https://www.microsoft.com/en-us/WindowsForBusiness/windows-iot). 
+### Read case studies on Original Device Manufacturers (OEMs) that have commercialized with Windows 10 IoT.
 
 * [Misty Robotics](https://customers.microsoft.com/en-us/story/misty-robotics)
 * [Askey Turbomate](https://customers.microsoft.com/en-us/story/askey)
