@@ -21,6 +21,17 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [DevOps for IoT with Windows 10 IoT Core, UWP, and VSTS](https://blogs.msdn.microsoft.com/devops/2018/03/07/devops-for-iot-with-win10-iot-core-uwp-and-vsts/)
 * [Microsoft doubles down on Windows 10 IoT with added support](https://blogs.windows.com/business/2018/02/27/microsoft-doubles-down-on-windows-10-iot-with-added-support/#l0XfUKmKrkyKd4AA.97)
 
+## Videos
+### From device management to security, check out a few videos from the Windows 10 IoT team.
+
+[!Video https://www.youtube.com/embed/A-kazyOiBvs]
+
+* [Getting started with Windows 10 IoT series](https://www.youtube.com/watch?v=A-kazyOiBvs&t)
+* [Accelerate the Intelligent Edge with the Windows AI Platform](https://www.youtube.com/watch?v=7bFAg6w4J00)
+* [Connecting Windows 10 IoT Devices to IoT Central](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Connecting-Windows-IoT-Devices-To-IoT-Central)
+* [Windows 10 IoT Core Walkthrough](https://channel9.msdn.com/Blogs/Seth-Juarez/Windows-IoT-Core-Walkthrough?term=windows%20iot%20core)
+* [Windows 10 IoT and Azure IoT Device Management Enhancement](https://channel9.msdn.com/Shows/Azure-Friday/Windows-10-IoT-and-Azure-IoT-Device-Management-Enhancements?term=windows%20iot%20core)
+
 ## Learning resources
 ### Find resources on how to get started or get trained with the help of the community.
 
@@ -32,14 +43,15 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Getting started with Windows 10 IoT Core on Hackster.io](http://www.hackster.io/KiwiBryn)
 * [Window 10 IoT Core HATs](https://www.turta.io/iothat)
 
-## Videos
-### From device management to security, check out a few videos from the Windows 10 IoT team.
+## Commercialized projects
+### To learn more about projects that have commercialized with Windows 10 IoT, visit the [Windows for Business site](https://www.microsoft.com/en-us/WindowsForBusiness/windows-iot). 
 
-* [Getting started with Windows 10 IoT series](https://www.youtube.com/watch?v=A-kazyOiBvs&t)
-* [Accelerate the Intelligent Edge with the Windows AI Platform](https://www.youtube.com/watch?v=7bFAg6w4J00)
-* [Connecting Windows 10 IoT Devices to IoT Central](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Connecting-Windows-IoT-Devices-To-IoT-Central)
-* [Windows 10 IoT Core Walkthrough](https://channel9.msdn.com/Blogs/Seth-Juarez/Windows-IoT-Core-Walkthrough?term=windows%20iot%20core)
-* [Windows 10 IoT and Azure IoT Device Management Enhancement](https://channel9.msdn.com/Shows/Azure-Friday/Windows-10-IoT-and-Azure-IoT-Device-Management-Enhancements?term=windows%20iot%20core)
+* [Misty Robotics](https://customers.microsoft.com/en-us/story/misty-robotics)
+* [Askey Turbomate](https://customers.microsoft.com/en-us/story/askey)
+* [Johnson Controls GLAS](https://customers.microsoft.com/en-us/story/johnson-controls)
+* [Kodisoft](https://customers.microsoft.com/en-us/story/kodisoft)
+* [Redback Technologies](https://customers.microsoft.com/en-us/story/redback-technologies)
+
 
 ## Community projects
 ### Learn about the various verticals where Windows 10 IoT is being used in the Hackster community.
