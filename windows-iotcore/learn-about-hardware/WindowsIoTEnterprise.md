@@ -51,7 +51,7 @@ For minimum requirement details, please visit [the Windows Hardware site](https:
 
 ## Helpful resources
 > [!NOTE]
-> Additional resources may be available from you distributor to explain Windows EPKEA OEM Activation and provide guidance in generating your manufacturing-ready Windows IoT Enterprise [WIM](https://msdn.microsoft.com/en-us/library/windows/desktop/dd861280.aspx) device image.
+> Additional resources may be available from you distributor to explain Windows EPKEA OEM Activation and provide guidance in generating your manufacturing-ready Windows IoT Enterprise [WIM](https://msdn.microsoft.com/library/windows/desktop/dd861280.aspx) device image.
 
 * [Desktop manufacturing](https://docs.microsoft.com/windows-hardware/manufacture/desktop/)
 * [Unified Write Filter for Windows 10](https://docs.microsoft.com/windows-hardware/customize/enterprise/unified-write-filter)

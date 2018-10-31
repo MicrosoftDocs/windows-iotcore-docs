@@ -64,7 +64,7 @@ The Fall 2018 release of Windows 10 IoT Enterprise will also be an LTSC release.
 
 ## Helpful resources
 > [!NOTE]
-> Additional resources may be available from your distributor to explain Windows EPKEA OEM Activation and provide guidance in generating your manufacturing-ready Windows IoT Enterprise [WIM](https://msdn.microsoft.com/en-us/library/windows/desktop/dd861280.aspx) device image.
+> Additional resources may be available from your distributor to explain Windows EPKEA OEM Activation and provide guidance in generating your manufacturing-ready Windows IoT Enterprise [WIM](https://msdn.microsoft.com/library/windows/desktop/dd861280.aspx) device image.
 
 * [Customizations for enterprise desktop](https://docs.microsoft.com/windows-hardware/customize/enterprise/enterprise-custom-portal)
 * [Unified Write Filter for Windows 10](https://docs.microsoft.com/windows-hardware/customize/enterprise/unified-write-filter)

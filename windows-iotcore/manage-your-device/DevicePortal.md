@@ -12,7 +12,7 @@ keywords: windows iot, Windows Device Portal, remote, device portal
 
 # Windows Device Portal
    The Windows Device Portal (WDP) lets you configure and manage your device remotely over your local network.
-   The main features are documented on the [Windows Device Portal overview page](https://msdn.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal)
+   The main features are documented on the [Windows Device Portal overview page](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal)
 
 ![Device Portal Home](../media/deviceportal/deviceportal.png)
 
@@ -24,7 +24,7 @@ keywords: windows iot, Windows Device Portal, remote, device portal
 
 ## Shared Documentation
 WDP is a developer tool shared among all Windows 10 devices. Each product has its own unique features, but the core functionality is the same.
-Documentation for the main features are found on the [Windows Device Portal overview page](https://msdn.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal). The rest of the documentation below will be IoT specific.
+Documentation for the main features are found on the [Windows Device Portal overview page](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal). The rest of the documentation below will be IoT specific.
 
 ## Set up
 1. Connect your board to the internet
@@ -191,4 +191,4 @@ To learn more, [read the documentation under the Windows Device Portal docs](htt
 ## Additional Resources
 ___ 
 
-1. [Windows Device Portal overview page](https://msdn.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal)
+1. [Windows Device Portal overview page](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal)

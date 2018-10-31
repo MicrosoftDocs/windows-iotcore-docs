@@ -80,7 +80,7 @@ In **Windows 10 IoT Core Dashboard**, *Click* on the **Open in Device Portal** i
 
 **Prerequisite:** Your device will already need to be connected to your local network through Ethernet and should have a USB WiFi Adapter plugged in. You also need a Windows PC with WiFi capability.
 
-Setting up WiFi using wireless profiles is supported in Windows 10 IoT Core. See [MSDN](https://msdn.microsoft.com/en-us/library/windows/desktop/aa369853) for details and examples.
+Setting up WiFi using wireless profiles is supported in Windows 10 IoT Core. See [MSDN](https://msdn.microsoft.com/library/windows/desktop/aa369853) for details and examples.
 
 1. Connect your Windows PC to the desired wireless network and create WiFi profile XML file with these commands:
 
