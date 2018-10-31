@@ -11,7 +11,7 @@ keywords: windows iot, windows 10 iot core, default app
 # Windows 10 IoT Core Default App Overview
 
 > [!TIP]
-> If you find that you'd like to see a feature added to this sample app, [open an issue](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp) on GitHub to let us know. 
+> If you find that you'd like to see a feature added to this sample app, [open an issue](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp) on GitHub to let us know. 
 
 When you initially flash Windows 10 IoT Core, you will be presented with the Windows 10 IoT Core Default App upon startup, which looks like this:
 
@@ -25,7 +25,7 @@ This article will give you a rundown of the different features that the Windows 
 
 The IoT Core Default App can be customized and extended, or you can use the source code as an example for your own app. To try this out for yourself, download the zip of our samples or check out the code for the IoT Core Default App [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp). For any questions, please file an issue on our samples repo [here](https://github.com/Microsoft/Windows-iotcore-samples/issues).
 
-As shown under the [Settings section](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp#settings
+As shown under the [Settings section](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp#settings
 ) below, in some cases, you may configure default settings and features on your customer system on behalf of the end user. However, if you turn these settings and features on by default or if diagnostics are above the basic setting, you must:
 
 * Notify the end user that these features have been enable and provide the end user with the link to Microsoft's Privacy Statement web page [here](http://go.microsoft.com/fwlink/?LinkId=521839). 

@@ -34,7 +34,7 @@ In general a fixed purpose device differs from a general purpose device in the f
 ## Differences between Windows 10 IoT Core and Windows 10 IoT Enterprise
 While Windows 10 IoT Core and Windows 10 IoT Enterprise are similar in name, there are differences in what they offer as well as what they support. Below is a feature list that highlights edition differences.
 
-For minimum requirement details, please visit [the Windows Hardware site](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
+For minimum requirement details, please visit [the Windows Hardware site](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
 
 > |             | Windows 10 IoT Core  |  Windows 10 IoT Enterprise  |
 > |-------------|----------|---------|
@@ -53,11 +53,11 @@ For minimum requirement details, please visit [the Windows Hardware site](https:
 > [!NOTE]
 > Additional resources may be available from you distributor to explain Windows EPKEA OEM Activation and provide guidance in generating your manufacturing-ready Windows IoT Enterprise [WIM](https://msdn.microsoft.com/en-us/library/windows/desktop/dd861280.aspx) device image.
 
-* [Desktop manufacturing](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/)
-* [Unified Write Filter for Windows 10](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/unified-write-filter)
-* [Assigned Access for Enterprise & Pro](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/assigned-access)
-* [Shell Launcher for Enterprise and Education editions](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/shell-launcher)
-* [Lockdown resources](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/create-a-kiosk-image) 
-* [Enabling Embedded Mode and using Background Tasks on Windows IoT Enterprise](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/embeddedmode)
-* [Configure Windows telemetry in your organization](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-telemetry-in-your-organization )
-* [Configure kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc)
+* [Desktop manufacturing](https://docs.microsoft.com/windows-hardware/manufacture/desktop/)
+* [Unified Write Filter for Windows 10](https://docs.microsoft.com/windows-hardware/customize/enterprise/unified-write-filter)
+* [Assigned Access for Enterprise & Pro](https://docs.microsoft.com/windows-hardware/customize/enterprise/assigned-access)
+* [Shell Launcher for Enterprise and Education editions](https://docs.microsoft.com/windows-hardware/customize/enterprise/shell-launcher)
+* [Lockdown resources](https://docs.microsoft.com/windows-hardware/customize/enterprise/create-a-kiosk-image) 
+* [Enabling Embedded Mode and using Background Tasks on Windows IoT Enterprise](https://docs.microsoft.com/windows/iot-core/develop-your-app/embeddedmode)
+* [Configure Windows telemetry in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-telemetry-in-your-organization )
+* [Configure kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc)

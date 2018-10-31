@@ -24,7 +24,7 @@ There are three main areas that occur from when an IoT device is powered on, all
 
 ![Dashboard screenshot](../media/ManufacturingGuide/BootOrder.jpg)
 
-Additional information on the Windows 10 boot process can be found [here](https://docs.microsoft.com/en-us/windows/security/information-protection/secure-the-windows-10-boot-process).
+Additional information on the Windows 10 boot process can be found [here](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process).
 
 ## Locking-down IoT Devices
 
@@ -105,7 +105,7 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
 
 * Qualcomm DragonBoard 410c
 
-    In order to enable Secure Boot, it may be necessary to provision RPMB. Once the eMMC has been flashed with Windows 10 IoT Core (as per instructions [here](https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-dragonboard-410c), press [Power] + [Vol+] + [Vol-] simultaneously on the device when powering up and select "Provision RPMB" from the BDS menu. *Please note that this is an irreversible step.*
+    In order to enable Secure Boot, it may be necessary to provision RPMB. Once the eMMC has been flashed with Windows 10 IoT Core (as per instructions [here](https://docs.microsoft.com/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-dragonboard-410c), press [Power] + [Vol+] + [Vol-] simultaneously on the device when powering up and select "Provision RPMB" from the BDS menu. *Please note that this is an irreversible step.*
 
 * Intel MinnowBoardMax
 

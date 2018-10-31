@@ -21,7 +21,7 @@ Listed below are the steps to flash the FFU image file to specific manufacturer 
 You will need the following tools installed to complete this section:
 * **[Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/p/?LinkId=708576) (Raspberry Pi only)**. This tool is used to perform the flashing of the FFU file to the Raspberry Pi device.
 * **[Dragonboard Update Tool](https://developer.qualcomm.com/hardware/dragonboard-410c/software) (Qualcomm DragonBoard only)**. This tool is used to perform the flashing of the FFU file to the DragonBoard device.
-* **Deployment Imaging and Servicing and Management (DISM) tool (Intel devices only)**. Part of the [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#winADK), this tool is used to perform the flashing of the FFU file to the Intel device.
+* **Deployment Imaging and Servicing and Management (DISM) tool (Intel devices only)**. Part of the [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK), this tool is used to perform the flashing of the FFU file to the Intel device.
 
 ## Qualcomm
 ### DragonBoard 410c
@@ -64,10 +64,10 @@ Once the flashing process is complete, eject the microSD card from the technicia
 
 ## Intel
 ### Apollo Lake / Braswell / Cherry Trail
-We will be using the **DISM (Deployment Image and Servicing Management Tool)** and a bootable USB stick to flash the FFU image file to the specified Intel device (Apollo Lake/Braswell/Cherry Trail). Additional information on **DISM** can be found [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).
+We will be using the **DISM (Deployment Image and Servicing Management Tool)** and a bootable USB stick to flash the FFU image file to the specified Intel device (Apollo Lake/Braswell/Cherry Trail). Additional information on **DISM** can be found [here](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).
 
 ### Creating a USB Bootable Drive
-We first need to create a bootable USB drive that we can use to boot on the specified Intel hardware device. We can use **Window PE** (WinPE) for this (additional info on WinPE is [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro)).
+We first need to create a bootable USB drive that we can use to boot on the specified Intel hardware device. We can use **Window PE** (WinPE) for this (additional info on WinPE is [here](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-intro)).
 
 1. Install WinPE from the **Windows ADK Windows Preinstallation Environment Add-ons**
 
