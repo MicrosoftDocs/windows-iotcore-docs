@@ -34,7 +34,7 @@ information that must be encrypted.
 
 ## Azure IoT Hub
 
-[Azure IoT Hub](https://azure.microsoft.com/en-us/services/iot-hub/) is an
+[Azure IoT Hub](https://azure.microsoft.com/services/iot-hub/) is an
 Azure cloud service that offers reliable and secure device-to-cloud
 and cloud-to-device messaging that scales to millions of devices. It offers a
 streamlined programming model that lets you get started with minimum effort and
