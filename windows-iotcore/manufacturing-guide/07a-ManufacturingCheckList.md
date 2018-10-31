@@ -65,7 +65,7 @@ The testing can be done in a few ways.
 ### Clean retail image test
 If you truly want to have a clean image, you will need to create two (2) retail images. The two images will be indentical except for one feature. The testing retail image will have the test app that will be configured as a Fore-Ground-App and you can use that to test the various features. Once features are tested, you can use the second image (without test app) for distribution.
 
-**Pros**: Final image will be totally clean and only the items that are deemed neccessary are baked into the image.
+**Pros**: Final image will be totally clean and only the items that are deemed necessary are baked into the image.
 
 **Cons**: There are potential user error while adding a test app to the retail image. There are potential modifications made to provisioning package(s) that could be totally different from final retail image.
 
