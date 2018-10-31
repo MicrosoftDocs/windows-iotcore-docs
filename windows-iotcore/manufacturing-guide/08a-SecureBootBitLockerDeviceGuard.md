@@ -56,7 +56,7 @@ Here are the steps taken by UEFI Secure Boot:
 4. Windows Boot Manager runs and verifies the digital signature of the Windows Kernel. If trusted, Windows Boot Manager passes control to the Windows Kernel.
 
 
-Additional details on Secure Boot, along with key creation and management guidance, is available [here](https://technet.microsoft.com/en-us/library/dn747883.aspx).
+Additional details on Secure Boot, along with key creation and management guidance, is available [here](https://technet.microsoft.com/library/dn747883.aspx).
 
 ### Windows Code Integrity
 
@@ -64,7 +64,7 @@ Windows Code Integrity (WCI) improves the security of the operating system by va
 
 Configurable Code Integrity (CCI) is a feature in Windows 10 that allows device builders to lockdown a device and only allow it to run and execute code that is signed and trusted.  To do so, device builders can create a code integrity policy on a 'golden' device (final release version of hardware and software) and then secure and apply this policy on all devices on the factory floor.
 
-To learn more about deploying code integrity policies, auditing and enforcement, check out the latest technet documentation [here](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/deploy-code-integrity-policies-steps).
+To learn more about deploying code integrity policies, auditing and enforcement, check out the latest technet documentation [here](https://technet.microsoft.com/itpro/windows/keep-secure/deploy-code-integrity-policies-steps).
 
 Here are the steps taken by Windows Code Integrity:
 
