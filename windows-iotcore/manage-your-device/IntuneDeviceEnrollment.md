@@ -66,7 +66,7 @@ Intune enrollment of an IoT Core device is accomplished by using the Windows IoT
 
      ![Choosing Enroll in Azure AD](../media/IntuneDeviceEnrollment/iot-wcd-enroll-in-azure-ad.png)
 
-6. Next to **Bulk Token Expiry**, enter a a bulk token expiry date.
+6. Next to **Bulk Token Expiry**, enter a bulk token expiry date.
 7. Select **Get Bulk Token**. A sign-in message appears for connecting to Azure AD.
 
      ![Azure AD sign-in page](../media/IntuneDeviceEnrollment/iot-wcd-sign-in.png)
