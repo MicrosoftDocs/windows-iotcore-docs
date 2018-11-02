@@ -22,9 +22,9 @@ While Windows 10 IoT Core and Windows 10 IoT Enterprise are similar in name, the
 
 > |             | Windows 10 IoT Core  |  Windows 10 IoT Enterprise  |
 > |-------------|----------|---------|
-> | User experience | Single UWP app running at startup with supporting background apps and services. | Traditional Windows Shell with Advanced Lockdown Features |
+> | User experience | One UWP app in the foreground at a time (see IoTShell documentation for app backstack handling) with supporting background apps and services. | Traditional Windows Shell with Advanced Lockdown Features |
 > | Headless supported | Yes | Yes |
-> | App architecture supported | UWP only | UWP and Win32 |
+> | App architecture supported | UWP UI only | Full Windows UI support (ex: UWP, WinForms, etc) |
 > | Cortana | [*Cortana SDK*](https://developer.microsoft.com/en-us/cortana/devices) | Yes |
 > | Domain join | AAD only | AAD and Traditional Domain |
 > | Management | MDM | MDM |
