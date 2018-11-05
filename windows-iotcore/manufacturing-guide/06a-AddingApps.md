@@ -1,4 +1,4 @@
---- 
+---
 title: Adding an App to a Windows IoT Core Image
 author: johnadali
 ms.author: johnadali
@@ -6,7 +6,7 @@ ms.date: 09/20/2018
 ms.topic: article 
 description: Description on how to add an App to a Windows IoT Core Image
 keywords: Windows 10 IoT Core, images
---- 
+---
 
 # Adding an App to a Windows IoT Core Image
 We are now going to take an app (like the IoT Core sample [Hello World!](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/HelloWorld) app), package it up and create a new Windows IoT Core image that you can load onto your device. 

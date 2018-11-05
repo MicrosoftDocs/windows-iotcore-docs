@@ -1,4 +1,4 @@
---- 
+---
 title: Board Support Packages
 author: johnadali
 ms.author: johnadali
@@ -6,7 +6,7 @@ ms.date: 09/16/2018
 ms.topic: article 
 description: Listing and description of different supported BSPs.
 keywords: Windows 10 IoT Core, 
---- 
+---
 
 # Board Support Packages
 

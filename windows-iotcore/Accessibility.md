@@ -1,4 +1,4 @@
---- 
+---
 title: Accessibility for Windows 10 IoT 
 author: saraclay 
 ms.author: saclayt 
@@ -6,7 +6,7 @@ ms.date: 03/8/2018
 ms.topic: article 
 description: Learn about accessibility and how to apply these learnings to your next application or device. 
 keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, accessibility, color contrast 
---- 
+---
  
 # An Overview of Accessibility for Windows IoT 
  

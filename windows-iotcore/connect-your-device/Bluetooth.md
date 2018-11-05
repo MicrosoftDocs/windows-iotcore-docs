@@ -18,7 +18,7 @@ There are two different bluetooth technologies that you can choose to implement 
 Before Bluetooth LE, devices commonly used this protocol to communicate using Bluetooth. This protocol is simple and useful for device-to-device communication without the need of energy savings. Connectivity requires pairing.
 
 * Bluetooth Low-Energy (BLE/LE)
-Bluetooth Low Energy (LE) is a specification that defines protocols for discovery and communication between devices that have an efficient energy usage requirement. For more information including code samples, As per recent builds, a device can connect to to a BLE device without pairing.
+Bluetooth Low Energy (LE) is a specification that defines protocols for discovery and communication between devices that have an efficient energy usage requirement. For more information including code samples, As per recent builds, a device can connect to a BLE device without pairing.
 
 ## Supported Bluetooth Profiles
 Windows 10 IoT Core supports the following Bluetooth profiles:
