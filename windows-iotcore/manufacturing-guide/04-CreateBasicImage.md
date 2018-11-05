@@ -1,4 +1,4 @@
---- 
+---
 title: Creating a Basic IoT Core Image
 author: johnadali
 ms.author: johnadali
@@ -6,7 +6,7 @@ ms.date: 09/05/2018
 ms.topic: article 
 description: Steps to create a basic Windows IoT Core image
 keywords: Windows 10 IoT Core, 
---- 
+---
 
 # Creating a Basic IoT Core Image
 To get started, we will detail the steps needed to create a basic Windows IoT Core image and flash it onto a specific hardware device.

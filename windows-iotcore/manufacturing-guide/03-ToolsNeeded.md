@@ -1,4 +1,4 @@
---- 
+---
 title: Get the tools needed to create Windows IoT Core images
 author: johnadali
 ms.author: johnadali
@@ -6,7 +6,7 @@ ms.date: 09/05/2018
 ms.topic: article 
 description: Describes the tools needed to create IoT Core images
 keywords: Windows 10 IoT Core, 
---- 
+---
 
 # Get the tools needed to create Windows IoT Core images
 

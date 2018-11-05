@@ -1,4 +1,4 @@
---- 
+---
 title: Get Started Overview
 author: jadali,lmaung
 ms.author: jadali, lmaung
@@ -7,7 +7,7 @@ ms.date: 09/05/2018
 ms.topic: article 
 description: Overview for Windows IoT Core Manufacturing Guide.
 keywords: Windows 10 IoT Core, 
---- 
+---
 
 # IoT Core Manufacturing Guide
 

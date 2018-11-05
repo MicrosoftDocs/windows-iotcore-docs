@@ -1,4 +1,4 @@
---- 
+---
 title: Device Manufacturing Check List
 author: lmaung
 ms.author: lmaung
@@ -6,7 +6,7 @@ ms.date: 10/08/2018
 ms.topic: article 
 description: Concepts check list for manufacturing guide.
 keywords: Windows 10 IoT Core, 
---- 
+---
 
 # Device Manufacturing Check List
 

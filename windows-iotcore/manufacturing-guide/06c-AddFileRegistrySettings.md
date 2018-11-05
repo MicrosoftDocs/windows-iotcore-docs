@@ -1,4 +1,4 @@
---- 
+---
 title: Adding files and registry settings to a Windows IoT Core Image
 author: johnadali
 ms.author: johnadali
@@ -6,7 +6,7 @@ ms.date: 09/26/2018
 ms.topic: article 
 description: Description on how to add files and registry settings to a Windows IoT Core Image
 keywords: Windows 10 IoT Core, 
---- 
+---
 
 # Adding file(s) and registry settings to a Windows IoT Core Image
 We will create some test files and registry keys to a Windows IoT Core image, and package them up so that they can be serviced after they are distributed to your customers. Since files and registry keys that you add to your image are often not specific to an architecture, we recommend creating a common package that you can use across all of your device architectures.
