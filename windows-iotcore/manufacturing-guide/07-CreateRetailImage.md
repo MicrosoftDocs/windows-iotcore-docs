@@ -1,4 +1,4 @@
---- 
+---
 title: Creating a Retail IoT Core Image
 author: johnadali
 ms.author: johnadali
@@ -6,7 +6,7 @@ ms.date: 10/05/2018
 ms.topic: article 
 description: Steps to create a retail Windows IoT Core image
 keywords: Windows 10 IoT Core, 
---- 
+---
 
 # Creating a Retail IoT Core Image
 We will detail the steps needed to create a retail Windows IoT Core image and flash it onto a specific hardware device.

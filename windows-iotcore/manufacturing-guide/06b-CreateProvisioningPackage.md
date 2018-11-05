@@ -1,4 +1,4 @@
---- 
+---
 title: Creating a Provisioning Package for a Windows IoT Core Image
 author: johnadali
 ms.author: johnadali
@@ -6,7 +6,7 @@ ms.date: 09/20/2018
 ms.topic: article 
 description: Description on how to create a provisioning package for a Windows IoT Core Image
 keywords: Windows 10 IoT Core, 
---- 
+---
 
 # Creating a Provisioning Package for a Windows IoT Core Image
 A provisioning package allows you to apply customization settings over an existing Windows IoT Core installation image. We will describe the steps required to create a provisioning package that you can apply to your Windows 10 IoT Core FFU images.

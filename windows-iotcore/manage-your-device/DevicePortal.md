@@ -99,7 +99,7 @@ IoT Onboarding provides support for configuring an IoT device's Wi-Fi connectivi
 
 **Internet Connection Sharing (ICS)**
 Internet Connection Sharing allows you to share the Internet access of your device with other devices connected to your device over the Wi-Fi SoftAP.
-To use this feature, your Windows 10 IoT Device needs to have access to the internet (e.g. through a wired LAN connection).  In 'Connectivity->Onboarding->SoftAP settings' click 'enable' and set SSID name and password.  Then in 'Connectivity->Internet connection sharing' for 'access point adapter' select "Microsoft Wi-FI Direct Virtual Adapter #2" and for 'shared network adapter' select your your wired ethernet adapter.  Finally, click 'start shared access.'  Once started, connect a separate Wi-Fi enabled device to the SoftAP on your Windows 10 IoT device.  After a connection is established your separate Wi-Fi enabled device will be able to connect to the internet through your Windows 10 IoT device.
+To use this feature, your Windows 10 IoT Device needs to have access to the internet (e.g. through a wired LAN connection).  In 'Connectivity->Onboarding->SoftAP settings' click 'enable' and set SSID name and password.  Then in 'Connectivity->Internet connection sharing' for 'access point adapter' select "Microsoft Wi-FI Direct Virtual Adapter #2" and for 'shared network adapter' select your wired ethernet adapter.  Finally, click 'start shared access.'  Once started, connect a separate Wi-Fi enabled device to the SoftAP on your Windows 10 IoT device.  After a connection is established your separate Wi-Fi enabled device will be able to connect to the internet through your Windows 10 IoT device.
 
 > [!NOTE]
 > ICS is disabled when a Wi-Fi profile exists on the device. 

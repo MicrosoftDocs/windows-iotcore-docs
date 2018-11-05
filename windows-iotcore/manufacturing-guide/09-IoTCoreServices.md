@@ -1,4 +1,4 @@
---- 
+---
 title: Customizing a Windows IoT Core Image Overview
 author: lmaung
 ms.author: lmaung
@@ -6,7 +6,7 @@ ms.date: 09/18/2018
 ms.topic: article 
 description: Overview for Customizing a Windows IoT Core Image.
 keywords: Windows 10 IoT Core, 
---- 
+---
 
 # Windows 10 IoT Core Services
 Windows 10 IoT Core Services is a new cloud services subscription that provides the essential services needed to commercialize a device on Windows 10 IoT Core. Through this subscription, OEMs have access to 10 years of support on Windows 10 IoT Core Long Term Servicing Channel (LTSC) releases along with services to manage device updates and assess device health.
