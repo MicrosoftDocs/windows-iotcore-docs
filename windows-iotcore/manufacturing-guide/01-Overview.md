@@ -1,7 +1,7 @@
 ---
 title: Get Started Overview
-author: jadali
-ms.author: jadali
+author: johnadali
+ms.author: johnadali
 
 ms.date: 09/05/2018 
 ms.topic: article 
