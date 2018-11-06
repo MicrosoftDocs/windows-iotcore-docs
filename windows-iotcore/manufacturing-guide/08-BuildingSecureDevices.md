@@ -1,7 +1,7 @@
 ---
 title: Building Secure Devices with Windows 10 IoT Core
-author: johnadali, lmaung
-ms.author: johnadali, lmaung
+author: johnadali
+ms.author: johnadali
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to build secure devices by enabling secure boot, implementing TPMs, and more.
