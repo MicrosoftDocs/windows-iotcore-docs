@@ -30,9 +30,16 @@ Windows 10 IoTCore kits now include the language resources for the following lan
 
 > | Language  | Code | Region |
 > |-------------|-----|-----|
+> | English (United States) | en-US | North America | 
+> | English (UK) | en-GB | Europe |
+> | French (France) | fr-FR | Europe |
+> | French (Canada) | fr-CA | North America |
+> | Spanish (Spain) | es-ES | Europe |
+> | Spanish (Mexico) | es-MX | North America |
+> | Chinese | zh-CN | Asia | 
 > | Arabic | ar-SA | Asia |
 > | German | de-DE | Europe |
-> | Italitan | it-IT | Europe | 
+> | Italian | it-IT | Europe | 
 > | Japanese | ja-JP | Asia |
 > | Korean | ko-KR | Asia |
 > | Dutch | nl-NL | Europe |
