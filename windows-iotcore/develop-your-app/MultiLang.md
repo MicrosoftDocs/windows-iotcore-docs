@@ -28,94 +28,20 @@ See the below sample applications:
 
 Windows 10 IoTCore kits now include the language resources for the following languages:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Language</th>
-<th align="left">Code</th>
-<th align="left">Region</th>
-</tr>
-</thead>
-<tbody>
-
-<tr class="odd">
-<td align="left"><p>Arabic</p></td>
-<td align="left"><p>ar-SA</p></td>
-<td align="left"><p>Asia</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>German</p></td>
-<td align="left"><p>de-DE</p></td>
-<td align="left"><p>Europe</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>Italian</p></td>
-<td align="left"><p>it-IT</p></td>
-<td align="left"><p>Europe</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>Japanese</p></td>
-<td align="left"><p>ja-JP</p></td>
-<td align="left"><p>Asia</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>Korean</p></td>
-<td align="left"><p>ko-KR</p></td>
-<td align="left"><p>Asia</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>Dutch</p></td>
-<td align="left"><p>nl-NL</p></td>
-<td align="left"><p>Europe</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>Polish</p></td>
-<td align="left"><p>pl-PL</p></td>
-<td align="left"><p>Europe</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>Romanian</p></td>
-<td align="left"><p>ro-RO</p></td>
-<td align="left"><p>Europe</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>Russian</p></td>
-<td align="left"><p>ro-RU</p></td>
-<td align="left"><p>Europe</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>Greek</p></td>
-<td align="left"><p>el-GR</p></td>
-<td align="left"><p>Europe</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>Portugese (Brazil)</p></td>
-<td align="left"><p>pt-BR</p></td>
-<td align="left"><p>South America/Europe</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>Portguese (Portugal)</p></td>
-<td align="left"><p>pt-PT</p></td>
-<td align="left"><p>South America/Europe</p></td>
-</tr>
-
-</tbody>
-</table>
+> | Language  | Code | Region |
+> |-------------|-----|-----|
+> | Arabic | ar-SA | Asia |
+> | German | de-DE | Europe |
+> | Italitan | it-IT | Europe | 
+> | Japanese | ja-JP | Asia |
+> | Korean | ko-KR | Asia |
+> | Dutch | nl-NL | Europe |
+> | Polish | pl-PL | Europe | 
+> | Romanian | ro-RO | Europe |
+> | Russian | ro-RU | Europe |
+> | Greek | el-GR | Europe |
+> | Portugese (Brazil) | pt-BR | South America/Europe |
+> | Portuese (Portugal) | pt-PR | South America/Europe |
 
 These language resources contain UI strings, speech language and voices (speech synthesis). Windows IoT images can be built with one or more of these resources and they must be specified during the image time and cannot be modified later. Note that UI language related resources are independent than speech language and voice resources.
 
