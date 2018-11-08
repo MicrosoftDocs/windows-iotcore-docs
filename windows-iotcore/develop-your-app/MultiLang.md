@@ -26,12 +26,29 @@ See the below sample applications:
 
 ## Languages in OS
 
-Windows 10 IoTCore kits now include the language resources for the following languages
+Windows 10 IoTCore kits now include the language resources for the following languages:
 
-* English : en-US, en-GB
-* French  : fr-FR, fr-CA
-* Spanish : es-ES, es-MX
-* Chinese : zh-CN
+> | Language  | Code | Region |
+> |-------------|-----|-----|
+> | English (United States) | en-US | North America | 
+> | English (UK) | en-GB | Europe |
+> | French (France) | fr-FR | Europe |
+> | French (Canada) | fr-CA | North America |
+> | Spanish (Spain) | es-ES | Europe |
+> | Spanish (Mexico) | es-MX | North America |
+> | Chinese | zh-CN | Asia | 
+> | Arabic | ar-SA | Asia |
+> | German | de-DE | Europe |
+> | Italian | it-IT | Europe | 
+> | Japanese | ja-JP | Asia |
+> | Korean | ko-KR | Asia |
+> | Dutch | nl-NL | Europe |
+> | Polish | pl-PL | Europe | 
+> | Romanian | ro-RO | Europe |
+> | Russian | ro-RU | Europe |
+> | Greek | el-GR | Europe |
+> | Portugese (Brazil) | pt-BR | South America/Europe |
+> | Portuese (Portugal) | pt-PR | South America/Europe |
 
 These language resources contain UI strings, speech language and voices (speech synthesis). Windows IoT images can be built with one or more of these resources and they must be specified during the image time and cannot be modified later. Note that UI language related resources are independent than speech language and voice resources.
 
