@@ -31,7 +31,7 @@ Most IoT devices are built as fixed-function devices.  This implies that device 
 
 ## Locking-down IoT Devices
 
-In order to lockdown a Windows IoT device, the following considerations must be made.
+In order to lockdown a Windows IoT device, the following considerations must be made...
 
 ### UEFI Platform & Secure Boot
 
@@ -212,3 +212,28 @@ If the contents need to be frequently accessed offline, BitLocker autounlock can
 
 Should there arise a need to temporarily disable BitLocker, initate a remote PowerShell session with your IoT device and run the following command: `sectask.exe -disable`.  
 **Note:** Device encryption will be re-enabled on subsequent device boot unless the scheduled encryption task is disabled.
+
+### Disabling Device Guard
+
+The turnkey security scripts generates SIPolicyOn.p7b and SIPolicyOff.p7b files in the folder.
+The wm.xml packages teh SIPolicyOn.p7b and place sit on the system as SIPolicy.p7b
+
+For example:
+
+```
+C:\src\iot-adk-addonkit.db410c\TurnkeySecurity\QCDB\Output\DeviceGuard\Security.DeviceGuard.wm.xml
+…
+    <files>
+        <file
+            destinationDir="$(runtime.bootDrive)\efi\microsoft\boot"
+            source="SIPolicyOn.p7b"
+            name="SIPolicy.p7b" />
+    </files>
+..
+
+```
+
+If you create a package that takes teh SIPolicyOff.p7b file and place it as a SIPolicy.p7b, and the napply this package, then the Device Guard will be turned off.
+
+
+

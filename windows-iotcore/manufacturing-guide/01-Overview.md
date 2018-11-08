@@ -1,7 +1,7 @@
 ---
 title: Get Started Overview
-author: jadali,lmaung
-ms.author: jadali, lmaung
+author: johnadali
+ms.author: johnadali
 
 ms.date: 09/05/2018 
 ms.topic: article 
