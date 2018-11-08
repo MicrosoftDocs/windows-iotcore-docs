@@ -41,7 +41,7 @@ The `pkggen` tool combines these items into signed packages. Our samples include
 ### Feature Manifests (FMs)
 After you've put everything into packages, you'll use Feature Manifest (FM files) to list which of your packages belong in the final image.
 
-You can include as many FMs into an image as you want. In this guide, we refer to the following FMs:
+You can include as many FMs to build an image as you want. In this guide, we refer to the following FMs:
 
 * **OEMFM.xml** includes features an OEM might add to a device, such as the app and a provisioning package.
 * **BSPFM.xml** includes features that a hardware manufacturer might use to define a board. For example, OEM_RPi2FM.xml includes all of the features used for the Raspberry Pi 2.
