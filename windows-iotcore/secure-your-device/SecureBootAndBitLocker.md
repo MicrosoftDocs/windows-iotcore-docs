@@ -157,16 +157,16 @@ You can test the generated packages by manually installing them on a unlocked de
 7. Reboot the device again to activate the Bitlocker encryption.
 8. Test the security features
     * **SecureBoot** : try `bcdedit /debug on` , you will get an error stating that the value is protected by secure boot policy.
-    * **BitLocker** : To validate that the bitlocker encryption has been completed, run<p>
+   * **BitLocker** : To validate that bitlocker encryption has been completed, run<p>
         `sectask.exe -waitenableforcompletion 1`<p>
-        If it returns 0, that means all devices drives on the system have been bitlockered successfully.  Any other return code is failure.<p>
+        If it returns 0, that means all drives on the system have been bitlockered successfully.  Any other return code is failure.<p>
         *Additional Syntax*<p>
          `-waitenableforcompletion [timeout]` <p>
-        => wait until BitLocker encryption completed on all NTFS volumes.<p>
-        ==>timeout in seconds to wait for enable to complete.<p>
-        ==>if timeout not specified, it will wait indefinitely or until enable completes.<p>
+        => Wait until BitLocker encryption is completed on all NTFS volumes.<p>
+        => Timeout in seconds to wait for enable to complete.<p>
+        => If timeout not specified, it will wait indefinitely or until enable completes.<p>
         Returns: <p>
-        0 : BitLocker encryption successfully completed, volume is BL encrypted.<p>
+        0 : BitLocker encryption successfully completed, volume is Bitlocker encrypted.<p>
         ERROR_TIMEOUT: Timeout waiting for completion, encryption still in progress.<p>
         Failure/Other code: returns the failure error code returned by the bit locker service.
 
