@@ -34,7 +34,7 @@ You can download and install IoT templates to enable Background Applications fro
 
 Creating a background application is very similar to creating a Background Task.  When the Background Application starts, the Run method is called:
 
-```C#
+```csharp
 public void Run(IBackgroundTaskInstance taskInstance)
 {
 }
@@ -42,7 +42,7 @@ public void Run(IBackgroundTaskInstance taskInstance)
 
 When the Run method ends, unless a deferral object is created, the background application ends. The common practice, for asynchronous programming is to take a deferral like this:
 
-```C#
+```csharp
 private BackgroundTaskDeferral deferral;
 public void Run(IBackgroundTaskInstance taskInstance)
 {
@@ -56,7 +56,7 @@ public void Run(IBackgroundTaskInstance taskInstance)
 
 Once a deferral is taken, the background application will continue until the deferral object's Complete method is called.
 
-```C#
+```csharp
 deferral.Complete();
 ```
 
