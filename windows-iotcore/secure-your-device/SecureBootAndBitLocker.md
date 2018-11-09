@@ -216,7 +216,7 @@ Should there arise a need to temporarily disable BitLocker, initate a remote Pow
 ### Disabling Device Guard
 
 The turnkey security scripts generates SIPolicyOn.p7b and SIPolicyOff.p7b files in the folder.
-The wm.xml packages teh SIPolicyOn.p7b and place sit on the system as SIPolicy.p7b
+The wm.xml packages the SIPolicyOn.p7b and place sit on the system as SIPolicy.p7b
 
 For example:
 
