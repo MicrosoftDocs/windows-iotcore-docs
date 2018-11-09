@@ -24,7 +24,7 @@ While the ASUS Tinkerboard and Rockchip are not officially supported by us, ther
 There are two things to consider when enabling roaming:
 
 1. The profile.xml configures roaming and sets the behavior to automatically establish a connection to the cellular network.
-To set a profile for roaming please refer to [this article](https://docs.microsoft.com/en-us/windows/desktop/mbn/schema-root).
+To set a profile for roaming please refer to [this article](https://docs.microsoft.com/windows/desktop/mbn/schema-root).
 
 ```
   <!-- applicability to any combination of home carrier, partner MOs and non-partner MOs, except for HomeAndNonPartner -->

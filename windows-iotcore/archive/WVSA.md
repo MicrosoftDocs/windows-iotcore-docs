@@ -56,7 +56,7 @@ _What you need_
 _Set up Visual Studio 2017_
 1. Install Visual Studio 2017 with the Windows 10 Developer Preview tools from [dev.windows.com](https://developer.microsoft.com/en-us/windows/downloads).  We recommend the free Community Version of Visual Studio, but both Enterprise and Professional will work as well.  If you already have Visual Studio installed, skip to the next step.
 2. In Visual Studio, load the Shield.sln from the repository downloaded in the "What you need" section above.
-3. Ensure your Windows 10 device (in this case a Windows Phone) is developer-unlocked. [This page](https://msdn.microsoft.com/en-us/library/windows/apps/dn614128.aspx) explains how to unlock Windows Phone 8.1, 8, and 7.1; however, the steps are the same for Windows 10 phones.
+3. Ensure your Windows 10 device (in this case a Windows Phone) is developer-unlocked. [This page](https://msdn.microsoft.com/library/windows/apps/dn614128.aspx) explains how to unlock Windows Phone 8.1, 8, and 7.1; however, the steps are the same for Windows 10 phones.
 4. Plug your Windows 10 device into your computer and deploy the Shield.sln program to your device.  To do this, deploy to a "Local Machine", and be sure to set the architecture of the device as "ARM".
 5. Run the newly-installed Windows Virtual Shields for Arduino application on your phone to ensure the deploy was successful.  Your Windows 10 device is now setup to be used as a virtual shield!
 

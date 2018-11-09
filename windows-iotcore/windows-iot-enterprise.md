@@ -36,11 +36,11 @@ A fixed purpose device differs from a general purpose device in the following wa
 
 Specialized systems, such as PCs that control medical equipment, point-of-sale systems, and ATMs, often require a longer servicing option because of their purpose. These devices typically perform a single important task and don’t need feature updates as frequently as other devices in the organization. It’s more important that these devices be kept as stable and secure as possible than that they be up-to-date with UI changes. The LTSC servicing model prevents Windows 10 Enterprise LTSB devices from receiving the usual feature updates and provides only quality updates to ensure that device security stays up-to-date. With this in mind, quality updates are still immediately available to Windows 10 Enterprise LTSB clients, but customers can choose to defer them by using one of the servicing tools mentioned in the Servicing tools section.
 
-* [Learn more about LTSC](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#long-term-servicing-channel)
+* [Learn more about LTSC](https://docs.microsoft.com/windows/deployment/update/waas-overview#long-term-servicing-channel)
 
 ## Long-Term Support Silicon Details
 
-The Fall 2018 release of Windows 10 IoT Enterprise will also be an LTSC release. The list below encompasses all processors expected to be supported on the Fall 2018 release. If you are planning to use an earlier release of Windows 10 IoT Enterprise, you can find details on the processor support [here](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/windows-processor-requirements#windows-iot-enterprise--embedded-processor-table).
+The Fall 2018 release of Windows 10 IoT Enterprise will also be an LTSC release. The list below encompasses all processors expected to be supported on the Fall 2018 release. If you are planning to use an earlier release of Windows 10 IoT Enterprise, you can find details on the processor support [here](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements#windows-iot-enterprise--embedded-processor-table).
 
 > | Windows 10 IoT Enterprise  |
 > |-------------|
@@ -64,14 +64,14 @@ The Fall 2018 release of Windows 10 IoT Enterprise will also be an LTSC release.
 
 ## Helpful resources
 > [!NOTE]
-> Additional resources may be available from your distributor to explain Windows EPKEA OEM Activation and provide guidance in generating your manufacturing-ready Windows IoT Enterprise [WIM](https://msdn.microsoft.com/en-us/library/windows/desktop/dd861280.aspx) device image.
+> Additional resources may be available from your distributor to explain Windows EPKEA OEM Activation and provide guidance in generating your manufacturing-ready Windows IoT Enterprise [WIM](https://msdn.microsoft.com/library/windows/desktop/dd861280.aspx) device image.
 
-* [Customizations for enterprise desktop](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/enterprise-custom-portal)
-* [Unified Write Filter for Windows 10](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/unified-write-filter)
-* [Assigned Access for Enterprise & Pro](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/assigned-access)
-* [Shell Launcher for Enterprise and Education editions](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/shell-launcher)
-* [Lockdown resources](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/create-a-kiosk-image) 
-* [Enabling Embedded Mode and using Background Tasks on Windows IoT Enterprise](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/embeddedmode)
-* [Configure Windows telemetry in your organization](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-telemetry-in-your-organization )
-* [Configure kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc)
-* [Desktop manufacturing](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/)
+* [Customizations for enterprise desktop](https://docs.microsoft.com/windows-hardware/customize/enterprise/enterprise-custom-portal)
+* [Unified Write Filter for Windows 10](https://docs.microsoft.com/windows-hardware/customize/enterprise/unified-write-filter)
+* [Assigned Access for Enterprise & Pro](https://docs.microsoft.com/windows-hardware/customize/enterprise/assigned-access)
+* [Shell Launcher for Enterprise and Education editions](https://docs.microsoft.com/windows-hardware/customize/enterprise/shell-launcher)
+* [Lockdown resources](https://docs.microsoft.com/windows-hardware/customize/enterprise/create-a-kiosk-image) 
+* [Enabling Embedded Mode and using Background Tasks on Windows IoT Enterprise](https://docs.microsoft.com/windows/iot-core/develop-your-app/embeddedmode)
+* [Configure Windows telemetry in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-telemetry-in-your-organization )
+* [Configure kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc)
+* [Desktop manufacturing](https://docs.microsoft.com/windows-hardware/manufacture/desktop/)

@@ -74,7 +74,7 @@ Download firmware components and updates for the MinnowBoard Max reference board
 ### [Visual Studio 2017](https://www.visualstudio.com/downloads/)
 State of the art IDE, tools and services that you can use to create great IoT apps.
 
-### [Windows Driver Kit 2017](https://msdn.microsoft.com/en-US/windows/hardware/hh852365.aspx)
+### [Windows Driver Kit 2017](https://msdn.microsoft.com/windows/hardware/hh852365.aspx)
 Provides an integrated development environment for creating efficient high quality drivers for devices running Windows 10.
 
 ### [Windows Developer Tools for Visual Studio](https://dev.windows.com/en-us/downloads)
