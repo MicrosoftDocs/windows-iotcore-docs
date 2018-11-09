@@ -77,7 +77,7 @@ New to Windows 10 IoT? Get started quickly and easily with our [Windows 10 IoT C
 
 <tr class="odd">
 <td align="left"><p>Long-Term Servicing Channel (LTSC) for commercialization</p></td>
-<td align="left"><p>Small fee per device with access to 10 years of support, update control and Device Health Attestation (DHA). Learn more <a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview" data-raw-source="[here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview)">here</a>.</p></td>
+<td align="left"><p>Small fee per device with access to 10 years of support, update control and Device Health Attestation (DHA). Learn more <a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview" data-raw-source="[here](https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview)">here</a>.</p></td>
 </tr>
 
 <tr class="odd">
@@ -111,27 +111,27 @@ Commercialization, or bringing a device to market, is a much more advanced proce
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/license-requirements" data-raw-source="[OEM License Requirements](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/license-requirements)">OEM License Requirements</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/license-requirements" data-raw-source="[OEM License Requirements](https://docs.microsoft.com/windows-hardware/manufacture/iot/license-requirements)">OEM License Requirements</a></p></td>
 <td align="left"><p>Sign the OEM license agreement and learn more about other requirements for commercialization.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/commercializationfaq" data-raw-source="[Commercialization FAQ](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/commercializationfaq)">Commercialization FAQ</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/commercializationfaq" data-raw-source="[Commercialization FAQ](https://docs.microsoft.com/windows-hardware/manufacture/iot/commercializationfaq)">Commercialization FAQ</a></p></td>
 <td align="left"><p>Read some of the frequently asked questions regarding commercialization on Windows 10 IoT.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide" data-raw-source="[Creating test and retail images](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)">Creating test and retail images</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide" data-raw-source="[Creating test and retail images](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)">Creating test and retail images</a></p></td>
 <td align="left"><p>With the Windows 10 IoT Core manufacturing guide, learn how to create test images - great for trying out new ideas and designs - and retail images - for more final device designs.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-feature-list" data-raw-source="[Windows 10 IoT Core feature list](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-feature-list)">Windows 10 IoT Core feature list</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-feature-list" data-raw-source="[Windows 10 IoT Core feature list](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-feature-list)">Windows 10 IoT Core feature list</a></p></td>
 <td align="left"><p>Learn about the different test and retail features as defined by Microsoft for your Windows 10 IoT Core images.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows-hardware/service/iot/servicing-msstore" data-raw-source="[Installing and servicing apps](https://docs.microsoft.com/en-us/windows-hardware/service/iot/servicing-msstore)">Installing and servicing apps</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/service/iot/servicing-msstore" data-raw-source="[Installing and servicing apps](https://docs.microsoft.com/windows-hardware/service/iot/servicing-msstore)">Installing and servicing apps</a></p></td>
 <td align="left"><p>Learn how to install and service UWP apps on Windows 10 IoT Core through the Microsoft Store.</p></td>
 </tr>
 

@@ -25,7 +25,7 @@ Device manufacturers will need to store the Secure Boot databases onto their dev
 
 After these databases have been added, and after final firmware validation and testing, firmware is locked from editing and a platform key (PK) can be generated and added. The PK can subsequently be used to sign updates to the KEK or make any desired changes to the secure variables. 
 
-Device builders should contact their firmware manufacturer for tools and assistance in creating these databases. Visit this [TechNet article](https://technet.microsoft.com/en-us/library/dn747883.aspx) for more information about Secure Boot key creation and management.
+Device builders should contact their firmware manufacturer for tools and assistance in creating these databases. Visit this [TechNet article](https://technet.microsoft.com/library/dn747883.aspx) for more information about Secure Boot key creation and management.
 
 ## Implementing TPMs  
 A Trusted Platform Module (TPM) is a cryptographic coprocessor including capabilities for random number generation, secure generation of cryptographic keys and limitation of their use. It also includes capabilities such as remote attestation and sealed storage. TPM’s technical specification is publicly available and is driven by a standards body called the Trusted Computing Group (TCG).  TPM 2.0 is available as a discrete component (from various manufacturers) as well as within some SOCs, implemented in firmware.

@@ -11,7 +11,7 @@ keywords: Windows 10 IoT Core,
 
 # IoT Core Manufacturing Guide
 
-Thinking about mass-producing devices running Windows 10 IoT Core? Use this guide and the [Windows 10 IoT Core ADK Add-ons](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-adk-addons) to create images that you can quickly flash onto new devices.
+Thinking about mass-producing devices running Windows 10 IoT Core? Use this guide and the [Windows ADK IoT Core Add-ons](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-adk-addons) to create images that you can quickly flash onto new devices.
 
 You can create **Test images** which include tools for quickly accessing and modifying devices. Test images are great for:
 
@@ -51,6 +51,6 @@ For OEM-style images, you'll wrap your customizations into package (.cab) files.
 * [Build a prototype](../GetStarted.md)
 * [Learn about Windows IoT Core](https://developer.microsoft.com/en-us/windows/iotcore)
 * [IoT Core Developer Resources](https://developer.microsoft.com/en-us/windows/iot)
-* [What's in the Windows ADK IoT Core Add-ons](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-adk-addons)
-* [IoT Core feature list](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-feature-list)
-* [IoT Core Add-ons command-line options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-adk-addons-command-line-options)
+* [What's in the Windows ADK IoT Core Add-ons](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-adk-addons)
+* [IoT Core feature list](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-feature-list)
+* [IoT Core Add-ons command-line options](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-adk-addons-command-line-options)

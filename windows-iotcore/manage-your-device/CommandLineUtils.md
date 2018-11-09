@@ -177,7 +177,7 @@ Usage: MinComm.exe [-list] device_path [baud=<B>] [parity=<P>] [data=<D>] [stop=
 Parameters that are not specified will default to the port's current
 configuration. For more information on the connection parameters, see the
 Technet documentation for the Mode command:
-  https://technet.microsoft.com/en-us/library/cc732236.aspx
+  https://technet.microsoft.com/library/cc732236.aspx
 
 Examples:
   Connect to the first serial port found in the port's current configuration:
