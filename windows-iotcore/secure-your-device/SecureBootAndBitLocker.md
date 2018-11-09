@@ -156,9 +156,21 @@ You can test the generated packages by manually installing them on a unlocked de
 6. The device will reboot into update OS (showing gears) to install the packages and will reboot again to main OS.  Once the device reboots back into MainOS, Secure Boot will be enabled and SIPolicy should be engaged.
 7. Reboot the device again to activate the Bitlocker encryption.
 8. Test the security features
-    * SecureBoot: try `bcdedit /debug on` , you will get an error stating that the value is protected by secure boot policy
-    * BitLocker: Run `fvecon -status c:`, you will get the status mentioning *On, Encrypted, Has Recovery Data (external key), Has TPM Data, Secure, Boot Partition, Used Space Only*
-    * DeviceGuard : Run any unsigned binary or a binary signed with certificate not in the SIPolicy list and confirm that it fails to run.
+    * **SecureBoot** : try `bcdedit /debug on` , you will get an error stating that the value is protected by secure boot policy.
+   * **BitLocker** : To validate that bitlocker encryption has been completed, run<p>
+        `sectask.exe -waitenableforcompletion 1`<p>
+        If it returns 0, that means all drives on the system have been bitlockered successfully.  Any other return code is failure.<p>
+        *Additional Syntax*<p>
+         `-waitenableforcompletion [timeout]` <p>
+        => Wait until BitLocker encryption is completed on all NTFS volumes.<p>
+        => Timeout in seconds to wait for enable to complete.<p>
+        => If timeout not specified, it will wait indefinitely or until enable completes.<p>
+        Returns: <p>
+        0 : BitLocker encryption successfully completed, volume is Bitlocker encrypted.<p>
+        ERROR_TIMEOUT: Timeout waiting for completion, encryption still in progress.<p>
+        Failure/Other code: returns the failure error code returned by the bit locker service.
+
+    * **DeviceGuard** : Run any unsigned binary or a binary signed with certificate not in the SIPolicy list and confirm that it fails to run.
 
 ### Generate Lockdown image
 
