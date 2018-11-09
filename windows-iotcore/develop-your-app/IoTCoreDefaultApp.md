@@ -17,13 +17,13 @@ When you initially flash Windows 10 IoT Core, you will be presented with the Win
 
 ![Screenshot of the IoT Core Default App](../media/IoTCoreDefaultApp/DeviceInfoPage-Screenshot.jpg)
 
-The purpose of this application is not only to provide you with a friendly shell to interact with when you first boot up Windows 10 IoT Core, but we have open-sourced the code for this application [here](http://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTCoreDefaultApp/CS) so that you can plug and play with these features on your own custom application(s).
+The purpose of this application is not only to provide you with a friendly shell to interact with when you first boot up Windows 10 IoT Core, but we have open-sourced the code for this application [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp) so that you can plug and play with these features on your own custom application(s).
 
 This article will give you a rundown of the different features that the Windows 10 IoT Core Default App offers as well as how you can leverage these different features for your own applications.
 
 ## Leveraging the IoT Core Default App 
 
-The IoT Core Default App can be customized and extended, or you can use the source code as an example for your own app. To try this out for yourself, download the zip of our samples or check out the code for the IoT Core Default App [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp/CS). For any questions, please file an issue on our samples repo [here](https://github.com/Microsoft/Windows-iotcore-samples/issues).
+The IoT Core Default App can be customized and extended, or you can use the source code as an example for your own app. To try this out for yourself, download the zip of our samples or check out the code for the IoT Core Default App [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp). For any questions, please file an issue on our samples repo [here](https://github.com/Microsoft/Windows-iotcore-samples/issues).
 
 As shown under the [Settings section](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp#settings
 ) below, in some cases, you may configure default settings and features on your customer system on behalf of the end user. However, if you turn these settings and features on by default or if diagnostics are above the basic setting, you must:
