@@ -33,7 +33,7 @@ To use Cortana:
 
 -   A microphone and speaker are required for speech interaction with Cortana.
 
--   An OEM must follow the guidance provided for the design and development of audio input devices outlined in the [Microsoft Speech Platform](https://msdn.microsoft.com/en-us/library/windows/hardware/dn915051(v=vs.85).aspx) Specification.
+-   An OEM must follow the guidance provided for the design and development of audio input devices outlined in the [Microsoft Speech Platform](https://msdn.microsoft.com/library/windows/hardware/dn915051(v=vs.85).aspx) Specification.
 
 ## Use the Cortana Function on IoT Core
 
@@ -213,7 +213,7 @@ language = en-CA`.
 
 ### Cortana Feature ID
 
-There is one [feature ID](<https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/iot/iot-core-feature-list>) for Cortana, `<Feature>IOT_CORTANA</Feature>` that an OEM needs to add this feature ID in their OEMInput XML. To enable ‘Start Cortana on Boot’ in an image, just add `<Feature>IOT_CORTANA_OBSCURELAUNCH></Feature>`; in OEMInput XML.
+There is one [feature ID](<https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/iot-core-feature-list>) for Cortana, `<Feature>IOT_CORTANA</Feature>` that an OEM needs to add this feature ID in their OEMInput XML. To enable ‘Start Cortana on Boot’ in an image, just add `<Feature>IOT_CORTANA_OBSCURELAUNCH></Feature>`; in OEMInput XML.
 
 ### Cortana Consent
 
@@ -335,7 +335,7 @@ Cortana to do more.
 
 -   Catered to devices with small- or medium-sized screens (e.g. thermostat or refrigerator), provide a voice response with optimized visual content.
 
--   Leverages the audio pipeline provided in the Windows 10 operating system which supports linear microphone arrays. Audio input devices should conform to the guidance outlined in the [Microsoft Speech Platform](https://msdn.microsoft.com/en-us/library/windows/hardware/dn915051(v=vs.85).aspx).
+-   Leverages the audio pipeline provided in the Windows 10 operating system which supports linear microphone arrays. Audio input devices should conform to the guidance outlined in the [Microsoft Speech Platform](https://msdn.microsoft.com/library/windows/hardware/dn915051(v=vs.85).aspx).
 
 -   To wake-up Cortana the user says “Hey, Cortana.” Keyword Spotting (KWS) runs locally to receive the voice input and complete the analysis. The audio is only sent to the cloud once the keyword is spotted. User consent is needed before enabling KWS. The KWS is optimized by the Windows Speech Platform and supports multiple
     languages and regions.

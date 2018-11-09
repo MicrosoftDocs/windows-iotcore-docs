@@ -1,7 +1,7 @@
 ---
 title: Get Started Overview
-author: jadali,lmaung
-ms.author: jadali, lmaung
+author: johnadali
+ms.author: johnadali
 
 ms.date: 09/05/2018 
 ms.topic: article 
@@ -11,14 +11,14 @@ keywords: Windows 10 IoT Core,
 
 # IoT Core Manufacturing Guide
 
-Thinking about mass-producing devices running Windows 10 IoT Core? Use this guide and the [Windows ADK IoT Core Add-ons](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-adk-addons) to create images that you can quickly flash onto new devices.
+Thinking about mass-producing devices running Windows 10 IoT Core? Use this guide and the [Windows ADK IoT Core Add-ons](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-adk-addons) to create images that you can quickly flash onto new devices.
 
-You can create **test images** which include tools for quickly accessing and modifying devices. Test images are great for:
+You can create **Test images** which include tools for quickly accessing and modifying devices. Test images are great for:
 
 * Developers, hardware vendors and manufacturers (OEMs) who are trying out new device designs.
 * Hobbyists and organizations that are creating devices designed to run in non-networked or controlled network environments.
 
-You can create **retail images**, which can be made more secure for public or corporate networks while still receiving updates.
+You can create **Retail images**, which can be made more secure for public or corporate networks while still receiving updates.
 
 You can add customizations, including apps, settings, hardware configurations and board support packages (BSPs).
 
@@ -36,7 +36,12 @@ For OEM-style images, you'll wrap your customizations into package (.cab) files.
     * [06c-Adding file(s) and registry settings to an image](06c-AddFileRegistrySettings.md)
     * [06d-Adding a driver to an image](06d-AddingDrivers.md)
 * [07-Creating a Retail Windows IoT Core Image](07-CreateRetailImage.md)
-
+* [08-Building Secure Devices](08-BuildingSecureDevices.md)
+    * [08a-Secure Boot, Bitlocker, and Device Guard](08a-SecureBootBitLockerDeviceGuard.md)
+    * [08b-Secure Boot, Bitlocker, and Device Guard](08b-UnifiedWriteFilter.md)
+    * [08c-Implementing TPM](08c-ImplementingTPM.md)
+* [09-IoT Core Services](09-IoTCoreServices.md)
+    * [09a-Device Update Center](09a-SettingUpDeviceCenter.md)
 
 ## Next Steps
 [Concepts and Terminology](02-ConceptsTerminology.md)
@@ -46,6 +51,6 @@ For OEM-style images, you'll wrap your customizations into package (.cab) files.
 * [Build a prototype](../GetStarted.md)
 * [Learn about Windows IoT Core](https://developer.microsoft.com/en-us/windows/iotcore)
 * [IoT Core Developer Resources](https://developer.microsoft.com/en-us/windows/iot)
-* [What's in the Windows ADK IoT Core Add-ons](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-adk-addons)
-* [IoT Core feature list](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-feature-list)
-* [IoT Core Add-ons command-line options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-adk-addons-command-line-options)
+* [What's in the Windows ADK IoT Core Add-ons](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-adk-addons)
+* [IoT Core feature list](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-feature-list)
+* [IoT Core Add-ons command-line options](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-adk-addons-command-line-options)

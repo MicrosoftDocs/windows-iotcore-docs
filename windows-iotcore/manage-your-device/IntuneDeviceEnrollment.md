@@ -30,7 +30,7 @@ Intune enrollment of an IoT Core device is accomplished by using the Windows IoT
 1. Insert a microSD card into the card reader on your PC. 
      > [!NOTE]
      > The microSD card will be formatted during this process, so any data on the card will be deleted.
-2. Go to [Windows IoT Core Dashboard](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/iotdashboard) to download and install the dashboard.
+2. Go to [Windows IoT Core Dashboard](https://docs.microsoft.com/windows/iot-core/connect-your-device/iotdashboard) to download and install the dashboard.
 3. After the dashboard installs, open it and select **Set up a new device**.
 
      ![Windows IoT Core Dashboard](../media/IntuneDeviceEnrollment/IoT-dashboard-my-devices.png)
@@ -52,7 +52,7 @@ Intune enrollment of an IoT Core device is accomplished by using the Windows IoT
 10. Minimize this page.  You'll come back to it later.
 
 ### Create a provisioning package for Intune enrollment
-1. Install the Windows Configuration Design app by following the steps in [Install Windows Configuration Designer](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-install-icd).
+1. Install the Windows Configuration Design app by following the steps in [Install Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd).
 
 2. Open the **Windows Imaging and Configuration Designer**.
 3. Choose **Provision desktop devices** to create a project 
@@ -112,6 +112,6 @@ Intune enrollment of an IoT Core device is accomplished by using the Windows IoT
      ![Intune devices list](../media/IntuneDeviceEnrollment/iot-ap-devices-after-enrollment.png)
 
 ## Next steps
-- [See device details in Intune](https://docs.microsoft.com/en-us/intune/device-inventory).
-- [Sync the device to get the latest policies and actions with Intune](https://docs.microsoft.com/en-us/intune/device-sync).
-- [Remotely restart the device with Intune](https://docs.microsoft.com/en-us/intune/device-restart).
+- [See device details in Intune](https://docs.microsoft.com/intune/device-inventory).
+- [Sync the device to get the latest policies and actions with Intune](https://docs.microsoft.com/intune/device-sync).
+- [Remotely restart the device with Intune](https://docs.microsoft.com/intune/device-restart).

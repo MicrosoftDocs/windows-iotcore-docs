@@ -36,7 +36,7 @@ By pressing and holding the OSK's "&123" button, the user can select which layou
 
 ![All languages](../media/OnScreenKeyboard/AllLanguages.png)
  
-As an OEM, however, you can limit which layout choices are displayed to the user. To limit which layouts to show the user, first reference the guidance from the [Keyboard Layout doucmentation on TechNet](https://technet.microsoft.com/en-us/library/cc978687.aspx).
+As an OEM, however, you can limit which layout choices are displayed to the user. To limit which layouts to show the user, first reference the guidance from the [Keyboard Layout doucmentation on TechNet](https://technet.microsoft.com/library/cc978687.aspx).
  
 For a concrete example, if you want to only allow North America language layouts (en-US, en-CA, es-MX, fr-CA), you could add the following to your OEMCustomization.cmd script:
 
@@ -82,4 +82,4 @@ The resulting effect of the above command script will be:
    * IOT_SHELL_ONSCREEN_KEYBOARD
    * IOT_SHELL_ONSCREEN_KEYBOARD_FOLLOWFOCUS
 
-For more information about IoT Features, see [IoT Core Feature List](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-feature-list).
+For more information about IoT Features, see [IoT Core Feature List](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-feature-list).

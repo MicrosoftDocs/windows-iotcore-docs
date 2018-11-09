@@ -1,7 +1,7 @@
 ---
 title: Trusted Platform Module (TPM)
-author: johnadali, lmaung
-ms.author: johnadali, lmaung
+author: lmaung
+ms.author: lmaung
 ms.date: 10/22/2018
 ms.topic: article
 description: Learn how to use a Trusted Platform Module to enable cryptographic capabilities to better secure devices.
@@ -487,6 +487,6 @@ Note that **sTPM is intended for development purposes only and does not provide 
 ## Additional Resources  
 * [Trusted Platform Module (TPM) Specifications](http://www.trustedcomputinggroup.org/developers/trusted_platform_module) 
 * [TCG TPM 2.0 Library Specification](http://www.trustedcomputinggroup.org/resources/tpm_library_specification)
-* [TPM Base Services](https://msdn.microsoft.com/en-us/library/windows/desktop/aa446796(v=vs.85).aspx) 
+* [TPM Base Services](https://msdn.microsoft.com/library/windows/desktop/aa446796(v=vs.85).aspx) 
 * [Enabling Secure Boot and BitLocker](08a-SecureBootBitLockerDeviceGuard.md)
 
