@@ -66,7 +66,7 @@ This question can be broken into deployment and invocation.
 
 To deploy a background application, you can either:
 
-* Use Visual Studio's F5 (which will build, deploy and invoke).  For more detail, see our [Hello World sample](https://developer.microsoft.com/en-us/windows/iot/samples/helloworld.htm#deploy-the-app-to-your-windows-iot-core-device) where we describe how to deploy and launch from Visual Studio.
+* Use Visual Studio's F5 (which will build, deploy and invoke).  For more details, see our [Hello World sample](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/HelloWorld) where we describe how to deploy and launch from Visual Studio.
 
 > [!NOTE]
 > This will not configure your background application to start when the device boots.
