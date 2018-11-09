@@ -19,7 +19,7 @@ You can download the [IoT Core Dashboard here](http://go.microsoft.com/fwlink/?L
 
 ## Set up a new device
 ___
-The IoT Dashboard makes it easy to set up a new device. For detailed instructions on how to get started, see the [Get Started](https://developer.microsoft.com/en-us/windows/iot/getstarted) page.
+The IoT Dashboard makes it easy to set up a new device. For detailed instructions on how to get started, see the [Get Started](https://docs.microsoft.com/en-us/windows/iot-core/getstarted) page.
 
 
 ![IoT Dashboard Setup Page](../media/IoTDashboard/IoTDashboard_SetupPage.PNG)
