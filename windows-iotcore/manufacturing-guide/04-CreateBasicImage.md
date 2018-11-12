@@ -36,7 +36,7 @@ You will need the following tools installed to complete this section:
 
 2. In the IoTCorePShell, create a new workspace (for example, `C:\Myworkspace`) with an OEM name of `Contoso` for the architecture `arm` using [New-IoTWorkspace](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTWorkspace.md)
 
-    ``` powershell
+    ```powershell
     New-IoTWorkspace C:\MyWorkspace Contoso arm
     (or) new-ws C:\MyWorkspace Contoso arm
     ```
@@ -51,30 +51,34 @@ You will need the following tools installed to complete this section:
 
    ![Dashboard screenshot](../media/ManufacturingGuide/IoTWorkspace.jpg)
 
+## Building BSP
+
+The next step is to take the Board Support Package files and extract/build their .CAB files to include in the FFU file. There are some differences in the steps to do this for the different BSPs, so please visit the appropriate section for the hardware device you are working with.
 
 [Adding a Board Support Package](04a-BoardSupportPackages.md)
 
 ## Build Packages 
 From IoT Core Shell, get your environment ready to create products by building all of the packages in the working folders (using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md)):
 
-    ``` powershell
-    New-IoTCabPackage All
-    (or) buildpkg all
-    ```
-    
-## Create a test project 
-From IoT Core Shell, create a new product folder that uses the BSP you are working with. This folder represents a new device we want to build an image for, and contains sample customization files that we can use to start our project. For example, to create a product folder called `MyRPiProduct` that uses the Raspberry Pi 2 or 3 BSP files, execute the following command (using [Add-IoTProduct](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProduct.md)):
+```powershell
+New-IoTCabPackage All
+(or) buildpkg all 
+```
 
-    ```powershell
-    Add-IoTProduct MyProduct RPi2
-    (or) newproduct MyRPiProduct RPi2 
-    ```
-    
+## Create a Product
+
+From IoT Core Shell, create a new product folder that uses the BSP you are working with. This folder represents a new device we want to build an image for, and contains sample customization files that we can use to start our project. For example, to create a product folder called `ProductA` that uses the Raspberry Pi 2 or 3 BSP , execute the following command (using [Add-IoTProduct](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProduct.md)):
+
+```powershell
+Add-IoTProduct ProductA RPi2
+(or) newproduct MyProductA RPi2
+```
+
 You will be prompted to enter the **SMBIOS** information, such as Manufacturer Name (OEM Name), Family, SKU, BaseboardManufacturer, and BaseboardProduct.
 
 The BSP name is the same as the folder name for the BSP. You can see which BSPs are available by looking in the **C:\MyWorkspace\Source-\< arch >\BSP** folders. 
 
-This creates the folder: **C:\MyWorkspace\Source-< arch >\Products\\MyRPiProduct**. 
+In in the example above, this creates the folder: **C:\MyWorkspace\Source-arm \Products\\ProductA**.
 
    ![Dashboard screenshot](../media/ManufacturingGuide/AddIoTProduct.jpg)
 
@@ -83,22 +87,27 @@ Eject any removable storage drives, including the microSD card and any USB flash
 
 Build the FFU image file by entering the following command in IoT Core Shell (using [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md)):
 
-    ```powershell
-    New-IoTFFUImage <product name> Test
-    (or)buildimage <product name> Test 
-    ```
+```powershell
+New-IoTFFUImage <product name> Test
+(or)buildimage <product name> Test 
+```
 
 This builds an FFU image file with your basic image at **C:\MyWorkspace\Build\\< arch >\\< product name >\Test**. This test image will include additional tools that can be used for debugging purposes. Building the final FFU file will take around 10-30 minutes to complete.
+
+To direct all output to console instead of log file, add `-Verbose` flag.  eg.
+```powershell
+New-IoTFFUImage -Verbose ProductA Test
+```
 
 ## Commands Used
 Listed here are the commands (in order) for creating a basic IoT Core image. 
 
-    ```powershell
-    New-IoTWorkspace C:\MyWorkspace Contoso arm
-    New-IoTCabPackage All
-    Add-IoTProduct <product name> <BSP type>
-    New-IoTFFUImage <product name> Test
-    ```
+```powershell
+New-IoTWorkspace C:\MyWorkspace Contoso arm
+New-IoTCabPackage All
+Add-IoTProduct <product name> <BSP type>
+New-IoTFFUImage <product name> Test
+```
 
 ## Examples 
 ### Raspberry Pi 2 or 3
@@ -107,14 +116,13 @@ The following is assumed in these steps:
 1. OEM Name is **Contoso**.
 2. Workspace is created at C:\MyWorkspace.
 3. Product name is **MyIoTDevice**.
-4. BSP files for the Raspberry Pi are located at **C:\BSPs\RPi3**.
 
-    ```powershell
-    New-IoTWorkspace C:\MyWorkspace Contoso arm
-    New-IoTCabPackage All
-    Add-IoTProduct MyIoTDevice RPi2
-    New-IoTFFUImage MyIoTDevice Test
-    ```
+```powershell
+New-IoTWorkspace C:\MyWorkspace Contoso arm
+New-IoTCabPackage All
+Add-IoTProduct MyIoTDevice RPi2
+New-IoTFFUImage MyIoTDevice Test
+```
       
 ### DragonBoard 410C
 The following is assumed in these steps:
@@ -123,28 +131,28 @@ The following is assumed in these steps:
 2. Product name is **MyIoTDevice**.
 3. BSP files for the DragonBoard 410c are located at **C:\BSPs\DB410c_BSP**.
 
-    ```powershell
-    New-IoTWorkspace C:\MyWorkspace Contoso arm
-    New-IoTCabPackage All
-    Add-IoTProduct MyIoTDevice QCDB410C
-    New-IoTFFUImage MyIoTDevice Test
-    ```
+```powershell
+New-IoTWorkspace C:\MyWorkspace Contoso arm
+New-IoTCabPackage All
+Add-IoTProduct MyIoTDevice QCDB410C
+New-IoTFFUImage MyIoTDevice Test
+```
       
 ### Apollo Lake / Braswell / Cherry Trail
 The following is assumed in these steps:
 
-1. OEM Name is **Fabrikam**.
+1. OEM Name is **Contoso**.
 2. Product name is **MyIoTDevice**.
 3. Architecture is set to **x64**.
 4. BSP files for Apollo Lake / Braswell / Cherry Trail are located at **C:\iot-adk-addonkit\Source-x64\BSP**.
 5. These are the commands for Braswell. Replace with **APLx64** or **CHTx64** for Apollo Lake or Cherry Trail, respectively.
 
-    ```powershell
-    New-IoTWorkspace C:\MyWorkspace Contoso x64
-    New-IoTCabPackage All
-    Add-IoTProduct MyIoTDevice BSWx64
-    New-IoTFFUImage MyIoTDevice Test
-    ```
+```powershell
+New-IoTWorkspace C:\MyWorkspace Contoso x64
+New-IoTCabPackage All
+Add-IoTProduct MyIoTDevice BSWx64
+New-IoTFFUImage MyIoTDevice Test
+```
 
 ## Next Steps
 [Flashing a Windows 10 IoT Core Image](05-FlashingImage.md)
