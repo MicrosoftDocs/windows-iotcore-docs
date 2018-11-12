@@ -21,7 +21,7 @@ Make sure your technician PC has the necessary tools installed prior to creating
 See [Get the tools needed to create Windows 10 IoT Core images](03-ToolsNeeded.md) for details.
 
 You will need the following tools installed to complete this section:
-* **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows 10 IoT Core.
+* **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows 10 IoT Core. <p>**NOTE - The version of ADK used must match the version of IoT Core Packages used below.**
 * **[Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore)** for your specific architecture. These provide the IoT Core packages and feature manifest files needed to build custom Windows IoT images for the specific architecture (ARM, ARM64, x86, x64).
 * **[IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)**. These provide the sample scripts and base structure for building custom Windows 10 IoT Core images.
 * **Iot Core Shell**. This is part of with the ADK Add-on  and is the command line interface where you execute commands to build custom FFU images for Windows 10 IoT Core.
