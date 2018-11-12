@@ -78,7 +78,7 @@ You will be prompted to enter the **SMBIOS** information, such as Manufacturer N
 
 The BSP name is the same as the folder name for the BSP. You can see which BSPs are available by looking in the **C:\MyWorkspace\Source-\< arch >\BSP** folders. 
 
-In in the example above, this creates the folder: **C:\MyWorkspace\Source-arm \Products\\ProductA**.
+In the example above, this creates the folder: **C:\MyWorkspace\Source-arm \Products\\ProductA**.
 
    ![Dashboard screenshot](../media/ManufacturingGuide/AddIoTProduct.jpg)
 
