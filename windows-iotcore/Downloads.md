@@ -31,21 +31,12 @@ Get the most up-to-date images under development to try out new features. To joi
 
 ## Latest Windows 10 IoT Core builds
 
-> ![IMPORTANT]
-> Due to an issue found on Desktop, we are currently validating new packages. 
+### October 2018 Release
 
-<!-- ### [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore)
-Download the Windows 10 October 2018 Update for OS packages (custom and commercial FFUs).-->
-
-<!--### [Raspberry Pi 2 & 3](https://go.microsoft.com/fwlink/?LinkId=846058)
-Download the Windows 10 October 2018 Update for Raspberry Pi 2 & 3 (development-only prototype device FFUs).-->
-
-<!--### [DragonBoard 410c](https://go.microsoft.com/fwlink/?LinkId=846059)
-Download the Windows 10 October 2018 Update for DragonBoard 410c (development-only prototype device FFUs).-->
-
-
-<!--### [MinnowBoard Turbot/Max](https://go.microsoft.com/fwlink/?linkid=846057)
-Download the Windows 10 IoT October 2018 update for MinnowBoard Turbot/Max (development-only prototype device FFUs).-->
+* [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore)
+* [Raspberry Pi 2 & 3](https://go.microsoft.com/fwlink/?LinkId=846058)
+* [DragonBoard 410c](https://go.microsoft.com/fwlink/?LinkId=846059)
+* [MinnowBoard Turbot/Max](https://go.microsoft.com/fwlink/?linkid=846057)
 
 
 ## Previous Windows 10 IoT Core releases
