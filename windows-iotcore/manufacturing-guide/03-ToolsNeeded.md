@@ -29,7 +29,7 @@ Here's the software you'll need to create custom OEM images using the Windows 10
 
 **Install the following tools on your Technician PC:**
 
-1. [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK) including at least the features shown below. You'll use these tools to create images and provisioning packages.
+1. [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK) including at least the features shown below. You'll use these tools to create images and provisioning packages. <p>**NOTE - The version of ADK used must match the version of IoT Core Packages used below**
 
 ![Dashboard screenshot](../media/ManufacturingGuide/WindowsADKSetup.jpg)
 
