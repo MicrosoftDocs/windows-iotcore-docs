@@ -33,7 +33,7 @@ Get the most up-to-date images under development to try out new features. To joi
 
 ### October 2018 Release
 
-* [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore)
+* [Windows 10 IoT Core Packages](https://go.microsoft.com/fwlink/?LinkId=2027600)
 * [Raspberry Pi 2 & 3](https://go.microsoft.com/fwlink/?LinkId=846058)
 * [DragonBoard 410c](https://go.microsoft.com/fwlink/?LinkId=846059)
 * [MinnowBoard Turbot/Max](https://go.microsoft.com/fwlink/?linkid=846057)
