@@ -49,7 +49,6 @@ For OEM-style images, you'll wrap your customizations into package (.cab) files.
 ## Related Topics
 
 * [Build a prototype](../GetStarted.md)
-* [Learn about Windows IoT Core](https://developer.microsoft.com/en-us/windows/iotcore)
 * [IoT Core Developer Resources](https://developer.microsoft.com/en-us/windows/iot)
 * [What's in the Windows ADK IoT Core Add-ons](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-adk-addons)
 * [IoT Core feature list](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-feature-list)

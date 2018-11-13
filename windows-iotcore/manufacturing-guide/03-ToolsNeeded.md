@@ -33,25 +33,31 @@ Here's the software you'll need to create custom OEM images using the Windows 10
 
 ![Dashboard screenshot](../media/ManufacturingGuide/WindowsADKSetup.jpg)
 
-2. [Windows Driver Kit (WDK) 10](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk) (optional, required only if you are building drivers)
+2. [Windows PE add-on for the ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK) - If you need to build image with Recovery capabilities, you will also need to separately download and install the `Windows PE add-on for the ADK`.  In previous releases, this was part of the ADK.  
 
-3. [Windows Driver Kit (WDK) 10](https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk) - `optional`, required only if you are compiling drivers from source code.
+3. [Windows Driver Kit (WDK) 10](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk) - `OPTIONAL`, required only if you are compiling drivers from source code.
 
 4. [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore). The .iso package adds the IoT Core packages and feature manifests used to create IoT Core images. By default, these packages are installed to **C:\Program Files (x86)\Windows Kits\10\MSPackages\Retail**. Install one or more of the IoT Core packages, depending on the architecture you are building an image for (ARM, ARM64, x86, x64).  
 You can also install the pre-built images (FFUs) for development use.  The prebuilt image is installed to **C:\Program Files (x86)\Microsoft IoT\FFU**.
 
 ![Dashboard screenshot](../media/ManufacturingGuide/IoTCorePackagesInstall.jpg)
 
-4. [IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/). Click **Clone** or **Download > Download ZIP**, and extract it to a folder on the Technician PC (for example, **C:\IoT-ADK-AddonKit**). This kit includes the sample scripts and base structures you'll use to create your image. To learn about the contents, see [What's in the Windows ADK IoT Core Add-ons](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-adk-addons).
+5. [IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/). Click **[Clone** or **Download] > Download ZIP**, and extract it to a folder on the Technician PC (for example, **C:\IoT-ADK-AddonKit**). This kit includes the sample scripts and base structures you'll use to create your image. To learn about the contents, see [What's in the Windows ADK IoT Core Add-ons](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-adk-addons).
 
-7. The Board Support Package from the device manufacturer you are working with. For example, if you are using a Raspberry Pi, the BSP is located [here](https://github.com/ms-iot/iot-adk-addonkit/releases/download/v4.4/rpibsp-wm.zip). For other devices, please visit the [Windows 10 IoT Core BSP](https://docs.microsoft.com/en-us/windows/iot-core/build-your-image/createbsps) page to find other BSPs.
+6. [Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/p/?LinkId=708576)
 
-6. The Board Support Package from the device manufacturer you are working with. For example, if you are using a Raspberry Pi, the BSP is located [here](https://github.com/ms-iot/iot-adk-addonkit/releases/download/v4.4/rpibsp-wm.zip). For other devices, please visit the [Windows 10 IoT Core BSP](https://docs.microsoft.com/windows/iot-core/build-your-image/createbsps) page to download other BSPs.
+7. The Board Support Package from the device manufacturer you are working with. For example, if you are using a Raspberry Pi, the BSP is located [here](https://github.com/ms-iot/iot-adk-addonkit/releases/download/v4.4/rpibsp-wm.zip). For other devices, please visit the [Windows 10 IoT Core BSP](https://docs.microsoft.com/windows/iot-core/build-your-image/createbsps) page to download other BSPs.
 
-7. Get a [code-signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate). For the kernel driver signing, Standard Code signing certificate is sufficient. You will require an EV cert to access the [Device Update Center](https://docs.microsoft.com/windows-hardware/service/iot/using-device-update-center) in Hardware Dev Center portal. This will be required when you build a retail image.
+8. Get a [code-signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate). For  kernel driver signing, Standard Code signing certificate is sufficient.  You will require an EV cert to access the [Device Update Center](https://docs.microsoft.com/windows-hardware/service/iot/using-device-update-center) in Hardware Dev Center portal.<p> 
+
+    **Important Note**<p>
+    We recommend that you purchase your code signing certificate from a Certificate Authority listed from the link above.  Building Windows 10 IoT Core **Retail image** or image with Secure Boot enabled requires that all kernel drivers (including all drivers in the BSP that's included in the retail image) are signed with a code signing certificate with Cross Signed root.  See [Cross-Certificates for Kernel Model Code Signing](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing) and the FAQ section "Cross-Signing and SHA-256 Certificates" in [code-signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate).  <p> 
+    As a example, if you choose to purchase through [Digicert](https://www.digicert.com/friends/sysdev/), you must choose the "Microsoft Kernel-Model Code" option in the Platform section : 
+    ![Dashboard screenshot](../media/ManufacturingGuide/digicert-sysdev.jpg) 
+    ![Dashboard screenshot](../media/ManufacturingGuide/digicert-kernelmode.jpg)
 
 Other helpful software:
-
+    
 * **A text editor** such as [Visual Studio Code](https://code.visualstudio.com/).
 
 * **A compression program** such as [7-Zip](https://www.7-zip.org/), which can uncompress Windows app packages.
