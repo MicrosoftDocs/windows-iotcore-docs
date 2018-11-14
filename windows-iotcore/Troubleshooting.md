@@ -87,6 +87,7 @@ Recently, many customers who are interested in Windows 10 IoT Core encountered a
 1.The RPi 3B+ was announced in March this year (2018), but Microsoft had not announced that Windows 10 IoT Core fully supports RPi 3B+. The Insider preview image can be downloaded from [this link](https://www.microsoft.com/en-us/software-download/windowsiot). Currently there is no timeline for the 3B+ release version.
 
 2. There are some known issues in this Insider Preview image. Please note that:
+
 * This image is only meant for the Raspberry Pi 3B+ and will not boot on the Raspbierry Pi 2.
 * F5 driver deployment from Visual Studio does not work on Windows 10 IoT Core.
 * Onboard Wi-Fi and Bluetooth do not work on the Raspberry Pi 3B+.
@@ -94,6 +95,7 @@ Recently, many customers who are interested in Windows 10 IoT Core encountered a
 * SD card activity LED is disabled.
 
 3. There are only two requirements when choosing which SD cards to use with Windows 10 IoT Core. You need to use a class 10 SD card and make sure the card has enough space - at least 8 GB of space. There are a couple of SD cards that have been verified by Microsoft to be compatible with Windows 10 IoT Core:
+
 * Samsung EVO 32 GB class 10 Micros SDHC card
 * SanDisk Ultra Micro SDHC, 16 GB card
 
