@@ -44,7 +44,7 @@ You can review linked terms by pasting the forward link into your browser window
 * RPi3 will not pair BT + BTLE with onboard Bluetooth.
 * Unable to connect to internet through WIFI connection with SoftAp of Up2.
 * UWF is failing intermittently.
-
+* The Windows IoT Remote client does not work for Raspberry Pi. Use a board with accelerated graphics such as Minnowboard Max or Dragonboard or attach a monitor for local display.
 
 
 ## IoT Core general known issues and work arounds

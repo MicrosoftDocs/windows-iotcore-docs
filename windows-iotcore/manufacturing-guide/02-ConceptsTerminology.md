@@ -32,12 +32,11 @@ Packages (.cab files) are the logical building blocks of IoT Core. They contain 
 Each package contains:
 
 * The contents of the package, such as a signed driver binary or a signed appx binary.
-* A package definition (.pkg.xml) file specifies the contents of the package and where they should be placed in the final image. See `%SRC_DIR%\Packages` directory from the [Windows ADK IoT Core Add-On](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-adk-addons) kit for various samples of package files.
-* A signature. This can be a test or retail certificate.
 
+* A package definition (.wm.xml) file specifies the contents of the package and where they should be placed in the final image. See `%SRC_DIR%\Packages` directory from the [Windows ADK IoT Core Add-On](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-adk-addons) kit for various samples of package files. As an example, take a look at   [Appx.IoTCoreDefaultApp.wm.xml](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Workspace/Source-arm/Packages/Appx.IoTCoreDefaultApp/Appx.IoTCoreDefaultApp.wm.xml).
 * A signature. A package can be signed with a test or retail certificate.  
 
-The process is similar to that used by Windows 10 Mobile. To learn more about creating packages, see [Creating mobile packages](https://docs.microsoft.com/windows-hardware/manufacture/mobile/creating-mobile-packages).
+The `pkggen` tool combines these items into signed packages. Our samples include scripts: `createpkg`, and `createprovpkg`, which call `pkggen` to create packages for our drivers, apps, and settings.
 
 ### Feature Manifests (FMs)
 After you've put everything into packages, you'll use Feature Manifest (FM files) to list which of your packages belong in the final image.
