@@ -12,6 +12,9 @@ keywords: Windows 10 IoT Core, SD Card, Windows 10 IoT Core Dashboard
 Below you'll find four different ways to flash your device with Windows 10 IoT Core. Based on the chart included in the [list of suggested boards for prototyping](PrototypeBoards.md), follow the appropriate directions. Use the right column to navigate between these different methods of flashing.
 
 > [!IMPORTANT]
+> Do not use maker images for commercialization. If you are commercializing a device, you must use a custom FFU for optimal security. Learn more [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
+
+> [!IMPORTANT]
 > When the "format this disk" pop up comes up, do _not_ format the disk. We are working on a fix for this issue.
 
 ## Using the IoT Dashboard (Raspberry Pi, MinnowBoard, NXP)
