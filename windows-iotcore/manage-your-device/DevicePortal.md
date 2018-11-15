@@ -16,6 +16,9 @@ keywords: windows iot, Windows Device Portal, remote, device portal
 
 ![Device Portal Home](../media/deviceportal/deviceportal.png)
 
+> [!IMPORTANT]
+> Do not use maker images for commercialization. If you are commercializing a device, you must use a custom FFU for optimal security. Learn more [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
+
 > [!WARNING]
 > Live kernel debug is currently failing for ARM devices. We are working to get this fixed.
 
