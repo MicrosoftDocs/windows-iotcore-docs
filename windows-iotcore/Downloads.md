@@ -31,8 +31,6 @@ Get the most up-to-date images under development to try out new features. To joi
 
 ## Latest Windows 10 IoT Core builds
 
-For more information on these downloads, visit the [Windows 10 IoT Core Downloads page](https://www.microsoft.com/en-us/software-download/windows10IoTCore#!). 
-
 > [!IMPORTANT]
 > Do not use maker images for commercialization. If you are commercializing a device, you must use a custom FFU for optimal security. Learn more [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
 
