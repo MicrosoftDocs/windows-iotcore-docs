@@ -1,4 +1,4 @@
---- 
+---
 title: Device Manufacturing Check List
 author: lmaung
 ms.author: lmaung
@@ -6,7 +6,7 @@ ms.date: 10/08/2018
 ms.topic: article 
 description: Concepts check list for manufacturing guide.
 keywords: Windows 10 IoT Core, 
---- 
+---
 
 # Device Manufacturing Check List
 
@@ -37,8 +37,8 @@ We will split the tasks into multiple sections.
 ---
 ## Retail Image
 ### Retail Image
-- [ ] Aquire retail code-signing EV certificate [[link]](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/get-a-code-signing-certificate) 
-- [ ] Aquire cross-signing certificate that match your CA of code-signing certificate [[link]](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing)
+- [ ] Aquire retail code-signing EV certificate [[link]](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate) 
+- [ ] Aquire cross-signing certificate that match your CA of code-signing certificate [[link]](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing)
 - [ ] Code Sign your custom UWP app [[link]](07-CreateRetailImage.md)
 - [ ] Create and include Certificates package (if needed - adding more then one UWP app, drivers, etc) [[link]](07-CreateRetailImage.md)
 - [ ] Turn on security features (see section below)
@@ -65,7 +65,7 @@ The testing can be done in a few ways.
 ### Clean retail image test
 If you truly want to have a clean image, you will need to create two (2) retail images. The two images will be indentical except for one feature. The testing retail image will have the test app that will be configured as a Fore-Ground-App and you can use that to test the various features. Once features are tested, you can use the second image (without test app) for distribution.
 
-**Pros**: Final image will be totally clean and only the items that are deemed neccessary are baked into the image.
+**Pros**: Final image will be totally clean and only the items that are deemed necessary are baked into the image.
 
 **Cons**: There are potential user error while adding a test app to the retail image. There are potential modifications made to provisioning package(s) that could be totally different from final retail image.
 
@@ -87,7 +87,7 @@ Object value = localSettings.Values["appRanOnce"];
 > [!NOTE]
 > For best result, only use `localSettings` to store the variables to store the settings values.
 > There is a possible chance of undesirable results from using `roamingSettings` features.
-> `localSettings` can only hold 64k of data at the time of this writing [[More on Application Settings]](https://docs.microsoft.com/en-us/windows/uwp/design/app-settings/store-and-retrieve-app-data)
+> `localSettings` can only hold 64k of data at the time of this writing [[More on Application Settings]](https://docs.microsoft.com/windows/uwp/design/app-settings/store-and-retrieve-app-data)
 
 Using the code block above, you can apply the logic on launch of the application so that on the subsequent launches, the application takes approperiate actions.
 
@@ -99,7 +99,7 @@ So what types of actions can I take?
 #### Launching another FGA app from test app
 
 If you are launching a Microsoft store app, you can use the following code snippit to launch apps installed and updated thru the store.
-Additional information URI schemes can be found [here](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/launch-store-app).
+Additional information URI schemes can be found [here](https://docs.microsoft.com/windows/uwp/launch-resume/launch-store-app).
 
 ````CSharp
 // Following will launch the Microsoft store app and navigate to the Games section

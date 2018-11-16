@@ -1,4 +1,4 @@
---- 
+---
 title: Flashing a Windows IoT Core Image
 author: johnadali
 ms.author: johnadali
@@ -6,7 +6,7 @@ ms.date: 09/05/2018
 ms.topic: article 
 description: Steps on how to flash an FFU image file to a device
 keywords: Windows 10 IoT Core, 
---- 
+---
 
 # Flashing a Windows IoT Core Image
 
@@ -21,7 +21,7 @@ Listed below are the steps to flash the FFU image file to specific manufacturer 
 You will need the following tools installed to complete this section:
 * **[Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/p/?LinkId=708576) (Raspberry Pi only)**. This tool is used to perform the flashing of the FFU file to the Raspberry Pi device.
 * **[Dragonboard Update Tool](https://developer.qualcomm.com/hardware/dragonboard-410c/software) (Qualcomm DragonBoard only)**. This tool is used to perform the flashing of the FFU file to the DragonBoard device.
-* **Deployment Imaging and Servicing and Management (DISM) tool (Intel devices only)**. Part of the [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#winADK), this tool is used to perform the flashing of the FFU file to the Intel device.
+* **Deployment Imaging and Servicing and Management (`DISM`) tool (Intel devices only)**. Part of the [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK), this tool is used to perform the flashing of the FFU file to the Intel device.
 
 ## Qualcomm
 ### DragonBoard 410c
@@ -64,12 +64,12 @@ Once the flashing process is complete, eject the microSD card from the technicia
 
 ## Intel
 ### Apollo Lake / Braswell / Cherry Trail
-We will be using the **DISM (Deployment Image and Servicing Management Tool)** and a bootable USB stick to flash the FFU image file to the specified Intel device (Apollo Lake/Braswell/Cherry Trail). Additional information on **DISM** can be found [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).
+We will be using the **DISM (Deployment Image and Servicing Management Tool)** and a bootable USB stick to flash the FFU image file to the specified Intel device (Apollo Lake/Braswell/Cherry Trail). Additional information on **DISM** can be found [here](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).
 
 ### Creating a USB Bootable Drive
-We first need to create a bootable USB drive that we can use to boot on the specified Intel hardware device. We can use **Window PE** (WinPE) for this (additional info on WinPE is [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro)).
+We first need to create a bootable USB drive that we can use to boot on the specified Intel hardware device. We can use **Window PE** (WinPE) for this (additional info on WinPE is [here](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-intro)).
 
-1. Install WinPE from the **Windows ADK Windows Preinstallation Environment Add-ons**
+1. Install WinPE from the **[Windows ADK Windows Preinstallation Environment Add-ons](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)**
 
    ![Dashboard screenshot](../media/ManufacturingGuide/WinPEInstall.jpg)
 
@@ -79,20 +79,20 @@ We first need to create a bootable USB drive that we can use to boot on the spec
 
    * Run the `diskpart` tool from and administrative command prompt
    * Run `list disk` to see the list of available disks
-   * Run `Select Disk X`, where **X** corresponds to the disk number of your USB drive
-   * Run `Clean` to clean the selected disk 
+   * Run `select disk X`, where **X** corresponds to the disk number of your USB drive
+   * Run `clean` to clean the selected disk 
         * If you encounter the following error, run `convert mbr`:
 
                 ERROR: Failed to format "F:"; DiskPart errorlevel -2147212244.
 
-   * Run `Create Partition Primary` to create a primary partition on the disk
-   * Run `Format FS=fat32` to format the drive
-   * Run `Assign` to assign the drive
+   * Run `create partition primary` to create a primary partition on the disk
+   * Run `format fs=fat32 quick` to format the drive
+   * Run `assign` to assign the drive
    * Exit `diskpart`. Your USB drive is now formatted and ready to have WinPE installed.
 
 3. Create WinPE working files
    
-   We now need to create a working copy of the Windows PE files on the technician PC. This can be done using the **Deployment and Imaging Tools Environment** command line program.
+   We now need to create a working copy of the Windows PE files on the technician PC. This can be done using the **Deployment and Imaging Tools Environment** command line program.  The easiest way to start the `Deployment and Imaging Tools Environment` is to search for `deploy` via Start Menu.
 
    Run the **Deployment and Imaging Tools Environment** command line program as an administrator, and run the following command:
 
@@ -104,11 +104,15 @@ We first need to create a bootable USB drive that we can use to boot on the spec
 
         MakeWinPEMedia /UFD C:\WinPE_amd64 X:
 
-4. Copy your FFU file to the root drive of your USB drive
-5. Insert your USB drive into your Intel hardware device and boot from the USB drive. YOu may have to enter the BIOS (or Boot Menu) of the hardware device to specify to boot from a USB drive.
-6. Once the Windows PE environment boots up, you will see a command window. Change the drive and current directory to the location of your FFU file and run the following command to flash the FFU image file:
+4. Copy your FFU file to the root drive of your USB drive.
+
+5. Insert your USB drive into your Intel hardware device and boot from the USB drive. You may have to enter the BIOS (or Boot Menu) of the hardware device to specify to boot from a USB drive.
+
+6. Once the Windows PE environment boots up, you will see a command window. Change the drive and current directory to the location of your FFU file (depending on drive enumeration, it could be in C: or D: ..etc), and run the following command to flash the FFU image file:
 
         dism.exe /Apply-Image /ImageFile:"D:\flash.ffu" /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
+
+    **NOTE** - Most of the time, the on-board storage target to be flashed is enumerated as `PhysicalDrive0`, however, if there are multiple storage devices, it can enumerate as other drive number.  You can use the `list disk` command in `diskpart` to verify the drive number.
 
 7. Once the flashing process is complete, power down the hardware device and remove the USB drive. Reconnect power to the hardware device to boot up Windows IoT Core.
 
@@ -139,7 +143,7 @@ We first need to create a bootable USB drive that we can use to boot on the spec
         DISKPART> create partition primary
         DiskPart succeeded in creating the specified partition.
 
-        DISKPART> format fs=fat32
+        DISKPART> format fs=fat32 quick
           100 percent completed
 
         DiskPart successfully formatted the volume.
@@ -154,7 +158,7 @@ We first need to create a bootable USB drive that we can use to boot on the spec
         MakeWinPEMedia /UFD C:\WinPE_amd64 X:
 
    #### DISM Command (via WinPE on the Intel hardware device)
-        X:\WinPE>d:\
+        X:\WinPE>d:
         
         D:\>dism.exe /Apply-Image /ImageFile:"D:\flash.ffu" /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
 

@@ -92,7 +92,7 @@ ___
  
 ![Package-pkg-xml](../media/DriverDeployment/Package-pkg-xml.png)
  
-4. Set package version number at **Project Properties > PackageGen > Version**. Note that everytime you need to perform a Install/Reinstall of the driver, this version number has to be incremented.
+4. Set package version number at **Project Properties > PackageGen > Version**. Note that every time you need to perform a Install/Reinstall of the driver, this version number has to be incremented.
 
 ![PackageVersion](../media/DriverDeployment/PackageVersion.png)
 

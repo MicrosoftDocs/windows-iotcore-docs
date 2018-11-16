@@ -16,9 +16,9 @@ Windows 10 IoT Core is a version of Windows 10 that is optimized for smaller dev
 ## Getting started
 To get started with Windows 10 IoT Core, we've created a [Windows 10 IoT Core Quickstarter](tutorials/Tutorials.md) to help you get familiar with the platform quickly. 
 
-From there, you can continue to experiment with the platform by developing your own application or start making plans to bring your device to market, or commercialize your device. To get started with commercializing, see the Bring a device to market section in the [Get started article](https://docs.microsoft.com/en-us/windows/iot-core/getstarted).
+From there, you can continue to experiment with the platform by developing your own application or start making plans to bring your device to market, or commercialize your device. To get started with commercializing, see the Bring a device to market section in the [Get started article](https://docs.microsoft.com/windows/iot-core/getstarted).
 
 ## Helpful resources
-[Read our documentation](https://docs.microsoft.com/en-us/windows/iot-core/) to learn more about Windows 10 IoT Core.
+[Read our documentation](https://docs.microsoft.com/windows/iot-core/) to learn more about Windows 10 IoT Core.
 
 

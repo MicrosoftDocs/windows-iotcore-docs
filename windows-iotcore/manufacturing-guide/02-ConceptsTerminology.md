@@ -1,4 +1,4 @@
---- 
+---
 title: Concepts and Terminology
 author: johnadali
 ms.author: johnadali
@@ -6,7 +6,7 @@ ms.date: 09/14/2018
 ms.topic: article 
 description: Concepts and Terminology definitions for Windows IoT Core Manufacturing Guide.
 keywords: Windows 10 IoT Core, 
---- 
+---
 
 # Concepts and Terminology
 In order to clearly understand the process to create and deploy Windows IoT Core images, a few concepts and terminology must be defined first.
@@ -27,32 +27,31 @@ The process to create a Windows IoT Core image involves a number of steps, liste
 ## Terminology
 
 ### Packages
-Packages are the logical building blocks of IoT Core. They contain all the files, libraries, registry settings, executables, and data on the device. From device drivers to system files, every component must be contained in a package. This modular architecture allows for precise control of updates: a package is the smallest serviceable unit on the device.
+Packages (.cab files) are the logical building blocks of IoT Core. They contain all the files, libraries, registry settings, executables, and data on the device. From device drivers to system files, every component must be contained in a package. This modular architecture allows for precise control of updates: a package is the smallest serviceable unit on the device.
 
 Each package contains:
 
 * The contents of the package, such as a signed driver binary or a signed appx binary.
-* A package definition (.pkg.xml) file specifies the contents of the package and where they should be placed in the final image. See `%SRC_DIR%\Packages` directory from the [Windows ADK IoT Core Add-On](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-adk-addons) kit for various samples of package files.
-* A signature. This can be a test or retail certificate.
+
+* A package definition (.wm.xml) file specifies the contents of the package and where they should be placed in the final image. See `%SRC_DIR%\Packages` directory from the [Windows ADK IoT Core Add-On](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-adk-addons) kit for various samples of package files. As an example, take a look at   [Appx.IoTCoreDefaultApp.wm.xml](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Workspace/Source-arm/Packages/Appx.IoTCoreDefaultApp/Appx.IoTCoreDefaultApp.wm.xml).
+* A signature. A package can be signed with a test or retail certificate.  
 
 The `pkggen` tool combines these items into signed packages. Our samples include scripts: `createpkg`, and `createprovpkg`, which call `pkggen` to create packages for our drivers, apps, and settings.
 
-The process is similar to that used by Windows 10 Mobile. To learn more about creating packages, see [Creating mobile packages](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/creating-mobile-packages).
-
 ### Feature Manifests (FMs)
-After you've put everything into packages, you'll use FM files to list which of your packages belong in the final image.
+After you've put everything into packages, you'll use Feature Manifest (FM files) to list which of your packages belong in the final image.
 
-You can use as many FMs into an image as you want. In this guide, we refer to the following FMs:
+You can include as many FMs to build an image as you want. In this guide, we refer to the following FMs:
 
 * **OEMFM.xml** includes features an OEM might add to a device, such as the app and a provisioning package.
 * **BSPFM.xml** includes features that a hardware manufacturer might use to define a board. For example, OEM_RPi2FM.xml includes all of the features used for the Raspberry Pi 2.
 
-The process is similar to that used by Windows 10 Mobile. To learn more, see [Feature manifest file contents](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/feature-manifest-file-contents).
+The process is similar to that used by Windows 10 Mobile. To learn more, see [Feature manifest file contents](https://docs.microsoft.com/windows-hardware/manufacture/mobile/feature-manifest-file-contents).
 
 You'll list which of the features to add by using these tags:
 
 * \<BasePackages>: Packages that you always include in your images (for example, your base app).
-* \<Features>\\\<OEM>: Other individual packages that might be specific to a particular product design.
+* \<Features> or \<OEM> : Other individual packages that might be specific to a particular product design.
 
 The Feature Merger tool generates the required feature identifier packages that are required for servicing the device. Run this tool whenever any changes are made to the FM files. After you change the OEM FM or OEM COMMON FM files, run `buildfm oem`. After you change the BSPFM file, run `buildfm bsp <bspname>`. These commands are run from the IoT Core shell.
 
@@ -63,12 +62,12 @@ Board Support Packages contain a set of software, drivers, and boot configuratio
 
 
 ### Full Flash Update Image Files
-Full Flash Update (FFU) files are image files that can be deployed (aka "flashed") to a specific hardware device. When you flash a FFU file onto a device, all required software is installed on that device at the same time. An FFU image file bundles boot loaders, the Windows Operating System, drivers, peripheral images and any other required files into a single package.
+Full Flash Update (FFU) files are image files that can be deployed (aka. "flashed") to a specific hardware device. When you flash a FFU file onto a device, all required software is installed on that device at the same time. An FFU image file bundles boot loaders, the Windows Operating System, drivers, peripheral images and any other required files into a single package.
 
 ### Foreground and Background Apps
 There are two types of applications that can run on Windows IoT Core.
-* Foreground apps - these apps have a UI. Only one app can be running on an IoT device as the foreground app
-* Background apps - these apps do not have a UI. Multiple apps can be running on an IoT device as background apps
+* Foreground apps - these apps have a UI. Only one app can be running on an IoT device as the foreground apps.  If multiple foreground app is included in the image, only one should be set as auto start on boot.
+* Background apps - these apps do not have a UI. Multiple apps can be running on an IoT device as background apps.  You can configure any number of background apps to auto start.
 
 For more information, please see [Foreground Apps](../develop-your-app/BuildingAppsForIoTCore.md) or [Background Apps](../develop-your-app/BackgroundApplications.md).
 

@@ -5,8 +5,6 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: landing page
-ms.prod: Windows
-ms.technology: IoT
 description: This is the landing page for the Windows 10 IoT Core developer documentation.
 keywords: windows iot, developer documentation, docs, IoT Core
 ---
@@ -35,7 +33,7 @@ Windows 10 IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Ente
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/windows/iot-core/windows-iot-enterprise">
+        <a href="https://docs.microsoft.com/windows/iot-core/windows-iot-enterprise">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -53,7 +51,7 @@ Windows 10 IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Ente
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/windows/iot-core/windows-iot-core">
+        <a href="https://docs.microsoft.com/windows/iot-core/windows-iot-core">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -71,7 +69,7 @@ Windows 10 IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Ente
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview">
+        <a href="https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

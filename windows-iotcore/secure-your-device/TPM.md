@@ -72,6 +72,6 @@ Software TPM (sTPM) is also referred to as TPM Simulator. It is platform-indepen
 ## Additional Resources  
 * [Trusted Platform Module (TPM) Specifications](http://www.trustedcomputinggroup.org/developers/trusted_platform_module) 
 * [TCG TPM 2.0 Library Specification](http://www.trustedcomputinggroup.org/resources/tpm_library_specification)
-* [TPM Base Services](https://msdn.microsoft.com/en-us/library/windows/desktop/aa446796(v=vs.85).aspx) 
+* [TPM Base Services](https://msdn.microsoft.com/library/windows/desktop/aa446796(v=vs.85).aspx) 
 * [Enabling Secure Boot and BitLocker](SecureBootAndBitLocker.md)
 

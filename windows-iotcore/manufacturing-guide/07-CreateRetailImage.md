@@ -1,4 +1,4 @@
---- 
+---
 title: Creating a Retail IoT Core Image
 author: johnadali
 ms.author: johnadali
@@ -6,7 +6,7 @@ ms.date: 10/05/2018
 ms.topic: article 
 description: Steps to create a retail Windows IoT Core image
 keywords: Windows 10 IoT Core, 
---- 
+---
 
 # Creating a Retail IoT Core Image
 We will detail the steps needed to create a retail Windows IoT Core image and flash it onto a specific hardware device.
@@ -20,10 +20,10 @@ We will detail the steps needed to create a retail Windows IoT Core image and fl
 Please make sure you've created a basic test image from [Creating a Basic IoT Core Image](04-CreateBasicImage.md) previously. For this example, we have created a basic image with the Qualcomm DragonBoard called *TestDragonBoardProduct*.
 
 You will need the following tools installed to complete this section:
-* A retail [code-signing](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/get-a-code-signing-certificate) certificate. For the kernel driver signing, a Standard code-signing certificate is sufficient. You will require an EV certificate to access the Device Update Center in Hardware Dev Center portal.
-* A [Cross-Signing certificate](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing) that matches the CA of your retail code-signing certificate.
+* A retail [code-signing](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate) certificate. For the kernel driver signing, a Standard code-signing certificate is sufficient. You will require an EV certificate to access the Device Update Center in Hardware Dev Center portal.
+* A [Cross-Signing certificate](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing) that matches the CA of your retail code-signing certificate.
 * **Visual Studio**. This is needed to create the UWP application that will be added to the custom FFU image, as well as properly signing the application with your retail code-signing certificate.
-* **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows IoT Core.
+* **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows IoT Core.
 * **Iot Core Shell**. This is included with the Windows ADK and is the commandline window interface where you execute commands to build custom FFU images for Windows IoT Core.
 * A text editor like **Notepad** or **VS Code**.
 

@@ -31,21 +31,16 @@ Get the most up-to-date images under development to try out new features. To joi
 
 ## Latest Windows 10 IoT Core builds
 
-> ![IMPORTANT]
-> Due to an issue found on Desktop, we are currently validating new packages. 
-
-<!-- ### [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore)
-Download the Windows 10 October 2018 Update for OS packages (custom and commercial FFUs).-->
-
-<!--### [Raspberry Pi 2 & 3](https://go.microsoft.com/fwlink/?LinkId=846058)
-Download the Windows 10 October 2018 Update for Raspberry Pi 2 & 3 (development-only prototype device FFUs).-->
-
-<!--### [DragonBoard 410c](https://go.microsoft.com/fwlink/?LinkId=846059)
-Download the Windows 10 October 2018 Update for DragonBoard 410c (development-only prototype device FFUs).-->
+> [!IMPORTANT]
+> Do not use maker images for commercialization. If you are commercializing a device, you must use a custom FFU for optimal security. Learn more [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
 
 
-<!--### [MinnowBoard Turbot/Max](https://go.microsoft.com/fwlink/?linkid=846057)
-Download the Windows 10 IoT October 2018 update for MinnowBoard Turbot/Max (development-only prototype device FFUs).-->
+### October 2018 Release
+
+* [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10IoTCore#!)
+* [Raspberry Pi 2 & 3](https://go.microsoft.com/fwlink/?LinkId=846058)
+* [DragonBoard 410c](https://go.microsoft.com/fwlink/?LinkId=846059)
+* [MinnowBoard Turbot/Max](https://go.microsoft.com/fwlink/?linkid=846057)
 
 
 ## Previous Windows 10 IoT Core releases
@@ -74,7 +69,7 @@ Download firmware components and updates for the MinnowBoard Max reference board
 ### [Visual Studio 2017](https://www.visualstudio.com/downloads/)
 State of the art IDE, tools and services that you can use to create great IoT apps.
 
-### [Windows Driver Kit 2017](https://msdn.microsoft.com/en-US/windows/hardware/hh852365.aspx)
+### [Windows Driver Kit 2017](https://msdn.microsoft.com/windows/hardware/hh852365.aspx)
 Provides an integrated development environment for creating efficient high quality drivers for devices running Windows 10.
 
 ### [Windows Developer Tools for Visual Studio](https://dev.windows.com/en-us/downloads)

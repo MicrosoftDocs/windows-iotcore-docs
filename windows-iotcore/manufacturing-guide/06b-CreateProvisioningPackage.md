@@ -1,4 +1,4 @@
---- 
+---
 title: Creating a Provisioning Package for a Windows IoT Core Image
 author: johnadali
 ms.author: johnadali
@@ -6,7 +6,7 @@ ms.date: 09/20/2018
 ms.topic: article 
 description: Description on how to create a provisioning package for a Windows IoT Core Image
 keywords: Windows 10 IoT Core, 
---- 
+---
 
 # Creating a Provisioning Package for a Windows IoT Core Image
 A provisioning package allows you to apply customization settings over an existing Windows IoT Core installation image. We will describe the steps required to create a provisioning package that you can apply to your Windows 10 IoT Core FFU images.
@@ -21,7 +21,7 @@ A provisioning package allows you to apply customization settings over an existi
 Please make sure you've created an image with your custom App from [06a-Adding an App to an image](06a-AddingApps.md) previously. For this example, we have created an image with the Qualcomm DragonBoard called *TestDragonBoardProduct* that contains the sample app [Hello World!](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/HelloWorld).
 
 You will need the following tools installed to complete this section:
-* **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows IoT Core.
+* **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows IoT Core.
 * **Windows Configuration Designer**. Part of the Windows ADK, this provides tooling to create custom provisioning packages for Windows IoT Core devices.
 * **Iot Core Shell**. This is included with the Windows ADK and is the commandline window interface where you execute commands to build custom FFU images for Windows IoT Core.
 * A text editor like **Notepad** or **VS Code**.
@@ -50,7 +50,7 @@ In order to create a provisioning package for your device, we need to create a p
 
    b. Expand the **Runtime settings > Startup App > Default** node.
 
-   c. Enter the [Application User Model ID (AUMID)](https://docs.microsoft.com/en-us/windows/configuration/find-the-application-user-model-id-of-an-installed-app) of the app you want to be the default startup app. For our example, this value is *HelloWorld_1w720vyc4ccym!App*.
+   c. Enter the [Application User Model ID (AUMID)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) of the app you want to be the default startup app. For our example, this value is *HelloWorld_1w720vyc4ccym!App*.
 
    ![Dashboard screenshot](../media/ManufacturingGuide/ProvPackage2.jpg)
    
