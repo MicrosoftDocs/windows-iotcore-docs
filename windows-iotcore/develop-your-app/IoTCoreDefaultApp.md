@@ -6,6 +6,7 @@ ms.date: 08/08/2018
 ms.topic: article
 description: Learn about the Windows 10 IoT Core Default App and its features.
 keywords: windows iot, windows 10 iot core, default app
+ms.custom: RS5
 ---
 
 # Windows 10 IoT Core Default App Overview

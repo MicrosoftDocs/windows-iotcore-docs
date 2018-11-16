@@ -6,6 +6,7 @@ ms.date: 09/17/2018
 ms.topic: article
 description: Configure your device to wake on touch
 keywords: windows iot, screen, sleep, wake, touch, standby, power
+ms.custom: RS5
 ---
 
 # Configure your device to wake on touch
