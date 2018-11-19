@@ -172,7 +172,7 @@ The Windows IoT Remote Server allows users to see what their device is displayin
 
         reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\webmanagement\service /v HttpPort /t REG_DWORD /d <your port number>
         
-5. Restart the WebManagement sevice by running following or by restarting the device
+5. Restart the WebManagement service by running following or by restarting the device
 
         net stop webmanagement ; net start webmanagement
 

@@ -95,7 +95,13 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
     * **Secure your generated keys** as the device will trust binaries signed with these keys only after lockdown.
     * You may skip this step and use the pre-generated keys for testing only
 
-5. Configure _settings.xml_
+5. Install the generated .pfx certificates by clicking on the pfx files directly or using the below powershell command
+
+    ```powershell
+    Import-PfxCertificate -FilePath $pfxfile -CertStoreLocation Cert:\CurrentUser\My
+    ```
+
+6. Configure _settings.xml_
 
     * General section : Specify the package directories
     * Tools section : Set the path for the tools
