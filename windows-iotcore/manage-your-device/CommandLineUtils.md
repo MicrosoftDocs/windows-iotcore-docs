@@ -63,7 +63,7 @@ The `IoTSettings` tool changes region, user language or speech language. This is
 The `IoTCoreAudioControlTool` tool controls audio related options, such as setting default capture and playback devices and changing the volume. For a full list of parameters, run `IoTCoreAudioControlTool h`.
 
 ### **Manually installing .APPX files:**
-DeployAppx enables installing, and removing in .APPX packages in development scenarios.  The correct method for installing .APPX packages in production images is to use a provisioning package as documented in the [Install your app](../develop-your-app/appinstaller#using-provisioning-package-from-wcd) subject.  DeployAppx also supports querying .APPX package information.
+DeployAppx enables installing, and removing in .APPX packages in development scenarios.  The correct method for installing .APPX packages in production images is to use a provisioning package as documented in the [Install your app](../develop-your-app/appinstaller) subject.  DeployAppx also supports querying .APPX package information.
 
 *  `DeployAppx install MyApp.appx` installs the .APPX and the certificate of the same name if found.
 * `DeployAppx install force MyApp.appx` forces uninstalling the currently installed .APPX with the same package name if found before installing the new .APPX.  This is useful for installing an .APPX with the same or lower version number as the currently installed .APPX.
