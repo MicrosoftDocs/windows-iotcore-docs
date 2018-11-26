@@ -85,7 +85,7 @@ or addfid <product name> Test APPX_HELLOWORLDAPP -OEM
 2. Remove the sample test apps **IOT_BERTHA** using [Remove-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Remove-IoTProductFeature.md):
 ```powershell
 Remove-IoTProductFeature <product name> Test IOT_BERTHA
-or addfid <product name> Test IOT_BERTHA
+or removefid <product name> Test IOT_BERTHA
 ```
 
 ## Build and Test Image
