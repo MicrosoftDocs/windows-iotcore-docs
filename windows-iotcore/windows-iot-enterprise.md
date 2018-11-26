@@ -21,7 +21,7 @@ In order to start your journey in manufacturing with Windows 10 IoT Enterprise, 
 ## Fixed purpose devices 
 
 > [!TIP]
-> See your licensing agreement for complete guidance on all Windows 10 IoT Enterprise usage scenarios.
+> See your licensing agreement for complete guidance on all Windows 10 IoT Enterprise usage scenarios. If you do not have this licensing agreement, ask the OEM you work with for the commercial agreement. 
 
 Windows is well known as the operating systems on laptop and desktops used by consumers and businesses world-wide.  What is less well known is that for years, Windows has also powered many ATM machines, point-of-sale terminals, industrial automation systems, thin clients, medical Devices, digital signage, kiosks, and other fixed purpose devices.  Windows 10 IoT Enterprise allows you to build fixed purpose devices with specific allowances and restrictions in the license agreement.  
 
