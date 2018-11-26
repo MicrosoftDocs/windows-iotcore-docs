@@ -6,6 +6,7 @@ ms.date: 09/13/2018
 ms.topic: article
 description: Learn about the new on-screen keyboard and how to configure it in Windows 10 IoT Core, version 1809. 
 keywords: Windows 10 IoT Core, touch, keyboard, osk, onscreen, on-screen, sip, input, ime, headed, dictation, voice, speech
+ms.custom: RS5
 ---
 
 # On-screen keyboard for headed devices
