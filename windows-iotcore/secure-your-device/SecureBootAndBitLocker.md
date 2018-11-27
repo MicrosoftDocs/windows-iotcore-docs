@@ -120,6 +120,12 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
 > [!IMPORTANT]
 > In order to assist with testing during the initial development cycle, Microsoft has provided pre-generated keys and certificates where appropriate.  This implies that Microsoft Test, Development and Pre-Release binaries are considered trusted.  During final product creation and image generation, be sure to remove these certifcates and use your own keys to ensure a fully locked down device.
 
+> [!TIP]
+> The apps from Microsoft App Store can be allowed by including the Microsoft Marketplace PCA 2011 certificate in the configuration _settings.xml_: 
+    ```xml
+    <Cert>db\MicrosoftMarketPlacePCA2011.cer</Cert>              <!-- Microsoft MarketPlace PCA 2011 -->
+    ```
+
 6.Execute the following commands to generate required packages:
 
     ```powershell
