@@ -239,8 +239,8 @@ Should there arise a need to temporarily disable BitLocker, initate a remote Pow
 
 ### Disabling Device Guard
 
-The turnkey security scripts generates SIPolicyOn.p7b and SIPolicyOff.p7b files in the folder.
-The wm.xml packages the SIPolicyOn.p7b and place sit on the system as SIPolicy.p7b
+The turnkey security script generates SIPolicyOn.p7b and SIPolicyOff.p7b files in the folder.
+The wm.xml packages the SIPolicyOn.p7b and places it on the system as SIPolicy.p7b.
 
 For example:
 
@@ -257,7 +257,7 @@ C:\src\iot-adk-addonkit.db410c\TurnkeySecurity\QCDB\Output\DeviceGuard\Security.
 
 ```
 
-If you create a package that takes teh SIPolicyOff.p7b file and place it as a SIPolicy.p7b, and the napply this package, then the Device Guard will be turned off.
+If you create a package that takes the SIPolicyOff.p7b file and places it as a SIPolicy.p7b, it will apply this package and the Device Guard will be turned off.
 
 
 
