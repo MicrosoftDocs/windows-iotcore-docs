@@ -120,6 +120,12 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
 > [!IMPORTANT]
 > In order to assist with testing during the initial development cycle, Microsoft has provided pre-generated keys and certificates where appropriate.  This implies that Microsoft Test, Development and Pre-Release binaries are considered trusted.  During final product creation and image generation, be sure to remove these certifcates and use your own keys to ensure a fully locked down device.
 
+> [!TIP]
+> The apps from Microsoft App Store can be allowed by including the Microsoft Marketplace PCA 2011 certificate in the configuration _settings.xml_: 
+    ```xml
+    <Cert>db\MicrosoftMarketPlacePCA2011.cer</Cert>              <!-- Microsoft MarketPlace PCA 2011 -->
+    ```
+
 6.Execute the following commands to generate required packages:
 
     ```powershell
@@ -233,8 +239,8 @@ Should there arise a need to temporarily disable BitLocker, initate a remote Pow
 
 ### Disabling Device Guard
 
-The turnkey security scripts generates SIPolicyOn.p7b and SIPolicyOff.p7b files in the folder.
-The wm.xml packages the SIPolicyOn.p7b and place sit on the system as SIPolicy.p7b
+The turnkey security script generates SIPolicyOn.p7b and SIPolicyOff.p7b files in the folder.
+The wm.xml packages the SIPolicyOn.p7b and places it on the system as SIPolicy.p7b.
 
 For example:
 
@@ -251,7 +257,7 @@ C:\src\iot-adk-addonkit.db410c\TurnkeySecurity\QCDB\Output\DeviceGuard\Security.
 
 ```
 
-If you create a package that takes teh SIPolicyOff.p7b file and place it as a SIPolicy.p7b, and the napply this package, then the Device Guard will be turned off.
+If you create a package that takes the SIPolicyOff.p7b file and places it as a SIPolicy.p7b, it will apply this package and the Device Guard will be turned off.
 
 
 
