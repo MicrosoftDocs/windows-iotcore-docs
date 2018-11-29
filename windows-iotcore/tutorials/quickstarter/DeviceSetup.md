@@ -39,7 +39,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 1. Download the Windows 10 IoT Core Dashboard [here](https://docs.microsoft.com/windows/iot-core/downloads).
 2. Once downloaded, open the Dashboard and click on _set up a new device_ and insert a SD card into your computer.
 3. Fill out all of the fields as indicated.
-4. Accept the software license terms and click _Download and install_. You'll see that Windows 10 IoT Core is now flashing onto your device.
+4. Accept the software license terms and click _Download and install_. You'll see that Windows 10 IoT Core is now flashing your SD card.
 
 
 ![Dashboard screenshot](../../media/DeviceSetup/Dashboard-Screenshot.jpg)
