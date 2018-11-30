@@ -20,8 +20,8 @@ In order to leverage the VPN capabilities of Windows 10 IoT Core, follow the ins
 1. Obtain the necessary certs and copy to your IoT device (e.g. to a \vpntest folder).
 
 * RASTest.pfx
-* IssuingCA.rl
-* RootCA.crt
+* IssuingCA.crl
+* RootCA.crl
 
 2. Apply local machine certs
 a. PowerShell into device as administrator
