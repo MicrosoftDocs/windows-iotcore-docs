@@ -63,6 +63,7 @@
 ### [Wi-Fi](connect-your-device/SetupWifi.md)
 ### [Miracast](connect-your-device/Miracast.md)
 ### [Bluetooth](connect-your-device/Bluetooth.md)
+### [Setting up VPN](connect-your-device/VPN.md)
 ### [Internet Connection Sharing](connect-your-device/InternetConnectionSharing.md)
 ### [Mobile Broadband](connect-your-device/MBB.md)
 ## [Manage devices]()
