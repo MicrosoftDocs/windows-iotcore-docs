@@ -47,7 +47,8 @@ certmgr -add .\RootCA.crl -r currentuser -s my
 4. Fix hosts file
 Add an entry into c:\windows\system32\driverS\etc\hosts file (example shown below);
 
-> | ---|----| ---|
+> |    |    |    |
+> |----|----| ---|
 > | 10.10.10.10 | MyVPN.DomainName.org | Replace with IP address and domain name as needed |
 
 5. Build the VPN test app
