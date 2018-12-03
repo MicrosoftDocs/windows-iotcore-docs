@@ -32,7 +32,15 @@ In order to lockdown a Windows IoT device, the following considerations must be 
 
 ### Platform Secure Boot
 
-As the OEM, you need to store the Secure Boot databases on the IoT device at manufacture time. These databases include the signature database (db), revoked signature database (dbx), and the Key Enrollment Key database (KEK). These databases are stored on the firmware nonvolatile RAM (NV-RAM) of the device.
+When the device is first powered on, the first step in the overall boot process is to load and run firmware boot loaders, which initialize the hardware on the devies and provide emergency flashing functionality. The UEFI environment is then loaded and control is handed over.
+
+These firmware boot loaders are SoC-specific, so you will need to work with the appropriate device manufacturer to have these boot loaders created on the device.
+
+### UEFI Secure Boot
+
+UEFI Secure Boot is the first policy enforcement point, and is located in UEFI.  It restricts the system to only allow execution of binaries signed by a specified authority, such as firmware drivers, option ROMs, UEFI drivers or applications, and UEFI boot loaders. This feature prevents unknown code from being executed on the platform and potentially weakening the security posture of it. Secure Boot reduces the risk of pre-boot malware attacks to the device, such as rootkits. 
+
+As the OEM, you need to store the UEFI Secure Boot databases on the IoT device at manufacture time. These databases include the Signature database (db), Revoked Signature database (dbx), and the Key Enrollment Key database (KEK). These databases are stored on the firmware nonvolatile RAM (NV-RAM) of the device.
 
 * **Signature Database (db):** This lists the signers or image hashes of operating system loaders, UEFI applications and UEFI drivers that are allowed to be loaded on the device
 
@@ -40,13 +48,7 @@ As the OEM, you need to store the Secure Boot databases on the IoT device at man
 
 * **Key Enrollment Key database (KEK):** Contains a list of signing keys that can be used to update the signature and revoked signature databases.
 
-Once these databases are created and added to the device, the OEM locks the firmware from editing, and generates a platform signing key (PK). This key can be used to sign updates to the KEK or to disable Secure Boot.
-
-You will need to work with the firmware manufacturer for your IoT device for tools and assistance in creating and storing these databases properly.
-
-### UEFI Secure Boot
-
-UEFI Secure Boot is the first policy enforcement point, and is located in UEFI.  It restricts the system to only allow execution of binaries signed by a specified authority, such as firmware drivers, option ROMs, UEFI drivers or applications, and UEFI boot loaders. This feature prevents unknown code from being executed on the platform and potentially weakening the security posture of it. Secure Boot reduces the risk of pre-boot malware attacks to the device, such as rootkits. 
+Once these databases are created and added to the device, the OEM locks the firmware from editing, and generates a platform signing key (PK). This key can be used to sign updates to the KEK or to disable UEFI Secure Boot.
 
 Here are the steps taken by UEFI Secure Boot:
 
