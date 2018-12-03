@@ -15,7 +15,7 @@ Windows 10 IoT Enterprise is a full version of Windows 10 that delivers enterpri
 
 ## Getting started 
 
-To learn more about the steps that are involved in manufacturing with Windows 10 IoT Enterprise, it's highly recommend that you read [the Windows 10 IoT Enterprise Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview).  
+To learn about manufacturing Windows 10 IoT Enterprise, we recommend reading [the Windows 10 IoT Enterprise Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview).  
 
 ## Fixed purpose devices 
 
