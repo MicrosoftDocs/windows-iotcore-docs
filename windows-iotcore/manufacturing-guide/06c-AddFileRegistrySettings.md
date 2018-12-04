@@ -76,17 +76,6 @@ New-IoTCabPackage Registry.Settings
 
 The package is built and is available at `C:\MyWorkspace\Build\<arch>\pkgs`.
 
-## Create a new product
-
-Create a new product folder using [Add-IoTProduct](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProduct.md):
-
-```powershell
-Add-IoTProduct ProductB RPi2
-(or) newproduct ProductB RPi2
-```
-
-This will prompt you to enter SMBIOS values.
-
 ## Update the project's configuration files
 Update the product test configuration to include the features using [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md):
 
@@ -125,6 +114,9 @@ In order to verify that the files were added on the device, do the following:
 For verifying registry keys, follow these steps:
 
 1. On the technician PC, connect to your device using an SSH client such as [PuTTY](https://www.putty.org/). For example, use the IP address and port 22 to connect to the device. Then login using the Administrator account and password. (To learn more, see [SSH](https://docs.microsoft.com/windows/iot-core/connect-your-device/SSH)).
+
+    > [!NOTE]
+    > When using SSH to connect to your device, you will be prompted for credentials for IoT Core. Please use *Administrator* and *p@ssw0rd* as the Username and Password to login to the device (unless you changed the credentials previously). 
 
 2. From the command line in the SSH client, query the system for the registry key. In our example, this command was executed to check the existence of the registry key:
 

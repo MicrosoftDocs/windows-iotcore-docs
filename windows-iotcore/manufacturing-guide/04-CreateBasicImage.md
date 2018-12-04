@@ -74,7 +74,13 @@ Add-IoTProduct ProductA RPi2
 (or) newproduct MyProductA RPi2
 ```
 
-You will be prompted to enter the **SMBIOS** information, such as Manufacturer Name (OEM Name), Family, SKU, BaseboardManufacturer, and BaseboardProduct.
+You will be prompted to enter the **SMBIOS** information, such as Manufacturer Name (OEM Name), Family, SKU, BaseboardManufacturer, and BaseboardProduct. Here are some example values:
+
+* **System Manufacturer:** Accolade Industries
+* **System Product Name:** AccoladeHub
+* **System SKU:** AIHub-001
+* **System Family:** ARM
+* **Baseboard Product:** DB410C 
 
 The BSP name is the same as the folder name for the BSP. You can see which BSPs are available by looking in the **C:\MyWorkspace\Source-\< arch >\BSP** folders. 
 

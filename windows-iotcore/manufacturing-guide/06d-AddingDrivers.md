@@ -35,7 +35,6 @@ You will need to build your driver files to include in the IoT Core image. We wi
 
     * gpiokmdfdemo.sys
     * gpiokmdfdemo.inf
-    * ACPITABL.DAT (see [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/windows-acpi-design-guide-for-soc-platforms) for details on the ACPI requirements for Windows IoT Core)
 
 ## Build a Package for your driver
 Once the driver files are created, we need to create a package that includes them, and then add that package to our Windows IoT Core image.

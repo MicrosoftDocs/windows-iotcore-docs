@@ -57,7 +57,14 @@ The next step is to package the Appx file, which will allow you to customize it 
      (or) newAppxPkg "C:\Users\jadali\Desktop\HelloWorld\CS\AppPackages\HelloWorld_1.0.0.0_ARM_Debug.appx" fga Appx.HelloWorldApp
   ```
 
-Please note that the *fga* parameter indicates the Appx file is a foreground application. Also, the *Appx.HelloWorldApp* is the name of the Appx file for referencing in the Windows ADK XML files when building the FFU image (you can call this whatever is appropriate for your scenario).
+
+> [!NOTE]
+> The *fga* parameter indicates the Appx file is a foreground application. If you specify your package as a background application (with the *bga* parameter) and have no other foreground applications in the image, the system will get stuck when booting up (displays a spinner indefinitely).
+
+The *Appx.HelloWorldApp* is the name of the Appx file for referencing in the Windows ADK XML files when building the FFU image (you can call this whatever is appropriate for your scenario).
+
+> [!IMPORTANT]
+> Please be aware that if you have more than one application that uses the same signing certificate, the system will not boot up properly. Please see the [here](07-CreateRetailImage.md) to create a dedicated CAB file to resolve this issue (follow steps 7-9 of *Properly Signing and Including your Applications* along with the steps in *Creating a Package for Including your Retail Certificate* sections). 
 
 Also be aware that if your Appx has dependencies you will need the *Dependencies* subdirectory to be present in the same location as your Appx when you run this command. Failure to include this will result in errors when you build your FFU image.
 
