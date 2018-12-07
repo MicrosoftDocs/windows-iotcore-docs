@@ -1,7 +1,7 @@
 ---
 title: Internet Connection Sharing Tutorial (November 2015 Release)
-author: derekameer
-ms.author: demeer
+author: saraclay
+ms.author: saclayt
 ms.date: 09/06/17
 ms.topic: article
 description: Learn how to enable and configure internet connection sharing for the November 2015 release of Windows.
