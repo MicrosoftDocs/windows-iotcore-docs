@@ -1,6 +1,6 @@
 ---
 title: Bluetooth Support
-author: saclayt
+author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
