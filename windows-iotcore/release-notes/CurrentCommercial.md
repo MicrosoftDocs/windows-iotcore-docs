@@ -44,6 +44,10 @@ _Windows 10 IoT Core_
 * The release for the Raspberry Pi 3B+ (the downloadable ISO can be found [here](http://go.microsoft.com/fwlink/?LinkID=708576)) is a technical preview and there is currently no timeline for a release version. For a better evaluation experience and fr any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm or NXP SoCs. 
 
 
+## IoT Enterprise Manufacturing Guide
+
+* A new manufacturing guide for Windows 10 IoT Enterprise is [now available](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview). 
+
 ## Improvements in Assigned Access 
 
 _Windows 10 IoT Enterprise_
