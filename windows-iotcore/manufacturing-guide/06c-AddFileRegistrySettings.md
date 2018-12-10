@@ -22,7 +22,7 @@ Please make sure you've created a basic image from [Creating a Basic IoT Core Im
 
 You will need the following tools installed to complete this section:
 * **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows IoT Core.
-* **Iot Core Shell**. This is included with the Windows ADK and is the commandline window interface where you execute commands to build custom FFU images for Windows IoT Core.
+* **IoT Core Powershell Environment**. This is included with the Windows ADK and is the Powershell commandline window interface where you execute commands to build custom FFU images for Windows IoT Core.
 * **[Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore)** for your specific architecture. These provide the IoT Core packages and feature manifest files needed to build custom Windows IoT images for the specific architecture (ARM, ARM64, x86, x64).
 * **[IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)**. These provide the sample scripts and base structure for building custom Windows IoT Core images.
 * A text editor like **Notepad** or **VS Code**.
@@ -33,7 +33,7 @@ Create a few sample text files using Notepad and add some random text so that th
 
 
 ## Build a Package for Test Files
-1. Open the IoT Core Shell: run C:\MyWorkspace\IoTCorePShell.cmd as an administrator and create a File package using [Add-IoTFilePackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTFilePackage.md):
+1. Open the **IoT Core Powershell Environment**: run `IoTCorePShell.cmd` as an administrator and create a File package using [Add-IoTFilePackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTFilePackage.md):
 
 ```powershell
 # Array of files with destinationDir, Source and destinationFilename

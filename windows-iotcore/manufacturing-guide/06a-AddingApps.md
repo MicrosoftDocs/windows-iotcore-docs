@@ -26,10 +26,54 @@ Please make sure you've created a basic image from [Creating a Basic IoT Core Im
 You will need the following tools installed to complete this section:
 * **Visual Studio**. This is needed to create the UWP application that will be added to the custom FFU image.
 * **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows IoT Core.
+
+    > [!NOTE]
+    > The version of ADK used must match the version of IoT Core Packages used below.
+
 * **[Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore)** for your specific architecture. These provide the IoT Core packages and feature manifest files needed to build custom Windows IoT images for the specific architecture (ARM, ARM64, x86, x64).
 * **[IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)**. These provide the sample scripts and base structure for building custom Windows IoT Core images.
-* **Iot Core Shell**. This is included with the Windows ADK and is the commandline window interface where you execute commands to build custom FFU images for Windows IoT Core.
+* **IoT Core Powershell Environment**. This is included with the Windows ADK and is the Powershell commandline window interface where you execute commands to build custom FFU images for Windows IoT Core.
 * A text editor like **Notepad** or **VS Code**.
+
+## Supported Application Types
+Windows IoT Core supports the following application types:
+
+### Universal Windows Platform (UWP) Apps
+IoT Core is a UWP centric OS and UWP apps are its primary app type.
+
+Universal Windows Platform (UWP) is a common app platform across all version of Windows 10, including Windows 10 IoT Core. UWP is an evolution of Windows Runtime (WinRT). You can find more information and an overview to UWP on [docs.microsoft.com](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide).
+
+### Traditional UWP Apps
+UWP apps just work on IoT Core, just as they do on other Windows 10 editions. A simple, blank Xaml app in Visual Studio will properly deploy to your IoT Core device just as it would on a phone or Windows 10 PC. All of the standard UWP languages and project templates are fully supported on IoT Core.
+
+There are a few additions to the traditional UWP app-model to support IoT scenarios and any UWP app that takes advantage of them will need the corresponding information added to their manifest. In particular the "iot" namespace needs to be added to the manifest of these standard UWP apps.
+
+Inside the attribute of the manifest, you need to define the iot xmlns and add it to the IgnorableNamespaces list. The final xml should look like this:
+
+```xml
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10"
+  IgnorableNamespaces="uap mp iot">
+```
+
+### Background Apps
+In addition to the traditional UI apps, IoT Core has added a new UWP app type called "Background Applications". These applications do not have a UI component, but instead have a class that implements the "IBackgroundTask" interface. They then register that class as a "StartupTask" to run at system boot. Since they are still UWP apps, they have access to the same set of APIs and are supported from the same language. The only difference is that there is no UI entry point.
+
+Each type of IBackgroundTask gets its own resource policy. This is usually restrictive to improve battery life and machine resources on devices where these background apps are secondary components of foreground UI apps. On IoT devices, Background Apps are often the primary function of the device and so these StartupTasks get a resource policy that mirrors foreground UI apps on other devices.
+
+You can find in-depth information on Background apps on [MSDN](https://docs.microsoft.com/windows/iot-core/develop-your-app/backgroundapplications).
+
+### Non-UWP (Win32) Apps
+IoT Core supports certain traditional Win32 app types such as Win32 Console Apps and NT Services. These apps are built and run the same way as on Windows 10 Desktop. Additionally, there is an IoT Core C++ Console project template to make it easy to build such apps using Visual Studio.
+
+There are two main limitations on these non-UWP applications:
+
+1. *No legacy Win32 UI support*: IoT Core does not contain APIs to create classic (HWND) Windows. Legacy methods such as CreateWindow() and CreateWindowEx() or any other methods that deal with Windows handles (HWNDs) are not available. Subsequently, frameworks that depend on such APIs including MFC, Windows Forms and WPF, are not supported on IoT Core.
+2. *C++ Apps Only*: Currently, only C++ is supported for developing Win32 apps on IoT Core.
+
 
 
 ## Create an Appx Package
@@ -49,7 +93,7 @@ The first step is to create a **Universal Windows Platform (UWP)** application t
 ## Package the Appx
 The next step is to package the Appx file, which will allow you to customize it and build it using the Windows ADK (when you build the FFU image).
 
-1. Open **IoT Core Shell** as an administrator
+1. Open `IoTCorePShell.cmd`. It should prompt you to run as an administrator.
 2. Create the package for your Appx by using [Add-IoTAppxPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTAppxPackage.md). Replace the file path location and package name with your Appx package. In our example, the command is as follows:
 
   ```powershell
@@ -64,20 +108,18 @@ The next step is to package the Appx file, which will allow you to customize it 
 The *Appx.HelloWorldApp* is the name of the Appx file for referencing in the Windows ADK XML files when building the FFU image (you can call this whatever is appropriate for your scenario).
 
 > [!IMPORTANT]
-> Please be aware that if you have more than one application that uses the same signing certificate, the system will not boot up properly. Please see the [here](07-CreateRetailImage.md) to create a dedicated CAB file to resolve this issue (follow steps 7-9 of *Properly Signing and Including your Applications* along with the steps in *Creating a Package for Including your Retail Certificate* sections). 
+> Please be aware that if you have more than one application that uses the same signing certificate, the system will not boot up properly. Please use the `-SkipCert` parameter when packaging your appx, and then see [here](07-CreateRetailImage.md) to create a dedicated CAB file for including the certificate (follow the steps in *Creating a Package for Including your Retail Certificate* sections). 
 
 Also be aware that if your Appx has dependencies you will need the *Dependencies* subdirectory to be present in the same location as your Appx when you run this command. Failure to include this will result in errors when you build your FFU image.
 
-3. From **IoT Core Shell**, you can now build the package into a .CAB file (using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md))
+3. From **IoT Core Powershell Environment**, you can now build the package into a .CAB file (using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md))
 
         ```powershell
         New-IoTCabPackage Appx.HelloWorldApp
         (or) buildpkg Appx.HelloWorldApp
         ```
 
-    This will build the package into a .CAB file under the **Build\\< arch >\pkgs** subdirectory in the ADK Toolkit files. In our example, this file is located in *C:\IoT-ADK-AddOnToolkit\Build\ARM\pkgs\Contoso.Appx.HelloWorldApp.cab*.
-
-    This also adds a FeatureID called **APPX_HELLOWORLDAPP** to the `C:\MyWorkspace\Source-< arch>\Packages\OEMFM.xml` file.
+    This will build the package into a .CAB file under the `Workspace\Build\<arch>\pkgs` subdirectory in the ADK Toolkit files. In our example, this file is located in *C:\iot-adk-addonkit-master\Workspace\Build\arm\pkgs\Contoso.Appx.HelloWorldApp.cab*.
 
 ## Update Project Configuration Files
 You can now update your product configuration files to include your app in the FFU image build. 
@@ -89,7 +131,11 @@ Add-IoTProductFeature <product name> Test APPX_HELLOWORLDAPP -OEM
 or addfid <product name> Test APPX_HELLOWORLDAPP -OEM
 ```
 
+
+  This adds a FeatureID called **APPX_HELLOWORLDAPP** to the specified product's Test OEMInput XML file (`C:\MyWorkspace\Source-arm\<product name>\TestOEMInput.xml` file).
+
 2. Remove the sample test apps **IOT_BERTHA** using [Remove-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Remove-IoTProductFeature.md):
+
 ```powershell
 Remove-IoTProductFeature <product name> Test IOT_BERTHA
 or removefid <product name> Test IOT_BERTHA
@@ -99,10 +145,11 @@ or removefid <product name> Test IOT_BERTHA
 
 Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
 
-    ```powershell
-    New-IoTFFUImage <product name> Test
-    (or)buildimage <product name> Test 
-    ```
+```powershell
+New-IoTFFUImage <product name> Test
+(or)buildimage <product name> Test 
+```
+
 Once the FFU file has been built (it should now include your app), you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](05-FlashingImage.md).
 
 ## Next Steps

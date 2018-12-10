@@ -21,10 +21,14 @@ Make sure your technician PC has the necessary tools installed prior to creating
 See [Get the tools needed to create Windows 10 IoT Core images](03-ToolsNeeded.md) for details.
 
 You will need the following tools installed to complete this section:
-* **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows 10 IoT Core. <p>**NOTE - The version of ADK used must match the version of IoT Core Packages used below.**
+* **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows 10 IoT Core
+
+    > [!NOTE]
+    > The version of ADK used must match the version of IoT Core Packages used below.
+
 * **[Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore)** for your specific architecture. These provide the IoT Core packages and feature manifest files needed to build custom Windows IoT images for the specific architecture (ARM, ARM64, x86, x64).
 * **[IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)**. These provide the sample scripts and base structure for building custom Windows 10 IoT Core images.
-* **Iot Core Shell**. This is part of with the ADK Add-on  and is the command line interface where you execute commands to build custom FFU images for Windows 10 IoT Core.
+* **IoT Core Powershell Environment**. This is part of with the ADK Add-on  and is the Powershell command line interface where you execute commands to build custom FFU images for Windows 10 IoT Core.
 * A text editor like **Notepad** or **VS Code**.
 
 ## Create a Workspace
@@ -34,7 +38,7 @@ You will need the following tools installed to complete this section:
 
    If you receive the error "The system cannot find the path specified", right-click the icon and modify the path in "Target" to the location you've chosen to install the tools.
 
-2. In the IoTCorePShell, create a new workspace (for example, `C:\Myworkspace`) with an OEM name of `Contoso` for the architecture `arm` using [New-IoTWorkspace](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTWorkspace.md)
+2. In the **IoT Core Powershell Environment**, create a new workspace (for example, `C:\Myworkspace`) with an OEM name of `Contoso` for the architecture `arm` using [New-IoTWorkspace](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTWorkspace.md)
 
     ```powershell
     New-IoTWorkspace C:\MyWorkspace Contoso arm
@@ -58,7 +62,7 @@ The next step is to take the Board Support Package files and extract/build their
 [Adding a Board Support Package](04a-BoardSupportPackages.md)
 
 ## Build Packages 
-From IoT Core Shell, get your environment ready to create products by building all of the packages in the working folders (using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md)):
+From IoT Core Powershell Environment, get your environment ready to create products by building all of the packages in the working folders (using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md)):
 
 ```powershell
 New-IoTCabPackage All
@@ -67,11 +71,11 @@ New-IoTCabPackage All
 
 ## Create a Product
 
-From IoT Core Shell, create a new product folder that uses the BSP you are working with. This folder represents a new device we want to build an image for, and contains sample customization files that we can use to start our project. For example, to create a product folder called `ProductA` that uses the Raspberry Pi 2 or 3 BSP , execute the following command (using [Add-IoTProduct](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProduct.md)):
+From **IoT Core Powershell Environment**, create a new product folder that uses the BSP you are working with. This folder represents a new device we want to build an image for, and contains sample customization files that we can use to start our project. For example, to create a product folder called `ProductA` that uses the Raspberry Pi 2 or 3 BSP , execute the following command (using [Add-IoTProduct](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProduct.md)):
 
 ```powershell
-Add-IoTProduct ProductA RPi2
-(or) newproduct MyProductA RPi2
+Add-IoTProduct ProductA QCDB410C
+(or) newproduct MyProductA QCDB410C
 ```
 
 You will be prompted to enter the **SMBIOS** information, such as Manufacturer Name (OEM Name), Family, SKU, BaseboardManufacturer, and BaseboardProduct. Here are some example values:
@@ -82,16 +86,62 @@ You will be prompted to enter the **SMBIOS** information, such as Manufacturer N
 * **System Family:** ARM
 * **Baseboard Product:** DB410C 
 
-The BSP name is the same as the folder name for the BSP. You can see which BSPs are available by looking in the **C:\MyWorkspace\Source-\< arch >\BSP** folders. 
+The BSP name is the same as the folder name for the BSP. You can see which BSPs are available by looking in the `C:\MyWorkspace\Source-<arch>\BSP` folders. 
 
-In the example above, this creates the folder: **C:\MyWorkspace\Source-arm \Products\\ProductA**.
+In the example above, this creates the folder: `C:\MyWorkspace\Source-arm\Products\ProductA`.
 
    ![Dashboard screenshot](../media/ManufacturingGuide/AddIoTProduct.jpg)
+
+## OemCustomization.cmd File
+Every image includes a file `oemcustomization.cmd` which will run on every boot up of your device. You have the ability to modify this file to customize what executes on boot up. This file is located under `iot-adk-addonkit/Workspace/Source-<arch>/Products/<your product name>`. Here is an example of what this file holds:
+
+```
+@echo off
+REM OEM Customization Script file
+REM This script if included in the image, is called everytime the system boots.
+
+reg query HKLM\Software\IoT /v FirstBootDone >nul 2>&1
+
+if %errorlevel% == 1 (
+    REM Enable Administrator User
+    net user Administrator p@ssw0rd /active:yes
+    if exist C:\Data\oobe (
+        call folderpermissions.exe 'C:\Data\oobe -e'
+    )
+REM - Enable the below if you need secure boot/bitlocker
+REM Enable Secureboot
+REM if exist c:\IoTSec\setup.secureboot.cmd  (
+REM    call c:\IoTSec\setup.secureboot.cmd
+REM )
+
+REM Enable Bitlocker
+REM if exist c:\IoTSec\setup.bitlocker.cmd  (
+REM    call c:\IoTSec\setup.bitlocker.cmd
+REM )
+    reg add HKLM\Software\IoT /v FirstBootDone /t REG_DWORD /d 1 /f >nul 2>&1
+)
+
+REM The below should be called on every boot
+if exist C:\RecoveryConfig\Recovery.BcdEdit.cmd (
+    call C:\RecoveryConfig\Recovery.BcdEdit.cmd
+)
+
+REM Set the crashdump file locations to data partition, set on every boot.
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl" /v DedicatedDumpFile /t REG_SZ /d C:\Data\DedicatedDumpFile.sys /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl" /v DumpFile /t REG_SZ /d C:\Data\MEMORY.DMP /f
+```
+
+> [!NOTE]
+> Please be aware that security features like BitLocker and SecureBoot are disabled by default for a custom test image. If you wish to include these features (in a retail image) you can uncomment out the appropriate lines in the file, prior to building your image.
+
+> [!NOTE]
+> Please be aware that the commands in this file run with local system privilege.
+
 
 ## Build an image 
 Eject any removable storage drives, including the microSD card and any USB flash drives. 
 
-Build the FFU image file by entering the following command in IoT Core Shell (using [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md)):
+Build the FFU image file by entering the following command in IoT Core Powershell Environment (using [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md)):
 
 ```powershell
 New-IoTFFUImage <product name> Test
@@ -112,6 +162,9 @@ You can add a recovery mechanism to your image with WinPE as a Safe OS and WIM f
 See [Windows 10 IoT Core Recovery](https://docs.microsoft.com/en-us/windows-hardware/service/iot/recovery) for the details on the possible mechanisms.
 
 **Step 1 : Update device layout with recovery partition**
+TODO: Point them to recovery partition file (QCDB lives in Common/Packages folder)
+Workspace/Common/Packages (-Rs) - This is general
+END TODO
 
 In the `devicelayout.xml` file, you add a new partition **MMOS** with the following attributes:
 
@@ -174,7 +227,7 @@ Windows 10 ADK Release 1709 contains the Windows 10 Preinstall Environment for a
     * You may need to add BSP drivers to winpe image to boot/write to storage, on your device platform.
     * Place the required drivers in `Source-<arch>\bsp\<bspname>\WinPEExt\drivers` folder.
 
-You can create the WinPE image for the BSP with the above contents using the [New-IoTWindowsImage](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/New-IoTWindowsImage.md) command in IoTCorePShell
+You can create the WinPE image for the BSP with the above contents using the [New-IoTWindowsImage](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/New-IoTWindowsImage.md) command in **IoT Core Powershell Environment**.
 
 ```powershell
 New-IoTWindowsImage <product> <config>
