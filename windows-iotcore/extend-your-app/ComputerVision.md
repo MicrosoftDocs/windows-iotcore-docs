@@ -1,7 +1,7 @@
 ---
 title: Computer Vision
-author: derekameer
-ms.author: demeer
+author: saraclay
+ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to use Microosft Cognitive Services and OpenCV for your IoT device.

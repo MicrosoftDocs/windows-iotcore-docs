@@ -1,7 +1,7 @@
 ---
 title: Using PowerShell for Windows IoT
 author: paulmon
-ms.author: paulmonson
+ms.author: paulmon
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to use PowerShell to connect to your device as well as manage your device.
