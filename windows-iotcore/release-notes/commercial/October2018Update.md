@@ -43,6 +43,9 @@ _Windows 10 IoT Core_
 * If you're looking to use IoT Central as part of a Windows 10 IoT solution, you can now prepare and [connect a Windows 10 IoT Core device to your Azure IoT Central application](https://docs.microsoft.com/azure/iot-central/howto-connect-windowsiotcore). 
 * The release for the Raspberry Pi 3B+ (the downloadable ISO can be found [here](http://go.microsoft.com/fwlink/?LinkID=708576)) is a technical preview and there is currently no timeline for a release version. For a better evaluation experience and fr any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm or NXP SoCs. 
 
+## IoT Enterprise Manufacturing Guide
+
+* A new manufacturing guide for Windows 10 IoT Enterprise is [now available](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview). 
 
 ## Improvements in Assigned Access 
 
