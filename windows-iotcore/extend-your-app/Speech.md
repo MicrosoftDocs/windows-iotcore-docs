@@ -1,7 +1,7 @@
 ---
 title: Speech resources and samples
-author: zhuridartem
-ms.author: artemz
+author: saraclay
+ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn more about how to build a complete speech interface with IoT Core.

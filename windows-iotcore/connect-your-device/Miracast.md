@@ -1,7 +1,7 @@
 ---
 title: Miracast on IoT Core 
-author: derekameer
-ms.author: demeer
+author: saraclay
+ms.author: saclayt
 ms.date: 11/30/2017
 ms.topic: article
 description: Learn how to include Miracast capabilities on your device 

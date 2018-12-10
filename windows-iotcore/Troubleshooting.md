@@ -104,6 +104,43 @@ When the device is booting and the device shows the waiting page, please wait pa
 
 If the device can't boot normally with Windows 10 IoT Core, you can try to flash a Linux OS (such as Raspbian) to the SD card to narrow down whether the issue is caused by hardware. 
 
+## Serial Port communication on Windows 10 IoT Core for Raspberry Pi 
+
+On the Raspberry Pi, hardware UART and USB UART adapters both are usable for your application with serial communicaiton. By default, the UART transmit and receive pins are pins 8 and 10 on teh GPIO header.
+
+![UART and USB UART adapters](media/Troubleshooting/adapters.png)
+
+You can read [this article](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/pinmappings/pinmappingsrpi#serial-uart) to learn more about how to initialize UART0 and perform a write followed by a read.
+
+In addition, Radio Frequency Communication (RFCOMM) is the underlying serial communications for classic Bluetooth. Refer to [this GitHub sample](https://github.com/djaus2/iotbluetoothserial) to learn about running UWP apps on Windows 10 IoT Core to connected over an IoT device with Bluetooth Serial.
+
+If you encounter that the device cannot read/write data through the serial port, follow the steps below to troubleshoot:
+
+1. Connect the TX to RX with Jumper - shown below - then run the sample code to check if the app can read/write data. If this does not work, the IC on the board may be broken.
+
+![TX to RX on Raspberry Pi](media/Troubleshooting/txrx.png)
+
+2. Make sure the BaudRate, Handshaking and StopBits are configured correctly. If the serial port to be tested has a complete RS232 interface (e.g. DB9), use a DB plug with the RxTx crossover wires connected with the typical handshaking crossovers. Some RS232 ports (or USB adapters) require signals such as Carrier Detect (DCD) and DCE Ready (DSR) to be asserted before they function properly.
+
+3. If you want to use USB UART adapters on Windows 10 IoT Core, the following are supported:
+
+* CP2102 USB 2.0
+* TTL Module Serial Converter
+* FTDI
+* Generic usbser.sys
+
+You can also use the devcon.exe stack * and devcon.exe status* cmdlet to check the expected drivers stack and drivers status on Windows 10 IoT Core.
+
+```
+USB\VID_10C4&PID_EA60\0001
+    Name: Silicon Labs CP210x USB to UART Bridge
+    Setup Class: {4d36e978-e325-11ce-bfc1-08002be10318} Ports
+    Controlling service:
+        silabser
+```
+[Mincomm](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/BusTools/MinComm) is another helpful tool to troubleshoot serial port issues. This tool can enumerate ports, give you their friendly name and Device ID, open ports, configure settings (i.e. baud rate, stop bits, etc.) and send and receive data. 
+
+
 
 ## Yubikey support
 

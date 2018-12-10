@@ -1,7 +1,7 @@
 ---
 title: Windows 10 IoT Core Command Line Utilities
 author: bfjelds
-ms.author: Brian.Fjeldstad
+ms.author: bfjelds
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn the command line utilities to use with PowreShell after connecting to your device.

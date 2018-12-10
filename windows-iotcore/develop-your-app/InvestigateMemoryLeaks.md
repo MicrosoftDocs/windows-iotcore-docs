@@ -1,7 +1,7 @@
 ---
 title: Investigating memory leaks
 author: paulmon
-ms.author: paulmonson
+ms.author: paulmon
 ms.date: 09/20/2017
 ms.topic: article
 description: Learn how to investigate memory leaks.
