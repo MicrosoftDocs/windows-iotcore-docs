@@ -118,7 +118,7 @@ If you encounter that the device cannot read/write data through the serial port,
 
 1. Connect the TX to RX with Jumper - shown below - then run the sample code to check if the app can read/write data. If this does not work, the IC on the board may be broken.
 
-![TX to RX on Raspberry Pi](media/Troubleshooting/trtx.png)
+![TX to RX on Raspberry Pi](media/Troubleshooting/txrx.png)
 
 2. Make sure the BaudRate, Handshaking and StopBits are configured correctly. If the serial port to be tested has a complete RS232 interface (e.g. DB9), use a DB plug with the RxTx crossover wires connected with the typical handshaking crossovers. Some RS232 ports (or USB adapters) require signals such as Carrier Detect (DCD) and DCE Ready (DSR) to be asserted before they function properly.
 
