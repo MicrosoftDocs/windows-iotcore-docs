@@ -108,7 +108,7 @@ If the device can't boot normally with Windows 10 IoT Core, you can try to flash
 
 On the Raspberry Pi, hardware UART and USB UART adapters both are usable for your application with serial communicaiton. By default, the UART transmit and receive pins are pins 8 and 10 on teh GPIO header.
 
-![UART and USB UART adapters](../media/Troubleshooting/adapters.png)
+![UART and USB UART adapters](media/Troubleshooting/adapters.png)
 
 You can read [this article](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/pinmappings/pinmappingsrpi#serial-uart) to learn more about how to initialize UART0 and perform a write followed by a read.
 
@@ -118,7 +118,7 @@ If you encounter that the device cannot read/write data through the serial port,
 
 1. Connect the TX to RX with Jumper - shown below - then run the sample code to check if the app can read/write data. If this does not work, the IC on the board may be broken.
 
-![TX to RX on Raspberry Pi](../media/Troubleshooting/trtx.png)
+![TX to RX on Raspberry Pi](media/Troubleshooting/trtx.png)
 
 2. Make sure the BaudRate, Handshaking and StopBits are configured correctly. If the serial port to be tested has a complete RS232 interface (e.g. DB9), use a DB plug with the RxTx crossover wires connected with the typical handshaking crossovers. Some RS232 ports (or USB adapters) require signals such as Carrier Detect (DCD) and DCE Ready (DSR) to be asserted before they function properly.
 
