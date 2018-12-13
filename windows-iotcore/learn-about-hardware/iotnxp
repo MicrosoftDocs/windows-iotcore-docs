@@ -40,23 +40,18 @@ Several Microsoft and NXP partners have enabled commercial i.MX 6 and i.MX 7 dev
 <tbody>
 
 <tr class="odd">
+<td align="left"><p><a href="https://www.aaeon.com/en/p/pico-itx-boards-pico-imx6/">Aaeon PICO-IMX6</a></p></td>
+<td align="left"><p><p><a href="mailto:davidhung@aaeon.com.tw">DavidHung@aaeon.com.tw</a></p></td>
+</tr>
+
+<tr class="odd">
 <td align="left"><p><a href="http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858">Advantech RSB-4411</a></p></td>
 <td align="left"><p><p><a href="mailto:buy@advantech.tw">buy@advantech.tw</a></p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="http://wce.keith-koep.com/en/products/pconxs-ff/">Keith & Koep pConXS</a> with <a href="http://wce.keith-koep.com/en/products/trizeps7-i.MX6/">Trizeps VII</a></p></td>
-<td align="left"><p><p><a href="mailto:contact@keith-koep.com">contact@keith-koep.com</a></p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html">Kontron SMARC-sAMX6i</a></p></td>
-<td align="left"><p><p><a href="mailto:martin.unverdorben@kontron.com">Martin Unverdorben</a></p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="https://www.solid-run.com/imx6-win-10-iot-core/">Solid Run Hummingboard Edge</a></p></td>
-<td align="left"><p><p><a href="mailto:ilya@solid-run.com">Ilya Viten</a></p></td>
+<td align="left"><p><a href="https://www.compulab.com/products/iot-gateways/iot-gate-imx7-nxp-i-mx-7-internet-of-things-gateway/">Compulab IoT-Gate</a></p></td>
+<td align="left"><p><p><a href="mailto:igor@compulab.co.il">Igor Vaisbein</a></p></td>
 </tr>
 
 <tr class="odd">
@@ -70,13 +65,33 @@ Several Microsoft and NXP partners have enabled commercial i.MX 6 and i.MX 7 dev
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://www.viaembeddedstore.com/shop/boards/vab-820/">VIA VAB-820</a></p></td>
-<td align="left"><p><p><a href="mailto:MichaelFox@via.com.tw">Michael Fox</a> or <a href="dreamku@via.com.tw">Dream Ku</p></td>
+<td align="left"><p><a href="https://www.karo-electronics.de/tx-standard.html?&L=1">Ka-Ro Electronics TX6UL, TX6S, TX6DL, and TX6Q</a></p></td>
+<td align="left"><p><p><a href="mailto:us@karo-electronics.de">Uwe Steinkohl</a></p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="http://wce.keith-koep.com/en/products/pconxs-ff/">Keith & Koep pConXS</a> with <a href="http://wce.keith-koep.com/en/products/trizeps7-i.MX6/">Trizeps VII</a></p></td>
+<td align="left"><p><p><a href="mailto:contact@keith-koep.com">contact@keith-koep.com</a></p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html">Kontron SMARC-sAMX6i</a></p></td>
+<td align="left"><p><p><a href="mailto:martin.unverdorben@kontron.com">Martin Unverdorben</a></p></td>
 </tr>
 
 <tr class="odd">
 <td align="left"><p><a href="https://phytec.com/products/single-board-computers/phyboard-i.mx7/">Phytec phyBOARD-i.MX7</a></p></td>
 <td align="left"><p><p><a href="mailto:sales@phytec.com">Brad Dodson</a></p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://www.solid-run.com/imx6-win-10-iot-core/">Solid Run Hummingboard Edge</a></p></td>
+<td align="left"><p><p><a href="mailto:ilya@solid-run.com">Ilya Viten</a></p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://www.viaembeddedstore.com/shop/boards/vab-820/">VIA VAB-820</a></p></td>
+<td align="left"><p><p><a href="mailto:MichaelFox@via.com.tw">Michael Fox</a> or <a href="dreamku@via.com.tw">Dream Ku</p></td>
 </tr>
 
 </tbody>
