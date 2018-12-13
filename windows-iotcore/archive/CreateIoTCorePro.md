@@ -4,7 +4,7 @@ author: saraclay
 ms.author: saclayt
 ms.date: 09/11/17
 ms.topic: article
-ms.prod: Windows
+ms.prod: windows-iot
 ms.technology: IoT
 description: Learn about an update to pricing for Windows 10 IoT Core Pro.
 keywords: windows iot, core pro
