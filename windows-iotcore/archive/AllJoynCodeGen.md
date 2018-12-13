@@ -4,7 +4,7 @@ author: saraclay
 ms.author: saclayt
 ms.date: 09/06/17
 ms.topic: article
-ms.prod: Windows
+ms.prod: windows-iot
 ms.technology: IoT
 description: Learn about AllJoynCodeGen, a code generation tool that generates a complete Windows Runtime component using AllJoyn interfaces.
 keywords: windows iot, AllJoyn
