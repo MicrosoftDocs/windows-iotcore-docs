@@ -5,7 +5,7 @@ title: 'Downloads'
 ms.author: saclayt
 ms.date: 10/05/18
 ms.topic: article
-ms.prod: windows-hardware
+ms.prod: windows-iot
 ms.technology: windows-iot
 ---
 

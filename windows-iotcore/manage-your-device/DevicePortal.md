@@ -4,7 +4,7 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
+ms.prod: windows-iot
 ms.technology: IoT
 description: Learn about how to use the Windows Device Portal to configure and manage your device remotely.
 keywords: windows iot, Windows Device Portal, remote, device portal
