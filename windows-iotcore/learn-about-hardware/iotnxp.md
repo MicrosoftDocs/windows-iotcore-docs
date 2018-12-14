@@ -16,13 +16,15 @@ During the preview, Microsoft and NXP engineers spent thousands of hours tuning 
  
 Based on the overwhelming interest in the solution, Microsoft and NXP are now making the i.MX6 and i.MX7 BSP available as a non-commercial public preview. Because of the long history Microsoft and NXP have in the embedded and IoT markets, we understand the need for design flexibility. Therefore, in addition to the multiple single board computers and system on module solutions Microsoft, NXP, and our hardware partners have enabled, the i.MX 6 and i.MX 7 BSP is provided under open source licensing. Now, everyone will be able to access the complete BSP content for the i.MX6 and i.MX7 product families for evaluation use on their hardware along with the October 2018 release of Windows 10 IoT Core.
 
-# BSP Access
+
+## BSP Access
 
 If you are interested to enable support for your own i.MX hardware, please access the BSP source and documentation on [Github]( https://github.com/ms-iot/imx-iotcore). Unless noted, the majority of the source is provided under MIT license. The code is still under development and intended for non-commercial development only.
 
 If you have NXP hardware/BSP releated questions, please post to the [NXP Community](https://community.nxp.com/community/imx/content?filterID=contentstatus%5Bpublished%5D%7Ecategory%5Bwindows%5D). For any Windows related questions, please use the [Microsoft Community](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT).
 
-# Ecosystem Resources
+
+## Ecosystem Resources
 
 Several Microsoft and NXP partners have enabled commercial i.MX 6 and i.MX 7 devices with support for Windows 10 IoT Core. Please contact the partner directly for hardware and a platform image.
 
