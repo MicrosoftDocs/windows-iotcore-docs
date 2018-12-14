@@ -12,7 +12,7 @@ keywords: Windows 10 IoT Core, Get Started, i.MX, NXP
 
 In 2018, Microsoft and NXP announced a private preview of Windows 10 IoT Core on NXP i.MX6 and i.MX7 silicon. Hundreds of commercial developers, researchers, and Makers expressed their interest in the combination of 10 years of Windows security updates and the flexibility and reliability of NXP silicon. 
  
-During the preview, Microsoft and NXP engineers spent thousands of hours tuning and improving the BSP based on input from those evaluating the solution. We worked with customers interested in modernizing legacy industrial controllers, developing new cloud connected building automation solutions, and gateways with class leading security such as [trusted I/O](https://az835927.vo.msecnd.net/sites/iot/Resources/documents/Protecting-Critical-Infrastructure.pdf).
+During the preview, Microsoft and NXP engineers spent thousands of hours tuning and improving the BSP based on input from those evaluating the solution. We worked with customers interested in modernizing legacy industrial controllers, developing new cloud connected building automation solutions, and gateways with class leading security such as [trusted I/O](https://blogs.windows.com/windowsexperience/2018/04/24/trusted-cyber-physical-systems-looks-to-protect-your-critical-infrastructure-from-modern-threats-in-the-world-of-iot/#A0WkfgLBpgbLaFe3.97).
  
 Based on the overwhelming interest in the solution, Microsoft and NXP are now making the i.MX6 and i.MX7 BSP available as a non-commercial public preview. Because of the long history Microsoft and NXP have in the embedded and IoT markets, we understand the need for design flexibility. Therefore, in addition to the multiple single board computers and system on module solutions Microsoft, NXP, and our hardware partners have enabled, the i.MX 6 and i.MX 7 BSP is provided under open source licensing. Now, everyone will be able to access the complete BSP content for the i.MX6 and i.MX7 product families for evaluation use on their hardware along with the October 2018 release of Windows 10 IoT Core.
 
@@ -43,12 +43,12 @@ Several Microsoft and NXP partners have enabled commercial i.MX 6 and i.MX 7 dev
 
 <tr class="odd">
 <td align="left"><p><a href="https://www.aaeon.com/en/p/pico-itx-boards-pico-imx6/">Aaeon PICO-IMX6</a></p></td>
-<td align="left"><p><p><a href="mailto:davidhung@aaeon.com.tw">DavidHung@aaeon.com.tw</a></p></td>
+<td align="left"><p><p><a href="mailto:davidhung@aaeon.com.tw">David Hung</a></p></td>
 </tr>
 
 <tr class="odd">
 <td align="left"><p><a href="http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858">Advantech RSB-4411</a></p></td>
-<td align="left"><p><p><a href="mailto:buy@advantech.tw">buy@advantech.tw</a></p></td>
+<td align="left"><p><p><a href="mailto:buy@advantech.com">buy@advantech.com</a></p></td>
 </tr>
 
 <tr class="odd">
