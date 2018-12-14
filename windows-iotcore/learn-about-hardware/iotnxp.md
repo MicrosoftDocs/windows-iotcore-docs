@@ -56,12 +56,12 @@ Several Microsoft and NXP partners have enabled commercial i.MX 6 and i.MX 7 dev
 
 <tr class="odd">
 <td align="left"><p><a href="https://www.geniatech.com/product/som-imx6q-q7/">Geniatech SoM-iMX6Q-Q7</a></p></td>
-<td align="left"><p><p><a href="mailto:mike.decker@geniatech.com">Mike Decker</a> or <a href="mailto:"Fjj@geniatech.com">Fang Jijun</p></td>
+<td align="left"><p><p><a href="mailto:mike.decker@geniatech.com">Mike Decker</a> or <a href="mailto:Fjj@geniatech.com">Fang Jijun</a></p></td>
 </tr>
 
 <tr class="odd">
 <td align="left"><p><a href="https://www.geniatech.com/product/som-imx7d/">Geniatech SoM-iMX7D</a></p></td>
-<td align="left"><p><p><a href="mailto:mike.decker@geniatech.com">Mike Decker</a> or <a href="mailto:"Fjj@geniatech.com">Fang Jijun</p></td>
+<td align="left"><p><p><a href="mailto:mike.decker@geniatech.com">Mike Decker</a> or <a href="mailto:Fjj@geniatech.com">Fang Jijun</a></p></td>
 </tr>
 
 <tr class="odd">
@@ -91,7 +91,7 @@ Several Microsoft and NXP partners have enabled commercial i.MX 6 and i.MX 7 dev
 
 <tr class="odd">
 <td align="left"><p><a href="https://www.viaembeddedstore.com/shop/boards/vab-820/">VIA VAB-820</a></p></td>
-<td align="left"><p><p><a href="mailto:MichaelFox@via.com.tw">Michael Fox</a> or <a href="dreamku@via.com.tw">Dream Ku</p></td>
+<td align="left"><p><p><a href="mailto:MichaelFox@via.com.tw">Michael Fox</a> or <a href="mailto:dreamku@via.com.tw">Dream Ku</p></td>
 </tr>
 
 </tbody>
