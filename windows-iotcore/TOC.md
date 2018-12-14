@@ -12,6 +12,7 @@
 ## [Hardware Guidance]()
 ### [SoCs and Custom Boards](learn-about-hardware/SoCsAndCustomBoards.md)
 ### [Hardware compatibility list](learn-about-hardware/HardwareCompatList.md)
+### [NXP i.MX SoCs](learn-about-hardware/iotnxp.md)
 ### [Pin Mappings]()
 #### [Raspberry Pi 2 and 3](learn-about-hardware/PinMappings/PinMappingsRPI.md)
 #### [Dragonboard](learn-about-hardware/PinMappings/PinMappingsDB.md)
