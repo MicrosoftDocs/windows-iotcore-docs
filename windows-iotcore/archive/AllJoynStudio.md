@@ -4,7 +4,7 @@ author: saraclay
 ms.author: saclayt
 ms.date: 09/07/17
 ms.topic: article
-ms.prod: Windows
+ms.prod: windows-iot
 ms.technology: IoT
 description: Learn about how to create an AllJoyn UWP App using the Universal Windows Platform (UWP) AllJoyn APIs and Visual Studio 2017.
 keywords: windows iot, AllJoyn

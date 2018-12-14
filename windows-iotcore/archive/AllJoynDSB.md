@@ -4,7 +4,7 @@ author: saraclay
 ms.author: saclayt
 ms.date: 09/06/17
 ms.topic: article
-ms.prod: Windows
+ms.prod: windows-iot
 ms.technology: IoT
 description: Learn about the AllJoyn Device System Bridge, which adapts non-AllJoyn devices to the AllJoyn ecosystem for broader interoperability.
 keywords: windows iot, AllJoyn

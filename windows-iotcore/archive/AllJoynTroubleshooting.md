@@ -4,7 +4,7 @@ author: saraclay
 ms.author: saclayt
 ms.date: 09/07/17
 ms.topic: article
-ms.prod: Windows
+ms.prod: windows-iot
 ms.technology: IoT
 description: Learn how to troubleshoot AllJoyn technology using this comprehensive guide covering known issues and troubleshooting settings.
 keywords: windows iot, AllJoyn
