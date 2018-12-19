@@ -1,7 +1,7 @@
 ---
 title: Headed and headless devices
-author: zhuridartem
-ms.author: artemz
+author: saraclay
+ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to configure Windows IoT Core for either headed or headless mode for devices.

@@ -1,7 +1,7 @@
 ---
 title: Computer Vision
-author: derekameer
-ms.author: demeer
+author: saraclay
+ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to use Microosft Cognitive Services and OpenCV for your IoT device.
@@ -85,12 +85,12 @@ Want to run OpenCV on your IoT Core device? Visit our [tutorial](https://develop
 > |Motion detection| Yes | Yes|
 > |Community| Cognitive Services has many active users across multiple industries and a few popular websites, including how-old.net and celebslike.me | OpenCV is a very popular Open Source project; thousands of people have contributed to it and maintained it|
 > |Documentation| Cognitive Services has overall clear and extensive documentation | There are many samples available online, but each sample is written by a different person and as a result can be inconsistent at times|
-> |Free| Yes, to an extent (more details [here](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/) | Yes|
+> |Free| Yes, to an extent (more details [here](https://azure.microsoft.com/pricing/details/cognitive-services/) | Yes|
 > |Performance| All operations and API calls require accessing data in the cloud | All algorithms are optimized and local, and using C++ rather than Python increases speeds even further|
 > |Supported cameras/hardware| Any USB or embedded camera | Any USB or embedded camera|
 > |Supported languages/frameworks| C#, UWP | C/C++, Python, Java, C#, UWP|
 > |Startup time| Users can use code samples along with intuitive APIs directly from the documentation | OpenCV's power and flexibility means it also requires plenty of configuration and code to perform complex operations|
 > |Links| [Sample program](https://developer.microsoft.com/en-us/windows/iot/samples/cognitiveservices) | [Sample program](https://developer.microsoft.com/en-us/windows/iot/samples/opencv) |
-> |    |   [Cognitive Services Website](https://azure.microsoft.com/en-us/services/cognitive-services/) |  [OpenCV Website](http://opencv.org/)
+> |    |   [Cognitive Services Website](https://azure.microsoft.com/services/cognitive-services/) |  [OpenCV Website](http://opencv.org/)
 
 

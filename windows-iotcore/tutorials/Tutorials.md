@@ -1,4 +1,4 @@
---- 
+---
 title: Get Started Overview
 author: saraclay 
 ms.author: saclayt 
@@ -6,7 +6,7 @@ ms.date: 04/10/2018
 ms.topic: article 
 description: Learn about getting started with Windows 10 IoT Core.
 keywords: Windows 10 IoT Core, Get Started, images, 
---- 
+---
 
 # Quickstarts
 

@@ -1,7 +1,7 @@
 ---
 title: Secure Shell (SSH)
-author: paulmon
-ms.author: paul.monson
+author: saraclay
+ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to use secure shell to remotely administer and configure your IoT Core device.
@@ -15,7 +15,7 @@ Secure Shell (SSH) allows you to remotely administer and configure your Windows 
 > [!IMPORTANT]
 > The Windows OpenSSH client requires that your SSH client host OS is Windows 10 version 1803(17134). Also, the Windows 10 IoT Core device must be running RS5 Windows Insider Preview release 17723 or greater.
 
-The **OpenSSH Client** was added to Windows 10 in 1803 (build 17134) as an optional feature. To install the client you will can search for **Manage Optional Features** in Windows 10 settings. If the **OpenSSH Client** is not listed in the list of installed features then choose **Add a feature**.
+The **OpenSSH Client** was added to Windows 10 in 1803 (build 17134) as an optional feature. To install the client you can search for **Manage Optional Features** in Windows 10 settings. If the **OpenSSH Client** is not listed in the list of installed features then choose **Add a feature**.
 
     ![Add a feature](../media/SSH/add_a_feature.png)
 

@@ -31,11 +31,11 @@ Most IoT devices are built as fixed-function devices.  This implies that device 
 
 ## Locking-down IoT Devices
 
-In order to lockdown a Windows IoT device, the following considerations must be made.
+In order to lockdown a Windows IoT device, the following considerations must be made...
 
 ### UEFI Platform & Secure Boot
 
-In order to leverage Device Guard capabilities, it is necessary to ensure that the boot binaries and UEFI firmware are signed and cannot be tampered with.  UEFI Secure Boot is the first policy enforcement point, located in UEFI.  It prevents tampering by restricting the system to only allow execution of boot binaries signed by a specified authority. Additional details on Secure Boot, along with key creation and management guidance, is available [here](https://technet.microsoft.com/en-us/library/dn747883.aspx).
+In order to leverage Device Guard capabilities, it is necessary to ensure that the boot binaries and UEFI firmware are signed and cannot be tampered with.  UEFI Secure Boot is the first policy enforcement point, located in UEFI.  It prevents tampering by restricting the system to only allow execution of boot binaries signed by a specified authority. Additional details on Secure Boot, along with key creation and management guidance, is available [here](https://technet.microsoft.com/library/dn747883.aspx).
 
 ### Configurable Code Integrity (CCI)
 
@@ -43,7 +43,7 @@ Code Integrity (CI) improves the security of the operating system by validating 
 
 Configurable Code Integrity (CCI) is a feature in Windows 10 that allows device builders to lockdown a device and only allow it to run and execute code that is signed and trusted.  To do so, device builders can create a code integrity policy on a 'golden' device (final release version of hardware and software) and then secure and apply this policy on all devices on the factory floor.
 
-To learn more about deploying code integrity policies, auditing and enforcement, check out the latest technet documentation [here](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/deploy-code-integrity-policies-steps).
+To learn more about deploying code integrity policies, auditing and enforcement, check out the latest technet documentation [here](https://technet.microsoft.com/itpro/windows/keep-secure/deploy-code-integrity-policies-steps).
 
 ## Turnkey Security on IoT Core
 
@@ -66,7 +66,7 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
 
 * Qualcomm DragonBoard 410c
 
-    In order to enable Secure Boot, it may be necessary to provision RPMB. Once the eMMC has been flashed with Windows 10 IoT Core (as per instructions [here](https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-dragonboard-410c), press [Power] + [Vol+] + [Vol-] simultaneously on the device when powering up and select "Provision RPMB" from the BDS menu. *Please note that this is an irreversible step.*
+    In order to enable Secure Boot, it may be necessary to provision RPMB. Once the eMMC has been flashed with Windows 10 IoT Core (as per instructions [here](https://docs.microsoft.com/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-dragonboard-410c), press [Power] + [Vol+] + [Vol-] simultaneously on the device when powering up and select "Provision RPMB" from the BDS menu. *Please note that this is an irreversible step.*
 
 * Intel MinnowBoardMax
 
@@ -95,7 +95,13 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
     * **Secure your generated keys** as the device will trust binaries signed with these keys only after lockdown.
     * You may skip this step and use the pre-generated keys for testing only
 
-5. Configure _settings.xml_
+5. Install the generated .pfx certificates by clicking on the pfx files directly or using the below powershell command
+
+    ```powershell
+    Import-PfxCertificate -FilePath $pfxfile -CertStoreLocation Cert:\CurrentUser\My
+    ```
+
+6. Configure _settings.xml_
 
     * General section : Specify the package directories
     * Tools section : Set the path for the tools
@@ -113,6 +119,12 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
 
 > [!IMPORTANT]
 > In order to assist with testing during the initial development cycle, Microsoft has provided pre-generated keys and certificates where appropriate.  This implies that Microsoft Test, Development and Pre-Release binaries are considered trusted.  During final product creation and image generation, be sure to remove these certifcates and use your own keys to ensure a fully locked down device.
+
+> [!TIP]
+> The apps from Microsoft App Store can be allowed by including the Microsoft Marketplace PCA 2011 certificate in the configuration _settings.xml_: 
+    ```xml
+    <Cert>db\MicrosoftMarketPlacePCA2011.cer</Cert>              <!-- Microsoft MarketPlace PCA 2011 -->
+    ```
 
 6.Execute the following commands to generate required packages:
 
@@ -156,9 +168,21 @@ You can test the generated packages by manually installing them on a unlocked de
 6. The device will reboot into update OS (showing gears) to install the packages and will reboot again to main OS.  Once the device reboots back into MainOS, Secure Boot will be enabled and SIPolicy should be engaged.
 7. Reboot the device again to activate the Bitlocker encryption.
 8. Test the security features
-    * SecureBoot: try `bcdedit /debug on` , you will get an error stating that the value is protected by secure boot policy
-    * BitLocker: Run `fvecon -status c:`, you will get the status mentioning *On, Encrypted, Has Recovery Data (external key), Has TPM Data, Secure, Boot Partition, Used Space Only*
-    * DeviceGuard : Run any unsigned binary or a binary signed with certificate not in the SIPolicy list and confirm that it fails to run.
+    * **SecureBoot** : try `bcdedit /debug on` , you will get an error stating that the value is protected by secure boot policy.
+   * **BitLocker** : To validate that bitlocker encryption has been completed, run<p>
+        `sectask.exe -waitenableforcompletion 1`<p>
+        If it returns 0, that means all drives on the system have been bitlockered successfully.  Any other return code is failure.<p>
+        *Additional Syntax*<p>
+         `-waitenableforcompletion [timeout]` <p>
+        => Wait until BitLocker encryption is completed on all NTFS volumes.<p>
+        => Timeout in seconds to wait for enable to complete.<p>
+        => If timeout not specified, it will wait indefinitely or until enable completes.<p>
+        Returns: <p>
+        0 : BitLocker encryption successfully completed, volume is Bitlocker encrypted.<p>
+        ERROR_TIMEOUT: Timeout waiting for completion, encryption still in progress.<p>
+        Failure/Other code: returns the failure error code returned by the bit locker service.
+
+    * **DeviceGuard** : Run any unsigned binary or a binary signed with certificate not in the SIPolicy list and confirm that it fails to run.
 
 ### Generate Lockdown image
 
@@ -212,3 +236,28 @@ If the contents need to be frequently accessed offline, BitLocker autounlock can
 
 Should there arise a need to temporarily disable BitLocker, initate a remote PowerShell session with your IoT device and run the following command: `sectask.exe -disable`.  
 **Note:** Device encryption will be re-enabled on subsequent device boot unless the scheduled encryption task is disabled.
+
+### Disabling Device Guard
+
+The turnkey security script generates SIPolicyOn.p7b and SIPolicyOff.p7b files in the folder.
+The wm.xml packages the SIPolicyOn.p7b and places it on the system as SIPolicy.p7b.
+
+For example:
+
+```
+C:\src\iot-adk-addonkit.db410c\TurnkeySecurity\QCDB\Output\DeviceGuard\Security.DeviceGuard.wm.xml
+…
+    <files>
+        <file
+            destinationDir="$(runtime.bootDrive)\efi\microsoft\boot"
+            source="SIPolicyOn.p7b"
+            name="SIPolicy.p7b" />
+    </files>
+..
+
+```
+
+If you create a package that takes the SIPolicyOff.p7b file and places it as a SIPolicy.p7b, it will apply this package and the Device Guard will be turned off.
+
+
+

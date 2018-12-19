@@ -5,8 +5,6 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: landing page
-ms.prod: Windows
-ms.technology: IoT
 description: This is the landing page for the Windows 10 IoT Core developer documentation.
 keywords: windows iot, developer documentation, docs, IoT Core
 ---
@@ -35,7 +33,7 @@ Windows 10 IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Ente
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/windows/iot-core/windows-iot-enterprise">
+        <a href="https://docs.microsoft.com/windows/iot-core/windows-iot-enterprise">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -53,7 +51,7 @@ Windows 10 IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Ente
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/windows/iot-core/windows-iot-core">
+        <a href="https://docs.microsoft.com/windows/iot-core/windows-iot-core">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -71,7 +69,7 @@ Windows 10 IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Ente
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview">
+        <a href="https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -128,11 +126,13 @@ Windows 10 IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Ente
 
 ---
 
-<h2>Got Bugs?</h2>
-<p>If you&#39;d like to report a bug, please use <a href="https://social.msdn.microsoft.com/Forums/en-US/fad1c6a0-e578-44a7-8e8d-95cc28c06ccd/need-logs-if-your-device-hasnt-updated-to-the-latest-iotcore-version?forum=WindowsIoT">the Feedback Hub app</a>. For anything else related to our documentation, file an issue on <a href="https://github.com/MicrosoftDocs/windows-iotcore-docs">our GitHub</a>.
+<h2>Got Bugs? Suggestions?</h2>
+<p>If you&#39;d like to report a bug, please use <a href="https://social.msdn.microsoft.com/Forums/en-US/fad1c6a0-e578-44a7-8e8d-95cc28c06ccd/need-logs-if-your-device-hasnt-updated-to-the-latest-iotcore-version?forum=WindowsIoT">the Feedback Hub app</a>. For anything else related to our documentation, such as suggestions, please file an issue on <a href="https://github.com/MicrosoftDocs/windows-iotcore-docs">our GitHub</a>. 
+<br><br>
+If you see anything you'd like to contribute or edit, open a pull request by clicking "Edit" in the upper right of any documentation page. We will not respond to any support-related inquiries on our issues channel - please refer to our forums for this. 
 
 ---
 
-<h2>Got Questions?</h2>
+<h2>Got Questions? Issues?</h2>
 <p>If anything comes up that the documentation doesn&#39;t answer, you can submit your questions to our <a href="https://techcommunity.microsoft.com/t5/Windows-10-IoT/bd-p/Windows10IoT">Tech Community</a> or <a href="https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT">MSDN forums</a>.</p>
 

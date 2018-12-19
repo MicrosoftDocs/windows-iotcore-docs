@@ -1,7 +1,7 @@
 ---
 title: Using WiFi on your Windows 10 IoT Core device
-author: derekameer
-ms.author: demeer
+author: saraclay
+ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to use, setup, and configure wifi on your Windows 10 IoT Core device.
@@ -20,7 +20,18 @@ including [SSH](../connect-your-device/SSH.md), [Powershell](../connect-your-dev
 A list of WiFi adapters that have been tested on Windows 10 IoT Core can be found on our [Supported Hardware](../learn-about-hardware/HardwareCompatList.md) page.
 
 ### Configuring WiFi
-To use WiFi, you'll need to provide Windows 10 IoT core with the WiFi network credentials. There are a few different options for doing so:
+To use WiFi, you'll need to provide Windows 10 IoT core with the WiFi network credentials. In addition to documentation on how to build companion app and WPS custom solutions, there are a few different options for doing so listed below.
+
+## Custom Companion App & WPS Wi-Fi Onboarding Samples
+
+Currently, we offer a number of ways for developers to build a custom wifi onboarding solution for thier device. 
+
+> | Samples | Description | Benefits  |  Drawbacks  |
+> |-------------|----------|---------|---------|
+> | [Companion App](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/CompanionApp) | Create a simple Xamarin app that can configure your device's Wi-Fi. |  Simple to use; Headed or headless for IoT Core; Clients work cross-platform | Developer is creating his or her own protocol; requires developer to implement security |
+> | [IoT Onboarding with Bluetooth RFCOMM](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTOnboarding_RFCOMM) | Create solution to configure your headless IoT device to connect with your Wi-Fi using Bluetooth RFCOMM.  | Relevant in headed or headless devices; Uses familiar technologies and concepts; Does not require IoT device to start a SoftAP; Does not need to adjust firewall settings | Requires Bluetooth support for client and server devices; Sample only provides client app for Windows 10; Server app pre-defines/hard-codes the names of the client device. |
+> | [IoT Onboarding with AllJoyn](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTOnboarding) | Remotely join your headless IoT device with your home Wi-Fi network. | Works with AllJoyn | Some support for AllJoyn is deprecated |
+> | Wi-Fi Protected Setup (WPS) APIs for devices | Perform WPS discovery to query the WPS methods supported by the network. | Simply leverage the [WiFiAdapter.GetWpsConfigurationAsync(WiFiAvailableNetwork](https://docs.microsoft.com/uwp/api/windows.devices.wifi.wifiadapter.getwpsconfigurationasync) and [WiFiAdapter.ConnectAsync](https://docs.microsoft.com/uwp/api/windows.devices.wifi.wifiadapter.connectasync) methods to connect wi-fi devices to specific networks. | You will need to become familiar with these APIs to leverage them.; only compatible with WPS-enabled routers|
 
 ## Headed Options:
 
@@ -45,6 +56,9 @@ An alternative way to configure WiFi is to use the default app. You can use this
 
 ## Headless Options:
 
+
+
+
 ### Option 1: Web-Based Configuration
 **Prerequisite:** Your device will already need to be connected to your local network through Ethernet and should have a USB WiFi Adapter plugged in
 
@@ -66,7 +80,7 @@ In **Windows 10 IoT Core Dashboard**, *Click* on the **Open in Device Portal** i
 
 **Prerequisite:** Your device will already need to be connected to your local network through Ethernet and should have a USB WiFi Adapter plugged in. You also need a Windows PC with WiFi capability.
 
-Setting up WiFi using wireless profiles is supported in Windows 10 IoT Core. See [MSDN](https://msdn.microsoft.com/en-us/library/windows/desktop/aa369853) for details and examples.
+Setting up WiFi using wireless profiles is supported in Windows 10 IoT Core. See [MSDN](https://msdn.microsoft.com/library/windows/desktop/aa369853) for details and examples.
 
 1. Connect your Windows PC to the desired wireless network and create WiFi profile XML file with these commands:
 

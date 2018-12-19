@@ -54,6 +54,28 @@ ___
 
     [LulzBot TAZ 6 image](http://devel.lulzbot.com/TAZ/Olive/photos/TAZ_6_Angle_Rock2pus_transparent.png) by [Aleph Objects, Inc.](https://www.alephobjects.com/) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
     
+    If you wish to install a custom printer select the "Custom" option from the list of Printers. Custom 3d Printers need a configuration xml called the PrintDeviceCapabilities.xml file to be provided to correctly connect and print to the 3d printer. A sample PrintDeviceCapabilities.xml file can be found here https://docs.microsoft.com/windows-hardware/drivers/3dprint/sample-configuration-xml
+   
+   The minimum changes you need to make in the xml file are to update the following sections with the correct values specific to your compatible printer.
+
+These values specify the print bed dimensions of your 3d printer to the slicer when processing the 3d model
+
+    <psk3d:Job3DOutputAreaWidth>200000</psk3d:Job3DOutputAreaWidth>
+    <psk3d:Job3DOutputAreaDepth>200000</psk3d:Job3DOutputAreaDepth>
+    <psk3d:Job3DOutputAreaHeight>200000</psk3d:Job3DOutputAreaHeight>
+
+
+The value in the psk3dx:baudrate xml tag controls the specific baud rate to use while communicating with the 3d printer from the raspberry pi3. Set the appropriate baud rate specific to your 3d printer. 
+
+```
+\<psk3dx:baudrate\>115200</psk3dx:baudrate>
+```
+
+The other values in the PrintDeviceCapabilities xml are used to notify the slicer in the 3d print driver to fine tune how it works with your specific compatible printer.
+More information on all these values are provided [here](https://docs.microsoft.com/windows-hardware/drivers/3dprint/slicer-settings).
+
+    
+    
 ## 4. Add your 3D Printer
 ___
 * Go to your Windows 10 PC and go to **Settings** -> **Devices** -> **Printers & Scanners**.

@@ -34,7 +34,7 @@ You can download and install IoT templates to enable Background Applications fro
 
 Creating a background application is very similar to creating a Background Task.  When the Background Application starts, the Run method is called:
 
-```C#
+```csharp
 public void Run(IBackgroundTaskInstance taskInstance)
 {
 }
@@ -42,7 +42,7 @@ public void Run(IBackgroundTaskInstance taskInstance)
 
 When the Run method ends, unless a deferral object is created, the background application ends. The common practice, for asynchronous programming is to take a deferral like this:
 
-```C#
+```csharp
 private BackgroundTaskDeferral deferral;
 public void Run(IBackgroundTaskInstance taskInstance)
 {
@@ -56,7 +56,7 @@ public void Run(IBackgroundTaskInstance taskInstance)
 
 Once a deferral is taken, the background application will continue until the deferral object's Complete method is called.
 
-```C#
+```csharp
 deferral.Complete();
 ```
 
@@ -66,7 +66,7 @@ This question can be broken into deployment and invocation.
 
 To deploy a background application, you can either:
 
-* Use Visual Studio's F5 (which will build, deploy and invoke).  For more detail, see our [Hello World sample](https://developer.microsoft.com/en-us/windows/iot/samples/helloworld.htm#deploy-the-app-to-your-windows-iot-core-device) where we describe how to deploy and launch from Visual Studio.
+* Use Visual Studio's F5 (which will build, deploy and invoke).  For more details, see our [Hello World sample](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/HelloWorld) where we describe how to deploy and launch from Visual Studio.
 
 > [!NOTE]
 > This will not configure your background application to start when the device boots.

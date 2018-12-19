@@ -4,7 +4,7 @@ author: saraclay
 ms.author: saclayt
 ms.date: 09/07/17
 ms.topic: article
-ms.prod: Windows
+ms.prod: windows-iot
 ms.technology: IoT
 description: Learn how to troubleshoot AllJoyn technology using this comprehensive guide covering known issues and troubleshooting settings.
 keywords: windows iot, AllJoyn
@@ -169,7 +169,7 @@ In order to extract information from ETW entries, you can right-click on an entr
 	</Event>
 
 
-This information can help track down AllJoyn issues, or assist in providing detail when reporting issues to Microsoft or other partners. You can learn more about [ETW traces and the Event Viewer on MSDN](https://msdn.microsoft.com/en-us/library/windows/desktop/bb968803.aspx).
+This information can help track down AllJoyn issues, or assist in providing detail when reporting issues to Microsoft or other partners. You can learn more about [ETW traces and the Event Viewer on MSDN](https://msdn.microsoft.com/library/windows/desktop/bb968803.aspx).
 
 ### Known Issues and Limitations
 
@@ -177,5 +177,5 @@ By-Design limitations for AllJoyn in Windows 10:
 
 - The AllJoyn Router Node is not auto-started by AllJoyn devices or apps on the network when no apps are running on the Windows 10 PC. The Windows 10 Router Node can be started from an elevated command prompt or Powershell session by running the command "net start ajrouter".
 - AllJoyn UWP apps can't discover or interact with other AllJoyn UWP apps or AllJoyn desktop apps running on the same machine. This is a part of the app isolation promise that is implemented in Windows 10 for UWP apps. 
-  - If you deploy an AllJoyn UWP app from Visual Studio, app isolation app isolation is bypassed for that app (this is called a "loopback exemption "). Each UWP app that is deployed from Visual Studio will be able to discover and interact with other loopback-exempt UWP apps and desktop apps as long as those apps use About-based advertisement/discovery. If you are running Windows 10 IoT Core in "Embedded Mode", this loopback exception is automatically applied, it's not something that you need to configure. You can read more about loopback exceptions [on MSDN](https://msdn.microsoft.com/en-us/library/windows/apps/Hh780593.aspx).
+  - If you deploy an AllJoyn UWP app from Visual Studio, app isolation app isolation is bypassed for that app (this is called a "loopback exemption "). Each UWP app that is deployed from Visual Studio will be able to discover and interact with other loopback-exempt UWP apps and desktop apps as long as those apps use About-based advertisement/discovery. If you are running Windows 10 IoT Core in "Embedded Mode", this loopback exception is automatically applied, it's not something that you need to configure. You can read more about loopback exceptions [on MSDN](https://msdn.microsoft.com/library/windows/apps/Hh780593.aspx).
 

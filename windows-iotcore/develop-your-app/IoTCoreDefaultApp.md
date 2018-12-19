@@ -6,24 +6,43 @@ ms.date: 08/08/2018
 ms.topic: article
 description: Learn about the Windows 10 IoT Core Default App and its features.
 keywords: windows iot, windows 10 iot core, default app
+ms.custom: RS5
 ---
 
 # Windows 10 IoT Core Default App Overview
 
 > [!TIP]
-> If you find that you'd like to see a feature added to this sample app, [open an issue](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp) on GitHub to let us know. 
+> If you find that you'd like to see a feature added to this sample app, [open an issue](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp) on GitHub to let us know. If you'd like to file a bug, follow the instructions for the Feedback Hub [here](https://social.msdn.microsoft.com/Forums/en-US/fad1c6a0-e578-44a7-8e8d-95cc28c06ccd/need-logs-if-your-device-hasnt-updated-to-the-latest-iotcore-version?forum=WindowsIoT).
 
 When you initially flash Windows 10 IoT Core, you will be presented with the Windows 10 IoT Core Default App upon startup, which looks like this:
 
 ![Screenshot of the IoT Core Default App](../media/IoTCoreDefaultApp/DeviceInfoPage-Screenshot.jpg)
 
-The purpose of this application is not only to provide you with a friendly shell to interact with when you first boot up Windows 10 IoT Core, but we have open-sourced the code for this application [here](http://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTCoreDefaultApp/CS) so that you can plug and play with these features on your own custom application(s).
+The purpose of this application is not only to provide you with a friendly shell to interact with when you first boot up Windows 10 IoT Core, but we have open-sourced the code for this application [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp) so that you can plug and play with these features on your own custom application(s).
 
 This article will give you a rundown of the different features that the Windows 10 IoT Core Default App offers as well as how you can leverage these different features for your own applications.
 
 ## Leveraging the IoT Core Default App 
 
-The IoT Core Default App can be customized and extended, or you can use the source code as an example for your own app. To try this out for yourself, download the zip of our samples or check out the code for the IoT Core Default App [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp/CS). For any questions, please file an issue on our samples repo [here](https://github.com/Microsoft/Windows-iotcore-samples/issues).
+> [!IMPORTANT]
+> Do not use maker images for commercialization. If you are commercializing a device, you must use a custom FFU for optimal security. Learn more [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
+
+The IoT Core Default App can be customized and extended, or you can use the source code as an example for your own app. To try this out for yourself, download the zip of our samples or check out the code for the IoT Core Default App [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp). For any questions, please file an issue on our samples repo [here](https://github.com/Microsoft/Windows-iotcore-samples/issues).
+
+As shown under the [Settings section](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp#settings
+) below, in some cases, you may configure default settings and features on your customer system on behalf of the end user. However, if you turn these settings and features on by default or if diagnostics are above the basic setting, you must:
+
+* Notify the end user that these features have been enable and provide the end user with the link to Microsoft's Privacy Statement web page [here](http://go.microsoft.com/fwlink/?LinkId=521839). 
+* Secure consent from the relevant end user to enable such features by default (as required by applicable law).
+* Provide end users the ability to change the Diagnostics setting back to the basic setting.
+* If you enable Microsoft Accounts and you have access to end user data, if the end user deletes the Microsoft Account, you must enable simultaneous deletion of all the end user's Microsoft Account data on the device. 
+
+## Out-of-Box Experience (OOBE)
+
+The out-of-box experience for the IoT Core Default App is as lean as it gets. The first pages will ask for a default language and wi-fi settings. From there, in order for your app to be GDPR-compliant, you must have a diagnostic data screen and, if you're planning to track location, you will need to have a location permissions screen too. Examples of both are shown below. 
+
+![Location settings for OOBE](../media/IoTCoreDefaultApp/OOBE3.jpg)
+![Diagnostic settings for OOBE](../media/IoTCoreDefaultApp/OOBE4.jpg)
 
 ## Command Bar
 The Command Bar is the persistant horizonatal bar located at the bottom of the screen. This provides easy access to the following funtionality:
@@ -99,7 +118,7 @@ Some commands require administrator access. For security purposes the app uses a
 ## Settings
 You'll be able to configure a number of settings here including Wi-Fi, Bluetooth, power options, and more.
 
-#### App Settings
+### App Settings
 The **App Settings** section allows you to configure various settings for pages in the app.  
 
 Some of the settings you can customize are:
@@ -110,7 +129,7 @@ Some of the settings you can customize are:
 
 ##### Weather Settings
 * Change the location
-  > This feature is only enabled if you have provided a valid [Bing Map Service Token](https://msdn.microsoft.com/en-us/library/ff428642.aspx).  To pass the token to the app, create a **MapToken.config** file in the LocalState folder of the app (e.g. C:\Data\USERS\\[User Account]\AppData\Packages\\[Package Full Name]\LocalState\MapToken.config) and restart the app.
+  > This feature is only enabled if you have provided a valid [Bing Map Service Token](https://msdn.microsoft.com/library/ff428642.aspx).  To pass the token to the app, create a **MapToken.config** file in the LocalState folder of the app (e.g. C:\Data\USERS\\[User Account]\AppData\Packages\\[Package Full Name]\LocalState\MapToken.config) and restart the app.
 * Expand the map
 * Enable/disable map flipping so that the map and the weather switch places periodically to prevent screen burn-in
 

@@ -1,7 +1,7 @@
 ---
 title: Windows 10 IoT Core Command Line Utilities
 author: bfjelds
-ms.author: Brian.Fjeldstad
+ms.author: bfjelds
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn the command line utilities to use with PowreShell after connecting to your device.
@@ -10,7 +10,10 @@ keywords: windows iot, command line, command line utilities, PowerShell
 
 # Windows 10 IoT Core Command Line Utils
 
-Looking to configure some of the settings on your device? The below tools all come pre-installed on your device to help you with that. Use PowerShell to run these commands after [connecting to your device](../connect-your-device/PowerShell.md).
+Looking to configure some of the settings on your device? The below tools are available at your disposal. Use PowerShell to run these commands after [connecting to your device](../connect-your-device/PowerShell.md).
+
+> [!NOTE]
+> These tools are not pre-loaded - you will need to include appropriate feature IDs to get these tools in the image.
 
 ## IoT Core-specific Command Line Utils
 
@@ -58,6 +61,25 @@ The `IoTSettings` tool changes region, user language or speech language. This is
 ### **Change default audio device and volume:**
 
 The `IoTCoreAudioControlTool` tool controls audio related options, such as setting default capture and playback devices and changing the volume. For a full list of parameters, run `IoTCoreAudioControlTool h`.
+
+### **Manually installing .APPX files:**
+DeployAppx enables installing, and removing in .APPX packages in development scenarios.  The correct method for installing .APPX packages in production images is to use a provisioning package as documented in the [Install your app](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appinstaller#using-provisioning-package-from-wcd) subject.  DeployAppx also supports querying .APPX package information.
+
+*  `DeployAppx install MyApp.appx` installs the .APPX and the certificate of the same name if found.
+* `DeployAppx install force MyApp.appx` forces uninstalling the currently installed .APPX with the same package name if found before installing the new .APPX.  This is useful for installing an .APPX with the same or lower version number as the currently installed .APPX.
+* `DeployAppx install retry MyApp.appx` retry installing the .APPX 10 times on failure with 2 second delay between attempts.
+* `DeployAppx uninstall App_1.0.1.0_x86__publisherid123` uninstall the .appx with the matching package full name.
+*  `DeployAppx uninstall MyApp.appx` uninstall any installed .APPX with a matching package family name.
+* `DeployAppx getpackages` lists installed package full names.
+* `DeployAppx getpackageid IotCoreDefaultApp.appx` prints out the package name, the package family name, and the package full name for the .APPX.
+```cmd
+DeployAppx getpackageid IotCoreDefaultApp.appx
+         Package Name: 16454Windows10IOTCore.IOTCoreDefaultApplication
+  Package Family Name: 16454Windows10IOTCore.IOTCoreDefaultApplication_rz84sjny4rf58
+    Package Full Name: 16454Windows10IOTCore.IOTCoreDefaultApplication_2.0.8.0_arm__rz84sjny4rf58
+```
+* `DeployAppx register appxmanifest.xml` unsupported
+
 
 ## General Command Line Utils
 
@@ -174,7 +196,7 @@ Usage: MinComm.exe [-list] device_path [baud=<B>] [parity=<P>] [data=<D>] [stop=
 Parameters that are not specified will default to the port's current
 configuration. For more information on the connection parameters, see the
 Technet documentation for the Mode command:
-  https://technet.microsoft.com/en-us/library/cc732236.aspx
+  https://technet.microsoft.com/library/cc732236.aspx
 
 Examples:
   Connect to the first serial port found in the port's current configuration:

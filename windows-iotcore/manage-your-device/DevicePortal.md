@@ -4,7 +4,7 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: Windows
+ms.prod: windows-iot
 ms.technology: IoT
 description: Learn about how to use the Windows Device Portal to configure and manage your device remotely.
 keywords: windows iot, Windows Device Portal, remote, device portal
@@ -12,19 +12,22 @@ keywords: windows iot, Windows Device Portal, remote, device portal
 
 # Windows Device Portal
    The Windows Device Portal (WDP) lets you configure and manage your device remotely over your local network.
-   The main features are documented on the [Windows Device Portal overview page](https://msdn.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal)
+   The main features are documented on the [Windows Device Portal overview page](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal)
 
 ![Device Portal Home](../media/deviceportal/deviceportal.png)
+
+> [!IMPORTANT]
+> Do not use maker images for commercialization. If you are commercializing a device, you must use a custom FFU for optimal security. Learn more [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
 
 > [!WARNING]
 > Live kernel debug is currently failing for ARM devices. We are working to get this fixed.
 
 > [!IMPORTANT]
-> If you are building an open retail device for commercial deployment to a "specific/limited installation" (i.e. factory or retail store) where the end-user does the final configuration and you document your customers that they must [obtain a certificate for WDP and install it on both WDP and connecting browsers and passwords are changed on WDP](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal-ssl), then using WDP in this narrow commercial instance is acceptable. Retail images in this scenario should still *not* include IOT_TOOLKIT, but should use the IOT_WEBBEXTN package to pull in WDP. 
+> If you are building an open retail device for commercial deployment to a "specific/limited installation" (i.e. factory or retail store) where the end-user does the final configuration and you document your customers that they must [obtain a certificate for WDP and install it on both WDP and connecting browsers and passwords are changed on WDP](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-ssl), then using WDP in this narrow commercial instance is acceptable. Retail images in this scenario should still *not* include IOT_TOOLKIT, but should use the IOT_WEBBEXTN package to pull in WDP. 
 
 ## Shared Documentation
 WDP is a developer tool shared among all Windows 10 devices. Each product has its own unique features, but the core functionality is the same.
-Documentation for the main features are found on the [Windows Device Portal overview page](https://msdn.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal). The rest of the documentation below will be IoT specific.
+Documentation for the main features are found on the [Windows Device Portal overview page](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal). The rest of the documentation below will be IoT specific.
 
 ## Set up
 1. Connect your board to the internet
@@ -99,7 +102,7 @@ IoT Onboarding provides support for configuring an IoT device's Wi-Fi connectivi
 
 **Internet Connection Sharing (ICS)**
 Internet Connection Sharing allows you to share the Internet access of your device with other devices connected to your device over the Wi-Fi SoftAP.
-To use this feature, your Windows 10 IoT Device needs to have access to the internet (e.g. through a wired LAN connection).  In 'Connectivity->Onboarding->SoftAP settings' click 'enable' and set SSID name and password.  Then in 'Connectivity->Internet connection sharing' for 'access point adapter' select "Microsoft Wi-FI Direct Virtual Adapter #2" and for 'shared network adapter' select your your wired ethernet adapter.  Finally, click 'start shared access.'  Once started, connect a separate Wi-Fi enabled device to the SoftAP on your Windows 10 IoT device.  After a connection is established your separate Wi-Fi enabled device will be able to connect to the internet through your Windows 10 IoT device.
+To use this feature, your Windows 10 IoT Device needs to have access to the internet (e.g. through a wired LAN connection).  In 'Connectivity->Onboarding->SoftAP settings' click 'enable' and set SSID name and password.  Then in 'Connectivity->Internet connection sharing' for 'access point adapter' select "Microsoft Wi-FI Direct Virtual Adapter #2" and for 'shared network adapter' select your wired ethernet adapter.  Finally, click 'start shared access.'  Once started, connect a separate Wi-Fi enabled device to the SoftAP on your Windows 10 IoT device.  After a connection is established your separate Wi-Fi enabled device will be able to connect to the internet through your Windows 10 IoT device.
 
 > [!NOTE]
 > ICS is disabled when a Wi-Fi profile exists on the device. 
@@ -169,7 +172,7 @@ The Windows IoT Remote Server allows users to see what their device is displayin
 
         reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\webmanagement\service /v HttpPort /t REG_DWORD /d <your port number>
         
-5. Restart the WebManagement sevice by running following or by restarting the device
+5. Restart the WebManagement service by running following or by restarting the device
 
         net stop webmanagement ; net start webmanagement
 
@@ -185,10 +188,10 @@ If you want to use HTTPS, first take the ownership of the registry key as descri
 
 In the Windows 10 Creators Update, the Windows Device Portal added a way for device administrators to install a custom certificate for use in HTTPS communication.
 
-To learn more, [read the documentation under the Windows Device Portal docs](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal-ssl). 
+To learn more, [read the documentation under the Windows Device Portal docs](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-ssl). 
 
 
 ## Additional Resources
 ___ 
 
-1. [Windows Device Portal overview page](https://msdn.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal)
+1. [Windows Device Portal overview page](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal)

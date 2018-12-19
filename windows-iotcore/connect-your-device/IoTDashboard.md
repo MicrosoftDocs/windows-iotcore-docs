@@ -19,7 +19,7 @@ You can download the [IoT Core Dashboard here](http://go.microsoft.com/fwlink/?L
 
 ## Set up a new device
 ___
-The IoT Dashboard makes it easy to set up a new device. For detailed instructions on how to get started, see the [Get Started](https://developer.microsoft.com/en-us/windows/iot/getstarted) page.
+The IoT Dashboard makes it easy to set up a new device. For detailed instructions on how to get started, see the [Get Started](https://docs.microsoft.com/en-us/windows/iot-core/getstarted) page.
 
 
 ![IoT Dashboard Setup Page](../media/IoTDashboard/IoTDashboard_SetupPage.PNG)
@@ -81,7 +81,7 @@ You can also connect to the device using Windows PowerShell.
 ___
 IoT Dashboard lets you provision IoT Core devices with Azure IoT Hub. You can read more about it in this [blog post](https://blogs.windows.com/buildingapps/2016/07/20/building-secure-apps-for-windows-iot-core).
 
-[Learn how to use the IoT Dashboard with Azure](https://docs.microsoft.com/en-us/windows/iot-core/connect-to-cloud/connectdevicetocloud)
+[Learn how to use the IoT Dashboard with Azure](https://docs.microsoft.com/windows/iot-core/connect-to-cloud/connectdevicetocloud)
 
 ## Quick Run Samples
 ___

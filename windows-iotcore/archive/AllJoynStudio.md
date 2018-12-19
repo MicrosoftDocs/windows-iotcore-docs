@@ -4,7 +4,7 @@ author: saraclay
 ms.author: saclayt
 ms.date: 09/07/17
 ms.topic: article
-ms.prod: Windows
+ms.prod: windows-iot
 ms.technology: IoT
 description: Learn about how to create an AllJoyn UWP App using the Universal Windows Platform (UWP) AllJoyn APIs and Visual Studio 2017.
 keywords: windows iot, AllJoyn
@@ -253,7 +253,7 @@ For a detailed walkthrough of how to create an AllJoyn app, please watch the All
 
 > [!VIDEO https://channel9.msdn.com/Events/Build/2015/2-623/player]
 
-Note that AllJoyn communication between two UWP apps on the same machine is disabled by Windows policy unless they have enabled a loopback exception, such as when being directly deployed from Visual Studio.  For detailed instructions on enabling loopback exemption, see [here](https://msdn.microsoft.com/en-us/library/windows/apps/Hh780593.aspx).
+Note that AllJoyn communication between two UWP apps on the same machine is disabled by Windows policy unless they have enabled a loopback exception, such as when being directly deployed from Visual Studio.  For detailed instructions on enabling loopback exemption, see [here](https://msdn.microsoft.com/library/windows/apps/Hh780593.aspx).
 
 
 

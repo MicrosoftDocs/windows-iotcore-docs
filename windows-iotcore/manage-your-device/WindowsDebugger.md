@@ -1,7 +1,7 @@
 ---
 title: Windows Debugger
 author: bfjelds
-ms.author: Brian.Fjeldstad
+ms.author: bfjelds
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to use Windows Debugger to debug your Windows IoT Core device.
@@ -17,9 +17,9 @@ WinDbg is a very powerful debugger that most Windows developers are familiar wit
 
 * [Debugging Tools for Windows](https://msdn.microsoft.com/library/windows/hardware/ff551063(v=vs.85).aspx) 
 
-* [Getting Started with Windows Debugging](https://msdn.microsoft.com/en-us/library/windows/hardware/mt219729(v=vs.85).aspx) 
+* [Getting Started with Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/mt219729(v=vs.85).aspx) 
 
-* [Crash Dump Analysis Using WinDbg](https://msdn.microsoft.com/en-us/library/windows/hardware/ff539316(v=vs.85).aspx) 
+* [Crash Dump Analysis Using WinDbg](https://msdn.microsoft.com/library/windows/hardware/ff539316(v=vs.85).aspx) 
 
 
 ## MinnowBoard Max (MBM) 

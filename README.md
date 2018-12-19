@@ -23,7 +23,7 @@ or trademarks, whether by implication, estoppel or otherwise.
 
 ## Contributing
 
-This is the repository for Windows 10 IoT **documentation** hosted at [https://docs.microsoft.com/windows/iot-core](https://docs.microsoft.com/en-us/windows/iot-core).
+This is the repository for Windows 10 IoT **documentation** hosted at [https://docs.microsoft.com/windows/iot-core](https://docs.microsoft.com/windows/iot-core).
 
 If you would like to see new coverage or have feedback, please consider [**contributing**](/CONTRIBUTING.md).  You can edit the existing content, add new content, or simply create new [issues](https://github.com/MicrosoftDocs/windows-iotcore-docs/issues). We’ll take a look at your suggestions and will work together to incorporate them into the docs.
 
@@ -63,7 +63,7 @@ These other text elements have styling available:
 _________________________
 
 Horizontal rules are available. We suggest using them sparingly to reduce clutter.
-Do not combine  horizontal rules with heading tags; some already used line styles for visual hierarchy.
+Do not combine horizontal rules with heading tags; some already used line styles for visual hierarchy.
 Also, do not combine notes (see below) in the middle of numbered lists. This messes with the numbering order.
 
 ## Displaying code
@@ -74,7 +74,7 @@ Or you can display blocks of code like so:
 
 ```css
 body {
-	background: #fff;
+    background: #fff;
 }
 ```
 
