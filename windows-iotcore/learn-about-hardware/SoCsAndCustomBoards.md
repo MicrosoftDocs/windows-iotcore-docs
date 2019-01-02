@@ -98,10 +98,8 @@ Binary BSP for DragonBoard 410c (based on Qualcomm AQP8016 SoC) can be downloade
 
 The BSP package includes the source code for ACPI to allow for simple hardware customizations that only require ACPI changes.  
 
-**IMPORTANT** If you need additional hardware customizations, such as using a specific 
-MIPI-DSI display panel, enabling Platform Secure Boot, RF calibration and certification 
-(eg. FCC, CE), you'll need become a Qualcomm BSP source code licensee, or to work with a 
-provider that has access (see Experienced partners below).
+> [!IMPORTANT] 
+> If you need additional hardware customizations, such as using a specific MIPI-DSI display panel, enabling Platform Secure Boot, RF calibration and certification (eg. FCC, CE), you'll need become a Qualcomm BSP source code licensee, or to work with a provider that has access (see Experienced partners below).
 
 Recommendations:
 1.   If possible, work with an experienced SoM vendor to enable customized design.
