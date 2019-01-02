@@ -25,6 +25,9 @@ Here's how to debug your IoT Core console application remotely in Visual Studio:
 *  In Visual Studio, you can configure your target by editing your project's properties (be sure to make all of the highlighted changes as appropriate to your board's name or IP address):
 
     ![ConsoleApplication Remote Machine Project Settings](../media/Console/console_project_settings.png)
+    
+> [!NOTE]
+> If you're not seeing the image above, please go to the "Solution Explorer" in the context menu, and go to "Project Properties". You can find more information for project properties [here](https://docs.microsoft.com/en-us/visualstudio/ide/managing-project-and-solution-properties?view=vs-2017).
 
 > [!TIP]
 > You can use the IP address instead of the Windows IoT Core device name.
