@@ -103,10 +103,8 @@ Binary BSP for DragonBoard 410c (based on Qualcomm AQP8016 SoC) can be downloade
 
 The BSP package includes the source code for ACPI to allow for simple hardware customizations that only require ACPI changes.  
 
-**IMPORTANT** If you need additional hardware customizations, such as using a specific
-MIPI-DSI display panel, enabling Platform Secure Boot, RF calibration and certification
-(eg. FCC, CE), you'll need become a Qualcomm BSP source code licensee, or to work with a
-provider that has access (see Experienced partners below).
+> [!IMPORTANT]
+> If you need additional hardware customizations, such as using a specific MIPI-DSI display panel, enabling Platform Secure Boot, RF calibration and certification (eg. FCC, CE), you'll need become a Qualcomm BSP source code licensee, or to work with a provider that has access (see Experienced partners below).
 
 Recommendations:
 
@@ -123,9 +121,9 @@ Recommendations:
 
 ### **NXP preview**
 
-NXP support for Windows 10 IoT Core is in private preview. Please sign up to express interest [here](http://aka.ms/iotnxp).
+NXP support for Windows 10 IoT Core is in non-commercial public preview. Please sign up to express interest [here](http://aka.ms/iotnxp).
 
-You can also reach out to partners we're working with during preview:
+You can also reach out to partners we're working with:
 
 * Advantech [RSB-4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858) - buy@advantech.tw
 * Keith & Koep [pConXS](http://wce.keith-koep.com/en/products/pconxs-ff/) with [Trizeps VII](http://wce.keith-koep.com/en/products/trizeps7-i.MX6/) - contact@keith-koep.com
