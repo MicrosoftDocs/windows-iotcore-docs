@@ -121,7 +121,7 @@ Recommendations:
 
 ### **NXP preview**
 
-NXP support for Windows 10 IoT Core is in non-commercial public preview. Please sign up to express interest [here](http://aka.ms/iotnxp).
+NXP support for Windows 10 IoT Core is in public preview. For more information, the access the BSP, or to find a hardware partner, please go to the [NXP SoC page](http://aka.ms/iotnxp).
 
 You can also reach out to partners we're working with:
 
