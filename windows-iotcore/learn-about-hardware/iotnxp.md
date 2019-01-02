@@ -96,5 +96,10 @@ Several Microsoft and NXP partners have enabled commercial i.MX 6 and i.MX 7 dev
 <td align="left"><p><p><a href="mailto:MichaelFox@via.com.tw">Michael Fox</a> or <a href="mailto:dreamku@via.com.tw">Dream Ku</p></td>
 </tr>
 
+<tr class="odd">
+<td align="left"><p><a href="https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/i.mx-applications-processors/i.mx-6-processors/evaluation-kit-for-the-i.mx-6ull-and-6ulz-applications-processor:MCIMX6ULL-EVK">MCIMX6ULL-EVK</a></p></td>
+<td align="left"><p><p><a href="mailto:Wei.A.Wang@nxp.com">Wei Wang</a></p></td>
+</tr>
+
 </tbody>
 </table>
