@@ -8,6 +8,10 @@ description: Learn how to deploy an app using the Visual Studio remote debugging
 keywords: windows iot, visual studio, app deployment, remote debugging
 ---
 
+> [!NOTE]
+> Visual Studio will generate a cryptic error when deploying to a RS5 (or RS4 with OpenSSH enabled) IoT image unless a SDK from RS4 or greater is installed that Visual Studio can access.
+
+
 # Deploying an App with Visual Studio
 
 Deploying and debugging your application is straightforward with Visual Studio. We'll use the **Remote Debugging** feature to deploy the app to your locally connected Windows 10 IoT Core device. 

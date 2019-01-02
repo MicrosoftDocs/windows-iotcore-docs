@@ -98,10 +98,8 @@ Binary BSP for DragonBoard 410c (based on Qualcomm AQP8016 SoC) can be downloade
 
 The BSP package includes the source code for ACPI to allow for simple hardware customizations that only require ACPI changes.  
 
-**IMPORTANT** If you need additional hardware customizations, such as using a specific 
-MIPI-DSI display panel, enabling Platform Secure Boot, RF calibration and certification 
-(eg. FCC, CE), you'll need become a Qualcomm BSP source code licensee, or to work with a 
-provider that has access (see Experienced partners below).
+> [!IMPORTANT] 
+> If you need additional hardware customizations, such as using a specific MIPI-DSI display panel, enabling Platform Secure Boot, RF calibration and certification (eg. FCC, CE), you'll need become a Qualcomm BSP source code licensee, or to work with a provider that has access (see Experienced partners below).
 
 Recommendations:
 1.   If possible, work with an experienced SoM vendor to enable customized design.
@@ -117,16 +115,7 @@ Recommendations:
 
 
 ### **NXP preview**
-NXP support for Windows 10 IoT Core is in private preview. Please sign up to express interest [here](http://aka.ms/iotnxp).
-
-You can also reach out to partners we're working with during preview:
-* Advantech [RSB-4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858) - buy@advantech.tw
-* Keith & Koep [pConXS](http://wce.keith-koep.com/en/products/pconxs-ff/) with [Trizeps VII](http://wce.keith-koep.com/en/products/trizeps7-i.MX6/) - contact@keith-koep.com
-* Kontron [SMARC-sAMX6i](https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html) - Martin Unverdorben (martin.unverdorben@kontron.com)
-* Solid Run [Hummingboard Edge](https://www.solid-run.com/imx6-win-10-iot-core/ )- Ilya Viten (ilya@solid-run.com)
-* Geniatech [SoM-iMX6Q-Q7](https://www.geniatech.com/product/som-imx6q-q7/) & [SoM-iMX7D](https://www.geniatech.com/product/som-imx7d/) - Mike Decker (mike.decker@geniatech.com) or Fang Jijun (Fjj@geniatech.com)
-* VIA [VAB-820](https://www.viaembeddedstore.com/shop/boards/vab-820/) - Michael Fox (MichaelFox@via.com.tw) or Dream Ku (dreamku@via.com.tw)
-* Phytec [phyBOARD-i.MX7](https://phytec.com/products/single-board-computers/phyboard-i.mx7/) - Brad Dodson (sales@phytec.com)
+NXP support for Windows 10 IoT Core is in public preview. For more information, the access the BSP, or to find a hardware partner, please go to the [NXP SoC page](http://aka.ms/iotnxp).
 
 ## Other options
 If you find that you'd still like to create a custom board, we have provided a few suggestions of manufacturers below that can help with schematics and layout for a board.
