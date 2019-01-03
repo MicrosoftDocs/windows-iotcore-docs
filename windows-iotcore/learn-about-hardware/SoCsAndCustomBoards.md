@@ -32,7 +32,7 @@ You'll also need to decide whether you want to use an off-the-shelf board or dev
 ## Windows 10 IoT Core Features by Processor Family
 
 > [!NOTE]
-> This list takes into consideration processors that will be available in Fall 2018.
+> This list takes into consideration processors that are in non-commercial public preview.
 
 To help you select the right platform for your device, the table below shows the features that are supported by processor family with Windows 10 IoT Core. All features listed below are supported in Windows 10 IoT Core, however some SoCs may not have the specific IP included in their design, and are such indicated with "N/A". In such cases, a 3rd party solution can be incorporate into the design to provide the required functionality.  In a limited number of cases where a Windows 10 IoT Core feature is not implemented on a processor, the entry is left blank.
 
