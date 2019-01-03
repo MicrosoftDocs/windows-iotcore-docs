@@ -22,7 +22,7 @@ Please make sure you've created a basic image from [Creating a Basic IoT Core Im
 
 You will need the following tools installed to complete this section:
 * **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows IoT Core.
-* **Iot Core Shell**. This is included with the Windows ADK and is the commandline window interface where you execute commands to build custom FFU images for Windows IoT Core.
+* **IoT Core Powershell Environment**. This is included with the Windows ADK and is the Powershell commandline window interface where you execute commands to build custom FFU images for Windows IoT Core.
 * **[Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore)** for your specific architecture. These provide the IoT Core packages and feature manifest files needed to build custom Windows IoT images for the specific architecture (ARM, ARM64, x86, x64).
 * **[IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)**. These provide the sample scripts and base structure for building custom Windows IoT Core images.
 * A text editor like **Notepad** or **VS Code**.
@@ -33,7 +33,7 @@ Create a few sample text files using Notepad and add some random text so that th
 
 
 ## Build a Package for Test Files
-1. Open the IoT Core Shell: run C:\MyWorkspace\IoTCorePShell.cmd as an administrator and create a File package using [Add-IoTFilePackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTFilePackage.md):
+1. Open the **IoT Core Powershell Environment**: run `IoTCorePShell.cmd` as an administrator and create a File package using [Add-IoTFilePackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTFilePackage.md):
 
 ```powershell
 # Array of files with destinationDir, Source and destinationFilename
@@ -76,17 +76,6 @@ New-IoTCabPackage Registry.Settings
 
 The package is built and is available at `C:\MyWorkspace\Build\<arch>\pkgs`.
 
-## Create a new product
-
-Create a new product folder using [Add-IoTProduct](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProduct.md):
-
-```powershell
-Add-IoTProduct ProductB RPi2
-(or) newproduct ProductB RPi2
-```
-
-This will prompt you to enter SMBIOS values.
-
 ## Update the project's configuration files
 Update the product test configuration to include the features using [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md):
 
@@ -125,6 +114,9 @@ In order to verify that the files were added on the device, do the following:
 For verifying registry keys, follow these steps:
 
 1. On the technician PC, connect to your device using an SSH client such as [PuTTY](https://www.putty.org/). For example, use the IP address and port 22 to connect to the device. Then login using the Administrator account and password. (To learn more, see [SSH](https://docs.microsoft.com/windows/iot-core/connect-your-device/SSH)).
+
+    > [!NOTE]
+    > When using SSH to connect to your device, you will be prompted for credentials for IoT Core. Please use *Administrator* and *p@ssw0rd* as the Username and Password to login to the device (unless you changed the credentials previously). 
 
 2. From the command line in the SSH client, query the system for the registry key. In our example, this command was executed to check the existence of the registry key:
 

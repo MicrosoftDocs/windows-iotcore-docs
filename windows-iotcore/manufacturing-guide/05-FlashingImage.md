@@ -112,7 +112,9 @@ We first need to create a bootable USB drive that we can use to boot on the spec
 
         dism.exe /Apply-Image /ImageFile:"D:\flash.ffu" /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
 
-    **NOTE** - Most of the time, the on-board storage target to be flashed is enumerated as `PhysicalDrive0`, however, if there are multiple storage devices, it can enumerate as other drive number.  You can use the `list disk` command in `diskpart` to verify the drive number.
+
+    > [!NOTE]
+    > Most of the time, the on-board storage target to be flashed is enumerated as `PhysicalDrive0`, however, if there are multiple storage devices, it can enumerate as other drive number.  You can use the `list disk` command in `diskpart` to verify the drive number.
 
 7. Once the flashing process is complete, power down the hardware device and remove the USB drive. Reconnect power to the hardware device to boot up Windows IoT Core.
 

@@ -23,7 +23,7 @@ Please make sure you've created an image with your custom App from [06a-Adding a
 You will need the following tools installed to complete this section:
 * **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows IoT Core.
 * **Windows Configuration Designer**. Part of the Windows ADK, this provides tooling to create custom provisioning packages for Windows IoT Core devices.
-* **Iot Core Shell**. This is included with the Windows ADK and is the commandline window interface where you execute commands to build custom FFU images for Windows IoT Core.
+* **IoT Core Powershell Environment**. This is included with the Windows ADK and is the Powershell commandline window interface where you execute commands to build custom FFU images for Windows IoT Core.
 * A text editor like **Notepad** or **VS Code**.
 
 ## Install Windows Configuration Designer

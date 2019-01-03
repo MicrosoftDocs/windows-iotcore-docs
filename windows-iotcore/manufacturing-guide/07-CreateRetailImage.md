@@ -24,32 +24,33 @@ You will need the following tools installed to complete this section:
 * A [Cross-Signing certificate](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing) that matches the CA of your retail code-signing certificate.
 * **Visual Studio**. This is needed to create the UWP application that will be added to the custom FFU image, as well as properly signing the application with your retail code-signing certificate.
 * **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows IoT Core.
-* **Iot Core Shell**. This is included with the Windows ADK and is the commandline window interface where you execute commands to build custom FFU images for Windows IoT Core.
+* **IoT Core Powershell Environment**. This is included with the Windows ADK and is the Powershell commandline window interface where you execute commands to build custom FFU images for Windows IoT Core.
 * A text editor like **Notepad** or **VS Code**.
 
 
 ## Modify Project Configuration Files
-We need to modify the Windows ADK Toolkit project files before we can build a Windows IoT Core retail image. Follow the steps below to add any custom applications or provisioning packages you want to add to the retail image. For our example, we are modifying the project files for our Qualcomm DragonBoard project called *TestDragonBoardProduct*.
+Follow the steps below to add any custom applications or provisioning packages you want to add to the retail image. For our example, we are modifying the project files for our Qualcomm DragonBoard project called *TestDragonBoardProduct*.
 
-1. To add a custom application, you should follow the instructions listed in [Adding an App to an image](06a-AddingApps.md). However, instead of modifying the product configuration file *TestOEMInput.xml* file, you would edit the *RetailOEMInput.xml* file. In our example, this file is located at *C:\IoT-ADK-AddOnToolkit\Source-ARM\Products\TestDragonBoardProduct\RetailOEMInput.xml*.
+1. To add a custom application, you should follow the instructions listed in [Adding an App to an image](06a-AddingApps.md). However, you would specify `Retail` instead of `Test` when executing the [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md) command, as shown here:
 
-2. Add the Feature ID for your custom application to the **OEM** section.
+```powershell
+Add-IoTProductFeature <product name> Retail APPX_HELLOWORLDAPP -OEM
+or addfid <product name> Retail APPX_HELLOWORLDAPP -OEM
+```
 
-   ```XML
-   <OEM>
-      <!-- Include BSP Features -->
-      <Feature>QC_UEFI_PRODUCTION</Feature>
-      <Feature>SBC</Feature>
-      <!-- Include OEM features -->
-      <Feature>CUSTOM_CMD</Feature>
-      <Feature>PROV_AUTO</Feature>
-      <Feature>CUSTOM_SMBIOS</Feature>
-      <Feature>App_HelloWorld</Feature>
-    </OEM>
-   ```
+  This adds a FeatureID called **APPX_HELLOWORLDAPP** to the specified product's Retail OEMInput XML file (`C:\MyWorkspace\Source-arm\<product name>\RetailOEMInput.xml` file).
+
 
 > [!IMPORTANT]
-> If you have more than one custom application that you are including in your retail image, signing them individually with your retail certificate will cause verification collisions when you boot up your retail image on your device. This will prevent your apps from running properly. Follow the steps in the **Properly Signing and Including Your Applications** section to create a separate Feature .CAB file that contains your retail certificate, to include in your retail image.
+> If you have more than one custom application that you are including in your retail image, signing them individually with your retail certificate will cause verification collisions when you boot up your image on your device. This will prevent your apps from running properly. Follow the steps in the **Properly Signing and Including Your Applications** section to create a separate Feature .CAB file that contains your retail certificate, to include in your retail image.
+
+3. Minimize the included Windows IoT Core features. You also want to remove any test applications that are included (by default) with test images for Windows IoT Core. This includes the IoT Core default application (aka. Bertha), along with any other developer tools or testing features. You can do this by using [Remove-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Remove-IoTProductFeature.md):
+
+```powershell
+Remove-IoTProductFeature <product name> Test IOT_BERTHA
+or removefid <product name> Test IOT_BERTHA
+```
+
 
 ## Properly Signing and Including Your Applications
 If you have one or more custom applications that you want to include in your Windows IoT Core retail image, you need to verify that these applications are signed properly when including them in your retail image. Follow these steps for each application you want to include in your image. Please note that you can skip Steps 8 and 9 if you only have one application to include.
@@ -67,22 +68,17 @@ If you have one or more custom applications that you want to include in your Win
 
 5. Choose your retail code-signing certificate when prompted and click **OK**.
 6. Save your project in **Visual Studio** and then build your Appx package. Please note that you should be prompted for your password for your retail code-signing certificate when building this package.
-7. Once the Appx file is built, run the following command in **IoT Core Shell**:
+7. Once the Appx file is built, run the following command in **IoT Core Powershell Environment**:
 
-        newAppxPkg "C:\Users\jadali\Desktop\HelloWorld\CS\AppPackages\HelloWorld_1.0.0.0_ARM_Debug.appx" fga Appx.HelloWorldApp
+  ```powershell
+     Add-IoTAppxPackage "C:\Users\jadali\Desktop\HelloWorld\CS\AppPackages\HelloWorld_1.0.0.0_ARM_Debug.appx" fga Appx.HelloWorldApp
+     (or) newAppxPkg "C:\Users\jadali\Desktop\HelloWorld\CS\AppPackages\HelloWorld_1.0.0.0_ARM_Debug.appx" fga Appx.HelloWorldApp
+  ```
 
-8. Navigate to the directory in Windows ADK Toolkit for your Appx package, and edit the **customizations.xml** file. In our example, this directory is located at **C:\iot-adk-addonkit\Source-arm\Packages\Appx.HelloWorldApp**.
-9. Delete the **Certificates** section (under **Customizations**) and save the file.
 
-   ```XML
-        <Certificates>
-          <RootCertificates>
-            <RootCertificate CertificateName="HelloWorld" Name="HelloWorld">
-              <CertificatePath>HelloWorld.cer</CertificatePath>
-            </RootCertificate>
-          </RootCertificates>
-        </Certificates>
-   ```
+> [!NOTE]
+> Please use the `-SkipCert` parameter if you have more than one application that is signed with the same certificate. This will ensure that the certificate is not added more than once to the image (which can cause verification problems when booting up the device).
+
 
 ## Creating a Package for Including your Retail Certificate
 If you have more than one application that you signed with the same certificate, you need to create a dedicated .CAB file that contains only your retail certificate file. Including this in your retail image *once* (instead of in each application CAB file) ensures that Windows IoT Core properly installs your retail certificate on your device.
@@ -142,77 +138,78 @@ If you have more than one application that you signed with the same certificate,
    </identity>
    ```
 
-5. Modify the **OEMFM.xml** file, located at **C:\iot-adk-addonkit\Source-< arch>\Packages\\** to add a Feature ID for your certificate package.
+. From **IoT Core Powershell Environment**, you can now build the package into a .CAB file (using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md))
 
-   ```XML
-   <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Appx.Certificates.cab">
-       <FeatureIDs>
-         <FeatureID>APP_CERTIFICATES</FeatureID>
-       </FeatureIDs>
-   </PackageFile>
-   ```
+        ```powershell
+        New-IoTCabPackage Appx.Certificates
+        (or) buildpkg Appx.Certificates
+        ```
 
-6. Edit the *RetailOEMInput.xml* file to add the Feature ID to the **OEM** section.
+    This will build the package into a .CAB file under the `Workspace\Build\<arch>\pkgs` subdirectory in the ADK Toolkit files. 
 
-   ```XML
-   <OEM>
-      <!-- Include BSP Features -->
-      <Feature>QC_UEFI_PRODUCTION</Feature>
-      <Feature>SBC</Feature>
-      <!-- Include OEM features -->
-      <Feature>CUSTOM_CMD</Feature>
-      <Feature>PROV_AUTO</Feature>
-      <Feature>CUSTOM_SMBIOS</Feature>
-      <Feature>App_HelloWorld</Feature>
-      <Feature>APP_CERTIFICATES</Feature>
-    </OEM>
-   ```
+6. Add the Feature ID using [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md):
 
-7. In **IoT Core Shell**, run the following command to build the package files for our custom certificate package:
+  ```powershell
+  Add-IoTProductFeature <product name> Retail APPX_CERTIFICATES -OEM
+  or addfid <product name> Retail APPX_CERTIFICATES -OEM
+  ```
 
-        buildfm oem
+  This adds a FeatureID called **APPX_CERTIFICATES** to the specified product's Retail OEMInput XML file (`C:\MyWorkspace\Source-arm\<product name>\RetailOEMInput.xml` file).
+
 
 ## Build the Retail Image Files
 Once we have all the custom application packages signed properly, we can now build the Windows IoT Core retail image. Please verify that you have the retail code-signing certificate installed on your PC prior to following these steps:
 
-1. Edit the **setsignature.cmd** file from Windows ADK Toolkit to include details of your retail and cross-root certificates. This file is located at **C:\IoT-ADK-AddOnToolkit\\Tools**.
+1. Set the IoT Signature to include details about your certificate and cross-certificate. This is done using [Set-IoTSignature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Set-IoTSignature.md):
 
-        set SIGNTOOL_OEM_SIGN=/s my /i "Issuer" /n "Subject" /ac "CrossCertRoot" /fd SHA256
+    ```powershell
+    Set-IoTSignature /ac `"C:\Certs\DigiCert High Assurance EV Root CA.crt"` /s my /i `"DigiCert EV Code Signing CA (SHA2)"` /n `"MySubjectText"` /fd SHA256
+    ```
 
-   Here is an example. Please note the .CRT file is the cross-root certificate file.
+   Please note the .CRT file is the cross-root certificate file.
 
-        set SIGNTOOL_OEM_SIGN=/s my /i "DigiCert EV Code Signing CA (SHA2)" /n "MySubjectText" /ac "C:\Certs\DigiCert High Assurance EV Root CA.crt" /fd SHA256
 
-2. Run **IoT Core Shell** as an administrator.
-3. Enable retail signing:
+2. Run **IoT Core Powershell Environment** as an administrator.
+3. Set the environment for retail signing. This is done with [Set-IoTRetailSign](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Set-IoTRetailSign.md):
 
-        retailsign on
+    ```powershell
+    Set-IoTRetailSign On
+    (or) retailsign on 
+    ```
 
 4. Build the packages:
 
-        buildpkg all
+    ```powershell
+    New-IoTCabPackage All
+    (or) buildpkg all 
+    ```
 
-5. Once all the package .CAB files are built, you should verify that each of these files is properly signed with the retail certificate. If some are still signed with the test certificates (this usually happens if you use your technician PC for building both test and retail images), you can re-sign these files by running this command:
+5. Once all the package .CAB files are built, you should verify that each of these files is properly signed with the retail certificate. If some are still signed with the test certificates (this usually happens if you use your technician PC for building both test and retail images), you can re-sign these files using [Redo-IoTCabSignature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Redo-IoTCabSignature.md):
 
-        re-sign.cmd <srccabdir> <destcabdir>
+    ```powershell
+    Redo-IoTCabSignature  C:\BSP.IN C:\BSP.OUT
+    (or) re-sign.cmd C:\BSP.IN C:\BSP.OUT 
+    ```
 
-   For example, run the following command to re-sign the .CAB files. This takes the .CAB files from **c:\BSP.IN**, re-signs them with the retail certificate and copies them to the **c:\BSP.OUT** directory.
+   This takes the .CAB files from `c:\BSP.IN`, re-signs them with the retail certificate and copies them to the `c:\BSP.OUT` directory.
 
-        re-sign.cmd C:\BSP.IN C:\BSP.OUT
-
-6. If you re-signed the .CAB files from Step 5, copy the re-signed .CAB files to the **C:\IoT-ADK-AddOnToolkit\\Build\< arch>\pkgs**, overwriting the existing files. In our example, these files are copied to **C:\IoT-ADK-AddOnToolkit\\Build\arm\pkgs**.
+6. If you re-signed the .CAB files from Step 5, copy the re-signed .CAB files to the `C:\IoT-ADK-AddOnToolkit\Build\<arch>\pkgs`, overwriting the existing files. In our example, these files are copied to `C:\IoT-ADK-AddOnToolkit\Build\arm\pkgs`.
 7. Build your retail image by running the following command:
 
-        buildimage <product name> retail 
+    ```powershell
+    New-IoTFFUImage <product name> Retail
+    (or)buildimage <product name> Retail 
+    ```
 
 8. You can then flash the retail image as described in [Flashing a Windows IoT Core Image](05-FlashingImage.md).
 
 ## Commands Used
 Listed here are the commands (in order) for creating a retail IoT Core image. Please note that your retail code-signing certificate should be installed first, and it may prompt you for the certificate password when re-signing the .CAB files. 
 
-      buildpkg all
-      retailsign on
-      re-sign.cmd C:\BSP.IN C:\BSP.OUT
-      xcopy C:\BSP.OUT\*.cab C:\IoT-ADK-AddOnToolkit\Build\arm\pkgs\*.cab
-      buildimage <product name> Retail
-
+    ```powershell
+    Set-IoTRetailSign On
+    New-IoTCabPackage All
+    Redo-IoTCabSignature  C:\BSP.IN C:\BSP.OUT
+    xcopy C:\BSP.OUT\*.cab C:\IoT-ADK-AddOnToolkit\Build\arm\pkgs\*.cab
+    New-IoTFFUImage <product name> Retail
+    ```
