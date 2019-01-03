@@ -8,12 +8,12 @@ description: Learn about how to add and develop apps for your device
 keywords: Windows 10 IoT Core, Get Started, develop apps, apps
 ---
 
+> [!NOTE]
+> Visual Studio will generate a cryptic error when deploying to a RS5 (or RS4 with OpenSSH enabled) IoT image unless a SDK from RS4 or greater is installed that Visual Studio can access.
+
 # Develop an app for your device
 
-Now that you have a working device with the default app running, you'll want to take your device to the next level by developing and deploying an app on your device. Before diving into samples, however, you'll need a few things...
-
-* Download [Visual Studio 2017](https://www.visualstudio.com/downloads/) for application development
-* Download the [Windows IoT Core Extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-iot.windowsiot)
+Now that you have a working device with the default app running, you'll want to take your device to the next level by developing and deploying an app on your device. Before diving into samples, you'll need to download [Visual Studio 2017](https://www.visualstudio.com/downloads/) for application development.
 
 If you're planning to use C++ for your projects, when downloading Visual Studio 2017, make sure to check the boxes the same way as they are in the example below:
 

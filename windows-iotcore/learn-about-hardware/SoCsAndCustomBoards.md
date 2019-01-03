@@ -103,7 +103,7 @@ Binary BSP for DragonBoard 410c (based on Qualcomm AQP8016 SoC) can be downloade
 
 The BSP package includes the source code for ACPI to allow for simple hardware customizations that only require ACPI changes.  
 
-> [!IMPORTANT]
+> [!IMPORTANT] 
 > If you need additional hardware customizations, such as using a specific MIPI-DSI display panel, enabling Platform Secure Boot, RF calibration and certification (eg. FCC, CE), you'll need become a Qualcomm BSP source code licensee, or to work with a provider that has access (see Experienced partners below).
 
 Recommendations:
@@ -132,6 +132,7 @@ You can also reach out to partners we're working with:
 * Geniatech [SoM-iMX6Q-Q7](https://www.geniatech.com/product/som-imx6q-q7/) & [SoM-iMX7D](https://www.geniatech.com/product/som-imx7d/) - Mike Decker (mike.decker@geniatech.com) or Fang Jijun (Fjj@geniatech.com)
 * VIA [VAB-820](https://www.viaembeddedstore.com/shop/boards/vab-820/) - Michael Fox (MichaelFox@via.com.tw) or Dream Ku (dreamku@via.com.tw)
 * Phytec [phyBOARD-i.MX7](https://phytec.com/products/single-board-computers/phyboard-i.mx7/) - Brad Dodson (sales@phytec.com)
+
 
 ## Other options
 

@@ -8,6 +8,9 @@ description: Learn how to develop background applications for your IoT device.
 keywords: windows iot, background applications
 ---
 
+> [!NOTE]
+> Visual Studio will generate a cryptic error when deploying to a RS5 (or RS4 with OpenSSH enabled) IoT image unless a SDK from RS4 or greater is installed that Visual Studio can access.
+
 # Developing Background Applications
 
 Background applications are applications that have no direct UI. Once deployed and configured, these applications launch at machine startup and run continuously without any process lifetime management resource use limitations. If they crash or exit the system will automatically restart them.
