@@ -10,7 +10,7 @@ ms.technology: windows-oem
 ---
 
 > [!TIP]
-> For troubleshooting issues related to manufacturing, please read the [Manufacturing Troubleshooting doc](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/troubleshooting).
+> For troubleshooting issues related to manufacturing, please read the [Troubleshooting doc](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/troubleshooting) in our manufacturing guide.
 
 # Troubleshooting
 This is an article that contains common troubleshooting issues that people have come across. To find something specific, use Ctrl+F to find a word or phrase. Have any insight you want to add? Create a PR for this documentation or provident content feedback below.
