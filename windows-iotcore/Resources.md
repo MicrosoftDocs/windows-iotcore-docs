@@ -19,7 +19,7 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Windows 10 IoT - Tomorrow's IoT today](https://blogs.windows.com/windowsexperience/2018/06/05/windows-10-iot-tomorrows-iot-today/#wl3TcsFseJ6XROUZ.97)
 * [Do more at the intelligent edge with Windows 10 IoT](https://blogs.windows.com/windowsexperience/2018/05/07/do-more-at-the-intelligent-edge-with-windows-10-iot/#uDVaAtoBvz7BGrTf.97)
 * [DevOps for IoT with Windows 10 IoT Core, UWP, and VSTS](https://blogs.msdn.microsoft.com/devops/2018/03/07/devops-for-iot-with-win10-iot-core-uwp-and-vsts/)
-* [Microsoft doubles down on Windows 10 IoT with added support](https://blogs.windows.com/business/2018/02/27/microsoft-doubles-down-on-windows-10-iot-with-added-support/#l0XfUKmKrkyKd4AA.97)
+* [Microsoft doubles down on Windows 10 IoT with added support](https://blogs.windows.com/windowsexperience/2018/02/27/microsoft-doubles-down-on-windows-10-iot-with-added-support/#DJaDiKX0bYJ1JDHD.97)
 
 ## Videos
 ### From device management to security, check out a few videos from the Windows 10 IoT team.
