@@ -140,6 +140,11 @@ USB\VID_10C4&PID_EA60\0001
 ```
 [Mincomm](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/BusTools/MinComm) is another helpful tool to troubleshoot serial port issues. This tool can enumerate ports, give you their friendly name and Device ID, open ports, configure settings (i.e. baud rate, stop bits, etc.) and send and receive data. 
 
+## Tablet mode
+
+"Tablet Mode" is a concept that only exist on Desktop shell and doesn’t apply to IoT Core. 
+
+If the device have supported hardware (either through I2C or USB HID touch), touch should function automatically using the inbox class drivers. You can read more about this [here](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/touchscreen-device-bus-connectivity).
 
 
 ## Yubikey support
