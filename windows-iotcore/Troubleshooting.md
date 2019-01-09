@@ -15,6 +15,9 @@ ms.technology: windows-oem
 # Troubleshooting
 This is an article that contains common troubleshooting issues that people have come across. To find something specific, use Ctrl+F to find a word or phrase. Have any insight you want to add? Create a PR for this documentation or provident content feedback below.
 
+> [!TIP]
+> For troubleshooting issues related to manufacturing, please read the [Troubleshooting doc](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/troubleshooting) in our manufacturing guide.
+
 ## ASUS Tinkerboard and Rockchip support
 
 While the ASUS Tinkerboard and Rockchip are not officially supported by us, there are cases where Rockchip has worked with other third parties to get SoC working on Windows 10 IoT Core.
@@ -80,11 +83,12 @@ You may get error **0x139f (ERROR_INVALID_STATE)** in the case when the device i
 
 ## Raspberry Pi 3B+ booting issues
 
+> [!NOTE]
+> This release for the Raspberry Pi 3B+ is an supported technical preview. Limited validation and enablement has been completed. For a better evaluation experience and for any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm, or NXP SoCs. For troubleshooting issues with the Raspberry Pi 3B+, please see our Troubleshooting Guide, [here](https://docs.microsoft.com/en-us/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues). 
+
 The Raspberry Pi 3 Model B+ is the latest product in the Raspberry Pi 3 range, boasting a 64-bit quad core processor running at 1.4GHz, dual-band 2.4GHz and 5GHz wireless LAN, Bluetooth 4.2/BLE, faster Ethernet, and PoE capability via a separate PoE HA.
 
 Recently, many customers who are interested in Windows 10 IoT Core encountered a problem where the device could not boot normally after flushing Windows 10 IoT Core, but the Raspbian works fine on it. The following are some suggestions on how to troubleshoot the boot problem.
-
-The RPi 3B+ was announced in March this year (2018), but Microsoft had not announced that Windows 10 IoT Core fully supports RPi 3B+. The Insider preview image can be downloaded from [this link](https://www.microsoft.com/en-us/software-download/windowsiot). Currently there is no timeline for the 3B+ release version.
 
 There are some known issues in this Insider Preview image. Please note that:
 * This image is only meant for the Raspberry Pi 3B+ and will not boot on the Raspbierry Pi 2.
