@@ -9,9 +9,6 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-> [!TIP]
-> For troubleshooting issues related to manufacturing, please read the [Troubleshooting doc](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/troubleshooting) in our manufacturing guide.
-
 # Troubleshooting
 This is an article that contains common troubleshooting issues that people have come across. To find something specific, use Ctrl+F to find a word or phrase. Have any insight you want to add? Create a PR for this documentation or provident content feedback below.
 
@@ -110,6 +107,8 @@ Check to see if there are any hardware failure in the device. There are two LEDs
 When the device is booting and the device shows the waiting page, please wait patiently. Generally, this will last up to a minute. But sometimes, due to the SD card read-write speed, it may take longer.
 
 If the device can't boot normally with Windows 10 IoT Core, you can try to flash a Linux OS (such as Raspbian) to the SD card to narrow down whether the issue is caused by hardware. 
+
+If you find that you're getting a "rainbow screen", please check to make sure that you flashed the 3B+ release version, available [here](https://www.microsoft.com/en-us/software-download/windowsiot). You can verify your process with a community-submitted 3B+ flashing tutorial [here](https://www.hackster.io/JiongShi/windows-10-iot-core-for-raspberry-pi-3-model-b-92b1a3).
 
 ## Serial Port communication on Windows 10 IoT Core for Raspberry Pi 
 
