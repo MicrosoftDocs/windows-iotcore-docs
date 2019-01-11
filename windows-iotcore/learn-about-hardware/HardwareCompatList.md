@@ -35,6 +35,12 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | CanaKit USB Wireless WiFi | x64, x86 | Chipset Ralink 5370 | | &#10004;
 > | D-Link DWA-172 | ARM32 | Wireless AC600 Dual-Band High-Gain USB Adapter | [Datasheet](ftp://ftp.dlink.de/dwa/dwa-172/documentation/DWA-172_ds_en_Datasheet.pdf) |
 
+### Ethernet Adapters
+> | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  | 
+> |----------------|-------------------|-------------|---------------|------------------------------|
+> | ASIX AX88772 USB 2.0 Fast Ethernet Adapter | ARM32, x64, x86 | This is a high performance and high integrated ASIC with embedded 28 KB SRAM for packet buffering.  | | &#10004;  |
+
+
 ### Bluetooth Dongles
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
