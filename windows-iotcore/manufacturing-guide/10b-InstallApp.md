@@ -67,3 +67,11 @@ You can create a provisioning package with the app and install the provisioning 
 You can add the app to be part of the IoT Core image itself. This is the widely used mechanism for OEMs. 
 
 See how to [add an app to your image](https://docs.microsoft.com/windows-hardware/manufacture/iot/deploy-your-app-with-a-standard-board) and a [sample app package](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Packages/Appx.IoTCoreDefaultApp).
+
+  ## Outline
+* [10a-Debug and Deploy Apps Via Visual Studio](10a-DebugAndDeployApps.md)
+* [10b-Installing Appx Packages](10b-InstallApp.md)
+* [10c-Types of Applications for IoT Core](10c-AppTypes.md)
+* [10d-Default App Overview](10d-defaultapp.md)
+* [10e-Setting Appx as default application](10e-SettingDefaultApps.md)
+* [10f-UWP Loopback debugging](10f-uwploopback.md)
