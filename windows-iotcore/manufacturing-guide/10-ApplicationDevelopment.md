@@ -16,7 +16,7 @@ Learn about the languages that are supported on Windows 10 IoT Core as well as t
 > Visual Studio will generate a cryptic error when deploying to a RS5 (or RS4 with OpenSSH enabled) IoT image unless a SDK from RS4 or greater is installed that Visual Studio can access.
 
 ## Application Types
-___
+
 ### Universal Windows Platform (UWP) Apps
 IoT Core is a UWP centric OS and UWP apps are its primary app type.
 
@@ -32,7 +32,6 @@ There are two main limitations on these non-UWP applications:
 2. *C++ Apps Only:* Currently, only C++ is supported for developing Win32 apps on IoT Core.
 
 ## Programming Languages
-___
 
 IoT Core supports a wide range of programming languages.
 
