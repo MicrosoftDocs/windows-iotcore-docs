@@ -25,17 +25,17 @@ ___
 
 2. Next, in the Visual Studio toolbar, click on the `Local Machine` dropdown and select `Remote Machine`.
 
-![Remote machine in Visual Studio](../media/AppDeployment/cs-remote-machine-debugging.png)
+![Remote machine in Visual Studio](../media/ManufacturingGuide/cs-remote-machine-debugging.png)
 
 3. At this point, Visual Studio will present the **Remote Connections** dialog. If you previously used [PowerShell](../connect-your-device/PowerShell.md) to set a unique name for your device, you can enter it here (in this example, we're using **my device**). Otherwise, use the IP address of your Windows IoT Core device.
 
 4. After entering the device name/IP select `Universal (Unencrypted Protocol)` Authentication Mode, then click **Select**. 
 
-![Universal authentication mode](../media/AppDeployment/cs-remote-connections.png)
+![Universal authentication mode](../media/ManufacturingGuide/cs-remote-connections.png)
 
 You can verify or modify these values by navigating to the project properties (select **Properties** in the Solution Explorer) and choosing the `Debug` tab on the left:
 
-![Debug tab](../media/AppDeployment/cs-debug-project-properties.png)
+![Debug tab](../media/ManufacturingGuide/cs-debug-project-properties.png)
 
 5. Now we're ready to deploy. Simply press F5 (or select Debug \| Start Debugging) to start debugging our app. You should see the app come up on your device's screen.
 
