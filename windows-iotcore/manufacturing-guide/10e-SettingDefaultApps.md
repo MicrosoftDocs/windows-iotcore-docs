@@ -48,3 +48,12 @@ See [Appx.IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/tree/mas
 Windows 10 IoT Anniversary Update (1607) provides shell support for bringing the default application window to the foreground when another application is currently running.
 
 To see how to enable the "Home" key, please visit our [IoT Shell page](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoreshell#switching-between-apps-with-hid-injection-keys)
+
+
+  ## Outline
+* [10a-Debug and Deploy Apps Via Visual Studio](10a-DebugAndDeployApps.md)
+* [10b-Installing Appx Packages](10b-InstallApp.md)
+* [10c-Types of Applications for IoT Core](10c-AppTypes.md)
+* [10d-Default App Overview](10d-defaultapp.md)
+* [10e-Setting Appx as default application](10e-SettingDefaultApps.md)
+* [10f-UWP Loopback debugging](10f-uwploopback.md)
