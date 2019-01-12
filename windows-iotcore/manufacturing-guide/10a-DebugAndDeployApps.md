@@ -1,7 +1,7 @@
 ---
 title: Deploying an App with Visual Studio
-author: bfjelds
-ms.author: bfjelds
+author: lmaung
+ms.author: lmaung
 ms.date: 10/1/2018 
 ms.topic: article 
 description: Learn how to deploy an app using the Visual Studio remote debugging feature.
