@@ -75,11 +75,6 @@ If you have one or more custom applications that you want to include in your Win
      (or) newAppxPkg "C:\Users\jadali\Desktop\HelloWorld\CS\AppPackages\HelloWorld_1.0.0.0_ARM_Debug.appx" fga Appx.HelloWorldApp
   ```
 
-
-> [!NOTE]
-> Please use the `-SkipCert` parameter if you have more than one application that is signed with the same certificate. This will ensure that the certificate is not added more than once to the image (which can cause verification problems when booting up the device).
-
-
 ## Creating a Package for Including your Retail Certificate
 If you have more than one application that you signed with the same certificate, you need to create a dedicated .CAB file that contains only your retail certificate file. Including this in your retail image *once* (instead of in each application CAB file) ensures that Windows IoT Core properly installs your retail certificate on your device.
 
