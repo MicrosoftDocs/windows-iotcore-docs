@@ -112,7 +112,7 @@ Once we have all the custom application packages signed properly, we can now bui
 
    This takes the .CAB files from `c:\BSP.IN`, re-signs them with the retail certificate and copies them to the `c:\BSP.OUT` directory.
 
-6. If you re-signed the .CAB files from Step 5, copy the re-signed .CAB files to the `C:\IoT-ADK-AddOnToolkit\Build\<arch>\pkgs`, overwriting the existing files. In our example, these files are copied to `C:\IoT-ADK-AddOnToolkit\Build\arm\pkgs`.
+6. If you re-signed the .CAB files from Step 5, copy the re-signed .CAB files to the `C:\MyWorkspace\Build\<arch>\pkgs`, overwriting the existing files. In our example, these files are copied to `C:\MyWorkspace\Build\arm\pkgs`.
 7. Build your retail image by running the following command:
 
     ```powershell
@@ -126,6 +126,7 @@ Once we have all the custom application packages signed properly, we can now bui
 Listed here are the commands (in order) for creating a retail IoT Core image. Please note that your retail code-signing certificate should be installed first, and it may prompt you for the certificate password when re-signing the .CAB files. 
 
     ```powershell
+    Set-IoTSignature /ac `"C:\Certs\DigiCert High Assurance EV Root CA.crt"` /s my /i `"DigiCert EV Code Signing CA (SHA2)"` /n `"MySubjectText"` /fd SHA256
     Set-IoTRetailSign On
     New-IoTCabPackage All
     Redo-IoTCabSignature  C:\BSP.IN C:\BSP.OUT
