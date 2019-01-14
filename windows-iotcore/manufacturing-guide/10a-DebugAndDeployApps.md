@@ -1,7 +1,7 @@
 ---
 title: Deploying an App with Visual Studio
-author: lmaung
-ms.author: lmaung
+author: bfjelds
+ms.author: bfjelds
 ms.date: 10/1/2018 
 ms.topic: article 
 description: Learn how to deploy an app using the Visual Studio remote debugging feature.
@@ -50,3 +50,4 @@ You can verify or modify these values by navigating to the project properties (s
 * [10d-Default App Overview](10d-defaultapp.md)
 * [10e-Setting Appx as default application](10e-SettingDefaultApps.md)
 * [10f-UWP Loopback debugging](10f-uwploopback.md)
+
