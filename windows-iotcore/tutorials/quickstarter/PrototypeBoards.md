@@ -17,7 +17,7 @@ Below you'll find boards we suggest to help you get started with Windows 10 IoT 
 > You must create your own images and not use the provided images below if you plan to commercialize your device.
 
 > [!NOTE]
-> The Rasberry Pi platform has limited compatability. For more fully-fleshed scenarios, it is better to use a DragonBoard, Up Board or NXP device. 
+> The Raspberry Pi platform has limited compatability. For more a more complete Windows 10 IoT Core experience, it is better to use a DragonBoard, Up2 Board or NXP device. 
 
 
 | Boards | Where To Buy | FFU Link | How To Set Up | Starter Kit |
