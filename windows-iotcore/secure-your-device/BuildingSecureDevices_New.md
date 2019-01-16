@@ -12,11 +12,11 @@ keywords: windows iot, security, firmware, secure boot, TPM, Bitlocker, encrypti
 
 ## Introduction  
 With Windows 10 IoT Core, Microsoft is bringing strong enterprise grade security features that can be leveraged on smaller, resource constrained classes of IoT devices. For these security features to offer tangible benefits, the hardware platform must also provide a means to anchor them. This document provides high-level guidance to OEM device builders and security conscious 'Makers' who are looking to select appropriate hardware and build, configure, and ship a secure IoT device to their customers.
-![Data Security](../media/SecurityFlowAndCertificates/DataRestExecutionMotion.PNG)
+![Data Security](../media/SecurityFlowAndCertificates/DataRestExecutionMotion.png)
 
 ## Building a secure IoT devices  
 This section will help developers and OEMs through the process of building secure IoT devices with Windows IoT Core. We will address the selection of hardware to support platform security features as well as the production of security enabled IoT devices.
-![Device Build Process](../media/SecurityFlowAndCertificates/DeviceBuildProcess.PNG)
+![Device Build Process](../media/SecurityFlowAndCertificates/DeviceBuildProcess.png)
 
 
 ## Enabling Secure Boot
@@ -35,8 +35,8 @@ Devices that incorporate a TPM can create cryptographic keys and encrypt them so
 
 With a TPM, private portions of key pairs are kept separate from the memory controlled by the operating system. Keys can be sealed to the TPM, and certain assurances about the state of a system (assurances that define the “trustworthiness” of a system) can be made before the keys are unsealed and released for use. Because the TPM uses its own internal firmware and logic circuits for processing instructions, it does not rely on the operating system and is not exposed to vulnerabilities that might exist in the operating system or application software.
 
-> [!NOTE] 
-> Though some devices may incorporate an older TPM 1.2 chip, Windows 10 IoT Core only supports TPM 2.0.
+>[!NOTE] 
+>Though some devices may incorporate an older TPM 1.2 chip, Windows 10 IoT Core only supports TPM 2.0.
 
 ## Enabling BitLocker Encryption  
 In order to protect data at rest (i.e. date stored on a device), Microsoft brought its enterprise-grade BitLocker Drive Encryption technology to IoT devices in Windows 10 IoT Core.  BitLocker ensures that data stored on a device remains encrypted, even if the device is tampered with while the OS is not running.  This helps protect against "offline attacks," attacks made by disabling or circumventing the installed operating system, or made by physically separating the storage media from the device in order to attack the data separately. 
