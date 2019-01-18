@@ -30,7 +30,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 > NXP only supports custom images. If you're looking to flash a custom image, select "Custom" from the OS Build dropdown, follow the instructions [here](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image) to create a basic image, and follow the rest of the instructions below to finish.
 
 > [!NOTE]
-> The Raspberry Pi 3B+ requires a technical preview. You can download it [here](https://www.microsoft.com/en-us/software-download/windowsiot).
+> Dashboard cannot be used used to setup the Raspberry Pi 3B+. If you have a 3B+ device, you must use the [3B+ technical preview](https://www.microsoft.com/en-us/software-download/windowsiot). Please view the [known limitations](https://docs.microsoft.com/en-us/windows/iot-core/troubleshooting) of the technical preview to determine if this is suitable for your development.
 
 > [!TIP]
 > We recommend using a high-performance SD card, such as a SanDisk SD card, for increased stability as well as plugging your device into an external display to see the default application booting up.
