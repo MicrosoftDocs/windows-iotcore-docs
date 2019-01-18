@@ -31,6 +31,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 
 > [!NOTE]
 > NXP only supports custom images.
+> The Raspberry Pi 3B+ requires a technical preview. You can download it [here](https://www.microsoft.com/en-us/software-download/windowsiot).
 
 > [!TIP]
 > We recommend using a high-performance SD card, such as a SanDisk SD card, for increased stability as well as plugging your device into an external display to see the default application booting up.
