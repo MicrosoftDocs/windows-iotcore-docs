@@ -27,10 +27,9 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 > The latest 64-bit firmware for MinnowBoard Turbot can be found on the [MinnowBoard website](https://minnowboard.org/tutorials/updating-the-firmware) (skip step 4 on the MinnowBoard site's instructions).
 
 > [!IMPORTANT]
-> If you're looking to flash a custom image, select "Custom" from the OS Build dropdown, follow the instructions [here](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image) to create a basic image, and follow the rest of the instructions below to finish.
+> NXP only supports custom images. If you're looking to flash a custom image, select "Custom" from the OS Build dropdown, follow the instructions [here](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image) to create a basic image, and follow the rest of the instructions below to finish.
 
 > [!NOTE]
-> NXP only supports custom images.
 > The Raspberry Pi 3B+ requires a technical preview. You can download it [here](https://www.microsoft.com/en-us/software-download/windowsiot).
 
 > [!TIP]
