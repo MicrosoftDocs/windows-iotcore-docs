@@ -1,8 +1,8 @@
 ---
 title: Setup a Default App
-author: bfjelds
-ms.author: brian.fjeldstad
-ms.date: 09/05/17
+author: lmaung
+ms.author: lmaung
+ms.date: 1/20/19
 ms.topic: article
 description: Learn how to setup a default app using the Windows Device Portal or the shell.
 keywords: windows iot, default app, PowerShell, iot
