@@ -43,3 +43,6 @@ We currently have a number of providers available on the [Bus Providers](https:/
 ** Remote Arduino
 
 In addition to the providers that give you access to real hardware, we have built a [Simulated Provider](https://github.com/ms-iot/BusProviders/tree/develop/SimulatedProvider) that will act as if it was an inifitely capable provider and is designed to let you write and debug your applications without having to first deploy them to a working device. For a richer experience, you can customize it to simulate your actual hardware. For example: updating the I2c provider to return back the result "75" when you send it the command for a temperature reading on a device with the designated slave address. 
+
+## Additional Resources
+Additional bus tools, sample codes, and building and testing on I2C, SPI, GPIO, MinComm/UART can be found [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/BusTools)
