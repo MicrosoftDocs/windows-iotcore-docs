@@ -70,6 +70,13 @@ namespace BlinkyHeadlessCS
 
 You can find in-depth information on Background apps [here](https://docs.microsoft.com/windows/iot-core/develop-your-app/backgroundapplications).
 
+### Console Apps
+Starting with Windows 10, version 1803, you can write C++/WinRT or C++/CX UWP console apps that run in a console window, such as a DOS or PowerShell console window. Console apps use the console window for input and output, and can use Universal C Runtime functions such as printf and getchar. 
+A UWP Console app can access the file-system from the directory it is run from, and below. This is possible because the template adds the AppExecutionAlias extension to your app's Package.appxmanifest file. This extension also enables the user to type the alias from a console window to launch the app. The app does not need to be in the system path to launch.
+You can additionally give broad access to the file system to your UWP console app by adding the restricted capability broadFileSystemAccess as described in File access permissions. This capability works with APIs in the Windows.Storage namespace.
+
+You can find in-depth information on Background apps [here](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/console-uwp).
+
 ### Arduino Wiring
  Arduino Wiring requires the download of the "Windows IoT Core Project Templates" from the Visual Studio **Tools->Extensions and Updates** manager.  Arduino Wiring supports only Background Applications. You can also build *Windows Runtime Components* using C#, C++, or Visual Basic and then reference those libraries from any other language.
 
