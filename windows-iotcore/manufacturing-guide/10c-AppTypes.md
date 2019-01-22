@@ -69,6 +69,9 @@ namespace BlinkyHeadlessCS
 ```
 You can find in-depth information on Background apps [here](https://docs.microsoft.com/windows/iot-core/develop-your-app/backgroundapplications).
 
+> [!NOTE]
+> You may want to enable embedded mode to ensure that your background apps can be automatically re-launched by Windows. For additional details on embedded mode, please read [this](10l-embeddedmode.md).
+
 
 ### Continous Background Task
 As a headless system, you may to to use a Continously running Background Task as your primary mode of control and access for your IoT Platform. This is useful in cases where device may be placed in hard to access areas, or installed in final destinations where direct GUI based operations are impossiable. 
@@ -76,6 +79,9 @@ Background tasks will need to register with the system with conditions to be ena
 It is also possible to combine multiple conditions by calling AddCondition multiple times on the same TaskBuilder. Take care not to add conflicting conditions, such as UserPresent and UserNotPresent.
 
 You can find in-depth information on conditions and how to run the task in continous mode apps [here](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/set-conditions-for-running-a-background-task).
+
+> [!NOTE]
+> You may want to enable embedded mode to ensure that your background apps can be automatically re-launched by Windows. For additional details on embedded mode, please read [this](10l-embeddedmode.md).
 
 ### Console Apps
 Starting with Windows 10, version 1803, you can write C++/WinRT or C++/CX UWP console apps that run in a console window, such as a DOS or PowerShell console window. Console apps use the console window for input and output, and can use Universal C Runtime functions such as printf and getchar. 
