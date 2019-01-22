@@ -46,3 +46,12 @@ In addition to the providers that give you access to real hardware, we have buil
 
 ## Additional Resources
 Additional bus tools, sample codes, and building and testing on I2C, SPI, GPIO, MinComm/UART can be found [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/BusTools)
+
+#Usermode Access to GPIO, I2C, and SPI
+Windows 10 contains new APIs for accessing GPIO, I2C, SPI, and UART directly from usermode. Development boards like Raspberry Pi 2 expose a subset of these connections which enable users to extend a base compute module with custom circuitry to address a particular application. These low level buses are usually shared with other critical onboard functions, with only a subset of GPIO pins and buses exposed on headers. To preserve system stability, it is necessary to specify which pins and buses are safe for modification by usermode applications.
+
+Usermode access to low level buses on Windows is plumbed through the existing `GpioClx` and `SpbCx` frameworks. A new driver called *RhProxy*, available on Windows IoT Core and Windows Enterprise, exposes `GpioClx` and `SpbCx` resources to usermode. To enable the APIs, a device node for rhproxy must be declared in your ACPI tables with each of the GPIO and SPB resources that should be exposed to usermode.
+
+Additional indepth documentation on UserMode access via RhProxy can be found [here](https://github.com/MicrosoftDocs/windows-uwp/blob/docs/windows-apps-src/devices-sensors/enable-usermode-access.md).
+
+
