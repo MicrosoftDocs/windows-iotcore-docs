@@ -86,7 +86,7 @@ This page allows you to test out Windows 10 IoT Core's inking capabilities.
 ### Apps 
 This page allows you to launch other foreground applications installed on the device. Launching an application will suspend IoT Core Default App, which can be relaunched by using App Manager in [Windows Device Portal](../manage-your-device/DevicePortal.md).
 
-Nothing special is needed to have your foreground application listed in the page, simply [install](AppInstaller.md) or [deploy](AppDeployment.md) the application. After successful installation or deployment, re-navigate to the Apps page to refresh the list of applications.
+Nothing special is needed to have your foreground application listed in the page, simply [install](10b-InstallApp.md) or [deploy](10a-DebugAndDeployApps.md) the application. After successful installation or deployment, re-navigate to the Apps page to refresh the list of applications.
 
 Note that there are a couple of auto-generated OS related applications that we filter out, you can find the list of app names [here](http://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTCoreDefaultApp/CS/Views/AppLauncherPage.xaml.cs).
 
