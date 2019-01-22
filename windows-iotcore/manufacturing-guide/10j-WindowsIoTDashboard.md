@@ -28,7 +28,7 @@ You can download the [IoT Core Dashboard here](http://go.microsoft.com/fwlink/?L
 
 The IoT Dashboard makes it easy to set up a new device. For detailed instructions on how to get started, see the [Get Started](https://docs.microsoft.com/en-us/windows/iot-core/getstarted) page.
 
-![IoT Dashboard Setup Page](../media/IoTDashboard/IoTDashboard_SetupPage.PNG)
+![IoT Dashboard Setup Page](../media/ManufacturingGuide/dashboard1.PNG)
 
 ### SD card
 The type, make and model of the SD card greatly affects both the performance and the quality of IoT Core.
@@ -98,7 +98,7 @@ Quick run samples do not require any code compilation, Visual studio installatio
 
 ### Windows Device Portal
 
-![Device Portal Home](../media/deviceportal/deviceportal.png)
+![Device Portal Home](../media/ManufacturingGuide/dashboard2.PNG)
 IoT Core dashboard can be used to launch into the Windows Device Portal of the IoT Device. Default log-in is Administrator and password is P@ssw0rd. Once you are in the Windows device portal, you can modify and update various device related settings such as remote debugging PIN, time zones, as well as modify startup apps, networking, and more.
 The Windows Device Portal (WDP) lets you configure and manage your device remotely over your local network.  
 Additional information on Device Portal can be found [here](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/deviceportal)
