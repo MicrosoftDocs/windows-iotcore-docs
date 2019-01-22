@@ -12,5 +12,6 @@ keywords: windows iot, git
 
 Looking to figure out how Microsoft develop applications for IoT Core? 
 Here is a git repo with [Windows IoT Core app samples](https://github.com/Microsoft/Windows-iotcore-samples)
+and [ms-iot repo on Github](https://github.com/ms-iot).
 
 Most of the headed GUI apps are Windows Universal Apps (UWP). You can look at the code samples for [UWP apps here.](https://github.com/Microsoft/Windows-universal-samples)
