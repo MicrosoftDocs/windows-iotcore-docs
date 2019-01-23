@@ -33,24 +33,19 @@ Follow the steps below to add any custom applications or provisioning packages y
 
 1. To add a custom application, you should follow the instructions listed in [Adding an App to an image](06a-AddingApps.md). However, you would specify `Retail` instead of `Test` when executing the [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md) command, as shown here:
 
-```powershell
-Add-IoTProductFeature <product name> Retail APPX_HELLOWORLDAPP -OEM
-or addfid <product name> Retail APPX_HELLOWORLDAPP -OEM
-```
+    ```powershell
+    Add-IoTProductFeature <product name> Retail APPX_HELLOWORLDAPP -OEM
+    or addfid <product name> Retail APPX_HELLOWORLDAPP -OEM
+    ```
 
-  This adds a FeatureID called **APPX_HELLOWORLDAPP** to the specified product's Retail OEMInput XML file (`C:\MyWorkspace\Source-arm\<product name>\RetailOEMInput.xml` file).
+    This adds a FeatureID called **APPX_HELLOWORLDAPP** to the specified product's Retail OEMInput XML file (`C:\MyWorkspace\Source-arm\<product name>\RetailOEMInput.xml` file).
 
+2. Minimize the included Windows IoT Core features. You also want to remove any test applications that are included (by default) with test images for Windows IoT Core. This includes the IoT Core default application (aka. Bertha), along with any other developer tools or testing features. You can do this by using [Remove-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Remove-IoTProductFeature.md):
 
-> [!IMPORTANT]
-> If you have more than one custom application that you are including in your retail image, signing them individually with your retail certificate will cause verification collisions when you boot up your image on your device. This will prevent your apps from running properly. Follow the steps in the **Properly Signing and Including Your Applications** section to create a separate Feature .CAB file that contains your retail certificate, to include in your retail image.
-
-3. Minimize the included Windows IoT Core features. You also want to remove any test applications that are included (by default) with test images for Windows IoT Core. This includes the IoT Core default application (aka. Bertha), along with any other developer tools or testing features. You can do this by using [Remove-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Remove-IoTProductFeature.md):
-
-```powershell
-Remove-IoTProductFeature <product name> Test IOT_BERTHA
-or removefid <product name> Test IOT_BERTHA
-```
-
+    ```powershell
+    Remove-IoTProductFeature <product name> Test IOT_BERTHA
+    or removefid <product name> Test IOT_BERTHA
+    ```
 
 ## Properly Signing and Including Your Applications
 If you have one or more custom applications that you want to include in your Windows IoT Core retail image, you need to verify that these applications are signed properly when including them in your retail image. Follow these steps for each application you want to include in your image. Please note that you can skip Steps 8 and 9 if you only have one application to include.
@@ -79,14 +74,12 @@ If you have one or more custom applications that you want to include in your Win
 ## Build the Retail Image Files
 Once we have all the custom application packages signed properly, we can now build the Windows IoT Core retail image. Please verify that you have the retail code-signing certificate installed on your PC prior to following these steps:
 
-1. Set the IoT Signature to include details about your certificate and cross-certificate. This is done using [Set-IoTSignature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Set-IoTSignature.md):
+1. Set the IoT Signature to include details about your certificate and cross-certificate. This is done by modifying the `IoTWorkspace.xml` file, located in your workspace (e.g. C:\MyWorkspace):
 
-    ```powershell
-    Set-IoTSignature /ac `"C:\Certs\DigiCert High Assurance EV Root CA.crt"` /s my /i `"DigiCert EV Code Signing CA (SHA2)"` /n `"MySubjectText"` /fd SHA256
+    ```XML
+    <!--Specify the retail signing certificate details, Format given below -->
+    <RetailSignToolParam>/s my /i "Issuer" /n "Subject" /ac "C:\CrossCertRoot.cer" /fd SHA256</RetailSignToolParam>
     ```
-
-   Please note the .CRT file is the cross-root certificate file.
-
 
 2. Run **IoT Core Powershell Environment** as an administrator.
 3. Set the environment for retail signing. This is done with [Set-IoTRetailSign](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Set-IoTRetailSign.md):
@@ -126,10 +119,9 @@ Once we have all the custom application packages signed properly, we can now bui
 Listed here are the commands (in order) for creating a retail IoT Core image. Please note that your retail code-signing certificate should be installed first, and it may prompt you for the certificate password when re-signing the .CAB files. 
 
     ```powershell
-    Set-IoTSignature /ac `"C:\Certs\DigiCert High Assurance EV Root CA.crt"` /s my /i `"DigiCert EV Code Signing CA (SHA2)"` /n `"MySubjectText"` /fd SHA256
     Set-IoTRetailSign On
     New-IoTCabPackage All
     Redo-IoTCabSignature  C:\BSP.IN C:\BSP.OUT
-    xcopy C:\BSP.OUT\*.cab C:\IoT-ADK-AddOnToolkit\Build\arm\pkgs\*.cab
+    xcopy C:\BSP.OUT\*.cab C:\MyWorkspace\Build\arm\pkgs\*.cab
     New-IoTFFUImage <product name> Retail
     ```
