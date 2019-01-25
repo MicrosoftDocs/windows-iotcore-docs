@@ -40,15 +40,3 @@ and cloud-to-device messaging that scales to millions of devices. It offers a
 streamlined programming model that lets you get started with minimum effort and
 scale up your solution as its needs grow.
 
-## Universal Windows Platform
-
-Universal Windows Platform (UWP) is an evolution of Windows application model
-introduced in Windows 8. UWP provides a common app platform available on every
-device that runs Windows 10, including IoT Core.
-
-Microsoft offers a set of libraries and tools that allow you to build your
-connected UWP IoT applications that connect to Azure IoT Hub.
-
-Continue reading about connecting your IoT Core device to Azure IoT Hub on the
-[connect device to cloud](ConnectDeviceToCloud.md) and [connect app to cloud](ConnectAppToCloud.md) pages.
-
