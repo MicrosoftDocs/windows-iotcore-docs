@@ -106,6 +106,10 @@ The basic idea for making the correct serial connections is to remember that whi
             [RPi2 or RPi3] Pin #8  (TX)  <-> [FTDI] Yellow (RX) 
             [RPi2 or RPi3] Pin #10 (RX)  <-> [FTDI] ORange (TX)
 
+The EFIESP junction is no longer created. You'll have to mount it yourself,you can use mountvol command to get the GUID.
+* `mkdir C:\EFIESP` 
+* `mountvol C:\EFIESP \?\Volume{ae420040-0000-0000-0000-200000000000}` 
+
 Using the active PowerShell connection, execute the following commands on the Raspberry Pi 2 or 3 device to enable debugging over the serial connection.
 
 * `bcdedit /store c:\EFIESP\EFI\Microsoft\Boot\BCD -dbgsettings serial` 
