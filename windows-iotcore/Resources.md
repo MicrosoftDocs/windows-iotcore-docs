@@ -11,7 +11,6 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 # Windows 10 IoT resources
 
 ## Blog posts
-### Stay on top of our latest announcements for the Windows 10 IoT community.
 
 * [Microsoft Azure IoT Device Agent V2 Public Preview now available](https://blogs.windows.com/windowsexperience/2019/01/15/microsoft-azure-iot-device-agent-v2-public-preview-now-available/#fB07iWklwq1Ro8dk.97)
 * [Windows 10 IoT delivers innovation and intelligence at the edge with the October 2018 Update](https://blogs.windows.com/windowsexperience/2018/10/04/windows-10-iot-delivers-innovation-and-intelligence-at-the-edge-with-the-october-2018-update/#9g9hmmO2AdUB1C6F.97) 
@@ -23,10 +22,8 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Microsoft doubles down on Windows 10 IoT with added support](https://blogs.windows.com/windowsexperience/2018/02/27/microsoft-doubles-down-on-windows-10-iot-with-added-support/#DJaDiKX0bYJ1JDHD.97)
 
 ## Videos
-### From device management to security, check out a few videos from the Windows 10 IoT team.
 
->[!Video https://www.youtube.com/embed/A-kazyOiBvs]
-
+[!Video https://www.youtube.com/embed/Cmj0sxBRofs]
 * [Getting started with Windows 10 IoT series](https://www.youtube.com/watch?v=A-kazyOiBvs&t)
 * [Accelerate the Intelligent Edge with the Windows AI Platform](https://www.youtube.com/watch?v=7bFAg6w4J00)
 * [Connecting Windows 10 IoT Devices to IoT Central](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Connecting-Windows-IoT-Devices-To-IoT-Central)
@@ -34,7 +31,6 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Windows 10 IoT and Azure IoT Device Management Enhancement](https://channel9.msdn.com/Shows/Azure-Friday/Windows-10-IoT-and-Azure-IoT-Device-Management-Enhancements?term=windows%20iot%20core)
 
 ## Learning resources
-### Find resources on how to get started or get trained with the help of the community.
 
 * [Microsoft MVP community](https://mvp.microsoft.com/)
 * [Microsoft IoT Tech Community](https://techcommunity.microsoft.com/t5/Internet-of-Things-IoT/ct-p/IoT)
@@ -45,7 +41,6 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Window 10 IoT Core HATs](https://www.turta.io/iothat)
 
 ## Commercialized projects
-### Read case studies on Original Device Manufacturers (OEMs) that have commercialized with Windows 10 IoT.
 
 * [Misty Robotics](https://customers.microsoft.com/en-us/story/misty-robotics)
 * [Askey Turbomate](https://customers.microsoft.com/en-us/story/askey)
@@ -55,7 +50,6 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 
 
 ## Community projects
-### Learn about the various verticals where Windows 10 IoT is being used in the Hackster community.
 
 * [Industrial automation](https://www.hackster.io/projects/tags/industrial+automation+win10)
 * [Digital signage](https://www.hackster.io/projects/tags/digital+signage+win10)
@@ -66,7 +60,6 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Energy](https://www.hackster.io/projects/tags/energy+win10)
 
 ## Our technology partners
-### These partners offer complementary technology, such as apps, extensions, and more that Windows 10 IoT can run.
 
 * [Azure Systems](https://www.azul.com/)
 * [Codesys](https://de.codesys.com/)
