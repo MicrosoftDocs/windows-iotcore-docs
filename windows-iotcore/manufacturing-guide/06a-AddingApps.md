@@ -107,10 +107,7 @@ The next step is to package the Appx file, which will allow you to customize it 
 
 The *Appx.HelloWorldApp* is the name of the Appx file for referencing in the Windows ADK XML files when building the FFU image (you can call this whatever is appropriate for your scenario).
 
-> [!IMPORTANT]
-> Please be aware that if you have more than one application that uses the same signing certificate, the system will not boot up properly. Please use the `-SkipCert` parameter when packaging your appx, and then see [here](07-CreateRetailImage.md) to create a dedicated CAB file for including the certificate (follow the steps in *Creating a Package for Including your Retail Certificate* sections). 
-
-Also be aware that if your Appx has dependencies you will need the *Dependencies* subdirectory to be present in the same location as your Appx when you run this command. Failure to include this will result in errors when you build your FFU image.
+Be aware that if your Appx has dependencies you will need the *Dependencies* subdirectory to be present in the same location as your Appx when you run this command. Failure to include this will result in errors when you build your FFU image.
 
 3. From **IoT Core Powershell Environment**, you can now build the package into a .CAB file (using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md))
 
@@ -119,7 +116,7 @@ Also be aware that if your Appx has dependencies you will need the *Dependencies
         (or) buildpkg Appx.HelloWorldApp
         ```
 
-    This will build the package into a .CAB file under the `Workspace\Build\<arch>\pkgs` subdirectory in the ADK Toolkit files. In our example, this file is located in *C:\iot-adk-addonkit-master\Workspace\Build\arm\pkgs\Contoso.Appx.HelloWorldApp.cab*.
+    This will build the package into a .CAB file under the `Workspace\Build\<arch>\pkgs` subdirectory in the ADK Toolkit files. In our example, this file is located in *C:\MyWorkspace\Build\arm\pkgs\Contoso.Appx.HelloWorldApp.cab*.
 
 ## Update Project Configuration Files
 You can now update your product configuration files to include your app in the FFU image build. 
@@ -133,13 +130,6 @@ or addfid <product name> Test APPX_HELLOWORLDAPP -OEM
 
 
   This adds a FeatureID called **APPX_HELLOWORLDAPP** to the specified product's Test OEMInput XML file (`C:\MyWorkspace\Source-arm\<product name>\TestOEMInput.xml` file).
-
-2. Remove the sample test apps **IOT_BERTHA** using [Remove-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Remove-IoTProductFeature.md):
-
-```powershell
-Remove-IoTProductFeature <product name> Test IOT_BERTHA
-or removefid <product name> Test IOT_BERTHA
-```
 
 ## Build and Test Image
 

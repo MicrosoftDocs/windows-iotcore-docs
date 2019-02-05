@@ -65,7 +65,7 @@ This creates a new folder at `C:\MyWorkspace\Common\Packages\Registry.Settings`.
 
 This also adds a FeatureID **REGISTRY_SETTINGS** to the `C:\MyWorkspace\Common\Packages\OEMCOMMONFM.xml` file.
 
-3. Build the packages using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md). (The `buildpkg All` command builds everything in the source folders):
+3. Build the packages using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md):
 
 ```powershell
 New-IoTCabPackage Files.Configs

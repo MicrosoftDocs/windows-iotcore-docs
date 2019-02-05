@@ -40,7 +40,7 @@ You will need to build your driver files to include in the IoT Core image. We wi
 Once the driver files are created, we need to create a package that includes them, and then add that package to our Windows IoT Core image.
 
 1. Run **IoT Core Powershell Environment** as an administrator. Select your appropriate architecture.
-2. Create a **driver package** using [New-IoTDriverPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTDriverPackage.md):
+2. Create a **driver package** using [Add-IoTDriverPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTDriverPackage.md):
 
 ```powershell
 Add-IoTDriverPackage C:\gpiokmdfdemo\gpiokmdfdemo.inf Drivers.TestDriver

@@ -49,7 +49,7 @@ You will need the following tools installed to complete this section:
 
    Only alphanumeric characters are supports in the OEM name as this is used as a prefix for various generated file names.
 
-   This generates the IoTWorkspace.xml and sets a version number for the design, which you can use for future updates. The first version number defaults to 10.0.0.0. (Why a four-part version number? Learn about versioning schemes in [Update requirements](https://docs.microsoft.com/windows-hardware/service/mobile/update-requirements)).
+   This generates the `IoTWorkspace.xml` file and sets a version number for the design, which you can use for future updates. The first version number defaults to 10.0.0.0. (Why a four-part version number? Learn about versioning schemes in [Update requirements](https://docs.microsoft.com/windows-hardware/service/mobile/update-requirements)).
 
    The required packages such as Registry.Version, Custom.Cmd and Provisioning.Auto will be imported into the workspace automatically.
 
@@ -68,6 +68,8 @@ From IoT Core Powershell Environment, get your environment ready to create produ
 New-IoTCabPackage All
 (or) buildpkg all 
 ```
+    > [!NOTE]
+    > If you get SignTool errors when building the packages in Test mode, please run installoemcerts.cmd to install the test certificates on your Technician PC.
 
 ## Create a Product
 
