@@ -26,7 +26,7 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | Official Raspberry Pi WiFi dongle | ARM32, x64, x86 | The official Raspberry Pi WiFi dongle offers the best possible WiFi performance for its diminutive size. | | &#10004;  |
 > | Airlink Wireless N 150 Mini USB Adapter | x64, x86 | Airlink 101 AWL5077 Golden 150Mbps Wireless Mini USB Adapter with WPA2, WPA, and WEP enhanced wireless security | | &#10004;  
 > | Panda PAU06 | x64, x86 |  Panda 300Mbps Wireless N USB Adapter with High Gain Antenna | |  &#10004;  
-> | TP-LINK TL_WN725N |  ARM, x32, x64, x86 | TP-LINK TL-WN725N Wireless N Nano USB Adapter 150 Mbps `(USB/VID_0BDA&PID_8179)` |  | &#10004;  
+> | TP-LINK TL_WN725N |  ARM32, x64, x86 | TP-LINK TL-WN725N Wireless N Nano USB Adapter 150 Mbps `(USB/VID_0BDA&PID_8179)` |  | &#10004;  
 > | NET-DYN USB WiFi Adapter | MBM | WiFi USB Adapter NET-DYN | |  &#10004;  
 > | Realtek 8191 USB Wireless WiFi | ARM32, x64, x86 | Realtek 8191 300Mbps 802.11n/g/b/ USB Wireless WiFi LAN Network Card Adapter | | &#10004;  
 > | Realtek 8192 USB Wireless WiFi | ARM32, x64, x86 | Realtek Single-Chip IEEE 802.11b/g/n 2T2R WLAN Controller with USB 2.0 Interface | | &#10004; |
