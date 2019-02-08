@@ -85,8 +85,8 @@ You will be prompted to enter the **SMBIOS** information, such as Manufacturer N
 * **System OEM Name:** Accolade Industries
 * **System Family Name:** AccoladeHub
 * **System SKU Number:** AIHub-001
-* **Baseboard Manufacturer:** Raspberry-Pi
-* **Baseboard Product:** DB410C 
+* **Baseboard Manufacturer:** Arrows
+* **Baseboard Product:** Dragonboard 410C
 
 The BSP name is the same as the folder name for the BSP. You can see which BSPs are available by looking in the `C:\MyWorkspace\Source-<arch>\BSP` folders. 
 
