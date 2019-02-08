@@ -82,10 +82,10 @@ Add-IoTProduct ProductA QCDB410C
 
 You will be prompted to enter the **SMBIOS** information, such as Manufacturer Name (OEM Name), Family, SKU, BaseboardManufacturer, and BaseboardProduct. Here are some example values:
 
-* **System Manufacturer:** Accolade Industries
-* **System Product Name:** AccoladeHub
-* **System SKU:** AIHub-001
-* **System Family:** ARM
+* **System OEM Name:** Accolade Industries
+* **System Family Name:** AccoladeHub
+* **System SKU Number:** AIHub-001
+* **Baseboard Manufacturer:** Raspberry-Pi
 * **Baseboard Product:** DB410C 
 
 The BSP name is the same as the folder name for the BSP. You can see which BSPs are available by looking in the `C:\MyWorkspace\Source-<arch>\BSP` folders. 
