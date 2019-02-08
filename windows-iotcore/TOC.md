@@ -1,7 +1,6 @@
 # [Windows 10 IoT](windows-iot.md)
 ## [Windows 10 IoT Enterprise](windows-iot-enterprise.md)
 ## [Windows 10 IoT Core](windows-iot-core.md)
-## [Windows Server IoT 2019](windows-server.md)
 ## [Windows 10 IoT Core Services](http://www.aka.ms/iotcoreservices) 
 ## [Get Started](GetStarted.md)
 ## [Quickstarts](tutorials/Tutorials.md)
