@@ -16,7 +16,7 @@ Once you have your IoT Core image setup with running application, it is importan
 Windows Device Portal (WDP) allows for you to configure and manage your IoT Device remoately over local network. WDP can be reachable via local ip of the IoT Device. Additional information on WDP on IoT can be found [here](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/DevicePortal)
 ### Collecting ETW / WPP Logs 
 
-
+-----
 ### File Sharing
 The App File Explorer can allow access to the directories that your apps can access
 *vCameraRoll is shared among all apps
@@ -33,12 +33,10 @@ You can download crash dumps of applications on IoT Device via WDP. See above li
 ## SSH/PowerShell/TShell
 PowerShell is a task-based command-line shell and scripting language, designed especially for system administration. Details on debugging and setting up powershell can be found [here](10k-powershell.md)
 
+
 ## Debug through Visual Studio Deployment
 Deploying and debugging your application is straightforward with Visual Studio. Remote Debugging feature can be used to deploy and debug the app to your locally connected Windows 10 IoT Core device. Detailed on deployment and debugging can be found [here](10a-DebugAndDeployApps.md)
 
-
-
-
-
-
-Once the device is live, you can use the following to debug your application if xxx is enabled.
+-----
+## Live App Debug
+In Visual Studio (2015 and later), you can analyze performance and diagnose issues in your ASP.NET web app both in debugging and in production, using telemetry from Azure Application Insights. The feature is later extended to include desktop and UWP applications in Visual Studio 2017 and via Azure Portal. Additional information on debugging your project can be found [here](https://docs.microsoft.com/en-us/azure/azure-monitor/app/visual-studio) and monitoring usage, and performance in desktop or UWP appplications can be found [here](https://docs.microsoft.com/en-us/azure/azure-monitor/app/windows-desktop  
