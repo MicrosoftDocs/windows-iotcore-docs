@@ -28,8 +28,8 @@ We will split the tasks into multiple sections.
 ### Gather BSP
  You will need to decide on your IoT Core Board of choice. You will only need to aquire BPS for the board or architecture of your choosing. 
  * DragonBoard 410C
-- [ ] [DragonBoard 410C](https://developer.qualcomm.com/hardware/dragonboard-410c/software) 
-- [ ] [DragonBoard 410C](https://developer.qualcomm.com/hardware/dragonboard-410c/software) 
+- [ ] [DragonBoard 410C Windows 10 IoT Core Board Support Package](https://developer.qualcomm.com/hardware/dragonboard-410c/software) 
+- [ ] [DragonBoard 410C Windows 10 IoT Core Update Tool (32/64 bit)](https://developer.qualcomm.com/hardware/dragonboard-410c/software) 
  * Raspberry Pi (2/3)
 - [ ] [RPi_BSP.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/17134_v5.3/RPi_BSP.zip)
 > [!NOTE]
@@ -115,4 +115,8 @@ Build your first test FFU image with the following command:
     ```
  
  ### Flash the FFU
+ - [ ] [Dragon Board Instructions](https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/fabricam/windows-iotcore/manufacturing-guide/05-FlashingImage.md#DragonBoard)
  
+ - [ ] [Flashing Raspberry Pi using Windows IoT Core Dashboard (https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/fabricam/windows-iotcore/manufacturing-guide/05-FlashingImage.md#RaspberryPi)
+ 
+ - [ ] [Creating Windows PE Bootable drive to flash Intel based IoT Devices] (Flashing Raspberry Pi using Windows IoT Core Dashboard (https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/fabricam/windows-iotcore/manufacturing-guide/05-FlashingImage.md#Intel)
