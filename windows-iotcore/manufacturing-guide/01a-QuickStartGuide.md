@@ -117,6 +117,6 @@ Build your first test FFU image with the following command:
  ### Flash the FFU
  - [ ] [Dragon Board Instructions](https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/fabricam/windows-iotcore/manufacturing-guide/05-FlashingImage.md#DragonBoard)
  
- - [ ] [Flashing Raspberry Pi using Windows IoT Core Dashboard (https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/fabricam/windows-iotcore/manufacturing-guide/05-FlashingImage.md#RaspberryPi)
+ - [ ] [Flashing Raspberry Pi using Windows IoT Core Dashboard] (https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/fabricam/windows-iotcore/manufacturing-guide/05-FlashingImage.md#RaspberryPi)
  
  - [ ] [Creating Windows PE Bootable drive to flash Intel based IoT Devices] (Flashing Raspberry Pi using Windows IoT Core Dashboard (https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/fabricam/windows-iotcore/manufacturing-guide/05-FlashingImage.md#Intel)
