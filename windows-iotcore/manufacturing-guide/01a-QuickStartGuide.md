@@ -47,13 +47,13 @@ We will split the tasks into multiple sections.
     c:\<unzip folder>iot-adk-addonkit\IoTCorePShell.cmd
  ```
  
-Once the Powershell window opens, you can type in the following command (if this is your first time)
+ - [ ] Once the Powershell window opens, you can type in the following command (if this is your first time)
     
 ``` powershell
     new-ws C:\MyWorkspace <oemname> <arch>
 ```
 
-For subsequent visits, use this:
+ - [ ] For subsequent visits, use this:
   
 ``` powershell
     (or) open-ws C:\MyWorkspace
@@ -71,16 +71,22 @@ For subsequent visits, use this:
 
 
     ``` powershell
-    Import-QCBSP "C:\Downloads\db410c_BSP.zip" C:\prebuilt\DB410c_BSP -ImportBSP
-    buildpkg QCDB410C
+    Import-IoTBSP RPi2 C:\Downloads\RPi_BSP.zip
+    (or) importbsp RPi2 C:\Downloads\RPi_BSP.zip
+    buildpkg RPi2
     ```
 
 - [ ] Intel
 
     ``` powershell
-    Import-QCBSP "C:\Downloads\db410c_BSP.zip" C:\prebuilt\DB410c_BSP -ImportBSP
-    buildpkg QCDB410C
+    Import-IoTBSP <bspname> "C:\Program Files (x86)\Intel IoT\Source-<arch>"
+    buildpkg <bspname>
     ```
 
-
+### Build all packages
+- [ ] Rebuild packages with the following command
  
+    ``` powershell
+    New-IoTCabPackage All
+(or) buildpkg all 
+    ```
