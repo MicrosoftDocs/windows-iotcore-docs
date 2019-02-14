@@ -96,3 +96,10 @@ Follow the steps below to use this BSP with the Windows 10 ADK release 1809 (177
     (or) importbsp <bspname> $Source
     buildpkg <bspname>
     ```
+5. if the above commands does not work, you can skip the step 3, and combine the step 3 and 4 into a single step as follows:
+
+    ``` powershell
+    Import-IoTBSP <bspname> C:\Program Files (x86)\Intel IoT\Source-<arch>
+    (or) importbsp <bspname> C:\Program Files (x86)\Intel IoT\Source-<arch>
+    buildpkg <bspname>
+    ```
