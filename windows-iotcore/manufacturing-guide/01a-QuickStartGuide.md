@@ -43,17 +43,18 @@ We will split the tasks into multiple sections.
 ### Create Workspace
  After unzipping the IoT Core ADK Add-On Package to a directory of your choosing on your technician computer, run the following command line from console. Powershell window will open up. Depending on the architecutre of your choosing, you will have to use one arm, x86, or x64 as your system architecture.
  
-     ``` powershell
+ ``` powershell
     c:\<unzip folder>iot-adk-addonkit\IoTCorePShell.cmd
-    ```
-    
+ ```
+ 
     Once the Powershell window opens, you can type in the following command (if this is your first time)
     
-     ``` powershell
+``` powershell
     new-ws C:\MyWorkspace <oemname> <arch>
-    ```
+```
     
     For subsequent visits, use this:
-    ``` powershell
+    
+``` powershell
     (or) open-ws C:\MyWorkspace
-    ```
+```
