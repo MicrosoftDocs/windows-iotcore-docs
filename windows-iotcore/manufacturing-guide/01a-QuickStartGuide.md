@@ -47,14 +47,14 @@ We will split the tasks into multiple sections.
     c:\<unzip folder>iot-adk-addonkit\IoTCorePShell.cmd
  ```
  
-    Once the Powershell window opens, you can type in the following command (if this is your first time)
+Once the Powershell window opens, you can type in the following command (if this is your first time)
     
 ``` powershell
     new-ws C:\MyWorkspace <oemname> <arch>
 ```
-    
-    For subsequent visits, use this:
-    
+
+For subsequent visits, use this:
+  
 ``` powershell
     (or) open-ws C:\MyWorkspace
 ```
