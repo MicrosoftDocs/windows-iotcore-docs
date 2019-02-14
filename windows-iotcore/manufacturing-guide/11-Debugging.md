@@ -18,12 +18,17 @@ Windows Device Portal (WDP) allows for you to configure and manage your IoT Devi
 
 
 ### File Sharing
-
+The App File Explorer can allow access to the directories that your apps can access
+*vCameraRoll is shared among all apps
+* Documents is shared among all apps
+* LocalAppData contains folders specific to each app. This folder will be the same name as your app and other apps cannot access it.
+See above link for additional information.
 
 ### Kernel Debug
-
+You can download live Kernel dumps via WDP as well. Any system crashes will be automatically be logged and available for download. See above link for additional information.
 
 ### Enable Crash Dump
+You can download crash dumps of applications on IoT Device via WDP. See above link for additional information.
 
 ## SSH/PowerShell/TShell
 PowerShell is a task-based command-line shell and scripting language, designed especially for system administration. Details on debugging and setting up powershell can be found [here](10k-powershell.md)
