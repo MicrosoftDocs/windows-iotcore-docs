@@ -10,4 +10,30 @@ keywords: Windows 10 IoT Core,
 ---
 
 # Debugging on Windows IoT Core
-Once you have your IoT Core image setup with running application, it is important that you can debug the application or the system as needed. The best time to debug and test the system is while the test image state. Once IoT Core based systems is out in the wild, debugging can become challanging. That is not to say it can not be done but with additional layers of difficulties added to debug compare to a testing phases.
+Once you have your IoT Core image setup with running application, it is important that you can debug the application or the system as needed. The best time to debug and test the system is while the test image state. Once IoT Core based systems is out in the wild, debugging can become challanging. That is not to say it can not be done but with additional layers of difficulties added to debug compare to a testing phases. You can use the following to debug your application or image while in test mode:
+
+## Device Portal
+Windows Device Portal (WDP) allows for you to configure and manage your IoT Device remoately over local network. WDP can be reachable via local ip of the IoT Device. Additional information on WDP on IoT can be found [here](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/DevicePortal)
+### Collecting ETW / WPP Logs 
+
+
+### File Sharing
+
+
+### Kernel Debug
+
+
+### Enable Crash Dump
+
+## SSH/PowerShell/TShell
+PowerShell is a task-based command-line shell and scripting language, designed especially for system administration. Details on debugging and setting up powershell can be found [here](10k-powershell.md)
+
+## Debug through Visual Studio Deployment
+Deploying and debugging your application is straightforward with Visual Studio. Remote Debugging feature can be used to deploy and debug the app to your locally connected Windows 10 IoT Core device. Detailed on deployment and debugging can be found [here](10a-DebugAndDeployApps.md)
+
+
+
+
+
+
+Once the device is live, you can use the following to debug your application if xxx is enabled.
