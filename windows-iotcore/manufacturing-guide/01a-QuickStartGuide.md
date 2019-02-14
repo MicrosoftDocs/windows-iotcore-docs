@@ -88,5 +88,20 @@ We will split the tasks into multiple sections.
  
     ``` powershell
     New-IoTCabPackage All
-(or) buildpkg all 
+    (or) buildpkg all 
     ```
+### Create a Product
+At this point, create a new product with the command listed below: You will be prompted to enter SMBIOS information.
+- [ ] Create new product
+ 
+    ``` powershell
+    Add-IoTProduct ProductA QCDB410C
+    (or) newproduct MyProductA QCDB410C
+    ```
+    Sample **SMBIOS**
+* **System OEM Name:** Accolade Industries
+* **System Family Name:** AccoladeHub
+* **System SKU Number:** AIHub-001
+* **Baseboard Manufacturer:** Arrows
+* **Baseboard Product:** Dragonboard 410C
+
