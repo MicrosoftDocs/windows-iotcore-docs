@@ -60,14 +60,14 @@ For subsequent visits, use this:
 ```
 ### Import BSP
  Import the BPS of your choice and build the package of the BSP
- [ ] DragonBoard 401C
+ - [ ] DragonBoard 401C
  
     ``` powershell
     Import-QCBSP "C:\Downloads\db410c_BSP.zip" C:\prebuilt\DB410c_BSP -ImportBSP
     buildpkg QCDB410C
     ```
     
-[ ] Raspberry Pi
+- [ ] Raspberry Pi
 
 
     ``` powershell
@@ -75,7 +75,7 @@ For subsequent visits, use this:
     buildpkg QCDB410C
     ```
 
-[ ] Intel
+- [ ] Intel
 
     ``` powershell
     Import-QCBSP "C:\Downloads\db410c_BSP.zip" C:\prebuilt\DB410c_BSP -ImportBSP
