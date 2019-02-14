@@ -23,6 +23,16 @@ We will split the tasks into multiple sections.
 - [ ] [Windows PE add-on for the ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)
 - [ ] [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore)
 - [ ] [IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)
-- [Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/p/?LinkId=708576)
+- [ ] [Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/p/?LinkId=708576)
 
 ### Gather BSP
+ You will need to decide on your IoT Core Board of choice. You will only need to aquire BPS for the board or architecture of your choosing. 
+ * DragonBoard 410C
+- [ ] [DragonBoard 410C](https://developer.qualcomm.com/hardware/dragonboard-410c/software) 
+- [ ] [DragonBoard 410C](https://developer.qualcomm.com/hardware/dragonboard-410c/software) 
+ * Raspberry Pi (2/3) [!note Pi 3B+ has a different BSP from 2/3]
+- [ ] [RPi_BSP.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/17134_v5.3/RPi_BSP.zip)
+ * Intel Boards (Pick one from list below)
+- [ ] [Intel® Atom™ Processor E3800 Product Family and Intel® Celeron® Processor N2807/N2930/J1900](https://downloadcenter.intel.com/download/25618)
+- [ ] [Intel Atom® Processor E3900 Series, and Intel® Pentium® and Celeron® Processor N- and J-Series (Apollo Lake)](https://downloadcenter.intel.com/download/25618)
+- [ ] [Intel® Pentium® and Celeron® Processor N3000 Product Families, Intel® Atom™ x5-E8000 Processor, and Intel® Atom™ x5-Z8350 Processor](https://www.intel.com/content/www/us/en/embedded/products/braswell/software-and-drivers.html)
