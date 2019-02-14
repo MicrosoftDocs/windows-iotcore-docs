@@ -43,21 +43,21 @@ We will split the tasks into multiple sections.
 ### Create Workspace
  After unzipping the IoT Core ADK Add-On Package to a directory of your choosing on your technician computer, run the following command line from console. Powershell window will open up. Depending on the architecutre of your choosing, you will have to use one arm, x86, or x64 as your system architecture.
  
- ``` powershell
+     ``` powershell
     c:\<unzip folder>iot-adk-addonkit\IoTCorePShell.cmd
- ```
+     ```
  
  - [ ] Once the Powershell window opens, you can type in the following command (if this is your first time)
     
-``` powershell
+    ``` powershell
     new-ws C:\MyWorkspace <oemname> <arch>
-```
+    ```
 
  - [ ] For subsequent visits, use this:
   
-``` powershell
+    ``` powershell
     (or) open-ws C:\MyWorkspace
-```
+    ```
 ### Import BSP
  Import the BPS of your choice and build the package of the BSP
  - [ ] DragonBoard 401C
@@ -120,3 +120,8 @@ Build your first test FFU image with the following command:
  - [ ] [Flashing Raspberry Pi using Windows IoT Core Dashboard](https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/fabricam/windows-iotcore/manufacturing-guide/05-FlashingImage.md#RaspberryPi)
  
  - [ ] [Creating Windows PE Bootable drive to flash Intel based IoT Devices](https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/fabricam/windows-iotcore/manufacturing-guide/05-FlashingImage.md#Intel)
+
+
+-----
+ ### Example Powershell Screen Output
+ 
