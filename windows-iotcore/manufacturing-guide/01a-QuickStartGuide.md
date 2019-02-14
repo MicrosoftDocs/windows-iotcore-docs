@@ -21,8 +21,8 @@ We will split the tasks into multiple sections.
 ### Gather and download neccessary Tools
 - [ ] [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK) 
 - [ ] [Windows PE add-on for the ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)
-- [ ] [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore)
-- [ ] [IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)
+- [ ] [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore) 
+- [ ] [IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/) (Recommand that you clone this)
 - [ ] [Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/p/?LinkId=708576)
 
 ### Gather BSP
@@ -30,9 +30,26 @@ We will split the tasks into multiple sections.
  * DragonBoard 410C
 - [ ] [DragonBoard 410C](https://developer.qualcomm.com/hardware/dragonboard-410c/software) 
 - [ ] [DragonBoard 410C](https://developer.qualcomm.com/hardware/dragonboard-410c/software) 
- * Raspberry Pi (2/3) [!note Pi 3B+ has a different BSP from 2/3]
+ * Raspberry Pi (2/3)
 - [ ] [RPi_BSP.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/17134_v5.3/RPi_BSP.zip)
+> [!NOTE]
+> Raspberry Pi BSP driver sources are available at [ms-iot/bsp](https://github.com/ms-iot/bsp)
+> Pi 3B+ has a different BSP from 2/3
  * Intel Boards (Pick one from list below)
 - [ ] [Intel® Atom™ Processor E3800 Product Family and Intel® Celeron® Processor N2807/N2930/J1900](https://downloadcenter.intel.com/download/25618)
 - [ ] [Intel Atom® Processor E3900 Series, and Intel® Pentium® and Celeron® Processor N- and J-Series (Apollo Lake)](https://downloadcenter.intel.com/download/25618)
 - [ ] [Intel® Pentium® and Celeron® Processor N3000 Product Families, Intel® Atom™ x5-E8000 Processor, and Intel® Atom™ x5-Z8350 Processor](https://www.intel.com/content/www/us/en/embedded/products/braswell/software-and-drivers.html)
+
+### Create Workspace
+ After unzipping the IoT Core ADK Add-On Package to a directory of your choosing on your technician computer, run the following command line from console. Powershell window will open up. Depending on the architecutre of your choosing, you will have to use one arm, x86, or x64 as your system architecture.
+     ``` powershell
+    c:\<unzip folder>iot-adk-addonkit\IoTCorePShell.cmd
+    ```
+    Once the Powershell window opens, you can type in the following command (if this is your first time)
+     ``` powershell
+    new-ws C:\MyWorkspace <oemname> <arch>
+    ```
+    For subsequent visits, use this:
+    ``` powershell
+    (or) open-ws C:\MyWorkspace
+    ```
