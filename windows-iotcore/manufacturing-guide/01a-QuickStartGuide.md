@@ -105,3 +105,14 @@ At this point, create a new product with the command listed below: You will be p
 * **Baseboard Manufacturer:** Arrows
 * **Baseboard Product:** Dragonboard 410C
 
+### Create a test Image
+Build your first test FFU image with the following command:
+- [ ] Create Test FFU
+ 
+    ``` powershell
+New-IoTFFUImage <product name> Test
+(or)buildimage <product name> Test 
+    ```
+ 
+ ### Flash the FFU
+ 
