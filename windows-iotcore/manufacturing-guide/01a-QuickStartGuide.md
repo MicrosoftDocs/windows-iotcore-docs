@@ -125,7 +125,139 @@ Build your first test FFU image with the following command:
 -----
  ### Example Powershell Screen Output
  
-    ``` powershell
-    New-IoTFFUImage <product name> Test
-    (or)buildimage <product name> Test 
-    ```
+ This example shows a **BSWx64** image built from scratch with all steps shown. The workspace is located at **c:\IoT\WorkSpaces**. 
+ 
+ ``` powershell
+
+Loading IoTCoreImaging module..
+arm IoT Core kit found.
+x86 IoT Core kit found.
+x64 IoT Core kit found.
+arm64 IoT Core kit found.
+Test certs installed
+Opening workspace : C:\IoT\iot-adk-addonkit\Workspace\IoTWorkspace.xml
+Corekit found OK
+ADK_VERSION : 10.0.17763.1
+IOTCORE_VER : 10.0.17763.107
+BSP_VERSION : 10.0.0.0
+ADDONKITVER : 6.0.190116.1218
+HostOS Info : Microsoft Windows 10 Enterprise - 10.0.17763 - en-US
+IOTWKSPACE  : C:\IoT\iot-adk-addonkit\Workspace
+OEM_NAME    : Contoso
+BSP_ARCH    : arm
+BSPPKG_DIR  : C:\IoT\iot-adk-addonkit\Workspace\Build\arm\pkgs
+MSPKG_DIR   : C:\Program Files (x86)\Windows Kits\10\MSPackages\Retail\arm\fre
+IoTCorePShell arm 10.0.0.0 Test
+PS C:\IoT\iot-adk-addonkit\Workspace>new-ws C:\IoT\WorkSpaces\BSWDemo TestDevice x64
+New IoTWorkSpace available at C:\IoT\WorkSpaces\BSWDemo for x64
+Opening workspace : C:\IoT\WorkSpaces\BSWDemo\IoTWorkspace.xml
+Corekit found OK
+ADK_VERSION : 10.0.17763.1
+IOTCORE_VER : 10.0.17763.107
+BSP_VERSION : 10.0.0.0
+ADDONKITVER : 6.0.190116.1218
+HostOS Info : Microsoft Windows 10 Enterprise - 10.0.17763 - en-US
+IOTWKSPACE  : C:\IoT\WorkSpaces\BSWDemo
+OEM_NAME    : TestDevice
+BSP_ARCH    : amd64
+BSPPKG_DIR  : C:\IoT\WorkSpaces\BSWDemo\Build\amd64\pkgs
+MSPKG_DIR   : C:\Program Files (x86)\Windows Kits\10\MSPackages\Retail\amd64\fre
+Copying Registry.Version
+Copying Custom.Cmd
+Copying Provisioning.Auto
+Copying OEM.Sample
+Copying Device.SystemInformation
+Copying DeviceLayout.GPT4GB
+Copying DeviceLayout.GPT8GB-R
+Copying DeviceLayout.MBR4GB
+Copying DeviceLayout.MBR8GB-R
+Workspace ready!
+IoTCorePShell amd64 10.0.0.0 Test
+PS C:\IoT\WorkSpaces\BSWDemo>Import-IoTBSP BSWx64 "C:\Program Files (x86)\Intel IoT\Source-x64\BSP\"
+Processing C:\Program Files (x86)\Intel IoT\Source-x64\BSP\\BSWx64
+Warning:   Replacing Intel.BSW64.DeviceLayout with %OEM_NAME%.BSW64.DeviceLayout
+Warning:   Replacing Intel.BSW64.GFX with %OEM_NAME%.BSW64.GFX
+Warning:   Replacing Intel.BSW64.OEMDevicePlatform with %OEM_NAME%.BSW64.OEMDevicePlatform
+BSP copy completed
+IoTCorePShell amd64 10.0.0.0 Test
+PS C:\IoT\WorkSpaces\BSWDemo>buildpkg BSWx64
+Processing BSW64.DeviceLayout.wm.xml
+Processing BSW64.GFX.wm.xml
+Processing BSW64.GPIO.wm.xml
+Processing BSW64.I2C.wm.xml
+Processing BSW64.OEMDevicePlatform.wm.xml
+Processing BSW64.SystemInformation.wm.xml
+Processing BSW64.UART.wm.xml
+True
+IoTCorePShell amd64 10.0.0.0 Test
+PS C:\IoT\WorkSpaces\BSWDemo>New-IoTCabPackage All
+Processing Device.SystemInformation.wm.xml
+Processing DeviceLayout.GPT4GB.wm.xml
+Processing DeviceLayout.GPT8GB-R.wm.xml
+Processing DeviceLayout.MBR4GB.wm.xml
+Processing DeviceLayout.MBR8GB-R.wm.xml
+Processing Registry.Version.wm.xml
+Processing OEM.Sample.wm.xml
+Processing BSW64.DeviceLayout.wm.xml
+Processing BSW64.GFX.wm.xml
+Processing BSW64.GPIO.wm.xml
+Processing BSW64.I2C.wm.xml
+Processing BSW64.OEMDevicePlatform.wm.xml
+Processing BSW64.SystemInformation.wm.xml
+Processing BSW64.UART.wm.xml
+True
+IoTCorePShell amd64 10.0.0.0 Test
+PS C:\IoT\WorkSpaces\BSWDemo>Add-IoTProduct IoTProductA BSWx64
+
+cmdlet Add-IoTProduct at command pipeline position 1
+Supply values for the following parameters:
+OemName: Contoso
+FamilyName: DeviceFamily-1
+SkuNumber: SKU-001
+BaseboardManufacturer: Intel
+BaseboardProduct: BSW-Ax5-Z8350
+Creating IoTProductA Product with BSP BSWx64
+Creating C:\IoT\WorkSpaces\BSWDemo\Source-x64\Products\IoTProductA\prov\customizations.xml...
+Creating C:\IoT\WorkSpaces\BSWDemo\Source-x64\Products\IoTProductA\IoTProductASettings.xml...
+Product Config file : C:\IoT\WorkSpaces\BSWDemo\Source-x64\Products\IoTProductA\IoTProductASettings.xml
+DeviceInventory file : C:\IoT\WorkSpaces\BSWDemo\Source-x64\Products\IoTProductA\IoTDeviceModel_IoTProductA.xml
+OS Version           : 10.0.17763.107
+BSP Version          : 10.0.0.0
+DeviceInventory created
+IoTCorePShell amd64 10.0.0.0 Test
+PS C:\IoT\WorkSpaces\BSWDemo>New-IoTFFUImage IoTProductA Test
+ADK_VERSION : 10.0.17763.1
+IOTCORE_VER : 10.0.17763.107
+BSP_VERSION : 10.0.0.0
+ADDONKITVER : 6.0.190116.1218
+HostOS Info : Microsoft Windows 10 Enterprise - 10.0.17763 - en-US
+Validating product feature ids
+Reading feature ids in C:\IoT\WorkSpaces\BSWDemo\Source-x64\BSP\BSWx64\Packages\BSWx64FM.XML
+Reading feature ids in C:\IoT\WorkSpaces\BSWDemo\Common\Packages\OEMCommonFM.xml
+Reading feature ids in C:\IoT\WorkSpaces\BSWDemo\Source-x64\Packages\OEMFM.xml
+Checking Microsoft features in OEMInput file..
+Warning: IOT_APPLICATIONS is not defined
+Warning: IOT_CORTANA is not defined
+Warning: IOT_DISABLE_UMCI is not defined
+Warning: IOT_GENERIC_POP is not defined
+Warning: IOT_NETCMD is not defined
+Checking OEM features in OEMInput file..
+Building product specific packages
+Processing Registry.Version.wm.xml
+Processing Custom.Cmd.wm.xml
+Processing Provisioning.Auto.wm.xml
+Building FM files..
+Exporting OEM FM files..
+Processing OEMFMList..
+Exporting BSWx64 BSP FM files
+Processing BSWx64FMFileList.xml
+Creating Image..
+See C:\IoT\WorkSpaces\BSWDemo\Build\amd64\IoTProductA_Test.log for progress
+This will take a while...
+Build Completed. See C:\IoT\WorkSpaces\BSWDemo\Build\amd64\IoTProductA\Test\Flash.ffu
+True
+IoTCorePShell amd64 10.0.0.0 Test
+PS C:\IoT\WorkSpaces\BSWDemo>
+
+
+```
