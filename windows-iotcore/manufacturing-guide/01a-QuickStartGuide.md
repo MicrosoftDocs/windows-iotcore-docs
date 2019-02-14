@@ -110,8 +110,8 @@ Build your first test FFU image with the following command:
 - [ ] Create Test FFU
  
     ``` powershell
-New-IoTFFUImage <product name> Test
-(or)buildimage <product name> Test 
+    New-IoTFFUImage <product name> Test
+    (or)buildimage <product name> Test 
     ```
  
  ### Flash the FFU
