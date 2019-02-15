@@ -1,91 +1,237 @@
 ---
-title: October 2018 Update - Build 17763
-author: saraclay
-ms.author: saclayt
-ms.date: 10/02/2018
+title: Release Notes for Build 17763.253
+author: zeeshanfurqan
+ms.author: zeeshan.furqan
+ms.date: 02/14/2019
 ms.topic: article
-description: Learn about what's new in the October 2018 Update for Windows.
-keywords: Windows IoT, October 2018 Update, release notes
+description: Read and learn about what's new in Windows Insider Build Number 17763.253
+keywords: windows iot, Windows Insider, release notes
 ---
 
-# October 2018 Update Release Notes for Windows 10 IoT
-Build Number 17763. October 2018
+# Release Notes for Build 17763.253
+_Build Number 17763.253. February 2019._
 
-Windows 10 IoT enables development of embedded or dedicated-purpose devices and is the choice for OEMs and developers building Windows solutions for smart devices.
+&copy; 2019 Microsoft Corporation. All rights reserved.
 
-This document provides information that supplements other content and documentation for this release of Windows 10 IoT.
+This document provides late-breaking or other information that supplements the documentation included with the Windows 10 IoT Core.
+
+Thank you for downloading Windows 10 IoT Core. Windows 10 IoT Core is the version of Windows 10 intended for development of embedded or dedicated purpose devices and the choice for the Maker community. The packages within this release contain tools and content needed to install Windows 10 IoT Core on Minnowboard Max platform based on Intel Atom processers, Raspberry Pi 2/3 based on Broadcom 2836/2837, and Dragonboard 410c based on Qualcomm Snapdragon 400 series processors.
+
 
 ## Privacy Statement
 
-The privacy statement for this version of the Windows operating system can be viewed at [https://go.microsoft.com/fwlink/?LinkId=521839](https://go.microsoft.com/fwlink/?LinkId=521839).
+The privacy statement for this version of the Windows operating system can be viewed [here](http://go.microsoft.com/fwlink/?LinkId=506737).
 
-## What's New in October 2018 Update
+You can review linked terms by pasting the forward link into your browser window.
 
-_Windows 10 IoT Enterprise & Windows 10 IoT Core_
-* The Windows 10 IoT October 2018 Update will have 10 years of support for both IoT Core and IoT Enterprise.
-* [Azure IoT Edge](https://docs.microsoft.com/azure/iot-edge/quickstart) is a fully managed service that delivers cloud intelligence locally by deploying and running artificial (AI) workloads, Azure services, and custom logic directly on Windows 10 IoT devices.
-* [Windows Machine Learning](https://docs.microsoft.com/windows/ai/) allows developers to use pretrained machine learning models in their applications. These models are typically trained in the cloud to be evaluated at the edge. Local evaluation on devices running Windows 10 IoT helps mitigate concerns of connectivity, bandwidth, and data privacy.  
-
-_Windows 10 IoT Core_
-* [Windows 10 IoT Core Services](https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview) subscription is now generally available. This subscription comes with three main benefits including 10 years of OS support, update control with the [Device Update Center](https://docs.microsoft.com/windows-hardware/service/iot/using-device-update-center), and Device Health Attestation (DHA).
-* To meet growing customer and partner demand for silicon diversity, Microsoft, in close partnership with NXP, have added support for NXP i.MX 6, 7, and 8M series processors to Windows 10 IoT Core. 
-* Qualcomm and Microsoft have created a solution that combines Windows 10 IoT Enterprise with Snapdragon processors to build devices that consume less power, are always connected and wake instantly. Long battery life enables dedicated devices like mobile POS and line-of-business tablets to last a full day of heavy use. 
-* [The Windows 10 IoT Core Default App](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp) has more features that users can leverage for their own applications, especially when bringing their devices to market. These features include weather, inking capabilities, audio capabilities. 
-* If you are building an open retail device for commercial deployment to a "specific/limited installation" (i.e. factory or retail store) where the end-user does the final configuration and you document your customers that they must [obtain a certificate for WDP and install it on both WDP and connecting browsers and passwords are changed on WDP](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-ssl), then using WDP in this narrow commercial instance is acceptable. Retail images in this scenario should still not include IOT_TOOLKIT, but should use the IOT_WEBBEXTN package to pull in WDP. 
-* Limpet.exe is now available as an [open source project](https://github.com/ms-iot/azure-dm-client). To make testing easier, we have a non-signed, pre-built version of Limpet.exe available and can be downloaded right from WDP. Learn more about this feature from the [Windows Device Portal documentation](https://docs.microsoft.com/windows/iot-core/manage-your-device/deviceportal).  
-* With RS5, developers are now able to flash custom FFUs onto their device using the Dashboard. This can be done with either the DragonBoard 410C or NXP. Learn more and get started [here](https://docs.microsoft.com/windows/iot-core/tutorials/quickstarter/devicesetup).
-* Windows 10 IoT Core now uses the same touch keyboard components as the desktop edition of Windows which allows for features like dictation mode, the entire set of Windows keyboard language layouts, and more. This new update also includes supprt for emoticons, most input "scopes", and better multi-lang support. Learn how to leverage these features [here](https://docs.microsoft.com/windows/iot-core/develop-your-app/onscreenkeyboard).
-* Learn how to [configure your device to allow to be turned off](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/wakeontouch) while not in use and to be turned on when a user touches a screen.
-* Bluetooth A2DP-SINK is now optionally supported (e.g. Allows playback from remote source such as iPhone to IoT device) and Bluetooth A2DP-SRC is now an optional package (was available by default in the April 2018 Release). You can control Bluetooth A2DP-SRC and A2DP-SINK profile preferences when both profiles are present and when pairing with another device that also supports both. 
-* By design, Windows 10 IoT Core does not display an application frame around an application’s window – in other words, an application is shown as full screen. But with this release, developers have the option of [configuring title bars](https://docs.microsoft.com/windows/iot-core/develop-your-app/signindialogtitlebars).
-* Bus tools that allow you to interact with Gpio, I2c, Spi and UART are now available in [our samples repository](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/BusTools). These tools will run on any edition of Windows including Windows 10 IoT Core and Windows Enterprise. 
-* [The Windows.System.Update Namespace API](https://docs.microsoft.com/uwp/api/windows.system.update) enables calls for interactive control of system updates. This namespace is only available for Windows 10 IoT Core.
-* If you're looking to use IoT Central as part of a Windows 10 IoT solution, you can now prepare and [connect a Windows 10 IoT Core device to your Azure IoT Central application](https://docs.microsoft.com/azure/iot-central/howto-connect-windowsiotcore). 
-* The release for the Raspberry Pi 3B+ (the downloadable ISO can be found [here](http://go.microsoft.com/fwlink/?LinkID=708576)) is a technical preview and there is currently no timeline for a release version. For a better evaluation experience and fr any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm or NXP SoCs. 
+## What's new in this build: 
+* General bug fixes 
 
 
-## IoT Enterprise Manufacturing Guide
-
-* A new manufacturing guide for Windows 10 IoT Enterprise is [now available](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview). 
-
-## Improvements in Assigned Access 
-
-_Windows 10 IoT Enterprise_
-
-* Kiosks and digital signs are often place in public places where issues are widely seen by people. With built-in status reporting, device management systems are automatically made aware of problems and can issue corrective actions like restarting the device or dispatching a service technician. 
-* Reducing deployment and management costs are key drivers of ROI. Windows 10 IoT Enterprise has improved features for configuring a kiosk experience via a new wizard in the Settings app, managing multi-app kiosks and tailoring the [Microsoft Edge browser experience for kiosk devices](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy).
-* While device builders have great flexibility to configure Assigned Access using provisioning packages, the Settings app, and mobile device management systems, some customers still need more. [Using a new set of Assigned Access APIs](https://docs.microsoft.com/uwp/api/windows.system.userprofile.assignedaccesssettings), developers can now configure Assigned Access programmatically from within their applications.
-* With the October 2018 release, customers can specify an auto-launch experience as part of the multi-app assigned access configuration so the end user can always have a default primary app experience.
-* You can control what the user sees from the moment the device is turned on until it's powered off. Starting by showing your logo instead of the Windows logo at boot, or auto-restart apps without error messages after an app crash, a system issue or a power interruption. 
-* You can use the Unified Write Filter (UWF) feature to build a "read-only" device that returns to a known state after a power cycle by keeping disk changes in memory instead of writing them to disk. You can also combine UWF with the Hibernate Once, Resume Many (HORM) feature to resume to a predefined session. 
+## Additional Information
+* The BSP version used for our Dragon Board image is 2118.0.0.0. 
 
 
-## More Management Support
-
-_Windows 10 IoT Enterprise_
-* Azure IoT Hub offers lightweight device management features and an extensibility model that enable device and cloud developers to build robust device management solutions. Integration with [Azure IoT Device Management](https://docs.microsoft.com/windows/iot-core/manage-your-device/azureiotdm) is now available for both Windows 10 IoT Core and Enterprise. 
-
-_Windows 10 IoT Core_
-* Enterprises that use [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) for their device management can now manage Windows 10 IoT Core devices alongside their Windows 10 IoT Enterprise devices and other managed devices. This gives operators a consistent way to manage Windows 10 IoT devices using the same management interface and controls. 
-
-
-## Windows 10 IoT Core Reference Images
-___ 
-* Minnowboard Max
-  * Processor: Intel Atom E3825
-  * Architecture: x86
-
-* Raspberry Pi 3 Model B
-  * Processor: Broadcom BCM2837
-  * Architecture: ARM
-
-* DragonBoard 410c
-  * Processor: Qualcomm Snapdragon 410
-  * Architecture: ARM
-  * BSP Version: 2120.0.0.0
+## Known issues in this build:
+* F5 driver deployment from Visual Studio does not work on IoT Core.
+* Devices that were installed via NOOBS cannot run the bcdedit tool to enable the kernel debugger. This can be achieved with the following workaround:
+**	Mount the SD card on your PC
+**	Find the EFIESP drive partition number with diskpart or Disk Management (say it’s “M:”)
+**	Run the command “bcdedit /store M:\EFI\Microsoft\boot\bcd /set {default} debug yes”
+**	Unmount the SD card.
+**	You should now be able to connect the debugger as usual
+* On occasion, PSSession will break when sending commands to IoT devices.
+* RPi3 will not pair BT + BTLE with onboard Bluetooth.
+* Unable to connect to internet through WIFI connection with SoftAp of Up2.
+* Brightness control settings do not persist on IoT during Override.
 
 
-## Known Issues
-* F5 driver deployment from Visual Studio does not work on Windows 10 IoT Core. Drivers must be manually copied and registered on the device.
-* Devices that were installed via NOOBS cannot run the bcdedit tool to enable the kernel debugger.
-* The Windows IoT Remote client does not work for Raspberry Pi. Use a board with accelerated graphics such as Minnowboard Max or Dragonboard or attach a monitor for local display.
+## IoT Core general known issues and work arounds
+
+### For Raspberry Pi
+
+#### Raspberry Pi Display Resolution if monitor is disconnected 
+The Raspberry Pi may not maintain Display Resolution if monitor is disconnected. The EDID of the monitor is used to set the resolution of the system when one is connected. When disconnected, the Raspberry Pi firmware defaults to what is in the config.txt in the root of the SD card. 
+
+#### Raspberry Pi Video Performance 
+Video playback performance on the Raspberry Pi platform is not optimized.  Animated user elements including XAML-based dropdown menus may exhibit less than optimal performance. 
+ 
+#### Raspberry Pi Camera Support 
+Support for camera peripheral devices is limited. The PiCam device directly connected to the onboard camera bus is not supported due to limitations in the platform to support D3D Modern USB webcams produce data streams that are very demanding on the USB Host controller.  Even when used with low resolution settings webcams will require additional USB fine tuning and specialized control logic. 
+
+#### Raspberry Pi3 Bluetooth support 
+The Raspberry Pi3 built-in Bluetooth driver only supports low bandwidth devices. 
+
+#### Serial Port Usage and Access on RPi2 
+Raspberry Pi 2 supports the serial transport for communication through the PL011 UART.  This is set by default in kernel debugging scenarios.  An application or device driver can use the PL011 UART to send and receive data with the PL011 device driver turning off the debugger using the following command:
+```
+bcedit /set debug off 
+```
+
+#### Data breakpoints have been disabled on the Raspberry Pi2
+No workaround at this time.
+
+#### Disabling the onboard adapters for Raspberry Pi 3
+The Raspberry Pi 3 has onboard Bluetooth which must be disabled to use a different dongle to disable to onboard Bluetooth, open a telnet/ssh session and run: 
+```
+reg add hklm\system\controlset001\services\BtwSerialH5Bus /v Start /t REG_DWORD /d 4 
+```
+
+You may disable WiFi with the following command: 
+```
+reg add hklm\system\controlset001\services\bcmsdh43xx /v Start /t REG_DWORD /d 4 
+``` 
+
+### For Dragon Board
+
+#### Dragonboard 410c Shutdown
+On the DragonBoard, a shutdown command will not power off the board. The system will restart. Please power off the board by disconnecting the power.
+
+#### Dragon Board and windbg
+The GPIO/I2C/SPI/UART drivers will be disabled when connecting to the DragonBoard with windbg.
+
+#### Dragon Board headset & microphone jack
+The Dragonboard BSP has drivers for the headset jack and microphone jack, but it doesn't have either of these jacks on board.  
+
+#### Dragonboard SPI runs at 4.8Mhz
+The SPI on the Dragonboard will ignore the requested speed and always run at 4.8 Mhz.  
+
+#### Dragonboard Connected Standby 
+Connected Standby is not enabled on the Qualcomm Dragonboard by default.  To enable Connected Standby on DragonBoard the following registry key needs to be set to “1”:
+
+```
+HKLM\System\Controlset001\Control\Power\CsEnabled=DWORD:1 
+```
+
+> [!NOTE]
+> Not all platforms have support for Connected Standby.  This may not work on all platforms.    
+
+
+### For MinnowBoard
+#### Minnowboard Max Boot and Firmware Update 
+The MinnowBoard Max will not boot unless the firmware is version .092 or later. The minimum recommended version of the firmware is “MinnowBoard MAX 0.92 32-Bit”. Firmware updates can be downloaded from [here](http://go.microsoft.com/fwlink/?LinkId=708613).
+
+#### Minnow Board Peripheral Support
+The Windows 10 IoT Core image included in this drop supports the peripherals that are exposed on the MinnowBoard MAX board. Subsequently, Intel&reg; will provide support of the full feature set of the Baytrail processors including the Intel Celeron&trade; Processors J1900/N2930/N2807 and Intel Atom&trade; Processors E38XX.
+
+
+### For All Platforms 
+
+#### Mouse Pointer disappears while debugging 
+In some cases, the mouse pointer is not visible after deploying or debugging apps with Visual Studio, the mouse pointer should reappear if you change focus using the keyboard (Tab).
+
+
+#### Server Applications with SoftAP
+When using the SoftAP clients will not be able to access content exposed by UAP apps.  
+To expose UAP applications via SoftAP the following changes must be made from the console on the device:  
+
+```
+reg add hklm\system\currentcontrolset\services\mpssvc\parameters /v IoTInboundLoopbackPolicy /t REG_DWORD /d 1 
+checknetisolation loopbackexempt -a -n=<AppID for SoftAP App> 
+checknetisolation loopbackexempt -a -n=<AppID for Additional App>  
+```
+
+For example:  
+```
+checknetisolation loopbackexempt -a -n=IoTOnboardingTask-uwp_1w720vyc4ccym
+```
+Reboot 
+
+
+#### Sensor Driver conflict in pre-built FFUs 
+There is a Sensor Driver Conflict in the provided FFUs. The Remote Sensor Framework installs drivers for Compass, Magnetometer, Accelerometer and Gyro. The UWP APIs for accessing these from an application assume just 1 is installed. If you are developing a driver for a physically attached device, the remote driver on the Microsoft provided FFUs will conflict.
+
+Resolution: The conflicting driver can be removed by connecting to the device via SSH or Powershell and using the tool devcon.exe to remove the remote sensor driver by typing “devcon.exe remove @”ROOT\REMOTESENSORDRIVER*”. The remote sensor driver does not affect OEM created FFUs.
+
+
+#### Default Administrator User Name and Password
+The default administrator user name and password are hard coded in the Windows 10 IoT Core image. This is a security risk for the device, and it should not be exposed to an open internet connection until the password has been changed.
+
+#### Volume Controls
+Hardware volume controls for USB microphones and speakers which depend on Windows system to change system volume are currently not supported on Windows 10 IoT Core. 
+
+#### USB Keyboards  
+Some USB keyboards and mice may not work on IoT Core. Use a different keyboard or mouse. A list of validated peripheral devices can be found in the [documentation here](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/hardwarecompatlist).
+
+
+#### Screen Orientation
+Setting the orientation to “Portrait” may not be honored in a Universal App.
+
+#### Referencing Adapters with AllJoyn Templates
+Attempting to add references to AllJoyn adapter projects may result in errors when using specific SDK versions.  To resolve these errors, change Visual Studio’s target platform to match the current SDK version, then reload the project.
+
+#### WiFi Direct limitations on IoTCore
+* The IoTCore device has to be the connecting device – it will not work as the advertising device with another device initiating the connection.   
+* Advanced pairing must be used.  The sample app demonstrates how to use the advanced pairing API’s to pair the devices prior to connecting. 
+* Not all wireless adapters support WiFi direct. We have tested and validated that the “Realtek RTL8188EU Wireless Lan 802.11n USB 2.0 Network adapter” works, but other adapters may not be supported. 
+
+
+#### Non-default drive mode
+On Raspberry Pi and Dragonboard, switching from a non-default drive mode to a different non-default drive mode may produce a glitch on the GPIO pin. WORKAROUND: Set drive mode once at the beginning of the application.
+
+#### Application already running
+The Default startup app may conflict with itself when it is also deployed from Visual Studio. WORKAROUND: Change the default startup app to an application other than that you wish to deploy. 
+
+#### BackgroundMediaPlayer.MessageReceivedFromForeground may crash
+The following line of code may crash: “BackgroundMediaPlayer.MessageReceivedFromForeground += OnMessageReceivedFromForeground;”. To prevent the crash, add this code so that it is executed first “var player = BackgroundMediaPlayer.Current;” 
+
+#### Azure Active Directory Authentication Support
+The Azure Active Directory Authentication Library does not work on Windows 10 IoT Core.  
+
+#### Shell Management of Application Crashes
+IoT Core’s shell infrastructure monitors APPX-type applications running on the device for crashes, and restarts those applications when crashes occur.  If the restarted applications continue to crash, the shell will employ a __failfast – a system critical process that causes a bugcheck and reboot in an attempt to recover.  Comparable logic and handling is used to background tasks and foreground applications in a headed configuration.   Crash handing and retry logic is captured below:
+
+```
+Software\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\CBTConfig  (or ForegroundAppConfig for headed) 
+Qword:"FailureResetIntervalMs" – length of time app has to run successfully to reset failures seen to 0. – default is 0x00000000000493E0 == 5 minutes 
+Qword:"BaseRetryDelayMs"  -- wait time coefficient.  Default is 0xa. 
+Dword:"MaxFailureCount". Default is 10 
+DWord:"FallbackExponentNumerator", default is 31. 
+Dword:"FallbackExponentDenominator", default is 20 
+Fallback_exponent = FallbackExponentNumerator / FallbackExponentDenominator; // default is 1.55 
+```
+
+When app crash is detected: 
+
+```
+if time_since_last_crash > failureresetinterval then crashes_seen = 1 
+
+else ++crashes_seen; 
+
+if crashes_seen > MaxFailureCount then __failfast; 
+
+else  
+
+delay = (dword) ((float)BaseRetryDelayMs * (crashes_seen ** Fallback_exponent)) 
+```
+
+Wait for delay and relaunch app 
+
+
+#### Time Synchronization  
+If time sync is failing or timing out this may be due to unreachable or a distant time server, the following can be done to add additional or local time servers. 
+
+1) From a command line on the device (eg. SSH, Powershell) 
+w32tm /config /syncfromflags:manual /manualpeerlist:"0.windows.time.com 1.pool.ntp.org 2.something else, ..." 
+
+2) You may also make these additions to the registry via a boot script or a custom runtime configuration package included as part of the image creation process if needed. 
+For more details, see: 
+
+* [Adding a file and registry setting to an image](https://msdn.microsoft.com/en-us/library/windows/hardware/mt670641(v=vs.85).aspx)
+
+
+### Starting the FTP Server 
+The FTP Server no longer runs by default at start-up 
+
+To run once: 
+Login with SSH\PS and run this command to start FTP:  
+```
+start ftpd.exe 
+```
+
+To run on every boot Users should create a scheduler task: 
+Login with SSH\PS and create a scheduler task: 
+```
+schtasks /create /tn "IoTFTPD" /tr ftpd.exe /ru system /sc onstart 
+Schtasks /run /tn “IoTFTPD”
+```
