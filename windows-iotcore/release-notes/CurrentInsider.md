@@ -1,17 +1,17 @@
 ---
-title: Release Notes for Build 17763.253
+title: Release Notes for Build 17744
 author: zeeshanfurqan
-ms.author: zeeshan.furqan
-ms.date: 02/14/2019
+ms.author: zeeshanf
+ms.date: 08/24/2018
 ms.topic: article
-description: Read and learn about what's new in Windows Insider Build Number 17763.253
+description: Read and learn about what's new in Windows Insider Build Number 17744.
 keywords: windows iot, Windows Insider, release notes
 ---
 
-# Release Notes for Build 17763.253
-_Build Number 17763.253. February 2019._
+# Release Notes for Build 17744
+_Build Number 17744. August 2018._
 
-&copy; 2019 Microsoft Corporation. All rights reserved.
+&copy; 2018 Microsoft Corporation. All rights reserved.
 
 This document provides late-breaking or other information that supplements the documentation included with the Windows 10 IoT Core.
 
@@ -43,7 +43,8 @@ You can review linked terms by pasting the forward link into your browser window
 * On occasion, PSSession will break when sending commands to IoT devices.
 * RPi3 will not pair BT + BTLE with onboard Bluetooth.
 * Unable to connect to internet through WIFI connection with SoftAp of Up2.
-* Brightness control settings do not persist on IoT during Override.
+* UWF is failing intermittently.
+* The Windows IoT Remote client does not work for Raspberry Pi. Use a board with accelerated graphics such as Minnowboard Max or Dragonboard or attach a monitor for local display.
 
 
 ## IoT Core general known issues and work arounds
@@ -55,7 +56,7 @@ The Raspberry Pi may not maintain Display Resolution if monitor is disconnected.
 
 #### Raspberry Pi Video Performance 
 Video playback performance on the Raspberry Pi platform is not optimized.  Animated user elements including XAML-based dropdown menus may exhibit less than optimal performance. 
- 
+ 
 #### Raspberry Pi Camera Support 
 Support for camera peripheral devices is limited. The PiCam device directly connected to the onboard camera bus is not supported due to limitations in the platform to support D3D Modern USB webcams produce data streams that are very demanding on the USB Host controller.  Even when used with low resolution settings webcams will require additional USB fine tuning and specialized control logic. 
 
@@ -64,8 +65,9 @@ The Raspberry Pi3 built-in Bluetooth driver only supports low bandwidth devices.
 
 #### Serial Port Usage and Access on RPi2 
 Raspberry Pi 2 supports the serial transport for communication through the PL011 UART.  This is set by default in kernel debugging scenarios.  An application or device driver can use the PL011 UART to send and receive data with the PL011 device driver turning off the debugger using the following command:
+
 ```
-bcedit /set debug off 
+bcdedit /set debug off 
 ```
 
 #### Data breakpoints have been disabled on the Raspberry Pi2
@@ -82,21 +84,21 @@ You may disable WiFi with the following command:
 reg add hklm\system\controlset001\services\bcmsdh43xx /v Start /t REG_DWORD /d 4 
 ``` 
 
-### For Dragon Board
+### For DragonBoard
 
 #### Dragonboard 410c Shutdown
 On the DragonBoard, a shutdown command will not power off the board. The system will restart. Please power off the board by disconnecting the power.
 
-#### Dragon Board and windbg
+#### DragonBoard and windbg
 The GPIO/I2C/SPI/UART drivers will be disabled when connecting to the DragonBoard with windbg.
 
-#### Dragon Board headset & microphone jack
+#### DragonBoard headset & microphone jack
 The Dragonboard BSP has drivers for the headset jack and microphone jack, but it doesn't have either of these jacks on board.  
 
-#### Dragonboard SPI runs at 4.8Mhz
+#### DragonBoard SPI runs at 4.8Mhz
 The SPI on the Dragonboard will ignore the requested speed and always run at 4.8 Mhz.  
 
-#### Dragonboard Connected Standby 
+#### DragonBoard Connected Standby 
 Connected Standby is not enabled on the Qualcomm Dragonboard by default.  To enable Connected Standby on DragonBoard the following registry key needs to be set to “1”:
 
 ```
@@ -151,7 +153,7 @@ The default administrator user name and password are hard coded in the Windows 1
 Hardware volume controls for USB microphones and speakers which depend on Windows system to change system volume are currently not supported on Windows 10 IoT Core. 
 
 #### USB Keyboards  
-Some USB keyboards and mice may not work on IoT Core. Use a different keyboard or mouse. A list of validated peripheral devices can be found in the [documentation here](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/hardwarecompatlist).
+Some USB keyboards and mice may not work on IoT Core. Use a different keyboard or mouse. A list of validated peripheral devices can be found in the [documentation here](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/hardwarecompatlist).
 
 
 #### Screen Orientation
@@ -217,7 +219,7 @@ w32tm /config /syncfromflags:manual /manualpeerlist:"0.windows.time.com 1.pool.n
 2) You may also make these additions to the registry via a boot script or a custom runtime configuration package included as part of the image creation process if needed. 
 For more details, see: 
 
-* [Adding a file and registry setting to an image](https://msdn.microsoft.com/en-us/library/windows/hardware/mt670641(v=vs.85).aspx)
+* [Adding a file and registry setting to an image](https://msdn.microsoft.com/library/windows/hardware/mt670641(v=vs.85).aspx)
 
 
 ### Starting the FTP Server 
