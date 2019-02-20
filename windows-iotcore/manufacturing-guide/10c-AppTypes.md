@@ -90,6 +90,16 @@ You can additionally give broad access to the file system to your UWP console ap
 
 You can find in-depth information on Console apps [here](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/console-uwp).
 
+### App Service
+App services are UWP apps that provide services to other UWP apps. They are analogous to web services, on a device. An app service runs as a background task in the host app and can provide its service to other apps. For example, an app service might provide a bar code scanner service that other apps could use. App services let you create UI-less services that apps can call on the same device, and starting with Windows 10, version 1607, on remote devices. Starting in Windows 10, version 1607, you can create app services that run in the same process as the host app.
+
+Additional information regarding creating a background app service as well as consuming the service from a uwp apps (as well as background tasks/services) can be found [here] (https://docs.microsoft.com/en-us/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service)
+
+App service controlling a physical IO port and consuming such a service can be found [here] (https://github.com/Microsoft/Windows-iotcore-samples/blob/develop/Samples/AppServiceBlinky/CS/README.md)
+
+### Privileged Access
+Traditional UWP app, and console applications runs on Windows IoT Core as on a normal level application access. Just like on a traditional Windows desktop, your application or service may not have neccessary privileges to modify system level settings. In certain cases, it is neccessary for you to gain privilege access to modify such features (Time Zone, Computer Name, Date Time, and more). To modify such features, you will need to use Windows NT Service Remote Procedure Call. Code samples on how to use RPC to gin privileged access can be found [here] (https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/NTServiceRpc). You can also use the Device Management Bridge to call for NTServiceBridge to enable such tasks. Additional information on [Device Management Bridge can be found here] (https://github.com/ms-iot/device-management-bridge)
+
 ### Arduino Wiring
  Arduino Wiring requires the download of the "Windows IoT Core Project Templates" from the Visual Studio **Tools->Extensions and Updates** manager.  Arduino Wiring supports only Background Applications. You can also build *Windows Runtime Components* using C#, C++, or Visual Basic and then reference those libraries from any other language.
 
