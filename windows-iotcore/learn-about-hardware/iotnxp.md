@@ -107,7 +107,7 @@ Several Microsoft and NXP partners have enabled commercial i.MX 6, i.MX 7, and i
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="">MCIMX8MMINI-EVK</a></p></td>
+<td align="left"><p><a href="http://www.nxp.com/imx8mminievk">MCIMX8MMINI-EVK</a></p></td>
 <td align="left"></td>
 </tr>
 </tbody>
