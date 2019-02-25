@@ -23,7 +23,9 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 
 ## Videos
 
-[!Video https://www.youtube.com/embed/Cmj0sxBRofs]
+>[!Video https://www.youtube.com/embed/Cmj0sxBRofs]
+* [Getting started with ROS on Windows](https://www.youtube.com/watch?v=nZSjwMLi3jQ)
+* [Azure IoT Device Agent for Windows](https://www.youtube.com/watch?v=DZn6diOn7uI)
 * [Getting started with Windows 10 IoT series](https://www.youtube.com/watch?v=A-kazyOiBvs&t)
 * [Accelerate the Intelligent Edge with the Windows AI Platform](https://www.youtube.com/watch?v=7bFAg6w4J00)
 * [Connecting Windows 10 IoT Devices to IoT Central](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Connecting-Windows-IoT-Devices-To-IoT-Central)
