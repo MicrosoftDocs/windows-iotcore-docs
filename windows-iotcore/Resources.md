@@ -61,7 +61,7 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 
 ## Our technology partners
 
-* [Azure Systems](https://www.azul.com/)
+* [Azul Systems](https://www.azul.com/)
 * [Codesys](https://de.codesys.com/)
 * [Global Graphics Software](https://www.globalgraphics.com/)
 * [IntervalZero](https://www.intervalzero.com/)
