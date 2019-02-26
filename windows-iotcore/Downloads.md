@@ -64,7 +64,7 @@ Get the most up-to-date images under development to try out new features. To joi
 ## Other downloads
 
 ### [mDNS Responder](https://go.microsoft.com/fwlink/?linkid=2077676)
-Download the Bonjour-compatible mDNS Responder for Windows IoT (sample source).
+Download the Bonjour-compatible mDNS Responder for Windows IoT (sample source). Learn more [here](mDNS.md).
 
 ### [Firmware Update](http://firmware.intel.com/projects/minnowboard-max)
 Download firmware components and updates for the MinnowBoard Max reference board from Intel.
