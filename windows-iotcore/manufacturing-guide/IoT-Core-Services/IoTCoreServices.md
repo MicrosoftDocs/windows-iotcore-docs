@@ -1,5 +1,5 @@
 ---
-title: Customizing a Windows IoT Core Image Overview
+title: IoT Core Service
 author: lmaung
 ms.author: lmaung
 ms.date: 09/18/2018 
