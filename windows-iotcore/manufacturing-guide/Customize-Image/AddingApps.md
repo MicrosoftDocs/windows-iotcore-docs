@@ -108,7 +108,7 @@ The first step is to create a **Universal Windows Platform (UWP)** application t
 4. Select **Generate app bundle:** Never
 5. Click **Create**
 
-![Dashboard screenshot](../media/ManufacturingGuide/CreateAppxPackage.jpg)
+![Dashboard screenshot](../../media/ManufacturingGuide/CreateAppxPackage.jpg)
 
    Visual Studio creates the Appx package files in your specified location, for the architecture(s) you selected (ARM, x86, x64). In our example, this file is *C:\Users\jadali\Desktop\HelloWorld\CS\AppPackages\HelloWorld_1.0.0.0_ARM_Debug.appx* (for ARM architecture).
    
@@ -163,8 +163,8 @@ New-IoTFFUImage <product name> Test
 (or)buildimage <product name> Test 
 ```
 
-Once the FFU file has been built (it should now include your app), you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](05-FlashingImage.md).
+Once the FFU file has been built (it should now include your app), you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](../Create-IoT-Image/FlashingImage.md).
 
 ## Next Steps
-[Creating a Provisioning Package](06b-CreateProvisioningPackage.md)
+[Creating a Provisioning Package](CreateProvisioningPackage.md)
 
