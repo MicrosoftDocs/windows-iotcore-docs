@@ -18,7 +18,7 @@ We will create some test files and registry keys to a Windows IoT Core image, an
 * Build and deploy an FFU image that contains your registry/file settings package
 
 ## Prerequisites/Requirements
-Please make sure you've created a basic image from [Creating a Basic IoT Core Image](04-CreateBasicImage.md) previously. For this example, we have created a basic image with the Qualcomm DragonBoard called *TestDragonBoardProduct*.
+Please make sure you've created a basic image from [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md) previously. For this example, we have created a basic image with the Qualcomm DragonBoard called *TestDragonBoardProduct*.
 
 You will need the following tools installed to complete this section:
 * **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows IoT Core.
@@ -86,13 +86,13 @@ Add-IoTProductFeature ProductB Test REGISTRY_SETTINGS -OEM
 (or) addfid ProductB Test REGISTRY_SETTINGS -OEM
 ```
 ## Build and Test Image
-Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
+Build the FFU image again, as specified in [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
 
     ```powershell
     New-IoTFFUImage <product name> Test
     (or)buildimage <product name> Test 
     ```
-Once the FFU file has been built, you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](05-FlashingImage.md).
+Once the FFU file has been built, you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](../Create-IoT-Image/FlashingImage.md).
 
 ## Verify Files and Registry Keys Added
 In order to verify that the files were added on the device, do the following:
@@ -126,10 +126,10 @@ For verifying registry keys, follow these steps:
 
    a. Alternatively, you can use the **Run Command** in Windows Device Portal for your connected device to run the `reg query` command.
 
-   ![Dashboard screenshot](../media/ManufacturingGuide/WindowsDevicePortalRunCommand.jpg)
+   ![Dashboard screenshot](../../media/ManufacturingGuide/WindowsDevicePortalRunCommand.jpg)
 
    The Output window should display your test values.
 
 ## Next Steps
-[Adding a driver to an image](06d-AddingDrivers.md)
+[Adding a driver to an image](AddingDrivers.md)
 
