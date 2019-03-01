@@ -25,7 +25,7 @@ You can add customizations, including apps, settings, hardware configurations an
 For OEM-style images, you'll wrap your customizations into package (.cab) files. Packages let OEMs, ODMs (Original Device Manufacturers), developers, and Microsoft work together to help deliver security and feature updates to your devices without stomping on each other's work.
 
 ## Outline
-* [01-Overview(this doc)](01-Overview.md)
+* [01-Overview(this doc)](GuideOverview.md)
 * [02-Concepts and Terminology](02-ConceptsTerminology.md)
 * [03-Get the tools needed to create Windows IoT Core Images](03-ToolsNeeded.md)
 * [04-Creating a Basic Windows IoT Core Image](04-CreateBasicImage.md)
