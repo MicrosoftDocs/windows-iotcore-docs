@@ -60,7 +60,7 @@ You can create a provisioning package with the app and install the provisioning 
 
 9. Export the package
 
-10. Copy the exported .ppkg file to _C:\Windows\Provisioning\Packages_ on the IoT device using [SSH](../../connect-your-device/SSH.md) or [Powershell](../../connect-your-device/powershell.md)) and reboot. When the device reboots, the provisioning package is processed and the app is installed.
+10. Copy the exported .ppkg file to _C:\Windows\Provisioning\Packages_ on the IoT device using [SSH](../../connect-your-device/SSH.md) or [Powershell](../../connect-your-device/PowerShell.md)) and reboot. When the device reboots, the provisioning package is processed and the app is installed.
 
 
 ## Add to the IoT core image(.ffu)   
