@@ -22,7 +22,7 @@ There are three main areas that occur from when an IoT device is powered on, all
 * Unified Extensible Firmware Interface (UEFI) Secure Boot
 * Windows Code Integrity
 
-![Dashboard screenshot](../media/ManufacturingGuide/BootOrder.jpg)
+![Dashboard screenshot](../../media/ManufacturingGuide/BootOrder.jpg)
 
 Additional information on the Windows 10 boot process can be found [here](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process).
 
@@ -170,7 +170,7 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
 You can test the generated packages by manually installing them on a unlocked device by the following steps
 
 1. Flash the device with the unlocked image (image used for scanning in earlier step).
-2. Connect to the device ([using SSH](../connect-your-device/SSH.md) or using [Powershell](../connect-your-device/PowerShell.md))
+2. Connect to the device ([using SSH](../../connect-your-device/SSH.md) or using [Powershell](../../connect-your-device/PowerShell.md))
 3. Copy the following .cab files to the device under a directory e.g. `c:\OemInstall`
     * OEM.Custom.Cmd.cab
     * OEM.Security.BitLocker.cab
@@ -255,4 +255,4 @@ Should there arise a need to temporarily disable BitLocker, initate a remote Pow
 **Note:** Device encryption will be re-enabled on subsequent device boot unless the scheduled encryption task is disabled.
 
 ## Next Steps
-[Using the Unified Write Filter](08b-UnifiedWriteFilter.md)
+[Using the Unified Write Filter](UnifiedWriteFilter.md)
