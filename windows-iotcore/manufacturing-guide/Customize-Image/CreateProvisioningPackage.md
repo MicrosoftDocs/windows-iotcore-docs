@@ -31,7 +31,7 @@ We will be using **Windows Configuration Designer (WCD)** to create a provisioni
 
 Windows Configuration Designer comes with the **Windows ADK Toolkit** and should have been installed to the Technician PC previously. If not, please run the install for the Windows ADK Toolkit and make sure you have the **Configuration Designer** selection checked for installation.
 
-![Dashboard screenshot](../media/ManufacturingGuide/WindowsADKSetup.jpg)
+![Dashboard screenshot](../../media/ManufacturingGuide/WindowsADKSetup.jpg)
 
 ## Create WCD Project for a Provisioning Package
 In order to create a provisioning package for your device, we need to create a project in **Windows Configuration Designer**. Once we have this project, we can specify the configuration customizations we want included in our FFU image.
