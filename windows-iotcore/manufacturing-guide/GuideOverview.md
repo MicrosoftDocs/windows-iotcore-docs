@@ -64,6 +64,7 @@ This guide is created so that you can follow step by step to create an Windows I
       * [Setting Default Apps](Debugging-IoT-Core/SettingDefaultApps.md)
       * [PoweShell](Debugging-IoT-Core/PowerShell.md)
       * [UWP Loopback Mode](Debugging-IoT-Core/uwploopback.md)
+    * [Other Resources](Debugging-IoT-Core/OtherResources.md)
 
 ## Next Steps
 [Concepts and Terminology](02-ConceptsTerminology.md)
