@@ -27,10 +27,10 @@ OEMs get 10 years of support on Windows 10 IoT Core via access to monthly update
 Device Update Center (DUC) provides the ability to create, customize, and control device updates. These updates are distributed by the same content distribution network (CDN) as Windows Update which is used daily by millions of Windows customers around the world. Updates can be applied to the operating system and device drivers as well as OEM-specific applications and files. Updates can be flighted to test devices prior to broader distribution.
 
 Here's a diagram of the update flow in Device Update Center:
-![DUC](../media/ManufacturingGuide/iotcoreservicesoverview-duc.png)
+![DUC](../../media/ManufacturingGuide/iotcoreservicesoverview-duc.png)
 
 ## Commercialize with Device Health Attestation
 Device Health Attestation (DHA) enables enterprises and OEMs to raise the security bar of their organization's assets with hardware-attested security. Evaluating the trustworthiness of a device at boot time is essential for a trusted IoT system. However, a device cannot attest to its own trustworthiness - this must be done by an external entity such as the DHA cloud service. This service evaluates device health and can be combined with a device management system, such as Azure IoT Device Management. Based on DHA report data, the device management system can take corrective actions such as re-imaging the device, denying network access, or creating a service ticket.
 
 ## Outline
-* [09a-Setting up Device Center](09a-SettingUpDeviceCenter.md)
+* [Setting up Device Center](SettingUpDeviceCenter.md)
