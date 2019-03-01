@@ -18,21 +18,21 @@ Make sure to follow these steps to correctly configure your device running Windo
 ## Initiating a PowerShell session
 1. To start a PowerShell session with your Windows 10 IoT Core device, you'll first need to create a trust relationship between your host PC and your device. After starting your Windows IoT Core device, an IP address will be shown on the screen attached to the device.
 
-    ![DefaultApp on Windows 10 IoT Core](../media/PowerShell/DefaultApp.png)
+    ![DefaultApp on Windows 10 IoT Core](../../media/PowerShell/DefaultApp.png)
 
    You can find the same information on the Windows 10 IoT Core Dashboard.
 
 2. Open an administrator PowerShell console on your local PC. Type **powershell** in the **Search the web and Windows** box near the Windows Start menu. Windows will find PowerShell on your PC.
 
-    ![Find PowerShell](../media/PowerShell/start-ps.png)
+    ![Find PowerShell](../../media/PowerShell/start-ps.png)
 
 3. To start PowerShell as an administrator, right-click **Windows PowerShell**, and then select **Run as administrator**.
 
-    ![Run PowerShell as administrator](../media/PowerShell/start-ps2.png)
+    ![Run PowerShell as administrator](../../media/PowerShell/start-ps2.png)
 
    Now you should see the PowerShell console.
 
-    ![PowerShell console](../media/PowerShell/ps.PNG)
+    ![PowerShell console](../../media/PowerShell/ps.PNG)
 
 4. You may need to start the WinRM service on your desktop to enable remote connections. To do so, from the PowerShell console, type the following command:
 
@@ -64,7 +64,7 @@ Make sure to follow these steps to correctly configure your device running Windo
     
     If you successfully connected to the device, you should see the IP address of your device before the prompt.
 
-    ![PowerShell console](../media/PowerShell/ps_device.png)
+    ![PowerShell console](../../media/PowerShell/ps_device.png)
 
 9. Update your account password. We *highly recommend* that you update the default password for the Administrator account. To do this, issue the following commands in your PowerShell connection:
 
@@ -108,4 +108,4 @@ Your Windows IoT Core device should now be properly configured and ready to use!
 * `DeployAppx uninstall App_1.0.1.0_x86__publisherid123` uninstall the .appx with the matching package full name.
 *  `DeployAppx uninstall MyApp.appx` uninstall any installed .APPX with a matching package family name.
 
-For a list of commands and utilities that you can use with PowerShell, see the [Command Line Utils](../manage-your-device/CommandLineUtils.md) page.
+For a list of commands and utilities that you can use with PowerShell, see the [Command Line Utils](../../manage-your-device/CommandLineUtils.md) page.
