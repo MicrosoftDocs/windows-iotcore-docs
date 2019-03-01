@@ -1,4 +1,5 @@
 # 02-Concepts and Basics 
+
 ---
 title: Concepts and Terminology
 author: johnadali
