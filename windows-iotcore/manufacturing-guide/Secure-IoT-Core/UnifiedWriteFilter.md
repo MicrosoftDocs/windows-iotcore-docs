@@ -17,8 +17,8 @@ Read our documentation on the [Unified Write Filter](https://docs.microsoft.com/
 ## How to Install UWF on a device running Windows 10 IoT Core
 
 * If you do not have the current version of the Windows 10 IoT Core Kits yet, download and install the [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore).
-* Based on your device architecture, copy UWF packages ( `Microsoft-IoTUAP-UnifiedWriteFilter-Package.cab` and `Microsoft-IoTUAP-UnifiedWriteFilter-Package_Lang_en-us.cab` ) from your PC (`C:\Program Files (x86)\Windows Kits\10\MSPackages\Retail\<arch>\fre\`) to the device (for example, with [Windows file sharing](../manage-your-device/WindowsFileSharing.md)).
-* Launch [SSH](../connect-your-device/SSH.md) or [Powershell](../connect-your-device/PowerShell.md) and access your device running Windows 10 IoT Core.
+* Based on your device architecture, copy UWF packages ( `Microsoft-IoTUAP-UnifiedWriteFilter-Package.cab` and `Microsoft-IoTUAP-UnifiedWriteFilter-Package_Lang_en-us.cab` ) from your PC (`C:\Program Files (x86)\Windows Kits\10\MSPackages\Retail\<arch>\fre\`) to the device (for example, with [Windows file sharing](../../manage-your-device/WindowsFileSharing.md)).
+* Launch [SSH](../../connect-your-device/SSH.md) or [Powershell](../../connect-your-device/PowerShell.md) and access your device running Windows 10 IoT Core.
 * From SSH or Powershell, do the following:
   * change to the directory where you have copied your files
     * `cd C:\<dir>`
@@ -29,7 +29,7 @@ Read our documentation on the [Unified Write Filter](https://docs.microsoft.com/
 * The device will boot to the Update OS, install UWF features, and reboot to the MainOS.
 * Once the device comes back to the MainOS, the UWF feature is ready and available to use. This can be verified by typing ```uwfmgr.exe``` into your Powershell or SSH window.
 
-  ![uwfmgr.exe on Windows 10 IoT Core](../media/UnifiedWriteFilter/uwfmgr.png)
+  ![uwfmgr.exe on Windows 10 IoT Core](../../media/UnifiedWriteFilter/uwfmgr.png)
 
 
 ## How to include UWF in Your Custom FFU 
@@ -68,7 +68,7 @@ The GUID for the available volumes can be found through the following command
   `uwfmgr.exe volume protect \\?\Volume {GUID}`
 
 
-  ![Protecting Volume on Windows 10 IoT Core](../media/UnifiedWriteFilter/uwfmgr_protect.png)
+  ![Protecting Volume on Windows 10 IoT Core](../../media/UnifiedWriteFilter/uwfmgr_protect.png)
 
 ### Recommended Exclusions
 When protecting the data volume, we recommend that you add exceptions for the servicing and logging folders that are accessed by Windows OS Services.
@@ -117,4 +117,4 @@ Servicing
     Update-Windows
 ```
 ## Next Steps
-[Implementing a Trusted Platform Module](08c-ImplementingTPM.md)
+[Implementing a Trusted Platform Module](ImplementingTPM.md)
