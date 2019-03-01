@@ -18,7 +18,7 @@ To get started, we will detail the steps needed to create a basic Windows 10 IoT
 ## Prerequisites / Requirements
 Make sure your technician PC has the necessary tools installed prior to creating an IoT Core image. 
 
-See [Get the tools needed to create Windows 10 IoT Core images](03-ToolsNeeded.md) for details.
+See [Get the tools needed to create Windows 10 IoT Core images](../Concepts-Terms-Basics/ToolsNeeded.md) for details.
 
 You will need the following tools installed to complete this section:
 * **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows 10 IoT Core
@@ -59,7 +59,7 @@ You will need the following tools installed to complete this section:
 
 The next step is to take the Board Support Package files and extract/build their .CAB files to include in the FFU file. There are some differences in the steps to do this for the different BSPs, so please visit the appropriate section for the hardware device you are working with.
 
-[Adding a Board Support Package](04a-BoardSupportPackages.md)
+[Adding a Board Support Package](../Concepts-Terms-Basics/BoardSupportPackages.md)
 
 ## Build Packages 
 From IoT Core Powershell Environment, get your environment ready to create products by building all of the packages in the working folders (using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md)):
@@ -82,17 +82,17 @@ Add-IoTProduct ProductA QCDB410C
 
 You will be prompted to enter the **SMBIOS** information, such as Manufacturer Name (OEM Name), Family, SKU, BaseboardManufacturer, and BaseboardProduct. Here are some example values:
 
-* **System OEM Name:** Accolade Industries
-* **System Family Name:** AccoladeHub
-* **System SKU Number:** AIHub-001
-* **Baseboard Manufacturer:** Arrows
-* **Baseboard Product:** Dragonboard 410C
+* **System Manufacturer:** Contoso Industries
+* **System Product Name:** ContosoHub
+* **System SKU:** ContosoHub-001
+* **System Family:** ARM
+* **Baseboard Product:** DB410C 
 
 The BSP name is the same as the folder name for the BSP. You can see which BSPs are available by looking in the `C:\MyWorkspace\Source-<arch>\BSP` folders. 
 
 In the example above, this creates the folder: `C:\MyWorkspace\Source-arm\Products\ProductA`.
 
-   ![Dashboard screenshot](../media/ManufacturingGuide/AddIoTProduct.jpg)
+   ![Dashboard screenshot](../../media/ManufacturingGuide/AddIoTProduct.jpg)
 
 ## OemCustomization.cmd File
 Every image includes a file `oemcustomization.cmd` which will run on every boot up of your device. You have the ability to modify this file to customize what executes on boot up. This file is located under `iot-adk-addonkit/Workspace/Source-<arch>/Products/<your product name>`. Here is an example of what this file holds:
