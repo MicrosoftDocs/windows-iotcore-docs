@@ -79,11 +79,11 @@ For Qualcomm Dragonboard, follow these steps:
 1. Power on your device and open IoT Core Dashboard.
 2. Access your device via Windows Device Portal and navigate to the **TPM Configuration** section.
 
-    ![Dashboard screenshot](../media/ManufacturingGuide/SetupTPM-Dgbrd1.jpg)
+    ![Dashboard screenshot](../../media/ManufacturingGuide/SetupTPM-Dgbrd1.jpg)
 
 3. Click on **Install Latest** to install the latest fTPM to the device.
 
-    ![Dashboard screenshot](../media/ManufacturingGuide/SetupTPM-Dgbrd2.jpg)
+    ![Dashboard screenshot](../../media/ManufacturingGuide/SetupTPM-Dgbrd2.jpg)
 
 For Minnowboard Max, follow these steps:
 
@@ -488,5 +488,5 @@ Note that **sTPM is intended for development purposes only and does not provide 
 * [Trusted Platform Module (TPM) Specifications](http://www.trustedcomputinggroup.org/developers/trusted_platform_module) 
 * [TCG TPM 2.0 Library Specification](http://www.trustedcomputinggroup.org/resources/tpm_library_specification)
 * [TPM Base Services](https://msdn.microsoft.com/library/windows/desktop/aa446796(v=vs.85).aspx) 
-* [Enabling Secure Boot and BitLocker](08a-SecureBootBitLockerDeviceGuard.md)
+* [Enabling Secure Boot and BitLocker](SecureBootBitLockerDeviceGuard.md)
 
