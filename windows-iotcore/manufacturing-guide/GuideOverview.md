@@ -52,7 +52,7 @@ This guide is created so that you can follow step by step to create an Windows I
     * [Device Update Center](IoT-Core-Services/SettingUpDeviceCenter.md)
 * [08-App Dev & Debugging on IoT Core](Debugging-IoT-Core)
     * [Application Development](Debugging-IoT-Core/ApplicationDevelopment.md)
-      * [Application Types](Debugging-IoT-Core/SettingUpDeviceCenter.md)
+      * [Application Types](Debugging-IoT-Core/AppTypes.md)
       * [Default Apps](Debugging-IoT-Core/Default-App-Overview.md)
       * [Setting Default Apps](Debugging-IoT-Core/SettingUpDeviceCenter.md)
       * [Install Apps](Debugging-IoT-Core/SettingUpDeviceCenter.md)
