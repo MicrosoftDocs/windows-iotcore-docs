@@ -1,3 +1,13 @@
+---
+title: IoT Core Device Update Center
+author: lmaung
+ms.author: lmaung
+ms.date: 02/28/2019 
+ms.topic: article 
+description: Overview for Customizing a Windows IoT Core Image.
+keywords: Windows 10 IoT Core, 
+---
+
 # Device Update Center
 Device Update Center portal provides OEMs a way to:
 
