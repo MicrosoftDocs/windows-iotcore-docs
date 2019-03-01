@@ -28,11 +28,11 @@ This guide is created so that you can follow step by step to create an Windows I
 
 ## Outline
 * [01-Manufacturing Guide Overview(this document)](GuideOverview.md)
-* [02-Concepts and Basics](Concepts-Terms-Basics.md)
+* [02-Concepts and Basics](Concepts-Terms-Basics/Concepts-Terms-Basics.md)
    * [Concepts and Terminology](Concepts-Terms-Basics/ConceptsTerminology.md)
    * [Get the tools needed to create Windows IoT Core Images](Concepts-Terms-Basics/ToolsNeeded.md)
    * [Board Support Packages](Concepts-Terms-Basics/BoardSupportPackages.md)
-* 03-Create IoT Core Image
+* [03-Create IoT Core Image](Create-IoT-Core-Image/Create-IoT-Core-Image).md
   * [Creating a Basic Windows IoT Core Image](04-CreateBasicImage.md)
   * [Flashing a Windows IoT Core Image](05-FlashingImage.md)
 * [04-Customizing a Windows IoT Core Image](06-CustomizeImageOverview.md)
