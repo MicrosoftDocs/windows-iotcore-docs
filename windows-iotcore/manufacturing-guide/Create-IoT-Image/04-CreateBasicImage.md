@@ -53,7 +53,7 @@ You will need the following tools installed to complete this section:
 
    The required packages such as Registry.Version, Custom.Cmd and Provisioning.Auto will be imported into the workspace automatically.
 
-   ![Dashboard screenshot](../media/ManufacturingGuide/IoTWorkspace.jpg)
+   ![Dashboard screenshot](../../media/ManufacturingGuide/IoTWorkspace.jpg)
 
 ## Building BSP
 
