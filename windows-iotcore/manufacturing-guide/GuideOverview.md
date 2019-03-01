@@ -32,9 +32,10 @@ This guide is created so that you can follow step by step to create an Windows I
    * [a-Concepts and Terminology](Concepts-Terms-Basics/ConceptsTerminology.md)
    * [b-Get the tools needed to create Windows IoT Core Images](Concepts-Terms-Basics/ToolsNeeded.md)
    * [c-Board Support Packages](Concepts-Terms-Basics/BoardSupportPackages.md)
-* [04-Creating a Basic Windows IoT Core Image](04-CreateBasicImage.md)
-* [05-Flashing a Windows IoT Core Image](05-FlashingImage.md)
-* [06-Customizing a Windows IoT Core Image](06-CustomizeImageOverview.md)
+* 03-Create IoT Core Image
+  * [04-Creating a Basic Windows IoT Core Image](04-CreateBasicImage.md)
+  * [05-Flashing a Windows IoT Core Image](05-FlashingImage.md)
+* [04-Customizing a Windows IoT Core Image](06-CustomizeImageOverview.md)
     * [06a-Adding an App to an image](06a-AddingApps.md)
     * [06b-Creating a Provisioning Package](06b-CreateProvisioningPackage.md)
     * [06c-Adding file(s) and registry settings to an image](06c-AddFileRegistrySettings.md)
