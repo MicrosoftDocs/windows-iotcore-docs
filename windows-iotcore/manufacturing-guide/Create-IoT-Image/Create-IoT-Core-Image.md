@@ -9,8 +9,8 @@ keywords: windows iot, concepts, basics, bsp
 ---
 
 # Create IoT Core Image  
-* [Creating a Basic Windows IoT Core Image](04-CreateBasicImage.md)
-* [Flashing a Windows IoT Core Image](05-FlashingImage.md)
+* [Creating a Basic Windows IoT Core Image](CreateBasicImage.md)
+* [Flashing a Windows IoT Core Image](FlashingImage.md)
 
 
 
@@ -18,4 +18,4 @@ keywords: windows iot, concepts, basics, bsp
 
 |Back|Next Steps|
 |---|---|
-|[Guide Overview](../GuideOverview.md)|[Creating a Basic Windows IoT Core Image](04-CreateBasicImage.md)|
+|[Guide Overview](../GuideOverview.md)|[Creating a Basic Windows IoT Core Image](CreateBasicImage.md)|
