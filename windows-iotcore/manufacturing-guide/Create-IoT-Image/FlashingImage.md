@@ -27,18 +27,18 @@ You will need the following tools installed to complete this section:
 ### DragonBoard 410c
 Qualcomm has provided the [DragonboardUpdateTool](https://developer.qualcomm.com/hardware/dragonboard-410c/software) application, which we will use to flash the FFU image file to the Dragonboard 410c. You can download either the x86 or x64 version (we recommend x64).
 
-![Dashboard screenshot](../media/ManufacturingGuide/DragonBoardUpdateTool.jpg)
+![Dashboard screenshot](../../media/ManufacturingGuide/DragonBoardUpdateTool.jpg)
 
 Once you have installed the **DragonBoard Update Tool**, you must first place the DragonBoard device in programming mode. This is done by setting dipswitch #1 (on the backside of the device) to the **ON** position:
 
-![Dashboard screenshot](../media/ManufacturingGuide/DragonBoardDipswitch.jpg)
+![Dashboard screenshot](../../media/ManufacturingGuide/DragonBoardDipswitch.jpg)
 
 Connect the DragonBoard device to your technician PC with a microUSB cable and power on the board.
 
 Run the **DragonBoard Update Tool**, browse for the FFU image file you are deploying, and press the **Program** button. You should see a green **Connection Status**, and a progress bar when the device is flashing the FFU file.
 
-![Dashboard screenshot](../media/ManufacturingGuide/DragonBoardUpdateTool1.jpg)
-![Dashboard screenshot](../media/ManufacturingGuide/DragonBoardUpdateTool2.jpg)
+![Dashboard screenshot](../../media/ManufacturingGuide/DragonBoardUpdateTool1.jpg)
+![Dashboard screenshot](../../media/ManufacturingGuide/DragonBoardUpdateTool2.jpg)
 
 Once the flashing process is complete, disconnect power from the board, as well as the microUSB cable. You then need to flip the dipswitch #1 back to the **OFF** position. Reconnect the power to boot Windows IoT Core.
 
@@ -54,11 +54,11 @@ Since Raspberry Pi devices require a microSD card, you will need to flash the FF
 7. Optionally you can set the **Device Name** and **Administrator Password** selections for your device
 8. Check the **I accept the software license terms** checkbox (lower right) and click **Install**
 
-![Dashboard screenshot](../media/ManufacturingGuide/RpiFlashFFU.jpg)
+![Dashboard screenshot](../../media/ManufacturingGuide/RpiFlashFFU.jpg)
 
 Windows IoT Core Dashboard will now open a command window and use **DISM (Deployment Image Servicing and Management Tool)** to flash the FFU file to your microSD card.
 
-![Dashboard screenshot](../media/ManufacturingGuide/RpiFlashFFUDISM.jpg)
+![Dashboard screenshot](../../media/ManufacturingGuide/RpiFlashFFUDISM.jpg)
 
 Once the flashing process is complete, eject the microSD card from the technician PC and insert it into the Raspberry Pi. Reconnect the power to boot Windows IoT Core.
 
@@ -71,7 +71,7 @@ We first need to create a bootable USB drive that we can use to boot on the spec
 
 1. Install WinPE from the **[Windows ADK Windows Preinstallation Environment Add-ons](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)**
 
-   ![Dashboard screenshot](../media/ManufacturingGuide/WinPEInstall.jpg)
+   ![Dashboard screenshot](../../media/ManufacturingGuide/WinPEInstall.jpg)
 
 2. Prepare USB Drive
 
@@ -123,7 +123,7 @@ We first need to create a bootable USB drive that we can use to boot on the spec
         C:\>diskpart
         Microsoft DiskPart version 10.0.17134.1
         Copyright (C) Microsoft Corporation.
-        On computer: LM-CNCY-BUILD
+        On computer: LWIN-CNCY-BUILD
         
         DISKPART> list disk
         
@@ -166,4 +166,4 @@ We first need to create a bootable USB drive that we can use to boot on the spec
 
 
 ## Next Steps
-[Customizing a Windows IoT Core Image](06-CustomizeImageOverview.md)
+[Customizing a Windows IoT Core Image](../Customize-Image/CustomizeImageOverview.md)
