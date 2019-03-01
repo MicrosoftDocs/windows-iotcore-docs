@@ -48,9 +48,9 @@ This guide is created so that you can follow step by step to create an Windows I
     * [Secure Boot, BitLocker, and Device Guard](Secure-IoT-Core/SecureBootBitLockerDeviceGuard.md)
     * [Using the Unified Write Filter](Secure-IoT-Core/UnifiedWriteFilter.md)
     * [Implementing a Trusted Platform Module](Secure-IoT-Core/ImplementingTPM.md)
-* 07-Debugging
-* [08-IoT Core Services](09-IoTCoreServices.md)
-    * [Device Update Center](09a-SettingUpDeviceCenter.md)
+* [07-IoT Core Services](IoT-Core-Services/IoTCoreServices.md)
+    * [Device Update Center](IoT-Core-Services/SettingUpDeviceCenter.md)
+* [08-Debugging on IoT Core](Debugging-IoT-Core)
 
 ## Next Steps
 [Concepts and Terminology](02-ConceptsTerminology.md)
