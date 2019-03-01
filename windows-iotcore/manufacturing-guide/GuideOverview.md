@@ -66,7 +66,8 @@ This guide is created so that you can follow step by step to create an Windows I
       * [UWP Loopback Mode](Debugging-IoT-Core/uwploopback.md)
     * [Additional Resources](Debugging-IoT-Core/OtherResources.md)
 
-
+## Next Steps
+[Concepts and Terminology](02-ConceptsTerminology.md)
 
 ## Related Topics 
 
