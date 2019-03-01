@@ -61,9 +61,9 @@ This guide is created so that you can follow step by step to create an Windows I
       * [Debug and Deploy Apps](Debugging-IoT-Core/SettingUpDeviceCenter.md)
       * [Debug and Deploy Apps](Debugging-IoT-Core/SettingUpDeviceCenter.md)
       * [Debug and Deploy Apps](Debugging-IoT-Core/SettingUpDeviceCenter.md)
-      * [Debug and Deploy Apps](Debugging-IoT-Core/SettingUpDeviceCenter.md)
-      * [Debug and Deploy Apps](Debugging-IoT-Core/SettingUpDeviceCenter.md)
-    * [Device Update Center](Debugging-IoT-Core/SettingUpDeviceCenter.md)
+    * [Debugging on IoT Core](Debugging-IoT-Core/DebuggingOutline.md)
+      * [Windows 10 IoT Core Dashboard](Debugging-IoT-Core/WindowsIoTDashboard.md)
+      * [PoweShell](Debugging-IoT-Core/powershell.md)
 
 ## Next Steps
 [Concepts and Terminology](02-ConceptsTerminology.md)
