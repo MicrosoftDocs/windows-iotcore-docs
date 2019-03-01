@@ -8,7 +8,14 @@ description: Learn about concepts and basics
 keywords: windows iot, concepts, basics, bsp
 ---
 
+## OverView
+[Back](GuideOverview.md)
+
 # Concepts and Basics 
 * [Concepts and Terminology](Concepts-Terms-Basics/ConceptsTerminology.md)
 * [Get the tools needed to create Windows IoT Core Images](Concepts-Terms-Basics/ToolsNeeded.md)
 * [Board Support Packages](Concepts-Terms-Basics/BoardSupportPackages.md)
+
+
+## Next Steps
+[Concepts and Terminology](Concepts-Terms-Basics/ConceptsTerminology.md)
