@@ -18,4 +18,4 @@ keywords: windows iot, concepts, basics, bsp
 
 |Back|Next Steps|
 |---|---|
-|[Guide Overview](GuideOverview.md)|[Creating a Basic Windows IoT Core Image](04-CreateBasicImage.md)|
+|[Guide Overview](../GuideOverview.md)|[Creating a Basic Windows IoT Core Image](04-CreateBasicImage.md)|
