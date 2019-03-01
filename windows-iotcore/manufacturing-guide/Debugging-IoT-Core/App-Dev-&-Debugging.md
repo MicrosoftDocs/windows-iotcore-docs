@@ -9,7 +9,7 @@ keywords: windows iot, concepts, basics, bsp
 ---
 
 # Application Development & Debugging 
-    * [Application Development](ApplicationDevelopment.md)
+   * [Application Development](ApplicationDevelopment.md)
       * [Application Types](AppTypes.md)
       * [Default Apps](Default-App-Overview.md)
       * [Install Apps](InstallApp.md)
@@ -23,8 +23,6 @@ keywords: windows iot, concepts, basics, bsp
       * [PoweShell](PowerShell.md)
       * [UWP Loopback Mode](uwploopback.md)
     * [Additional Resources](OtherResources.md)
-
-
 
 |Back|Next Steps|
 |---|---|
