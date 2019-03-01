@@ -350,5 +350,5 @@ New-IoTFFUImage MyIoTDevice Test
 ```
 
 ## Next Steps
-[Flashing a Windows 10 IoT Core Image](05-FlashingImage.md)
+[Flashing a Windows 10 IoT Core Image](FlashingImage.md)
 
