@@ -21,13 +21,13 @@ During development / experimental phases, you can change the default app by foll
 ### Using Windows Device Portal
 
 You can click on **Startup** column corresponding to the app.
-![SetupDefaultAppWDP](../media/SetupDefaultApp/DefaultAppWDP.png)
+![SetupDefaultAppWDP](../../media/SetupDefaultApp/DefaultAppWDP.png)
 
 ### Using the shell
 
 Steps to set the default app using the shell 
 
-1. Connect to the device via [Powershell](../connect-your-device/PowerShell.md)
+1. Connect to the device via [Powershell](../../connect-your-device/PowerShell.md)
 
 2. List the applications installed using `iotstartup list`
 
@@ -39,7 +39,7 @@ Steps to set the default app using the shell
 For large deployments, you can achieve this using provisioning package
 
 You can specify the StartupApp/Default setting in the WCD during the provisioning package creation.
-![SetupDefaultAppICD](../media/SetupDefaultApp/DefaultAppICD.png)
+![SetupDefaultAppICD](../../media/SetupDefaultApp/DefaultAppICD.png)
 
 See [Appx.IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Packages/Appx.IoTCoreDefaultApp/customizations.xml) as an example. You can get the Application User Model ID (AUMID) of an appx using [GetAppxInfo tool](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/GetAppxInfo.exe).
 
@@ -49,11 +49,3 @@ Windows 10 IoT Anniversary Update (1607) provides shell support for bringing the
 
 To see how to enable the "Home" key, please visit our [IoT Shell page](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoreshell#switching-between-apps-with-hid-injection-keys)
 
-
-  ## Outline
-* [10a-Debug and Deploy Apps Via Visual Studio](10a-DebugAndDeployApps.md)
-* [10b-Installing Appx Packages](10b-InstallApp.md)
-* [10c-Types of Applications for IoT Core](10c-AppTypes.md)
-* [10d-Default App Overview](10d-defaultapp.md)
-* [10e-Setting Appx as default application](10e-SettingDefaultApps.md)
-* [10f-UWP Loopback debugging](10f-uwploopback.md)
