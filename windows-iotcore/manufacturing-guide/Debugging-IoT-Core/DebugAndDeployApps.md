@@ -15,7 +15,7 @@ Deploying and debugging your application is straightforward with Visual Studio. 
 
 > [!NOTE]
 > In order to use remote debugging, your IoT Core device must first be connected to same local network as your development PC and UDP/TCP communications should be allow on network. If in doubt, check with your IT on allowed network traffic.
->See the [Connecting to a device](../connect-your-device/SetupWiFi.md) instructions.
+>See the [Connecting to a device](../../connect-your-device/SetupWiFi.md) instructions.
 
 ## Deploy apps to your Windows 10 IoT Core device 
 ___
@@ -27,27 +27,18 @@ ___
 
 ![Remote machine in Visual Studio](../media/ManufacturingGuide/cs-remote-machine-debugging.png)
 
-3. At this point, Visual Studio will present the **Remote Connections** dialog. If you previously used [PowerShell](../connect-your-device/PowerShell.md) to set a unique name for your device, you can enter it here (in this example, we're using **my device**). Otherwise, use the IP address of your Windows IoT Core device.
+3. At this point, Visual Studio will present the **Remote Connections** dialog. If you previously used [PowerShell](../../connect-your-device/PowerShell.md) to set a unique name for your device, you can enter it here (in this example, we're using **my device**). Otherwise, use the IP address of your Windows IoT Core device.
 
 4. After entering the device name/IP select `Universal (Unencrypted Protocol)` Authentication Mode, then click **Select**. 
 
-![Universal authentication mode](../media/ManufacturingGuide/cs-remote-connections.png)
+![Universal authentication mode](../../media/ManufacturingGuide/cs-remote-connections.png)
 
 You can verify or modify these values by navigating to the project properties (select **Properties** in the Solution Explorer) and choosing the `Debug` tab on the left:
 
-![Debug tab](../media/ManufacturingGuide/cs-debug-project-properties.png)
+![Debug tab](../../media/ManufacturingGuide/cs-debug-project-properties.png)
 
 5. Now we're ready to deploy. Simply press F5 (or select Debug \| Start Debugging) to start debugging our app. You should see the app come up on your device's screen.
 
 6. Once deployed, you can set breakpoints, see variable values, etc. To stop the app press on the 'Stop Debugging' button (or select Debug \| Stop Debugging).
 
 7. After successfully deploying and debugging your UWP application, create a Release version - change the Visual Studio toolbar configuration dropdown from `Debug` to `Release`.  You can now build and deploy your app to your device by selecting Build \| Rebuild Solution and Build \| Deploy Solution.
-
-  ## Outline
-* [10a-Debug and Deploy Apps Via Visual Studio](10a-DebugAndDeployApps.md)
-* [10b-Installing Appx Packages](10b-InstallApp.md)
-* [10c-Types of Applications for IoT Core](10c-AppTypes.md)
-* [10d-Default App Overview](10d-defaultapp.md)
-* [10e-Setting Appx as default application](10e-SettingDefaultApps.md)
-* [10f-UWP Loopback debugging](10f-uwploopback.md)
-
