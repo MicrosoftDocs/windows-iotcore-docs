@@ -46,7 +46,7 @@ For OEM-style images, you'll wrap your customizations into package (.cab) files.
 ## Next Steps
 [Concepts and Terminology](02-ConceptsTerminology.md)
 
-## Related Topics
+## Related Topics 
 
 * [Build a prototype](../GetStarted.md)
 * [IoT Core Developer Resources](https://developer.microsoft.com/en-us/windows/iot)
