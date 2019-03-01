@@ -28,6 +28,8 @@ Windows 10 IoT Core allows for you to get your device to market quicker while le
 ## How to create Windows IoT Core Image 
 Follow instructions and directions on this [IoT Core Manufacturing Guide](GuideOverview.md) to create Test, and Retail IoT Core images for mass-production of IoT devices.
 
+If you have prior knowledge of image creation and just want to quickly go through a checklist based guide to create a test image, follow this [quick start guide](QuickStartGuide.md)
+
 ---
 ## Differences between Windows 10 IoT Core and Windows 10 IoT Enterprise
 
