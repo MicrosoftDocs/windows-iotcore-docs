@@ -11,7 +11,7 @@ keywords: Windows 10 IoT Core,
 
 # Quick Start Guide and Check List
 
-One of the ultimate goals for creating an IoT image for a device is so that you can have a eventually have a mass produced IoT device. 
+One of the ultimate goals for creating an IoT image for a device is so that you can eventually have a mass-produced IoT device. 
 The following checklist and guide will assist you in creating your first test image of Window IoT Core in the platform of your choosing:
 
 ---
@@ -99,8 +99,8 @@ At this point, create a new product with the command listed below: You will be p
     (or) newproduct MyProductA QCDB410C
     ```
     Sample **SMBIOS**
-* **System OEM Name:** Accolade Industries
-* **System Family Name:** AccoladeHub
+* **System OEM Name:** Contoso Industries
+* **System Family Name:** ContosoHub
 * **System SKU Number:** AIHub-001
 * **Baseboard Manufacturer:** Arrows
 * **Baseboard Product:** Dragonboard 410C
