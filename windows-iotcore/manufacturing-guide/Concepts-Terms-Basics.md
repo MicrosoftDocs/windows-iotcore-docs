@@ -14,6 +14,9 @@ keywords: windows iot, concepts, basics, bsp
 * [Board Support Packages](Concepts-Terms-Basics/BoardSupportPackages.md)
 
 
+
+
+
 |Back|Next Steps|
 |---|---|
 |[Guide Overview](GuideOverview.md)|[Concepts and Terminology](Concepts-Terms-Basics/ConceptsTerminology.md)|
