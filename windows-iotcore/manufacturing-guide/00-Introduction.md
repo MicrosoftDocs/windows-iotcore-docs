@@ -9,7 +9,7 @@ description: Windows IoT Core Introduction
 keywords: Windows 10 IoT Core, 
 ---
 
-# Windows 10 IoT Core
+# What is Windows 10 IoT Core
 Windows IoT Core is a version of Windows 10 that is optimized for smaller devices with or without a display that run on both ARM and x86/x64 devices browser.
 
 Windows 10 IoT Core supports a variety of peripheral interfaces and protocols, including support for common busses like I2C, UART, USB, and more.
@@ -44,5 +44,5 @@ While Windows 10 IoT Core and Windows 10 IoT Enterprise are similar in name, the
 
 For minimum requirement details, please visit [the Windows Hardware site](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
 
-
-
+## How to create Windows IoT Core Image 
+Follow instructions and directions on this [IoT Core Manufacturing Guide](02-ManufacturingOverview.md) to create Test, and Retail IoT Core images for mass-production of IoT devices.
