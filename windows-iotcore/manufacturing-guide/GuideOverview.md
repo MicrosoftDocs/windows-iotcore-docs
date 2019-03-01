@@ -42,6 +42,8 @@ This guide is created so that you can follow step by step to create an Windows I
     * [Adding a driver to an image](Customize-Image/AddingDrivers.md)
     * [Adding Win32 services](Customize-Image/AddingWin32Services.md)
 * [05-Creating a Retail Windows IoT Core Image](Create-Retail-Image/CreateRetailImage.md)
+    * [Maunfacturing Checklist](Create-Retail-Image/ManufacturingCheckList.md)
+    * [Testing Retail Image](Create-Retail-Image/Test-Retail-Image.md)
 * [06-Building Secure Devices with Windows 10 IoT Core](08-BuildingSecureDevices.md)
     * [Secure Boot, BitLocker, and Device Guard](08a-SecureBootBitLockerDeviceGuard.md)
     * [Using the Unified Write Filter](08b-UnifiedWriteFilter.md)
