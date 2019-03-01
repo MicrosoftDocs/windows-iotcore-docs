@@ -17,7 +17,7 @@ We will detail the steps needed to create a retail Windows IoT Core image and fl
 * Build a Full Flashable Update (FFU) file for a Windows IoT Core retail image
 
 ## Prerequisites/Requirements
-Please make sure you've created a basic test image from [Creating a Basic IoT Core Image](04-CreateBasicImage.md) previously. For this example, we have created a basic image with the Qualcomm DragonBoard called *TestDragonBoardProduct*.
+Please make sure you've created a basic test image from [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md) previously. For this example, we have created a basic image with the Qualcomm DragonBoard called *TestDragonBoardProduct*.
 
 You will need the following tools installed to complete this section:
 * A retail [code-signing](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate) certificate. For the kernel driver signing, a Standard code-signing certificate is sufficient. You will require an EV certificate to access the Device Update Center in Hardware Dev Center portal.
@@ -31,7 +31,7 @@ You will need the following tools installed to complete this section:
 ## Modify Project Configuration Files
 Follow the steps below to add any custom applications or provisioning packages you want to add to the retail image. For our example, we are modifying the project files for our Qualcomm DragonBoard project called *TestDragonBoardProduct*.
 
-1. To add a custom application, you should follow the instructions listed in [Adding an App to an image](06a-AddingApps.md). However, you would specify `Retail` instead of `Test` when executing the [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md) command, as shown here:
+1. To add a custom application, you should follow the instructions listed in [Adding an App to an image](../Customize-Image/AddingApps.md). However, you would specify `Retail` instead of `Test` when executing the [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md) command, as shown here:
 
     ```powershell
     Add-IoTProductFeature <product name> Retail APPX_HELLOWORLDAPP -OEM
@@ -54,11 +54,11 @@ If you have one or more custom applications that you want to include in your Win
 2. Open your custom application **in Visual Studio** and open the **Package.appxmanifest** file.
 3. Click on the **Packaging** tab and click on **Choose Certificate...** button.
 
-   ![Dashboard screenshot](../media/ManufacturingGuide/RetailImageAppxCertSelection1.jpg)
+   ![Dashboard screenshot](../../media/ManufacturingGuide/RetailImageAppxCertSelection1.jpg)
 
 4. The dialog displayed will show what certificate is being used for code-signing. Click on the **Configure Certificate...** dropdown and select **Pick from certificate store...**:
 
-   ![Dashboard screenshot](../media/ManufacturingGuide/RetailImageAppxCertSelection2.jpg)
+   ![Dashboard screenshot](../../media/ManufacturingGuide/RetailImageAppxCertSelection2.jpg)
 
 
 5. Choose your retail code-signing certificate when prompted and click **OK**.
@@ -113,7 +113,7 @@ Once we have all the custom application packages signed properly, we can now bui
     (or)buildimage <product name> Retail 
     ```
 
-8. You can then flash the retail image as described in [Flashing a Windows IoT Core Image](05-FlashingImage.md).
+8. You can then flash the retail image as described in [Flashing a Windows IoT Core Image](../Create-IoT-Image/FlashingImage.md).
 
 ## Commands Used
 Listed here are the commands (in order) for creating a retail IoT Core image. Please note that your retail code-signing certificate should be installed first, and it may prompt you for the certificate password when re-signing the .CAB files. 
