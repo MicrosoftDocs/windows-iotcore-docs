@@ -16,7 +16,7 @@ keywords: windows iot, visual studio, app deployment, remote debuggin
 
 When you initially flash Windows 10 IoT Core, you will be presented with the Windows 10 IoT Core Default App upon startup, which looks like this:
 
-![Screenshot of the IoT Core Default App](../media/IoTCoreDefaultApp/DeviceInfoPage-Screenshot.jpg)
+![Screenshot of the IoT Core Default App](../../media/IoTCoreDefaultApp/DeviceInfoPage-Screenshot.jpg)
 
 The purpose of this application is not only to provide you with a friendly shell to interact with when you first boot up Windows 10 IoT Core, but we have open-sourced the code for this application [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp) so that you can plug and play with these features on your own custom application(s).
 
@@ -41,8 +41,8 @@ As shown under the [Settings section](https://docs.microsoft.com/windows/iot-cor
 
 The out-of-box experience for the IoT Core Default App is as lean as it gets. The first pages will ask for a default language and wi-fi settings. From there, in order for your app to be GDPR-compliant, you must have a diagnostic data screen and, if you're planning to track location, you will need to have a location permissions screen too. Examples of both are shown below. 
 
-![Location settings for OOBE](../media/IoTCoreDefaultApp/OOBE3.jpg)
-![Diagnostic settings for OOBE](../media/IoTCoreDefaultApp/OOBE4.jpg)
+![Location settings for OOBE](../../media/IoTCoreDefaultApp/OOBE3.jpg)
+![Diagnostic settings for OOBE](../../media/IoTCoreDefaultApp/OOBE4.jpg)
 
 ## Command Bar
 The Command Bar is the persistant horizonatal bar located at the bottom of the screen. This provides easy access to the following funtionality:
@@ -54,7 +54,7 @@ The Command Bar is the persistant horizonatal bar located at the bottom of the s
 
 There are a lot buttons in the Command Bar, and sometimes those buttons can be confusing or hidden. To expand the Command Bar and access those buttons, please press the menu button in the bottom right:
 
-![How to expand Command Bar](../media/IoTCoreDefaultApp/CommandBar.gif)
+![How to expand Command Bar](../../media/IoTCoreDefaultApp/CommandBar.gif)
 
 ## Start Menu - Play
 
@@ -67,16 +67,16 @@ Using data from the National Weather Service, the weather page renders weather i
 The web browser allows you to pull up most sites from the web.
 
 ### Music
-This page will play MP3 and WAV files from the **Music Library**, that can be accessed via the [Windows Device Portal](../manage-your-device/DevicePortal.md).  To upload files to the music player, you will need to navigate to the Windows Device Portal, click on the "Apps" dropdown, navigate to "File Explorer", select "Music" and upload your files from there.
+This page will play MP3 and WAV files from the **Music Library**, that can be accessed via the [Windows Device Portal](../../manage-your-device/DevicePortal.md).  To upload files to the music player, you will need to navigate to the Windows Device Portal, click on the "Apps" dropdown, navigate to "File Explorer", select "Music" and upload your files from there.
 
 
-![How to upload music files](../media/IoTCoreDefaultApp/music.gif)
+![How to upload music files](../../media/IoTCoreDefaultApp/music.gif)
 
 ### Slideshow
-This page will display any PNG or JPEG image files from the **Pictures Library**, that can be accessed via the [Windows Device Portal](../manage-your-device/DevicePortal.md). To upload images to the slideshow, you will need to navigate to the Windows Device Portal, click on the "Apps" dropdown, navigate to "File Explorer", select "Pictures" and upload your files from there.
+This page will display any PNG or JPEG image files from the **Pictures Library**, that can be accessed via the [Windows Device Portal](../../manage-your-device/DevicePortal.md). To upload images to the slideshow, you will need to navigate to the Windows Device Portal, click on the "Apps" dropdown, navigate to "File Explorer", select "Pictures" and upload your files from there.
 
 
-![How to upload music files](../media/IoTCoreDefaultApp/slideshow.gif)
+![How to upload music files](../../media/IoTCoreDefaultApp/slideshow.gif)
 
 ### Draw
 This page allows you to test out Windows 10 IoT Core's inking capabilities.
@@ -84,9 +84,9 @@ This page allows you to test out Windows 10 IoT Core's inking capabilities.
 ## Start Menu - Explore 
 
 ### Apps 
-This page allows you to launch other foreground applications installed on the device. Launching an application will suspend IoT Core Default App, which can be relaunched by using App Manager in [Windows Device Portal](../manage-your-device/DevicePortal.md).
+This page allows you to launch other foreground applications installed on the device. Launching an application will suspend IoT Core Default App, which can be relaunched by using App Manager in [Windows Device Portal](../../manage-your-device/DevicePortal.md).
 
-Nothing special is needed to have your foreground application listed in the page, simply [install](10b-InstallApp.md) or [deploy](10a-DebugAndDeployApps.md) the application. After successful installation or deployment, re-navigate to the Apps page to refresh the list of applications.
+Nothing special is needed to have your foreground application listed in the page, simply [install](InstallApp.md) or [deploy](DebugAndDeployApps.md) the application. After successful installation or deployment, re-navigate to the Apps page to refresh the list of applications.
 
 Note that there are a couple of auto-generated OS related applications that we filter out, you can find the list of app names [here](http://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTCoreDefaultApp/CS/Views/AppLauncherPage.xaml.cs).
 
