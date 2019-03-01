@@ -22,7 +22,7 @@ The process to create a Windows IoT Core image involves a number of steps, liste
 6. Create a retail image with your signed .CAB files and flash the image onto your devices.
 
 
-![Dashboard screenshot](../media/ManufacturingGuide/IoTCoreImageCreateProcess.jpg)
+![Dashboard screenshot](../../media/ManufacturingGuide/IoTCoreImageCreateProcess.jpg)
 
 ## Terminology
 
@@ -58,7 +58,7 @@ The Feature Merger tool generates the required feature identifier packages that 
 
 ### Board Support Packages (BSPs)
 
-Board Support Packages contain a set of software, drivers, and boot configurations for a particular board, typically supplied by a board manufacturer. The board manufacturer may periodically provide updates for the board, which your devices can receive and apply. You can also create your own BSP if the board manufacturer does not provide one, and you have the corresponding set of software and driver files. Supported BSPs are listed [here](04a-BoardSupportPackages.md "Board Support Packages").
+Board Support Packages contain a set of software, drivers, and boot configurations for a particular board, typically supplied by a board manufacturer. The board manufacturer may periodically provide updates for the board, which your devices can receive and apply. You can also create your own BSP if the board manufacturer does not provide one, and you have the corresponding set of software and driver files. Supported BSPs are listed [here](BoardSupportPackages.md "Board Support Packages").
 
 
 ### Full Flash Update Image Files
@@ -69,8 +69,8 @@ There are two types of applications that can run on Windows IoT Core.
 * Foreground apps - these apps have a UI. Only one app can be running on an IoT device as the foreground apps.  If multiple foreground app is included in the image, only one should be set as auto start on boot.
 * Background apps - these apps do not have a UI. Multiple apps can be running on an IoT device as background apps.  You can configure any number of background apps to auto start.
 
-For more information, please see [Foreground Apps](../develop-your-app/BuildingAppsForIoTCore.md) or [Background Apps](../develop-your-app/BackgroundApplications.md).
+For more information, please see [Foreground Apps](../../develop-your-app/BuildingAppsForIoTCore.md) or [Background Apps](../../develop-your-app/BackgroundApplications.md).
 
 ## Next Steps
-[Get the tools needed to create Windows IoT Core Images](03-ToolsNeeded.md)
+[Get the tools needed to create Windows IoT Core Images](ToolsNeeded.md)
 
