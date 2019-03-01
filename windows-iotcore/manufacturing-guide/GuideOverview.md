@@ -55,7 +55,7 @@ This guide is created so that you can follow step by step to create an Windows I
       * [Application Types](Debugging-IoT-Core/AppTypes.md)
       * [Default Apps](Debugging-IoT-Core/Default-App-Overview.md)
       * [Setting Default Apps](Debugging-IoT-Core/SettingUpDeviceCenter.md)
-      * [Install Apps](Debugging-IoT-Core/SettingUpDeviceCenter.md)
+      * [Install Apps](Debugging-IoT-Core/InstallApp.md)
       * [Debug and Deploy Apps Via Visual Studio](Debugging-IoT-Core/SettingUpDeviceCenter.md)
       * [Debug and Deploy Apps](Debugging-IoT-Core/SettingUpDeviceCenter.md)
       * [Debug and Deploy Apps](Debugging-IoT-Core/SettingUpDeviceCenter.md)
