@@ -51,6 +51,9 @@ This guide is created so that you can follow step by step to create an Windows I
 * [07-IoT Core Services](IoT-Core-Services/IoTCoreServices.md)
     * [Device Update Center](IoT-Core-Services/SettingUpDeviceCenter.md)
 * [08-App Dev & Debugging on IoT Core](Debugging-IoT-Core)
+    * [Device Update Center](IoT-Core-Services/SettingUpDeviceCenter.md)
+      * [Device Update Center](IoT-Core-Services/SettingUpDeviceCenter.md)
+    * [Device Update Center](IoT-Core-Services/SettingUpDeviceCenter.md)
 
 ## Next Steps
 [Concepts and Terminology](02-ConceptsTerminology.md)
