@@ -18,7 +18,7 @@ We will add a custom driver to a Windows IoT Core image, and deploy it to our de
 * Import an alternative driver for a BSP
 
 ## Prerequisites/Requirements
-Please make sure you've created a basic image from [Creating a Basic IoT Core Image](04-CreateBasicImage.md) previously. For this example, we have created a basic image with the Qualcomm DragonBoard called *TestDragonBoardProduct*.
+Please make sure you've created a basic image from [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md) previously. For this example, we have created a basic image with the Qualcomm DragonBoard called *TestDragonBoardProduct*.
 
 You will need the following tools installed to complete this section:
 * **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows IoT Core.
@@ -65,13 +65,13 @@ Add-IoTProductFeature <product name> Test DRIVERS_TESTDRIVER -OEM
 ```
 
 ## Build and Test Image
-Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
+Build the FFU image again, as specified in [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
 
     ```powershell
     New-IoTFFUImage <product name> Test
     (or)buildimage <product name> Test 
     ```
-Once the FFU file has been built, you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](05-FlashingImage.md).
+Once the FFU file has been built, you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](../Create-IoT-Image/FlashingImage.md).
 
 ## Verify Driver is Installed Properly
 You can verify that the test driver was installed properly by following these steps:
@@ -98,11 +98,11 @@ If you wish to import a different driver for a Board Support Package (BSP) that 
 
    **BYT64.GPIO.wm.xml**
 
-   ![Dashboard screenshot](../media/ManufacturingGuide/ImportDriver1.jpg)
+   ![Dashboard screenshot](../../media/ManufacturingGuide/ImportDriver1.jpg)
 
    **BYT64.GPIO._pkg.xml**
 
-   ![Dashboard screenshot](../media/ManufacturingGuide/ImportDriver2.jpg)
+   ![Dashboard screenshot](../../media/ManufacturingGuide/ImportDriver2.jpg)
 
 4. Run **IoT Core Shell** as an administrator.
 5. Build all the packages by running the following command:
@@ -112,14 +112,14 @@ If you wish to import a different driver for a Board Support Package (BSP) that 
     (or) buildpkg all 
 ```
 
-6.  Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateBasicImage.md). You should only have to run the **buildimage** command:
+6.  Build the FFU image again, as specified in [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md). You should only have to run the **buildimage** command:
 
     ```powershell
     New-IoTFFUImage <product name> Test
     (or)buildimage <product name> Test 
     ```
-    Once the FFU file has been built, you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](05-FlashingImage.md).
+    Once the FFU file has been built, you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](../Create-IoT-Image/FlashingImage.md).
 
 
 ## Next Steps
-[Adding Win32 Services to an image](06e-AddingWin32Services.md)
+[Adding Win32 Services to an image](AddingWin32Services.md)
