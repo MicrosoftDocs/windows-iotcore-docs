@@ -19,4 +19,4 @@ keywords: windows iot, concepts, basics, bsp
 
 |Back|Next Steps|
 |---|---|
-|[Guide Overview](GuideOverview.md)|[Concepts and Terminology](Concepts-Terms-Basics/ConceptsTerminology.md)|
+|[Guide Overview](../GuideOverview.md)|[Concepts and Terminology](ConceptsTerminology.md)|
