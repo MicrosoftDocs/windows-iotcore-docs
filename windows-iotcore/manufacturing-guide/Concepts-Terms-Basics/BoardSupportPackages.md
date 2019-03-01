@@ -103,3 +103,5 @@ Follow the steps below to use this BSP with the Windows 10 ADK release 1809 (177
     (or) importbsp <bspname> "C:\Program Files (x86)\Intel IoT\Source-<arch>"
     buildpkg <bspname>
     ```
+## Next Steps
+[Creating a Basic Windows IoT Core Image](../Create-IoT-Image/Create-IoT-Core-Image.md)
