@@ -7,8 +7,6 @@ ms.topic: article
 description: Concepts and Terminology definitions for Windows IoT Core Manufacturing Guide.
 keywords: Windows 10 IoT Core, 
 ---
-# 02-Concepts and Basics 
-
 
 # Concepts and Terminology
 In order to clearly understand the process to create and deploy Windows IoT Core images, a few concepts and terminology must be defined first.
