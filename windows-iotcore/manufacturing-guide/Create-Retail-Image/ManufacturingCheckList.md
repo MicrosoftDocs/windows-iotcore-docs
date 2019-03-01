@@ -17,19 +17,19 @@ We will split the tasks into multiple sections.
 
 ## Test Image
 ### Basic Image
-- [ ] Download / Build BSPs for board [[link]](04a-BoardSupportPackages.md)
-- [ ] Select the correct Image Architecture [[link]](04-CreateBasicImage.md)
-- [ ] Create basic image [[link]](04-CreateBasicImage.md)
-- [ ] Flash basic image [[link]](05-FlashingImage.md)
+- [ ] Download / Build BSPs for board [[link]](../Concepts-Terms-Basics/BoardSupportPackages.md)
+- [ ] Select the correct Image Architecture [[link]](../Create-IoT-Image/CreateBasicImage.md)
+- [ ] Create basic image [[link]](../Create-IoT-Image/CreateBasicImage.md)
+- [ ] Flash basic image [[link]](../Create-IoT-Image/FlashingImage.md)
 ### Drivers
-- [ ] Add drivers for the Image (if required) [[link]](06d-AddingDrivers.md)
-- [ ] Flash test image with drivers [[link]](05-FlashingImage.md)
+- [ ] Add drivers for the Image (if required) [[link]](../Customize-Image/AddingDrivers.md)
+- [ ] Flash test image with drivers [[link]](../Create-IoT-Image/FlashingImage.md)
 ### Custom Apps
-- [ ] Add custom UWP app to image [[link]](06a-AddingApps.md)
-- [ ] Test Image with custom app [[link]](05-FlashingImage.md)
+- [ ] Add custom UWP app to image [[link]](../Customize-Image/AddingApps.md)
+- [ ] Test Image with custom app [[link]](../Create-IoT-Image/FlashingImage.md)
 ### Boot Sequence / Registry / Custom Provisioning
-- [ ] Create / Modify provisioning package for the image [[link]](06b-CreateProvisioningPackage.md)
-- [ ] Test Image with custom provisioning [[link]](05-FlashingImage.md)
+- [ ] Create / Modify provisioning package for the image [[link]](../Customize-Image/CreateProvisioningPackage.md)
+- [ ] Test Image with custom provisioning [[link]](../Create-IoT-Image/FlashingImage.md)
 ### Test Image Recovery
 - [ ] Create recovery image
 - [ ] Flash recovery image
@@ -39,11 +39,11 @@ We will split the tasks into multiple sections.
 ### Retail Image
 - [ ] Aquire retail code-signing EV certificate [[link]](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate) 
 - [ ] Aquire cross-signing certificate that match your CA of code-signing certificate [[link]](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing)
-- [ ] Code Sign your custom UWP app [[link]](07-CreateRetailImage.md)
+- [ ] Code Sign your custom UWP app [[link]](../Create-Retail-Image/CreateRetailImage.md)
 - [ ] Create and include Certificates package (if needed - adding more then one UWP app, drivers, etc) [[link]](07-CreateRetailImage.md)
 - [ ] Turn on security features (see section below)
-- [ ] Turn on retailsign [[link]](07-CreateRetailImage.md)
-- [ ] Create retail image [[link]](07-CreateRetailImage.md)
+- [ ] Turn on retailsign [[link]](../Create-Retail-Image/CreateRetailImage.md)
+- [ ] Create retail image [[link]](../Create-Retail-Image/CreateRetailImage.md)
 - [ ] Test retail Image (see below)
 ### Security
 - [ ] Enable TPM
