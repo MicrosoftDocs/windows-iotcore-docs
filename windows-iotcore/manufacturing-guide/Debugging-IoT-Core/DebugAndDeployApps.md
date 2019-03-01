@@ -25,7 +25,7 @@ ___
 
 2. Next, in the Visual Studio toolbar, click on the `Local Machine` dropdown and select `Remote Machine`.
 
-![Remote machine in Visual Studio](../media/ManufacturingGuide/cs-remote-machine-debugging.png)
+![Remote machine in Visual Studio](../../media/ManufacturingGuide/cs-remote-machine-debugging.png)
 
 3. At this point, Visual Studio will present the **Remote Connections** dialog. If you previously used [PowerShell](../../connect-your-device/PowerShell.md) to set a unique name for your device, you can enter it here (in this example, we're using **my device**). Otherwise, use the IP address of your Windows IoT Core device.
 
