@@ -28,7 +28,7 @@ This guide is created so that you can follow step by step to create an Windows I
 
 ## Outline
 * [01-Manufacturing Guide Overview(this document)](GuideOverview.md)
-* 02-Concepts and Basics
+* [02-Concepts and Basics](Concepts-Terms-Basics.md)
    * [Concepts and Terminology](Concepts-Terms-Basics/ConceptsTerminology.md)
    * [Get the tools needed to create Windows IoT Core Images](Concepts-Terms-Basics/ToolsNeeded.md)
    * [Board Support Packages](Concepts-Terms-Basics/BoardSupportPackages.md)
