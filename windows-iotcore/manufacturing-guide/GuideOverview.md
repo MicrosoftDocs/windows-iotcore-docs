@@ -56,14 +56,14 @@ This guide is created so that you can follow step by step to create an Windows I
       * [Default Apps](Debugging-IoT-Core/Default-App-Overview.md)
       * [Setting Default Apps](Debugging-IoT-Core/SettingUpDeviceCenter.md)
       * [Install Apps](Debugging-IoT-Core/InstallApp.md)
+      * [Embedded Mode](Debugging-IoT-Core/embeddedmode.md)
       * [Debug and Deploy Apps Via Visual Studio](Debugging-IoT-Core/SettingUpDeviceCenter.md)
-      * [Debug and Deploy Apps](Debugging-IoT-Core/SettingUpDeviceCenter.md)
       * [Debug and Deploy Apps](Debugging-IoT-Core/SettingUpDeviceCenter.md)
       * [Debug and Deploy Apps](Debugging-IoT-Core/SettingUpDeviceCenter.md)
       * [Debug and Deploy Apps](Debugging-IoT-Core/SettingUpDeviceCenter.md)
     * [Debugging on IoT Core](Debugging-IoT-Core/DebuggingOutline.md)
       * [Windows 10 IoT Core Dashboard](Debugging-IoT-Core/WindowsIoTDashboard.md)
-      * [PoweShell](Debugging-IoT-Core/powershell.md)
+      * [PoweShell](Debugging-IoT-Core/PowerShell.md)
 
 ## Next Steps
 [Concepts and Terminology](02-ConceptsTerminology.md)
