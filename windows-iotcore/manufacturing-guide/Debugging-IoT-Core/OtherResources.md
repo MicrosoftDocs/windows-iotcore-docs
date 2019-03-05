@@ -4,7 +4,6 @@ author: lmaung
 ms.author: lmaung
 ms.date: 01/22/19
 ms.topic: article
-description: Discover other resoures and git repos
 keywords: windows iot, git
 ---
 

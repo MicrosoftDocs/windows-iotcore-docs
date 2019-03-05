@@ -70,7 +70,7 @@ namespace BlinkyHeadlessCS
 You can find in-depth information on Background apps [here](https://docs.microsoft.com/windows/iot-core/develop-your-app/backgroundapplications).
 
 > [!NOTE]
-> You may want to enable embedded mode to ensure that your background apps can be automatically re-launched by Windows. For additional details on embedded mode, please read [this](10l-embeddedmode.md).
+> You may want to enable embedded mode to ensure that your background apps can be automatically re-launched by Windows. For additional details on embedded mode, please read [this](embeddedmode.md).
 
 
 ### Continous Background Task
@@ -81,7 +81,7 @@ It is also possible to combine multiple conditions by calling AddCondition multi
 You can find in-depth information on conditions and how to run the task in continous mode apps [here](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/set-conditions-for-running-a-background-task).
 
 > [!NOTE]
-> You may want to enable embedded mode to ensure that your background apps can be automatically re-launched by Windows. For additional details on embedded mode, please read [this](10l-embeddedmode.md).
+> You may want to enable embedded mode to ensure that your background apps can be automatically re-launched by Windows. For additional details on embedded mode, please read [this](embeddedmode.md).
 
 ### Console Apps
 Starting with Windows 10, version 1803, you can write C++/WinRT or C++/CX UWP console apps that run in a console window, such as a DOS or PowerShell console window. Console apps use the console window for input and output, and can use Universal C Runtime functions such as printf and getchar. 
@@ -146,7 +146,7 @@ Samples:
 ### Arduino Wiring
 With Arduino Wiring support you can build apps in Arduino Wiring for many popular components and peripherals in the IoT ecosystem.
 
-Our [Arduino Wiring Project Guide](../learn-about-hardware/ArduinoWiringProjectGuide.md) provides full instructions on how to get set up to build these apps. The samples copied and linked below will help you get started building your own.  You can even [build WinRT components in Arduino](https://github.com/ms-iot/samples/tree/develop/ArduinoLibraryBlinky) that can then be used from other languages. 
+Our [Arduino Wiring Project Guide](../../learn-about-hardware/ArduinoWiringProjectGuide.md) provides full instructions on how to get set up to build these apps. The samples copied and linked below will help you get started building your own.  You can even [build WinRT components in Arduino](https://github.com/ms-iot/samples/tree/develop/ArduinoLibraryBlinky) that can then be used from other languages. 
 
 *Blinky Sample Code*
 The full [sample code and docs](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground/VB) are available on our samples page and you can find the full code below:

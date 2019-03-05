@@ -17,12 +17,12 @@ keywords: Windows 10 IoT Core,
 
 * **Technician PC**: This is the PC you will be building your images on. A dedicated PC is recommended for this. This PC should have at least 15GB of free space for installing the software and for modifying IoT Core images. <p>We recommend either Windows 10 or Windows 8.1 with the latest updates. The minimum requirement is Windows 7 SP1, though this may require additional tools or workarounds for tasks such as mounting .ISO images.
 
-* **IoT device:** A test device or board that represents all of the devices in a single model line. <p>Please see [SoCs and Custom Boards](../learn-about-hardware/SoCsAndCustomBoards.md) for a list of supported devices.
+* **IoT device:** A test device or board that represents all of the devices in a single model line. <p>Please see [SoCs and Custom Boards](../../learn-about-hardware/SoCsAndCustomBoards.md) for a list of supported devices.
 
 * An **HDMI cable**, and a **monitor or TV** with a dedicated HDMI input. This will be used to verify that the image is loaded and that your apps are running properly.
 
 ## Storage
-* A **microSD card**. Please note that this is dependent on the device you are using. Some devices require a microSD card, while others have onboard storage. Learn more about existing [supported storage](../learn-about-hardware/HardwareCompatList.md#other-hardware-peripherals) options.
+* A **microSD card**. Please note that this is dependent on the device you are using. Some devices require a microSD card, while others have onboard storage. Learn more about existing [supported storage](../../learn-about-hardware/HardwareCompatList.md#other-hardware-peripherals) options.
 
 ## Software
 Here's the software you'll need to create custom OEM images using the Windows 10 IoT Core ADK Add-Ons:

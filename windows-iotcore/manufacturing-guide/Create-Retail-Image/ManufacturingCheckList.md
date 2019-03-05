@@ -40,7 +40,7 @@ We will split the tasks into multiple sections.
 - [ ] Aquire retail code-signing EV certificate [[link]](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate) 
 - [ ] Aquire cross-signing certificate that match your CA of code-signing certificate [[link]](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing)
 - [ ] Code Sign your custom UWP app [[link]](../Create-Retail-Image/CreateRetailImage.md)
-- [ ] Create and include Certificates package (if needed - adding more then one UWP app, drivers, etc) [[link]](07-CreateRetailImage.md)
+- [ ] Create and include Certificates package (if needed - adding more then one UWP app, drivers, etc) [[link]](CreateRetailImage.md)
 - [ ] Turn on security features (see section below)
 - [ ] Turn on retailsign [[link]](../Create-Retail-Image/CreateRetailImage.md)
 - [ ] Create retail image [[link]](../Create-Retail-Image/CreateRetailImage.md)

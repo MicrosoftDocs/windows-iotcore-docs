@@ -50,7 +50,7 @@ This guide is created so that you can follow step by step to create an Windows I
     * [Implementing a Trusted Platform Module](Secure-IoT-Core/ImplementingTPM.md)
 * [07-IoT Core Services](IoT-Core-Services/IoTCoreServices.md)
     * [Device Update Center](IoT-Core-Services/SettingUpDeviceCenter.md)
-* [08-App Dev & Debugging on IoT Core](Debugging-IoT-Core/App-Dev-&-Debugging.md)
+* [08-App Dev & Debugging on IoT Core](Debugging-IoT-Core/App-Dev-And-Debugging.md)
     * [Application Development](Debugging-IoT-Core/ApplicationDevelopment.md)
       * [Application Types](Debugging-IoT-Core/AppTypes.md)
       * [Default Apps](Debugging-IoT-Core/Default-App-Overview.md)
@@ -67,7 +67,7 @@ This guide is created so that you can follow step by step to create an Windows I
     * [Additional Resources](Debugging-IoT-Core/OtherResources.md)
 
 ## Next Steps
-[Concepts and Terminology](02-ConceptsTerminology.md)
+[Concepts and Terminology](Concepts-Terms-Basics/ConceptsTerminology.md)
 
 ## Related Topics 
 

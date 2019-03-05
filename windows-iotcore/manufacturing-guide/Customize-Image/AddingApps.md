@@ -20,7 +20,7 @@ Please note that this process is identical for both background and foreground ap
 * Build and deploy an FFU image that contains your UWP app package
 
 ## Prerequisites/Requirements
-Please make sure you've created a basic image from [Creating a Basic IoT Core Image](04-CreateBasicImage.md) previously. For this example, we have created a basic image with the Qualcomm DragonBoard called *TestDragonBoardProduct*.
+Please make sure you've created a basic image from [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md) previously. For this example, we have created a basic image with the Qualcomm DragonBoard called *TestDragonBoardProduct*.
 
 
 You will need the following tools installed to complete this section:
@@ -156,7 +156,7 @@ or addfid <product name> Test APPX_HELLOWORLDAPP -OEM
 
 ## Build and Test Image
 
-Build the FFU image again, as specified in [Creating a Basic IoT Core Image](04-CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
+Build the FFU image again, as specified in [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
 
 ```powershell
 New-IoTFFUImage <product name> Test
