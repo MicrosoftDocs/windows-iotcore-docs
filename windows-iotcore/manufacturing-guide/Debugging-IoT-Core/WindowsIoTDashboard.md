@@ -79,7 +79,7 @@ To find your device, go to **My Devices**. If your device is not listed, try reb
 > If you are unable to find your device in the dashboard, try typing your [IP Address] and [:8080] into the browser to get Windows Device Portal up and running. To get your device to show in the dashboard, try rebooting your device.
 
 
-Right click and select **Open in Device Portal**. This will launch the [Windows Device Portal](../manage-your-device/DevicePortal.md) page and is the best way to interact and manage your device.
+Right click and select **Open in Device Portal**. This will launch the [Windows Device Portal](../../manage-your-device/DevicePortal.md) page and is the best way to interact and manage your device.
 
 ![IoTDashboard View Devices](../../media/IoTDashboard/IoTDashboard_RightClickMenu.PNG)
 
