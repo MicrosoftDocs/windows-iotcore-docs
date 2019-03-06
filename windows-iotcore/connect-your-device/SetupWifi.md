@@ -24,7 +24,7 @@ To use WiFi, you'll need to provide Windows 10 IoT core with the WiFi network cr
 
 ## Custom Companion App & WPS Wi-Fi Onboarding Samples
 
-Currently, we offer a number of ways for developers to build a custom wifi onboarding solution for thier device. 
+Currently, we offer a number of ways for developers to build a custom wifi onboarding solution for their device. 
 
 > | Samples | Description | Benefits  |  Drawbacks  |
 > |-------------|----------|---------|---------|
