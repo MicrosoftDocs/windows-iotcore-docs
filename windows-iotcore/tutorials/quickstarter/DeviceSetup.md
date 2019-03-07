@@ -55,6 +55,9 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 > [!IMPORTANT]
 > If you're looking to flash a custom image, select "Custom" from the OS Build dropdown, follow the instructions [here](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image) to create a basic image, and follow the rest of the instructions below to finish.
 
+> [!IMPORTANT]
+> When you're working with a new Dragonboard, it comes with Android installed. You will need to wipe and load the device using the eMMC flashing method.
+
 > [!NOTE]
 > If you're running into any audio-related issues with your DragonBoard, we advise that you read through Qualcomm's manual [here](https://developer.qualcomm.com/download/db410c/stereo-connector-and-audio-routing-application-note.pdf). 
 
