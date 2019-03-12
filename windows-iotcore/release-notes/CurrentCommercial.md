@@ -29,8 +29,7 @@ You can review linked terms by pasting the forward link into your browser window
 
 
 ## Additional Information
-* The BSP version used for our Dragon Board image is 2118.0.0.0. 
-
+* The BSP version used for our Dragon Board image is 2120.0.0.0. 
 
 ## Known issues in this build:
 * F5 driver deployment from Visual Studio does not work on IoT Core.
