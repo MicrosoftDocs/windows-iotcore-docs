@@ -146,6 +146,37 @@ USB\VID_10C4&PID_EA60\0001
 ```
 [Mincomm](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/BusTools/MinComm) is another helpful tool to troubleshoot serial port issues. This tool can enumerate ports, give you their friendly name and Device ID, open ports, configure settings (i.e. baud rate, stop bits, etc.) and send and receive data. 
 
+## Sirep Test service
+Even though the Sirep Test service is not enabled by default in retail images, in case you still want to disable the Sirep service on startup, you can login and disable Sirep from autostart. 
+
+You can use the following PowerShell commands to do so, as shown below:
+
+```
+administrator@MINWINPC C:\Data\Users\administrator>sc stop TestSirepSvc
+
+SERVICE_NAME: TestSirepSvc
+       TYPE               : 20  WIN32_SHARE_PROCESS
+        STATE              : 3  STOP_PENDING
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_PRESHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x4
+        WAIT_HINT          : 0x1770
+
+administrator@MINWINPC C:\Data\Users\administrator>sc query TestSirepSvc
+
+SERVICE_NAME: TestSirepSvc
+        TYPE               : 20  WIN32_SHARE_PROCESS
+        STATE              : 1  STOPPED
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+administrator@MINWINPC C:\Data\Users\administrator>sc config TestSirepSvc start=disabled
+[SC] ChangeServiceConfig SUCCESS
+```
+
 ## Tablet mode
 
 "Tablet Mode" is a concept that only exist on Desktop shell and doesn’t apply to IoT Core. 
