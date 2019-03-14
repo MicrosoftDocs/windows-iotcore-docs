@@ -14,7 +14,7 @@ keywords: windows iot, development devices, boards, SOC, SOM, system on chips, R
 
 Microsoft works alongside Broadcom, Intel, NXP, and Qualcomm to verify support for Windows 10 IoT Core on several vendors' system on a chip (SoCs). These IoT Core-powered SoCs are used in hundreds of different devices that you can use to prototype and commercialize your idea.
 
-| Broadcom | Intel | Qualcomm | NXP (coming soon) |
+| Broadcom | Intel | Qualcomm | NXP |
 |----------|-------|----------|-----|
 | BCM2837 | [Intel® Atom® processor E3900 series (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                | [Snapdragon 410 (APQ8016)](https://www.qualcomm.com/products/snapdragon/processors/410) | [i.MX 6 Family](http://aka.ms/iotnxp) |
 | BCM2836 | [Intel® Celeron® processor N3350 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 (APQ8009)](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 7 Family](http://aka.ms/iotnxp)     |
