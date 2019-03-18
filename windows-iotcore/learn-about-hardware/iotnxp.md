@@ -82,8 +82,8 @@ Several Microsoft and NXP partners have enabled commercial i.MX 6, i.MX 7, and i
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://phytec.com/products/single-board-computers/phyboard-i.mx7/">Phytec phyBOARD-i.MX7</a></p></td>
-<td align="left"><p><p><a href="mailto:sales@phytec.com">Brad Dodson</a></p></td>
+<td align="left"><p><a href="https://phytec.com/product/phyboard-imx7-development-kit/">phyBOARD-i.MX 7 Development Kit</a></p></td>
+<td align="left"><p><p><a href="mailto:sales@phytec.com">Fernando Benitez</a></p></td>
 </tr>
 
 <tr class="odd">
