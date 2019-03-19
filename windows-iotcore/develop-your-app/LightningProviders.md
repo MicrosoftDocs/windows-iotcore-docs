@@ -145,13 +145,13 @@ if (LightningProvider.IsLightningEnabled)
 
 The following samples demonstrate using the Lightning providers with supported bus types:
 
-* [Blinky (UI) with Lightning Provider](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinkylightning) demonstrates GPIO with Lightning Provider in a foreground application
+* [Blinky (UI) with Lightning Provider](https://github.com/ms-iot/BusProviders/tree/develop/Microsoft.IoT.Lightning.Providers/Blinky) demonstrates GPIO with Lightning Provider in a foreground application
 
-* [BlinkyHeadless with Lightning Provider](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinkybackgroundlightning) demonstrates GPIO with Lightning Provider in a headless application
+* [BlinkyHeadless with Lightning Provider](https://github.com/ms-iot/BusProviders/tree/develop/Microsoft.IoT.Lightning.Providers/Blinky/Background) demonstrates GPIO with Lightning Provider in a headless application
 
-* [SPIDisplay with Lightning Provider](https://developer.microsoft.com/en-us/windows/iot/samples/spidisplaylightning) demonstrates the usage of the API to control a device using SPI with Lightning Provider
+* [SPIDisplay with Lightning Provider](https://github.com/ms-iot/BusProviders/tree/develop/Microsoft.IoT.Lightning.Providers/SPIDisplay) demonstrates the usage of the API to control a device using SPI with Lightning Provider
  
-* [WeatherStation with Lightning Provider](https://developer.microsoft.com/en-us/windows/iot/samples/weatherstationlightning) demonstrates interacting with a device using I2C with Lightning Provider
+* [WeatherStation with Lightning Provider](https://github.com/ms-iot/BusProviders/tree/develop/Microsoft.IoT.Lightning.Providers/WeatherStation) demonstrates interacting with a device using I2C with Lightning Provider
 
 ## Build Requirements
 
