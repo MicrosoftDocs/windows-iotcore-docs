@@ -32,6 +32,10 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Windows 10 IoT Core Walkthrough](https://channel9.msdn.com/Blogs/Seth-Juarez/Windows-IoT-Core-Walkthrough?term=windows%20iot%20core)
 * [Windows 10 IoT and Azure IoT Device Management Enhancement](https://channel9.msdn.com/Shows/Azure-Friday/Windows-10-IoT-and-Azure-IoT-Device-Management-Enhancements?term=windows%20iot%20core)
 
+## Whitepapers
+* [Azure IoT Edge + Windows IoT: Supporting AI at the edge](https://aka.ms/IoT-Edge-WP)
+* [Windows Machine Learning: Implement AI in your Windows apps](https://aka.ms/Windows-ML-WP)
+
 ## Learning resources
 
 * [Microsoft MVP community](https://mvp.microsoft.com/)
