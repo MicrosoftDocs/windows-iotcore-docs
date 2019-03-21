@@ -103,9 +103,9 @@ At this point, create a new product with the command listed below: You will be p
     Sample **SMBIOS**
 * **System OEM Name:** Contoso
 * **System Family Name:** ContosoHub
-* **System SKU Number:** AIHub-001
+* **System SKU Number:** AI-001
 * **Baseboard Manufacturer:** Arrows
-* **Baseboard Product:** Dragonboard 410C
+* **Baseboard Product:** DragonBoard 410c
 
 ### Create a test Image
 Build your first test FFU image with the following command:
