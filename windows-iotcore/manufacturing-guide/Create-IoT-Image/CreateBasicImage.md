@@ -11,6 +11,11 @@ keywords: Windows 10 IoT Core,
 # Creating a Basic IoT Core Image
 To get started, we will detail the steps needed to create a basic Windows 10 IoT Core image and flash it onto a specific hardware device.
 
+**Note**
+1. The sample below uses 'C:\IoT\Workspaces\ContosoWS' as workspace.
+2. Contoso is the OEM name.
+3. ProductX is used as a sample product.
+
 ## Goals
 * Create a project using ADK Add-ons that can be used to create Windows 10 IoT Core images
 * Build a Full Flashable Update (FFU) file for a Windows 10 IoT Core test image
@@ -41,19 +46,17 @@ You will need the following tools installed to complete this section:
 2. In the **IoT Core Powershell Environment**, create a new workspace (for example, `C:\Myworkspace`) with an OEM name of `Contoso` for the architecture `arm` using [New-IoTWorkspace](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTWorkspace.md)
 
     ```powershell
-    New-IoTWorkspace C:\MyWorkspace Contoso arm
-    (or) new-ws C:\MyWorkspace Contoso arm
+    New-IoTWorkspace C:\IoT\Workspaces\ContosoWS Contoso arm
+    (or) new-ws C:\IoT\Workspaces\ContosoWS Contoso arm
     ```
 
-   IoT Core supports four architects, x64, x86, arm and arm64.
+   **IoT Core supports four architects, x64, x86, arm and arm64.** 
 
    Only alphanumeric characters are supports in the OEM name as this is used as a prefix for various generated file names.
 
    This generates the `IoTWorkspace.xml` file and sets a version number for the design, which you can use for future updates. The first version number defaults to 10.0.0.0. (Why a four-part version number? Learn about versioning schemes in [Update requirements](https://docs.microsoft.com/windows-hardware/service/mobile/update-requirements)).
 
    The required packages such as Registry.Version, Custom.Cmd and Provisioning.Auto will be imported into the workspace automatically.
-
-   ![Dashboard screenshot](../../media/ManufacturingGuide/IoTWorkspace.jpg)
 
 ## Building BSP
 
@@ -76,27 +79,24 @@ New-IoTCabPackage All
 From **IoT Core Powershell Environment**, create a new product folder that uses the BSP you are working with. This folder represents a new device we want to build an image for, and contains sample customization files that we can use to start our project. For example, to create a product folder called `ProductA` that uses the Raspberry Pi 2 or 3 BSP , execute the following command (using [Add-IoTProduct](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProduct.md)):
 
 ```powershell
-Add-IoTProduct ProductA QCDB410C
-(or) newproduct MyProductA QCDB410C
+Add-IoTProduct ProductX QCDB410C
+(or) newproduct ProductX QCDB410C
 ```
 
 You will be prompted to enter the **SMBIOS** information, such as Manufacturer Name (OEM Name), Family, SKU, BaseboardManufacturer, and BaseboardProduct. Here are some example values:
 
-* **System Manufacturer:** Contoso Industries
-* **System Product Name:** ContosoHub
-* **System SKU:** ContosoHub-001
-* **System Family:** ARM
-* **Baseboard Product:** DB410C 
+* **System OEM Name:** Contoso
+* **System Family Name:** ContosoHub
+* **System SKU Number:** AI-001
+* **Baseboard Manufacturer:** Arrows
+* **Baseboard Product:** DragonBoard 410c
 
-The BSP name is the same as the folder name for the BSP. You can see which BSPs are available by looking in the `C:\MyWorkspace\Source-<arch>\BSP` folders. 
+The BSP name is the same as the folder name for the BSP. You can see which BSPs are available by looking in the `C:\IoT\WorkSpaces\ContosoWS\Source-<arch>\BSP` folders. 
 
-In the example above, this creates the folder: `C:\MyWorkspace\Source-arm\Products\ProductA`.
-
-   ![Dashboard screenshot](../../media/ManufacturingGuide/AddIoTProduct.jpg)
+In the example above, this creates the folder: `C:\IoT\WorkSpaces\ContosoWS\Source-arm\Products\ProductX`.
 
 ## OemCustomization.cmd File
-Every image includes a file `oemcustomization.cmd` which will run on every boot up of your device. You have the ability to modify this file to customize what executes on boot up. This file is located under `iot-adk-addonkit/Workspace/Source-<arch>/Products/<your product name>`. Here is an example of what this file holds:
-
+Every image includes a file `oemcustomization.cmd` which will run on every boot up of your device. You have the ability to modify this file to customize what executes on boot up. This file is located under `C:\IoT\WorkSpaces\ContosoWS\Source-arm\Products\ProductX` in this example. The contents of the file is as follows:
 ```
 @echo off
 REM OEM Customization Script file
@@ -146,15 +146,15 @@ Eject any removable storage drives, including the microSD card and any USB flash
 Build the FFU image file by entering the following command in IoT Core Powershell Environment (using [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md)):
 
 ```powershell
-New-IoTFFUImage <product name> Test
-(or)buildimage <product name> Test 
+New-IoTFFUImage ProductX Test
+(or)buildimage  ProductX Test 
 ```
 
 This builds an FFU image file with your basic image at **C:\MyWorkspace\Build\\< arch >\\< product name >\Test**. This test image will include additional tools that can be used for debugging purposes. Building the final FFU file will take around 10-30 minutes to complete.
 
 To direct all output to console instead of log file, add `-Verbose` flag.  eg.
 ```powershell
-New-IoTFFUImage -Verbose ProductA Test
+New-IoTFFUImage -Verbose ProductX Test
 ```
 
 ## Adding a Recovery Mechanism
@@ -232,8 +232,8 @@ Windows 10 ADK Release 1709 contains the Windows 10 Preinstall Environment for a
 You can create the WinPE image for the BSP with the above contents using the [New-IoTWindowsImage](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/New-IoTWindowsImage.md) command in **IoT Core Powershell Environment**.
 
 ```powershell
-New-IoTWindowsImage <product> <config>
-(or) newwinpe <product> <config>
+New-IoTWindowsImage ProductX <config>
+(or) newwinpe ProductX <config>
 ```
 
 This script will output the winpe at `Build\<arch>\<product>\<config>\winpe.wim`.
@@ -285,11 +285,11 @@ Update the `oemcustomization.cmd` file to invoke the `Recovery.BcdEdit.cmd`
 New-IoTCabPackage All
 (or) buildpkg All
 # Build the product image
-New-IoTFFUImage <product> <config>
-(or) buildimage <product> <config>
+New-IoTFFUImage ProductX <config>
+(or) buildimage ProductX <config>
 # Build the recovery image
-New-IoTRecoveryImage <product> <config>
-(or) buildrecovery <product> <config>
+New-IoTRecoveryImage ProductX <config>
+(or) buildrecovery ProductX <config>
 ```
 This will generate the recovery file as Flash_Recovery.ffu
 
@@ -298,10 +298,10 @@ This will generate the recovery file as Flash_Recovery.ffu
 Listed here are the commands (in order) for creating a basic IoT Core image. 
 
 ```powershell
-New-IoTWorkspace C:\MyWorkspace Contoso arm
+New-IoTWorkspace C:\IoT\Workspaces\ContosoWS Contoso arm
 New-IoTCabPackage All
-Add-IoTProduct <product name> <BSP type>
-New-IoTFFUImage <product name> Test
+Add-IoTProduct ProductX ARM
+New-IoTFFUImage ProductX Test
 ```
 
 ## Examples 
@@ -309,11 +309,11 @@ New-IoTFFUImage <product name> Test
 The following is assumed in these steps:
 
 1. OEM Name is **Contoso**.
-2. Workspace is created at C:\MyWorkspace.
+2. Workspace is created at C:\IoT\Workspaces\ContosoWS.
 3. Product name is **MyIoTDevice**.
 
 ```powershell
-New-IoTWorkspace C:\MyWorkspace Contoso arm
+New-IoTWorkspace C:\IoT\Workspaces\ContosoWS Contoso arm
 New-IoTCabPackage All
 Add-IoTProduct MyIoTDevice RPi2
 New-IoTFFUImage MyIoTDevice Test
@@ -327,7 +327,7 @@ The following is assumed in these steps:
 3. BSP files for the DragonBoard 410c are located at **C:\BSPs\DB410c_BSP**.
 
 ```powershell
-New-IoTWorkspace C:\MyWorkspace Contoso arm
+New-IoTWorkspace C:\IoT\Workspaces\ContosoWS Contoso arm
 New-IoTCabPackage All
 Add-IoTProduct MyIoTDevice QCDB410C
 New-IoTFFUImage MyIoTDevice Test
@@ -339,8 +339,9 @@ The following is assumed in these steps:
 1. OEM Name is **Contoso**.
 2. Product name is **MyIoTDevice**.
 3. Architecture is set to **x64**.
-4. BSP files for Apollo Lake / Braswell / Cherry Trail are located at **C:\iot-adk-addonkit\Source-x64\BSP**.
-5. These are the commands for Braswell. Replace with **APLx64** or **CHTx64** for Apollo Lake or Cherry Trail, respectively.
+4. Braswell CPU/board is used for this.
+5. BSP files for Apollo Lake / Braswell / Cherry Trail are located at **C:\iot-adk-addonkit\Source-x64\BSP**.
+6. These are the commands for Braswell. Replace with **APLx64** or **CHTx64** for Apollo Lake or Cherry Trail, respectively.
 
 ```powershell
 New-IoTWorkspace C:\MyWorkspace Contoso x64
