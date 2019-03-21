@@ -1,7 +1,7 @@
 ---
 title: Flashing a Windows IoT Core Image
-author: johnadali
-ms.author: johnadali
+author: IAmMinMaung
+ms.author: Min Maung
 ms.date: 09/05/2018 
 ms.topic: article 
 description: Steps on how to flash an FFU image file to a device
@@ -115,7 +115,7 @@ We first need to create a bootable USB drive that we can use to boot on the spec
 
 6. Once the Windows PE environment boots up, you will see a command window. Change the drive and current directory to the location of your FFU file (depending on drive enumeration, it could be in C: or D: ..etc), and run the following command to flash the FFU image file:
 
-        dism.exe /Apply-Image /ImageFile:"D:\flash.ffu" /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
+        dism.exe /Apply-Image /ImageFile:"C:\IoT\Workspaces\ContosoWS\Build\ARM\ProductX\Test\flash.ffu" /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
 
 
     > [!NOTE]
@@ -167,7 +167,7 @@ We first need to create a bootable USB drive that we can use to boot on the spec
    #### DISM Command (via WinPE on the Intel hardware device)
         X:\WinPE>d:
         
-        D:\>dism.exe /Apply-Image /ImageFile:"D:\flash.ffu" /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
+        D:\>dism.exe /Apply-Image /ImageFile:"C:\IoT\Workspaces\ContosoWS\Build\ARM\ProductX\Test\flash.ffu" /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
 
 
 ## Next Steps
