@@ -75,6 +75,17 @@ Add-IoTProvisioningPackage Prov.TestProvPackage "C:\Users\<username>\Documents\W
 This creates a new folder at `C:\MyWorkspace\Common\Packages\Prov.TestProvPackage`.
 This also adds a FeatureID called **PROV_TESTPROVPACKAGE** to the `C:\MyWorkspace\Common\Packages\OEMCOMMONFM.xml` file.
 
+## Update the project's configuration files
+Update the product test configuration to include the features using [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md):
+
+```powershell
+Add-IoTProductFeature ProductB Test FILES_CONFIGS -OEM
+(or) addfid ProductB Test FILES_CONFIGS -OEM
+Add-IoTProductFeature ProductB Test REGISTRY_SETTINGS -OEM
+(or) addfid ProductB Test REGISTRY_SETTINGS -OEM
+```
+
+
 ## Build and Test Image
 Build the FFU image again, as specified in [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
 
