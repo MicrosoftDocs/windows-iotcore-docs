@@ -45,7 +45,7 @@ Here's the software you'll need to create custom OEM images using the Windows 10
 
 6. [Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/p/?LinkId=708576)
 
-7. The Board Support Package from the device manufacturer you are working with. For example, if you are using a Raspberry Pi, the BSP is located [here](https://github.com/ms-iot/iot-adk-addonkit/releases/download/v4.4/rpibsp-wm.zip). For other devices, please visit the [Windows 10 IoT Core BSP](https://docs.microsoft.com/windows/iot-core/build-your-image/createbsps) page to download other BSPs.
+7. The Board Support Package from the device manufacturer you are working with. For example, if you are using a Raspberry Pi, the BSP is located [here](https://github.com/ms-iot/iot-adk-addonkit/releases/download/v4.4/rpibsp-wm.zip). For other devices, please visit the [Windows 10 IoT Core BSP](BoardSupportPackages.md) page to download other BSPs.
 
 8. If you are building Retail image, you will need to get a [code-signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate). For  kernel driver signing, Standard Code signing certificate is sufficient.  You will require an EV cert to access the [Device Update Center](https://docs.microsoft.com/windows-hardware/service/iot/using-device-update-center) in Hardware Dev Center portal.<p> 
 
