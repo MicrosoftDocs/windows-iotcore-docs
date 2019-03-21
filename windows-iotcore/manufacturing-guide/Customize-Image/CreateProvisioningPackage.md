@@ -36,7 +36,7 @@ Windows Configuration Designer comes with the **Windows ADK Toolkit** and should
 ## Create WCD Project for a Provisioning Package
 In order to create a provisioning package for your device, we need to create a project in **Windows Configuration Designer**. Once we have this project, we can specify the configuration customizations we want included in our FFU image.
 
-1. From your Technician PC, run **Windows Imaging and Configuration Designer**.
+1. From your IoT Core imaging PC(Technician PC), run **Windows Imaging and Configuration Designer**.
 2. Create a new project by clicking **File > New Project**. For our example, we created a project called *TestProvPackage*.
 3. Select **Provisioning Package** and click **Next**.
 4. On the **Choose which settings to view and configure** page, select **Windows 10 IoT Core**. Click **Next**.
