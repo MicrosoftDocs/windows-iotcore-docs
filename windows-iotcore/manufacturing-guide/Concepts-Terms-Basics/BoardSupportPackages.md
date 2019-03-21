@@ -1,4 +1,7 @@
----
+
+1. For Intel 64bit Braswell based IoT board is used for this walkthrough. 
+1. For Intel 64bit Braswell based IoT board is used for this walkthrough. 
+1. For Intel 64bit Braswell based IoT board is used for this walkthrough. ---
 title: Board Support Packages
 author: lmaung
 ms.author: Lwin Maung
@@ -13,7 +16,10 @@ keywords: Windows 10 IoT Core,
 A Board Support Package (BSP) is a collection of drivers/settings required to run IoT Core on a hardware platform. These are provided by the hardware/silicon vendors. The BSP also included a set of device drivers that are specific to the components/silicon used in the board, mostly in the form of .inf files and their associated .sys/.dll files.
 
 Listed below are the steps required to extract the BSP files for specific manufacturers. You will need these files extracted properly before you can build an FFU image file. Please see [04-Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md) after you successfully follow the steps below with the BSP files you are building an image for.
-
+**Note** 
+1. For Intel 64bit Braswell based IoT board is used for this walkthrough. 
+2. Workspace is located at c:\IoT\Workspaces\ContosoWS
+3. OEM Name used is Contoso.
 
 ## Qualcomm
 ### DragonBoard 410c
@@ -31,7 +37,7 @@ Steps to import the drivers :
 3. Import the bsp using [Import-QCBSP](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Import-QCBSP.md) and build using
 
     ``` powershell
-    Import-QCBSP "C:\Downloads\db410c_BSP.zip" C:\prebuilt\DB410c_BSP -ImportBSP
+    Import-QCBSP c:\Temp\db410c_bsp_mar2019.zip C:\IoT\BSPs\QCDB410C -ImportBSP
     buildpkg QCDB410C
     ```
 
@@ -43,8 +49,8 @@ Steps to import the drivers :
 2. Launch [IoTCorePShell](https://github.com/ms-iot/iot-adk-addonkit) and create or open a workspace using
 
     ``` powershell
-    new-ws C:\MyWorkspace <oemname> arm
-    (or) open-ws C:\MyWorkspace
+    new-ws C:\IoT\Workspaces\ContosoWS Contoso arm
+    (or) open-ws C:\IoT\Workspaces\ContosoWS
     ```
 
 3. Import the bsp using [Import-IoTBSP](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Import-IoTBSP.md) and build using
@@ -73,7 +79,6 @@ Steps to import the drivers :
 
 Follow the steps below to use this BSP with the Windows 10 ADK release 1809 (17763) with iot-adk-addonkit version 6.0.
 
-**Note** We are using Intel 64bit Braswell board for this walkthrough 
 
 1. Download the BSP package and install
 2. Launch IoTCorePShell, and create/open your workspace
