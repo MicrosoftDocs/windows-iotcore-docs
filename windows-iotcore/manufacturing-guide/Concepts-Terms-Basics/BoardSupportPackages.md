@@ -1,7 +1,7 @@
 ---
 title: Board Support Packages
-author: johnadali
-ms.author: johnadali
+author: lmaung
+ms.author: Lwin Maung
 ms.date: 09/16/2018 
 ms.topic: article 
 description: Listing and description of different supported BSPs.
@@ -24,8 +24,8 @@ Steps to import the drivers :
 1. Download the `Windows 10 IoT Core Board Support Package` to a folder say, `C:\Downloads\db410c_BSP.zip`<p>You may need to sign up for an account in order to get access. Launch IoTCorePShell, and create/open your workspace
 
     ``` powershell
-    new-ws C:\MyWorkspace <oemname> arm
-    (or) open-ws C:\MyWorkspace
+    new-ws C:\IoT\Workspaces\ContosoWS Contoso arm
+    (or) open-ws C:\IoT\Workspaces\ContosoWS
     ```
 
 3. Import the bsp using [Import-QCBSP](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Import-QCBSP.md) and build using
@@ -73,18 +73,20 @@ Steps to import the drivers :
 
 Follow the steps below to use this BSP with the Windows 10 ADK release 1809 (17763) with iot-adk-addonkit version 6.0.
 
+**Note** We are using Intel 64bit Braswell board for this walkthrough 
+
 1. Download the BSP package and install
 2. Launch IoTCorePShell, and create/open your workspace
 
     ``` powershell
-    new-ws C:\MyWorkspace <oemname> arm
-    (or) open-ws C:\MyWorkspace
+    new-ws C:\IoT\Workspaces\ContosoWS Contoso x64
+    (or) open-ws C:\IoT\Workspaces\ContosoWS
     ```
 
 3. Set the source location, either the installed directory or the zip file path 
 
     ``` powershell
-    $Source = "C:\Program Files (x86)\Intel IoT\Source-<arch>"
+    $Source = "C:\Program Files (x86)\Intel IoT\Source-x64"
     (or) 
     $Source = "C:\Downloads\IntelBSP.zip"
     ```
@@ -92,15 +94,15 @@ Follow the steps below to use this BSP with the Windows 10 ADK release 1809 (177
 4. Import the bsp using [Import-IoTBSP](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Import-IoTBSP.md) and build using
 
     ``` powershell
-    Import-IoTBSP <bspname> $Source
-    (or) importbsp <bspname> $Source
-    buildpkg <bspname>
+    Import-IoTBSP BSW64 $Source
+    (or) importbsp BSW64 $Source
+    buildpkg BSW64
     ```
 5. if the above commands does not work, you can skip the step 3, and combine the step 3 and 4 into a single step as follows:
 
     ``` powershell
-    Import-IoTBSP <bspname> "C:\Program Files (x86)\Intel IoT\Source-<arch>"
-    (or) importbsp <bspname> "C:\Program Files (x86)\Intel IoT\Source-<arch>"
+    Import-IoTBSP <bspname> "C:\Program Files (x86)\Intel IoT\Source-x64"
+    (or) importbsp <bspname> "C:\Program Files (x86)\Intel IoT\Source-x64"
     buildpkg <bspname>
     ```
 ## Next Steps
