@@ -15,7 +15,9 @@ One of the ultimate goals for creating an IoT image for a device is so that you 
 The following checklist and guide will assist you in creating your first test image of Window IoT Core in the platform of your choosing:
 
 ---
-We will split the tasks into multiple sections.
+1. We will split the tasks into multiple sections.
+2. We will be using Snapdragon 410C as an example for this walkthrough. Feel free to substitute the device as needed.
+3. We will use the product name "**ProductX**" in this walkthrough.
 
 ## Tools
 ### Gather and download neccessary Tools
@@ -50,13 +52,13 @@ We will split the tasks into multiple sections.
  - [ ] Once the Powershell window opens, you can type in the following command (if this is your first time)
     
     ``` powershell
-    new-ws C:\MyWorkspace <oemname> <arch>
+    new-ws C:\MyWorkspace\ContosoWorkspace Contoso Arm
     ```
 
  - [ ] For subsequent visits, use this:
   
     ``` powershell
-    (or) open-ws C:\MyWorkspace
+    (or) open-ws C:\MyWorkspace\ContosoWorkspace
     ```
 ### Import BSP
  Import the BPS of your choice and build the package of the BSP
@@ -95,11 +97,11 @@ At this point, create a new product with the command listed below: You will be p
 - [ ] Create new product
  
     ``` powershell
-    Add-IoTProduct ProductA QCDB410C
-    (or) newproduct MyProductA QCDB410C
+    Add-IoTProduct ProductX QCDB410C
+    (or) newproduct ProductX QCDB410C
     ```
     Sample **SMBIOS**
-* **System OEM Name:** Contoso Industries
+* **System OEM Name:** Contoso
 * **System Family Name:** ContosoHub
 * **System SKU Number:** AIHub-001
 * **Baseboard Manufacturer:** Arrows
@@ -110,8 +112,8 @@ Build your first test FFU image with the following command:
 - [ ] Create Test FFU
  
     ``` powershell
-    New-IoTFFUImage <product name> Test
-    (or)buildimage <product name> Test 
+    New-IoTFFUImage ProductX Test
+    (or)buildimage ProductX Test 
     ```
  
  ### Flash the FFU
