@@ -60,6 +60,11 @@ Windows IoT Core Dashboard will now open a command window and use **DISM (Deploy
 
 ![Dashboard screenshot](../../media/ManufacturingGuide/RpiFlashFFUDISM.jpg)
 
+    > [!NOTE]
+    > Alternatively, you can also use the **DISM** command to manually flash the image.
+    
+    dism.exe /Apply-Image /ImageFile:"D:\flash.ffu" /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
+
 Once the flashing process is complete, eject the microSD card from the technician PC and insert it into the Raspberry Pi. Reconnect the power to boot Windows IoT Core.
 
 ## Intel
