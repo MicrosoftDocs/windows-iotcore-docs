@@ -1,8 +1,8 @@
 ---
 title: Creating a Provisioning Package for a Windows IoT Core Image
-author: johnadali
-ms.author: johnadali
-ms.date: 09/20/2018 
+author: lmaung
+ms.author: Lwin Maung
+ms.date: 03/21/2019 
 ms.topic: article 
 description: Description on how to create a provisioning package for a Windows IoT Core Image
 keywords: Windows 10 IoT Core, 
