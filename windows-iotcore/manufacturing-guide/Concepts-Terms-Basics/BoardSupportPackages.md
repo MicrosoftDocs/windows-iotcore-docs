@@ -108,4 +108,4 @@ Follow the steps below to use this BSP with the Windows 10 ADK release 1809 (177
     buildpkg <bspname>
     ```
 ## Next Steps
-[Creating a Basic Windows IoT Core Image](../Create-IoT-Image/Create-IoT-Core-Image.md)
+[Creating a Basic Windows IoT Core Image](../Create-IoT-Image/CreateBasicImage.md)
