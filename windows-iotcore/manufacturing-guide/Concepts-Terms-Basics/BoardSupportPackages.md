@@ -1,7 +1,4 @@
-
-1. For Intel 64bit Braswell based IoT board is used for this walkthrough. 
-1. For Intel 64bit Braswell based IoT board is used for this walkthrough. 
-1. For Intel 64bit Braswell based IoT board is used for this walkthrough. ---
+---
 title: Board Support Packages
 author: lmaung
 ms.author: Lwin Maung
