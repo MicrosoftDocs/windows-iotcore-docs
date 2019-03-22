@@ -88,6 +88,8 @@ New to Windows 10 IoT? Get started quickly and easily with our [Windows 10 IoT C
 </tbody>
 </table>
 
+<i>Learn more about detailed lifecycle information [here](https://support.microsoft.com/en-us/lifecycle/search?alpha=IoT%20Core)</i>.
+
 ## Bring a device to market
 
 Commercialization, or bringing a device to market, is a much more advanced process that involves more moving parts and people than just prototyping a device on your own time. Commercialization requires a number of steps to ensure that your devices, wherever they are in the world, can receive updates, are as secure as possible, and are compliant. 
