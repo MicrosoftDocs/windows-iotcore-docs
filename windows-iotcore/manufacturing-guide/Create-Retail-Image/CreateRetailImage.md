@@ -34,17 +34,17 @@ Follow the steps below to add any custom applications or provisioning packages y
 1. To add a custom application, you should follow the instructions listed in [Adding an App to an image](../Customize-Image/AddingApps.md). However, you would specify `Retail` instead of `Test` when executing the [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md) command, as shown here:
 
     ```powershell
-    Add-IoTProductFeature <product name> Retail APPX_HELLOWORLDAPP -OEM
-    or addfid <product name> Retail APPX_HELLOWORLDAPP -OEM
+    Add-IoTProductFeature ProductX Retail APPX_HELLOWORLDAPP -OEM
+    or addfid ProductX Retail APPX_HELLOWORLDAPP -OEM
     ```
 
-    This adds a FeatureID called **APPX_HELLOWORLDAPP** to the specified product's Retail OEMInput XML file (`C:\MyWorkspace\Source-arm\<product name>\RetailOEMInput.xml` file).
+    This adds a FeatureID called **APPX_HELLOWORLDAPP** to the specified product's Retail OEMInput XML file (`C:\IoT\Workspaces\ContosoWS\Source-arm\ProductX\RetailOEMInput.xml` file).
 
 2. Minimize the included Windows IoT Core features. You also want to remove any test applications that are included (by default) with test images for Windows IoT Core. This includes the IoT Core default application (aka. Bertha), along with any other developer tools or testing features. You can do this by using [Remove-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Remove-IoTProductFeature.md):
 
     ```powershell
-    Remove-IoTProductFeature <product name> Test IOT_BERTHA
-    or removefid <product name> Test IOT_BERTHA
+    Remove-IoTProductFeature ProductX Test IOT_BERTHA
+    or removefid ProductX Test IOT_BERTHA
     ```
 
 ## Properly Signing and Including Your Applications
@@ -66,8 +66,8 @@ If you have one or more custom applications that you want to include in your Win
 7. Once the Appx file is built, run the following command in **IoT Core Powershell Environment**:
 
   ```powershell
-     Add-IoTAppxPackage "C:\Users\jadali\Desktop\HelloWorld\CS\AppPackages\HelloWorld_1.0.0.0_ARM_Debug.appx" fga Appx.HelloWorldApp
-     (or) newAppxPkg "C:\Users\jadali\Desktop\HelloWorld\CS\AppPackages\HelloWorld_1.0.0.0_ARM_Debug.appx" fga Appx.HelloWorldApp
+     Add-IoTAppxPackage "C:\Dev\OpenSource\ContosoApp\ContosoApp\AppPackages\ContosoApp_1.0.0.0_ARM_Debug_Test\ContosoApp_1.0.0.0_ARM_Debug.appx" fga Appx.ContosoApp
+     (or) newAppxPkg "C:\Dev\OpenSource\ContosoApp\ContosoApp\AppPackages\ContosoApp_1.0.0.0_ARM_Debug_Test\ContosoApp_1.0.0.0_ARM_Debug.appx" fga Appx.ContosoApp
   ```
 
 
@@ -105,12 +105,12 @@ Once we have all the custom application packages signed properly, we can now bui
 
    This takes the .CAB files from `c:\BSP.IN`, re-signs them with the retail certificate and copies them to the `c:\BSP.OUT` directory.
 
-6. If you re-signed the .CAB files from Step 5, copy the re-signed .CAB files to the `C:\MyWorkspace\Build\<arch>\pkgs`, overwriting the existing files. In our example, these files are copied to `C:\MyWorkspace\Build\arm\pkgs`.
+6. If you re-signed the .CAB files from Step 5, copy the re-signed .CAB files to the `C:\IoT\Workspaces\ContosoWS\Build\<arch>\pkgs`, overwriting the existing files. In our example, these files are copied to `C:\IoT\Workspaces\ContosoWS\Build\arm\pkgs`.
 7. Build your retail image by running the following command:
 
     ```powershell
-    New-IoTFFUImage <product name> Retail
-    (or)buildimage <product name> Retail 
+    New-IoTFFUImage ProductX Retail
+    (or)buildimage ProductX Retail 
     ```
 
 8. You can then flash the retail image as described in [Flashing a Windows IoT Core Image](../Create-IoT-Image/FlashingImage.md).
@@ -122,6 +122,6 @@ Listed here are the commands (in order) for creating a retail IoT Core image. Pl
     Set-IoTRetailSign On
     New-IoTCabPackage All
     Redo-IoTCabSignature  C:\BSP.IN C:\BSP.OUT
-    xcopy C:\BSP.OUT\*.cab C:\MyWorkspace\Build\arm\pkgs\*.cab
+    xcopy C:\BSP.OUT\*.cab C:\IoT\Workspaces\ContosoWS\Build\arm\pkgs\*.cab
     New-IoTFFUImage <product name> Retail
     ```
