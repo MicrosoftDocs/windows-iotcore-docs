@@ -38,7 +38,7 @@ Steps to import the drivers :
     buildpkg QCDB410C
     ```
 
-    Set `<BSPPkgDir>` setting in the `C:\MyWorkspace\IoTWorkspace.xml` to `C:\prebuilt\DB410c_BSP`
+    Set `<BSPPkgDir>` setting in the `C:\IoT\Workspaces\ContosoWS\IoTWorkspace.xml` to `C:\prebuilt\DB410c_BSP`
         
 ## Raspberry Pi BSP
 
