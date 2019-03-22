@@ -344,7 +344,7 @@ The following is assumed in these steps:
 6. These are the commands for Braswell. Replace with **APLx64** or **CHTx64** for Apollo Lake or Cherry Trail, respectively.
 
 ```powershell
-New-IoTWorkspace C:\MyWorkspace Contoso x64
+New-IoTWorkspace C:\IoT\Workspaces\ContosoWS Contoso x64
 New-IoTCabPackage All
 Add-IoTProduct MyIoTDevice BSWx64
 New-IoTFFUImage MyIoTDevice Test
