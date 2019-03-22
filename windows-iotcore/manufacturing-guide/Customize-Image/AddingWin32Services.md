@@ -35,7 +35,7 @@ You will need the following tools installed to complete this section:
 ## Add Win32 Service App to Package Build
 In order to include your Win32 Service App in the FFU image build process, you first must add the .EXE file so that it can be packaged up (using `buildpkg`).
 
-1. Create a subdirectory for your Win32 Service App under `iot-adk-addonkit/Workspace/Source-<arch>/Packages`. This will contain the XML and EXE files to include when building the image. For example, refer to the **AzureDM.Services** subdirectory at `iot-adk-addonkit/Workspace/Source-<arch>/Packages/AzureDM.Services` for a working example.
+1. Create a subdirectory for your Win32 Service App under `C:\IoT\Workspaces\ContosoWS\Source-<arch>\Packages`. This will contain the XML and EXE files to include when building the image. For example, refer to the **AzureDM.Services** subdirectory at `C:\IoT\Workspaces\ContosoWS\Source-<arch>\Packages\AzureDM.Services` for a working example.
 
 2. Create an XML file titled `<your Win32 Service App Name>.wm.xml` in the subdirectory you created from Step #1. This file will specify how the package will be built. Here is an example of what that file should look like (you would replace the appropriate entries with your Win32 Service App information):
 
@@ -94,7 +94,7 @@ In order to include your Win32 Service App in the FFU image build process, you f
 ## Package the Win32 Service App
 The next step is to package the Win32 Service App file, which will allow you to build it using the Windows ADK (when you build the FFU image).
 
-1. Open `IoTCorePShell.cmd`. It should prompt you to run as an administrator.
+1. Open `IoTCorePShell.cmd` from your workspace. It should prompt you to run as an administrator.
 2. Build the package into a .CAB file (using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md))
 
         ```powershell
@@ -102,7 +102,7 @@ The next step is to package the Win32 Service App file, which will allow you to 
         (or) buildpkg Appx.HelloWorldApp
         ```
 
-    This will build the package into a .CAB file under the `Workspace\Build\<arch>\pkgs` subdirectory in the ADK Toolkit files.
+    This will build the package into a .CAB file under the `\Build\<arch>\pkgs` subdirectory in your workspace.
 
 ## Update Project Configuration Files
 You can now update your product configuration files to include your app in the FFU image build. 
@@ -114,7 +114,7 @@ Add-IoTProductFeature <product name> Test <your Win32 service app name> -OEM
 or addfid <product name> Test <your Win32 service app name> -OEM
 ```
 
-  This adds a FeatureID corresponding to the identifier you chose for your Win32 service app to the `C:\iot-adk-addonkit-master\Workspace\Source-arm\Packages\OEMFM.xml` file (under the OEM Features section).
+  This adds a FeatureID corresponding to the identifier you chose for your Win32 service app to the C:\IoT\Workspaces\ContosoWS\Source-<arch>\Packages\OEMFM.xml` file (under the OEM Features section).
 
 ## Build and Test Image
 
