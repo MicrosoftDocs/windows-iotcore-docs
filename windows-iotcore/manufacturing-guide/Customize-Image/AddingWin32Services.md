@@ -121,8 +121,8 @@ or addfid <product name> Test <your Win32 service app name> -OEM
 Build the FFU image again, as specified in [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
 
 ```powershell
-New-IoTFFUImage <product name> Test
-(or)buildimage <product name> Test 
+New-IoTFFUImage ProductX Test
+(or)buildimage ProductX Test 
 ```
 
 Once the FFU file has been built (it should now include your app), you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](../Create-IoT-Image/FlashingImage.md).
