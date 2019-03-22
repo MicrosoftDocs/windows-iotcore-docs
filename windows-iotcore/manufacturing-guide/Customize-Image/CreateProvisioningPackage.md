@@ -83,10 +83,10 @@ Add-IoTProductFeature ProductX Test PROV_WIFISETTINGS -oem
 ## Build and Test Image
 Build the FFU image again, as specified in [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
 
-    ```powershell
-    New-IoTFFUImage <product name> Test
-    (or)buildimage <product name> Test 
-    ```
+```powershell
+New-IoTFFUImage ProductX Test
+(or)buildimage ProductX Test 
+```
 Once the FFU file has been built and you flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](../Create-IoT-Image/FlashingImage.md), your provisioning package customizations should be applied when you power up the device. In our example, the default app is the [Hello World!](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/HelloWorld) app and will run when the device is booted up.
 
 
