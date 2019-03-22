@@ -150,7 +150,7 @@ New-IoTFFUImage ProductX Test
 (or)buildimage  ProductX Test 
 ```
 
-This builds an FFU image file with your basic image at **C:\MyWorkspace\Build\\< arch >\\< product name >\Test**. This test image will include additional tools that can be used for debugging purposes. Building the final FFU file will take around 10-30 minutes to complete.
+This builds an FFU image file with your basic image at **C:\IoT\Workspaces\ContosoWS\Build\ARM\ProductX\Test**. This test image will include additional tools that can be used for debugging purposes. Building the final FFU file will take around 10-30 minutes to complete.
 
 To direct all output to console instead of log file, add `-Verbose` flag.  eg.
 ```powershell
