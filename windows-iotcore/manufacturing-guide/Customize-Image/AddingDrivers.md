@@ -133,7 +133,8 @@ Build the FFU image again, as specified in [Creating a Basic IoT Core Image](../
 New-IoTFFUImage ProductX Test
 (or)buildimage ProductX Test 
 ```
-    Once the FFU file has been built, you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](../Create-IoT-Image/FlashingImage.md).
+
+Once the FFU file has been built, you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](../Create-IoT-Image/FlashingImage.md).
 
 
 ## Next Steps
