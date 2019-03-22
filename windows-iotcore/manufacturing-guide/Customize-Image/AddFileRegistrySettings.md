@@ -1,7 +1,7 @@
 ---
 title: Adding files and registry settings to a Windows IoT Core Image
-author: johnadali
-ms.author: johnadali
+author: johnadali, IAmMinMaung
+ms.author: johnadali & Min Maung
 ms.date: 09/26/2018 
 ms.topic: article 
 description: Description on how to add files and registry settings to a Windows IoT Core Image
@@ -44,9 +44,9 @@ $myfiles = @(
 Add-IoTFilePackage Files.Configs $myfiles
 ```
 
-This creates a new folder at `C:\MyWorkspace\Common\Packages\Files.Configs`.
+This creates a new folder at `C:\IoT\Workspaces\ContosoWS\Common\Packages\Files.Configs`.
 
-This also adds a FeatureID called **FILES_CONFIGS** to the `C:\MyWorkspace\Common\Packages\OEMCOMMONFM.xml` file.
+This also adds a FeatureID called **FILES_CONFIGS** to the `C:\IoT\Workspaces\ContosoWS\Common\Packages\OEMCOMMONFM.xml` file.
 
 Variables like `$(runtime.system32)` are defined in `C:\Program Files (x86)\Windows Kits\10\Tools\bin\i386\pkggen.cfg.xml`.
 
@@ -61,9 +61,9 @@ $myregkeys = @(
 Add-IoTRegistryPackage Registry.Settings $myregkeys
 ```
 
-This creates a new folder at `C:\MyWorkspace\Common\Packages\Registry.Settings`.
+This creates a new folder at `C:\IoT\Workspaces\ContosoWS\Common\Packages\Registry.Settings`.
 
-This also adds a FeatureID **REGISTRY_SETTINGS** to the `C:\MyWorkspace\Common\Packages\OEMCOMMONFM.xml` file.
+This also adds a FeatureID **REGISTRY_SETTINGS** to the `C:\IoT\Workspaces\ContosoWS\Common\Packages\OEMCOMMONFM.xml` file.
 
 3. Build the packages using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md):
 
@@ -74,7 +74,7 @@ New-IoTCabPackage Registry.Settings
 (or) buildpkg Registry.Settings
 ```
 
-The package is built and is available at `C:\MyWorkspace\Build\<arch>\pkgs`.
+The package is built and is available at `C:\IoT\Workspaces\ContosoWS\Build\Arm\pkgs`.
 
 ## Update the project's configuration files
 Update the product test configuration to include the features using [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md):
@@ -89,8 +89,8 @@ Add-IoTProductFeature ProductB Test REGISTRY_SETTINGS -OEM
 Build the FFU image again, as specified in [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
 
     ```powershell
-    New-IoTFFUImage <product name> Test
-    (or)buildimage <product name> Test 
+    New-IoTFFUImage ProductX Test
+    (or)buildimage ProductX Test 
     ```
 Once the FFU file has been built, you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](../Create-IoT-Image/FlashingImage.md).
 
