@@ -1,7 +1,7 @@
 ---
 title: Adding a driver to a Windows IoT Core Image
-author: johnadali
-ms.author: johnadali
+author: lmaung, iamminmaung
+ms.author: Lwin Maung & Min Maung
 ms.date: 09/29/2018 
 ms.topic: article 
 description: Description on how to add a driver to a Windows IoT Core Image
@@ -47,7 +47,7 @@ Add-IoTDriverPackage C:\gpiokmdfdemo\gpiokmdfdemo.inf Drivers.TestDriver
 (or) newdrvpkg C:\gpiokmdfdemo\gpiokmdfdemo.inf Drivers.TestDriver
 ```
 This creates a new folder at `C:\MyWorkspace\Source-<arch>\Packages\Drivers.TestDriver`.
-This also adds a FeatureID called **DRIVERS_TESTDRIVER** to the `C:\MyWorkspace\Source-<arch>\Packages\OEMFM.xml` file.
+This also adds a FeatureID called **DRIVERS_TESTDRIVER** to the `C:\IoT\Workspaces\ContosoWS\Source-ARM\Packages\OEMFM.xml` file.
 
 3. Build the package using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md):
 
@@ -60,16 +60,16 @@ New-IoTCabPackage Drivers.TestDriver
 Update the product test configuration file using [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md):
 
 ```powershell
-Add-IoTProductFeature <product name> Test DRIVERS_TESTDRIVER -OEM
-(or) addfid <product name> Test DRIVERS_TESTDRIVER -OEM
+Add-IoTProductFeature ProductX Test DRIVERS_TESTDRIVER -OEM
+(or) addfid ProductX Test DRIVERS_TESTDRIVER -OEM
 ```
 
 ## Build and Test Image
 Build the FFU image again, as specified in [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
 
     ```powershell
-    New-IoTFFUImage <product name> Test
-    (or)buildimage <product name> Test 
+    New-IoTFFUImage ProductX Test
+    (or)buildimage ProductX Test 
     ```
 Once the FFU file has been built, you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](../Create-IoT-Image/FlashingImage.md).
 
@@ -114,10 +114,10 @@ If you wish to import a different driver for a Board Support Package (BSP) that 
 
 6.  Build the FFU image again, as specified in [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md). You should only have to run the **buildimage** command:
 
-    ```powershell
-    New-IoTFFUImage <product name> Test
-    (or)buildimage <product name> Test 
-    ```
+```powershell
+New-IoTFFUImage ProductX Test
+(or)buildimage ProductX Test 
+```
     Once the FFU file has been built, you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](../Create-IoT-Image/FlashingImage.md).
 
 
