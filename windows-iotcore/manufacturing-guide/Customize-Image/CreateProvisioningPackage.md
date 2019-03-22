@@ -18,7 +18,7 @@ A provisioning package allows you to apply customization settings over an existi
 * Build and deploy an FFU image that contains your provisioning package customizations
 
 ## Prerequisites/Requirements
-Please make sure you've created an image with your custom App from [Adding an App to an image](AddingApps.md) previously. For this example, we have created an image with the Qualcomm DragonBoard called *TestDragonBoardProduct* that contains the sample app [Hello World!](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/HelloWorld).
+Please make sure you've created an image with your custom App from [Adding an App to an image](AddingApps.md) previously. For this example, we have created an image with the Qualcomm DragonBoard which will connect to a network via Wifi on boot.
 
 You will need the following tools installed to complete this section:
 * **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows IoT Core.
@@ -44,29 +44,17 @@ In order to create a provisioning package for your device, we need to create a p
    ![Dashboard screenshot](../../media/ManufacturingGuide/ProvPackage1.jpg)
 
 5. At the **Import a provisioning package(optional)** page, leave the entry blank and click **Finish**.
-6. Add a sample setting. For our example, we will specify a default startup app that executes when the IoT Core device is booted up.
-   
-   a. Change the **View** dropdown under **Available Customizations** to *Common IoT Settings*.
+6. Add a sample setting:
+   a. Expand **Runtime settings > Connectivity Profiles > WLAN > WLANSetting > SSID.**
+   b. Type in the name of a Wi-Fi network name, for example, ContosoWiFi, and click Add.
+   c. Expand the **SSID > WLANXmlSettings > SecurityType** and choose a setting such as **Open**.
+   d. Expand the **SSID > WLANXmlSettings > AutoConnect** and choose a setting such as **TRUE**.
+   e. Optional: to add more than one WLAN network, go back to WLANSetting, and repeat the process.
 
-   b. Expand the **Runtime settings > Startup App > Default** node.
+7. Optional: add other apps, drivers, and settings through the UI. To learn more, [see Configure customizations using Windows ICD](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package#configure-settings).
 
-   c. Enter the [Application User Model ID (AUMID)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) of the app you want to be the default startup app. For our example, this value is *HelloWorld_1w720vyc4ccym!App*.
+8. Export the provisioning package. For example, click Export > Provisioning Package > Next > (Uncheck the Encrypt Package box) > Next > Build. (To learn more, see [Export a provisioning package.](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package#build-package) )
 
-   ![Dashboard screenshot](../../media/ManufacturingGuide/ProvPackage2.jpg)
-   
-   d. Save the project.
-
-7. Export the provisioning package.
-
-   a. Click **Export > Provisioning Package**. An export dialog will appear. You can modify the **Name**, **Version** and **Rank** field, as well as the **Owner**. Select *OEM* for **Owner** and click **Next**.
-
-   ![Dashboard screenshot](../../media/ManufacturingGuide/ProvPackage3.jpg)
-
-   b. Under **Select security details for the provisioning package**, uncheck the **Encrypt package** and **Sign package** checkboxes. Click **Next**.
-
-   c. Click **Build** to build the provisioning package. A dialog listing the output location will appear when the export is complete. Click **Finish**.
-
-8. Create a provisioning package using [Add-IoTProvisioningPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProvisioningPackage.md):
 
 ```powershell
 Add-IoTProvisioningPackage Prov.TestProvPackage "C:\Users\<username>\Documents\Windows Imaging and Configuration Designer (WICD)\TestProvPackage\TestProvPackage.ppkg"
