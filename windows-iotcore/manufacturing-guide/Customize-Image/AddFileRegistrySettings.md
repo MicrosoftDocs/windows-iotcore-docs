@@ -80,18 +80,18 @@ The package is built and is available at `C:\IoT\Workspaces\ContosoWS\Build\Arm\
 Update the product test configuration to include the features using [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md):
 
 ```powershell
-Add-IoTProductFeature ProductB Test FILES_CONFIGS -OEM
-(or) addfid ProductB Test FILES_CONFIGS -OEM
-Add-IoTProductFeature ProductB Test REGISTRY_SETTINGS -OEM
-(or) addfid ProductB Test REGISTRY_SETTINGS -OEM
+Add-IoTProductFeature ProductX Test FILES_CONFIGS -OEM
+(or) addfid ProductX Test FILES_CONFIGS -OEM
+Add-IoTProductFeature ProductX Test REGISTRY_SETTINGS -OEM
+(or) addfid ProductX Test REGISTRY_SETTINGS -OEM
 ```
 ## Build and Test Image
 Build the FFU image again, as specified in [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
 
-    ```powershell
-    New-IoTFFUImage ProductX Test
-    (or)buildimage ProductX Test 
-    ```
+```powershell
+New-IoTFFUImage ProductX Test
+(or)buildimage ProductX Test 
+```
 Once the FFU file has been built, you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](../Create-IoT-Image/FlashingImage.md).
 
 ## Verify Files and Registry Keys Added
