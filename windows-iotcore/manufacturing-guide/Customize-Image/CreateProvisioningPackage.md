@@ -53,24 +53,30 @@ In order to create a provisioning package for your device, we need to create a p
 
 7. Optional: add other apps, drivers, and settings through the UI. To learn more, [see Configure customizations using Windows ICD](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package#configure-settings).
 
-8. Export the provisioning package. For example, click Export > Provisioning Package > Next > (Uncheck the Encrypt Package box) > Next > Build. (To learn more, see [Export a provisioning package.](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package#build-package) )
+8. Export the provisioning package. For example, click Export > Provisioning Package > Next > (Uncheck the Encrypt Package box) > Next > Build. (To learn more, see [Export a provisioning package.](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package#build-package) ) **Note** in the example we have exported to C:\IoT\Provisioning\WiFiSettings
 
+9. Open **IoTCorePShell.cmd** file from your workspace and execute the following powershell commands.
 
 ```powershell
-Add-IoTProvisioningPackage Prov.TestProvPackage "C:\Users\<username>\Documents\Windows Imaging and Configuration Designer (WICD)\TestProvPackage\TestProvPackage.ppkg"
-(or) newprovpkg Prov.TestProvPackage "C:\Users\<username>\Documents\Windows Imaging and Configuration Designer (WICD)\TestProvPackage\TestProvPackage.ppkg"
+Add-IoTProvisioningPackage Prov.WiFiSettings "C:\IoT\Provisioning\WiFiSettings\WiFiSettings.ppkg"
+(or) newprovpkg Prov.WiFiSettings "C:\IoT\Provisioning\WiFiSettings\WiFiSettings.ppkg"
 ```
-This creates a new folder at `C:\MyWorkspace\Common\Packages\Prov.TestProvPackage`.
-This also adds a FeatureID called **PROV_TESTPROVPACKAGE** to the `C:\MyWorkspace\Common\Packages\OEMCOMMONFM.xml` file.
+This creates a new folder at `C:\IoT\Workspaces\ContosoWS\Common\Packages\Prov.WiFiSettings`.
+This also adds a FeatureID called **PROV_TESTPROVPACKAGE** to the `C:\IoT\Workspaces\ContosoWS\Common\Packages\OEMCOMMONFM.xml` file.
+
+10. Build cab file for provisioning. 
+
+```powershell
+New-IoTCabPackage Prov.WifiSettings
+(or) buildpkg Prov.WifiSettings
+```
 
 ## Update the project's configuration files
 Update the product test configuration to include the features using [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md):
 
 ```powershell
-Add-IoTProductFeature ProductB Test FILES_CONFIGS -OEM
-(or) addfid ProductB Test FILES_CONFIGS -OEM
-Add-IoTProductFeature ProductB Test REGISTRY_SETTINGS -OEM
-(or) addfid ProductB Test REGISTRY_SETTINGS -OEM
+Add-IoTProductFeature ProductX Test PROV_WIFISETTINGS -oem
+(or) addfid ProductX Test PROV_WIFISETTINGS -oem
 ```
 
 
