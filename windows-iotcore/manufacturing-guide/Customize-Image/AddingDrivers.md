@@ -46,7 +46,7 @@ Once the driver files are created, we need to create a package that includes the
 Add-IoTDriverPackage C:\gpiokmdfdemo\gpiokmdfdemo.inf Drivers.TestDriver
 (or) newdrvpkg C:\gpiokmdfdemo\gpiokmdfdemo.inf Drivers.TestDriver
 ```
-This creates a new folder at `C:\MyWorkspace\Source-<arch>\Packages\Drivers.TestDriver`.
+This creates a new folder at `C:\IoT\Workspaces\ContosoWS\Source-ARM>\Packages\Drivers.TestDriver`.
 This also adds a FeatureID called **DRIVERS_TESTDRIVER** to the `C:\IoT\Workspaces\ContosoWS\Source-ARM\Packages\OEMFM.xml` file.
 
 3. Build the package using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md):
@@ -86,33 +86,48 @@ If you are prompted for credentials, please enter these and click **OK**. If you
 
 3. Once your credentials are accepted and **File Explorer** displays the c$ directory of your device, navigate to **c:\Windows\System32\Drivers** and look for the **gpiokmdfdemo.sys** file. If present, this validates that your driver has been properly installed on your device.
 
-## Importing an Alternative BSP Driver
+## Importing an Alternative BSP Driver or Package
 If you wish to import a different driver for a Board Support Package (BSP) that your device manufacturer provides, here are the steps to do that. For our example, we are using an Intel Bay Trail x64 device.
 
 1. Obtain the alternative driver files you wish to import.
-2. Navigate to the file folder that contains the BSP files for your device and copy your alternative driver files to the appropriate subdirectory. For our example, we are using alternative GPIO drivers so we copied these files to the **c:\iot-adk-addonkit\Source-x64\BSP\BYTx64\Packages\BYT64.GPIO** subdirectory.
+   **We will be using gpiokmdfdemo.inf as a demo.
 
-   Please note that if your alternative files have the same name as the existing BSP drivers, you should save the existing file to a different location before overwrite the existing driver files.
+## Build custom driver package 
+1. Run **IoT Core Powershell Environment** as an administrator. Select your appropriate architecture.
+2. Create a **driver package** using [Add-IoTDriverPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTDriverPackage.md):
 
-3. Edit the XML files for the BSP driver you are using alternative files for, to include the new driver filenames. For our example, we are editing the **BYT64.GPIO._pkg.xml** and **BYT64.GPIO.wm.xml** files.
+```powershell
+Add-IoTDriverPackage C:\custom\gpiokmdfdemo.inf Drivers.CustomDriver
+(or) newdrvpkg C:\custom\gpiokmdfdemo.inf Drivers.CustomDriver
+```
+This creates a new folder at `C:\IoT\Workspaces\ContosoWS\Source-ARM\Packages\Drivers.CustomDriver`.
+This also adds a FeatureID called **DRIVERS_TESTDRIVER** to the `C:\IoT\Workspaces\ContosoWS\Source-ARM\Packages\OEMFM.xml` file.
+> If you are replacing the driver or package, you will want to comment out the unneeded package from OEMFM.xml file
 
-   **BYT64.GPIO.wm.xml**
 
-   ![Dashboard screenshot](../../media/ManufacturingGuide/ImportDriver1.jpg)
+3. Build the package using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md):
 
-   **BYT64.GPIO._pkg.xml**
+```powershell
+New-IoTCabPackage Drivers.CustomDriver
+(or) buildpkg Drivers.CustomDriver
+```
 
-   ![Dashboard screenshot](../../media/ManufacturingGuide/ImportDriver2.jpg)
+## Update your Product Configuration File
+Update the product test configuration file using [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md):
 
-4. Run **IoT Core Shell** as an administrator.
-5. Build all the packages by running the following command:
+```powershell
+Add-IoTProductFeature ProductX Test DRIVERS_CUSTOMDRIVER -OEM
+(or) addfid ProductX Test DRIVERS_CUSTOMDRIVER -OEM
+```
+
+Build all the packages by running the following command:
 
 ```powershell
     New-IoTCabPackage All
     (or) buildpkg all 
 ```
 
-6.  Build the FFU image again, as specified in [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md). You should only have to run the **buildimage** command:
+Build the FFU image again, as specified in [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md). You should only have to run the **buildimage** command:
 
 ```powershell
 New-IoTFFUImage ProductX Test
