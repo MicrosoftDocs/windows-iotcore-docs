@@ -147,8 +147,8 @@ You can now update your product configuration files to include your app in the F
 1. Add the Feature ID for your app package using [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md):
 
 ```powershell
-Add-IoTProductFeature <product name> Test APPX_CONTOSOAPP -OEM
-or addfid <product name> Test APPX_CONTOSOAPP -OEM
+Add-IoTProductFeature ProductX Test APPX_CONTOSOAPP -OEM
+or addfid ProductX Test APPX_CONTOSOAPP -OEM
 ```
 
 
