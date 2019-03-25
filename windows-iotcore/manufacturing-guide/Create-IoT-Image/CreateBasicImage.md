@@ -70,16 +70,6 @@ buildpkg QCDB410C
 ```
 [Adding a Board Support Package](../Concepts-Terms-Basics/BoardSupportPackages.md)
 
-## Build Packages 
-From IoT Core Powershell Environment, get your environment ready to create products by building all of the packages in the working folders (using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md)):
-
-```powershell
-New-IoTCabPackage All
-(or) buildpkg all 
-```
-    > [!NOTE]
-    > If you get SignTool errors when building the packages in Test mode, please run installoemcerts.cmd to install the test certificates on your Technician PC.
-
 ## Create a Product
 
 From **IoT Core Powershell Environment**, create a new product folder that uses the BSP you are working with. This folder represents a new device we want to build an image for, and contains sample customization files that we can use to start our project. For example, to create a product folder called `ProductA` that uses the Raspberry Pi 2 or 3 BSP , execute the following command (using [Add-IoTProduct](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProduct.md)):
@@ -145,6 +135,15 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl" /v Du
 > [!NOTE]
 > Please be aware that the commands in this file run with local system privilege.
 
+## Build Packages 
+From IoT Core Powershell Environment, get your environment ready to create products by building all of the packages in the working folders (using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md)):
+
+```powershell
+New-IoTCabPackage All
+(or) buildpkg all 
+```
+    > [!NOTE]
+    > If you get SignTool errors when building the packages in Test mode, please run installoemcerts.cmd to install the test certificates on your Technician PC.
 
 ## Build an image 
 Eject any removable storage drives, including the microSD card and any USB flash drives. 
