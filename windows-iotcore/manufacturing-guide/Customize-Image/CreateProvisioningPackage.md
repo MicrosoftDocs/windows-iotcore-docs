@@ -1,8 +1,8 @@
 ---
 title: Creating a Provisioning Package for a Windows IoT Core Image
-author: johnadali
-ms.author: johnadali
-ms.date: 09/20/2018 
+author: lmaung
+ms.author: Lwin Maung
+ms.date: 03/21/2019 
 ms.topic: article 
 description: Description on how to create a provisioning package for a Windows IoT Core Image
 keywords: Windows 10 IoT Core, 
@@ -18,7 +18,7 @@ A provisioning package allows you to apply customization settings over an existi
 * Build and deploy an FFU image that contains your provisioning package customizations
 
 ## Prerequisites/Requirements
-Please make sure you've created an image with your custom App from [Adding an App to an image](AddingApps.md) previously. For this example, we have created an image with the Qualcomm DragonBoard called *TestDragonBoardProduct* that contains the sample app [Hello World!](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/HelloWorld).
+Please make sure you've created an image with your custom App from [Adding an App to an image](AddingApps.md) previously. For this example, we have created an image with the Qualcomm DragonBoard which will connect to a network via Wifi on boot.
 
 You will need the following tools installed to complete this section:
 * **[Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install#winADK)**. This provides the OEM-specific tooling and files to create and customize images for Windows IoT Core.
@@ -36,7 +36,7 @@ Windows Configuration Designer comes with the **Windows ADK Toolkit** and should
 ## Create WCD Project for a Provisioning Package
 In order to create a provisioning package for your device, we need to create a project in **Windows Configuration Designer**. Once we have this project, we can specify the configuration customizations we want included in our FFU image.
 
-1. From your Technician PC, run **Windows Imaging and Configuration Designer**.
+1. From your IoT Core imaging PC(Technician PC), run **Windows Imaging and Configuration Designer**.
 2. Create a new project by clicking **File > New Project**. For our example, we created a project called *TestProvPackage*.
 3. Select **Provisioning Package** and click **Next**.
 4. On the **Choose which settings to view and configure** page, select **Windows 10 IoT Core**. Click **Next**.
@@ -44,44 +44,49 @@ In order to create a provisioning package for your device, we need to create a p
    ![Dashboard screenshot](../../media/ManufacturingGuide/ProvPackage1.jpg)
 
 5. At the **Import a provisioning package(optional)** page, leave the entry blank and click **Finish**.
-6. Add a sample setting. For our example, we will specify a default startup app that executes when the IoT Core device is booted up.
-   
-   a. Change the **View** dropdown under **Available Customizations** to *Common IoT Settings*.
+6. Add a sample setting:
+   a. Expand **Runtime settings > Connectivity Profiles > WLAN > WLANSetting > SSID.**
+   b. Type in the name of a Wi-Fi network name, for example, ContosoWiFi, and click Add.
+   c. Expand the **SSID > WLANXmlSettings > SecurityType** and choose a setting such as **Open**.
+   d. Expand the **SSID > WLANXmlSettings > AutoConnect** and choose a setting such as **TRUE**.
+   e. Optional: to add more than one WLAN network, go back to WLANSetting, and repeat the process.
 
-   b. Expand the **Runtime settings > Startup App > Default** node.
+7. Optional: add other apps, drivers, and settings through the UI. To learn more, [see Configure customizations using Windows ICD](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package#configure-settings).
 
-   c. Enter the [Application User Model ID (AUMID)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) of the app you want to be the default startup app. For our example, this value is *HelloWorld_1w720vyc4ccym!App*.
+8. Export the provisioning package. For example, click Export > Provisioning Package > Next > (Uncheck the Encrypt Package box) > Next > Build. (To learn more, see [Export a provisioning package.](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package#build-package) ) **Note** in the example we have exported to C:\IoT\Provisioning\WiFiSettings
 
-   ![Dashboard screenshot](../../media/ManufacturingGuide/ProvPackage2.jpg)
-   
-   d. Save the project.
-
-7. Export the provisioning package.
-
-   a. Click **Export > Provisioning Package**. An export dialog will appear. You can modify the **Name**, **Version** and **Rank** field, as well as the **Owner**. Select *OEM* for **Owner** and click **Next**.
-
-   ![Dashboard screenshot](../../media/ManufacturingGuide/ProvPackage3.jpg)
-
-   b. Under **Select security details for the provisioning package**, uncheck the **Encrypt package** and **Sign package** checkboxes. Click **Next**.
-
-   c. Click **Build** to build the provisioning package. A dialog listing the output location will appear when the export is complete. Click **Finish**.
-
-8. Create a provisioning package using [Add-IoTProvisioningPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProvisioningPackage.md):
+9. Open **IoTCorePShell.cmd** file from your workspace and execute the following powershell commands.
 
 ```powershell
-Add-IoTProvisioningPackage Prov.TestProvPackage "C:\Users\<username>\Documents\Windows Imaging and Configuration Designer (WICD)\TestProvPackage\TestProvPackage.ppkg"
-(or) newprovpkg Prov.TestProvPackage "C:\Users\<username>\Documents\Windows Imaging and Configuration Designer (WICD)\TestProvPackage\TestProvPackage.ppkg"
+Add-IoTProvisioningPackage Prov.WiFiSettings "C:\IoT\Provisioning\WiFiSettings\WiFiSettings.ppkg"
+(or) newprovpkg Prov.WiFiSettings "C:\IoT\Provisioning\WiFiSettings\WiFiSettings.ppkg"
 ```
-This creates a new folder at `C:\MyWorkspace\Common\Packages\Prov.TestProvPackage`.
-This also adds a FeatureID called **PROV_TESTPROVPACKAGE** to the `C:\MyWorkspace\Common\Packages\OEMCOMMONFM.xml` file.
+This creates a new folder at `C:\IoT\Workspaces\ContosoWS\Common\Packages\Prov.WiFiSettings`.
+This also adds a FeatureID called **PROV_TESTPROVPACKAGE** to the `C:\IoT\Workspaces\ContosoWS\Common\Packages\OEMCOMMONFM.xml` file.
+
+10. Build cab file for provisioning. 
+
+```powershell
+New-IoTCabPackage Prov.WifiSettings
+(or) buildpkg Prov.WifiSettings
+```
+
+## Update the project's configuration files
+Update the product test configuration to include the features using [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md):
+
+```powershell
+Add-IoTProductFeature ProductX Test PROV_WIFISETTINGS -oem
+(or) addfid ProductX Test PROV_WIFISETTINGS -oem
+```
+
 
 ## Build and Test Image
 Build the FFU image again, as specified in [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
 
-    ```powershell
-    New-IoTFFUImage <product name> Test
-    (or)buildimage <product name> Test 
-    ```
+```powershell
+New-IoTFFUImage ProductX Test
+(or)buildimage ProductX Test 
+```
 Once the FFU file has been built and you flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](../Create-IoT-Image/FlashingImage.md), your provisioning package customizations should be applied when you power up the device. In our example, the default app is the [Hello World!](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/HelloWorld) app and will run when the device is booted up.
 
 

@@ -1,7 +1,7 @@
 ---
 title: Get the tools needed to create Windows IoT Core images
-author: johnadali
-ms.author: johnadali
+author: IAmMinMaung
+ms.author: Min Maung
 ms.date: 09/05/2018 
 ms.topic: article 
 description: Describes the tools needed to create IoT Core images
@@ -38,7 +38,6 @@ Here's the software you'll need to create custom OEM images using the Windows 10
 3. [Windows Driver Kit (WDK) 10](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk) - `OPTIONAL`, required only if you are compiling drivers from source code.
 
 4. [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore). The .iso package adds the IoT Core packages and feature manifests used to create IoT Core images. By default, these packages are installed to **C:\Program Files (x86)\Windows Kits\10\MSPackages\Retail**. Install one or more of the IoT Core packages, depending on the architecture you are building an image for (ARM, ARM64, x86, x64).  
-You can also install the pre-built images (FFUs) for development use.  The prebuilt image is installed to **C:\Program Files (x86)\Microsoft IoT\FFU**.
 
 ![Dashboard screenshot](../../media/ManufacturingGuide/IoTCorePackagesInstall.jpg)
 
@@ -46,7 +45,7 @@ You can also install the pre-built images (FFUs) for development use.  The prebu
 
 6. [Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/p/?LinkId=708576)
 
-7. The Board Support Package from the device manufacturer you are working with. For example, if you are using a Raspberry Pi, the BSP is located [here](https://github.com/ms-iot/iot-adk-addonkit/releases/download/v4.4/rpibsp-wm.zip). For other devices, please visit the [Windows 10 IoT Core BSP](https://docs.microsoft.com/windows/iot-core/build-your-image/createbsps) page to download other BSPs.
+7. The Board Support Package from the device manufacturer you are working with. For example, if you are using a Raspberry Pi, the BSP is located [here](https://github.com/ms-iot/iot-adk-addonkit/releases/download/v4.4/rpibsp-wm.zip). For other devices, please visit the [Windows 10 IoT Core BSP](BoardSupportPackages.md) page to download other BSPs.
 
 8. If you are building Retail image, you will need to get a [code-signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate). For  kernel driver signing, Standard Code signing certificate is sufficient.  You will require an EV cert to access the [Device Update Center](https://docs.microsoft.com/windows-hardware/service/iot/using-device-update-center) in Hardware Dev Center portal.<p> 
 
@@ -63,6 +62,8 @@ Other helpful software:
 * **A compression program** such as [7-Zip](https://www.7-zip.org/), which can uncompress Windows app packages.
 
 * **[Visual Studio 2017](https://visualstudio.microsoft.com/vs/)**, which can be used to create apps in [Adding an App to an image](../Customize-Image/AddingApps.md).
+* **Optional Microsoft PreBuilt FFUs** can be downloaded from Microsoft. The images are installed here: **C:\Program Files (x86)\Microsoft IoT\FFU**.
+
 
 ## Other software
 * **An app built for IoT Core**. This walkthrough uses the [IoT Core Default](https://github.com/ms-iot/samples/tree/develop/IoTCoreDefaultApp) app, though you can use your own.

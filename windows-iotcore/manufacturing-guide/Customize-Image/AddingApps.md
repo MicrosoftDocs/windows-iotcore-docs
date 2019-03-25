@@ -1,8 +1,8 @@
 ---
 title: Adding an App to a Windows IoT Core Image
-author: johnadali
-ms.author: johnadali
-ms.date: 09/20/2018 
+author: lmaung
+ms.author: Lwin Maung
+ms.date: 03/21/2019 
 ms.topic: article 
 description: Description on how to add an App to a Windows IoT Core Image
 keywords: Windows 10 IoT Core, images
@@ -110,7 +110,7 @@ The first step is to create a **Universal Windows Platform (UWP)** application t
 
 ![Dashboard screenshot](../../media/ManufacturingGuide/CreateAppxPackage.jpg)
 
-   Visual Studio creates the Appx package files in your specified location, for the architecture(s) you selected (ARM, x86, x64). In our example, this file is *C:\Users\jadali\Desktop\HelloWorld\CS\AppPackages\HelloWorld_1.0.0.0_ARM_Debug.appx* (for ARM architecture).
+   Visual Studio creates the Appx package files in your specified location, for the architecture(s) you selected (ARM, x86, x64). In our example, this file is *C:\Dev\OpenSource\ContosoApp\ContosoApp\AppPackages\ContosoApp_1.0.0.0_ARM_Debug_Test\ContosoApp_1.0.0.0_ARM_Debug.appx* (for ARM architecture).
    
 
 ## Package the Appx
@@ -120,8 +120,8 @@ The next step is to package the Appx file, which will allow you to customize it 
 2. Create the package for your Appx by using [Add-IoTAppxPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTAppxPackage.md). Replace the file path location and package name with your Appx package. In our example, the command is as follows:
 
   ```powershell
-     Add-IoTAppxPackage "C:\Users\jadali\Desktop\HelloWorld\CS\AppPackages\HelloWorld_1.0.0.0_ARM_Debug.appx" fga Appx.HelloWorldApp
-     (or) newAppxPkg "C:\Users\jadali\Desktop\HelloWorld\CS\AppPackages\HelloWorld_1.0.0.0_ARM_Debug.appx" fga Appx.HelloWorldApp
+     Add-IoTAppxPackage "C:\Dev\OpenSource\ContosoApp\ContosoApp\AppPackages\ContosoApp_1.0.0.0_ARM_Debug_Test\ContosoApp_1.0.0.0_ARM_Debug.appx" fga Appx.ContosoApp
+     (or) newAppxPkg "C:\Dev\OpenSource\ContosoApp\ContosoApp\AppPackages\ContosoApp_1.0.0.0_ARM_Debug_Test\ContosoApp_1.0.0.0_ARM_Debug.appx" fga Appx.ContosoApp
   ```
 
 
@@ -135,11 +135,11 @@ Be aware that if your Appx has dependencies you will need the *Dependencies* sub
 3. From **IoT Core Powershell Environment**, you can now build the package into a .CAB file (using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md))
 
         ```powershell
-        New-IoTCabPackage Appx.HelloWorldApp
-        (or) buildpkg Appx.HelloWorldApp
+        New-IoTCabPackage Appx.ContosoApp
+        (or) buildpkg Appx.ContosoApp
         ```
 
-    This will build the package into a .CAB file under the `Workspace\Build\<arch>\pkgs` subdirectory in the ADK Toolkit files. In our example, this file is located in *C:\MyWorkspace\Build\arm\pkgs\Contoso.Appx.HelloWorldApp.cab*.
+    This will build the package into a .CAB file under the `Workspace\Build\<arch>\pkgs` subdirectory in the ADK Toolkit files. In our example, this file is located in *C:\IoT\Workspaces\ContosoWS\Build\arm\pkgs\Contoso.Appx.ContosoApp.cab*.
 
 ## Update Project Configuration Files
 You can now update your product configuration files to include your app in the FFU image build. 
@@ -147,20 +147,27 @@ You can now update your product configuration files to include your app in the F
 1. Add the Feature ID for your app package using [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md):
 
 ```powershell
-Add-IoTProductFeature <product name> Test APPX_HELLOWORLDAPP -OEM
-or addfid <product name> Test APPX_HELLOWORLDAPP -OEM
+Add-IoTProductFeature ProductX Test APPX_CONTOSOAPP -OEM
+or addfid ProductX Test APPX_CONTOSOAPP -OEM
 ```
 
 
-  This adds a FeatureID called **APPX_HELLOWORLDAPP** to the specified product's Test OEMInput XML file (`C:\MyWorkspace\Source-arm\<product name>\TestOEMInput.xml` file).
+  This adds a FeatureID called **APPX_HELLOWORLDAPP** to the specified product's Test OEMInput XML file (`C:\IoT\Workspaces\ContosoWS\Source-arm\<product name>\TestOEMInput.xml` file).
 
 ## Build and Test Image
+
+From IoT Core Powershell Environment, get your environment ready to create products by building all of the packages in the working folders (using New-IoTCabPackage):
+
+```powershell
+New-IoTCabPackage All
+(or) buildpkg all
+```
 
 Build the FFU image again, as specified in [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
 
 ```powershell
-New-IoTFFUImage <product name> Test
-(or)buildimage <product name> Test 
+New-IoTFFUImage ProductX Test
+(or)buildimage ProductX Test 
 ```
 
 Once the FFU file has been built (it should now include your app), you can flash it to your hardware device as specified in [Flashing a Windows IoT Core Image](../Create-IoT-Image/FlashingImage.md).
