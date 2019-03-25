@@ -152,7 +152,7 @@ or addfid ProductX Test APPX_CONTOSOAPP -OEM
 ```
 
 
-  This adds a FeatureID called **APPX_HELLOWORLDAPP** to the specified product's Test OEMInput XML file (`C:\MyWorkspace\Source-arm\<product name>\TestOEMInput.xml` file).
+  This adds a FeatureID called **APPX_HELLOWORLDAPP** to the specified product's Test OEMInput XML file (`C:\IoT\Workspaces\ContosoWS\Source-arm\<product name>\TestOEMInput.xml` file).
 
 ## Build and Test Image
 
