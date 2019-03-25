@@ -81,6 +81,13 @@ Add-IoTProductFeature ProductX Test PROV_WIFISETTINGS -oem
 
 
 ## Build and Test Image
+Rebuild the packages:
+
+```powershell
+New-IoTCabPackage All
+(or) buildpkg all 
+```
+
 Build the FFU image again, as specified in [Creating a Basic IoT Core Image](../Create-IoT-Image/CreateBasicImage.md). You should only have to run the [New-IoTFFUImage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md) command:
 
 ```powershell
