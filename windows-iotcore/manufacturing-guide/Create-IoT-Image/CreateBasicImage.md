@@ -62,6 +62,12 @@ You will need the following tools installed to complete this section:
 
 The next step is to take the Board Support Package files and extract/build their .CAB files to include in the FFU file. There are some differences in the steps to do this for the different BSPs, so please visit the appropriate section for the hardware device you are working with.
 
+This walkthrough utilizes Qualcom Snapdragon BSP.
+
+``` powershell
+Import-QCBSP c:\Temp\db410c_bsp_mar2019.zip C:\IoT\BSPs\QCDB410C -ImportBSP
+buildpkg QCDB410C
+```
 [Adding a Board Support Package](../Concepts-Terms-Basics/BoardSupportPackages.md)
 
 ## Build Packages 
