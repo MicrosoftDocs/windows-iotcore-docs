@@ -45,7 +45,7 @@ For minimum requirement details, please visit [the Windows Hardware site](https:
 > | Domain join | AAD only | AAD and Traditional Domain |
 > | Management | MDM | MDM |
 > | Device Security Technologies | TPM, Secure Boot, BitLocker, Device Health Attestation, and Device Guard for IoT | TPM, Secure Boot, BitLocker, Device Guard, Defender ATP, and Device Health Attestation |
-> | CPU Architecture support | x86, x64, and ARM | x86 and x64 |
+> | CPU Architecture support | x86, x64, and ARM | x86, x64, and ARM64 |
 > | Licensing | Online Licensing Agreement and Embedded OEM Agreements, Royalty-free | Direct and Indirect Embedded OEM Agreements |
 > | Usage scenarios | Digital Signage, Smart Building, IoT Gateway, HMI, Smart Home, Wearables | Industry Tablets, POS, Kiosk, Digital Signage, ATM, Medical Devices, Manufacturing Devices, Thin Client |
 
