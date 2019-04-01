@@ -119,6 +119,26 @@ The Windows 10 IoT Core image included in this drop supports the peripherals tha
 #### Mouse Pointer disappears while debugging 
 In some cases, the mouse pointer is not visible after deploying or debugging apps with Visual Studio, the mouse pointer should reappear if you change focus using the keyboard (Tab).
 
+#### Accessing public documents
+A change was made to the underlying APIs for file access which requires an application specify broadFileSystem access in order to access the public documents directory.
+
+The .XML file snippet should look like this:
+```
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  IgnorableNamespaces="uap mp rescap">
+--snip--
+  <Capabilities>
+    <uap:Capability Name="removableStorage" />
+    <uap:Capability Name="picturesLibrary" />
+    <rescap:Capability Name="broadFileSystemAccess" />
+ </Capabilities>
+
+</Package>
+```
 
 #### Server Applications with SoftAP
 When using the SoftAP clients will not be able to access content exposed by UAP apps.  
