@@ -55,7 +55,7 @@ To help you select the right platform for your device, the table below shows the
 > | Processor power management |  | x | x | x | Under development | |
 > | TPM | x | x | x | x | x | N/A |
 > | Secure Boot | x | x | Under development | Under development | Under development | |
-> | Hibernate | x | N/A | N/A | N/A | N/A | N/A | |
+> | Hibernate | x | | | | | | 
 > | PWM | x | N/A | x | x | x | |
 > | JTAG | x | N/A | x | x | x | |
 > | eMMC | x | x | x | x | x | |
