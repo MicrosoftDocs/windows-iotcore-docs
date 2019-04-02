@@ -8,11 +8,11 @@ description: Learn how to setup a default app using the Windows Device Portal or
 keywords: windows iot, default app, PowerShell, iot
 ---
 
-> [!NOTE]
-> Visual Studio will generate a cryptic error when deploying to a RS5 (or RS4 with OpenSSH enabled) IoT image unless a SDK from RS4 or greater is installed that Visual Studio can access.
-
 # Setup a default app
 Here you'll learn the ways to set your application as the default application. The default application is the one that is launched when the system boots.  
+
+> [!NOTE]
+> Visual Studio will generate a cryptic error when deploying to a RS5 (or RS4 with OpenSSH enabled) IoT image unless a SDK from RS4 or greater is installed that Visual Studio can access.
 
 ## Runtime options
 
