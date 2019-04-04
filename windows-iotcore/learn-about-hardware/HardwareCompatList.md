@@ -104,7 +104,7 @@ Looking for information about supported hardware platforms? Click [here](https:/
 ### Port Expanders
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | MCP23008 8-bit I/O Port Expander | ARM32, x64, x86 | I2C Interface Chip, GPIO Port Expander. 8 ports, 18-PDIP package | [I2C Port Explander Sample](https://www.hackster.io/4803/i2c-port-expander-sample-0a6d4f) | &#10004; |
+> | MCP23008 8-bit I/O Port Expander | ARM32, x64, x86 | I2C Interface Chip, GPIO Port Expander. 8 ports, 18-PDIP package | [SPI Port Explander Sample](https://www.hackster.io/4803/i2c-port-expander-sample-0a6d4f) | &#10004; |
 > | MCP23S17 16-bit I/O Port Expander | ARM32, x64, x86 | I2C Interface Chip, GPIO Port Expander. 16 ports, 28-SPDIP package | [Interactive Piano sample](https://www.hackster.io/windowsiot/build-2014-piano-3b449c) | &#10004; |
 
 ### NFC/RFID/Proximity
