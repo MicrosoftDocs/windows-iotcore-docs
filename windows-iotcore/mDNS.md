@@ -19,10 +19,9 @@ keywords: Windows 10 IoT Core, mDNS Responder Sample Source
 5.	Compile the project *mDNSTest*, which is a sample UWP app to consume mDNSUWP and eventually talks into mDNSResponder service.
 6.	This UWP app depends on both dnssd.dll and the UWP broker (there is script configured to copy everything into the UWP appx folder)
 7.	Deploy/launch mDNSTest, set an ID and click Register, the respond code should be 0 (SUCCESS)
-8.	If you run any Bonjour Browser at the same time, I used this one, https://hobbyistsoftware.com/bonjourbrowser, the new (fake) device should be listed.
+8.	If you run any Bonjour Browser at the same time, the new (fake) device should be listed.
 
 ![Registration for mDNS](media/mDNS/mDNS1.png)
-![Bonjour browser screenshot](media/mDNS/mDNS2.png)
 
 ## Resources
 
