@@ -1,5 +1,5 @@
 ---
-title: Hardware Compatbility List
+title: Hardware Compatibility List
 author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
