@@ -82,6 +82,14 @@ REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d 
 
 All differences showed in this post may disappear as time goes on because Windows 10 IoT Core is keep updating.
 
+## IoT Edge Support for Windows 10 IoT
+
+> |             | x86  |  x64  | ARM32 | ARM64 | 
+> |-------------|----------|---------|
+> | Windows 10 IoT Core | Yes | Yes | Yes - Limited |
+> | Windows 10 IoT Enterprise | Yes | Yes | No | Yes - Limited |
+> | Windows Server IoT 2019 | No | Yes | No | No |
+
 
 ## Helpful resources
 * [Windows 10 IoT Enterprise](windows-iot-enterprise.md)
