@@ -86,7 +86,7 @@ All differences showed in this post may disappear as time goes on because Window
 
 > |             | x86  |  x64  | ARM32 | ARM64 | 
 > |-------------|----------|---------|
-> | Windows 10 IoT Core | Yes | Yes | Yes - Limited |
+> | Windows 10 IoT Core | Yes | Yes | Yes | Yes - Limited
 > | Windows 10 IoT Enterprise | Yes | Yes | No | Yes - Limited |
 > | Windows Server IoT 2019 | No | Yes | No | No |
 
