@@ -10,6 +10,9 @@ keywords: windows iot, lightning performance, lightning functionality, GPIO
 
 # Windows IoT Lightning Performance Testing
 
+> [!IMPORTANT]
+> The Windows 10 IoT team is no longer actively supporting Arduino.
+
 The GPIO performance was tested for Windows IoT Lightning functionality using a simple GPIO toggle app, [available here](https://github.com/ms-iot/lightning/tree/develop/PerformanceTestSuite). The tests were performed by toggling GPIO 5 between 0 and 1 at the fastest possible speed. The toggle frequency for each case was measured using a Tektronix TPS 2024 Oscilloscope.
 
 The following results were obtained from the analysis:
