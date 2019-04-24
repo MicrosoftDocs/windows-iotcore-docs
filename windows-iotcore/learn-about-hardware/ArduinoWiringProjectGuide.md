@@ -11,13 +11,16 @@ keywords: windows iot, Arduino, Arduino wiring, Lightning Performance, Visual St
 # Arduino Wiring Project Guide
 
 > [!IMPORTANT]
-> The Windows 10 IoT team is no longer actively supporting Arduino.
+> The Windows 10 IoT team is no longer actively maintaining Arduino.
 
 This guide will walk through the creation, setup, and deployment of an Arduino Wiring project using Windows IoT Core.
 
 Arduino Wiring projects utilize the familiar, easy to use Arduino Wiring API with Windows IoT Lightning DMAP driver: a driver using direct memory mapping to provide significant [performance speeds](../develop-your-app/LightningPerformance.md). You can copy & paste Arduino sketches and libraries into your IoT Core Arduino Wiring projects and run them on supported IoT Core devices, including Raspberry Pi2, 3 and Minnowboard Max! See the develop section of this page for more information.
 
 ## Install the Microsoft IoT Templates
+
+> [!NOTE]
+> Download VS 2015 to access Arduino Wiring templates - these templates are no loner supported on VS 2017 and beyond.
 
 We've provided a Visual Studio extension which will automatically install a VS template for the Arduino Wiring projects as well as other Microsoft IoT project types. 
 
