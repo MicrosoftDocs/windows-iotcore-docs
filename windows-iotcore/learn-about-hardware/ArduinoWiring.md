@@ -11,7 +11,7 @@ keywords: windows iot, Arduino, Arduino Wiring, template, IoT Core, UWP
 # Arduino Wiring for Windows IoT Core Devices
 
 > [!IMPORTANT]
-> The Windows 10 IoT team is no longer actively supporting Arduino.
+> The Windows 10 IoT team is no longer actively maintaining Arduino.
 
 To enable the development and reuse of the familiar [Arduino Wiring](https://www.arduino.cc/en/Reference/HomePage) sketches on IoT Core devices, a Visual Studio project template for Arduino Wiring is provided as part of the [Windows IoT Core Project Templates extension](https://go.microsoft.com/fwlink/?linkid=847472).
 
