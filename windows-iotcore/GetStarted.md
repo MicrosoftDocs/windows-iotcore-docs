@@ -113,22 +113,22 @@ Commercialization, or the process of bringing a device to market, involves more 
 <tbody>
 
 <tr class="odd">
-<td align="left"><p><a href="learn-about-hardware/SoCsAndCustomBoards.md" data-raw-source="[SoCs and Custom Boards](learn-about-hardware/SoCsAndCustomBoards.md)">1. SoCs and Custom Boards</a></p></td>
+<td align="left"><p>1. <a href="learn-about-hardware/SoCsAndCustomBoards.md" data-raw-source="[SoCs and Custom Boards](learn-about-hardware/SoCsAndCustomBoards.md)">SoCs and Custom Boards</a></p></td>
 <td align="left"><p>Before getting started, learn about the different SoCs and SOMs you can work with to build your Windows 10 IoT Core solution.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide" data-raw-source="[Creating test and retail images](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)">1. Creating test and retail images</a></p></td>
+<td align="left"><p>2. <a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide" data-raw-source="[Creating test and retail images](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)">Creating test and retail images</a></p></td>
 <td align="left"><p>Start here and learn how to create custom test and retail images for your commercial solution.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-feature-list" data-raw-source="[Windows 10 IoT Core feature list](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-feature-list)">Windows 10 IoT Core feature list</a></p></td>
-<td align="left"><p>3. Learn about the different test and retail features as defined by Microsoft for your Windows 10 IoT Core images.</p></td>
+<td align="left"><p>3. <a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-feature-list" data-raw-source="[Windows 10 IoT Core feature list](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-feature-list)">Windows 10 IoT Core feature list</a></p></td>
+<td align="left"><p>Learn about the different test and retail features as defined by Microsoft for your Windows 10 IoT Core images.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/service/iot/servicing-msstore" data-raw-source="[Installing and servicing apps](https://docs.microsoft.com/windows-hardware/service/iot/servicing-msstore)">Installing and servicing apps</a></p></td>
+<td align="left"><p>4. <a href="https://docs.microsoft.com/windows-hardware/service/iot/servicing-msstore" data-raw-source="[Installing and servicing apps](https://docs.microsoft.com/windows-hardware/service/iot/servicing-msstore)">Installing and servicing apps</a></p></td>
 <td align="left"><p>Learn how to install and service UWP apps for Windows 10 IoT Core.</p></td>
 </tr>
 
