@@ -17,7 +17,7 @@ Below you'll find boards we suggest to help you get started with Windows 10 IoT 
 > You must create your own images and not use the provided images below if you plan to commercialize your device.
 
 > [!NOTE]
-> The Raspberry Pi 3B+ has limited compatability with Windows 10 IoT Core. Please view the [release notes](https://docs.microsoft.com/en-us/windows/iot-core/release-notes/insider/17744) for more information. For a more complete Windows 10 IoT Core experience, please use a Raspberry Pi 3B, DragonBoard, Up2 Board or NXP device. 
+> The Raspberry Pi 3B+ has limited compatability with Windows 10 IoT Core. Please view the [release notes](https://docs.microsoft.com/en-us/windows/iot-core/release-notes/insider/rpi3bp) for more information. For a more complete Windows 10 IoT Core experience, please use a Raspberry Pi 3B, DragonBoard, Up2 Board or NXP device. 
 
 
 | Boards | More Information | FFU Link | How To Set Up | Get started |
