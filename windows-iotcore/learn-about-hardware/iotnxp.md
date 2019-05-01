@@ -72,7 +72,7 @@ Several Microsoft and NXP partners have enabled commercial i.MX 6, i.MX 7, and i
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="http://wce.keith-koep.com/en/products/pconxs-ff/">Keith & Koep pConXS</a> with <a href="http://wce.keith-koep.com/en/products/trizeps7-i.MX6/">Trizeps VII</a></p></td>
+<td align="left"><p><a href="https://keith-koep.com/en/products/products-baseboards/pconxs-baseboard-ﬀ -technical-data/">Keith & Koep pConXS</a> with <a href="https://keith-koep.com/en/products/products-trizeps/trizeps-vii-technical-data-imx6/">Trizeps VII</a></p></td>
 <td align="left"><p><p><a href="mailto:contact@keith-koep.com">contact@keith-koep.com</a></p></td>
 </tr>
 
