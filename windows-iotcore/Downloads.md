@@ -16,7 +16,8 @@ Download the tools and software you need to get started with Windows 10 IoT Core
 
 The Windows 10 IoT Core Dashboard makes flashing Windows 10 IoT Core onto your device simpler with a navigable interface. Once downloaded, learn how to set up your device with the dashboard [here](https://docs.microsoft.com/en-gb/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-raspberry-pi-minnowboard-nxp).
 
-[Download the Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/?LinkID=708576)
+> [!div class="nextstepaction"]
+> [Download the Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/?LinkID=708576)
 
 _By downloading and using the Windows 10 IoT Core Dashboard you agree to the [license terms](http://go.microsoft.com/fwlink/?LinkID=703960&clcid=0x4809) and [privacy statement](http://go.microsoft.com/fwlink/?LinkId=521839) for the Windows 10 IoT Core Dashboard._
 
