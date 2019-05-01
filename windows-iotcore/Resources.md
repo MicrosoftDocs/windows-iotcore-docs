@@ -53,6 +53,7 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Misty Robotics](https://customers.microsoft.com/en-us/story/misty-robotics)
 * [Askey Turbomate](https://customers.microsoft.com/en-us/story/askey)
 * [Johnson Controls GLAS](https://customers.microsoft.com/en-us/story/johnson-controls)
+* [Keith & Koep Cocktail Booster](https://customers.microsoft.com/en-us/story/keith-koep)
 * [Kodisoft](https://customers.microsoft.com/en-us/story/kodisoft)
 * [Redback Technologies](https://customers.microsoft.com/en-us/story/redback-technologies)
 
