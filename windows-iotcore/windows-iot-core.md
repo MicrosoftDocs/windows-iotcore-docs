@@ -10,6 +10,9 @@ keywords: Windows 10 IoT Core, small footprint, headless
 
 # Windows 10 IoT Core
 
+> [!NOTE]
+> Windows 10 Containers can only be used with Windows IoT Core and Windows IoT Enterprise for commercial deployments utilizing Microsoft Azure IoT Edge.
+
 ## What is Windows 10 IoT Core?
 Windows 10 IoT Core is a version of Windows 10 that is optimized for smaller devices with or without a display that run on both ARM and x86/x64 devices. The Windows IoT Core documentation provides information on connecting, managing, updating, securing your devices, and more. 
 
