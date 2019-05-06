@@ -10,6 +10,9 @@ keywords: Windows Server IoT 2019, enterprise manageability, Windows ecosystem, 
 
 # An overview of Windows Server IoT 2019
 
+> [!NOTE]
+> Windows 10 Containers are supported for commercial deployments on Windows IoT Server and Windows Server 2019.
+
 ## What is Windows Server IoT 2019?
 Windows Server IoT 2019 is a full version of Windows Server 2019 that delivers enterprise manageability and security to IoT solutions. Windows Server IoT 2019 shares all the benefits of the world-wide Windows ecosystem. It is a binary equivalent to Windows Server 2019, so you can use the same familiar development and management tools that you use on your general-purpose servers. However, when it comes to licensing and distribution, the general-purpose version and IoT versions differ.  Windows Server IoT 2019 is only licensed through the OEM channel under special dedicated use rights.
 
