@@ -41,23 +41,16 @@ GpioPin pin = gpioController.OpenPin(LED_PIN, GpioSharingMode.Exclusive);`
 We currently have a number of providers available on the [Bus Providers](https://github.com/ms-iot/BusProviders) github repo. In addition to the code for the provider, each provider has a sample VS solution that demonstrates how a client would use that provider. 
 
 * **ADC**
-
 ** Ads1x15
-
 ** Mcp3008
-
 ** Remote Arduino
 
 * **PWM**
-
 ** PCA9685
-
 ** Simulated with Gpio
-
 ** Remote Arduino
 
 * **Gpio, SPI, I2C**
-
 ** Remote Arduino
 
 In addition to the providers that give you access to real hardware, we have built a [Simulated Provider](https://github.com/ms-iot/BusProviders/tree/develop/SimulatedProvider) that will act as if it was an inifitely capable provider and is designed to let you write and debug your applications without having to first deploy them to a working device. For a richer experience, you can customize it to simulate your actual hardware. For example: updating the I2c provider to return back the result "75" when you send it the command for a temperature reading on a device with the designated slave address.
