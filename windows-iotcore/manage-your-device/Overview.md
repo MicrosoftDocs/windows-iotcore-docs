@@ -33,11 +33,11 @@ You can download live Kernel dumps via WDP as well. Any system crashes will be a
 You can download crash dumps of applications on IoT Device via WDP. See above link for additional information.
 
 ## SSH/PowerShell/TShell
-PowerShell is a task-based command-line shell and scripting language, designed especially for system administration. Details on debugging and setting up powershell can be found [here](../connect-your-device/powershell.md)
+PowerShell is a task-based command-line shell and scripting language, designed especially for system administration. Details on debugging and setting up powershell can be found [here](../connect-your-device/powershell.md).
 
 ## Debug through Visual Studio Deployment
-Deploying and debugging your application is straightforward with Visual Studio. Remote Debugging feature can be used to deploy and debug the app to your locally connected Windows 10 IoT Core device. Detailed on deployment and debugging can be found [here](../develop-your-app/RemoteDebugging.md)
+Deploying and debugging your application is straightforward with Visual Studio. Remote Debugging feature can be used to deploy and debug the app to your locally connected Windows 10 IoT Core device. Detailed on deployment and debugging can be found [here](../develop-your-app/RemoteDebugging.md).
 
 -----
 ## Live App Debug
-In Visual Studio (2015 and later), you can analyze performance and diagnose issues in your ASP.NET web app both in debugging and in production, using telemetry from Azure Application Insights. The feature is later extended to include desktop and UWP applications in Visual Studio 2017 and via Azure Portal. Additional information on debugging your project can be found [here](https://docs.microsoft.com/en-us/azure/azure-monitor/app/visual-studio) and monitoring usage, and performance in desktop or UWP appplications can be found [here](https://docs.microsoft.com/en-us/azure/azure-monitor/app/windows-desktop)
+In Visual Studio (2015 and later), you can analyze performance and diagnose issues in your ASP.NET web app both in debugging and in production, using telemetry from Azure Application Insights. The feature is later extended to include desktop and UWP applications in Visual Studio 2017 and via Azure Portal. Additional information on debugging your project can be found [here](https://docs.microsoft.com/en-us/azure/azure-monitor/app/visual-studio) and monitoring usage, and performance in desktop or UWP appplications can be found [here](https://docs.microsoft.com/en-us/azure/azure-monitor/app/windows-desktop).
