@@ -33,7 +33,8 @@ The changes and enhancements compared to the previous TPM 1.2 include:
 * Simplified TPM management
 * Additional capabilities to enhance the security of platform services
 
-Note that Windows IoT Core supports only TPM 2.0 and does not support the outdated TPM 1.2.
+> [!NOTE] 
+> Windows IoT Core supports only TPM 2.0 and does not support the outdated TPM 1.2.
 
 ## What is TBS? 
 The TPM Base Services (TBS) feature is a system service that allows transparent sharing of the TPM resources. It shares the TPM resources among multiple applications on the same physical machine through remote procedure calls (RPC). It centralizes TPM access across applications using priorities specified by the calling applications.  
