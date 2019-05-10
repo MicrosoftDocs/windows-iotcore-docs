@@ -40,6 +40,7 @@
 ### [Localhost loopback](develop-your-app/Loopback.md)
 ### [IoT Shell overview](develop-your-app/IoTCoreShell.md)
 ## [Debug applications]()
+### [Overview](manage-your-device/Overview.md)
 ### [Windows Device Portal](manage-your-device/DevicePortal.md)
 ### [Windows Debugger](manage-your-device/WindowsDebugger.md)
 ### [Investigate memory leaks](develop-your-app/InvestigateMemoryLeaks.md)
