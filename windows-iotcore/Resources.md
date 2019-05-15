@@ -42,8 +42,8 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 
 * [Microsoft MVP community](https://mvp.microsoft.com/)
 * [Microsoft IoT Tech Community](https://techcommunity.microsoft.com/t5/Internet-of-Things-IoT/ct-p/IoT)
+* [Microsoft Insider Labs](https://www.microsoftiotinsiderlabs.com/)
 * [Windows 10 IoT MSDN forum](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT)
-* [Windows 10 IoT Core Lynda Course](https://www.lynda.com/Windows-tutorials/IoT-Development-Windows-10-IoT-Core-1-Installation-Basic-Connection/556513-2.html)
 * [In-person training with Annabooks](http://www.annabooks.com/training.html)
 * [Getting started with Windows 10 IoT Core on Hackster.io](http://www.hackster.io/KiwiBryn)
 * [Window 10 IoT Core HATs](https://www.turta.io/iothat)
