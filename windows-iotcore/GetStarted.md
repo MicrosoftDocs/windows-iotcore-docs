@@ -113,7 +113,7 @@ Start with the manufacturing guide that works best for you, depending on which v
 <tbody>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide"
 >Windows 10 IoT Core Manufacturing Guide</a></p></td>
 <td align="left"><p>Start here and learn how to create custom test and retail images for your commercial Windows 10 IoT Core solution.</p></td>
 </tr>
