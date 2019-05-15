@@ -47,11 +47,16 @@ To learn more about deploying code integrity policies, auditing and enforcement,
 
 ## Turnkey Security on IoT Core
 
-To facilitate easy enablement of key security features on IoT Core devices, Microsoft is providing a turnkey 'Security Package' that allows device builders to build fully locked down IoT devices.  This package will help with:
+To facilitate easy enablement of key security features on IoT Core devices, Microsoft is providing a [Turnkey Security Package]( https://github.com/ms-iot/security/tree/master/TurnkeySecurity) that allows device builders to build fully locked down IoT devices. This package will help with:
 
 * Provisioning Secure Boot keys and enabling the feature on supported IoT platforms
-* Setup and configuration of device encryption using BitLocker 
+* Setup and configuration of device encryption using BitLocker
 * Initiating device lockdown to only allow execution of signed applications and drivers
+
+The following steps will lead through the process to create a lockdown image using the [Turnkey Security Package]( https://github.com/ms-iot/security/tree/master/TurnkeySecurity)
+
+![Create lockdown image](../media/SecurityFlowAndCertificates/ImageLockDown.png)
+
 
 ### Pre-requisites
 
