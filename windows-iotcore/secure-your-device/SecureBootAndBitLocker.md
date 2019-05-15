@@ -10,9 +10,31 @@ keywords: windows iot, secure boot, BitLocker, device guard, security, turnkey s
 
 # Enabling Secure Boot, BitLocker, and Device Guard on Windows 10 IoT Core
 
-## Introduction
+Windows 10 IoT Core includes security feature offerings such as UEFI Secure Boot, BitLocker Device Encryption and Device Guard.  These will assist device builders in creating fully locked down Windows IoT devices that are resilient to many different types of attacks.  Together, these features provide the optimal protection that ensures that a platform will launch in a defined way, while locking out unknown binaries and protecting user data through the use of device encryption.
 
-With the release of Creators Update, Windows 10 IoT Core improves its security feature offerings to include UEFI Secure Boot, BitLocker Device Encryption and Device Guard.  These will allow device builders in creating fully locked down Windows IoT devices that are resilient to many different types of attacks.  Together, these features provide the optimal protection that ensures that a platform will launch in a defined way, while locking out unknown binaries and protecting user data through the use of device encryption.
+## Boot Order
+
+An understanding of the boot order on a Windows 10 IoT Core device is needed before we can delve into the individual components that provide a secure platform for the IoT device.
+
+There are three main areas that occur from when an IoT device is powered on, all the way through to the OS kernel loading and execution of installed application.
+
+* Platform Secure Boot
+* Unified Extensible Firmware Interface (UEFI) Secure Boot
+* Windows Code Integrity
+
+![Boot Order](../media/SecureBootAndBitLocker/BootOrder.jpg)
+
+Additional information on the Windows 10 boot process can be found [here](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process).
+
+## Locking-down IoT Devices
+
+In order to lockdown a Windows IoT device, the following considerations must be made.
+
+### Platform Secure Boot
+
+When the device is first powered on, the first step in the overall boot process is to load and run firmware boot loaders, which initialize the hardware on the devies and provide emergency flashing functionality. The UEFI environment is then loaded and control is handed over.
+
+These firmware boot loaders are SoC-specific, so you will need to work with the appropriate device manufacturer to have these boot loaders created on the device.
 
 ### Secure Boot
 
