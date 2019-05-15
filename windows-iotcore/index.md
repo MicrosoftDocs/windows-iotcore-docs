@@ -126,13 +126,7 @@ Windows 10 IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Ente
 
 ---
 
-<h2>Got Bugs? Suggestions?</h2>
-<p>If you&#39;d like to report a bug, please use <a href="https://social.msdn.microsoft.com/Forums/en-US/fad1c6a0-e578-44a7-8e8d-95cc28c06ccd/need-logs-if-your-device-hasnt-updated-to-the-latest-iotcore-version?forum=WindowsIoT">the Feedback Hub app</a>. For anything else related to our documentation, such as suggestions, please file an issue on <a href="https://github.com/MicrosoftDocs/windows-iotcore-docs">our GitHub</a>. 
+<h2>Bugs? Suggestions?</h2>
+<p>For any issues or bugs using Windows 10 IoT Core, please post them on the MSDN forums <a href="https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=WindowsIoT">here</a>. 
 <br><br>
-If you see anything you'd like to contribute or edit, open a pull request by clicking "Edit" in the upper right of any documentation page. We will not respond to any support-related inquiries on our issues channel - please refer to our forums for this. 
-
----
-
-<h2>Got Questions? Issues?</h2>
-<p>If anything comes up that the documentation doesn&#39;t answer, you can submit your questions to our <a href="https://techcommunity.microsoft.com/t5/Windows-10-IoT/bd-p/Windows10IoT">Tech Community</a> or <a href="https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT">MSDN forums</a>.</p>
-
+If you'd like to report a an issue or bug with our documentation, please file an issue on <a href="https://github.com/MicrosoftDocs/windows-iotcore-docs">our GitHub</a>. We will not respond to any support-related inquiries on our GitHub issues channel.
