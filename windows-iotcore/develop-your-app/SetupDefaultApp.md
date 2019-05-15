@@ -11,6 +11,9 @@ keywords: windows iot, default app, PowerShell, iot
 # Setup a default app
 Here you'll learn the ways to set your application as the default application. The default application is the one that is launched when the system boots.  
 
+> [!NOTE]
+> Visual Studio will generate a cryptic error when deploying to a RS5 (or RS4 with OpenSSH enabled) IoT image unless a SDK from RS4 or greater is installed that Visual Studio can access.
+
 ## Runtime options
 
 During development / experimental phases, you can change the default app by following means.

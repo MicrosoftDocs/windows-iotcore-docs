@@ -11,15 +11,19 @@ keywords: windows iot, languages, app types, UWP, supported
 # Developing foreground applications
 Learn about the languages that are supported on Windows 10 IoT Core as well as the UWP and non-UWP app types that are supported on IoT Core.
 
+
+> [!NOTE]
+> Visual Studio will generate a cryptic error when deploying to a RS5 (or RS4 with OpenSSH enabled) IoT image unless a SDK from RS4 or greater is installed that Visual Studio can access.
+
 ## Application Types
 ___
 
 ### Universal Windows Platform (UWP) Apps
 IoT Core is a UWP centric OS and UWP apps are its primary app type.
 
-Universal Windows Platform (UWP) is a common app platform across all version of Windows 10, including Windows 10 IoT Core.  UWP is an evolution of Windows Runtime (WinRT). You can find more information and an overview to UWP on [docs.microsoft.com](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide).
+Universal Windows Platform (UWP) is a common app platform across all version of Windows 10, including Windows 10 IoT Core.  UWP is an evolution of Windows Runtime (WinRT). You can find more information and an overview to UWP [here](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide).
 
-Visual Studio is the primary tool for writing UWP apps for IoT Core and in general. You can find a detailed listing of the compatibility requirements for Visual Studio on [docs.microsoft.com](https://docs.microsoft.com/visualstudio/productinfo/vs2017-compatibility-vs)
+Visual Studio is the primary tool for writing UWP apps for IoT Core and in general. You can find a detailed listing of the compatibility requirements for Visual Studio [here](https://docs.microsoft.com/visualstudio/productinfo/vs2017-compatibility-vs).
 
 
 ### Traditional UWP Apps
@@ -78,7 +82,7 @@ namespace BlinkyHeadlessCS
 }
 ```
 
-You can find in-depth information on Background apps on [MSDN](https://docs.microsoft.com/windows/iot-core/develop-your-app/backgroundapplications)
+You can find in-depth information on Background apps [here](https://docs.microsoft.com/windows/iot-core/develop-your-app/backgroundapplications).
 
 ### Non-UWP Apps
 IoT Core supports certain traditional Win32 app types such as Win32 Console Apps and NT Services. These apps are built and run the same way as on Windows 10 Desktop. Additionally, there is an IoT Core C++ Console project template to make it easy to build such apps using Visual Studio.
@@ -110,7 +114,7 @@ C# and VB are both supported as UWP apps and have access to the portion of the .
 Samples:
 
 
-* [C# Blinky Headless with Full Documentation](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinkybackground)
+* [C# Blinky Headless with Full Documentation](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground)
 * [C# Blinky Headless Code Only](https://github.com/ms-iot/samples/tree/develop/HelloBlinkyBackground/CS)
 * [VB Blinky Headless Code Only](https://github.com/ms-iot/samples/tree/develop/HelloBlinkyBackground/VB)
 * [C# Blinky UI App](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinky)
@@ -134,9 +138,9 @@ With C++ you can build Xaml or DirectX UI apps, as well as UWP Background projec
 
 Samples:
 
-* [Blinky Headless](https://github.com/ms-iot/samples/tree/develop/HelloBlinkyBackground/CPP)
-* [Blinky Headed](https://github.com/ms-iot/samples/tree/develop/HelloBlinky/Cpp)
-* [Console App](https://developer.microsoft.com/en-us/windows/iot/samples/memorystatus)
+* [Blinky Headless](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground/CPP)
+* [Blinky Headed](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinky/Cpp)
+* [Console App](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/MemoryStatus)
 
 > [!NOTE]
 > For those who are planning to write their app in C++, you'll need to check the UWP C++ checkbox upon downloading.
@@ -150,7 +154,7 @@ With Arduino Wiring support you can build apps in Arduino Wiring for many popula
 Our [Arduino Wiring Project Guide](../learn-about-hardware/ArduinoWiringProjectGuide.md) provides full instructions on how to get set up to build these apps. The samples copied and linked below will help you get started building your own.  You can even [build WinRT components in Arduino](https://github.com/ms-iot/samples/tree/develop/ArduinoLibraryBlinky) that can then be used from other languages. 
 
 *Blinky Sample Code*
-The full [sample code and docs](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinkybackgroundwiring) are available in our samples page and you can find the full code below:
+The full [sample code and docs](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground/VB) are available on our samples page and you can find the full code below:
 
 ```C++
 void setup()

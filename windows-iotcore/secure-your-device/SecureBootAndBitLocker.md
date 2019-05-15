@@ -36,36 +36,77 @@ When the device is first powered on, the first step in the overall boot process 
 
 These firmware boot loaders are SoC-specific, so you will need to work with the appropriate device manufacturer to have these boot loaders created on the device.
 
-### Secure Boot
+An understanding of the boot order on a Windows 10 IoT Core device is needed before we can delve into the individual components that provide a secure platform for the IoT device.
 
-UEFI Secure Boot is the first policy enforcement point, located in UEFI.  It restricts the system to only allow execution of binaries signed by a specified authority. This feature prevents unknown code from being executed on the platform and potentially weakening the security posture of it.
+There are three main areas that occur from when an IoT device is powered on, all the way through to the OS kernel loading and execution of installed application.
 
-### BitLocker Device Encryption
+* Platform Secure Boot
+* Unified Extensible Firmware Interface (UEFI) Secure Boot
+* Windows Code Integrity
 
-Windows 10 IoT Core also implements a lightweight version of BitLocker Device Encryption, protecting IoT devices against offline attacks.  This capability has a strong dependency on the presence of a TPM on the platform, including the necessary preOS protocol in UEFI that conducts the necessary measurements. These preOS measurements ensure that the OS later has a definitive record of how the OS was launched; however, it does not enforce any execution restrictions.
+![Dashboard screenshot](../media/SecureBootAndBitLocker/BootOrder.jpg)
 
-> [!TIP]
-> BitLocker functionality on Windows 10 IoT Core allows for automatic encryption of NTFS-based OS volume while binding all available NTFS data volumes to it.  For this, it’s necessary to ensure that the EFIESP volume GUID is set to _C12A7328-F81F-11D2-BA4B-00A0C93EC93B_.
-
-### Device Guard on Windows IoT Core
-
-Most IoT devices are built as fixed-function devices.  This implies that device builders know exactly which firmware, operating system, drivers and applications should be running on a given device.  In turn, this information can be used to fully lockdown an IoT device by only allowing execution of known and trusted code.  Device Guard on Windows 10 IoT Core can help protect IoT devices by ensuring that unknown or untrusted executable code cannot be run on locked-down devices.
+Additional information on the Windows 10 boot process can be found [here](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process).
 
 ## Locking-down IoT Devices
 
-In order to lockdown a Windows IoT device, the following considerations must be made...
+In order to lockdown a Windows IoT device, the following considerations must be made.
 
-### UEFI Platform & Secure Boot
+### Platform Secure Boot
 
-In order to leverage Device Guard capabilities, it is necessary to ensure that the boot binaries and UEFI firmware are signed and cannot be tampered with.  UEFI Secure Boot is the first policy enforcement point, located in UEFI.  It prevents tampering by restricting the system to only allow execution of boot binaries signed by a specified authority. Additional details on Secure Boot, along with key creation and management guidance, is available [here](https://technet.microsoft.com/library/dn747883.aspx).
+When the device is first powered on, the first step in the overall boot process is to load and run firmware boot loaders, which initialize the hardware on the devies and provide emergency flashing functionality. The UEFI environment is then loaded and control is handed over.
 
-### Configurable Code Integrity (CCI)
+These firmware boot loaders are SoC-specific, so you will need to work with the appropriate device manufacturer to have these boot loaders created on the device.
 
-Code Integrity (CI) improves the security of the operating system by validating the integrity of a driver or application each time it is loaded into memory. CI contains two main components - Kernel Mode Code Integrity (KMCI) and User Mode Code Integrity (UMCI).
+### UEFI Secure Boot
+
+UEFI Secure Boot is the first policy enforcement point, and is located in UEFI.  It restricts the system to only allow execution of binaries signed by a specified authority, such as firmware drivers, option ROMs, UEFI drivers or applications, and UEFI boot loaders. This feature prevents unknown code from being executed on the platform and potentially weakening the security posture of it. Secure Boot reduces the risk of pre-boot malware attacks to the device, such as rootkits. 
+
+As the OEM, you need to store the UEFI Secure Boot databases on the IoT device at manufacture time. These databases include the Signature database (db), Revoked Signature database (dbx), and the Key Enrollment Key database (KEK). These databases are stored on the firmware nonvolatile RAM (NV-RAM) of the device.
+
+* **Signature Database (db):** This lists the signers or image hashes of operating system loaders, UEFI applications and UEFI drivers that are allowed to be loaded on the device
+
+* **Revoked Signature Database (dbx):** This lists the signers or image hashes of operating system loaders, UEFI applications and UEFI drivers that are no longer trusted, and are *NOT* allowed to be loaded on the device 
+
+* **Key Enrollment Key database (KEK):** Contains a list of signing keys that can be used to update the signature and revoked signature databases.
+
+Once these databases are created and added to the device, the OEM locks the firmware from editing, and generates a platform signing key (PK). This key can be used to sign updates to the KEK or to disable UEFI Secure Boot.
+
+Here are the steps taken by UEFI Secure Boot:
+
+1. After the device is powered on, the signature databases are each checked against the platform signing key (PK).
+2. If the firmware isn't trusted, UEFI firmware initiates OEM-specific recovery to restore trusted firmware.
+3. If Windows Boot Manager cannot be loaded, the firmware will attempt to boot a backup copy of Windows Boot Manager. If this also fails, the UEFI firmware initiates OEM-specific remediation.
+4. Windows Boot Manager runs and verifies the digital signature of the Windows Kernel. If trusted, Windows Boot Manager passes control to the Windows Kernel.
+
+
+Additional details on Secure Boot, along with key creation and management guidance, is available [here](https://technet.microsoft.com/library/dn747883.aspx).
+
+### Windows Code Integrity
+
+Windows Code Integrity (WCI) improves the security of the operating system by validating the integrity of a driver or application each time it is loaded into memory. CI contains two main components - Kernel Mode Code Integrity (KMCI) and User Mode Code Integrity (UMCI).
 
 Configurable Code Integrity (CCI) is a feature in Windows 10 that allows device builders to lockdown a device and only allow it to run and execute code that is signed and trusted.  To do so, device builders can create a code integrity policy on a 'golden' device (final release version of hardware and software) and then secure and apply this policy on all devices on the factory floor.
 
 To learn more about deploying code integrity policies, auditing and enforcement, check out the latest technet documentation [here](https://technet.microsoft.com/itpro/windows/keep-secure/deploy-code-integrity-policies-steps).
+
+Here are the steps taken by Windows Code Integrity:
+
+1. Windows Kernel will verify all other components against the signature database before loading. This includes drivers, startup files and ELAM (Early Launch Anti-Malware).
+2. Windows Kernel will load the trusted components in the startup process, and prohibit loading of the untrusted components.
+3. Windows 10 IoT Core operating system loads, along with any installed applications.
+
+### BitLocker Device Encryption
+
+Windows 10 IoT Core also implements a lightweight version of BitLocker Device Encryption, protecting IoT devices against offline attacks. This capability has a strong dependency on the presence of a TPM on the platform, including the necessary pre-OS protocol in UEFI that conducts the necessary measurements. These pre-OS measurements ensure that the OS later has a definitive record of how the OS was launched; however, it does not enforce any execution restrictions.
+
+> [!TIP]
+> BitLocker functionality on Windows 10 IoT Core allows for automatic encryption of NTFS-based OS volume while binding all available NTFS data volumes to it. For this, it’s necessary to ensure that the EFIESP volume GUID is set to _C12A7328-F81F-11D2-BA4B-00A0C93EC93B_.
+
+### Device Guard on Windows IoT Core
+
+Most IoT devices are built as fixed-function devices. This implies that device builders know exactly which firmware, operating system, drivers and applications should be running on a given device. In turn, this information can be used to fully lockdown an IoT device by only allowing execution of known and trusted code. Device Guard on Windows 10 IoT Core can help protect IoT devices by ensuring that unknown or untrusted executable code cannot be run on locked-down devices.
+
 
 ## Turnkey Security on IoT Core
 
@@ -122,13 +163,7 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
     * **Secure your generated keys** as the device will trust binaries signed with these keys only after lockdown.
     * You may skip this step and use the pre-generated keys for testing only
 
-5. Install the generated .pfx certificates by clicking on the pfx files directly or using the below powershell command
-
-    ```powershell
-    Import-PfxCertificate -FilePath $pfxfile -CertStoreLocation Cert:\CurrentUser\My
-    ```
-
-6. Configure _settings.xml_
+5. Configure _settings.xml_
 
     * General section : Specify the package directories
     * Tools section : Set the path for the tools
@@ -146,12 +181,6 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
 
 > [!IMPORTANT]
 > In order to assist with testing during the initial development cycle, Microsoft has provided pre-generated keys and certificates where appropriate.  This implies that Microsoft Test, Development and Pre-Release binaries are considered trusted.  During final product creation and image generation, be sure to remove these certifcates and use your own keys to ensure a fully locked down device.
-
-> [!TIP]
-> The apps from Microsoft App Store can be allowed by including the Microsoft Marketplace PCA 2011 certificate in the configuration _settings.xml_: 
-    ```xml
-    <Cert>db\MicrosoftMarketPlacePCA2011.cer</Cert>              <!-- Microsoft MarketPlace PCA 2011 -->
-    ```
 
 6.Execute the following commands to generate required packages:
 
@@ -195,25 +224,13 @@ You can test the generated packages by manually installing them on a unlocked de
 6. The device will reboot into update OS (showing gears) to install the packages and will reboot again to main OS.  Once the device reboots back into MainOS, Secure Boot will be enabled and SIPolicy should be engaged.
 7. Reboot the device again to activate the Bitlocker encryption.
 8. Test the security features
-    * **SecureBoot** : try `bcdedit /debug on` , you will get an error stating that the value is protected by secure boot policy.
-   * **BitLocker** : To validate that bitlocker encryption has been completed, run<p>
-        `sectask.exe -waitenableforcompletion 1`<p>
-        If it returns 0, that means all drives on the system have been bitlockered successfully.  Any other return code is failure.<p>
-        *Additional Syntax*<p>
-         `-waitenableforcompletion [timeout]` <p>
-        => Wait until BitLocker encryption is completed on all NTFS volumes.<p>
-        => Timeout in seconds to wait for enable to complete.<p>
-        => If timeout not specified, it will wait indefinitely or until enable completes.<p>
-        Returns: <p>
-        0 : BitLocker encryption successfully completed, volume is Bitlocker encrypted.<p>
-        ERROR_TIMEOUT: Timeout waiting for completion, encryption still in progress.<p>
-        Failure/Other code: returns the failure error code returned by the bit locker service.
-
-    * **DeviceGuard** : Run any unsigned binary or a binary signed with certificate not in the SIPolicy list and confirm that it fails to run.
+    * SecureBoot: try `bcdedit /debug on` , you will get an error stating that the value is protected by secure boot policy
+    * BitLocker: Run `fvecon -status c:`, you will get the status mentioning *On, Encrypted, Has Recovery Data (external key), Has TPM Data, Secure, Boot Partition, Used Space Only*
+    * DeviceGuard : Run any unsigned binary or a binary signed with certificate not in the SIPolicy list and confirm that it fails to run.
 
 ### Generate Lockdown image
 
-After validating that the lockdown packages are working as per the settings defined earlier, you can then include these packages into the image by following the below given steps. Read [IoT manufacturing guide](https://aka.ms/iotcoreguide) for custom image creation instructions.
+After validating that the lockdown packages are working as per the settings defined earlier, you can then include these packages into the image by following the below given steps. Read the [IoT manufacturing guide](https://aka.ms/iotcoreguide) for custom image creation instructions.
 
 1. In the workspace directory, update the following files from the generated output directory above
     * SecureBoot : `Copy ..\Output\SecureBoot\*.bin  ..\Workspace\Common\Packages\Security.SecureBoot`
@@ -262,29 +279,8 @@ If the contents need to be frequently accessed offline, BitLocker autounlock can
 ### Disabling BitLocker
 
 Should there arise a need to temporarily disable BitLocker, initate a remote PowerShell session with your IoT device and run the following command: `sectask.exe -disable`.  
-**Note:** Device encryption will be re-enabled on subsequent device boot unless the scheduled encryption task is disabled.
 
-### Disabling Device Guard
-
-The turnkey security script generates SIPolicyOn.p7b and SIPolicyOff.p7b files in the folder.
-The wm.xml packages the SIPolicyOn.p7b and places it on the system as SIPolicy.p7b.
-
-For example:
-
-```
-C:\src\iot-adk-addonkit.db410c\TurnkeySecurity\QCDB\Output\DeviceGuard\Security.DeviceGuard.wm.xml
-…
-    <files>
-        <file
-            destinationDir="$(runtime.bootDrive)\efi\microsoft\boot"
-            source="SIPolicyOn.p7b"
-            name="SIPolicy.p7b" />
-    </files>
-..
-
-```
-
-If you create a package that takes the SIPolicyOff.p7b file and places it as a SIPolicy.p7b, it will apply this package and the Device Guard will be turned off.
-
+> [!NOTE]
+> Device encryption will be re-enabled on subsequent device boot unless the scheduled encryption task is disabled.
 
 

@@ -30,22 +30,24 @@ WDP is a developer tool shared among all Windows 10 devices. Each product has it
 Documentation for the main features are found on the [Windows Device Portal overview page](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal). The rest of the documentation below will be IoT specific.
 
 ## Set up
-1. Connect your board to the internet
 
-    To get WDP up and running, you first need to connect your device to your network.
+There are two ways to go get the Windows Device Portal up and running.
 
-2. Find your device in IoT Dashboard and connect. Click on the ellipses under the "Actions" column.
+### 1. Windows 10 IoT Dashboard
 
-   ![IoTDashboard View Devices](../media/deviceportal/Dashboard-Action.gif)
+First, you'll want to download the [Windows 10 IoT Dashboard](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/iotdashboard), a developer tool that makes it easy to set up new devices. Once you've used the Dashboard to flash a Windows 10 IoT Core image onto your device, check that your device shows up under "My devices". 
 
-   Enter the IP address into your browser. Add `:8080` onto the end.
-   ![Browser IP](../media/DevicePortal/browser_ip.png)
-    
-3. Enter your credentials
-    Unless changed, the default credentials are:
+From there, use the ellipses under "Actions" to select "Open in Device Portal". From there, you'll be taken to the Device Portal authentication page where, unless you changed the credentials initially, the default credentials are: 
 
     Username: `Administrator`<br/>
     Password: `p@ssw0rd`
+ 
+ ### 2. Browser
+If you cannot find your device in the dashboard or prefer to skip using the dashboard, you can also open the Device Portal by entering the IP address of your device plus `:8080` onto the end. When done correctly, it should look something like this:
+
+
+   ![IoTDashboard View Devices](../media/deviceportal/Dashboard-Action.gif)
+
     
 ## IoT specific features
 

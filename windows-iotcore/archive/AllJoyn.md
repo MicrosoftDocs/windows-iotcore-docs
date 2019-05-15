@@ -11,7 +11,7 @@ keywords: windows iot, AllJoyn
 ---
 
 > [!NOTE]
-> You are viewing archived documentation. AllJoyn is no longer supported by Windows 10 IoT. For questions, please open an issue on GitHub or leave us feedback in the comments below.
+> You are viewing archived documentation. AllJoyn is no longer supported by Windows 10 IoT. For questions, alternatives, the app-layer IoT protocol that serves for AllJoyn is the [Open Connectivity Foundation](https://openconnectivity.org). The standard implementation of the OCF spec is Iotivity - Windows support for Iotivity can be found [here](https://wiki.iotivity.org/windows).
 
 # AllJoyn
 

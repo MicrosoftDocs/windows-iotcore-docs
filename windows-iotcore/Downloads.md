@@ -14,26 +14,21 @@ Download the tools and software you need to get started with Windows 10 IoT Core
 
 ## Windows 10 IoT Core Dashboard
 
-The Windows 10 IoT Core Dashboard makes flashing Windows 10 IoT Core onto your device simpler with a navigable interface.
+The Windows 10 IoT Core Dashboard makes flashing Windows 10 IoT Core onto your device simpler with a navigable interface. Once downloaded, learn how to set up your device with the dashboard [here](https://docs.microsoft.com/en-gb/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-raspberry-pi-minnowboard-nxp).
 
-[Download the Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/?LinkID=708576)
+> [!div class="nextstepaction"]
+> [Download the Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/?LinkID=708576)
 
 _By downloading and using the Windows 10 IoT Core Dashboard you agree to the [license terms](http://go.microsoft.com/fwlink/?LinkID=703960&clcid=0x4809) and [privacy statement](http://go.microsoft.com/fwlink/?LinkId=521839) for the Windows 10 IoT Core Dashboard._
 
 ![Image of the Windows 10 IoT Core Dashboard](media/IoTDashboard/DASHBOARD-800x450.jpg)
 
-
-## Windows Insider Program
-
-Get the most up-to-date images under development to try out new features. To join the program, you'll need to sign up for the Windows Insider Program before you're able to download the Insider Preview.
-
-[Get Insider Preview for Windows 10 IoT Core](http://go.microsoft.com/fwlink/?LinkId=733603)
-
 ## Latest Windows 10 IoT Core builds
 
-> [!IMPORTANT]
+> [!WARNING]
 > Do not use maker images for commercialization. If you are commercializing a device, you must use a custom FFU for optimal security. Learn more [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
 
+When commercializing your IoT Solution, you will need to download builds from the [Microsoft Software Downloads site](https://www.microsoft.com/en-us/software-download/windows10IoTCore#!). We've included releases from the past below as well in case you need to work with a previous build of Windows 10 IoT Core for your device. 
 
 ### October 2018 Release
 
@@ -62,6 +57,9 @@ Get the most up-to-date images under development to try out new features. To joi
 
 
 ## Other downloads
+
+### [mDNS Responder](https://go.microsoft.com/fwlink/?linkid=2077676)
+Download the Bonjour-compatible mDNS Responder for Windows IoT (sample source). Learn more [here](mDNS.md).
 
 ### [Firmware Update](http://firmware.intel.com/projects/minnowboard-max)
 Download firmware components and updates for the MinnowBoard Max reference board from Intel.

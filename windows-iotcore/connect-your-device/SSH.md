@@ -17,11 +17,11 @@ Secure Shell (SSH) allows you to remotely administer and configure your Windows 
 
 The **OpenSSH Client** was added to Windows 10 in 1803 (build 17134) as an optional feature. To install the client you can search for **Manage Optional Features** in Windows 10 settings. If the **OpenSSH Client** is not listed in the list of installed features then choose **Add a feature**.
 
-    ![Add a feature](../media/SSH/add_a_feature.png)
+![Add a feature](../media/SSH/add_a_feature.png)
 
 Next select **OpenSSH Client** in the list and click **Install**.
 
-    ![OpenSSH Client Install](../media/SSH/optional_features.png)
+![OpenSSH Client Install](../media/SSH/optional_features.png)
 
 To login with a username and password use the following command:
 

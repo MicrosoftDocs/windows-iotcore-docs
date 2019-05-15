@@ -61,6 +61,10 @@ with, you can imprint the shared access key of that device on your TPM:
 
 Your device is now ready to connect to Azure in a secure way. 
 
+You can also use the Windows Device Portal to dynamically acquire an IoT Hub connection string when it first connects to the internet after being provisioned. This can be done from the "Azure Clients" tab in the Device Portal.
+
+![Azure Clients tab](../media/ConnectDeviceToCloud/azure-clients.png)
+
 ## Helpful resources:
 * [Connecting your app to Azure](../connect-to-cloud/ConnectAppToCloud.md)
 * [Building secure apps for IoT Core](https://blogs.windows.com/buildingapps/2016/07/20/building-secure-apps-for-windows-iot-core/#oqFLXiWIL1iCF8j9.97)

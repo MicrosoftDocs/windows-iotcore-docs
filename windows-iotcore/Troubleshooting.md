@@ -5,12 +5,13 @@ title: 'Troubleshooting'
 ms.author: saclayt
 ms.date: 08/28/18
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
 ---
 
 # Troubleshooting
 This is an article that contains common troubleshooting issues that people have come across. To find something specific, use Ctrl+F to find a word or phrase. Have any insight you want to add? Create a PR for this documentation or provident content feedback below.
+
+> [!TIP]
+> For troubleshooting issues related to manufacturing, please read the [Troubleshooting doc](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/troubleshooting) in our manufacturing guide.
 
 ## ASUS Tinkerboard and Rockchip support
 
@@ -77,11 +78,12 @@ You may get error **0x139f (ERROR_INVALID_STATE)** in the case when the device i
 
 ## Raspberry Pi 3B+ booting issues
 
+> [!NOTE]
+> This release for the Raspberry Pi 3B+ is an unsupported technical preview. Limited validation and enablement has been completed. For a better evaluation experience and for any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm, or NXP SoCs. For troubleshooting issues with the Raspberry Pi 3B+, please see our Troubleshooting Guide, [here](https://docs.microsoft.com/en-us/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues). 
+
 The Raspberry Pi 3 Model B+ is the latest product in the Raspberry Pi 3 range, boasting a 64-bit quad core processor running at 1.4GHz, dual-band 2.4GHz and 5GHz wireless LAN, Bluetooth 4.2/BLE, faster Ethernet, and PoE capability via a separate PoE HA.
 
 Recently, many customers who are interested in Windows 10 IoT Core encountered a problem where the device could not boot normally after flushing Windows 10 IoT Core, but the Raspbian works fine on it. The following are some suggestions on how to troubleshoot the boot problem.
-
-The RPi 3B+ was announced in March this year (2018), but Microsoft had not announced that Windows 10 IoT Core fully supports RPi 3B+. The Insider preview image can be downloaded from [this link](https://www.microsoft.com/en-us/software-download/windowsiot). Currently there is no timeline for the 3B+ release version.
 
 There are some known issues in this Insider Preview image. Please note that:
 * This image is only meant for the Raspberry Pi 3B+ and will not boot on the Raspbierry Pi 2.
@@ -103,6 +105,8 @@ Check to see if there are any hardware failure in the device. There are two LEDs
 When the device is booting and the device shows the waiting page, please wait patiently. Generally, this will last up to a minute. But sometimes, due to the SD card read-write speed, it may take longer.
 
 If the device can't boot normally with Windows 10 IoT Core, you can try to flash a Linux OS (such as Raspbian) to the SD card to narrow down whether the issue is caused by hardware. 
+
+If you find that you're getting a "rainbow screen", please check to make sure that you flashed the 3B+ release version, available [here](https://www.microsoft.com/en-us/software-download/windowsiot). You can verify your process with a community-submitted 3B+ flashing tutorial [here](https://www.hackster.io/JiongShi/windows-10-iot-core-for-raspberry-pi-3-model-b-92b1a3).
 
 ## Serial Port communication on Windows 10 IoT Core for Raspberry Pi 
 
@@ -140,6 +144,42 @@ USB\VID_10C4&PID_EA60\0001
 ```
 [Mincomm](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/BusTools/MinComm) is another helpful tool to troubleshoot serial port issues. This tool can enumerate ports, give you their friendly name and Device ID, open ports, configure settings (i.e. baud rate, stop bits, etc.) and send and receive data. 
 
+## Sirep Test service
+Even though the Sirep Test service is not enabled by default in retail images, in case you still want to disable the Sirep service on startup, you can login and disable Sirep from autostart. 
+
+You can use the following PowerShell commands to do so, as shown below:
+
+```
+administrator@MINWINPC C:\Data\Users\administrator>sc stop TestSirepSvc
+
+SERVICE_NAME: TestSirepSvc
+       TYPE               : 20  WIN32_SHARE_PROCESS
+        STATE              : 3  STOP_PENDING
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_PRESHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x4
+        WAIT_HINT          : 0x1770
+
+administrator@MINWINPC C:\Data\Users\administrator>sc query TestSirepSvc
+
+SERVICE_NAME: TestSirepSvc
+        TYPE               : 20  WIN32_SHARE_PROCESS
+        STATE              : 1  STOPPED
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+administrator@MINWINPC C:\Data\Users\administrator>sc config TestSirepSvc start=disabled
+[SC] ChangeServiceConfig SUCCESS
+```
+
+## Tablet mode
+
+"Tablet Mode" is a concept that only exist on Desktop shell and doesn’t apply to IoT Core. 
+
+If the device have supported hardware (either through I2C or USB HID touch), touch should function automatically using the inbox class drivers. You can read more about this [here](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/touchscreen-device-bus-connectivity).
 
 
 ## Yubikey support

@@ -16,13 +16,13 @@ When it comes to connected devices, remote device management is one of the key f
 
 With Windows IoT Core running in devices such as home appliances, HVAC systems and others, there is a need for a customizable, light weight device management solution. In the Windows Creator Edition, Microsoft enables [Azure IoT Hub device management](https://docs.microsoft.com/azure/iot-hub/iot-hub-device-management-overview). OEMs can use the [Windows IoT Azure DM client library](https://aka.ms/iot-core-azure-dm-client) to add device management capabilities to their Azure IoT hub connected devices. This library will access the standard Windows device management components ([Configuration Service Providers](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference), CSP).  OEMs can now build devices that support SCCM, Intune and Azure IoT Hub for device management and leave it up to their customers to select the type DM solution that fits them best. 
 
-![Azure IoT Hub Device Management](../media/AzureIoTDM/azureDM.PNG)
+![Azure IoT Hub Device Management](../media/AzureIoTDM/azureDM.png)
 
 ## How does it work?
 
 The [Windows IoT Azure DM client library](https://aka.ms/iot-core-azure-dm-client) is linked in the host application. It shares the Azure IoT Hub connection with the host app. Thus making additional enrollment to enable device management unnecessary. The picture below shows the architecture for an Azure IoT Hub DM solution using the Windows IoT Azure DM client library. 
 
-![Azure DM Flow Chart](../media/AzureIoTDM/flowChartAzureDM.PNG)
+![Azure DM Flow Chart](../media/AzureIoTDM/AzureDM-Architecture.png)
 
 Microsoft provides two system components, CommProxy.exe and SystemConfigurator.exe, which the OEM needs to include in the device image. These components give access to the CSPs. The IoTDMClientLib maps the CSP interface to functions that can be consumed by Azure IoT Hub device management. It also provides DM functions that don’t use a CSP, e.g. set time zone. The IoTDMClientLib is provided as an open source component. OEMs can extend it to add DM capabilities that are specific to their device such as configurations for sensors or actuators. 
 

@@ -101,7 +101,7 @@ To identify your current device name, simply type `hostname`. To change the name
 
 ### **Basic network configuration:**
 
-Many of the basic network configuration utilities you may already be familiar with are available in Windows IoT Core, including commands such as `ping.exe`, `netstat.exe`, `netsh.exe`, `ipconfig.exe`, `nslookup.exe`, `tracert.exe`, and `arp.exe`.
+Many of the basic network configuration utilities you may already be familiar with are available in Windows IoT Core, including commands such as `ping.exe`, `netstat.exe`, `netsh.exe`, `ipconfig.exe`, `tracert.exe`, and `arp.exe`.
 
 ### **Copy utilities:**
 

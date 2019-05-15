@@ -9,6 +9,10 @@ keywords: windows iot, Arduino, Arduino wiring, Windows Remote Arduino
 ---
 
 # Arduino and Windows 10
+
+> [!IMPORTANT]
+> The Windows 10 IoT team is no longer actively maintaining Arduino.
+
 Arduino and Windows 10 work together to help you make amazing projects - get started by clicking one of the links below. Our technologies support the Arduino Uno and Mega, as well as the new Arduino 101.
 
 ## Arduino Wiring for Windows 10 IoT Core Devices

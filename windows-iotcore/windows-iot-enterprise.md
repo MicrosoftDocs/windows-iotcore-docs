@@ -10,12 +10,17 @@ keywords: Windows 10 IoT Enterprise, Enterprise, binary, Windows
 
 # An overview of Windows 10 IoT Enterprise
 
+> [!NOTE]
+> Windows 10 Containers can only be used with Windows IoT Core and Windows IoT Enterprise for commercial deployments utilizing Microsoft Azure IoT Edge.
+
 ## What is Windows 10 IoT Enterprise?
 Windows 10 IoT Enterprise is a full version of Windows 10 that delivers enterprise manageability and security to IoT solutions. Windows 10 IoT Enterprise shares all the benefits of the world-wide Windows ecosystem. It is a binary equivalent to Windows 10 Enterprise, so you can use the same familiar development and management tools as client PCs and laptops.  However, when it comes to licensing and distribution, the desktop version and IoT versions differ. Note that Windows 10 IoT Enterprise offers both Long-term Servicing Channel (LTSC) and Semi-Annual Channel (SAC) options. OEMs can choose the version they require for their devices.
 
 ## Getting started 
 
-To learn about manufacturing Windows 10 IoT Enterprise, we recommend reading [the Windows 10 IoT Enterprise Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview).  
+In order to start your journey in manufacturing with Windows 10 IoT Enterprise, you'll need to reach out to a distributor from [this list](https://go.microsoft.com/fwlink/p/?linkid=2069623).
+
+From there, you can learn how to manufacture with Windows 10 IoT Enterprise with our [the Windows 10 IoT Enterprise Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview). 
 
 ## Fixed purpose devices 
 
@@ -39,7 +44,7 @@ Specialized systems, such as PCs that control medical equipment, point-of-sale s
 
 ## Long-Term Support Silicon Details
 
-The Fall 2018 release of Windows 10 IoT Enterprise will also be an LTSC release. The list below encompasses all processors expected to be supported on the Fall 2018 release. If you are planning to use an earlier release of Windows 10 IoT Enterprise, you can find details on the processor support [here](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements#windows-iot-enterprise--embedded-processor-table).
+The Windows 10 IoT Enterprise 2019 release will be a LTSC release. The list below encompasses all processors expected to be supported for this release. If you are planning to use an earlier release of Windows 10 IoT Enterprise, you can find details on the processor support [here](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements#windows-iot-enterprise--embedded-processor-table).
 
 > | Windows 10 IoT Enterprise  |
 > |-------------|

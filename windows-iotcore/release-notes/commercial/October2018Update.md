@@ -11,6 +11,9 @@ keywords: Windows IoT, October 2018 Update, release notes
 # October 2018 Update Release Notes for Windows 10 IoT
 Build Number 17763. October 2018
 
+> [!IMPORTANT]
+> If you're using the [October 2018 Update](https://docs.microsoft.com/en-us/windows/iot-core/release-notes/commercial/october2018update), please use the [October Update (with January servicing pack, build 17763.253)](https://docs.microsoft.com/en-us/windows/iot-core/release-notes/commercial/17763) release instead. We have found that there are known issues that affect users of the October 2018 Update. 
+
 Windows 10 IoT enables development of embedded or dedicated-purpose devices and is the choice for OEMs and developers building Windows solutions for smart devices.
 
 This document provides information that supplements other content and documentation for this release of Windows 10 IoT.
