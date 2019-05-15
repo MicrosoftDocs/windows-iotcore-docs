@@ -25,9 +25,10 @@ _By downloading and using the Windows 10 IoT Core Dashboard you agree to the [li
 
 ## Latest Windows 10 IoT Core builds
 
-> [!IMPORTANT]
+> [!WARNING]
 > Do not use maker images for commercialization. If you are commercializing a device, you must use a custom FFU for optimal security. Learn more [here](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
 
+When commercializing your IoT Solution, you will need to download builds from the [Microsoft Software Downloads site](https://www.microsoft.com/en-us/software-download/windows10IoTCore#!). We've included releases from the past below as well in case you need to work with a previous build of Windows 10 IoT Core for your device. 
 
 ### October 2018 Release
 
