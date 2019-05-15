@@ -30,7 +30,7 @@ Windows IoT Core uses TPM 2.0 as hardware security platform. OEMs are recommende
 
 For more information about TPMs look [TPM Overview](https://docs.microsoft.com/en-us/windows/iot-core/secure-your-device/tpm) and [How to setup a TPM](https://docs.microsoft.com/en-us/windows/iot-core/secure-your-device/setuptpm).
 
-### Onboard Storage Options
+### Storage Options
 Development boards, like the popular Raspberry Pi 3, offer flexibility and allow developers to easily boot any platform via a removable SD card. For most industry IoT devices, such flexibility is not desirable and can make such devices an easy target for attacks. Instead, when designing your hardware, consider using an eMMC storage for your smaller, low cost IoT devices. Embedded storage makes it significantly more difficult to separate the content from the device and in turn, reduces the potential of introducing malware onto the device or data theft.
 
 ## Creating a retail image 
