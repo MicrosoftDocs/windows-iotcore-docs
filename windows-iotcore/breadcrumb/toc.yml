@@ -10,43 +10,63 @@
         tocHref: /windows/iot-core/
         topicHref: "/windows/iot-core/index"  
         items:
-              - name: Windows 10 IoT Enterprise
-                tocHref: /windows/iot-core/windows-iot-enterprise/
-                topicHref: "/windows/iot-core/windows-iot-enterprise" 
               - name: Windows 10 IoT Core
                 tocHref: /windows/iot-core/windows-iot-core/
                 topicHref: "/windows/iot-core/windows-iot-core"
-              - name: Tutorials
+              - name: Windows 10 IoT Enterprise
+                tocHref: /windows/iot-core/windows-iot-enterprise/
+                topicHref: "/windows/iot-core/windows-iot-enterprise" 
+              - name: Windows Server IoT 2019
+                tocHref: /windows/iot-core/windows-server/
+                topicHref: "/windows/iot-core/windows-server" 
+              - name: Get started
+                tocHref: /windows/iot-core/getstarted/
+                topicHref: "/windows/iot-core/getstarted/" 
+              - name: Quickstarts
                 tocHref: /windows/iot-core/Tutorials/
                 topicHref: "/windows/iot-core/Tutorials/PrototypeBoards.md"
-              - name: Learn about hardware
+              - name: Hardware guidance
                 tocHref: /windows/iot-core/learn-about-hardware/
                 topicHref: "/windows/iot-core/learn-about-hardware/suggestedboards"  
-              - name: Connect your device
+              - name: Driver guidance
+                tocHref: /windows/iot-core/learn-about-hardware/
+                topicHref: "/windows/iot-core/learn-about-hardware/driverdeployment"  
+              - name: Develop applications
+                tocHref: /windows/iot-core/develop-your-app/
+                topicHref: "/windows/iot-core/develop-your-app/buildingappsforiotcore" 
+              - name: Debug applications
+                tocHref: /windows/iot-core/manage-your-device/
+                topicHref: "/windows/iot-core/manage-your-device/overview" 
+              - name: Developer tools
                 tocHref: /windows/iot-core/connect-your-device/
                 topicHref: "/windows/iot-core/connect-your-device/iotdashboard" 
-              - name: Build your image
-                tocHref: /windows/iot-core/build-your-image/
-                topicHref: "/windows/iot-core/build-your-image/createbsps" 
-              - name: Manage your device
+              - name: Connectivity
+                tocHref: /windows/iot-core/connect-your-device/
+                topicHref: "/windows/iot-core/connect-your-device/setupwifidirect" 
+              - name: Manage devices
                 tocHref: /windows/iot-core/manage-your-device/
                 topicHref: "/windows/iot-core/manage-your-device/deviceportal"
-              - name: Secure your device
+              - name: Secure device
                 tocHref: /windows/iot-core/secure-your-device/
                 topicHref: "/windows/iot-core/secure-your-device/buildingsecuredevices"  
-              - name: Develop your app
-                tocHref: /windows/iot-core/develop-your-app/
-                topicHref: "/windows/iot-core/develop-your-app/appdeployment" 
-              - name: Connect to the cloud
+              - name: Azure guidance
                 tocHref: /windows/iot-core/connect-to-cloud/
                 topicHref: "/windows/iot-core/connect-to-cloud/overview"
-              - name: Extend your app
-                tocHref: /windows/iot-core/extend-your-app/
-                topicHref: "/windows/iot-core/extend-your-app/cortanaoniotcore"
-              - name: Commercialize your device
-                tocHref: /windows/iot-core/commercialize-your-device/
-                topicHref: "/windows/iot-core/commercialize-your-device/oemlicenserequirements" 
               - name: Release notes
                 tocHref: /windows/iot-core/release-notes/
                 topicHref: "/windows/iot-core/release-notes/rtm/creatorsupdate"  
-                   
+              - name: Troubleshooting
+                tocHref: /windows/iot-core/troubleshooting/
+                topicHref: "/windows/iot-core/troubleshooting/"  
+              - name: Downloads
+                tocHref: /windows/iot-core/downloads/
+                topicHref: "/windows/iot-core/downloads/"
+              - name: Resources
+                tocHref: /windows/iot-core/resources/
+                topicHref: "/windows/iot-core/resources/"  
+              - name: Accessibility
+                tocHref: /windows/iot-core/accessibility/
+                topicHref: "/windows/iot-core/accessibility/"  
+              - name: Glossary
+                tocHref: /windows/iot-core/glossary/
+                topicHref: "/windows/iot-core/glossary/"  
