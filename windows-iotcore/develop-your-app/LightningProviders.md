@@ -37,7 +37,7 @@ Each of the samples references the Lightning SDK and is configured properly to u
 
 Additionally, it's straightforward to add the required Lightning providers Nuget reference and support to a new or existing application. Follow the steps below:
 
-1. In your application, right click the project and click the "Manage NuGet Packages..." menu item
+1. In your application, right click the project and click the "Manage NuGet Packages..." menu item  
 ![UWP Project](../media/LightningProviders/manage-nuget-project.png)
 
 2. The NuGet Package Manager will open. In the Browse tab, search for the "Lightning SDK", making sure to check the "Include prerelease" checkbox.
