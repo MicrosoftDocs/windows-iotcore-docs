@@ -11,6 +11,7 @@ keywords: windows iot, security, firmware, secure boot, TPM, Bitlocker, encrypti
 # Building Secure Devices with Windows 10 IoT Core
 
 ## Introduction  
+
 With Windows 10 IoT Core, Microsoft is bringing strong enterprise grade security features that can be leveraged on smaller, resource constrained classes of IoT devices. For these security features to offer tangible benefits, the hardware platform must also provide a means to anchor them. This document provides high-level guidance to OEM device builders and security conscious 'Makers' who are looking to select appropriate hardware and build, configure, and ship a secure IoT device to their customers.
 ![Data Security](../media/SecurityFlowAndCertificates/DataRestExecutionMotion.png)
 
@@ -18,6 +19,11 @@ With Windows 10 IoT Core, Microsoft is bringing strong enterprise grade security
 This section will help developers and OEMs through the process of building secure IoT devices with Windows IoT Core. We will address the selection of hardware to support platform security features as well as the production of security enabled IoT devices.
 
 ![Device Build Process](../media/SecurityFlowAndCertificates/DeviceBuildProcess.png)
+
+## Firmware  
+On general purpose computing devices that are "open", such as PCs, users can access firmware settings during device boot through various key combinations (e.g. F2 enters UEFI setup on most PCs today). This can allow users to make changes in how the platform boots as well as enable and disable various device ports, functions, and other potential security features available on the device.  
+
+Given the sensitive nature of such modifications, IoT devices should not function like "open devices", and should function more like "locked-down" devices, similar to mobile phones, where access to firmware is generally not permitted.  This can normally be accomplished by ensuring you are using locked-down firmware in your production device. Locked-down firmware should be available through your firmware provider.  At minimum, on devices where locked-down firmware is not available or potentially unsuitable, such as for use by Makers, consider protecting firmware settings access via a strong administrator password.
 
 ## Choosing security enabled hardware
 While Windows IoT Core has security capabilities build in to the platform to protect customer data, it relies on hardware security features to fully utilize these capabilities. In fact, software cannot protect itself as memory can be manipulated and there is no trust anchor or immutable device identity that can be provided through software alone. There are several ways to provide hardware-based security, e.g. smart cards, trusted platform modules (TPM) or security features build into the SoC. 
@@ -48,6 +54,3 @@ Microsoft is providing the [Turnkey Security Package](https://github.com/ms-iot/
 * Initiating device lockdown to only allow execution of signed applications and drivers
 
 A step-by-step guidance is described in the [Enabling Secure Boot, BitLocker, and Device Guard](https://docs.microsoft.com/en-us/windows/iot-core/secure-your-device/securebootandbitlocker) section.
-
-## Device Production
-Once the lockdown image is validated it can be used for manufacturing. For more information see [IoT Core manufacturing](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/)
