@@ -16,10 +16,10 @@
               - name: Windows 10 IoT Enterprise
                 tocHref: /windows/iot-core/windows-iot-enterprise/
                 topicHref: "/windows/iot-core/windows-iot-enterprise" 
-               - name: Windows Server IoT 2019
+              - name: Windows Server IoT 2019
                 tocHref: /windows/iot-core/windows-server/
                 topicHref: "/windows/iot-core/windows-server" 
-                - name: Get started
+               - name: Get started
                 tocHref: /windows/iot-core/getstarted/
                 topicHref: "/windows/iot-core/getstarted/" 
               - name: Quickstarts
@@ -31,13 +31,13 @@
               - name: Driver guidance
                 tocHref: /windows/iot-core/learn-about-hardware/
                 topicHref: "/windows/iot-core/learn-about-hardware/driverdeployment"  
-               - name: Develop applications
+              - name: Develop applications
                 tocHref: /windows/iot-core/develop-your-app/
                 topicHref: "/windows/iot-core/develop-your-app/buildingappsforiotcore" 
-               - name: Debug applications
+              - name: Debug applications
                 tocHref: /windows/iot-core/manage-your-device/
                 topicHref: "/windows/iot-core/manage-your-device/overview" 
-               - name: Developer tools
+              - name: Developer tools
                 tocHref: /windows/iot-core/connect-your-device/
                 topicHref: "/windows/iot-core/connect-your-device/iotdashboard" 
               - name: Connectivity
@@ -55,18 +55,18 @@
               - name: Release notes
                 tocHref: /windows/iot-core/release-notes/
                 topicHref: "/windows/iot-core/release-notes/rtm/creatorsupdate"  
-               - name: Troubleshooting
+              - name: Troubleshooting
                 tocHref: /windows/iot-core/troubleshooting/
                 topicHref: "/windows/iot-core/troubleshooting/"  
-               - name: Downloads
+              - name: Downloads
                 tocHref: /windows/iot-core/downloads/
                 topicHref: "/windows/iot-core/downloads/"
-               - name: Resources
+              - name: Resources
                 tocHref: /windows/iot-core/resources/
                 topicHref: "/windows/iot-core/resources/"  
-                - name: Accessibility
+              - name: Accessibility
                 tocHref: /windows/iot-core/accessibility/
                 topicHref: "/windows/iot-core/accessibility/"  
-                - name: Glossary
+              - name: Glossary
                 tocHref: /windows/iot-core/glossary/
                 topicHref: "/windows/iot-core/glossary/"  
