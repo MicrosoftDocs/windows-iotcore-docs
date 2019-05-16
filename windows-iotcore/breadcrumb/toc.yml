@@ -19,7 +19,7 @@
               - name: Windows Server IoT 2019
                 tocHref: /windows/iot-core/windows-server/
                 topicHref: "/windows/iot-core/windows-server" 
-               - name: Get started
+              - name: Get started
                 tocHref: /windows/iot-core/getstarted/
                 topicHref: "/windows/iot-core/getstarted/" 
               - name: Quickstarts
