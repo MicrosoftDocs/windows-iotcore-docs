@@ -1,7 +1,7 @@
 ---
 title: Building Secure Devices with Windows 10 IoT Core
-author: saraclay
-ms.author: saclayt
+author: TorstenStein
+ms.author: torstens
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to build secure devices by enabling secure boot, implementing TPMs, and more.
@@ -11,45 +11,46 @@ keywords: windows iot, security, firmware, secure boot, TPM, Bitlocker, encrypti
 # Building Secure Devices with Windows 10 IoT Core
 
 ## Introduction  
-With the introduction of Windows 10 IoT Core, Microsoft is bringing strong enterprise grade security features that can be leveraged on smaller, resource-constrained classes of IoT devices.  In order for these security features to offer tangible benefits, the hardware platform must also provide a means to anchor them. This document provides high-level guidance to OEM device builders and security conscious "Makers" who are looking to select appropriate hardware and build, configure, and ship a secure IoT device to their customers. 
+
+With Windows 10 IoT Core, Microsoft is bringing strong enterprise grade security features that can be leveraged on smaller, resource constrained classes of IoT devices. For these security features to offer tangible benefits, the hardware platform must also provide a means to anchor them. This document provides high-level guidance to OEM device builders and security conscious 'Makers' who are looking to select appropriate hardware and build, configure, and ship a secure IoT device to their customers.
+![Data Security](../media/SecurityFlowAndCertificates/DataRestExecutionMotion.png)
+
+## Building a secure IoT devices  
+This section will help developers and OEMs through the process of building secure IoT devices with Windows IoT Core. We will address the selection of hardware to support platform security features as well as the production of security enabled IoT devices.
+
+![Device Build Process](../media/SecurityFlowAndCertificates/DeviceBuildProcess.png)
 
 ## Firmware  
 On general purpose computing devices that are "open", such as PCs, users can access firmware settings during device boot through various key combinations (e.g. F2 enters UEFI setup on most PCs today). This can allow users to make changes in how the platform boots as well as enable and disable various device ports, functions, and other potential security features available on the device.  
 
 Given the sensitive nature of such modifications, IoT devices should not function like "open devices", and should function more like "locked-down" devices, similar to mobile phones, where access to firmware is generally not permitted.  This can normally be accomplished by ensuring you are using locked-down firmware in your production device. Locked-down firmware should be available through your firmware provider.  At minimum, on devices where locked-down firmware is not available or potentially unsuitable, such as for use by Makers, consider protecting firmware settings access via a strong administrator password.
 
-## Enabling Secure Boot
-Windows 10 IoT Core will boot on devices that implement Unified Extensible Firmware Interface (UEFI).  The UEFI standard implements a security feature known as Secure Boot. This allows a device to only boot trusted software by restricting the system to only allow execution of binaries signed by a specified authority.  When a device is powered-up, UEFI Secure Boot checks the signature of each piece of boot software, including firmware drivers and the OS.  If the signatures do not match (e.g. if an attacker were to replace the original image with a compromised OS) the platform will not boot. If the signatures are verified and good, the device continues to boot and then gives control to the operating system.  Note that while the limitation to a defined set of publishing authorities excludes all unknown code, it does not necessarily prevent known bad code from being executed (e.g. rollback attacks).  Enabling Secure Boot is strongly recommended if your firmware supports it. 
+## Choosing security enabled hardware
+While Windows IoT Core has security capabilities build in to the platform to protect customer data, it relies on hardware security features to fully utilize these capabilities. In fact, software cannot protect itself as memory can be manipulated and there is no trust anchor or immutable device identity that can be provided through software alone. There are several ways to provide hardware-based security, e.g. smart cards, trusted platform modules (TPM) or security features build into the SoC. 
 
-Device manufacturers will need to store the Secure Boot databases onto their devices.  This includes the signature database (db), revoked signatures database (dbx), and Key Enrollment Key database (KEK).  These databases are generally stored on the firmware nonvolatile RAM (NV-RAM) at manufacturing time. The signature database (db) and the revoked signatures database (dbx) list the signers or image hashes of UEFI applications, operating system loaders (such as the Microsoft Operating System Loader or Boot Manager), and UEFI drivers that can be loaded on the device, as well as the revoked images for items that are no longer trusted and may not be loaded. The Key Enrollment Key database (KEK) is a separate database of signing keys that can be used to update the signature database and revoked signatures database. Microsoft requires a specified key to be included in the KEK database so that in the future Microsoft can add new operating systems to the signature database or add known bad images to the revoked signatures database.
+For more information about supported hardware platforms see section [SoCs and custom boards](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/socsandcustomboards) 
 
-After these databases have been added, and after final firmware validation and testing, firmware is locked from editing and a platform key (PK) can be generated and added. The PK can subsequently be used to sign updates to the KEK or make any desired changes to the secure variables. 
+### Trusted Platform Module
+Windows IoT Core uses TPM 2.0 as hardware security platform. OEMs are recommended to use a hardware platform that provides TPM 2.0 to fully take advantage of the Windows IoT Core security features such as BitLocker, Secure Boot, Azure credential storage and others. There are two options for production devices to implements a TPM, as discreet TPM (dTPM) or as firmware TPM (fTPM). Discrete TPMs are available from several manufactures such as Infineon, NazionZ and others. Some SoC manufactures provided fTPM implementations as part of the BSP. 
 
-Device builders should contact their firmware manufacturer for tools and assistance in creating these databases. Visit this [TechNet article](https://technet.microsoft.com/library/dn747883.aspx) for more information about Secure Boot key creation and management.
+For more information about TPMs look [TPM Overview](https://docs.microsoft.com/en-us/windows/iot-core/secure-your-device/tpm) and [How to setup a TPM](https://docs.microsoft.com/en-us/windows/iot-core/secure-your-device/setuptpm).
 
-## Implementing TPMs  
-A Trusted Platform Module (TPM) is a cryptographic coprocessor including capabilities for random number generation, secure generation of cryptographic keys and limitation of their use. It also includes capabilities such as remote attestation and sealed storage. TPM’s technical specification is publicly available and is driven by a standards body called the Trusted Computing Group (TCG).  TPM 2.0 is available as a discrete component (from various manufacturers) as well as within some SOCs, implemented in firmware.
+### Storage Options
+Development boards, like the popular Raspberry Pi 3, offer flexibility and allow developers to easily boot any platform via a removable SD card. For most industry IoT devices, such flexibility is not desirable and can make such devices an easy target for attacks. Instead, when designing your hardware, consider using an eMMC storage for your smaller, low cost IoT devices. Embedded storage makes it significantly more difficult to separate the content from the device and in turn, reduces the potential of introducing malware onto the device or data theft.
 
-Devices that incorporate a TPM can create cryptographic keys and encrypt them so that they can only be decrypted by the TPM. This process, often called "wrapping" or "binding" a key, can help protect the key from disclosure. Each TPM has a master "wrapping" key, called the storage root key (SRK), which is stored within the TPM itself. The private portion of a key created in a TPM is never exposed to any other component, software, process, or person. Furthermore, devices that incorporate a TPM can also create a key that has not only been wrapped but is also tied to certain platform measurements. This type of key can only be unwrapped when those platform measurements have the same values that they had when the key was created. This process is called "sealing" the key to the TPM, while decrypting the key is called "unsealing". The TPM can also seal and unseal data generated outside of the TPM. With this sealed key and software such as BitLocker Drive Encryption, you can lock data until specific hardware or software conditions are met. 
+## Creating a retail image 
+When [Creating a Windows IoT Core retail image](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide), ensure that no developer tools that allow remote access and debug are present on production systems as these can potentially open your device to attacks. Make sure that, if you're using developer tools like [Windows Device Portal](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/remotedisplay), [FTP Server](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/ftp), [SSH](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/ssh), or [PowerShell](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/powershell) in your images during development, that you test and validate your scenarios on retail IoT Core images that do not include these tools.
 
-With a TPM, private portions of key pairs are kept separate from the memory controlled by the operating system. Keys can be sealed to the TPM, and certain assurances about the state of a system (assurances that define the "trustworthiness" of a system) can be made before the keys are unsealed and released for use. Because the TPM uses its own internal firmware and logic circuits for processing instructions, it does not rely on the operating system and is not exposed to vulnerabilities that might exist in the operating system or application software.
+### User Accounts
+Most users are familiar with the notion of taking "ownership" of devices like PCs and phones - the idea of personalizing the device when unboxed and setting up credentials to access the device. Unlike consumer PCs and phones, IoT devices are not intended to serve as general purpose computing devices. Instead, they are usually single-app, fixed purpose devices. Though Windows supports the notion of device administrators that can remotely connect to devices during a development cycle, such support on industry IoT devices can pose a threat, especially when weak passwords are used. In general, Microsoft recommends that no "default" accounts or passwords should be created on Windows 10 IoT Core devices.
 
-> [!NOTE] 
-> Though some devices may incorporate an older TPM 1.2 chip, Windows 10 IoT Core only supports TPM 2.0.
+## Lockdown a retail image
+On general purpose computing devices, such as PCs, users can install applications, change settings, including for security features, to define the function of the device to suite best their operational needs. The majority of the IoT devices are fixed-function-devices that will not change the purpose over the device lifetime. These devices will still receive software updates or enable functional updates within their operational boundaries, e.g. improved the user interface or temperature regulation on a smart thermostat. This information can be used to fully lockdown an IoT device by only allowing execution of known and trusted code. Device Guard on Windows 10 IoT Core can help protect IoT devices by ensuring that unknown or untrusted executable code cannot be run on locked-down devices.
 
-## Enabling BitLocker Encryption  
-In order to protect data at rest (i.e. date stored on a device), Microsoft brought its enterprise-grade BitLocker Drive Encryption technology to IoT devices in Windows 10 IoT Core.  BitLocker ensures that data stored on a device remains encrypted, even if the device is tampered with while the OS is not running.  This helps protect against "offline attacks", attacks made by disabling or circumventing the installed operating system, or made by physically separating the storage media from the device in order to attack the data separately. 
+Microsoft is providing the [Turnkey Security Package](https://github.com/ms-iot/security/tree/master/TurnkeySecurity) to facilitate easy enablement of key security features on IoT Core devices, that allows device builders to build fully locked down IoT devices. The package will help with:
 
-BitLocker uses a Trusted Platform Module (TPM) to provide enhanced protection for your data and to assure early boot component integrity. This helps protect your data from theft or unauthorized viewing by encrypting the entire Windows volume and any data partitions that might be present on your device.
+* Provisioning Secure Boot keys and enabling the feature on supported IoT platforms
+* Setup and configuration of device encryption using BitLocker 
+* Initiating device lockdown to only allow execution of signed applications and drivers
 
-For additional instructions on how to enable BitLocker on Windows 10 IoT Core, follow the steps outlined [here](https://docs.microsoft.com/en-us/windows/iot-core/secure-your-device/securebootandbitlocker).
-
-## Onboard Storage Options
-Development boards, like the popular Raspberry Pi 3, offer flexibility and allow developers to easily boot any platform via a removable SD card.  For most industry IoT devices, such flexibility is not desirable and can make such devices an easy target for attacks. Instead, when designing your hardware, consider using an eMMC storage for your smaller, low cost IoT devices.  Embedded storage makes it significantly more difficult to separate the content from the device and in turn, reduces the potential of introducing malware onto the device or data theft. 
-
-## Developer Tools  
-When building your Windows 10 IoT Core image final shipping device using ICD (Image Configuration Designer), ensure that no developer tools are included in your retail image.  Tools that allows developers to remotely access and debug IoT Core devices should not be present on production systems as these can potentially open up your device to attacks.  Make sure that if you're using our developer tools like Windows Device Portal, ftp server, SSH, or PowerShell in your images during development, that you test and validate your scenarios on retail IoT Core images that do not include these tools.
-
-## User Accounts  
-Most users are familiar with the notion of taking "ownership" of devices like PCs and phones - the idea of personalizing the device when unboxed and setting up credentials to access the device. Unlike consumer PCs and phones, IoT devices are not intended to serve as general purpose computing devices. Instead, they are usually single-app, fixed purpose devices. Though Windows supports the notion of device administrators that can remotely connect to devices during a development cycle, such support on industry IoT devices can pose a threat, especially when weak passwords are used.  In general, Microsoft recommends that no "default" accounts or passwords should be created on Windows 10 IoT Core devices.
-
+A step-by-step guidance is described in the [Enabling Secure Boot, BitLocker, and Device Guard](https://docs.microsoft.com/en-us/windows/iot-core/secure-your-device/securebootandbitlocker) section.

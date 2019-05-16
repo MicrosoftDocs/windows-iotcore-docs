@@ -10,9 +10,31 @@ keywords: windows iot, secure boot, BitLocker, device guard, security, turnkey s
 
 # Enabling Secure Boot, BitLocker, and Device Guard on Windows 10 IoT Core
 
-Windows 10 IoT Core now includes security feature offerings such as UEFI Secure Boot, BitLocker Device Encryption and Device Guard.  These will assist device builders in creating fully locked down Windows IoT devices that are resilient to many different types of attacks.  Together, these features provide the optimal protection that ensures that a platform will launch in a defined way, while locking out unknown binaries and protecting user data through the use of device encryption.
+Windows 10 IoT Core includes security feature offerings such as UEFI Secure Boot, BitLocker Device Encryption and Device Guard.  These will assist device builders in creating fully locked down Windows IoT devices that are resilient to many different types of attacks.  Together, these features provide the optimal protection that ensures that a platform will launch in a defined way, while locking out unknown binaries and protecting user data through the use of device encryption.
 
 ## Boot Order
+
+An understanding of the boot order on a Windows 10 IoT Core device is needed before we can delve into the individual components that provide a secure platform for the IoT device.
+
+There are three main areas that occur from when an IoT device is powered on, all the way through to the OS kernel loading and execution of installed application.
+
+* Platform Secure Boot
+* Unified Extensible Firmware Interface (UEFI) Secure Boot
+* Windows Code Integrity
+
+![Boot Order](../media/SecureBootAndBitLocker/BootOrder.jpg)
+
+Additional information on the Windows 10 boot process can be found [here](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process).
+
+## Locking-down IoT Devices
+
+In order to lockdown a Windows IoT device, the following considerations must be made.
+
+### Platform Secure Boot
+
+When the device is first powered on, the first step in the overall boot process is to load and run firmware boot loaders, which initialize the hardware on the devies and provide emergency flashing functionality. The UEFI environment is then loaded and control is handed over.
+
+These firmware boot loaders are SoC-specific, so you will need to work with the appropriate device manufacturer to have these boot loaders created on the device.
 
 An understanding of the boot order on a Windows 10 IoT Core device is needed before we can delve into the individual components that provide a secure platform for the IoT device.
 
@@ -26,7 +48,19 @@ There are three main areas that occur from when an IoT device is powered on, all
 
 Additional information on the Windows 10 boot process can be found [here](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process).
 
-## Locking-down IoT Devices
+In order to lockdown a Windows IoT device, the following considerations must be made.
+
+### Platform Secure Boot
+
+When the device is first powered on, the first step in the overall boot process is to load and run firmware boot loaders, which initialize the hardware on the devies and provide emergency flashing functionality. The UEFI environment is then loaded and control is handed over.
+
+These firmware boot loaders are SoC-specific, so you will need to work with the appropriate device manufacturer to have these boot loaders created on the device.
+
+### UEFI Secure Boot
+
+UEFI Secure Boot is the first policy enforcement point, and is located in UEFI.  It restricts the system to only allow execution of binaries signed by a specified authority, such as firmware drivers, option ROMs, UEFI drivers or applications, and UEFI boot loaders. This feature prevents unknown code from being executed on the platform and potentially weakening the security posture of it. Secure Boot reduces the risk of pre-boot malware attacks to the device, such as rootkits. 
+
+As the OEM, you need to store the UEFI Secure Boot databases on the IoT device at manufacture time. These databases include the Signature database (db), Revoked Signature database (dbx), and the Key Enrollment Key database (KEK). These databases are stored on the firmware nonvolatile RAM (NV-RAM) of the device.
 
 In order to lockdown a Windows IoT device, the following considerations must be made.
 
@@ -56,7 +90,6 @@ Here are the steps taken by UEFI Secure Boot:
 2. If the firmware isn't trusted, UEFI firmware initiates OEM-specific recovery to restore trusted firmware.
 3. If Windows Boot Manager cannot be loaded, the firmware will attempt to boot a backup copy of Windows Boot Manager. If this also fails, the UEFI firmware initiates OEM-specific remediation.
 4. Windows Boot Manager runs and verifies the digital signature of the Windows Kernel. If trusted, Windows Boot Manager passes control to the Windows Kernel.
-
 
 Additional details on Secure Boot, along with key creation and management guidance, is available [here](https://technet.microsoft.com/library/dn747883.aspx).
 
@@ -88,11 +121,15 @@ Most IoT devices are built as fixed-function devices. This implies that device b
 
 ## Turnkey Security on IoT Core
 
-To facilitate easy enablement of key security features on IoT Core devices, Microsoft is providing a turnkey 'Security Package' that allows device builders to build fully locked down IoT devices.  This package will help with:
+To facilitate easy enablement of key security features on IoT Core devices, Microsoft is providing a [Turnkey Security Package]( https://github.com/ms-iot/security/tree/master/TurnkeySecurity) that allows device builders to build fully locked down IoT devices. This package will help with:
 
 * Provisioning Secure Boot keys and enabling the feature on supported IoT platforms
-* Setup and configuration of device encryption using BitLocker 
+* Setup and configuration of device encryption using BitLocker
 * Initiating device lockdown to only allow execution of signed applications and drivers
+
+The following steps will lead through the process to create a lockdown image using the [Turnkey Security Package]( https://github.com/ms-iot/security/tree/master/TurnkeySecurity)
+
+![Create lockdown image](../media/SecurityFlowAndCertificates/ImageLockDown.png)
 
 ### Prerequisites
 
