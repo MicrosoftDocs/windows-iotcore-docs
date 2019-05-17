@@ -22,6 +22,7 @@
 ## [Driver guidance]()
 ### [Driver deployment](learn-about-hardware/DriverDeployment.md)
 ### [Universal Driver Creation](learn-about-hardware/DriverCreation.md)
+### [USB Support](learn-about-hardware/usb-support.md)
 ### [Install USB peripheral drivers](learn-about-hardware/PeripheralDrivers.md) 
 ## [Develop applications]()
 ### [Foreground applications](develop-your-app/BuildingAppsForIoTCore.md)
