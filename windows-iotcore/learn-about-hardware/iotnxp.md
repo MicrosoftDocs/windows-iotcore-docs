@@ -97,6 +97,11 @@ Several Microsoft and NXP partners have enabled commercial i.MX 6, i.MX 7, and i
 </tr>
 
 <tr class="odd">
+<td align="left"><p><a href="http://www.wearedev.net/?mod=wadmx6w">WeAreDev WAD-MX6W</a></p></td>
+<td align="left"><p><p><a href="mailto:help@wearedev.net">help@wearedev.net</a></td>
+</tr>
+
+<tr class="odd">
 <td align="left"><p><a href="https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/i.mx-applications-processors/i.mx-6-processors/evaluation-kit-for-the-i.mx-6ull-and-6ulz-applications-processor:MCIMX6ULL-EVK">MCIMX6ULL-EVK</a></p></td>
 <td align="left"><p><p><a href="mailto:Wei.A.Wang@nxp.com">Wei Wang</a></p></td>
 </tr>
