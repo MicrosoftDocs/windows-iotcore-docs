@@ -128,5 +128,3 @@ Windows 10 IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Ente
 
 <h2>Bugs? Suggestions?</h2>
 <p>For any issues or bugs using Windows 10 IoT Core, please post them on the MSDN forums <a href="https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=WindowsIoT">here</a>. 
-<br><br>
-If you'd like to report a an issue or bug with our documentation, please file an issue on <a href="https://github.com/MicrosoftDocs/windows-iotcore-docs">our GitHub</a>. We will not respond to any support-related inquiries on our GitHub issues channel.
