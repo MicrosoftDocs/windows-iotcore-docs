@@ -54,3 +54,7 @@ Microsoft is providing the [Turnkey Security Package](https://github.com/ms-iot/
 * Initiating device lockdown to only allow execution of signed applications and drivers
 
 A step-by-step guidance is described in the [Enabling Secure Boot, BitLocker, and Device Guard](https://docs.microsoft.com/en-us/windows/iot-core/secure-your-device/securebootandbitlocker) section.
+
+## Device Production
+
+Once the lockdown image is validated it can be used for manufacturing. For more information see [IoT Core manufacturing](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/).
