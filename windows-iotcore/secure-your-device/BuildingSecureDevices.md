@@ -20,6 +20,7 @@ This section will help developers and OEMs through the process of building secur
 
 ![Device Build Process](../media/SecurityFlowAndCertificates/DeviceBuildProcess.png)
 
+
 ## Choosing security enabled hardware
 While Windows IoT Core has security capabilities build in to the platform to protect customer data, it relies on hardware security features to fully utilize these capabilities. In fact, software cannot protect itself as memory can be manipulated and there is no trust anchor or immutable device identity that can be provided through software alone. There are several ways to provide hardware-based security, e.g. smart cards, trusted platform modules (TPM) or security features build into the SoC. 
 
