@@ -62,5 +62,5 @@ If you haven't connected a display and would like to connect via Wi-Fi, you'll n
 
 ## Connect to Windows Device Portal
 
-Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available. 
+Use the [Windows Device Portal](../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available. 
 
