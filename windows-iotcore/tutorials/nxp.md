@@ -35,6 +35,8 @@ Password: p@ssw0rd
 
 4. Accept the software license terms and click *Download and Install*. If all goes well, you'll see that Windows 10 IoT Core is now flashing your SD card.
 
+![Dashboard screenshot](../media/DeviceSetup/Dashboard-Screenshot.jpg)
+
 > [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 
 ## Connect to a network
