@@ -69,7 +69,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 6. Accept the software license terms and click _Download and install_. You'll see that Windows 10 IoT Core is now flashing onto your device.
 
 
-![DragonBoard in flash mode](../media/DeviceSetup/db4.png)
+![DragonBoard in flash mode](../../media/DeviceSetup/db4.png)
 
 
 ## Flashing with eMMC (for DragonBoard 410c, other Qualcomm devices)
