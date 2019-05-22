@@ -28,7 +28,7 @@ To flash, or download, IoT Core onto your MinnowBoard, you'll need:
 * Any other peripherals (e.g. mouse, keyboard, etc.)
 
 1. Run the Windows 10 IOT Core Dashboard and click on *Set up a new device* and insert a SD card into your computer.
-2. Hook up your Raspberry Pi to an external display.
+2. Hook up your MinnowBoard to an external display.
 3. Fill out the fields. Make sure to give your device a new name and password. Otherwise the default credentials will remain as:
 
 ```
