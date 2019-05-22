@@ -3,7 +3,7 @@
 ## [Windows 10 IoT Enterprise](windows-iot-enterprise.md)
 ## [Windows Server IoT 2019](windows-server.md)
 ## [Get started](GetStarted.md)
-## [Tutorials](tutorials/Tutorials.md)
+## [Tutorials]()
 ### [Setup a Raspberry Pi](tutorials/rpi.md)
 ### [Setup a MinnowBoard](tutorials/minnowboard.md)
 ### [Setup NXP devices](tutorials/nxp.md)
