@@ -6,7 +6,7 @@
 ## [Tutorials](tutorials/Tutorials.md)
 ### [Setup a Raspberry Pi](tutorials/rpi.md)
 ### [Setup a MinnowBoard](tutorials/minnowboard.md)
-### [Setup NXP](tutorials/nxp.md)
+### [Setup NXP devices](tutorials/nxp.md)
 ### [Setup a DragonBoard](tutorials/dragonboard.md)
 ### [Setup Qualcomm devices](tutorials/qualcomm.md)
 ### [Setup Intel devices](tutorials/intel.md)
