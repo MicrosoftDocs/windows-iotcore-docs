@@ -54,10 +54,6 @@ To learn more about our offerings, see the documentation below to learn more.
 </tbody>
 </table>
 
-## Build a prototype
-
-New to Windows 10 IoT? Get started quickly and easily with our [Windows 10 IoT Core Quickstarter](tutorials/Tutorials.md). 
-
 ## Windows 10 IoT pricing
 
 <table>
