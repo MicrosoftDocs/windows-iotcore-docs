@@ -10,6 +10,8 @@ ms.custom: RS5
 
 # Setting up a MinnowBoard
 
+## Overview
+
 > [!IMPORTANT]
 > The latest 64-bit firmware for MinnowBoard Turbot can be found on the [MinnowBoard website](https://minnowboard.org/tutorials/updating-the-firmware) (skip step 4 on the MinnowBoard site's instructions).
 
@@ -17,6 +19,8 @@ ms.custom: RS5
 > When the "format this disk" pop up comes up, do _not_ format the disk. We are working on a fix for this issue.
 
 When setting up a MinnowBoard for prototyping, we recommend using the Windows 10 IoT Core Dashboard. However, if you're looking to manufacture with a MinnowBoard, please refer to the [IoT Core Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). You cannot use maker images for manufacturing.
+
+> [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 
 ## Using the Dashboard
 
@@ -39,8 +43,6 @@ Password: p@ssw0rd
 4. Accept the software license terms and click *Download and Install*. If all goes well, you'll see that Windows 10 IoT Core is now flashing your SD card.
 
 ![Dashboard screenshot](../media/DeviceSetup/Dashboard-Screenshot.jpg)
-
-> [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 
 ## Connect to a network
 ### Wired connection
