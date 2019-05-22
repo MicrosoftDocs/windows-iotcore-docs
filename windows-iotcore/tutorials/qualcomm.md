@@ -15,6 +15,8 @@ If you're looking to manufacture with a Qualcomm device, please refer to the [Io
 > [!NOTE]
 > Make sure the device is now booting from the eMMC memory by entering the BIOS setup again and switching the Boot Drive order to load from the Hard Drive instead of from the USB Drive.
 
+## Using eMMC
+
 1. Download and install the DragonBoard Update Tool for your [x86](https://developer.qualcomm.com/download/db410c/windows-10-iot-update-tool-dragonboard-410c-x86.zip) or [x64](https://developer.qualcomm.com/download/db410c/windows-10-iot-update-tool-dragonboard-410c-x64.zip) machine.
 2. Download the [Windows 10 IoT Core DragonBoard FFU](https://developer.microsoft.com/en-us/windows/iot/Downloads).
 3. Double-click on the downloaded ISO file and locate the mounted Virtual CD-drive. This drive will contain an installer file (.msi); double-click on it. This creates a new directory on your PC under `C:\Program Files (x86)\Microsoft IoT\FFU\` in which you should see an image file, "flash.ffu".
@@ -24,4 +26,32 @@ If you're looking to manufacture with a Qualcomm device, please refer to the [Io
 7. Once the download is complete, disconnect the power supply and microUSB cable from the board and toggle the USB Boot switch back to _OFF_. Connect a HDMI display, a mouse, and a keyboard to the DragonBoard and rec-onnect the power supply. After a few minutes, you should see the Windows 10 IoT Core default application. 
 
 ![DragonBoard in download mode](../media/DeviceSetup/db1.png)
+
+## Connect to a network
+
+### Wired connection
+If your device comes with an Ethernet port or USB Ethernet adapter support to enable a wired connection, attach an Ethernet cable to connect it to your network.
+
+### Wireless connection
+If your device supports Wi-Fi connectivity and you've connected a display to it, you'll need to:
+
+1. Go into your default application and click the settings button next to the clock.
+2. On the settings page, select _Network and Wi-Fi_.
+3. Your device will begin scanning for wireless networks.
+4. Once your network appears in this list, select it and click _Connect_.
+
+If you haven't connected a display and would like to connect via Wi-Fi, you'll need to:
+
+1. Go to the IoT Dashboard and click on _My Devices_.
+2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
+3. Click on _Configure Device_ and enter your network credentials. This will connect your board to the network.
+
+> [!NOTE]
+> Wifi on your computer will need to be turned on in order to find other networks.
+
+## Connect to Windows Device Portal
+
+Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available. 
+
+
 
