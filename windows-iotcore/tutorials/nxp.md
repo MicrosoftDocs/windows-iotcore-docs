@@ -16,7 +16,7 @@ ms.custom: RS5
 > When the "format this disk" pop up comes up, do _not_ format the disk. We are working on a fix for this issue.
 
 When setting up a NXP device for prototyping, we recommend using the Windows 10 IoT Core Dashboard. However, if you're looking to manufacture with a NXP device, please refer to the [IoT Core Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). You cannot use maker images for manufacturing.
-
+<br>
 > [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 
 ## Using the Dashboard
@@ -28,16 +28,19 @@ To flash, or download, IoT Core onto your NXP device, you'll need:
 * An external display
 * Any other peripherals (e.g. mouse, keyboard, etc.)
 
+### Instructions
+
 1. Run the Windows 10 IOT Core Dashboard and click on *Set up a new device* and insert a SD card into your computer.
 2. Hook up your NXP device to an external display.
-3. Fill out the fields. Make sure to give your device a new name and password. Otherwise the default credentials will remain as:
+3. Fill out the fields. Select "NXP [i.MX6/i.MX7]" as the device type. Make sure to give your device a new name and password. Otherwise the default credentials will remain as:
 
 ```
 Device: minwinpc
 Password: p@ssw0rd
 ```
 
-4. Accept the software license terms and click *Download and Install*. If all goes well, you'll see that Windows 10 IoT Core is now flashing your SD card.
+4. Upload your pre-downloaded image file using the "Browse" function. For more information, see our [NXP documentation](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/iotnxp).
+5. Accept the software license terms and click *Download and Install*. If all goes well, you'll see that Windows 10 IoT Core is now flashing your SD card.
 
 ![Dashboard screenshot](../media/DeviceSetup/Dashboard-Screenshot.jpg)
 
