@@ -19,7 +19,7 @@ ms.custom: RS5
 > When the "format this disk" pop up comes up, do _not_ format the disk. We are working on a fix for this issue.
 
 When setting up a Raspberry Pi for prototyping, we recommend using the Windows 10 IoT Core Dashboard. However, if you're looking to manufacture with a Raspberry Pi, please refer to the [IoT Core Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). You cannot use maker images for manufacturing.
-
+<br>
 > [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 
 ## Using the Dashboard
@@ -31,9 +31,11 @@ To flash, or download, IoT Core onto your Raspberry Pi, you'll need:
 * An external display
 * Any other peripherals (e.g. mouse, keyboard, etc.)
 
-1. Run the Windows 10 IOT Core Dashboard and click on *Set up a new device* and insert a SD card into your computer.
+### Instructions
+
+1. Run the Windows 10 IoT Core Dashboard and click on *Set up a new device* and insert a SD card into your computer.
 2. Hook up your Raspberry Pi to an external display.
-3. Fill out the fields. Make sure to give your device a new name and password. Otherwise the default credentials will remain as:
+3. Fill out the fields. Select "Broadcomm [Raspberry Pi 2 & 3]" as the device type. Make sure to give your device a new name and password. Otherwise the default credentials will remain as:
 
 ```
 Device: minwinpc
