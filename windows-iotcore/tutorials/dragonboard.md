@@ -17,6 +17,8 @@ ms.custom: RS5
 > If you're running into any audio-related issues with your DragonBoard, we advise that you read through Qualcomm's manual [here](https://developer.qualcomm.com/download/db410c/stereo-connector-and-audio-routing-application-note.pdf). 
 
 When setting up a Dragonboard for prototyping, we recommend using the Windows 10 IoT Core Dashboard. However, if you're looking to manufacture with a Dragonboard, please refer to the [IoT Core Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). You cannot use maker images for manufacturing.
+<br>
+> [!Video https://www.youtube.com/embed/iPm57hGq-Q8]
 
 ## Using the Dashboard
 
@@ -27,17 +29,17 @@ To flash, or download, IoT Core onto your MinnowBoard, you'll need:
 * An external display
 * Any other peripherals (e.g. mouse, keyboard, etc.)
 
+### Instructions
+
 1. Run the Windows 10 IoT Core Dashboard and click on *Set up a new device*.
-2. Change the device type to **DragonBoard 410c".
-3. Connect the DragonBoard to your compuer using a microUSB cable.
+2. Select "Qualcomm [DragonBoard 410c]" as the device type.
+3. Connect the DragonBoard to your compuetr using a microUSB cable.
 4. Hook up your DragongBoard to a external display.
 5. Power on your Dragonboard using a 12V (>1A) power supply while holding down the volume up (+) button. The device - when connected to a display - should show the image of a hammer, a lightning bolt, and a cog.
 6. The device should now be visible on the Dashboard as shown below. Select the appropriate device.
 7. Accept the software licnse terms and click **Download and install**. You'll see that Windows 10 IoT Core is now flashing onto your device.
 
 ![DragonBoard in flash mode](../media/DeviceSetup/db4.png)
-
-> [!Video https://www.youtube.com/embed/iPm57hGq-Q8]
 
 ## Connect to a network
 ### Wired connection
