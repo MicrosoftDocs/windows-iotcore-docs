@@ -54,10 +54,6 @@ To learn more about our offerings, see the documentation below to learn more.
 </tbody>
 </table>
 
-## Build a prototype
-
-New to Windows 10 IoT? Get started quickly and easily with our [Windows 10 IoT Core Quickstarter](tutorials/Tutorials.md). 
-
 ## Windows 10 IoT pricing
 
 <table>
@@ -92,6 +88,47 @@ New to Windows 10 IoT? Get started quickly and easily with our [Windows 10 IoT C
 </table>
 
 <i>Learn more about detailed lifecycle information [here](https://support.microsoft.com/en-us/lifecycle/search?alpha=IoT%20Core)</i>.
+
+## Prototype a device
+
+Before attempting to manufacture a device, it's best to first try and prototype a device with Windows 10 IoT Core. That way, you can understand what features you'll need and what configurations you'll want when it's time to manufacture.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Topic</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+
+<tr class="odd">
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/PrototypeBoards"
+>1. Pick a prototype board</a></p></td>
+<td align="left"><p>Take a look at common prototype boards and choose one to start prototyping with.</p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p>2. Flash a prototype image</p></td>
+<td align="left"><p>Go to our tutorial sections to learn how to flash prototype images onto your selected device(s). </p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appinstaller">3. Install your app</a></p></td>
+<td align="left"><p>Learn how to install your app using different tools.</p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appdeployment">4. Deploy your app</a></p></td>
+<td align="left"><p>Learn how to deploy an app using Visual Studio.</p></td>
+</tr>
+
+</tbody>
+</table>
 
 ## Bring a device to market
 

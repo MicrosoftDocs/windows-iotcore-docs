@@ -8,7 +8,7 @@ description: Learn about what Windows 10 IoT Core is and what you can do with it
 keywords: Windows 10 IoT Core, small footprint, headless 
 ---
 
-# Windows 10 IoT Core
+# An overview of Windows 10 IoT Core
 
 > [!NOTE]
 > Windows 10 Containers can only be used with Windows IoT Core and Windows IoT Enterprise for commercial deployments utilizing Microsoft Azure IoT Edge.
@@ -16,10 +16,48 @@ keywords: Windows 10 IoT Core, small footprint, headless
 ## What is Windows 10 IoT Core?
 Windows 10 IoT Core is a version of Windows 10 that is optimized for smaller devices with or without a display that run on both ARM and x86/x64 devices. The Windows IoT Core documentation provides information on connecting, managing, updating, securing your devices, and more. 
 
-## Getting started
-To get started with Windows 10 IoT Core, we've created a [Windows 10 IoT Core Quickstarter](tutorials/Tutorials.md) to help you get familiar with the platform quickly. 
-
 If you're ready to go to the next level and start commercializing your solution, you can learn how to manufacture with Windows 10 IoT Core with our [Windows 10 IoT Core Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). 
+
+## Getting started
+
+Before attempting to manufacture a device, it's best to first try and prototype a device with Windows 10 IoT Core. That way, you can understand what features you'll need and what configurations you'll want when it's time to manufacture.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Topic</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+
+<tr class="odd">
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/PrototypeBoards"
+>1. Pick a prototype board</a></p></td>
+<td align="left"><p>Take a look at common prototype boards and choose one to start prototyping with.</p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p>2. Flash a prototype image</p></td>
+<td align="left"><p>Go to our tutorial sections to learn how to flash prototype images onto your selected device(s). </p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appinstaller">2. 3. Install your app</a></p></td>
+<td align="left"><p>Learn how to install your app using different tools.</p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appdeployment">4. Deploy your app</a></p></td>
+<td align="left"><p>Learn how to deploy an app using Visual Studio.</p></td>
+</tr>
+
+</tbody>
+</table>
 
 ## Differences between Windows 10 Desktop and Windows 10 IoT Core
 
