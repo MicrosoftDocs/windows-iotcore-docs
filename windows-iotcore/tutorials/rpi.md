@@ -35,7 +35,7 @@ To flash, or download, IoT Core onto your Raspberry Pi, you'll need:
 
 1. Run the Windows 10 IoT Core Dashboard and click on *Set up a new device* and insert a SD card into your computer.
 2. Hook up your Raspberry Pi to an external display.
-3. Fill out the fields. Select "Raspberry Pi 2 & 3" as the device type. Make sure to give your device a new name and password. Otherwise the default credentials will remain as:
+3. Fill out the fields. Select "Broadcomm [Raspberry Pi 2 & 3]" as the device type. Make sure to give your device a new name and password. Otherwise the default credentials will remain as:
 
 ```
 Device: minwinpc
