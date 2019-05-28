@@ -47,7 +47,7 @@ To learn more about our offerings, see the documentation below to learn more.
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="windows-iot-core.md" data-raw-source="[Windows 10 IoT Core Overview](windows-server.md)">Windows Server IoT 2019 overview</a></p></td>
+<td align="left"><p>[Windows Server IoT 2019 overview](https://docs.microsoft.com/en-us/windows/iot-core/windows-server)</p></td>
 <td align="left"><p>Learn more about how to get started with Windows Server IoT 2019.</p></td>
 </tr>
 
