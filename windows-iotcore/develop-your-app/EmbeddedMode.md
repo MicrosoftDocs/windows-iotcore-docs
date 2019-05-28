@@ -28,12 +28,17 @@ Background applications run without stopping and without resource limits. Also, 
 
 While the system will automatically restart background applications, system lockdown features must be enabled to prevent users from stopping or interfering with the operation of Background Applications.
 
-## lowLevelDevice Capability
+## lowLevel device Capability and lowLevelDevice capability
 
-The lowLevelDevice Capability gives access to low-level hardware interfaces like GPIO, SPI, and I2C.
+The **lowLevel** device Capability gives access to low-level hardware interfaces like GPIO, SPI, and I2C.
 
 * [Blinky Sample(GPIO)](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinky)
 * [Accelerometer Sample](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/Accelerometer)
+
+The **lowLevelDevices** Capability allows apps to access custom devices when a number of additional requirements are met. This
+capability should not be confused with the lowLevel device capability, which allows access to GPIO, I2C, SPI, and PWM devices.
+
+Refer to [App capability declarations](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations) for details.
 
 ## systemManagment Capability
 
