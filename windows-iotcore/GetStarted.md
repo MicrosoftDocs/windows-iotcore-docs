@@ -47,7 +47,7 @@ To learn more about our offerings, see the documentation below to learn more.
 </tr>
 
 <tr class="odd">
-<td align="left"><p>[Windows Server IoT 2019 overview](https://docs.microsoft.com/en-us/windows/iot-core/windows-server)</p></td>
+  <td align="left"><p><a href="windows-server.md" data-raw-source="[Windows Server IoT 2019](https://docs.microsoft.com/en-us/windows/iot-core/windows-server)">Windows 10 IoT Core overview</a></p></td>
 <td align="left"><p>Learn more about how to get started with Windows Server IoT 2019.</p></td>
 </tr>
 
@@ -133,7 +133,7 @@ Before attempting to manufacture a device, it's best to first try and prototype 
 ## Bring a device to market
 
 Commercialization, or the process of bringing a device to market, involves more moving parts and people than just prototyping a device on your own time. Commercialization requires a number of steps to ensure that your devices, wherever they are in the world, can receive updates, are as secure as possible, and are compliant. 
-<br>
+
 Start with the manufacturing guide that works best for you, depending on which version of Windows 10 IoT you're looking to use.
 
 <table>
