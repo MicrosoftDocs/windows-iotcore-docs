@@ -12,6 +12,7 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 
 ## Blog posts
 
+* [New Windows IoT solutions at Computex show ingenuity at the intelligent edge](https://blogs.windows.com/windowsexperience/2019/05/28/new-windows-iot-solutions-at-computex-show-ingenuity-at-the-intelligent-edge/#U3yYXu1rq054ljuk.97)
 * [Modernizing Windows CE systems with Windows 10 IoT](https://blogs.windows.com/buildingapps/2019/05/07/modernizing-windows-ce-systems-with-windows-10-iot/#oHzjguRIlWV0ryo6.97)
 * [Open Robotics and Microsoft release ROS on Windows 10 IoT Enterprise](https://blogs.windows.com/buildingapps/2019/05/07/open-robotics-and-microsoft-release-ros-on-windows-10-iot-enterprise/#Y86A6YUJELKDoRJJ.97)
 * [Microsoft Azure IoT Device Agent V2 general availability](https://blogs.windows.com/buildingapps/2019/05/07/microsoft-azure-iot-device-agent-v2-general-availability/#BwOSxBSymeJqU34K.97)
