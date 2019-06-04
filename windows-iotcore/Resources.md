@@ -38,6 +38,7 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 ## Whitepapers
 * [Azure IoT Edge + Windows IoT: Supporting AI at the edge](https://aka.ms/IoT-Edge-WP)
 * [Windows Machine Learning: Implement AI in your Windows apps](https://aka.ms/Windows-ML-WP)
+* [Create more secure IoT solutions with Windows IoT](https://aka.ms/secure-windowsiot)
 
 ## Learning resources
 
