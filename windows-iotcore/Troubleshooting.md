@@ -83,7 +83,7 @@ You may get error **0x139f (ERROR_INVALID_STATE)** in the case when the device i
 
 The Raspberry Pi 3 Model B+ is the latest product in the Raspberry Pi 3 range, boasting a 64-bit quad core processor running at 1.4GHz, dual-band 2.4GHz and 5GHz wireless LAN, Bluetooth 4.2/BLE, faster Ethernet, and PoE capability via a separate PoE HA.
 
-Recently, many customers who are interested in Windows 10 IoT Core encountered a problem where the device could not boot normally after flushing Windows 10 IoT Core, but the Raspbian works fine on it. The following are some suggestions on how to troubleshoot the boot problem.
+Recently, many customers who are interested in Windows 10 IoT Core encountered a problem where the device could not boot normally after flashing Windows 10 IoT Core, but the Raspbian works fine on it. The following are some suggestions on how to troubleshoot the boot problem.
 
 There are some known issues in this Insider Preview image. Please note that:
 * This image is only meant for the Raspberry Pi 3B+ and will not boot on the Raspbierry Pi 2.
