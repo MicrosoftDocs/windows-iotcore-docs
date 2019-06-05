@@ -18,13 +18,9 @@ You can install your app using one of the two methods that are listed below.
 ## Using Windows Device Portal
 
 > [!NOTE]
-> An .appx or .appxbundle is required for Windows Device Portal
-> Beginning with version 17763 of the SDK and tools if the
-> minimum target version of the app project> is 17763 or greater the tools will create an
-> [.msix or .msixbundle](https://developercommunity.visualstudio.com/content/problem/391934/makeappx-now-creates-msix-files-instead-of-appx.html).
+> An .appx or .appxbundle is required for Windows Device Portal. Beginning with version 17763 of the SDK and tools if the minimum target version of the app project> is 17763 or greater the tools will create an [.msix or .msixbundle](https://developercommunity.visualstudio.com/content/problem/391934/makeappx-now-creates-msix-files-instead-of-appx.html).
 > To create an .appx or .appxbundle set the minimum version to a version less than 17763 or
-> [run makeappx.exe directly](https://docs.microsoft.com/en-us/windows/desktop/appxpkg/make-appx-package--makeappx-exe-#command-line-syntax).
-> It may also be possible to rename the .msix to .appx, or .msixbundle to .appxbundle.
+> [run makeappx.exe directly](https://docs.microsoft.com/en-us/windows/desktop/appxpkg/make-appx-package--makeappx-exe-#command-line-syntax). It may also be possible to rename the .msix to .appx, or .msixbundle to .appxbundle.
 
 For this method, you will need to ensure that you are connected to the internet. If you do not have access to the internet, you can also have a peer-to-peer ethernet connection between the device and a client machine that doesn't include a path to access the open internet. However, going about the latter way will install the app but will fail to launch if the app is store-signed.
 
