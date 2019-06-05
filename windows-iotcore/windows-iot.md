@@ -34,9 +34,11 @@ While Windows 10 IoT Core and Windows 10 IoT Enterprise are similar in name, the
 > | Device Security Technologies | [TPM](https://docs.microsoft.com/windows/iot-core/secure-your-device/tpm), [Secure Boot, BitLocker, Device Guard](https://docs.microsoft.com/windows/iot-core/secure-your-device/securebootandbitlocker), and Device Health Attestation | [TPM](https://docs.microsoft.com/windows/iot-core/secure-your-device/tpm), [Secure Boot, BitLocker, Device Guard](https://docs.microsoft.com/windows/iot-core/secure-your-device/securebootandbitlocker) and Device Health Attestation |
 > | CPU Architecture support | x86, x64, and ARM | x86 and x64 |
 > | Licensing | Online Licensing Agreement and Embedded OEM Agreements, Royalty-free | Direct and Indirect Embedded OEM Agreements |
-> | Usage scenarios | [Digital Signage](https://www.microsoft.com/en-us/windowsforbusiness/digital-signage), Smart Building, IoT Gateway, HMI, Smart Home, Wearables | Industry Tablets, POS, Kiosk, [Digital Signage](https://www.microsoft.com/en-us/windowsforbusiness/digital-signage), ATM, Medical Devices, Manufacturing Devices, Thin Client |
+> | Usage scenarios | [Digital Signage](https://www.microsoft.com/en-us/windowsforbusiness/digital-signage), Smart Building, IoT Gateway, HMI, Smart Home, Wearables | Industry Tablets, Retail Point of Service, Kiosk, [Digital Signage](https://www.microsoft.com/en-us/windowsforbusiness/digital-signage), ATM, Medical Devices, Manufacturing Devices, Thin Client |
 
 For minimum requirement details, please visit [the Windows Hardware site](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
+
+If you're interested in learning more about Point of Service, please visit the [UWP docs on this topic](https://aka.ms/pointofservice).
 
 ## Differences between Windows 10 Desktop and Windows 10 IoT Core
 
