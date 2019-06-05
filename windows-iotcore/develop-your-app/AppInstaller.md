@@ -29,10 +29,29 @@ To install your application on the device please do the following:
 1. Open the [Windows Device Portal](https://docs.microsoft.com/windows/iot-core/manage-your-device/deviceportal) for your IoT device.
 
 2. In the **Apps** menu, install your app by selecting your app files and clicking **Install**.
+
+3. Click **Select File**
+
+4. Select your .appx file and click **Open**
+
+5. Check **Allow me to select framework packages**
+
+6. Click **Next**
+
+7. For each item in the **Dependencies** folder for your .appx repeat step 7.1 and 7.2
+
+    7.1 Click **Choose File**
+
+    7.2 Select the depenency .appx and click **Open**
+
+8. When all of the dependencies are added click **Install**
+
+9. Wait for the install is completed and click **Done**
+
  ![Install App](../media/AppInstaller/install-app.gif)
 
-3. The application will now be visible on the list of applications on your device.
- ![App List](../media/AppInstaller/applist.jpg)
+10. The application will now be visible on the list of applications on your device.
+ ![Install App](../media/AppInstaller/install-app.gif)
 
 
 ## Using provisioning package from WCD
