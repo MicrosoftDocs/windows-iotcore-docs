@@ -51,7 +51,7 @@ To install your application on the device please do the following:
  ![Install App](../media/AppInstaller/install-app.gif)
 
 10. The application will now be visible on the list of applications on your device.
- ![App List](../media/AppInstaller/applist.jpg)
+ ![Install App](../media/AppInstaller/install-app.gif)
 
 
 ## Using provisioning package from WCD
