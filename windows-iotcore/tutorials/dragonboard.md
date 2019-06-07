@@ -11,7 +11,7 @@ ms.custom: RS5
 # Setting up a Dragonboard
 
 > [!IMPORTANT]
-> When you're working with a new Dragonboard, it comes with Android installed. You will need to wipe and load the device using the eMMC flashing method.
+> When you're working with a new Dragonboard, it comes with Android installed. You will need to wipe and load the device using the eMMC flashing method, [here](https://docs.microsoft.com/en-us/windows/iot-core/tutorials/qualcomm).
 
 > [!NOTE]
 > If you're running into any audio-related issues with your DragonBoard, we advise that you read through Qualcomm's manual [here](https://developer.qualcomm.com/download/db410c/stereo-connector-and-audio-routing-application-note.pdf). 
