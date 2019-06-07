@@ -68,7 +68,7 @@ HKEY_CURRENTUSER\Control Panel\Accessibility
 REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d "1"
 ```
 
-* The registry key must be set from the Default Account. If the ScrollViewer's XAML setting is "Visible", the nthe registry setting of 0 will force the scroll bar to appear regardlss of whether there is sufficient content to have the scroll appear in the UI. A registry setting of 1 will keep the scroll bar hidden until there is sufficient content.
+* The registry key must be set from the Default Account. If the ScrollViewer's XAML setting is "Visible", the registry setting of 0 will force the scroll bar to appear regardlss of whether there is sufficient content to have the scroll appear in the UI. A registry setting of 1 will keep the scroll bar hidden until there is sufficient content.
 
 ```
 <TextBox Height="200" Width="100" IsEnabled="True" FontSize="50" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Visible" Text="..."/>
@@ -85,7 +85,7 @@ REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d 
 * The PowerShell Remove-AppxPackage command works on Dekstop but not on Windows 10 IoT Core.
 * Not all folders on your device are accessible by Universal Windows Apps. On Windows 10 IoT Core you can use the FolderPermissions tool to make a folder accessible to a UWP app. For example, run FolderPermissions c:\test -e to give UWP apps access to c:\test folder. However, this is not available on Desktop.
 
-All differences showed in this post may disappear as time goes on because Windows 10 IoT Core is keep updating.
+Commands shown in this post may change as time goes on since Windows 10 IoT Core keeps updating.
 
 ## IoT Edge Support for Windows 10 IoT
 To learn more about IoT Edge support for Windows 10 IoT, please read more about "Operating Systems" in the Azure IoT Edge article [here](https://docs.microsoft.com/en-us/azure/iot-edge/support#operating-systems).
