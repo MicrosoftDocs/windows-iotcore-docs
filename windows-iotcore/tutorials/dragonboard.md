@@ -37,7 +37,7 @@ To flash, or download, IoT Core onto your MinnowBoard, you'll need:
 4. Hook up your DragongBoard to a external display.
 5. Power on your Dragonboard using a 12V (>1A) power supply while holding down the volume up (+) button. The device - when connected to a display - should show the image of a hammer, a lightning bolt, and a cog.
 6. The device should now be visible on the Dashboard as shown below. Select the appropriate device.
-7. Accept the software licnse terms and click **Download and install**. You'll see that Windows 10 IoT Core is now flashing onto your device.
+7. Accept the software license terms and click **Download and install**. You'll see that Windows 10 IoT Core is now flashing onto your device.
 
 ![DragonBoard in flash mode](../media/DeviceSetup/db4.png)
 
