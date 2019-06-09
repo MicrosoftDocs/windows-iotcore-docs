@@ -19,7 +19,7 @@ Based on the overwhelming interest in the solution, Microsoft and NXP are now ma
 
 ## BSP Access
 
-If you are interested to enable support for your own i.MX hardware, please access the BSP source and documentation on [Github]( https://github.com/ms-iot/imx-iotcore). Unless noted, the majority of the source is provided under MIT license. The code is still under development. Not all platform features are fully enabled or optimized. The code is currently intended for non-commercial development only at time time. A commercial quality release is expected later in 2019.
+If you are interested to enable support for your own i.MX hardware, please access the BSP source and documentation on [Github]( https://github.com/ms-iot/imx-iotcore). Unless noted, the majority of the source is provided under MIT license.The code is released for commercial use with support provided by NXP - https://www.nxp.com/support/developer-resources/evaluation-and-development-boards/i.mx-evaluation-and-development-boards/i.mx-software-and-development-tool:IMX-SW 
 
 If you have NXP hardware/BSP releated questions or feedback on how the BSP can better support your targeted solution, please post to the [NXP Community](https://community.nxp.com/community/imx/content?filterID=contentstatus%5Bpublished%5D%7Ecategory%5Bwindows%5D). For any Windows related questions, please use the [Microsoft Community](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT).
 
