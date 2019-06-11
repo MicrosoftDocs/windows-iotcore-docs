@@ -127,4 +127,5 @@ Windows 10 IoT offers two editions - Windows 10 IoT Core and Windows 10 IoT Ente
 ---
 
 <h2>Bugs? Suggestions?</h2>
-<p>For any issues or bugs using Windows 10 IoT Core, please post them on the MSDN forums <a href="https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=WindowsIoT">here</a>. 
+<p>For any issues or bugs you might across when using Windows 10 IoT Core, please post them on the MSDN forums <a href="https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=WindowsIoT">here</a>.</p>
+<p>For any suggestions, please post them to our UserVoice page <a href="https://wpdev.uservoice.com/forums/110705-universal-windows-platform?category_id=364159">here</a>.</p>
