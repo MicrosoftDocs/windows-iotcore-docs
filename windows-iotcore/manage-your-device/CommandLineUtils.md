@@ -34,9 +34,10 @@ Use the startup editor to configure startup apps on your Windows IoT Core device
 * `IotStartup startup [MyApp]` lists headed and headless applications registered for startup that match pattern `MyApp`
 * `IotStartup startup headed [MyApp]` lists headed applications registered for startup that match `MyApp`
 * `IotStartup startup headless [Task1]` lists headless applications registered for startup that match `Task1`
+* `IotStartup run [MyApp]` start app identified by `MyApp`
+* `IotStartup stop [MyApp]` stop app identified by `MyApp`
+* For further help, try `IotStartup help`
 
-	* For further help, try `IotStartup help`
-	
 ### **Change settings for region and user or speech language:**
 
 The `IoTSettings` tool changes region, user language or speech language. This is a command line tool that can be invoked from an application using the ProcessLauncher API. These commands must be run as default account, not administrator.
