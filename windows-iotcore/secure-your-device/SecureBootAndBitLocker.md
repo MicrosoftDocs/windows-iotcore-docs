@@ -201,7 +201,7 @@ You can test the generated packages by manually installing them on a unlocked de
 7. Reboot the device again to activate the Bitlocker encryption.
 8. Test the security features
     * SecureBoot: try `bcdedit /debug on` , you will get an error stating that the value is protected by secure boot policy
-    * BitLocker: Run `fvecon -status c:`, you will get the status mentioning *On, Encrypted, Has Recovery Data (external key), Has TPM Data, Secure, Boot Partition, Used Space Only*
+    * BitLocker: Run `start /wait sectask.exe -waitencryptcomplete:1`, if ERRORLEVEL is `-2147023436` (ERROR_TIMEOUT) then encryption is not complete. When running sectask.exe from a .cmd file omit the `start /wait`.
     * DeviceGuard : Run any unsigned binary or a binary signed with certificate not in the SIPolicy list and confirm that it fails to run.
 
 ### Generate Lockdown image
