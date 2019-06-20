@@ -42,6 +42,9 @@ Specialized systems, such as PCs that control medical equipment, point-of-sale s
 
 * [Learn more about LTSC](https://docs.microsoft.com/windows/deployment/update/waas-overview#long-term-servicing-channel)
 
+> [!NOTE]
+> Due to the long life of the LTSC releases and the benefit of remaining on a specific release for 10 years, an upgrade fee will be charged for customers moving from one LTSC release to another.
+
 ## Long-Term Support Silicon Details
 
 The Windows 10 IoT Enterprise 2019 release will be a LTSC release. The list below encompasses all processors expected to be supported for this release. If you are planning to use an earlier release of Windows 10 IoT Enterprise, you can find details on the processor support [here](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements#windows-iot-enterprise--embedded-processor-table).
