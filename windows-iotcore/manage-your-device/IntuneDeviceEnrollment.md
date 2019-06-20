@@ -20,14 +20,13 @@ Intune enrollment of an IoT Core device is accomplished by using the Windows IoT
 1. Sign in to the [Azure portal](https://portal.azure.com), and then select **Azure Active Directory**.
 2. Select **Mobility (MDM and MAM)**.
 
+     ![Selecting Mobility and Microsoft Intune](../media/IntuneDeviceEnrollment/iot-ap-mobility-intune.png)
 
-~~~
- ![Selecting Mobility and Microsoft Intune](../media/IntuneDeviceEnrollment/iot-ap-mobility-intune.png)
-~~~
-1. Select **Microsoft Intune**. On the **Configure Microsoft Intune** page, next to **MDM user scope**, select **All**. This will allow your IoT Core device user to be enrolled in Intune after joining Azure AD.
+3. Select **Microsoft Intune**. On the **Configure Microsoft Intune** page, next to **MDM user scope**, select **All**. This will allow your IoT Core device user to be enrolled in Intune after joining Azure AD.
 
 ### Create a setup SD card for the IoT Core device
-1. Insert a microSD card into the card reader on your PC. 
+
+1. Insert a microSD card into the card reader on your PC.
      > [!NOTE]
      > The microSD card will be formatted during this process, so any data on the card will be deleted.
 2. Go to [Windows IoT Core Dashboard](https://docs.microsoft.com/windows/iot-core/connect-your-device/iotdashboard) to download and install the dashboard.
@@ -36,13 +35,13 @@ Intune enrollment of an IoT Core device is accomplished by using the Windows IoT
      ![Windows IoT Core Dashboard](../media/IntuneDeviceEnrollment/IoT-dashboard-my-devices.png)
 
 4. Type a **Device name**.
-5. Enter a new administrator password. 
+5. Enter a new administrator password.
 6. If you want to enable Wi-Fi for the device, select the **Wi-Fi Network Connection** checkbox. Skip this if the device will use an ethernet network connection only.
 
      ![Wi-Fi checkbox on the IoT dashboard](../media/IntuneDeviceEnrollment/IoT-dashboard-wifi-connection.png)
 
 7. Select the **I accept the software license terms** checkbox, and then select **Download and Install**.
-8. When the confirmation message appears, select the option to **Format** the SD Card. 
+8. When the confirmation message appears, select the option to **Format** the SD Card.
      > [!NOTE]
      > Watch for the **Format** confirmation message during setup. The message could be hidden by another open application, but it’s important to select the Format option. If the drive isn't properly formatted, boot will fail.
 9. The message **Your SD card is ready** appears.
@@ -52,16 +51,17 @@ Intune enrollment of an IoT Core device is accomplished by using the Windows IoT
 10. Minimize this page.  You'll come back to it later.
 
 ### Create a provisioning package for Intune enrollment
+
 1. Install the Windows Configuration Design app by following the steps in [Install Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd).
 
 2. Open the **Windows Imaging and Configuration Designer**.
-3. Choose **Provision desktop devices** to create a project 
+3. Choose **Provision desktop devices** to create a project.
 
      ![Choosing Provision desktop services](../media/IntuneDeviceEnrollment/iot-wcd-provision-desktop-devices.png)
 
 4. Enter the **Project Details** as desired. Then select **Finish**.
 5. Go to the **Account Management** page and select **Enroll in Azure AD**.
-      > [!NOTE]
+     > [!NOTE]
      > Installing the app from either the Microsoft Store or the Windows Assessment and Deployment Kit (ADK) is fine.
 
      ![Choosing Enroll in Azure AD](../media/IntuneDeviceEnrollment/iot-wcd-enroll-in-azure-ad.png)
@@ -71,8 +71,8 @@ Intune enrollment of an IoT Core device is accomplished by using the Windows IoT
 
      ![Azure AD sign-in page](../media/IntuneDeviceEnrollment/iot-wcd-sign-in.png)
 
-8. Enter your tenant username (for example, john@mycompany.onmicrosoft.com) and your password.   
-9. Agree to allow the Windows Configuration Design app to access your Azure AD information. 
+8. Enter your tenant username (for example, john@mycompany.onmicrosoft.com) and your password.
+9. Agree to allow the Windows Configuration Design app to access your Azure AD information.
 10. A message on the page shows that the Bulk AAD token was fetched successfully.
 
      ![Bulk token successful message](../media/IntuneDeviceEnrollment/iot-wcd-bulk-token-successful.png)
@@ -103,8 +103,9 @@ Intune enrollment of an IoT Core device is accomplished by using the Windows IoT
 22. Go to File Explorer and copy the provisioning package to your IoT Core device. Save it to the microSD card under the **MainOS** drive in the **c:\windows\provisioning\packages** folder.  You'll have to grant permissions to save the file in this folder.
 
 ### Provision and enroll the IoT Core device in Intune
+
 1. Insert the microSD card into your IoT Core device.
-2. Turn on your IoT Core device and allow time for it to start up and display the standard screen. 
+2. Turn on your IoT Core device and allow time for it to start up and display the standard screen.
 3. Return to the Microsoft Intune console in the Azure portal. Your device should appear in the list of devices.
      > [!NOTE]
      > Enrollment could take 15 minutes or more to complete.
@@ -112,6 +113,7 @@ Intune enrollment of an IoT Core device is accomplished by using the Windows IoT
      ![Intune devices list](../media/IntuneDeviceEnrollment/iot-ap-devices-after-enrollment.png)
 
 ## Next steps
+
 - [See device details in Intune](https://docs.microsoft.com/intune/device-inventory).
 - [Sync the device to get the latest policies and actions with Intune](https://docs.microsoft.com/intune/device-sync).
 - [Remotely restart the device with Intune](https://docs.microsoft.com/intune/device-restart).
