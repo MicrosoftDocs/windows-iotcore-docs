@@ -55,7 +55,7 @@ Intune enrollment of an IoT Core device is accomplished by using the Windows IoT
 1. Install the Windows Configuration Design app by following the steps in [Install Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd).
 
 2. Open the **Windows Imaging and Configuration Designer**.
-3. Choose **Provision desktop devices** to create a project
+3. Choose **Provision desktop devices** to create a project.
 
      ![Choosing Provision desktop services](../media/IntuneDeviceEnrollment/iot-wcd-provision-desktop-devices.png)
 
