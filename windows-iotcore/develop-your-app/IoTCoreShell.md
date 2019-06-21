@@ -27,7 +27,7 @@ Here are the main differences between foreground and background applications:
 
 At the moment, the Startup App allows you to create a home app for Windows 10 IoT Core, which allows you to switch between different foreground applications. 
 
-The **IoT Startup App** ([sample](https://developer.microsoft.com/en-us/windows/iot/samples/iotstartapp) represents a simple startup app that lists the installed apps on your device, then launches one using the PackageManager APIs.
+The **IoT Startup App** ([sample](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTStartApp) represents a simple startup app that lists the installed apps on your device, then launches one using the PackageManager APIs.
 
 ## Switching between apps with HID Injection Keys
 
