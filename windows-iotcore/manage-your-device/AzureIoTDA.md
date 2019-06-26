@@ -1,6 +1,6 @@
 ---
 title: Azure IoT Device Agent
-author: roycey kakkunny
+author: rcheeran
 ms.author: rcheeran
 ms.date: 06/25/2019
 ms.topic: article
