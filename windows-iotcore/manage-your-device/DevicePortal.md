@@ -196,19 +196,19 @@ To learn more, [read the documentation under the Windows Device Portal docs](htt
 
 To capture a Full Memory Dump, do the following:
 
-1. Connect to a IoT device through WDP 
+1. Connect to a IoT device through WDP.
 
-2. From Debug -> Debug settings -> Kernel crash settings -> Crash dump type 
+2. From Debug -> Debug settings -> Kernel crash settings -> Crash dump type. 
 
-3. Select: Complete memory dump (in use memory) 
-    make sure the device is rebooted for the setting to take effect 
+3. Select: Complete memory dump (in use memory).
+    Make sure the device is rebooted for the setting to take effect. 
     
-4. verify  that HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl\CrashDumpEnabled is set to 0x1
+4. Verify  that `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl\CrashDumpEnabled` is set to 0x1.
 
-5. Update HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl\DumpFileSize to 0x0
+5. Update `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl\DumpFileSize` to 0x0.
 
-6. Make sure you have enough space on the device for this Dump to be generated. You can configure the changing the DumpFile location from here
-    HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl\DumpFile
+6. Make sure you have enough space on the device for this Dump to be generated. You can configure the changing the DumpFile location from here:
+    `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl\DumpFile`
 
 
 ## Additional Resources
