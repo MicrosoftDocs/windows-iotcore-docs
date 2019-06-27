@@ -84,7 +84,7 @@
 ### [Azure IoT overview](connect-to-cloud/Overview.md)
 ### [Connect your device](connect-to-cloud/ConnectDeviceToCloud.md)
 ### [Connect your app](connect-to-cloud/ConnectAppToCloud.md)
-### [Azure Device Management](manage-your-device/AzureIoTDM.md)
+### [Azure IoT Device Agent](manage-your-device/AzureIoTDA.md)
 ## [Release Notes]()
 ### [Insider Previews](release-notes/CurrentInsider.md)
 #### [Current: Build 17744](release-notes/insider/17744.md)
