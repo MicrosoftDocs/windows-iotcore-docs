@@ -20,13 +20,14 @@ With Windows IoT Core running in devices such as home appliances, HVAC systems a
 
 
 ## How does it work?
+
 The [Azure IoT Device Agent](https://aka.ms/iot-core-azure-dm-client) consists of 2 core components. 
 
 The Device Provisioning Client(DPS) automates device provisioning. It connects to the Azure Device Provisioning Service with the device's Enrollment Key and DPS ScopeID. The Azure DPS service identifies the device and provisions it in the configured IoT Hub and returns a connection string back to the device. The DPS client then uses this connection string to connect the device to the right IoT Hub.  
 
 The Device Management Client enables remote management capabilities by leveraging the capabilities made available via the ([Configuration Service Providers](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference), CSP) The Azure Device Agent's remote management capabilities are built on a plug-in architecture allowing you to selectively choose capabilities that you want to include in your device. In addition to that, the plug-in architecture is extendable. You can write your own plug-in for a device management capability that you need and add it to the Azure Device Agent. All the device management capabilities are remotely accessible using the Device Twin or Module Twin properties and commands, thereby enabling a single-pane-of-glass management approach for all your Windows IoT devices deployed. For a complete list of device management capabilities available refer to [this document](https://github.com/ms-iot/azure-client-tools/blob/master/docs/device-agent/reference.md).
 
-In addition to this, the Azure Device Agent also creates and manages SAS tokens for other UWP applications running on the device. The Azure Device Agent can provision other UWP apps as either a Device Twin or as a Module Twin and add their connection strings to the respective TPM slots. The UWP app leverages the [UWP Bridge] (https://github.com/ms-iot/azure-client-tools/blob/master/docs/device-agent/uwp-bridge.md) to read their connection string from the TPM slot and can use that to connect to the IoT Hub. 
+In addition to this, the Azure Device Agent also creates and manages SAS tokens for other UWP applications running on the device. The Azure Device Agent can provision other UWP apps as either a Device Twin or as a Module Twin and add their connection strings to the respective TPM slots. The UWP app leverages the [UWP Bridge](https://github.com/ms-iot/azure-client-tools/blob/master/docs/device-agent/uwp-bridge.md) to read their connection string from the TPM slot and can use that to connect to the IoT Hub. 
 
 ## How to get started?
 
@@ -38,6 +39,7 @@ The Azure IoT Device Agent is available on GitHub. The project it also includes 
 
 ## Migrating from Azure Device Agent V1 to V2
 If you are currently using the v1 version of the Device Agent, one significant change between V1 and V2 is that in the V2 version, the Azure Device Agent no longer shares the connection with an UWP app. With enhancements to the IoT Hub you can now have both the UWP app and the Azure Device Agent have independent connection strings and still be associated with the same device in IoT Hub. Refer [here](https://github.com/ms-iot/azure-client-tools/blob/master/docs/device-agent/migration-from-old-client.md) for more details.
+
 For more information on the Azure Device Agent V1, refer [here](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/azureiotdm).
 
 ## Other Useful Tools 
@@ -63,6 +65,9 @@ For a secure operation of IoT devices it is essential to assess if a device is b
 
 [Deploy Azure Resources for Device Health Attestation](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/docs/dha-deploy.md#deploy-azure-resources-for-device-health-attestation)
 
-  
+
+### More about the Azure Device Provision Service (DPS) 
+
+
   
 
