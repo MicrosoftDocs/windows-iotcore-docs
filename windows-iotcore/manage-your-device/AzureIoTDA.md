@@ -19,13 +19,13 @@ The Azure Device Agent is a ready-to-build open-source package that enables remo
 
 ## How does it work?
 
-![Azure IoT Device Agent](https://github.com/ms-iot/azure-client-tools/blob/master/docs/device-agent/high-level-e2e.png)
 The [Azure IoT Device Agent](https://aka.ms/iot-core-azure-dm-client) consists of 2 core components. 
+
 The Device Provisioning Service Client (DPS Client) automates device provisioning. It connects to the Azure Device Provisioning Service with the device's Enrollment Key and DPS ScopeID. The Azure DPS service identifies the device and provisions it in the configured IoT Hub and returns a connection string back to the device. The DPS client then uses this connection string to connect the device to the right IoT Hub.  
 
 The Device Management Client enables remote device management capabilities using the [Configuration Service Providers](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference), CSP) The Azure Device Agent's remote management capabilities supports a plug-in model which allows you to select only the capabilities you need. In addition to that, the plug-in architecture is extendable. You can write your own plug-in for a device management capability that you need and add it to the Azure Device Agent. All the device management capabilities are remotely accessible using the Device Twin or Module Twin properties and commands, thereby enabling a single-pane-of-glass management approach for all your Windows IoT devices. For a complete list of device management capabilities available refer to [this](https://github.com/ms-iot/azure-client-tools/blob/master/docs/device-agent/reference.md)
 
-In addition to this, the Azure Device Agent also creates and manages SAS tokens for other UWP applications running on the device. The Azure Device Agent can provision other UWP apps as either a Device Twin or as a Module Twin and add their connection strings to the respective TPM slots. The UWP app leverages the [UWP Bridge] (https://github.com/ms-iot/azure-client-tools/blob/master/docs/device-agent/uwp-bridge.md) to read their connection string from the TPM slot and can use that to connect to the IoT Hub. 
+In addition to this, the Azure Device Agent also creates and manages SAS tokens for other UWP applications running on the device. The Azure Device Agent can provision other UWP apps as either a Device Twin or as a Module Twin and add their connection strings to the respective TPM slots. The UWP app leverages the [UWP Bridge](https://github.com/ms-iot/azure-client-tools/blob/master/docs/device-agent/uwp-bridge.md) to read their connection string from the TPM slot and can use that to connect to the IoT Hub. 
 
 ## How to get started?
 
@@ -33,7 +33,8 @@ The Azure IoT Device Agent is available on GitHub. The project also includes sam
 
 ## Migrating from Azure Device Agent V1 to V2
 If you are currently using the v1 version of the Device Agent, one significant change between V1 and V2 is that in the V2 version, the Azure Device Agent no longer shares the connection with an UWP app. With enhancements to the IoT Hub you can now have both the UWP app and the Azure Device Agent have independent connection strings and still be associated with the same device in IoT Hub. Refer [here](https://github.com/ms-iot/azure-client-tools/blob/master/docs/device-agent/migration-from-old-client.md) for more details.
-For more information on the Azure Device Agent V1, refer [here](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/azureiotdm)
+
+For more information on the Azure Device Agent V1, refer [here](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/azureiotdm).
 
 ## Other Useful Tools 
 ### DM Mock Portal
@@ -46,6 +47,4 @@ Microsoft provides the Limpet tool to streamline the Device Provisioning Service
 
 For more details on the Device Provisioning Service registration process with Limpet, see this [repo](https://github.com/ms-iot/azure-client-tools/blob/master/docs/limpet/limpet.md)
 
-License: Limpet is licensed under the MIT open source license 
-
-  
+License: Limpet is licensed under the MIT open source license. 
