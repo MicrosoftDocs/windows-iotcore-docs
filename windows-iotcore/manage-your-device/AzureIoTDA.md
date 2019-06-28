@@ -45,6 +45,6 @@ The Azure Device Provisioning Service allows customers to automatically associat
 
 Microsoft provides the Limpet tool to streamline the Device Provisioning Service registration process. Depending on your manufacturing setup, if there is an online connection available, the device can be registered using Limpet directly with Device Provisioning Service, or Limpet can harvest the EKeyPub for a later, offline registration of the device with Device Provisioning Service.
 
-For more details on the Device Provisioning Service registration process with Limpet, see this [repo](https://github.com/ms-iot/azure-client-tools/blob/master/docs/limpet/limpet.md)
+For more details on the Device Provisioning Service registration process with Limpet, see this [repo](https://github.com/ms-iot/azure-client-tools/blob/master/docs/limpet/limpet.md).
 
 License: Limpet is licensed under the MIT open source license. 
