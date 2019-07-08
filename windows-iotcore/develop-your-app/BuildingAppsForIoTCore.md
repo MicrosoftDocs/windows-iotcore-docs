@@ -114,10 +114,9 @@ C# and VB are both supported as UWP apps and have access to the portion of the .
 Samples:
 
 
-* [C# Blinky Headless with Full Documentation](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground)
-* [C# Blinky Headless Code Only](https://github.com/ms-iot/samples/tree/develop/HelloBlinkyBackground/CS)
-* [VB Blinky Headless Code Only](https://github.com/ms-iot/samples/tree/develop/HelloBlinkyBackground/VB)
-* [C# Blinky UI App](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinky)
+* [C# Blinky Headless](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground/CS)
+* [VB Blinky Headless](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground/VB)
+* [C# Blinky UI App](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinky/CS)
 
 
 ### Javascript
@@ -140,7 +139,7 @@ Samples:
 
 * [Blinky Headless](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground/CPP)
 * [Blinky Headed](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinky/Cpp)
-* [Console App](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/MemoryStatus)
+* [Console App](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/MemoryStatus/CPP)
 
 > [!NOTE]
 > For those who are planning to write their app in C++, you'll need to check the UWP C++ checkbox upon downloading.
@@ -154,7 +153,7 @@ With Arduino Wiring support you can build apps in Arduino Wiring for many popula
 Our [Arduino Wiring Project Guide](../learn-about-hardware/ArduinoWiringProjectGuide.md) provides full instructions on how to get set up to build these apps. The samples copied and linked below will help you get started building your own.  You can even [build WinRT components in Arduino](https://github.com/ms-iot/samples/tree/develop/ArduinoLibraryBlinky) that can then be used from other languages. 
 
 *Blinky Sample Code*
-The full [sample code and docs](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground/VB) are available on our samples page and you can find the full code below:
+The full [sample code and docs](https://github.com/ms-iot/samples/tree/develop/ArduinoLibraryBlinky) are available on our samples page and you can find the full code below:
 
 ```C++
 void setup()

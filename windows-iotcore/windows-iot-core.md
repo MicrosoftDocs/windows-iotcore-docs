@@ -101,7 +101,7 @@ REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d 
 
 ### Different commands supported
 
-* The PowerShell Remove-AppxPackage command works on Dekstop but not on Windows 10 IoT Core.
+* The PowerShell Remove-AppxPackage command works on Desktop but not on Windows 10 IoT Core.
 * Not all folders on your device are accessible by Universal Windows Apps. On Windows 10 IoT Core you can use the FolderPermissions tool to make a folder accessible to a UWP app. For example, run FolderPermissions c:\test -e to give UWP apps access to c:\test folder. However, this is not available on Desktop.
 
 All differences described in this post may not be valid in the future because Windows 10 IoT Core is constantly being updated.
