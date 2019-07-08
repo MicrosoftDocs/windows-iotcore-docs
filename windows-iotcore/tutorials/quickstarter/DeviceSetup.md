@@ -80,7 +80,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 4. Ensure your DragonBoard is in download mode by setting the first boot switch on the board to USB Boot, as shown below. Then, connect DragonBoard the host PC via a microUSB cable, then plug in the DragonBoard to a 12V (> 1A) power supply.
 5. Start the DragonBoard Update Tool, which should detect that the DragonBoard is connect to your PC with a green circle. "Browse" to the DragonBoard's FFU that you downloaded, then click the _Program_ button.
 6. Click "Browse" again and select "rawprogram0.xml" that was generated in step 5. Then click the "Program" button.
-7. Once the download is complete, disconnect the power supply and microUSB cable from the board and toggle the USB Boot switch back to _OFF_. Connect a HDMI display, a mouse, and a keyboard to the DragonBoard and rec-onnect the power supply. After a few minutes, you should see the Windows 10 IoT Core default application. 
+7. Once the download is complete, disconnect the power supply and microUSB cable from the board and toggle the USB Boot switch back to _OFF_. Connect a HDMI display, a mouse, and a keyboard to the DragonBoard and re-connect the power supply. After a few minutes, you should see the Windows 10 IoT Core default application. 
 
 ![DragonBoard in download mode](../../media/DeviceSetup/db1.png)
 
