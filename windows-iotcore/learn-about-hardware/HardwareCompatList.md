@@ -86,6 +86,9 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | [Adafruit 16-Channel PWM](https://www.adafruit.com/product/2327#description-anchor) | ARM32 | Adds the capability to control up to 16 servos with no additional Raspberry Pi processing overhead. Capable of doing PWM up to 1.6KHz with 12 bit precision. | [Adafruit Tutorial C# IoT Sample](https://github.com/golaat/Adafruit.Pwm) | |
 > | [Dexter Industries GrovePi](https://www.dexterindustries.com/shop/grovepi-board/) | ARM32 | You can connect hundreds of different sensors without soldering, so you can program them to monitor, control, and automate devices in your life. | [GrovePi Samples](https://github.com/DexterInd/GrovePi/) | |
 > | Dexter Industries GoPiGo | ARM, x32 | The GoPiGo is a delightful and complete robot for the Raspberry Pi that turns your Pi into a fully operating robot. GoPiGo is a mobile robotic platform for the Raspberry Pi developed by Dexter Industries. | [GoPiGo Samples](https://github.com/DexterInd/GoPiGo/tree/master/Software/CSharp) | |
+> | [SeeedStudio Grove Base Hat for Raspberry PI](https://www.seeedstudio.com/Grove-Base-Hat-for-Raspberry-Pi.html) |ARM| The Grove Base Hat for RPI provides support for the Seeedstudio Grove System on the Raspbery PI platform.| [Library and Samples](https://github.com/KiwiBryn/GroveBaseHatWindows10IoTCore) | |
+> | [SeeedStudio Grove Base Hat for Raspberry PI Zero](https://www.seeedstudio.com/Grove-Base-Hat-for-Raspberry-Pi-Zero-p-3187.html) |ARM| The Grove Base Hat for RPI Zero provides support for the Seeedstudio Grove System on the Raspbery PI platform.| [Library and Samples](https://github.com/KiwiBryn/GroveBaseHatWindows10IoTCore) | |
+
 
 ### Port Expanders
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  | 
