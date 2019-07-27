@@ -89,6 +89,12 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | [SeeedStudio Grove Base Hat for Raspberry PI](https://www.seeedstudio.com/Grove-Base-Hat-for-Raspberry-Pi.html) |ARM| The Grove Base Hat for RPI provides support for the Seeedstudio Grove System on the Raspbery PI platform.| [Library and Samples](https://github.com/KiwiBryn/GroveBaseHatWindows10IoTCore) | |
 > | [SeeedStudio Grove Base Hat for Raspberry PI Zero](https://www.seeedstudio.com/Grove-Base-Hat-for-Raspberry-Pi-Zero-p-3187.html) |ARM| The Grove Base Hat for RPI Zero provides support for the Seeedstudio Grove System on the Raspbery PI platform.| [Library and Samples](https://github.com/KiwiBryn/GroveBaseHatWindows10IoTCore) | |
 
+### [Nordic Semiconductor nRF24L01 Wireless Pi Hats](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF24-series)
+Worldwide 2.5GHz ISM band, 250Kbps, 1Mbps and 2Mbps data rates. Low power modules 10's of meters range, high power modules up 1KM.
+> | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  | 
+> |----------------|-------------------|-------------|--------|------------------------------|
+> | [Ceech Raspberry Pi nRF24l01+ Shield](https://www.tindie.com/products/ceech/new-raspberry-pi-to-nrf24l01-shield/) |ARM| The Raspberry Pi NRF24l01+ Shield Add-on for the Raspberry Pi's, supports a single NRF24l01+ module plus a buzzer and prototyping area.| [Library](https://github.com/techfooninja/Radios.RF24), [Sample application](https://github.com/KiwiBryn/nRF24L01Windows10IoTCoreDuinoDemo), [required modification](https://blog.devmobile.co.nz/2017/07/31/nrf24-windows-10-iot-core-hardware/) | |
+> | [Boros Rf2-Dual nRF24L01 pHat](https://www.tindie.com/products/boros/borosrf2-dual-nrf24l01-phathat-rtc-for-pis/) |ARM| The Boros RF2 supports up to two NRF24L01+ radios and an optional RTC.| [Library](https://github.com/techfooninja/Radios.RF24), [Sample application](https://github.com/KiwiBryn/nRF24L01Windows10IoTCoreDuinoDemo) | |
 
 ### Port Expanders
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  | 
