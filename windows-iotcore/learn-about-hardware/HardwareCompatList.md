@@ -89,6 +89,18 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | [SeeedStudio Grove Base Hat for Raspberry PI](https://www.seeedstudio.com/Grove-Base-Hat-for-Raspberry-Pi.html) |ARM| The Grove Base Hat for RPI provides support for the Seeedstudio Grove System on the Raspbery PI platform.| [Library and Samples](https://github.com/KiwiBryn/GroveBaseHatWindows10IoTCore) | |
 > | [SeeedStudio Grove Base Hat for Raspberry PI Zero](https://www.seeedstudio.com/Grove-Base-Hat-for-Raspberry-Pi-Zero-p-3187.html) |ARM| The Grove Base Hat for RPI Zero provides support for the Seeedstudio Grove System on the Raspbery PI platform.| [Library and Samples](https://github.com/KiwiBryn/GroveBaseHatWindows10IoTCore) | |
 
+### [Semtech SX127ZX based LoRa® Pi Hats](https://www.semtech.com/products/wireless-rf/lora-transceivers)
+Semtech's LoRa® ultra-long range (100M to 10KM) spread spectrum communications technology has high interference immunity and provides a low-cost solution for connecting battery/solar powered devices to conventional network infrastructure.
+> | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  | 
+> |----------------|-------------------|-------------|--------|------------------------------|
+> | [Adafruit LoRa Radio Bonnet 433MHz](https://www.adafruit.com/product/4075) | ARM32 | 433MHz LoRa connectivity, 3 buttons and an OLED display. | [Library and Samples](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [Adafruit LoRa Radio Bonnet 868/915MHz](https://www.adafruit.com/product/4074) | ARM32 | 868/915MHz LoRa connectivity, 3 buttons and an OLED display. | [Library and Samples](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [Dragino LoRa GPS Hat for RaspberryPI 433/868/915MHz](http://www.dragino.com/products/lora/item/106-lora-gps-hat.html) | ARM32 | 433/868/915MHz LoRa connectivity options, and GPS. | [Library and Samples](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [Elecrow LoRa RFM95 IoT Board for RPI 915MHz](https://www.elecrow.com/lora-rfm95-iot-board-for-rpi.html) | ARM32 | 915MHz LoRa connectivity, and Grove sockets. | [Library and Samples](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [Electronic Tricks Lora/LoraWan shield for Raspberry Pi Zero and PI3](https://www.tindie.com/products/electronictrik/loralorawan-shield-for-raspberry-pi-zero-and-pi3/) | ARM32 | 868/915MHz LoRa connectivity, and optional OLED display. | [Library and Samples](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [M2M 1 Channel LoRaWan Gateway Shield for Raspberry Pi](https://www.tindie.com/products/m2m/1-channel-lorawan-gateway-shield-for-raspberry-pi/) | ARM32 | 868/915/923MHz LoRa connectivity options. | [Library and Samples](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [uputronics Raspberry Pi+ LoRa(TM) Expansion Board](https://store.uputronics.com/index.php?route=product/product&path=61&product_id=68) | ARM32 | 433/868/915MHz LoRa connectivity options. | [Library and Samples](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [uputronics Raspberry PiZero LoRa(TM) Expansion Board](https://store.uputronics.com/index.php?route=product/product&path=61&product_id=99) | ARM32 | Dual 433/868/915MHz LoRa connectivity options. | [Library and Samples](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
 
 ### Port Expanders
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  | 
