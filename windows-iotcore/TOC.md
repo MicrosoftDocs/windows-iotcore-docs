@@ -21,6 +21,7 @@
 #### [Minnowboard Max](learn-about-hardware/PinMappings/PinMappingsMBM.md)
 ### [Headed and headless devices](learn-about-hardware/HeadlessMode.md)
 ### [Wake on touch](learn-about-hardware/WakeOnTouch.md)
+### [UEFI Requirements](commercialize-your-device/uefirequirements.md)
 ## [Driver guidance]()
 ### [Driver deployment](learn-about-hardware/DriverDeployment.md)
 ### [Universal Driver Creation](learn-about-hardware/DriverCreation.md)
