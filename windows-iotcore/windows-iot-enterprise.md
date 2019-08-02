@@ -11,14 +11,14 @@ keywords: Windows 10 IoT Enterprise, Enterprise, binary, Windows
 # An overview of Windows 10 IoT Enterprise
 
 > [!NOTE]
-> Windows 10 Containers can only be used with Windows IoT Core and Windows IoT Enterprise for commercial deployments utilizing Microsoft Azure IoT Edge.
+> Windows Containers are supported for commercial deployments on Windows Server, Windows IoT Server, Windows IoT Enterprise and Windows IoT Core.  As of Windows October Update 2018 (Build 17763), Windows Containers can only be used with Windows Enterprise and Professional for dev/test purposes.
 
 ## What is Windows 10 IoT Enterprise?
 Windows 10 IoT Enterprise is a full version of Windows 10 that delivers enterprise manageability and security to IoT solutions. Windows 10 IoT Enterprise shares all the benefits of the world-wide Windows ecosystem. It is a binary equivalent to Windows 10 Enterprise, so you can use the same familiar development and management tools as client PCs and laptops.  However, when it comes to licensing and distribution, the desktop version and IoT versions differ. Note that Windows 10 IoT Enterprise offers both Long-term Servicing Channel (LTSC) and Semi-Annual Channel (SAC) options. OEMs can choose the version they require for their devices.
 
 ## Getting started 
 
-In order to start your journey in manufacturing with Windows 10 IoT Enterprise, you'll need to reach out to a distributor from [this list](https://go.microsoft.com/fwlink/p/?linkid=2093270).
+In order to start your journey in manufacturing with Windows 10 IoT Enterprise, you'll need to reach out to a distributor from [this list](https://go.microsoft.com/fwlink/?linkid=2094697).
 
 You can also try an evaluation copy of Windows 10 IoT Enterprise [here](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise).
 
