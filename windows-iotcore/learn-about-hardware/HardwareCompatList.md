@@ -89,7 +89,7 @@ Looking for information about supported hardware platforms? Click [here](https:/
 > | [SeeedStudio Grove Base Hat for Raspberry PI](https://www.seeedstudio.com/Grove-Base-Hat-for-Raspberry-Pi.html) |ARM| The Grove Base Hat for RPI provides support for the Seeedstudio Grove System on the Raspbery PI platform.| [Library and Samples](https://github.com/KiwiBryn/GroveBaseHatWindows10IoTCore) | |
 > | [SeeedStudio Grove Base Hat for Raspberry PI Zero](https://www.seeedstudio.com/Grove-Base-Hat-for-Raspberry-Pi-Zero-p-3187.html) |ARM| The Grove Base Hat for RPI Zero provides support for the Seeedstudio Grove System on the Raspbery PI platform.| [Library and Samples](https://github.com/KiwiBryn/GroveBaseHatWindows10IoTCore) | |
 
-### [Semtech SX127ZX based LoRa® Pi Hats](https://www.semtech.com/products/wireless-rf/lora-transceivers)
+### [Semtech SX127X based LoRa® Pi Hats](https://www.semtech.com/products/wireless-rf/lora-transceivers)
 Semtech's LoRa® ultra-long range (100M to 10KM) spread spectrum communications technology has high interference immunity and provides a low-cost solution for connecting battery/solar powered devices to conventional network infrastructure.
 
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  | 
@@ -142,6 +142,7 @@ Worldwide 2.5GHz ISM band, 250Kbps, 1Mbps and 2Mbps data rates. Low power module
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified | 
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | Keith & Koep i-PAN M7 CoverLens | ARM32 | 7.0 inch Touchpanel Computer for industrial use with Qualcomm Snapdragon 410E CPU, resolution 800x480px, brightness 850cd/qm, USB 2.0, SD card, POE | [i-PAN M7 information](https://keith-koep.com/en/products/products-hmi/i-pan-m7-coverlens-arm-touch-panel-computer-technical-data/) | &#10004; |
+
 
 ### Miscellaneous
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified | 
