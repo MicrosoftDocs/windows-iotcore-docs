@@ -41,7 +41,7 @@ To install Python on Windows IoT Core:
     python -m pip install --upgrade pip
     ```
 
-## Using Python on Windows Iot Core ARM32
+## Using Python on Windows IoT Core ARM32
 
 To get Python for Windows you will need to build the binaries yourself.
 
@@ -80,7 +80,7 @@ To get Python for Windows you will need to build the binaries yourself.
     python -c "print('Hello World!');quit()"
     ```
 
-## Using Python on Windows Iot Core ARM64
+## Using Python on Windows IoT Core ARM64
 
 To get Python for Windows you will need to build the binaries yourself.
 
@@ -255,6 +255,6 @@ In the output for the `pip install` there may be errors: `Download error on http
     ```
 
 ## Additional Python Developer Resources
-[Python Developer's Guide](https://devguide.python.org/setup/#setup)
-[Build CPython on Windows](https://cpython-core-tutorial.readthedocs.io/en/latest/build_cpython_windows.html)
+- [Python Developer's Guide](https://devguide.python.org/setup/#setup)
+- [Build CPython on Windows](https://cpython-core-tutorial.readthedocs.io/en/latest/build_cpython_windows.html)
 
