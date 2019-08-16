@@ -45,10 +45,10 @@ Windows 10 IoTCore kits now include the language resources for the following lan
 > | Dutch | nl-NL | Europe |
 > | Polish | pl-PL | Europe | 
 > | Romanian | ro-RO | Europe |
-> | Russian | ro-RU | Europe |
+> | Russian | ru-RU | Europe |
 > | Greek | el-GR | Europe |
 > | Portugese (Brazil) | pt-BR | South America/Europe |
-> | Portuese (Portugal) | pt-PR | South America/Europe |
+> | Portuese (Portugal) | pt-PT | South America/Europe |
 
 These language resources contain UI strings, speech language and voices (speech synthesis). Windows IoT images can be built with one or more of these resources and they must be specified during the image time and cannot be modified later. Note that UI language related resources are independent than speech language and voice resources.
 

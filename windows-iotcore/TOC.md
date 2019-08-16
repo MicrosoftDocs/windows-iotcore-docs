@@ -63,6 +63,7 @@
 ### [DISM](connect-your-device/DISM.md) 
 ### [FTP](connect-your-device/FTP.md)
 ### [MTP](connect-your-device/MTP.md)
+### [Python](developer-tools/python.md)
 ## [Connectivity]()
 ### [Wi-Fi Direct](connect-your-device/SetupWiFiDirect.md)
 ### [Wi-Fi](connect-your-device/SetupWifi.md)
