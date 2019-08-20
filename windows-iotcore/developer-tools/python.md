@@ -254,6 +254,76 @@ In the output for the `pip install` there may be errors: `Download error on http
     python c:\test\simple_send_d2c_message.py
     ```
 
+## Using Python in an x64 docker container on Windows IoT Core
+
+1. Download the newest docker, and install files.
+
+    ```powershell
+    Invoke-WebRequest https://master.dockerproject.org/windows/x86_64/docker.zip -OutFile c:\data\docker.zip
+    Expand-Archive c:\data\docker.zip -DestinationPath c:\data
+    move c:\data\docker\docker*exe c:\windows\system32
+    Remove-Item c:\data\docker -Recurse -Force
+    dockerd --register-service
+    net start docker
+    ```
+
+2.  Create Dockerfile
+    ```
+    # escape = `
+    FROM mcr.microsoft.com/windows/nanoserver:1809-amd64
+
+    # Get Python
+    ADD "https://globalcdn.nuget.org/packages/python.3.7.4.nupkg" .\temp\py.zip
+
+    COPY test test
+    COPY certmgr.exe c:\windows\system32
+
+    # need admin for setx and certmgr
+    USER ContainerAdministrator
+
+    # Extract Python
+    RUN tar -xf c:\temp\py.zip -C c:\temp && `
+        move c:\temp\tools c:\ && `
+        ren tools python && `
+        RD c:\temp /s/q && `
+        setx PATH "%PATH%";c:\python;c:\python\scripts /M
+
+    RUN dir c:\test\*.cer /s/b > c:\test\certs.txt && `
+        for /f "delims==" %i in (c:\test\certs.txt) do certmgr -add "%i" -s root -r localMachine -c < c:\test\1.txt
+
+    USER ContainerUser
+
+    RUN python -m pip install --upgrade pip && `
+        python -m pip install azure-iot-device
+
+    CMD cmd /k c:\test\start.cmd
+    ```
+
+3. Copy Dockerfile to c:\docker on device. Also copy any certificates to P:\docker\test.  1.txt is a file with the number 1 and a carraige return.
+
+    ```cmd
+    net use P: \\[device IP address]\c$ /user:administrator
+    md P:\docker\test
+    copy Dockerfile P:\docker
+    copy AppCertificates\*.cer P:\docker\test
+    copy 1.txt P:\docker\test
+    ```
+
+4.  Connect to the device using SSH.  Remote powershell will not work for an interactive docker session.
+
+    ```powershell
+    docker build --isolation==process . -t python
+    docker run --isolation==process python
+    ```
+
+5. Print hello world
+
+    ```
+    python -c "print('Hello Python in Containers!')"
+    ```
+
+6. See Azure IoT SDK directions above to test cloud to device messages.
+
 ## Additional Python Developer Resources
 - [Python Developer's Guide](https://devguide.python.org/setup/#setup)
 - [Build CPython on Windows](https://cpython-core-tutorial.readthedocs.io/en/latest/build_cpython_windows.html)
