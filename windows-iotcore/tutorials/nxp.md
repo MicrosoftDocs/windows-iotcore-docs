@@ -15,6 +15,9 @@ ms.custom: RS5
 > [!IMPORTANT]
 > When the "format this disk" pop up comes up, do _not_ format the disk. We are working on a fix for this issue.
 
+> [!NOTE]
+> Set up for the NXP is nearly identical to setting up a Raspberry Pi.
+
 When setting up a NXP device for prototyping, we recommend using the Windows 10 IoT Core Dashboard. However, if you're looking to manufacture with a NXP device, please refer to the [IoT Core Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). You cannot use maker images for manufacturing.
 <br>
 > [!Video https://www.youtube.com/embed/JPRUbGIyODY]
