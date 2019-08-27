@@ -22,13 +22,13 @@ If you're ready to go to the next level and start commercializing your solution,
 
 Before attempting to manufacture a device, it's best to first try and prototype a device with Windows 10 IoT Core. That way, you can understand what features you'll need and what configurations you'll want when it's time to manufacture.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
+<table>  
+<colgroup>  
+<col width="50%" />  
+<col width="50%" />  
+</colgroup>  
+<thead>  
+<tr class="header">  
 <th align="left">Topic</th>
 <th align="left">Description</th>
 </tr>
