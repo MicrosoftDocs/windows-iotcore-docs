@@ -1,9 +1,11 @@
+### YamlMime:Landing
+
 title: Windows for IoT documentation
 summary: 
 The Windows for IoT platform has multiple editions, each optimized for specific scenarios. They all share the security, manageability, support and cloud connectivity you expect from Window.
 
 metadata:
-  title: Windows for IoT documentation
+  author: saraclay
   description: Learn about Windows for IoT for developing your own connected, embedded solutions.
   services: windows-iot
   ms.service: windows-iot
@@ -23,6 +25,7 @@ landingContent:
             url: windows-iot-enterprise.md
           - text: Windows Server IoT 2019
             url: windows-server.md
+            
   - title: Get started
     linkLists: 
       - linkListType: tutorial
@@ -41,6 +44,7 @@ landingContent:
             url: learn-about-hardware/hardwarecompatlist.md
           - text: NXP i.MX SoCs
             url: learn-about-hardware/iotnxp.md
+            
   - title: Resources
     linkLists:
       - linkListType: learn
