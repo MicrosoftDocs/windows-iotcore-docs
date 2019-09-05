@@ -33,15 +33,14 @@
     href: learn-about-hardware/HardwareCompatList.md
   - name: NXP i.MX SoCs
     href: learn-about-hardware/iotnxp.md
-      items:
-     - name: Pin mappings
-       items:
-     - name: Raspberry Pi 2 and 3
-       href: learn-about-hardware/PinMappings/PinMappingsRPI.md 
-     - name: Dragonboard
-       href: learn-about-hardware/PinMappings/PinMappingsDB.md
-     - name: Minnowboard Max
-       href: learn-about-hardware/PinMappings/PinMappingsMBM.md
+  - name: Pin mappings
+    items:
+    - name: Raspberry Pi 2 and 3
+      href: learn-about-hardware/PinMappings/PinMappingsRPI.md 
+    - name: Dragonboard
+      href: learn-about-hardware/PinMappings/PinMappingsDB.md
+    - name: Minnowboard Max
+      href: learn-about-hardware/PinMappings/PinMappingsMBM.md
   - name: Headed and headless devices
     href: learn-about-hardware/HeadlessMode.md
   - name: Wake on touch
