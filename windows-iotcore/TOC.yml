@@ -190,7 +190,7 @@
   items:
   - name: Insider previews
       items:
-      - name: Current: Build 17744
+      - name: "Current: Build 17744"
         href: release-notes/insider/17744.md
       - name: Build 17723
         href: release-notes/insider/17723.md
@@ -200,7 +200,7 @@
         href: release-notes/insider/17686.md
       - name: Build 17672
         href: release-notes/insider/17672.md
-      - name: Current: Build 17661
+      - name: "Current: Build 17661"
         href: release-notes/insider/17661.md
       - name: Raspberry Pi 3B+ release
         href: release-notes/insider/RPi3BP.md
@@ -216,7 +216,7 @@
         href: release-notes/insider/16257.md
   - name: Commercial releases
       items:
-      - name: Current: October 2018 Update (with January 2019 servicing)
+      - name: "Current: October 2018 Update (with January 2019 servicing)"
         href: release-notes/commercial/17763.md
       - name: October 2018 Update (Build 17763)
         href: release-notes/commercial/October2018Update.md
