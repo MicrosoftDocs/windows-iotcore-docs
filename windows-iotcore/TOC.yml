@@ -86,7 +86,7 @@
   - name: On-screen keyboard
     href: develop-your-app/OnScreenKeyboard.md
   - name: Sign-in dialog bars
-    href: develop-your-app/SignInDialogTitleBars.m
+    href: develop-your-app/SignInDialogTitleBars.md
   - name: Localhost loopback
     href: develop-your-app/Loopback.md
   - name: IoT Shell overview
