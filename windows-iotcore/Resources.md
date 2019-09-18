@@ -40,6 +40,9 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Windows Machine Learning: Implement AI in your Windows apps](https://aka.ms/Windows-ML-WP)
 * [Create more secure IoT solutions with Windows IoT](https://aka.ms/secure-windowsiot)
 
+## Webinars
+* [Intelligent edge best practices](link here)
+
 ## Learning resources
 
 * [Microsoft MVP community](https://mvp.microsoft.com/)
@@ -50,25 +53,6 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Getting started with Windows 10 IoT Core on Hackster.io](http://www.hackster.io/KiwiBryn)
 * [Window 10 IoT Core HATs](https://www.turta.io/iothat)
 
-## Commercialized projects
-
-* [Misty Robotics](https://customers.microsoft.com/en-us/story/misty-robotics)
-* [Askey Turbomate](https://customers.microsoft.com/en-us/story/askey)
-* [Johnson Controls GLAS](https://customers.microsoft.com/en-us/story/johnson-controls)
-* [Keith & Koep Cocktail Booster](https://customers.microsoft.com/de-de/story/keith-koep)
-* [Kodisoft](https://customers.microsoft.com/en-us/story/kodisoft)
-* [Redback Technologies](https://customers.microsoft.com/en-us/story/redback-technologies)
-
-
-## Community projects
-
-* [Industrial automation](https://www.hackster.io/projects/tags/industrial+automation+win10)
-* [Digital signage](https://www.hackster.io/projects/tags/digital+signage+win10)
-* [Healthcare](https://www.hackster.io/projects/tags/healthcare+win10)
-* [Smart buildings](https://www.hackster.io/projects/tags/smart+building+win10)
-* [Retail](https://www.hackster.io/projects/tags/retail+win10)
-* [Security](https://www.hackster.io/projects/tags/security+win10)
-* [Energy](https://www.hackster.io/projects/tags/energy+win10)
 
 ## Our technology partners
 
