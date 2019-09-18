@@ -99,7 +99,7 @@ The following steps will lead through the process to create a lockdown image usi
 
 ### Prerequisites
 
-* A PC running Windows 10 Enterprise
+* A PC running Windows 10 Enterprise (other Windows versions are **not** supported by the provided scripts) 
 * [Windows 10 SDK](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk) - Required for Certificate Generation
 * [Windows 10 ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) - Required for CAB generation
 * Reference platform - release hardware with shipping firmware, OS, drivers and applications will be required for final lockdown
