@@ -1,0 +1,56 @@
+### YamlMime:Landing
+
+title: Windows for IoT documentation
+summary: The Windows for IoT platform has multiple editions, each optimized for specific scenarios. They all share the security, manageability, support and cloud connectivity you expect from Window.
+
+metadata:
+  author: saraclay
+  description: Learn about Windows for IoT for developing your own connected, embedded solutions.
+  services: windows-iot
+  ms.service: windows-iot
+  ms.topic: landing-page
+  author: saraclay
+  ms.author: saclayt
+  ms.date: 09/04/2019
+
+landingContent:
+  - title: About Windows for IoT
+    linkLists: 
+      - linkListType: overview
+        links: 
+          - text: Windows 10 IoT Core
+            url: windows-iot-core.md
+          - text: Windows 10 IoT Enterprise
+            url: windows-iot-enterprise.md
+          - text: Windows Server IoT 2019
+            url: windows-server.md
+            
+  - title: Get started
+    linkLists: 
+      - linkListType: tutorial
+        links: 
+          - text: Windows 10 IoT Core Manufacturing Guide
+            url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide
+          - text: Windows 10 IoT Enterprise Manufacturing Guide
+            url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview
+      - linkListType: reference
+        links: 
+          - text: Prototype boards
+            url: tutorials/quickstarter/prototypeboards.md
+          - text: SoCs and custom boards
+            url: learn-about-hardware/socsandcustomboards.md
+          - text: Hardware compatibility list
+            url: learn-about-hardware/hardwarecompatlist.md
+          - text: NXP i.MX SoCs
+            url: learn-about-hardware/iotnxp.md
+            
+  - title: Resources
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Windows for IoT training and books
+            url: http://www.annabooks.com/training.html
+          - text: Windows for IoT forums
+            url: https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=WindowsIoT
+          - text: Windows for IoT UserVoice
+            url: https://wpdev.uservoice.com/forums/110705-universal-windows-platform?category_id=364159
