@@ -41,7 +41,7 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Create more secure IoT solutions with Windows IoT](https://aka.ms/secure-windowsiot)
 
 ## Webinars
-* [Intelligent edge best practices](link here)
+* [Intelligent edge best practices](https://youtu.be/DEOCKFb7lvM)
 
 ## Learning resources
 
