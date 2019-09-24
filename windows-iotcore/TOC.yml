@@ -9,6 +9,8 @@
     href: windows-iot-enterprise.md
   - name: Windows Server IoT 2019
     href: windows-server.md
+  - name: Windows 10 IoT Core Services
+    href: https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview 
 - name: Tutorials
   expanded: false
   items:
