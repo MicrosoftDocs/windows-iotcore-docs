@@ -23,6 +23,8 @@ landingContent:
             url: windows-iot-enterprise.md
           - text: Windows Server IoT 2019
             url: windows-server.md
+          - text: Windows 10 IoT Core Services
+            url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview
             
   - title: Get started
     linkLists: 
