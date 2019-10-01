@@ -53,5 +53,3 @@ landingContent:
             url: http://www.annabooks.com/training.html
           - text: Windows for IoT forums
             url: https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=WindowsIoT
-          - text: Windows for IoT UserVoice
-            url: https://wpdev.uservoice.com/forums/110705-universal-windows-platform?category_id=364159
