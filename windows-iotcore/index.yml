@@ -50,6 +50,6 @@ landingContent:
       - linkListType: learn
         links:
           - text: Windows for IoT training and books
-            url: http://www.annabooks.com/training.html
+            url: http://www.annabooks.com/index.html
           - text: Windows for IoT forums
             url: https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=WindowsIoT
