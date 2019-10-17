@@ -1,7 +1,7 @@
 ---
 title: Arduino Wiring for Windows IoT Core Devices
 author: msalehmsft
-ms.author: msaleh
+: msaleh
 ms.date: 09/06/17      
 ms.topic: article
 description: Learn how to create, deploy, and debug Arduino Wiring sketches on supported Windows IoT Core devices.

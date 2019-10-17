@@ -1,7 +1,7 @@
 ---
 title: Lightning Performance Testing
 author: msalehmsft
-ms.author: msaleh
+: msaleh
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn about Windows IoT Lightning functionality and toggle frequency for different platforms and languages.

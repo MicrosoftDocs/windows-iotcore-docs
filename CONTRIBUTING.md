@@ -29,7 +29,7 @@ We also ask that before contributing a new article, to ask yourself the followin
 * Have I added my article - if contributing a new article - to the appropriate category as well as updated TOC.md?
 * Have I properly formatted URLs to [look like this](https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/master/CONTRIBUTING.md) instead of this: https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/master/CONTRIBUTING.md
 * Have you had at least two people review your new article?
-* Have you contacted Sara (saclayt) or Namrata (namkedia) if you're unsure about anything?
+* Contact Terry Warwick, twarwick@microsoft.com
 
 When your new article does get accepted, we recommend the following:
 * Share the article with your team! Don't hide your accomplishment - let your peers know.

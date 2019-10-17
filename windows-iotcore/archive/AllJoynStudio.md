@@ -1,7 +1,5 @@
 ---
 title: AllJoyn Studio
-author: saraclay
-ms.author: saclayt
 ms.date: 09/07/17
 ms.topic: article
 ms.prod: windows-iot

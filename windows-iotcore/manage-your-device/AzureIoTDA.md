@@ -1,7 +1,7 @@
 ---
 title: Azure IoT Device Agent
 author: rcheeran
-ms.author: rcheeran
+: rcheeran
 ms.date: 06/25/2019
 ms.topic: article
 description: Learn about how to manage your devices using Azure IoT Device Agent on Windows IoT.

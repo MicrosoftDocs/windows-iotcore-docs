@@ -1,7 +1,5 @@
 ---
 title: Windows 10 IoT Core Pack
-author: saraclay
-ms.author: saclayt
 ms.date: 06/13/18
 ms.topic: article
 description: Learn about how to get up and running with the Microsoft IoT pack.

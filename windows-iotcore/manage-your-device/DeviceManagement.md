@@ -1,7 +1,7 @@
 ---
 title: Managing Windows IoT Core Devices
 author: parameshbabu
-ms.author: pabab
+: pabab
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn about the different ways to manage Windows 10 IoT Core devices.

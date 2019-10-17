@@ -1,7 +1,5 @@
 ---
-title: Get Started Overview
-author: saraclay 
-ms.author: saclayt 
+title: Get Started Overview 
 ms.date: 04/10/2018 
 ms.topic: article 
 description: Learn about getting started with Windows 10 IoT Core.

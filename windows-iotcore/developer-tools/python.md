@@ -1,7 +1,7 @@
 ---
 title: Python
 author: paulmon
-ms.author: paulmon
+: paulmon
 ms.date: 08/13/2019
 ms.topic: article
 description: Learn how to install Python on a device running Windows 10 IoT Core

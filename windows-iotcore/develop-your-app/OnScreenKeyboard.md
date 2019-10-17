@@ -1,7 +1,7 @@
 ---
 title: Configure your headed device with the Windows 10 IoT Core on-screen keyboard
 author: johntasler
-ms.author: jtasler
+: jtasler
 ms.date: 09/13/2018
 ms.topic: article
 description: Learn about the new on-screen keyboard and how to configure it in Windows 10 IoT Core, version 1809. 

@@ -1,7 +1,7 @@
 ---
 title: Communicating with Localhost 
 author: paulmon
-ms.author: paulmon
+: paulmon
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to create a TCP/IP connection with two processes by enabling localhost loopback.

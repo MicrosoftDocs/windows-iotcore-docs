@@ -1,7 +1,5 @@
 ---
 title: Network 3D Printer with Windows 10 IoT Core
-author: saraclay
-ms.author: saclayt
 ms.date: 09/05/17
 ms.topic: article
 description: Learn about how to turn your Windows 10 IoT Core device into a print server and connect your 3D Printer to it.

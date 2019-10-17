@@ -1,7 +1,5 @@
 ---
 title: Windows 10 IoT Resources
-author: saraclay 
-ms.author: saclayt 
 ms.date: 09/07/18
 ms.topic: article 
 description: Leverage all of the resources in the Windows 10 IoT community.

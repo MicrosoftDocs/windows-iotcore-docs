@@ -1,7 +1,5 @@
 ---
 title: Windows 10 IoT Core API Porting Tool
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to use the Windows 10 IoT Core API Porting Tool to estimate porting costs.

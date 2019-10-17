@@ -1,8 +1,6 @@
 ---
-author: saraclay
 Description: 'Troubleshooting different development-related issues.'
 title: 'Troubleshooting'
-ms.author: saclayt
 ms.date: 08/28/18
 ms.topic: article
 ---

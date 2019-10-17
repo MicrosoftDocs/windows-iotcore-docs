@@ -1,7 +1,5 @@
 ---
 title: Get started with the mDNS Responder Sample Source
-author: saraclay
-ms.author: saclayt
 ms.date: 02/26/2019
 ms.topic: article
 description: Learn how to get started with the mDNS Responder Sample Source.

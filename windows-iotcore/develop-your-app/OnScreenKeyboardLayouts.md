@@ -1,7 +1,7 @@
 ---
 title: Specify available on-screen keyboard language layouts
 author: johntasler
-ms.author: jtasler
+: jtasler
 ms.date: 09/12/2018
 ms.topic: article
 description: Learn how to specify which on-screen keyboard language layouts are available to the users of your Windows IoT device.

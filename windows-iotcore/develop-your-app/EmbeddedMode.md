@@ -1,7 +1,7 @@
 ---
 title: Embedded mode
 author: lilyhou
-ms.author: lihou
+: lihou
 ms.date: 11/10/2017
 ms.topic: article
 description: Learn how to configure Windows to allow embedded mode, enabling background applications and other capabilities.

@@ -1,7 +1,7 @@
 ---
 title: Enroll Windows IoT Core Devices in Intune
 author: msmimart
-ms.author: mimart
+: mimart
 ms.date: 05/08/2018
 ms.topic: article
 description: Learn about how to manage your devices using Microsoft Intune Device Management and Windows IoT.

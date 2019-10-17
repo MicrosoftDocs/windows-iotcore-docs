@@ -1,7 +1,5 @@
 ---
 title: Windows 10 IoT Core Pro Update
-author: saraclay
-ms.author: saclayt
 ms.date: 09/11/17
 ms.topic: article
 ms.prod: windows-iot

@@ -1,7 +1,7 @@
 ---
 title: Configure the title bar height for sign in dialog boxes
 author: johntasler
-ms.author: jtasler
+: jtasler
 ms.date: 09/13/2018
 ms.topic: article
 description: Learn how to configure the title bar height for sign in dialog boxes in Windows 10 IoT Core, version 1809. 

@@ -1,7 +1,7 @@
 ---
 title: Developing foreground applications
 author: msalehmsft
-ms.author: msaleh
+: msaleh
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn about the languages and app types that are supported by IoT Core.

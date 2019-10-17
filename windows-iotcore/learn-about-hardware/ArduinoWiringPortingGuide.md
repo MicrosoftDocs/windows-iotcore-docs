@@ -1,7 +1,5 @@
 ---
 title: Arduino Wiring Porting Guide
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn about modifications and common issues that come up when deploying Arduino Wiring projects.

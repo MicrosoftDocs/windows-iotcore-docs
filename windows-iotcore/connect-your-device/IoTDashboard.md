@@ -1,7 +1,5 @@
 ---
 title: Windows 10 IoT Core Dashboard
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn about what the Windows 10 IoT Core Dashboard does and how to get started.

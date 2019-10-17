@@ -1,7 +1,5 @@
 ---
 title: Using WiFi on your Windows 10 IoT Core device
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to use, setup, and configure wifi on your Windows 10 IoT Core device.

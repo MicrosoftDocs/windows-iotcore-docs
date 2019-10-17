@@ -73,6 +73,12 @@
 "source_path": "windows-iotcore/commercialize-your-device/agreement-faq.md",
 "redirect_url": "https://docs.microsoft.com/windows-hardware/manufacture/iot/commercializationfaq",
 "redirect_document_id": true
+},
+
+{
+"source_path": "windows-iotcore/release-notes/CurrentInsider.md",
+"redirect_url": "https://docs.microsoft.com/en-us/windows/iot-core/release-notes/insider/17744",
+"redirect_document_id": true
 }
 
 ]

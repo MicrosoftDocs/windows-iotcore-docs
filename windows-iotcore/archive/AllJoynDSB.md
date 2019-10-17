@@ -1,7 +1,5 @@
 ---
 title: AllJoyn Device System Bridge overview
-author: saraclay
-ms.author: saclayt
 ms.date: 09/06/17
 ms.topic: article
 ms.prod: windows-iot

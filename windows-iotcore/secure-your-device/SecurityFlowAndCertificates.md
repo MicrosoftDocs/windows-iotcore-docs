@@ -1,7 +1,7 @@
 ---
 title: Security Flow and Certificates
 author: jchen
-ms.author: jchen
+: jchen
 ms.date: 04/29/2018
 ms.topic: article
 description: Learn the security flow and certificates used in securing Windows 10 IoT Core

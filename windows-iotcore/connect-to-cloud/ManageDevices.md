@@ -1,7 +1,5 @@
 ---
 title: Manage your Windows devices with the Azure IoT Hub
-author: saraclay
-ms.author: saclayt
 ms.date: 01/08/2018
 ms.topic: article
 description: Learn how to manage your Windows devices with the Azure IoT Hub.

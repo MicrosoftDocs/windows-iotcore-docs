@@ -1,7 +1,5 @@
 ---
 title: Setting up TPM on Suggested Platforms
-author: saraclay
-ms.author: saclayt
 ms.date: 09/05/17
 ms.topic: article
 description: Learn how to make your device secure by following this guide on setting up TPM on suggested platforms.
