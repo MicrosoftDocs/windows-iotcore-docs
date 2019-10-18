@@ -1,6 +1,6 @@
 ---
 title: Mobile Broadband Connection
-ms.date: 06/12/18
+ms.date: 06/12/2018
 ms.topic: article
 description: Learn how to use Mobile Broadband Connection for Windows 10 IoT Core.
 keywords: windows iot, MBB, mobile broadband connection

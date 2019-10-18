@@ -1,6 +1,6 @@
 ---
 title: AllJoyn Troubleshooting
-ms.date: 09/07/17
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT

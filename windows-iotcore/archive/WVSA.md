@@ -1,6 +1,6 @@
 ---
 title: Windows Virtual Shields for Arduino Overview
-ms.date: 09/13/17
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT

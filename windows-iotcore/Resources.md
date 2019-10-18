@@ -1,6 +1,6 @@
 ---
 title: Windows 10 IoT Resources
-ms.date: 09/07/18
+ms.date: 09/07/2018
 ms.topic: article 
 description: Leverage all of the resources in the Windows 10 IoT community.
 keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued Persons, videos, blog posts

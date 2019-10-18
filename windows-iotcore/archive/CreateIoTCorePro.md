@@ -1,6 +1,6 @@
 ---
 title: Windows 10 IoT Core Pro Update
-ms.date: 09/11/17
+ms.date: 09/11/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT

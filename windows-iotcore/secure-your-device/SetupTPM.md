@@ -1,6 +1,6 @@
 ---
 title: Setting up TPM on Suggested Platforms
-ms.date: 09/05/17
+ms.date: 09/05/2017
 ms.topic: article
 description: Learn how to make your device secure by following this guide on setting up TPM on suggested platforms.
 keywords: windows iot, security, setup, Trusted Platform Module, TPM, cryptography, keys

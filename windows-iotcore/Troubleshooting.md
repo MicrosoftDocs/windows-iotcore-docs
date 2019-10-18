@@ -1,7 +1,7 @@
 ---
 Description: 'Troubleshooting different development-related issues.'
 title: 'Troubleshooting'
-ms.date: 08/28/18
+ms.date: 08/28/2018
 ms.topic: article
 ---
 

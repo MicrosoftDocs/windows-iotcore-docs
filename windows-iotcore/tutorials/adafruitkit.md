@@ -1,6 +1,6 @@
 ---
 title: Windows 10 IoT Core Pack
-ms.date: 06/13/18
+ms.date: 06/13/2018
 ms.topic: article
 description: Learn about how to get up and running with the Microsoft IoT pack.
 keywords: windows iot, Raspberry Pi 3, Adafruit, starter pack

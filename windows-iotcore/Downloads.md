@@ -1,7 +1,7 @@
 ---
 Description: 'Download files for Windows 10 IoT Core.'
 title: 'Downloads'
-ms.date: 10/05/18
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT
