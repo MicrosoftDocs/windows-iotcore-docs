@@ -1,7 +1,7 @@
 ---
 title: Windows IoT and NXP i.MX
 author: chsha 
-: chsha 
+ms.author: chsha 
 ms.date: 02/22/2019 
 ms.topic: article 
 description: Learn about Windows 10 IoT Core and NXP i.MX SoCs

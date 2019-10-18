@@ -1,7 +1,7 @@
 ---
 title: Lightning Setup Guide
 author: msalehmsft
-: msaleh
+ms.author: msaleh
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to change the default controller driver to the Lightning DMAP driver on a device.

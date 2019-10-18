@@ -1,7 +1,7 @@
 ---
 title: Bus Providers
 author: msalehmsft
-: msaleh
+ms.author: msaleh
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn about the different providers available through Windows 10 IoT Core.

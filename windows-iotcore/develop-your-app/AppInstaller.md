@@ -1,7 +1,7 @@
 ---
 title: Install your app on an IoT Core device
 author: parameshbabu
-: pabab
+ms.author: pabab
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to install your app using the Windows Device Portal or as part of the IoT core image.

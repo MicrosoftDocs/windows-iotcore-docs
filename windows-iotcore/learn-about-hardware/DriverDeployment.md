@@ -1,7 +1,7 @@
 ---
 title: Driver Deployment
 author: parameshbabu
-: pabab
+ms.author: pabab
 ms.date: 08/22/2017
 ms.topic: article
 description: Learn how to build and deploy a driver using Visual Studio.

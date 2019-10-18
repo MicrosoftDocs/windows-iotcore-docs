@@ -1,7 +1,7 @@
 ---
 title: Lightning providers
 author: msalehmsft
-: msaleh
+ms.author: msaleh
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn more about how you can use the Microosft Lightning Providers library. 

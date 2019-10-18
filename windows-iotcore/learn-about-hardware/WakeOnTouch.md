@@ -1,7 +1,7 @@
 ---
 title: Wake on Touch
 author: jordanrh1
-: jordanrh
+ms.author: jordanrh
 ms.date: 09/17/2018
 ms.topic: article
 description: Configure your device to wake on touch

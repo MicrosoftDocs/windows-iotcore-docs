@@ -1,7 +1,7 @@
 ---
 title: Creating Unit Tests
 author: bfjelds
-: bfjelds
+ms.author: bfjelds
 ms.date: 10/08/2018
 ms.topic: article
 description: Learn about the unit tests that are supported by IoT Core.
