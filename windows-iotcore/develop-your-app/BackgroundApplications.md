@@ -121,5 +121,5 @@ Headless : BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee`
 
 `Removed headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee`
 
-# See Also
+## See Also
 To add a background app when building a custom image see [Create an Appx package](../build-your-image/createinstallpackage.md)

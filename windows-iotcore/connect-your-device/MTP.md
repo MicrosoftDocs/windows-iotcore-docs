@@ -1,7 +1,7 @@
 ---
 title: Media Transfer Protocol
 author: PawelWMS
-: pawelwi
+ms.author: pawelwi
 ms.date: 12/06/2017
 ms.topic: article
 description: Learn how to enable the optional Media Transfer Protocol (MTP) feature to transfer files to and from your devices through USB.

@@ -6,7 +6,7 @@ description: Learn how to use Mobile Broadband Connection for Windows 10 IoT Cor
 keywords: windows iot, MBB, mobile broadband connection
 ---
 
-## Mobile Broadband Connection
+# Mobile Broadband Connection
 
 Mobile Broadband Connection is supported on [Windows 10 IoT Core](http://windowsondevices.com). If your IoT gateway supports the mobile broadband modem module, you can use the `MBBConnect` tool to help setup configurations for mobile broadband connection in IoT Core.
 

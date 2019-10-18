@@ -1,6 +1,5 @@
 ---
 title: Setting up a NXP device
-:  
 ms.date: 05/22/2019 
 ms.topic: article 
 description: Learn about how to set up your NXP device with Windows 10 IoT Core.
