@@ -1,7 +1,5 @@
 ---
 title: IoT Shell Overview
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn about how to leverage the IoT Shell to navigate between navigations on your device.

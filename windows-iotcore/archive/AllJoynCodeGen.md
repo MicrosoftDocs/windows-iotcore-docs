@@ -1,8 +1,6 @@
 ---
 title: AllJoynCodeGen Overview
-author: saraclay
-ms.author: saclayt
-ms.date: 09/06/17
+ms.date: 09/06/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT

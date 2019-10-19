@@ -1,7 +1,5 @@
 ---
 title: Install USB Peripheral Drivers
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to create a driver package and install third-party drivers on your devices.

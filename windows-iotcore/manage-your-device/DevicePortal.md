@@ -1,7 +1,5 @@
 ---
 title: Windows Device Portal 
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 ms.prod: windows-iot

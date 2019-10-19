@@ -1,7 +1,5 @@
 ---
 title: Suggested Prototype Boards
-author: saraclay
-ms.author: saclayt
 ms.date: 04/17/2018
 ms.topic: article
 description: Learn about the suggested prototype boards for Windows 10 IoT.

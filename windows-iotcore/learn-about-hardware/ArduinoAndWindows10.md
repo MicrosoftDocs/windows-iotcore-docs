@@ -1,7 +1,5 @@
 ---
 title: Arduino and Windows 10
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn about how to use Arduino and Windows 10 together in Wiring, Remote Arduino, and more.

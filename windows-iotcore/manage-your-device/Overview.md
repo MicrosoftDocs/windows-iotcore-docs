@@ -1,7 +1,5 @@
 ---
 title: Debugging overview
-author: saraclay
-ms.author: saclayt
 ms.date: 05/10/2019
 ms.topic: article
 ms.prod: windows-iot

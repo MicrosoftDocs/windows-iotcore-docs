@@ -1,7 +1,5 @@
 ---
 title: Overview of Windows 10 IoT Enterprise
-author: saraclay
-ms.author: saclayt
 ms.date: 01/18/2017
 ms.topic: article
 description: Learn about what Windows 10 IoT Enterprise is and what you can do with it.

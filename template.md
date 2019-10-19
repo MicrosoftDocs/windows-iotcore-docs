@@ -5,11 +5,12 @@ ms.author: Microsoft alias goes here
 ms.date: 09/11/2018
 ms.topic: article
 description: Description goes here
-keywords: windows iot, solutions, architecture, partners
+keywords: windows iot
+ROBOTS: NOINDEX
 ---
 
 # Main title goes here
 
-Content
+Content - the Robots: NoIndex metadata tag is only for this page, don't include that in new articles. 
 
 ## Subtitle

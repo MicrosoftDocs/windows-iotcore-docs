@@ -41,6 +41,8 @@
       ],
       "ms.prod": "windows-iot",
       "ms.technology": "IoT",
+      "ms.author": "twarwick",
+      "author": "TerryWarwick",
       "titleSuffix": "Windows IoT"
     },
     "fileMetadata": {},

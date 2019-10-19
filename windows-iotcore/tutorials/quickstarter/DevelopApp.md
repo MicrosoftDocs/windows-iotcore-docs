@@ -1,7 +1,5 @@
 ---
 title: Develop an app for your device
-author: saraclay 
-ms.author: saclayt 
 ms.date: 04/17/2018 
 ms.topic: article 
 description: Learn about how to add and develop apps for your device

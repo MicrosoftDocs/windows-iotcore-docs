@@ -1,7 +1,5 @@
 ---
 title: Overview of Windows 10 IoT 
-author: saraclay
-ms.author: saclayt
 ms.date: 01/30/2018
 ms.topic: article
 description: Learn about what Windows 10 IoT is and what you can do with it.

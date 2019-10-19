@@ -1,7 +1,5 @@
 ---
 title: October 2018 Update - Build 17763
-author: saraclay
-ms.author: saclayt
 ms.date: 10/02/2018
 ms.topic: article
 description: Learn about what's new in the October 2018 Update for Windows.

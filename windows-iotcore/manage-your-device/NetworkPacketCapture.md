@@ -1,7 +1,5 @@
 ---
 title: Network packet capture
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to use Microsoft Message Analyzer to enable network packet capture

@@ -1,7 +1,5 @@
 ---
 title: Raspberry Pi 2 & 3 Pin Mappings
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn about the functionality of pin mappings for Raspberry Pi 2 and 3.

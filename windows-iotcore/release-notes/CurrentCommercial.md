@@ -1,7 +1,5 @@
 ---
 title: Release Notes for Build 17763.253
-ms.author: saclayt
-author: saraclay
 ms.date: 02/14/2019
 ms.topic: article
 description: Read and learn about what's new in Windows Insider Build Number 17763.253

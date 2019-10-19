@@ -1,7 +1,5 @@
 ---
 title: Bluetooth Support
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to leverage Bluetooth for devices running Windows 10 IoT Core.

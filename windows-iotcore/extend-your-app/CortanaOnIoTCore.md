@@ -1,7 +1,5 @@
 ---
 title: Cortana on IoT Core
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to get started and install updates for Cortana on Windows IoT Core.

@@ -2,7 +2,7 @@
 title: Debug your app using Remote Console App Debugging
 author: bfjelds
 ms.author: bfjelds
-ms.date: 09/12/17
+ms.date: 09/12/2017
 ms.topic: article
 description: Learn how to remotely debug your IoT Core console application remotely in Visual Studio.
 keywords: windows iot, visual studio, app deployment, remote debugging
