@@ -1,7 +1,5 @@
 ---
 title: Using Project Rome with Windows 10 IoT Core
-author: saraclay
-ms.author: saclayt
 ms.date: 11/14/2017
 ms.topic: article
 description: Learn and understand the steps to take your Windows IoT device to market.

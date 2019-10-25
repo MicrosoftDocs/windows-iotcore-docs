@@ -73,6 +73,96 @@
 "source_path": "windows-iotcore/commercialize-your-device/agreement-faq.md",
 "redirect_url": "https://docs.microsoft.com/windows-hardware/manufacture/iot/commercializationfaq",
 "redirect_document_id": true
+},
+
+{
+"source_path": "windows-iotcore/release-notes/CurrentInsider.md",
+"redirect_url": "https://docs.microsoft.com/windows/iot-core/release-notes/insider/17744",
+"redirect_document_id": false
+},
+
+{
+    "source_path": "windows-iotcore/release-notes/CurrentCommercial.md",
+    "redirect_url": "https://docs.microsoft.com/windows/iot-core/release-notes/commercial/17763",
+    "redirect_document_id": false
+},
+
+{
+    "source_path": "windows-iotcore/release-notes/Insider/16257.md",
+    "redirect_url": "https://docs.microsoft.com/windows/iot-core/release-notes/commercial/17763",
+    "redirect_document_id": false
+},
+
+{
+    "source_path": "windows-iotcore/release-notes/Insider/16267.md",
+    "redirect_url": "https://docs.microsoft.com/windows/iot-core/release-notes/commercial/17763",
+    "redirect_document_id": false
+},
+
+{
+    "source_path": "windows-iotcore/release-notes/Insider/17015.md",
+    "redirect_url": "https://docs.microsoft.com/windows/iot-core/release-notes/commercial/17763",
+    "redirect_document_id": false
+},
+
+{
+    "source_path": "windows-iotcore/release-notes/Insider/17083.md",
+    "redirect_url": "https://docs.microsoft.com/windows/iot-core/release-notes/commercial/17763",
+    "redirect_document_id": false
+},
+
+{
+    "source_path": "windows-iotcore/release-notes/Insider/17110.md",
+    "redirect_url": "https://docs.microsoft.com/windows/iot-core/release-notes/commercial/17763",
+    "redirect_document_id": false
+},
+
+{
+    "source_path": "windows-iotcore/release-notes/Insider/17661.md",
+    "redirect_url": "https://docs.microsoft.com/windows/iot-core/release-notes/commercial/17763",
+    "redirect_document_id": false
+},
+
+{
+    "source_path": "windows-iotcore/release-notes/Insider/17672.md",
+    "redirect_url": "https://docs.microsoft.com/windows/iot-core/release-notes/commercial/17763",
+    "redirect_document_id": false
+},
+
+{
+    "source_path": "windows-iotcore/release-notes/Insider/17686.md",
+    "redirect_url": "https://docs.microsoft.com/windows/iot-core/release-notes/commercial/17763",
+    "redirect_document_id": false
+},
+
+{
+    "source_path": "windows-iotcore/release-notes/Insider/17692.md",
+    "redirect_url": "https://docs.microsoft.com/windows/iot-core/release-notes/commercial/17763",
+    "redirect_document_id": false
+},
+
+{
+    "source_path": "windows-iotcore/release-notes/Insider/17723.md",
+    "redirect_url": "https://docs.microsoft.com/windows/iot-core/release-notes/commercial/17763",
+    "redirect_document_id": false
+},
+
+{
+    "source_path": "windows-iotcore/release-notes/Insider/17763.md",
+    "redirect_url": "https://docs.microsoft.com/windows/iot-core/release-notes/commercial/17763",
+    "redirect_document_id": false
+},
+
+{
+    "source_path": "windows-iotcore/release-notes/Insider/17744.md",
+    "redirect_url": "https://docs.microsoft.com/windows/iot-core/release-notes/commercial/17763",
+    "redirect_document_id": false
+},
+
+{
+    "source_path": "windows-iotcore/learn-about-hardware/windowsiotenterprise.md",
+    "redirect_url": "https://docs.microsoft.com/windows/iot-core/windows-iot-enterprise",
+    "redirect_document_id": false
 }
 
 ]

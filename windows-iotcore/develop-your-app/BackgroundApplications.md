@@ -1,7 +1,5 @@
 ---
 title: Background Applications
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to develop background applications for your IoT device.
@@ -123,5 +121,5 @@ Headless : BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee`
 
 `Removed headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee`
 
-# See Also
+## See Also
 To add a background app when building a custom image see [Create an Appx package](../build-your-image/createinstallpackage.md)

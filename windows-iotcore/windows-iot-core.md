@@ -1,7 +1,5 @@
 ---
 title: Overview of Windows 10 IoT Core
-author: saraclay
-ms.author: saclayt
 ms.date: 01/18/2018
 ms.topic: article
 description: Learn about what Windows 10 IoT Core is and what you can do with it.

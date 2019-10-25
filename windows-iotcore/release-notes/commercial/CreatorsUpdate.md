@@ -1,7 +1,5 @@
 ---
 title: Creators Update - Build 15063
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Read and learn about what's new in the Creators Update.

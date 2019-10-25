@@ -2,7 +2,7 @@
 title: Windows 10 IoT Core Language Support
 author: msalehmsft
 ms.author: msaleh
-ms.date: 09/12/17
+ms.date: 09/12/2017
 ms.topic: article
 description: Learn about multiple language support in UWP applications and OS on IoT Core.
 keywords: windows iot, languages, app types, UWP, OS

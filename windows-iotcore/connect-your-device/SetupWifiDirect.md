@@ -1,7 +1,5 @@
 ---
 title: Using WiFi Direct on your Windows 10 Iot Core Device
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to setup, test, and use wifi direct on devices with an enabled USB wifi adapter.

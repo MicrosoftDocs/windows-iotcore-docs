@@ -1,7 +1,5 @@
 ---
 title: SoCs and Custom Boards for Windows 10 IoT Core
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn about the hardware features for a variety of suggested boards and community devices.

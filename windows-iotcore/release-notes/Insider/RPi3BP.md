@@ -1,7 +1,5 @@
 ---
 title: Release Notes for Raspberry Pi 3B+
-author: zeeshanfurqan
-ms.author: zeeshanf
 ms.date: 05/16/2018
 ms.topic: article
 description: Read and learn about what's in the build for Raspberry Pi 3B+.

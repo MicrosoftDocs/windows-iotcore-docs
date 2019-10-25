@@ -1,7 +1,5 @@
 ---
 title: Trusted Platform Module (TPM)
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to use a Trusted Platform Module to enable cryptographic capabilities to better secure devices.

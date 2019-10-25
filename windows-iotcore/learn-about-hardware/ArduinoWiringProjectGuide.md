@@ -1,7 +1,5 @@
 ---
 title: Arduino Wiring Project Guide
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn about the creation, setup, and deployment of an Arduino Wiring project using Windows IoT Core.
