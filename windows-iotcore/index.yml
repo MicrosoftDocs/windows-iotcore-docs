@@ -5,8 +5,6 @@ summary: The Windows for IoT platform has multiple editions, each optimized for 
 
 metadata:
   description: Learn about Windows for IoT for developing your own connected, embedded solutions.
-  services: windows-iot
-  ms.service: windows-iot
   ms.topic: landing-page
   ms.date: 09/04/2019
 
