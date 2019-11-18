@@ -14,9 +14,11 @@ NXP supports the Windows 10 IoT Core through board support packages (BSPs) on i.
 
 The highly optimized Windows 10 IoT Core BSPs on i.MX Applications platforms make it easier to build secure, scalable solutions from device to cloud, ranging from provisioning to managing and securing devices at scale. Designers can easily run cloud services and gain insights from IoT devices. Windows 10 IoT Core on i.MX Applications Processors provides faster time to market with many included user interfaces and device stacks that works out of the box.
 
+Based on the overwhelming customer interest in Windows 10 IoT Core with NXP's i.MX silicon, Microsoft and NXP have made the BSPs for the i.MX 6, i.MX 7, and i.MX 8M family of SoCs available for commercial use. Because of the long history Microsoft and NXP have in the embedded and IoT markets, we understand the need for design flexibility. Therefore, in addition to the multiple single board computers and system on module solutions Microsoft, NXP, and our hardware partners have enabled, the i.MX 6, i.MX 7, and i.MX 8M BSPs are provided under open source licensing. Now, everyone will be able to access the complete BSP contents for the i.MX 6, i.MX 7, and i.MX 8M product families for commercial use on their hardware along with the October 2018 release of Windows 10 IoT Core.
+
 ## BSP Access
 
-If you are interested to enable commercial support for your own i.MX hardware, please access the BSP source and documentation on [NXP's website](https://www.nxp.com/design/software/embedded-software/windows-10-iot-core-for-i.mx-applications-processors:IMXWIN10IOT). 
+If you are interested to enable commercial support for your own i/MX hardware, please access the BSP source and documentation on [NXP's website](https://www.nxp.com/design/software/embedded-software/windows-10-iotIf-core-for-i.mx-applications-processors:IMXWIN10IOT). 
 
 If you have NXP hardware/BSP releated questions or feedback on how the BSP can better support your targeted solution, please post to the [NXP Community](https://community.nxp.com/community/imx/content?filterID=contentstatus%5Bpublished%5D%7Ecategory%5Bwindows%5D). For any Windows related questions, please use the [Microsoft Community](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT).
 
