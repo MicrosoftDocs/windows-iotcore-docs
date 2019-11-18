@@ -10,23 +10,24 @@ keywords: Windows 10 IoT Core, Get Started, i.MX, NXP
 
 # Window 10 IoT Core and NXP i.MX SoCs
 
-In 2018, Microsoft and NXP announced a private preview of Windows 10 IoT Core on NXP i.MX 6 and i.MX 7 silicon and began work on the i.MX 8M SoCs. Hundreds of commercial developers, researchers, and Makers expressed their interest in the combination of 10 years of Windows security updates and the flexibility and reliability of NXP silicon. 
- 
-During the preview, Microsoft and NXP engineers spent thousands of hours tuning and improving the BSP based on input from those evaluating the solution. We worked with customers interested in modernizing legacy industrial controllers, developing new cloud connected building automation solutions, and gateways with class leading security such as [trusted I/O](https://blogs.windows.com/windowsexperience/2018/04/24/trusted-cyber-physical-systems-looks-to-protect-your-critical-infrastructure-from-modern-threats-in-the-world-of-iot/#A0WkfgLBpgbLaFe3.97).
- 
-Based on the overwhelming interest in the solution, Microsoft and NXP are now making BSPs for the i.MX 6, i.MX 7, and i.MX 8M family of SoCs available as a non-commercial public preview. Because of the long history Microsoft and NXP have in the embedded and IoT markets, we understand the need for design flexibility. Therefore, in addition to the multiple single board computers and system on module solutions Microsoft, NXP, and our hardware partners have enabled, the i.MX 6, i.MX 7, and i.MX 8M BSPs are provided under open source licensing. Now, everyone will be able to access the complete BSP contents for the i.MX 6, i.MX 7, and i.MX 8M product families for evaluation use on their hardware along with the October 2018 release of Windows 10 IoT Core.
+NXP supports the Windows 10 IoT Core through board support packages (BSPs) on i.MX Applications Processors and featured development boards. 
 
+The highly optimized Windows 10 IoT Core BSPs on i.MX Applications platforms make it easier to build secure, scalable solutions from device to cloud, ranging from provisioning to managing and securing devices at scale. Designers can easily run cloud services and gain insights from IoT devices. Windows 10 IoT Core on i.MX Applications Processors provides faster time to market with many included user interfaces and device stacks that works out of the box.
+
+Based on the overwhelming customer interest in Windows 10 IoT Core with NXP's i.MX silicon, Microsoft and NXP have made the BSPs for the i.MX 6, i.MX 7, and i.MX 8M family of SoCs available for commercial use. Because of the long history Microsoft and NXP have in the embedded and IoT markets, we understand the need for design flexibility. Therefore, in addition to the multiple single board computers and system on module solutions Microsoft, NXP, and our hardware partners have enabled, the i.MX 6, i.MX 7, and i.MX 8M BSPs are provided under open source licensing. Now, everyone will be able to access the complete BSP contents for the i.MX 6, i.MX 7, and i.MX 8M product families for commercial use on their hardware along with the October 2018 release of Windows 10 IoT Core.
 
 ## BSP Access
 
-If you are interested to enable support for your own i.MX hardware, please access the BSP source and documentation on [Github]( https://github.com/ms-iot/imx-iotcore). Unless noted, the majority of the source is provided under MIT license. The code is released for commercial use with support provided by NXP and can be found [here](https://www.nxp.com/support/developer-resources/evaluation-and-development-boards/i.mx-evaluation-and-development-boards/i.mx-software-and-development-tool:IMX-SW).
+If you are interested to enable commercial support for your own i/MX hardware, please access the BSP source and documentation on [NXP's website](https://www.nxp.com/design/software/embedded-software/windows-10-iotIf-core-for-i.mx-applications-processors:IMXWIN10IOT). 
 
 If you have NXP hardware/BSP releated questions or feedback on how the BSP can better support your targeted solution, please post to the [NXP Community](https://community.nxp.com/community/imx/content?filterID=contentstatus%5Bpublished%5D%7Ecategory%5Bwindows%5D). For any Windows related questions, please use the [Microsoft Community](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT).
+
+If you need additional support beyond the community forums for BSP customization and integation for i.MX products, support is available via Pro-Support www.nxp.com/prosupport. Inquiries can be sent to [prosupport@nxp.com](mailto:prosupport@nxp.com). For Windows 10 IoT paid services and integration, please contact [epsoinfo@microsoft.com](mailto:epsoinfo@microsoft.com).
 
 
 ## Ecosystem Resources
 
-Several Microsoft and NXP partners have enabled commercial i.MX 6, i.MX 7, and i.MX 8M devices with support for Windows 10 IoT Core. Please contact the partner directly for hardware and a platform image.
+Several Microsoft and NXP partners have enabled Windows 10 IoT Core on commercial i.MX 6, i.MX 7, and i.MX 8M devices. Please contact the partner directly for hardware access. 
 
 
 > | Device | Contact |
@@ -48,3 +49,7 @@ Several Microsoft and NXP partners have enabled commercial i.MX 6, i.MX 7, and i
 > | [MCIMX6ULL-EVK](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/i.mx-applications-processors/i.mx-6-processors/evaluation-kit-for-the-i.mx-6ull-and-6ulz-applications-processor:MCIMX6ULL-EVK) | [Wei Wang](mailto:Wei.A.Wang@nxp.com) |
 > | [MCIMX8M-EVK](https://www.nxp.com/support/developer-resources/software-development-tools/i.mx-developer-resources/evaluation-kit-for-the-i.mx-8m-applications-processor:MCIMX8M-EVK) |  |
 > | [MCIMX8MMINI-EVK](http://www.nxp.com/imx8mminievk) | []() |
+> | [i.MX8M MaaXBoard](http://www.embest-tech.com/prod_view.aspx?TypeId=117&Id=388&Fid=t3:117:3) | [chinasales@embest-tech.com](mailto:chinasales@embest-tech.com) |
+
+Note: The partners above support their hardware and the BSP for their hardware. They may be unable to assist with other software or configuration issues.
+
