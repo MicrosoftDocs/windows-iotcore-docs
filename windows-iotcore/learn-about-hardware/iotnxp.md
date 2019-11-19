@@ -10,6 +10,7 @@ keywords: Windows 10 IoT Core, Get Started, i.MX, NXP
 
 # Window 10 IoT Core and NXP i.MX SoCs
 
+
 NXP has made the board support packages (BSPs) for the i.MX 6, i.MX 7, and i.MX 8M family of SoCs available for commercial use. The highly optimized Windows 10 IoT Core BSPs on i.MX applications platforms make it easier to build secure, scalable solutions from device to cloud, ranging from provisioning to managing and securing devices at scale. Designers can easily run cloud services and gain insights from IoT devices. Windows 10 IoT Core on i.MX applications Processors provides faster time to market with many included user interfaces and device stacks that works out of the box.
 
 NXP supports the Windows 10 IoT Core through open source BSPs on i.MX applications Processors and featured development boards.  In addition to the NXP designed development boards, NXP hardware partners have enabled multiple i.MX6, i.MX7, and i.MX 8M single board computers and system on module solutions using the open source licensed BSPs. Now, everyone can access the complete BSP contents for the i.MX 6, i.MX 7, and i.MX 8M product families for commercial use on their hardware along with the October 2018 release of Windows 10 IoT Core that is supported for 10 years.
