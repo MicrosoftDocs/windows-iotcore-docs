@@ -38,7 +38,7 @@ The **lowLevel** device Capability gives access to low-level hardware interfaces
 The **lowLevelDevices** Capability allows apps to access custom devices when a number of additional requirements are met. This
 capability should not be confused with the lowLevel device capability, which allows access to GPIO, I2C, SPI, and PWM devices.
 
-Refer to [App capability declarations](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations) for details.
+Refer to [App capability declarations](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations) for details.
 
 ## systemManagment Capability
 
@@ -59,7 +59,7 @@ If you are debugging on a device that is not running Windows IoT Core and you se
 ## Changing the mode
 To enable embedded mode you will need to create a provisioning package in Imaging and Configuration Designer (ICD) that sets AllowEmbeddedMode=1.  To install ICD you need to download and install the Windows ADK for Windows 10.
 
-* [Download the Windows ADK for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=526740)
+* [Download the Windows ADK for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=526740)
 * [Learn about what's new in the Windows ADK for Windows 10](https://msdn.microsoft.com/library/windows/hardware/dn927348(v=vs.85).aspx)
 
 1. When installing the ADK select **Imaging and Configuration Designer (ICD)**
