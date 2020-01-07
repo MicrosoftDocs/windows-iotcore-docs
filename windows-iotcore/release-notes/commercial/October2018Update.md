@@ -10,7 +10,7 @@ keywords: Windows IoT, October 2018 Update, release notes
 Build Number 17763. October 2018
 
 > [!IMPORTANT]
-> If you're using the [October 2018 Update](https://docs.microsoft.com/en-us/windows/iot-core/release-notes/commercial/october2018update), please use the [October Update (with January servicing pack, build 17763.253)](https://docs.microsoft.com/en-us/windows/iot-core/release-notes/commercial/17763) release instead. We have found that there are known issues that affect users of the October 2018 Update. 
+> If you're using the [October 2018 Update](https://docs.microsoft.com/windows/iot-core/release-notes/commercial/october2018update), please use the [October Update (with January servicing pack, build 17763.253)](https://docs.microsoft.com/windows/iot-core/release-notes/commercial/17763) release instead. We have found that there are known issues that affect users of the October 2018 Update. 
 
 Windows 10 IoT enables development of embedded or dedicated-purpose devices and is the choice for OEMs and developers building Windows solutions for smart devices.
 
@@ -42,11 +42,11 @@ _Windows 10 IoT Core_
 * Bus tools that allow you to interact with Gpio, I2c, Spi and UART are now available in [our samples repository](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/BusTools). These tools will run on any edition of Windows including Windows 10 IoT Core and Windows Enterprise. 
 * [The Windows.System.Update Namespace API](https://docs.microsoft.com/uwp/api/windows.system.update) enables calls for interactive control of system updates. This namespace is only available for Windows 10 IoT Core.
 * If you're looking to use IoT Central as part of a Windows 10 IoT solution, you can now prepare and [connect a Windows 10 IoT Core device to your Azure IoT Central application](https://docs.microsoft.com/azure/iot-central/howto-connect-windowsiotcore). 
-* The release for the Raspberry Pi 3B+ (the downloadable ISO can be found [here](http://go.microsoft.com/fwlink/?LinkID=708576)) is a technical preview and there is currently no timeline for a release version. For a better evaluation experience and fr any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm or NXP SoCs. 
+* The release for the Raspberry Pi 3B+ (the downloadable ISO can be found [here](https://go.microsoft.com/fwlink/?LinkID=708576)) is a technical preview and there is currently no timeline for a release version. For a better evaluation experience and fr any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm or NXP SoCs. 
 
 ## IoT Enterprise Manufacturing Guide
 
-* A new manufacturing guide for Windows 10 IoT Enterprise is [now available](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview). 
+* A new manufacturing guide for Windows 10 IoT Enterprise is [now available](https://docs.microsoft.com/windows-hardware/manufacture/desktop/iot-ent-overview). 
 
 ## Improvements in Assigned Access 
 

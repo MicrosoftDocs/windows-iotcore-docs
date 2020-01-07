@@ -17,7 +17,7 @@ ms.custom: RS5
 > [!NOTE]
 > Set up for the NXP is nearly identical to setting up a Raspberry Pi.
 
-When setting up a NXP device for prototyping, we recommend using the Windows 10 IoT Core Dashboard. However, if you're looking to manufacture with a NXP device, please refer to the [IoT Core Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). You cannot use maker images for manufacturing.
+When setting up a NXP device for prototyping, we recommend using the Windows 10 IoT Core Dashboard. However, if you're looking to manufacture with a NXP device, please refer to the [IoT Core Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). You cannot use maker images for manufacturing.
 <br>
 > [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 
@@ -41,7 +41,7 @@ Device: minwinpc
 Password: p@ssw0rd
 ```
 
-4. Upload your pre-downloaded image file using the "Browse" function. For more information, see our [NXP documentation](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/iotnxp).
+4. Upload your pre-downloaded image file using the "Browse" function. For more information, see our [NXP documentation](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/iotnxp).
 5. Accept the software license terms and click *Download and Install*. If all goes well, you'll see that Windows 10 IoT Core is now flashing your SD card.
 
 ![Dashboard screenshot](../media/DeviceSetup/Dashboard-Screenshot.jpg)

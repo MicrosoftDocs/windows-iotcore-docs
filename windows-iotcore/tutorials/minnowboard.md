@@ -17,7 +17,7 @@ ms.custom: RS5
 > [!IMPORTANT]
 > When the "format this disk" pop up comes up, do _not_ format the disk. We are working on a fix for this issue.
 
-When setting up a MinnowBoard for prototyping, we recommend using the Windows 10 IoT Core Dashboard. However, if you're looking to manufacture with a MinnowBoard, please refer to the [IoT Core Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). You cannot use maker images for manufacturing.
+When setting up a MinnowBoard for prototyping, we recommend using the Windows 10 IoT Core Dashboard. However, if you're looking to manufacture with a MinnowBoard, please refer to the [IoT Core Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). You cannot use maker images for manufacturing.
 <br>
 > [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 

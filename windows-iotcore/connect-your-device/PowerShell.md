@@ -136,6 +136,6 @@ For a list of commands and utilities that you can use with PowerShell, see the [
 
 - Outbound CIM and PowerShell remoting is not supported. Relevant functionality in relying cmdlets will not work. These include  Enter-PSSession, Get-Job, Receive-Job, Import-Module, Invoke-Command, and Copy-Item.
 
-- SecureString commands ConvertFrom-SecureString and ConvertTo-SecureString do not work unless the session is created using CredSSP authentication. Otherwise, the -Key parameter must be specified. For details on configuring CredSSP authentication, see [The “Double-Hop” Problem](http://blogs.msdn.com/b/clustering/archive/2009/06/25/9803001.aspx).
+- SecureString commands ConvertFrom-SecureString and ConvertTo-SecureString do not work unless the session is created using CredSSP authentication. Otherwise, the -Key parameter must be specified. For details on configuring CredSSP authentication, see [Enable PowerShell “Second-Hop” Functionality with CredSSP](https://devblogs.microsoft.com/scripting/enable-powershell-second-hop-functionality-with-credssp/).
 
 

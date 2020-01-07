@@ -20,7 +20,7 @@ In order to start your journey in manufacturing with Windows 10 IoT Enterprise, 
 
 You can also try an evaluation copy of Windows 10 IoT Enterprise [here](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise).
 
-From there, you can learn how to manufacture with Windows 10 IoT Enterprise with our [the Windows 10 IoT Enterprise Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview). 
+From there, you can learn how to manufacture with Windows 10 IoT Enterprise with our [the Windows 10 IoT Enterprise Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/desktop/iot-ent-overview). 
 
 ## Fixed purpose devices 
 
