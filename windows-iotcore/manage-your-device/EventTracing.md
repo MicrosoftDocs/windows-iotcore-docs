@@ -27,7 +27,7 @@ Use [FTP](../connect-your-device/FTP.md) or [Windows File Sharing](../manage-you
 
 ## Use Tools in Windows Assessment and Deployment Kit
 
-Windows Assessment and Deployment Kit includes 3 tools to help capture and analyze events. [Click here to download](http://go.microsoft.com/fwlink/p/?LinkId=526740)
+Windows Assessment and Deployment Kit includes 3 tools to help capture and analyze events. [Click here to download](https://go.microsoft.com/fwlink/p/?LinkId=526740)
 
 
 1. **Windows Performance Analyzer** visualizes ETL files on desktop, with a step by step guide [here](https://msdn.microsoft.com/library/windows/hardware/dn927319(v=vs.85).aspx).
