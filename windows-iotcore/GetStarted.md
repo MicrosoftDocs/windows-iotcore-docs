@@ -45,7 +45,7 @@ To learn more about our offerings, see the documentation below to learn more.
 </tr>
 
 <tr class="odd">
-  <td align="left"><p><a href="windows-server.md" data-raw-source="[Windows Server IoT 2019](https://docs.microsoft.com/en-us/windows/iot-core/windows-server)">Windows Server IoT 2019</a></p></td>
+  <td align="left"><p><a href="windows-server.md" data-raw-source="[Windows Server IoT 2019](https://docs.microsoft.com/windows/iot-core/windows-server)">Windows Server IoT 2019</a></p></td>
 <td align="left"><p>Learn more about how to get started with Windows Server IoT 2019.</p></td>
 </tr>
 
@@ -105,7 +105,7 @@ Before attempting to manufacture a device, it's best to first try and prototype 
 <tbody>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/PrototypeBoards"
+<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/tutorials/quickstarter/PrototypeBoards"
 >1. Pick a prototype board</a></p></td>
 <td align="left"><p>Take a look at common prototype boards and choose one to start prototyping with.</p></td>
 </tr>
@@ -116,12 +116,12 @@ Before attempting to manufacture a device, it's best to first try and prototype 
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appinstaller">3. Install your app</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/develop-your-app/appinstaller">3. Install your app</a></p></td>
 <td align="left"><p>Learn how to install your app using different tools.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appdeployment">4. Deploy your app</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/develop-your-app/appdeployment">4. Deploy your app</a></p></td>
 <td align="left"><p>Learn how to deploy an app using Visual Studio.</p></td>
 </tr>
 
@@ -148,13 +148,13 @@ Start with the manufacturing guide that works best for you, depending on which v
 <tbody>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide"
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide"
 >Windows 10 IoT Core Manufacturing Guide</a></p></td>
 <td align="left"><p>Start here and learn how to create custom test and retail images for your commercial Windows 10 IoT Core solution.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview">Windows 10 IoT Enterprise Manufacturing Guide</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/manufacture/desktop/iot-ent-overview">Windows 10 IoT Enterprise Manufacturing Guide</a></p></td>
 <td align="left"><p>Start here and learn how to create an image for your commercial Windows 10 IoT Enterprise solution.</p></td>
 </tr>
 
