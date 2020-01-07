@@ -8,7 +8,7 @@ keywords: windows iot, network packet, network packet capture, Microsoft Message
 
 # Network packet capture
 
-You can use [Microsoft Message Analyzer](http://www.microsoft.com/en-us/download/details.aspx?id=44226) to capture, display, and analyze protocol messaging traffic on your Windows 10 IoT Core device.
+You can use [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) to capture, display, and analyze protocol messaging traffic on your Windows 10 IoT Core device.
 
 ![Message Analyzer](../media/NetworkPacketCapture/message-analyzer.png)
 
@@ -35,7 +35,7 @@ Connect to your device using PowerShell or SSH and run the following command to 
 
 Now that your device is set up, let's connect to it using Microsoft Message Analyzer.
 
-1. Download the [Microsoft Message Analyzer](http://www.microsoft.com/en-us/download/details.aspx?id=44226).
+1. Download the [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226).
 2. Open Message Analyzer.
 3. Click on `New Session`.
 
