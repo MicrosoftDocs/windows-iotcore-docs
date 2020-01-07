@@ -10,12 +10,12 @@ ms.custom: RS5
 # Setting up a Dragonboard
 
 > [!IMPORTANT]
-> When you're working with a new Dragonboard, it comes with Android installed. You will need to wipe and load the device using the eMMC flashing method, [here](https://docs.microsoft.com/en-us/windows/iot-core/tutorials/qualcomm).
+> When you're working with a new Dragonboard, it comes with Android installed. You will need to wipe and load the device using the eMMC flashing method, [here](https://docs.microsoft.com/windows/iot-core/tutorials/qualcomm).
 
 > [!NOTE]
 > If you're running into any audio-related issues with your DragonBoard, we advise that you read through Qualcomm's manual [here](https://developer.qualcomm.com/download/db410c/stereo-connector-and-audio-routing-application-note.pdf). 
 
-When setting up a Dragonboard for prototyping, we recommend using the Windows 10 IoT Core Dashboard. However, if you're looking to manufacture with a Dragonboard, please refer to the [IoT Core Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). You cannot use maker images for manufacturing.
+When setting up a Dragonboard for prototyping, we recommend using the Windows 10 IoT Core Dashboard. However, if you're looking to manufacture with a Dragonboard, please refer to the [IoT Core Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). You cannot use maker images for manufacturing.
 <br>
 > [!Video https://www.youtube.com/embed/iPm57hGq-Q8]
 
