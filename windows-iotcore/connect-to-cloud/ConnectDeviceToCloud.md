@@ -32,7 +32,7 @@ derived from the secret will be used to authenticate the IoT device.
 ## Device Provisioning 
 
 The tool that provisions Windows 10 IoT Core devices is called the IoT Core
-Dashboard and can be downloaded from [the downloads page](http://go.microsoft.com/fwlink/?LinkID=708576).
+Dashboard and can be downloaded from [the downloads page](https://go.microsoft.com/fwlink/?LinkID=708576).
 
 The dashboard produces an image of the OS and securely connects your device to
 Azure. This is done by associating the physical device with the device ID in the Azure IoT Hub
