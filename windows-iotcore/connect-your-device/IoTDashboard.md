@@ -10,7 +10,7 @@ keywords: windows iot, windows 10 iot core dashboard, windows iot dashboard, dev
 
 Windows 10 IoT Core Dashboard is the best way to download, set up and connect your Windows 10 IoT Core devices, all from your PC.
 
-You can download the [IoT Core Dashboard here](http://go.microsoft.com/fwlink/?LinkID=708576).
+You can download the [IoT Core Dashboard here](https://go.microsoft.com/fwlink/?LinkID=708576).
 
 > [!NOTE]
 > If you're finding that you're getting a white screen when opening the IoT Dashboard after downloading, it may be due to a driver issue. To overcome this issue, you'll need to download the [zip format](https://downloadmirror.intel.com/27894/a08/win64_24.20.100.6229.zip) of the Intel Graphics Driver and install the driver manually. 
@@ -18,13 +18,13 @@ You can download the [IoT Core Dashboard here](http://go.microsoft.com/fwlink/?L
 ## Set up a new device
 
 > [!NOTE]
-> Dashboard cannot be used used to setup the Raspberry Pi 3B+. If you have a 3B+ device, you must use the [3B+ technical preview](https://www.microsoft.com/en-us/software-download/windowsiot). Please view the [known limitations](https://docs.microsoft.com/en-us/windows/iot-core/troubleshooting) of the technical preview to determine if this is suitable for your development.
+> Dashboard cannot be used used to setup the Raspberry Pi 3B+. If you have a 3B+ device, you must use the [3B+ technical preview](https://www.microsoft.com/software-download/windowsiot). Please view the [known limitations](https://docs.microsoft.com/windows/iot-core/troubleshooting) of the technical preview to determine if this is suitable for your development.
 
 > [!NOTE]
 > There is currently a known issue where the OS goes through the partitions on the SD card and prompts a 'Format ..' message for a specific data partition that does not contain any file system. Please dismiss this prompt by pressing cancel. While we work on a solution, we recommend that if you click on 'Format now,' you reflash the SD card with the FFU image again as the format action impacts the update process and the device will fail to update.
 
 
-The IoT Dashboard makes it easy to set up a new device. For detailed instructions on how to get started, see the [Get Started](https://docs.microsoft.com/en-us/windows/iot-core/getstarted) page.
+The IoT Dashboard makes it easy to set up a new device. For detailed instructions on how to get started, see the [Get Started](https://docs.microsoft.com/windows/iot-core/getstarted) page.
 
 ![IoT Dashboard Setup Page](../media/IoTDashboard/IoTDashboard_SetupPage.PNG)
 
