@@ -11,7 +11,7 @@ keywords: windows iot, Cortana, voice, AI, digital assistant, language
 
 Cortana is a personal digital assistant working across all your devices to help you in your daily life. She learns about you; helps you get things done by completing tasks; interacts with you using natural language in a consistent, contextual way; and always looks out for you. Cortana has a consistent visual identity, personality, and voice.
 
-To enable hands-free intelligent assistance in your device with the Cortana Device SDK, please visit [The Cortana Dev Center](http://www.aka.ms/cortanadevices).
+To enable hands-free intelligent assistance in your device with the Cortana Device SDK, please visit [The Cortana Dev Center](https://aka.ms/cortanadevices).
 
 Cortana on IoT Core will focus on commercial scenarios in the future. Updates will come soon. 
 
