@@ -205,7 +205,7 @@ The SPI clock is fixed at 4.8mhz. The requested SPI clock will be ignored.
 
 An example on how to perform a SPI write on bus **SPI0** is shown below:
 
-```C3
+```C#
 using Windows.Devices.Enumeration;
 using Windows.Devices.Spi;
 
