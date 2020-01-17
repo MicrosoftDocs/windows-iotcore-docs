@@ -17,7 +17,7 @@ In some scenarios, you want your device's screen to turn off while not in use an
 
 You can configure the screen to turn off after a period of inactivity by setting a video idle timeout. When the user has not interacted with the device for a specified length of time, the screen will turn off. This will enable the device to enter a low power state by powering down components related to the display.
 
-```
+```powershell
 	powercfg.exe /setacvalueindex SCHEME_CURRENT SUB_VIDEO VIDEOIDLE 10
 	powercfg.exe /setdcvalueindex SCHEME_CURRENT SUB_VIDEO VIDEOIDLE 10
 	powercfg.exe /setactive SCHEME_CURRENT
@@ -29,7 +29,7 @@ For more information, see [Display Idle Timeout](/windows-hardware/customize/pow
 
 On AoAC systems (which includes all ARM systems), the system will automatically enter [modern standby](/windows-hardware/design/device-experiences/modern-standby) when the display goes off. When a system is in modern standby, it can only be woken by certain inputs. This is not an exhaustive list, but these inputs include pressing the power button, opening the lid on a laptop, or clicking the mouse. Touching the screen will not wake up the device from modern standby. If you want your device to wake up by touch, you have to configure the device not to enter modern standby. To disable modern standby, set the following registry key and reboot.
 
-```
+```powershell
 	reg add HKLM\System\CurrentControlSet\Control\Power /v PlatformAoAcOverride /t REG_DWORD /d 0
 ```
 	
