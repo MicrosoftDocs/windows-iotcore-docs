@@ -45,7 +45,7 @@ Before attempting to manufacture a device, it's best to first try and prototype 
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/develop-your-app/appinstaller">2. 3. Install your app</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/develop-your-app/appinstaller">3. Install your app</a></p></td>
 <td align="left"><p>Learn how to install your app using different tools.</p></td>
 </tr>
 
