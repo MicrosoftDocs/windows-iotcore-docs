@@ -107,7 +107,7 @@ For confirmation / verification on an existing image connect with SSH or PowerSh
 ### MinnowBoard  
 
 #### Minnowboard Max Firmware Update 
-The MinnowBoard Max will not boot unless the firmware is version .092 or later.  
+The MinnowBoard Max will not boot unless the firmware is version 0.92 or later.  
 There may be network connectivity failures in MinnowBoard Max (MBM) firmware version 0.93.   The issue is fixed in firmware version 0.94.) 
 The minimum recommended version of the firmware is “MinnowBoard MAX 0.94 32-bit”. Firmware updates can be downloaded from [here](https://go.microsoft.com/fwlink/?LinkId=708613).
   
