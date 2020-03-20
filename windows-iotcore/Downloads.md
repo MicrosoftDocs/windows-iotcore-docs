@@ -26,11 +26,11 @@ _By downloading and using the Windows 10 IoT Core Dashboard you agree to the [li
 > [!WARNING]
 > Do not use maker images for commercialization. If you are commercializing a device, you must use a custom FFU for optimal security. Learn more [here](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
 
-When commercializing your IoT Solution, you will need to download builds from the [Microsoft Software Downloads site](https://aka.ms/AA7twzo). We've included releases from the past below as well in case you need to work with a previous build of Windows 10 IoT Core for your device. 
+When commercializing your IoT Solution, you will need to download builds from the [Microsoft Software Downloads site](https://aka.ms/iotcoredownloads). We've included releases from the past below as well in case you need to work with a previous build of Windows 10 IoT Core for your device. 
 
 ### October 2018 Release
 
-* [Windows 10 IoT Core Packages](https://aka.ms/AA7twzo)
+* [Windows 10 IoT Core Packages](https://aka.ms/iotcoredownloads)
 * [Raspberry Pi 2 & 3](https://go.microsoft.com/fwlink/?LinkId=846058)
 * [DragonBoard 410c](https://go.microsoft.com/fwlink/?LinkId=846059)
 * [MinnowBoard Turbot/Max](https://go.microsoft.com/fwlink/?linkid=846057)
