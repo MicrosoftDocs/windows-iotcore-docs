@@ -67,7 +67,7 @@ Before attempting to manufacture a device, it's best to first try and prototype 
 
 ### Differences in driver-supported areas
 
-* Windows 10 Desktop has more supported drivers than Windows 10 IoT Core. To make the same device(s) work on Windows 10 IoT Core as on Desktop, you may need to build a driver from soruce for a Windows 10 IoT Core device or find another workaround, especially for ARM architecture.
+* Windows 10 Desktop has more supported drivers than Windows 10 IoT Core. To make the same device(s) work on Windows 10 IoT Core as on Desktop, you may need to build a driver from source for a Windows 10 IoT Core device or find another workaround, especially for ARM architecture.
 * There is no out-of-the-box driver for libusb for Windows 10 IoT Core (ARM) - you will need to build from source to target the ARM architecture.
 
 ### Differences in available registry set
