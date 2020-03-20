@@ -26,11 +26,11 @@ _By downloading and using the Windows 10 IoT Core Dashboard you agree to the [li
 > [!WARNING]
 > Do not use maker images for commercialization. If you are commercializing a device, you must use a custom FFU for optimal security. Learn more [here](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
 
-When commercializing your IoT Solution, you will need to download builds from the [Microsoft Software Downloads site](https://www.microsoft.com/software-download/windows10IoTCore#!). We've included releases from the past below as well in case you need to work with a previous build of Windows 10 IoT Core for your device. 
+When commercializing your IoT Solution, you will need to download builds from the [Microsoft Software Downloads site](https://aka.ms/iotcoredownloads). We've included releases from the past below as well in case you need to work with a previous build of Windows 10 IoT Core for your device. 
 
 ### October 2018 Release
 
-* [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10IoTCore#!)
+* [Windows 10 IoT Core Packages](https://aka.ms/iotcoredownloads)
 * [Raspberry Pi 2 & 3](https://go.microsoft.com/fwlink/?LinkId=846058)
 * [DragonBoard 410c](https://go.microsoft.com/fwlink/?LinkId=846059)
 * [MinnowBoard Turbot/Max](https://go.microsoft.com/fwlink/?linkid=846057)
@@ -68,5 +68,5 @@ State of the art IDE, tools and services that you can use to create great IoT ap
 ### [Windows Driver Kit 2017](https://msdn.microsoft.com/windows/hardware/hh852365.aspx)
 Provides an integrated development environment for creating efficient high quality drivers for devices running Windows 10.
 
-### [Windows Developer Tools for Visual Studio](https://dev.windows.com/en-us/downloads)
-Tools that integrate with Visual Studio 2017 and are required for developing for the Universal Windows App Platform. 
+### [Windows Developer Tools for Visual Studio](https://developer.microsoft.com/windows/downloads/)
+Tools that integrate with Visual Studio 2017 and are required for developing for the Universal Windows App Platform.
