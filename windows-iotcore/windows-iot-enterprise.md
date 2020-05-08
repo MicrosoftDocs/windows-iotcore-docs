@@ -47,7 +47,7 @@ Specialized systems, such as PCs that control medical equipment, point-of-sale s
 
 ## Long-Term Support Silicon Details
 
-The Windows 10 IoT Enterprise 2019 release will be a LTSC release. The list below encompasses all processors expected to be supported for this release. If you are planning to use an earlier release of Windows 10 IoT Enterprise, you can find details on the processor support [here](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements#windows-iot-enterprise--embedded-processor-table).
+The Windows 10 IoT Enterprise 2019 release will be a LTSC release. See [here] (https://docs.microsoft.com/en-us/windows/whats-new/ltsc/) for a general description of Windows 10 LTSC and other channels available. You can find details on processor support for each edition and channel of Windows 10 [here](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements#windows-iot-enterprise--embedded-processor-table).
 
 ## Helpful resources
 > [!NOTE]
