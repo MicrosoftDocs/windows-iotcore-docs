@@ -11,6 +11,8 @@
     href: windows-server.md
   - name: Windows IoT Core Services
     href: https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview
+  - name: Windows CE App Container
+    href: windows-ce-app-container.md
 - name: Tutorials
   expanded: false
   items:
