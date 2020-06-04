@@ -62,7 +62,7 @@ Download the Bonjour-compatible mDNS Responder for Windows IoT (sample source). 
 ### [Firmware Update](http://firmware.intel.com/projects/minnowboard-max)
 Download firmware components and updates for the MinnowBoard Max reference board from Intel.
 
-### [Visual Studio 2017](https://www.visualstudio.com/downloads/)
+### [Visual Studio 2019](https://www.visualstudio.com/downloads/)
 State of the art IDE, tools and services that you can use to create great IoT apps.
 
 ### [Windows Driver Kit 2017](https://msdn.microsoft.com/windows/hardware/hh852365.aspx)
