@@ -6,7 +6,7 @@ description: Learn how to use Microsoft Message Analyzer to enable network packe
 keywords: windows iot, network packet, network packet capture, Microsoft Message Analyzer, PowerShell
 ---
 
-## NOTE - Microsoft Message Analyzer have been [deprecated](https://docs.microsoft.com/en-us/openspecs/blog/ms-winintbloglp/dd98b93c-0a75-4eb0-b92e-e760c502394f). Information contained below is for archival reference only.
+## NOTE - Microsoft Message Analyzer has been [deprecated](https://docs.microsoft.com/openspecs/blog/ms-winintbloglp/dd98b93c-0a75-4eb0-b92e-e760c502394f). Information contained below is for archival reference only.
 
 # Network packet capture
 
