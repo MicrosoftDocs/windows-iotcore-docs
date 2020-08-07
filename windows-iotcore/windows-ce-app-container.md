@@ -28,4 +28,4 @@ With IoT Core Services, the IoT Core OS continue to receive security updates unt
 
 However, if you have existing designs that just need a few more years of manufacturing, the best course is to remain on Windows CE 2013. You can read more about migration strategies here. [LINK TO BE INSERTED - Chirag's Blog]
 
-If you are a commercial developer with a Windows CE solution, and would like more information, please contact <a href="mailto:cemigrat@microsoft.com">cemigrat@microsoft.com</a> from your company email account for further migration inquiries.
+If you are a commercial developer with a Windows CE solution, and would like more information, please refer to this guide. [LINK TO BE INSERTED - DOCUMENTATION]
