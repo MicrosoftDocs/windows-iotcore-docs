@@ -11,13 +11,13 @@ Microsoft has provided platforms and operating systems for embedded devices for 
 
 To help these customers move to Windows 10 IoT and harness the full power of the intelligent edge including artificial intelligence and machine learning, Microsoft has developed technology that will allow most customers to run their existing, unmodified Windows CE applications on Windows 10 IoT while they continue to invest in updating their applications. You can learn more about how this technology works in the IoT Show episode <a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Modernizing-Windows-CE-Devices">Modernizing Windows CE Devices</a>.
 
-
 ## What are the platform requirements?
 The Windows CE App Migration technology works by running a Windows CE 2013 instance on top of Windows 10 IoT Core.
 
 The solution works with 32-bit application code and requires an ARM32 or x64 base platform that is <a href="https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/socsandcustomboards">compatible</a> with Windows 10 IoT Core.
 You should be comfortable building a Windows CE 2013 system image using platform builder as well as building an image for Windows 10 IoT Core.
 
+A more detailed list of the requirements can be found below at [Prerequisites](#Prerequisites)
 
 ## Is Windows CE App Container the right choice for me?
 For designs that need to leverage ARM32 or have complex CE applications that will require multiple development cycles to migrate, the CE App Container with <a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview">Windows 10 IoT Core Services</a> offers a great solution for gradual migration.
@@ -29,7 +29,6 @@ With IoT Core Services, the IoT Core OS continue to receive security updates unt
 However, if you have existing designs that just need a few more years of manufacturing, the best course is to remain on Windows CE 2013. You can read more about migration strategies here. [LINK TO BE INSERTED - Chirag's Blog]
 
 If you are a commercial developer with a Windows CE solution, and would like more information, please refer to this guide. [LINK TO BE INSERTED - DOCUMENTATION]
-
 
 # Getting Started
 The Windows CE App Container is a technology that allows most CE applications to run on top of Windows 10 IoT Core.
