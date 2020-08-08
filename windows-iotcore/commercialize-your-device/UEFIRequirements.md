@@ -4,7 +4,7 @@ author: parameshbabu
 ms.author: pabab
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn the UEFI requirements for Windows 10 IoT Core OS.
+description: Learn the UEFI requirements for Windows 10 IoT Core OS. The UEFI requirements for IoT Core are similar to other Windows editions such as Windows 10 Desktop.
 keywords: windows iot, image creation, image customizations, OEM customizations, UEFI
 ---
 

@@ -2,7 +2,7 @@
 title: Overview of Windows 10 IoT 
 ms.date: 01/30/2018
 ms.topic: article
-description: Learn about what Windows 10 IoT is and what you can do with it.
+description: See an overview of Windows 10 IoT and what you can do with it. Review differences between Windows 10 IoT Core, Windows 10 IoT Enterprise, and Windows 10 Desktop.
 keywords: Windows 10 IoT Enterprise, Windows 10 IoT Core, headless, speech, features, binary edition, editions 
 ---
 

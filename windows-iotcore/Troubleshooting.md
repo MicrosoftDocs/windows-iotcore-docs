@@ -1,5 +1,5 @@
 ---
-Description: 'Troubleshooting different development-related issues.'
+Description: 'Troubleshoot different development-related issues in Windows 10 IoT Core, such as problems with specific hardware devices.'
 title: 'Troubleshooting'
 ms.date: 08/28/2018
 ms.topic: article
