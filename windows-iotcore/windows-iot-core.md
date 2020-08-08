@@ -2,7 +2,7 @@
 title: Overview of Windows 10 IoT Core
 ms.date: 01/18/2018
 ms.topic: article
-description: Learn about what Windows 10 IoT Core is and what you can do with it.
+description: Read an overview of Windows 10 IoT Core. Learn the differences between Windows 10 Desktop and Windows 10 IoT Core.
 keywords: Windows 10 IoT Core, small footprint, headless 
 ---
 

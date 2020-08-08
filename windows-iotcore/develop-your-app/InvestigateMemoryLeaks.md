@@ -4,7 +4,7 @@ author: paulmon
 ms.author: paulmon
 ms.date: 09/20/2017
 ms.topic: article
-description: Learn how to investigate memory leaks.
+description: Learn how to investigate memory leaks on Windows IoT Code with Visual Studio using the integrated Diagnostic Tools.
 keywords: windows iot, Visual Studio, leaks, troubleshooting
 ---
 

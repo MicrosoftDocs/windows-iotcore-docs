@@ -2,7 +2,7 @@
 title: Creators Update - Build 15063
 ms.date: 08/28/2017
 ms.topic: article
-description: Read and learn about what's new in the Creators Update.
+description: Read and learn about what's new in the Creators Update (build number 15063, April 2017). Also see a list of known issues.
 keywords: windows iot, Creators Update, release notes
 ---
 
