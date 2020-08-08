@@ -2,7 +2,7 @@
 title: Miracast on IoT Core 
 ms.date: 11/30/2017
 ms.topic: article
-description: Learn how to include Miracast capabilities on your device 
+description: See how to include Miracast capabilities on your device. Read a Miracast overview, hardware requirements, and how to make Windows IoT a Miracast sink or source.
 keywords: windows iot, miracast, connectivity 
 ---
 # Miracast on IoT Core

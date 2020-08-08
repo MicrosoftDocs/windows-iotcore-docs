@@ -2,7 +2,7 @@
 title: Get started with the mDNS Responder Sample Source
 ms.date: 02/26/2019
 ms.topic: article
-description: Learn how to get started with the mDNS Responder Sample Source.
+description: Learn how to get started with the mDNS Responder for Windows IoT. You will have to download the Bonjour-compatible sample source.
 keywords: Windows 10 IoT Core, mDNS Responder Sample Source
 ---
 

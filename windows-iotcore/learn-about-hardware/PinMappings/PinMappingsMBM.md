@@ -2,7 +2,7 @@
 title: Minnowboard Max Pin Mappings
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn about the functionality of pin mappings for Minnowboard Max.
+description: Learn about the functionality of pin mappings for Minnowboard Max. Get information about the serial UART, I2C bus, and SPI bus. Read a GPIO code sample.
 keywords: windows iot, Minnowboard Max, pin mappings, GPIO
 ---
 
