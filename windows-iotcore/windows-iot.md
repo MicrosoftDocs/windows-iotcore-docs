@@ -21,7 +21,7 @@ Windows 10 IoT comes in two editions.  Windows 10 IoT Core is the smallest membe
 
 While Windows 10 IoT Core and Windows 10 IoT Enterprise are similar in name, there are differences in what they offer as well as what they support. Below is a feature list that highlights edition differences.
 
-> |             | Windows 10 IoT Core  |  Windows 10 IoT Enterprise  |
+> | Feature&nbsp;/&nbsp;Edition | Windows 10 IoT Core  |  Windows 10 IoT Enterprise  |
 > |-------------|----------|---------|
 > | User experience | One UWP app in the foreground at a time (see [IoT Shell documentation](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoreshell) for app backstack handling) with supporting background apps and services. | Traditional Windows Shell with Advanced Lockdown Features |
 > | Headless supported | Yes | Yes |
