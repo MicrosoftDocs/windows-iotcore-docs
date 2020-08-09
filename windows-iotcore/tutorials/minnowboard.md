@@ -2,7 +2,7 @@
 title: Setting up a Minnowboard
 ms.date: 05/22/2019 
 ms.topic: article 
-description: Learn about how to set up your Minnowboard with Windows 10 IoT Core.
+description: Learn about how to set up your Minnowboard with Windows 10 IoT Core. See how to use the dashboard, connect to a network, and connect to Windows Device Portal.
 keywords: Windows 10 IoT Core, Minnowboard
 ms.custom: RS5
 ---

@@ -4,7 +4,7 @@ author: parameshbabu
 ms.author: pabab
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn about the different ways to manage Windows 10 IoT Core devices.
+description: Learn about the different ways to manage Windows 10 IoT Core devices, such as using a traditional OMA DM MDM server that supports certificate-based enrollment.
 keywords: windows iot, device management, windows iot, Azure DM, Azure Hub, Azure IoT
 ---
 

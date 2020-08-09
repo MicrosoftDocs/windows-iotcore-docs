@@ -2,7 +2,7 @@
 title: Develop an app for your device
 ms.date: 04/17/2018 
 ms.topic: article 
-description: Learn about how to add and develop apps for your device
+description: Learn about how to add and develop apps for your device. See links to suggested starter samples and app development resources.
 keywords: Windows 10 IoT Core, Get Started, develop apps, apps
 ---
 

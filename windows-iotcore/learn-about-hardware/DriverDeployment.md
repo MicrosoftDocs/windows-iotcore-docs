@@ -4,7 +4,7 @@ author: parameshbabu
 ms.author: pabab
 ms.date: 08/22/2017
 ms.topic: article
-description: Learn how to build and deploy a driver using Visual Studio.
+description: Build and deploy a driver on Windows 10 IoT Core. Configure your Visual Studio driver project so you can compile and deploy a driver for a specific platform.
 keywords: windows 10 IoT Core, driver deployment
 ---
 
