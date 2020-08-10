@@ -2,7 +2,7 @@
 title: Overview of Windows CE App Container
 ms.date: 08/11/2020
 ms.topic: article
-description: Get access to the private preview of the Windows CE App Container
+description: Windows CE App Container Migration Technology 
 keywords: Windows 10 IoT Core, Windows CE, application migration, cepal
 ---
 
