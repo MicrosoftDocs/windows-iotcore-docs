@@ -2,7 +2,7 @@
 title: Setting up a Raspberry Pi
 ms.date: 05/22/2019 
 ms.topic: article 
-description: Learn about how to set up your Raspberry Pi with Windows 10 IoT Core.
+description: Learn about how to set up your Raspberry Pi with Windows 10 IoT Core. Use the dashboard, connect to a network, and connect to Windows Device Portal.
 keywords: Windows 10 IoT Core, Raspberry Pi
 ms.custom: RS5
 ---

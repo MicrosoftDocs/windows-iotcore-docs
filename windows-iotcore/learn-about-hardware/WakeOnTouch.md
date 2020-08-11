@@ -4,7 +4,7 @@ author: jordanrh1
 ms.author: jordanrh
 ms.date: 09/17/2018
 ms.topic: article
-description: Configure your device to wake on touch
+description: Configure your device to wake on touch, so that it turns off while not in use but turns on quickly when you touch the screen. Set a video idle timeout.
 keywords: windows iot, screen, sleep, wake, touch, standby, power
 ms.custom: RS5
 ---

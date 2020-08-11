@@ -1,6 +1,6 @@
 ---
-Description: 'Download files for Windows 10 IoT Core.'
 title: 'Downloads'
+description: Develop unit tests, and learn about Universal Windows Platform (UWP) unit testing that's supported on Windows 10 IoT Core.
 ms.date: 10/05/2018
 ms.topic: article
 ms.prod: windows-iot

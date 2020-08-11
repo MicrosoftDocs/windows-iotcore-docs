@@ -2,7 +2,7 @@
 title: Release Notes for Raspberry Pi 3B+
 ms.date: 05/16/2018
 ms.topic: article
-description: Read and learn about what's in the build for Raspberry Pi 3B+.
+description: Read the release notes and learn about what's in the build for Raspberry Pi 3B+. Review the known issues in this build.
 keywords: windows iot, Windows Insider, release notes, Raspberry Pi 3B+
 ---
 
