@@ -17,18 +17,16 @@ The Windows CE App Migration technology works by running a Windows CE 2013 insta
 The solution works with 32-bit application code and requires an ARM32 or x64 base platform that is <a href="https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/socsandcustomboards">compatible</a> with Windows 10 IoT Core.
 You should be comfortable building a Windows CE 2013 system image using platform builder as well as building an image for Windows 10 IoT Core.
 
-A more detailed list of the requirements can be found below at [Prerequisites](#Prerequisites)
+A more detailed list of the requirements can be found below at [Prerequisites](#Prerequisites).
 
 ## Is Windows CE App Container the right choice for me?
 For designs that need to leverage ARM32 or have complex CE applications that will require multiple development cycles to migrate, the CE App Container with <a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview">Windows 10 IoT Core Services</a> offers a great solution for gradual migration.
 
 Developers place a special ARM32 or x86 Windows CE2013 platform image within their IoT Core system image which they deploy on Windows 10 IoT Core compatible hardware. Developers have access to begin adding functionality, like Azure cloud connectivity or modern peripherals, though the Windows 10 layer and can move portions of the CE application over as well aiming for complete migration before 2029.
 
-With IoT Core Services, the IoT Core OS continue to receive security updates until 2029. And, with capabilities like Device Update Center, OEMs can manage the timing of the OS updates as well as distribute application updates easily.
+With IoT Core Services, your Windows 10 IoT Core OS will continue to receive security updates until 2029. And, with capabilities like Device Update Center, OEMs can manage the timing of the OS updates as well as distribute application updates easily.
 
-However, if you have existing designs that just need a few more years of manufacturing, the best course is to remain on Windows CE 2013. You can read more about migration strategies here. [LINK TO BE INSERTED - Chirag's Blog]
-
-If you are a commercial developer with a Windows CE solution, and would like more information, please refer to this guide. [LINK TO BE INSERTED - DOCUMENTATION]
+However, if you have existing designs that just need a few more years of manufacturing, the best course is to remain on Windows CE 2013. The path forward is explained more deeply in [Moving forward with Windows CE using the Windows CE App Container on Windows 10 IoT Core](https://techcommunity.microsoft.com/t5/internet-of-things/moving-forward-with-windows-ce-using-the-windows-ce-app/ba-p/1582360).
 
 # Getting Started
 The Windows CE App Container is a technology that allows most CE applications to run on top of Windows 10 IoT Core.
@@ -40,12 +38,15 @@ The solution is built in two stages. The first stage creates a Windows CE 2013 i
 For more information about this architecture please review this [video](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Modernizing-Windows-CE-Devices).
 
 # Prerequisites
-The Windows CE App Container software requires an updated version of Windows Compact 2013 (Build number 6294 from June 2020 or later) along with updated Windows 10 IoT Core Packages for x64 and ARM32 (August 2020 update or later). Note: You must have a valid [IoT Core Services](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview) subscription to distribute a device that employs the CE App Container technology.
+The Windows CE App Container software requires an updated version of Windows Compact 2013 (Build number 6294 from June 2020 or later) along with updated Windows 10 IoT Core Packages for x64 and ARM32 (August 2020 update or later).
+
+> [!NOTE]
+> You must have a valid [IoT Core Services](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview) subscription to distribute a device that employs the CE App Container technology.
 
 Additionally you will need the following:
 
 -   [Microsoft Visual Studio 2013 Professional or Visual Studio 2015
-    Professional](<https://visualstudio.microsoft.com/vs/>)
+    Professional](<https://visualstudio.microsoft.com/vs/>). These versions are required for both the Application Builder and Platform Builder tools.
 
 -   [Application Builder for Windows Embedded Compact 2013](<https://www.microsoft.com/en-us/download/details.aspx?id=38819>)
 
@@ -76,6 +77,8 @@ The [process for creating a Windows Embedded Compact 2013 image](https://docs.mi
 
 The primary change is in the selection of the correct BSP and additional considerations for the CE image. This guide assumes you are already familiar with the process to build a Windows CE system image, but it is worth looking more deeply at the changed section.
 
+The following sections refer to the steps above where additional information or changes exist. As not every step changes or some steps have multiple options the title will refer you back to where you are in the process.
+
 ## Step 2 - Platform Builder BSP Selection
 
 To support the Windows CE App Container, a new BSP that targets x86 and ARM architectures has been added to Platform Builder.
@@ -88,6 +91,7 @@ After doing this you will have the ability to configure the options and sub-proj
 
 # Building the Windows 10 IoT Core Image
 
+> [!NOTE]
 > This process is covered in more detail in the labs that are part of the [Windows 10 IoT Core Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-basic-image). The section below only provides additional actions to execute at certain stages of the IoT Core image building process. It is highly recommended to familiarize yourself with the Windows 10 IoT Core Manufacturing Guide before proceeding.
 
 ## Process overview
@@ -142,15 +146,14 @@ Once the image is built you can deploy it to a device. This can be done from the
 
 ### Step 7 - Deploying the Windows CE App Container to a device when using an existing FFU
 
-The CE CABs are deployable packages on IoT Core. If there is an existing IoT Core image, these CABs can be deployed to the device using the APPLYUPDATE command. First copy the CABs to the device, then stage and commit the CABs with APPLYUPDATE. Do note that updating this way respects package versioning, so if updated versions of packages are to
-be deployed to the device, they must have a greater version number. (See the Set-IoTCabVersion command in the IoT ADK environment). More information on this can be found in [Create and Install Packages](https://docs.microsoft.com/enus/windows-hardware/manufacture/iot/create-install-package.)
+The CE CABs are deployable packages on IoT Core. If there is an existing IoT Core image, these CABs can be deployed to the device using the APPLYUPDATE command. First copy the CABs to the device, then stage and commit the CABs with APPLYUPDATE. Do note that updating this way respects package versioning, so if updated versions of packages are to be deployed to the device, they must have a greater version number. (See the Set-IoTCabVersion command in the IoT ADK environment). More information on this can be found in [Create and Install Packages](https://docs.microsoft.com/enus/windows-hardware/manufacture/iot/create-install-package.)
 
 ### Step 8 - Building a retail image
 
-Having a properly signed image is an important part of securing and updating a device. For Windows 10 IoT Core this appears as the difference between Test signed and Retail signed builds. You should never publicly deploy a test signed image. Test signed images should only be used for debug purposes and you should correct any errors or configuration
-changes prior to creating your final retail signed image. 
+Having a properly signed image is an important part of securing and updating a device. For Windows 10 IoT Core this appears as the difference between Test signed and Retail signed builds. You should never publicly deploy a test signed image. Test signed images should only be used for debug purposes and you should correct any errors or configuration changes prior to creating your final retail signed image. 
 
-> **Note**: In addition to the development and deployment tools installed on your machine you will also need the following to enable retail signing:
+> [!NOTE]
+> In addition to the development and deployment tools installed on your machine you will also need the following to enable retail signing:
 > - A retail code-signing certificate
 > - A cross-signing certificate
 
@@ -213,16 +216,19 @@ this provisioning package in the image. You will also need to remove the default
 
 The Windows CE App Container has disabled executable stack pages by default to improve security. However, some legacy applications may rely on this behavior to run correctly. To Enable an Executable Stack, set the following registry value in the CE iamge (It is recommended that this goes into OSDesign.reg in Platform Builder)
 
-> KeyPath = HKEY\_LOCAL\_MACHINE\\CEPAL
-> ValueName = MemoryOptions Type = REG\_DWORD
-> Value = 1
+```
+KeyPath = HKEY\_LOCAL\_MACHINE\\CEPAL
+ValueName = MemoryOptions Type = REG\_DWORD
+Value = 1
+```
 
 #### 16-bit 565 Override for GWES
 
 If the Windows CE App Container is configured with a 32-bit display, then 16-bit to 32-bit RGB conversions are done by GWES are done with the assumption that 16-bit RGB pixel data is in RGB555 format. If bitmap resources are in 16-bit 565, and conversion to a RGB555 of these resources is not possible, GWES’s default conversion behavior can be changed via a registry key. Create the following registry key:
 
-> HKEY\_LOCAL\_MACHINE\\SYSTEM\\GDI\\16bpp565RGBPalette.
-
+```
+HKEY\_LOCAL\_MACHINE\\SYSTEM\\GDI\\16bpp565RGBPalette.
+```
 ### Registry based configuration in Host (IoT Core)
 
 #### Configuring serial ports for the Windows CE App Container
@@ -231,23 +237,25 @@ Host Serial ports need to be mapped into the CE environment. This mapping exists
 
 Under `HKEY\_CURRENT\_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion\\CEPAL\\Devices\\Serial`, configuration entries exist to map Guest COM ports to Host COM ports using the following schema.
 
-> KeyPath = HKEY\_CURRENT\_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion\\CEPAL\\Devices\\Serial\\0
->
-> ValueName = Guest Type = REG\_SZ Value = COM1
->
-> ValueName = Host
->
-> Type = REG\_SZ
->
-> Value = *\\\\?\\Some\\DeviceInterface\\Path*
->
-> KeyPath= HKEY\_CURRENT\_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion\\CEPAL\\Devices\\Serial\\1
->
-> ValueName = Guest Type = REG\_SZ Value = COM2
->
-> ValueName= Host Type = REG\_SZ
->
-> Value = \\\\?\\Some\\Other\\DeviceInterface\\Path
+```
+KeyPath = HKEY\_CURRENT\_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion\\CEPAL\\Devices\\Serial\\0
+
+ValueName = Guest Type = REG\_SZ Value = COM1
+
+ValueName = Host
+
+Type = REG\_SZ
+
+Value = *\\\\?\\Some\\DeviceInterface\\Path*
+
+KeyPath= HKEY\_CURRENT\_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion\\CEPAL\\Devices\\Serial\\1
+
+ValueName = Guest Type = REG\_SZ Value = COM2
+
+ValueName= Host Type = REG\_SZ
+
+Value = \\\\?\\Some\\Other\\DeviceInterface\\Path
+```
 
 If the registry path above does not exist when CE is booted, a default configuration will be written based on discovered serial devices on the system.
 
