@@ -26,6 +26,8 @@ Developers place a special ARM32 or x86 Windows CE2013 platform image within the
 
 With IoT Core Services, the IoT Core OS continue to receive security updates until 2029. And, with capabilities like Device Update Center, OEMs can manage the timing of the OS updates as well as distribute application updates easily.
 
+However, if you have existing designs that just need a few more years of manufacturing, the best course is to remain on Windows CE 2013.
+
 # Getting Started
 The Windows CE App Container is a technology that allows most CE applications to run on top of Windows 10 IoT Core.
 
