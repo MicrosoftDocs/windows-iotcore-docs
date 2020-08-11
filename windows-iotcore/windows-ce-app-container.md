@@ -28,6 +28,9 @@ With IoT Core Services, the IoT Core OS continue to receive security updates unt
 
 However, if you have existing designs that just need a few more years of manufacturing, the best course is to remain on Windows CE 2013.
 
+Check out this <a href="https://techcommunity.microsoft.com/t5/internet-of-things/moving-forward-with-windows-ce-using-the-windows-ce-app/ba-p/1582360">blog</a> for more migration strategies.
+
+
 # Getting Started
 The Windows CE App Container is a technology that allows most CE applications to run on top of Windows 10 IoT Core.
 
