@@ -2,7 +2,7 @@
 title: Overview of Windows CE App Container
 ms.date: 08/11/2020
 ms.topic: article
-description: Get access to the private preview of the Windows CE App Container
+description: Windows CE App Container Migration Technology 
 keywords: Windows 10 IoT Core, Windows CE, application migration, cepal
 ---
 
@@ -14,13 +14,13 @@ To help these customers move to Windows 10 IoT and harness the full power of the
 ## What are the platform requirements?
 The Windows CE App Migration technology works by running a Windows CE 2013 instance on top of Windows 10 IoT Core.
 
-The solution works with 32-bit application code and requires an ARM32 or x64 base platform that is <a href="https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/socsandcustomboards">compatible</a> with Windows 10 IoT Core.
+The solution works with 32-bit application code and requires an ARM32 or x64 base platform that is <a href="https://docs.microsoft.com/windows/iot-core/learn-about-hardware/socsandcustomboards">compatible</a> with Windows 10 IoT Core.
 You should be comfortable building a Windows CE 2013 system image using platform builder as well as building an image for Windows 10 IoT Core.
 
 A more detailed list of the requirements can be found below at [Prerequisites](#Prerequisites)
 
 ## Is Windows CE App Container the right choice for me?
-For designs that need to leverage ARM32 or have complex CE applications that will require multiple development cycles to migrate, the CE App Container with <a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview">Windows 10 IoT Core Services</a> offers a great solution for gradual migration.
+For designs that need to leverage ARM32 or have complex CE applications that will require multiple development cycles to migrate, the CE App Container with <a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview">Windows 10 IoT Core Services</a> offers a great solution for gradual migration.
 
 Developers place a special ARM32 or x86 Windows CE2013 platform image within their IoT Core system image which they deploy on Windows 10 IoT Core compatible hardware. Developers have access to begin adding functionality, like Azure cloud connectivity or modern peripherals, though the Windows 10 layer and can move portions of the CE application over as well aiming for complete migration before 2029.
 
@@ -313,3 +313,4 @@ Options:
  - [IoT Core Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)
  - [Windows 10 IoT Core Dashboard](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/iotdashboard)
  - [Create and Install Packages](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-install-package)
+=======
