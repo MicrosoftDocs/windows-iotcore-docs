@@ -313,4 +313,3 @@ Options:
  - [IoT Core Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)
  - [Windows 10 IoT Core Dashboard](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/iotdashboard)
  - [Create and Install Packages](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-install-package)
-=======
