@@ -77,7 +77,7 @@ The [process for creating a Windows Embedded Compact 2013 image](https://docs.mi
 
 The primary change is in the selection of the correct BSP and additional considerations for the CE image. This guide assumes you are already familiar with the process to build a Windows CE system image, but it is worth looking more deeply at the changed section.
 
-The following sections refer to the steps above where additional information or changes exist. As not every step changes or some steps have multiple options the title will refer you back to where you are in the process.
+The following step refers to Step 2 above. It is the only part of the previous OS Design project process that is changed when using the CE App Container.
 
 ## Step 2 - Platform Builder BSP Selection
 
@@ -123,8 +123,9 @@ The basic steps in creating an image are:
 8.  [Finalize and sign your retail
     FFU](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/build-retail-image)
 
-There are detailed guides for each of these steps as part of the [Windows 10 IoT Core Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-basic-image). While some of these steps are like the process of using Platform Builder (PB) to create a device image it’s worth exploring some areas more
-deeply.
+There are detailed guides for each of these steps as part of the [Windows 10 IoT Core Manufacturing Guide](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-a-basic-image). While some of these steps are like the process of using Platform Builder (PB) to create a device image it’s worth exploring some areas more deeply.
+
+The following sections refer to the steps above where additional information or changes exist. As not every step changes or some steps have multiple options the title will refer you back to where you are in the process.
 
 ### Step 3 - Importing the Windows CE App Container 
 
