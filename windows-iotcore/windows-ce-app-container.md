@@ -1,6 +1,6 @@
 ---
 title: Overview of Windows CE App Container
-ms.date: 08/11/2020
+ms.date: 08/12/2020
 ms.topic: article
 description: Windows CE App Container Migration Technology
 keywords: Windows 10 IoT Core, Windows CE, application migration, cepal
@@ -39,7 +39,7 @@ The solution is built in two stages. The first stage creates a Windows CE 2013 i
 
 ![CE App Container Architecture](.//media/WindowsCEAppContainer/image1.png)
 
-For more information about this architecture please review this [video](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Modernizing-Windows-CE-Devices).
+For more information about this architecture please review this video: [Modernizing Windows CE Devices](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Modernizing-Windows-CE-Devices).
 
 ### Prerequisites
 The Windows CE App Container software requires an updated version of Windows Compact 2013 (Build number 6294 from June 2020 or later) along with updated Windows 10 IoT Core Packages for x64 and ARM32 (August 2020 update or later). Note: You must have a valid [IoT Core Services](https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview) subscription to distribute a device that employs the CE App Container technology.
