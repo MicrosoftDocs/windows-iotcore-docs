@@ -318,12 +318,13 @@ The OEMConfigFile is specified in `C:\WindowsCE\CEEnvConfig.json`. Make sure thi
 
 `
 Options:
+
 | Key                      | Description                                                                              |
 |--------------------------|------------------------------------------------------------------------------------------|
 | FactoryReset             | Used by the config app to signal the CE App Container to dump persistent state.          |
 | PlatformBuilderDebugMode | Used to boot the CE App Container with KITL support for debugging with Platform Builder. |
 | NetInterface             | Select a Network Interface for CE based on profile name.                                 |
-|                          |                                                                                          |
+
 
 ## References
 
