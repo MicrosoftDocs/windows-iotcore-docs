@@ -50,7 +50,7 @@ The Windows CE App Container software requires an updated version of Windows Com
 > You must have a valid [IoT Core Services](https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview) subscription to distribute a device that employs the CE App Container technology.
 
 
-Additionally you will need the following:
+Additionally, you will need the following:
 
 - [Microsoft Visual Studio 2013 Professional or Visual Studio 2015
     Professional](<https://visualstudio.microsoft.com/vs/>). These versions are required for both the Application Builder and Platform Builder tools.
@@ -129,7 +129,7 @@ The basic steps in creating an image are:
 8. [Finalize and sign your retail
     FFU](https://docs.microsoft.com/windows-hardware/manufacture/iot/build-retail-image)
 
-There are detailed guides for each of these steps as part of the [Windows 10 IoT Core Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image). While some of these steps are like the process of using Platform Builder (PB) to create a device image it’s worth exploring some areas more deeply.
+There are detailed guides for each of these steps as part of the [Windows 10 IoT Core Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image). While some of these steps are like the process of using Platform Builder (PB) to create a device image it is worth exploring some areas more deeply.
 
 The following sections refer to the steps above where additional information or changes exist. As not every step changes or some steps have multiple options the title will refer you back to where you are in the process.
 
