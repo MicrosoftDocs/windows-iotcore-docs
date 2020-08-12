@@ -316,7 +316,6 @@ The OEMConfigFile is specified in `C:\WindowsCE\CEEnvConfig.json`. Make sure thi
 }
 ```
 
-`
 Options:
 
 | Key                      | Description                                                                              |
