@@ -67,7 +67,6 @@ iManufacturer=1
 iSerialNumber=3 
 ManufacturerString=OEMname 
 ProductString="Windows IOT" 
-SerialNumberString=0x123 
 ```
 > [!IMPORTANT]
 > The values above are for demonstration purposes only and cannot be used in any product. The OEM must replace these placeholder fields with *actual values* in each entry above.
