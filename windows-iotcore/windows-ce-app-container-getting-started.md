@@ -1,29 +1,26 @@
 ---
-title: Overview of Windows CE App Container
-ms.date: 08/12/2020
+title: Getting Started with Windows CE App Container
+ms.date: 08/24/2020
 ms.topic: article
 description: Windows CE App Container Migration Technology
 keywords: Windows 10 IoT Core, Windows CE, application migration, cepal
 ---
 
-# Getting Started
+# Getting Started with Windows CE App Container
 
 The Windows CE App Container is a technology that allows most CE applications to run on top of Windows 10 IoT Core.
 
-The solution is built in two stages. The first stage creates a Windows CE 2013 image using a BSP for either x86 or ARM32 architecture. This image is then included in a Windows 10 IoT Core image that utilizes the x64 or ARM32 BSP for the specific device hardware where the solution will be installed.
+The solution is built in two stages. The first stage creates a Windows CE 2013 image using a BSP for either x86 or ARM32 architecture. In the second stage, this image is then included in a Windows 10 IoT Core image that utilizes the x64 or ARM32 BSP for the specific device hardware where the solution will be installed.
 
 ![CE App Container Architecture](.//media/WindowsCEAppContainer/image1.png)
 
 For more information about this architecture please review this video: [Modernizing Windows CE Devices](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Modernizing-Windows-CE-Devices).
 
 ## Prerequisites
-The Windows CE App Container software requires an updated version of Windows Compact 2013 (Build number 6294 from June 2020 or later) along with updated Windows 10 IoT Core Packages for x64 and ARM32 (August 2020 update or later). Note: You must have a valid [IoT Core Services](https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview) subscription to distribute a device that employs the CE App Container technology.
-
 The Windows CE App Container software requires an updated version of Windows Compact 2013 (Build number 6294 from June 2020 or later) along with updated Windows 10 IoT Core Packages for x64 and ARM32 (August 2020 update or later).
 
 > [!NOTE]
 > You must have a valid [IoT Core Services](https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview) subscription to distribute a device that employs the CE App Container technology.
-
 
 Additionally, you will need the following:
 
@@ -34,11 +31,12 @@ Additionally, you will need the following:
 
 - Platform Builder for Windows Compact 2013
 
+- A Working IoT Core BSP
+
 - The tools referenced in the [Windows IoT Manufacturing
     Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/set-up-your-pc-to-customize-iot-core)
 - Remember to install the updated components in place of the ones referenced in this guide (Windows 10 ADK and Windows 10 ADK PE Add-on, IoT Core ADK Add-ons, Windows 10 IoT Core Dashboard)
 
-- A Working IoT Core BSP
 
 ## Configuring, Building, and Packaging CE for the Windows CE App Container
 
@@ -58,7 +56,11 @@ The [process for creating a Windows Embedded Compact 2013 image](https://docs.mi
 
 The primary change is in the selection of the correct BSP and additional considerations for the CE image. This guide assumes you are already familiar with the process to build a Windows CE system image, but it is worth looking more deeply at the changed section.
 
-The following step refers to Step 2 above. It is the only part of the previous OS Design project process that is changed when using the CE App Container.
+Step 2 is the only part of the previous OS Design project process that is changed when using the CE App Container.
+
+
+### Step 1 - Create OS Design project with Platform Builder
+Review [Create Your First OS](https://docs.microsoft.com/previous-versions/windows/embedded/jj200351(v=winembedded.80) for a step-by-step tutorial on how to use Platform Builder in Visual Studio to design and build a working Windows Embedded Compact 2013 OS.
 
 ### Step 2 - Platform Builder BSP Selection
 
@@ -106,11 +108,19 @@ The basic steps in creating an image are:
 
 There are detailed guides for each of these steps as part of the [Windows 10 IoT Core Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image). While some of these steps are like the process of using Platform Builder (PB) to create a device image it is worth exploring some areas more deeply.
 
-The following sections refer to the steps above where additional information or changes exist. As not every step changes or some steps have multiple options the title will refer you back to where you are in the process.
+#### Step 1 - Create a Workspace
+Review the documentation, [Create a Basic Image](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image) in the IoT Core Manufacturing Guide to learn how to create a workspace.
+
+#### Step 2 - Import the appropriate IoT Core Board Support Package (BSP)
+Review the documentation, [Create a Basic Image](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image) in the IoT Core Manufacturing Guide for support for your board.
 
 #### Step 3 - Importing the Windows CE App Container
 
 The Windows CE App Container is created using PB as discussed above and imported into your IoT Core workspace by using the [Import-IoTCEPAL](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Import-IoTCEPAL.md#Import-IoTCEPAL) command. This command will copy the required contents from the CE flat release directory into the IoT ADK workspace. If invoked multiple times, the previous state is backed up under the `Source-\$Arch\CEPAL.OLD` directory in the workspace.
+
+#### Step 4 - Create your product definition
+
+
 
 #### Step 5 - Adding CE App Container to a product
 
@@ -126,7 +136,7 @@ This is an important step during the creation of your FFU and should be done whe
 
 Once the image is built you can deploy it to a device. This can be done from the command line using [DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/what-is-dism), via your device specific deployment process or by using the [Windows 10 IoT Core Dashboard](https://docs.microsoft.com/windows/iot-core/connect-your-device/iotdashboard). More details are available as part of the [Windows 10 IoT Core Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image).
 
-#### Additional Step 7 Information - Deploying the Windows CE App Container to a device when using an existing FFU
+##### Deploying the Windows CE App Container to a device when using an existing FFU
 
 The CE CABs are deployable packages on IoT Core. If there is an existing IoT Core image, these CABs can be deployed to the device using the `APPLYUPDATE` command. First copy the CABs to the device, then stage and commit the CABs with `APPLYUPDATE`. Do note that updating this way respects package versioning, so if updated versions of packages are to be deployed to the device, they must have a greater version number. (See the Set-IoTCabVersion command in the IoT ADK environment). More information on this can be found in [Create and Install Packages](https://docs.microsoft.com/enus/windows-hardware/manufacture/iot/create-install-package.)
 
