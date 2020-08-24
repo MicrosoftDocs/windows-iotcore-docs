@@ -127,7 +127,8 @@ Some of the settings you can customize are:
 
 ##### Weather Settings
 * Change the location
-  > This feature is only enabled if you have provided a valid [Bing Map Service Token](https://msdn.microsoft.com/library/ff428642.aspx).  To pass the token to the app, create a **MapToken.config** file in the LocalState folder of the app (e.g. C:\Data\USERS\\[User Account]\AppData\Packages\\[Package Full Name]\LocalState\MapToken.config) and restart the app.
+  > This feature is only enabled if you have provided a valid [Bing Map Service Token](https://msdn.microsoft.com/library/ff428642.aspx).  To pass the token to the app, create a **MapToken.config** file in the LocalState folder of the app (e.g. C:\Data\Users\\[User Account]\AppData\Local\Packages\\[Package Full Name]\LocalState\MapToken.config) and restart the app.  
+(Example: C:\Data\Users\DefaultAccount\AppData\Local\Packages\16454Windows10IOTCore.IOTCoreDefaultApplication_rz84sjny4rf58\LocalState\)
 * Expand the map
 * Enable/disable map flipping so that the map and the weather switch places periodically to prevent screen burn-in
 
