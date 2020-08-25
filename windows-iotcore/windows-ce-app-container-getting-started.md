@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Windows CE App Container
-ms.date: 08/24/2020
+ms.date: 08/25/2020
 ms.topic: article
 description: Windows CE App Container Migration Technology
 keywords: Windows 10 IoT Core, Windows CE, application migration, cepal
@@ -10,7 +10,7 @@ keywords: Windows 10 IoT Core, Windows CE, application migration, cepal
 
 The Windows CE App Container is a technology that allows most CE applications to run on top of Windows 10 IoT Core.
 
-The solution is built in two stages. The first stage creates a Windows CE 2013 image using a BSP for either x86 or ARM32 architecture. In the second stage, this image is then included in a Windows 10 IoT Core image that utilizes the x64 or ARM32 BSP for the specific device hardware where the solution will be installed.
+The solution is built in two stages. The first stage creates a Windows CE 2013 image using a BSP for either x86 or ARM32 architecture. Then in the second stage, this image is included in a Windows 10 IoT Core image that utilizes the x64 or ARM32 BSP for the specific device hardware where the solution will be installed.
 
 ![CE App Container Architecture](.//media/WindowsCEAppContainer/image1.png)
 
@@ -56,17 +56,15 @@ The [process for creating a Windows Embedded Compact 2013 image](https://docs.mi
 
 The primary change is in the selection of the correct BSP and additional considerations for the CE image. This guide assumes you are already familiar with the process to build a Windows CE system image, but it is worth looking more deeply at the changed section.
 
-Step 2 is the only part of the previous OS Design project process that is changed when using the CE App Container.
-
-
-### Step 1 - Create OS Design project with Platform Builder
-Review [Create Your First OS](https://docs.microsoft.com/previous-versions/windows/embedded/jj200351(v=winembedded.80) for a step-by-step tutorial on how to use Platform Builder in Visual Studio to design and build a working Windows Embedded Compact 2013 OS.
+Step 2 is the only part of the previous OS Design project process that is changed when using the CE App Container, see below for additional details.
 
 ### Step 2 - Platform Builder BSP Selection
 
 To support the Windows CE App Container, a new BSP that targets x86 and ARM architectures has been added to Platform Builder.
 
-When creating an OS Design for the CE App Container, select either the “Windows CE App Container: x86” or “Windows CE App Container: ARMv7” (ARM32) depending on the underlying hardware for your IoT Core based device. For example, if your target IoT Core device uses Intel hardware, you will select the “Windows CE App Container: x86” option. Alternatively, if your IoT Core hardware uses NXP i.MX6, you will select the “Windows CE App Container: ARMv7” option.
+When creating an OS Design for the CE App Container, select either the “Windows CE App Container: x86” or “Windows CE App Container: ARMv7” (ARM32) depending on the underlying hardware for your IoT Core based device.
+
+For example, if your target IoT Core device uses Intel hardware, you will select the “Windows CE App Container: x86” option. Alternatively, if your IoT Core hardware uses NXP i.MX6, you will select the “Windows CE App Container: ARMv7” option.
 
 ![Select the CE App Container BSP](./media/WindowsCEAppContainer/image2.png)
 
@@ -106,13 +104,15 @@ The basic steps in creating an image are:
 8. [Finalize and sign your retail
     FFU](https://docs.microsoft.com/windows-hardware/manufacture/iot/build-retail-image)
 
-There are detailed guides for each of these steps as part of the [Windows 10 IoT Core Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image). While some of these steps are like the process of using Platform Builder (PB) to create a device image it is worth exploring some areas more deeply.
+There are detailed guides for each of these steps as part of the [Windows 10 IoT Core Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image). While some of these steps are like the process of using Platform Builder (PB) to create a device image, it is worth exploring some areas more deeply.
 
 #### Step 1 - Create a Workspace
-Review the documentation, [Create a Basic Image](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image) in the IoT Core Manufacturing Guide to learn how to create a workspace.
+
+Review the documentation, [Create a Basic Image](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image), in the IoT Core Manufacturing Guide to learn how to create a workspace.
 
 #### Step 2 - Import the appropriate IoT Core Board Support Package (BSP)
-Review the documentation, [Create a Basic Image](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image) in the IoT Core Manufacturing Guide for support for your board.
+
+Review the documentation, [Create a Basic Image](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image), in the IoT Core Manufacturing Guide for support for your board.
 
 #### Step 3 - Importing the Windows CE App Container
 
@@ -120,6 +120,7 @@ The Windows CE App Container is created using PB as discussed above and imported
 
 #### Step 4 - Create your product definition
 
+Review the documentation, [Create a Basic Image](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image), in the IoT Core Manufacturing Guide to create your product definition.
 
 
 #### Step 5 - Adding CE App Container to a product
