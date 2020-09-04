@@ -79,13 +79,13 @@ HKEY_CURRENTUSER\Control Panel\Accessibility
 ```
 
 * There is no such registry on Windows 10 IoT Core devices by default. You will need to add a "Dynamic Scrollbars" register if you want.
-* To enable hide scroll bars automatically in a UWP application, you can add the "DynamicScrollbars" register and set the value to "1" like this:
+* To enable the hide scroll bars automatically in a UWP application, you can add the "DynamicScrollbars" register and set the value to "1" like this:
 
 ```
 REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d "1"
 ```
 
-* The registry key must be set from the Default Account. If the ScrollViewer's XAML setting is "Visible", the nthe registry setting of 0 will force the scroll bar to appear regardlss of whether there is sufficient content to have the scroll appear in the UI. A registry setting of 1 will keep the scroll bar hidden until there is sufficient content.
+* The registry key must be set from the Default Account. If the ScrollViewer's XAML setting is "Visible", the registry setting of 0 will force the scroll bar to appear regardless of whether there is sufficient content to have the scroll appear in the UI. A registry setting of 1 will keep the scroll bar hidden until there is sufficient content.
 
 ```
 <TextBox Height="200" Width="100" IsEnabled="True" FontSize="50" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Visible" Text="..."/>
@@ -100,7 +100,7 @@ REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d 
 ### Different commands supported
 
 * The PowerShell Remove-AppxPackage command works on Desktop but not on Windows 10 IoT Core.
-* Not all folders on your device are accessible by Universal Windows Apps. On Windows 10 IoT Core you can use the FolderPermissions tool to make a folder accessible to a UWP app. For example, run FolderPermissions c:\test -e to give UWP apps access to c:\test folder. However, this is not available on Desktop.
+* Not all folders on your device are accessible by Universal Windows Apps. On Windows 10 IoT Core, you can use the FolderPermissions tool to make a folder accessible to a UWP app. For example, run FolderPermissions c:\test -e to give UWP apps access to c:\test folder. However, this is not available on Desktop.
 
 All differences described in this post may not be valid in the future because Windows 10 IoT Core is constantly being updated.
 
