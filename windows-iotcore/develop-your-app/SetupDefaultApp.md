@@ -1,14 +1,14 @@
 ---
-title: Setup a Default App
+title: Set up a Default App
 author: bfjelds
 ms.author: bfjelds
 ms.date: 09/05/2017
 ms.topic: article
-description: Learn how to setup a default app using the Windows Device Portal or the shell.
+description: Learn how to set up a default app using the Windows Device Portal or the shell.
 keywords: windows iot, default app, PowerShell, iot
 ---
 
-# Setup a default app
+# Set up a default app
 Here you'll learn the ways to set your application as the default application. The default application is the one that is launched when the system boots.  
 
 > [!NOTE]
@@ -27,7 +27,7 @@ You can click on **Startup** column corresponding to the app.
 
 Steps to set the default app using the shell 
 
-1. Connect to the device via [Powershell](../connect-your-device/PowerShell.md)
+1. Connect to the device via [PowerShell](../connect-your-device/PowerShell.md)
 
 2. List the applications installed using `iotstartup list`
 

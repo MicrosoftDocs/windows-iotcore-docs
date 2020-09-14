@@ -50,7 +50,7 @@ ___
 
 1. For test deployment to work, your project must be configured in the same way UWP apps are configured (specifically using Universal Authentication and Remote Machine).  See [Deploy an App with Visual Studio](../develop-your-app/appdeployment.md) for specifics.
 
-1. To remotely run a unit test, you can use the Test Explorer and right clicking the desired TestMethod and selecting Run/Debug Selected Tests
+1. To remotely run a unit test, you can use the Test Explorer and right-click the desired TestMethod and selecting Run/Debug Selected Tests
  ![Test Explorer](../media/UnitTests/test-explorer.png)
 
 1. To remotely run or debug all unit tests, you can use Test > Run or Test > Debug
