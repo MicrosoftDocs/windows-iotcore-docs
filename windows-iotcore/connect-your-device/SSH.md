@@ -13,7 +13,7 @@ Secure Shell (SSH) allows you to remotely administer and configure your Windows 
 > [!IMPORTANT]
 > The Windows OpenSSH client requires that your SSH client host OS is Windows 10 version 1803(17134). Also, the Windows 10 IoT Core device must be running RS5 Windows Insider Preview release 17723 or greater.
 
-The **OpenSSH Client** was added to Windows 10 in 1803 (build 17134) as an optional feature. To install the client you can search for **Manage Optional Features** in Windows 10 settings. If the **OpenSSH Client** is not listed in the list of installed features then choose **Add a feature**.
+The **OpenSSH Client** was added to Windows 10 in 1803 (build 17134) as an optional feature. To install the client, you can search for **Manage Optional Features** in Windows 10 settings. If the OpenSSH Client is not listed in the list of installed features, then choose **Add a feature**.
 
 ![Add a feature](../media/SSH/add_a_feature.png)
 
@@ -39,14 +39,14 @@ Are you sure you want to continue connecting (yes/no)?
 
 Type **yes** and press **enter**.
 
-If you need to log in as **DefaultAccount** rather than as administrator you will need to generate a key and use the key to log in.  From the desktop that you intend to connect to your IoT Device from, open a powershell window and change to your personal data folder (e.g cd ~)
+If you need to login as DefaultAccount rather than as administrator, you will need to generate a key and use the key to login.  From the desktop that you intend to connect to your IoT Device from, open a PowerShell window and change to your personal data folder (e.g cd ~)
 
 ```cmd
 cd ~
 ssh-keygen -t rsa -f id_rsa
 ```
 
-Register the key with ssh-agent (optional, for single sign-on experience).  Note that ssh-add must be performed from a folder that is  ACL'd to you as the signed-in user (Builtin\Administrators and the NT_AUTHORITY\System user are also ok).  By default cd ~ from powershell should be sufficient as shown below.
+Register the key with ssh-agent (optional, for single sign-on experience).  Note that ssh-add must be performed from a folder that is  ACL'd to you as the signed-in user (Builtin\Administrators and the NT_AUTHORITY\System user are also ok).  By default cd ~ from PowerShell should be sufficient as shown below.
 
 ```cmd
 cd ~
@@ -57,7 +57,7 @@ ssh-add id_rsa
 > [!TIP]
 > If you receive a message that the ssh-agent service is disabled you can enable it with **sc.exe config ssh-agent start=auto**
 
-To enable single sign append the public key to the Windows IoT Core device **authorized_keys** file.  Or if you only have one key you copy the public key file to the remote **authorized_keys** file.
+To enable single sign, append the public key to the Windows IoT Core device **authorized_keys** file.  Or if you only have one key you copy the public key file to the remote **authorized_keys** file.
 
 ```cmd
 net use X: \\host\c$ /user:host\administrator
@@ -65,13 +65,13 @@ if not exist x:\data\users\defaultaccount\.ssh md x:\data\users\defaultaccount\.
 copy .\id_rsa.pub x:\data\users\defaultaccount\.ssh\authorized_keys
 ```
 
-If the key is not registered with ssh-agent it must be specified on the command line to login: 
+If the key is not registered with ssh-agent, it must be specified on the command line to login: 
 
 ```cmd
 ssh -i .\id_rsa DefaultAccount@host
 ```
 
-If the private key is registered with ssh-agent then you only need to specify <strong>DefaultAccount@host</strong>:
+If the private key is registered with ssh-agent, then you only need to specify <strong>DefaultAccount@host</strong>:
 
 ```cmd
 ssh DefaultAccount@host
@@ -105,7 +105,7 @@ icacls x:\data\ProgramData\ssh\administrators_authorized_keys /remove "NT AUTHOR
 icacls x:\data\ProgramData\ssh\administrators_authorized_keys /inheritance:r
 ```
 
-To set the ACL using powershell
+To set the ACL using PowerShell
 
 ```cmd
 get-acl x:\data\ProgramData\ssh\ssh_host_dsa_key | set-acl x:\data\ProgramData\ssh\administrators_authorized_keys
@@ -118,8 +118,8 @@ See also: [Win32-OpenSSH](https://github.com/PowerShell/Win32-OpenSSH/wiki/ssh.e
 
 ## Using PuTTY
 
-### Download a SSH client
-In order to connect to your device using SSH, you'll first need to download a SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe).
+### Download an SSH client
+In order to connect to your device using SSH, you'll first need to download an SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe).
 
 ### Connect to your device
 * In order to connect to your device, you need to first get the IP address of the device.  After booting your Windows IoT Core device, an IP address will be shown on the screen attached to the device:
@@ -152,7 +152,7 @@ To do this, enter the following command in the PuTTY console, replacing `[new pa
     net user Administrator [new password]
     
 ### Configure your Windows IoT Core device
-* To be able to deploy applications from Visual Studio 2017, you will need to make sure the Visual Studio Remote Debugger is running on your Windows IoT Core device. The remote debugger should launch automatically at machine boot time. To double check, use the tlist command to list all the running processes from powershell. There should be two instances of msvsmon.exe running on the device.
+* To be able to deploy applications from Visual Studio 2017, you will need to make sure the Visual Studio Remote Debugger is running on your Windows IoT Core device. The remote debugger should launch automatically at machine boot time. To double check, use the tlist command to list all the running processes from PowerShell. There should be two instances of msvsmon.exe running on the device.
 
 * It is possible for the Visual Studio Remote Debugger to time out after long periods of inactivity. If Visual Studio cannot connect to your Windows IoT Core device, try rebooting the device.
 

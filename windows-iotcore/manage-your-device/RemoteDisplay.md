@@ -27,7 +27,7 @@ Setup is quick and easy - follow the three steps below to use the remote display
 
 1. Ensure that your IoT Core device and development computer are on the same network and n a secure environment.
 
-    One method is to connect your device directly to your laptop using a USB Ethernet adapter which supports automatic crossover.
+    One method is to connect your device directly to your laptop using a USB Ethernet adapter, which supports automatic crossover.
 
 1. Turn on the remote display functionality on your Windows 10 IoT Core device.
   
@@ -66,7 +66,7 @@ Failed connections can be caused by a number of issues, but we've run into a cou
 1. Ensure that you are running the latest insider version of Windows 10 IoT Core and the IoT Remote Client application.
 1. First, make sure your IoT device is on the same network as your companion device.
     Check that you're running the latest Insider build of Windows 10 IoT Core with the Windows IoT Remote Server enabled.
-1. If this isn't the issue, try changing the resolution of your device to something we're guaranteed to support
+1. If this isn't the issue, try changing the resolution of your device to something we're guaranteed to support.
     Follow the instructions in step 1 of the Setup section above to navigate to your device's web server.  Instead of selecting "Remote" from the menu on the left, stay on the "Home" page and scroll down to find resolution.  Try 800x600.
 1. If this still doesn't fix your issue, you may have an issue that stems from never connecting your device to an external display.
     This will cause the device to think of itself as purely headless.  To fix this:
