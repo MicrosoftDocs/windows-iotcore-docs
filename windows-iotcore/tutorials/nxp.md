@@ -1,5 +1,5 @@
 ---
-title: Setting up a NXP device
+title: Setting up an NXP device
 ms.date: 05/22/2019 
 ms.topic: article 
 description: Learn about how to set up your NXP device with Windows 10 IoT Core. Use the dashboard, connect to a network, and connect to Windows Device Portal.
@@ -7,7 +7,7 @@ keywords: Windows 10 IoT Core, NXP
 ms.custom: RS5
 ---
 
-# Setting up a NXP device
+# Setting up an NXP device
 
 ## Overview
 
@@ -17,7 +17,7 @@ ms.custom: RS5
 > [!NOTE]
 > Set up for the NXP is nearly identical to setting up a Raspberry Pi.
 
-When setting up a NXP device for prototyping, we recommend using the Windows 10 IoT Core Dashboard. However, if you're looking to manufacture with a NXP device, please refer to the [IoT Core Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). You cannot use maker images for manufacturing.
+When setting up an NXP device for prototyping, we recommend using the Windows 10 IoT Core Dashboard. However, if you're looking to manufacture with an NXP device, please refer to the [IoT Core Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). You cannot use maker images for manufacturing.
 <br>
 > [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 
@@ -32,7 +32,7 @@ To flash, or download, IoT Core onto your NXP device, you'll need:
 
 ### Instructions
 
-1. Run the Windows 10 IOT Core Dashboard and click on *Set up a new device* and insert a SD card into your computer.
+1. Run the Windows 10 IOT Core Dashboard and click on *Set up a new device* and insert an SD card into your computer.
 2. Hook up your NXP device to an external display.
 3. Fill out the fields. Select "NXP [i.MX6/i.MX7]" as the device type. Make sure to give your device a new name and password. Otherwise the default credentials will remain as:
 
