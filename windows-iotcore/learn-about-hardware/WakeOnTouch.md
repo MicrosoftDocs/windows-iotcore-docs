@@ -15,7 +15,7 @@ In some scenarios, you want your device's screen to turn off while not in use an
 
 ## Setting a video idle timeout
 
-You can configure the screen to turn off after a period of inactivity by setting a video idle timeout. When the user has not interacted with the device for a specified length of time, the screen will turn off. This will enable the device to enter a low power state by powering down components related to the display.
+You can configure the screen to turn off after a period of inactivity by setting a video idle timeout. When the user has not interacted with the device for a specified length of time, the screen will turn off. This will enable the device to enter a low-power state by powering down components related to the display.
 
 ```powershell
 	powercfg.exe /setacvalueindex SCHEME_CURRENT SUB_VIDEO VIDEOIDLE 10
@@ -35,4 +35,4 @@ On AoAC systems (which includes all ARM systems), the system will automatically 
 	
 Disabling modern standby can impact power consumption when the system is idle. You should measure your system's power consumption with modern standby enabled and disabled before making the decision to disable modern standby.
 
-Modern standby is a software mechanism that attempts to quiet system activity as much as possible, thereby allowing hardware to enter a low power state. In theory, a sufficiently quiet device with modern standby disabled can achieve the same low power consumption as a device in modern standby. It is important to minimize background activity including software timers and periodic tasks if modern standby is disabled.
+Modern standby is a software mechanism that attempts to quiet system activity as much as possible, thereby allowing hardware to enter a low-power state. In theory, a sufficiently quiet device with modern standby disabled can achieve the same low power consumption as a device in modern standby. It is important to minimize background activity including software timers and periodic tasks if modern standby is disabled.
