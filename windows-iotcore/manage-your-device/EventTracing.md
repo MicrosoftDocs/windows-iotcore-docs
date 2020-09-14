@@ -15,24 +15,24 @@ This section will provide useful links on the basics of writing and consuming ev
 
 ## Writing Events
 
-Find a UWP sample that implements the different methods of writing events as part of the [Windows Universal Samples Github](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Logging).
+Find a UWP sample that implements the different methods of writing events as part of the [Windows Universal Samples GitHub](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Logging).
 This will run on Windows IoT Core devices and is also a great code reference.
 
 Detailed guide on writing events and obtaining GUIDs can be found [here](https://msdn.microsoft.com/library/windows/desktop/aa364161(v=vs.85).aspx).
 
 ## Consuming Events
 
-Events are either saved to an ETL file or captured in real-time.
+Events are either saved to an ETL file or captured in real time.
 Use [FTP](../connect-your-device/FTP.md) or [Windows File Sharing](../manage-your-device/WindowsFileSharing.md) to retrieve ETL files from Windows IoT Core devices.
 
 ## Use Tools in Windows Assessment and Deployment Kit
 
-Windows Assessment and Deployment Kit includes 3 tools to help capture and analyze events. [Click here to download](https://go.microsoft.com/fwlink/p/?LinkId=526740)
+[Windows Assessment and Deployment Kit](https://go.microsoft.com/fwlink/p/?LinkId=526740) includes three tools to help capture and analyze events. 
 
 
-1. **Windows Performance Analyzer** visualizes ETL files on desktop, with a step by step guide [here](https://msdn.microsoft.com/library/windows/hardware/dn927319(v=vs.85).aspx).
+1. **Windows Performance Analyzer** visualizes ETL files on desktop, with a step-by-step guide [here](https://msdn.microsoft.com/library/windows/hardware/dn927319(v=vs.85).aspx).
 
-2. **Xperf command line tool** captures real-time events and writes them to an ETL file. This tool is already installed on Windows IoT Core devices, just run the following commands on the devices:
+2. **Xperf command-line tool** captures real-time events and writes them to an ETL file. This tool is already installed on Windows IoT Core devices, just run the following commands on the devices:
 
         // Start capturing events from specific GUID and save them to an ETL file
         xperf -start <Session Name> -f <ETL File> -on <GUID>
@@ -41,7 +41,7 @@ Windows Assessment and Deployment Kit includes 3 tools to help capture and analy
         xperf -stop <Session Name>
 
 
-3. **Tracerpt command line tool** converts ETL files into xml files.
+3. **Tracerpt command-line tool** converts ETL files into xml files.
 
         // Generate dumpfile.xml from ETL file
         tracerpt <ETL File>
@@ -49,7 +49,7 @@ Windows Assessment and Deployment Kit includes 3 tools to help capture and analy
 
 ## Use Device Portal
 
-Device portal can capture events in real-time, with instructions [here](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal).
+Device portal can capture events in real time, with instructions [here](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal).
 
 > [!NOTE]
 > This method does not produce an ETL file for further analysis, but requires minimal setup.

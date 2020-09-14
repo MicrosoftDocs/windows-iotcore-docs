@@ -14,7 +14,7 @@ The best tool for investigating memory leaks on Windows IoT Core with Visual Stu
 
 ![Diagnostic Tools](../media/MemoryLeaks/DiagnosticTools.PNG)
 
-For foreground applications you can [follow the documentation](https://docs.microsoft.com/visualstudio/profiling/memory-usage).
+For foreground applications, you can [follow the documentation](https://docs.microsoft.com/visualstudio/profiling/memory-usage).
 
 However, these tools don't work directly with a Windows IoT Core **Background Application**. One way to profile code used in a background application is to wrap it in a foreground app for analysis:
 
@@ -110,7 +110,7 @@ Right-click on the new foreground app project's **References** node and select *
 
 ![Add New Project](../media/MemoryLeaks/AddReference.PNG)
 
-In the **Reference Manager** dialog choose **Projects** in the left-hand pane.  In the center pane add a check in the checkbox next to your background application project and click **OK**.
+In the Reference Manager dialog, choose **Projects** in the left-hand pane.  In the center pane, add a check in the checkbox next to your background application project and click **OK**.
 
 ![Add New Project](../media/MemoryLeaks/AddReferenceDialog.PNG)
 
@@ -145,14 +145,14 @@ public void Run(IBackgroundTaskInstance taskInstance)
 1. Set a breakpoint on the call to task.Run(null).
 2. Set another breakpoint on timer.Change(Timeout.Infinite, Timeout.Infinite) in Timer_Tick in StartupTask.cs.
 3. Press F5 to begin debugging
-4. When you hit the first breakpoint press the snapshot button to set the baseline to compare against
+4. When you hit the first breakpoint, press the snapshot button to set the baseline to compare against
 
 ![Snapshot](../media/MemoryLeaks/Snapshot.PNG)
 
 5. Press F5
 6. When you hit the second breakpoint press the snapshot button again to capture the current state.
 
-Now the diagnostic tools should show a graph with increasing memory use and 2 snapshot like this:
+Now the diagnostic tools should show a graph with increasing memory use and two snapshot like this:
 
 ![Diagnostic Tools with Leaks](../media/MemoryLeaks/DiagnosticToolsWithLeaks.PNG)
 
@@ -160,6 +160,6 @@ Look at row 2 in the Heap Size column. Click the second number with the plus sig
 
 ![Snapshot table](../media/MemoryLeaks/Snapshot2_1.PNG)
 
-Sort by size diff so that the largest number is at the top, then click the top row. Above the second detail table click **Referenced Types**.  The second table should now show **List\<Byte[]\>** as the source of all the memory usage.
+Sort by size diff so that the largest number is at the top, then click the top row. Above the second detail table, click **Referenced Types**.  The second table should now show **List\<Byte[]\>** as the source of all the memory usage.
 
 ![Snapshot table](../media/MemoryLeaks/Snapshot2_2.PNG)

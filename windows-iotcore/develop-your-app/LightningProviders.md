@@ -4,7 +4,7 @@ author: msalehmsft
 ms.author: msaleh
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn more about how you can use the Microosft Lightning Providers library. 
+description: Learn more about how you can use the Microsoft Lightning Providers library. 
 keywords: windows iot, lightning providers, lightning performance testing, buses
 ---
 
@@ -20,9 +20,9 @@ While DMAP driver offer GPIO performance improvements over the Inbox driver, con
 
 ## Obtaining the library
 
-The library is provided as part of the [Lightning SDK Nuget package](https://www.nuget.org/packages/Microsoft.IoT.Lightning) with source code available on [GitHub ms-iot/Lightning repository](https://github.com/ms-iot/lightning/).
+The library is provided as part of the [Lightning SDK NuGet package](https://www.nuget.org/packages/Microsoft.IoT.Lightning) with source code available on [GitHub ms-iot/Lightning repository](https://github.com/ms-iot/lightning/).
 
-Additonally, samples showing how to use the different providers are available on [GitHub ms-iot/BusProviders repository](https://github.com/ms-iot/BusProviders/tree/develop/Microsoft.IoT.Lightning.Providers).
+Additionally, samples showing how to use the different providers are available on [GitHub ms-iot/BusProviders repository](https://github.com/ms-iot/BusProviders/tree/develop/Microsoft.IoT.Lightning.Providers).
 
 ## Adding the library to your application
 
@@ -35,9 +35,9 @@ Each of the samples references the Lightning SDK and is configured properly to u
 
 ### Option 2: Referencing the library
 
-Additionally, it's straightforward to add the required Lightning providers Nuget reference and support to a new or existing application. Follow the steps below:
+Additionally, it's straightforward to add the required Lightning providers NuGet reference and support to a new or existing application. Follow the steps below:
 
-1. In your application, right click the project and click the "Manage NuGet Packages..." menu item  
+1. In your application, right-click the project and click the "Manage NuGet Packages..." menu item  
 ![UWP Project](../media/LightningProviders/manage-nuget-project.png)
 
 2. The NuGet Package Manager will open. In the Browse tab, search for the "Lightning SDK", making sure to check the "Include prerelease" checkbox.
@@ -57,7 +57,7 @@ Additionally, it's straightforward to add the required Lightning providers Nuget
 ```
 
 * The first is a capability that will enable the application to access custom devices.
-* The second is the device guid id for the Lightning interface
+* The second is the device guid ID for the Lightning interface
 
 Both capabilities must be added to the AppX manifest of your project under the `<Capabilities>` node. Also, make sure to add the required namespaces to your manifest if needed.
 
@@ -159,25 +159,25 @@ The following samples demonstrate using the Lightning providers with supported b
 
 ### Windows SDK Update
 
-Windows SDK required for building and using the library is 10.0.10586.0 or higher which can be downloaded from [here](https://dev.windows.com/en-US/downloads/windows-10-sdk).
+Windows SDK required for building and using the library is 10.0.10586.0 or higher, which can be downloaded from [here](https://dev.windows.com/en-US/downloads/windows-10-sdk).
 
-For more information on setting everything up, refer to [our get started guide.](https://developer.microsoft.com/en-us/windows/iot/getstarted).
+For more information on setting up everything, refer to [our get started guide.](https://developer.microsoft.com/en-us/windows/iot/getstarted).
 
-### Nuget Package Dependencies
+### NuGet Package Dependencies
 
-The Lightning Provider library depends on the [Microsoft.IoT.Lightning Nuget package](https://www.nuget.org/packages/Microsoft.IoT.Lightning), which in turn depends on the [Arduino SDK Nuget package](https://www.nuget.org/packages/Microsoft.IoT.SDKFromArduino). Both Nuget packages are referenced in the library projects, and are available from Nuget.org.
+The Lightning Provider library depends on the [Microsoft.IoT.Lightning NuGet package](https://www.nuget.org/packages/Microsoft.IoT.Lightning), which in turn depends on the [Arduino SDK NuGet package](https://www.nuget.org/packages/Microsoft.IoT.SDKFromArduino). Both NuGet packages are referenced in the library projects, and are available from Nuget.org.
 
 If needed, source code for each is also available on GitHub at the [Lightning](https://github.com/ms-iot/lightning) and [Arduino SDK](https://github.com/ms-iot/arduino-sdk) repositories.
 
-Currently, Microsoft.IoT.Lightning Nuget is still pre-release, so should be updated from Nuget.org, when newer versions are available.
+Currently, Microsoft.IoT.Lightning NuGet is still pre-release, so should be updated from Nuget.org, when newer versions are available.
 
-In order to install prerelease (current) version of Microsoft.IoT.Lightning Nuget package as well as receive prerelease updates to the Lightning package, make sure to set the "Include prerelease" option in the Nuget Package Manager.
+In order to install prerelease (current) version of Microsoft.IoT.Lightning NuGet package as well as receive prerelease updates to the Lightning package, make sure to set the "Include prerelease" option in the NuGet Package Manager.
 
-1. Right click References in your project
-1. Click "Manage Nuget Packages..."
-1. Select package sources for Lightning nuget
+1. Right-click References in your project
+1. Click "Manage NuGet Packages..."
+1. Select package sources for Lightning NuGet
 1. Click "Include prerelease".
-1. Click "Install" to install the nuget package to your project
+1. Click "Install" to install the NuGet package to your project
 
 ![Package Manager Config](../media/LightningProviders/Nuget_PackageManager.png)
 
