@@ -10,11 +10,11 @@ keywords: windows iot, device management, windows iot, Azure DM, Azure Hub, Azur
 
 # Managing Windows IoT Core Devices
 
-Windows 10 IoT Core devices can be managed using a traditional OMA DM MDM server that supports certificate based enrollment or using Azure IoT Hub's Device Management.  
+Windows 10 IoT Core devices can be managed using a traditional OMA DM MDM server that supports certificate-based enrollment or using Azure IoT Hub's Device Management.  
 
  _Learn more about MDM and Windows 10 [here](https://msdn.microsoft.com/library/windows/hardware/dn914769(v=vs.85).aspx)._  
 
-For devices that are managed using a OMA DM server the MDM policies for Windows 10 IoT Core align with the policies supported in other editions of Windows 10. To learn more about policies as well as what can be managed on IoT Core devices, see Configuration service provider reference for Windows 10 [here](https://aka.ms/csplist). The MDM support in Windows 10 is based on Open Mobile Alliance (OMA) Device Management (DM) protocol 1.2.1 specification.
+For devices that are managed using an OMA DM server the MDM policies for Windows 10 IoT Core align with the policies supported in other editions of Windows 10. To learn more about policies as well as what can be managed on IoT Core devices, see Configuration service provider reference for Windows 10 [here](https://aka.ms/csplist). The MDM support in Windows 10 is based on Open Mobile Alliance (OMA) Device Management (DM) protocol 1.2.1 specification.
 
 ## How do I enroll an IoT Core device into a MDM?
 ___
@@ -75,11 +75,11 @@ MDM enrollment of an IoT Core device is accomplished using a Provisioning packag
 
 7. Navigate to Workplace -> Enrollments.
 
-8. In the UPN field enter the account you wish to enroll your device under (i.e. trmck@contoso.co) and click **Add**.
+8. In the UPN field, enter the account you wish to enroll your device under (i.e. trmck@contoso.co) and click **Add**.
 
    ![Workplace enrollments filled](../media/ManagingDevices/WICD-Workplace-Enrollments-UPN-Filled.png)
 
-9. For AuthPolicy choose between Username Password based authentication (OnPremises) or Certificate based authentication.
+9. For AuthPolicy choose between Username Password based authentication (OnPremises) or Certificate-based authentication.
 
 10. Enter the Discovery Service URL for your MDM server.
 
@@ -111,8 +111,8 @@ There are a few ways in which a Provisioning package can be deployed to an IoT d
 
 #### Copying package to device
 
-Take the Provisioning package that was exported from SCCM or WICD and copy the .ppkg file to `C:\Windows\Provisioning\Packages` directory on the IoT device. Upon reboot of the device the package will be executed and the device will start the enrollment process.
+Take the Provisioning package that was exported from SCCM or WICD and copy the .ppkg file to `C:\Windows\Provisioning\Packages` directory on the IoT device. Upon reboot of the device, the package will be executed and the device will start the enrollment process.
 
 #### Adding package to image
 
-See [Add a provisioning package to an image](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-provisioning-package-to-an-image). Upon first boot the device will execute the package and start the enrollment process.
+See [Add a provisioning package to an image](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-provisioning-package-to-an-image). Upon first boot, the device will execute the package and start the enrollment process.
