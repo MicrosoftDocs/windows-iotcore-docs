@@ -22,7 +22,7 @@ Bluetooth Low Energy (LE) is a specification that defines protocols for discover
 Windows 10 IoT Core supports the following Bluetooth profiles:
 
 1.  **Human Interface Device Profiles Concepts (HID)**
-An HID device takes input from a human and presents output for human consumpation. Examples are keyboard, mouse, game controller, barcode reader, LED, and alphanumeric display. A Windows 10 IoT Core device can connect to an HID device over Bluetooth. See the general topic about HID in the Windows context: [Introduction to HID Concepts](https://docs.microsoft.com/windows-hardware/drivers/hid/introduction-to-hid-concepts). 
+An HID device takes input from a human and presents output for human consumption. Examples are keyboard, mouse, game controller, barcode reader, LED, and alphanumeric display. A Windows 10 IoT Core device can connect to an HID device over Bluetooth. See the general topic about HID in the Windows context: [Introduction to HID Concepts](https://docs.microsoft.com/windows-hardware/drivers/hid/introduction-to-hid-concepts). 
 
 2.  **Radio Frequency Communication (RFCOMM)**
 RFCOMMM is the underlying serial communications for Classic Bluetooth. With UWP apps, the following RFCOMM services are supported:
@@ -41,10 +41,10 @@ See the [UWP-Bluetooth Low Energy](https://docs.microsoft.com/windows/uwp/device
 > You will need to manually specify the RFCOMM services in the AppManifest.  See the [UWP-Bluetooth RFCOMM](https://docs.microsoft.com/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm) topic. Also see the [UWP-Bluetooth Rfcomm Chat Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/BluetoothRfcommChat) topic.
 
 ## Connecting Bluetooth devices using the device portal
-When using one of the [Windows 10 IoT Core Release Image](https://developer.microsoft.com/en-us/windows/iot/downloads) Bluetooth devices can be paired with the Windows IoT Core device using the device portal. When navigating to the Bluetooth tab the device will look for Bluetooth devices and will also be discoverable to other Bluetooth devices. The picture below shows an incoming pairing request. 
+When using one of the [Windows 10 IoT Core Release Images](https://developer.microsoft.com/en-us/windows/iot/downloads), Bluetooth devices can be paired with the Windows IoT Core device using the device portal. When navigating to the Bluetooth tab, the device will look for Bluetooth devices, and will also be discoverable to other Bluetooth devices. The picture below shows an incoming pairing request. 
 
 ![Bluetooth Incoming Pairing](../media/Bluetooth/Portal_BT_2.png)
 
-After the device is successfully paired it will be listed under the paired device section 
+After the device is successfully paired, it will be listed under the paired device section 
 
 ![Bluetooth Incoming Pairing](../media/Bluetooth/Portal_BT_3.png)

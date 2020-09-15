@@ -9,7 +9,7 @@ keywords: windows iot, wifi, setup, devices
 # Using WiFi on your Windows 10 IoT Core device
 
 WiFi is supported on Windows 10 IoT Core devices through the use of a USB WiFi adapter. Using WiFi provides all the functionality of a wired connection,
-including [SSH](../connect-your-device/SSH.md), [Powershell](../connect-your-device/PowerShell.md), [Windows Device Portal](../manage-your-device/DevicePortal.md), and application debugging and deployment.
+including [SSH](../connect-your-device/SSH.md), [PowerShell](../connect-your-device/PowerShell.md), [Windows Device Portal](../manage-your-device/DevicePortal.md), and application debugging and deployment.
 
 > [!NOTE]
 > Plugging in a wired Ethernet cable will override WiFi as the default network interface.
@@ -60,7 +60,7 @@ An alternative way to configure WiFi is to use the default app. You can use this
 ### Option 1: Web-Based Configuration
 **Prerequisite:** Your device will already need to be connected to your local network through Ethernet and should have a USB WiFi Adapter plugged in
 
-If you have device a with no UI, display, or input devices, you can still configure it through the [Windows Device Portal](../manage-your-device/DevicePortal.md).
+If you have a device with no UI, display, or input devices, you can still configure it through the [Windows Device Portal](../manage-your-device/DevicePortal.md).
 In **Windows 10 IoT Core Dashboard**, *Click* on the **Open in Device Portal** icon for your device.
 
 <!-- This content is replicated at en-US/Docs/KitSetupRPI.md -->
