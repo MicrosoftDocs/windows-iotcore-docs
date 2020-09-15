@@ -165,6 +165,8 @@
     href: manage-your-device/ProjectRome.md
   - name: Intune device enrollment
     href: manage-your-device/IntuneDeviceEnrollment.md
+  - name: Azure IoT Device Agent
+    href: manage-your-device/AzureIoTDA.md
 - name: Secure devices
   expanded: false
   items:
