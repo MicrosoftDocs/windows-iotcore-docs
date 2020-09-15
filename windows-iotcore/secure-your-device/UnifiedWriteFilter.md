@@ -19,8 +19,8 @@ Read our documentation on the [Unified Write Filter](https://docs.microsoft.com/
 
 * If you do not have the current version of the Windows 10 IoT Core Kits yet, download and install the [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10iotcore).
 * Based on your device architecture, copy UWF packages ( `Microsoft-IoTUAP-UnifiedWriteFilter-Package.cab` and `Microsoft-IoTUAP-UnifiedWriteFilter-Package_Lang_en-us.cab` ) from your PC (`C:\Program Files (x86)\Windows Kits\10\MSPackages\Retail\<arch>\fre\`) to the device (for example, with [Windows file sharing](../manage-your-device/WindowsFileSharing.md)).
-* Launch [SSH](../connect-your-device/SSH.md) or [Powershell](../connect-your-device/PowerShell.md) and access your device running Windows 10 IoT Core.
-* From SSH or Powershell, do the following:
+* Launch [SSH](../connect-your-device/SSH.md) or [PowerShell](../connect-your-device/PowerShell.md) and access your device running Windows 10 IoT Core.
+* From SSH or PowerShell, do the following:
   * change to the directory where you have copied your files
     * `cd C:\<dir>`
   * Run these commands to install the packages to your IoT device system image:
@@ -28,27 +28,27 @@ Read our documentation on the [Unified Write Filter](https://docs.microsoft.com/
     * `applyupdate –stage .\Microsoft-IoTUAP-UnifiedWriteFilter-Package_Lang_en-us.cab`
     * `applyupdate –commit`
 * The device will boot to the Update OS, install UWF features, and reboot to the MainOS.
-* Once the device comes back to the MainOS, the UWF feature is ready and available to use. This can be verified by typing ```uwfmgr.exe``` into your Powershell or SSH window.
+* Once the device comes back to the MainOS, the UWF feature is ready and available to use. This can be verified by typing ```uwfmgr.exe``` into your PowerShell or SSH window.
 
   ![uwfmgr.exe on Windows 10 IoT Core](../media/UnifiedWriteFilter/uwfmgr.png)
 
 
 ## How to include UWF in Your Custom FFU 
 
-* Add **IOT_UNIFIED_WRITE_FILTER** feature id to the OEM Input file 
+* Add **IOT_UNIFIED_WRITE_FILTER** feature ID to the OEM Input file 
 * Create the image\FFU. Read [Create a basic image](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image) for instructions.
 
 
 ## How to Use UWF
 
-UWF can be configured using the uwfmgr.exe tool via a Powershell or SSH session.
+UWF can be configured using the uwfmgr.exe tool via a PowerShell or SSH session.
 Read [`uwfmgr.exe` tool](https://docs.microsoft.com/windows-hardware/customize/enterprise/uwfmgrexe) for the available options with an exception of some commands listed below that are not supported in IoT Core.
 Review the default settings of the Overlay configurations and adapt them per your requirements.
 
 UWF can also be configured via MDM channel using [Unified Write Filter CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp).
 
 
-* For example, the following combination of commands enable uwfmgr and configure to protect the C drive
+* For example, the following combinations of commands enable uwfmgr and configure to protect the C drive
 
   `uwfmgr.exe filter enable`      Enables the write filter
   <br>
@@ -97,7 +97,7 @@ The following steps are required to service UWF protected devices with protected
 
 * `uwfmgr.exe filter disable` Disable UWF
 * `shutdown /r /t 0` Reboot device to disable UWF
-* Enable Servicing ( using provisioning package or MDM to set Update policy )
+* Enable Servicing (using provisioning package or MDM to set Update policy)
    * Note that the device will automatically reboot to perform the servicing updates
 * `uwfmgr.exe filter enable` Enable UWF
 * `shutdown /r /t 0` Reboot device to enable UWF
