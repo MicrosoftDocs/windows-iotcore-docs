@@ -9,7 +9,7 @@ keywords: windows iot, Azure, security, Trusted Platform Module, SoC
 # Connect your device to the cloud
 
 Storing secure information such as a password or a certificate on a device could
-make a device vulnerable to exposure. A leaked password is a surefire way to
+make a device vulnerable to exposure. A leaked password is a sure fire way to
 compromise the security of a device or an entire system. In the Windows family,
 the technology that supports the security of the OS is the Trusted Platform Module.
 
@@ -31,8 +31,8 @@ derived from the secret will be used to authenticate the IoT device.
 
 ## Device Provisioning 
 
-The tool that provisions Windows 10 IoT Core devices is called the IoT Core
-Dashboard and can be downloaded from [the downloads page](https://go.microsoft.com/fwlink/?LinkID=708576).
+The provisioning tool for Windows 10 IoT Core devices is called the IoT Core
+Dashboard and it can be [downloaded](https://go.microsoft.com/fwlink/?LinkID=708576) and configured easily.
 
 The dashboard produces an image of the OS and securely connects your device to
 Azure. This is done by associating the physical device with the device ID in the Azure IoT Hub
