@@ -35,7 +35,7 @@ Simple bidirectional two-wire serial data (SDA) and serial clock (SCL) buses for
 A LED is a two-lead semiconductor light source. It is a pn-junction diode, which emits light when activated.
 
 **Microsoft Windows Kernel Mode Driver Framework (KMDF)**
-Microsoft development framework which allows driver developers to expose driver functionality in kernel mode, giving the driver access to system memory and hardware.
+Microsoft development framework that allows driver developers to expose driver functionality in kernel mode, giving the driver access to system memory and hardware.
 
 **Prototype**
 Developing a more raw version of a final version of a device that you're hoping to create. Prototyping is highly recommended, if not an obligatory step in the manufacturing process. This stage should be used for testing any and all features you're hoping to use for the final version of your device.
