@@ -42,7 +42,7 @@ Refer to [App capability declarations](https://docs.microsoft.com/windows/uwp/pa
 
 ## systemManagment Capability
 
-When you enable the systemManagment capabilities for your application this is the set of APIs that gets unlocked:  
+When you enable the systemManagment capabilities for your application, this is the set of APIs that gets unlocked:  
 
 * [Windows.System.ProcessLauncher](https://msdn.microsoft.com/library/windows/apps/windows.system.processlauncher.aspx)
 * [Windows.System.TimeZoneSettings](https://msdn.microsoft.com/library/windows/apps/windows.system.timezonesettings.aspx)
@@ -57,13 +57,13 @@ If you are debugging on a device that is not running Windows IoT Core and you se
 * This program is blocked by group policy. For more information, contact your system administrator.
 
 ## Changing the mode
-To enable embedded mode you will need to create a provisioning package in Imaging and Configuration Designer (ICD) that sets AllowEmbeddedMode=1.  To install ICD you need to download and install the Windows ADK for Windows 10.
+To enable embedded mode, you will need to create a provisioning package in Imaging and Configuration Designer (ICD) that sets AllowEmbeddedMode=1.  To install ICD, you need to download and install the Windows ADK for Windows 10.
 
 * [Download the Windows ADK for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=526740)
 * [Learn about what's new in the Windows ADK for Windows 10](https://msdn.microsoft.com/library/windows/hardware/dn927348(v=vs.85).aspx)
 
 1. When installing the ADK select **Imaging and Configuration Designer (ICD)**
-2. After installation is complete run Windows Imaging and Configuration Designer (WICD).
+2. After installation is complete, run Windows Imaging and Configuration Designer (WICD).
 
     ![WICD Icon](../media/EmbeddedMode/WICD_Icon.png)
 
@@ -112,7 +112,7 @@ To enable embedded mode you will need to create a provisioning package in Imagin
 
 
 ## Configuring a Background Application to Run automatically
-1. To configure a Background Application to automatically run you will need to follow the directions to [create an MinnowBoardMax SD Card](https://developer.microsoft.com/en-us/windows/iot/getstarted) and copy `D:\windows\system32\iotstartup.exe` (where D: is your SD Card).
+1. To configure a Background Application to automatically run, you will need to follow the directions to [create an MinnowBoardMax SD Card](https://developer.microsoft.com/en-us/windows/iot/getstarted) and copy `D:\windows\system32\iotstartup.exe` (where D: is your SD Card).
 
 2. To get a list of installed Background Applications type:
 
@@ -126,13 +126,13 @@ To enable embedded mode you will need to create a provisioning package in Imagin
 
         C:\> iotstartup add headless BackgroundApplication1
 
-6. If the Background Application has been successfully added to the startup list you should see this:
+6. If the Background Application has been successfully added to the startup list, you should see this:
 
         Added Headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpveeplication1
 
 7. Restart the embedded mode device:
 
-8. Once the device has restarted, your Background Application will start automatically.  The Embedded Mode service which manages Background Applications can take a few minutes to start.  The embedded mode service will monitor Background Applications on the startup list and make sure they get restarted if they stops.  If a Background Application stops several times in a short period of time it will no longer be restarted.
+8. Once the device has restarted, your Background Application will start automatically.  The Embedded Mode service that manages Background Applications can take a few minutes to start.  The embedded mode service will monitor Background Applications on the startup list and make sure they get restarted if they stop.  If a Background Application stops several times in a short period of time, it will no longer be restarted.
 
 9. To remove your Background Application from the startup list type:
 

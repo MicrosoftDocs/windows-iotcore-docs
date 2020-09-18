@@ -52,4 +52,4 @@ Microsoft is providing the [Turnkey Security Package](https://github.com/ms-iot/
 Step-by-step guidance is described in the [Enabling Secure Boot, BitLocker, and Device Guard](https://docs.microsoft.com/windows/iot-core/secure-your-device/securebootandbitlocker) section.
 
 ## Device production
-Once the lockdown image is validated, it can be used for manufacturing. For more information see [IoT Core manufacturing](https://docs.microsoft.com/windows-hardware/manufacture/iot/).
+Once the lockdown image is validated, it can be used for manufacturing. For more information, see [IoT Core manufacturing](https://docs.microsoft.com/windows-hardware/manufacture/iot/).

@@ -13,7 +13,7 @@ Windows 10 IoT Core enables development of embedded or dedicated-purpose devices
 
 This document provides information that supplements other content and documentation for this release of Windows 10 IoT Core.
 
-The packages within this release contain tools and components needed to install Windows 10 IoT Core on Minnowboard Max platform based on Intel Atom processers, Raspberry Pi 2 based on ARM Cortex A7, and Dragonboard 410c based on Qualcomm Snapdragon 400 series processors.   
+The packages within this release contain tools and components needed to install Windows 10 IoT Core on Minnowboard Max platform based on Intel Atom processors, Raspberry Pi 2 based on ARM Cortex A7, and Dragonboard 410c based on Qualcomm Snapdragon 400 series processors.   
 
 [Other platforms and processors](../../learn-about-hardware/SoCsAndCustomBoards.md) may be available from partners.
 
@@ -25,13 +25,13 @@ The privacy statement for this version of the Windows operating system can be vi
 * Windows 10 IoT Core Public Release. 
    * Azure Device Management Support - OEMs can use the Windows IoT Azure DM client library to add device management capabilities to their Azure IoT hub connected devices.
    * Additional Silicon Support
-      * Verified support for Windows 10 IoT Core on Intel Joule, Intel Pentium N4200, Intel Celeron N3350, upcoming Atom x5-E39xx processors (formerly Apollo Lake) and Raspberry Pi 3 SOMs.
+      * Verified support for Windows 10 IoT Core on Intel Joule, Intel Pentium N4200, Intel Celeron N3350, upcoming Atom x5-E39xx processors (formerly Apollo Lake), and Raspberry Pi 3 SOMs.
       * Allwinner has enabled support for their Pine 64 and Banana Pi devices using the Allwinner A64 SoC. 
    * Discovering your Remote Devices - No special software is needed to discover your devices that are signed in with your Microsoft Account.
    * New UWP APIs And controls for vibration, brightness, modern connected standby, power management, battery charge  and NFC (w/o HCE). 
-   * New busses and capabilities for ARM PCIe, USB function mode, Wi-Fi Direct and  GPIO interrupt counting API. 
-   * New Embedded features on Reset/Recovery, On-SOC PWM and Automatic USB provisioning 
-   * Improved Tools - VS Code, New Windows Device Portal and IoT Dashboard features, VS 2017 support.
+   * New busses and capabilities for ARM PCIe, USB function mode, Wi-Fi Direct, and  GPIO interrupt counting API. 
+   * New Embedded features on Reset/Recovery, On-SOC PWM, and Automatic USB provisioning 
+   * Improved Tools - VS Code, New Windows Device Portal, and IoT Dashboard features, VS 2017 support.
    * Cortana on Windows IoT Core - Cortana is now available on Windows 10 IoT Core. Ask Cortana a question.
    * IoT Dashboard Improvements - New features and stability bug fixes
       * Windows Insider Preview builds for Raspberry Pi and Minnowboard 
@@ -39,18 +39,18 @@ The privacy statement for this version of the Windows operating system can be vi
       * Ipv6 addresses in discovering devices 
       * Uploading device logs while submitting feedback
    *  New high precision GPIO APIs -  New APIs (Windows.Devices.Gpio.GpioInterruptBuffer) for precise and efficient measurement of pulse widths using GPIO interrupts.  GPIO providers include new Interrupt Buffer interface to allow for high precision interrupt timing for applications like rotary encoders and distance measuring devices
-   * Device Guard for IoT - Device builders can now fully lock down IoT devices and get advanced malware protection against new and unknown malware variants.  This can be done by specifying signing authorities for permissible applications and drivers that run on the device while disallowing execution of unknown or untrusted code.  This means improved security against malware and zero day attacks. 
+   * Device Guard for IoT - Device builders can now fully lock down IoT devices and get advanced malware protection against new and unknown malware variants.  This can be done by specifying signing authorities for permissible applications and drivers that run on the device while disallowing execution of unknown or untrusted code.  This means improved security against malware and zero-day attacks. 
    * Other updates include: 
       * Improved Update Support 
       * Azure Gateway SDK support 
-      * USB drive based auto-provisioning 
+      * USB drives based auto-provisioning 
       * Device Portal redesign 
-      * 64-bit images now supports up to 16,384 MB of memory 
+      * 64-bit images now support up to 16,384 MB of memory 
       * WinRT Vibration APIs 
       * Improved language support 
    * Miscellaneous  
       * A change has been made to the default BCD settings to prevent devices from attempting to boot to recovery mode when recovery mode does not exist. 
-      * IOT_POWER_SETTINGS feature now includes powercfg.exe. This is available for all architectures (ARM32, x86 and x64). 
+      * IOT_POWER_SETTINGS feature now includes powercfg.exe. This is available for all architectures (ARM32, x86, and x64). 
       * Changes were made to Applyupdate.exe to add the blockrebooton/blockrebootoff flags 
       * The Class Extensions for Hardware Notification (hwnclx) and USB Function (usbfnclx) have been added to the default IoT Core images
 
@@ -66,10 +66,10 @@ When disconnected, the Raspberry Pi firmware defaults to what is in the config.t
 Video playback performance on the Raspberry Pi platform has not been optimized.  Animated user elements including XAML-based dropdown menus may exhibit less than optimal performance. 
 
 #### Raspberry Pi Camera Support 
-Windows 10 IoT Core support for camera peripheral devices with Raspberry Pi devices is limited. The PiCam device directly connected to the onboard camera bus is not currently supported, as it requires GPU services that are not currently available on the Raspberry Pi because the DirectX driver is not implemented. Modern USB webcams produce data streams that are very demanding on the USB Host controller.  Even when used with low resolution settings webcams will require additional USB fine tuning and specialized control logic.  
+Windows 10 IoT Core support for camera peripheral devices with Raspberry Pi devices is limited. The PiCam device directly connected to the onboard camera bus is not currently supported, as it requires GPU services that are not currently available on the Raspberry Pi because the DirectX driver is not implemented. Modern USB webcams produce data streams that are very demanding on the USB Host controller.  Even when used with low-resolution settings webcams will require additional USB fine-tuning and specialized control logic.  
 
 #### Raspberry Pi 3 Bluetooth support 
-The Raspberry Pi3 built-in Bluetooth driver only supports low bandwidth devices  
+The Raspberry Pi3 built-in Bluetooth driver only supports low-bandwidth devices  
 
 #### Serial Port Usage and Access on Raspberry Pi 2 
 Raspberry Pi 2 supports the serial transport for communication through the PL011 UART.  This is set by default in kernel debugging scenarios.  An application or device driver can use the PL011 UART to send and receive data with the PL011 device driver turning off the debugger using the following command:   
@@ -87,7 +87,7 @@ The Dragonboard BSP has drivers for the headset jack and microphone jack, but it
 The SPI on the Dragonboard will ignore the requested speed and always run at a preconfigured speed.  
 
 #### Dragonboard Connected Standby 
-Connected Standby is not enabled on the Qualcomm Dragonboard by default.  To enable Connected Standby on DragonBoard the following registry key needs to be set to “1” 
+Connected Standby is not enabled on the Qualcomm Dragonboard by default.  To enable Connected Standby on DragonBoard, the following registry key needs to be set to “1” 
 <br>
 `HKLM\System\Controlset001\Control\Power\CsEnabled=DWORD:1`
 <br>
@@ -118,7 +118,7 @@ The minimum recommended version of the firmware is “MinnowBoard MAX 0.94 32-bi
 In some cases, the mouse pointer is not visible after deploying or debugging apps with Visual Studio, the mouse pointer should reappear if you change focus using the keyboard (Tab)  
 
 #### Server Applications with SoftAP  
-When using the SoftAP clients will not be able to access content exposed by UAP apps.  
+When using the SoftAP, clients will not be able to access content exposed by UAP apps.  
 To expose UAP applications via SoftAP the following changes must be made from the console on the device :  
 <br>
 `reg add hklm\system\currentcontrolset\services\mpssvc\parameters /v IoTInboundLoopbackPolicy /t REG_DWORD /d 1 `
@@ -132,11 +132,11 @@ To expose UAP applications via SoftAP the following changes must be made from th
 `Reboot`
 
 #### Sensor Driver conflict in pre-built FFUs 
-There is a Sensor Driver Conflict in the provided FFUs. The Remote Sensor Framework installs drivers for Compass, Magnetometer, Accelerometer and Gyro. The UWP APIs for accessing these from an application assume just 1 is installed. If you are developing a driver for a physically attached device, the remote driver on the Microsoft provided FFUs will conflict.  
+There is a Sensor Driver Conflict in the provided FFUs. The Remote Sensor Framework installs drivers for Compass, Magnetometer, Accelerometer, and Gyro. The UWP APIs for accessing these from an application assume just 1 is installed. If you are developing a driver for a physically attached device, the remote driver on the Microsoft provided FFUs will conflict.  
 Resolution: The conflicting driver can be removed by connecting to the device via SSH or PowerShell and using the tool devcon.exe to remove the remote sensor driver by typing “devcon.exe remove @”ROOT\REMOTESENSORDRIVER*”. The remote sensor driver does not affect OEM created FFUs. 
  
 #### Default Administrator User Name and Password 
-The default administrator user name and password are hard coded in the Windows 10 IoT Core image. This is a security risk for the device, and it should not be exposed to an open internet connection until the password has been changed. 
+The default administrator user name and password are hard-coded in the Windows 10 IoT Core image. This is a security risk for the device, and it should not be exposed to an open internet connection until the password has been changed. 
  
 #### Volume Controls 
 Hardware volume controls for USB microphones and speakers which depend on Windows system to change system volume are currently not supported on Windows 10 IoT Core. 
@@ -165,9 +165,9 @@ To prevent the crash, add this code so that it is executed first `var player = B
 The Azure Active Directory Authentication Library does not work on Windows 10 IoT Core.  
  
 #### Shell Management of Application Crashes 
-IoT Core’s shell infrastructure monitors APPX-type applications running on the device for crashes, and restarts those applications when crashes occur.  If the restarted applications continue to crash, the shell will employ a __failfast – a system critical process that causes a bug check and reboot in an attempt to recover.  Comparable logic and handling is used to background tasks and foreground applications in a headed configuration.   
+IoT Core’s shell infrastructure monitors APPX-type applications running on the device for crashes, and restarts those applications when crashes occur.  If the restarted applications continue to crash, the shell will employ a __failfast – a system critical process that causes a bug check and reboot in an attempt to recover.  Comparable logic and handling are used to background tasks and foreground applications in a headed configuration.   
 
-Crash handing and retry logic is captured below: 
+Crash handing and retry logic are captured below: 
 
 Software\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\CBTConfig  (or ForegroundAppConfig for headed) 
 * Qword:"FailureResetIntervalMs" – length of time app has to run successfully to reset failures seen to 0. – default is 0x00000000000493E0 == 5 minutes. 
@@ -197,7 +197,7 @@ If time sync is failing or timing out this may be due to unreachable or a distan
 * From a command line on the device (eg. SSH, PowerShell) 
 w32tm /config /syncfromflags:manual /manualpeerlist:"0.windows.time.com 1.pool.ntp.org 2.something else, ..." 
 * You may also make these additions to the registry via a boot script or a custom runtime configuration package included as part of the image creation process if needed. 
-For more details, see: 
+For more information, see: 
 * [Add a file and a registry setting to an image](https://msdn.microsoft.com/library/windows/hardware/mt670641(v=vs.85).aspx)
 * [Windows 10 IoT Core Image Creation](https://blogs.msdn.microsoft.com/iot/2015/12/14/windows-10-iot-core-image-creation/)
 

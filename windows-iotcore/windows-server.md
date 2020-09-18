@@ -23,7 +23,7 @@ Windows Server is well known as the server operating system used by small busine
 
 ## Long-term Servicing Channel (LTSC)
 
-This is the release model you’re already familiar with (formerly called the “Long-Term Servicing Branch”) where a new major version of Windows Server is released every 2-3 years. Users are entitled to 5 years of mainstream support and 5 years of extended support. This channel is appropriate for systems that require a longer servicing option and functional stability. Deployments of Windows Server IoT 2019 and earlier versions of Windows Server will not be affected by the new Semi-Annual Channel releases. The Long-Term Servicing Channel will continue to receive security and non-security updates, but it will not receive the new features and functionality.
+This is the release model you’re already familiar with, formerly called the “Long-Term Servicing Branch”, where a new major version of Windows Server is released every two to three years. Users are entitled to five years of mainstream support and five years of extended support. This channel is appropriate for systems that require a longer servicing option and functional stability. Deployments of Windows Server IoT 2019 and earlier versions of Windows Server will not be affected by the new Semi-Annual Channel releases. The Long-Term Servicing Channel will continue to receive security and non-security updates, but it will not receive the new features and functionality.
 
 * [Learn more about LTSC](https://docs.microsoft.com/windows-server/get-started-19/servicing-channels-19#long-term-servicing-channel-ltsc)
 

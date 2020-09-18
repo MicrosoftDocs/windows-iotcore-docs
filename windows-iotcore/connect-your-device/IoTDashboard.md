@@ -29,16 +29,16 @@ The IoT Dashboard makes it easy to set up a new device. For detailed instruction
 ![IoT Dashboard Setup Page](../media/IoTDashboard/IoTDashboard_SetupPage.PNG)
 
 ### SD card
-The type, make and model of the SD card greatly affects both the performance and the quality of IoT Core.
+The type, make, and model of the SD card greatly affects both the performance and the quality of IoT Core.
 A slow card can take up to five times longer to boot than our [recommended cards](../learn-about-hardware/hardwarecompatlist.md).
 An older, less reliable SD card may not even work. If you continue to run into problems installing, consider replacing the SD card.
 
 ### Device Name
-The default device name is minwinpc. We recommend changing it to something unique as this makes it easier to find the device on the network. The device name can be at most 15 characters long and can include letters, numbers and the following symbols:  @ # $ % ^ & ' ) ( . - _ { } ~
+The default device name is minwinpc. We recommend changing it to something unique as this makes it easier to find the device on the network. The device name can be at most 15 characters long and can include letters, numbers, and the following symbols:  @ # $ % ^ & ' ) ( . - _ { } ~
 If you change the device name in IoT Dashboard when setting up your device, an automatic reboot will happen the first time when you power on the device.
 
 ### Password
-Password is a mandatory field and must be set. Setting a password in IoT Dashboard modifies the password for Administrator user which by default is "p@ssw0rd".
+Password is a mandatory field and must be set. Setting a password in IoT Dashboard modifies the password for Administrator user, which by default is "p@ssw0rd".
 
 ### Wi-Fi Network connection
 IoT Dashboard shows all available networks that your PC has previously connected to. If you don't see the desired Wi-Fi network on the list, ensure you're connected to it on your PC.
@@ -49,7 +49,7 @@ The first boot will always take longer than all subsequent boots. The operating 
 Boot time can vary greatly based on your SD card. For example, a Raspberry Pi 3 running on our recommended SD card takes 3-4 minutes for first boot. On the same Pi with a poor quality SD card, we have seen boot times longer than 15 minutes.
 
 ### Connecting to the internet
-Having your IoT Core device connect to the internet is essential. Many of the newer boards come with built in Wi-Fi adapters. If you have trouble getting connected to your network, try the following:
+Having your IoT Core device connect to the internet is essential. Many of the newer boards come with built-in Wi-Fi adapters. If you have trouble getting connected to your network, try the following:
 
 * Rebooting the device
 * Plugging in an Ethernet cable
@@ -62,7 +62,7 @@ Having your IoT Core device connect to the internet is essential. Many of the ne
 ## My Devices
 ___
 After your device is connected to the internet, the IoT Dashboard will automatically detect your device.
-To find your device, go to **My Devices**. If your device is not listed, try rebooting the device. Make sure that if there are more than one devices on the network, they each have a unique name. Also make sure that your **windows10iotcoredashboard.exe** is allowed to communicate through Windows Firewall by following the steps below:
+To find your device, go to **My Devices**. If your device is not listed, try rebooting the device. Make sure that if there are more than one device on the network, they each have a unique name. Also make sure that your **windows10iotcoredashboard.exe** is allowed to communicate through Windows Firewall by following the steps below:
 
 1. Open **Network and Sharing Center** and then find the type of network (Domain/Private/Public) your PC is connected to.
 2. Open **Control Panel** and click **System and Security**.
@@ -77,7 +77,7 @@ To find your device, go to **My Devices**. If your device is not listed, try reb
 > If you are unable to find your device in the dashboard, try typing your [IP Address] and [:8080] into the browser to get Windows Device Portal up and running. To get your device to show in the dashboard, try rebooting your device.
 
 
-Right click and select **Open in Device Portal**. This will launch the [Windows Device Portal](../manage-your-device/DevicePortal.md) page and is the best way to interact and manage your device.
+Right-click and select **Open in Device Portal**. This will launch the [Windows Device Portal](../manage-your-device/DevicePortal.md) page and is the best way to interact and manage your device.
 
 ![IoTDashboard View Devices](../media/IoTDashboard/IoTDashboard_RightClickMenu.PNG)
 
@@ -92,7 +92,7 @@ IoT Dashboard lets you provision IoT Core devices with Azure IoT Hub. You can re
 ## Quick Run Samples
 ___
 
-Quick run samples do not require any code compilation, Visual studio installation or SDK download. They are great for quickly checking out what IoT Core can do.
+Quick run samples do not require any code compilation, Visual studio installation, or SDK download. They are great for quickly checking out what IoT Core can do.
 
 ### Network 3D Printer
 Use the Network 3D Printer sample to connect your 3D Printer to your board can make it discoverable over your home network. 

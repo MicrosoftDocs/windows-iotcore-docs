@@ -17,7 +17,7 @@ The Windows 10 IoT Core Dashboard makes flashing Windows 10 IoT Core onto your d
 > [!div class="nextstepaction"]
 > [Download the Windows 10 IoT Core Dashboard](https://go.microsoft.com/fwlink/?LinkID=708576)
 
-_By downloading and using the Windows 10 IoT Core Dashboard you agree to the [license terms](https://go.microsoft.com/fwlink/?LinkID=703960&clcid=0x4809) and [privacy statement](https://go.microsoft.com/fwlink/?LinkId=521839) for the Windows 10 IoT Core Dashboard._
+_By downloading and using the Windows 10 IoT Core Dashboard, you agree to the [license terms](https://go.microsoft.com/fwlink/?LinkID=703960&clcid=0x4809) and [privacy statement](https://go.microsoft.com/fwlink/?LinkId=521839) for the Windows 10 IoT Core Dashboard._
 
 ![Image of the Windows 10 IoT Core Dashboard](media/IoTDashboard/DASHBOARD-800x450.jpg)
 
@@ -63,10 +63,10 @@ Download the Bonjour-compatible mDNS Responder for Windows IoT (sample source). 
 Download firmware components and updates for the MinnowBoard Max reference board from Intel.
 
 ### [Visual Studio 2019](https://www.visualstudio.com/downloads/)
-State of the art IDE, tools and services that you can use to create great IoT apps.
+State-of-the-art IDE, tools, and services that you can use to create great IoT apps.
 
 ### [Windows Driver Kit 2017](https://msdn.microsoft.com/windows/hardware/hh852365.aspx)
-Provides an integrated development environment for creating efficient high quality drivers for devices running Windows 10.
+Provides an integrated development environment for creating efficient high-quality drivers for devices running Windows 10.
 
 ### [Windows Developer Tools for Visual Studio](https://developer.microsoft.com/windows/downloads/)
 Tools that integrate with Visual Studio 2017 and are required for developing for the Universal Windows App Platform.

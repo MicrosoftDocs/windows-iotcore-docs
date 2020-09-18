@@ -14,7 +14,7 @@ You can learn more about Python at [python.org](https://www.python.org/).
 
 ## Using Python on x64 or x86
 To install Python on Windows IoT Core:
-1. Download the Python nuget package, and then install the files using [PowerShell](../connect-your-device/PowerShell.md).
+1. Download the Python NuGet package, and then install the files using [PowerShell](../connect-your-device/PowerShell.md).
 
     ```powershell
     $python_zip = "https://globalcdn.nuget.org/packages/python.3.7.4.nupkg"
@@ -43,7 +43,7 @@ To install Python on Windows IoT Core:
 
 ## Using Python on Windows IoT Core ARM32
 
-To get Python for Windows you will need to build the binaries yourself.
+To get Python for Windows, you will need to build the binaries yourself.
 
 1. Build Python for ARM32.  The branch must be 3.8 or greater.
 
@@ -54,7 +54,7 @@ To get Python for Windows you will need to build the binaries yourself.
     pcbuild\build.bat -p ARM --no-tkinter
     ```
 
-2. Build Python .zip file for for Windows IoT Core ARM32.  The same version of Python must be used to run PC/layout. This step builds Python for x86 and uses it to build the .zip file(s).  If you want the standard library tests in your .zip file add the `--include-tests` parameter.
+2. Build Python .zip file for Windows IoT Core ARM32.  The same version of Python must be used to run PC/layout. This step builds Python for x86 and uses it to build the .zip file(s).  If you want the standard library tests in your .zip file add the `--include-tests` parameter.
 
     ```cmd
     REM Build Python for x86 to use for building the .zip file.
@@ -82,7 +82,7 @@ To get Python for Windows you will need to build the binaries yourself.
 
 ## Using Python on Windows IoT Core ARM64
 
-To get Python for Windows you will need to build the binaries yourself.
+To get Python for Windows, you will need to build the binaries yourself.
 
 1. Clone Python for ARM32 and run `get_externals`.  The branch must be 3.8 or greater.
 
@@ -119,7 +119,7 @@ To get Python for Windows you will need to build the binaries yourself.
     pcbuild\build.bat -p ARM64 --no-tkinter
     ```
 
-4. Build Python .zip file for for Windows IoT Core ARM64.  The same version of Python must be used to run PC/layout. This step builds Python for x86 and uses it to build the .zip file(s).  If you want the standard library tests in your .zip file add the `--include-tests` parameter.
+4. Build Python .zip file for Windows IoT Core ARM64.  The same version of Python must be used to run PC/layout. This step builds Python for x86 and uses it to build the .zip file(s).  If you want the standard library tests in your .zip file add the `--include-tests` parameter.
 
     ```cmd
     REM Build Python for x86 to use for building the .zip file.
@@ -183,7 +183,7 @@ In the output for the `pip install` there may be errors: `Download error on http
     copy "c:\test\GlobalSign Root CA.cer" X:\test
     ```
 
-13. On the device import the certificate into the root store using [PowerShell](../connect-your-device/PowerShell.md).
+13. On the device, import the certificate into the root store using [PowerShell](../connect-your-device/PowerShell.md).
 
     ```cmd
     certmgr -add "c:\test\DigiCert High Assurance EV Root.cer" -s root -r localMachine -c
@@ -196,7 +196,7 @@ In the output for the `pip install` there may be errors: `Download error on http
     python -m pip install azure-iot-device --no-color
     ```
 
-15.  In the output for the `pip install` there may be errors: `Download error for https://files.pythonhosted.org/`.  If you don't see this then skip to `Set up an IoT Hub and create a Device Identity`
+15.  In the output for the `pip install` there may be errors: `Download error for https://files.pythonhosted.org/`.  If you don't see this, then skip to `Set up an IoT Hub and create a Device Identity`
 
 16. Navigate to `https://files.pythonhosted.org/` in your favorite browser. Inspect the web site's certificate and noticed that it issued by `GlobalSign`.
 
@@ -211,7 +211,7 @@ In the output for the `pip install` there may be errors: `Download error on http
     ```powershell
     az iot hub create --resource-group <your resource group> --name <your IoT Hub name>
     ```
-    * Note that this operation make take a few minutes.
+    * Note that this operation may take a few minutes.
 
 20. Add the IoT Extension to the Azure CLI, and then [register a device identity](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-identity?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-device-identity-create)
 
@@ -239,7 +239,7 @@ In the output for the `pip install` there may be errors: `Download error on http
     az iot hub monitor-events --hub-name <your IoT Hub name> --output table
     ```
 
-23. On your device, set the Device Connection String as an enviornment variable called `IOTHUB_DEVICE_CONNECTION_STRING`.
+23. On your device, set the Device Connection String as an environment variable called `IOTHUB_DEVICE_CONNECTION_STRING`.
 
     ```cmd
     REM NOTE: there are no quotes
@@ -299,7 +299,7 @@ In the output for the `pip install` there may be errors: `Download error on http
     CMD cmd /k c:\test\start.cmd
     ```
 
-3. Copy Dockerfile to c:\docker on device. Also copy any certificates to P:\docker\test.  1.txt is a file with the number 1 and a carraige return.
+3. Copy Dockerfile to c:\docker on device. Also copy any certificates to P:\docker\test.  1.txt is a file with the number 1 and a carriage return.
 
     ```cmd
     net use P: \\[device IP address]\c$ /user:administrator
@@ -309,7 +309,7 @@ In the output for the `pip install` there may be errors: `Download error on http
     copy 1.txt P:\docker\test
     ```
 
-4.  Connect to the device using SSH.  Remote powershell will not work for an interactive docker session.
+4.  Connect to the device using SSH.  Remote PowerShell will not work for an interactive docker session.
 
     ```powershell
     docker build --isolation==process . -t python

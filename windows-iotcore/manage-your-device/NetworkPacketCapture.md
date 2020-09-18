@@ -8,7 +8,8 @@ keywords: windows iot, network packet, network packet capture, Microsoft Message
 
 # Network packet capture
 
-## NOTE - Microsoft Message Analyzer has been [deprecated](https://docs.microsoft.com/openspecs/blog/ms-winintbloglp/dd98b93c-0a75-4eb0-b92e-e760c502394f). Information contained below is for archival reference only.
+> [!NOTE] 
+> Microsoft Message Analyzer has been [deprecated](https://docs.microsoft.com/openspecs/blog/ms-winintbloglp/dd98b93c-0a75-4eb0-b92e-e760c502394f). Information contained below is for archival reference only.
 
 You can use [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) to capture, display, and analyze protocol messaging traffic on your Windows 10 IoT Core device.
 
@@ -53,5 +54,5 @@ Now that your device is set up, let's connect to it using Microsoft Message Anal
 8. Click the `Start` button.
 9. You should start to see the messages going through the network interfaces on your device.
     ![Message Analyzer](../media/NetworkPacketCapture/message-analyzer.png)
-10. After you start the trace through Message Analyzer, you can also view the ETW messages from the packet capture driver in your device's [web interface](DevicePortal.md).  To do this, go to the ETW tab of the web interface, select `Microsoft-Windows-NDIS-PacketCapture` from the `Registered providers` dropdown menu and click the `Enable` button.
+10. After you start the trace through Message Analyzer, you can also view the ETW messages from the packet capture driver in your device's [web interface](DevicePortal.md).  To do this, go to the ETW tab of the web interface, select `Microsoft-Windows-NDIS-PacketCapture` from the `Registered providers` dropdown menu, and click the `Enable` button.
     ![Message Analyzer](../media/NetworkPacketCapture/web-etw.png)    

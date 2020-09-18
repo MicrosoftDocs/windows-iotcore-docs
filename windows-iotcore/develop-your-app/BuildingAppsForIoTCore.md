@@ -19,7 +19,7 @@ Learn about the languages that are supported on Windows 10 IoT Core as well as t
 ___
 
 ### Universal Windows Platform (UWP) Apps
-IoT Core is a UWP centric OS and UWP apps are its primary app type.
+IoT Core is a UWP-centric OS and UWP apps are its primary app type.
 
 Universal Windows Platform (UWP) is a common app platform across all version of Windows 10, including Windows 10 IoT Core.  UWP is an evolution of Windows Runtime (WinRT). You can find more information and an overview to UWP [here](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide).
 
@@ -29,7 +29,7 @@ Visual Studio is the primary tool for writing UWP apps for IoT Core and in gener
 ### Traditional UWP Apps
 UWP apps just work on IoT Core, just as they do on other Windows 10 editions. A simple, blank Xaml app in Visual Studio will properly deploy to your IoT Core device just as it would on a phone or Windows 10 PC. All of the standard UWP languages and project templates are fully supported on IoT Core.
 
-There are a few additions to the traditional UWP app-model to support IoT scenarios and any UWP app that takes advantage of them will need the corresponding information added to their manifest. In particular the "iot" namespace needs to be added to the manifest of these standard UWP apps. 
+There are a few additions to the traditional UWP app-model to support IoT scenarios and any UWP app that takes advantage of them will need the corresponding information added to their manifest. In particular, the "iot" namespace needs to be added to the manifest of these standard UWP apps. 
 
 Inside the <Package> attribute of the manifest, you need to define the iot xmlns and add it to the IgnorableNamespaces list. The final xml should look like this: 
 
@@ -102,14 +102,14 @@ Traditional UWP languages ship with support in Visual Studio by default. All of 
 * Languages
   * C#
   * C++
-  * Javascript
+  * JavaScript
   * Visual Basic
 
 ### Arduino Wiring
  Arduino Wiring requires the download of the "Windows IoT Core Project Templates" from the Visual Studio **Tools->Extensions and Updates** manager.  Arduino Wiring supports only Background Applications. You can also build *Windows Runtime Components* using C#, C++, or Visual Basic and then reference those libraries from any other language.
 
 ### C# and Visual Basic (VB)
-C# and VB are both supported as UWP apps and have access to the portion of the .Net Framework available to UWP applications. They support UI apps built with Xaml as well as Background Apps. You can also build *Windows Runtime Components* that can be used from other supported languages.
+C# and VB are both supported as UWP apps and have access to the portion of the .NET Framework available to UWP applications. They support UI apps built with Xaml as well as Background Apps. You can also build *Windows Runtime Components* that can be used from other supported languages.
 
 Samples:
 
@@ -119,8 +119,8 @@ Samples:
 * [C# Blinky UI App](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinky/CS)
 
 
-### Javascript
-You can use Javascript to build both UI and Background Apps. The UI apps work the same way they do on all UWP editions. The Background Apps are new for IoT Core but are very simple. The following sample code shows the output of a the *JS New Project Template*:
+### JavaScript
+You can use JavaScript to build both UI and Background Apps. The UI apps work the same way they do on all UWP editions. The Background Apps are new for IoT Core but are simple. The following sample code shows the output of the *JS New Project Template*:
 
 ```javascript
 // The Background Application template is documented at http://go.microsoft.com/fwlink/?LinkID=533884&clcid=0x409

@@ -10,10 +10,10 @@ keywords: windows iot, security, Trusted Platform Module, TPM, cryptography, key
 
 ## What is TPM?
 A Trusted Platform Module (TPM), is a cryptographic coprocessor including capabilities for random number generation, secure generation of cryptographic keys and limitation of their use. It also includes capabilities such as remote attestation and sealed storage.
-TPM's technical specification is publicly available, driven by the Trusted Computing Group (TCG). The latest version TPM 2.0 (released October 2014), is a major redesign of the specification which adds new functionality and fixes weaknesses of the former TPM 1.2.
+TPM's technical specification is publicly available, driven by the Trusted Computing Group (TCG). The latest version TPM 2.0 (released October 2014), is a major redesign of the specification that adds new functionality and fixes weaknesses of the former TPM 1.2.
 
 ## Why TPM?  
-Computers that incorporate a TPM can create cryptographic keys and encrypt them so that they can only be decrypted by the TPM. This process, often called **"wrapping"** or **"binding"** a key, can help protect the key from disclosure. Each TPM has a master "wrapping" key, called the storage root key, which is stored within the TPM itself. The private portion of a key created in a TPM is never exposed to any other component, software, process, or person.  
+Computers that incorporate a TPM can create cryptographic keys and encrypt them so that they can only be decrypted by the TPM. This process, often called **"wrapping"** or **"binding"** a key, can help protect the key from disclosure. Each TPM has a primary "wrapping" key, called the storage root key, which is stored within the TPM itself. The private portion of a key created in a TPM is never exposed to any other component, software, process, or person.  
 
 Computers that incorporate a TPM can also create a key that has not only been wrapped but is also tied to certain platform measurements. This type of key can only be unwrapped when those platform measurements have the same values that they had when the key was created. This process is called **"sealing"** the key to the TPM. Decrypting the key is called **"unsealing"**. The TPM can also seal and unseal data generated outside of the TPM. With this sealed key and software such as BitLocker Drive Encryption, you can lock data until specific hardware or software conditions are met.  
 
@@ -37,7 +37,7 @@ The changes and enhancements compared to the previous TPM 1.2 include:
 ## What is TBS? 
 The TPM Base Services (TBS) feature is a system service that allows transparent sharing of the TPM resources. It shares the TPM resources among multiple applications on the same physical machine through remote procedure calls (RPC). It centralizes TPM access across applications using priorities specified by the calling applications.  
 
-The TPM provides cryptographic functions designed to provide trust in the platform. Because the TPM is implemented in hardware, it has finite resources. The TCG defines a TPM Software Stack (TSS) that makes use of these resources to provide trusted operations for application software. However, no provision is made for running a TSS implementation side-by-side with operating system software that may also be using TPM resources. The TBS feature solves this problem by enabling each software stack that communicates with TBS to use TPM resources checking for any other software stacks that may be running on the machine.
+The TPM provides cryptographic functions designed to provide trust in the platform. Because the TPM is implemented in hardware, it has finite resources. The TCG defines a TPM Software Stack (TSS) that makes use of these resources to provide trusted operations for application software. However, no provision is made for running a TSS implementation side by side with operating system software that may also be using TPM resources. The TBS feature solves this problem by enabling each software stack that communicates with TBS to use TPM resources checking for any other software stacks that may be running on the machine.
 
 ## TPM solutions available on Windows IoT Core  
 _A few words about Software TPM (sTPM), Firmware TPM (fTPM), Discrete TPM (dTPM)..._

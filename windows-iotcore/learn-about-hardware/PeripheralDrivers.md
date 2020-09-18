@@ -7,7 +7,7 @@ keywords: windows iot, USB drivers, peripheral devices, USB
 ---
 
 # Install USB peripheral drivers
-Follow the steps below to add third-party drivers (usb) for peripheral devices such as USB Mobile broadband modems, printers, scanners etc. 
+Follow the steps below to add third-party drivers (USB) for peripheral devices such as USB Mobile broadband modems, printers, scanners etc. 
 
 ## Step 1: Get Drivers from PC
 ___
@@ -22,7 +22,7 @@ The Step is to get the x86 version of the drivers from PC. For ARM, please conta
 
 4. Go to Driver tab in the Properties window, and click on Driver Details. Note the sys files listed there.
 
-5. Copy the sys files from `C:\Windows\system32` and also the related inf file from `C:\Windows\Inf`. You can find the inf file by searcing for the sys file reference in the `.inf` files. You may need to copy additional files listed in the Inf and these will be listed in the inf_filelist.txt file created when using  `inf2pkg.cmd` in the next step.
+5. Copy the sys files from `C:\Windows\system32` and also the related inf file from `C:\Windows\Inf`. You can find the inf file by searching for the sys file reference in the `.inf` files. You may need to copy additional files listed in the Inf and these will be listed in the inf_filelist.txt file created when using  `inf2pkg.cmd` in the next step.
 
 
 ## Step 2: Create a driver package
@@ -41,7 +41,7 @@ See also: [Sample Driver Package](https://github.com/ms-iot/iot-adk-addonkit/tre
 ## Step 3: Install on device
 ___
 
-* Connect to the device ([using SSH](../connect-your-device/ssh.md) or [using Powershell](../connect-your-device/powershell.md))
+* Connect to the device ([using SSH](../connect-your-device/ssh.md) or [using PowerShell](../connect-your-device/powershell.md))
 * Copy the <filename>.cab file to the device to a directory say C:\OemInstall
 * Initiate staging of the package using `applyupdate -stage C:\OemInstall\<filename>.cab`. Note that this step is be repeated for each package, when you have multiple packages to install.
 * Commit the packages using `applyupdate -commit`.
@@ -51,8 +51,8 @@ The device will reboot into the update OS (showing gears) to install the package
 ## Step 4: Check status of driver
 ___
 
-* Launch the [Powershell](../connect-your-device/PowerShell.md)
-* You can get the status of the installed drivers using the following Powershell commandlets
+* Launch the [PowerShell](../connect-your-device/PowerShell.md)
+* You can get the status of the installed drivers using the following PowerShell commandlets
 
 	* [Get-PnpDevice](https://docs.microsoft.com/powershell/module/pnpdevice/get-pnpdevice?view=win10-ps)
 	* [Get-PnpDeviceProperty](https://docs.microsoft.com/powershell/module/pnpdevice/get-pnpdeviceproperty?view=win10-ps)

@@ -14,7 +14,7 @@ The solution is built in two stages. The first stage creates a Windows CE 2013 i
 
 ![CE App Container Architecture](.//media/WindowsCEAppContainer/image1.png)
 
-For more information about this architecture please review this video: [Modernizing Windows CE Devices](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Modernizing-Windows-CE-Devices).
+For more information about this architecture, please review this video: [Modernizing Windows CE Devices](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Modernizing-Windows-CE-Devices).
 
 ## Prerequisites
 The Windows CE App Container software requires an updated version of [Windows Compact 2013 (Build number 6294 from June 2020 or later)](https://support.microsoft.com/help/4566035/update-for-windows-embedded-compact-2013) along with updated [Windows 10 IoT Core Packages for x64 and ARM32 (August 2020 update or later)](https://support.microsoft.com/help/4565349/windows-10-update-kb4565349). To obtain the latest packages for Windows 10 IoT Core, please contact your Microsoft distributor.
@@ -68,7 +68,7 @@ For example, if your target IoT Core device uses Intel hardware, you will select
 
 ![Select the CE App Container BSP](./media/WindowsCEAppContainer/image2.png)
 
-After doing this you will have the ability to configure the options and sub-projects just like you would normally do for a Windows Embedded Compact image. These configurations will be built into the CE Container that you will deploy into your Windows 10 IoT Core image.
+After doing this, you will have the ability to configure the options and sub-projects just like you would normally do for a Windows Embedded Compact image. These configurations will be built into the CE Container that you will deploy into your Windows 10 IoT Core image.
 
 ## Building the Windows 10 IoT Core Image
 
@@ -77,7 +77,7 @@ After doing this you will have the ability to configure the options and sub-proj
 
 ### Process overview
 
-Unlike the process of building a Windows Embedded Compact image, Windows 10 IoT Core decouples yet integrates the creation of firmware, board support packages, image definition and application inclusion. By utilizing different technologies for these pieces, you can separate the work you need to do amongst different teams or individuals in your organization.
+Unlike the process of building a Windows Embedded Compact image, Windows 10 IoT Core decouples yet integrates the creation of firmware, board support packages, image definition, and application inclusion. By utilizing different technologies for these pieces, you can separate the work you need to do amongst different teams or individuals in your organization.
 
 The basic steps in creating an image are:
 
@@ -127,7 +127,7 @@ Review the documentation, [Create a Basic Image](https://docs.microsoft.com/wind
 
 Once you have imported your CE App Container definition to your workspace you will need to ensure that you run the [Add-IoTCEPAL](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTCEPAL.md#Add-IoTCEPAL) command, which will add a reference to CE App Container packages to the relevant product OEMInput.xml files (Test and Retail).
 
-The next step is to use the [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md#Add-IoTProductFeature) command to add the IOT\_CEPAL feature to the OEMInput.xml. This adds the Windows Host support for the Windows CE App Container (Windows CE front end UWP app + support drivers) to  our product definition and includes the CE App Container in the default Apps group. We’ll discuss start-up configuration in a later section.
+The next step is to use the [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md#Add-IoTProductFeature) command to add the IOT\_CEPAL feature to the OEMInput.xml. This adds the Windows Host support for the Windows CE App Container (Windows CE front-end UWP app + support drivers) to  our product definition and includes the CE App Container in the default Apps group. We’ll discuss start-up configuration in a later section.
 
 #### Step 6 - Build your CAB files
 
@@ -135,7 +135,7 @@ This is an important step during the creation of your FFU and should be done whe
 
 #### Step 7 - Deploying your FFU to your device
 
-Once the image is built you can deploy it to a device. This can be done from the command line using [DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/what-is-dism), via your device specific deployment process or by using the [Windows 10 IoT Core Dashboard](https://docs.microsoft.com/windows/iot-core/connect-your-device/iotdashboard). More details are available as part of the [Windows 10 IoT Core Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image).
+Once the image is built, you can deploy it to a device. This can be done from the command line using [DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/what-is-dism), via your device-specific deployment process or by using the [Windows 10 IoT Core Dashboard](https://docs.microsoft.com/windows/iot-core/connect-your-device/iotdashboard). More details are available as part of the [Windows 10 IoT Core Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image).
 
 ##### Deploying the Windows CE App Container to a device when using an existing FFU
 
@@ -143,7 +143,7 @@ The CE CABs are deployable packages on IoT Core. If there is an existing IoT Cor
 
 #### Step 8 - Building a retail image
 
-Having a properly signed image is an important part of securing and updating a device. For Windows 10 IoT Core this appears as the difference between Test signed and Retail signed builds. You should never publicly deploy a test signed image. Test signed images should only be used for debug purposes and you should correct any errors or configuration changes prior to creating your final retail signed image.
+Having a properly signed image is an important part of securing and updating a device. For Windows 10 IoT Core, this appears as the difference between Test signed and Retail signed builds. You should never publicly deploy a test signed image. Test signed images should only be used for debug purposes and you should correct any errors or configuration changes prior to creating your final retail signed image.
 
 > [!NOTE]
 > In addition to the development and deployment tools installed on your machine you will also need the following to enable retail signing:
@@ -175,7 +175,7 @@ Since a package is the smallest unit of updating, make sure that each package is
 
 In general, the recommendation is not to modify the resulting package produced by Platform Builder to include additional components into the system image. Instead, follow the [Windows 10 IoT Core manufacturing guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). However, if files must be added to the package that is created by Platform Builder, follow your existing process. When adding content to the package generated by PB, consider the following:
 
-- There is a maximum size for packages (about 400MB) and exceeding this size will prevent updating.
+- There is a maximum size for packages (about 400 MB) and exceeding this size will prevent updating.
 
 - Updates happen on package granularity. If a single asset in the package needs to be updated, then all the assets of that package will be updated at the same time. To reduce the size of updates, isolate content into separate packages to minimize the overall update size.
 
@@ -204,7 +204,7 @@ this provisioning package in the image. You will also need to remove the default
 
 ### Available Configuration settings for the Windows CE App Container
 
-#### Registry based configuration in CE
+#### Registry-based configuration in CE
 
 ##### Non-Executable Stack by Default
 
@@ -224,7 +224,7 @@ If the Windows CE App Container is configured with a 32-bit display, then 16-bit
 HKEY\_LOCAL\_MACHINE\SYSTEM\GDI\16bpp565RGBPalette.
 ```
 
-#### Registry based configuration in Host (IoT Core)
+#### Registry-based configuration in Host (IoT Core)
 
 ##### Configuring serial ports for the Windows CE App Container
 
@@ -289,7 +289,7 @@ The CE Container can be configured using a local file on the host `C:\WindowsCE\
 | OEMConfigApp  | Package Family Name of an OEM provided app that should be launched for configuration.                                  |
 | OEMConfigFile | Path to a file that contains additional configuration options shared between the OEMConfigApp and the CE app container |
 
-The CE app container only makes 1 network interface available for use. If multiple NICs are present in the Host System, one interface must be selected in the Host Registry to ensure the selected NIC is deterministic.
+The CE app container only makes one network interface available for use. If multiple NICs are present in the Host System, one interface must be selected in the Host Registry to ensure the selected NIC is deterministic.
 
 ##### OEMConfigFile
 
