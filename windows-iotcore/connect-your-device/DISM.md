@@ -16,13 +16,13 @@ keywords: windows iot, DISM, Deployment Image Servicing Management, SD card, fla
 > The image doesn't have a name and it's likely to be a Mobile/Onecore FFU, which is currently not supported.
 > FfuMountImage#160 failed with 0x80070032.
 
-## An alternative method to IoT Dashboard for Flashing a FFU
+## An alternative method to IoT Dashboard for Flashing an FFU
 
-You can use Deployment Image Servicing and Management(Dism.exe) to flash Windows 10 IoT Core on your SD card. You will need a FFU image file corresponding to your device type. 
+You can use Deployment Image Servicing and Management(Dism.exe) to flash Windows 10 IoT Core on your SD card. You will need an FFU image file corresponding to your device type. 
 
 * Open an administrator command prompt and navigate to the folder containing your local flash.ffu file.
 
-* Plug-in your SD card to your machine. 
+* Plug in your SD card to your machine. 
 
 * Find the disk number that your SD card is on your computer.  This will be used when the image is applied in the next step.  To do this, you can use the diskpart utility.  Run the following commands:
 

@@ -2,7 +2,7 @@
 title: Setting up your device
 ms.date: 04/10/2018 
 ms.topic: article 
-description: Learn about how to set up your device with Windows 10 IoT Core using a SD Card.
+description: Learn about how to set up your device with Windows 10 IoT Core using an SD Card.
 keywords: Windows 10 IoT Core, SD Card, Windows 10 IoT Core Dashboard
 ms.custom: RS5
 ---
@@ -19,7 +19,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 
 ## Using the IoT Dashboard (Raspberry Pi, MinnowBoard, NXP)
 
-> [!Video https://www.youtube.com/embed/JPRUbGIyODY]
+> [!Video https://www.youtube.com/embed/JPRUbGIyODY]M
 
 
 > [!IMPORTANT]
@@ -36,7 +36,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 
 
 1. Download the Windows 10 IoT Core Dashboard [here](https://docs.microsoft.com/windows/iot-core/downloads).
-2. Once downloaded, open the Dashboard and click on _set up a new device_ and insert a SD card into your computer.
+2. Once downloaded, open the Dashboard and click on _set up a new device_ and insert an SD card into your computer.
 3. Fill out all of the fields as indicated.
 4. Accept the software license terms and click _Download and install_. You'll see that Windows 10 IoT Core is now flashing your SD card.
 
@@ -77,9 +77,9 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 2. Download the [Windows 10 IoT Core DragonBoard FFU](https://developer.microsoft.com/windows/iot/Downloads).
 3. Double-click on the downloaded ISO file and locate the mounted Virtual CD-drive. This drive will contain an installer file (.msi); double-click on it. This creates a new directory on your PC under `C:\Program Files (x86)\Microsoft IoT\FFU\` in which you should see an image file, "flash.ffu".
 4. Ensure your DragonBoard is in download mode by setting the first boot switch on the board to USB Boot, as shown below. Then, connect DragonBoard the host PC via a microUSB cable, then plug in the DragonBoard to a 12V (> 1A) power supply.
-5. Start the DragonBoard Update Tool, which should detect that the DragonBoard is connect to your PC with a green circle. "Browse" to the DragonBoard's FFU that you downloaded, then click the _Program_ button.
+5. Start the DragonBoard Update Tool, which should detect that the DragonBoard is connected to your PC with a green circle. "Browse" to the DragonBoard's FFU that you downloaded, then click the _Program_ button.
 6. Click "Browse" again and select "rawprogram0.xml" that was generated in step 5. Then click the "Program" button.
-7. Once the download is complete, disconnect the power supply and microUSB cable from the board and toggle the USB Boot switch back to _OFF_. Connect a HDMI display, a mouse, and a keyboard to the DragonBoard and re-connect the power supply. After a few minutes, you should see the Windows 10 IoT Core default application. 
+7. Once the download is complete, disconnect the power supply and microUSB cable from the board and toggle the USB Boot switch back to _OFF_. Connect an HDMI display, a mouse, and a keyboard to the DragonBoard and re-connect the power supply. After a few minutes, you should see the Windows 10 IoT Core default application. 
 
 ![DragonBoard in download mode](../../media/DeviceSetup/db1.png)
 

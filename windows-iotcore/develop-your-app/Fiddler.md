@@ -36,7 +36,7 @@ You'll need to import the Fiddler root certificate to your IoT image or device i
 1. Mount the VHD file (right click on the VHD and choose _mount_) or connect to your IoT device via PuTTY (or alternative SSH client)
 2. Browse to the mainOS partition and create a _test_ folder at root (via SSH, use _md c:\test_)
 3. Copy FiddlerRoot.cer you generated above (should be on your desktop by default) to the test folder location
-4. If using a VHD, unmount it by ejecting any of the mounted drives and then start the IoT Core VM via HyperV
+4. If using a VHD, unmount it by ejecting any of the mounted drives and then start the IoT Core VM via Hyper-V
 5. Start an [SSH session](../connect-your-device/ssh.md) and login as administrator 
 6. Navigate to c:\test directory in your SSH session
 7. Import Fiddler Root Certificate via command:
@@ -57,7 +57,7 @@ If not already running, start Fiddler on your PC, restart your VM or IoT Core de
 
 Note: If you see https CONNECT in Fiddler but no data, the certificate was likely not installed correctly. Make sure you didn't miss the _Transfer and Import Fiddler Root Certificate_ steps above.
 
-Additonally, if you wish to turn the proxy back off note that the above reg keys get cached in a binary blob in another key. so, in addition to removing the keys just added in step 3 above you also need to do:
+Additionally, if you wish to turn the proxy back off note that the above reg keys get cached in a binary blob in another key. so, in addition to removing the keys just added in step 3 above you also need to do:
 
 	reg delete "hkcu\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections"
 	

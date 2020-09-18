@@ -53,7 +53,7 @@ _Configuring USB Function Device_
 
 _Common Properties_
 * There are common properties for all USB function configurations of the IoT platform. It is ultimately up to the OEM to specify standard USB descriptor
-entries such as VID, PID, DeviceClass, DeviceProtocol, Manufacturerer string, serial number, etc.
+entries such as VID, PID, DeviceClass, DeviceProtocol, Manufacturer string, serial number, etc.
 * These common properties are set in registry in the following location: `HKLM\System\ControlSet001\Control\USBFN\default`
 
 ```

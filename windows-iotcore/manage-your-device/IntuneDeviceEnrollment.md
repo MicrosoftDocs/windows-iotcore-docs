@@ -73,7 +73,7 @@ Intune enrollment of an IoT Core device is accomplished by using the Windows IoT
 
 8. Enter your tenant username (for example, john@mycompany.onmicrosoft.com) and your password.
 9. Agree to allow the Windows Configuration Design app to access your Azure AD information.
-10. A message on the page shows that the Bulk AAD token was fetched successfully.
+10. A message on the page shows that the Bulk Azure AD token was fetched successfully.
 
      ![Bulk token successful message](../media/IntuneDeviceEnrollment/iot-wcd-bulk-token-successful.png)
 

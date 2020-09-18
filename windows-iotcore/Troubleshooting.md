@@ -15,12 +15,12 @@ This is an article that contains common troubleshooting issues that people have 
 
 While the ASUS Tinkerboard and Rockchip are not officially supported by us, there are cases where Rockchip has worked with other third parties to get SoC working on Windows 10 IoT Core.
 
-## Issue when connecting a MBM device when roaming
+## Issue when connecting an MBM device when roaming
 
 There are two things to consider when enabling roaming:
 
 1. The profile.xml configures roaming and sets the behavior to automatically establish a connection to the cellular network.
-To set a profile for roaming please refer to [this article](https://docs.microsoft.com/windows/desktop/mbn/schema-root).
+To set a profile for roaming, please refer to [this article](https://docs.microsoft.com/windows/desktop/mbn/schema-root).
 
 ```
   <!-- applicability to any combination of home carrier, partner MOs and non-partner MOs, except for HomeAndNonPartner -->
@@ -84,7 +84,7 @@ The Raspberry Pi 3 Model B+ is the latest product in the Raspberry Pi 3 range, b
 Recently, many customers who are interested in Windows 10 IoT Core encountered a problem where the device could not boot normally after flashing Windows 10 IoT Core, but the Raspbian works fine on it. The following are some suggestions on how to troubleshoot the boot problem.
 
 There are some known issues in this Insider Preview image. Please note that:
-* This image is only meant for the Raspberry Pi 3B+ and will not boot on the Raspbierry Pi 2.
+* This image is only meant for the Raspberry Pi 3B+ and will not boot on the Raspberry Pi 2.
 * F5 driver deployment from Visual Studio does not work on Windows 10 IoT Core.
 * Onboard Wi-Fi and Bluetooth do not work on the Raspberry Pi 3B+.
 * Ft5406 touch screen driver is disabled on the Raspberry Pi 3B+.
@@ -94,11 +94,11 @@ There are only two requirements when choosing which SD cards to use with Windows
 * Samsung EVO 32 GB class 10 Micros SDHC card
 * SanDisk Ultra Micro SDHC, 16 GB card
 
-Generally, you need to check if the SD card is fake or if it is damaged or corrupt. The SD card is equally prone to corruption due to a variety of factors such as power shortage or improper removal. It is important to safeguard your memroy card from damage.
+Generally, you need to check if the SD card is fake or if it is damaged or corrupt. The SD card is equally prone to corruption due to a variety of factors such as power shortage or improper removal. It is important to safeguard your memory card from damage.
 
-To flash your image to a SD card, you can use the [Windows 10 IoT Core Dashboard](https://docs.microsoft.com/windows/iot-core/connect-your-device/iotdashboard). You will need to choose "Custom" in the OS Build field, then select the FFU file to flash. 
+To flash your image to an SD card, you can use the [Windows 10 IoT Core Dashboard](https://docs.microsoft.com/windows/iot-core/connect-your-device/iotdashboard). You will need to choose "Custom" in the OS Build field, then select the FFU file to flash. 
 
-Check to see if there are any hardware failure in the device. There are two LEDs on the Raspberry Pi 3B+ board, same as the 3B. One is for PWR while another is for ACT. The number of blinks the ACT light makes will determine whether or not your board is booting. The SD card activity LED will not flash during some portions of booting on the Raspberry Pi 3B+.
+Check to see if there are any hardware failure in the device. There are two LEDs on the Raspberry Pi 3B+ board, same as the 3B. One is for PWR, while the other is for ACT. The number of blinks the ACT light makes will determine whether or not your board is booting. The SD card activity LED will not flash during some portions of booting on the Raspberry Pi 3B+.
 
 When the device is booting and the device shows the waiting page, please wait patiently. Generally, this will last up to a minute. But sometimes, due to the SD card read-write speed, it may take longer.
 
@@ -108,13 +108,13 @@ If you find that you're getting a "rainbow screen", please check to make sure th
 
 ## Serial Port communication on Windows 10 IoT Core for Raspberry Pi 
 
-On the Raspberry Pi, hardware UART and USB UART adapters both are usable for your application with serial communicaiton. By default, the UART transmit and receive pins are pins 8 and 10 on teh GPIO header.
+On the Raspberry Pi, hardware UART and USB UART adapters both are usable for your application with serial communication. By default, the UART transmit and receive pins are pins 8 and 10 on the GPIO header.
 
 ![UART and USB UART adapters](media/Troubleshooting/adapters.png)
 
 You can read [this article](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/pinmappings/pinmappingsrpi#serial-uart) to learn more about how to initialize UART0 and perform a write followed by a read.
 
-In addition, Radio Frequency Communication (RFCOMM) is the underlying serial communications for classic Bluetooth. Refer to [this GitHub sample](https://github.com/djaus2/iotbluetoothserial) to learn about running UWP apps on Windows 10 IoT Core to connected over an IoT device with Bluetooth Serial.
+In addition, Radio Frequency Communication (RFCOMM) is the underlying serial communications for classic Bluetooth. Refer to [this GitHub sample](https://github.com/djaus2/iotbluetoothserial) to learn about running UWP apps on Windows 10 IoT Core to connect over an IoT device with Bluetooth Serial.
 
 If you encounter that the device cannot read/write data through the serial port, follow the steps below to troubleshoot:
 
@@ -177,7 +177,7 @@ administrator@MINWINPC C:\Data\Users\administrator>sc config TestSirepSvc start=
 
 "Tablet Mode" is a concept that only exist on Desktop shell and doesn’t apply to IoT Core. 
 
-If the device have supported hardware (either through I2C or USB HID touch), touch should function automatically using the inbox class drivers. You can read more about this [here](https://docs.microsoft.com/windows-hardware/design/component-guidelines/touchscreen-device-bus-connectivity).
+If the device has supported hardware (either through I2C or USB HID touch), touch should function automatically using the inbox class drivers. You can read more about this [here](https://docs.microsoft.com/windows-hardware/design/component-guidelines/touchscreen-device-bus-connectivity).
 
 
 ## Yubikey support

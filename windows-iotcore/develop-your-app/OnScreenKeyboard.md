@@ -40,7 +40,7 @@ For commercialization, the following optional feature packages will add the on-s
 
 ## Windows keyboard language layouts
 
-With this release, the supported language layouts has expanded to include the full set of those
+With this release, the supported language layouts have expanded to include the full set of those
 available in the desktop Windows edition. To allow your users to select between different language layouts,
 you would typically include selection UI in your application's Settings area. The following API is provided
 to enable your application to set the language that the on-screen keyboard will use:
@@ -52,8 +52,7 @@ in the [LanguageManager.cs](https://github.com/Microsoft/Windows-iotcore-samples
 
 ## Support for input scopes
 
-In previous releases, only the EmailSmtpAddress input scope was available. In this release, the full set
-of input scopes are available. The following topic explains input scopes and how to use them in your applications:
+In previous releases, only the EmailSmtpAddress input scope was available. In this release, the full set of input scopes is available. The following topic explains input scopes and how to use them in your applications:
 
 [Use input scope to change the touch keyboard](/windows/uwp/design/input/use-input-scope-to-change-the-touch-keyboard)
 
@@ -77,7 +76,7 @@ To show the dictation button in the keyboard, refer to the following section on
 ## User Interface configuration
 
 The on-screen keyboard provides several configurable options for its user interface. These are configured via the registry.
-During development you can use [PowerShell](/windows/iot-core/connect-your-device/powershell) or
+During development, you can use [PowerShell](/windows/iot-core/connect-your-device/powershell) or
 [Secure Shell (SSH)](/windows/iot-core/connect-your-device/ssh). For creating an OEM image, the preferred mechanism for
 setting registry values is the `OEMInput.xml` file discussed here:
 
@@ -116,7 +115,7 @@ Set-ItemProperty -Path . -Name MaxHeightPercentage -Type String -Value 56.783
 
 ### Additional preferences
 
-The remaining set of preferences are String values in the Preferences subkey:
+The remaining set of preferences is String values in the Preferences subkey:
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\OSK\Preferences
 ```

@@ -25,7 +25,7 @@ keywords: windows iot, Windows Device Portal, remote, device portal
 
 ## Shared Documentation
 WDP is a developer tool shared among all Windows 10 devices. Each product has its own unique features, but the core functionality is the same.
-Documentation for the main features are found on the [Windows Device Portal overview page](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal). The rest of the documentation below will be IoT specific.
+Documentation for the main features is found on the [Windows Device Portal overview page](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal). The rest of the documentation below will be IoT specific.
 
 ## Set up
 
@@ -67,7 +67,7 @@ IoT Core is unique in that it only allows one foreground app to run at one time.
 The app file explorer shows the directories that your apps can access.
 
 * CameraRoll is shared among all apps
-* Documents is shared among all apps
+* Documents are shared among all apps
 * LocalAppData contains folders specific to each app. This folder will be the same name as your app and other apps cannot access it.
 
 ### Debugging
@@ -87,10 +87,10 @@ Clicking the **download** button will cause a 'minidump', and the entire state o
 ![Kernel crash settings](../media/DevicePortal/Debug3.png)
 
 ### Bluetooth
-This page shows you all the bluetooth paired devices and all the devices which are discoverable. To pair with another Bluetooth device, put the device in pairing mode and wait for it to appear in the available devices list.  
+This page shows you all the bluetooth paired devices and all the devices that are discoverable. To pair with another Bluetooth device, put the device in pairing mode and wait for it to appear in the available devices list.  
 ![Bluetooth device list](../media/DevicePortal/Bluetooth.png)
 
-Click on **Pair link** to pair the device. If the device requires a PIN for pairing, it will pop-up a message box displaying the PIN. Once the device is paired, it will show up in the Paired devices list. You can un-pair the device by clicking on **Remove**. 
+Click on **Pair link** to pair the device. If the device requires a PIN for pairing, it will pop up a message box displaying the PIN. Once the device is paired, it will show up in the Paired devices list. You can unpair the device by clicking on **Remove**. 
 
 Once you navigate to the Bluetooth page, your device will be discoverable by other devices. You can also find it from your PC/Phone and pair it from there.
 
@@ -102,17 +102,17 @@ IoT Onboarding provides support for configuring an IoT device's Wi-Fi connectivi
 
 **Internet Connection Sharing (ICS)**
 Internet Connection Sharing allows you to share the Internet access of your device with other devices connected to your device over the Wi-Fi SoftAP.
-To use this feature, your Windows 10 IoT Device needs to have access to the internet (e.g. through a wired LAN connection).  In 'Connectivity->Onboarding->SoftAP settings' click 'enable' and set SSID name and password.  Then in 'Connectivity->Internet connection sharing' for 'access point adapter' select "Microsoft Wi-FI Direct Virtual Adapter #2" and for 'shared network adapter' select your wired ethernet adapter.  Finally, click 'start shared access.'  Once started, connect a separate Wi-Fi enabled device to the SoftAP on your Windows 10 IoT device.  After a connection is established your separate Wi-Fi enabled device will be able to connect to the internet through your Windows 10 IoT device.
+To use this feature, your Windows 10 IoT Device needs to have access to the internet (e.g. through a wired LAN connection).  In 'Connectivity->Onboarding->SoftAP settings' click 'enable' and set SSID name and password.  Then in 'Connectivity->Internet connection sharing' for 'access point adapter' select "Microsoft Wi-Fi Direct Virtual Adapter #2" and for 'shared network adapter' select your wired ethernet adapter.  Finally, click 'start shared access.'  Once started, connect a separate Wi-Fi enabled device to the SoftAP on your Windows 10 IoT device.  After a connection is established, your separate Wi-Fi enabled device will be able to connect to the internet through your Windows 10 IoT device.
 
 > [!NOTE]
 > ICS is disabled when a Wi-Fi profile exists on the device. 
 >For example, ICS will be disabled if you connect to a Wi-Fi access point and check “Create profile (auto re-connect)”.
 
 **SoftAP Settings**
-The SoftAP Settings allow you to control whether or not your device's SoftAP is enabled.  It also provides a means for configuring your SoftAP's SSID and the WPA2-PSK key which are necessary to connect the SoftAP from another device.
+The SoftAP Settings allow you to control whether or not your device's SoftAP is enabled.  It also provides a means for configuring your SoftAP's SSID and the WPA2-PSK key, which are necessary to connect the SoftAP from another device.
 
 **AllJoyn Onboarding Settings**
-The AllJoyn Onboarding Settings allow you to control whether or not your device's Wi-Fi connection can configured through your device's AllJoyn Onboarding Producer.  When a separate device running an AllJoyn Onboarding Consumer application connects to your Windows 10 IoT SoftAP, the AllJoyn Onboarding Consumer application can be used to configure your IoT device's Wi-Fi adapter.  When enabled, the AllJoyn Onboarding Producer app (IoTOnboarding) uses the ECDHE_NULL authentication method. 
+The AllJoyn Onboarding Settings allow you to control whether or not your device's Wi-Fi connection can be configured through your device's AllJoyn Onboarding Producer.  When a separate device running an AllJoyn Onboarding Consumer application connects to your Windows 10 IoT SoftAP, the AllJoyn Onboarding Consumer application can be used to configure your IoT device's Wi-Fi adapter.  When enabled, the AllJoyn Onboarding Producer app (IoTOnboarding) uses the ECDHE_NULL authentication method. 
 
 > [!NOTE]
 > To use AllJoyn Onboarding with Windows 10 IoT builds 10.0.14393 or earlier requires an update to the <strong>IotOnboarding</strong> 
@@ -147,12 +147,12 @@ To make testing easier, we have a non-signed pre-built version of Limpet.exe ava
 
 IoT devices can be remotely managed through cloud services. Azure provides a very rich set of services to enable such scenarios. We have created a device management client that complements Azure's Device Provisioning Service (DPS) and Azure's IoT Hub service on the Windows platform and which also exposes several Windows manageability features.
 
-The clients will be provided as open source projects. To make testing them easier, we will be providing pre-built binaries. You can use the 'Azure Clients' tab in WDP to install and run those test binaries.
+The clients will be provided as open-source projects. To make testing them easier, we will be providing pre-built binaries. You can use the 'Azure Clients' tab in WDP to install and run those test binaries.
 
 > [!NOTE]
 > This version of the tools should not be shipped with your final product. Instead, you need to build the open source project, sign it, and package it with your image.
 
-We will update this documentation once the open source projects are available for consumption.
+We will update this documentation once the open-source projects are available for consumption.
 
 ### Remote
 The Windows IoT Remote Server allows users to see what their device is displaying without connecting a physical monitor to the keyboard.
@@ -162,7 +162,7 @@ The Windows IoT Remote Server allows users to see what their device is displayin
 
 ### Changing the default port
  
-1. Launch powershell and [connect to your device.](../connect-your-device/PowerShell.md)
+1. Launch PowerShell and [connect to your device.](../connect-your-device/PowerShell.md)
 2. Download [TakeRegistryOwnership](https://github.com/ms-iot/iot-utilities/tree/master/TakeRegistryOwnership) tool, build it, and copy it to your device. 
 3. Take ownership of the registry key for the service by running
 
@@ -184,7 +184,7 @@ If you want to use HTTPS, first take the ownership of the registry key as descri
         reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\webmanagement\service /v HttpsPort /t REG_DWORD /d <your port number> /f
         net stop webmanagement ; net start webmanagement
 
-### Provisoning Device Portal with a custom SSL certificate
+### Provisioning Device Portal with a custom SSL certificate
 
 In the Windows 10 Creators Update, the Windows Device Portal added a way for device administrators to install a custom certificate for use in HTTPS communication.
 

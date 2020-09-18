@@ -12,7 +12,7 @@ keywords: Windows 10 IoT Enterprise, Windows 10 IoT Core, headless, speech, feat
 > Windows Containers are supported for commercial deployments on Windows Server, Windows IoT Server, Windows IoT Enterprise and Windows IoT Core.  As of Windows October Update 2018 (Build 17763), Windows Containers can only be used with Windows Enterprise and Professional for dev/test purposes.
 
 ## What is Windows 10 IoT?
-Windows 10 IoT is a member of the Windows 10 family that brings enterprise-class power, security and manageability to the Internet of Things.  It leverages Windows' embedded experience, ecosystem and cloud connectivity, allowing organizations to create their Internet of Things with secure devices that can be quickly provisioned, easily managed, and seamlessly connected to an overall cloud strategy.  
+Windows 10 IoT is a member of the Windows 10 family that brings enterprise-class power, security, and manageability to the Internet of Things.  It leverages Windows' embedded experience, ecosystem and cloud connectivity, allowing organizations to create their Internet of Things with secure devices that can be quickly provisioned, easily managed, and seamlessly connected to an overall cloud strategy.  
 
 ## Windows 10 IoT Editions
 Windows 10 IoT comes in two editions.  Windows 10 IoT Core is the smallest member of the Windows 10 operating system family.  While only running a single app, it still has the manageability and security expected from Windows 10.  By contrast, Windows 10 IoT Enterprise is a full version of Windows 10 with specialized features to create dedicated devices locked down to a specific set of applications and peripherals. 
@@ -66,7 +66,7 @@ HKEY_CURRENTUSER\Control Panel\Accessibility
 REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d "1"
 ```
 
-* The registry key must be set from the Default Account. If the ScrollViewer's XAML setting is "Visible", the registry setting of 0 will force the scroll bar to appear regardlss of whether there is sufficient content to have the scroll appear in the UI. A registry setting of 1 will keep the scroll bar hidden until there is sufficient content.
+* The registry key must be set from the Default Account. If the ScrollViewer's XAML setting is "Visible", the registry setting of 0 will force the scroll bar to appear regardless of whether there is sufficient content to have the scroll appear in the UI. A registry setting of 1 will keep the scroll bar hidden until there is sufficient content.
 
 ```
 <TextBox Height="200" Width="100" IsEnabled="True" FontSize="50" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Visible" Text="..."/>
@@ -81,7 +81,7 @@ REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d 
 ### Different commands supported
 
 * The PowerShell Remove-AppxPackage command works on Desktop but not on Windows 10 IoT Core.
-* Not all folders on your device are accessible by Universal Windows Apps. On Windows 10 IoT Core you can use the FolderPermissions tool to make a folder accessible to a UWP app. For example, run FolderPermissions c:\test -e to give UWP apps access to c:\test folder. However, this is not available on Desktop.
+* Not all folders on your device are accessible by Universal Windows Apps. On Windows 10 IoT Core, you can use the FolderPermissions tool to make a folder accessible to a UWP app. For example, run FolderPermissions c:\test -e to give UWP apps access to c:\test folder. However, this is not available on Desktop.
 
 Commands shown in this post may change as time goes on since Windows 10 IoT Core keeps updating.
 

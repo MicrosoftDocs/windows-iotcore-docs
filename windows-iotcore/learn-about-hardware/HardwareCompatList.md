@@ -14,7 +14,7 @@ Windows 10 IoT Core supports a variety of peripheral interfaces and protocols, i
 > This list is not exhaustive. There are many other peripherals not listed on this page that are compatible with Windows 10 IoT Core. If a device you don't see listed but is class-compliant with what's already supported in Windows 10 IoT Core, then it will work. 
 
 
-Looking for information about supported hardware platforms? Click [here](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/socsandcustomboards) for a list of development boards compatible with Windows.
+Looking for information about supported hardware platforms? Check out [SoCs and Custom Boards](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/socsandcustomboards) for a list of development boards compatible with Windows.
 
 ## USB Devices
 
@@ -103,7 +103,7 @@ Semtech's LoRa® ultra-long range (100M to 10KM) spread spectrum communications 
 
 
 ### [Nordic Semiconductor nRF24L01 Wireless Pi Hats](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF24-series)
-Worldwide 2.5GHz ISM band, 250Kbps, 1Mbps and 2Mbps data rates. Low power modules 10's of meters range, high power modules up 1KM.
+Worldwide 2.5GHz ISM band, 250Kbps, 1Mbps and 2Mbps data rates. Low-power modules 10's of meters range, high-power modules up 1KM.
 
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  | 
 > |----------------|-------------------|-------------|--------|------------------------------|

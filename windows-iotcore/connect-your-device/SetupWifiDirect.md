@@ -8,11 +8,11 @@ keywords: windows iot, wifi direct, setup, wifi, devices
 
 # Using WiFi Direct on your Windows 10 IoT Core device
 
-WiFi Direct is supported on Windows 10 IoT Core devices through the use of a WiFi Direct enabled USB WiFi adapter. To make sure that WiFi Direct is enabled two things need to be true:
+WiFi Direct is supported on Windows 10 IoT Core devices through the use of a WiFi Direct enabled USB WiFi adapter. To make sure that WiFi Direct is enabled, two things need to be true:
 * the hardware of the USB WiFi adapter needs to support WiFi Direct,
 * the corresponding driver of the USB WiFi adapter needs to support WiFi Direct. 
 
-WiFi Direct provides a solution for WiFi device-to-device connectivity without the need for either a Wireless Access Point (wireless AP) to setup the connection. Take a look at the UWP APIs available in the [Windows.Devices.WiFiDirect namespace](https://msdn.microsoft.com/library/windows/apps/windows.devices.wifidirect.aspx) to see what you can do with WiFiDirect.
+WiFi Direct provides a solution for WiFi device-to-device connectivity without the need for either a Wireless Access Point (wireless AP) to set up the connection. Take a look at the UWP APIs available in the [Windows.Devices.WiFiDirect namespace](https://msdn.microsoft.com/library/windows/apps/windows.devices.wifidirect.aspx) to see what you can do with WiFiDirect.
 
 ## Supported Adapters
 
@@ -24,7 +24,7 @@ You can easily test the WiFi Direct functionality with the WiFi Direct UWP [samp
 
 ### Set up the two devices
 * MinnowBoardMax (MBM) running Windows 10 IoT Core (see instructions here), with a CanaKit WiFi dongle
-* Connect monitor, keyboard and mouse to the MBM
+* Connect monitor, keyboard, and mouse to the MBM
 * A Windows 10 PC running the latest Windows 10 Anniversary Update. The PC (or laptop) will need to have WiFi Direct support (e.g. a Microsoft Surface)
 * Install Visual Studio 2017 on your Windows 10 PC
 * Clone or download the WiFi Direct UWP [sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WiFiDirect)(root of the GitHub repo is [here](https://github.com/Microsoft/Windows-universal-samples)).
@@ -67,7 +67,7 @@ You can easily test the WiFi Direct functionality with the WiFi Direct UWP [samp
 
     ![Connector Start Pairing](../media/SetupWiFiDirect/Connector02.png)
 
-* On the MBM monitor you should a message with the PIN
+* On the MBM monitor, you should a message with the PIN
 
     ![Advertiser PIN dialog](../media/SetupWiFiDirect/Advertiser02.png)
 
@@ -76,13 +76,13 @@ You can easily test the WiFi Direct functionality with the WiFi Direct UWP [samp
     ![Connector PIN dialog](../media/SetupWiFiDirect/Connector03.png)
 
 ### Talk on the channel
-* The two devices should be connected. You should see a randomly generated device id ("hqffpzhz.ggg" in our example) on both screens in the "Connected Devices" list
+* The two devices should be connected. You should see a randomly generated device ID ("hqffpzhz.ggg" in our example) on both screens in the "Connected Devices" list
 
     ![Advertiser Connected Device](../media/SetupWiFiDirect/Advertiser03.png)
 
     ![Connector Connected Device](../media/SetupWiFiDirect/Connector04.png)
 
-* You now have a full-duplex channel (or socket) set up
+* You now have a full-duplex channel (or socket) setup
 
     * on the MBM, select the device ("hqffpzhz.ggg") from the "Connected Devices" list
     * type a message in the "Enter a message" textbox

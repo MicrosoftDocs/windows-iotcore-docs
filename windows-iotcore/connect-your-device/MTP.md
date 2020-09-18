@@ -17,8 +17,8 @@ The feature is part of the IoT Core Kits, which can be downloaded and installed 
 
 ### Provisioning the device with required packages
 
-1. Launch [Powershell](../connect-your-device/PowerShell.md) or [SSH](../connect-your-device/SSH.md) and access your device running Windows 10 IoT Core.
-2. From Powershell or SSH, do the following:
+1. Launch [PowerShell](../connect-your-device/PowerShell.md) or [SSH](../connect-your-device/SSH.md) and access your device running Windows 10 IoT Core.
+2. From PowerShell or SSH, do the following:
     1. Create a temporary folder on the target machine (e.g. `C:\MTPTemp`).
     2. Based on your device's architecture, copy the following packages from your PC (`C:\Program Files (x86)\Windows Kits\10\MSPackages\Retail\<arch>\fre`) to `C:\MTPTemp`:
         * `Microsoft-OneCoreUAP-Mtp-UserService-Package.cab`
@@ -44,9 +44,9 @@ While you can modify the default USBFN configuration available under the `HKEY_L
 
 Follow these steps to add a new configuration with MTP:
 1. Add a new key under `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Configurations`. Example: `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Configurations\MyConfiguration`.
-2. Under the new key create a `REG_MULTI_SZ` value `InterfaceList` equal to `MTP`.
-3. Under the same key create a `REG_BINARY` value `MSOSCompatIdDescriptor` equal to `2800000000010400010000000000000000014D545000000000000000000000000000000000000000`.
-4. Under `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN` add a new `REG_SZ` value `CurrentConfiguration` equal to the name of the newly created key. In this case it would be `MyConfiguration`.
+2. Under the new key, create a `REG_MULTI_SZ` value `InterfaceList` equal to `MTP`.
+3. Under the same key, create a `REG_BINARY` value `MSOSCompatIdDescriptor` equal to `2800000000010400010000000000000000014D545000000000000000000000000000000000000000`.
+4. Under `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN` add a new `REG_SZ` value `CurrentConfiguration` equal to the name of the newly created key. In this case, it would be `MyConfiguration`.
 5. [**Optional**] Under `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN` add a new `REG_DWORD` value `IncludeDefaultCfg` equal to 1. This will make the USB driver enumerate the default interfaces along with MTP.
 
 > [!NOTE]
@@ -56,8 +56,8 @@ Follow these steps to add a new configuration with MTP:
 
 Follow these steps to add MTP to an existing USBFN configuration:
 1. Find the current configuration by checking the `CurrentConfiguration` value under `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN`. If the value is present, then the current configuration can be found under `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Configurations\[CurrentConfiguration]`. Otherwise it is under `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Configurations\Default`.
-2. Under the current configuration key add `\0MTP` to the value of `InterfaceList`. The ***\0*** part is used as the type of `InterfaceList` is `REG_MULTI_SZ` and it requires this separator between values.
-3. Modify the `MSOSCompatIdDescriptor` value to include the MTP's descriptor. In order to create a valid descriptor containing all interfaces currently under the `InterfaceList` value, please follow the instructions documentation available at the bottom of [this page](https://msdn.microsoft.com/windows/hardware/gg463179.aspx). *OS_Desc_CompatID.doc* gives an explanation of the descriptor's format and an example of including multiple interfaces in the descriptor. MTP's compatible and sub-compatible IDs are also available on the same page and are used in one of the examples.
+2. Under the current configuration key, add `\0MTP` to the value of `InterfaceList`. The ***\0*** part is used as the type of `InterfaceList` is `REG_MULTI_SZ` and it requires this separator between values.
+3. Modify the `MSOSCompatIdDescriptor` value to include the MTP's descriptor. In order to create a valid descriptor containing all interfaces currently under the `InterfaceList` value, please follow the instructions documentation available at the bottom of [this page](https://msdn.microsoft.com/windows/hardware/gg463179.aspx). *OS_Desc_CompatID.doc* gives an explanation of the descriptor's format and an example of including multiple interfaces in the descriptor. MTP's compatible and subcompatible IDs are also available on the same page and are used in one of the examples.
 
 ## How to include MTP in Your Custom FFU
 
@@ -68,7 +68,7 @@ Follow these steps to add MTP to an existing USBFN configuration:
 > [!WARNING]
 > Modifying the default configuration should not be attempted through FFU customization. System-defined entries may be refreshed/changed by a system update and any custom settings will be lost.
 
-## How to setup the MTP SD card filter
+## How to set up the MTP SD card filter
 
 By default MTP will enumerate all of the contents of an SD card, if it is present on the device. It is possible, however, to limit this enumeration to a specific subfolder. In order to do so, you must add a registry value `MTPSDFolderFilter` under the registry key `HKEY_LOCAL_MACHINE\Software\Microsoft\MTP`.
 The value is of type `REG_SZ` and should contain a relative path to the folder you would like MTP to enumerate. The folder will get automatically created if it does not already exist.

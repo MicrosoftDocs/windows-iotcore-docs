@@ -4,7 +4,7 @@ author: bfjelds
 ms.author: bfjelds
 ms.date: 08/28/2017
 ms.topic: article
-description: Learn the command line utilities to use with PowreShell after connecting to your device.
+description: Learn the command line utilities to use with PowerShell after connecting to your device.
 keywords: windows iot, command line, command line utilities, PowerShell
 ---
 
@@ -40,11 +40,11 @@ Use the startup editor to configure startup apps on your Windows IoT Core device
 
 ### **Change settings for region and user or speech language:**
 
-The `IoTSettings` tool changes region, user language or speech language. This is a command line tool that can be invoked from an application using the ProcessLauncher API. These commands must be run as default account, not administrator.
+The `IoTSettings` tool changes region, user language, or speech language. This is a command line tool that can be invoked from an application using the ProcessLauncher API. These commands must be run as default account, not administrator.
 
-* `IotSettings del account {all | username}` deletes all MSA or AAD accounts on the system or a specific account.  Specific accounts take the form username@provider.com
+* `IotSettings del account {all | username}` deletes all MSA or Azure AD accounts on the system or a specific account.  Specific accounts take the form username@provider.com
 * `IotSettings del diagnostics` deletes diagnostic information in the cloud for the current device.  Note that this removes the history up to the time of invocation.  New diagnostics information will continue to be logged.
-* `IotSettings list account` lists all MSA or AAD accounts that have been signed into the device.
+* `IotSettings list account` lists all MSA or Azure AD accounts that have been signed into the device.
 * `IotSettings list uilanguage` lists all UI languages
 * `IotSettings list speechlanguage` lists all speech languages
 * `IotSettings get uilanguage` displays current UI language
@@ -68,7 +68,7 @@ DeployAppx enables installing, and removing in .APPX packages in development sce
 
 *  `DeployAppx install MyApp.appx` installs the .APPX and the certificate of the same name if found.
 * `DeployAppx install force MyApp.appx` forces uninstalling the currently installed .APPX with the same package name if found before installing the new .APPX.  This is useful for installing an .APPX with the same or lower version number as the currently installed .APPX.
-* `DeployAppx install retry MyApp.appx` retry installing the .APPX 10 times on failure with 2 second delay between attempts.
+* `DeployAppx install retry MyApp.appx` retry installing the .APPX 10 times on failure with 2-second delay between attempts.
 * `DeployAppx uninstall App_1.0.1.0_x86__publisherid123` uninstall the .appx with the matching package full name.
 *  `DeployAppx uninstall MyApp.appx` uninstall any installed .APPX with a matching package family name.
 * `DeployAppx getpackages` lists installed package full names.
@@ -147,11 +147,11 @@ To shut down your device, type `shutdown /s /t 0`. To restart the device, use th
 ### **Viewing and changing display settings**
 The SetDisplayResolution tool may be used for listing the current display settings and to show the list of supported values.  It can further be used for adjusting the display's resolution, refresh rate and/or orientation to values supported by your platform.  The utility accepts the following command line arguments:
 
-* `SetDisplayResolution` Lists the current display resoltuion.
+* `SetDisplayResolution` Lists the current display resolution.
 * `SetDisplayResolution -list` Lists supported display resolutions.
 * `SetDisplayResolution -orientation:[n]` Change the display orientation, where n=0,90,180 or 270.
 * `SetDisplayResolution [width] [height]` Change the width and height in pixels 
-* `SetDisplayResolution [width] [height] [refreshrate]` Change width, height and refresh rate where width and height are in pixels and refreshrate in Hz 
+* `SetDisplayResolution [width] [height] [refreshrate]` Change width, height, and refresh rate where width and height are in pixels and refreshrate in Hz 
 * `SetDisplayResolution [width] [height] [refreshrate] [orientation]` Change width, height, refreshrate and screen orientation where width and height are in pixels, refreshrate in Hz and orientation is one of 0, 90, 180 or 270.
 
 ### **Take screenshot:**
@@ -164,7 +164,7 @@ To view the list of all the available network adapters, run `GetAdapterInfo` too
 
 ### **Set folder permissions for UWP apps:**
 
-Not all folders on your device are accesible by Universal Windows Apps. To make a folder accesible to a UWP app, you can use `FolderPermissions` tool. For example run `FolderPermissions c:\test -e` to give UWP apps access to `c:\test` folder. Note this will work only with native Win32 apis for eg. CreateFile2 and not with WinRT apis like StorageFolder, StorageFile etc.
+Not all folders on your device are accessible by Universal Windows Apps. To make a folder accessible to a UWP app, you can use `FolderPermissions` tool. For example, run `FolderPermissions c:\test -e` to give UWP apps access to `c:\test` folder. Note this will work only with native Win32 apis for eg. CreateFile2 and not with WinRT apis like StorageFolder, StorageFile etc.
 
 ### **Work with Serial Ports:**
 [MinComm](https://github.com/ms-iot/samples/tree/develop/MinComm) allows you to work with serial ports from the command line. It is provided as a sample project in the ms-iot samples repo. 

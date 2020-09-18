@@ -40,7 +40,7 @@ UEFI Secure Boot is the first policy enforcement point, and is located in UEFI. 
 
 As the OEM, you need to store the UEFI Secure Boot databases on the IoT device at manufacture time. These databases include the Signature database (db), Revoked Signature database (dbx), and the Key Enrollment Key database (KEK). These databases are stored on the firmware nonvolatile RAM (NV-RAM) of the device.
 
-* **Signature Database (db):** This lists the signers or image hashes of operating system loaders, UEFI applications and UEFI drivers that are allowed to be loaded on the device
+* **Signature Database (db):** This lists the signers or image hashes of operating system loaders, UEFI applications, and UEFI drivers that are allowed to be loaded on the device
 
 * **Revoked Signature Database (dbx):** This lists the signers or image hashes of operating system loaders, UEFI applications and UEFI drivers that are no longer trusted, and are *NOT* allowed to be loaded on the device 
 
@@ -67,7 +67,7 @@ To learn more about deploying code integrity policies, auditing and enforcement,
 
 Here are the steps taken by Windows Code Integrity:
 
-1. Windows Kernel will verify all other components against the signature database before loading. This includes drivers, startup files and ELAM (Early Launch Anti-Malware).
+1. Windows Kernel will verify all other components against the signature database before loading. This includes drivers, startup files, and ELAM (Early Launch Anti-Malware).
 2. Windows Kernel will load the trusted components in the startup process, and prohibit loading of the untrusted components.
 3. Windows 10 IoT Core operating system loads, along with any installed applications.
 
@@ -80,7 +80,7 @@ Windows 10 IoT Core also implements a lightweight version of BitLocker Device En
 
 ### Device Guard on Windows IoT Core
 
-Most IoT devices are built as fixed-function devices. This implies that device builders know exactly which firmware, operating system, drivers and applications should be running on a given device. In turn, this information can be used to fully lockdown an IoT device by only allowing execution of known and trusted code. Device Guard on Windows 10 IoT Core can help protect IoT devices by ensuring that unknown or untrusted executable code cannot be run on locked-down devices.
+Most IoT devices are built as fixed-function devices. This implies that device builders know exactly which firmware, operating system, drivers, and applications should be running on a given device. In turn, this information can be used to fully lockdown an IoT device by only allowing execution of known and trusted code. Device Guard on Windows 10 IoT Core can help protect IoT devices by ensuring that unknown or untrusted executable code cannot be run on locked-down devices.
 
 
 ## Turnkey Security on IoT Core
@@ -100,11 +100,11 @@ The following steps will lead through the process to create a lockdown image usi
 * A PC running Windows 10 Enterprise (other Windows versions are **not** supported by the provided scripts) 
 * [Windows 10 SDK](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk) - Required for Certificate Generation
 * [Windows 10 ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) - Required for CAB generation
-* Reference platform - release hardware with shipping firmware, OS, drivers and applications will be required for final lockdown
+* Reference platform - release hardware with shipping firmware, OS, drivers, and applications will be required for final lockdown
 
 ### Development IoT Devices
 
-Windows 10 IoT Core works with various silicons that are utilized in hundreds of devices. Of the [suggested IoT development devices](../learn-about-hardware/SoCsAndCustomBoards.md), the following provide firmware TPM functionality out of the box, along with Secure Boot, Measured Boot, BitLocker and Device Guard capabilities:
+Windows 10 IoT Core works with various silicons that are utilized in hundreds of devices. Of the [suggested IoT development devices](../learn-about-hardware/SoCsAndCustomBoards.md), the following provide firmware TPM functionality out of the box, along with Secure Boot, Measured Boot, BitLocker, and Device Guard capabilities:
 
 * Qualcomm DragonBoard 410c
 
@@ -145,7 +145,7 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
         * WindowsSDKVersion `(e.g. <WindowsSDKVersion>10.0.15063.0</WindowsSDKVersion>)`
             * SDK version installed on your machine is under `C:\Program Files (x86)\Windows Kits\10\`
     * SecureBoot section : Specify which keys to use for secure boot (PK and SB keys)
-    * BitLocker section : Specify a certificate for Bitlocker data recovery (DRA key)
+    * BitLocker section : Specify a certificate for BitLocker data recovery (DRA key)
     * SIPolicy section : Specify certs that should be trusted
         * ScanPath : Path of the device for scanning binaries , `\\a.b.c.d\C$`
         * Update   : Signer of the SIPolicy (PAUTH keys)
@@ -171,13 +171,13 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
 You can test the generated packages by manually installing them on a unlocked device by the following steps
 
 1. Flash the device with the unlocked image (image used for scanning in earlier step).
-2. Connect to the device ([using SSH](../connect-your-device/SSH.md) or using [Powershell](../connect-your-device/PowerShell.md))
+2. Connect to the device ([using SSH](../connect-your-device/SSH.md) or using [PowerShell](../connect-your-device/PowerShell.md))
 3. Copy the following .cab files to the device under a directory e.g. `c:\OemInstall`
     * OEM.Custom.Cmd.cab
     * OEM.Security.BitLocker.cab
     * OEM.Security.SecureBoot.cab
     * OEM.Security.DeviceGuard.cab
-4. Initiate staging of the generated packages by issueing the following commands
+4. Initiate staging of the generated packages by issuing the following commands
 
     ```C
     applyupdate -stage c:\OemInstall\OEM.Custom.Cmd.cab
@@ -196,7 +196,7 @@ You can test the generated packages by manually installing them on a unlocked de
     ```
 
 6. The device will reboot into update OS (showing gears) to install the packages and will reboot again to main OS.  Once the device reboots back into MainOS, Secure Boot will be enabled and SIPolicy should be engaged.
-7. Reboot the device again to activate the Bitlocker encryption.
+7. Reboot the device again to activate the BitLocker encryption.
 8. Test the security features
     * SecureBoot: try `bcdedit /debug on` , you will get an error stating that the value is protected by secure boot policy
     * BitLocker: Run `start /wait sectask.exe -waitencryptcomplete:1`, if ERRORLEVEL is `-2147023436` (ERROR_TIMEOUT) then encryption is not complete. When running sectask.exe from a .cmd file omit the `start /wait`.

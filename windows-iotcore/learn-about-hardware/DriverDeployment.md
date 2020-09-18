@@ -18,13 +18,13 @@ For this exercise you can use the [gpiokmdfdemo sample driver](https://github.co
 
 If you're looking to add a driver to an image, please visit the instructions in our [IoT Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-driver-to-an-image).
 
-## Step 1 : Setup 
+## Step 1: Setup 
 ___
 
 ### On the device
 
 * Make sure that your device has an IoTCore image installed by following the [Get Started instructions](https://go.microsoft.com/fwlink/?linkid=860461).
-* Connect to your device via [Powershell](../connect-your-device/PowerShell.md).
+* Connect to your device via [PowerShell](../connect-your-device/PowerShell.md).
 
 ### On the PC
 
@@ -43,16 +43,16 @@ ___
     This is a workaround for a bug in the tooling and requires to be done *only once* in the PC.
 
 
-## Step 2 : Provision device with Visual Studio 
+## Step 2: Provision device with Visual Studio 
 ___
 * Open Visual Studio and select **Driver > Test > Configure Devices > Add New Device**
     * If the Driver Menu option is not shown, check if SDK is installed.
 
 * In the **Device Configuration** dialog, 
-    * Enter a user friendly Display Name for your target device
+    * Enter a user-friendly Display Name for your target device
     * Select Device Type = Mobile
     * In the list displayed, sort by IP address, and find the address for the IoT device and select. If there are two entries, select the one with the non-zero GUID.  Make sure the row is selected – it should highlight blue
-    * At the bottom of the dialog are two radio buttons.  Select the one which says **Provision device and choose debugger settings**.  Select **Next**
+    * At the bottom of the dialog are two radio buttons.  Select the one that says **Provision device and choose debugger settings**.  Select **Next**
 
 * On the **Configure debugger settings**, set the appropriate settings.  Note the following:
    * The MinnowBoardMax can use the network for debugging.
@@ -80,7 +80,7 @@ ___
 
 ![ConfigureDevices](../media/DriverDeployment/ConfigureDevices.png)
 
-## Step 3 : Configure Visual Studio driver project
+## Step 3: Configure Visual Studio driver project
 ___    
 1. Launch Visual Studio in the administrator mode and open the visual studio driver project.
 2. Make sure the Target Platform Version matches the SDK installed on your development machine. Select Project Properties from the Solution Explorer window.  Under General Configuration Properties assure that the Target Platform Version matches the SDK installed on your development computer.  You can check the version of the SDK from the **Control Panel > Programs > Programs and Features**.
@@ -110,7 +110,7 @@ ___
 > [!TIP]
 > Every time this option is used to install a driver after the initial installation, the package version number must be incremented.
 
-* **Fast Reinstall** can be used once a driver has been installed, and there are no subsequent changes to the drivers INF file which affect the registry.  This method bypasses the install process, shuts down all devnodes associated with the driver, copies the driver over, and restarts the devnode.  This takes a few (<20) seconds.
+* **Fast Reinstall** can be used once a driver has been installed, and there are no subsequent changes to the drivers INF file, which affect the registry.  This method bypasses the install process, shuts down all devnodes associated with the driver, copies the driver over, and restarts the devnode.  This takes a few (<20) seconds.
 
     
 > [!WARNING]
@@ -120,7 +120,7 @@ ___
 Your Visual Studio project is now ready to build and deploy a driver to your target device. If you are using the sample gpiokmdfdemo driver you need to generate ACPI table and copy to your target device, then follow the steps in [building the driver in Visual Studio](https://developer.microsoft.com/en-us/windows/iot/samples/driverlab2).
 
 
-## Step 4 : Build and deploy driver
+## Step 4: Build and deploy driver
 ___
 This can be done in two ways, using the **F5** key and using the **Deploy** option. In both ways, the driver will be built and deployed (i.e. installs it on device) and the F5 attaches the Visual Studio kernel debugger to the installed and loaded driver. 
 
@@ -143,7 +143,7 @@ When Installation completes, the device will reboot again, and the VS Output scr
 1.  From the build window, make sure that the configurations are correct – the current build arch is the same as the target device arch.  This is where having the arch in the target name is valuable.  The target will be displayed in the view box on the menu bar in VS on the top-middle-right.
 2.  Press **F5**.  The target will be built, deployed, and attached to the VS Kernel Debugger.
 
-* After the reboot, make sure PowerShell is still connected to it, otherwise, re-connect to the target device using the PowerShell `enter-pssession` command..
+* After the reboot, make sure PowerShell is still connected to it, otherwise, reconnect to the target device using the PowerShell `enter-pssession` command..
 
 
 ## Known Issues
@@ -157,7 +157,7 @@ A race condition during the interaction with MinnowBoardMax can result in a repo
 * ERROR: Task "Registering WDTF" failed to complete successfully.
 * ERROR: Task "Configuring kernel debugger settings (possible reboot)" failed to complete successfully
 
-**Workaround:** These error can almost certainly be ignored.
+**Workaround:** These errors can almost certainly be ignored.
 
 **Details:**
 
@@ -187,7 +187,7 @@ Computer configuration log file://C:/Users/username/AppData/Roaming/Microsoft/WD
 Failed installing components
 ```
 
-At this point you can safely click on the **Finish** and then the **Apply** and **OK**.
+At this point, you can safely click on the **Finish** and then the **Apply** and **OK**.
 
 This is a benign error formed by a race condition causing a result log to be malformed. This can be verified by looking at the log file in the following area:
 

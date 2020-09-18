@@ -19,7 +19,7 @@ the dialog box provides no cancel button.
 ## Sign in dialog boxes
 
 The dialogs that have this feature added are the identity dialogs - for signing in to Microsoft
-Accounts (MSA) and Azure Active Directory (AAD). These can be used in your application as shown
+Accounts (MSA) and Azure Active Directory (Azure AD). These can be used in your application as shown
 in the [Web Account Management sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WebAccountManagement)
 in the [Microsoft UWP app samples repo](https://github.com/Microsoft/Windows-universal-samples).
 

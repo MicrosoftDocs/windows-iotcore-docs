@@ -32,7 +32,7 @@ You'll also need to decide whether you want to use an off-the-shelf board or dev
 > [!NOTE]
 > This list takes into consideration processors that are in non-commercial public preview.
 
-To help you select the right platform for your device, the table below shows the features that are supported by processor family with Windows 10 IoT Core. All features listed below are supported in Windows 10 IoT Core, however some SoCs may not have the specific IP included in their design, and are such indicated with "N/A". In such cases, a 3rd party solution can be incorporate into the design to provide the required functionality.  In a limited number of cases where a Windows 10 IoT Core feature is not implemented on a processor, the entry is left blank.
+To help you select the right platform for your device, the table below shows the features that are supported by processor family with Windows 10 IoT Core. All features listed below are supported in Windows 10 IoT Core, however some SoCs may not have the specific IP included in their design, and are such indicated with "N/A". In such cases, a third party solution can be incorporated into the design to provide the required functionality.  In a limited number of cases where a Windows 10 IoT Core feature is not implemented on a processor, the entry is left blank.
 
 > |    | Intel  |  Qualcomm  | NXP i.MX6 | NXP i.MX7 | NXP i.MX8M | Broadcom |
 > |----|--------|------------|-----------|-----------|------------|----------|
@@ -78,7 +78,7 @@ Each of the platforms has unique quirks that need attention during implementatio
 
 ### **Raspberry Pi-derived custom design**
 
-[Element 14](https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service) offers board customization service for Raspberry Pi to allow you to add or remove connectivity options. If you also need to make customizations to the BSP, you can leverage the [open source BSP code on Github](https://github.com/ms-iot/rpi-iotcore).
+[Element 14](https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service) offers board customization service for Raspberry Pi to allow you to add or remove connectivity options. If you also need to make customizations to the BSP, you can leverage the [open source BSP code on GitHub](https://github.com/ms-iot/rpi-iotcore).
 
 ### **Intel-based custom design**
 

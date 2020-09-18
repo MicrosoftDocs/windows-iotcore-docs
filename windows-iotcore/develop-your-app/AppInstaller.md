@@ -42,7 +42,7 @@ To install your application on the device please do the following:
 
     7.1 Click **Choose File**
 
-    7.2 Select the depenency .appx and click **Open**
+    7.2 Select the dependency .appx and click **Open**
 
 8. When all of the dependencies are added click **Install**
 
@@ -66,7 +66,7 @@ You can create a provisioning package with the app and install the provisioning 
 
 3. Choose Windows 10 IoT Core for the project settings and skip the provisioning package import
 
-4. On the left hand side expand **Runtime Settings** and click on **Universal App Install > User Context App**
+4. On the left hand side, expand **Runtime Settings** and click on **Universal App Install > User Context App**
 
 5. Enter the Package Family Name of your app and click **Add**
 
@@ -83,7 +83,7 @@ You can create a provisioning package with the app and install the provisioning 
 
 9. Export the package
 
-10. Copy the exported .ppkg file to _C:\Windows\Provisioning\Packages_ on the IoT device using [SSH](../connect-your-device/SSH.md) or [Powershell](../connect-your-device/powershell.md)) and reboot. When the device reboots, the provisioning package is processed and the app is installed.
+10. Copy the exported .ppkg file to _C:\Windows\Provisioning\Packages_ on the IoT device using [SSH](../connect-your-device/SSH.md) or [PowerShell](../connect-your-device/powershell.md)) and reboot. When the device reboots, the provisioning package is processed and the app is installed.
 
 
 ## Add the app to the Windows IoT Core image(.ffu)

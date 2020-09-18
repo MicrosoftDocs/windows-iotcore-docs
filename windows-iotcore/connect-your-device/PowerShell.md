@@ -49,7 +49,7 @@ Make sure to follow these steps to correctly configure your device running Windo
 > [!NOTE]
 > If you want to connect multiple devices, you can use commas and quotation marks to separate each device.
 
-7. Now you can start a session with your Windows IoT Core device. From you administrator PowerShell console, type:
+7. Now you can start a session with your Windows IoT Core device. From your administrator PowerShell console, type:
 
         Enter-PSSession -ComputerName <machine-name or IP Address> -Credential <machine-name or IP Address or localhost>\Administrator
 
@@ -116,7 +116,7 @@ For a list of commands and utilities that you can use with PowerShell, see the [
 * Running a cmdlet from any of these modules throws CommandNotFoundException: Appx, NetAdapter, NetSecurity, NetTCPIP, PnpDevice.
 * Import-Module on any of the above modules throws PSSecurityException exception with UnauthorizedAccess. Module auto loading does not seem to work either.
 
-**Workaround**: Modify the execution policy within the remote PowerShell session to **RemoteSigned**. For more details on the different execution policies, see [Using the Set-ExecutionPolicy Cmdlet](https://technet.microsoft.com/library/ee176961.aspx).
+**Workaround**: Modify the execution policy within the remote PowerShell session to **RemoteSigned**. For more information on the different execution policies, see [Using the Set-ExecutionPolicy Cmdlet](https://technet.microsoft.com/library/ee176961.aspx).
 
 **ISSUE**: Cmdlets from some modules such as NetAdapter are sometimes not visible. For example, Get-Module NetAdapter returns an empty list. 
 
@@ -134,7 +134,7 @@ For a list of commands and utilities that you can use with PowerShell, see the [
 
 - In PowerShell scripts, attributes to PowerShell class or enumeration do not work. Adding attributed results in the following exception thrown: *Type must be a runtime Type object*.
 
-- Outbound CIM and PowerShell remoting is not supported. Relevant functionality in relying cmdlets will not work. These include  Enter-PSSession, Get-Job, Receive-Job, Import-Module, Invoke-Command, and Copy-Item.
+- Outbound CIM and PowerShell remoting are not supported. Relevant functionality in relying cmdlets will not work. These include  Enter-PSSession, Get-Job, Receive-Job, Import-Module, Invoke-Command, and Copy-Item.
 
 - SecureString commands ConvertFrom-SecureString and ConvertTo-SecureString do not work unless the session is created using CredSSP authentication. Otherwise, the -Key parameter must be specified. For details on configuring CredSSP authentication, see [Enable PowerShell “Second-Hop” Functionality with CredSSP](https://devblogs.microsoft.com/scripting/enable-powershell-second-hop-functionality-with-credssp/).
 
