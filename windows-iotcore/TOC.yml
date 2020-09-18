@@ -28,6 +28,15 @@
     href: tutorials/qualcomm.md
   - name: Set up Intel devices
     href: tutorials/intel.md
+- name: Quick Start Guide
+  expanded: false
+  items: 
+  - name: Prototype Boards
+    href: tutorials/quickstarter/PrototypeBoards.md
+  - name: Device Setup
+    href: tutorials/quickstarter/DeviceSetup.md
+  - name: Develop an App
+    href: tutorials/quickstarter/DevelopApp.md
 - name: Hardware guidance
   expanded: false
   items:
