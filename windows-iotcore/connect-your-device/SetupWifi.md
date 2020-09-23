@@ -95,7 +95,7 @@ Setting up WiFi using wireless profiles is supported in Windows 10 IoT Core. See
         User Name: <TARGET_DEVICE>\Administrator
         Password:  p@ssw0rd
 ```
-    ![SMB with File Explorer 1](../media/SetupWifi/cred1.png)
+![SMB with File Explorer 1](../media/SetupWifi/cred1.png)
 
 > [!NOTE]
 > It is **highly recommended** that you update the default password for the Administrator account.  Please follow the instructions found [here](../connect-your-device/PowerShell.md).
