@@ -30,7 +30,7 @@ You can use Deployment Image Servicing and Management(Dism.exe) to flash Windows
 
         DISKPART>list disk
 ```
-    It should list all the storage devices attached to the computer.
+It should list all the storage devices attached to the computer.
 
     ![DISM List Disk](../media/Dism/DiskpartListDisk.png)
 
