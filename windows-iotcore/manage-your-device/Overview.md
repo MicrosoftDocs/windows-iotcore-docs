@@ -3,7 +3,7 @@ title: Debugging overview
 ms.date: 05/10/2019
 ms.topic: article
 ms.prod: windows-iot
-ms.technology: IoT
+ms.technology: iot
 description: Learn about the different ways that you can debug Windows 10 IoT Core.
 keywords: windows iot, debugging, PowerShell, SSH
 ---
@@ -14,7 +14,7 @@ Once you have your IoT Core image setup with running application, it is importan
 ## Device Portal
 Windows Device Portal (WDP) allows for you to configure and manage your IoT Device remotely over local network. WDP can be reachable via local IP of the IoT Device. Additional information on WDP on IoT can be found [here](https://docs.microsoft.com/windows/iot-core/manage-your-device/DevicePortal).
 
-### Collecting ETW / WPP Logs 
+### Collecting ETW / WPP Logs
 -----
 
 ### File Sharing
