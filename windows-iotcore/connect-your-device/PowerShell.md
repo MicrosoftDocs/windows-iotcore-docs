@@ -1,7 +1,7 @@
 ---
 title: Using PowerShell for Windows IoT
 author: paulmon
-ms.author: riames
+ms.author: riameser
 ms.date: 08/28/2017
 ms.topic: article
 description: Learn how to use PowerShell to connect to your device as well as manage your device.
@@ -72,7 +72,7 @@ Make sure to follow these steps to correctly configure your device running Windo
 ```
 	        net user Administrator [new password]
 ```
-	b. Next, establish a new PowerShell session using `Exit-PSSession` and `Enter-PSSession` with the new credentials.
+	b. Next, establish a new PowerShell session using ```Exit-PSSession``` and ```Enter-PSSession``` with the new credentials.
 ```
 	        Exit-PSSession
 
