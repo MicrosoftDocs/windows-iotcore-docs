@@ -117,7 +117,7 @@ ___
 > This method is not guaranteed to succeed – If for some reason a devnode cannot be shutdown to release the driver, the operation will fail.  This can be due to faulty hardware, or an initial faulty implementation of the driver.  The Install/Reinstall option must be used in this case.
 
 
-Your Visual Studio project is now ready to build and deploy a driver to your target device. If you are using the sample gpiokmdfdemo driver you need to generate ACPI table and copy to your target device, then follow the steps in [building the driver in Visual Studio](https://developer.microsoft.com/en-us/windows/iot/samples/driverlab2).
+Your Visual Studio project is now ready to build and deploy a driver to your target device. If you are using the sample gpiokmdfdemo driver you need to generate ACPI table and copy to your target device, then follow the steps in [building the driver in Visual Studio](https://developer.microsoft.com/windows/iot/samples/driverlab2).
 
 
 ## Step 4: Build and deploy driver

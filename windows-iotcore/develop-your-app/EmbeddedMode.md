@@ -32,7 +32,7 @@ While the system will automatically restart background applications, system lock
 
 The **lowLevel** device Capability gives access to low-level hardware interfaces like GPIO, SPI, and I2C.
 
-* [Blinky Sample(GPIO)](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinky)
+* [Blinky Sample(GPIO)](https://developer.microsoft.com/windows/iot/samples/helloblinky)
 * [Accelerometer Sample](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/Accelerometer)
 
 The **lowLevelDevices** Capability allows apps to access custom devices when a number of additional requirements are met. This
@@ -112,7 +112,7 @@ To enable embedded mode, you will need to create a provisioning package in Imagi
 
 
 ## Configuring a Background Application to Run automatically
-1. To configure a Background Application to automatically run, you will need to follow the directions to [create an MinnowBoardMax SD Card](https://developer.microsoft.com/en-us/windows/iot/getstarted) and copy `D:\windows\system32\iotstartup.exe` (where D: is your SD Card).
+1. To configure a Background Application to automatically run, you will need to follow the directions to [create an MinnowBoardMax SD Card](https://developer.microsoft.com/windows/iot/getstarted) and copy `D:\windows\system32\iotstartup.exe` (where D: is your SD Card).
 
 2. To get a list of installed Background Applications type:
 ```
