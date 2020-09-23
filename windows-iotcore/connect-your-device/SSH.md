@@ -160,7 +160,7 @@ To do this, enter the following command in the PuTTY console, replacing `[new pa
 ```
         setcomputername <new-name>
 ```
-    You will need to reboot the device for the change to take effect. You can use the `shutdown` command as follows:
+You will need to reboot the device for the change to take effect. You can use the `shutdown` command as follows:
 ```
         shutdown /r /t 0
 ```
