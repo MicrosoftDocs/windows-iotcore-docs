@@ -7,7 +7,7 @@ keywords: windows iot, USB drivers, peripheral devices, USB
 ---
 
 # Install USB peripheral drivers
-Follow the steps below to add third-party drivers (USB) for peripheral devices such as USB Mobile broadband modems, printers, scanners etc. 
+Follow the steps below to add third-party drivers (USB) for peripheral devices such as USB Mobile broadband modems, printers, scanners etc.
 
 ## Step 1: Get Drivers from PC
 ___
@@ -36,7 +36,7 @@ The Driver package contains the references(InfSource)to the Inf file for the dri
 > Windows IoT Core only supports [Universal INF and Universal Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers).
 
 
-See also: [Sample Driver Package](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/BSP/CustomRpi2/Packages/CustomRPi2.GPIO) 
+See also: [Sample Driver Package](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/BSP/CustomRpi2/Packages/CustomRPi2.GPIO)
 
 ## Step 3: Install on device
 ___
@@ -54,6 +54,5 @@ ___
 * Launch the [PowerShell](../connect-your-device/PowerShell.md)
 * You can get the status of the installed drivers using the following PowerShell commandlets
 
-	* [Get-PnpDevice](https://docs.microsoft.com/powershell/module/pnpdevice/get-pnpdevice?view=win10-ps)
-	* [Get-PnpDeviceProperty](https://docs.microsoft.com/powershell/module/pnpdevice/get-pnpdeviceproperty?view=win10-ps)
-	
+	* [Get-PnpDevice](https://docs.microsoft.com/powershell/module/pnpdevice/get-pnpdevice?view=win10-ps&preserve-view=true)
+	* [Get-PnpDeviceProperty](https://docs.microsoft.com/powershell/module/pnpdevice/get-pnpdeviceproperty?view=win10-ps&preserve-view=true)

@@ -34,7 +34,7 @@ You'll also need to decide whether you want to use an off-the-shelf board or dev
 
 To help you select the right platform for your device, the table below shows the features that are supported by processor family with Windows 10 IoT Core. All features listed below are supported in Windows 10 IoT Core, however some SoCs may not have the specific IP included in their design, and are such indicated with "N/A". In such cases, a third party solution can be incorporated into the design to provide the required functionality.  In a limited number of cases where a Windows 10 IoT Core feature is not implemented on a processor, the entry is left blank.
 
-> |    | Intel  |  Qualcomm  | NXP i.MX6 | NXP i.MX7 | NXP i.MX8M | Broadcom |
+> | Feature | Intel  |  Qualcomm  | NXP i.MX6 | NXP i.MX7 | NXP i.MX8M | Broadcom |
 > |----|--------|------------|-----------|-----------|------------|----------|
 > | Audio | x | x | x | x | x | x |
 > | GPIO | x | x | x | x | x | x |
@@ -53,7 +53,7 @@ To help you select the right platform for your device, the table below shows the
 > | Processor power management |  | x | x | x | Under development | |
 > | TPM | x | x | x | x | x | N/A |
 > | Secure Boot | x | x | Under development | Under development | Under development | |
-> | Hibernate | x | | | | | | 
+> | Hibernate | x | | | | | |
 > | PWM | x | N/A | x | x | x | |
 > | JTAG | x | N/A | x | x | x | |
 > | eMMC | x | x | x | x | x | |
@@ -102,7 +102,7 @@ Binary BSP for DragonBoard 410c (based on Qualcomm AQP8016 SoC) can be downloade
 
 The BSP package includes the source code for ACPI to allow for simple hardware customizations that only require ACPI changes.  
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > If you need additional hardware customizations, such as using a specific MIPI-DSI display panel, enabling Platform Secure Boot, RF calibration and certification (eg. FCC, CE), you'll need become a Qualcomm BSP source code licensee, or to work with a provider that has access (see Experienced partners below).
 
 Recommendations:

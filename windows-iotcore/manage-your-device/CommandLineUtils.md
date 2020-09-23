@@ -58,7 +58,7 @@ The `IoTSettings` tool changes region, user language, or speech language. This i
 
 > [!TIP]
 > `IoTSettings -list uiLanguage` will give back the list of supported UI language (in the version of Windows IoT core image it has been executed against)
-	
+
 ### **Change default audio device and volume:**
 
 The `IoTCoreAudioControlTool` tool controls audio related options, such as setting default capture and playback devices and changing the volume. For a full list of parameters, run `IoTCoreAudioControlTool h`.
@@ -150,8 +150,8 @@ The SetDisplayResolution tool may be used for listing the current display settin
 * `SetDisplayResolution` Lists the current display resolution.
 * `SetDisplayResolution -list` Lists supported display resolutions.
 * `SetDisplayResolution -orientation:[n]` Change the display orientation, where n=0,90,180 or 270.
-* `SetDisplayResolution [width] [height]` Change the width and height in pixels 
-* `SetDisplayResolution [width] [height] [refreshrate]` Change width, height, and refresh rate where width and height are in pixels and refreshrate in Hz 
+* `SetDisplayResolution [width] [height]` Change the width and height in pixels
+* `SetDisplayResolution [width] [height] [refreshrate]` Change width, height, and refresh rate where width and height are in pixels and refreshrate in Hz
 * `SetDisplayResolution [width] [height] [refreshrate] [orientation]` Change width, height, refreshrate and screen orientation where width and height are in pixels, refreshrate in Hz and orientation is one of 0, 90, 180 or 270.
 
 ### **Take screenshot:**
@@ -167,9 +167,9 @@ To view the list of all the available network adapters, run `GetAdapterInfo` too
 Not all folders on your device are accessible by Universal Windows Apps. To make a folder accessible to a UWP app, you can use `FolderPermissions` tool. For example, run `FolderPermissions c:\test -e` to give UWP apps access to `c:\test` folder. Note this will work only with native Win32 apis for eg. CreateFile2 and not with WinRT apis like StorageFolder, StorageFile etc.
 
 ### **Work with Serial Ports:**
-[MinComm](https://github.com/ms-iot/samples/tree/develop/MinComm) allows you to work with serial ports from the command line. It is provided as a sample project in the ms-iot samples repo. 
+[MinComm](https://github.com/ms-iot/samples/tree/develop/MinComm) allows you to work with serial ports from the command line. It is provided as a sample project in the ms-iot samples repo.
 
-``` 
+```
 Usage: MinComm.exe [-list] device_path [baud=<B>] [parity=<P>] [data=<D>] [stop=<S>] [xon={on|off}] [odsr={on|off}] [octs={on|off}] [dtr={on|off|hs}] [rts={on|off|hs|tg}] [idsr={on|off}]
 
   -list                List all available serial ports on the system and exit.
@@ -213,6 +213,5 @@ Examples:
     MinComm.exe \\.\COM1 baud=115200 parity=n data=8 stop=1
 
   Open device interface in 115200 8N1 configuration:
-    MinComm.exe \\?\USB#VID_FFFF&PID_0005#{86e0d1e0-8089-11d0-9ce4-08003e301f73} baud=115200 parity=n data=8 stop=1```
-
-
+    MinComm.exe \\?\USB#VID_FFFF&PID_0005#{86e0d1e0-8089-11d0-9ce4-08003e301f73} baud=115200 parity=n data=8 stop=1
+```
