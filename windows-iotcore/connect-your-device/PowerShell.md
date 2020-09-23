@@ -72,7 +72,7 @@ Make sure to follow these steps to correctly configure your device running Windo
 ```
 	        net user Administrator [new password]
 ```
-	b. Next, establish a new PowerShell session using ```Exit-PSSession``` and ```Enter-PSSession``` with the new credentials.
+	b. Next, establish a new PowerShell session using `Exit-PSSession` and `Enter-PSSession` with the new credentials.
 ```
 	        Exit-PSSession
 
