@@ -13,6 +13,8 @@
     href: https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview
   - name: Windows CE App Container
     href: windows-ce-app-container.md
+  - name: FAQ - CE Migration
+    href: windows-ce-migration-faq.md
 - name: Tutorials
   expanded: false
   items:
