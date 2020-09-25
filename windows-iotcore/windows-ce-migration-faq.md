@@ -5,9 +5,8 @@ ms.topic: article
 description: FAQ for Windows CE App Container Migration Technology
 keywords: Windows 10 IoT Core, Windows CE, application migration, cepal, Windows CE Migration FAQ
 ---
-# Frequently Asked Questions (FAQ): CE migration
-In this section, we will cover FAQ about CE Migration. We will cover the product roadmap, your migration options as well as how to start the migration process.
-
+# CE migration - Frequently Asked Questions
+In this section, we will cover frequently asked questions (FAQ) about CE Migration. We will cover the product roadmap, your migration options as well as how to start the migration process.
 
 ## What is Windows CE?  
 Windows CE, also known as Windows Embedded Compact or Windows Embedded CE is an operating system developed for Windows Embedded devices. The Windows CE operating system has powered industrial, medical, and a variety of other devices for more than 20 years.  Microsoft licenses Windows CE to original equipment manufacturers (OEMs), who can modify and create their own user interfaces and experiences, with Windows CE providing the technical foundation to do so. The current version of Windows Embedded Compact supports x86 and ARM processors with board support package (BSP) directly.  
