@@ -14,4 +14,4 @@ keywords: windows iot, secure boot, BitLocker, device guard, security, turnkey s
 
 Windows 
 
-- ![securityflow.jpg](../media/SecurityFlowAndCertificates/securityflow.jpg)
+- ![securityflow1.jpg](../media/SecurityFlowAndCertificates/securityflow.jpg)
