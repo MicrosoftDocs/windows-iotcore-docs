@@ -3,6 +3,8 @@ description: 'Troubleshoot different development-related issues in Windows 10 Io
 title: 'Troubleshooting'
 ms.date: 08/28/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 ---
 
 # Troubleshooting
@@ -122,7 +124,7 @@ If you encounter that the device cannot read/write data through the serial port,
 
 ![TX to RX on Raspberry Pi](media/Troubleshooting/txrx.png)
 
-2. Make sure the BaudRate, Handshaking and StopBits are configured correctly. If the serial port to be tested has a complete RS232 interface (e.g. DB9), use a DB plug with the RxTx crossover wires connected with the typical handshaking crossovers. Some RS232 ports (or USB adapters) require signals such as Carrier Detect (DCD) and DCE Ready (DSR) to be asserted before they function properly.
+2. Make sure the BaudRate, Handshaking, and StopBits are configured correctly. If the serial port to be tested has a complete RS232 interface (e.g. DB9), use a DB plug with the RxTx crossover wires connected with the typical handshaking crossovers. Some RS232 ports (or USB adapters) require signals such as Carrier Detect (DCD) and DCE Ready (DSR) to be asserted before they function properly.
 
 3. If you want to use USB UART adapters on Windows 10 IoT Core, the following are supported:
 
@@ -175,7 +177,7 @@ administrator@MINWINPC C:\Data\Users\administrator>sc config TestSirepSvc start=
 
 ## Tablet mode
 
-"Tablet Mode" is a concept that only exist on Desktop shell and doesn’t apply to IoT Core.
+"Tablet Mode" is a concept that only exists on Desktop shell and doesn’t apply to IoT Core.
 
 If the device has supported hardware (either through I2C or USB HID touch), touch should function automatically using the inbox class drivers. You can read more about this [here](https://docs.microsoft.com/windows-hardware/design/component-guidelines/touchscreen-device-bus-connectivity).
 
