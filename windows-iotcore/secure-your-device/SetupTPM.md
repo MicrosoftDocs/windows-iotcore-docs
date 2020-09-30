@@ -145,9 +145,9 @@ These instructions are applicable for any dTPM module supported on MBM, RPi2, or
         Device Manager -> System Setup -> Security Configuration -> PTT = <Disable>
 ```
 3. (Applies to MBM) Enable dTPM by changing the following UEFI settings:
-
+```
         Device Manager -> System Setup -> Security Configuration -> Discrete TPM = <Enable>
-
+```
 4. Based on your discrete TPM module of choice, identify its matching ACPI table [here](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL).
 5. Copy that ACPI table to MBM/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_.
 6. Enable testsigning on the device:
