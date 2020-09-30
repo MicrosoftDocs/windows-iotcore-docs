@@ -36,13 +36,13 @@ These firmware boot loaders are SoC-specific, so you will need to work with the 
 
 ### UEFI Secure Boot
 
-UEFI Secure Boot is the first policy enforcement point, and is located in UEFI.  It restricts the system to only allow execution of binaries signed by a specified authority, such as firmware drivers, option ROMs, UEFI drivers or applications, and UEFI boot loaders. This feature prevents unknown code from being executed on the platform and potentially weakening the security posture of it. Secure Boot reduces the risk of pre-boot malware attacks to the device, such as rootkits. 
+UEFI Secure Boot is the first policy enforcement point, and is located in UEFI.  It restricts the system to only allow execution of binaries signed by a specified authority, such as firmware drivers, option ROMs, UEFI drivers or applications, and UEFI boot loaders. This feature prevents unknown code from being executed on the platform and potentially weakening the security posture of it. Secure Boot reduces the risk of pre-boot malware attacks to the device, such as rootkits.
 
 As the OEM, you need to store the UEFI Secure Boot databases on the IoT device at manufacture time. These databases include the Signature database (db), Revoked Signature database (dbx), and the Key Enrollment Key database (KEK). These databases are stored on the firmware nonvolatile RAM (NV-RAM) of the device.
 
 * **Signature Database (db):** This lists the signers or image hashes of operating system loaders, UEFI applications, and UEFI drivers that are allowed to be loaded on the device
 
-* **Revoked Signature Database (dbx):** This lists the signers or image hashes of operating system loaders, UEFI applications and UEFI drivers that are no longer trusted, and are *NOT* allowed to be loaded on the device 
+* **Revoked Signature Database (dbx):** This lists the signers or image hashes of operating system loaders, UEFI applications and UEFI drivers that are no longer trusted, and are *NOT* allowed to be loaded on the device
 
 * **Key Enrollment Key database (KEK):** Contains a list of signing keys that can be used to update the signature and revoked signature databases.
 
@@ -97,9 +97,9 @@ The following steps will lead through the process to create a lockdown image usi
 
 ### Prerequisites
 
-* A PC running Windows 10 Enterprise (other Windows versions are **not** supported by the provided scripts) 
-* [Windows 10 SDK](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk) - Required for Certificate Generation
-* [Windows 10 ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) - Required for CAB generation
+* A PC running Windows 10 Enterprise (other Windows versions are **not** supported by the provided scripts)
+* [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) - Required for Certificate Generation
+* [Windows 10 ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) - Required for CAB generation
 * Reference platform - release hardware with shipping firmware, OS, drivers, and applications will be required for final lockdown
 
 ### Development IoT Devices
@@ -149,23 +149,27 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
     * SIPolicy section : Specify certs that should be trusted
         * ScanPath : Path of the device for scanning binaries , `\\a.b.c.d\C$`
         * Update   : Signer of the SIPolicy (PAUTH keys)
-        * User     : User mode certificates (UMCI keys) 
+        * User     : User mode certificates (UMCI keys)
         * Kernel   : Kernel mode certificates (KMCI keys)
     * Packaging : Specify the settings for the package generation
 
 > [!IMPORTANT]
 > In order to assist with testing during the initial development cycle, Microsoft has provided pre-generated keys and certificates where appropriate.  This implies that Microsoft Test, Development and Pre-Release binaries are considered trusted.  During final product creation and image generation, be sure to remove these certifcates and use your own keys to ensure a fully locked down device.
 
-6.Execute the following commands to generate required packages:
+6. Execute the following commands to generate required packages:
+```
+    powershell
 
-    ```powershell
     Import-Module .\IoTTurnkeySecurity.psm1
+
     # Generate the security packages for retail
     New-IoTTurnkeySecurity -ConfigFileName .\settings.xml
+
     (or)
+
     # Generate the security packages for test
     New-IoTTurnkeySecurity -ConfigFileName .\settings.xml -Test
-    ```
+```
 
 ### Test Lockdown packages
 You can test the generated packages by manually installing them on a unlocked device by the following steps
@@ -218,7 +222,7 @@ After validating that the lockdown packages are working as per the settings defi
     * DeviceGuard : `Copy ..\Output\DeviceGuard\*.*  ..\Workspace\Common\Packages\Security.DeviceGuard`
       * SIPolicyOn.p7b
       * SIPolicyOff.p7b
-  
+
 2. Add RetailOEMInput.xml and TestOEMInput.xml under the ProductName directory with lockdown package feature ID
     * `<Feature>SEC_BITLOCKER</Feature>`
     * `<Feature>SEC_SECUREBOOT</Feature>`
@@ -256,5 +260,3 @@ Should there arise a need to temporarily disable BitLocker, initate a remote Pow
 
 > [!NOTE]
 > Device encryption will be re-enabled on subsequent device boot unless the scheduled encryption task is disabled.
-
-

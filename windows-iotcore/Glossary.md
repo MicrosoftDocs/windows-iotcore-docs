@@ -3,7 +3,7 @@ title: Glossary for Windows IoT
 ms.date: 08/28/2017
 ms.topic: article
 ms.prod: windows-iot
-ms.technology: IoT
+ms.technology: iot
 description: Learn about the various Windows IoT Core-related terms through our documentation.
 keywords: windows iot, glossary, terms, terminology, definitions
 ---

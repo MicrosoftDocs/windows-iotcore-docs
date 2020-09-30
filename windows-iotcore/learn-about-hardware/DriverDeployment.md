@@ -10,15 +10,15 @@ keywords: windows 10 IoT Core, driver deployment
 
 # Driver deployment
 
-Deploy a driver on Windows 10 IoT Core with Visual Studio. 
+Deploy a driver on Windows 10 IoT Core with Visual Studio.
 
-Configure your Visual Studio driver project so that you can compile and deploy a driver for a specific platform during driver development phase. 
+Configure your Visual Studio driver project so that you can compile and deploy a driver for a specific platform during driver development phase.
 
 For this exercise you can use the [gpiokmdfdemo sample driver](https://github.com/ms-iot/samples/tree/develop/DriverSamples).
 
 If you're looking to add a driver to an image, please visit the instructions in our [IoT Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-driver-to-an-image).
 
-## Step 1: Setup 
+## Step 1: Setup
 ___
 
 ### On the device
@@ -32,23 +32,23 @@ ___
 * Install the [Windows Driver Kit](https://developer.microsoft.com/windows/hardware/windows-driver-kit).  You will need to install the SDK and WDK.
 * Install the certificates so that the driver is signed correctly and can run on your device. From an elevated command prompt execute the commands listed below:
 
-    1.  `cd c:\Program Files (x86)\Windows Kits\10\Tools\bin\i386` 
+    1.  `cd c:\Program Files (x86)\Windows Kits\10\Tools\bin\i386`
     2.  `set WPDKContentRoot=c:\Program Files (x86)\Windows Kits\10`
     3.  `InstallOEMCerts.cmd`
-  
+
 * Apply fix to enable F5 deployment from VS. In the elevated command prompt, execute the following commands:
 
     1.  `cd %TEMP%` ( will change directory to `c:\users\<usernsme>\Appdata\Local\Temp`)
-    2.  `md “WdkTempFiles”` Manually create a “WdkTempFiles” directory 
+    2.  `md “WdkTempFiles”` Manually create a “WdkTempFiles” directory
     This is a workaround for a bug in the tooling and requires to be done *only once* in the PC.
 
 
-## Step 2: Provision device with Visual Studio 
+## Step 2: Provision device with Visual Studio
 ___
 * Open Visual Studio and select **Driver > Test > Configure Devices > Add New Device**
     * If the Driver Menu option is not shown, check if SDK is installed.
 
-* In the **Device Configuration** dialog, 
+* In the **Device Configuration** dialog,
     * Enter a user-friendly Display Name for your target device
     * Select Device Type = Mobile
     * In the list displayed, sort by IP address, and find the address for the IoT device and select. If there are two entries, select the one with the non-zero GUID.  Make sure the row is selected – it should highlight blue
@@ -61,9 +61,9 @@ ___
        * Select some key – default can be used
        * Select the host IP of the machine running visual studio.  Do not use the autonet (169.xxx) address.
        * Select **Next**
-       
+
   ![Configure Debug Settings](../media/DriverDeployment/confdbgsettings.png)
-       
+
     * The Raspberry Pi uses serial for kernel debugging.
        *  Connect the appropriate serial debugging cable to the PI and the host machine
        *  Select **Serial** for the connection type
@@ -78,7 +78,7 @@ ___
 
 * The device is now provisioned and the **Device test configuration** status shows **Configured for driver testing**
 
-![ConfigureDevices](../media/DriverDeployment/ConfigureDevices.png)
+![Configure Devices](../media/DriverDeployment/ConfigureDevices.png)
 
 ## Step 3: Configure Visual Studio driver project
 ___    
@@ -86,15 +86,15 @@ ___
 2. Make sure the Target Platform Version matches the SDK installed on your development machine. Select Project Properties from the Solution Explorer window.  Under General Configuration Properties assure that the Target Platform Version matches the SDK installed on your development computer.  You can check the version of the SDK from the **Control Panel > Programs > Programs and Features**.
 3. Under **Project > Add New Item > Visual C++ > Windows Driver**, select **Package Manifest** and Press **Add**.
 
-![PackageManifest](../media/DriverDeployment/PackageManifest.png)
+![Package Manifest](../media/DriverDeployment/PackageManifest.png)
 
- `Package.pkg.xml` file will be added to the project. In this file, specify the Owner, Platform, Component and SubComponent tags. 
- 
-![Package-pkg-xml](../media/DriverDeployment/Package-pkg-xml.png)
- 
+ `Package.pkg.xml` file will be added to the project. In this file, specify the Owner, Platform, Component and SubComponent tags.
+
+![Package pkg xml](../media/DriverDeployment/Package-pkg-xml.png)
+
 4. Set package version number at **Project Properties > PackageGen > Version**. Note that every time you need to perform a Install/Reinstall of the driver, this version number has to be incremented.
 
-![PackageVersion](../media/DriverDeployment/PackageVersion.png)
+![Package Version](../media/DriverDeployment/PackageVersion.png)
 
 5. Under **Project Properties > Driver Signing > Test Certificate**, select test certificate (Phone OEM Test Certificate)
 
@@ -102,27 +102,27 @@ ___
 
 6. Go to **Driver Install** and select **Deployment**
 
-![InstallOptions](../media/DriverDeployment/installOptions.png)
+![Install Options](../media/DriverDeployment/installOptions.png)
 
 * From the **Target Device Name** dropdown, select the target created above in the provisioning process. Notice the two options for **Install / Reinstall** and **Fast Reinstall**. Choose an option and Click **Ok**.
-* **Install / Reinstall** is used for the initial installation of a driver to the target.  This installs the driver package using the Windows update stack and can take several minutes. This must be used every time the INF file is changed. 
-    
+* **Install / Reinstall** is used for the initial installation of a driver to the target.  This installs the driver package using the Windows update stack and can take several minutes. This must be used every time the INF file is changed.
+
 > [!TIP]
 > Every time this option is used to install a driver after the initial installation, the package version number must be incremented.
 
 * **Fast Reinstall** can be used once a driver has been installed, and there are no subsequent changes to the drivers INF file, which affect the registry.  This method bypasses the install process, shuts down all devnodes associated with the driver, copies the driver over, and restarts the devnode.  This takes a few (<20) seconds.
 
-    
+
 > [!WARNING]
 > This method is not guaranteed to succeed – If for some reason a devnode cannot be shutdown to release the driver, the operation will fail.  This can be due to faulty hardware, or an initial faulty implementation of the driver.  The Install/Reinstall option must be used in this case.
 
 
-Your Visual Studio project is now ready to build and deploy a driver to your target device. If you are using the sample gpiokmdfdemo driver you need to generate ACPI table and copy to your target device, then follow the steps in [building the driver in Visual Studio](https://developer.microsoft.com/en-us/windows/iot/samples/driverlab2).
+Your Visual Studio project is now ready to build and deploy a driver to your target device. If you are using the sample gpiokmdfdemo driver you need to generate ACPI table and copy to your target device, then follow the steps in [building the driver in Visual Studio](https://developer.microsoft.com/windows/iot/samples/driverlab2).
 
 
 ## Step 4: Build and deploy driver
 ___
-This can be done in two ways, using the **F5** key and using the **Deploy** option. In both ways, the driver will be built and deployed (i.e. installs it on device) and the F5 attaches the Visual Studio kernel debugger to the installed and loaded driver. 
+This can be done in two ways, using the **F5** key and using the **Deploy** option. In both ways, the driver will be built and deployed (i.e. installs it on device) and the F5 attaches the Visual Studio kernel debugger to the installed and loaded driver.
 
 Some users prefer to use the **Deploy** functionality and attach a different kernel debugger, such as WinDBG or KD.  This can provide more flexibility than using the VS debugger.
 
@@ -130,7 +130,7 @@ Some users prefer to use the **Deploy** functionality and attach a different ker
 1.  Right-click on the project in the solution explorer
 2.  Select **Deploy**
 
-![Deploy](../media/DriverDeployment/deploy.png) 
+![Select Deploy](../media/DriverDeployment/deploy.png)
 
 3.  The deployment process should proceed.  The IoT device will be rebooted after deployment, and should show the “Gears” screen while installation is taking place.
 
@@ -153,7 +153,7 @@ ___
 A race condition during the interaction with MinnowBoardMax can result in a reported failure during provisioning.  In fact, the provisioning most likely succeeded.
 
 **List of Errors:**
- 
+
 * ERROR: Task "Registering WDTF" failed to complete successfully.
 * ERROR: Task "Configuring kernel debugger settings (possible reboot)" failed to complete successfully
 
@@ -174,7 +174,7 @@ Registering TAEF Test Service
 Starting TAEF Test Service
     Task "Starting TAEF Test Service" completed successfully
 Registering WDTF
-    Task "Registering WDTF" completed successfully 
+    Task "Registering WDTF" completed successfully
 Configuring TAEF test service to start automatically
     Task "Configuring TAEF test service to start automatically" completed successfully
 Configuring kernel debugger settings (possible reboot)
@@ -200,16 +200,15 @@ e.g.
 4. Scroll to the bottom of the log.  The following text will be present, indicating that the provisioning is successful.
 
 ```
-<PFRollup 
-    Total="1" 
-    Passed="1" 
-    Failed="0" 
-    Blocked="0" 
-    Warned="0" 
+<PFRollup
+    Total="1"
+    Passed="1"
+    Failed="0"
+    Blocked="0"
+    Warned="0"
     Skipped="0" CA="6191559" LA="6191619" >
     <rti id="2109770915" />
     <ctx id="384048256" />
 </PFRollup>
 </WTT-Logger>
 ```
-

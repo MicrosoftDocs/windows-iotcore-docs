@@ -32,7 +32,7 @@ While the system will automatically restart background applications, system lock
 
 The **lowLevel** device Capability gives access to low-level hardware interfaces like GPIO, SPI, and I2C.
 
-* [Blinky Sample(GPIO)](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinky)
+* [Blinky Sample(GPIO)](https://developer.microsoft.com/windows/iot/samples/helloblinky)
 * [Accelerometer Sample](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/Accelerometer)
 
 The **lowLevelDevices** Capability allows apps to access custom devices when a number of additional requirements are met. This
@@ -68,76 +68,77 @@ To enable embedded mode, you will need to create a provisioning package in Imagi
     ![WICD Icon](../media/EmbeddedMode/WICD_Icon.png)
 
 3. Click **Advanced provisioning**.  Name the project **AllowEmbeddedMode** and click **Next**.
-    ![Step3](../media/EmbeddedMode/Step3.png)
+    ![Step #3](../media/EmbeddedMode/Step3.png)
 
 4. Choose **Common to all Windows editions** then **Next**.
-    ![Step4](../media/EmbeddedMode/Step4.png)
+    ![Step #4](../media/EmbeddedMode/Step4.png)
 
 5. Click **Finish**.
 
-    ![Step5](../media/EmbeddedMode/Step5.png)
+    ![Step #5](../media/EmbeddedMode/Step5.png)
 
 6. In the search box type **EmbeddedMode** and then click on **AllowEmbeddedMode**.
 
-    ![Step6](../media/EmbeddedMode/Step6.png)
+    ![Step #6](../media/EmbeddedMode/Step6.png)
 
 7. In the center pane set the value of **AllowEmbeddedMode** to **Yes**
-    ![Step7](../media/EmbeddedMode/Step7.png)
+    ![Step #7](../media/EmbeddedMode/Step7.png)
 
 8. Click Export > Provisioning Package
 
-    ![Step8](../media/EmbeddedMode/Step8.png)
+    ![Step #8](../media/EmbeddedMode/Step8.png)
 
 9. Click Next.
 
-    ![Step9](../media/EmbeddedMode/Step9.png)
+    ![Step #9](../media/EmbeddedMode/Step9.png)
 
 10. Click Next.
 
-    ![Step10](../media/EmbeddedMode/Step10.png)
+    ![Step #10](../media/EmbeddedMode/Step10.png)
 
 11. Click Next.
 
-    ![Step11](../media/EmbeddedMode/Step11.png)
+    ![Step #11](../media/EmbeddedMode/Step11.png)
 
 12. Click Build.
 
-    ![Step12](../media/EmbeddedMode/Step12.png)
+    ![Step #12](../media/EmbeddedMode/Step12.png)
 
 13. To install the embedded mode .PPKG on Windows IoT Enterprise double-click on the .PPKG.
 
 14. Click **Yes, add it**.
     Click yes on the LUA dialog if it appears, and the click **Yes, add it** on the dialog shown below.
-    ![Step14Standard](../media/EmbeddedMode/Step14Standard.png)
+    ![Step #14 Standard](../media/EmbeddedMode/Step14Standard.png)
 
 
 ## Configuring a Background Application to Run automatically
-1. To configure a Background Application to automatically run, you will need to follow the directions to [create an MinnowBoardMax SD Card](https://developer.microsoft.com/en-us/windows/iot/getstarted) and copy `D:\windows\system32\iotstartup.exe` (where D: is your SD Card).
+1. To configure a Background Application to automatically run, you will need to follow the directions to [create an MinnowBoardMax SD Card](https://developer.microsoft.com/windows/iot/getstarted) and copy `D:\windows\system32\iotstartup.exe` (where D: is your SD Card).
 
 2. To get a list of installed Background Applications type:
-
+```
         C:\> iotstartup list BackgroundApplication1
-
+```
 3. The output should include the full name of each installed Background Application, which will look like this:
-
+```
         Headless : BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee
-
+```
 5. To configure this app to run at boot type:
-
+```
         C:\> iotstartup add headless BackgroundApplication1
-
+```
 6. If the Background Application has been successfully added to the startup list, you should see this:
-
+```
         Added Headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpveeplication1
-
+```
 7. Restart the embedded mode device:
 
 8. Once the device has restarted, your Background Application will start automatically.  The Embedded Mode service that manages Background Applications can take a few minutes to start.  The embedded mode service will monitor Background Applications on the startup list and make sure they get restarted if they stop.  If a Background Application stops several times in a short period of time, it will no longer be restarted.
 
 9. To remove your Background Application from the startup list type:
-
+```
         C:\> iotstartup remove headless BackgroundApplication1
-
+```
 10. If the Background Application is removed from the startup list the output will look like this:
-
+```
         Removed headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee
+```

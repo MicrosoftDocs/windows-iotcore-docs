@@ -65,7 +65,7 @@ if not exist x:\data\users\defaultaccount\.ssh md x:\data\users\defaultaccount\.
 copy .\id_rsa.pub x:\data\users\defaultaccount\.ssh\authorized_keys
 ```
 
-If the key is not registered with ssh-agent, it must be specified on the command line to login: 
+If the key is not registered with ssh-agent, it must be specified on the command line to login:
 
 ```cmd
 ssh -i .\id_rsa DefaultAccount@host
@@ -89,7 +89,7 @@ Type **yes** and press **enter**.
 
 You should now be connected as **DefaultAccount**
 
-To use single sign-on with the **administrator** account, append your public key to c:\data\ProgramData\ssh\administrators_authorized_keys on the Windows IoT Core device. 
+To use single sign-on with the **administrator** account, append your public key to c:\data\ProgramData\ssh\administrators_authorized_keys on the Windows IoT Core device.
 
 ```cmd
 net use X: \\host\c$ /user:host\administrator
@@ -148,22 +148,22 @@ In order to connect to your device using SSH, you'll first need to download an S
 It is **highly recommended** that you update the default password for the Administrator account.
 
 To do this, enter the following command in the PuTTY console, replacing `[new password]` with a strong password:
-    
+```    
     net user Administrator [new password]
-    
+```    
 ### Configure your Windows IoT Core device
 * To be able to deploy applications from Visual Studio 2017, you will need to make sure the Visual Studio Remote Debugger is running on your Windows IoT Core device. The remote debugger should launch automatically at machine boot time. To double check, use the tlist command to list all the running processes from PowerShell. There should be two instances of msvsmon.exe running on the device.
 
 * It is possible for the Visual Studio Remote Debugger to time out after long periods of inactivity. If Visual Studio cannot connect to your Windows IoT Core device, try rebooting the device.
 
 * If you want, you can also rename your device. To change the 'computer name', use the `setcomputername` utility:
-
+```
         setcomputername <new-name>
-
-    You will need to reboot the device for the change to take effect. You can use the `shutdown` command as follows:
-
+```
+You will need to reboot the device for the change to take effect. You can use the `shutdown` command as follows:
+```
         shutdown /r /t 0
-        
+```
 ### Commonly used utilities
 
 See the [Command Line Utils](../manage-your-device/CommandLineUtils.md) page for a list of commands and utilities you can use with SSH.

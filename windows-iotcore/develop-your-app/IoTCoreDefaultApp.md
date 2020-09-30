@@ -10,7 +10,7 @@ ms.custom: RS5
 # Windows 10 IoT Core Default App Overview
 
 > [!TIP]
-> If you find that you'd like to see a feature added to this sample app, [open an issue](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp) on GitHub to let us know. If you'd like to file a bug, follow the instructions for the Feedback Hub [here](https://social.msdn.microsoft.com/Forums/en-US/fad1c6a0-e578-44a7-8e8d-95cc28c06ccd/need-logs-if-your-device-hasnt-updated-to-the-latest-iotcore-version?forum=WindowsIoT).
+> If you find that you'd like to see a feature added to this sample app, [open an issue](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp) on GitHub to let us know. If you'd like to file a bug, follow the instructions for the Feedback Hub [here](https://social.msdn.microsoft.com/Forums/fad1c6a0-e578-44a7-8e8d-95cc28c06ccd/need-logs-if-your-device-hasnt-updated-to-the-latest-iotcore-version?forum=WindowsIoT).
 
 When you initially flash Windows 10 IoT Core, you will be presented with the Windows 10 IoT Core Default App upon startup, which looks like this:
 
@@ -20,7 +20,7 @@ The purpose of this application is not only to provide you with a friendly shell
 
 This article will give you a rundown of the different features that the Windows 10 IoT Core Default App offers as well as how you can leverage these different features for your own applications.
 
-## Leveraging the IoT Core Default App 
+## Leveraging the IoT Core Default App
 
 > [!IMPORTANT]
 > Do not use maker images for commercialization. If you are commercializing a device, you must use a custom FFU for optimal security. Learn more [here](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
@@ -30,14 +30,14 @@ The IoT Core Default App can be customized and extended, or you can use the sour
 As shown under the [Settings section](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp#settings
 ) below, in some cases, you may configure default settings and features on your customer system on behalf of the end user. However, if you turn on these settings and features by default or if diagnostics are above the basic setting, you must:
 
-* Notify the end user that these features have been enabled, and provide the end user with the link to Microsoft's Privacy Statement web page [here](https://go.microsoft.com/fwlink/?LinkId=521839). 
+* Notify the end user that these features have been enabled, and provide the end user with the link to Microsoft's Privacy Statement web page [here](https://go.microsoft.com/fwlink/?LinkId=521839).
 * Secure consent from the relevant end user to enable such features by default (as required by applicable law).
 * Provide end users the ability to change the Diagnostics setting back to the basic setting.
-* If you enable Microsoft Accounts and you have access to end-user data, if the end user deletes the Microsoft Account, you must enable simultaneous deletion of all the end user's Microsoft Account data on the device. 
+* If you enable Microsoft Accounts and you have access to end-user data, if the end user deletes the Microsoft Account, you must enable simultaneous deletion of all the end user's Microsoft Account data on the device.
 
 ## Out-of-Box Experience (OOBE)
 
-The out-of-box experience for the IoT Core Default App is as lean as it gets. The first pages will ask for a default language and wi-fi settings. From there, in order for your app to be GDPR-compliant, you must have a diagnostic data screen and, if you're planning to track location, you will need to have a location permissions screen too. Examples of both are shown below. 
+The out-of-box experience for the IoT Core Default App is as lean as it gets. The first pages will ask for a default language and wi-fi settings. From there, in order for your app to be GDPR-compliant, you must have a diagnostic data screen and, if you're planning to track location, you will need to have a location permissions screen too. Examples of both are shown below.
 
 ![Location settings for OOBE](../media/IoTCoreDefaultApp/OOBE3.jpg)
 ![Diagnostic settings for OOBE](../media/IoTCoreDefaultApp/OOBE4.jpg)
@@ -74,14 +74,14 @@ This page will play MP3 and WAV files from the **Music Library**, that can be ac
 This page will display any PNG or JPEG image files from the **Pictures Library**, that can be accessed via the [Windows Device Portal](../manage-your-device/DevicePortal.md). To upload images to the slideshow, you will need to navigate to the Windows Device Portal, click on the "Apps" dropdown, navigate to "File Explorer", select "Pictures" and upload your files from there.
 
 
-![How to upload music files](../media/IoTCoreDefaultApp/slideshow.gif)
+![How to upload music files 1](../media/IoTCoreDefaultApp/slideshow.gif)
 
 ### Draw
 This page allows you to test out Windows 10 IoT Core's inking capabilities.
 
-## Start Menu - Explore 
+## Start Menu - Explore
 
-### Apps 
+### Apps
 This page allows you to launch other foreground applications installed on the device. Launching an application will suspend IoT Core Default App, which can be relaunched by using App Manager in [Windows Device Portal](../manage-your-device/DevicePortal.md).
 
 Nothing special is needed to have your foreground application listed in the page, simply [install](AppInstaller.md) or [deploy](AppDeployment.md) the application. After successful installation or deployment, re-navigate to the Apps page to refresh the list of applications.
@@ -162,7 +162,7 @@ Restart or shutdown the device.
 #### Diagnostics
 Select the amount of diagnostic data you wish to provide Microsoft.  We encourage users to opt into **Full** diagnostic data so we can diagnose issues quickly and make improvements to the product.
 
-##### Basic 
+##### Basic
 Send only info about your device, its settings and capabilities, and whether it is performing properly.
 
 ##### Full

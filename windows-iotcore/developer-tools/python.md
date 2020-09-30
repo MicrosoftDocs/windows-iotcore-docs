@@ -1,7 +1,7 @@
 ---
 title: Python
 author: paulmon
-ms.author: paulmon
+ms.author: riameser
 ms.date: 08/13/2019
 ms.topic: article
 description: Learn how to install Python on a device running Windows 10 IoT Core. See instructions for x64, x86, ARM32, and ARM64. See additional Python developer resources.
@@ -206,21 +206,21 @@ In the output for the `pip install` there may be errors: `Download error on http
 
 ### Set up an IoT Hub and create a Device Identity
 
-19. Install the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) (or use the [Azure Cloud Shell](https://shell.azure.com/)) and use it to [create an Azure IoT Hub](https://docs.microsoft.com/cli/azure/iot/hub?view=azure-cli-latest#az-iot-hub-create).
+19. Install the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true) (or use the [Azure Cloud Shell](https://shell.azure.com/)) and use it to [create an Azure IoT Hub](https://docs.microsoft.com/cli/azure/iot/hub?view=azure-cli-latest#az-iot-hub-create&preserve-view=true).
 
     ```powershell
     az iot hub create --resource-group <your resource group> --name <your IoT Hub name>
     ```
     * Note that this operation may take a few minutes.
 
-20. Add the IoT Extension to the Azure CLI, and then [register a device identity](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-identity?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-device-identity-create)
+20. Add the IoT Extension to the Azure CLI, and then [register a device identity](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-identity?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-device-identity-create&preserve-view=true)
 
     ```powershell
     az extension add --name azure-cli-iot-ext
     az iot hub device-identity create --hub-name <your IoT Hub name> --device-id <your device id>
     ```
 
-21. [Retrieve your Device Connection String](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-identity?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-device-identity-show-connection-string) using the Azure CLI
+21. [Retrieve your Device Connection String](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-identity?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-device-identity-show-connection-string&preserve-view=true) using the Azure CLI
 
     ```powershell
     az iot hub device-identity show-connection-string --device-id <your device id> --hub-name <your IoT Hub name>
@@ -233,7 +233,7 @@ In the output for the `pip install` there may be errors: `Download error on http
 
 ### Send a simple telemetry message
 
-22. [Begin monitoring for telemetry](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-monitor-events) on your IoT Hub using the Azure CLI
+22. [Begin monitoring for telemetry](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-monitor-events&preserve-view=true) on your IoT Hub using the Azure CLI
 
     ```powershell
     az iot hub monitor-events --hub-name <your IoT Hub name> --output table
@@ -327,4 +327,3 @@ In the output for the `pip install` there may be errors: `Download error on http
 ## Additional Python Developer Resources
 - [Python Developer's Guide](https://devguide.python.org/setup/#setup)
 - [Build CPython on Windows](https://cpython-core-tutorial.readthedocs.io/en/latest/build_cpython_windows.html)
-

@@ -1,7 +1,7 @@
 ---
 title: Setting up your device
-ms.date: 04/10/2018 
-ms.topic: article 
+ms.date: 04/10/2018
+ms.topic: article
 description: Learn about how to set up your device with Windows 10 IoT Core using an SD Card.
 keywords: Windows 10 IoT Core, SD Card, Windows 10 IoT Core Dashboard
 ms.custom: RS5
@@ -19,7 +19,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 
 ## Using the IoT Dashboard (Raspberry Pi, MinnowBoard, NXP)
 
-> [!Video https://www.youtube.com/embed/JPRUbGIyODY]M
+> [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 
 
 > [!IMPORTANT]
@@ -42,7 +42,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 
 
 ![Dashboard screenshot](../../media/DeviceSetup/Dashboard-Screenshot.jpg)
- 
+
 
 ## Using the IoT Dashboard (DragonBoard 410c)
 
@@ -58,12 +58,12 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 > When you're working with a new Dragonboard, it comes with Android installed. You will need to wipe and load the device using the eMMC flashing method.
 
 > [!NOTE]
-> If you're running into any audio-related issues with your DragonBoard, we advise that you read through Qualcomm's manual [here](https://developer.qualcomm.com/download/db410c/stereo-connector-and-audio-routing-application-note.pdf). 
+> If you're running into any audio-related issues with your DragonBoard, we advise that you read through Qualcomm's manual [here](https://developer.qualcomm.com/download/db410c/stereo-connector-and-audio-routing-application-note.pdf).
 
 1. Download the Windows 10 IoT Core Dashboard [here](https://docs.microsoft.com/windows/iot-core/downloads).
-2. Once downloaded, open the Dashboard and select "Qualcomm DragonBoard 410c". Then _sign in as a Windows Insider_. You need to be signed in as an insider in order to flash DragonBoard 410c. 
+2. Once downloaded, open the Dashboard and select "Qualcomm DragonBoard 410c". Then _sign in as a Windows Insider_. You need to be signed in as an insider in order to flash DragonBoard 410c.
 3. Connect the Qualcomm board to the developer machine using a microUSB cable.
-4. Power on your Dragonboard using a 12V (>1A) power supply while holding down the volume up (+) button. The device - when connected to a display - should show the image of a hammer, a lightning bolt, and a cog. 
+4. Power on your Dragonboard using a 12V (>1A) power supply while holding down the volume up (+) button. The device - when connected to a display - should show the image of a hammer, a lightning bolt, and a cog.
 5. The device should now be visible on the Dashboard as shown below. Select the appropriate device.
 6. Accept the software license terms and click _Download and install_. You'll see that Windows 10 IoT Core is now flashing onto your device.
 
@@ -79,7 +79,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 4. Ensure your DragonBoard is in download mode by setting the first boot switch on the board to USB Boot, as shown below. Then, connect DragonBoard the host PC via a microUSB cable, then plug in the DragonBoard to a 12V (> 1A) power supply.
 5. Start the DragonBoard Update Tool, which should detect that the DragonBoard is connected to your PC with a green circle. "Browse" to the DragonBoard's FFU that you downloaded, then click the _Program_ button.
 6. Click "Browse" again and select "rawprogram0.xml" that was generated in step 5. Then click the "Program" button.
-7. Once the download is complete, disconnect the power supply and microUSB cable from the board and toggle the USB Boot switch back to _OFF_. Connect an HDMI display, a mouse, and a keyboard to the DragonBoard and re-connect the power supply. After a few minutes, you should see the Windows 10 IoT Core default application. 
+7. Once the download is complete, disconnect the power supply and microUSB cable from the board and toggle the USB Boot switch back to _OFF_. Connect an HDMI display, a mouse, and a keyboard to the DragonBoard and re-connect the power supply. After a few minutes, you should see the Windows 10 IoT Core default application.
 
 ![DragonBoard in download mode](../../media/DeviceSetup/db1.png)
 
@@ -135,5 +135,4 @@ If you haven't connected a display and would like to connect via Wi-Fi, you'll n
 
 ## Connecting to Windows Device Portal
 
-Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available. 
-
+Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available.
