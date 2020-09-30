@@ -2,6 +2,8 @@
 title: Arduino Wiring Project Guide
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about the creation, setup, and deployment of an Arduino Wiring project using Windows IoT Core.
 keywords: windows iot, Arduino, Arduino wiring, Lightning Performance, Visual Studio
 ---

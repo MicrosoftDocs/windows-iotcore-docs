@@ -4,6 +4,8 @@ author: bfjelds
 ms.author: bfjelds
 ms.date: 10/08/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about the unit tests that are supported by IoT Core for the system on a chip (SoCs) of several hardware vendors.
 keywords: windows iot, unit test, UWP
 ---

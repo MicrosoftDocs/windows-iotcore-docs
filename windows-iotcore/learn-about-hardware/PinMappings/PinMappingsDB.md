@@ -2,6 +2,8 @@
 title: Dragonboard Pin Mappings
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about the functionality of pin mappings for Dragonboard, including GPIO, serial UART, I2C bus, and SPI bus.
 keywords: windows iot, Dragonboard, pin mappings, GPIO
 ---

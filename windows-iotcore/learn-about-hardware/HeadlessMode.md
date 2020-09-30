@@ -2,6 +2,8 @@
 title: Headed and headless devices
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to configure Windows IoT Core for either headed or headless mode for devices.
 keywords: windows iot, screens, headed, headless, UI
 ---

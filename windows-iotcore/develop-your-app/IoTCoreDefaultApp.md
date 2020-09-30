@@ -2,6 +2,8 @@
 title: Windows 10 IoT Core Default App
 ms.date: 08/08/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Read an overview about the Windows 10 IoT Core Default App. Get information about the out-of-box experience (OOBE), command bar, Start Menu, and more.
 keywords: windows iot, windows 10 iot core, default app
 ms.custom: RS5

@@ -4,6 +4,8 @@ author: parameshbabu
 ms.author: pabab
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to create Universal Drivers to enable single driver package creation across devices.
 keywords: windows iot, universal drivers, drivers, Windows 10, UWP
 ---

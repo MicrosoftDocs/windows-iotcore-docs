@@ -2,6 +2,8 @@
 title: SoCs and Custom Boards for Windows 10 IoT Core
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about the hardware features for a variety of suggested boards and community devices.
 keywords: windows iot, development devices, boards, SOC, SOM, system on chips, Raspberry Pi 2, Raspberry Pi 3, Minnowboard Max, DragonBoard
 ---

@@ -2,6 +2,8 @@
 title: IoT Shell Overview
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about how to leverage the IoT Shell to navigate between navigations on your device.
 keywords: windows iot, IoT core shell, applications, foreground applications, background applications
 ---

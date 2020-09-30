@@ -4,6 +4,8 @@ author: msalehmsft
 ms.author: msaleh
 ms.date: 09/06/2017     
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to create, deploy, and debug Arduino Wiring sketches on supported Windows IoT Core devices.
 keywords: windows iot, Arduino, Arduino Wiring, template, IoT Core, UWP
 ---

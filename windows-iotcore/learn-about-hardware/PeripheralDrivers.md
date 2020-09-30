@@ -2,6 +2,8 @@
 title: Install USB Peripheral Drivers
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to create a driver package and install third-party drivers on your devices.
 keywords: windows iot, USB drivers, peripheral devices, USB
 ---

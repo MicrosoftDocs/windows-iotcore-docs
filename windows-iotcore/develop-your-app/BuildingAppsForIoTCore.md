@@ -4,6 +4,8 @@ author: msalehmsft
 ms.author: msaleh
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about the languages and app types that are supported by IoT Core.
 keywords: windows iot, languages, app types, UWP, supported
 ---

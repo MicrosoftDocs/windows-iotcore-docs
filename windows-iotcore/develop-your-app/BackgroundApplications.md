@@ -2,6 +2,8 @@
 title: Background Applications
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to develop background applications for your IoT device. See how background applications start and are used, what languages are available, and more.
 keywords: windows iot, background applications
 ---

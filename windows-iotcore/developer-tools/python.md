@@ -4,6 +4,8 @@ author: paulmon
 ms.author: riameser
 ms.date: 08/13/2019
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to install Python on a device running Windows 10 IoT Core. See instructions for x64, x86, ARM32, and ARM64. See additional Python developer resources.
 keywords: windows iot, python
 ---
