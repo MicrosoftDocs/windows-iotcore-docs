@@ -2,6 +2,8 @@
 title: Using the Unified Write Filter
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to use the Unified Write Filter to protect physical storage media from data writes.
 keywords: windows iot, Unified Write Filter, security, memory, storage media
 ---
