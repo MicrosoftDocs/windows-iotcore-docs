@@ -2,6 +2,8 @@
 title: Overview of Windows 10 IoT Enterprise
 ms.date: 01/18/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about what Windows 10 IoT Enterprise is and what you can do with it.
 keywords: Windows 10 IoT Enterprise, Enterprise, binary, Windows
 ---
@@ -47,7 +49,7 @@ Specialized systems, such as PCs that control medical equipment, point-of-sale s
 
 ## Long-Term Support Silicon Details
 
-The Windows 10 IoT Enterprise 2019 release will be a LTSC release. See [here](https://docs.microsoft.com/windows/whats-new/ltsc) for a general description of Windows 10 LTSC and other channels available. You can find details on processor support for each edition and channel of Windows 10 [here](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements#windows-iot-enterprise--embedded-processor-table).
+The Windows 10 IoT Enterprise 2019 release will be an LTSC release. See [here](https://docs.microsoft.com/windows/whats-new/ltsc) for a general description of Windows 10 LTSC and other channels available. You can find details on processor support for each edition and channel of Windows 10 [here](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements#windows-iot-enterprise--embedded-processor-table).
 
 ## Helpful resources
 > [!NOTE]
