@@ -48,6 +48,9 @@
     href: learn-about-hardware/HardwareCompatList.md
   - name: NXP i.MX SoCs
     href: learn-about-hardware/iotnxp.md
+- name: Hardware development
+  expanded: false 
+  items: 
   - name: Pin mappings
     items:
     - name: Raspberry Pi 2 and 3
@@ -56,12 +59,17 @@
       href: learn-about-hardware/PinMappings/PinMappingsDB.md
     - name: Minnowboard Max
       href: learn-about-hardware/PinMappings/PinMappingsMBM.md
-  - name: Headed and headless devices
-    href: learn-about-hardware/HeadlessMode.md
   - name: Wake on touch
     href: learn-about-hardware/WakeOnTouch.md
   - name: UEFI requirements
     href: commercialize-your-device/uefirequirements.md
+- name: OS configuration 
+  expanded: false 
+  items: 
+  - name: IoT Shell overview
+    href: develop-your-app/IoTCoreShell.md
+  - name: Headed and headless devices
+    href: learn-about-hardware/HeadlessMode.md
 - name: Driver guidance
   expanded: false
   items:
@@ -104,8 +112,6 @@
     href: develop-your-app/SignInDialogTitleBars.md
   - name: Localhost loopback
     href: develop-your-app/Loopback.md
-  - name: IoT Shell overview
-    href: develop-your-app/IoTCoreShell.md
 - name: Debug applications
   expanded: false
   items:
