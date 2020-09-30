@@ -5,25 +5,25 @@
 {
 "source_path": "windows-iotcore/commercialize-your-device/oemlicenserequirements.md",
 "redirect_url": "https://docs.microsoft.com/windows-hardware/manufacture/iot/license-requirements",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 
 {
 "source_path": "windows-iotcore/commercialize-your-device/installingandservicing.md",
 "redirect_url": "https://docs.microsoft.com/windows-hardware/service/iot/servicing-msstore",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 
 {
 "source_path": "windows-iotcore/commercialize-your-device/iotcoreservicesoverview.md",
 "redirect_url": "https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 
 {
 "source_path": "windows-iotcore/commercialize-your-device/recovery.md",
 "redirect_url": "https://docs.microsoft.com/windows-hardware/service/iot/recovery",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 
 {
@@ -41,38 +41,38 @@
 {
 "source_path": "windows-iotcore/build-your-image/createbsps.md",
 "redirect_url": "https://docs.microsoft.com/windows-hardware/manufacture/iot/bsphardware",
-"redirect_document_id": true
+"redirect_document_id": false
 },
   
 {
 "source_path": "windows-iotcore/build-your-image/createinstallpackage.md",
 "redirect_url": "https://docs.microsoft.com/windows-hardware/manufacture/iot/create-install-package",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 
 {
 "source_path": "windows-iotcore/build-your-image/OScustomizations.md",
 "redirect_url": "https://docs.microsoft.com/windows-hardware/manufacture/iot/oscustomizations",
-"redirect_document_id": true
+"redirect_document_id": false
 },
   
 {
 "source_path": "windows-iotcore/build-your-image/addrecovery.md",
 "redirect_url": "https://docs.microsoft.com/windows-hardware/service/iot/recovery-mechanism",
-"redirect_document_id": true
+"redirect_document_id": false
 },
   
 {
 "source_path": "windows-iotcore/commercialize-your-device/gotomarket.md",
 "redirect_url": "https://docs.microsoft.com/windows-hardware/manufacture/iot/commercializationfaq",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 
 
 {
 "source_path": "windows-iotcore/commercialize-your-device/agreement-faq.md",
 "redirect_url": "https://docs.microsoft.com/windows-hardware/manufacture/iot/commercializationfaq",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 
 {

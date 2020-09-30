@@ -13,7 +13,7 @@ In order to leverage the VPN capabilities of Windows 10 IoT Core, follow the ins
 > [!NOTE]
 > Most of the instructions below must be adapted. They are specific to the VPN host that the user is connecting to. The certs used are examples.
 
-## Establishing a VPN connection 
+## Establishing a VPN connection
 
 1. Obtain the necessary certs and copy to your IoT device (e.g. to a \vpntest folder).
 
@@ -45,7 +45,7 @@ certmgr -add .\RootCA.crl -r currentuser -s my
 4. Fix hosts file
 Add an entry into c:\windows\system32\driverS\etc\hosts file (example shown below);
 
-> |    |    |    |
+> | IP Address | Domain Name | Note |
 > |----|----| ---|
 > | 10.10.10.10 | MyVPN.DomainName.org | Replace with IP address and domain name as needed |
 
@@ -53,7 +53,7 @@ Add an entry into c:\windows\system32\driverS\etc\hosts file (example shown belo
 Replace the "MyVPN.DomainName.org" in the source code. Augment further as needed.
 
 6. Deploy the code below in the "Starting and stopping a VPN Connection" section to the Windows 10 IoT device.
-Enter an arbitrary "Profile name" and press the "Connect to VPN" button. 
+Enter an arbitrary "Profile name" and press the "Connect to VPN" button.
 
 
 ## Starting and stopping a VPN connection
@@ -112,10 +112,3 @@ Use the code below to start and stop a VPN connection.
             return result;
         }
 ```
-
-
-
-
-
-
-
