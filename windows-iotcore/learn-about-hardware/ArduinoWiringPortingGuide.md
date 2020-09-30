@@ -58,7 +58,7 @@ The pre-defined pin names can be found in [pins_arduino.h](https://github.com/ms
 
 #### Minnowboard Max
 
-![Pinout Diagram](../media/ArduinoWiringPortingGuide/MBM_Pinout.png)
+![Pinout Diagram 1](../media/ArduinoWiringPortingGuide/MBM_Pinout.png)
 > [!div class="mx-tdBreakAll"]
 > | Pin Define | Corresponding Pin Number|
 > |-------------|----------|
@@ -236,7 +236,7 @@ public:
 
     void doSomething()
     {
-        //... 
+        //...
     }
 };
 
@@ -265,7 +265,7 @@ public:
 
     void doSomething()
     {
-        //... 
+        //...
     }
 };
 
@@ -284,7 +284,7 @@ void loop()
 
 ### Using `Serial.print()` and `Serial.println()`
 
-Many Arduino sketches use `Serial` to print data to the serial console (if opened) or to write to the serial lines (USB or tx/rx). 
+Many Arduino sketches use `Serial` to print data to the serial console (if opened) or to write to the serial lines (USB or tx/rx).
 In prior versions of the Lightning SDK, Hardware `Serial` support wasn't included, so we provided a `Log()` function which will print to the debugger output window in Visual Studio. `Serial.print*()` or `Serial.write()` had to be removed.
 
 However, starting with _Lightning SDK v1.1.0_, we've added `Hardware Serial` support and both `Serial.print*()` or `Serial.write()` functions are fully supported. So, if you are copying a sketch built for an Arduino, you won't need to replace any of these Serial references in the Windows IoT version of the sketch.
@@ -316,7 +316,7 @@ In the appx manifest file editor, add the `serialcommunication` DeviceCapability
   <iot:Capability Name="lowLevelDevices" />
   <DeviceCapability Name="109b86ad-f53d-4b76-aa5f-821e2ddf2141"/>
 
-  <!-- The serialcommunication capability is required to access Hardware Serial. --> 
+  <!-- The serialcommunication capability is required to access Hardware Serial. -->
   <DeviceCapability Name="serialcommunication">
     <Device Id="any">
       <Function Type="name:serialPort"/>

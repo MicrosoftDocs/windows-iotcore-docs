@@ -22,7 +22,7 @@ Arduino Wiring projects utilize the familiar, easy to use Arduino Wiring API wit
 > [!NOTE]
 > Download VS 2015 to access Arduino Wiring templates - these templates are no loner supported on VS 2017 and beyond.
 
-We've provided a Visual Studio extension which will automatically install a VS template for the Arduino Wiring projects as well as other Microsoft IoT project types. 
+We've provided a Visual Studio extension which will automatically install a VS template for the Arduino Wiring projects as well as other Microsoft IoT project types.
 
 - Head over to [Windows IoT Core Project Templates extension page](https://go.microsoft.com/fwlink/?linkid=847472) to download the extension from the Visual Studio Gallery!
 - Install the extension and restart Visual Studio if it was already open
@@ -42,7 +42,7 @@ Complete one of the "Wiring" samples on the [Samples Page](https://developer.mic
 3. From the dialogue that appears, choose:  
 Visual C++ -> Windows -> Windows IoT Core -> Arduino Wiring Application for Windows IoT Core  
 (might appear instead as)  
-Visual C++ -> Windows IoT Core -> Arduino Wiring Application for Windows IoT Core 
+Visual C++ -> Windows IoT Core -> Arduino Wiring Application for Windows IoT Core
 
 
 ![App Create](../media/ArduinoWiring/appcreate.png)
@@ -66,6 +66,6 @@ The Arduino Wiring API has been carefully implemented to make it possible to cop
 - Type the machine name (minwinpc by default) or the IP address of the remote machine into the 'machine name' field. If you have renamed your device to something besides 'minwinpc' use that name in the login box instead.
 - Ensure the Authentican Type is: Universal (Unencrypted Protocol)
 
-![Solution Properties](../media/ArduinoWiring/wiringapp_properties2.png)
+![Solution Properties 1](../media/ArduinoWiring/wiringapp_properties2.png)
 
 - Press F5 to build and deploy your project on your device.
