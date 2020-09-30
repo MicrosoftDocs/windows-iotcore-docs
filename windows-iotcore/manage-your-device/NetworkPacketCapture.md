@@ -2,6 +2,8 @@
 title: Network packet capture
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to use Microsoft Message Analyzer to enable network packet capture
 keywords: windows iot, network packet, network packet capture, Microsoft Message Analyzer, PowerShell
 ---

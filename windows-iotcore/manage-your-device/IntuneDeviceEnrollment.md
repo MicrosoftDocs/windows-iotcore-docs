@@ -4,6 +4,8 @@ author: msmimart
 ms.author: mimart
 ms.date: 05/08/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about how to manage your devices using Microsoft Intune Device Management and Windows IoT.
 keywords: windows iot, Azure IoT, Intune Device Management, device management
 ---

@@ -145,7 +145,7 @@ To make testing easier, we have a non-signed pre-built version of Limpet.exe ava
 
 ### Azure Clients configuration
 
-IoT devices can be remotely managed through cloud services. Azure provides a very rich set of services to enable such scenarios. We have created a device management client that complements Azure's Device Provisioning Service (DPS) and Azure's IoT Hub service on the Windows platform and which also exposes several Windows manageability features.
+IoT devices can be remotely managed through cloud services. Azure provides a rich set of services to enable such scenarios. We have created a device management client that complements Azure's Device Provisioning Service (DPS) and Azure's IoT Hub service on the Windows platform and which also exposes several Windows manageability features.
 
 The clients will be provided as open-source projects. To make testing them easier, we will be providing pre-built binaries. You can use the 'Azure Clients' tab in WDP to install and run those test binaries.
 

@@ -2,6 +2,8 @@
 title: Azure IoT Device Management		
 ms.date: 08/28/2017	
 ms.topic: article	
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about how to manage your devices using Azure IoT Device Management and Windows IoT.	
 keywords: windows iot, Azure IoT, Azure Device Management, device management	
 ---	

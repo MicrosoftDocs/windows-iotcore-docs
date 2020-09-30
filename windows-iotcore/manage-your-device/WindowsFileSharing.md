@@ -2,6 +2,8 @@
 title: Windows File Sharing
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about how to use Windows file sharing to transfer files to and from your device.
 keywords: windows iot, file transfer, file share, windows file sharing
 ---

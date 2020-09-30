@@ -2,6 +2,8 @@
 title: Fall Creators Update - Build 16299
 ms.date: 10/12/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about what's new in the Fall Creators Update for Windows 10 IoT.
 keywords: Windows IoT, Fall Creators Update, release notes
 ---

@@ -4,6 +4,8 @@ author: rcheeran
 ms.author: rcheeran
 ms.date: 06/25/2019
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about how to manage your devices using Azure IoT Device Agent on Windows IoT.
 keywords: windows iot, Azure IoT, Azure Device Agent, device management, remote management
 ---
