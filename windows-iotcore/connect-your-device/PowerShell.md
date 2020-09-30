@@ -4,6 +4,8 @@ author: paulmon
 ms.author: riameser
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to use PowerShell to connect to your device as well as manage your device.
 keywords: windows iot, PowerShell, Windows PowerShell, command line, command-line shell
 ---

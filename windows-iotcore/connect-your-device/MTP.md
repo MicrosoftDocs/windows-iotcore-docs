@@ -4,6 +4,8 @@ author: PawelWMS
 ms.author: pawelwi
 ms.date: 12/06/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to enable the optional Media Transfer Protocol (MTP) feature to transfer files to and from your devices through USB.
 keywords: windows iot, MTP, media transfer protocol, file transfer, devices
 ---

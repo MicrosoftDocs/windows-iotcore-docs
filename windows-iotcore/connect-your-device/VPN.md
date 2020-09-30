@@ -2,6 +2,8 @@
 title: VPN on Windows 10 IoT Core
 ms.date: 11/19/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to use, setup, and configure VPN capabilities for your Windows 10 IoT Core device.
 keywords: windows iot, VPN, setup, device
 ---

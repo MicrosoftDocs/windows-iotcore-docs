@@ -2,6 +2,8 @@
 title: Connect your app to the cloud
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Connect your app to the cloud. Prepare your device, install VS and Connected Services for Azure IoT Hub, create a UWP solution, and connect to Azure IoT Hub.
 keywords: windows iot, cloud, Azure, Azure IoT Hub
 ---

@@ -2,6 +2,8 @@
 title: Overview of Windows CE App Container
 ms.date: 08/12/2020
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Windows CE App Container Migration Technology
 keywords: Windows 10 IoT Core, Windows CE, application migration, cepal
 ---

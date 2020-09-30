@@ -2,6 +2,8 @@
 title: Windows 10 IoT Core Dashboard
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about what the Windows 10 IoT Core Dashboard does and how to get started.
 keywords: windows iot, windows 10 iot core dashboard, windows iot dashboard, devices
 ---

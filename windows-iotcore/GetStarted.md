@@ -2,6 +2,8 @@
 title: Get Started Overview 
 ms.date: 04/10/2018 
 ms.topic: article 
+ms.prod: windows-iot
+ms.technology: iot
 description: Get started with Windows 10 IoT Core. See articles about Windows 10 IoT, Windows 10 IoT pricing, device prototyping, and bringing a device to market.
 keywords: Windows 10 IoT Core, Get Started, images, 
 ---
