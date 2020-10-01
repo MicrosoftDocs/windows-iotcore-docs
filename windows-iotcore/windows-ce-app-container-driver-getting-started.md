@@ -62,7 +62,7 @@ When the CE App Container driver calls for a driver resource it can do so via a 
 "UserProcGroup"=dword:$(PROCGROUP_DRIVER_MSFT_DEFAULT)
 ```
 
-In this example, the CEPAL common stream driver will convert map a device name of "COM1" to a stream named "COM:1".  The ":1" is passed along as an argument into the corresponding example serial driver plugin hosted in `DKMON.EXE` to figure out which serial port should be opened, in this case port 1. Your actual driver could refer to any stream device and this information would then be passed to your plug-in driver that would determine how to communicate with the Windows IoT Core driver to open the appropriate resource.
+In this example, the CE App Container common stream driver will convert map a device name of "COM1" to a stream named "COM:1".  The ":1" is passed along as an argument into the corresponding example serial driver plugin hosted in `DKMON.EXE` to figure out which serial port should be opened, in this case port 1. Your actual driver could refer to any stream device and this information would then be passed to your plug-in driver that would determine how to communicate with the Windows IoT Core driver to open the appropriate resource.
 
 Your plug-in driver needs to export the `PlugInInitialize` entry point where you define the `CEPAL_DRIVER_PLUGIN` structure. This structure enables `DKMON.EXE` to find the relevant plug-in. For the serial plug-in example above `PlugInInitialize` could look like:
 
