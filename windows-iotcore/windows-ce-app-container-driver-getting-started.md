@@ -22,7 +22,7 @@ The recommended way to deploy this driver pair is to include the CE App Containe
 
 ## The CE App Container Driver Interface
 
-The CE App Container driver interface provides the capability to support driver initialization, de-initialization, open, close, io control, read and write for your custom driver. A minimal linker definition file for the `CEPAL_MYDEVICE.DLL` file in the architecture diagram above would look like:
+The CE App Container driver interface provides the capability to support driver initialization, de-initialization, open, close, io control, read and write for your custom CE stream driver. A minimal linker definition file for the `CEPAL_MYDEVICE.DLL` file in the architecture diagram above would look like:
 
 ```cpp
 LIBRARY CEPAL_MyDevice
@@ -37,18 +37,7 @@ CEPAL_MyDevice_Read        	= cepaldrv.CEPAL_DRV_Read
 CEPAL_MyDevice_Write       	= cepaldrv.CEPAL_DRV_Write
 ```
 
-Calls to these interfaces are handled by `CEPALDRV.DLL` and passed through to your plug-in driver.
-
-## The CE App Container Plug-in Driver
-
-This driver is responsible for handling the various callbacks from `DKMON.EXE` for initialization, open, close etc. It is also responsible for taking the appropriate actions by communication with the appropriate Windows IoT Core driver. This driver is executed in the context of Windows IoT Core. OEMs and developers can load these plug-in drivers by specifying them in the custom `C:\WindowsCE\Monitor\<arch>\DrawBridgeOEM.ini` file.  In this INI file, the `[Providers]` section identifies the custom plug-in stream provider:
-
-```cpp
-[Providers]
-MyDeviceStreamProvider=MyDevicePlugin.dll,PlugInInitialize
-```
-
-When the CE App Container driver calls for a driver resource it can do so via a common name. This name is defined in the drivers registry section. The code below shows what an example of a serial device stream CE App Container driver:
+Calls to these interfaces are handled by `CEPALDRV.DLL` and eventually passed through to your plug-in driver. The calls to a driver resource can be via a common name. This name is defined in the drivers registry section. The code below shows what an example of a serial device stream CE App Container driver:
 
 ```cpp
 [HKEY_LOCAL_MACHINE\Drivers\BuiltIn\Serial1]
@@ -62,7 +51,16 @@ When the CE App Container driver calls for a driver resource it can do so via a 
 "UserProcGroup"=dword:$(PROCGROUP_DRIVER_MSFT_DEFAULT)
 ```
 
-In this example, the CE App Container common stream driver will convert map a device name of "COM1" to a stream named "COM:1".  The ":1" is passed along as an argument into the corresponding example serial driver plugin hosted in `DKMON.EXE` to figure out which serial port should be opened, in this case port 1. Your actual driver could refer to any stream device and this information would then be passed to your plug-in driver that would determine how to communicate with the Windows IoT Core driver to open the appropriate resource.
+In this example, the CE App Container common stream driver will convert map a device name of "COM1" to a stream named "COM:1".  The values "COM" and "1" are both derived from the registry values set in Prefix and Index above. The ":1" is then passed along as an argument into the corresponding example serial driver plugin hosted in `DKMON.EXE` to figure out which serial port should be opened, in this case port 1. Your actual driver could refer to any stream device and this information would then be passed to your plug-in driver that would determine how to communicate with the Windows IoT Core driver to open the appropriate resource.
+
+## The CE App Container Plug-in Driver
+
+This driver is responsible for handling the various callbacks from `DKMON.EXE` for initialization, open, close etc. It is also responsible for taking the appropriate actions by communication with the appropriate Windows IoT Core driver. This driver is executed in the context of Windows IoT Core. OEMs and developers can load these plug-in drivers by specifying them in the custom `C:\WindowsCE\Monitor\<arch>\DrawBridgeOEM.ini` file.  In this INI file, the `[Providers]` section identifies the custom plug-in stream provider:
+
+```cpp
+[Providers]
+MyDeviceStreamProvider=MyDevicePlugin.dll,PlugInInitialize
+```
 
 Your plug-in driver needs to export the `PlugInInitialize` entry point where you define the `CEPAL_DRIVER_PLUGIN` structure. This structure enables `DKMON.EXE` to find the relevant plug-in. For the serial plug-in example above `PlugInInitialize` could look like:
 
