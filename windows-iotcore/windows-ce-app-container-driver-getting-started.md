@@ -3,7 +3,7 @@ title: Getting Started Building Drivers for Windows CE App Container
 ms.date: 10/1/2020
 ms.topic: article
 description: Windows CE App Container Migration Getting Started with Drivers Guide
-keywords: Windows 10 IoT Core, Windows CE, application migration, cepal
+keywords: Windows 10 IoT Core, Windows CE, application migration, CE App Container
 ---
 
 # Getting Started Building Drivers for Windows CE App Container
@@ -28,13 +28,13 @@ The CE App Container driver interface provides the capability to support driver 
 LIBRARY CEPAL_MyDevice
 
 EXPORTS
-CEPAL_MyDevice_Init        	= cepaldrv.CEPAL_DRV_Init
-CEPAL_MyDevice_Deinit      	= cepaldrv.CEPAL_DRV_Deinit
-CEPAL_MyDevice_Open        	= cepaldrv.CEPAL_DRV_Open
-CEPAL_MyDevice_Close       	= cepaldrv.CEPAL_DRV_Close
-CEPAL_MyDevice_IOControl	= cepaldrv.CEPAL_DRV_IOControl
-CEPAL_MyDevice_Read        	= cepaldrv.CEPAL_DRV_Read
-CEPAL_MyDevice_Write       	= cepaldrv.CEPAL_DRV_Write
+CEPAL_MyDevice_Init         = cepaldrv.CEPAL_DRV_Init
+CEPAL_MyDevice_Deinit       = cepaldrv.CEPAL_DRV_Deinit
+CEPAL_MyDevice_Open         = cepaldrv.CEPAL_DRV_Open
+CEPAL_MyDevice_Close        = cepaldrv.CEPAL_DRV_Close
+CEPAL_MyDevice_IOControl    = cepaldrv.CEPAL_DRV_IOControl
+CEPAL_MyDevice_Read         = cepaldrv.CEPAL_DRV_Read
+CEPAL_MyDevice_Write        = cepaldrv.CEPAL_DRV_Write
 ```
 
 Calls to these interfaces are handled by `CEPALDRV.DLL` and eventually passed through to your plug-in driver. The calls to a driver resource can be via a common name. This name is defined in the drivers registry section. The code below shows what an example of a serial device stream CE App Container driver:
@@ -86,6 +86,7 @@ The CE App Container can support multiple plug-in drivers that each define their
 ![CE App Container Multiple Drivers](.//media/WindowsCEAppContainer/image4.png)
 
 ## References
+
 - [Getting Started with CE App Container](https://docs.microsoft.com/windows/iot-core/windows-ce-app-container-getting-started)
 - [Get the tools needed to customize Windows 10 IoT Core](https://docs.microsoft.com/windows-hardware/manufacture/iot/set-up-your-pc-to-customize-iot-core)
 - [IoT Core Board Supported Packages (BSP)](https://docs.microsoft.com/windows-hardware/manufacture/iot/bsphardware)
