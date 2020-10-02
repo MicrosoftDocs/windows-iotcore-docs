@@ -5,7 +5,7 @@ ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
 description: Learn about the different ways that you can debug Windows 10 IoT Core.
-keywords: windows iot, debugging, PowerShell, SSH
+keywords: windows iot, debugging, Debug, PowerShell, SSH
 ---
 
 # Debugging on Windows IoT Core

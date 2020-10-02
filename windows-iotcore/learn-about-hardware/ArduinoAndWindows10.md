@@ -2,6 +2,8 @@
 title: Arduino and Windows 10
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about how to use Arduino and Windows 10 together in Wiring, Remote Arduino, and more.
 keywords: windows iot, Arduino, Arduino wiring, Windows Remote Arduino
 ---

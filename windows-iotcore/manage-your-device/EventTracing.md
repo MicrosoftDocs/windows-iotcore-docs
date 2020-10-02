@@ -2,6 +2,8 @@
 title: Event Tracing for Windows IoT Core
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to use Event Tracing to write events and consume events for Windows IoT Core.
 keywords: windows iot, event tracing, ETW, event tracing for windows, devices
 ---

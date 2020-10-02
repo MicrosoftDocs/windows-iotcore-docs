@@ -2,6 +2,8 @@
 title: Secure Shell (SSH)
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to use secure shell to remotely administer and configure your IoT Core device.
 keywords: windows iot, secure shell, remote, SSH client, PuTTY, SSH
 ---

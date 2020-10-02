@@ -2,6 +2,8 @@
 title: Connect your device to the cloud
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to connect your device to the cloud. Use a Trusted Platform Module (TPM) microcontroller device to store data and perform computations.
 keywords: windows iot, Azure, security, Trusted Platform Module, SoC
 ---

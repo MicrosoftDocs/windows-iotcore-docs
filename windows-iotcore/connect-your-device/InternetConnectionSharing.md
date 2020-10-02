@@ -2,6 +2,8 @@
 title: Internet Connection Sharing
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to enable and configure internet connection sharing on Windows IoT Core.
 keywords: windows iot, Internet Connection Sharing, ICS, Device Portal
 ---

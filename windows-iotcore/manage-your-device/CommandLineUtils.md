@@ -4,6 +4,8 @@ author: bfjelds
 ms.author: bfjelds
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn the command line utilities to use with PowerShell after connecting to your device.
 keywords: windows iot, command line, command line utilities, PowerShell
 ---

@@ -2,6 +2,8 @@
 title: Setting up Qualcomm devices
 ms.date: 05/22/2019 
 ms.topic: article 
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about how to set up your Qualcomm device with Windows 10 IoT Core.
 keywords: Windows 10 IoT Core, Qualcomm
 ms.custom: RS5

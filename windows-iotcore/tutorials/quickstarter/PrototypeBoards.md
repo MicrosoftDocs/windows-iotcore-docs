@@ -2,6 +2,8 @@
 title: Suggested Prototype Boards
 ms.date: 04/17/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: See suggested prototype boards for Windows 10 IoT Core. See links that describe Full Flash Update (FFU) images, how to set up, and how to get started.
 keywords: windows iot, development devices, boards, Raspberry Pi 2, Raspberry Pi 3, Minnowboard Max, Dragonboard
 ---

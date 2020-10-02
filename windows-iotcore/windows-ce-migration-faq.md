@@ -2,6 +2,8 @@
 title: Frequently Asked Questions - CE Migration
 ms.date: 09/25/2020
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: FAQ for Windows CE App Container Migration Technology
 keywords: Windows 10 IoT Core, Windows CE, application migration, cepal, Windows CE Migration FAQ
 ---

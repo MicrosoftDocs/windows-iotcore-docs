@@ -2,6 +2,8 @@
 title: Setting up your device
 ms.date: 04/10/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about how to set up your device with Windows 10 IoT Core using an SD Card.
 keywords: Windows 10 IoT Core, SD Card, Windows 10 IoT Core Dashboard
 ms.custom: RS5

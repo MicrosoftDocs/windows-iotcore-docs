@@ -2,6 +2,8 @@
 title: Capturing Fiddler Traces
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to use Fiddler to capture Fiddler traces on Windows IoT Core.
 keywords: windows iot, Fiddler, traces, PuTTY, Fiddler traces
 ---

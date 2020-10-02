@@ -2,6 +2,8 @@
 title: Overview of IoT on the Cloud
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about messaging, security, and device management with the cloud using Azure IoT.
 keywords: windows iot, cloud, Azure, Azure IoT Hub, messaging, UWP, Universal Windows Platform
 ---

@@ -2,6 +2,8 @@
 title: October 2018 Update - Build 17763
 ms.date: 10/02/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Read the release notes for the October 2018 Update for Windows 10 IoT. See what's new, read about improvements in assigned access, and more.
 keywords: Windows IoT, October 2018 Update, release notes
 ---

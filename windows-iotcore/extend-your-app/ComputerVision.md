@@ -2,6 +2,8 @@
 title: Computer Vision
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to use Microosft Cognitive Services and OpenCV for your IoT device.
 keywords: windows iot, computer vision, Cognitive Services, OpenCV
 ---
@@ -71,7 +73,7 @@ Want to run OpenCV on your IoT Core device? Visit our [tutorial](https://develop
 
 ## Comparing OpenCV and Cognitive Services
 
-> |        |Microsoft Cognitive Services|OpenCV|
+> |Features|Microsoft Cognitive Services|OpenCV|
 > |---------------------|--------|------|
 > |Easy to use on Windows|Yes|No |
 > |Architecture support|ARM, x86, x64 | ARM, x86, x64|
@@ -90,5 +92,3 @@ Want to run OpenCV on your IoT Core device? Visit our [tutorial](https://develop
 > |Startup time| Users can use code samples along with intuitive APIs directly from the documentation | OpenCV's power and flexibility means it also requires plenty of configuration and code to perform complex operations|
 > |Links| [Sample program](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/CognitiveServicesExample) | [Sample program](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/OpenCVExample) |
 > |    |   [Cognitive Services Website](https://azure.microsoft.com/services/cognitive-services/) |  [OpenCV Website](http://opencv.org/)
-
-

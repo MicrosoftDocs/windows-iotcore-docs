@@ -4,6 +4,8 @@ author: lilyhou
 ms.author: lihou
 ms.date: 11/10/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to configure Windows to allow embedded mode, enabling background applications and other capabilities.
 keywords: windows iot, embedded mode, background applications
 ---

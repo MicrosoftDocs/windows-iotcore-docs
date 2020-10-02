@@ -2,6 +2,8 @@
 title: Overview of Windows Server IoT 2019
 ms.date: 02/07/2019
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about what Windows Server IoT 2019 is and what you can do with it.
 keywords: Windows Server IoT 2019, enterprise manageability, Windows ecosystem, IoT
 ---

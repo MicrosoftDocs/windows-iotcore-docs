@@ -2,6 +2,8 @@
 title: Trusted Platform Module (TPM)
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to use a Trusted Platform Module to enable cryptographic capabilities to better secure devices.
 keywords: windows iot, security, Trusted Platform Module, TPM, cryptography, keys
 ---

@@ -2,6 +2,8 @@
 title: Remote display
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to view and control your Windows 10 IoT Core UWP applications remotely.
 keywords: windows iot, UWP, remote display, remote, UWP applications
 ---

@@ -4,6 +4,8 @@ author: bfjelds
 ms.author: bfjelds
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to deploy an app using the Visual Studio remote debugging feature.
 keywords: windows iot, visual studio, app deployment, remote debugging
 ---

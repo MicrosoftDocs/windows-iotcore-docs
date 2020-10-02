@@ -40,7 +40,7 @@
         "windows-iot"
       ],
       "ms.prod": "windows-iot",
-      "ms.technology": "IoT",
+      "ms.technology": "iot",
       "ms.author": "twarwick",
       "author": "TerryWarwick",
       "titleSuffix": "Windows IoT"
