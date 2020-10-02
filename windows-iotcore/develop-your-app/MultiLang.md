@@ -4,6 +4,8 @@ author: msalehmsft
 ms.author: msaleh
 ms.date: 09/12/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about multiple language support in UWP applications and OS on IoT Core.
 keywords: windows iot, languages, app types, UWP, OS
 ---

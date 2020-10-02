@@ -4,6 +4,8 @@ author: msalehmsft
 ms.author: msaleh
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn more about how you can use the Microsoft Lightning Providers library. 
 keywords: windows iot, lightning providers, lightning performance testing, buses
 ---

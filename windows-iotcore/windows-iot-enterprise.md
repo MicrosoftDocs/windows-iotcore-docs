@@ -2,6 +2,8 @@
 title: Overview of Windows 10 IoT Enterprise
 ms.date: 01/18/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about what Windows 10 IoT Enterprise is and what you can do with it.
 keywords: Windows 10 IoT Enterprise, Enterprise, binary, Windows
 ---
@@ -14,24 +16,24 @@ keywords: Windows 10 IoT Enterprise, Enterprise, binary, Windows
 ## What is Windows 10 IoT Enterprise?
 Windows 10 IoT Enterprise is a full version of Windows 10 that delivers enterprise manageability and security to IoT solutions. Windows 10 IoT Enterprise shares all the benefits of the world-wide Windows ecosystem. It is a binary equivalent to Windows 10 Enterprise, so you can use the same familiar development and management tools as client PCs and laptops.  However, when it comes to licensing and distribution, the desktop version and IoT versions differ. Note that Windows 10 IoT Enterprise offers both Long-term Servicing Channel (LTSC) and Semi-Annual Channel (SAC) options. OEMs can choose the version they require for their devices.
 
-## Getting started 
+## Getting started
 
 In order to start your journey in manufacturing with Windows 10 IoT Enterprise, you'll need to reach out to a distributor from [this list](https://go.microsoft.com/fwlink/?linkid=2094697).
 
-You can also try an evaluation copy of Windows 10 IoT Enterprise [here](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise).
+You can also try an evaluation copy of Windows 10 IoT Enterprise [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
 
-From there, you can learn how to manufacture with Windows 10 IoT Enterprise with our [the Windows 10 IoT Enterprise Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/desktop/iot-ent-overview). 
+From there, you can learn how to manufacture with Windows 10 IoT Enterprise with our [the Windows 10 IoT Enterprise Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/desktop/iot-ent-overview).
 
-## Fixed purpose devices 
+## Fixed purpose devices
 
 > [!TIP]
-> See your licensing agreement for complete guidance on all Windows 10 IoT Enterprise usage scenarios. If you do not have this licensing agreement, ask the OEM you work with for the commercial agreement. 
+> See your licensing agreement for complete guidance on all Windows 10 IoT Enterprise usage scenarios. If you do not have this licensing agreement, ask the OEM you work with for the commercial agreement.
 
 Windows is well known as the operating systems on laptop and desktops used by consumers and businesses world-wide.  What is less well known is that for years, Windows has also powered many ATM machines, point-of-sale terminals, industrial automation systems, thin clients, medical Devices, digital signage, kiosks, and other fixed purpose devices.  Windows 10 IoT Enterprise allows you to build fixed purpose devices with specific allowances and restrictions in the license agreement.  
 
 A fixed purpose device differs from a general purpose device in the following ways:  
 * The device is locked down to a single application or fixed set of applications through the Assigned Access or Shell Launcher features.  
-* The device experience is immediate when the customer powers-on. This is achieved by configuring the device image to skip the normal Windows out-of-box experiences. 
+* The device experience is immediate when the customer powers-on. This is achieved by configuring the device image to skip the normal Windows out-of-box experiences.
 * Keyboards, USB ports, and device policies are locked down to constrain the device to be used only in its fixed purpose.  
 * The OEM licenses the device to the user with the software attached to the device as a complete product and passes through specific Windows terms in their own agreements.
 * The OEM provides the customer support for their complete product, including the functions performed by the operating system.
@@ -47,7 +49,7 @@ Specialized systems, such as PCs that control medical equipment, point-of-sale s
 
 ## Long-Term Support Silicon Details
 
-The Windows 10 IoT Enterprise 2019 release will be a LTSC release. See [here](https://docs.microsoft.com/windows/whats-new/ltsc) for a general description of Windows 10 LTSC and other channels available. You can find details on processor support for each edition and channel of Windows 10 [here](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements#windows-iot-enterprise--embedded-processor-table).
+The Windows 10 IoT Enterprise 2019 release will be an LTSC release. See [here](https://docs.microsoft.com/windows/whats-new/ltsc) for a general description of Windows 10 LTSC and other channels available. You can find details on processor support for each edition and channel of Windows 10 [here](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements#windows-iot-enterprise--embedded-processor-table).
 
 ## Helpful resources
 > [!NOTE]
@@ -57,7 +59,7 @@ The Windows 10 IoT Enterprise 2019 release will be a LTSC release. See [here](ht
 * [Unified Write Filter for Windows 10](https://docs.microsoft.com/windows-hardware/customize/enterprise/unified-write-filter)
 * [Assigned Access for Enterprise & Pro](https://docs.microsoft.com/windows-hardware/customize/enterprise/assigned-access)
 * [Shell Launcher for Enterprise and Education editions](https://docs.microsoft.com/windows-hardware/customize/enterprise/shell-launcher)
-* [Lockdown resources](https://docs.microsoft.com/windows-hardware/customize/enterprise/create-a-kiosk-image) 
+* [Lockdown resources](https://docs.microsoft.com/windows-hardware/customize/enterprise/create-a-kiosk-image)
 * [Enabling Embedded Mode and using Background Tasks on Windows IoT Enterprise](https://docs.microsoft.com/windows/iot-core/develop-your-app/embeddedmode)
 * [Configure Windows telemetry in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-telemetry-in-your-organization )
 * [Configure kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc)

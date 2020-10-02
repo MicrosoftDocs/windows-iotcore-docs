@@ -4,6 +4,8 @@ author: chsha
 ms.author: chsha 
 ms.date: 02/22/2019 
 ms.topic: article 
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about Windows 10 IoT Core and the NXP i.MX family of systems on chips (SoCs). Board support packages (BSPs) for i.MX 6, i.MX 7, and i.MX 8M are available.
 keywords: Windows 10 IoT Core, Get Started, i.MX, NXP
 ---

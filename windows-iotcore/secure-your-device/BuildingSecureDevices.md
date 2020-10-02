@@ -4,6 +4,8 @@ author: TorstenStein
 ms.author: torstens
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to build more secure devices by enabling secure boot, implementing TPMs, and more.
 keywords: windows iot, security, firmware, secure boot, TPM, Bitlocker, encryption
 ---

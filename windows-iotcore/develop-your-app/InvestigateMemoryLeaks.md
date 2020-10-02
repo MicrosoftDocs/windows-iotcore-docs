@@ -1,9 +1,11 @@
 ---
 title: Investigating memory leaks
 author: paulmon
-ms.author: paulmon
+ms.author: riameser
 ms.date: 09/20/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to investigate memory leaks on Windows IoT Code with Visual Studio using the integrated Diagnostic Tools.
 keywords: windows iot, Visual Studio, leaks, troubleshooting
 ---
@@ -23,7 +25,7 @@ However, these tools don't work directly with a Windows IoT Core **Background Ap
 3. Change the **Background App** Run() method to check if the taskInstance parameter is null and handle those cases differently.
 4. From the **BlankApp** call BackgroundApp::Run(null)
 5. Set a breakpoint on the call to BackgroundApp::Run
-6. When the breakpoint is hit find the **Diagnostic Tools** windows and click the ![Snapshot](../media/MemoryLeaks/Snapshot.PNG) button.
+6. When the breakpoint is hit find the **Diagnostic Tools** windows and click the ![Snapshot icon](../media/MemoryLeaks/Snapshot.PNG) button.
 
 8. Reproduce the problem
 9. Take another snapshot
@@ -100,23 +102,23 @@ At this point if you run the background application on your IoT device it should
 
 To work around this we are going to add a foreground app to the solution. In the **Solution Explorer** right-click on the solution folder and then select **Add.New Project**.
 
-![Add New Project](../media/MemoryLeaks/AddNewProject.png)
+![Add New Project Picture 1](../media/MemoryLeaks/AddNewProject.png)
 
 Choose **Visual C#>Windows Universal>Blank App** as the project type, name your project and click **OK**.
 
-![Add New Project](../media/MemoryLeaks/NewForegroundApp.PNG)
+![Add New Project Picture 2](../media/MemoryLeaks/NewForegroundApp.PNG)
 
 Right-click on the new foreground app project's **References** node and select **Add Reference...**
 
-![Add New Project](../media/MemoryLeaks/AddReference.PNG)
+![Add New Project Picture 3](../media/MemoryLeaks/AddReference.PNG)
 
 In the Reference Manager dialog, choose **Projects** in the left-hand pane.  In the center pane, add a check in the checkbox next to your background application project and click **OK**.
 
-![Add New Project](../media/MemoryLeaks/AddReferenceDialog.PNG)
+![Add New Project Picture 4](../media/MemoryLeaks/AddReferenceDialog.PNG)
 
 Next right-click the foreground app project and click **Set as StartUp Project**.
 
-![Add New Project](../media/MemoryLeaks/SetAsStartup.PNG)
+![Add New Project Picture  5](../media/MemoryLeaks/SetAsStartup.PNG)
 
 Add code to create an instance of your background application object and call Run passing in null as the only parameter.
 ```C#
@@ -147,7 +149,7 @@ public void Run(IBackgroundTaskInstance taskInstance)
 3. Press F5 to begin debugging
 4. When you hit the first breakpoint, press the snapshot button to set the baseline to compare against
 
-![Snapshot](../media/MemoryLeaks/Snapshot.PNG)
+![Snapshot Icon 1](../media/MemoryLeaks/Snapshot.PNG)
 
 5. Press F5
 6. When you hit the second breakpoint press the snapshot button again to capture the current state.
@@ -162,4 +164,4 @@ Look at row 2 in the Heap Size column. Click the second number with the plus sig
 
 Sort by size diff so that the largest number is at the top, then click the top row. Above the second detail table, click **Referenced Types**.  The second table should now show **List\<Byte[]\>** as the source of all the memory usage.
 
-![Snapshot table](../media/MemoryLeaks/Snapshot2_2.PNG)
+![Snapshot table 1](../media/MemoryLeaks/Snapshot2_2.PNG)

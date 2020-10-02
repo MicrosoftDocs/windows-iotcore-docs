@@ -4,6 +4,8 @@ author: bfjelds
 ms.author: bfjelds
 ms.date: 10/08/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about the unit tests that are supported by IoT Core for the system on a chip (SoCs) of several hardware vendors.
 keywords: windows iot, unit test, UWP
 ---
@@ -51,15 +53,14 @@ ___
 1. For test deployment to work, your project must be configured in the same way UWP apps are configured (specifically using Universal Authentication and Remote Machine).  See [Deploy an App with Visual Studio](../develop-your-app/appdeployment.md) for specifics.
 
 1. To remotely run a unit test, you can use the Test Explorer and right-click the desired TestMethod and selecting Run/Debug Selected Tests
- ![Test Explorer](../media/UnitTests/test-explorer.png)
+ ![Test Explorer 1](../media/UnitTests/test-explorer.png)
 
 1. To remotely run or debug all unit tests, you can use Test > Run or Test > Debug
- ![Test Explorer](../media/UnitTests/run-tests.png)
- ![Test Explorer](../media/UnitTests/debug-tests.png)
-   
+ ![Test Explorer 2](../media/UnitTests/run-tests.png)
+ ![Test Explorer 3](../media/UnitTests/debug-tests.png)
+
 
 ### Configure unit tests as part of a Continuous Integration build
 ___
 
 The Visual Studio team has created a great blog post showing how to incorporate Windows 10 IoT Core unit tests into a VSTS build: [DevOps for IoT with Win10 IoT Core, UWP, and VSTS](https://blogs.msdn.microsoft.com/devops/2018/03/07/devops-for-iot-with-win10-iot-core-uwp-and-vsts/)
-

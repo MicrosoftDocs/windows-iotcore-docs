@@ -2,6 +2,8 @@
 title: Getting Started with Windows CE App Container
 ms.date: 08/25/2020
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Windows CE App Container Migration Getting Started Guide
 keywords: Windows 10 IoT Core, Windows CE, application migration, cepal
 ---
@@ -189,7 +191,7 @@ The packaging process detailed above is driven by the same inputs that go into b
 
 3. `ROMIMAGE` will create multiple WM.XML files for each memory section. This is done so that updates can be pushed in a more granular fashion as the minimum unit of update is a package.
 
-4. `ROMIMAGE` will create `CEPALFM.xml` which references all the created packages.
+4. `ROMIMAGE` will create  that references all the created packages.
 
 All of the packages created will be named with a fixed prefix of `“%OEM\_NAME%.WindowsCE.\*”`, where `%OEM\_NAME%` is populated during the IoT Core creation process when calling [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md). The Package Name within the name space is derived from the memory section in the BIB file (e.g. NK) followed by modules / files (also determined by the BIB file).
 

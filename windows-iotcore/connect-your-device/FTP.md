@@ -2,6 +2,8 @@
 title: File Transfer Protocol
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to use File Transfer Protocol (FTP) to transfer files to and from your devices.
 keywords: windows iot, FTP, file transfer protocol, file transfer, devices
 ---

@@ -4,6 +4,8 @@ author: msalehmsft
 ms.author: msaleh
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about the different providers available through Windows 10 IoT Core.
 keywords: windows iot, providers, bus providers, UWP, Gpio, Spi
 ---

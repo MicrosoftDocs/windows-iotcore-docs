@@ -1,8 +1,10 @@
 ---
-Description: 'Troubleshoot different development-related issues in Windows 10 IoT Core, such as problems with specific hardware devices.'
+description: 'Troubleshoot different development-related issues in Windows 10 IoT Core, such as problems with specific hardware devices.'
 title: 'Troubleshooting'
 ms.date: 08/28/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 ---
 
 # Troubleshooting
@@ -34,7 +36,7 @@ To set a profile for roaming, please refer to [this article](https://docs.micros
        <xs:enumeration value="AllRoaming"/>
     </xs:restriction>
   </xs:simpleType>
-  
+
   <xs:simpleType name="roamControlType">
     <xs:restriction base="xs:token">
        <xs:enumeration value="AllRoamAllowed"/>
@@ -42,7 +44,7 @@ To set a profile for roaming, please refer to [this article](https://docs.micros
        <xs:enumeration value="NoRoamAllowed"/>
     </xs:restriction>
   </xs:simpleType>
-``` 
+```
 
 To set a profile for automatic connection, select "auto":
 
@@ -77,7 +79,7 @@ You may get error **0x139f (ERROR_INVALID_STATE)** in the case when the device i
 ## Raspberry Pi 3B+ booting issues
 
 > [!NOTE]
-> This release for the Raspberry Pi 3B+ is an unsupported technical preview. Limited validation and enablement has been completed. For a better evaluation experience and for any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm, or NXP SoCs. For troubleshooting issues with the Raspberry Pi 3B+, please see our Troubleshooting Guide, [here](https://docs.microsoft.com/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues). 
+> This release for the Raspberry Pi 3B+ is an unsupported technical preview. Limited validation and enablement has been completed. For a better evaluation experience and for any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm, or NXP SoCs. For troubleshooting issues with the Raspberry Pi 3B+, please see our Troubleshooting Guide, [here](https://docs.microsoft.com/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues).
 
 The Raspberry Pi 3 Model B+ is the latest product in the Raspberry Pi 3 range, boasting a 64-bit quad core processor running at 1.4GHz, dual-band 2.4GHz and 5GHz wireless LAN, Bluetooth 4.2/BLE, faster Ethernet, and PoE capability via a separate PoE HA.
 
@@ -96,17 +98,17 @@ There are only two requirements when choosing which SD cards to use with Windows
 
 Generally, you need to check if the SD card is fake or if it is damaged or corrupt. The SD card is equally prone to corruption due to a variety of factors such as power shortage or improper removal. It is important to safeguard your memory card from damage.
 
-To flash your image to an SD card, you can use the [Windows 10 IoT Core Dashboard](https://docs.microsoft.com/windows/iot-core/connect-your-device/iotdashboard). You will need to choose "Custom" in the OS Build field, then select the FFU file to flash. 
+To flash your image to an SD card, you can use the [Windows 10 IoT Core Dashboard](https://docs.microsoft.com/windows/iot-core/connect-your-device/iotdashboard). You will need to choose "Custom" in the OS Build field, then select the FFU file to flash.
 
 Check to see if there are any hardware failure in the device. There are two LEDs on the Raspberry Pi 3B+ board, same as the 3B. One is for PWR, while the other is for ACT. The number of blinks the ACT light makes will determine whether or not your board is booting. The SD card activity LED will not flash during some portions of booting on the Raspberry Pi 3B+.
 
 When the device is booting and the device shows the waiting page, please wait patiently. Generally, this will last up to a minute. But sometimes, due to the SD card read-write speed, it may take longer.
 
-If the device can't boot normally with Windows 10 IoT Core, you can try to flash a Linux OS (such as Raspbian) to the SD card to narrow down whether the issue is caused by hardware. 
+If the device can't boot normally with Windows 10 IoT Core, you can try to flash a Linux OS (such as Raspbian) to the SD card to narrow down whether the issue is caused by hardware.
 
-If you find that you're getting a "rainbow screen", please check to make sure that you flashed the 3B+ release version, available [here](https://www.microsoft.com/en-us/software-download/windowsiot). You can verify your process with a community-submitted 3B+ flashing tutorial [here](https://www.hackster.io/JiongShi/windows-10-iot-core-for-raspberry-pi-3-model-b-92b1a3).
+If you find that you're getting a "rainbow screen", please check to make sure that you flashed the 3B+ release version, available [here](https://www.microsoft.com/software-download/windowsiot). You can verify your process with a community-submitted 3B+ flashing tutorial [here](https://www.hackster.io/JiongShi/windows-10-iot-core-for-raspberry-pi-3-model-b-92b1a3).
 
-## Serial Port communication on Windows 10 IoT Core for Raspberry Pi 
+## Serial Port communication on Windows 10 IoT Core for Raspberry Pi
 
 On the Raspberry Pi, hardware UART and USB UART adapters both are usable for your application with serial communication. By default, the UART transmit and receive pins are pins 8 and 10 on the GPIO header.
 
@@ -122,7 +124,7 @@ If you encounter that the device cannot read/write data through the serial port,
 
 ![TX to RX on Raspberry Pi](media/Troubleshooting/txrx.png)
 
-2. Make sure the BaudRate, Handshaking and StopBits are configured correctly. If the serial port to be tested has a complete RS232 interface (e.g. DB9), use a DB plug with the RxTx crossover wires connected with the typical handshaking crossovers. Some RS232 ports (or USB adapters) require signals such as Carrier Detect (DCD) and DCE Ready (DSR) to be asserted before they function properly.
+2. Make sure the BaudRate, Handshaking, and StopBits are configured correctly. If the serial port to be tested has a complete RS232 interface (e.g. DB9), use a DB plug with the RxTx crossover wires connected with the typical handshaking crossovers. Some RS232 ports (or USB adapters) require signals such as Carrier Detect (DCD) and DCE Ready (DSR) to be asserted before they function properly.
 
 3. If you want to use USB UART adapters on Windows 10 IoT Core, the following are supported:
 
@@ -140,10 +142,10 @@ USB\VID_10C4&PID_EA60\0001
     Controlling service:
         silabser
 ```
-[Mincomm](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/BusTools/MinComm) is another helpful tool to troubleshoot serial port issues. This tool can enumerate ports, give you their friendly name and Device ID, open ports, configure settings (i.e. baud rate, stop bits, etc.) and send and receive data. 
+[Mincomm](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/BusTools/MinComm) is another helpful tool to troubleshoot serial port issues. This tool can enumerate ports, give you their friendly name and Device ID, open ports, configure settings (i.e. baud rate, stop bits, etc.) and send and receive data.
 
 ## Sirep Test service
-Even though the Sirep Test service is not enabled by default in retail images, in case you still want to disable the Sirep service on startup, you can login and disable Sirep from autostart. 
+Even though the Sirep Test service is not enabled by default in retail images, in case you still want to disable the Sirep service on startup, you can login and disable Sirep from autostart.
 
 You can use the following PowerShell commands to do so, as shown below:
 
@@ -175,7 +177,7 @@ administrator@MINWINPC C:\Data\Users\administrator>sc config TestSirepSvc start=
 
 ## Tablet mode
 
-"Tablet Mode" is a concept that only exist on Desktop shell and doesn’t apply to IoT Core. 
+"Tablet Mode" is a concept that only exists on Desktop shell and doesn’t apply to IoT Core.
 
 If the device has supported hardware (either through I2C or USB HID touch), touch should function automatically using the inbox class drivers. You can read more about this [here](https://docs.microsoft.com/windows-hardware/design/component-guidelines/touchscreen-device-bus-connectivity).
 

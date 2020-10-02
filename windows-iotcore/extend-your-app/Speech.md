@@ -2,6 +2,8 @@
 title: Speech resources and samples
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn more about how to build a complete speech interface with IoT Core.
 keywords: windows iot, speech, speech recongnition, TTS, dictation
 ---

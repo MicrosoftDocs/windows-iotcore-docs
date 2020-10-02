@@ -4,6 +4,8 @@ author: bfjelds
 ms.author: bfjelds
 ms.date: 09/12/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to remotely debug your IoT Core console application remotely in Visual Studio.
 keywords: windows iot, visual studio, app deployment, remote debugging
 ---
@@ -12,22 +14,22 @@ keywords: windows iot, visual studio, app deployment, remote debugging
 
 Here's how to debug your IoT Core console application remotely in Visual Studio:
 
-* You will first need to set up the Remote Debugger on your Windows IoT Core device. First follow the steps [here](AppDeployment.md) to deploy any other Universal Windows Application on your device (try the HelloWorld project). This will copy all the required binaries to your device. 
+* You will first need to set up the Remote Debugger on your Windows IoT Core device. First follow the steps [here](AppDeployment.md) to deploy any other Universal Windows Application on your device (try the HelloWorld project). This will copy all the required binaries to your device.
 
 * To start the remote debugger on your device, open a Web Browser on your PC and point it to `http://<device name/IP address>:8080` to launch [Windows Device Portal](../manage-your-device/DevicePortal.md). In the credentials dialog, use the default username and password: `Administrator`, `p@ssw0rd`. Windows Device Management should launch and display the web management home screen.
 
-* Now navigate to the Debug settings section of Windows Device Portal and click the Start button under Start Visual Studio Remote Debugger. 
+* Now navigate to the Debug settings section of Windows Device Portal and click the Start button under Start Visual Studio Remote Debugger.
 
     ![WindowsDevicePortalDebugSettings Start remote debugger](../media/Console/device_portal_start_debugger.png)
 
-* This will show pop-up a message box and give you the connection information. 
+* This will show pop-up a message box and give you the connection information.
 
 *  In Visual Studio, you can configure your target by editing your project's properties (be sure to make all of the highlighted changes as appropriate to your board's name or IP address):
 
     ![ConsoleApplication Remote Machine Project Settings](../media/Console/console_project_settings.png)
-    
+
 > [!NOTE]
-> If you're not seeing the image above, please go to the "Solution Explorer" in the context menu, and go to "Project Properties". You can find more information for project properties [here](https://docs.microsoft.com/visualstudio/ide/managing-project-and-solution-properties?view=vs-2017).
+> If you're not seeing the image above, please go to the "Solution Explorer" in the context menu, and go to "Project Properties". You can find more information for project properties [here](https://docs.microsoft.com/visualstudio/ide/managing-project-and-solution-properties?view=vs-2017&preserve-view=true.
 
 > [!TIP]
 > You can use the IP address instead of the Windows IoT Core device name.
@@ -38,7 +40,7 @@ Here's how to debug your IoT Core console application remotely in Visual Studio:
 
     From the Configuration Manager, ensure that the Deploy checkbox is selected for your project configuration (if this option is disabled, it is likely that the deployment options have not been fully entered into the Debugging tab of the project properties)
 
-    ![ConsoleApplication Remote Machine Project Settings](../media/Console/deploy_checkbox.png)
+    ![ConsoleApplication Remote Machine Project Settings 1](../media/Console/deploy_checkbox.png)
 
 * Now we're ready to deploy to the remote Windows IoT Core device. Simply press F5 (or select Debug \| Start Debugging) to start debugging our app. You can also use Build \| Deploy Solution to simply deploy your application without starting a debug session.
 
@@ -54,4 +56,3 @@ Here's how to debug your IoT Core console application remotely in Visual Studio:
 * Once you are done debugging your application, remember to stop the remote debugger on the Windows IoT Core device. You can do this by navigating to Debug settings section of Windows Device Portal and clicking on the Stop Remote Debugger button.
 
     ![WindowsDevicePortalDebugSettings Stop remote debugger](../media/Console/device_portal_stop_debugger.PNG)
-

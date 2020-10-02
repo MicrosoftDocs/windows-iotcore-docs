@@ -4,6 +4,8 @@ author: johntasler
 ms.author: jtasler
 ms.date: 09/12/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to specify which on-screen keyboard language layouts are available to the users of your Windows IoT device.
 keywords: windows 10 IoT Core, commercialize, osk onscreen keyboard language layouts
 ---

@@ -2,6 +2,8 @@
 title: Using WiFi on your Windows 10 IoT Core device
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to use, setup, and configure wifi on your Windows 10 IoT Core device.
 keywords: windows iot, wifi, setup, devices
 ---
@@ -22,7 +24,7 @@ To use WiFi, you'll need to provide Windows 10 IoT core with the WiFi network cr
 
 ## Custom Companion App & WPS Wi-Fi Onboarding Samples
 
-Currently, we offer a number of ways for developers to build a custom wifi onboarding solution for their device. 
+Currently, we offer a number of ways for developers to build a custom wifi onboarding solution for their device.
 
 > | Samples | Description | Benefits  |  Drawbacks  |
 > |-------------|----------|---------|---------|
@@ -91,11 +93,11 @@ Setting up WiFi using wireless profiles is supported in Windows 10 IoT Core. See
     ![SMB with File Explorer](../media/SetupWifi/smb1.png)
 
     If you are prompted for a user name and password, use the following credentials:
-
+```
         User Name: <TARGET_DEVICE>\Administrator
         Password:  p@ssw0rd
-
-    ![SMB with File Explorer](../media/SetupWifi/cred1.png)
+```
+![SMB with File Explorer 1](../media/SetupWifi/cred1.png)
 
 > [!NOTE]
 > It is **highly recommended** that you update the default password for the Administrator account.  Please follow the instructions found [here](../connect-your-device/PowerShell.md).
@@ -125,22 +127,23 @@ Setting up WiFi using wireless profiles is supported in Windows 10 IoT Core. See
 
 If you need to connect to a WPA2-PSK Personal WiFi network, follow the instructions above first, but make the following changes to the XML file. The only difference is that when your Windows PC exports the XML it encrypts the password.
 
-> [!WARNING] 
+> [!WARNING]
 > This will make your connection insecure.
 
 Profile XML exported from Windows PC:
-
+```
     <sharedKey>
         <keyType>passPhrase</keyType>
         <protected>true</protected>
         <keyMaterial><Your Encrypted password></keyMaterial>
     </sharedKey>
-
+```
 
 Changes needed to work on Windows 10 IoT Core:
-
+```
     <sharedKey>
         <keyType>passPhrase</keyType>
         <protected>false</protected>
         <keyMaterial><Your Unencrypted password></keyMaterial>
     </sharedKey>
+```

@@ -2,6 +2,8 @@
 title: Windows 10 IoT Core Pack
 ms.date: 06/13/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about how to get up and running with the Microsoft IoT pack. Windows 10 IoT Core is a version of Windows targeted towards small, embedded devices.
 keywords: windows iot, Raspberry Pi 3, Adafruit, starter pack
 ---

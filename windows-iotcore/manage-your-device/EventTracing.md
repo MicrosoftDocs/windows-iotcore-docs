@@ -2,6 +2,8 @@
 title: Event Tracing for Windows IoT Core
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to use Event Tracing to write events and consume events for Windows IoT Core.
 keywords: windows iot, event tracing, ETW, event tracing for windows, devices
 ---
@@ -27,25 +29,25 @@ Use [FTP](../connect-your-device/FTP.md) or [Windows File Sharing](../manage-you
 
 ## Use Tools in Windows Assessment and Deployment Kit
 
-[Windows Assessment and Deployment Kit](https://go.microsoft.com/fwlink/p/?LinkId=526740) includes three tools to help capture and analyze events. 
+[Windows Assessment and Deployment Kit](https://go.microsoft.com/fwlink/p/?LinkId=526740) includes three tools to help capture and analyze events.
 
 
 1. **Windows Performance Analyzer** visualizes ETL files on desktop, with a step-by-step guide [here](https://msdn.microsoft.com/library/windows/hardware/dn927319(v=vs.85).aspx).
 
 2. **Xperf command-line tool** captures real-time events and writes them to an ETL file. This tool is already installed on Windows IoT Core devices, just run the following commands on the devices:
-
+```
         // Start capturing events from specific GUID and save them to an ETL file
         xperf -start <Session Name> -f <ETL File> -on <GUID>
 
         // Stop capturing events with the specified session name
         xperf -stop <Session Name>
-
+```
 
 3. **Tracerpt command-line tool** converts ETL files into xml files.
-
+```
         // Generate dumpfile.xml from ETL file
         tracerpt <ETL File>
-
+```
 
 ## Use Device Portal
 

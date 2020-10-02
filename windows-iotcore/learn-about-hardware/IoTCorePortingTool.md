@@ -2,6 +2,8 @@
 title: Windows 10 IoT Core API Porting Tool
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to use the Windows 10 IoT Core API Porting Tool to estimate porting costs.
 keywords: windows iot, API porting tool, API porting, binaries
 ---
@@ -21,11 +23,11 @@ You can use the tool by running `IoTAPIPortingTool.exe <Application path> [-os]`
 
 *  `-os` should be specified if you are not planning to use UWP.  By default, the tool validates your binaries against the Windows UWP platform.
 
-> [!NOTE] 
-> IoTAPIPortingTool.exe must be run from a Visual Studio Developer Command Prompt. You need to navigate to the folder that contains the IotAPIPortingTool.exe. 
-
-        Sample command: C:\IoTAPIPortingTool\bin\Debug>IoTAPIPortingTool.exe C:\Sample\Sample.exe -os 
-
+> [!NOTE]
+> IoTAPIPortingTool.exe must be run from a Visual Studio Developer Command Prompt. You need to navigate to the folder that contains the IotAPIPortingTool.exe.
+```
+        Sample command: C:\IoTAPIPortingTool\bin\Debug>IoTAPIPortingTool.exe C:\Sample\Sample.exe -os
+```
 ## Output
 
 The tool will generate a comma-separated values (csv) file in same folder that contains the `IotAPIPortingTool.exe`. The file is named `IoTAPIPortingTool.csv` (or, `IoTAPIPortingToolOS.csv` if -os is specified) and a summary will be on the command line. Open the `.csv` file in Excel to analyze the complete output.

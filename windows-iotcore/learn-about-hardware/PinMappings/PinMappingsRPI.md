@@ -2,6 +2,8 @@
 title: Raspberry Pi 2 & 3 Pin Mappings
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about the functionality of pin mappings for Raspberry Pi 2 and 3.
 keywords: windows iot, Rasperry Pi 2, Raspberry Pi 3, pin mappings, GPIO
 ---
@@ -87,9 +89,9 @@ public void GPIO()
 ```
 
 When you open a pin, it will be in its power-on state, which may include a pull resistor. To disconnect the pull resistors and get a high-impedance input, set the drive mode to GpioPinDriveMode.Input:
-
+```
     pin.SetDriveMode(GpioPinDriveMode.Input);
-
+```
 When a pin is closed, it reverts to its power-on state.
 
 ### Pin Muxing
@@ -242,15 +244,15 @@ public async void SPI()
 {
     // Use chip select line CS0
     var settings = new SpiConnectionSettings(0);
-    // Set clock to 10MHz 
+    // Set clock to 10MHz
     settings.ClockFrequency = 10000000;
 
     // Get a selector string that will return our wanted SPI controller
     string aqs = SpiDevice.GetDeviceSelector("SPI0");
-    
+
     // Find the SPI bus controller devices with our selector string
     var dis = await DeviceInformation.FindAllAsync(aqs);
-    
+
     // Create an SpiDevice with our selected bus controller and Spi settings
     using (SpiDevice device = await SpiDevice.FromIdAsync(dis[0].Id, settings))
     {
@@ -259,4 +261,3 @@ public async void SPI()
     }
 }
 ```
-

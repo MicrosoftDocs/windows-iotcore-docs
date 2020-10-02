@@ -2,6 +2,8 @@
 title: Cortana on IoT Core
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn how to get started and install updates for Cortana on Windows IoT Core.
 keywords: windows iot, Cortana, voice, AI, digital assistant, language
 

@@ -2,6 +2,8 @@
 title: April 2018 Update - Build 17134
 ms.date: 05/01/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about what's new in the April 2018 Update for Windows 10 IoT.
 keywords: Windows IoT, April 2018 Update, release notes
 ---

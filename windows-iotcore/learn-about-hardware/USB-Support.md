@@ -2,6 +2,8 @@
 title: An Overview on USB Support and Dual Role for Windows 10 IoT Core
 ms.date: 10/11/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Learn about what USB Support and Dual Role is as well as how to customize this for your Windows 10 IoT Core devices.
 keywords: windows iot, USB support, dual role, USB
 ---
