@@ -26,7 +26,7 @@ Someone building a provider implements a set of interfaces into a UWP class libr
 
 
 ```
-ArduinoProviders.ArduinoProvider.Configuration = 
+ArduinoProviders.ArduinoProvider.Configuration =
     new ArduinoProviders.ArduinoConnectionConfiguration("VID_2341", "PID_0043", 57600);
 Windows.Devices.LowLevelDevicesController.DefaultProvider =  new ArduinoProviders.ArduinoProvider();
 
@@ -40,7 +40,7 @@ GpioPin pin = gpioController.OpenPin(LED_PIN, GpioSharingMode.Exclusive);`
 
 ## Available Providers
 
-We currently have a number of providers available on the [Bus Providers](https://github.com/ms-iot/BusProviders) github repo. In addition to the code for the provider, each provider has a sample VS solution that demonstrates how a client would use that provider. 
+We currently have a number of providers available on the [Bus Providers](https://github.com/ms-iot/BusProviders) github repo. In addition to the code for the provider, each provider has a sample VS solution that demonstrates how a client would use that provider.
 
 - **ADC**
   - Ads1x15
@@ -51,7 +51,7 @@ We currently have a number of providers available on the [Bus Providers](https:/
   - PCA9685
   - Simulated with Gpio
   - Remote Arduino
-  
+
 - **Gpio, SPI, I2C**
   - Remote Arduino
 
@@ -61,3 +61,4 @@ In addition to the providers that give you access to real hardware, we have buil
 
 Additional bus tools, sample codes, and building and testing on I2C, SPI, GPIO, MinComm/UART can be found [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/BusTools).
 
+Please reference [Windows Runtime (WinRT) APIs](https://docs.microsoft.com/uwp/api/?view=winrt-19041) and here's how to leverage the APIs from [Win32 applications](https://blogs.windows.com/windowsdeveloper/2017/01/25/calling-windows-10-apis-desktop-application/).   
