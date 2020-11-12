@@ -2,13 +2,15 @@
 title: Lightning providers
 author: msalehmsft
 ms.author: msaleh
-ms.date: 08/28/2017
+ms.date: 11/12/2020
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-description: Learn more about how you can use the Microsoft Lightning Providers library. 
+description: Learn more about how you can use the Microsoft Lightning Providers library.
 keywords: windows iot, lightning providers, lightning performance testing, buses
 ---
+> [!NOTE]
+> This page is provided only for legacy purposes.
 
 # Working with lightning providers
 The Microsoft.IoT.Lightning.Providers library contains a set of providers to interface with the on board controller buses through the Lightning direct memory mapped driver (DMAP).
@@ -44,7 +46,7 @@ Additionally, it's straightforward to add the required Lightning providers NuGet
 
 2. The NuGet Package Manager will open. In the Browse tab, search for the "Lightning SDK", making sure to check the "Include prerelease" checkbox.
 
-3. Select the latest version, and click "Install" to add the Lightning SDK to your project. 
+3. Select the latest version, and click "Install" to add the Lightning SDK to your project.
 ![NuGet Package Manager](../media/LightningProviders/nuget-package-manager.png)
 
 4. Follow any on-screen instructions if needed. When installation is complete, a reference to the Lightning SDK will be added to your project.
@@ -69,7 +71,7 @@ Both capabilities must be added to the AppX manifest of your project under the `
 
 ### Checking for the Lightning (DMAP) driver
 
-To check if Lightning is enabled, the `LightningProvider.IsLightningEnabled` property should be used. In general, it is always a good practice to verify if the Lightning driver is enabled before using the Lightning provider APIs. 
+To check if Lightning is enabled, the `LightningProvider.IsLightningEnabled` property should be used. In general, it is always a good practice to verify if the Lightning driver is enabled before using the Lightning provider APIs.
 
 ``` C#
 if (Microsoft.IoT.Lightning.Providers.LightningProvider.IsLightningEnabled)
@@ -80,7 +82,7 @@ if (Microsoft.IoT.Lightning.Providers.LightningProvider.IsLightningEnabled)
 
 ### General usage pattern
 
-The simplest way to use the providers is to set the Lightning Provider as the default inside your app. 
+The simplest way to use the providers is to set the Lightning Provider as the default inside your app.
 
 The code below will, if the Lightning Provider is available, set `Microsoft.IoT.Lightning.Providers.LightningProvider` as the default provider. Otherwise, when no default provider is explicitly set, the various busses will fall back to the default one.
 ``` C#
@@ -96,11 +98,11 @@ i2cController = await I2cController.GetDefaultAsync();
 spiController = await SpiController.GetDefaultAsync();
 ```
 
-After you have a controller for the desired bus, you can use it as you normally would. 
+After you have a controller for the desired bus, you can use it as you normally would.
 
 ### Using Lightning for individual buses
 
-If you want to use a different default provider, the sections below show how you can use the Lightning providers for individual busses. 
+If you want to use a different default provider, the sections below show how you can use the Lightning providers for individual busses.
 
 #### For GPIO bus controller:
 
@@ -152,7 +154,7 @@ The following samples demonstrate using the Lightning providers with supported b
 * [BlinkyHeadless with Lightning Provider](https://github.com/ms-iot/BusProviders/tree/develop/Microsoft.IoT.Lightning.Providers/Blinky/Background) demonstrates GPIO with Lightning Provider in a headless application
 
 * [SPIDisplay with Lightning Provider](https://github.com/ms-iot/BusProviders/tree/develop/Microsoft.IoT.Lightning.Providers/SPIDisplay) demonstrates the usage of the API to control a device using SPI with Lightning Provider
- 
+
 * [WeatherStation with Lightning Provider](https://github.com/ms-iot/BusProviders/tree/develop/Microsoft.IoT.Lightning.Providers/WeatherStation) demonstrates interacting with a device using I2C with Lightning Provider
 
 ## Build Requirements
@@ -190,7 +192,7 @@ Lightning providers support is currently included in the Fall Update builds for 
 You can download a Windows 10 IoT Core image from our [downloads page](https://developer.microsoft.com/windows/iot/Downloads). Click on "Download Insider Preview" for your device type.
 
 ### Direct Memory Mapped driver must be enabled
- 
+
 The APIs in the Lightning Provider library require the Lightning Direct Memory Mapped driver to be enabled on the target device. Both Raspberry Pi 2/3 and MinnowBoard Max have the driver available, but not enabled by default.
 
 The driver can be enabled using the Windows Devices Web Portal. Refer to the [Lightning Setup Guide](LightningSetup.md) for detailed information on how to enable the Lightning driver.
