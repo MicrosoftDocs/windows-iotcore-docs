@@ -9,10 +9,10 @@ ms.technology: iot
 description: Learn more about how you can use the Microsoft Lightning Providers library.
 keywords: windows iot, lightning providers, lightning performance testing, buses
 ---
+# Working with lightning providers
 > [!NOTE]
 > This page is provided for legacy purposes only.
 
-# Working with lightning providers
 The Microsoft.IoT.Lightning.Providers library contains a set of providers to interface with the on board controller buses through the Lightning direct memory mapped driver (DMAP).
 
 
