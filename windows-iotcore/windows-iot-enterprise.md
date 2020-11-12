@@ -1,6 +1,6 @@
 ---
 title: Overview of Windows 10 IoT Enterprise
-ms.date: 01/18/2018
+ms.date: 11/12/2020
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
