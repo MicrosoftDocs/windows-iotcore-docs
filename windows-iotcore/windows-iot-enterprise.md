@@ -18,9 +18,9 @@ Windows 10 IoT Enterprise is a full version of Windows 10 that delivers enterpri
 
 ## Getting started
 
-In order to start your journey in manufacturing with Windows 10 IoT Enterprise, you'll need to reach out to a distributor from [this list](https://aka.ms/IoTDistributorList).
+In order to start your journey in manufacturing with Windows 10 IoT Enterprise, you'll need to reach out to a [Windows IoT distributor](https://aka.ms/IoTDistributorList).
 
-You can also try an evaluation copy of Windows 10 IoT Enterprise [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
+You can also try the Windows 10 IoT Enterprise [90 day evaluation](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
 
 From there, you can learn how to manufacture with Windows 10 IoT Enterprise with our [the Windows 10 IoT Enterprise Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/desktop/iot-ent-overview).
 
