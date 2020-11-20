@@ -10,9 +10,6 @@ keywords: Windows 10 IoT Enterprise, Enterprise, binary, Windows
 
 # An overview of Windows 10 IoT Enterprise
 
-> [!NOTE]
-> Windows Containers are supported for commercial deployments on Windows Server, Windows Server IoT, Windows 10 IoT Enterprise and Windows 10 IoT Core.  As of Windows October Update 2018 (Build 17763), Windows Containers can only be used with Windows 10 Enterprise and Windows 10 Professional for dev/test purposes.
-
 ## What is Windows 10 IoT Enterprise?
 Windows 10 IoT Enterprise is a full version of Windows 10 that delivers enterprise manageability and security to IoT solutions. Windows 10 IoT Enterprise shares all the benefits of the world-wide Windows ecosystem. It is a binary equivalent to Windows 10 Enterprise, so you can use the same familiar development and management tools as client PCs and laptops.  However, when it comes to licensing and distribution, the desktop version and IoT versions differ. Note that Windows 10 IoT Enterprise offers both Long-term Servicing Channel (LTSC) and Semi-Annual Channel (SAC) options. OEMs can choose the version they require for their devices.
 
@@ -41,6 +38,8 @@ A fixed purpose device differs from a general purpose device in the following wa
 ## Long-term Servicing Channel (LTSC)
 
 Specialized systems, such as PCs that control medical equipment, point-of-sale systems, and ATMs, often require a longer servicing option because of their purpose. These devices typically perform a single important task and don’t need feature updates as frequently as other devices in the organization. It’s more important that these devices be kept as stable and secure as possible than that they be up to date with UI changes. The LTSC servicing model prevents Windows 10 IoT Enterprise LTSC devices from receiving the usual feature updates and provides only quality updates to ensure that device security stays up to date. With this in mind, quality updates are still immediately available to Windows 10 IoT Enterprise LTSC clients, but customers can choose to defer them by using one of the servicing tools mentioned in the Servicing tools section.
+
+Microsoft makes available a new Windows 10 IoT Enterprise LTSC release approximately every three years. Each Windows 10 IoT Enterprise LTSC release is its own SKU and contains all the new capabilities and support updates included in the Windows 10 IoT Enterprise features updates since the previous LTSC release. To access these features updates a new Windows 10 IoT Enterprise LTSC SKU must be purchased.
 
 * [Learn more about LTSC](https://docs.microsoft.com/windows/deployment/update/waas-overview#long-term-servicing-channel)
 
