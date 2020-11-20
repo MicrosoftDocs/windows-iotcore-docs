@@ -11,6 +11,8 @@ keywords: windows iot, PowerShell, Windows PowerShell, command line, command-lin
 ---
 
 # Using PowerShell for Windows IoT
+> [!NOTE]
+> Add the [open source powershell](https://github.com/PowerShell/PowerShell/releases) version using [Import-PSCoreRelease (importps)](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Import-PSCoreRelease.md#Import-PSCoreRelease). You will still require IOT_POWERSHELL feature to include WinRM binaries
 
 Remotely configure and manage any Windows 10 IoT Core device by using Windows PowerShell.
 PowerShell is a task-based command-line shell and scripting language, designed especially for system administration.
