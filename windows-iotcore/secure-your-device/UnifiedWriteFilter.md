@@ -10,9 +10,6 @@ keywords: windows iot, Unified Write Filter, security, memory, storage media
 
 # Using the Unified Write Filter (UWF) on Windows 10 IoT Core
 
-> [!WARNING]
-> The dynamic disk is not supported for the UWF.
-
 The Unified Write Filter (UWF) is a feature that protects physical storage media from data writes. UWF intercepts all write attempts to a protected volume and redirects those write attempts to a virtual overlay. This improves the reliability and stability of your device and reduces the wear on write-sensitive media, such as flash memory media like solid-state drives.
 
 Read our documentation on the [Unified Write Filter](https://docs.microsoft.com/windows-hardware/customize/enterprise/unified-write-filter) for more information.
@@ -35,9 +32,9 @@ Read our documentation on the [Unified Write Filter](https://docs.microsoft.com/
   ![uwfmgr.exe on Windows 10 IoT Core](../media/UnifiedWriteFilter/uwfmgr.png)
 
 
-## How to include UWF in Your Custom FFU 
+## How to include UWF in Your Custom FFU
 
-* Add **IOT_UNIFIED_WRITE_FILTER** feature ID to the OEM Input file 
+* Add **IOT_UNIFIED_WRITE_FILTER** feature ID to the OEM Input file
 * Create the image\FFU. Read [Create a basic image](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image) for instructions.
 
 
@@ -58,12 +55,12 @@ UWF can also be configured via MDM channel using [Unified Write Filter CSP](http
   <br>
   `shutdown /r /t 0`              Restarts the device to make the write filter settings effective
 
-*Reboot* is required to make all the uwfmgr settings effective. 
+*Reboot* is required to make all the uwfmgr settings effective.
 
 
 ## Protecting a Data Volume
 
-Data volume in IoT Core can be protected using the GUID for the volume. 
+Data volume in IoT Core can be protected using the GUID for the volume.
 The GUID for the available volumes can be found through the following command
 
   `dir /AL`
@@ -111,11 +108,11 @@ The following steps are required to service UWF protected devices with protected
 `uwfmgr.exe` on Windows 10 IoT Core does not support commands listed below.
 
 ```
-Filter 
-    Shutdown 
-    Restart 
-Servicing 
-    Enable 
-    Disable 
+Filter
+    Shutdown
+    Restart
+Servicing
+    Enable
+    Disable
     Update-Windows
 ```
