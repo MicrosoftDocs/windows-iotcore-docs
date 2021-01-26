@@ -16,7 +16,7 @@ keywords: Windows 10 IoT Core, small footprint, headless
 ## What is Windows 10 IoT Core?
 Windows 10 IoT Core is a version of Windows 10 that is optimized for smaller devices with or without a display that run on both ARM and x86/x64 devices. The Windows IoT Core documentation provides information on connecting, managing, updating, securing your devices, and more. 
 
-If you're ready to go to the next level and start commercializing your solution, you can learn how to manufacture with Windows 10 IoT Core with our [Windows 10 IoT Core Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). 
+If you're ready to go to the next level and start commercializing your solution, you can learn how to manufacture with Windows 10 IoT Core with our [Windows 10 IoT Core Manufacturing Guide](/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). 
 
 ## Getting started
 
@@ -36,7 +36,7 @@ Before attempting to manufacture a device, it's best to first try and prototype 
 <tbody>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/tutorials/quickstarter/PrototypeBoards"
+<td align="left"><p><a href="/windows/iot-core/tutorials/quickstarter/PrototypeBoards"
 >1. Pick a prototype board</a></p></td>
 <td align="left"><p>Take a look at common prototype boards and choose one to start prototyping with.</p></td>
 </tr>
@@ -47,12 +47,12 @@ Before attempting to manufacture a device, it's best to first try and prototype 
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/develop-your-app/appinstaller">3. Install your app</a></p></td>
+<td align="left"><p><a href="/windows/iot-core/develop-your-app/appinstaller">3. Install your app</a></p></td>
 <td align="left"><p>Learn how to install your app using different tools.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/develop-your-app/appdeployment">4. Deploy your app</a></p></td>
+<td align="left"><p><a href="/windows/iot-core/develop-your-app/appdeployment">4. Deploy your app</a></p></td>
 <td align="left"><p>Learn how to deploy an app using Visual Studio.</p></td>
 </tr>
 
@@ -64,8 +64,8 @@ Before attempting to manufacture a device, it's best to first try and prototype 
 ### Different features available on Desktop and IoT Core
 
 * Inbox Cortana is no longer available on Windows 10 IoT Core since version 1809 (17763). If you are looking to bring a voice-enabled device to market quickly, you can integrate Cortana support into the device using the [preview of the Cortana Devices SDK](https://developer.microsoft.com/cortana/devices).
-* The [FileOpenPicker API](https://docs.microsoft.com/uwp/api/windows.storage.pickers.fileopenpicker) is not supported in Windows 10 IoT Core. To access local drives or removable storage, you can implement this in your own application.
-* Out of the box, The Windows 10 IoT Core device will boot to the [default app](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp) instead of a desktop-like PC. However, for commercialization, this default app **must** be replaced by either a custom app or a default app that can be modified. The purpose of this application is not only to provide you with a friendly shell to interact with upon first boot, but to also allow you to use the [open-sourced code](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp) for this application so that you can use these features to plug and play your own custom application(s).
+* The [FileOpenPicker API](/uwp/api/windows.storage.pickers.fileopenpicker) is not supported in Windows 10 IoT Core. To access local drives or removable storage, you can implement this in your own application.
+* Out of the box, The Windows 10 IoT Core device will boot to the [default app](./develop-your-app/iotcoredefaultapp.md) instead of a desktop-like PC. However, for commercialization, this default app **must** be replaced by either a custom app or a default app that can be modified. The purpose of this application is not only to provide you with a friendly shell to interact with upon first boot, but to also allow you to use the [open-sourced code](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp) for this application so that you can use these features to plug and play your own custom application(s).
 
 ### Differences in driver-supported areas
 
@@ -107,4 +107,4 @@ REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d 
 All differences described in this post may not be valid in the future because Windows 10 IoT Core is constantly being updated.
 
 ## Helpful resources
-[Read our documentation](https://docs.microsoft.com/windows/iot-core/) to learn more about Windows 10 IoT Core.
+[Read our documentation](./index.yml) to learn more about Windows 10 IoT Core.
