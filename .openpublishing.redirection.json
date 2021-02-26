@@ -163,6 +163,30 @@
     "source_path": "windows-iotcore/learn-about-hardware/windowsiotenterprise.md",
     "redirect_url": "https://docs.microsoft.com/windows/iot-core/windows-iot-enterprise",
     "redirect_document_id": false
+},
+
+{
+    "source_path": "windows-iotcore/windows-iot-enterprise.md",
+    "redirect_url": "https://docs.microsoft.com/en-us/windows/iot/iot-enterprise/getting_started",
+    "redirect_document_id": true
+},
+
+{
+    "source_path": "windows-iotcore/windows-server",
+    "redirect_url": "TBD on New Docs",
+    "redirect_document_id": true
+},
+
+{
+    "source_path": "windows-iotcore/windows-ce-app-container",
+    "redirect_url": "https://docs.microsoft.com/en-us/windows/iot/windows_ce/windows-ce-app-container-overview",
+    "redirect_document_id": true
+},
+
+{
+    "source_path": "windows-iotcore/windows-ce-migration-faq",
+    "redirect_url": "https://docs.microsoft.com/en-us/windows/iot/windows_ce/windows-ce-migration-faq",
+    "redirect_document_id": true
 }
 
 ]
