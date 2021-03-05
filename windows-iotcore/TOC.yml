@@ -1,5 +1,5 @@
 - name: Windows for IoT documentation
-  href: index.yml
+  href: https://docs.microsoft.com/windows/iot/
 - name: Windows 10 IoT Core Overview
   href: windows-iot-core.md
 - name: Tutorials
