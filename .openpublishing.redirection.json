@@ -168,13 +168,13 @@
 {
     "source_path": "windows-iotcore/windows-iot-enterprise.md",
     "redirect_url": "https://docs.microsoft.com/en-us/windows/iot/iot-enterprise/getting_started",
-    "redirect_document_id": true
+    "redirect_document_id": false
 },
 
 {
     "source_path": "windows-iotcore/windows-server",
-    "redirect_url": "TBD on New Docs",
-    "redirect_document_id": true
+    "redirect_url": "https://docs.microsoft.com/en-us/windows/iot/server/windows-server",
+    "redirect_document_id": false
 },
 
 {
