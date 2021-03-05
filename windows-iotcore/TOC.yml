@@ -1,20 +1,7 @@
 - name: Windows for IoT documentation
-  href: index.yml
-- name: Windows for IoT
-  expanded: false
-  items:
-  - name: Windows 10 IoT Core
-    href: windows-iot-core.md
-  - name: Windows 10 IoT Enterprise
-    href: windows-iot-enterprise.md
-  - name: Windows Server IoT 2019
-    href: windows-server.md
-  - name: Windows IoT Core Services
-    href: https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview
-  - name: Windows CE App Container
-    href: windows-ce-app-container.md
-  - name: FAQ - CE Migration
-    href: windows-ce-migration-faq.md
+  href: https://docs.microsoft.com/windows/iot/
+- name: Windows 10 IoT Core Overview
+  href: windows-iot-core.md
 - name: Tutorials
   expanded: false
   items:
