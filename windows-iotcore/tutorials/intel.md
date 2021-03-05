@@ -1,7 +1,7 @@
 ---
 title: Setting up Intel devices
-ms.date: 05/22/2019 
-ms.topic: article 
+ms.date: 05/22/2019
+ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
 description: Learn about how to set up your Intel device with Windows 10 IoT Core. Use eMMC, connect to a network, and connect to Windows Device Portal.
@@ -24,7 +24,7 @@ If you're looking to manufacture with a Qualcomm device, please refer to the [Io
 4. Start the Deployment and Imaging Tools Environment `(C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools)` as an administrator.
 5. Create a working copy of the Windows PE files. Specify either x86, amd64 or ARM: `Copype amd64 C:\WINPE_amd64`
 6. Install Windows PE to the USB flash drive, specifying the WinPE drive letter below. More information can be found [here](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive). `MakeWinPEMedia /UFD C:\WinPE_amd64 P:`
-7. Download the [Windows 10 IoT Core image](https://downloads.up-community.org/?post_type=wpdmpro&p=204&preview=true) by double-clicking on the downloaded ISO file and locating the mounted Virtual CD-drive.
+7. Download the [Windows 10 IoT Core image](https://www.microsoft.com/software-download/windows10IoTCore) by double-clicking on the downloaded ISO file and locating the mounted Virtual CD-drive.
 8. This drive will contain an install file (.msi); double click it. This will create a new directory on your PC under C:\Program Files (x86)\Microsoft IoT\FFU\ in which you should see an image file, "flash.ffu".
 9. Download, unzip, and copy the [eMMC Installer script](https://github.com/ms-iot/content/blob/develop/Resources/eMMCInstaller.zip) to the USB device's root directory, along with the device's FFU.
 10. Connect the USB drive, mouse, and keyboard to the USB hub. Attach the HDMI display to your device, the device to the USB hub, and the power cord to the device.
@@ -55,6 +55,4 @@ If you haven't connected a display and would like to connect via Wi-Fi, you'll n
 
 ## Connect to Windows Device Portal
 
-Use the [Windows Device Portal](../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available. 
-
-
+Use the [Windows Device Portal](../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available.

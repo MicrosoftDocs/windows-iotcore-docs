@@ -1,7 +1,7 @@
 ---
 title: Setting up an NXP device
-ms.date: 05/22/2019 
-ms.topic: article 
+ms.date: 05/22/2019
+ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
 description: Learn about how to set up your NXP device with Windows 10 IoT Core. Use the dashboard, connect to a network, and connect to Windows Device Portal.
@@ -9,10 +9,9 @@ keywords: Windows 10 IoT Core, NXP
 ms.custom: RS5
 ---
 
-# Setting up an NXP device
+# Setting up an NXP i.MX6/i.MX7 device
 
 ## Overview
-
 > [!IMPORTANT]
 > When the "format this disk" pop up comes up, do _not_ format the disk. We are working on a fix for this issue.
 
@@ -26,7 +25,7 @@ When setting up an NXP device for prototyping, we recommend using the Windows 10
 ## Using the Dashboard
 
 To flash, or download, IoT Core onto your NXP device, you'll need:
-* A computer running Windows 10 
+* A computer running Windows 10
 * [Windows 10 IoT Core Dashboard](https://docs.microsoft.com/windows/iot-core/downloads)
 * A high-performance SD card, such as a SanDisk SD card
 * An external display
@@ -72,5 +71,4 @@ If you haven't connected a display and would like to connect via Wi-Fi, you'll n
 
 ## Connect to Windows Device Portal
 
-Use the [Windows Device Portal](../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available. 
-
+Use the [Windows Device Portal](../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available.
