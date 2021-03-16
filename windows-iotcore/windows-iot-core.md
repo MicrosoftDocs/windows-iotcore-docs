@@ -5,7 +5,7 @@ ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
 description: Read an overview of Windows 10 IoT Core. Learn the differences between Windows 10 Desktop and Windows 10 IoT Core.
-keywords: Windows 10 IoT Core, small footprint, headless 
+keywords: Windows 10 IoT Core, small footprint, headless
 ---
 
 # An overview of Windows 10 IoT Core
@@ -14,9 +14,9 @@ keywords: Windows 10 IoT Core, small footprint, headless
 > Windows Containers are supported for commercial deployments on Windows Server, Windows IoT Server, Windows IoT Enterprise and Windows IoT Core.  As of Windows October Update 2018 (Build 17763), Windows Containers can only be used with Windows Enterprise and Professional for dev/test purposes.
 
 ## What is Windows 10 IoT Core?
-Windows 10 IoT Core is a version of Windows 10 that is optimized for smaller devices with or without a display that run on both ARM and x86/x64 devices. The Windows IoT Core documentation provides information on connecting, managing, updating, securing your devices, and more. 
+Windows 10 IoT Core is a version of Windows 10 that is optimized for smaller devices with or without a display that run on both ARM and x86/x64 devices. The Windows IoT Core documentation provides information on connecting, managing, updating, securing your devices, and more.
 
-If you're ready to go to the next level and start commercializing your solution, you can learn how to manufacture with Windows 10 IoT Core with our [Windows 10 IoT Core Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). 
+If you're ready to go to the next level and start commercializing your solution, you can learn how to manufacture with Windows 10 IoT Core with our [Windows 10 IoT Core Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
 
 ## Getting started
 
@@ -59,6 +59,27 @@ Before attempting to manufacture a device, it's best to first try and prototype 
 </tbody>
 </table>
 
+## Differences between Windows 10 IoT Core and Windows 10 IoT Enterprise
+
+While Windows 10 IoT Core and Windows 10 IoT Enterprise are similar in name, there are differences in what they offer as well as what they support. Below is a feature list that highlights edition differences.
+
+> | Feature&nbsp;/&nbsp;Edition | Windows 10 IoT Core  |  Windows 10 IoT Enterprise  |
+> |-------------|----------|---------|
+> | User experience | One UWP app in the foreground at a time (see [IoT Shell documentation](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoreshell) for app backstack handling) with supporting background apps and services. | Traditional Windows Shell with Advanced Lockdown Features |
+> | Headless supported | Yes | Yes |
+> | App architecture supported | UWP UI only | Full Windows UI support (e.g. UWP, WinForms, etc) |
+> | Cortana | [*Cortana SDK*](https://developer.microsoft.com/cortana/devices) | Yes |
+> | Domain join | AAD only | AAD and Traditional Domain |
+> | Management | MDM | MDM |
+> | Device Security Technologies | [TPM](https://docs.microsoft.com/windows/iot-core/secure-your-device/tpm), [Secure Boot, BitLocker, Device Guard](https://docs.microsoft.com/windows/iot-core/secure-your-device/securebootandbitlocker), and Device Health Attestation | [TPM](https://docs.microsoft.com/windows/iot-core/secure-your-device/tpm), [Secure Boot, BitLocker, Device Guard](https://docs.microsoft.com/windows/iot-core/secure-your-device/securebootandbitlocker) and Device Health Attestation |
+> | CPU Architecture support | x86, x64, and ARM | x86 and x64 |
+> | Licensing | Online Licensing Agreement and Embedded OEM Agreements, Royalty-free | Direct and Indirect Embedded OEM Agreements |
+> | Usage scenarios | [Digital Signage](https://www.microsoft.com/windowsforbusiness/digital-signage), Smart Building, IoT Gateway, HMI, Smart Home, Wearables | Industry Tablets, Retail Point of Service, Kiosk, [Digital Signage](https://www.microsoft.com/windowsforbusiness/digital-signage), ATM, Medical Devices, Manufacturing Devices, Thin Client |
+
+For minimum requirement details, please visit [the Windows Hardware site](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
+
+If you're interested in learning more about Point of Service, please visit the [UWP docs on this topic](https://aka.ms/pointofservice).
+
 ## Differences between Windows 10 Desktop and Windows 10 IoT Core
 
 ### Different features available on Desktop and IoT Core
@@ -74,7 +95,7 @@ Before attempting to manufacture a device, it's best to first try and prototype 
 
 ### Differences in available registry set
 
-* On desktop, there is an option to "Automatically hide scroll bars in Windows" that can be set to off. It is controlled by the following registry entry: 
+* On desktop, there is an option to "Automatically hide scroll bars in Windows" that can be set to off. It is controlled by the following registry entry:
 
 ```
 HKEY_CURRENTUSER\Control Panel\Accessibility
