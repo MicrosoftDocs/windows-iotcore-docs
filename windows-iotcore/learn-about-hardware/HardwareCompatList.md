@@ -16,7 +16,7 @@ Windows 10 IoT Core supports a variety of peripheral interfaces and protocols, i
 > This list is not exhaustive. There are many other peripherals not listed on this page that are compatible with Windows 10 IoT Core. If a device you don't see listed but is class-compliant with what's already supported in Windows 10 IoT Core, then it will work.
 
 
-Looking for information about supported hardware platforms? Check out [SoCs and Custom Boards](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/socsandcustomboards) for a list of development boards compatible with Windows.
+Looking for information about supported hardware platforms? Check out [SoCs and Custom Boards](./socsandcustomboards.md) for a list of development boards compatible with Windows.
 
 ## USB Devices
 
@@ -77,7 +77,7 @@ Looking for information about supported hardware platforms? Check out [SoCs and 
 ### NFC/RFID/Proximity
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified |
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | NXP OM5577 demo board | ARM32 | Demo board for the NXP PN7120 NFC chip. | [ProximityDevice documentation](https://docs.microsoft.com/uwp/api/Windows.Networking.Proximity.ProximityDevice) | &#10004; |
+> | NXP OM5577 demo board | ARM32 | Demo board for the NXP PN7120 NFC chip. | [ProximityDevice documentation](/uwp/api/Windows.Networking.Proximity.ProximityDevice) | &#10004; |
 > | NXP PN547/PN548/PN7120 | ARM32, x64, x86 | Supported NXP NFC chips. | | &#10004; |
 
 ### Pi Hats
