@@ -1,6 +1,6 @@
 ---
 title: Minnowboard Max Pin Mappings
-ms.date: 08/28/2017
+ms.date: 04/04/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -10,7 +10,7 @@ keywords: windows iot, Minnowboard Max, pin mappings, GPIO
 
 # MinnowBoard Max Pin Mappings
 
-> [!NOTE] 
+> [!NOTE]
 > To compare this pin mapping to newer versions of the Minnowboard, please visit documentation [here](https://minnowboard.org/minnowboard-turbot/documentation).
 
 ## Overview
@@ -29,7 +29,7 @@ Hardware interfaces for the MinnowBoard Max are exposed through the 26-pin heade
 
 The MinnowBoard Max uses 3.3V logic levels on all IO pins. In addition all the pins are buffered by [TXS0104E](http://www.ti.com/product/txs0104e) level shifters, with the exception of power and ground pins.
  These level shifters appear as open collector outputs with a **10K&#x2126; resistive pull-up, and the pull-up is present regardless of whether the IO is set to input or output.**
- 
+
 The open-collector nature of the level shifters means is that the pins can output a '0' strongly, but only weakly output a '1'. This is important to keep in mind when attaching devices which draw current from the pins (such as an LED). See the [Blinky Sample](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinky) for the correct way to interface an LED to the MinnowBoard Max.
 
 ## GPIO Pins
@@ -52,14 +52,14 @@ The following GPIO pins are accessible through APIs:
 **Note:** **GPIO 4** and **GPIO 5** are used by the MinnowBoard Max as bootstrap configuration pins for the BIOS.
  Make sure that attached devices do not drive these GPIO low during boot, as this could prevent the MBM from booting.
  After the MBM has booted past the BIOS, these GPIO can be used normally.
-     
+
 ## GPIO Sample
 
 As an example, the following code opens **GPIO 5** as an output and writes a digital '**1**' out on the pin:
-         
+
 ```C#
 using Windows.Devices.Gpio;
-         
+
 public void GPIO()
 {
 	GpioController Controller = GpioController.GetDefault(); /* Get the default GPIO controller on the system */
@@ -232,4 +232,3 @@ public async void SPI()
     }
 }
 ```
-

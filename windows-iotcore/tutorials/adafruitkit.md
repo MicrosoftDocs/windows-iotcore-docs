@@ -1,6 +1,6 @@
 ---
 title: Windows 10 IoT Core Pack
-ms.date: 06/13/2018
+ms.date: 11/5/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

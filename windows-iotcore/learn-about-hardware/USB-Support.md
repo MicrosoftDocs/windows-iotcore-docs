@@ -1,6 +1,6 @@
 ---
 title: An Overview on USB Support and Dual Role for Windows 10 IoT Core
-ms.date: 10/11/2017
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -11,14 +11,14 @@ keywords: windows iot, USB support, dual role, USB
 # Overview of USB Support and Dual Role
 
 A Universal Serial Bus (USB) provides an expandable, hot-pluggable Plug and Play serial interface that ensures a standard, low-cost connection for peripheral devices such as keyboards, mice, joysticks, printers, scanners, storage devices, modems, and video conferencing cameras.  
-When we talk about USB devices, the USB function stack refers to a group of drivers that are enumerated and loaded by the Plug and Play Manager, and a composite USB device can support multiple interfaces in a single configuration. 
-While most of what we talk about in this article relates to the dual role for USB 2.0, more commonly known as USB On-The-Go or USB OTG or OTG, it is also helpful to know about USB 3.0 and how it differs from USB 2.0. 
-The USB OTG defines two roles for devices: OTG A-device and OTG B-device, specifying which side supplies power to the link and which is the host initially. Since every OTG controller supports both roles, they are often called "Dual-Role" controllers rather than "OTG controllers." 
-USB 3.0, on the other hand, can make devices into either hosts or peripherals. Some devices can take either role depending on what kind is detected on the other end. These types of ports are called Dual-Role-Data (DRD). When two such devices are connected, the roles are randomly assigned but a swap can be commanded from either end. 
+When we talk about USB devices, the USB function stack refers to a group of drivers that are enumerated and loaded by the Plug and Play Manager, and a composite USB device can support multiple interfaces in a single configuration.
+While most of what we talk about in this article relates to the dual role for USB 2.0, more commonly known as USB On-The-Go or USB OTG or OTG, it is also helpful to know about USB 3.0 and how it differs from USB 2.0.
+The USB OTG defines two roles for devices: OTG A-device and OTG B-device, specifying which side supplies power to the link and which is the host initially. Since every OTG controller supports both roles, they are often called "Dual-Role" controllers rather than "OTG controllers."
+USB 3.0, on the other hand, can make devices into either hosts or peripherals. Some devices can take either role depending on what kind is detected on the other end. These types of ports are called Dual-Role-Data (DRD). When two such devices are connected, the roles are randomly assigned but a swap can be commanded from either end.
 
 ## Architecture of USB Function in Windows 10 IoT Core
 
-When the Windows 10 IoT platform acts as USB device, it will use one of several configurations. Each configuration has one or more USB interfaces. 
+When the Windows 10 IoT platform acts as USB device, it will use one of several configurations. Each configuration has one or more USB interfaces.
 To properly support USB OTG on Windows 10 IoT, several things need to be taken care of.  
 
 ## Components OEMs have to supply
@@ -29,14 +29,14 @@ OEMs need to supply components on both sides – for the USB device-side and pos
 
 ### OEMs support for both sides
 
-Every USB device has unique VID and PID, which identify it. An OEM, as the manufacturer of a Windows IoT-based USB device, needs to supply those.  OEMs can apply to the USB Consortium and obtain their company VID (if they don't have one already) and then choose a PID that will be unique for that product. When Windows 10 IoT with USBFN functionality is connected to a PC it will act as USB device (of whatever functionality to choose as set in myUSBFN.sys), with those "VID_nnn" and "PID_NNN". This VID and PID combination is then used by the host PC to find the appropriate drivers to load (myUSB.sys). 
+Every USB device has unique VID and PID, which identify it. An OEM, as the manufacturer of a Windows IoT-based USB device, needs to supply those.  OEMs can apply to the USB Consortium and obtain their company VID (if they don't have one already) and then choose a PID that will be unique for that product. When Windows 10 IoT with USBFN functionality is connected to a PC it will act as USB device (of whatever functionality to choose as set in myUSBFN.sys), with those "VID_nnn" and "PID_NNN". This VID and PID combination is then used by the host PC to find the appropriate drivers to load (myUSB.sys).
 
 ![How USB functions come together](../media/USB-Support/OEM-supplies.png)
 
 ### Supporting from the device side
 
 _Features to include in FFU for image generation with USBFN enabled_
-* The IoT image must have the necessary packages in it, namely ufx01000.sys and usbfnclx.sys. They both come with the following package `Microsoft-IoTUAP-USBFN-Class-Extension-Package.cab`. OEMs must use a proper "feature" tag in their XML file, which lists all features included in the FFU. For example, in the BoardTestOEMInput.xml file there will be the following entry <Feature>IOT_USBFN_CLASS_EXTENSION</Feature>  included under <Microsoft> features section. 
+* The IoT image must have the necessary packages in it, namely ufx01000.sys and usbfnclx.sys. They both come with the following package `Microsoft-IoTUAP-USBFN-Class-Extension-Package.cab`. OEMs must use a proper "feature" tag in their XML file, which lists all features included in the FFU. For example, in the BoardTestOEMInput.xml file there will be the following entry <Feature>IOT_USBFN_CLASS_EXTENSION</Feature>  included under <Microsoft> features section.
 
 _USB Role Switching driver_
 * For the USB OTG, OEMs have to supply the correct ACPI table entry (*myOTGacpi*) for the USB role-switching driver and the driver itself (*myURS.sys).
@@ -59,16 +59,16 @@ entries such as VID, PID, DeviceClass, DeviceProtocol, Manufacturer string, seri
 * These common properties are set in registry in the following location: `HKLM\System\ControlSet001\Control\USBFN\default`
 
 ```
-BcdDevice=0x1 
-bDeviceClass=0x0 
-bDeviceProtocol=0x0 
-bDeviceSubClass= 0x0 
-idProduct= 0xc0c0 
-idVendor=0x045e 
-iManufacturer=1 
-iSerialNumber=3 
-ManufacturerString=OEMname 
-ProductString="Windows IOT" 
+BcdDevice=0x1
+bDeviceClass=0x0
+bDeviceProtocol=0x0
+bDeviceSubClass= 0x0
+idProduct= 0xc0c0
+idVendor=0x045e
+iManufacturer=1
+iSerialNumber=3
+ManufacturerString=OEMname
+ProductString="Windows IOT"
 ```
 > [!IMPORTANT]
 > The values above are for demonstration purposes only and cannot be used in any product. The OEM must replace these placeholder fields with *actual values* in each entry above.
@@ -118,5 +118,5 @@ Each USB interface entry must contain an interface descriptor value and an inter
 
 ### Supporting from the host side
 
-If an OEM chooses to implement any standard USB interface (e.g.  mass storage) on the device side, then a host PC can use in-box Windows drivers for that type of USB device. 
-If an OEM implements any custom USB interface on device side, then it is necessary for the OEM to develop a Windows host driver for that custom USB Function device. 
+If an OEM chooses to implement any standard USB interface (e.g.  mass storage) on the device side, then a host PC can use in-box Windows drivers for that type of USB device.
+If an OEM implements any custom USB interface on device side, then it is necessary for the OEM to develop a Windows host driver for that custom USB Function device.

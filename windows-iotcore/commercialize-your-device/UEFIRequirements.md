@@ -1,8 +1,8 @@
 ---
-title: UEFI Requirements 
+title: UEFI Requirements
 author: parameshbabu
 ms.author: pabab
-ms.date: 08/28/2017
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -12,7 +12,7 @@ keywords: windows iot, image creation, image customizations, OEM customizations,
 
 # UEFI Requirements
 
-The UEFI requirements for IoT Core are similar to other windows editions like desktop. See [UEFI in Windows](https://docs.microsoft.com/windows-hardware/drivers/bringup/uefi-in-windows) for details and specifically see [UEFI requirements for Windows editions on SoC platforms](https://docs.microsoft.com/windows-hardware/drivers/bringup/uefi-requirements-that-apply-to-all-windows-platforms). 
+The UEFI requirements for IoT Core are similar to other windows editions like desktop. See [UEFI in Windows](https://docs.microsoft.com/windows-hardware/drivers/bringup/uefi-in-windows) for details and specifically see [UEFI requirements for Windows editions on SoC platforms](https://docs.microsoft.com/windows-hardware/drivers/bringup/uefi-requirements-that-apply-to-all-windows-platforms).
 
 ## ACPI Design
 

@@ -1,6 +1,6 @@
 ---
 title: Install USB Peripheral Drivers
-ms.date: 08/28/2017
+ms.date: 03/20/2020
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

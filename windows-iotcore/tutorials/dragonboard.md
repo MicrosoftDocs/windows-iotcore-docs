@@ -1,6 +1,6 @@
 ---
 title: Setting up a Dragonboard
-ms.date: 05/22/2019
+ms.date: 06/07/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

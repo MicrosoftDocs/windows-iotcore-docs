@@ -2,7 +2,7 @@
 title: Install your app on an IoT Core device
 author: parameshbabu
 ms.author: pabab
-ms.date: 08/28/2017
+ms.date: 06/05/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -81,7 +81,7 @@ You can create a provisioning package with the app and install the provisioning 
     - change the license xml extension to *.ms-windows-store-license*.
     - select your License Product ID on the left hand side and browse your license file to assign LicenseInstall field
 
-8. For non-store signed apps, you will need to add the app.cer file under **Certificates > RootCertificates** 
+8. For non-store signed apps, you will need to add the app.cer file under **Certificates > RootCertificates**
 
 9. Export the package
 

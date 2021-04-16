@@ -2,7 +2,7 @@
 title: Windows 10 IoT Core Language Support
 author: msalehmsft
 ms.author: msaleh
-ms.date: 09/12/2017
+ms.date: 08/05/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -15,7 +15,7 @@ keywords: windows iot, languages, app types, UWP, OS
 Language support can be enabled at two levels, Application level and OS level, depending on the language resources made available on the image.
 
 ## Languages in UWP Applications
-UWP application languages are not limited to the languages included in the OS.  In fact, an IoT device that does not trigger shell UI or utilize speech resources can provide a device experience in many different languages through its UWP applications even though the underlying Windows 10 IoT Core OS is built simply in the en-US default mode. 
+UWP application languages are not limited to the languages included in the OS.  In fact, an IoT device that does not trigger shell UI or utilize speech resources can provide a device experience in many different languages through its UWP applications even though the underlying Windows 10 IoT Core OS is built simply in the en-US default mode.
 
 UWP applications must provide the resources for the languages that are required to be supported. [Windows.Globalization.ApplicationLanguage](https://docs.microsoft.com/uwp/api/windows.globalization.applicationlanguages) APIs can be used to specify the language-related preferences.
 
@@ -32,20 +32,20 @@ Windows 10 IoTCore kits now include the language resources for the following lan
 
 > | Language  | Code | Region |
 > |-------------|-----|-----|
-> | English (United States) | en-US | North America | 
+> | English (United States) | en-US | North America |
 > | English (UK) | en-GB | Europe |
 > | French (France) | fr-FR | Europe |
 > | French (Canada) | fr-CA | North America |
 > | Spanish (Spain) | es-ES | Europe |
 > | Spanish (Mexico) | es-MX | North America |
-> | Chinese | zh-CN | Asia | 
+> | Chinese | zh-CN | Asia |
 > | Arabic | ar-SA | Asia |
 > | German | de-DE | Europe |
-> | Italian | it-IT | Europe | 
+> | Italian | it-IT | Europe |
 > | Japanese | ja-JP | Asia |
 > | Korean | ko-KR | Asia |
 > | Dutch | nl-NL | Europe |
-> | Polish | pl-PL | Europe | 
+> | Polish | pl-PL | Europe |
 > | Romanian | ro-RO | Europe |
 > | Russian | ru-RU | Europe |
 > | Greek | el-GR | Europe |
@@ -54,33 +54,33 @@ Windows 10 IoTCore kits now include the language resources for the following lan
 
 These language resources contain UI strings, speech language, and voices (speech synthesis). Windows IoT images can be built with one or more of these resources and they must be specified during the image time and cannot be modified later. Note that UI language-related resources are independent than speech language and voice resources.
 
-### Specifying UI and Speech resources 
+### Specifying UI and Speech resources
 In the OEM Input xml file, the required UI and speech languages are specified as shown below
 
 ``` xml
   <SupportedLanguages>
     <UserInterface>
       <Language>en-US</Language>
-      <Language>en-GB</Language> 
-      <Language>fr-CA</Language> 
-      <Language>es-MX</Language> 
-      <Language>es-ES</Language> 
+      <Language>en-GB</Language>
+      <Language>fr-CA</Language>
+      <Language>es-MX</Language>
+      <Language>es-ES</Language>
       <Language>fr-FR</Language>
     </UserInterface>
     <Keyboard>
       <Language>en-US</Language>
-      <Language>en-GB</Language> 
-      <Language>fr-CA</Language> 
-      <Language>es-MX</Language> 
-      <Language>es-ES</Language> 
+      <Language>en-GB</Language>
+      <Language>fr-CA</Language>
+      <Language>es-MX</Language>
+      <Language>es-ES</Language>
       <Language>fr-FR</Language>
     </Keyboard>
     <Speech>
       <Language>en-US</Language>
-      <Language>en-GB</Language> 
-      <Language>fr-CA</Language> 
-      <Language>es-MX</Language> 
-      <Language>es-ES</Language> 
+      <Language>en-GB</Language>
+      <Language>fr-CA</Language>
+      <Language>es-MX</Language>
+      <Language>es-ES</Language>
       <Language>fr-FR</Language>
     </Speech>
   </SupportedLanguages>
@@ -96,11 +96,11 @@ In the OEM Input xml file, the required speech data resources are specified as s
     <Microsoft>
        ...
       <Feature>IOT_SPEECHDATA_EN_CA</Feature>
-      <Feature>IOT_SPEECHDATA_ES_MX</Feature> 
-      <Feature>IOT_SPEECHDATA_FR_CA</Feature> 
+      <Feature>IOT_SPEECHDATA_ES_MX</Feature>
+      <Feature>IOT_SPEECHDATA_FR_CA</Feature>
       <Feature>IOT_SPEECHDATA_EN_GB</Feature>
       <Feature>IOT_SPEECHDATA_ES_ES</Feature>  
-      <Feature>IOT_SPEECHDATA_FR_FR</Feature> 
+      <Feature>IOT_SPEECHDATA_FR_FR</Feature>
     </Microsoft>
 ```
 
@@ -114,9 +114,9 @@ In the OEM Input xml file, the required speech data resources are specified as s
 
 ## Changing user preferences (language, region, speech and voice)
 
-UWP application can use WinRT APIs to set the region, preferred UI language list, speech language and voice that should be by default used. 
+UWP application can use WinRT APIs to set the region, preferred UI language list, speech language and voice that should be by default used.
 Once preferred UI language list set, UWP application will try to load the corresponding resources (unless application programmatically prevents that).
- 
+
 If the application doesn’t have the corresponding resources, then fallback resources will be loaded. Similarly, if the OS resources for the preferred languages aren’t part of the Windows IoT image, Windows IoT will use its fallback ones likely English (en-US).
 
 * Set region using `TrySetHomeGeographicRegion` in [Windows.System.UserProfile.GlobalizationPreferences](https://docs.microsoft.com/uwp/api/windows.system.userprofile.globalizationpreferences)

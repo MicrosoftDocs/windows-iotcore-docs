@@ -1,6 +1,6 @@
 ---
 title: Setting up your device
-ms.date: 04/10/2018
+ms.date: 07/26/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

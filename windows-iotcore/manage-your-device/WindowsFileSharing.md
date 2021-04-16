@@ -1,6 +1,6 @@
 ---
 title: Windows File Sharing
-ms.date: 08/28/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -16,7 +16,7 @@ You can use Windows file sharing to transfer files to and from your device.
 * The file sharing server on your Windows IoT Core device starts automatically on boot.  In order to connect to it, you need the IP address of your device.  You can find the IP address on the default app that boots when your device starts.
 
     ![DefaultApp on Windows IoT Core](../media/WindowsFileSharing/DefaultApp.png)
-    
+
 * Once you have the IP, open up **File Explorer** on your computer and type `\\<TARGET_DEVICE>\c$`, where `<TARGET_DEVICE>` is either the name or the IP Address of your Windows IoT Core device, then hit Enter.  
 
 Enter your administrator username and password if prompted. The username should be prefixed with the IP Address of your Windows IoT Core device. Example: **Username:** `192.168.1.118\Administrator`  **Password:** `{your_password}`.
@@ -32,7 +32,7 @@ Enter your administrator username and password if prompted. The username should 
 * To start the file sharing  server, type `net start Server`
 
     ![Server start and stop](../media/WindowsFileSharing/smb_start_stop.png)
-    
+
 ## Disabling and enabling the file sharing server on startup
 * Connect to your device through [PowerShell](../connect-your-device/powershell.md) or [SSH](../connect-your-device/ssh.md).
 * By default the file sharing  server is started when the device is booted.

@@ -2,7 +2,7 @@
 title: Wake on Touch
 author: jordanrh1
 ms.author: jordanrh
-ms.date: 09/17/2018
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -34,7 +34,7 @@ On AoAC systems (which includes all ARM systems), the system will automatically 
 ```powershell
 	reg add HKLM\System\CurrentControlSet\Control\Power /v PlatformAoAcOverride /t REG_DWORD /d 0
 ```
-	
+
 Disabling modern standby can impact power consumption when the system is idle. You should measure your system's power consumption with modern standby enabled and disabled before making the decision to disable modern standby.
 
 Modern standby is a software mechanism that attempts to quiet system activity as much as possible, thereby allowing hardware to enter a low-power state. In theory, a sufficiently quiet device with modern standby disabled can achieve the same low power consumption as a device in modern standby. It is important to minimize background activity including software timers and periodic tasks if modern standby is disabled.

@@ -2,7 +2,7 @@
 title: Set up a Default App
 author: bfjelds
 ms.author: bfjelds
-ms.date: 09/05/2017
+ms.date: 04/02/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -27,7 +27,7 @@ You can click on **Startup** column corresponding to the app.
 
 ### Using the shell
 
-Steps to set the default app using the shell 
+Steps to set the default app using the shell
 
 1. Connect to the device via [PowerShell](../connect-your-device/PowerShell.md)
 

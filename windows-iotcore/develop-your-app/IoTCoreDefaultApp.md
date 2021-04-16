@@ -1,6 +1,6 @@
 ---
 title: Windows 10 IoT Core Default App
-ms.date: 08/08/2018
+ms.date: 08/24/2020
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

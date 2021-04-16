@@ -2,7 +2,7 @@
 title: Driver Deployment
 author: parameshbabu
 ms.author: pabab
-ms.date: 08/22/2017
+ms.date: 05/14/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

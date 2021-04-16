@@ -1,6 +1,6 @@
 ---
 title: Setting up an NXP device
-ms.date: 05/22/2019
+ms.date: 03/05/2021
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

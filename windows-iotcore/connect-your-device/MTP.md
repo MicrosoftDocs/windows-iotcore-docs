@@ -2,7 +2,7 @@
 title: Media Transfer Protocol
 author: PawelWMS
 ms.author: pawelwi
-ms.date: 12/06/2017
+ms.date: 08/20/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
