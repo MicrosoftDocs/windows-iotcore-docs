@@ -37,8 +37,8 @@ First, you'll want to download the [Windows 10 IoT Dashboard](https://docs.micro
 
 From there, use the ellipses under "Actions" to select "Open in Device Portal". From there, you'll be taken to the Device Portal authentication page where, unless you changed the credentials initially, the default credentials are:
 ```
-    Username: `Administrator`<br/>
-    Password: `p@ssw0rd`
+    Username: Administrator
+    Password: p@ssw0rd
 ```
  ### 2. Browser
 If you cannot find your device in the dashboard or prefer to skip using the dashboard, you can also open the Device Portal by entering the IP address of your device plus `:8080` onto the end. When done correctly, it should look something like this:
