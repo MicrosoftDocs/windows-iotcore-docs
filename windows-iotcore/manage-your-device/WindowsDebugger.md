@@ -17,11 +17,11 @@ The following sections describe how to successfully connect with WinDbg to a Win
 
 WinDbg is a very powerful debugger that most Windows developers are familiar with.  However, if you are just getting started and would like to learn more about WinDbg, please visit the following links:
 
-* [Debugging Tools for Windows](https://msdn.microsoft.com/library/windows/hardware/ff551063(v=vs.85).aspx)
+* [Debugging Tools for Windows](/windows-hardware/drivers/debugger/)
 
-* [Getting Started with Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/mt219729(v=vs.85).aspx)
+* [Getting Started with Windows Debugging](/windows-hardware/drivers/debugger/getting-started-with-windows-debugging)
 
-* [Crash Dump Analysis Using WinDbg](https://msdn.microsoft.com/library/windows/hardware/ff539316(v=vs.85).aspx)
+* [Crash Dump Analysis Using WinDbg](/windows-hardware/drivers/debugger/crash-dump-files)
 
 
 ## MinnowBoard Max (MBM)

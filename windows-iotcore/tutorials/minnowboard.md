@@ -19,7 +19,7 @@ ms.custom: RS5
 > [!IMPORTANT]
 > When the "format this disk" pop up comes up, do _not_ format the disk. We are working on a fix for this issue.
 
-When setting up a MinnowBoard for prototyping, we recommend using the Windows 10 IoT Core Dashboard. However, if you're looking to manufacture with a MinnowBoard, please refer to the [IoT Core Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). You cannot use maker images for manufacturing.
+When setting up a MinnowBoard for prototyping, we recommend using the Windows 10 IoT Core Dashboard. However, if you're looking to manufacture with a MinnowBoard, please refer to the [IoT Core Manufacturing Guide](/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). You cannot use maker images for manufacturing.
 <br>
 > [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 
@@ -27,7 +27,7 @@ When setting up a MinnowBoard for prototyping, we recommend using the Windows 10
 
 To flash, or download, IoT Core onto your MinnowBoard, you'll need:
 * A computer running Windows 10 
-* [Windows 10 IoT Core Dashboard](https://docs.microsoft.com/windows/iot-core/downloads)
+* [Windows 10 IoT Core Dashboard](../downloads.md)
 * A high-performance SD card, such as a SanDisk SD card
 * An external display
 * Any other peripherals (e.g. mouse, keyboard, etc.)
@@ -70,4 +70,4 @@ If you haven't connected a display and would like to connect via Wi-Fi, you'll n
 
 ## Connect to Windows Device Portal
 
-Use the [Windows Device Portal](../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available. 
+Use the [Windows Device Portal](../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available.
