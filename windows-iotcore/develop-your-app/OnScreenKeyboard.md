@@ -78,8 +78,8 @@ To show the dictation button in the keyboard, refer to the following section on
 ## User Interface configuration
 
 The on-screen keyboard provides several configurable options for its user interface. These are configured via the registry.
-During development, you can use [PowerShell](/windows/iot-core/connect-your-device/powershell) or
-[Secure Shell (SSH)](/windows/iot-core/connect-your-device/ssh). For creating an OEM image, the preferred mechanism for
+During development, you can use [PowerShell](../connect-your-device/powershell.md) or
+[Secure Shell (SSH)](../connect-your-device/ssh.md). For creating an OEM image, the preferred mechanism for
 setting registry values is the `OEMInput.xml` file discussed here:
 
 [Runtime customizations](/windows-hardware/manufacture/iot/oscustomizations#runtime-customizations)

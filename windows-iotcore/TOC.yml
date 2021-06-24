@@ -1,5 +1,5 @@
 - name: Windows for IoT documentation
-  href: https://docs.microsoft.com/windows/iot/
+  href: /windows/iot/
 - name: Windows 10 IoT Core Overview
   href: windows-iot-core.md
 - name: Tutorials
@@ -201,29 +201,29 @@
   - name: Insider previews
     items:
     - name: "Current: Build 17744"
-      href: release-notes/insider/17744.md
+      href: ./release-notes/commercial/17763.md
     - name: Build 17723
-      href: release-notes/insider/17723.md
+      href: ./release-notes/commercial/17763.md
     - name: Build 17692
-      href: release-notes/insider/17692.md
+      href: ./release-notes/commercial/17763.md
     - name: Build 17686
-      href: release-notes/insider/17686.md
+      href: ./release-notes/commercial/17763.md
     - name: Build 17672
-      href: release-notes/insider/17672.md
+      href: ./release-notes/commercial/17763.md
     - name: "Current: Build 17661"
-      href: release-notes/insider/17661.md
+      href: ./release-notes/commercial/17763.md
     - name: Raspberry Pi 3B+ release
       href: release-notes/insider/RPi3BP.md
     - name: Build 17110
-      href: release-notes/insider/17110.md
+      href: ./release-notes/commercial/17763.md
     - name: Build 17083
-      href: release-notes/insider/17083.md
+      href: ./release-notes/commercial/17763.md
     - name: Build 17015
-      href: release-notes/insider/17015.md
+      href: ./release-notes/commercial/17763.md
     - name: Build 16267
-      href: release-notes/insider/16267.md
+      href: ./release-notes/commercial/17763.md
     - name: Build 16257
-      href: release-notes/insider/16257.md
+      href: ./release-notes/commercial/17763.md
   - name: Commercial releases
     items:
     - name: "Current: October 2018 Update (with January 2019 servicing)"

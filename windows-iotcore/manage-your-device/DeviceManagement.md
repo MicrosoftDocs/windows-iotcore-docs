@@ -14,9 +14,9 @@ keywords: windows iot, device management, windows iot, Azure DM, Azure Hub, Azur
 
 Windows 10 IoT Core devices can be managed using a traditional OMA DM MDM server that supports certificate-based enrollment or using Azure IoT Hub's Device Management.  
 
- _Learn more about MDM and Windows 10 [here](https://msdn.microsoft.com/library/windows/hardware/dn914769(v=vs.85).aspx)._  
+ _Learn more about MDM and Windows 10 [here](/windows/client-management/mdm/)._  
 
-For devices that are managed using an OMA DM server the MDM policies for Windows 10 IoT Core align with the policies supported in other editions of Windows 10. To learn more about policies as well as what can be managed on IoT Core devices, see Configuration service provider reference for Windows 10 [here](https://aka.ms/csplist). The MDM support in Windows 10 is based on Open Mobile Alliance (OMA) Device Management (DM) protocol 1.2.1 specification.
+For devices that are managed using an OMA DM server the MDM policies for Windows 10 IoT Core align with the policies supported in other editions of Windows 10. To learn more about policies as well as what can be managed on IoT Core devices, see Configuration service provider reference for Windows 10 [here](/windows/client-management/mdm/configuration-service-provider-reference). The MDM support in Windows 10 is based on Open Mobile Alliance (OMA) Device Management (DM) protocol 1.2.1 specification.
 
 ## How do I enroll an IoT Core device into a MDM?
 ___
@@ -117,4 +117,4 @@ Take the Provisioning package that was exported from SCCM or WICD and copy the .
 
 #### Adding package to image
 
-See [Add a provisioning package to an image](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-provisioning-package-to-an-image). Upon first boot, the device will execute the package and start the enrollment process.
+See [Add a provisioning package to an image](/windows-hardware/manufacture/iot/add-a-provisioning-package-to-an-image). Upon first boot, the device will execute the package and start the enrollment process.

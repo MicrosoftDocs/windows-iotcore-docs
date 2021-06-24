@@ -23,9 +23,9 @@ ___
 ### Universal Windows Platform (UWP) Apps
 IoT Core is a UWP-centric OS and UWP apps are its primary app type.
 
-Universal Windows Platform (UWP) is a common app platform across all version of Windows 10, including Windows 10 IoT Core.  UWP is an evolution of Windows Runtime (WinRT). You can find more information and an overview to UWP [here](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide).
+Universal Windows Platform (UWP) is a common app platform across all version of Windows 10, including Windows 10 IoT Core.  UWP is an evolution of Windows Runtime (WinRT). You can find more information and an overview to UWP [here](/windows/uwp/get-started/universal-application-platform-guide).
 
-Visual Studio is the primary tool for writing UWP apps for IoT Core and in general. You can find a detailed listing of the compatibility requirements for Visual Studio [here](https://docs.microsoft.com/visualstudio/productinfo/vs2017-compatibility-vs).
+Visual Studio is the primary tool for writing UWP apps for IoT Core and in general. You can find a detailed listing of the compatibility requirements for Visual Studio [here](/visualstudio/productinfo/vs2017-compatibility-vs).
 
 
 ### Traditional UWP Apps
@@ -84,7 +84,7 @@ namespace BlinkyHeadlessCS
 }
 ```
 
-You can find in-depth information on Background apps [here](https://docs.microsoft.com/windows/iot-core/develop-your-app/backgroundapplications).
+You can find in-depth information on Background apps [here](./backgroundapplications.md).
 
 ### Non-UWP Apps
 IoT Core supports certain traditional Win32 app types such as Win32 Console Apps and NT Services. These apps are built and run the same way as on Windows 10 Desktop. Additionally, there is an IoT Core C++ Console project template to make it easy to build such apps using Visual Studio.

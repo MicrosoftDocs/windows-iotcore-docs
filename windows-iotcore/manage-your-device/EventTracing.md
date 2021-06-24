@@ -13,14 +13,14 @@ keywords: windows iot, event tracing, ETW, event tracing for windows, devices
 Event Tracing for Windows (ETW) provides developers the ability to start and stop event tracing sessions, instrument an application to provide trace events, and consume trace events.
 ETW on Windows IoT Core devices supports both manifest-based and classic events, and is no different than other Windows 10 devices.
 
-This section will provide useful links on the basics of writing and consuming events. Find more detailed information from the [Windows Event Tracing page](https://msdn.microsoft.com/library/windows/desktop/bb968803(v=vs.85).aspx).
+This section will provide useful links on the basics of writing and consuming events. Find more detailed information from the [Windows Event Tracing page](/windows/win32/etw/event-tracing-portal).
 
 ## Writing Events
 
 Find a UWP sample that implements the different methods of writing events as part of the [Windows Universal Samples GitHub](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Logging).
 This will run on Windows IoT Core devices and is also a great code reference.
 
-Detailed guide on writing events and obtaining GUIDs can be found [here](https://msdn.microsoft.com/library/windows/desktop/aa364161(v=vs.85).aspx).
+Detailed guide on writing events and obtaining GUIDs can be found [here](/windows/win32/etw/writing-events).
 
 ## Consuming Events
 
@@ -32,7 +32,7 @@ Use [FTP](../connect-your-device/FTP.md) or [Windows File Sharing](../manage-you
 [Windows Assessment and Deployment Kit](https://go.microsoft.com/fwlink/p/?LinkId=526740) includes three tools to help capture and analyze events.
 
 
-1. **Windows Performance Analyzer** visualizes ETL files on desktop, with a step-by-step guide [here](https://msdn.microsoft.com/library/windows/hardware/dn927319(v=vs.85).aspx).
+1. **Windows Performance Analyzer** visualizes ETL files on desktop, with a step-by-step guide [here](/windows-hardware/test/wpt/wpa-step-by-step-guide).
 
 2. **Xperf command-line tool** captures real-time events and writes them to an ETL file. This tool is already installed on Windows IoT Core devices, just run the following commands on the devices:
 ```
@@ -51,7 +51,7 @@ Use [FTP](../connect-your-device/FTP.md) or [Windows File Sharing](../manage-you
 
 ## Use Device Portal
 
-Device portal can capture events in real time, with instructions [here](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal).
+Device portal can capture events in real time, with instructions [here](/windows/uwp/debug-test-perf/device-portal).
 
 > [!NOTE]
 > This method does not produce an ETL file for further analysis, but requires minimal setup.
@@ -59,4 +59,4 @@ Device portal can capture events in real time, with instructions [here](https://
 ## Use Function Calls
 
 Enable an application to consume events from an ETL file or in real-time using function calls.
-Learn how to use these functions [here](https://msdn.microsoft.com/library/windows/desktop/aa363692(v=vs.85).aspx).
+Learn how to use these functions [here](/windows/win32/etw/consuming-events).

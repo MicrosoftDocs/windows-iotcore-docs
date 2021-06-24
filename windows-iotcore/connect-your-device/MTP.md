@@ -38,7 +38,7 @@ The feature is part of the IoT Core Kits, which can be downloaded and installed 
 ### Enabling the MTP USB interface
 
 Once the device comes back to the MainOS, the USBFN configuration still needs to be updated to include MTP. In order to do that, you will need to add MTP to the interfaces enumerated by USBFN.
-The [USB registry settings](https://docs.microsoft.com/windows-hardware/drivers/usbcon/usb-registry-settings-for-a-function-controller-driver) article explains the details of USB's configuration.
+The [USB registry settings](/windows-hardware/drivers/usbcon/usb-registry-settings-for-a-function-controller-driver) article explains the details of USB's configuration.
 
 While you can modify the default USBFN configuration available under the `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Configurations\Default` key, it is recommended to define your own, as they will not get overwritten by system updates.
 
@@ -59,13 +59,13 @@ Follow these steps to add a new configuration with MTP:
 Follow these steps to add MTP to an existing USBFN configuration:
 1. Find the current configuration by checking the `CurrentConfiguration` value under `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN`. If the value is present, then the current configuration can be found under `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Configurations\[CurrentConfiguration]`. Otherwise it is under `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Configurations\Default`.
 2. Under the current configuration key, add `\0MTP` to the value of `InterfaceList`. The ***\0*** part is used as the type of `InterfaceList` is `REG_MULTI_SZ` and it requires this separator between values.
-3. Modify the `MSOSCompatIdDescriptor` value to include the MTP's descriptor. In order to create a valid descriptor containing all interfaces currently under the `InterfaceList` value, please follow the instructions documentation available at the bottom of [this page](https://msdn.microsoft.com/windows/hardware/gg463179.aspx). *OS_Desc_CompatID.doc* gives an explanation of the descriptor's format and an example of including multiple interfaces in the descriptor. MTP's compatible and subcompatible IDs are also available on the same page and are used in one of the examples.
+3. Modify the `MSOSCompatIdDescriptor` value to include the MTP's descriptor. In order to create a valid descriptor containing all interfaces currently under the `InterfaceList` value, please follow the instructions documentation available at the bottom of [this page](/previous-versions/gg463179(v=msdn.10)). *OS_Desc_CompatID.doc* gives an explanation of the descriptor's format and an example of including multiple interfaces in the descriptor. MTP's compatible and subcompatible IDs are also available on the same page and are used in one of the examples.
 
 ## How to include MTP in Your Custom FFU
 
 1. Add **IOT_MTP** feature ID to the OEM Input file. This is an equivalent of following the steps from the "[**Provisioning the device with required packages**](#provisioning-the-device-with-required-packages)" section.
-2. Make sure to apply the same registry changes as mentioned in the "[**Creating a new USBFN configuration with the MTP interface**](#creating-a-new-usbfn-configuration-with-the-mtp-interface)" section. Follow [these instructions](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-registry-setting-to-an-image) to learn how to apply registry changes to an FFU.
-3. Create the image\FFU. Read [this article](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image) for instructions.
+2. Make sure to apply the same registry changes as mentioned in the "[**Creating a new USBFN configuration with the MTP interface**](#creating-a-new-usbfn-configuration-with-the-mtp-interface)" section. Follow [these instructions](/windows-hardware/manufacture/iot/add-a-registry-setting-to-an-image) to learn how to apply registry changes to an FFU.
+3. Create the image\FFU. Read [this article](/windows-hardware/manufacture/iot/create-a-basic-image) for instructions.
 
 > [!WARNING]
 > Modifying the default configuration should not be attempted through FFU customization. System-defined entries may be refreshed/changed by a system update and any custom settings will be lost.
@@ -84,4 +84,4 @@ Sample paths:
 > [!WARNING]
 > Do not use an absolute path containing the drive letter like `C:\Some\Folder\Path` - this might prevent the SD card from being enumerated.
 
-See [this link](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-registry-setting-to-an-image) for details about customizing your image with specific registry entries.
+See [this link](/windows-hardware/manufacture/iot/add-a-registry-setting-to-an-image) for details about customizing your image with specific registry entries.

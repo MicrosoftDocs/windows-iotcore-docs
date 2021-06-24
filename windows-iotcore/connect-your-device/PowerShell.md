@@ -120,7 +120,7 @@ For a list of commands and utilities that you can use with PowerShell, see the [
 * Running a cmdlet from any of these modules throws CommandNotFoundException: Appx, NetAdapter, NetSecurity, NetTCPIP, PnpDevice.
 * Import-Module on any of the above modules throws PSSecurityException exception with UnauthorizedAccess. Module auto loading does not seem to work either.
 
-**Workaround**: Modify the execution policy within the remote PowerShell session to **RemoteSigned**. For more information on the different execution policies, see [Using the Set-ExecutionPolicy Cmdlet](https://technet.microsoft.com/library/ee176961.aspx).
+**Workaround**: Modify the execution policy within the remote PowerShell session to **RemoteSigned**. For more information on the different execution policies, see [Using the Set-ExecutionPolicy Cmdlet](/previous-versions/windows/it-pro/windows-powershell-1.0/ee176961(v=technet.10)).
 
 **ISSUE**: Cmdlets from some modules such as NetAdapter are sometimes not visible. For example, Get-Module NetAdapter returns an empty list.
 

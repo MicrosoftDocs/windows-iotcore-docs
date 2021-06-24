@@ -73,7 +73,7 @@ As a REG file, this looks as follows:
 
 The above REG file entries decode left to right as follows:
 
-- Bits 0-15: Virtual Key Code (i.e. 1B,00 for ESCAPE). See [Virtual Key Code](https://msdn.microsoft.com/library/windows/desktop/dd375731(v=vs.85).aspx) for the complete list of key code values
+- Bits 0-15: Virtual Key Code (i.e. 1B,00 for ESCAPE). See [Virtual Key Code](/windows/win32/inputdev/virtual-key-codes) for the complete list of key code values
 - Bits 16-19: Modifier Key. 0x0 = No Modifier, 0x1 = ALT, 0x2 = CTRL, and 0x4 = SHIFT. Combining keys adds the values together (i.e. ALT+SHIFT is 0x5)
 - Bits 20-47: Reserved for future use; must be 0
 - Bits 48-62:  Action
@@ -81,4 +81,3 @@ The above REG file entries decode left to right as follows:
     - 1 = Previous View (may not work in future releases)
     - 2 = Next View (may not work in future releases)
 - Bit 63: Reserved; must be 0
-
