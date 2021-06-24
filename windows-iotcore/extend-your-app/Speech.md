@@ -22,7 +22,7 @@ Here is the list of the available services and API on Windows 10 IoT Core:
 
 ## Windows 10 speech resources
 
-* [Quick start speech interaction](https://msdn.microsoft.com/library/windows/apps/xaml/dn630426.aspx)
+* [Quick start speech interaction](/previous-versions/windows/apps/dn630426(v=win.10))
 
 * Speech platform, uses simple commands with constrained grammars (TTS, SSML)
   * [Video](https://www.youtube.com/watch?v=GiDvBhfNnjU) 
