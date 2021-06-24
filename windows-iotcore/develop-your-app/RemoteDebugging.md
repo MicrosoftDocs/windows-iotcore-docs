@@ -2,7 +2,7 @@
 title: Debug your app using Remote Console App Debugging
 author: bfjelds
 ms.author: bfjelds
-ms.date: 09/12/2017
+ms.date: 01/03/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

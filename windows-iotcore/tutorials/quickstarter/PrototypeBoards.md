@@ -1,6 +1,6 @@
 ---
 title: Suggested Prototype Boards
-ms.date: 04/17/2018
+ms.date: 08/29/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

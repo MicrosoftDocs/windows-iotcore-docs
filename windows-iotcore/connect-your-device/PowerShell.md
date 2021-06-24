@@ -2,7 +2,7 @@
 title: Using PowerShell for Windows IoT
 author: paulmon
 ms.author: riameser
-ms.date: 08/28/2017
+ms.date: 10/29/2020
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

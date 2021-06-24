@@ -2,7 +2,7 @@
 title: Communicating with Localhost
 author: paulmon
 ms.author: riameser
-ms.date: 08/28/2017
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

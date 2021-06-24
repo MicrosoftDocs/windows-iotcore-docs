@@ -1,6 +1,6 @@
 ---
 title: Network packet capture
-ms.date: 08/28/2017
+ms.date: 06/08/2020
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

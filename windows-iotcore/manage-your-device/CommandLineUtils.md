@@ -2,7 +2,7 @@
 title: Windows 10 IoT Core Command Line Utilities
 author: bfjelds
 ms.author: bfjelds
-ms.date: 08/28/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

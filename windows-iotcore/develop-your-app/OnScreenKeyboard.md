@@ -2,11 +2,11 @@
 title: Configure your headed device with the Windows 10 IoT Core on-screen keyboard
 author: johntasler
 ms.author: jtasler
-ms.date: 09/13/2018
+ms.date: 10/12/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-description: Learn about the new on-screen keyboard and how to configure it in Windows 10 IoT Core, version 1809. 
+description: Learn about the new on-screen keyboard and how to configure it in Windows 10 IoT Core, version 1809.
 keywords: Windows 10 IoT Core, touch, keyboard, osk, onscreen, on-screen, sip, input, ime, headed, dictation, voice, speech
 ms.custom: RS5
 ---
@@ -138,7 +138,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShel
 > [!NOTE]
 > Dictation mode requires a speech package to be installed for the selected input language, as well as an
 > audio input device. If a matching speech packages is not installed, the dictation button will not be shown.
-> 
+>
 > All images include the en-US speech language. Other speech packages are installed as optional features.
 > For more information about IoT Features, see [IoT Core Feature List](/windows-hardware/manufacture/iot/iot-core-feature-list)
 > and [IoT Core manufacturing guide](/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).

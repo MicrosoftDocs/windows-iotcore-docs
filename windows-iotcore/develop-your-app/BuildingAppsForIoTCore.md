@@ -2,7 +2,7 @@
 title: Developing foreground applications
 author: msalehmsft
 ms.author: msaleh
-ms.date: 08/28/2017
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -31,9 +31,9 @@ Visual Studio is the primary tool for writing UWP apps for IoT Core and in gener
 ### Traditional UWP Apps
 UWP apps just work on IoT Core, just as they do on other Windows 10 editions. A simple, blank Xaml app in Visual Studio will properly deploy to your IoT Core device just as it would on a phone or Windows 10 PC. All of the standard UWP languages and project templates are fully supported on IoT Core.
 
-There are a few additions to the traditional UWP app-model to support IoT scenarios and any UWP app that takes advantage of them will need the corresponding information added to their manifest. In particular, the "iot" namespace needs to be added to the manifest of these standard UWP apps. 
+There are a few additions to the traditional UWP app-model to support IoT scenarios and any UWP app that takes advantage of them will need the corresponding information added to their manifest. In particular, the "iot" namespace needs to be added to the manifest of these standard UWP apps.
 
-Inside the <Package> attribute of the manifest, you need to define the iot xmlns and add it to the IgnorableNamespaces list. The final xml should look like this: 
+Inside the <Package> attribute of the manifest, you need to define the iot xmlns and add it to the IgnorableNamespaces list. The final xml should look like this:
 
 ```
 <Package
@@ -100,7 +100,7 @@ IoT Core supports a wide range of programming languages.
 
 ### In-Box languages
 Traditional UWP languages ship with support in Visual Studio by default. All of the In-Box languages support both UI and Background Applications
- 
+
 * Languages
   * C#
   * C++
@@ -152,7 +152,7 @@ Samples:
 ### Arduino Wiring
 With Arduino Wiring support you can build apps in Arduino Wiring for many popular components and peripherals in the IoT ecosystem.
 
-Our [Arduino Wiring Project Guide](../learn-about-hardware/ArduinoWiringProjectGuide.md) provides full instructions on how to get set up to build these apps. The samples copied and linked below will help you get started building your own.  You can even [build WinRT components in Arduino](https://github.com/ms-iot/samples/tree/develop/ArduinoLibraryBlinky) that can then be used from other languages. 
+Our [Arduino Wiring Project Guide](../learn-about-hardware/ArduinoWiringProjectGuide.md) provides full instructions on how to get set up to build these apps. The samples copied and linked below will help you get started building your own.  You can even [build WinRT components in Arduino](https://github.com/ms-iot/samples/tree/develop/ArduinoLibraryBlinky) that can then be used from other languages.
 
 *Blinky Sample Code*
 The full [sample code and docs](https://github.com/ms-iot/samples/tree/develop/ArduinoLibraryBlinky) are available on our samples page and you can find the full code below:

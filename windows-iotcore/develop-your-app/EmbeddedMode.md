@@ -2,7 +2,7 @@
 title: Embedded mode
 author: lilyhou
 ms.author: lihou
-ms.date: 11/10/2017
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

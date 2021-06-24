@@ -2,7 +2,7 @@
 title: Use DISM to flash Windows 10 IoT Core
 author: bfjelds
 ms.author: bfjelds
-ms.date: 08/28/2017
+ms.date: 04/01/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

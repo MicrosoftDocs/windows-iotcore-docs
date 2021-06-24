@@ -1,6 +1,6 @@
 ---
 title: Windows Device Portal
-ms.date: 08/28/2017
+ms.date: 06/27/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

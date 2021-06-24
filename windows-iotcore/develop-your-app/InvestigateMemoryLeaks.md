@@ -2,7 +2,7 @@
 title: Investigating memory leaks
 author: paulmon
 ms.author: riameser
-ms.date: 09/20/2017
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

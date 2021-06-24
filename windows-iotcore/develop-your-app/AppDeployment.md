@@ -2,7 +2,7 @@
 title: Deploying an App with Visual Studio
 author: bfjelds
 ms.author: bfjelds
-ms.date: 08/28/2017
+ms.date: 04/02/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -12,7 +12,7 @@ keywords: windows iot, visual studio, app deployment, remote debugging
 
 # Deploying an App with Visual Studio
 
-Deploying and debugging your application is straightforward with Visual Studio. We'll use the **Remote Debugging** feature to deploy the app to your locally connected Windows 10 IoT Core device. 
+Deploying and debugging your application is straightforward with Visual Studio. We'll use the **Remote Debugging** feature to deploy the app to your locally connected Windows 10 IoT Core device.
 
 > [!NOTE]
 > Visual Studio will generate a cryptic error when deploying to a RS5 (or RS4 with OpenSSH enabled) IoT image unless a SDK from RS4 or greater is installed that Visual Studio can access.
@@ -30,7 +30,7 @@ Deploying and debugging your application is straightforward with Visual Studio. 
 
 3. At this point, Visual Studio will present the **Remote Connections** dialog. If you previously used [PowerShell](../connect-your-device/PowerShell.md) to set a unique name for your device, you can enter it here (in this example, we're using **my device**). Otherwise, use the IP address of your Windows IoT Core device.
 
-4. After entering the device name/IP select `Universal (Unencrypted Protocol)` Authentication Mode, then click **Select**. 
+4. After entering the device name/IP select `Universal (Unencrypted Protocol)` Authentication Mode, then click **Select**.
 
 ![Universal authentication mode](../media/AppDeployment/remote-connections.png)
 

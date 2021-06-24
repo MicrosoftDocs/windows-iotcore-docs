@@ -1,6 +1,6 @@
 ---
 title: Windows 10 IoT Core API Porting Tool
-ms.date: 08/28/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

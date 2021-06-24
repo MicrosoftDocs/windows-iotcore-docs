@@ -1,6 +1,6 @@
 ---
 title: Capturing Fiddler Traces
-ms.date: 08/28/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

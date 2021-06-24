@@ -2,11 +2,11 @@
 title: Configure the title bar height for sign in dialog boxes
 author: johntasler
 ms.author: jtasler
-ms.date: 09/13/2018
+ms.date: 10/12/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-description: Learn how to configure the title bar height for sign in dialog boxes in Windows 10 IoT Core, version 1809. 
+description: Learn how to configure the title bar height for sign in dialog boxes in Windows 10 IoT Core, version 1809.
 keywords: Windows 10 IoT Core, msa, aad, titlebar, close, cancel, headed, web, account, WebAccountManagement, sign-in , sign
 ms.custom: RS5
 ---

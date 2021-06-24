@@ -1,6 +1,6 @@
 ---
 title: Dragonboard Pin Mappings
-ms.date: 08/28/2017
+ms.date: 04/09/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -22,7 +22,7 @@ Hardware interfaces for the Dragonboard are exposed through the 40-pin header on
 * **1x** - 1.8V power pin
 * **4x** - Ground pins
 
-Note that the Dragonboard uses 1.8V logic levels on all IO pins. 
+Note that the Dragonboard uses 1.8V logic levels on all IO pins.
 
 ## GPIO Pins
 
@@ -45,15 +45,15 @@ The following GPIO pins are accessible through APIs:
 > | 34    | 32                 |
 > | 28    | 33                 |
 > | 33    | 34                 |
-> | 21    | User LED 1         | 
+> | 21    | User LED 1         |
 > | 120   | User LED 2         |         
 
 
 As an example, the following code opens **GPIO 35** as an output and writes a digital '**1**' out on the pin:
-         
+
 ```C#
 using Windows.Devices.Gpio;
-         
+
 public void GPIO()
 {
 	GpioController Controller = GpioController.GetDefault(); /* Get the default GPIO controller on the system */
@@ -171,11 +171,11 @@ public async void I2C()
 
     // Get a selector string that will return our wanted I2C controller
     string aqs = I2cDevice.GetDeviceSelector("I2C0");
-    
+
     // Find the I2C bus controller devices with our selector string
     var dis = await DeviceInformation.FindAllAsync(aqs);
 
-    // Create an I2cDevice with our selected bus controller and I2C settings 
+    // Create an I2cDevice with our selected bus controller and I2C settings
     using (I2cDevice device = await I2cDevice.FromIdAsync(dis[0].Id, settings))
     {
         byte[] writeBuf = { 0x01, 0x02, 0x03, 0x04 };
@@ -200,7 +200,7 @@ There is one SPI controller **SPI0** available on the DB
 
 ### SPI Issues
 
-The SPI clock is fixed at 4.8mhz. The requested SPI clock will be ignored. 
+The SPI clock is fixed at 4.8mhz. The requested SPI clock will be ignored.
 
 
 ### SPI Sample
