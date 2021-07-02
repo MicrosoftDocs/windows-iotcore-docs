@@ -15,13 +15,13 @@ keywords: windows iot, Windows Device Portal, remote, device portal
 ![Device Portal Home](../media/deviceportal/deviceportal.png)
 
 > [!IMPORTANT]
-> Do not use maker images for commercialization. If you are commercializing a device, you must use a custom FFU for optimal security. Learn more [here](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
+> Do not use maker images for commercialization. If you are commercializing a device, you must use a custom FFU for optimal security. Learn more [here](/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
 
 > [!WARNING]
 > Live kernel debug is currently failing for ARM devices. We are working to get this fixed.
 
 > [!IMPORTANT]
-> If you are building an open retail device for commercial deployment to a "specific/limited installation" (i.e. factory or retail store) where the end-user does the final configuration and you document your customers that they must [obtain a certificate for WDP and install it on both WDP and connecting browsers and passwords are changed on WDP](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-ssl), then using WDP in this narrow commercial instance is acceptable. Retail images in this scenario should still *not* include IOT_TOOLKIT, but should use the IOT_WEBBEXTN package to pull in WDP.
+> If you are building an open retail device for commercial deployment to a "specific/limited installation" (i.e. factory or retail store) where the end-user does the final configuration and you document your customers that they must [obtain a certificate for WDP and install it on both WDP and connecting browsers and passwords are changed on WDP](/windows/uwp/debug-test-perf/device-portal-ssl), then using WDP in this narrow commercial instance is acceptable. Retail images in this scenario should still *not* include IOT_TOOLKIT, but should use the IOT_WEBBEXTN package to pull in WDP.
 
 ## Shared Documentation
 WDP is a developer tool shared among all Windows 10 devices. Each product has its own unique features, but the core functionality is the same.
@@ -33,7 +33,7 @@ There are two ways to go get the Windows Device Portal up and running.
 
 ### 1. Windows 10 IoT Dashboard
 
-First, you'll want to download the [Windows 10 IoT Dashboard](https://docs.microsoft.com/windows/iot-core/connect-your-device/iotdashboard), a developer tool that makes it easy to set up new devices. Once you've used the Dashboard to flash a Windows 10 IoT Core image onto your device, check that your device shows up under "My devices".
+First, you'll want to download the [Windows 10 IoT Dashboard](/windows/iot-core/connect-your-device/iotdashboard), a developer tool that makes it easy to set up new devices. Once you've used the Dashboard to flash a Windows 10 IoT Core image onto your device, check that your device shows up under "My devices".
 
 From there, use the ellipses under "Actions" to select "Open in Device Portal". From there, you'll be taken to the Device Portal authentication page where, unless you changed the credentials initially, the default credentials are:
 ```
@@ -188,7 +188,7 @@ If you want to use HTTPS, first take the ownership of the registry key as descri
 
 In the Windows 10 Creators Update, the Windows Device Portal added a way for device administrators to install a custom certificate for use in HTTPS communication.
 
-To learn more, [read the documentation under the Windows Device Portal docs](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-ssl).
+To learn more, [read the documentation under the Windows Device Portal docs](/windows/uwp/debug-test-perf/device-portal-ssl).
 
 ### Crash Dump Settings for Capturing Memory Dump:
 

@@ -117,4 +117,4 @@ Take the Provisioning package that was exported from SCCM or WICD and copy the .
 
 #### Adding package to image
 
-See [Add a provisioning package to an image](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-provisioning-package-to-an-image). Upon first boot, the device will execute the package and start the enrollment process.
+See [Add a provisioning package to an image](/windows-hardware/manufacture/iot/add-a-provisioning-package-to-an-image). Upon first boot, the device will execute the package and start the enrollment process.

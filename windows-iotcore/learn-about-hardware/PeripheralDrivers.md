@@ -35,7 +35,7 @@ The Driver package contains the references(InfSource)to the Inf file for the dri
 [New-IoTInf2Cab](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/New-IoTInf2Cab.md) creates the package xml file and also builds the cab file directly.
 
 > [!NOTE]
-> Windows IoT Core only supports [Universal INF and Universal Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers).
+> Windows IoT Core only supports [Universal INF and Universal Drivers](/windows-hardware/drivers/develop/getting-started-with-universal-drivers).
 
 
 See also: [Sample Driver Package](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/BSP/CustomRpi2/Packages/CustomRPi2.GPIO)
@@ -56,5 +56,5 @@ ___
 * Launch the [PowerShell](../connect-your-device/PowerShell.md)
 * You can get the status of the installed drivers using the following PowerShell commandlets
 
-	* [Get-PnpDevice](https://docs.microsoft.com/powershell/module/pnpdevice/get-pnpdevice?view=win10-ps&preserve-view=true)
-	* [Get-PnpDeviceProperty](https://docs.microsoft.com/powershell/module/pnpdevice/get-pnpdeviceproperty?view=win10-ps&preserve-view=true)
+	* [Get-PnpDevice](/powershell/module/pnpdevice/get-pnpdevice?view=win10-ps&preserve-view=true)
+	* [Get-PnpDeviceProperty](/powershell/module/pnpdevice/get-pnpdeviceproperty?view=win10-ps&preserve-view=true)

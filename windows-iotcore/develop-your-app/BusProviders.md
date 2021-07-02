@@ -16,7 +16,7 @@ Windows 10 contains new APIs for accessing GPIO, I2C, SPI, and UART directly fro
 
 Usermode access to low-level buses on Windows is plumbed through the existing `GpioClx` and `SpbCx` frameworks. A new driver called RhProxy, available on Windows IoT Core and Windows Enterprise, exposes `GpioClx` and `SpbCx` resources to usermode. To enable the APIs, a device node for rhproxy must be declared in your ACPI tables with each of the GPIO and SPB resources that should be exposed to usermode.
 
-Additional in-depth documentation on UserMode access via RhProxy can be found [here](https://docs.microsoft.com/windows/uwp/devices-sensors/enable-usermode-access).
+Additional in-depth documentation on UserMode access via RhProxy can be found [here](/windows/uwp/devices-sensors/enable-usermode-access).
 
 ## Bus Providers
 
@@ -61,4 +61,4 @@ In addition to the providers that give you access to real hardware, we have buil
 
 Additional bus tools, sample codes, and building and testing on I2C, SPI, GPIO, MinComm/UART can be found [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/BusTools).
 
-Please reference [Windows Runtime (WinRT) APIs](https://docs.microsoft.com/uwp/api) and here's how to leverage the APIs from [Win32 applications](https://blogs.windows.com/windowsdeveloper/2017/01/25/calling-windows-10-apis-desktop-application/).   
+Please reference [Windows Runtime (WinRT) APIs](/uwp/api) and here's how to leverage the APIs from [Win32 applications](https://blogs.windows.com/windowsdeveloper/2017/01/25/calling-windows-10-apis-desktop-application/).   

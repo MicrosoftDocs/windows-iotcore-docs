@@ -12,7 +12,7 @@ Download the tools and software you need to get started with Windows 10 IoT Core
 
 ## Windows 10 IoT Core Dashboard
 
-The Windows 10 IoT Core Dashboard makes flashing Windows 10 IoT Core onto your device simpler with a navigable interface. Once downloaded, learn how to set up your device with the dashboard [here](https://docs.microsoft.com/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-raspberry-pi-minnowboard-nxp).
+The Windows 10 IoT Core Dashboard makes flashing Windows 10 IoT Core onto your device simpler with a navigable interface. Once downloaded, learn how to set up your device with the dashboard [here](/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-raspberry-pi-minnowboard-nxp).
 
 > [!div class="nextstepaction"]
 > [Download the Windows 10 IoT Core Dashboard](https://go.microsoft.com/fwlink/?LinkID=708576)
@@ -24,7 +24,7 @@ _By downloading and using the Windows 10 IoT Core Dashboard, you agree to the [l
 ## Latest Windows 10 IoT Core builds
 
 > [!WARNING]
-> Do not use maker images for commercialization. If you are commercializing a device, you must use a custom FFU for optimal security. Learn more [here](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
+> Do not use maker images for commercialization. If you are commercializing a device, you must use a custom FFU for optimal security. Learn more [here](/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
 
 When commercializing your IoT Solution, you will need to download builds from the [Microsoft Software Downloads site](https://aka.ms/iotcoredownloads). We've included releases from the past listed below as well in case you need to work with a previous build of Windows 10 IoT Core for your device.
 

@@ -38,7 +38,7 @@ The feature is part of the IoT Core Kits, which can be downloaded and installed 
 ### Enabling the MTP USB interface
 
 Once the device comes back to the MainOS, the USBFN configuration still needs to be updated to include MTP. In order to do that, you will need to add MTP to the interfaces enumerated by USBFN.
-The [USB registry settings](https://docs.microsoft.com/windows-hardware/drivers/usbcon/usb-registry-settings-for-a-function-controller-driver) article explains the details of USB's configuration.
+The [USB registry settings](/windows-hardware/drivers/usbcon/usb-registry-settings-for-a-function-controller-driver) article explains the details of USB's configuration.
 
 While you can modify the default USBFN configuration available under the `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Configurations\Default` key, it is recommended to define your own, as they will not get overwritten by system updates.
 
@@ -64,8 +64,8 @@ Follow these steps to add MTP to an existing USBFN configuration:
 ## How to include MTP in Your Custom FFU
 
 1. Add **IOT_MTP** feature ID to the OEM Input file. This is an equivalent of following the steps from the "[**Provisioning the device with required packages**](#provisioning-the-device-with-required-packages)" section.
-2. Make sure to apply the same registry changes as mentioned in the "[**Creating a new USBFN configuration with the MTP interface**](#creating-a-new-usbfn-configuration-with-the-mtp-interface)" section. Follow [these instructions](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-registry-setting-to-an-image) to learn how to apply registry changes to an FFU.
-3. Create the image\FFU. Read [this article](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image) for instructions.
+2. Make sure to apply the same registry changes as mentioned in the "[**Creating a new USBFN configuration with the MTP interface**](#creating-a-new-usbfn-configuration-with-the-mtp-interface)" section. Follow [these instructions](/windows-hardware/manufacture/iot/add-a-registry-setting-to-an-image) to learn how to apply registry changes to an FFU.
+3. Create the image\FFU. Read [this article](/windows-hardware/manufacture/iot/create-a-basic-image) for instructions.
 
 > [!WARNING]
 > Modifying the default configuration should not be attempted through FFU customization. System-defined entries may be refreshed/changed by a system update and any custom settings will be lost.
@@ -84,4 +84,4 @@ Sample paths:
 > [!WARNING]
 > Do not use an absolute path containing the drive letter like `C:\Some\Folder\Path` - this might prevent the SD card from being enumerated.
 
-See [this link](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-registry-setting-to-an-image) for details about customizing your image with specific registry entries.
+See [this link](/windows-hardware/manufacture/iot/add-a-registry-setting-to-an-image) for details about customizing your image with specific registry entries.

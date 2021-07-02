@@ -12,7 +12,7 @@ keywords: windows iot, Unified Write Filter, security, memory, storage media
 
 The Unified Write Filter (UWF) is a feature that protects physical storage media from data writes. UWF intercepts all write attempts to a protected volume and redirects those write attempts to a virtual overlay. This improves the reliability and stability of your device and reduces the wear on write-sensitive media, such as flash memory media like solid-state drives.
 
-Read our documentation on the [Unified Write Filter](https://docs.microsoft.com/windows-hardware/customize/enterprise/unified-write-filter) for more information.
+Read our documentation on the [Unified Write Filter](/windows-hardware/customize/enterprise/unified-write-filter) for more information.
 
 ## How to Install UWF on a device running Windows 10 IoT Core
 
@@ -35,16 +35,16 @@ Read our documentation on the [Unified Write Filter](https://docs.microsoft.com/
 ## How to include UWF in Your Custom FFU
 
 * Add **IOT_UNIFIED_WRITE_FILTER** feature ID to the OEM Input file
-* Create the image\FFU. Read [Create a basic image](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image) for instructions.
+* Create the image\FFU. Read [Create a basic image](/windows-hardware/manufacture/iot/create-a-basic-image) for instructions.
 
 
 ## How to Use UWF
 
 UWF can be configured using the uwfmgr.exe tool via a PowerShell or SSH session.
-Read [`uwfmgr.exe` tool](https://docs.microsoft.com/windows-hardware/customize/enterprise/uwfmgrexe) for the available options with an exception of some commands listed below that are not supported in IoT Core.
+Read [`uwfmgr.exe` tool](/windows-hardware/customize/enterprise/uwfmgrexe) for the available options with an exception of some commands listed below that are not supported in IoT Core.
 Review the default settings of the Overlay configurations and adapt them per your requirements.
 
-UWF can also be configured via MDM channel using [Unified Write Filter CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp).
+UWF can also be configured via MDM channel using [Unified Write Filter CSP](/windows/client-management/mdm/unifiedwritefilter-csp).
 
 
 * For example, the following combinations of commands enable uwfmgr and configure to protect the C drive
