@@ -9,7 +9,8 @@ metadata:
   keywords: Windows 10 IoT Core, Windows CE, application migration, cepal, Windows CE Migration FAQ
     
 title: CE migration - Frequently Asked Questions
-summary: In this section, we will cover frequently asked questions (FAQ) about CE Migration. We will cover the product roadmap, your migration options as well as how to start the migration process.
+summary: |
+  In this section, we will cover frequently asked questions (FAQ) about CE Migration. We will cover the product roadmap, your migration options as well as how to start the migration process.
 
 
 sections:
