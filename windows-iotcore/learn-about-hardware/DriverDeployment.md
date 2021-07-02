@@ -18,7 +18,7 @@ Configure your Visual Studio driver project so that you can compile and deploy a
 
 For this exercise you can use the [gpiokmdfdemo sample driver](https://github.com/ms-iot/samples/tree/develop/DriverSamples).
 
-If you're looking to add a driver to an image, please visit the instructions in our [IoT Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-driver-to-an-image).
+If you're looking to add a driver to an image, please visit the instructions in our [IoT Manufacturing Guide](/windows-hardware/manufacture/iot/add-a-driver-to-an-image).
 
 ## Step 1: Setup
 ___

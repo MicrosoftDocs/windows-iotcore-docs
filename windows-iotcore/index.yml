@@ -16,20 +16,20 @@ landingContent:
           - text: Windows 10 IoT Core
             url: windows-iot-core.md
           - text: Windows 10 IoT Enterprise
-            url: https://docs.microsoft.com/windows/iot/iot-enterprise/getting_started
+            url: /windows/iot/iot-enterprise/getting_started
           - text: Windows Server IoT 2019
-            url: https://docs.microsoft.com/windows/iot-core/windows-server
+            url: /windows/iot-core/windows-server
           - text: Windows 10 IoT Core Services
-            url: https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview
+            url: /windows-hardware/manufacture/iot/iotcoreservicesoverview
             
   - title: Get started
     linkLists: 
       - linkListType: tutorial
         links: 
           - text: Windows 10 IoT Core Manufacturing Guide
-            url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide
+            url: /en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide
           - text: Windows 10 IoT Enterprise Manufacturing Guide
-            url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview
+            url: /en-us/windows-hardware/manufacture/desktop/iot-ent-overview
       - linkListType: reference
         links: 
           - text: Prototype boards

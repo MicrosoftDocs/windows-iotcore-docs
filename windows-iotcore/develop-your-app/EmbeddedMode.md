@@ -14,7 +14,7 @@ keywords: windows iot, embedded mode, background applications
 
 Embedded Mode is supported on Windows IoT Core and Windows IoT Enterprise. Embedded Mode enables:
 
-* [Background Applications (read more)](https://docs.microsoft.com/windows/iot-core/develop-your-app/backgroundapplications)
+* [Background Applications (read more)](/windows/iot-core/develop-your-app/backgroundapplications)
 * Use of the lowLevelDevice capability
 * Use of systemManagement capability
 
@@ -24,7 +24,7 @@ Embedded mode must be enabled by following the steps below on Windows IoT Enterp
 ## Background Applications
 
 Background Applications are created using the Background Application (IoT) template in Visual Studio.
-Read more about creating [Background Applications](https://docs.microsoft.com/windows/iot-core/develop-your-app/backgroundapplications).
+Read more about creating [Background Applications](/windows/iot-core/develop-your-app/backgroundapplications).
 
 Background applications run without stopping and without resource limits. Also, if the background application stops for some reason and embedded mode is enabled the background application will be restarted by the system.
 
@@ -40,7 +40,7 @@ The **lowLevel** device Capability gives access to low-level hardware interfaces
 The **lowLevelDevices** Capability allows apps to access custom devices when a number of additional requirements are met. This
 capability should not be confused with the lowLevel device capability, which allows access to GPIO, I2C, SPI, and PWM devices.
 
-Refer to [App capability declarations](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations) for details.
+Refer to [App capability declarations](/windows/uwp/packaging/app-capability-declarations) for details.
 
 ## systemManagment Capability
 

@@ -8,7 +8,7 @@
     items:
       - name: Windows IoT Documentation 
         tocHref: /windows/iot-core/
-        topicHref: "https://docs.microsoft.com/windows/iot/"  
+        topicHref: "/windows/iot/"  
         items:
               - name: Windows 10 IoT Core
                 tocHref: /windows/iot-core/windows-iot-core/
