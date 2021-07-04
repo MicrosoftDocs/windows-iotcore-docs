@@ -7,6 +7,7 @@ metadata:
   description: Learn about Windows for IoT for developing your own connected, embedded solutions.
   ms.topic: landing-page
   ms.date: 09/04/2019
+  ms.custom: e2e-hybrid
 
 landingContent:
   - title: About Windows for IoT
