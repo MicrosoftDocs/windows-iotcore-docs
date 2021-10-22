@@ -21,11 +21,11 @@ This article will give you a rundown of the different features that the Windows 
 ## Leveraging the IoT Core Default App
 
 > [!IMPORTANT]
-> Do not use maker images for commercialization. If you are commercializing a device, you must use a custom FFU for optimal security. Learn more [here](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
+> Do not use maker images for commercialization. If you are commercializing a device, you must use a custom FFU for optimal security. Learn more [here](/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
 
 The IoT Core Default App can be customized and extended, or you can use the source code as an example for your own app. To try this out for yourself, download the zip of our samples or check out the code for the IoT Core Default App [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp). For any questions, please file an issue on our samples repo [here](https://github.com/Microsoft/Windows-iotcore-samples/issues).
 
-As shown under the [Settings section](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp#settings
+As shown under the [Settings section](/windows/iot-core/develop-your-app/iotcoredefaultapp#settings
 ) below, in some cases, you may configure default settings and features on your customer system on behalf of the end user. However, if you turn on these settings and features by default or if diagnostics are above the basic setting, you must:
 
 * Notify the end user that these features have been enabled, and provide the end user with the link to Microsoft's Privacy Statement web page [here](https://go.microsoft.com/fwlink/?LinkId=521839).
@@ -125,7 +125,7 @@ Some of the settings you can customize are:
 
 ##### Weather Settings
 * Change the location
-  > This feature is only enabled if you have provided a valid [Bing Map Service Token](https://msdn.microsoft.com/library/ff428642.aspx).  To pass the token to the app, create a **MapToken.config** file in the LocalState folder of the app (e.g. C:\Data\Users\\[User Account]\AppData\Local\Packages\\[Package Full Name]\LocalState\MapToken.config) and restart the app.  
+  > This feature is only enabled if you have provided a valid [Bing Map Service Token](/bingmaps/getting-started/bing-maps-dev-center-help/getting-a-bing-maps-key).  To pass the token to the app, create a **MapToken.config** file in the LocalState folder of the app (e.g. C:\Data\Users\\[User Account]\AppData\Local\Packages\\[Package Full Name]\LocalState\MapToken.config) and restart the app.  
 (Example: C:\Data\Users\DefaultAccount\AppData\Local\Packages\16454Windows10IOTCore.IOTCoreDefaultApplication_rz84sjny4rf58\LocalState\)
 * Expand the map
 * Enable/disable map flipping so that the map and the weather switch place periodically to prevent screen burn-in

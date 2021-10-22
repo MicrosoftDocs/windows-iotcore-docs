@@ -72,5 +72,4 @@ _Steps:_
  
 ### Helpful links: 
 * [Project Rome documentation on MSDN](https://developer.microsoft.com/en-us/windows/project-rome )
-* [Using Project Rome for UWP](https://docs.microsoft.com/windows/uwp/launch-resume/connected-apps-and-devices )
- 
+* [Using Project Rome for UWP](/windows/uwp/launch-resume/connected-apps-and-devices)
