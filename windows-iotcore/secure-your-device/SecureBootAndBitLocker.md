@@ -24,7 +24,7 @@ There are three main areas that occur from when an IoT device is powered on, all
 
 ![Boot Order](../media/SecureBootAndBitLocker/BootOrder.jpg)
 
-Additional information on the Windows 10 boot process can be found [here](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process).
+Additional information on the Windows 10 boot process can be found [here](/windows/security/information-protection/secure-the-windows-10-boot-process).
 
 ## Locking-down IoT Devices
 
@@ -57,7 +57,7 @@ Here are the steps taken by UEFI Secure Boot:
 3. If Windows Boot Manager cannot be loaded, the firmware will attempt to boot a backup copy of Windows Boot Manager. If this also fails, the UEFI firmware initiates OEM-specific remediation.
 4. Windows Boot Manager runs and verifies the digital signature of the Windows Kernel. If trusted, Windows Boot Manager passes control to the Windows Kernel.
 
-Additional details on Secure Boot, along with key creation and management guidance, is available [here](https://technet.microsoft.com/library/dn747883.aspx).
+Additional details on Secure Boot, along with key creation and management guidance, is available [here](/previous-versions/windows/it-pro/windows-8.1-and-8/dn747883(v=win.10)).
 
 ### Windows Code Integrity
 
@@ -65,7 +65,7 @@ Windows Code Integrity (WCI) improves the security of the operating system by va
 
 Configurable Code Integrity (CCI) is a feature in Windows 10 that allows device builders to lockdown a device and only allow it to run and execute code that is signed and trusted.  To do so, device builders can create a code integrity policy on a 'golden' device (final release version of hardware and software) and then secure and apply this policy on all devices on the factory floor.
 
-To learn more about deploying code integrity policies, auditing and enforcement, check out the latest technet documentation [here](https://technet.microsoft.com/itpro/windows/keep-secure/deploy-code-integrity-policies-steps).
+To learn more about deploying code integrity policies, auditing and enforcement, check out the latest technet documentation [here](/windows/security/threat-protection/windows-defender-application-control/create-initial-default-policy).
 
 Here are the steps taken by Windows Code Integrity:
 
@@ -110,7 +110,7 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
 
 * Qualcomm DragonBoard 410c
 
-    In order to enable Secure Boot, it may be necessary to provision RPMB. Once the eMMC has been flashed with Windows 10 IoT Core (as per instructions [here](https://docs.microsoft.com/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-dragonboard-410c), press [Power] + [Vol+] + [Vol-] simultaneously on the device when powering up and select "Provision RPMB" from the BDS menu. *Please note that this is an irreversible step.*
+    In order to enable Secure Boot, it may be necessary to provision RPMB. Once the eMMC has been flashed with Windows 10 IoT Core (as per instructions [here](/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-dragonboard-410c), press [Power] + [Vol+] + [Vol-] simultaneously on the device when powering up and select "Provision RPMB" from the BDS menu. *Please note that this is an irreversible step.*
 
 * Intel MinnowBoardMax
 
@@ -210,7 +210,7 @@ You can test the generated packages by manually installing them on a unlocked de
 
 ### Generate Lockdown image
 
-After validating that the lockdown packages are working as per the settings defined earlier, you can then include these packages into the image by following the below given steps. Read the [IoT manufacturing guide](https://aka.ms/iotcoreguide) for custom image creation instructions.
+After validating that the lockdown packages are working as per the settings defined earlier, you can then include these packages into the image by following the below given steps. Read the [IoT manufacturing guide](/windows-hardware/manufacture/iot/iot-core-manufacturing-guide) for custom image creation instructions.
 
 1. In the workspace directory, update the following files from the generated output directory above
     * SecureBoot : `Copy ..\Output\SecureBoot\*.bin  ..\Workspace\Common\Packages\Security.SecureBoot`
