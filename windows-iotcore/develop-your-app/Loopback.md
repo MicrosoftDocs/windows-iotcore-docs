@@ -47,4 +47,4 @@ Example: `CheckNetIsolation.exe LoopbackExempt -is -n=IoTCoreDefaultApp_1w720vyc
 
 The best way to run CheckNetIsolation.exe automatically on startup is to use schtasks.exe: `schtasks /create /tn MyTask /f /sc onstart /ru system /tr "checknetisolation LoopbackExempt -is -n=IoTCoreDefaultApp_1w720vyc4ccym"`
 
-Upon rebooting, you should be able to verify that checknetisolation.exe is running by using tlist.exe or [Windows Device Portal](https://developer.microsoft.com/windows/iot/docs/deviceportal)
+Upon rebooting, you should be able to verify that checknetisolation.exe is running by using tlist.exe or [Windows Device Portal](/windows/iot-core/manage-your-device/DevicePortal)
