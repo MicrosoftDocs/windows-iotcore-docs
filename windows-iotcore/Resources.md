@@ -26,14 +26,14 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 
 >[!Video https://www.youtube.com/embed/Cmj0sxBRofs]
 * [Modernizing Windows CE devices](https://www.youtube.com/watch?time_continue=1&v=5iUZkZmgmJA)
-* [Introduction to Windows Server IoT 2019](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Introduction-to-Windows-Server-IoT-2019)
+* [Introduction to Windows Server IoT 2019](/Shows/Internet-of-Things-Show/Introduction-to-Windows-Server-IoT-2019)
 * [Getting started with ROS on Windows](https://www.youtube.com/watch?v=nZSjwMLi3jQ)
 * [Azure IoT Device Agent for Windows](https://www.youtube.com/watch?v=DZn6diOn7uI)
 * [Getting started with Windows 10 IoT series](https://www.youtube.com/watch?v=A-kazyOiBvs&t)
 * [Accelerate the Intelligent Edge with the Windows AI Platform](https://www.youtube.com/watch?v=7bFAg6w4J00)
-* [Connecting Windows 10 IoT Devices to IoT Central](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Connecting-Windows-IoT-Devices-To-IoT-Central)
+* [Connecting Windows 10 IoT Devices to IoT Central](/Shows/Internet-of-Things-Show/Connecting-Windows-IoT-Devices-To-IoT-Central)
 * [Windows 10 IoT Core Walkthrough](https://channel9.msdn.com/Blogs/Seth-Juarez/Windows-IoT-Core-Walkthrough?term=windows%20iot%20core)
-* [Windows 10 IoT and Azure IoT Device Management Enhancement](https://channel9.msdn.com/Shows/Azure-Friday/Windows-10-IoT-and-Azure-IoT-Device-Management-Enhancements?term=windows%20iot%20core)
+* [Windows 10 IoT and Azure IoT Device Management Enhancement](/Shows/Azure-Friday/Windows-10-IoT-and-Azure-IoT-Device-Management-Enhancements?term=windows%20iot%20core)
 
 ## Whitepapers
 * [Azure IoT Edge + Windows IoT: Supporting AI at the edge](https://aka.ms/IoT-Edge-WP)

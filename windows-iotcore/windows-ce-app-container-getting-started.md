@@ -16,7 +16,7 @@ The solution is built in two stages. The first stage creates a Windows CE 2013 i
 
 ![CE App Container Architecture](.//media/WindowsCEAppContainer/image1.png)
 
-For more information about this architecture, please review this video: [Modernizing Windows CE Devices](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Modernizing-Windows-CE-Devices).
+For more information about this architecture, please review this video: [Modernizing Windows CE Devices](/Shows/Internet-of-Things-Show/Modernizing-Windows-CE-Devices).
 
 ## Prerequisites
 The Windows CE App Container software requires an updated version of [Windows Compact 2013 (Build number 6294 from June 2020 or later)](https://support.microsoft.com/help/4566035/update-for-windows-embedded-compact-2013) along with updated [Windows 10 IoT Core Packages for x64 and ARM32 (August 2020 update or later)](https://support.microsoft.com/help/4565349/windows-10-update-kb4565349). To obtain the latest packages for Windows 10 IoT Core, please contact your Microsoft distributor.
