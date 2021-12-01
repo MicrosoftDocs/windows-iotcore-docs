@@ -32,7 +32,7 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Getting started with Windows 10 IoT series](https://www.youtube.com/watch?v=A-kazyOiBvs&t)
 * [Accelerate the Intelligent Edge with the Windows AI Platform](https://www.youtube.com/watch?v=7bFAg6w4J00)
 * [Connecting Windows 10 IoT Devices to IoT Central](/Shows/Internet-of-Things-Show/Connecting-Windows-IoT-Devices-To-IoT-Central)
-* [Windows 10 IoT Core Walkthrough](https://channel9.msdn.com/Blogs/Seth-Juarez/Windows-IoT-Core-Walkthrough?term=windows%20iot%20core)
+* Windows 10 IoT Core Walkthrough
 * [Windows 10 IoT and Azure IoT Device Management Enhancement](/Shows/Azure-Friday/Windows-10-IoT-and-Azure-IoT-Device-Management-Enhancements?term=windows%20iot%20core)
 
 ## Whitepapers
