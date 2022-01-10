@@ -18,8 +18,6 @@ To enable hands-free intelligent assistance in your device with the Cortana Devi
 Cortana on IoT Core will focus on commercial scenarios in the future. Updates will come soon. 
 
 <!--
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Cortana-on-Windows-10-IoT-Core/player]
-
 To use Cortana:
 
 -   The device must have internet connection.
