@@ -25,13 +25,13 @@ While Windows 10 IoT Core and Windows 10 IoT Enterprise are similar in name, the
 
 > | Feature&nbsp;/&nbsp;Edition | Windows 10 IoT Core  |  Windows 10 IoT Enterprise  |
 > |-------------|----------|---------|
-> | User experience | One UWP app in the foreground at a time (see [IoT Shell documentation](/windows/iot-core/develop-your-app/iotcoreshell) for app backstack handling) with supporting background apps and services. | Traditional Windows Shell with Advanced Lockdown Features |
+> | User experience | One UWP app in the foreground at a time (see [IoT Shell documentation](./develop-your-app/iotcoreshell.md) for app backstack handling) with supporting background apps and services. | Traditional Windows Shell with Advanced Lockdown Features |
 > | Headless supported | Yes | Yes |
 > | App architecture supported | UWP UI only | Full Windows UI support (e.g. UWP, WinForms, etc) |
 > | Cortana | [*Cortana SDK*](https://developer.microsoft.com/cortana/devices) | Yes |
 > | Domain join | AAD only | AAD and Traditional Domain |
 > | Management | MDM | MDM |
-> | Device Security Technologies | [TPM](/windows/iot-core/secure-your-device/tpm), [Secure Boot, BitLocker, Device Guard](/windows/iot-core/secure-your-device/securebootandbitlocker), and Device Health Attestation | [TPM](/windows/iot-core/secure-your-device/tpm), [Secure Boot, BitLocker, Device Guard](/windows/iot-core/secure-your-device/securebootandbitlocker) and Device Health Attestation |
+> | Device Security Technologies | [TPM](./secure-your-device/tpm.md), [Secure Boot, BitLocker, Device Guard](./secure-your-device/securebootandbitlocker.md), and Device Health Attestation | [TPM](./secure-your-device/tpm.md), [Secure Boot, BitLocker, Device Guard](./secure-your-device/securebootandbitlocker.md) and Device Health Attestation |
 > | CPU Architecture support | x86, x64, and ARM | x86 and x64 |
 > | Licensing | Online Licensing Agreement and Embedded OEM Agreements, Royalty-free | Direct and Indirect Embedded OEM Agreements |
 > | Usage scenarios | [Digital Signage](https://www.microsoft.com/windowsforbusiness/digital-signage), Smart Building, IoT Gateway, HMI, Smart Home, Wearables | Industry Tablets, Retail Point of Service, Kiosk, [Digital Signage](https://www.microsoft.com/windowsforbusiness/digital-signage), ATM, Medical Devices, Manufacturing Devices, Thin Client |
@@ -46,7 +46,7 @@ If you're interested in learning more about Point of Service, please visit the [
 
 * Inbox Cortana is no longer available on Windows 10 IoT Core since version 1809 (17763). If you are looking to bring a voice-enabled device to market quickly, you can integrate Cortana support into the device using the [preview of the Cortana Devices SDK](https://developer.microsoft.com/cortana/devices).
 * The [FileOpenPicker API](/uwp/api/windows.storage.pickers.fileopenpicker) is not supported in Windows 10 IoT Core. To access local drives or removable storage, you can implement this in your own application.
-* The Windows 10 IoT Core device will boot to the [default app](/windows/iot-core/develop-your-app/iotcoredefaultapp) instead of a desktop-like PC. The purpose of this application is not only to provide you with a friendly shell to interact with upon first boot, but to also allow you to use the [open-sourced code](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp) for this application so that you can use these features to plug and play your own custom application(s).
+* The Windows 10 IoT Core device will boot to the [default app](./develop-your-app/iotcoredefaultapp.md) instead of a desktop-like PC. The purpose of this application is not only to provide you with a friendly shell to interact with upon first boot, but to also allow you to use the [open-sourced code](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp) for this application so that you can use these features to plug and play your own custom application(s).
 
 ### Differences in driver-supported areas
 

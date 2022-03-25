@@ -27,7 +27,7 @@ When setting up a MinnowBoard for prototyping, we recommend using the Windows 10
 
 To flash, or download, IoT Core onto your MinnowBoard, you'll need:
 * A computer running Windows 10 
-* [Windows 10 IoT Core Dashboard](/windows/iot-core/downloads)
+* [Windows 10 IoT Core Dashboard](../downloads.md)
 * A high-performance SD card, such as a SanDisk SD card
 * An external display
 * Any other peripherals (e.g. mouse, keyboard, etc.)
