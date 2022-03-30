@@ -17,7 +17,7 @@ _Not sure what this is about? Learn more about the Microsoft IoT Pack [here](htt
 
 ## Build your first app
 
-Learn how to get set up and going. Start [here](/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-raspberry-pi-minnowboard-nxp).
+Learn how to get set up and going. Start [here](./quickstarter/devicesetup.md#using-the-iot-dashboard-raspberry-pi-minnowboard-nxp).
 
 ## Explore sample projects
 

@@ -98,7 +98,7 @@ There are only two requirements when choosing which SD cards to use with Windows
 
 Generally, you need to check if the SD card is fake or if it is damaged or corrupt. The SD card is equally prone to corruption due to a variety of factors such as power shortage or improper removal. It is important to safeguard your memory card from damage.
 
-To flash your image to an SD card, you can use the [Windows 10 IoT Core Dashboard](/windows/iot-core/connect-your-device/iotdashboard). You will need to choose "Custom" in the OS Build field, then select the FFU file to flash.
+To flash your image to an SD card, you can use the [Windows 10 IoT Core Dashboard](./connect-your-device/iotdashboard.md). You will need to choose "Custom" in the OS Build field, then select the FFU file to flash.
 
 Check to see if there are any hardware failure in the device. There are two LEDs on the Raspberry Pi 3B+ board, same as the 3B. One is for PWR, while the other is for ACT. The number of blinks the ACT light makes will determine whether or not your board is booting. The SD card activity LED will not flash during some portions of booting on the Raspberry Pi 3B+.
 
@@ -114,7 +114,7 @@ On the Raspberry Pi, hardware UART and USB UART adapters both are usable for you
 
 ![UART and USB UART adapters](media/Troubleshooting/adapters.png)
 
-You can read [this article](/windows/iot-core/learn-about-hardware/pinmappings/pinmappingsrpi#serial-uart) to learn more about how to initialize UART0 and perform a write followed by a read.
+You can read [this article](./learn-about-hardware/pinmappings/pinmappingsrpi.md#serial-uart) to learn more about how to initialize UART0 and perform a write followed by a read.
 
 In addition, Radio Frequency Communication (RFCOMM) is the underlying serial communications for classic Bluetooth. Refer to [this GitHub sample](https://github.com/djaus2/iotbluetoothserial) to learn about running UWP apps on Windows 10 IoT Core to connect over an IoT device with Bluetooth Serial.
 

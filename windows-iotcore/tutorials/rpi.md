@@ -14,7 +14,7 @@ ms.custom: RS5
 ## Overview
 
 > [!NOTE]
-> Dashboard cannot be used used to setup the Raspberry Pi 3B+. If you have a 3B+ device, you must use the [3B+ technical preview](https://www.microsoft.com/en-us/software-download/windowsiot). Please view the [known limitations](/windows/iot-core/troubleshooting) of the technical preview to determine if this is suitable for your development.
+> Dashboard cannot be used used to setup the Raspberry Pi 3B+. If you have a 3B+ device, you must use the [3B+ technical preview](https://www.microsoft.com/en-us/software-download/windowsiot). Please view the [known limitations](../troubleshooting.md) of the technical preview to determine if this is suitable for your development.
 
 > [!IMPORTANT]
 > When the "format this disk" pop up comes up, do _not_ format the disk. We are working on a fix for this issue.
@@ -27,7 +27,7 @@ When setting up a Raspberry Pi for prototyping, we recommend using the Windows 1
 
 To flash, or download, IoT Core onto your Raspberry Pi, you'll need:
 * A computer running Windows 10 
-* [Windows 10 IoT Core Dashboard](/windows/iot-core/downloads)
+* [Windows 10 IoT Core Dashboard](../downloads.md)
 * A high-performance SD card, such as a SanDisk SD card
 * An external display
 * Any other peripherals (e.g. mouse, keyboard, etc.)

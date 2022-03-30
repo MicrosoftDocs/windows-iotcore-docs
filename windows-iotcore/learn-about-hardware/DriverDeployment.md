@@ -25,7 +25,7 @@ ___
 
 ### On the device
 
-* Make sure that your device has an IoTCore image installed by following the [Get Started instructions](/windows/iot-core/getstarted).
+* Make sure that your device has an IoTCore image installed by following the [Get Started instructions](../getstarted.md).
 * Connect to your device via [PowerShell](../connect-your-device/PowerShell.md).
 
 ### On the PC

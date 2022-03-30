@@ -137,7 +137,7 @@ This is an important step during the creation of your FFU and should be done whe
 
 #### Step 7 - Deploying your FFU to your device
 
-Once the image is built, you can deploy it to a device. This can be done from the command line using [DISM](/windows-hardware/manufacture/desktop/what-is-dism), via your device-specific deployment process or by using the [Windows 10 IoT Core Dashboard](/windows/iot-core/connect-your-device/iotdashboard). More details are available as part of the [Windows 10 IoT Core Manufacturing Guide](/windows-hardware/manufacture/iot/create-a-basic-image).
+Once the image is built, you can deploy it to a device. This can be done from the command line using [DISM](/windows-hardware/manufacture/desktop/what-is-dism), via your device-specific deployment process or by using the [Windows 10 IoT Core Dashboard](./connect-your-device/iotdashboard.md). More details are available as part of the [Windows 10 IoT Core Manufacturing Guide](/windows-hardware/manufacture/iot/create-a-basic-image).
 
 ##### Deploying the Windows CE App Container to a device when using an existing FFU
 
@@ -197,7 +197,7 @@ All of the packages created will be named with a fixed prefix of `“%OEM\_NAME%
 
 #### Communicating between Windows Embedded Compact 2013 and Windows 10 IoT Core applications
 
-The recommended approach to communicate between applications running in the CE Container is to use Local Loopback. You can read more on [Local Loopback in this document.](/windows/iot-core/develop-your-app/loopback)
+The recommended approach to communicate between applications running in the CE Container is to use Local Loopback. You can read more on [Local Loopback in this document.](./develop-your-app/loopback.md)
 
 ### Automatically starting the CE App Container application
 
@@ -318,5 +318,5 @@ Options:
 - [Get the tools needed to customize Windows 10 IoT Core](/windows-hardware/manufacture/iot/set-up-your-pc-to-customize-iot-core)
 - [IoT Core Board Supported Packages (BSP)](/windows-hardware/manufacture/iot/bsphardware)
 - [IoT Core Manufacturing Guide](/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)
-- [Windows 10 IoT Core Dashboard](/windows/iot-core/connect-your-device/iotdashboard)
+- [Windows 10 IoT Core Dashboard](./connect-your-device/iotdashboard.md)
 - [Create and Install Packages](/windows-hardware/manufacture/iot/create-install-package)

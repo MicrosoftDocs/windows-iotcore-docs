@@ -57,12 +57,12 @@ To enable your device as a Miracast sink, you will need to enable the Connect ap
 To enable the Connect app, you'll need to include the **IOT_MIRACAST_RX_APP** feature to your image. 
 You'll also need to include  **Microsoft-Connect-Package.cab** and **Microsoft-Connect-Package_Lang_XXXX.cab** in your image (where XXXX is a language, i.e. "enUS"). 
 
-Check out the [IoT Core Manufacturing Guide](/windows-hardware/manufacture/iot/deploy-your-app-with-a-standard-board#update-the-feature-manifest) for more details about how to add features and packages to your image. You can also side-load the package and features to existing images by following [these instructions](/windows/iot-core/build-your-image/createinstallpackage). Keep in mind that side-loading this feature will prevent it from receiving updates.
+Check out the [IoT Core Manufacturing Guide](/windows-hardware/manufacture/iot/deploy-your-app-with-a-standard-board#update-the-feature-manifest) for more details about how to add features and packages to your image. You can also side-load the package and features to existing images by following [these instructions](/windows-hardware/manufacture/iot/create-install-package). Keep in mind that side-loading this feature will prevent it from receiving updates.
 
 
 ### Enable Miracast
 
-Connect to your device through [PowerShell](/windows/iot-core/connect-your-device/powershell) or the [Windows Device Portal](/windows/iot-core/manage-your-device/deviceportal) and run the following commands:
+Connect to your device through [PowerShell](./powershell.md) or the [Windows Device Portal](../manage-your-device/deviceportal.md) and run the following commands:
 ```
 reg add HKLM\Software\Microsoft\PlayToReceiver /v AutoEnabled /t REG_DWORD /d 1  
 reg add HKLM\Software\Microsoft\MiracastReceiver /v  ConsentToast /t REG_DWORD /d 0  
@@ -74,7 +74,7 @@ This will enable Miracast without a consent notification, only on secure network
 ## Windows IoT as a Miracast Source
 
 > [!IMPORTANT]
-> Before trying to use your device as a Miracast Source, please turn off the IoTOnboardingTask app from the [Windows Device Portal](/windows/iot-core/manage-your-device/deviceportal) as shown below, which you'll only need to do once:
+> Before trying to use your device as a Miracast Source, please turn off the IoTOnboardingTask app from the [Windows Device Portal](../manage-your-device/deviceportal.md) as shown below, which you'll only need to do once:
 > ![Turn off IoTOnboardingTask app](../media/Miracast/IoTOnboardingOff.gif)
 >
 > Afterwards, please restart the device

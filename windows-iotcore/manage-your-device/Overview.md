@@ -12,7 +12,7 @@ keywords: windows iot, debugging, Debug, PowerShell, SSH
 Once you have your IoT Core image setup with running application, it is important that you can debug the application, or the system as needed. The best time to debug and test the system is while the test image state. Once IoT Core based systems are out in the wild, debugging can become challenging. That is not to say it cannot be done, but with additional layers of difficulties added to debug, compared to a testing phase. You can use the following to debug your application or image while in test mode:
 
 ## Device Portal
-Windows Device Portal (WDP) allows for you to configure and manage your IoT Device remotely over local network. WDP can be reachable via local IP of the IoT Device. Additional information on WDP on IoT can be found [here](/windows/iot-core/manage-your-device/DevicePortal).
+Windows Device Portal (WDP) allows for you to configure and manage your IoT Device remotely over local network. WDP can be reachable via local IP of the IoT Device. Additional information on WDP on IoT can be found [here](./deviceportal.md).
 
 ### Collecting ETW / WPP Logs
 -----

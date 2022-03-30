@@ -20,13 +20,13 @@ Mobile Broadband Connection is supported on [Windows 10 IoT Core](http://windows
 
 1. Copy `MBBConnect.exe` to IoT gateway.
 
-   * [FTP](/windows/iot-core/connect-your-device/ftp)
+   * [FTP](./ftp.md)
 
 2. Connect gateway by PowerShell or SSH.
 
-   * [PowerShell](/windows/iot-core/connect-your-device/powershell)
+   * [PowerShell](./powershell.md)
 
-   * [SSH](/windows/iot-core/connect-your-device/SSH)
+   * [SSH](./ssh.md)
 
 3. Switch to the folder where `MBBConnect.exe` is located. 
    ```

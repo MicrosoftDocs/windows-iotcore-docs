@@ -201,29 +201,29 @@
   - name: Insider previews
     items:
     - name: "Current: Build 17744"
-      href: /windows/iot-core/release-notes/commercial/17763
+      href: ./release-notes/commercial/17763.md
     - name: Build 17723
-      href: /windows/iot-core/release-notes/commercial/17763
+      href: ./release-notes/commercial/17763.md
     - name: Build 17692
-      href: /windows/iot-core/release-notes/commercial/17763
+      href: ./release-notes/commercial/17763.md
     - name: Build 17686
-      href: /windows/iot-core/release-notes/commercial/17763
+      href: ./release-notes/commercial/17763.md
     - name: Build 17672
-      href: /windows/iot-core/release-notes/commercial/17763
+      href: ./release-notes/commercial/17763.md
     - name: "Current: Build 17661"
-      href: /windows/iot-core/release-notes/commercial/17763
+      href: ./release-notes/commercial/17763.md
     - name: Raspberry Pi 3B+ release
       href: release-notes/insider/RPi3BP.md
     - name: Build 17110
-      href: /windows/iot-core/release-notes/commercial/17763
+      href: ./release-notes/commercial/17763.md
     - name: Build 17083
-      href: /windows/iot-core/release-notes/commercial/17763
+      href: ./release-notes/commercial/17763.md
     - name: Build 17015
-      href: /windows/iot-core/release-notes/commercial/17763
+      href: ./release-notes/commercial/17763.md
     - name: Build 16267
-      href: /windows/iot-core/release-notes/commercial/17763
+      href: ./release-notes/commercial/17763.md
     - name: Build 16257
-      href: /windows/iot-core/release-notes/commercial/17763
+      href: ./release-notes/commercial/17763.md
   - name: Commercial releases
     items:
     - name: "Current: October 2018 Update (with January 2019 servicing)"
