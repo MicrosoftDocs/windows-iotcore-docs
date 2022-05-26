@@ -215,14 +215,14 @@ In the output for the `pip install` there may be errors: `Download error on http
     ```
     * Note that this operation may take a few minutes.
 
-20. Add the IoT Extension to the Azure CLI, and then [register a device identity](/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-identity?preserve-view=true&view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-device-identity-create)
+20. Add the IoT Extension to the Azure CLI, and then [register a device identity](/cli/azure/iot/hub/device-identity)
 
     ```powershell
     az extension add --name azure-cli-iot-ext
     az iot hub device-identity create --hub-name <your IoT Hub name> --device-id <your device id>
     ```
 
-21. [Retrieve your Device Connection String](/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-identity?preserve-view=true&view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-device-identity-show-connection-string) using the Azure CLI
+21. [Retrieve your Device Connection String](/cli/azure/iot/hub/device-identity) using the Azure CLI
 
     ```powershell
     az iot hub device-identity show-connection-string --device-id <your device id> --hub-name <your IoT Hub name>
@@ -235,7 +235,7 @@ In the output for the `pip install` there may be errors: `Download error on http
 
 ### Send a simple telemetry message
 
-22. [Begin monitoring for telemetry](/cli/azure/ext/azure-cli-iot-ext/iot/hub?preserve-view=true&view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-monitor-events) on your IoT Hub using the Azure CLI
+22. [Begin monitoring for telemetry](/cli/azure/iot/hub) on your IoT Hub using the Azure CLI
 
     ```powershell
     az iot hub monitor-events --hub-name <your IoT Hub name> --output table
