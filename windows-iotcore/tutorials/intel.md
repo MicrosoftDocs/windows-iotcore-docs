@@ -24,7 +24,7 @@ If you're looking to manufacture with a Qualcomm device, please refer to the [Io
 4. Start the Deployment and Imaging Tools Environment `(C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools)` as an administrator.
 5. Create a working copy of the Windows PE files. Specify either x86, amd64 or ARM: `Copype amd64 C:\WINPE_amd64`
 6. Install Windows PE to the USB flash drive, specifying the WinPE drive letter below. More information can be found [here](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive). `MakeWinPEMedia /UFD C:\WinPE_amd64 P:`
-7. Download the [Windows 10 IoT Core image](https://www.microsoft.com/software-download/windows10IoTCore) by double-clicking on the downloaded ISO file and locating the mounted Virtual CD-drive.
+7. Download the [Windows 10 IoT Core image](https://www.microsoft.com/en-us/software-download/windows10iotcore) by double-clicking on the downloaded ISO file and locating the mounted Virtual CD-drive.
 8. This drive will contain an install file (.msi); double click it. This will create a new directory on your PC under C:\Program Files (x86)\Microsoft IoT\FFU\ in which you should see an image file, "flash.ffu".
 9. Download, unzip, and copy the [eMMC Installer script](https://github.com/ms-iot/content/blob/develop/Resources/eMMCInstaller.zip) to the USB device's root directory, along with the device's FFU.
 10. Connect the USB drive, mouse, and keyboard to the USB hub. Attach the HDMI display to your device, the device to the USB hub, and the power cord to the device.

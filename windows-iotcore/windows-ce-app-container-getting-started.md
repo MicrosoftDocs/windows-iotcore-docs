@@ -141,7 +141,7 @@ Once the image is built, you can deploy it to a device. This can be done from th
 
 ##### Deploying the Windows CE App Container to a device when using an existing FFU
 
-The CE CABs are deployable packages on IoT Core. If there is an existing IoT Core image, these CABs can be deployed to the device using the `APPLYUPDATE` command. First copy the CABs to the device, then stage and commit the CABs with `APPLYUPDATE`. Do note that updating this way respects package versioning, so if updated versions of packages are to be deployed to the device, they must have a greater version number. (See the Set-IoTCabVersion command in the IoT ADK environment). More information on this can be found in [Create and Install Packages](/enus/windows-hardware/manufacture/iot/create-install-package.)
+The CE CABs are deployable packages on IoT Core. If there is an existing IoT Core image, these CABs can be deployed to the device using the `APPLYUPDATE` command. First copy the CABs to the device, then stage and commit the CABs with `APPLYUPDATE`. Do note that updating this way respects package versioning, so if updated versions of packages are to be deployed to the device, they must have a greater version number. (See the Set-IoTCabVersion command in the IoT ADK environment). More information on this can be found in [Create and Install Packages](/windows-hardware/manufacture/iot/create-install-package)
 
 #### Step 8 - Building a retail image
 

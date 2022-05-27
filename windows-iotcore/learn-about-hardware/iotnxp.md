@@ -48,7 +48,7 @@ Several Microsoft and NXP partners have enabled Windows 10 IoT Core on commercia
 > | [WeAreDev WAD-MX6W](http://www.wearedev.net/?mod=wadmx6w) | [help@wearedev.net](mailto:help@wearedev.net) |
 > | [MCIMX6ULL-EVK](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/i.mx-applications-processors/i.mx-6-processors/evaluation-kit-for-the-i.mx-6ull-and-6ulz-applications-processor:MCIMX6ULL-EVK) | [Wei Wang](mailto:Wei.A.Wang@nxp.com) |
 > | [MCIMX8M-EVK](https://www.nxp.com/support/developer-resources/software-development-tools/i.mx-developer-resources/evaluation-kit-for-the-i.mx-8m-applications-processor:MCIMX8M-EVK) |  |
-> | [MCIMX8MMINI-EVK](http://www.nxp.com/imx8mminievk) | []() |
+> | [MCIMX8MMINI-EVK](http://www.nxp.com/imx8mminievk) | |
 > | i.MX8M MaaXBoard | [chinasales@embest-tech.com](mailto:chinasales@embest-tech.com) |
 
 Note: The partners above support their hardware and the BSP for their hardware. They may be unable to assist with other software or configuration issues.

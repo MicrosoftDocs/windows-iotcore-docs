@@ -102,7 +102,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 4. Start the Deployment and Imaging Tools Environment as an administrator. The default installation path is `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\DandISetEnv.bat`.
 5. Use [`Copype`](/windows-hardware/manufacture/desktop/copype-command-line-options) to create a working copy of the Windows PE files. You must specify either x86, amd64 or ARM architectures (e.g. `Copype amd64 C:\WINPE_amd64`)
 6. Install Windows PE to the USB flash drive using [`MakeWinPEMedia`](/windows-hardware/manufacture/desktop/makewinpemedia-command-line-options). You must specify the destination USB drive (e.g. `MakeWinPEMedia /UFD C:\WinPE_amd64 P:`).
-7. Download the [Windows 10 IoT Core image](https://downloads.up-community.org/?post_type=wpdmpro&p=204&preview=true) by double-clicking on the downloaded ISO file and locating the mounted Virtual CD-drive.
+7. Download the [Windows 10 IoT Core image](https://downloads.up-community.org) by double-clicking on the downloaded ISO file and locating the mounted Virtual CD-drive.
 8. This drive will contain an install file (.msi); double click it. This will create a new directory on your PC under `C:\Program Files (x86)\Microsoft IoT\FFU\` in which you should see an image file `flash.ffu`.
 9. Download, unzip and copy the [eMMC Installer script](https://github.com/ms-iot/content/blob/develop/Resources/eMMCInstaller.zip) to the USB device's root directory, along with the device's FFU.
 10. Connect the USB drive, mouse, and keyboard to the USB hub. Attach the HDMI display to your device, the device to the USB hub, and the power cord to the device.
