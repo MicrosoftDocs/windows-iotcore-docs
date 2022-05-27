@@ -118,7 +118,7 @@ Recommendations:
 * [Intrinsyc](https://www.intrinsyc.com/computing-platforms/410-som/) - Mark Waldenberg (mwaldenberg@intrinsyc.com)
 * [Keith & Koep](https://keith-koep.com/en/products/products-som/myon-1-features-snapdragon-410/) - contact@keith-koep.com
 * [Reycom](http://www.reycom.swiss/en/home-swiss.html) - welcome@reycom.swiss
-* [Unitech](http://ute.com/products_info.php?pc1=4&pc2=461&rbu=0&pid=2395) - Sam (saml@tw.ute.com); Perry (perryt@te.ute.com)
+* [Unitech](https://www.ute.com/) - Sam (saml@tw.ute.com); Perry (perryt@te.ute.com)
 
 ### **NXP preview**
 
@@ -133,7 +133,7 @@ You can also reach out to partners we're working with:
 * Solid Run [Hummingboard Edge](https://www.solid-run.com/imx6-win-10-iot-core/ )- Ilya Viten (ilya@solid-run.com)
 * Geniatech [SoM-iMX6Q-Q7](https://www.geniatech.com/product/som-imx6q-q7/) & [SoM-iMX7D](https://www.geniatech.com/product/som-imx7d/) - Mike Decker (mike.decker@geniatech.com) or Fang Jijun (Fjj@geniatech.com)
 * VIA [VAB-820](https://www.viaembeddedstore.com/shop/boards/vab-820/) - Michael Fox (MichaelFox@via.com.tw) or Dream Ku (dreamku@via.com.tw)
-* Phytec [phyBOARD-i.MX7](https://phytec.com/products/single-board-computers/phyboard-i.mx7/) - Brad Dodson (sales@phytec.com)
+* Phytec [phyBOARD-i.MX7](https://www.phytec.com/product/phyboard-i-mx-7-zeta) - Brad Dodson (sales@phytec.com)
 
 
 ## Other options

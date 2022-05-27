@@ -51,7 +51,7 @@ Looking for information about supported hardware platforms? Check out [SoCs and 
 ### Cameras
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  |
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | Microsoft Lifecam 3000 USB Camera | ARM32, x64, x86 | USB Webcam | [Home Security Camera Project](https://developer.microsoft.com/en-us/windows/iot/samples/webcamapp)|&#10004;|
+> | Microsoft Lifecam 3000 USB Camera | ARM32, x64, x86 | USB Webcam | [Home Security Camera Project](https://github.com/ms-iot/content/blob/50c7defc256f6055d37720c0b9f3b8f4b87f929b/en-US/Samples/WebcamApp.md)|&#10004;|
 > | Microsoft Lifecam HD-5000 | ARM32, x64, x86 | Microsoft LifeCam HD-5000 720p HD Webcam | | &#10004; |
 > | Microsoft® LifeCam Studio™ | ARM32 | Microsoft® LifeCam Studio™ (model: 1425) 1080p HD Webcam | | |
 > | Logitech Webcam C210 | ARM32, x64, x86 | USB Webcam, 1.3mp photo |  |&#10004; |

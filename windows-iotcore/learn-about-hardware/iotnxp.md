@@ -35,21 +35,21 @@ Several Microsoft and NXP partners have enabled Windows 10 IoT Core on commercia
 > |-------|------|
 > | [Aaeon PICO-IMX6](https://www.aaeon.com/en/p/pico-itx-boards-pico-imx6/) | [David Hung](mailto:davidhung@aaeon.com.tw) |
 > | [Advantech RSB-4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858) | [buy@advantech.com](mailto:buy@advantech.com) |
-> | [FS Eletronik Systme armStone A9](https://www.fs-net.de/en/products/armstone/armstonea9/) | [support@fs-net.de](mailto:support@fs-net.de) |
+> | [FS Eletronik Systme armStone A9](https://www.fs-net.de/en/embedded-modules/single-board-computer-armstone/) | [support@fs-net.de](mailto:support@fs-net.de) |
 > | [Geniatech SoM-iMX6Q-Q7](https://www.geniatech.com/product/som-imx6q-q7/) | [Mike Decker](mailto:mike.decker@geniatech.com) or [Fang Jijun](mailto:Fjj@geniatech.com) |
 > | [Geniatech SoM-iMX7D](https://www.geniatech.com/product/som-imx7d/) | [Mike Decker](mailto:mike.decker@geniatech.com) or [Fang Jijun](mailto:Fjj@geniatech.com) |
-> | [Ka-Ro Electronics TX6UL, TX6S, TX6DL, and TX6Q](https://www.karo-electronics.de/tx-standard.html?&L=1) | [Uwe Steinkohl](mailto:us@karo-electronics.de) |
+> | [Ka-Ro Electronics TX6UL, TX6S, TX6DL, and TX6Q](https://www.karo-electronics.de/produkte/produktauswahl-2020) | [Uwe Steinkohl](mailto:us@karo-electronics.de) |
 > | [Keith & Koep pConXS](https://keith-koep.com/de/produkte/produkte-baseboards/pconxs-baseboard-vollausstattung-technische-daten/) with [Trizeps VII](https://keith-koep.com/de/produkte/produkte-trizeps/trizeps-vii-technische-daten-imx6/) | [contact@keith-koep.com](mailto:contact@keith-koep.com) |
 > | [Kontron SMARC-sAMX6i](https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html) | [Martin Unverdorben](mailto:martin.unverdorben@kontron.com) |
 > | [Novtech Meerkat](http://novtech.com/products/meerkat96.html) | [sales@novtech.com](mailto:sales@novtech.com) |
-> | [phyBOARD-i.MX 7 Development Kit](https://phytec.com/product/phyboard-imx7-development-kit/) | [Fernando Benitez](mailto:sales@phytec.com) |
+> | [phyBOARD-i.MX 7 Development Kit](https://www.phytec.com/product/phyboard-i-mx-7-development-kit/) | [Fernando Benitez](mailto:sales@phytec.com) |
 > | [Solid Run Hummingboard Edge](https://www.solid-run.com/imx6-win-10-iot-core/) | [Ilya Viten](mailto:ilya@solid-run.com) |
 > | [VIA VAB-820](https://www.viaembeddedstore.com/shop/boards/vab-820/) | [Michael Fox](mailto:MichaelFox@via.com.tw) or [Dream Ku](mailto:dreamku@via.com.tw) |
 > | [WeAreDev WAD-MX6W](http://www.wearedev.net/?mod=wadmx6w) | [help@wearedev.net](mailto:help@wearedev.net) |
 > | [MCIMX6ULL-EVK](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/i.mx-applications-processors/i.mx-6-processors/evaluation-kit-for-the-i.mx-6ull-and-6ulz-applications-processor:MCIMX6ULL-EVK) | [Wei Wang](mailto:Wei.A.Wang@nxp.com) |
 > | [MCIMX8M-EVK](https://www.nxp.com/support/developer-resources/software-development-tools/i.mx-developer-resources/evaluation-kit-for-the-i.mx-8m-applications-processor:MCIMX8M-EVK) |  |
 > | [MCIMX8MMINI-EVK](http://www.nxp.com/imx8mminievk) | []() |
-> | [i.MX8M MaaXBoard](http://www.embest-tech.com/prod_view.aspx?TypeId=117&Id=388&Fid=t3:117:3) | [chinasales@embest-tech.com](mailto:chinasales@embest-tech.com) |
+> | i.MX8M MaaXBoard | [chinasales@embest-tech.com](mailto:chinasales@embest-tech.com) |
 
 Note: The partners above support their hardware and the BSP for their hardware. They may be unable to assist with other software or configuration issues.
 
