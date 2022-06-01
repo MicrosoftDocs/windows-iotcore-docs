@@ -23,7 +23,7 @@ This driver package contains a Universal INF file and several binaries. The requ
 
 To learn how to **create a driver package in Visual Studio**, please visit [Creating a Driver Package](/windows-hardware/drivers/develop/creating-a-driver-package)
 
-If you would like **a sample to help you create a Universal Driver on IoT Core**, please visit our [Universal Driver sample](https://developer.microsoft.com/en-us/windows/iot/samples/driverlab)
+If you would like **a sample to help you create a Universal Driver on IoT Core**, please visit our [Universal Driver sample](https://github.com/ms-iot/content/blob/50c7defc256f6055d37720c0b9f3b8f4b87f929b/en-US/Samples/DriverLab.md)
 
 ## Additional Universal Driver Resources
 

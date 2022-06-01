@@ -51,7 +51,7 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Windows 10 IoT MSDN forum](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT)
 * [In-person training with Annabooks](http://www.annabooks.com/training.html)
 * [Getting started with Windows 10 IoT Core on Hackster.io](http://www.hackster.io/KiwiBryn)
-* [Window 10 IoT Core HATs](https://www.turta.io/iothat)
+* [Window 10 IoT Core HATs](https://github.com/Turta-io/IoTHAT)
 
 
 ## Our technology partners

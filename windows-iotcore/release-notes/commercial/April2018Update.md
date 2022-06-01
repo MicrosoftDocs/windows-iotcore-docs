@@ -65,7 +65,7 @@ ___
   * BSP Version: 2120.0.0.0
 
 ## Additional Information
-* Based on the recent Intel announcement to stop producing the Intel Joule platform, FFUs for Intel Joule were discontinued in the previous release. Customers evaluating Intel Joule should identify an alternative platform using one of the other supported SoCs - see [Suggested Boards and SoCs](/windows/iot-core/learn-about-hardware/suggestedboards) for a list.
+* Based on the recent Intel announcement to stop producing the Intel Joule platform, FFUs for Intel Joule were discontinued in the previous release. Customers evaluating Intel Joule should identify an alternative platform using one of the other supported SoCs - see [Suggested Boards and SoCs](/windows/iot-core/learn-about-hardware/socsandcustomboards) for a list.
 
 ## Known Issues
 * F5 driver deployment from Visual Studio does not work on Windows 10 IoT Core. Drivers must be manually copied and registered on the device.

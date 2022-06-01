@@ -94,7 +94,7 @@ Click on **Pair link** to pair the device. If the device requires a PIN for pair
 
 Once you navigate to the Bluetooth page, your device will be discoverable by other devices. You can also find it from your PC/Phone and pair it from there.
 
-More information on bluetooth can be found on the [bluetooth page](https://go.microsoft.com/fwlink/?linkid=823223).
+More information on bluetooth can be found on the [bluetooth page](/windows-hardware/design/component-guidelines/bluetooth).
 
 ### IoT Onboarding
 
@@ -136,7 +136,7 @@ sample which may be [downloaded here](https://github.com/ms-iot/samples).
 The Trusted Platform Module (TPM) is a cryptographic coprocessor including capabilities for random number generation, secure generation of cryptographic keys and limitation of their use. It also includes capabilities such as remote attestation and sealed storage. To learn about the TPM and security on IoT Core, visit the [Building secure devices](../secure-your-device/BuildingSecureDevices.md) page and the [TPM](../secure-your-device/TPM.md) page.
 
 > [!IMPORTANT]
-> Limpet.exe used to be part of Windows IoT Core. Starting with October 2018, it is now available as an open source porject at [https://github.com/ms-iot/azure-dm-client](https://github.com/ms-iot/azure-dm-client).
+> Limpet.exe used to be part of Windows IoT Core. Starting with October 2018, it is now available as an open source porject at [https://github.com/ms-iot/iot-core-azure-dm-client](https://github.com/ms-iot/iot-core-azure-dm-client).
 
 To make testing easier, we have a non-signed pre-built version of Limpet.exe available and can be downloaded right from WDP. You just need to go the 'TPM Configuration' tab and click the 'Install Latest' button.
 
