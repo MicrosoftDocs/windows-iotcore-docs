@@ -89,8 +89,6 @@ that are exposed from USB device to USB host.
 `HKLM\System\CurrentControlSet\Control\USBFN\Configurations\Default`
 
 ```
-bmAttributes=0xC0
-bMaxPower=0xFA
 InterfaceList =
 InterfaceDescriptor =
 InterfaceGUIDE =
