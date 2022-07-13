@@ -35,6 +35,6 @@ On AoAC systems (which includes all ARM systems), the system will automatically 
 	reg add HKLM\System\CurrentControlSet\Control\Power /v PlatformAoAcOverride /t REG_DWORD /d 0
 ```
 	
-Disabling modern standby can impact power consumption when the system is idle. You should measure your system's power consumption with modern standby enabled and disabled before making the decision to disable modern standby.
+Disabling modern standby can impact power consumption when the system is idle and is only supported on IOT devices. You should measure your system's power consumption with modern standby enabled and disabled before making the decision to disable modern standby.
 
 Modern standby is a software mechanism that attempts to quiet system activity as much as possible, thereby allowing hardware to enter a low-power state. In theory, a sufficiently quiet device with modern standby disabled can achieve the same low power consumption as a device in modern standby depending on how you have configured OS services and the capabilities of your SoC. For example, very quiet static configurations as described here have been shipped with the QC 410c and Windows 10 IoT Core. It is important to minimize background activity including software timers and periodic tasks if modern standby is disabled.
