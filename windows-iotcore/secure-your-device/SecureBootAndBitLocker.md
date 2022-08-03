@@ -121,9 +121,9 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
 
 ### Generate Lockdown Packages
 
-Follow the instructinos in the following two links:
+Follow the instructions in the following two links:
 
- * [Adding Security Packages · GitHub!image](https://user-images.githubusercontent.com/109549199/182669089-8a900b64-08da-4292-a0a9-00a3d94911cb.png)
+ * [Adding Security Packages](https://user-images.githubusercontent.com/109549199/182669089-8a900b64-08da-4292-a0a9-00a3d94911cb.png)
 
  * [Lab 1a Create a basic image](https://user-images.githubusercontent.com/109549199/182668905-5bcf9978-48a5-4433-a92d-34f44ff3adb6.png)
 
