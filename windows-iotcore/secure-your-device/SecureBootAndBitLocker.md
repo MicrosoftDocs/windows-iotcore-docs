@@ -121,60 +121,15 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
 
 ### Generate Lockdown Packages
 
-1. Download the [DeviceLockDown Script](https://github.com/ms-iot/security/tree/master/TurnkeySecurity) package, which contains all of the additional tools and scripts required for configuring and locking down devices
-2. Start an Administrative PowerShell (PS) console on your Windows 10 PC and navigate to the location of the downloaded script.
-3. Mount your reference hardware platform (running the unlocked image) to your PC via network share using
+Follow the instructinos in the following two links:
 
-    ```powershell
-    net use \\a.b.c.d\c$ /user:username password
-    ```
+ * [Adding Security Packages · GitHub!image](https://user-images.githubusercontent.com/109549199/182669089-8a900b64-08da-4292-a0a9-00a3d94911cb.png)
 
-4. Generate keys for your device using
+ * [Lab 1a Create a basic image](https://user-images.githubusercontent.com/109549199/182668905-5bcf9978-48a5-4433-a92d-34f44ff3adb6.png)
 
-    ```powershell
-    .\GenerateKeys.ps1 -OemName '<your oem name>' -outputPath '<output directory>'
-    ```
-
-    * The keys and certificates are generated in the specified output folder with appropriate suffix.
-    * **Secure your generated keys** as the device will trust binaries signed with these keys only after lockdown.
-    * You may skip this step and use the pre-generated keys for testing only
-
-5. Configure _settings.xml_
-
-    * General section : Specify the package directories
-    * Tools section : Set the path for the tools
-        * Windows10KitsRoot `(e.g. <Windows10KitsRoot>C:\Program Files (x86)\Windows Kits\10\</Windows10KitsRoot>)`
-        * WindowsSDKVersion `(e.g. <WindowsSDKVersion>10.0.15063.0</WindowsSDKVersion>)`
-            * SDK version installed on your machine is under `C:\Program Files (x86)\Windows Kits\10\`
-    * SecureBoot section : Specify which keys to use for secure boot (PK and SB keys)
-    * BitLocker section : Specify a certificate for BitLocker data recovery (DRA key)
-    * SIPolicy section : Specify certs that should be trusted
-        * ScanPath : Path of the device for scanning binaries , `\\a.b.c.d\C$`
-        * Update   : Signer of the SIPolicy (PAUTH keys)
-        * User     : User mode certificates (UMCI keys)
-        * Kernel   : Kernel mode certificates (KMCI keys)
-    * Packaging : Specify the settings for the package generation
-
-> [!IMPORTANT]
-> In order to assist with testing during the initial development cycle, Microsoft has provided pre-generated keys and certificates where appropriate.  This implies that Microsoft Test, Development and Pre-Release binaries are considered trusted.  During final product creation and image generation, be sure to remove these certifcates and use your own keys to ensure a fully locked down device.
-
-6. Execute the following commands to generate required packages:
-```
-    powershell
-
-    Import-Module .\IoTTurnkeySecurity.psm1
-
-    # Generate the security packages for retail
-    New-IoTTurnkeySecurity -ConfigFileName .\settings.xml
-
-    (or)
-
-    # Generate the security packages for test
-    New-IoTTurnkeySecurity -ConfigFileName .\settings.xml -Test
-```
 
 ### Test Lockdown packages
-You can test the generated packages by manually installing them on a unlocked device by the following steps
+You can test the security packages generated here <YOUR_IOT_ADD_ON_WORKSPACE>\Build\<ARCH>\<OEM_NAME>.Security.* .cab> by manually installing them on a unlocked device by the following steps
 
 1. Flash the device with the unlocked image (image used for scanning in earlier step).
 2. Connect to the device ([using SSH](../connect-your-device/SSH.md) or using [PowerShell](../connect-your-device/PowerShell.md))
@@ -234,10 +189,7 @@ After validating that the lockdown packages are working as per the settings defi
     * `buildimage ProductName test(or)retail`  (this generates new Flash.ffu)
 4. Flash the device with this new Flash.ffu and validate the security features.
 
-See [SecureSample](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/SecureSample) as an example of a lockdown dragon board configuration.
-
-Alternatively, you can generate the security packages in the IoTCore Shell itself, see [adding security packages](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools#adding-security-packages) for the details.
-
+See [SecureSample](https://github.com/ms-iot/iot-adk-addonkit/) as an example of a lockdown dragon board configuration.
 
 ### Developing with CodeSigning Enforcement Enabled
 
