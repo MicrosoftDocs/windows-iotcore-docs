@@ -16,9 +16,9 @@ Microsoft works alongside Broadcom, Intel, NXP, and Qualcomm to verify support f
 
 | Broadcom | Intel | Qualcomm | NXP |
 |----------|-------|----------|-----|
-| BCM2837 | [Intel® Atom® processor E3900 series (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                | [Snapdragon 410 (APQ8016)](https://www.qualcomm.com/products/snapdragon/processors/410) | [i.MX 6 Family](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/iotnxp) |
-| BCM2836 | [Intel® Celeron® processor N3350 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 (APQ8009)](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 7 Family](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/iotnxp)     |
-|         | [Intel® Pentium® processor N4200 platform (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 8M and 8M mini Family](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/iotnxp) |
+| BCM2837 | [Intel® Atom® processor E3900 series (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                | [Snapdragon 410 (APQ8016)](https://www.qualcomm.com/products/snapdragon/processors/410) | [i.MX 6 Family](./iotnxp.md) |
+| BCM2836 | [Intel® Celeron® processor N3350 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 (APQ8009)](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 7 Family](./iotnxp.md)     |
+|         | [Intel® Pentium® processor N4200 platform (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 8M and 8M mini Family](./iotnxp.md) |
 |         | [Intel® Pentium® and Celeron® Processor N3000 Series (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded)                    |                                                                                         |      |
 |         | [Intel® Atom® x5-E8000 Processor (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded)                                        |                                                                                         |  |
 |         | [Intel® Atom® x5-Z8350 Processor (Cherry Trail)](https://ark.intel.com/products/93361/Intel-Atom-x5-Z8350-Processor-2M-Cache-up-to-1_92-GHz) |                                                                                         |     |
@@ -86,8 +86,8 @@ Each of the platforms has unique quirks that need attention during implementatio
 
 There is a vibrant ecosystem of [experienced Intel device builders](https://solutionsdirectory.intel.com/solutions-directory/processors/278/processors/309/processors/402/processors/782/processors/788/processors/1103/processors/1107/processors/1110/processors/1175/processors/1344/processors/1348/processors/1349) for Windows you can work with. An Intel device designed to run Windows 10 IoT Core has a couple of differences from the more common PCs:
 
-1. If you need to provide user mode Universal Windows Platform (UWP) API access to simple buses like I2C, GPIO and SPI, you need make sure that ACPI table in your UEFI firmware contains  appropriate entries for RHProxy. Please refer to [user mode access](https://docs.microsoft.com/windows/uwp/devices-sensors/enable-usermode-access) for more information.
-2. You must ensure that the SMBIOS in the firmware contains information as listed in [OEM License Requirement](https://docs.microsoft.com/windows/iot-core/commercialize-your-device/oemlicenserequirements).
+1. If you need to provide user mode Universal Windows Platform (UWP) API access to simple buses like I2C, GPIO and SPI, you need make sure that ACPI table in your UEFI firmware contains  appropriate entries for RHProxy. Please refer to [user mode access](/windows/uwp/devices-sensors/enable-usermode-access) for more information.
+2. You must ensure that the SMBIOS in the firmware contains information as listed in [OEM License Requirement](/windows-hardware/manufacture/iot/license-requirements).
 
 If you are building your own board, please contact your BIOS vendor if you need guidance on ACPI or SMBIOS changes.
 
@@ -118,11 +118,11 @@ Recommendations:
 * [Intrinsyc](https://www.intrinsyc.com/computing-platforms/410-som/) - Mark Waldenberg (mwaldenberg@intrinsyc.com)
 * [Keith & Koep](https://keith-koep.com/en/products/products-som/myon-1-features-snapdragon-410/) - contact@keith-koep.com
 * [Reycom](http://www.reycom.swiss/en/home-swiss.html) - welcome@reycom.swiss
-* [Unitech](http://ute.com/products_info.php?pc1=4&pc2=461&rbu=0&pid=2395) - Sam (saml@tw.ute.com); Perry (perryt@te.ute.com)
+* [Unitech](https://www.ute.com/) - Sam (saml@tw.ute.com); Perry (perryt@te.ute.com)
 
 ### **NXP preview**
 
-NXP support for Windows 10 IoT Core is in public preview. For more information, the access the BSP, or to find a hardware partner, please go to the [NXP SoC page](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/iotnxp).
+NXP support for Windows 10 IoT Core is in public preview. For more information, the access the BSP, or to find a hardware partner, please go to the [NXP SoC page](./iotnxp.md).
 
 You can also reach out to partners we're working with:
 
@@ -133,7 +133,7 @@ You can also reach out to partners we're working with:
 * Solid Run [Hummingboard Edge](https://www.solid-run.com/imx6-win-10-iot-core/ )- Ilya Viten (ilya@solid-run.com)
 * Geniatech [SoM-iMX6Q-Q7](https://www.geniatech.com/product/som-imx6q-q7/) & [SoM-iMX7D](https://www.geniatech.com/product/som-imx7d/) - Mike Decker (mike.decker@geniatech.com) or Fang Jijun (Fjj@geniatech.com)
 * VIA [VAB-820](https://www.viaembeddedstore.com/shop/boards/vab-820/) - Michael Fox (MichaelFox@via.com.tw) or Dream Ku (dreamku@via.com.tw)
-* Phytec [phyBOARD-i.MX7](https://phytec.com/products/single-board-computers/phyboard-i.mx7/) - Brad Dodson (sales@phytec.com)
+* Phytec [phyBOARD-i.MX7](https://www.phytec.com/product/phyboard-i-mx-7-zeta) - Brad Dodson (sales@phytec.com)
 
 
 ## Other options

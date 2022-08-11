@@ -18,14 +18,14 @@ Configure your Visual Studio driver project so that you can compile and deploy a
 
 For this exercise you can use the [gpiokmdfdemo sample driver](https://github.com/ms-iot/samples/tree/develop/DriverSamples).
 
-If you're looking to add a driver to an image, please visit the instructions in our [IoT Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-driver-to-an-image).
+If you're looking to add a driver to an image, please visit the instructions in our [IoT Manufacturing Guide](/windows-hardware/manufacture/iot/add-a-driver-to-an-image).
 
 ## Step 1: Setup
 ___
 
 ### On the device
 
-* Make sure that your device has an IoTCore image installed by following the [Get Started instructions](https://go.microsoft.com/fwlink/?linkid=860461).
+* Make sure that your device has an IoTCore image installed by following the [Get Started instructions](../getstarted.md).
 * Connect to your device via [PowerShell](../connect-your-device/PowerShell.md).
 
 ### On the PC
@@ -119,7 +119,7 @@ ___
 > This method is not guaranteed to succeed – If for some reason a devnode cannot be shutdown to release the driver, the operation will fail.  This can be due to faulty hardware, or an initial faulty implementation of the driver.  The Install/Reinstall option must be used in this case.
 
 
-Your Visual Studio project is now ready to build and deploy a driver to your target device. If you are using the sample gpiokmdfdemo driver you need to generate ACPI table and copy to your target device, then follow the steps in [building the driver in Visual Studio](https://developer.microsoft.com/windows/iot/samples/driverlab2).
+Your Visual Studio project is now ready to build and deploy a driver to your target device. If you are using the sample gpiokmdfdemo driver you need to generate ACPI table and copy to your target device, then follow the steps in [building the driver in Visual Studio](/windows-hardware/drivers/develop/building-a-windows-driver).
 
 
 ## Step 4: Build and deploy driver

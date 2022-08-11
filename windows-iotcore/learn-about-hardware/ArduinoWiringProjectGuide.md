@@ -32,7 +32,7 @@ We've provided a Visual Studio extension which will automatically install a VS t
 You will need to be running the Direct Memory Mapped Driver to write Arduino Wiring solutions! Refer to the [Lightning Setup Guide](../develop-your-app/LightningSetup.md) for instructions!
 
 ## Develop
-Complete one of the "Wiring" samples on the [Samples Page](https://developer.microsoft.com/en-us/windows/iot/samples), or build your own project! Any of the samples we've created that are written using Arduino Wiring will be listed like so: [Blinky (Wiring)](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinkybackgroundwiring). Blinky, the cononical "Hello World" project for IoT projects, is a great place to start for your first project!
+Complete one of the "Wiring" samples on the [Samples Page](https://developer.microsoft.com/en-us/windows/iot/samples), or build your own project! Any of the samples we've created that are written using Arduino Wiring will be listed like so: [Blinky (Wiring)](/samples/microsoft/windows-iotcore-samples/hello-blinky-background). Blinky, the cononical "Hello World" project for IoT projects, is a great place to start for your first project!
 
 ### Create a new Project
 1. Open Visual Studio.

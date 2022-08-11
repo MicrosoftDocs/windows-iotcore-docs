@@ -33,7 +33,7 @@ The **IoT Startup App** ([sample](https://github.com/microsoft/Windows-iotcore-s
 
 The below instructions show you how to turn on Hotkey support through entries to the registry. If you are building your own image and want to support the below hotkeys (Home, previous app, and next app) without needing to access the registry, you can include an optional feature package that handles these steps for you.
 
-The feature package to look for is called: **Microsoft-OneCore-IoTUAP-Shell-HotKeys-Feature-Package.cab** and the feature is called **IOT_SHELL_HOTKEY_SUPPORT**. See the [Settings.HotKey sample package](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Common/Packages/Settings.HotKey/Settings.HotKey.pkg.xml) for an example.
+The feature package to look for is called: **Microsoft-OneCore-IoTUAP-Shell-HotKeys-Feature-Package.cab** and the feature is called **IOT_SHELL_HOTKEY_SUPPORT**. See the [Settings.HotKey sample package](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Workspace/Common/Packages/Settings.HotKey/Settings.HotKey.wm.xml) for an example.
 
 The rest of this document covers how to implement this feature manually.
 
@@ -73,7 +73,7 @@ As a REG file, this looks as follows:
 
 The above REG file entries decode left to right as follows:
 
-- Bits 0-15: Virtual Key Code (i.e. 1B,00 for ESCAPE). See [Virtual Key Code](https://msdn.microsoft.com/library/windows/desktop/dd375731(v=vs.85).aspx) for the complete list of key code values
+- Bits 0-15: Virtual Key Code (i.e. 1B,00 for ESCAPE). See [Virtual Key Code](/windows/win32/inputdev/virtual-key-codes) for the complete list of key code values
 - Bits 16-19: Modifier Key. 0x0 = No Modifier, 0x1 = ALT, 0x2 = CTRL, and 0x4 = SHIFT. Combining keys adds the values together (i.e. ALT+SHIFT is 0x5)
 - Bits 20-47: Reserved for future use; must be 0
 - Bits 48-62:  Action
@@ -81,4 +81,3 @@ The above REG file entries decode left to right as follows:
     - 1 = Previous View (may not work in future releases)
     - 2 = Next View (may not work in future releases)
 - Bit 63: Reserved; must be 0
-

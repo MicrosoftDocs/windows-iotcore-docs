@@ -17,11 +17,11 @@ Language support can be enabled at two levels, Application level and OS level, d
 ## Languages in UWP Applications
 UWP application languages are not limited to the languages included in the OS.  In fact, an IoT device that does not trigger shell UI or utilize speech resources can provide a device experience in many different languages through its UWP applications even though the underlying Windows 10 IoT Core OS is built simply in the en-US default mode. 
 
-UWP applications must provide the resources for the languages that are required to be supported. [Windows.Globalization.ApplicationLanguage](https://docs.microsoft.com/uwp/api/windows.globalization.applicationlanguages) APIs can be used to specify the language-related preferences.
+UWP applications must provide the resources for the languages that are required to be supported. [Windows.Globalization.ApplicationLanguage](/uwp/api/windows.globalization.applicationlanguages) APIs can be used to specify the language-related preferences.
 
 See the below sample applications:
 
-* [IoTDefaultApp sample](https://developer.microsoft.com/en-us/windows/iot/samples/iotdefaultapp)
+* [IoTDefaultApp sample](/samples/microsoft/windows-iotcore-samples/iotcore-defaultapp)
 
 * [ApplicationResources sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/ApplicationResources)
 
@@ -119,10 +119,10 @@ Once preferred UI language list set, UWP application will try to load the corres
  
 If the application doesn’t have the corresponding resources, then fallback resources will be loaded. Similarly, if the OS resources for the preferred languages aren’t part of the Windows IoT image, Windows IoT will use its fallback ones likely English (en-US).
 
-* Set region using `TrySetHomeGeographicRegion` in [Windows.System.UserProfile.GlobalizationPreferences](https://docs.microsoft.com/uwp/api/windows.system.userprofile.globalizationpreferences)
-* Set UI language using `TrySetLanguages` in [Windows.System.UserProfile.GlobalizationPreferences](https://docs.microsoft.com/uwp/api/windows.system.userprofile.globalizationpreferences)
-* Set speech language using `TrySetSystemSpeechLanguageAsync` in [Windows.Media.SpeechRecognition.SpeechRecognizer](https://docs.microsoft.com/uwp/api/windows.media.speechrecognition.speechrecognizer)
-* Set voice using `TrySetDefaultVoiceAsync` in [Windows.Media.SpeechSynthesis.SpeechSynthesizer](https://docs.microsoft.com/uwp/api/windows.media.speechsynthesis.speechsynthesizer)
+* Set region using `TrySetHomeGeographicRegion` in [Windows.System.UserProfile.GlobalizationPreferences](/uwp/api/windows.system.userprofile.globalizationpreferences)
+* Set UI language using `TrySetLanguages` in [Windows.System.UserProfile.GlobalizationPreferences](/uwp/api/windows.system.userprofile.globalizationpreferences)
+* Set speech language using `TrySetSystemSpeechLanguageAsync` in [Windows.Media.SpeechRecognition.SpeechRecognizer](/uwp/api/windows.media.speechrecognition.speechrecognizer)
+* Set voice using `TrySetDefaultVoiceAsync` in [Windows.Media.SpeechSynthesis.SpeechSynthesizer](/uwp/api/windows.media.speechsynthesis.speechsynthesizer)
 
 > [!NOTE]
 > For proper functioning, Cortana requires the region, UI language and speech language to be consistent, e.g.: region FR, UI and speech languages fr-FR or region ES, UI and speech languages es-ES. Cortana uses its own voice, UWP application cannot change it.

@@ -13,7 +13,7 @@ keywords: windows iot, Windows Insider, release notes, Raspberry Pi 3B+
 &copy; 2018 Microsoft Corporation. All rights reserved.
 
 > [!NOTE]
-> This release for the Raspberry Pi 3B+ is an unsupported technical preview. Limited validation and enablement has been completed. The current release can be found [here](https://www.microsoft.com/en-us/software-download/windowsiot). For a better evaluation experience and for any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm, or NXP SoCs. For troubleshooting issues with the Raspberry Pi 3B+, please see our Troubleshooting Guide, [here](https://docs.microsoft.com/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues). 
+> This release for the Raspberry Pi 3B+ is an unsupported technical preview. Limited validation and enablement has been completed. The current release can be found [here](https://www.microsoft.com/en-us/software-download/windowsiot). For a better evaluation experience and for any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm, or NXP SoCs. For troubleshooting issues with the Raspberry Pi 3B+, please see our Troubleshooting Guide, [here](../../troubleshooting.md?branch=master#raspberry-pi-3b-booting-issues). 
 
 ## What's new in this build: 
 * General bug fixes
@@ -71,7 +71,7 @@ The default administrator user name and password are hard coded in the Windows 1
 Hardware volume controls for USB microphones and speakers which depend on Windows system to change system volume are currently not supported on Windows 10 IoT Core. 
 
 ### USB keyboards
-Some USB keyboards and mice may not work on IoT Core. Use a different keyboard or mouse. A list of validated peripheral devices can be found in the documentation [here](https://go.microsoft.com/fwlink/?LinkId=619428).
+Some USB keyboards and mice may not work on IoT Core. Use a different keyboard or mouse. A list of validated peripheral devices can be found in the documentation [here](../../learn-about-hardware/hardwarecompatlist.md).
  
 ### Screen orientation
 Setting the orientation to “Portrait” may not be honored in a Universal App.
@@ -179,4 +179,4 @@ For example:
 schtasks /create /xml <xmlfile> /TN <taskname>
 ```
 This will fail on IoT Core. 
-Running the command will generate the error: ERROR: The specified procedure could not be found. 
+Running the command will generate the error: ERROR: The specified procedure could not be found.

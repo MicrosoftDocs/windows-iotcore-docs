@@ -54,7 +54,7 @@ ___
 
     [LulzBot TAZ 6 image](http://devel.lulzbot.com/TAZ/Olive/photos/TAZ_6_Angle_Rock2pus_transparent.png) by [Aleph Objects, Inc.](https://www.alephobjects.com/) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
-    If you wish to install a custom printer select the "Custom" option from the list of Printers. Custom 3d Printers need a configuration xml called the PrintDeviceCapabilities.xml file to be provided to correctly connect and print to the 3d printer. A sample PrintDeviceCapabilities.xml file can be found here https://docs.microsoft.com/windows-hardware/drivers/3dprint/sample-configuration-xml
+    If you wish to install a custom printer select the "Custom" option from the list of Printers. Custom 3d Printers need a configuration xml called the PrintDeviceCapabilities.xml file to be provided to correctly connect and print to the 3d printer. A sample PrintDeviceCapabilities.xml file can be found here [https://docs.microsoft.com/windows-hardware/drivers/3dprint/sample-configuration-xml](/windows-hardware/drivers/3dprint/sample-configuration-xml)
 
    The minimum changes you need to make in the xml file are to update the following sections with the correct values specific to your compatible printer.
 
@@ -72,7 +72,7 @@ The value in the psk3dx:baudrate xml tag controls the specific baud rate to use 
 ```
 
 The other values in the PrintDeviceCapabilities xml are used to notify the slicer in the 3d print driver to fine tune how it works with your specific compatible printer.
-More information on all these values are provided [here](https://docs.microsoft.com/windows-hardware/drivers/3dprint/slicer-settings).
+More information on all these values are provided [here](/windows-hardware/drivers/3dprint/slicer-settings).
 
 
 
