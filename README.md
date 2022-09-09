@@ -25,7 +25,7 @@ or trademarks, whether by implication, estoppel or otherwise.
 
 This is the repository for published [Windows for IoT documentation](https://docs.microsoft.com/windows/iot-core)(.
 
-If you would like to see new coverage or have feedback, please consider [**contributing**](https://docs.microsoft.com/CONTRIBUTING).  You can edit the existing content, add new content, or simply create new [issues](https://github.com/MicrosoftDocs/windows-iotcore-docs/issues). We’ll take a look at your suggestions and will work together to incorporate them into the docs.
+If you would like to see new coverage or have feedback, please consider [**contributing**](./CONTRIBUTING.md).  You can edit the existing content, add new content, or simply create new [issues](https://github.com/MicrosoftDocs/windows-iotcore-docs/issues). We’ll take a look at your suggestions and will work together to incorporate them into the docs.
 
 To edit content, just click edit on the article you want to make changes to:
 
