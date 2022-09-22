@@ -43,7 +43,7 @@ You will also need to add a reviewer or reviews to your pull requests to get the
 
 - When adding a page, you must add an entry for it in [toc.md](windows-iotcore/TOC.md) for it to appear.
 - A folder can contain more folders or `readme.md`s
-- Folder/directory names are dash-separated (e.g., `f12-tools`) and lowercase. They are used in URLs for articles on Microsoft Docs. Don't use underscores, or PascalCase, or camelCase.
+- Folder/directory names are dash-separated (e.g., `f12-tools`) and lowercase. They are used in URLs for articles on Microsoft Learn. Don't use underscores, or PascalCase, or camelCase.
 
 ## Other text elements
 
