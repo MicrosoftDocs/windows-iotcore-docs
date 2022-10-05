@@ -24,10 +24,10 @@
                 topicHref: "/windows/iot-core/getstarted/" 
               - name: Quickstarts
                 tocHref: /windows/iot-core/Tutorials/
-                topicHref: "/windows/iot-core/Tutorials/PrototypeBoards.md"
+                topicHref: "/windows/iot-core/tutorials/quickstarter/prototypeboards"
               - name: Hardware guidance
                 tocHref: /windows/iot-core/learn-about-hardware/
-                topicHref: "/windows/iot-core/learn-about-hardware/suggestedboards"  
+                topicHref: "/windows/iot-core/learn-about-hardware/hardwarecompatlist"  
               - name: Driver guidance
                 tocHref: /windows/iot-core/learn-about-hardware/
                 topicHref: "/windows/iot-core/learn-about-hardware/driverdeployment"  
@@ -54,7 +54,7 @@
                 topicHref: "/windows/iot-core/connect-to-cloud/overview"
               - name: Release notes
                 tocHref: /windows/iot-core/release-notes/
-                topicHref: "/windows/iot-core/release-notes/rtm/creatorsupdate"  
+                topicHref: "/windows/iot-core/release-notes/commercial/17763"  
               - name: Troubleshooting
                 tocHref: /windows/iot-core/troubleshooting/
                 topicHref: "/windows/iot-core/troubleshooting/"  
