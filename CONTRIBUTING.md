@@ -4,19 +4,19 @@ Thank you for your interest in our documentation. We appreciate your feedback, e
 
 ## Sign a CLA
 
-If you want to contribute more than a couple lines and you're not a Microsoft employee, you need to [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/). 
+If you want to contribute more than a couple lines and you're not a Microsoft employee, you need to [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/).
 
 ## Proposing a change
 
 To suggest a change to the docs, follow these steps:
 
-1. If you're viewing the Docs.microsoft.com page, click the **Edit** button in the upper right of the page.  You will be redirected to the corresponding Markdown source file in the [GitHub repository](https://github.com/MicrosoftDocs/windows-iotcore-docs).  If you are already in the GitHub repo, you can just navigate to the source file that you would like to change.
+1. While viewing a published article, click the **Edit** button in the upper right of the page. You will be redirected to the corresponding Markdown source file in the [GitHub repository](https://github.com/MicrosoftDocs/windows-iotcore-docs). If you are already in the GitHub repo, you can just navigate to the source file that you would like to change.
 2. If you don't already have a GitHub account, click **Sign Up** in the upper right and create a new account.
 3. From the GitHub page you would like to change, click the pencil icon. 
 4. Modify the file and use the preview tab to ensure the changes look good.
 5. When you're done, commit your changes and open a pull request.
 
-After you create the pull request, a member of the Windows 10 IoT team will review. If your request is accepted, updates are published to [https://docs.microsoft.com/windows/iot-core](https://docs.microsoft.com/windows/iot-core).
+After you create the pull request, a member of the Windows 10 IoT team will review. If your request is accepted, updates are published to [Windows for IoT documentation](https://learn.microsoft.com/windows/iot-core).
 
 ## Making more substantial changes
 
@@ -58,13 +58,13 @@ When you are happy with your changes and ready to submit a PR:
 
 After pushing your contribution to the remote repo, you will be sent an email from *Open Publishing Build Service* informing whether your contribution built successfully and linking to any error warnings such as broken links, click the links to see your content staged on the site.
 
-Once you have reviewed your contribution on the [Windows 10 IoT Docs staging site](https://review.docs.microsoft.com/en-us/windows/iot-core/) and are confident that you would like your changes to be published live, you must file a Pull Request (PR).
+Once you have reviewed your contribution on the [Windows 10 IoT Docs staging site](https://review.learn.microsoft.com/windows/iot-core/) and are confident that you would like your changes to be published live, you must file a Pull Request (PR).
 
-Once your PR is submitted, a member of the Windows 10 IoT docs team will review. When it is accepted, you will be able to view your changes on the [staging site](https://review.docs.microsoft.com/en-us/windows/iot-core). These updates will eventually be published live to [https://docs.microsoft.com/windows/iot-core](https://docs.microsoft.com/windows/iot-core).
+Once your PR is submitted, a member of the Windows 10 IoT docs team will review. When it is accepted, you will be able to view your changes on the [staging site](https://review.learn.microsoft.com/windows/iot-core). These updates will eventually be published live to [Windows for IoT documentation](https://learn.microsoft.com/windows/iot-core).
 
 ## Working with Branches
 
-The [Windows 10 IoT Docs GitHub repository](https://github.com/MicrosoftDocs/windows-iotcore-docs) utilizes two main parent branches: [Develop](https://github.com/MicrosoftDocs/windows-iotcore-docs/tree/develop), this content can be reviewed on the [staging site](https://review.docs.microsoft.com/en-us/windows/iot-core), and [Live](https://github.com/MicrosoftDocs/windows-iotcore-docs/tree/live), for content appearing on the [live site](https://docs.microsoft.com/windows/iot-core). 
+The [Windows 10 IoT Docs GitHub repository](https://github.com/MicrosoftDocs/windows-iotcore-docs) utilizes two main parent branches: [Develop](https://github.com/MicrosoftDocs/windows-iotcore-docs/tree/develop), this content can be reviewed on the [staging site](https://review.learn.microsoft.com/windows/iot-core), and [Live](https://github.com/MicrosoftDocs/windows-iotcore-docs/tree/live), for content appearing on the [live site](https://learn.microsoft.com/windows/iot-core). 
 
 When making contributions, please submit your Pull Request (PR) to the **Develop** branch. This branch can be viewed on the staging site and should only contain contributions that are ready to be published live.
 
@@ -78,5 +78,5 @@ Be sure to include the topic title and the URL for the page.
 - [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 
 ## Additional resources for Microsoft employees
-- [Connect your GitHub account and MS alias](https://review.docs.microsoft.com/en-us/windows-authoring-guide/github-account#2-connect-your-github-account-and-ms-alias-on-the-microsoft-open-source-portal)
-- [Resources for writing Markdown](https://review.docs.microsoft.com/en-us/windows-authoring-guide/writing-guidance/writing-markdown)
+- [Connect your GitHub account and MS alias](https://review.learn.microsoft.com/windows-authoring-guide/github-account#2-connect-your-github-account-and-ms-alias-on-the-microsoft-open-source-portal)
+- [Resources for writing Markdown](https://review.learn.microsoft.com/windows-authoring-guide/writing-guidance/writing-markdown)
