@@ -11,7 +11,7 @@
         topicHref: "/windows/iot/"  
         items:
           -name: IoT Core
-           tocHref: /windows/iot-core/
+           tocHref: /windows/iot-core/windows-iot-core
            topicHref: "/windows/iot-core/windows-iot-core"
            items:             
               - name: Commercialize
