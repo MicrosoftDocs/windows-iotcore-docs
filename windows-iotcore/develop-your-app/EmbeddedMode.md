@@ -14,7 +14,7 @@ keywords: windows iot, embedded mode, background applications
 
 Embedded Mode is supported on Windows IoT Core and Windows IoT Enterprise. Embedded Mode enables:
 
-* [Background Applications (read more)](./backgroundapplications.md)
+* [Background Applications (read more)](/windows/iot-core/develop-your-app/backgroundapplications)
 * Use of the lowLevelDevice capability
 * Use of systemManagement capability
 
@@ -24,7 +24,7 @@ Embedded mode must be enabled by following the steps below on Windows IoT Enterp
 ## Background Applications
 
 Background Applications are created using the Background Application (IoT) template in Visual Studio.
-Read more about creating [Background Applications](./backgroundapplications.md).
+Read more about creating [Background Applications](/windows/iot-core/develop-your-app/backgroundapplications).
 
 Background applications run without stopping and without resource limits. Also, if the background application stops for some reason and embedded mode is enabled the background application will be restarted by the system.
 
