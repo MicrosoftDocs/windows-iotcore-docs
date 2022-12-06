@@ -49,4 +49,4 @@ See [Appx.IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/tree/mas
 
 Windows 10 IoT Anniversary Update (1607) provides shell support for bringing the default application window to the foreground when another application is currently running.
 
-To see how to enable the "Home" key, please visit our [IoT Shell page](./iotcoreshell.md#switching-between-apps-with-hid-injection-keys)
+To see how to enable the "Home" key, please visit our [IoT Shell page](/windows/iot-core/develop-your-app/iotcoreshell#switching-between-apps-with-hid-injection-keys)

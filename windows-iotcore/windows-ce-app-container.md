@@ -18,10 +18,10 @@ To help these customers move to Windows 10 IoT and harness the full power of the
 
 The Windows CE App Migration technology works by running a Windows CE 2013 instance on top of Windows 10 IoT Core.
 
-The solution works with 32-bit application code and requires an ARM32 or x64 base platform that is [compatible](./learn-about-hardware/socsandcustomboards.md) with Windows 10 IoT Core.
+The solution works with 32-bit application code and requires an ARM32 or x64 base platform that is [compatible](/windows/iot-core/learn-about-hardware/socsandcustomboards) with Windows 10 IoT Core.
 You should be comfortable building a Windows CE 2013 system image using platform builder as well as building an image for Windows 10 IoT Core.
 
-A more detailed list of the requirements can be found under [Prerequisites](./windows-ce-app-container-getting-started.md#prerequisites) in the article, [Getting Started with CE App Container](./windows-ce-app-container-getting-started.md).
+A more detailed list of the requirements can be found under [Prerequisites](/windows/iot-core/windows-ce-app-container-getting-started#prerequisites) in the article, [Getting Started with CE App Container](/windows/iot-core/windows-ce-app-container-getting-started).
 
 ## Is Windows CE App Container the right choice for me
 
@@ -31,6 +31,6 @@ Developers place a special ARM32 or x86 Windows CE2013 platform image within the
 
 With IoT Core Services, your Windows 10 IoT Core OS will continue to receive security updates until 2029. And, with capabilities like Device Update Center, OEMs can manage the timing of the OS updates as well as distribute application updates easily.
 
-Check out [Getting Started with CE App Container](./windows-ce-app-container-getting-started.md) for a step-by-step guide that will walk you through your migration journey.
+Check out [Getting Started with CE App Container](/windows/iot-core/windows-ce-app-container-getting-started) for a step-by-step guide that will walk you through your migration journey.
 
 However, if you have existing designs that just need a few more years of manufacturing, the best course is to remain on Windows CE 2013. The path forward is explained more deeply in [Moving forward with Windows CE using the Windows CE App Container on Windows 10 IoT Core](https://techcommunity.microsoft.com/t5/internet-of-things/moving-forward-with-windows-ce-using-the-windows-ce-app/ba-p/1582360).

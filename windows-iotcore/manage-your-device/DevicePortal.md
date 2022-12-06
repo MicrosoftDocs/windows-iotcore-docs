@@ -33,7 +33,7 @@ There are two ways to go get the Windows Device Portal up and running.
 
 ### 1. Windows 10 IoT Dashboard
 
-First, you'll want to download the [Windows 10 IoT Dashboard](../connect-your-device/iotdashboard.md), a developer tool that makes it easy to set up new devices. Once you've used the Dashboard to flash a Windows 10 IoT Core image onto your device, check that your device shows up under "My devices".
+First, you'll want to download the [Windows 10 IoT Dashboard](/windows/iot-core/connect-your-device/iotdashboard), a developer tool that makes it easy to set up new devices. Once you've used the Dashboard to flash a Windows 10 IoT Core image onto your device, check that your device shows up under "My devices".
 
 From there, use the ellipses under "Actions" to select "Open in Device Portal". From there, you'll be taken to the Device Portal authentication page where, unless you changed the credentials initially, the default credentials are:
 ```

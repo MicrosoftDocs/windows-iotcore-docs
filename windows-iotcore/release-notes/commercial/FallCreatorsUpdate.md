@@ -29,13 +29,13 @@ The privacy statement for this version of the Windows operating system can be vi
 * Additional support for controlling line displays including customization of the cursor style, brightness, blink rate, and character sets. We've also added support for custom glyphs, transaction descriptors, and marquee mode for scrolling text.
 * On Windows 10 IoT Enterprise, we've enabled access to industry standard buses like GPIO, I2C, SPI, and UART from user mode through the [Windows.Devices APIs](/windows/uwp/devices-sensors/enable-usermode-access).
 * [Assigned Access](/windows/configuration/lock-down-windows-10-to-specific-apps) is a feature in Windows 10 IoT Enterprise that lets you restrict a specific user account to using only one Universal Windows app. We've expanded Assigned Access support to allow running multiple UWP and Win32 apps in a lockdown experience and manage those settings from the cloud.
-* You can change the system language using IoTSettings.exe or new APIs. For details, see the language configuration section of the [Command Line Utils](../../develop-your-app/multilang.md) and [Language Support](../../develop-your-app/multilang.md) documentation.
+* You can change the system language using IoTSettings.exe or new APIs. For details, see the language configuration section of the [Command Line Utils](../../develop-your-app/multilang.md) and [Language Support](/windows/iot-core/develop-your-app/multilang) documentation.
 * Updates to Raspberry Pi UEFI to enable Boot Volume Monitor.
 * Added SMSC network driver to all architectures of Windows 10 IoT Core.
 * Enabled [exclusive-mode audio streams](/windows/win32/coreaudio/exclusive-mode-streams) for audio endpoint devices on Windows 10 IoT Core.
 * Added new APIs in WinRT for setting the system date and time on Windows 10 IoT Core.
 * Added support for [Universal BSP (wm.xml)](/windows-hardware/manufacture/iot/create-packages). Use the iot-adk-addonkit v4.0 with the current version of the ADK.
-* Added language selection and localized layouts to On-Screen Keyboard. For more information, see  [On-Screen Keyboard Layouts](../../develop-your-app/onscreenkeyboardlayouts.md).
+* Added language selection and localized layouts to On-Screen Keyboard. For more information, see  [On-Screen Keyboard Layouts](/windows/iot-core/develop-your-app/onscreenkeyboardlayouts).
 
 ## Features in Preview for Dev and Test Scenarios
 * Component Update Service [Preview] allows OEMs to globally manage their apps and push updates for the operating system, apps, settings, and files from the cloud to devices to keep them up to date and secure.
@@ -43,7 +43,7 @@ The privacy statement for this version of the Windows operating system can be vi
 * Windows Device Health Attestation [Preview] service uses hardware features and cloud services to provide tamper-proof and remote attestation of device health based on hardware-level metrics and attested data.
 * [Azure IoT Edge](https://azure.microsoft.com/campaigns/iot-edge/) on Windows IoT [Preview] allows IoT solutions to orchestrate intelligence between the cloud and edge devices to ensure applications and services can act on IoT data wherever it makes the most sense.
 * Azure IoT Hub [Device Provisioning Service [Preview]](https://blogs.windows.com/buildingapps/2017/10/05/windows-10-iot-enables-complete-iot-lifecycle/) enables Windows 10 IoT devices to be created with a common image during manufacturing and configured to connect automatically at first boot to Azure IoT Hub to retrieve device-specific provisioning information.
-* [Azure IoT Device Management [Preview]](../../manage-your-device/azureiotdm.md) enables IoT operators to manage device configuration such as installed applications, Windows updates, certificates, and network settings remotely from the cloud.
+* [Azure IoT Device Management [Preview]](/windows/iot-core/manage-your-device/azureiotdm) enables IoT operators to manage device configuration such as installed applications, Windows updates, certificates, and network settings remotely from the cloud.
 
 ## Windows 10 IoT Core Reference Images
 ___ 
@@ -61,7 +61,7 @@ ___
   * BSP Version: 2112.0.0.0
 
 ## Additional Information
-* Based on the recent Intel announcement to stop producing the Intel Joule platform, FFUs for Intel Joule are discontinued in this release. Customers evaluating Intel Joule should identify an alternative platform using one of the other supported SoCs - see [Suggested Boards and SoCs](../../tutorials/quickstarter/prototypeboards.md) for a list.
+* Based on the recent Intel announcement to stop producing the Intel Joule platform, FFUs for Intel Joule are discontinued in this release. Customers evaluating Intel Joule should identify an alternative platform using one of the other supported SoCs - see [Suggested Boards and SoCs](/windows/iot-core/tutorials/quickstarter/prototypeboards) for a list.
 * The IOT_WEBB_EXTN feature has been refactored to remove the onboarding feature, which is now available as IOT_ONBOARDING_APP. With this update, the onboarding feature will be removed and devices using this feature should be reflashed to get this feature again.
 
 ## Known Issues

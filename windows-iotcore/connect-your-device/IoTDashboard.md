@@ -20,19 +20,19 @@ You can download the [IoT Core Dashboard here](https://go.microsoft.com/fwlink/?
 ## Set up a new device
 
 > [!NOTE]
-> Dashboard cannot be used used to setup the Raspberry Pi 3B+. If you have a 3B+ device, you must use the [3B+ technical preview](https://www.microsoft.com/software-download/windowsiot). Please view the [known limitations](../troubleshooting.md) of the technical preview to determine if this is suitable for your development.
+> Dashboard cannot be used used to setup the Raspberry Pi 3B+. If you have a 3B+ device, you must use the [3B+ technical preview](https://www.microsoft.com/software-download/windowsiot). Please view the [known limitations](/windows/iot-core/troubleshooting) of the technical preview to determine if this is suitable for your development.
 
 > [!NOTE]
 > There is currently a known issue where the OS goes through the partitions on the SD card and prompts a 'Format ..' message for a specific data partition that does not contain any file system. Please dismiss this prompt by pressing cancel. While we work on a solution, we recommend that if you click on 'Format now,' you reflash the SD card with the FFU image again as the format action impacts the update process and the device will fail to update.
 
 
-The IoT Dashboard makes it easy to set up a new device. For detailed instructions on how to get started, see the [Get Started](../getstarted.md) page.
+The IoT Dashboard makes it easy to set up a new device. For detailed instructions on how to get started, see the [Get Started](/windows/iot-core/getstarted) page.
 
 ![IoT Dashboard Setup Page](../media/IoTDashboard/IoTDashboard_SetupPage.PNG)
 
 ### SD card
 The type, make, and model of the SD card greatly affects both the performance and the quality of IoT Core.
-A slow card can take up to five times longer to boot than our [recommended cards](../learn-about-hardware/hardwarecompatlist.md).
+A slow card can take up to five times longer to boot than our [recommended cards](/windows/iot-core/learn-about-hardware/hardwarecompatlist).
 An older, less reliable SD card may not even work. If you continue to run into problems installing, consider replacing the SD card.
 
 ### Device Name
@@ -79,7 +79,7 @@ To find your device, go to **My Devices**. If your device is not listed, try reb
 > If you are unable to find your device in the dashboard, try typing your [IP Address] and [:8080] into the browser to get Windows Device Portal up and running. To get your device to show in the dashboard, try rebooting your device.
 
 
-Right-click and select **Open in Device Portal**. This will launch the [Windows Device Portal](../manage-your-device/DevicePortal.md) page and is the best way to interact and manage your device.
+Right-click and select **Open in Device Portal**. This will launch the [Windows Device Portal](/windows/iot-core/manage-your-device/DevicePortal) page and is the best way to interact and manage your device.
 
 ![IoTDashboard View Devices](../media/IoTDashboard/IoTDashboard_RightClickMenu.PNG)
 

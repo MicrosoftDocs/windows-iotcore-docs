@@ -12,7 +12,7 @@ ms.custom: RS5
 # Setting up a Dragonboard
 
 > [!IMPORTANT]
-> When you're working with a new Dragonboard, it comes with Android installed. You will need to wipe and load the device using the eMMC flashing method, [here](./qualcomm.md).
+> When you're working with a new Dragonboard, it comes with Android installed. You will need to wipe and load the device using the eMMC flashing method, [here](/windows/iot-core/tutorials/qualcomm).
 
 > [!NOTE]
 > If you're running into any audio-related issues with your DragonBoard, we advise that you read through Qualcomm's manual [here](https://developer.qualcomm.com/download/db410c/stereo-connector-and-audio-routing-application-note.pdf).
@@ -25,7 +25,7 @@ When setting up a Dragonboard for prototyping, we recommend using the Windows 10
 
 To flash, or download, IoT Core onto your MinnowBoard, you'll need:
 * A computer running Windows 10
-* [Windows 10 IoT Core Dashboard](../downloads.md)
+* [Windows 10 IoT Core Dashboard](/windows/iot-core/downloads)
 * MicroUSB cable
 * An external display
 * Any other peripherals (e.g. mouse, keyboard, etc.)
@@ -65,4 +65,4 @@ If you haven't connected a display and would like to connect via Wi-Fi, you'll n
 
 ## Connect to Windows Device Portal
 
-Use the [Windows Device Portal](../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available.
+Use the [Windows Device Portal](/windows/iot-core/manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available.

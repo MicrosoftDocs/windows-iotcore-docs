@@ -16,9 +16,9 @@ Microsoft works alongside Broadcom, Intel, NXP, and Qualcomm to verify support f
 
 | Broadcom | Intel | Qualcomm | NXP |
 |----------|-------|----------|-----|
-| BCM2837 | [Intel® Atom® processor E3900 series (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                | [Snapdragon 410 (APQ8016)](https://www.qualcomm.com/products/snapdragon/processors/410) | [i.MX 6 Family](./iotnxp.md) |
-| BCM2836 | [Intel® Celeron® processor N3350 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 (APQ8009)](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 7 Family](./iotnxp.md)     |
-|         | [Intel® Pentium® processor N4200 platform (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 8M and 8M mini Family](./iotnxp.md) |
+| BCM2837 | [Intel® Atom® processor E3900 series (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                | [Snapdragon 410 (APQ8016)](https://www.qualcomm.com/products/snapdragon/processors/410) | [i.MX 6 Family](/windows/iot-core/learn-about-hardware/iotnxp) |
+| BCM2836 | [Intel® Celeron® processor N3350 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 (APQ8009)](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 7 Family](/windows/iot-core/learn-about-hardware/iotnxp)     |
+|         | [Intel® Pentium® processor N4200 platform (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 8M and 8M mini Family](/windows/iot-core/learn-about-hardware/iotnxp) |
 |         | [Intel® Pentium® and Celeron® Processor N3000 Series (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded)                    |                                                                                         |      |
 |         | [Intel® Atom® x5-E8000 Processor (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded)                                        |                                                                                         |  |
 |         | [Intel® Atom® x5-Z8350 Processor (Cherry Trail)](https://ark.intel.com/products/93361/Intel-Atom-x5-Z8350-Processor-2M-Cache-up-to-1_92-GHz) |                                                                                         |     |
@@ -122,7 +122,7 @@ Recommendations:
 
 ### **NXP preview**
 
-NXP support for Windows 10 IoT Core is in public preview. For more information, the access the BSP, or to find a hardware partner, please go to the [NXP SoC page](./iotnxp.md).
+NXP support for Windows 10 IoT Core is in public preview. For more information, the access the BSP, or to find a hardware partner, please go to the [NXP SoC page](/windows/iot-core/learn-about-hardware/iotnxp).
 
 You can also reach out to partners we're working with:
 

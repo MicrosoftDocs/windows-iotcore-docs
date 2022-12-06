@@ -59,7 +59,7 @@ The Windows 10 IoT Enterprise 2019 release will be an LTSC release. See [here](/
 * [Assigned Access for Enterprise & Pro](/windows-hardware/customize/enterprise/assigned-access)
 * [Shell Launcher for Enterprise and Education editions](/windows-hardware/customize/enterprise/shell-launcher)
 * [Lockdown resources](/windows-hardware/customize/enterprise/create-a-kiosk-image)
-* [Enabling Embedded Mode and using Background Tasks on Windows IoT Enterprise](./develop-your-app/embeddedmode.md)
+* [Enabling Embedded Mode and using Background Tasks on Windows IoT Enterprise](/windows/iot-core/develop-your-app/embeddedmode)
 * [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization)
 * [Configure kiosk and shared devices running Windows desktop editions](/windows/configuration/kiosk-shared-pc)
 * [Desktop manufacturing](/windows-hardware/manufacture/desktop/)
