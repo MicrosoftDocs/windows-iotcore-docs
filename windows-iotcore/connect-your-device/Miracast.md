@@ -75,7 +75,7 @@ This will enable Miracast without a consent notification, only on secure network
 
 > [!IMPORTANT]
 > Before trying to use your device as a Miracast Source, please turn off the IoTOnboardingTask app from the [Windows Device Portal](/windows/iot-core/manage-your-device/deviceportal) as shown below, which you'll only need to do once:
-> ![Turn off IoTOnboardingTask app](/windows/iot-core/media/Miracast/IoTOnboardingOff.gif)
+> ![Turn off IoTOnboardingTask app](../media/Miracast/IoTOnboardingOff.gif)
 >
 > Afterwards, please restart the device
 
