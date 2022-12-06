@@ -27,9 +27,9 @@ landingContent:
       - linkListType: tutorial
         links: 
           - text: Windows 10 IoT Core Manufacturing Guide
-            url: /en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide
+            url: /windows-hardware/manufacture/iot/iot-core-manufacturing-guide
           - text: Windows 10 IoT Enterprise Manufacturing Guide
-            url: /en-us/windows-hardware/manufacture/desktop/iot-ent-overview
+            url: /windows-hardware/manufacture/desktop/iot-ent-overview
       - linkListType: reference
         links: 
           - text: Prototype boards
