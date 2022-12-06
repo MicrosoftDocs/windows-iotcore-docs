@@ -12,7 +12,7 @@ ms.custom: RS5
 # Windows 10 IoT Core Default App Overview
 When you initially flash Windows 10 IoT Core, you will be presented with the Windows 10 IoT Core Default App upon startup, which looks like this:
 
-![Screenshot of the IoT Core Default App](/windows/iot-core/media/IoTCoreDefaultApp/DeviceInfoPage-Screenshot.jpg)
+![Screenshot of the IoT Core Default App](../media/IoTCoreDefaultApp/DeviceInfoPage-Screenshot.jpg)
 
 The purpose of this application is not only to provide you with a friendly shell to interact with when you first boot up Windows 10 IoT Core, but we have open-sourced the code for this application [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp) so that you can plug and play with these features on your own custom application(s).
 
