@@ -28,7 +28,7 @@ You can download the [IoT Core Dashboard here](https://go.microsoft.com/fwlink/?
 
 The IoT Dashboard makes it easy to set up a new device. For detailed instructions on how to get started, see the [Get Started](/windows/iot-core/getstarted.md) page.
 
-![IoT Dashboard Setup Page](/windows/iot-core/media/IoTDashboard/IoTDashboard_SetupPage.PNG)
+![IoT Dashboard Setup Page](../media/IoTDashboard/IoTDashboard_SetupPage.PNG)
 
 ### SD card
 The type, make, and model of the SD card greatly affects both the performance and the quality of IoT Core.
