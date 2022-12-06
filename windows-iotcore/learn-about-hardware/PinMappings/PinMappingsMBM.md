@@ -1,6 +1,6 @@
 ---
 title: Minnowboard Max Pin Mappings
-ms.date: 08/28/2017
+ms.date: 04/04/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -10,7 +10,7 @@ keywords: windows iot, Minnowboard Max, pin mappings, GPIO
 
 # MinnowBoard Max Pin Mappings
 
-> [!NOTE] 
+> [!NOTE]
 > To compare this pin mapping to newer versions of the Minnowboard, please visit documentation [here](https://minnowboard.org/minnowboard-turbot/documentation).
 
 ## Overview
@@ -52,14 +52,14 @@ The following GPIO pins are accessible through APIs:
 **Note:** **GPIO 4** and **GPIO 5** are used by the MinnowBoard Max as bootstrap configuration pins for the BIOS.
  Make sure that attached devices do not drive these GPIO low during boot, as this could prevent the MBM from booting.
  After the MBM has booted past the BIOS, these GPIO can be used normally.
-     
+
 ## GPIO Sample
 
 As an example, the following code opens **GPIO 5** as an output and writes a digital '**1**' out on the pin:
-         
+
 ```C#
 using Windows.Devices.Gpio;
-         
+
 public void GPIO()
 {
 	GpioController Controller = GpioController.GetDefault(); /* Get the default GPIO controller on the system */
@@ -232,4 +232,3 @@ public async void SPI()
     }
 }
 ```
-

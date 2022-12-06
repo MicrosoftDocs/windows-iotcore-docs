@@ -1,6 +1,6 @@
 ---
 title: IoT Shell Overview
-ms.date: 08/28/2017
+ms.date: 06/21/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -14,7 +14,7 @@ This document covers the IoT Shell, foreground and background applications, and 
 
 ## IoT Shell, Foreground, and Background Apps
 
-Your IoT Core device runs the IoT Shell. It has many responsibilities, but its primary job is to make sure registered startup apps are launched. It has two modes: Headed and Headless. 
+Your IoT Core device runs the IoT Shell. It has many responsibilities, but its primary job is to make sure registered startup apps are launched. It has two modes: Headed and Headless.
 In Headed mode, the IoT Shell will launch a single registered startup app that will show its UI in full screen (also known as a Headed app). Headed mode assumes you have a screen connected and shows UI. In Headless mode (explained in detail [here](../learn-about-hardware/HeadlessMode.md)), there is no UI; the IoT Shell launches background applications only.
 
 Here are the main differences between foreground and background applications:
@@ -25,7 +25,7 @@ Here are the main differences between foreground and background applications:
 
 ## Switching between apps with a Home App
 
-At the moment, the Startup App allows you to create a home app for Windows 10 IoT Core, which allows you to switch between different foreground applications. 
+At the moment, the Startup App allows you to create a home app for Windows 10 IoT Core, which allows you to switch between different foreground applications.
 
 The **IoT Startup App** ([sample](https://github.com/microsoft/Windows-iotcore-samples/tree/master/Samples/IoTStartApp) represents a simple startup app that lists the installed apps on your device, then launches one using the PackageManager APIs.
 
@@ -58,8 +58,8 @@ Alternatively, if you want to switch between your foreground apps, you can set u
 
 ``
 “HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\HotKeys”
-“PREV” QWORD 0x00010000 00010009 
-“NEXT” QWORD 0x00020000 00050009 
+“PREV” QWORD 0x00010000 00010009
+“NEXT” QWORD 0x00020000 00050009
 ``
 
 As a REG file, this looks as follows:

@@ -2,7 +2,7 @@
 title: Bus Providers
 author: msalehmsft
 ms.author: msaleh
-ms.date: 08/28/2017
+ms.date: 05/10/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

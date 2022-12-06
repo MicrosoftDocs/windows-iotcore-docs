@@ -1,7 +1,7 @@
 ---
 title: Setting up Qualcomm devices
-ms.date: 05/22/2019 
-ms.topic: article 
+ms.date: 06/07/2019 
+ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
 description: Learn about how to set up your Qualcomm device with Windows 10 IoT Core.
@@ -24,7 +24,7 @@ If you're looking to manufacture with a Qualcomm device, please refer to the [Io
 4. Ensure your DragonBoard is in download mode by setting the first boot switch on the board to USB Boot, as shown below. Then, connect the DragonBoard to the host PC via a microUSB cable, then plug in the DragonBoard to a 12V (> 1A) power supply.
 5. Start the DragonBoard Update Tool, which should detect that the DragonBoard is connected to your PC with a green circle. "Browse" to the DragonBoard's FFU that you downloaded, then click the _Program_ button.
 6. Click "Browse" again and select "rawprogram0.xml" that was generated in step 5. Then click the "Program" button.
-7. Once the download is complete, disconnect the power supply and microUSB cable from the board and toggle the USB Boot switch back to _OFF_. Connect an HDMI display, a mouse, and a keyboard to the DragonBoard and reconnect the power supply. After a few minutes, you should see the Windows 10 IoT Core default application. 
+7. Once the download is complete, disconnect the power supply and microUSB cable from the board and toggle the USB Boot switch back to _OFF_. Connect an HDMI display, a mouse, and a keyboard to the DragonBoard and reconnect the power supply. After a few minutes, you should see the Windows 10 IoT Core default application.
 
 ![DragonBoard in download mode](../media/DeviceSetup/db1.png)
 

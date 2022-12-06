@@ -2,7 +2,7 @@
 title: Windows Debugger
 author: bfjelds
 ms.author: bfjelds
-ms.date: 08/28/2017
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

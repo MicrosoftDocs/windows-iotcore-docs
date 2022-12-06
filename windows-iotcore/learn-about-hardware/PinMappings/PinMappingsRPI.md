@@ -1,6 +1,6 @@
 ---
 title: Raspberry Pi 2 & 3 Pin Mappings
-ms.date: 08/28/2017
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
