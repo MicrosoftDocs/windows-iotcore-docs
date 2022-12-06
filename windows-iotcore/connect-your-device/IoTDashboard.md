@@ -20,15 +20,15 @@ You can download the [IoT Core Dashboard here](https://go.microsoft.com/fwlink/?
 ## Set up a new device
 
 > [!NOTE]
-> Dashboard cannot be used used to setup the Raspberry Pi 3B+. If you have a 3B+ device, you must use the [3B+ technical preview](https://www.microsoft.com/software-download/windowsiot). Please view the [known limitations](../troubleshooting.md) of the technical preview to determine if this is suitable for your development.
+> Dashboard cannot be used used to setup the Raspberry Pi 3B+. If you have a 3B+ device, you must use the [3B+ technical preview](https://www.microsoft.com/software-download/windowsiot). Please view the [known limitations](/windows/iot-core/troubleshooting.md) of the technical preview to determine if this is suitable for your development.
 
 > [!NOTE]
 > There is currently a known issue where the OS goes through the partitions on the SD card and prompts a 'Format ..' message for a specific data partition that does not contain any file system. Please dismiss this prompt by pressing cancel. While we work on a solution, we recommend that if you click on 'Format now,' you reflash the SD card with the FFU image again as the format action impacts the update process and the device will fail to update.
 
 
-The IoT Dashboard makes it easy to set up a new device. For detailed instructions on how to get started, see the [Get Started](../getstarted.md) page.
+The IoT Dashboard makes it easy to set up a new device. For detailed instructions on how to get started, see the [Get Started](/windows/iot-core/getstarted.md) page.
 
-![IoT Dashboard Setup Page](../media/IoTDashboard/IoTDashboard_SetupPage.PNG)
+![IoT Dashboard Setup Page](/windows/iot-core/media/IoTDashboard/IoTDashboard_SetupPage.PNG)
 
 ### SD card
 The type, make, and model of the SD card greatly affects both the performance and the quality of IoT Core.
