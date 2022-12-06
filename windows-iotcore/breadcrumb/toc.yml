@@ -11,5 +11,5 @@
         topicHref: "/windows/iot/"  
         items:
               - name: IoT Core
-                tocHref: /windows/windows-iotcore/windows-iot-core
-                topicHref: "/windows/windows-iotcore/"
+                tocHref: /windows/iot-core/
+                topicHref: "/windows/iot-core/windows-iot-core"
