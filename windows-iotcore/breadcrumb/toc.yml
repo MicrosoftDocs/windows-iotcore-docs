@@ -11,5 +11,6 @@
         topicHref: "/windows/iot/"  
         items:
               - name: IoT Core
-                tocHref: /windows/iot-core/
+                tocHref: /windows/iot-core/tutorials/
+                tocHref: /windows/iot-core/connect-your-device/
                 topicHref: "/windows/iot-core/windows-iot-core.md"
