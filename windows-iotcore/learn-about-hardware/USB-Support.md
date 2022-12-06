@@ -36,7 +36,7 @@ Every USB device has unique VID and PID, which identify it. An OEM, as the manuf
 ### Supporting from the device side
 
 _Features to include in FFU for image generation with USBFN enabled_
-* The IoT image must have the necessary packages in it, namely ufx01000.sys and usbfnclx.sys. They both come with the following package `Microsoft-IoTUAP-USBFN-Class-Extension-Package.cab`. OEMs must use a proper "feature" tag in their XML file, which lists all features included in the FFU. For example, in the BoardTestOEMInput.xml file there will be the following entry '''<Feature>IOT_USBFN_CLASS_EXTENSION</Feature>'''  included under <Microsoft> features section. 
+* The IoT image must have the necessary packages in it, namely ufx01000.sys and usbfnclx.sys. They both come with the following package `Microsoft-IoTUAP-USBFN-Class-Extension-Package.cab`. OEMs must use a proper "feature" tag in their XML file, which lists all features included in the FFU. For example, in the BoardTestOEMInput.xml file there will be the following entry ```<Feature>IOT_USBFN_CLASS_EXTENSION</Feature>```  included under <Microsoft> features section. 
 
 _USB Role Switching driver_
 * For the USB OTG, OEMs have to supply the correct ACPI table entry (*myOTGacpi*) for the USB role-switching driver and the driver itself (*myURS.sys).
