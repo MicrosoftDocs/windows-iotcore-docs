@@ -28,7 +28,7 @@ For this method, you will need to ensure that you are connected to the internet.
 
 To install your application on the device please do the following:
 
-1. Open the [Windows Device Portal](../manage-your-device/deviceportal.md) for your IoT device.
+1. Open the [Windows Device Portal](/windows/iot-core/manage-your-device/deviceportal.md) for your IoT device.
 
 2. In the **Apps** menu, install your app by selecting your app files and clicking **Install**.
 
@@ -50,10 +50,10 @@ To install your application on the device please do the following:
 
 9. Wait for the install is completed and click **Done**
 
- ![Install App](../media/AppInstaller/install-app.gif)
+ ![Install App](/windows/iot-core/media/AppInstaller/install-app.gif)
 
 10. The application will now be visible on the list of applications on your device.
- ![Install App](../media/AppInstaller/install-app.gif)
+ ![Install App](/windows/iot-core/media/AppInstaller/install-app.gif)
 
 
 ## Using provisioning package from WCD
