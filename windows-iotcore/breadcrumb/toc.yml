@@ -36,8 +36,6 @@
               - name: Windows IoT Core
                 tocHref: /windows/iot-core/windows-iot-core
                 topicHref: "/windows/iot-core/windows-iot-core"
-                
-                topicHref: "/windows/iot-core/windows-iot-core"
               - name: Windows IoT Core
                 tocHref: /windows/iot-core/windows-ce-migration-faq
                 topicHref: "/windows/iot-core/windows-iot-core"
@@ -76,7 +74,4 @@
                 topicHref: "/windows/iot-core/windows-iot-core"
               - name: Windows IoT Core
                 tocHref: /windows/iot-core/secure-your-device/
-                topicHref: "/windows/iot-core/windows-iot-core"
-              - name: Windows IoT Core
-                tocHref: /windows/iot-core/tutorials/
                 topicHref: "/windows/iot-core/windows-iot-core"
