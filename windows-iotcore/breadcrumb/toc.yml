@@ -10,7 +10,39 @@
         tocHref: /windows/iot-core/
         topicHref: "/windows/iot/"  
         items:
-              - name: IoT Core
-                tocHref: /windows/iot-core/tutorials/
+              - name: IoT Core / Commercialize
+                tocHref: /windows/iot-core/commercialize-your-device/
+                topicHref: "/windows/iot-core/windows-iot-core.md"
+              - name: IoT Core / Cloud
+                tocHref: /windows/iot-core/connect-to-cloud/
+                topicHref: "/windows/iot-core/windows-iot-core.md"
+              - name: IoT Core / Connect
                 tocHref: /windows/iot-core/connect-your-device/
+                topicHref: "/windows/iot-core/windows-iot-core.md"
+              - name: IoT Core / Dev App
+                tocHref: /windows/iot-core/develop-your-app/
+                topicHref: "/windows/iot-core/windows-iot-core.md"
+              - name: IoT Core / Dev Tools
+                tocHref: /windows/iot-core/developer-tools/
+                topicHref: "/windows/iot-core/windows-iot-core.md"
+              - name: IoT Core / App
+                tocHref: /windows/iot-core/extend-your-app/
+                topicHref: "/windows/iot-core/windows-iot-core.md"
+              - name: IoT Core / Hardware
+                tocHref: /windows/iot-core/learn-about-hardware/
+                topicHref: "/windows/iot-core/windows-iot-core.md"
+              - name: IoT Core / Manage
+                tocHref: /windows/iot-core/manage-your-device/
+                topicHref: "/windows/iot-core/windows-iot-core.md"
+              - name: IoT Core / Media
+                tocHref: /windows/iot-core/media/
+                topicHref: "/windows/iot-core/windows-iot-core.md"
+              - name: IoT Core / RelNotes
+                tocHref: /windows/iot-core/release-notes/
+                topicHref: "/windows/iot-core/windows-iot-core.md"
+              - name: IoT Core / Secure
+                tocHref: /windows/iot-core/secure-your-device/
+                topicHref: "/windows/iot-core/windows-iot-core.md"
+              - name: IoT Core / Tutorials
+                tocHref: /windows/iot-core/tutorials/
                 topicHref: "/windows/iot-core/windows-iot-core.md"
