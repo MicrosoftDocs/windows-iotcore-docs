@@ -14,7 +14,7 @@ keywords: Windows Server IoT 2019, enterprise manageability, Windows ecosystem, 
 > Windows Containers are supported for commercial deployments on Windows Server, Windows IoT Server, Windows IoT Enterprise and Windows IoT Core.  As of Windows October Update 2018 (Build 17763), Windows Containers can only be used with Windows Enterprise and Professional for dev/test purposes.
 
 ## What is Windows Server IoT 2019?
-Windows Server IoT 2019 is a full version of Windows Server 2019 that delivers enterprise manageability and security to IoT solutions. Windows Server IoT 2019 shares all the benefits of the world-wide Windows ecosystem. It is a binary equivalent to Windows Server 2019, so you can use the same familiar development and management tools that you use on your general-purpose servers. However, when it comes to licensing and distribution, the general-purpose version and IoT versions differ.  Windows Server IoT 2019 is only licensed through the OEM channel under special dedicated use rights.
+Windows Server IoT 2019 is a full version of Windows Server 2019 that delivers enterprise manageability and security to IoT solutions. Windows Server IoT 2019 shares all the benefits of the world-wide Windows ecosystem. It is a binary equivalent to Windows Server 2019. You can use the same familiar development and management tools that you use on your general-purpose servers such as Endpoint Configuration Manager, Windows Admin Center and Azure ARC. However, when it comes to licensing and distribution, the general-purpose version and IoT versions differ.  Windows Server IoT 2019 is only licensed through the OEM channel under special dedicated use rights.
 
 ## Fixed purpose devices 
 
