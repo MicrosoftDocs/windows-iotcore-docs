@@ -84,7 +84,7 @@ namespace BlinkyHeadlessCS
 }
 ```
 
-You can find in-depth information on Background apps [here](./backgroundapplications.md).
+You can find in-depth information on Background apps [here](/windows/iot-core/develop-your-app/backgroundapplications.md).
 
 ### Non-UWP Apps
 IoT Core supports certain traditional Win32 app types such as Win32 Console Apps and NT Services. These apps are built and run the same way as on Windows 10 Desktop. Additionally, there is an IoT Core C++ Console project template to make it easy to build such apps using Visual Studio.
