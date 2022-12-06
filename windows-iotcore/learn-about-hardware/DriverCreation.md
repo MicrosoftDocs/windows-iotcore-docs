@@ -2,7 +2,7 @@
 title: Universal Driver Creation
 author: parameshbabu
 ms.author: pabab
-ms.date: 08/28/2017
+ms.date: 09/08/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -27,6 +27,8 @@ If you would like **a sample to help you create a Universal Driver on IoT Core**
 
 ## Additional Universal Driver Resources
 
+
 1. For additional details on **design principles** and **best practices** when developing a Universal Driver package, please visit [Getting Started with Universal Drivers](/windows-hardware/drivers/develop/getting-started-with-universal-drivers)
 
 2. For help **debugging your Universal Driver**, please visit [Debugging a Universal Windows driver](/windows-hardware/drivers/develop/debugging-a-universal-driver).
+

@@ -1,6 +1,6 @@
 ---
 title: Windows 10 IoT Core Dashboard
-ms.date: 08/28/2017
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -15,7 +15,7 @@ Windows 10 IoT Core Dashboard is the best way to download, set up and connect yo
 You can download the [IoT Core Dashboard here](https://go.microsoft.com/fwlink/?LinkID=708576).
 
 > [!NOTE]
-> If you're finding that you're getting a white screen when opening the IoT Dashboard after downloading, it may be due to a driver issue. To overcome this issue, you'll need to download the [zip format](https://downloadmirror.intel.com/27894/a08/win64_24.20.100.6229.zip) of the Intel Graphics Driver and install the driver manually. 
+> If you're finding that you're getting a white screen when opening the IoT Dashboard after downloading, it may be due to a driver issue. To overcome this issue, you'll need to download the [zip format](https://downloadmirror.intel.com/27894/a08/win64_24.20.100.6229.zip) of the Intel Graphics Driver and install the driver manually.
 
 ## Set up a new device
 
@@ -97,7 +97,7 @@ ___
 Quick run samples do not require any code compilation, Visual studio installation, or SDK download. They are great for quickly checking out what IoT Core can do.
 
 ### Network 3D Printer
-Use the Network 3D Printer sample to connect your 3D Printer to your board can make it discoverable over your home network. 
+Use the Network 3D Printer sample to connect your 3D Printer to your board can make it discoverable over your home network.
 
 ![IoTDashboard Network 3D Printer](../media/IoTDashboard/IoTDashboard_3DPrinter.PNG)
 

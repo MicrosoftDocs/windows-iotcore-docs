@@ -1,6 +1,6 @@
 ---
 title: Overview of Windows 10 IoT Core
-ms.date: 01/18/2018
+ms.date: 4/16/2021
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

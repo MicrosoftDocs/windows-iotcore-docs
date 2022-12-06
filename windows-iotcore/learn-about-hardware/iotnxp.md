@@ -1,9 +1,9 @@
 ---
 title: Windows IoT and NXP i.MX
-author: chsha 
-ms.author: chsha 
-ms.date: 02/22/2019 
-ms.topic: article 
+author: chsha
+ms.author: chsha
+ms.date: 01/07/2020 
+ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
 description: Learn about Windows 10 IoT Core and the NXP i.MX family of systems on chips (SoCs). Board support packages (BSPs) for i.MX 6, i.MX 7, and i.MX 8M are available.
@@ -19,7 +19,7 @@ NXP supports the Windows 10 IoT Core through open-source BSPs on i.MX applicatio
 
 ## BSP Access
 
-If you are interested to enable commercial support for your own i/MX hardware, please access the BSP source and documentation on [NXP's website](https://www.nxp.com/design/software/embedded-software/windows-10-iotIf-core-for-i.mx-applications-processors:IMXWIN10IOT). 
+If you are interested to enable commercial support for your own i/MX hardware, please access the BSP source and documentation on [NXP's website](https://www.nxp.com/design/software/embedded-software/windows-10-iotIf-core-for-i.mx-applications-processors:IMXWIN10IOT).
 
 If you have NXP hardware/BSP related questions or feedback on how the BSP can better support your targeted solution, please post to the [NXP Community](https://community.nxp.com/community/imx/content?filterID=contentstatus%5Bpublished%5D%7Ecategory%5Bwindows%5D). For any Windows-related questions, please use the [Microsoft Community](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT).
 
@@ -28,7 +28,7 @@ If you need additional support beyond the community forums for BSP customization
 
 ## Ecosystem Resources
 
-Several Microsoft and NXP partners have enabled Windows 10 IoT Core on commercial i.MX 6, i.MX 7, and i.MX 8M devices. Please contact the partner directly for hardware access. 
+Several Microsoft and NXP partners have enabled Windows 10 IoT Core on commercial i.MX 6, i.MX 7, and i.MX 8M devices. Please contact the partner directly for hardware access.
 
 
 > | Device | Contact |
@@ -52,4 +52,3 @@ Several Microsoft and NXP partners have enabled Windows 10 IoT Core on commercia
 > | i.MX8M MaaXBoard | [chinasales@embest-tech.com](mailto:chinasales@embest-tech.com) |
 
 Note: The partners above support their hardware and the BSP for their hardware. They may be unable to assist with other software or configuration issues.
-

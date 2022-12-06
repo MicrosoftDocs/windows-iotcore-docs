@@ -1,6 +1,6 @@
 ---
 title: Background Applications
-ms.date: 08/28/2017
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -20,7 +20,7 @@ These Background Applications have a very simple execution model. The templates 
 
 There is one critical point to note: by default, the application will shut down when the run method completes. This means that apps that follow the common IoT pattern of running a server waiting for input or on a timer will find the app exit prematurely. To prevent this from happening you must call the "GetDeferral" method to prevent the application from exiting. You can find more information on the deferral pattern [here](/uwp/api/Windows.ApplicationModel.Background.BackgroundTaskDeferral).
 
-## Where can Background Applications be installed from? 
+## Where can Background Applications be installed from?
 
 You can download and install IoT templates to enable Background Applications from the Visual Studio Gallery [here](https://go.microsoft.com/fwlink/?linkid=847472).  Alternatively, the templates can be found by searching for `Windows IoT Core Project Templates` in the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/) or directly from Visual Studio in the Extension and Updates dialog (Tools > Extensions and Updates > Online).
 
@@ -33,7 +33,7 @@ You can download and install IoT templates to enable Background Applications fro
 * **Visual Basic** `File > New > Project > Installed > Visual Basic > Windows > Windows IoT Core`
 * **JavaScript** `File > New > Project > Installed > JavaScript > Windows > Windows IoT Core`
 
-## How are background applications used? 
+## How are background applications used?
 
 Creating a background application is very similar to creating a Background Task.  When the Background Application starts, the Run method is called:
 
@@ -50,7 +50,7 @@ private BackgroundTaskDeferral deferral;
 public void Run(IBackgroundTaskInstance taskInstance)
 {
     deferral = taskInstance.GetDeferral();
-    
+
     //
     // TODO: Insert code to start one or more asynchronous methods
     //
@@ -88,7 +88,7 @@ To invoke a background application, you can either:
 1. Start a PowerShell (PS) session with your Windows IoT Core device as described [here](../connect-your-device/PowerShell.md).
 
 2. From the PS session, type:
-            
+
 `[<your IP address>]: PS C:\> iotstartup list BackgroundApplication1`
 
 3. You should see the full name of your background application, i.e. something like:
