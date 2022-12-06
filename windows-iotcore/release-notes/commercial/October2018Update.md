@@ -65,7 +65,7 @@ _Windows 10 IoT Enterprise_
 ## More Management Support
 
 _Windows 10 IoT Enterprise_
-* Azure IoT Hub offers lightweight device management features and an extensibility model that enable device and cloud developers to build robust device management solutions. Integration with [Azure IoT Device Management](/windows/iot-core//manage-your-device/azureiotdm) is now available for both Windows 10 IoT Core and Enterprise. 
+* Azure IoT Hub offers lightweight device management features and an extensibility model that enable device and cloud developers to build robust device management solutions. Integration with [Azure IoT Device Management](/windows/iot-core/manage-your-device/azureiotdm) is now available for both Windows 10 IoT Core and Enterprise. 
 
 _Windows 10 IoT Core_
 * Enterprises that use [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) for their device management can now manage Windows 10 IoT Core devices alongside their Windows 10 IoT Enterprise devices and other managed devices. This gives operators a consistent way to manage Windows 10 IoT devices using the same management interface and controls. 
