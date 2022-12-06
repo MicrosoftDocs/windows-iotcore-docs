@@ -19,7 +19,7 @@ While Windows CE 2013 will reach end of extended support in late 2023,
 ## What does that mean for existing solutions?  
 It may mean that depending on your hardware configuration, company goals and processes, right now may be the best time for you to modernize your platform software.  
 
-Microsoft has offered its customers multiple solutions on how to navigate this process – move to [Windows 10 IoT Enterprise](./windows-iot-enterprise.md), utilize the [Windows CE App Container](./windows-ce-app-container.md) with Windows 10 IoT Core, or continue licensing Windows CE 2013.  
+Microsoft has offered its customers multiple solutions on how to navigate this process – move to [Windows 10 IoT Enterprise](/windows/iot-core/windows-iot-enterprise), utilize the [Windows CE App Container](/windows/iot-core/windows-ce-app-container) with Windows 10 IoT Core, or continue licensing Windows CE 2013.  
 
 ## What are my migration options?  
 The OS choice for your designs will depend on your timeline for migration and hardware requirements.   
@@ -28,7 +28,7 @@ The OS choice for your designs will depend on your timeline for migration and ha
 For devices needing access to the full range of x64 hardware, ARM64 hardware like NXP i.MX8, advanced UX, or have CE applications that can be migrated in one product design iteration, the best option is to move to [Windows 10 IoT Enterprise](./windows-iot-enterprise.md) directly. You will be able to begin taking advantage of the features quickly and have the maximum product support lifetime.  
 
 ### Windows 10 IoT Core  
-For designs that need to leverage ARM32 or have complex CE applications that will require multiple development cycles to migrate, the [CE App Container](./windows-ce-app-container.md) with [Windows 10 IoT Core Services](/windows-hardware/manufacture/iot/iotcoreservicesoverview) offers a solution for gradual migration to Windows 10 IoT Core. With Windows 10 IoT Core Services, you receive licenses for both Windows Embedded Compact 2013 and Windows 10 IoT Core. The IoT Core OS will continue to receive security updates until 2029.  
+For designs that need to leverage ARM32 or have complex CE applications that will require multiple development cycles to migrate, the [CE App Container](/windows/iot-core/windows-ce-app-container) with [Windows 10 IoT Core Services](/windows-hardware/manufacture/iot/iotcoreservicesoverview) offers a solution for gradual migration to Windows 10 IoT Core. With Windows 10 IoT Core Services, you receive licenses for both Windows Embedded Compact 2013 and Windows 10 IoT Core. The IoT Core OS will continue to receive security updates until 2029.  
 
 ### Windows CE 2013
 As you work towards a Windows 10 based design, or if you need to continue providing CE 2013 devices for your customers, Microsoft will allow license sales to continue for Windows Embedded Compact 2013 until 2028.   
