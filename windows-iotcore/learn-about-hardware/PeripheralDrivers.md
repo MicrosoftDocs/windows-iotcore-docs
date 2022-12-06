@@ -13,7 +13,7 @@ Follow the steps below to add third-party drivers (USB) for peripheral devices s
 
 ## Step 1: Get Drivers from PC
 ___
-The Step is to get the x86 version of the drivers from PC. For ARM, please contact the supplier of the peripheral to get the sys/inf files.
+The Step is to get the x86 version of the drivers from PC. For any missing Drivers, please contact the supplier of the peripheral to get the sys/inf files (especially for ARM32 and ARM64).
 
 
 1. Connect the device to the windows PC
