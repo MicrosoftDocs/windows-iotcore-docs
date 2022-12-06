@@ -137,4 +137,4 @@ If you haven't connected a display and would like to connect via Wi-Fi, you'll n
 
 ## Connecting to Windows Device Portal
 
-Use the [Windows Device Portal](../../manage-your-device/DevicePortal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available.
+Use the [Windows Device Portal](/windows/iot-core/manage-your-device/DevicePortal) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available.
