@@ -24,7 +24,7 @@ There are three main areas that occur from when an IoT device is powered on, all
 
 ![Boot Order](../media/SecureBootAndBitLocker/BootOrder.jpg)
 
-Additional information on the Windows 10 boot process can be found [here](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process).
+Additional information on the Windows 10 boot process can be found [here](/windows/security/information-protection/secure-the-windows-10-boot-process).
 
 ## Locking-down IoT Devices
 
@@ -57,7 +57,7 @@ Here are the steps taken by UEFI Secure Boot:
 3. If Windows Boot Manager cannot be loaded, the firmware will attempt to boot a backup copy of Windows Boot Manager. If this also fails, the UEFI firmware initiates OEM-specific remediation.
 4. Windows Boot Manager runs and verifies the digital signature of the Windows Kernel. If trusted, Windows Boot Manager passes control to the Windows Kernel.
 
-Additional details on Secure Boot, along with key creation and management guidance, is available [here](https://technet.microsoft.com/library/dn747883.aspx).
+Additional details on Secure Boot, along with key creation and management guidance, is available [here](/previous-versions/windows/it-pro/windows-8.1-and-8/dn747883(v=win.10)).
 
 ### Windows Code Integrity
 
@@ -65,7 +65,7 @@ Windows Code Integrity (WCI) improves the security of the operating system by va
 
 Configurable Code Integrity (CCI) is a feature in Windows 10 that allows device builders to lockdown a device and only allow it to run and execute code that is signed and trusted.  To do so, device builders can create a code integrity policy on a 'golden' device (final release version of hardware and software) and then secure and apply this policy on all devices on the factory floor.
 
-To learn more about deploying code integrity policies, auditing and enforcement, check out the latest technet documentation [here](https://technet.microsoft.com/itpro/windows/keep-secure/deploy-code-integrity-policies-steps).
+To learn more about deploying code integrity policies, auditing and enforcement, check out the latest technet documentation [here](/windows/security/threat-protection/windows-defender-application-control/create-initial-default-policy).
 
 Here are the steps taken by Windows Code Integrity:
 
@@ -110,7 +110,7 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
 
 * Qualcomm DragonBoard 410c
 
-    In order to enable Secure Boot, it may be necessary to provision RPMB. Once the eMMC has been flashed with Windows 10 IoT Core (as per instructions [here](https://docs.microsoft.com/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-dragonboard-410c), press [Power] + [Vol+] + [Vol-] simultaneously on the device when powering up and select "Provision RPMB" from the BDS menu. *Please note that this is an irreversible step.*
+    In order to enable Secure Boot, it may be necessary to provision RPMB. Once the eMMC has been flashed with Windows 10 IoT Core (as per instructions [here](../tutorials/quickstarter/devicesetup.md#using-the-iot-dashboard-dragonboard-410c), press [Power] + [Vol+] + [Vol-] simultaneously on the device when powering up and select "Provision RPMB" from the BDS menu. *Please note that this is an irreversible step.*
 
 * Intel MinnowBoardMax
 
@@ -121,60 +121,15 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
 
 ### Generate Lockdown Packages
 
-1. Download the [DeviceLockDown Script](https://github.com/ms-iot/security/tree/master/TurnkeySecurity) package, which contains all of the additional tools and scripts required for configuring and locking down devices
-2. Start an Administrative PowerShell (PS) console on your Windows 10 PC and navigate to the location of the downloaded script.
-3. Mount your reference hardware platform (running the unlocked image) to your PC via network share using
+Follow the instructions in the following two links:
 
-    ```powershell
-    net use \\a.b.c.d\c$ /user:username password
-    ```
+ * [Adding Security Packages](https://github.com/ms-iot/iot-adk-addonkit/blob/17763-v7/Tools/README.md#adding-security-packages)
 
-4. Generate keys for your device using
+ * [Lab 1a Create a basic image](/windows-hardware/manufacture/iot/create-a-basic-image?view=windows-11)
 
-    ```powershell
-    .\GenerateKeys.ps1 -OemName '<your oem name>' -outputPath '<output directory>'
-    ```
-
-    * The keys and certificates are generated in the specified output folder with appropriate suffix.
-    * **Secure your generated keys** as the device will trust binaries signed with these keys only after lockdown.
-    * You may skip this step and use the pre-generated keys for testing only
-
-5. Configure _settings.xml_
-
-    * General section : Specify the package directories
-    * Tools section : Set the path for the tools
-        * Windows10KitsRoot `(e.g. <Windows10KitsRoot>C:\Program Files (x86)\Windows Kits\10\</Windows10KitsRoot>)`
-        * WindowsSDKVersion `(e.g. <WindowsSDKVersion>10.0.15063.0</WindowsSDKVersion>)`
-            * SDK version installed on your machine is under `C:\Program Files (x86)\Windows Kits\10\`
-    * SecureBoot section : Specify which keys to use for secure boot (PK and SB keys)
-    * BitLocker section : Specify a certificate for BitLocker data recovery (DRA key)
-    * SIPolicy section : Specify certs that should be trusted
-        * ScanPath : Path of the device for scanning binaries , `\\a.b.c.d\C$`
-        * Update   : Signer of the SIPolicy (PAUTH keys)
-        * User     : User mode certificates (UMCI keys)
-        * Kernel   : Kernel mode certificates (KMCI keys)
-    * Packaging : Specify the settings for the package generation
-
-> [!IMPORTANT]
-> In order to assist with testing during the initial development cycle, Microsoft has provided pre-generated keys and certificates where appropriate.  This implies that Microsoft Test, Development and Pre-Release binaries are considered trusted.  During final product creation and image generation, be sure to remove these certifcates and use your own keys to ensure a fully locked down device.
-
-6. Execute the following commands to generate required packages:
-```
-    powershell
-
-    Import-Module .\IoTTurnkeySecurity.psm1
-
-    # Generate the security packages for retail
-    New-IoTTurnkeySecurity -ConfigFileName .\settings.xml
-
-    (or)
-
-    # Generate the security packages for test
-    New-IoTTurnkeySecurity -ConfigFileName .\settings.xml -Test
-```
 
 ### Test Lockdown packages
-You can test the generated packages by manually installing them on a unlocked device by the following steps
+You can test the security packages generated here <YOUR_IOT_ADD_ON_WORKSPACE>\Build\<ARCH>\<OEM_NAME>.Security.* .cab> by manually installing them on a unlocked device by the following steps
 
 1. Flash the device with the unlocked image (image used for scanning in earlier step).
 2. Connect to the device ([using SSH](../connect-your-device/SSH.md) or using [PowerShell](../connect-your-device/PowerShell.md))
@@ -210,7 +165,7 @@ You can test the generated packages by manually installing them on a unlocked de
 
 ### Generate Lockdown image
 
-After validating that the lockdown packages are working as per the settings defined earlier, you can then include these packages into the image by following the below given steps. Read the [IoT manufacturing guide](https://aka.ms/iotcoreguide) for custom image creation instructions.
+After validating that the lockdown packages are working as per the settings defined earlier, you can then include these packages into the image by following the below given steps. Read the [IoT manufacturing guide](/windows-hardware/manufacture/iot/iot-core-manufacturing-guide) for custom image creation instructions.
 
 1. In the workspace directory, update the following files from the generated output directory above
     * SecureBoot : `Copy ..\Output\SecureBoot\*.bin  ..\Workspace\Common\Packages\Security.SecureBoot`
@@ -234,10 +189,7 @@ After validating that the lockdown packages are working as per the settings defi
     * `buildimage ProductName test(or)retail`  (this generates new Flash.ffu)
 4. Flash the device with this new Flash.ffu and validate the security features.
 
-See [SecureSample](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/SecureSample) as an example of a lockdown dragon board configuration.
-
-Alternatively, you can generate the security packages in the IoTCore Shell itself, see [adding security packages](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools#adding-security-packages) for the details.
-
+See [SecureSample](https://github.com/ms-iot/iot-adk-addonkit/) as an example of a lockdown dragon board configuration.
 
 ### Developing with CodeSigning Enforcement Enabled
 

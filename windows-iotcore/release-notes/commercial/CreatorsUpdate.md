@@ -200,8 +200,8 @@ If time sync is failing or timing out this may be due to unreachable or a distan
 w32tm /config /syncfromflags:manual /manualpeerlist:"0.windows.time.com 1.pool.ntp.org 2.something else, ..." 
 * You may also make these additions to the registry via a boot script or a custom runtime configuration package included as part of the image creation process if needed. 
 For more information, see: 
-* [Add a file and a registry setting to an image](https://msdn.microsoft.com/library/windows/hardware/mt670641(v=vs.85).aspx)
-* [Windows 10 IoT Core Image Creation](https://blogs.msdn.microsoft.com/iot/2015/12/14/windows-10-iot-core-image-creation/)
+* [Add a file and a registry setting to an image](/windows-hardware/manufacture/iot/add-a-registry-setting-to-an-image)
+* [Windows 10 IoT Core Image Creation](/windows-hardware/manufacture/iot/iot-core-image-wizard)
 
 #### Starting the FTP Server 
 The FTP Server no longer runs by default at start-up.

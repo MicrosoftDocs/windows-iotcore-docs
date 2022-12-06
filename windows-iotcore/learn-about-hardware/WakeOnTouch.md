@@ -29,7 +29,7 @@ For more information, see [Display Idle Timeout](/windows-hardware/customize/pow
 
 ## Disabling modern standby
 
-On AoAC systems (which includes all ARM systems), the system will automatically enter [modern standby](/windows-hardware/design/device-experiences/modern-standby) when the display goes off. When a system is in modern standby, it can only be woken by certain inputs. This is not an exhaustive list, but these inputs include pressing the power button, opening the lid on a laptop, or clicking the mouse. Touching the screen will not wake up the device from modern standby. If you want your device to wake up by touch, you have to configure the device not to enter modern standby. To disable modern standby, set the following registry key and reboot.
+On AoAC systems (which includes all ARM systems), the system will automatically enter [modern standby](/windows-hardware/design/device-experiences/modern-standby) when the display goes off. When a system is in modern standby, it can only be woken by certain inputs. This is not an exhaustive list, but these inputs include pressing the power button or receiving mouse input. Touching the screen will not wake up the device from modern standby. If you want your Windows 10 IoT Core device to wake up by touch, you have to configure the device not to enter modern standby. To disable modern standby, set the following registry key and reboot.
 
 ```powershell
 	reg add HKLM\System\CurrentControlSet\Control\Power /v PlatformAoAcOverride /t REG_DWORD /d 0
@@ -37,4 +37,4 @@ On AoAC systems (which includes all ARM systems), the system will automatically 
 
 Disabling modern standby can impact power consumption when the system is idle. You should measure your system's power consumption with modern standby enabled and disabled before making the decision to disable modern standby.
 
-Modern standby is a software mechanism that attempts to quiet system activity as much as possible, thereby allowing hardware to enter a low-power state. In theory, a sufficiently quiet device with modern standby disabled can achieve the same low power consumption as a device in modern standby. It is important to minimize background activity including software timers and periodic tasks if modern standby is disabled.
+Modern standby is a software mechanism that attempts to quiet system activity as much as possible, thereby allowing hardware to enter a low-power state. In theory, a sufficiently quiet device with modern standby disabled can achieve the same low power consumption as a device in modern standby depending on how you have configured OS services and the capabilities of your SoC. For example, very quiet static configurations as described here have been shipped with the QC 410c and Windows 10 IoT Core. It is important to minimize background activity including software timers and periodic tasks if modern standby is disabled.

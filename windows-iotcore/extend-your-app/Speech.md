@@ -22,7 +22,7 @@ Here is the list of the available services and API on Windows 10 IoT Core:
 
 ## Windows 10 speech resources
 
-* [Quick start speech interaction](https://msdn.microsoft.com/library/windows/apps/xaml/dn630426.aspx)
+* [Quick start speech interaction](/previous-versions/windows/apps/dn630426(v=win.10))
 
 * Speech platform, uses simple commands with constrained grammars (TTS, SSML)
   * [Video](https://www.youtube.com/watch?v=GiDvBhfNnjU) 
@@ -37,7 +37,7 @@ Here is the list of the available services and API on Windows 10 IoT Core:
 * Home automation of controlling light with SRGS grammars 
   * [Video](https://www.youtube.com/watch?v=MN18Uo_063g)
 
-* [Speech translator sample](https://developer.microsoft.com/en-us/windows/iot/samples/speechtranslator)
+* [Speech translator sample](/samples/microsoft/windows-iotcore-samples/speech-translator)
 
 * [Cortana with a companion device](https://microsoft.hackster.io/ada-plasma-1f5c36/windows-iot-device-interactive-with-cortana-046906?ref=platform&ref_id=4087_trending___&offset=16)
 

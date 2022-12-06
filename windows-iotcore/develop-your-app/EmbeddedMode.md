@@ -14,7 +14,7 @@ keywords: windows iot, embedded mode, background applications
 
 Embedded Mode is supported on Windows IoT Core and Windows IoT Enterprise. Embedded Mode enables:
 
-* [Background Applications (read more)](https://docs.microsoft.com/windows/iot-core/develop-your-app/backgroundapplications)
+* [Background Applications (read more)](./backgroundapplications.md)
 * Use of the lowLevelDevice capability
 * Use of systemManagement capability
 
@@ -24,7 +24,7 @@ Embedded mode must be enabled by following the steps below on Windows IoT Enterp
 ## Background Applications
 
 Background Applications are created using the Background Application (IoT) template in Visual Studio.
-Read more about creating [Background Applications](https://docs.microsoft.com/windows/iot-core/develop-your-app/backgroundapplications).
+Read more about creating [Background Applications](./backgroundapplications.md).
 
 Background applications run without stopping and without resource limits. Also, if the background application stops for some reason and embedded mode is enabled the background application will be restarted by the system.
 
@@ -34,22 +34,22 @@ While the system will automatically restart background applications, system lock
 
 The **lowLevel** device Capability gives access to low-level hardware interfaces like GPIO, SPI, and I2C.
 
-* [Blinky Sample(GPIO)](https://developer.microsoft.com/windows/iot/samples/helloblinky)
+* [Blinky Sample(GPIO)](/samples/microsoft/windows-iotcore-samples/hello-blinky)
 * [Accelerometer Sample](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/Accelerometer)
 
 The **lowLevelDevices** Capability allows apps to access custom devices when a number of additional requirements are met. This
 capability should not be confused with the lowLevel device capability, which allows access to GPIO, I2C, SPI, and PWM devices.
 
-Refer to [App capability declarations](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations) for details.
+Refer to [App capability declarations](/windows/uwp/packaging/app-capability-declarations) for details.
 
 ## systemManagment Capability
 
 When you enable the systemManagment capabilities for your application, this is the set of APIs that gets unlocked:  
 
-* [Windows.System.ProcessLauncher](https://msdn.microsoft.com/library/windows/apps/windows.system.processlauncher.aspx)
-* [Windows.System.TimeZoneSettings](https://msdn.microsoft.com/library/windows/apps/windows.system.timezonesettings.aspx)
-* [Windows.System.ShutdownManager](https://msdn.microsoft.com/library/windows/apps/windows.system.shutdownmanager.aspx)
-* [Windows.Globalization.Language.TrySetInputMethodLanguageTag](https://msdn.microsoft.com/library/windows/apps/windows.globalization.language.trysetinputmethodlanguagetag.aspx)
+* [Windows.System.ProcessLauncher](/uwp/api/Windows.System.ProcessLauncher)
+* [Windows.System.TimeZoneSettings](/uwp/api/Windows.System.TimeZoneSettings)
+* [Windows.System.ShutdownManager](/uwp/api/Windows.System.ShutdownManager)
+* [Windows.Globalization.Language.TrySetInputMethodLanguageTag](/uwp/api/Windows.Globalization.Language#Windows_Globalization_Language_TrySetInputMethodLanguageTag_System_String_)
 
 ## Debugging Background Applications
 
@@ -62,7 +62,7 @@ If you are debugging on a device that is not running Windows IoT Core and you se
 To enable embedded mode, you will need to create a provisioning package in Imaging and Configuration Designer (ICD) that sets AllowEmbeddedMode=1.  To install ICD, you need to download and install the Windows ADK for Windows 10.
 
 * [Download the Windows ADK for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=526740)
-* [Learn about what's new in the Windows ADK for Windows 10](https://msdn.microsoft.com/library/windows/hardware/dn927348(v=vs.85).aspx)
+* [Learn about what's new in the Windows ADK for Windows 10](/windows-hardware/get-started/what-s-new-in-kits-and-tools)
 
 1. When installing the ADK select **Imaging and Configuration Designer (ICD)**
 2. After installation is complete, run Windows Imaging and Configuration Designer (WICD).

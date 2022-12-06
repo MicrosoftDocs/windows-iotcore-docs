@@ -18,7 +18,7 @@ These Background Applications have a very simple execution model. The templates 
 
 ![Background Task](../media/BackgroundApplications/backgroundTaskScreenshot.png)
 
-There is one critical point to note: by default, the application will shut down when the run method completes. This means that apps that follow the common IoT pattern of running a server waiting for input or on a timer will find the app exit prematurely. To prevent this from happening you must call the "GetDeferral" method to prevent the application from exiting. You can find more information on the deferral pattern [here](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.Background.BackgroundTaskDeferral).
+There is one critical point to note: by default, the application will shut down when the run method completes. This means that apps that follow the common IoT pattern of running a server waiting for input or on a timer will find the app exit prematurely. To prevent this from happening you must call the "GetDeferral" method to prevent the application from exiting. You can find more information on the deferral pattern [here](/uwp/api/Windows.ApplicationModel.Background.BackgroundTaskDeferral).
 
 ## Where can Background Applications be installed from?
 
@@ -124,4 +124,4 @@ Headless : BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee`
 `Removed headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee`
 
 ## See Also
-To add a background app when building a custom image see [Create an Appx package](../build-your-image/createinstallpackage.md)
+To add a background app when building a custom image see [Create an Appx package](/windows-hardware/manufacture/iot/create-install-package)
