@@ -19,7 +19,7 @@ The feature is part of the IoT Core Kits, which can be downloaded and installed 
 
 ### Provisioning the device with required packages
 
-1. Launch [PowerShell](../connect-your-device/PowerShell.md) or [SSH](../connect-your-device/SSH.md) and access your device running Windows 10 IoT Core.
+1. Launch [PowerShell](/windows/iot-core/connect-your-device/PowerShell.md) or [SSH](/windows/iot-core/connect-your-device/SSH) and access your device running Windows 10 IoT Core.
 2. From PowerShell or SSH, do the following:
     1. Create a temporary folder on the target machine (e.g. `C:\MTPTemp`).
     2. Based on your device's architecture, copy the following packages from your PC (`C:\Program Files (x86)\Windows Kits\10\MSPackages\Retail\<arch>\fre`) to `C:\MTPTemp`:
