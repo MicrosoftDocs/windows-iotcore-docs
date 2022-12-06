@@ -92,5 +92,5 @@ To learn more about IoT Edge support for Windows 10 IoT, please read more about 
 
 
 ## Helpful resources
-* [Windows 10 IoT Enterprise](windows-iot-enterprise.md)
-* [Windows 10 IoT Core](windows-iot-core.md)
+* [Windows 10 IoT Enterprise](/windows/iot-core/windows-iot-enterprise)
+* [Windows 10 IoT Core](/windows/iot-core/windows-iot-core)
