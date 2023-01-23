@@ -25,8 +25,7 @@ This article will give you a rundown of the different features that the Windows 
 
 The IoT Core Default App can be customized and extended, or you can use the source code as an example for your own app. To try this out for yourself, download the zip of our samples or check out the code for the IoT Core Default App [here](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp). For any questions, please file an issue on our samples repo [here](https://github.com/Microsoft/Windows-iotcore-samples/issues).
 
-As shown under the [Settings section](/windows/iot-core/develop-your-app/iotcoredefaultapp#settings
-) below, in some cases, you may configure default settings and features on your customer system on behalf of the end user. However, if you turn on these settings and features by default or if diagnostics are above the basic setting, you must:
+As shown under the [Settings section](#settings) below, in some cases, you may configure default settings and features on your customer system on behalf of the end user. However, if you turn on these settings and features by default or if diagnostics are above the basic setting, you must:
 
 * Notify the end user that these features have been enabled, and provide the end user with the link to Microsoft's Privacy Statement web page [here](https://go.microsoft.com/fwlink/?LinkId=521839).
 * Secure consent from the relevant end user to enable such features by default (as required by applicable law).
@@ -109,7 +108,7 @@ This page allows you to run commands directly on your device.
 
 To enable this feature, you have to set a registry key so that the app can run the commands. The first time you try to run a command you will see a link that allows you to set the registry key using a call to Windows Device Portal. Click the link to enable your device to run commands.
 
-Some commands require administrator access. For security purposes the app uses a non-admin account by default to run commands. If you need to run a command as an admin, you can type "RunAsAdmin <your command>" in the command line prompt.
+Some commands require administrator access. For security purposes the app uses a non-admin account by default to run commands. If you need to run a command as an admin, you can type `RunAsAdmin <your command>` in the command line prompt.
 
 ## Settings
 You'll be able to configure a number of settings here including Wi-Fi, Bluetooth, power options, and more.

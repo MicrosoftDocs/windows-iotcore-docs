@@ -31,13 +31,13 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 > NXP only supports custom images. If you're looking to flash a custom image, select "Custom" from the OS Build dropdown, follow the instructions [here](/windows-hardware/manufacture/iot/create-a-basic-image) to create a basic image, and follow the rest of the instructions below to finish.
 
 > [!NOTE]
-> Dashboard cannot be used used to setup the Raspberry Pi 3B+. If you have a 3B+ device, you must use the [3B+ technical preview](https://www.microsoft.com/software-download/windowsiot). Please view the [known limitations](/windows/iot-core/troubleshooting) of the technical preview to determine if this is suitable for your development.
+> Dashboard cannot be used used to setup the Raspberry Pi 3B+. If you have a 3B+ device, you must use the [3B+ technical preview](https://www.microsoft.com/software-download/windowsiot). Please view the [known limitations](../../troubleshooting.md) of the technical preview to determine if this is suitable for your development.
 
 > [!TIP]
 > We recommend using a high-performance SD card, such as a SanDisk SD card, for increased stability as well as plugging your device into an external display to see the default application booting up.
 
 
-1. Download the Windows 10 IoT Core Dashboard [here](/windows/iot-core/downloads).
+1. Download the Windows 10 IoT Core Dashboard [here](../../downloads.md).
 2. Once downloaded, open the Dashboard and click on _set up a new device_ and insert an SD card into your computer.
 3. Fill out all of the fields as indicated.
 4. Accept the software license terms and click _Download and install_. You'll see that Windows 10 IoT Core is now flashing your SD card.
@@ -62,7 +62,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 > [!NOTE]
 > If you're running into any audio-related issues with your DragonBoard, we advise that you read through Qualcomm's manual [here](https://developer.qualcomm.com/download/db410c/stereo-connector-and-audio-routing-application-note.pdf).
 
-1. Download the Windows 10 IoT Core Dashboard [here](/windows/iot-core/downloads).
+1. Download the Windows 10 IoT Core Dashboard [here](../../downloads.md).
 2. Once downloaded, open the Dashboard and select "Qualcomm DragonBoard 410c". Then _sign in as a Windows Insider_. You need to be signed in as an insider in order to flash DragonBoard 410c.
 3. Connect the Qualcomm board to the developer machine using a microUSB cable.
 4. Power on your Dragonboard using a 12V (>1A) power supply while holding down the volume up (+) button. The device - when connected to a display - should show the image of a hammer, a lightning bolt, and a cog.
@@ -137,4 +137,4 @@ If you haven't connected a display and would like to connect via Wi-Fi, you'll n
 
 ## Connecting to Windows Device Portal
 
-Use the [Windows Device Portal](/windows/iot-core/manage-your-device/DevicePortal) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available.
+Use the [Windows Device Portal](../../manage-your-device/deviceportal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available.

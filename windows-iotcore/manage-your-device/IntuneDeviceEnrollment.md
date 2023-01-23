@@ -31,7 +31,7 @@ Intune enrollment of an IoT Core device is accomplished by using the Windows IoT
 1. Insert a microSD card into the card reader on your PC.
      > [!NOTE]
      > The microSD card will be formatted during this process, so any data on the card will be deleted.
-2. Go to [Windows IoT Core Dashboard](/windows/iot-core/connect-your-device/iotdashboard) to download and install the dashboard.
+2. Go to [Windows IoT Core Dashboard](../connect-your-device/iotdashboard.md) to download and install the dashboard.
 3. After the dashboard installs, open it and select **Set up a new device**.
 
      :::image type="content" source="../media/IntuneDeviceEnrollment/IoT-dashboard-my-devices.png" alt-text="Windows IoT Core Dashboard.":::

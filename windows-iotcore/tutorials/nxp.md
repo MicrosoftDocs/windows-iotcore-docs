@@ -26,7 +26,7 @@ When setting up an NXP device for prototyping, we recommend using the Windows 10
 
 To flash, or download, IoT Core onto your NXP device, you'll need:
 * A computer running Windows 10
-* [Windows 10 IoT Core Dashboard](/windows/iot-core/downloads)
+* [Windows 10 IoT Core Dashboard](../downloads.md)
 * A high-performance SD card, such as a SanDisk SD card
 * An external display
 * Any other peripherals (e.g. mouse, keyboard, etc.)
@@ -42,7 +42,7 @@ Device: minwinpc
 Password: p@ssw0rd
 ```
 
-4. Upload your pre-downloaded image file using the "Browse" function. For more information, see our [NXP documentation](/windows/iot-core/learn-about-hardware/iotnxp).
+4. Upload your pre-downloaded image file using the "Browse" function. For more information, see our [NXP documentation](../learn-about-hardware/iotnxp.md).
 5. Accept the software license terms and click *Download and Install*. If all goes well, you'll see that Windows 10 IoT Core is now flashing your SD card.
 
 ![Dashboard screenshot](../media/DeviceSetup/Dashboard-Screenshot.jpg)
@@ -71,4 +71,4 @@ If you haven't connected a display and would like to connect via Wi-Fi, you'll n
 
 ## Connect to Windows Device Portal
 
-Use the [Windows Device Portal](/windows/iot-core/manage-your-device/DevicePortal) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available.
+Use the [Windows Device Portal](../manage-your-device/deviceportal.md) to connect your device through a web browser. The device portal makes valuable configuration and device management capabilities available.
