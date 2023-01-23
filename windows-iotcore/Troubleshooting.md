@@ -79,7 +79,7 @@ You may get error **0x139f (ERROR_INVALID_STATE)** in the case when the device i
 ## Raspberry Pi 3B+ booting issues
 
 > [!NOTE]
-> This release for the Raspberry Pi 3B+ is an unsupported technical preview. Limited validation and enablement has been completed. For a better evaluation experience and for any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm, or NXP SoCs. For troubleshooting issues with the Raspberry Pi 3B+, please see our Troubleshooting Guide, [here](/windows/iot-core/troubleshooting#raspberry-pi-3b-booting-issues).
+> This release for the Raspberry Pi 3B+ is an unsupported technical preview. Limited validation and enablement has been completed. For a better evaluation experience and for any commercial products, please use the Raspberry Pi 3B or other devices with supported Intel, Qualcomm, or NXP SoCs. For troubleshooting issues with the Raspberry Pi 3B+, please see our Troubleshooting Guide, [here](#raspberry-pi-3b-booting-issues).
 
 The Raspberry Pi 3 Model B+ is the latest product in the Raspberry Pi 3 range, boasting a 64-bit quad core processor running at 1.4GHz, dual-band 2.4GHz and 5GHz wireless LAN, Bluetooth 4.2/BLE, faster Ethernet, and PoE capability via a separate PoE HA.
 
@@ -98,7 +98,7 @@ There are only two requirements when choosing which SD cards to use with Windows
 
 Generally, you need to check if the SD card is fake or if it is damaged or corrupt. The SD card is equally prone to corruption due to a variety of factors such as power shortage or improper removal. It is important to safeguard your memory card from damage.
 
-To flash your image to an SD card, you can use the [Windows 10 IoT Core Dashboard](/windows/iot-core/connect-your-device/iotdashboard). You will need to choose "Custom" in the OS Build field, then select the FFU file to flash.
+To flash your image to an SD card, you can use the [Windows 10 IoT Core Dashboard](./connect-your-device/iotdashboard.md). You will need to choose "Custom" in the OS Build field, then select the FFU file to flash.
 
 Check to see if there are any hardware failure in the device. There are two LEDs on the Raspberry Pi 3B+ board, same as the 3B. One is for PWR, while the other is for ACT. The number of blinks the ACT light makes will determine whether or not your board is booting. The SD card activity LED will not flash during some portions of booting on the Raspberry Pi 3B+.
 
@@ -114,7 +114,7 @@ On the Raspberry Pi, hardware UART and USB UART adapters both are usable for you
 
 ![UART and USB UART adapters](media/Troubleshooting/adapters.png)
 
-You can read [this article](/windows/iot-core/learn-about-hardware/pinmappings/pinmappingsrpi.md#serial-uart) to learn more about how to initialize UART0 and perform a write followed by a read.
+You can read [this article](./learn-about-hardware/pinmappings/pinmappingsrpi.md#serial-uart) to learn more about how to initialize UART0 and perform a write followed by a read.
 
 In addition, Radio Frequency Communication (RFCOMM) is the underlying serial communications for classic Bluetooth. Refer to [this GitHub sample](https://github.com/djaus2/iotbluetoothserial) to learn about running UWP apps on Windows 10 IoT Core to connect over an IoT device with Bluetooth Serial.
 

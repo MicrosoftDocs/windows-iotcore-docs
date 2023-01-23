@@ -16,7 +16,7 @@ You can learn more about Python at [python.org](https://www.python.org/).
 
 ## Using Python on x64 or x86
 To install Python on Windows IoT Core:
-1. Download the Python NuGet package, and then install the files using [PowerShell](/windows/iot-core/connect-your-device/PowerShell).
+1. Download the Python NuGet package, and then install the files using [PowerShell](../connect-your-device/powershell.md).
 
     ```powershell
     $python_zip = "https://globalcdn.nuget.org/packages/python.3.7.4.nupkg"

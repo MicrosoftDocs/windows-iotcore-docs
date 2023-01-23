@@ -36,7 +36,7 @@ The Azure IoT Device Agent is available on GitHub. The project also includes sam
 ## Migrating from Azure Device Agent V1 to V2
 If you are currently using the v1 version of the Device Agent, one significant change between V1 and V2 is that in the V2 version, the Azure Device Agent no longer shares the connection with an UWP app. With enhancements to the IoT Hub, you can now have both the UWP app and the Azure Device Agent have independent connection strings and still be associated with the same device in IoT Hub. Refer [here](https://github.com/ms-iot/azure-client-tools/blob/master/docs/device-agent/migration-from-old-client.md) for more details.
 
-For more information on the Azure Device Agent V1, refer [here](/windows/iot-core/manage-your-device/azureiotdm).
+For more information on the Azure Device Agent V1, refer [here](./azureiotdm.md).
 
 ## Other Useful Tools
 ### DM Mock Portal
