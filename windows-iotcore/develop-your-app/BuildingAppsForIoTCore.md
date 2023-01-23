@@ -33,7 +33,7 @@ UWP apps just work on IoT Core, just as they do on other Windows 10 editions. A 
 
 There are a few additions to the traditional UWP app-model to support IoT scenarios and any UWP app that takes advantage of them will need the corresponding information added to their manifest. In particular, the "iot" namespace needs to be added to the manifest of these standard UWP apps.
 
-Inside the <Package> attribute of the manifest, you need to define the iot xmlns and add it to the IgnorableNamespaces list. The final xml should look like this:
+Inside the `<Package>` attribute of the manifest, you need to define the iot xmlns and add it to the IgnorableNamespaces list. The final xml should look like this:
 
 ```
 <Package
