@@ -125,7 +125,7 @@ Follow the instructions in the following two links:
 
  * [Adding Security Packages](https://github.com/ms-iot/iot-adk-addonkit/blob/17763-v7/Tools/README.md#adding-security-packages)
 
- * [Lab 1a Create a basic image](/windows-hardware/manufacture/iot/create-a-basic-image?view=windows-11)
+ * [Lab 1a Create a basic image](/windows-hardware/manufacture/iot/create-a-basic-image?view=windows-10)
 
 
 ### Test Lockdown packages
