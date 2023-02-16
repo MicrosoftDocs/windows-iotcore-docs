@@ -20,8 +20,8 @@ Below you'll find boards we suggest to help you get started with Windows 10 IoT 
 > The Raspberry Pi 3B+ has limited compatability with Windows 10 IoT Core. Please view the [release notes](../../release-notes/insider/rpi3bp.md) for more information. For a more complete Windows 10 IoT Core experience, please use a Raspberry Pi 3B, DragonBoard, Up2 Board or NXP device.
 
 
-| Boards | More Information | FFU Link | How To Set Up | Get started |
-|--------|------------------|----------|---------------|-------------|
+| Boards | More Information | FFU Link | How To Set Up | Get started |  
+|--------|------------------|----------|---------------|-------------|  
 | [AAEON Up Squared](https://up-board.org/upsquared/specifications/) | [Up Board site](https://up-shop.org/28-up-squared) | [Download FFU](https://downloads.up-community.org) | [Set up Intel devices](../intel.md) | [Commercialize](https://up-shop.org/home/270-up-squared.html) |
 | [DragonBoard 410c](https://developer.qualcomm.com/hardware/dragonboard-410c) | [Arrow site](https://www.arrow.com/en/products/dragonboard410c/arrow-development-tools) | [Download FFU](https://www.microsoft.com/en-us/software-download/windows10iotcore) | [Set up a Dragonboard](../dragonboard.md),<br>[Set up Qualcomm devices](../qualcomm.md) | [Commercialize](https://www.arrow.com/en/products/dragonboard410c/arrow-development-tools) |
 | [SECO i-PAN M7](https://secogroup.atlassian.net/wiki/spaces/SECONorthTech/pages/1447035322/Images+Windows+10+IoT+Core)  | [SECO site](https://north.seco.com/en/) | [Download FFU](https://secogroup.atlassian.net/wiki/spaces/SECONorthTech/pages/1447035322/Images+Windows+10+IoT+Core) | [SECO Wiki](https://secogroup.atlassian.net/wiki/spaces/SECONorthTech/overview) | [i-PAN M7 Starter Kit](https://edge.seco.com/usa/i-pan-m7.html) |
