@@ -116,7 +116,7 @@ Recommendations:
 #### *Experienced partners*
 
 * [Intrinsyc](https://www.intrinsyc.com/computing-platforms/410-som/) - Mark Waldenberg (mwaldenberg@intrinsyc.com)
-* [Keith & Koep](https://keith-koep.com/en/products/products-som/myon-1-features-snapdragon-410/) - contact@keith-koep.com
+* [SECO](https://north.seco.com/en) - north@seco.com
 * [Reycom](http://www.reycom.swiss/en/home-swiss.html) - welcome@reycom.swiss
 * [Unitech](https://www.ute.com/) - Sam (saml@tw.ute.com); Perry (perryt@te.ute.com)
 
@@ -127,8 +127,7 @@ NXP support for Windows 10 IoT Core is in public preview. For more information, 
 You can also reach out to partners we're working with:
 
 * Advantech [RSB-4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858) - buy@advantech.tw
-* Keith & Koep [pConXS](https://keith-koep.com/de/produkte/produkte-baseboards/pconxs-baseboard-vollausstattung-technische-daten/
-) with [Trizeps VII](https://keith-koep.com/de/produkte/produkte-trizeps/trizeps-vii-technische-daten-imx6/) - contact@keith-koep.com
+* SECO [pConXS III](https://edge.seco.com/usa/pconxs-iii.html) with [Trizeps VIII Mini](https://edge.seco.com/usa/trizeps-viii-mini.html), [i-PAN M7](https://edge.seco.com/usa/i-pan-m7.html) with [Myon II](https://edge.seco.com/usa/myon_ii.html)- north@seco.com
 * Kontron [SMARC-sAMX6i](https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html) - Martin Unverdorben (martin.unverdorben@kontron.com)
 * Solid Run [Hummingboard Edge](https://www.solid-run.com/imx6-win-10-iot-core/ )- Ilya Viten (ilya@solid-run.com)
 * Geniatech [SoM-iMX6Q-Q7](https://www.geniatech.com/product/som-imx6q-q7/) & [SoM-iMX7D](https://www.geniatech.com/product/som-imx7d/) - Mike Decker (mike.decker@geniatech.com) or Fang Jijun (Fjj@geniatech.com)

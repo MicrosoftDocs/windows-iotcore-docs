@@ -2,7 +2,7 @@
 title: Windows IoT and NXP i.MX
 author: chsha
 ms.author: chsha
-ms.date: 01/07/2020 
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -39,7 +39,7 @@ Several Microsoft and NXP partners have enabled Windows 10 IoT Core on commercia
 > | [Geniatech SoM-iMX6Q-Q7](https://www.geniatech.com/product/som-imx6q-q7/) | [Mike Decker](mailto:mike.decker@geniatech.com) or [Fang Jijun](mailto:Fjj@geniatech.com) |
 > | [Geniatech SoM-iMX7D](https://www.geniatech.com/product/som-imx7d/) | [Mike Decker](mailto:mike.decker@geniatech.com) or [Fang Jijun](mailto:Fjj@geniatech.com) |
 > | [Ka-Ro Electronics TX6UL, TX6S, TX6DL, and TX6Q](https://www.karo-electronics.de/produkte/produktauswahl-2020) | [Uwe Steinkohl](mailto:us@karo-electronics.de) |
-> | [Keith & Koep pConXS](https://keith-koep.com/de/produkte/produkte-baseboards/pconxs-baseboard-vollausstattung-technische-daten/) with [Trizeps VII](https://keith-koep.com/de/produkte/produkte-trizeps/trizeps-vii-technische-daten-imx6/) | [contact@keith-koep.com](mailto:contact@keith-koep.com) |
+> | [SECO](https://north.seco.com/en) [pConXS III](https://edge.seco.com/usa/pconxs-iii.html) with [Trizeps VIII Mini](https://edge.seco.com/usa/trizeps-viii-mini.html) and [i-PAN M7](https://edge.seco.com/usa/i-pan-m7.html) with [Myon II](https://edge.seco.com/usa/myon_ii.html) | [north@seco.com](mailto:north@seco.com) |
 > | [Kontron SMARC-sAMX6i](https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html) | [Martin Unverdorben](mailto:martin.unverdorben@kontron.com) |
 > | [Novtech Meerkat](http://novtech.com/products/meerkat96.html) | [sales@novtech.com](mailto:sales@novtech.com) |
 > | [phyBOARD-i.MX 7 Development Kit](https://www.phytec.com/product/phyboard-i-mx-7-development-kit/) | [Fernando Benitez](mailto:sales@phytec.com) |

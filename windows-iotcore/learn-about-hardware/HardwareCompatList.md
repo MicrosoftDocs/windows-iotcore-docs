@@ -141,7 +141,7 @@ Worldwide 2.5GHz ISM band, 250Kbps, 1Mbps and 2Mbps data rates. Low-power module
 ### Touchpanel solutions
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified |
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | Keith & Koep i-PAN M7 CoverLens | ARM32 | 7.0 inch Touchpanel Computer for industrial use with Qualcomm Snapdragon 410E CPU, resolution 800x480px, brightness 850cd/qm, USB 2.0, SD card, POE | [i-PAN M7 information](https://keith-koep.com/en/products/products-hmi/i-pan-m7-coverlens-arm-touch-panel-computer-technical-data/) | &#10004; |
+> | [SECO](https://north.seco.com/en) [i-PAN M7](https://edge.seco.com/usa/i-pan-m7.html) | ARM32 | 7.0 inch Touchpanel Computer for industrial use with Qualcomm Snapdragon 410E CPU, resolution 800x480px, brightness 850cd/qm, USB 2.0, SD card, POE | [i-PAN M7 information](https://edge.seco.com/usa/i-pan-m7.html) | &#10004; |
 
 
 ### Miscellaneous
