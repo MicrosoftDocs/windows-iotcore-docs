@@ -43,8 +43,8 @@ See also: [Sample Driver Package](https://github.com/ms-iot/iot-adk-addonkit/tre
 ## Step 3: Install on device
 ___
 
-* Connect to the device ([using SSH](/windows/iot-core/connect-your-device/ssh) or [using PowerShell](/windows/iot-core/connect-your-device/powershell))
-* Copy the <filename>.cab file to the device to a directory say C:\OemInstall
+* Connect to the device ([using SSH](../connect-your-device/ssh.md) or [using PowerShell](../connect-your-device/powershell.md))
+* Copy the `<filename>.cab` file to the device to a directory say C:\OemInstall
 * Initiate staging of the package using `applyupdate -stage C:\OemInstall\<filename>.cab`. Note that this step is be repeated for each package, when you have multiple packages to install.
 * Commit the packages using `applyupdate -commit`.
 

@@ -33,7 +33,7 @@ UWP apps just work on IoT Core, just as they do on other Windows 10 editions. A 
 
 There are a few additions to the traditional UWP app-model to support IoT scenarios and any UWP app that takes advantage of them will need the corresponding information added to their manifest. In particular, the "iot" namespace needs to be added to the manifest of these standard UWP apps.
 
-Inside the <Package> attribute of the manifest, you need to define the iot xmlns and add it to the IgnorableNamespaces list. The final xml should look like this:
+Inside the `<Package>` attribute of the manifest, you need to define the iot xmlns and add it to the IgnorableNamespaces list. The final xml should look like this:
 
 ```
 <Package
@@ -84,7 +84,7 @@ namespace BlinkyHeadlessCS
 }
 ```
 
-You can find in-depth information on Background apps [here](/windows/iot-core/develop-your-app/backgroundapplications).
+You can find in-depth information on Background apps [here](./backgroundapplications.md).
 
 ### Non-UWP Apps
 IoT Core supports certain traditional Win32 app types such as Win32 Console Apps and NT Services. These apps are built and run the same way as on Windows 10 Desktop. Additionally, there is an IoT Core C++ Console project template to make it easy to build such apps using Visual Studio.

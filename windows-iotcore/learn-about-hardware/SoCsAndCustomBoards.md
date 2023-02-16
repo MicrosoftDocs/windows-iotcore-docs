@@ -16,9 +16,9 @@ Microsoft works alongside Broadcom, Intel, NXP, and Qualcomm to verify support f
 
 | Broadcom | Intel | Qualcomm | NXP |
 |----------|-------|----------|-----|
-| BCM2837 | [Intel® Atom® processor E3900 series (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                | [Snapdragon 410 (APQ8016)](https://www.qualcomm.com/products/snapdragon/processors/410) | [i.MX 6 Family](/windows/iot-core/learn-about-hardware/iotnxp) |
-| BCM2836 | [Intel® Celeron® processor N3350 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 (APQ8009)](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 7 Family](/windows/iot-core/learn-about-hardware/iotnxp)     |
-|         | [Intel® Pentium® processor N4200 platform (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 8M and 8M mini Family](/windows/iot-core/learn-about-hardware/iotnxp) |
+| BCM2837 | [Intel® Atom® processor E3900 series (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                | [Snapdragon 410 (APQ8016)](https://www.qualcomm.com/products/snapdragon/processors/410) | [i.MX 6 Family](./iotnxp.md) |
+| BCM2836 | [Intel® Celeron® processor N3350 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 (APQ8009)](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 7 Family](./iotnxp.md)     |
+|         | [Intel® Pentium® processor N4200 platform (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 8M and 8M mini Family](./iotnxp.md) |
 |         | [Intel® Pentium® and Celeron® Processor N3000 Series (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded)                    |                                                                                         |      |
 |         | [Intel® Atom® x5-E8000 Processor (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded)                                        |                                                                                         |  |
 |         | [Intel® Atom® x5-Z8350 Processor (Cherry Trail)](https://ark.intel.com/products/93361/Intel-Atom-x5-Z8350-Processor-2M-Cache-up-to-1_92-GHz) |                                                                                         |     |
@@ -116,19 +116,18 @@ Recommendations:
 #### *Experienced partners*
 
 * [Intrinsyc](https://www.intrinsyc.com/computing-platforms/410-som/) - Mark Waldenberg (mwaldenberg@intrinsyc.com)
-* [Keith & Koep](https://keith-koep.com/en/products/products-som/myon-1-features-snapdragon-410/) - contact@keith-koep.com
+* [SECO](https://north.seco.com/en) - north@seco.com
 * [Reycom](http://www.reycom.swiss/en/home-swiss.html) - welcome@reycom.swiss
 * [Unitech](https://www.ute.com/) - Sam (saml@tw.ute.com); Perry (perryt@te.ute.com)
 
 ### **NXP preview**
 
-NXP support for Windows 10 IoT Core is in public preview. For more information, the access the BSP, or to find a hardware partner, please go to the [NXP SoC page](/windows/iot-core/learn-about-hardware/iotnxp).
+NXP support for Windows 10 IoT Core is in public preview. For more information, the access the BSP, or to find a hardware partner, please go to the [NXP SoC page](./iotnxp.md).
 
 You can also reach out to partners we're working with:
 
 * Advantech [RSB-4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858) - buy@advantech.tw
-* Keith & Koep [pConXS](https://keith-koep.com/de/produkte/produkte-baseboards/pconxs-baseboard-vollausstattung-technische-daten/
-) with [Trizeps VII](https://keith-koep.com/de/produkte/produkte-trizeps/trizeps-vii-technische-daten-imx6/) - contact@keith-koep.com
+* SECO [pConXS III](https://edge.seco.com/usa/pconxs-iii.html) with [Trizeps VIII Mini](https://edge.seco.com/usa/trizeps-viii-mini.html), [i-PAN M7](https://edge.seco.com/usa/i-pan-m7.html) with [Myon II](https://edge.seco.com/usa/myon_ii.html)- north@seco.com
 * Kontron [SMARC-sAMX6i](https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html) - Martin Unverdorben (martin.unverdorben@kontron.com)
 * Solid Run [Hummingboard Edge](https://www.solid-run.com/imx6-win-10-iot-core/ )- Ilya Viten (ilya@solid-run.com)
 * Geniatech [SoM-iMX6Q-Q7](https://www.geniatech.com/product/som-imx6q-q7/) & [SoM-iMX7D](https://www.geniatech.com/product/som-imx7d/) - Mike Decker (mike.decker@geniatech.com) or Fang Jijun (Fjj@geniatech.com)

@@ -28,7 +28,7 @@ For this method, you will need to ensure that you are connected to the internet.
 
 To install your application on the device please do the following:
 
-1. Open the [Windows Device Portal](/windows/iot-core/manage-your-device/deviceportal) for your IoT device.
+1. Open the [Windows Device Portal](../manage-your-device/deviceportal.md) for your IoT device.
 
 2. In the **Apps** menu, install your app by selecting your app files and clicking **Install**.
 
@@ -85,7 +85,7 @@ You can create a provisioning package with the app and install the provisioning 
 
 9. Export the package
 
-10. Copy the exported .ppkg file to _C:\Windows\Provisioning\Packages_ on the IoT device using [SSH](/windows/iot-core/connect-your-device/SSH) or [PowerShell](/windows/iot-core/connect-your-device/powershell) and reboot. When the device reboots, the provisioning package is processed and the app is installed.
+10. Copy the exported .ppkg file to _C:\Windows\Provisioning\Packages_ on the IoT device using [SSH](../connect-your-device/ssh.md) or [PowerShell](../connect-your-device/powershell.md) and reboot. When the device reboots, the provisioning package is processed and the app is installed.
 
 
 ## Add the app to the Windows IoT Core image(.ffu)
