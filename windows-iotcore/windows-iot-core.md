@@ -18,6 +18,15 @@ Windows 10 IoT Core is a version of Windows 10 that is optimized for smaller dev
 
 If you're ready to go to the next level and start commercializing your solution, you can learn how to manufacture with Windows 10 IoT Core with our [Windows 10 IoT Core Manufacturing Guide](/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
 
+## Release Information
+
+| Release | Version | Lifecycle Policy |Availability | End of Servicing |
+| ------- | ------- | ------------ | ------------ | ---------------- |
+| [Windows 10 IoT Core](/lifecycle/products/windows-10-iot-core) | 17763 | [Modern](/lifecycle/policies/modern) | 2018-11-13 | 2020-11-10 |
+| [Windows 10 IoT Core LTSC](/lifecycle/products/windows-10-iot-core-ltsc) | 17763 | [Fixed](/lifecycle/policies/fixed) | 2018-11-13| 2029-01-09 |
+| [Windows IoT Core services](/lifecycle/products/windows-10-iot-core-services) | N/S | [Modern](/lifecycle/policies/modern) | 2018-11-13 | In Support|
+
+
 ## Getting started
 
 Before attempting to manufacture a device, it's best to first try and prototype a device with Windows 10 IoT Core. That way, you can understand what features you'll need and what configurations you'll want when it's time to manufacture.
