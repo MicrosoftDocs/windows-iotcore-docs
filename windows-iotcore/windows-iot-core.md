@@ -14,50 +14,29 @@ keywords: Windows 10 IoT Core, small footprint, headless
 > Windows Containers are supported for commercial deployments on Windows Server, Windows IoT Server, Windows IoT Enterprise and Windows IoT Core.  As of Windows October Update 2018 (Build 17763), Windows Containers can only be used with Windows Enterprise and Professional for dev/test purposes.
 
 ## What is Windows 10 IoT Core?
+
 Windows 10 IoT Core is a version of Windows 10 that is optimized for smaller devices with or without a display that run on both ARM and x86/x64 devices. The Windows IoT Core documentation provides information on connecting, managing, updating, securing your devices, and more.
 
 If you're ready to go to the next level and start commercializing your solution, you can learn how to manufacture with Windows 10 IoT Core with our [Windows 10 IoT Core Manufacturing Guide](/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
+
+## Release Information
+
+| Release | Version | Lifecycle Policy |Availability | End of Servicing |
+| ------- | ------- | ------------ | ------------ | ---------------- |
+| [Windows 10 IoT Core](/lifecycle/products/windows-10-iot-core) | 17763 | [Modern](/lifecycle/policies/modern) | 2018-11-13 | 2020-11-10 |
+| [Windows 10 IoT Core LTSC](/lifecycle/products/windows-10-iot-core-ltsc) | 17763 | [Fixed](/lifecycle/policies/fixed) | 2018-11-13| 2029-01-09 |
+| [Windows IoT Core services](/lifecycle/products/windows-10-iot-core-services) | N/S | [Modern](/lifecycle/policies/modern) | 2018-11-13 | In Support|
 
 ## Getting started
 
 Before attempting to manufacture a device, it's best to first try and prototype a device with Windows 10 IoT Core. That way, you can understand what features you'll need and what configurations you'll want when it's time to manufacture.
 
-<table>  
-<colgroup>  
-<col width="50%" />  
-<col width="50%" />  
-</colgroup>  
-<thead>  
-<tr class="header">  
-<th align="left">Topic</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-
-<tr class="odd">
-<td align="left"><p><a href="/windows/iot-core/tutorials/quickstarter/PrototypeBoards"
->1. Pick a prototype board</a></p></td>
-<td align="left"><p>Take a look at common prototype boards and choose one to start prototyping with.</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p>2. Flash a prototype image</p></td>
-<td align="left"><p>Go to our tutorial sections to learn how to flash prototype images onto your selected device(s). </p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="/windows/iot-core/develop-your-app/appinstaller">3. Install your app</a></p></td>
-<td align="left"><p>Learn how to install your app using different tools.</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="/windows/iot-core/develop-your-app/appdeployment">4. Deploy your app</a></p></td>
-<td align="left"><p>Learn how to deploy an app using Visual Studio.</p></td>
-</tr>
-
-</tbody>
-</table>
+| Topic | Description |
+| ----- | ----------- |
+| 1. [Pick a prototype board](./tutorials/quickstarter/PrototypeBoards.md) | Take a look at common prototype boards and choose one to start prototyping with.|
+| 2. Flash a prototype image | Go to our tutorial sections to learn how to flash prototype images onto your selected device(s). |
+| 3. [Install your app](./develop-your-app/AppInstaller.md) | Learn how to install your app using different tools. |
+| 4. [Deploy your app](./develop-your-app/AppDeployment.md) | Learn how to deploy an app using Visual Studio. |
 
 ## Differences between Windows 10 IoT Core and Windows 10 IoT Enterprise
 
@@ -71,7 +50,7 @@ While Windows 10 IoT Core and Windows 10 IoT Enterprise are similar in name, the
 > | Cortana | [*Cortana SDK*](https://developer.microsoft.com/cortana/devices) | Yes |
 > | Domain join | AAD only | AAD and Traditional Domain |
 > | Management | MDM | MDM |
-> | Device Security Technologies | [TPM](/windows/iot-core/tutorialssecure-your-device/tpm), [Secure Boot, BitLocker, Device Guard](./secure-your-device/securebootandbitlocker.md), and Device Health Attestation | [TPM](/windows/iot-core/tutorialssecure-your-device/tpm), [Secure Boot, BitLocker, Device Guard](./secure-your-device/securebootandbitlocker.md) and Device Health Attestation |
+> | Device Security Technologies | [TPM](./secure-your-device/TPM.md), [Secure Boot, BitLocker, Device Guard](./secure-your-device/securebootandbitlocker.md), and Device Health Attestation | [TPM](./secure-your-device/TPM.md), [Secure Boot, BitLocker, Device Guard](./secure-your-device/securebootandbitlocker.md) and Device Health Attestation |
 > | CPU Architecture support | x86, x64, and ARM | x86 and x64 |
 > | Licensing | Online Licensing Agreement and Embedded OEM Agreements, Royalty-free | Direct and Indirect Embedded OEM Agreements |
 > | Usage scenarios | [Digital Signage](https://www.microsoft.com/windowsforbusiness/digital-signage), Smart Building, IoT Gateway, HMI, Smart Home, Wearables | Industry Tablets, Retail Point of Service, Kiosk, [Digital Signage](https://www.microsoft.com/windowsforbusiness/digital-signage), ATM, Medical Devices, Manufacturing Devices, Thin Client |
@@ -97,26 +76,24 @@ If you're interested in learning more about Point of Service, please visit the [
 
 * On desktop, there is an option to "Automatically hide scroll bars in Windows" that can be set to off. It is controlled by the following registry entry:
 
-```
-HKEY_CURRENTUSER\Control Panel\Accessibility
-```
+`HKEY_CURRENTUSER\Control Panel\Accessibility`
 
 * There is no such registry on Windows 10 IoT Core devices by default. You will need to add a "Dynamic Scrollbars" register if you want.
 * To enable the hide scroll bars automatically in a UWP application, you can add the "DynamicScrollbars" register and set the value to "1" like this:
 
-```
+```dos
 REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d "1"
 ```
 
 * The registry key must be set from the Default Account. If the ScrollViewer's XAML setting is "Visible", the registry setting of 0 will force the scroll bar to appear regardless of whether there is sufficient content to have the scroll appear in the UI. A registry setting of 1 will keep the scroll bar hidden until there is sufficient content.
 
-```
+```xaml
 <TextBox Height="200" Width="100" IsEnabled="True" FontSize="50" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Visible" Text="..."/>
 ```
 
 * Lastly, if the ScrollViewer XAML's setting is "Auto" then the registry setting of 0 will only show the full scroll bar when there is enough content to display the scroll bar. When the registry setting is 1, the scroll bar will appear then when there is enough content or hidden if there is no content.
 
-```
+```XAML
 <TextBox Height="200" Width="100" IsEnabled="True" FontSize="50" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" Text="..."/>
 ```
 
@@ -128,4 +105,5 @@ REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d 
 All differences described in this post may not be valid in the future because Windows 10 IoT Core is constantly being updated.
 
 ## Helpful resources
+
 [Read our documentation](/windows/iot-core) to learn more about Windows 10 IoT Core.
