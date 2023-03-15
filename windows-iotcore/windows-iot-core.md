@@ -50,7 +50,7 @@ While Windows 10 IoT Core and Windows 10 IoT Enterprise are similar in name, the
 > | Cortana | [*Cortana SDK*](https://developer.microsoft.com/cortana/devices) | Yes |
 > | Domain join | AAD only | AAD and Traditional Domain |
 > | Management | MDM | MDM |
-> | Device Security Technologies | [TPM](/windows/iot-core/tutorialssecure-your-device/tpm), [Secure Boot, BitLocker, Device Guard](./secure-your-device/securebootandbitlocker.md), and Device Health Attestation | [TPM](/windows/iot-core/tutorialssecure-your-device/tpm), [Secure Boot, BitLocker, Device Guard](./secure-your-device/securebootandbitlocker.md) and Device Health Attestation |
+> | Device Security Technologies | [TPM](./secure-your-device/TPM.md), [Secure Boot, BitLocker, Device Guard](./secure-your-device/securebootandbitlocker.md), and Device Health Attestation | [TPM](./secure-your-device/TPM.md), [Secure Boot, BitLocker, Device Guard](./secure-your-device/securebootandbitlocker.md) and Device Health Attestation |
 > | CPU Architecture support | x86, x64, and ARM | x86 and x64 |
 > | Licensing | Online Licensing Agreement and Embedded OEM Agreements, Royalty-free | Direct and Indirect Embedded OEM Agreements |
 > | Usage scenarios | [Digital Signage](https://www.microsoft.com/windowsforbusiness/digital-signage), Smart Building, IoT Gateway, HMI, Smart Home, Wearables | Industry Tablets, Retail Point of Service, Kiosk, [Digital Signage](https://www.microsoft.com/windowsforbusiness/digital-signage), ATM, Medical Devices, Manufacturing Devices, Thin Client |
