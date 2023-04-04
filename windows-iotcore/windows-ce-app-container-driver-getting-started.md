@@ -91,7 +91,7 @@ The CE App Container can support multiple plug-in drivers that each define their
 
 ## References
 
-- [Getting Started with CE App Container](/windows/iot-core/windows-ce-app-container-getting-started)
+- [Getting Started with CE App Container](/windows-ce-app-container-getting-started)
 - [Get the tools needed to customize Windows 10 IoT Core](/windows-hardware/manufacture/iot/set-up-your-pc-to-customize-iot-core)
 - [IoT Core Board Supported Packages (BSP)](/windows-hardware/manufacture/iot/bsphardware)
 - [IoT Core Manufacturing Guide](/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)
