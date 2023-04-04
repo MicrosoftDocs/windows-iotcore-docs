@@ -16,7 +16,7 @@ Read our documentation on the [Unified Write Filter](/windows-hardware/customize
 
 ## How to Install UWF on a device running Windows 10 IoT Core
 
-* If you do not have the current version of the Windows 10 IoT Core Kits yet, download and install the [Windows 10 IoT Core Packages](https://www.microsoft.com/software-download/windows10iotcore).
+* If you do not have the current version of the Windows 10 IoT Core Kits yet, download and install the [Windows 10 IoT Core Packages](/windows/iot-core/windows-iot-core).
 * Based on your device architecture, copy UWF packages ( `Microsoft-IoTUAP-UnifiedWriteFilter-Package.cab` and `Microsoft-IoTUAP-UnifiedWriteFilter-Package_Lang_en-us.cab` ) from your PC (`C:\Program Files (x86)\Windows Kits\10\MSPackages\Retail\<arch>\fre\`) to the device (for example, with [Windows file sharing](../manage-your-device/WindowsFileSharing.md)).
 * Launch [SSH](../connect-your-device/SSH.md) or [PowerShell](../connect-your-device/PowerShell.md) and access your device running Windows 10 IoT Core.
 * From SSH or PowerShell, do the following:

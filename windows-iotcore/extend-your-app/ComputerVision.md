@@ -1,6 +1,6 @@
 ---
 title: Computer Vision
-ms.date: 04/03/2023
+ms.date: 04/04/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -48,7 +48,7 @@ Documentation for each API can be found on the Cognitive Services [website](http
 
 All Cognitive Services APIs can be implemented on any hardware platform using C#.
 
-Want to run Cognitive Services on your IoT Device? Visit our [tutorial](/samples/microsoft/windows-iotcore-samples/congitive-services) to get started.
+Want to run Cognitive Services on your IoT Device? Visit our [tutorial](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/CognitiveServicesExample) to get started.
 
 ### OpenCV
 
@@ -73,7 +73,7 @@ This is currently a work in progress, so keep checking WindowsOnDevices.com for 
 
 In the meantime, to build the library from source for ARM, visit the [GitHub repository](https://github.com/Microsoft/opencv/tree/vs2015-samples-ARM).
 
-Want to run OpenCV on your IoT Core device? Visit our [tutorial](/samples/microsoft/windows-iotcore-samples/opencv) to get started.
+Want to run OpenCV on your IoT Core device? Visit our [tutorial](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/OpenCVExample) to get started.
 
 ## Comparing OpenCV and Cognitive Services
 

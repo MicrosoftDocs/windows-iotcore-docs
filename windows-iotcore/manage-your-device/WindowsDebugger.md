@@ -67,7 +67,7 @@ You can connect WinDbg to the Raspberry Pi 2 or 3 using a serial connection.
 
 In order to enable kernel debugging with WinDbg over a serial connection, ensure that:
 
-* You have a debug cable such as the USB-to-TTL Serial Cable from [Adafruit](https://www.adafruit.com/product/954) or [FTDI](http://shop.clickandbuild.com/cnb/shop/ftdichip?productID=53&op=catalogue-product_info-null&prodCategoryID=105).
+* You have a debug cable such as the USB-to-TTL Serial Cable from [Adafruit](https://www.adafruit.com/product/954).
 
 * An Ethernet cable or active WiFi connecting your Raspberry Pi 2 or 3 device to your network (for IP connections like SSH or PowerShell)
 

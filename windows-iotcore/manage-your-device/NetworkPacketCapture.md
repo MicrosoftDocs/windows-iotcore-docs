@@ -42,7 +42,7 @@ netsh advfirewall set allprofiles state off
 
 Now that your device is set up, let's connect to it using Microsoft Message Analyzer.
 
-1. Download the [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226).
+1. Download the [Microsoft Message Analyzer](/message-analyzer/installing-and-upgrading-message-analyzer).
 1. Open Message Analyzer.
 1. Click on `New Session`.
 

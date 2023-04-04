@@ -1,7 +1,7 @@
 ---
 title: Specify available on-screen keyboard language layouts
 author: johntasler
-ms.author: jtasler
+ms.author: twarwick
 ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot

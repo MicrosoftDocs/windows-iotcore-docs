@@ -1,8 +1,8 @@
 ---
 title: Configure your headed device with the Windows 10 IoT Core on-screen keyboard
 author: johntasler
-ms.author: jtasler
-ms.date: 04/03/2023
+ms.author: twarwick
+ms.date: 04/04/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

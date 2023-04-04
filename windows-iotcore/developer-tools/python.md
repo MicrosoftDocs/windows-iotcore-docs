@@ -335,4 +335,4 @@ To get Python for Windows, you will need to build the binaries yourself.
 ## Additional Python Developer Resources
 
 * [Python Developer's Guide](https://devguide.python.org/setup/#setup)
-* [Build CPython on Windows](https://cpython-core-tutorial.readthedocs.io/en/latest/build_cpython_windows.html)
+* [Build CPython on Windows](https://devguide.python.org/getting-started/setup-building/index.html#windows)

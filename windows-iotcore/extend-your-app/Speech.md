@@ -1,6 +1,6 @@
 ---
 title: Speech resources and samples
-ms.date: 04/03/2023
+ms.date: 04/04/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -37,7 +37,7 @@ Here is the list of the available services and API on Windows 10 IoT Core:
 * Home automation of controlling light with SRGS grammars
   * [Video](https://www.youtube.com/watch?v=MN18Uo_063g)
 
-* [Speech translator sample](/samples/microsoft/windows-iotcore-samples/speech-translator)
+* [Speech translator sample](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/SpeechTranslator)
 
 * [Cortana with a companion device](https://microsoft.hackster.io/ada-plasma-1f5c36/windows-iot-device-interactive-with-cortana-046906?ref=platform&ref_id=4087_trending___&offset=16)
 

@@ -1,6 +1,6 @@
 ---
 title: Using Project Rome with Windows 10 IoT Core
-ms.date: 04/03/2023
+ms.date: 04/04/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -10,7 +10,7 @@ keywords: windows 10 IoT Core, Project Rome, remote devices
 
 # Using Project Rome with Windows 10 IoT Core
 
-[Project Rome](https://developer.microsoft.com/windows/project-rome) allows you to work remotely with devices running Windows 10 IoT Core using the RemoteSystems and AppServiceProvider APIs.
+[Project Rome](/windows/project-rome/) allows you to work remotely with devices running Windows 10 IoT Core using the RemoteSystems and AppServiceProvider APIs.
 
 In this article, we'll go through how to discover, control, and connect to devices running Windows 10 IoT Core with Project Rome.  
 
@@ -82,5 +82,5 @@ In this article, we'll go through how to discover, control, and connect to devic
 
 ### Helpful links
 
-* [Project Rome documentation on MSDN](https://developer.microsoft.com/windows/project-rome)
+* [Project Rome documentation](/windows/project-rome/)
 * [Using Project Rome for UWP](/windows/uwp/launch-resume/connected-apps-and-devices)

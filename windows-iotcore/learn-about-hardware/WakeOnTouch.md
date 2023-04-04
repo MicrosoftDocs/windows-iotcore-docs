@@ -1,8 +1,8 @@
 ---
 title: Wake on Touch
 author: jordanrh1
-ms.author: jordanrh
-ms.date: 04/03/2023
+ms.author: twarwick
+ms.date: 04/04/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

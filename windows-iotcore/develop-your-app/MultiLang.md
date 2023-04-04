@@ -22,7 +22,7 @@ UWP applications must provide the resources for the languages that are required 
 
 See the below sample applications:
 
-* [IoTDefaultApp sample](/samples/microsoft/windows-iotcore-samples/iotcore-defaultapp)
+* [IoTDefaultApp sample](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTCoreDefaultApp)
 
 * [ApplicationResources sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/ApplicationResources)
 

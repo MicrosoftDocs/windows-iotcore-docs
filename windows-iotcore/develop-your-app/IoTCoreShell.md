@@ -39,7 +39,7 @@ The rest of this document covers how to implement this feature manually.
 
 ### Return Home
 
-With the Windows 10 IoT Anniversary Update (1607), the IoT Shell supports bringing the default application window to the foreground when another application is running by pressing the "GO HOME" key, which is set to the release of the Windows Button on a keyboard. If you don't have a keyboard on your IoT Device and need to inject low-level keyboard events through [HID Injection](https://developer.microsoft.com/windows/iot/samples/hidinjection), or if you just want to re-map the "GO HOME" functionality to a different key in your app, you can adjust the key value in the registry. For example, to enable pressing the ESCAPE key (0x1B) to "GO HOME", enter the following command in the registry:
+With the Windows 10 IoT Anniversary Update (1607), the IoT Shell supports bringing the default application window to the foreground when another application is running by pressing the "GO HOME" key, which is set to the release of the Windows Button on a keyboard. If you don't have a keyboard on your IoT Device and need to inject low-level keyboard events through [HID Injection](https://github.com/microsoft/Windows-iotcore-samples), or if you just want to re-map the "GO HOME" functionality to a different key in your app, you can adjust the key value in the registry. For example, to enable pressing the ESCAPE key (0x1B) to "GO HOME", enter the following command in the registry:
 
 ```reg
 “HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\HotKeys” “HOME” QWORD    0x0000000 0000001B  

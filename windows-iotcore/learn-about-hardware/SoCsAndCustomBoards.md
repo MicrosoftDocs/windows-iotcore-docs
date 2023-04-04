@@ -84,7 +84,7 @@ Each of the platforms has unique quirks that need attention during implementatio
 
 ### **Intel-based custom design**
 
-There is a vibrant ecosystem of [experienced Intel device builders](https://solutionsdirectory.intel.com/solutions-directory/processors/278/processors/309/processors/402/processors/782/processors/788/processors/1103/processors/1107/processors/1110/processors/1175/processors/1344/processors/1348/processors/1349) for Windows you can work with. An Intel device designed to run Windows 10 IoT Core has a couple of differences from the more common PCs:
+There is a vibrant ecosystem of [experienced Intel device builders](https://solutionsdirectory.intel.com/solutions-directory) for Windows you can work with. An Intel device designed to run Windows 10 IoT Core has a couple of differences from the more common PCs:
 
 1. If you need to provide user mode Universal Windows Platform (UWP) API access to simple buses like I2C, GPIO and SPI, you need make sure that ACPI table in your UEFI firmware contains  appropriate entries for RHProxy. Please refer to [user mode access](/windows/uwp/devices-sensors/enable-usermode-access) for more information.
 2. You must ensure that the SMBIOS in the firmware contains information as listed in [OEM License Requirement](/windows-hardware/manufacture/iot/license-requirements).
