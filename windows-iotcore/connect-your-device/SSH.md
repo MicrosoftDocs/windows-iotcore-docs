@@ -1,6 +1,6 @@
 ---
 title: Secure Shell (SSH)
-ms.date: 03/25/2019
+ms.date: 03/31/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -9,9 +9,11 @@ keywords: windows iot, secure shell, remote, SSH client, PuTTY, SSH
 ---
 
 # Secure Shell (SSH)
+
 Secure Shell (SSH) allows you to remotely administer and configure your Windows IoT Core device
 
 ## Using the Windows 10 OpenSSH client
+
 > [!IMPORTANT]
 > The Windows OpenSSH client requires that your SSH client host OS is Windows 10 version 1803(17134). Also, the Windows 10 IoT Core device must be running RS5 Windows Insider Preview release 17723 or greater.
 
@@ -73,7 +75,7 @@ If the key is not registered with ssh-agent, it must be specified on the command
 ssh -i .\id_rsa DefaultAccount@host
 ```
 
-If the private key is registered with ssh-agent, then you only need to specify <strong>DefaultAccount@host</strong>:
+If the private key is registered with ssh-agent, then you only need to specify **DefaultAccount@host**:
 
 ```cmd
 ssh DefaultAccount@host
@@ -121,9 +123,11 @@ See also: [Win32-OpenSSH](https://github.com/PowerShell/Win32-OpenSSH/wiki/ssh.e
 ## Using PuTTY
 
 ### Download an SSH client
+
 In order to connect to your device using SSH, you'll first need to download an SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe).
 
 ### Connect to your device
+
 * In order to connect to your device, you need to first get the IP address of the device.  After booting your Windows IoT Core device, an IP address will be shown on the screen attached to the device:
 
     ![DefaultApp on Windows IoT Core](../media/SSH/DefaultApp.png)
@@ -150,22 +154,29 @@ In order to connect to your device using SSH, you'll first need to download an S
 It is **highly recommended** that you update the default password for the Administrator account.
 
 To do this, enter the following command in the PuTTY console, replacing `[new password]` with a strong password:
-```    
+
+```cmd
     net user Administrator [new password]
-```    
+```
+
 ### Configure your Windows IoT Core device
+
 * To be able to deploy applications from Visual Studio 2017, you will need to make sure the Visual Studio Remote Debugger is running on your Windows IoT Core device. The remote debugger should launch automatically at machine boot time. To double check, use the tlist command to list all the running processes from PowerShell. There should be two instances of msvsmon.exe running on the device.
 
 * It is possible for the Visual Studio Remote Debugger to time out after long periods of inactivity. If Visual Studio cannot connect to your Windows IoT Core device, try rebooting the device.
 
 * If you want, you can also rename your device. To change the 'computer name', use the `setcomputername` utility:
-```
+
+```cmd
         setcomputername <new-name>
 ```
+
 You will need to reboot the device for the change to take effect. You can use the `shutdown` command as follows:
-```
+
+```cmd
         shutdown /r /t 0
 ```
+
 ### Commonly used utilities
 
 See the [Command Line Utils](../manage-your-device/CommandLineUtils.md) page for a list of commands and utilities you can use with SSH.

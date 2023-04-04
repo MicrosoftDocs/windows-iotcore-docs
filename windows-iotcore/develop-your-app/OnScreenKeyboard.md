@@ -1,8 +1,8 @@
 ---
 title: Configure your headed device with the Windows 10 IoT Core on-screen keyboard
 author: johntasler
-ms.author: jtasler
-ms.date: 10/12/2018
+ms.author: twarwick
+ms.date: 04/04/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -17,6 +17,7 @@ In Windows 10 IoT Core, version 1809, the on-screen keyboard component has chang
 for the better! IoT Core now uses the same touch keyboard components as the desktop edition of Windows.
 
 ## New features
+
 The new keyboard implementation provides the following benefits to your headed device development:
 
 * [The entire set of Windows keyboard language layouts](#windows-keyboard-language-layouts)
@@ -32,6 +33,7 @@ For prototyping (development) images, the on-screen keyboard feature is already 
 enable it from Device Settings in the [Windows Device Portal](../manage-your-device/deviceportal.md#iot-specific-features).
 
 For commercialization, the following optional feature packages will add the on-screen keyboard to your image:
+
 * IOT_SHELL_ONSCREEN_KEYBOARD
 * IOT_SHELL_ONSCREEN_KEYBOARD_FOLLOWFOCUS
 
@@ -86,7 +88,7 @@ setting registry values is the `OEMInput.xml` file discussed here:
 
 > [!NOTE]
 > Most of the registry settings documented here will take effect while the on-screen keyboard is visible.
-> This allows you during development to easily try different combinatations of settings values,
+> This allows you during development to easily try different combinations of settings values,
 > immediately seeing the resulting changes in real time. If a setting does not take effect immediately,
 > you will need to reboot the device in order to see the changes to the keyboard UI.
 
@@ -100,11 +102,14 @@ it allows for pixel-level precision. Simply apply the following formula to calcu
 `percentage = (100 * <desired_pixel_height>) / <screen_height>`
 
 As an example, to change the height to 56.783%, you would set the following registry value:
-```console
+
+```cmd
 set OskRootKey=HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\OSK
 reg.exe ADD "%OskRootKey%" /v MaxHeightPercentage /t REG_SZ /d "56.783" /f
 ```
+
 or from PowerShell:
+
 ```powershell
 set OskRootKey "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\OSK"
 cd $OskRootKey
@@ -118,21 +123,22 @@ Set-ItemProperty -Path . -Name MaxHeightPercentage -Type String -Value 56.783
 ### Additional preferences
 
 The remaining set of preferences is String values in the Preferences subkey:
-```
+
+```text
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\OSK\Preferences
 ```
 
 | Registry Value               | Default Value      | Description                                                                                         |
 | ---------------------------- | ------------------ | --------------------------------------------------------------------------------------------------- |
 | AudioFeedback_Disabled       | "0"                | "0" enables the key click audio feedback; "1" disables it.                                          |
-| Dictation_Disabled           | "1"                | "0" shows the dictation (voice recognition) button; "1" hides it.<br/> (see note below)             |
+| Dictation_Disabled           | "1"                | "0" shows the dictation (voice recognition) button; "1" hides it. (see note below)             |
 | KeyboardModeEnabled_full     | "0"                | "0" disables the full keyboard mode; "1" enables it.                                                |
 | KeyboardModeEnabled_narrow   | "1"                | "0" disables the narrow keyboard mode; "1" enables it.                                              |
 | KeyboardModeEnabled_wide     | "1"                | "0" disables the wide keyboard mode; "1" enables it.                                                |
 | ModeOrder                    | "wide;narrow;full" | The order (from left to right) in which the modes are listed in the mode drop-down menu, if enabled |
 | SettingsMenuKey_Collapsed    | "0"                | Hides the mode drop-down menu. Set this to "1" if only one mode is enabled.                         |
-| Paste_Disabled               | "0"                | "0" shows the Paste button; "1" hides it.<br/> Change takes effect after reboot.                    |
-| CloseButton_Disabled         | "0"                | "0" shows the Close button; "1" hides the Close button<br/> Change takes effect after reboot.       |
+| Paste_Disabled               | "0"                | "0" shows the Paste button; "1" hides it. Change takes effect after reboot.                    |
+| CloseButton_Disabled         | "0"                | "0" shows the Close button; "1" hides the Close button. Change takes effect after reboot.       |
 | EmojiKeyEnabled              | "0"                | "0" hides the Emoji key; "1" shows it, allowing the user to enter Emoji characters.                 |
 
 > [!NOTE]
@@ -144,6 +150,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShel
 > and [IoT Core manufacturing guide](/windows-hardware/manufacture/iot/iot-core-manufacturing-guide).
 
 As an example, to enable only `wide` keyboard mode, in PowerShell you could do the following:
+
 ```powershell
 set OskRootKey "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\OSK"
 cd $OskRootKey

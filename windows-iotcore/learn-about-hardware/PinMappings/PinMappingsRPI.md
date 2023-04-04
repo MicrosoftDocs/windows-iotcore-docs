@@ -1,6 +1,6 @@
 ---
 title: Raspberry Pi 2 & 3 Pin Mappings
-ms.date: 10/23/2018
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -89,9 +89,11 @@ public void GPIO()
 ```
 
 When you open a pin, it will be in its power-on state, which may include a pull resistor. To disconnect the pull resistors and get a high-impedance input, set the drive mode to GpioPinDriveMode.Input:
-```
+
+```c#
     pin.SetDriveMode(GpioPinDriveMode.Input);
 ```
+
 When a pin is closed, it reverts to its power-on state.
 
 ### Pin Muxing
@@ -123,7 +125,6 @@ There is one Serial UART available on the RPi2/3: **UART0**
 
 The example below initializes **UART0** and performs a write followed by a read:
 
-
 ```csharp
 using Windows.Storage.Streams;
 using Windows.Devices.Enumeration;
@@ -138,7 +139,7 @@ public async void Serial()
     /* Configure serial settings */
     SerialPort.WriteTimeout = TimeSpan.FromMilliseconds(1000);
     SerialPort.ReadTimeout = TimeSpan.FromMilliseconds(1000);
-    SerialPort.BaudRate = 9600;                                             /* mini UART: only standard baudrates */
+    SerialPort.BaudRate = 9600;                                             /* mini UART: only standard baud rates */
     SerialPort.Parity = SerialParity.None;                                  /* mini UART: no parities */  
     SerialPort.StopBits = SerialStopBitCount.One;                           /* mini UART: 1 stop bit */
     SerialPort.DataBits = 8;
@@ -230,7 +231,6 @@ There are two SPI bus controllers available on the RPi2/3.
 > | MISO        | 35                | 19          |
 > | SCLK        | 40                | 21          |
 > | CS0         | 36                | 16          |
-
 
 ### SPI Sample
 

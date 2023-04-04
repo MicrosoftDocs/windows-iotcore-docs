@@ -1,6 +1,6 @@
 ---
 title: Setting up a Dragonboard
-ms.date: 06/07/2019
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -17,13 +17,14 @@ ms.custom: RS5
 > [!NOTE]
 > If you're running into any audio-related issues with your DragonBoard, we advise that you read through Qualcomm's manual [here](https://developer.qualcomm.com/download/db410c/stereo-connector-and-audio-routing-application-note.pdf).
 
-When setting up a Dragonboard for prototyping, we recommend using the Windows 10 IoT Core Dashboard. However, if you're looking to manufacture with a Dragonboard, please refer to the [IoT Core Manufacturing Guide](/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). You cannot use maker images for manufacturing.
-<br>
-> [!Video https://www.youtube.com/embed/iPm57hGq-Q8]
+When setting up a Dragonboard for prototyping, we recommend using the Windows 10 IoT Core Dashboard. However, if you're looking to manufacture with a Dragonboard, please refer to the [IoT Core Manufacturing Guide](/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). You cannot use maker images for manufacturing.  
+
+> [!VIDEO https://www.youtube.com/embed/iPm57hGq-Q8]
 
 ## Using the Dashboard
 
 To flash, or download, IoT Core onto your MinnowBoard, you'll need:
+
 * A computer running Windows 10
 * [Windows 10 IoT Core Dashboard](../downloads.md)
 * MicroUSB cable
@@ -43,22 +44,25 @@ To flash, or download, IoT Core onto your MinnowBoard, you'll need:
 ![DragonBoard in flash mode](../media/DeviceSetup/db4.png)
 
 ## Connect to a network
+
 ### Wired connection
+
 If your device comes with an Ethernet port or USB Ethernet adapter support to enable a wired connection, attach an Ethernet cable to connect it to your network.
 
 ### Wireless connection
+
 If your device supports Wi-Fi connectivity and you've connected a display to it, you'll need to:
 
 1. Go into your default application and click the settings button next to the clock.
-2. On the settings page, select _Network and Wi-Fi_.
+2. On the settings page, select *Network and Wi-Fi*.
 3. Your device will begin scanning for wireless networks.
-4. Once your network appears in this list, select it and click _Connect_.
+4. Once your network appears in this list, select it and click *Connect*.
 
 If you haven't connected a display and would like to connect via Wi-Fi, you'll need to:
 
-1. Go to the IoT Dashboard and click on _My Devices_.
+1. Go to the IoT Dashboard and click on *My Devices*.
 2. Find your unconfigured board from the list. Its name will begin with "AJ_"... (e.g. AJ_58EA6C68). If you don't see your board appear after a few minutes, try rebooting your board.
-3. Click on _Configure Device_ and enter your network credentials. This will connect your board to the network.
+3. Click on *Configure Device* and enter your network credentials. This will connect your board to the network.
 
 > [!NOTE]
 > Wifi on your computer will need to be turned on in order to find other networks.

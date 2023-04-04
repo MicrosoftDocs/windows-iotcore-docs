@@ -2,7 +2,7 @@
 title: Windows 10 IoT Core Command Line Utilities
 author: bfjelds
 ms.author: bfjelds
-ms.date: 01/07/2020
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -19,7 +19,8 @@ Looking to configure some of the settings on your device? The below tools are av
 
 ## IoT Core-specific Command Line Utils
 
-### **Setting startup app:**
+### Setting startup app
+
 Use the startup editor to configure startup apps on your Windows IoT Core device. Run `IotStartup` with any of the following options:
 
 * `IotStartup list` lists installed applications
@@ -40,7 +41,7 @@ Use the startup editor to configure startup apps on your Windows IoT Core device
 * `IotStartup stop [MyApp]` stop app identified by `MyApp`
 * For further help, try `IotStartup help`
 
-### **Change settings for region and user or speech language:**
+### Change settings for region and user or speech language
 
 The `IoTSettings` tool changes region, user language, or speech language. This is a command line tool that can be invoked from an application using the ProcessLauncher API. These commands must be run as default account, not administrator.
 
@@ -61,92 +62,94 @@ The `IoTSettings` tool changes region, user language, or speech language. This i
 > [!TIP]
 > `IoTSettings -list uiLanguage` will give back the list of supported UI language (in the version of Windows IoT core image it has been executed against)
 
-### **Change default audio device and volume:**
+### Change default audio device and volume
 
 The `IoTCoreAudioControlTool` tool controls audio related options, such as setting default capture and playback devices and changing the volume. For a full list of parameters, run `IoTCoreAudioControlTool h`.
 
-### **Manually installing .APPX files:**
+### Manually installing .APPX files
+
 DeployAppx enables installing, and removing in .APPX packages in development scenarios.  The correct method for installing .APPX packages in production images is to use a provisioning package as documented in the [Install your app](../develop-your-app/appinstaller.md#using-provisioning-package-from-wcd) subject.  DeployAppx also supports querying .APPX package information.
 
-*  `DeployAppx install MyApp.appx` installs the .APPX and the certificate of the same name if found.
+* `DeployAppx install MyApp.appx` installs the .APPX and the certificate of the same name if found.
 * `DeployAppx install force MyApp.appx` forces uninstalling the currently installed .APPX with the same package name if found before installing the new .APPX.  This is useful for installing an .APPX with the same or lower version number as the currently installed .APPX.
 * `DeployAppx install retry MyApp.appx` retry installing the .APPX 10 times on failure with 2-second delay between attempts.
 * `DeployAppx uninstall App_1.0.1.0_x86__publisherid123` uninstall the .appx with the matching package full name.
-*  `DeployAppx uninstall MyApp.appx` uninstall any installed .APPX with a matching package family name.
+* `DeployAppx uninstall MyApp.appx` uninstall any installed .APPX with a matching package family name.
 * `DeployAppx getpackages` lists installed package full names.
 * `DeployAppx getpackageid IotCoreDefaultApp.appx` prints out the package name, the package family name, and the package full name for the .APPX.
+
 ```cmd
 DeployAppx getpackageid IotCoreDefaultApp.appx
          Package Name: 16454Windows10IOTCore.IOTCoreDefaultApplication
   Package Family Name: 16454Windows10IOTCore.IOTCoreDefaultApplication_rz84sjny4rf58
     Package Full Name: 16454Windows10IOTCore.IOTCoreDefaultApplication_2.0.8.0_arm__rz84sjny4rf58
 ```
-* `DeployAppx register appxmanifest.xml` unsupported
 
+* `DeployAppx register appxmanifest.xml` unsupported
 
 ## General Command Line Utils
 
-### **Update account password:**
+### Update account password
 
 It is highly recommended that you update the default password for the Administrator account. To do this, you can issue the following command: `net user Administrator [new password]` where `[new password]` represents a strong password of your choice.
 
-### **Create local user accounts:**
+### Create local user accounts
 
 If you wish to give others access to your Windows IoT Core device, you can create additional local user accounts using PS by typing in `net user [username] [password] /add`. If you wish to add this user to other groups, such as the Administrator group, use `net localgroup Administrators [username] /add`.
 
-### **Set password:**
+### Set password
 
 To change the password on an account on your device, run `net user [account-username] [new-password]` to change the account password.
 
-### **Query and set device name:**
+### Query and set device name
 
 To identify your current device name, simply type `hostname`. To change the name of your Windows IoT Core device, type `SetComputerName [new machinename]`. You may need to restart your device for the name change to take effect.
 
-### **Basic network configuration:**
+### Basic network configuration
 
 Many of the basic network configuration utilities you may already be familiar with are available in Windows IoT Core, including commands such as `ping.exe`, `netstat.exe`, `netsh.exe`, `ipconfig.exe`, `tracert.exe`, and `arp.exe`.
 
-### **Copy utilities:**
+### Copy utilities
 
 Microsoft is providing familiar tools, including `sfpcopy.exe` as well as `xcopy.exe`.
 
-### **Process Management:**
+### Process Management
 
 To view currently running processes, you can try either `get-process` or alternatively `tlist.exe`. To stop a running process, type `kill.exe [pid or process name]`.
 
-
-### **Set Boot Option (Headless vs. headed boot):**
+### Set Boot Option (Headless vs. headed boot)
 
 Windows IoT Core devices can be set to headed (when display capabilities are required) or headless (when a display is not required or available) device mode. To change this setting, use `setbootoption.exe [headed | headless]`.
 
 > [!NOTE]
 > Changing this setting will require a reboot in order for the change to take effect.
 
-### **Task scheduler:**
+### Task scheduler
 
 To view the current list of scheduled tasks, use the `schtasks.exe` command. You can create new tasks with the `/create` switch or run on-demand tasks with the `/run` switch. For a full list of supported parameters, use `schtasks.exe /?`
 
-### **Device drivers:**
+### Device drivers
 
 The device console utility is useful in identifying and managing installed devices and drivers. For a full list of parameters, use `devcon.exe /?`
 
-### **Registry Access:**
+### Registry Access
 
 If you need to access the registry to view or modify settings, use the `reg.exe /?` Command for the full list of supported parameters.
 
-### **Services:**
+### Services
 
 Managing Windows services can be accomplished via the `net.exe` command. To see a list of running services, type `net start`. To start or stop a specific service, type `net [start | stop] [service name]`. Alternatively, you can also use the service control manager via `sc.exe` command.
 
-### **Boot configuration:**
+### Boot configuration
 
 You can make changes to the boot configuration of your Windows IoT Core device by using `bcdedit.exe`. For instance, you can enable testsigning with `bcdedit –set testsigning on` command.
 
-### **Shutdown/restart device:**
+### Shutdown/restart device
 
 To shut down your device, type `shutdown /s /t 0`. To restart the device, use the `/r` switch instead with the command `shutdown /r /t 0`.
 
-### **Viewing and changing display settings**
+### Viewing and changing display settings
+
 The SetDisplayResolution tool may be used for listing the current display settings and to show the list of supported values.  It can further be used for adjusting the display's resolution, refresh rate and/or orientation to values supported by your platform.  The utility accepts the following command line arguments:
 
 * `SetDisplayResolution` Lists the current display resolution.
@@ -156,22 +159,23 @@ The SetDisplayResolution tool may be used for listing the current display settin
 * `SetDisplayResolution [width] [height] [refreshrate]` Change width, height, and refresh rate where width and height are in pixels and refreshrate in Hz
 * `SetDisplayResolution [width] [height] [refreshrate] [orientation]` Change width, height, refreshrate and screen orientation where width and height are in pixels, refreshrate in Hz and orientation is one of 0, 90, 180 or 270.
 
-### **Take screenshot:**
+### Take screenshot
 
 You can take the screenshot of your Windows IoTCore device by using `ScreenCapture.exe`. For example, run `ScreenCapture c:\folder\screencap.jpg` will take the screenshot and save it in screencap.jpg file.
 
-### **Get information about Network Adapters:**
+### Get information about Network Adapters
 
 To view the list of all the available network adapters, run `GetAdapterInfo` tool.
 
-### **Set folder permissions for UWP apps:**
+### Set folder permissions for UWP apps
 
 Not all folders on your device are accessible by Universal Windows Apps. To make a folder accessible to a UWP app, you can use `FolderPermissions` tool. For example, run `FolderPermissions c:\test -e` to give UWP apps access to `c:\test` folder. Note this will work only with native Win32 apis for eg. CreateFile2 and not with WinRT apis like StorageFolder, StorageFile etc.
 
-### **Work with Serial Ports:**
+### Work with Serial Ports
+
 [MinComm](https://github.com/ms-iot/samples/tree/develop/MinComm) allows you to work with serial ports from the command line. It is provided as a sample project in the ms-iot samples repo.
 
-```
+```cmd
 Usage: MinComm.exe [-list] device_path [baud=<B>] [parity=<P>] [data=<D>] [stop=<S>] [xon={on|off}] [odsr={on|off}] [octs={on|off}] [dtr={on|off|hs}] [rts={on|off|hs|tg}] [idsr={on|off}]
 
   -list                List all available serial ports on the system and exit.

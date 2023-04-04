@@ -1,6 +1,6 @@
 ---
 title: Dragonboard Pin Mappings
-ms.date: 04/09/2018
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -46,8 +46,7 @@ The following GPIO pins are accessible through APIs:
 > | 28    | 33                 |
 > | 33    | 34                 |
 > | 21    | User LED 1         |
-> | 120   | User LED 2         |         
-
+> | 120   | User LED 2         |
 
 As an example, the following code opens **GPIO 35** as an output and writes a digital '**1**' out on the pin:
 
@@ -56,11 +55,11 @@ using Windows.Devices.Gpio;
 
 public void GPIO()
 {
-	GpioController Controller = GpioController.GetDefault(); /* Get the default GPIO controller on the system */
+    GpioController Controller = GpioController.GetDefault(); /* Get the default GPIO controller on the system */
 
-	GpioPin Pin = Controller.OpenPin(35);       /* Open GPIO 35                      */
-	Pin.SetDriveMode(GpioPinDriveMode.Output);  /* Set the IO direction as output   */
-	Pin.Write(GpioPinValue.High);               /* Output a digital '1'             */
+    GpioPin Pin = Controller.OpenPin(35);       /* Open GPIO 35                      */
+    Pin.SetDriveMode(GpioPinDriveMode.Output);  /* Set the IO direction as output   */
+    Pin.Write(GpioPinValue.High);               /* Output a digital '1'             */
 }
 ```
 
@@ -70,7 +69,6 @@ public void GPIO()
 * Pins are configured as InputPullDown at boot, but will change to Input (floating) the first time they are opened
 * Pins do not revert to their default state when closed
 * Spurious interrupts may be seen when interrupts are enabled on multiple pins
-
 
 ## Serial UART
 
@@ -82,7 +80,6 @@ There are two Serial UARTS available on the Dragonboard **UART0** and **UART1**
 * Pin 7  - **UART0 RX**
 * Pin 3 - **UART0 CTS**
 * Pin 9 - **UART0 RTS**
-
 
 **UART1** includes just the **UART1 TX** and **UART1 RX** lines.
 
@@ -98,33 +95,34 @@ using Windows.Devices.SerialCommunication;
 
 public async void Serial()
 {
-	string aqs = SerialDevice.GetDeviceSelector("UART1");                   /* Find the selector string for the serial device   */
-	var dis = await DeviceInformation.FindAllAsync(aqs);                    /* Find the serial device with our selector string  */
-	SerialDevice SerialPort = await SerialDevice.FromIdAsync(dis[0].Id);    /* Create an serial device with our selected device */
+    string aqs = SerialDevice.GetDeviceSelector("UART1");                   /* Find the selector string for the serial device   */
+    var dis = await DeviceInformation.FindAllAsync(aqs);                    /* Find the serial device with our selector string  */
+    SerialDevice SerialPort = await SerialDevice.FromIdAsync(dis[0].Id);    /* Create an serial device with our selected device */
 
-	/* Configure serial settings */
-	SerialPort.WriteTimeout = TimeSpan.FromMilliseconds(1000);
-	SerialPort.ReadTimeout = TimeSpan.FromMilliseconds(1000);
-	SerialPort.BaudRate = 9600;
-	SerialPort.Parity = SerialParity.None;         
-	SerialPort.StopBits = SerialStopBitCount.One;
-	SerialPort.DataBits = 8;
+    /* Configure serial settings */
+    SerialPort.WriteTimeout = TimeSpan.FromMilliseconds(1000);
+    SerialPort.ReadTimeout = TimeSpan.FromMilliseconds(1000);
+    SerialPort.BaudRate = 9600;
+    SerialPort.Parity = SerialParity.None;         
+    SerialPort.StopBits = SerialStopBitCount.One;
+    SerialPort.DataBits = 8;
 
-	/* Write a string out over serial */
-	string txBuffer = "Hello Serial";
-	DataWriter dataWriter = new DataWriter();
-	dataWriter.WriteString(txBuffer);
-	uint bytesWritten = await SerialPort.OutputStream.WriteAsync(dataWriter.DetachBuffer());
+    /* Write a string out over serial */
+    string txBuffer = "Hello Serial";
+    DataWriter dataWriter = new DataWriter();
+    dataWriter.WriteString(txBuffer);
+    uint bytesWritten = await SerialPort.OutputStream.WriteAsync(dataWriter.DetachBuffer());
 
-	/* Read data in from the serial port */
-	const uint maxReadLength = 1024;
-	DataReader dataReader = new DataReader(SerialPort.InputStream);
-	uint bytesToRead = await dataReader.LoadAsync(maxReadLength);
-	string rxBuffer = dataReader.ReadString(bytesToRead);
+    /* Read data in from the serial port */
+    const uint maxReadLength = 1024;
+    DataReader dataReader = new DataReader(SerialPort.InputStream);
+    uint bytesToRead = await dataReader.LoadAsync(maxReadLength);
+    string rxBuffer = dataReader.ReadString(bytesToRead);
 }
 ```
+
 > [!NOTE]
-> Visual Studio 2017 has a known bug in the Manifest Designer (the visual editor for appxmanifest files) that affects the serialcommunication capability.  If your appxmanifest adds the serialcommunication capability, modifying your appxmanifest with the designer will corrupt your appxmanifest (the Device xml child will be lost).  You can workaround this problem by hand editting the appxmanifest by right-clicking your appxmanifest and selecting View Code from the context menu.
+> Visual Studio 2017 has a known bug in the Manifest Designer (the visual editor for appxmanifest files) that affects the serialcommunication capability.  If your appxmanifest adds the serialcommunication capability, modifying your appxmanifest with the designer will corrupt your appxmanifest (the Device xml child will be lost).  You can workaround this problem by hand editing the appxmanifest by right-clicking your appxmanifest and selecting View Code from the context menu.
 
 You must add the following capability to the **Package.appxmanifest** file in your UWP project to run Serial UART code:
 
@@ -184,7 +182,6 @@ public async void I2C()
 }
 ```
 
-
 ## SPI Bus
 
 Let's look at the SPI bus available on this device.
@@ -201,7 +198,6 @@ There is one SPI controller **SPI0** available on the DB
 ### SPI Issues
 
 The SPI clock is fixed at 4.8mhz. The requested SPI clock will be ignored.
-
 
 ### SPI Sample
 

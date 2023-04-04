@@ -1,6 +1,6 @@
 ---
 title: IoT Shell Overview
-ms.date: 06/21/2019
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -39,18 +39,18 @@ The rest of this document covers how to implement this feature manually.
 
 ### Return Home
 
-With the Windows 10 IoT Anniversary Update (1607), the IoT Shell supports bringing the default application window to the foreground when another application is running by pressing the "GO HOME" key, which is set to the release of the Windows Button on a keyboard. If you don't have a keyboard on your IoT Device and need to inject low-level keyboard events through [HID Injection](https://developer.microsoft.com/en-us/windows/iot/samples/hidinjection), or if you just want to re-map the "GO HOME" functionality to a different key in your app, you can adjust the key value in the registry. For example, to enable pressing the ESCAPE key (0x1B) to "GO HOME", enter the following command in the registry:
+With the Windows 10 IoT Anniversary Update (1607), the IoT Shell supports bringing the default application window to the foreground when another application is running by pressing the "GO HOME" key, which is set to the release of the Windows Button on a keyboard. If you don't have a keyboard on your IoT Device and need to inject low-level keyboard events through [HID Injection](https://github.com/microsoft/Windows-iotcore-samples), or if you just want to re-map the "GO HOME" functionality to a different key in your app, you can adjust the key value in the registry. For example, to enable pressing the ESCAPE key (0x1B) to "GO HOME", enter the following command in the registry:
 
-``
+```reg
 “HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\HotKeys” “HOME” QWORD    0x0000000 0000001B  
-``
+```
 
 As a REG file, this looks as follows:
 
-``
+```reg
 [HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\HotKeys]
 "Home"=hex(b):1B,00,00,00,00,00,00,00
-``
+```
 
 ### Switch Between Apps
 
@@ -77,7 +77,7 @@ The above REG file entries decode left to right as follows:
 - Bits 16-19: Modifier Key. 0x0 = No Modifier, 0x1 = ALT, 0x2 = CTRL, and 0x4 = SHIFT. Combining keys adds the values together (i.e. ALT+SHIFT is 0x5)
 - Bits 20-47: Reserved for future use; must be 0
 - Bits 48-62:  Action
-    - 0 = Home
-    - 1 = Previous View (may not work in future releases)
-    - 2 = Next View (may not work in future releases)
+  - 0 = Home
+  - 1 = Previous View (may not work in future releases)
+  - 2 = Next View (may not work in future releases)
 - Bit 63: Reserved; must be 0

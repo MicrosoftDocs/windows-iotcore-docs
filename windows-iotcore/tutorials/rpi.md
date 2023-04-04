@@ -1,6 +1,6 @@
 ---
 title: Setting up a Raspberry Pi
-ms.date: 05/23/2019
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -14,19 +14,20 @@ ms.custom: RS5
 ## Overview
 
 > [!NOTE]
-> Dashboard cannot be used used to setup the Raspberry Pi 3B+. If you have a 3B+ device, you must use the [3B+ technical preview](https://www.microsoft.com/en-us/software-download/windowsiot). Please view the [known limitations](../troubleshooting.md) of the technical preview to determine if this is suitable for your development.
+> Dashboard cannot be used used to setup the Raspberry Pi 3B+. If you have a 3B+ device, you must use the [3B+ technical preview](https://www.microsoft.com/software-download/windowsiot). Please view the [known limitations](../troubleshooting.md) of the technical preview to determine if this is suitable for your development.
 
 > [!IMPORTANT]
 > When the "format this disk" pop up comes up, do _not_ format the disk. We are working on a fix for this issue.
 
 When setting up a Raspberry Pi for prototyping, we recommend using the Windows 10 IoT Core Dashboard. However, if you're looking to manufacture with a Raspberry Pi, please refer to the [IoT Core Manufacturing Guide](/windows-hardware/manufacture/iot/iot-core-manufacturing-guide). You cannot use maker images for manufacturing.
-<br>
-> [!Video https://www.youtube.com/embed/JPRUbGIyODY]
+
+> [!VIDEO https://www.youtube.com/embed/JPRUbGIyODY]
 
 ## Using the Dashboard
 
 To flash, or download, IoT Core onto your Raspberry Pi, you'll need:
-* A computer running Windows 10 
+
+* A computer running Windows 10
 * [Windows 10 IoT Core Dashboard](../downloads.md)
 * A high-performance SD card, such as a SanDisk SD card
 * An external display
@@ -34,24 +35,27 @@ To flash, or download, IoT Core onto your Raspberry Pi, you'll need:
 
 ### Instructions
 
-1. Run the Windows 10 IoT Core Dashboard and click on *Set up a new device* and insert an SD card into your computer.
+1. Run the Windows 10 IoT Core Dashboard and click on _Set up a new device_ and insert an SD card into your computer.
 2. Hook up your Raspberry Pi to an external display.
 3. Fill out the fields. Select "Broadcomm [Raspberry Pi 2 & 3]" as the device type. Make sure to give your device a new name and password. Otherwise the default credentials will remain as:
 
-```
-Device: minwinpc
-Password: p@ssw0rd
-```
+    ```text
+    Device: minwinpc
+    Password: p@ssw0rd
+    ```
 
-4. Accept the software license terms and click *Download and Install*. If all goes well, you'll see that Windows 10 IoT Core is now flashing your SD card.
+4. Accept the software license terms and click _Download and Install_. If all goes well, you'll see that Windows 10 IoT Core is now flashing your SD card.
 
 ![Dashboard screenshot](../media/DeviceSetup/Dashboard-Screenshot.jpg)
 
 ## Connect to a network
+
 ### Wired connection
+
 If your device comes with an Ethernet port or USB Ethernet adapter support to enable a wired connection, attach an Ethernet cable to connect it to your network.
 
 ### Wireless connection
+
 If your device supports Wi-Fi connectivity and you've connected a display to it, you'll need to:
 
 1. Go into your default application and click the settings button next to the clock.

@@ -1,6 +1,6 @@
 ---
 title: Remote display
-ms.date: 07/24/2018
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -9,6 +9,7 @@ keywords: windows iot, UWP, remote display, remote, UWP applications
 ---
 
 # Remote display
+
 View and control your Windows 10 IoT Core UWP applications remotely, from a Windows 10 desktop PC, tablet, or phone
 
 > [!WARNING]
@@ -18,12 +19,12 @@ View and control your Windows 10 IoT Core UWP applications remotely, from a Wind
 > The Windows IoT Remote client does not work for Raspberry Pi. Use a board with accelerated graphics such as Minnowboard Max or Dragonboard or attach a monitor for local display.
 
 ## Overview
-___
-The remote display experience is a developer tool used to remotely control UWP applications running on a Windows 10 IoT Core device.   
+
+The remote display experience is a developer tool used to remotely control UWP applications running on a Windows 10 IoT Core device.
 
 ## Setup
-___
-To get started, you'll need to set up a Windows 10 IoT Core device with the latest build of Windows 10 - visit the [Get Started](https://developer.microsoft.com/en-us/windows/iot/getstarted) page to set up your board.
+
+To get started, you'll need to set up a Windows 10 IoT Core device with the latest build of Windows 10 - visit the [Get Started](https://developer.microsoft.com/windows/iot/getstarted) page to set up your board.
 
 Setup is quick and easy - follow the three steps below to use the remote display technology.
 
@@ -35,15 +36,14 @@ Setup is quick and easy - follow the three steps below to use the remote display
 
     Connect your device to the Internet and connect to Windows Device Portal.
 
-	Choose the page "Remote" from the options on the left, and mark the check box labeled "Enable Window IoT Remote Server".  Your device is now enabled for remote display experience.
+    Choose the page "Remote" from the options on the left, and mark the check box labeled "Enable Window IoT Remote Server".  Your device is now enabled for remote display experience.
     ![Enable remote display experience](../media/RemoteDisplay/enable-remote.png)
 
 1. Install the Windows IoT Remote Client on your companion Windows 10 device.
 
-    To enable a Windows 10 device to connect to your Windows 10 IoT Core device, you need to install our Store application.  The Windows IoT Remote Client app is currently available by link only and can be found [here](https://www.microsoft.com/en-us/store/apps/iot-remote-client/9nblggh5mnxz).
+    To enable a Windows 10 device to connect to your Windows 10 IoT Core device, you need to install our Store application.  The Windows IoT Remote Client app is currently available by link only and can be found [here](https://www.microsoft.com/store/apps/iot-remote-client/9nblggh5mnxz).
 
     ![Install client app](../media/RemoteDisplay/store-app.png)
-
 
 1. Connect to your Windows 10 IoT Core device through the installed application.
 
@@ -52,17 +52,16 @@ Setup is quick and easy - follow the three steps below to use the remote display
     You're now connected! From this point forward, touch and click input on the companion Windows 10 device can be used to control the Windows 10 IoT Core UWP application.  
     ![Connect device](../media/RemoteDisplay/connect-device.png)
 
-
 ## Compatibility and scope
-___
+
 In order to use the IoT Remote Client, you must be running the latest build of Windows 10 IoT Core on the target device and the latest client application from the store.
 
-
 ## Troubleshooting
-___
+
 Using the remote display technology is quick and easy, but there are still some issues that users may experience.  Make sure to follow the Setup instructions above closely - if problems persist, check below.
 
-### When I try to connect, the client app goes to a white screen.
+### When I try to connect, the client app goes to a white screen
+
 Failed connections can be caused by a number of issues, but we've run into a couple more common problems:
 
 1. Ensure that you are running the latest insider version of Windows 10 IoT Core and the IoT Remote Client application.
@@ -76,8 +75,8 @@ Failed connections can be caused by a number of issues, but we've run into a cou
     * Edit the `<MicroSD card drive>:\config.txt`
     * Add the following lines:
 
-```
-  hdmi_force_hotplug=1
-  hdmi_group=2
-  hdmi_mode=9
-```
+        ```text
+        hdmi_force_hotplug=1
+        hdmi_group=2
+        hdmi_mode=9
+        ```

@@ -1,8 +1,8 @@
 ---
 title: Security Flow and Certificates
 author: jchen
-ms.author: jchen
-ms.date: 04/29/2018
+ms.author: twarwick
+ms.date: 04/04/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -12,6 +12,6 @@ keywords: windows iot, secure boot, BitLocker, device guard, security, turnkey s
 
 # Security Flow and Certificates used in Securing Windows 10 IoT Core
 
-Windows 
+Windows
 
 - ![securityflow1.jpg](../media/SecurityFlowAndCertificates/securityflow.jpg)

@@ -1,6 +1,6 @@
 ---
 title: Windows 10 IoT Resources
-ms.date: 09/07/2018
+ms.date: 04/03/2023
 ms.topic: article 
 ms.prod: windows-iot
 ms.technology: iot
@@ -17,7 +17,7 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Open Robotics and Microsoft release ROS on Windows 10 IoT Enterprise](https://blogs.windows.com/buildingapps/2019/05/07/open-robotics-and-microsoft-release-ros-on-windows-10-iot-enterprise/#Y86A6YUJELKDoRJJ.97)
 * [Microsoft Azure IoT Device Agent V2 general availability](https://blogs.windows.com/buildingapps/2019/05/07/microsoft-azure-iot-device-agent-v2-general-availability/#BwOSxBSymeJqU34K.97)
 * [Evolution of Windows IoT: The foundation for your intelligent edge](https://blogs.windows.com/windowsexperience/2019/04/03/evolution-of-windows-iot-the-foundation-for-your-intelligent-edge/)
-* [Windows 10 IoT delivers innovation and intelligence at the edge with the October 2018 Update](https://blogs.windows.com/windowsexperience/2018/10/04/windows-10-iot-delivers-innovation-and-intelligence-at-the-edge-with-the-october-2018-update/#9g9hmmO2AdUB1C6F.97) 
+* [Windows 10 IoT delivers innovation and intelligence at the edge with the October 2018 Update](https://blogs.windows.com/windowsexperience/2018/10/04/windows-10-iot-delivers-innovation-and-intelligence-at-the-edge-with-the-october-2018-update/#9g9hmmO2AdUB1C6F.97)
 * [Windows 10 IoT - Tomorrow's IoT today](https://blogs.windows.com/windowsexperience/2018/06/05/windows-10-iot-tomorrows-iot-today/#wl3TcsFseJ6XROUZ.97)
 * [Do more at the intelligent edge with Windows 10 IoT](https://blogs.windows.com/windowsexperience/2018/05/07/do-more-at-the-intelligent-edge-with-windows-10-iot/#uDVaAtoBvz7BGrTf.97)
 * [Microsoft doubles down on Windows 10 IoT with added support](https://blogs.windows.com/windowsexperience/2018/02/27/microsoft-doubles-down-on-windows-10-iot-with-added-support/#DJaDiKX0bYJ1JDHD.97)
@@ -25,6 +25,7 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 ## Videos
 
 >[!Video https://www.youtube.com/embed/Cmj0sxBRofs]
+
 * [Modernizing Windows CE devices](https://www.youtube.com/watch?time_continue=1&v=5iUZkZmgmJA)
 * [Introduction to Windows Server IoT 2019](/Shows/Internet-of-Things-Show/Introduction-to-Windows-Server-IoT-2019)
 * [Getting started with ROS on Windows](https://www.youtube.com/watch?v=nZSjwMLi3jQ)
@@ -36,11 +37,13 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Windows 10 IoT and Azure IoT Device Management Enhancement](/Shows/Azure-Friday/Windows-10-IoT-and-Azure-IoT-Device-Management-Enhancements?term=windows%20iot%20core)
 
 ## Whitepapers
+
 * [Azure IoT Edge + Windows IoT: Supporting AI at the edge](https://aka.ms/IoT-Edge-WP)
 * [Windows Machine Learning: Implement AI in your Windows apps](https://aka.ms/Windows-ML-WP)
 * [Create more secure IoT solutions with Windows IoT](https://aka.ms/secure-windowsiot)
 
 ## Webinars
+
 * [AI at the Edge](https://youtu.be/DEOCKFb7lvM)
 
 ## Learning resources
@@ -53,7 +56,6 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Getting started with Windows 10 IoT Core on Hackster.io](http://www.hackster.io/KiwiBryn)
 * [Window 10 IoT Core HATs](https://github.com/Turta-io/IoTHAT)
 
-
 ## Our technology partners
 
 * [Azul Systems](https://www.azul.com/)
@@ -61,11 +63,3 @@ keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, resources, Most Valued
 * [Global Graphics Software](https://www.globalgraphics.com/)
 * [IntervalZero](https://www.intervalzero.com/)
 * [TeamViewer](https://www.teamviewer.us/)
-
-
-
-
- 
-
-
-

@@ -1,6 +1,6 @@
 ---
 title: Arduino Wiring Porting Guide
-ms.date: 08/28/2017
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -21,14 +21,15 @@ It might go without saying, but many sketches and libraries (especially those fo
 Arduino Wiring ultimately requires a physical connector pin number for any functions that refer to 'pins'. You can use these numbers directly, but we've also provided some pre-defined pin names which correspond to connector pins on specific boards.
 
 For example, the physical connector pin 29 on a Raspberry Pi 2 and 3 is also known as `GPIO5`. You may set GPIO pin 5 to a HIGH state on a Raspberry Pi 2 and 3 by using either of the following commands:
-```
+
+```text
 pinMode( 29, OUTPUT );
 digitalWrite( 29, HIGH );
 ```
 
 or
 
-```
+```text
 pinMode( GPIO5, OUTPUT );
 digitalWrite( GPIO5, HIGH );
 ```
@@ -43,9 +44,9 @@ The pre-defined pin names can be found in [pins_arduino.h](https://github.com/ms
 > | Pin Define | Corresponding Pin Number|
 > |-------------|----------|
 > | LED_BUILTIN | *onboard LED* |
-> | GPIO* _where * refers to [0, 27]_ | *refer to pinout diagram* |
+> | `GPIO* where * refers to [0, 27]` | *refer to pinout diagram* |
 > | GCLK | 7 |
-> | GEN* _where * refers to [0, 5]_ | *refer to pinout diagram |
+> | `GEN* where * refers to [0, 5]` | *refer to pinout diagram |
 > | SCL1 | 5 |
 > | SDA1 | 3 |
 > | CS0 (or CE0 or SS) | 24 |
@@ -62,7 +63,7 @@ The pre-defined pin names can be found in [pins_arduino.h](https://github.com/ms
 > [!div class="mx-tdBreakAll"]
 > | Pin Define | Corresponding Pin Number|
 > |-------------|----------|
-> | GPIO* _where * refers to [0, 9]_  | *refer to pinout diagram* |
+> | `GPIO* where * refers to [0, 9]`  | *refer to pinout diagram* |
 > | SCL | 13 |
 > | SDA | 15 |
 > | CS0 (or CE0 or SS) | 5 |
@@ -75,7 +76,6 @@ The pre-defined pin names can be found in [pins_arduino.h](https://github.com/ms
 > | TX1 | 6 |
 > | RX2 | 19 |
 > | TX2 | 17 |
-
 
 ## Common Problems
 
@@ -95,7 +95,7 @@ The pre-defined pin names can be found in [pins_arduino.h](https://github.com/ms
 
 The following block of code will raise the error "'myFunction': identifier not found"
 
-```
+```c++
 void setup()
 {
 
@@ -178,17 +178,17 @@ void setup()
 
 void loop()
 {
-	if( initialized )
-	{
-		//do something
-	}
+    if( initialized )
+    {
+        //do something
+    }
 }
 
 bool setPinModes()
 {
-	if( pin < 0 ) return false;
-	pinMode( pin, OUTPUT );
-	return true;
+    if( pin < 0 ) return false;
+    pinMode( pin, OUTPUT );
+    return true;
 }
 ```
 
@@ -202,22 +202,22 @@ bool initialized;
 
 void setup()
 {
-	initialized = setPinModes();
+    initialized = setPinModes();
 }
 
 void loop()
 {
-	if( initialized )
-	{
-		//do something
-	}
+    if( initialized )
+    {
+        //do something
+    }
 }
 
 bool setPinModes()
 {
-	if( pin < 0 ) return false;
-	pinMode( pin, OUTPUT );
-	return true;
+    if( pin < 0 ) return false;
+    pinMode( pin, OUTPUT );
+    return true;
 }
 ```
 
@@ -287,7 +287,7 @@ void loop()
 Many Arduino sketches use `Serial` to print data to the serial console (if opened) or to write to the serial lines (USB or tx/rx).
 In prior versions of the Lightning SDK, Hardware `Serial` support wasn't included, so we provided a `Log()` function which will print to the debugger output window in Visual Studio. `Serial.print*()` or `Serial.write()` had to be removed.
 
-However, starting with _Lightning SDK v1.1.0_, we've added `Hardware Serial` support and both `Serial.print*()` or `Serial.write()` functions are fully supported. So, if you are copying a sketch built for an Arduino, you won't need to replace any of these Serial references in the Windows IoT version of the sketch.
+However, starting with *Lightning SDK v1.1.0*, we've added `Hardware Serial` support and both `Serial.print*()` or `Serial.write()` functions are fully supported. So, if you are copying a sketch built for an Arduino, you won't need to replace any of these Serial references in the Windows IoT version of the sketch.
 
 Furthermore, we've extended the functionality of `Serial.print()` and `Serial.println()`, to output to the debugger window when a debugger is attached - in addition to writing to the hardware serial pins.
 The debug output printing is set as the default since reading that output is what most users would want when running their sketches. However, that functionality can be disabled as well; e.g. to improve performance, simply call `Serial.enablePrintDebugOutput(false);` to disable it in your sketch. To re-enable it, call `Serial.enablePrintDebugOutput(true);`. Writing to the hardware serial pins is not affected by those calls.

@@ -1,8 +1,8 @@
 ---
 title: Specify available on-screen keyboard language layouts
 author: johntasler
-ms.author: jtasler
-ms.date: 09/12/2018
+ms.author: twarwick
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -37,18 +37,18 @@ layouts for the following languages:
 By pressing and holding the OSK's "&123" button, the user can select which layout they want to use:
 
 ![All languages](../media/OnScreenKeyboard/AllLanguages.png)
- 
+
 As an OEM, however, you can limit which layout choices are displayed to the user. To limit which layouts to show the user, first reference the guidance from the [Keyboard Layout doucmentation on TechNet](/previous-versions/windows/it-pro/windows-2000-server/cc978687(v=technet.10)).
- 
+
 For a concrete example, if you want to only allow North America language layouts (en-US, en-CA, es-MX, fr-CA), you could add the following to your OEMCustomization.cmd script:
 
-```console
+```cmd
 call "%~dp0\setKeyboardLanguages.cmd"
 ```
 
 Where setKeyboardLanguages.cmd is a script in the same directory containing this:
- 
-```console
+
+```cmd
 @echo off
 
 set getDefaultAccountSID="wmic.exe useraccount where name='DefaultAccount' get sid"
@@ -75,13 +75,14 @@ The resulting effect of the above command script will be:
 
 ![North American languages](../media/OnScreenKeyboard/NorthAmericanLanguages.png)
 
-### Some things to note:
-*  The value names indicate a decimal sequence.
-*  The values are string values (REG_SZ).
-*  The script text above, of course, could be added directly into the OEMCustomization.cmd script.
-*  **Do not** delete the "Preload" registry key since it has permissions set on it specifically to allow the on-screen keyboard application to read its values.
-*  A prerequisite for these instructions to be applicable, is that your image must include the following features*:
-   * IOT_SHELL_ONSCREEN_KEYBOARD
-   * IOT_SHELL_ONSCREEN_KEYBOARD_FOLLOWFOCUS
+## Some things to note
+
+* The value names indicate a decimal sequence.
+* The values are string values (REG_SZ).
+* The script text above, of course, could be added directly into the OEMCustomization.cmd script.
+* **Do not** delete the "Preload" registry key since it has permissions set on it specifically to allow the on-screen keyboard application to read its values.
+* A prerequisite for these instructions to be applicable, is that your image must include the following features*:
+  * IOT_SHELL_ONSCREEN_KEYBOARD
+  * IOT_SHELL_ONSCREEN_KEYBOARD_FOLLOWFOCUS
 
 For more information about IoT Features, see [IoT Core Feature List](/windows-hardware/manufacture/iot/iot-core-feature-list).

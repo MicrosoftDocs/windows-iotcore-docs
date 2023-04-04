@@ -1,6 +1,6 @@
 ---
 title: Mobile Broadband Connection
-ms.date: 06/12/2018
+ms.date: 03/31/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -16,7 +16,7 @@ Mobile Broadband Connection is supported on [Windows 10 IoT Core](http://windows
 
 `MBBConnect` is developed and tested with MinnowBoard Max based IoT gateway running IoT Core version 16299 and the mobile broadband modem module with the SIM card from major telecom provider in Taiwan.
 
-### Usage
+## Usage
 
 1. Copy `MBBConnect.exe` to IoT gateway.
 
@@ -28,18 +28,20 @@ Mobile Broadband Connection is supported on [Windows 10 IoT Core](http://windows
 
    * [SSH](./ssh.md)
 
-3. Switch to the folder where `MBBConnect.exe` is located. 
-   ```
+3. Switch to the folder where `MBBConnect.exe` is located.
+
+   ```cmd
    Command: MBBConnect.exe <APN name>
    <APN name>: It depends on your SIM card’s provider. 
    ```
 
 ### Example
+
 The example below uses MBBConnect.exe in PowerShell. For example, if the APN of the SIM card is “Internet”, use `MBBConnect.exe Internet` to connect.
- 
+
 The output message will show the flow:
 
-* The state is changed from Not Connected to Connected. 
+* The state is changed from Not Connected to Connected.
 
 * WWAN network is configured successfully.
 

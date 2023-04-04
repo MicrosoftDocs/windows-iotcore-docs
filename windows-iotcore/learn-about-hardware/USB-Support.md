@@ -1,6 +1,6 @@
 ---
 title: An Overview on USB Support and Dual Role for Windows 10 IoT Core
-ms.date: 08/13/2020
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -35,31 +35,36 @@ Every USB device has unique VID and PID, which identify it. An OEM, as the manuf
 
 ### Supporting from the device side
 
-_Features to include in FFU for image generation with USBFN enabled_
+Features to include in FFU for image generation with USBFN enabled
 
-* The IoT image must have the necessary packages in it, namely ufx01000.sys and usbfnclx.sys. They both come with the following package `Microsoft-IoTUAP-USBFN-Class-Extension-Package.cab`. OEMs must use a proper "feature" tag in their XML file, which lists all features included in the FFU. For example, in the BoardTestOEMInput.xml file there will be the following entry `<Feature>IOT_USBFN_CLASS_EXTENSION</Feature>` included under <Microsoft> features section. 
+* The IoT image must have the necessary packages in it, namely ufx01000.sys and usbfnclx.sys. They both come with the following package `Microsoft-IoTUAP-USBFN-Class-Extension-Package.cab`. OEMs must use a proper "feature" tag in their XML file, which lists all features included in the FFU. For example, in the BoardTestOEMInput.xml file there will be the following entry `<Feature>IOT_USBFN_CLASS_EXTENSION</Feature>` included under `<Microsoft>` features section.
 
-_USB Role Switching driver_
+USB Role Switching driver
+
 * For the USB OTG, OEMs have to supply the correct ACPI table entry (*myOTGacpi*) for the USB role-switching driver and the driver itself (*myURS.sys).
 
-_USB Function Controller Driver_
+USB Function Controller Driver
+
 * This depends on the hardware used by OEMs. Microsoft supplies USB Function Controller drivers for two popular USB OTG chipsets - Synopsys and ChipIdea.
 * If an OEM chooses to use another USB OTG chipset, then the OEM must supply their own USB function controller hardware (*myfunctioncontroller.sys*).
 
-_USB Function Class drivers_
+USB Function Class drivers
+
 * At least one USB function class driver must be supplied.
 * This driver implements specific USB device functionality. It determines what the device will appear as on the host side as well as what it will do.
 For example, it may appear as a serial communications device or as a mass storage device or a completely custom type device (*myUSBFN.sys*).
 
-_Configuring USB Function Device_
+Configuring USB Function Device
+
 * When the IoT platform is in USB device mode, it can operate under one or more configurations. Each configuration in use must be added and have its properties specified.
 
-_Common Properties_
+Common Properties
+
 * There are common properties for all USB function configurations of the IoT platform. It is ultimately up to the OEM to specify standard USB descriptor
 entries such as VID, PID, DeviceClass, DeviceProtocol, Manufacturer string, serial number, etc.
 * These common properties are set in registry in the following location: `HKLM\System\ControlSet001\Control\USBFN\default`
 
-```
+```Text
 BcdDevice=0x1
 bDeviceClass=0x0
 bDeviceProtocol=0x0
@@ -71,10 +76,11 @@ iSerialNumber=3
 ManufacturerString=OEMname
 ProductString="Windows IOT"
 ```
+
 > [!IMPORTANT]
 > The values above are for demonstration purposes only and cannot be used in any product. The OEM must replace these placeholder fields with *actual values* in each entry above.
 
-_Per configuration properties_
+Per configuration properties
 
 Configurations are stored in a registry under the following key: `HKLM\SYSTEM\ControlSet001\Control\USBFN\Configurations`
 
@@ -84,12 +90,12 @@ This empty default configuration results in the IoT platform appearing as a Wind
 
 ![Configurations for USBFN](../media/USB-Support/config-screenshot.png)
 
-Each configuration must specify certain properties, such as the Interface List. The IoT platform can operate as a USB device with different configurations, whic hare defined by USB interfaces
+Each configuration must specify certain properties, such as the Interface List. The IoT platform can operate as a USB device with different configurations, which are defined by USB interfaces
 that are exposed from USB device to USB host.
 
 `HKLM\System\CurrentControlSet\Control\USBFN\Configurations\Default`
 
-```
+```text
 InterfaceList =
 InterfaceDescriptor =
 InterfaceGUIDE =
@@ -97,18 +103,18 @@ InterfaceGUIDE =
 
 Currently, the selected configuration is the one that will be in effect when connecting to the USB hot: `HKLM\SYSTEM\ControlSet001\Control\USBFN`
 
-_Examples of configurations_
+Examples of configurations
 
 1. Single configuration
    1. Must contain at least one interface
-   2. Can be a default configuration
-   3. When connected to a PC, the IoT platform will appear as that type of USB device (e.g. modem or storage).
-   4. `HKLM\SYSTEM\ControlSet001\Control\USBFN\Configurations\default`, `InterfaceList = "MODEM\0MTP"`
+   1. Can be a default configuration
+   1. When connected to a PC, the IoT platform will appear as that type of USB device (e.g. modem or storage).
+   1. `HKLM\SYSTEM\ControlSet001\Control\USBFN\Configurations\default`, `InterfaceList = "MODEM\0MTP"`
 
-2. Composite configuration
+1. Composite configuration
    1. Contains a list of interfaces with additional parameters
-   2. When connected to a PC, the IoT platform will appear as a composite USB device with multiple units in it (i.e. MTP device, serial device, custom device).
-   3. `HKLM\SYSTEM\ControlSet001\Control\USBFN\Configurations\mycfg`, `InterfaceList = "MODEM\0MTP"`
+   1. When connected to a PC, the IoT platform will appear as a composite USB device with multiple units in it (i.e. MTP device, serial device, custom device).
+   1. `HKLM\SYSTEM\ControlSet001\Control\USBFN\Configurations\mycfg`, `InterfaceList = "MODEM\0MTP"`
 
 USBFN Interfaces are enumerated in registry under the following key:
 `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\USBFN\Interfaces`

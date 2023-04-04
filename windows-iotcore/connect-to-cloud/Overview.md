@@ -1,6 +1,6 @@
 ---
 title: Overview of IoT on the Cloud
-ms.date: 08/28/2017
+ms.date: 03/31/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -16,15 +16,9 @@ project.
 
 ## Messaging
 
-Usually, IoT devices communicate with the cloud or each other by sending and
-receiving messages. The payload of a message sent from the device to cloud can 
-be as small as a value from a sensor and as big as a video file. A cloud to
-device message is typically a command instructing the device to perform an action.
+Usually, IoT devices communicate with the cloud or each other by sending and receiving messages. The payload of a message sent from the device to cloud can be as small as a value from a sensor and as big as a video file. A cloud to device message is typically a command instructing the device to perform an action.
 
-
-Message-passing communication patterns vary in complexity ranging from simple 
-one-way messaging to more complex protocols such as request-response or 
-transactional protocols such as the two-phase commit.
+Message-passing communication patterns vary in complexity ranging from simple one-way messaging to more complex protocols such as request-response or transactional protocols such as the two-phase commit.
 
 ## Security
 
@@ -39,4 +33,3 @@ Azure cloud service that offers reliable and secure device-to-cloud
 and cloud-to-device messaging that scales to millions of devices. It offers a
 streamlined programming model that lets you get started with minimum effort and
 scale up your solution as its needs grow.
-

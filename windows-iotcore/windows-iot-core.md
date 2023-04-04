@@ -47,7 +47,7 @@ While Windows 10 IoT Core and Windows 10 IoT Enterprise are similar in name, the
 > | User experience | One UWP app in the foreground at a time (see [IoT Shell documentation](./develop-your-app/iotcoreshell.md) for app backstack handling) with supporting background apps and services. | Traditional Windows Shell with Advanced Lockdown Features |
 > | Headless supported | Yes | Yes |
 > | App architecture supported | UWP UI only | Full Windows UI support (e.g. UWP, WinForms, etc) |
-> | Cortana | [*Cortana SDK*](https://developer.microsoft.com/cortana/devices) | Yes |
+> | Cortana | [*Cortana SDK*](https://www.microsoft.com/cortana) | Yes |
 > | Domain join | AAD only | AAD and Traditional Domain |
 > | Management | MDM | MDM |
 > | Device Security Technologies | [TPM](./secure-your-device/TPM.md), [Secure Boot, BitLocker, Device Guard](./secure-your-device/securebootandbitlocker.md), and Device Health Attestation | [TPM](./secure-your-device/TPM.md), [Secure Boot, BitLocker, Device Guard](./secure-your-device/securebootandbitlocker.md) and Device Health Attestation |
@@ -63,7 +63,7 @@ If you're interested in learning more about Point of Service, please visit the [
 
 ### Different features available on Desktop and IoT Core
 
-* Inbox Cortana is no longer available on Windows 10 IoT Core since version 1809 (17763). If you are looking to bring a voice-enabled device to market quickly, you can integrate Cortana support into the device using the [preview of the Cortana Devices SDK](https://developer.microsoft.com/cortana/devices).
+* Inbox Cortana is no longer available on Windows 10 IoT Core since version 1809 (17763). If you are looking to bring a voice-enabled device to market quickly, you can integrate Cortana support into the device using the [preview of the Cortana Devices SDK](https://www.microsoft.com/cortana).
 * The [FileOpenPicker API](/uwp/api/windows.storage.pickers.fileopenpicker) is not supported in Windows 10 IoT Core. To access local drives or removable storage, you can implement this in your own application.
 * Out of the box, The Windows 10 IoT Core device will boot to the [default app](./develop-your-app/iotcoredefaultapp.md) instead of a desktop-like PC. However, for commercialization, this default app **must** be replaced by either a custom app or a default app that can be modified. The purpose of this application is not only to provide you with a friendly shell to interact with upon first boot, but to also allow you to use the [open-sourced code](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp) for this application so that you can use these features to plug and play your own custom application(s).
 

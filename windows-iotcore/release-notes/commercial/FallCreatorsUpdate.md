@@ -1,6 +1,6 @@
 ---
 title: Fall Creators Update - Build 16299
-ms.date: 10/12/2017
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -9,19 +9,21 @@ keywords: Windows IoT, Fall Creators Update, release notes
 ---
 
 # Fall Creators Update Release Notes for Windows 10 IoT
+
 Build Number 16299. October 2017
 
 Windows 10 IoT enables development of embedded or dedicated-purpose devices and is the choice for OEMs and developers building Windows solutions for smart devices.
 
 This document provides information that supplements other content and documentation for this release of Windows 10 IoT.
 
-To download this latest build as well as packages, please visit the [Windows Insider Preview Downloads page](https://www.microsoft.com/en-us/software-download/windowsiot).
+To download this latest build as well as packages, please visit the [Windows Insider Preview Downloads page](https://www.microsoft.com/software-download/windowsiot).
 
 ## Privacy Statement
 
 The privacy statement for this version of the Windows operating system can be viewed at [https://go.microsoft.com/fwlink/?LinkId=521839](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 ## What's New in Fall Creators Update
+
 * [.NET for UWP apps](/dotnet/api/?f=255&mspperror=-2147217396), the set of managed types that can be used to build Universal Windows Platform apps using C# or Visual Basic, has been augmented with [thousands of new APIs](https://blogs.msdn.microsoft.com/dotnet/2017/08/25/uwp-net-standard-2-0-preview/) to make it compliant with .NET Standard 2.0.
 * Updated language support on Windows 10 IoT Core including English (en-US and en-GB), French (fr-FR and fr-CA), Spanish (es-ES and es-MX), and Simplified Chinese (zh-CN). You can create FFUs supporting multiple languages - see [MultiLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/16299/Source-arm/Products/MultiLangSample) and [SingleLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/16299/Source-arm/Products/SingleLangSample) for more information.
 * Support for [Emergency Management Services](/previous-versions/windows/it-pro/windows-server-2003/cc736319(v=ws.10)) on Windows 10 IoT Core.
@@ -38,6 +40,7 @@ The privacy statement for this version of the Windows operating system can be vi
 * Added language selection and localized layouts to On-Screen Keyboard. For more information, see  [On-Screen Keyboard Layouts](../../develop-your-app/onscreenkeyboardlayouts.md).
 
 ## Features in Preview for Dev and Test Scenarios
+
 * Component Update Service [Preview] allows OEMs to globally manage their apps and push updates for the operating system, apps, settings, and files from the cloud to devices to keep them up to date and secure.
 * Support for hosting [Nano Server Containers](/virtualization/windowscontainers/about/index) on 64-bit editions of Windows 10 IoT Core and Enterprise, enabling applications and their data can be isolated from each other and quickly moved from development to production or cloud to the edge.
 * Windows Device Health Attestation [Preview] service uses hardware features and cloud services to provide tamper-proof and remote attestation of device health based on hardware-level metrics and attested data.
@@ -46,7 +49,9 @@ The privacy statement for this version of the Windows operating system can be vi
 * [Azure IoT Device Management [Preview]](../../manage-your-device/azureiotdm.md) enables IoT operators to manage device configuration such as installed applications, Windows updates, certificates, and network settings remotely from the cloud.
 
 ## Windows 10 IoT Core Reference Images
-___ 
+
+___
+
 * Minnowboard Max
   * Processor: Intel Atom E3825
   * Architecture: x86
@@ -61,9 +66,11 @@ ___
   * BSP Version: 2112.0.0.0
 
 ## Additional Information
+
 * Based on the recent Intel announcement to stop producing the Intel Joule platform, FFUs for Intel Joule are discontinued in this release. Customers evaluating Intel Joule should identify an alternative platform using one of the other supported SoCs - see [Suggested Boards and SoCs](../../tutorials/quickstarter/prototypeboards.md) for a list.
 * The IOT_WEBB_EXTN feature has been refactored to remove the onboarding feature, which is now available as IOT_ONBOARDING_APP. With this update, the onboarding feature will be removed and devices using this feature should be reflashed to get this feature again.
 
 ## Known Issues
+
 * F5 driver deployment from Visual Studio does not work on Windows 10 IoT Core. Drivers must be manually copied and registered on the device.
 * The Windows IoT Remote client does not work for Raspberry Pi. Use a board with accelerated graphics such as Minnowboard Max or Dragonboard or attach a monitor for local display.

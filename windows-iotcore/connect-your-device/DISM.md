@@ -2,7 +2,7 @@
 title: Use DISM to flash Windows 10 IoT Core
 author: bfjelds
 ms.author: bfjelds
-ms.date: 04/01/2019
+ms.date: 03/31/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -27,21 +27,27 @@ You can use Deployment Image Servicing and Management(Dism.exe) to flash Windows
 * Plug in your SD card to your machine.
 
 * Find the disk number that your SD card is on your computer.  This will be used when the image is applied in the next step.  To do this, you can use the diskpart utility.  Run the following commands:
-```
+
+```cmd
         c:\FFUFolder>diskpart
 
         DISKPART>list disk
 ```
+
 It should list all the storage devices attached to the computer.
 
 ![DISM List Disk](../media/Dism/DiskpartListDisk.png)
 
 Note the disk number and type exit to exit diskpart.
-```
+
+```cmd
         DISKPART>exit
 ```
+
 * Using the administrator command prompt, apply the image to your SD card by running the following command (be sure to replace PhysicalDriveN with the value you found in the previous step, for example, in this case SD card is disk number 4, so we will use  `/ApplyDrive:\\.\PhysicalDrive4` below)
-```
+
+```cmd
         dism.exe /Apply-Image /ImageFile:"[FULLPATH]\flash.ffu" /ApplyDrive:\\.\PhysicalDriveN /SkipPlatformCheck
 ```
+
 * Click on the "Safely Remove Hardware" icon in your task tray and select your USB SD card reader to safely remove it from the system.  Failing to do this can cause corruption of the image.

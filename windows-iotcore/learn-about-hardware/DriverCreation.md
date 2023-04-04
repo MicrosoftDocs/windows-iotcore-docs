@@ -2,7 +2,7 @@
 title: Universal Driver Creation
 author: parameshbabu
 ms.author: pabab
-ms.date: 09/08/2017
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -17,6 +17,7 @@ This document will walk you through the creation of Universal Drivers for your I
 Universal Drivers enable you to create a single driver package that runs across several device types running UWP-based editions of Windows 10, including IoT Core.
 
 This driver package contains a Universal INF file and several binaries. The requirements for each are as follows:
+
 - Universal INF files can only use [the subset of INF syntax supported on UWP-based editions of Windows](/windows-hardware/drivers/install/using-a-universal-inf-file#which-inf-sections-are-invalid-in-a-universal-inf-file). While writing your INF file, use the [InfVerif tool](/windows-hardware/drivers/devtest/infverif) to verify that the file adheres to that syntax.
 
 - binaries can only use device driver interfaces supported on UWP-based editions of Windows 10 (marked as Universal on the documentation reference pages): [KMDF](/windows-hardware/drivers/wdf/index), [UMDF 2](/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2), or the Windows Driver Model (WDM). They can also only call APIs included in the OneCore Subset. Use the [ApiValidator tool](/windows-hardware/drivers/develop/validating-universal-drivers) to verify that the APIs your binaries call are valid.
@@ -27,8 +28,6 @@ If you would like **a sample to help you create a Universal Driver on IoT Core**
 
 ## Additional Universal Driver Resources
 
-
 1. For additional details on **design principles** and **best practices** when developing a Universal Driver package, please visit [Getting Started with Universal Drivers](/windows-hardware/drivers/develop/getting-started-with-universal-drivers)
 
 2. For help **debugging your Universal Driver**, please visit [Debugging a Universal Windows driver](/windows-hardware/drivers/develop/debugging-a-universal-driver).
-

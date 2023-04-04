@@ -1,6 +1,6 @@
 ---
 title: Arduino Wiring Project Guide
-ms.date: 08/28/2017
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -32,9 +32,11 @@ We've provided a Visual Studio extension which will automatically install a VS t
 You will need to be running the Direct Memory Mapped Driver to write Arduino Wiring solutions! Refer to the [Lightning Setup Guide](../develop-your-app/LightningSetup.md) for instructions!
 
 ## Develop
-Complete one of the "Wiring" samples on the [Samples Page](https://developer.microsoft.com/en-us/windows/iot/samples), or build your own project! Any of the samples we've created that are written using Arduino Wiring will be listed like so: [Blinky (Wiring)](/samples/microsoft/windows-iotcore-samples/hello-blinky-background). Blinky, the cononical "Hello World" project for IoT projects, is a great place to start for your first project!
+
+Complete one of the "Wiring" samples on the [Samples Page](https://developer.microsoft.com/windows/iot/samples), or build your own project! Any of the samples we've created that are written using Arduino Wiring will be listed like so: [Blinky (Wiring)](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground). Blinky, the cononical "Hello World" project for IoT projects, is a great place to start for your first project!
 
 ### Create a new Project
+
 1. Open Visual Studio.
 
 2. Select File -> New -> Project...
@@ -43,7 +45,6 @@ Complete one of the "Wiring" samples on the [Samples Page](https://developer.mic
 Visual C++ -> Windows -> Windows IoT Core -> Arduino Wiring Application for Windows IoT Core  
 (might appear instead as)  
 Visual C++ -> Windows IoT Core -> Arduino Wiring Application for Windows IoT Core
-
 
 ![App Create](../media/ArduinoWiring/appcreate.png)
 

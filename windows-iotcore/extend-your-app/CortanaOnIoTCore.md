@@ -1,6 +1,6 @@
 ---
 title: Cortana on IoT Core
-ms.date: 08/28/2017
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -15,7 +15,7 @@ Cortana is a personal digital assistant working across all your devices to help 
 
 To enable hands-free intelligent assistance in your device with the Cortana Device SDK, please visit [The Cortana Dev Center](/cortana/skills/).
 
-Cortana on IoT Core will focus on commercial scenarios in the future. Updates will come soon. 
+Cortana on IoT Core will focus on commercial scenarios in the future. Updates will come soon.
 
 <!--
 To use Cortana:
@@ -61,12 +61,12 @@ quality, here is a recommended list of hardware that has been tested.
 
 To get started with Cortana on Windows 10 IoT Core, a few additional set up steps are necessary.
 
-### Install [Windows 10 IoT Core Dashboard](https://developer.microsoft.com/en-us/windows/iot/Downloads).
+### Install [Windows 10 IoT Core Dashboard](https://developer.microsoft.com/windows/iot/Downloads).
 
 ### Flash the IoT Device
 
-[Flash your IoT Core device](https://developer.microsoft.com/en-us/windows/iot/getstarted) with the correct image. If you have trouble finding the image for
-your IoT device, please go to [Windows Insider Preview Downloads](https://www.microsoft.com/en-us/software-download/windowsiot) page.
+[Flash your IoT Core device](https://developer.microsoft.com/windows/iot/getstarted) with the correct image. If you have trouble finding the image for
+your IoT device, please go to [Windows Insider Preview Downloads](https://www.microsoft.com/software-download/windowsiot) page.
 
 ### Install Update
 
@@ -133,7 +133,6 @@ Enter Device Portal again - to do this, enter:
 `http://<deviceIP>:8080/\#Device%20Settings` into a browser. Under Device
 Settings, scroll to the bottom and check **"Start Cortana on Boot"** if it is not checked. Restart the device (top right corner of the browser
 has a Power button with Restart option)
-
 
 ![Start Cortana](../media/CortanaOnIoTCore/StartCortana.png)
 
@@ -328,8 +327,7 @@ Cortana to do more.
 -   With the Windows 10 Creators Update, the following capabilities of
     Cortana will be enabled on IoT Core.
 
-    -   Cortana skills sample list	   - Reminder, To-do list, Traffic/Restuarant, Chit Chat, Dictionary, Finance, Health,News, Reference, Show Times, Calculator, Weather, Entity look up, Events, Sports,Time zone, etc.
-
+    -   Cortana skills sample list	   - Reminder, To-do list, Traffic/Restaurant, Chit Chat, Dictionary, Finance, Health,News, Reference, Show Times, Calculator, Weather, Entity look up, Events, Sports,Time zone, etc.
 
 -   Catered to devices with small- or medium-sized screens (e.g. thermostat or refrigerator), provide a voice response with optimized visual content.
 

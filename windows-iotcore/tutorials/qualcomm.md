@@ -1,6 +1,6 @@
 ---
 title: Setting up Qualcomm devices
-ms.date: 06/07/2019 
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -31,9 +31,11 @@ If you're looking to manufacture with a Qualcomm device, please refer to the [Io
 ## Connect to a network
 
 ### Wired connection
+
 If your device comes with an Ethernet port or USB Ethernet adapter support to enable a wired connection, attach an Ethernet cable to connect it to your network.
 
 ### Wireless connection
+
 If your device supports Wi-Fi connectivity and you've connected a display to it, you'll need to:
 
 1. Go into your default application and click the settings button next to the clock.

@@ -1,6 +1,6 @@
 ---
 title: Enabling Secure Boot, BitLocker, and Device Guard on Windows 10 IoT Core
-ms.date: 08/28/2017
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -78,12 +78,11 @@ Here are the steps taken by Windows Code Integrity:
 Windows 10 IoT Core also implements a lightweight version of BitLocker Device Encryption, protecting IoT devices against offline attacks. This capability has a strong dependency on the presence of a TPM on the platform, including the necessary pre-OS protocol in UEFI that conducts the necessary measurements. These pre-OS measurements ensure that the OS later has a definitive record of how the OS was launched; however, it does not enforce any execution restrictions.
 
 > [!TIP]
-> BitLocker functionality on Windows 10 IoT Core allows for automatic encryption of NTFS-based OS volume while binding all available NTFS data volumes to it. For this, it’s necessary to ensure that the EFIESP volume GUID is set to _C12A7328-F81F-11D2-BA4B-00A0C93EC93B_.
+> BitLocker functionality on Windows 10 IoT Core allows for automatic encryption of NTFS-based OS volume while binding all available NTFS data volumes to it. For this, it’s necessary to ensure that the EFIESP volume GUID is set to *C12A7328-F81F-11D2-BA4B-00A0C93EC93B*.
 
 ### Device Guard on Windows IoT Core
 
 Most IoT devices are built as fixed-function devices. This implies that device builders know exactly which firmware, operating system, drivers, and applications should be running on a given device. In turn, this information can be used to fully lockdown an IoT device by only allowing execution of known and trusted code. Device Guard on Windows 10 IoT Core can help protect IoT devices by ensuring that unknown or untrusted executable code cannot be run on locked-down devices.
-
 
 ## Turnkey Security on IoT Core
 
@@ -100,7 +99,7 @@ The following steps will lead through the process to create a lockdown image usi
 ### Prerequisites
 
 * A PC running Windows 10 Enterprise (other Windows versions are **not** supported by the provided scripts)
-* [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) - Required for Certificate Generation
+* [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-sdk) - Required for Certificate Generation
 * [Windows 10 ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) - Required for CAB generation
 * Reference platform - release hardware with shipping firmware, OS, drivers, and applications will be required for final lockdown
 
@@ -114,7 +113,7 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
 
 * Intel MinnowBoardMax
 
-    For Intel's MinnowBoard Max, firmware version must be 0.82 or higher (get the [latest firmware](https://firmware.intel.com/projects/minnowboard-max)). To enable TPM capabilities, power up board with a keyboard & display attached and press F2 to enter UEFI setup. Go to _Device Manager -> System Setup -> Security Configuration -> PTT_ and set it to _&lt;Enable&gt;_. Press F10 to save changes and proceed with a reboot of the platform.
+    For Intel's MinnowBoard Max, firmware version must be 0.82 or higher (get the [latest firmware](https://firmware.intel.com/projects/minnowboard-max)). To enable TPM capabilities, power up board with a keyboard & display attached and press F2 to enter UEFI setup. Go to *Device Manager -> System Setup -> Security Configuration -> PTT* and set it to *&lt;Enable&gt;*. Press F10 to save changes and proceed with a reboot of the platform.
 
 > [!NOTE]
 > Raspberry Pi 2 nor 3 do not support TPM and so we cannot configure Lockdown scenarios.
@@ -123,12 +122,12 @@ Windows 10 IoT Core works with various silicons that are utilized in hundreds of
 
 Follow the instructions in the following two links:
 
- * [Adding Security Packages](https://github.com/ms-iot/iot-adk-addonkit/blob/17763-v7/Tools/README.md#adding-security-packages)
+* [Adding Security Packages](https://github.com/ms-iot/iot-adk-addonkit/blob/17763-v7/Tools/README.md#adding-security-packages)
 
- * [Lab 1a Create a basic image](/windows-hardware/manufacture/iot/create-a-basic-image?view=windows-10)
-
+* [Lab 1a Create a basic image](/windows-hardware/manufacture/iot/create-a-basic-image)
 
 ### Test Lockdown packages
+
 You can test the security packages generated here <YOUR_IOT_ADD_ON_WORKSPACE>\Build\<ARCH>\<OEM_NAME>.Security.* .cab> by manually installing them on a unlocked device by the following steps
 
 1. Flash the device with the unlocked image (image used for scanning in earlier step).
@@ -143,6 +142,7 @@ You can test the security packages generated here <YOUR_IOT_ADD_ON_WORKSPACE>\Bu
     ```C
     applyupdate -stage c:\OemInstall\OEM.Custom.Cmd.cab
     ```
+
     If you are using custom image, then you will have to *skip* this file and manually edit the `c:\windows\system32\oemcustomization.cmd` with the contents available in `Output\OEMCustomization\OEMCustomization.cmd` file
 
     ```C
@@ -193,7 +193,7 @@ See [SecureSample](https://github.com/ms-iot/iot-adk-addonkit/) as an example of
 
 ### Developing with CodeSigning Enforcement Enabled
 
-Once the packages are generated and lockdown is activated, any binaries introduced into the image during development will need to be signed appropriately. Ensure that your user-mode binaries are signed with the key  _.\Keys\ ***-UMCI.pfx_. For kernel-mode signing, such as for drivers, you’ll need to specify your own signing keys and make sure that they are also included in the SIPolicy above.
+Once the packages are generated and lockdown is activated, any binaries introduced into the image during development will need to be signed appropriately. Ensure that your user-mode binaries are signed with the key  *.\Keys\ ***-UMCI.pfx*. For kernel-mode signing, such as for drivers, you’ll need to specify your own signing keys and make sure that they are also included in the SIPolicy above.
 
 ### Unlocking Encrypted Drives
 

@@ -2,7 +2,7 @@
 title: Investigating memory leaks
 author: paulmon
 ms.author: riameser
-ms.date: 12/10/2018
+ms.date: 04/01/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -21,15 +21,14 @@ For foreground applications, you can [follow the documentation](/visualstudio/pr
 However, these tools don't work directly with a Windows IoT Core **Background Application**. One way to profile code used in a background application is to wrap it in a foreground app for analysis:
 
 1. Add a **Blank App** to the **Background App** solution
-2. Right-click the **Blank App** references and add a reference to the **Background App**
-3. Change the **Background App** Run() method to check if the taskInstance parameter is null and handle those cases differently.
-4. From the **BlankApp** call BackgroundApp::Run(null)
-5. Set a breakpoint on the call to BackgroundApp::Run
-6. When the breakpoint is hit find the **Diagnostic Tools** windows and click the ![Snapshot icon](../media/MemoryLeaks/Snapshot.PNG) button.
-
-8. Reproduce the problem
-9. Take another snapshot
-10. Use the **Diagnostic Tools** window to diagnose the leak.
+1. Right-click the **Blank App** references and add a reference to the **Background App**
+1. Change the **Background App** Run() method to check if the taskInstance parameter is null and handle those cases differently.
+1. From the **BlankApp** call BackgroundApp::Run(null)
+1. Set a breakpoint on the call to BackgroundApp::Run
+1. When the breakpoint is hit find the **Diagnostic Tools** windows and click the ![Snapshot icon](../media/MemoryLeaks/Snapshot.PNG) button.
+1. Reproduce the problem
+1. Take another snapshot
+1. Use the **Diagnostic Tools** window to diagnose the leak.
 
 ## Create a test app
 
@@ -37,6 +36,7 @@ Let's start with an application that allocates memory and doesn't free it to sim
 Begin by creating a new C# Background application: [Developing Background Applications](./BackgroundApplications.md)
 
 Replace the code in StartupTask.cs with this
+
 ```C#
 using System;
 using System.Collections.Generic;
@@ -121,6 +121,7 @@ Next right-click the foreground app project and click **Set as StartUp Project**
 ![Add New Project Picture  5](../media/MemoryLeaks/SetAsStartup.PNG)
 
 Add code to create an instance of your background application object and call Run passing in null as the only parameter.
+
 ```C#
 public MainPage()
 {
@@ -145,14 +146,14 @@ public void Run(IBackgroundTaskInstance taskInstance)
 ```
 
 1. Set a breakpoint on the call to task.Run(null).
-2. Set another breakpoint on timer.Change(Timeout.Infinite, Timeout.Infinite) in Timer_Tick in StartupTask.cs.
-3. Press F5 to begin debugging
-4. When you hit the first breakpoint, press the snapshot button to set the baseline to compare against
+1. Set another breakpoint on timer.Change(Timeout.Infinite, Timeout.Infinite) in Timer_Tick in StartupTask.cs.
+1. Press F5 to begin debugging
+1. When you hit the first breakpoint, press the snapshot button to set the baseline to compare against
 
-![Snapshot Icon 1](../media/MemoryLeaks/Snapshot.PNG)
+    ![Snapshot Icon 1](../media/MemoryLeaks/Snapshot.PNG)
 
-5. Press F5
-6. When you hit the second breakpoint press the snapshot button again to capture the current state.
+1. Press F5
+1. When you hit the second breakpoint press the snapshot button again to capture the current state.
 
 Now the diagnostic tools should show a graph with increasing memory use and two snapshot like this:
 
