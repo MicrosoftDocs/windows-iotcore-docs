@@ -8,7 +8,7 @@ keywords: Windows 10 IoT Core, Windows CE, application migration, CE App Contain
 
 # Getting Started Building Drivers for Windows CE App Container
 
-The Windows CE App Container is a technology that allows most CE applications to run on top of Windows 10 IoT Core. More information on how to get started can be found in the article, [Getting Started with CE App Container](https://docs.microsoft.com/windows/iot-core/windows-ce-app-container-getting-started).
+The Windows CE App Container is a technology that allows most CE applications to run on top of Windows 10 IoT Core. More information on how to get started can be found in the article, [Getting Started with CE App Container](/windows-ce-app-container-getting-started).
 
 > [!NOTE]
 > PRERELEASE - This technology is currently in prerelease. If you would like to explore creating a CE App Container Plug-in Driver
@@ -91,9 +91,9 @@ The CE App Container can support multiple plug-in drivers that each define their
 
 ## References
 
-- [Getting Started with CE App Container](https://docs.microsoft.com/windows/iot-core/windows-ce-app-container-getting-started)
-- [Get the tools needed to customize Windows 10 IoT Core](https://docs.microsoft.com/windows-hardware/manufacture/iot/set-up-your-pc-to-customize-iot-core)
-- [IoT Core Board Supported Packages (BSP)](https://docs.microsoft.com/windows-hardware/manufacture/iot/bsphardware)
-- [IoT Core Manufacturing Guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)
-- [Windows 10 IoT Core Dashboard](https://docs.microsoft.com/windows/iot-core/connect-your-device/iotdashboard)
-- [Create and Install Packages](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-install-package)
+- [Getting Started with CE App Container](/windows/iot-core/windows-ce-app-container-getting-started)
+- [Get the tools needed to customize Windows 10 IoT Core](/windows-hardware/manufacture/iot/set-up-your-pc-to-customize-iot-core)
+- [IoT Core Board Supported Packages (BSP)](/windows-hardware/manufacture/iot/bsphardware)
+- [IoT Core Manufacturing Guide](/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)
+- [Windows 10 IoT Core Dashboard](/windows/iot-core/connect-your-device/iotdashboard)
+- [Create and Install Packages](/windows-hardware/manufacture/iot/create-install-package)
