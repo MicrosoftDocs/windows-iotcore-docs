@@ -144,3 +144,5 @@ If you find that you'd still like to create a custom board, we have provided a f
 * [Myro PCB](http://www.myropcb.com/)
 * [OSH PARK](https://oshpark.com/)
 * [seeed studio](https://www.seeedstudio.com/)
+* [PCBGOGO](https://www.pcbgogo.com/)
+* [Bittele](https://www.7pcb.com/)
