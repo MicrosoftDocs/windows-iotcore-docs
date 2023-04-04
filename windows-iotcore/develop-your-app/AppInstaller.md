@@ -2,7 +2,7 @@
 title: Install your app on an IoT Core device
 author: parameshbabu
 ms.author: pabab
-ms.date: 06/05/2019
+ms.date: 03/31/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -11,6 +11,7 @@ keywords: windows iot, app installation, Windows Device Portal, devices
 ---
 
 # Install your app on an IoT Core device
+
 You can install your app using one of the two methods that are listed below.
 
 > [!NOTE]
@@ -30,33 +31,34 @@ To install your application on the device please do the following:
 
 1. Open the [Windows Device Portal](../manage-your-device/deviceportal.md) for your IoT device.
 
-2. In the **Apps** menu, install your app by selecting your app files and clicking **Install**.
+1. In the **Apps** menu, install your app by selecting your app files and clicking **Install**.
 
-3. Click **Select File**
+1. Click **Select File**
 
-4. Select your .appx file and click **Open**
+1. Select your .appx file and click **Open**
 
-5. Check **Allow me to select framework packages**
+1. Check **Allow me to select framework packages**
 
-6. Click **Next**
+1. Click **Next**
 
-7. For each item in the **Dependencies** folder for your .appx repeat step 7.1 and 7.2
+1. For each item in the **Dependencies** folder for your .appx repeat the following
 
-    7.1 Click **Choose File**
+    * Click **Choose File**
 
-    7.2 Select the dependency .appx and click **Open**
+    * Select the dependency .appx and click **Open**
 
-8. When all of the dependencies are added click **Install**
+1. When all of the dependencies are added click **Install**
 
-9. Wait for the install is completed and click **Done**
+1. Wait for the install is completed and click **Done**
 
- ![Install App](/windows/iot-core/media/AppInstaller/install-app.gif)
+    ![Install App](/windows/iot-core/media/AppInstaller/install-app.gif)
 
-10. The application will now be visible on the list of applications on your device.
- ![Install App](/windows/iot-core/media/AppInstaller/install-app.gif)
+1. The application will now be visible on the list of applications on your device.
 
+    ![Install App](/windows/iot-core/media/AppInstaller/install-app.gif)
 
 ## Using provisioning package from WCD
+
 You can create a provisioning package with the app and install the provisioning package on the device. This method works even on devices that do not have internet connection, and is the preferred method for installing the store license file. For example, this enables factory scenarios where the device is not connected to the internet but the primary app is a store-signed UWP app.
 
 > [!NOTE]
@@ -64,31 +66,33 @@ You can create a provisioning package with the app and install the provisioning 
 
 1. Open [Windows Configuration Designer (WICD)](/windows/configuration/provisioning-packages/provisioning-install-icd)
 
-2. Select **Advanced Provisioning**, Enter the project name and a description
+1. Select **Advanced Provisioning**, Enter the project name and a description
 
-3. Choose Windows 10 IoT Core for the project settings and skip the provisioning package import
+1. Choose Windows 10 IoT Core for the project settings and skip the provisioning package import
 
-4. On the left hand side, expand **Runtime Settings** and click on **Universal App Install > User Context App**
+1. On the left hand side, expand **Runtime Settings** and click on **Universal App Install > User Context App**
 
-5. Enter the Package Family Name of your app and click **Add**
+1. Enter the Package Family Name of your app and click **Add**
 
-6. Under the newly added PFN
-    - add the Appx and its dependencies
-    - set the DeploymentOptions to "Force target application shutdown"
+1. Under the newly added PFN
 
-7. For Store signed apps, you will need to specify the license. Under UserContextAppLicense,
-    - add LicenseProductID (available as LicenseID in the license XML file)
-    - change the license xml extension to *.ms-windows-store-license*.
-    - select your License Product ID on the left hand side and browse your license file to assign LicenseInstall field
+    * add the Appx and its dependencies
+    * set the DeploymentOptions to "Force target application shutdown"
 
-8. For non-store signed apps, you will need to add the app.cer file under **Certificates > RootCertificates**
+1. For Store signed apps, you will need to specify the license. Under UserContextAppLicense,
 
-9. Export the package
+    * add LicenseProductID (available as LicenseID in the license XML file)
+    * change the license xml extension to *.ms-windows-store-license*.
+    * select your License Product ID on the left hand side and browse your license file to assign LicenseInstall field
 
-10. Copy the exported .ppkg file to _C:\Windows\Provisioning\Packages_ on the IoT device using [SSH](../connect-your-device/ssh.md) or [PowerShell](../connect-your-device/powershell.md) and reboot. When the device reboots, the provisioning package is processed and the app is installed.
+1. For non-store signed apps, you will need to add the app.cer file under **Certificates > RootCertificates**
 
+1. Export the package
+
+1. Copy the exported .ppkg file to *C:\Windows\Provisioning\Packages* on the IoT device using [SSH](../connect-your-device/ssh.md) or [PowerShell](../connect-your-device/powershell.md) and reboot. When the device reboots, the provisioning package is processed and the app is installed.
 
 ## Add the app to the Windows IoT Core image(.ffu)
+
 You can add the app to be part of the Windows IoT Core image itself.
 This is the preferred method for OEMs to install apps on their devices.
 

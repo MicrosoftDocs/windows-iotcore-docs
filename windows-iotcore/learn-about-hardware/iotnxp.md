@@ -2,7 +2,7 @@
 title: Windows IoT and NXP i.MX
 author: chsha
 ms.author: chsha
-ms.date: 01/07/2020
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -11,7 +11,6 @@ keywords: Windows 10 IoT Core, Get Started, i.MX, NXP
 ---
 
 # Window 10 IoT Core and NXP i.MX SoCs
-
 
 NXP has made the board support packages (BSPs) for the i.MX 6, i.MX 7, and i.MX 8M family of SoCs available for commercial use. The highly optimized Windows 10 IoT Core BSPs on i.MX applications platforms make it easier to build secure, scalable solutions from device to cloud, ranging from provisioning to managing and securing devices at scale. Designers can easily run cloud services and gain insights from IoT devices. Windows 10 IoT Core on i.MX applications Processors provides faster time to market with many included user interfaces and device stacks that works out of the box.
 
@@ -25,17 +24,15 @@ If you have NXP hardware/BSP related questions or feedback on how the BSP can be
 
 If you need additional support beyond the community forums for BSP customization and integration for i.MX products, support is available via Pro-Support www.nxp.com/prosupport. Inquiries can be sent to [prosupport@nxp.com](mailto:prosupport@nxp.com). For Windows 10 IoT paid services and integration, please contact [epsoinfo@microsoft.com](mailto:epsoinfo@microsoft.com).
 
-
 ## Ecosystem Resources
 
 Several Microsoft and NXP partners have enabled Windows 10 IoT Core on commercial i.MX 6, i.MX 7, and i.MX 8M devices. Please contact the partner directly for hardware access.
-
 
 > | Device | Contact |
 > |-------|------|
 > | [Aaeon PICO-IMX6](https://www.aaeon.com/en/p/pico-itx-boards-pico-imx6/) | [David Hung](mailto:davidhung@aaeon.com.tw) |
 > | [Advantech RSB-4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858) | [buy@advantech.com](mailto:buy@advantech.com) |
-> | [FS Eletronik Systme armStone A9](https://www.fs-net.de/en/embedded-modules/single-board-computer-armstone/) | [support@fs-net.de](mailto:support@fs-net.de) |
+> | [FS Eletronik System armStone A9](https://www.fs-net.de/en/embedded-modules/single-board-computer-armstone/) | [support@fs-net.de](mailto:support@fs-net.de) |
 > | [Geniatech SoM-iMX6Q-Q7](https://www.geniatech.com/product/som-imx6q-q7/) | [Mike Decker](mailto:mike.decker@geniatech.com) or [Fang Jijun](mailto:Fjj@geniatech.com) |
 > | [Geniatech SoM-iMX7D](https://www.geniatech.com/product/som-imx7d/) | [Mike Decker](mailto:mike.decker@geniatech.com) or [Fang Jijun](mailto:Fjj@geniatech.com) |
 > | [Ka-Ro Electronics TX6UL, TX6S, TX6DL, and TX6Q](https://www.karo-electronics.de/produkte/produktauswahl-2020) | [Uwe Steinkohl](mailto:us@karo-electronics.de) |

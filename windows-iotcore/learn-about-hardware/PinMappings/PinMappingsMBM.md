@@ -1,6 +1,6 @@
 ---
 title: Minnowboard Max Pin Mappings
-ms.date: 04/04/2019
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -29,7 +29,7 @@ Hardware interfaces for the MinnowBoard Max are exposed through the 26-pin heade
 
 The MinnowBoard Max uses 3.3V logic levels on all IO pins. In addition all the pins are buffered by [TXS0104E](http://www.ti.com/product/txs0104e) level shifters, with the exception of power and ground pins.
  These level shifters appear as open collector outputs with a **10K&#x2126; resistive pull-up, and the pull-up is present regardless of whether the IO is set to input or output.**
- 
+
 The open-collector nature of the level shifters means is that the pins can output a '0' strongly, but only weakly output a '1'. This is important to keep in mind when attaching devices which draw current from the pins (such as an LED). See the [Blinky Sample](/samples/microsoft/windows-iotcore-samples/hello-blinky) for the correct way to interface an LED to the MinnowBoard Max.
 
 ## GPIO Pins
@@ -62,11 +62,11 @@ using Windows.Devices.Gpio;
 
 public void GPIO()
 {
-	GpioController Controller = GpioController.GetDefault(); /* Get the default GPIO controller on the system */
+    GpioController Controller = GpioController.GetDefault(); /* Get the default GPIO controller on the system */
 
-	GpioPin Pin = Controller.OpenPin(5);        /* Open GPIO 5                      */
-	Pin.SetDriveMode(GpioPinDriveMode.Output);  /* Set the IO direction as output   */
-	Pin.Write(GpioPinValue.High);               /* Output a digital '1'             */
+    GpioPin Pin = Controller.OpenPin(5);        /* Open GPIO 5                      */
+    Pin.SetDriveMode(GpioPinDriveMode.Output);  /* Set the IO direction as output   */
+    Pin.Write(GpioPinValue.High);               /* Output a digital '1'             */
 }
 ```
 
@@ -92,10 +92,10 @@ converter.
 UART2 does not support flow control, so accessing the following properties of
 SerialDevice can result in an exception being thrown:
 
- * BreakSignalState
- * IsDataTerminalReadyEnabled
- * IsRequestToSendEnabled
- * Handshake - only SerialHandshake.None is supported
+* BreakSignalState
+* IsDataTerminalReadyEnabled
+* IsRequestToSendEnabled
+* Handshake - only SerialHandshake.None is supported
 
 The example below initializes **UART2** and performs a write followed by a read:
 
@@ -106,29 +106,29 @@ using Windows.Devices.SerialCommunication;
 
 public async void Serial()
 {
-	string aqs = SerialDevice.GetDeviceSelector("UART2");                   /* Find the selector string for the serial device   */
-	var dis = await DeviceInformation.FindAllAsync(aqs);                    /* Find the serial device with our selector string  */
-	SerialDevice SerialPort = await SerialDevice.FromIdAsync(dis[0].Id);    /* Create an serial device with our selected device */
+    string aqs = SerialDevice.GetDeviceSelector("UART2");                   /* Find the selector string for the serial device   */
+    var dis = await DeviceInformation.FindAllAsync(aqs);                    /* Find the serial device with our selector string  */
+    SerialDevice SerialPort = await SerialDevice.FromIdAsync(dis[0].Id);    /* Create an serial device with our selected device */
 
-	/* Configure serial settings */
-	SerialPort.WriteTimeout = TimeSpan.FromMilliseconds(1000);
-	SerialPort.ReadTimeout = TimeSpan.FromMilliseconds(1000);
-	SerialPort.BaudRate = 9600;
-	SerialPort.Parity = SerialParity.None;         
-	SerialPort.StopBits = SerialStopBitCount.One;
-	SerialPort.DataBits = 8;
+    /* Configure serial settings */
+    SerialPort.WriteTimeout = TimeSpan.FromMilliseconds(1000);
+    SerialPort.ReadTimeout = TimeSpan.FromMilliseconds(1000);
+    SerialPort.BaudRate = 9600;
+    SerialPort.Parity = SerialParity.None;         
+    SerialPort.StopBits = SerialStopBitCount.One;
+    SerialPort.DataBits = 8;
 
-	/* Write a string out over serial */
-	string txBuffer = "Hello Serial";
-	DataWriter dataWriter = new DataWriter();
-	dataWriter.WriteString(txBuffer);
-	uint bytesWritten = await SerialPort.OutputStream.WriteAsync(dataWriter.DetachBuffer());
+    /* Write a string out over serial */
+    string txBuffer = "Hello Serial";
+    DataWriter dataWriter = new DataWriter();
+    dataWriter.WriteString(txBuffer);
+    uint bytesWritten = await SerialPort.OutputStream.WriteAsync(dataWriter.DetachBuffer());
 
-	/* Read data in from the serial port */
-	const uint maxReadLength = 1024;
-	DataReader dataReader = new DataReader(SerialPort.InputStream);
-	uint bytesToRead = await dataReader.LoadAsync(maxReadLength);
-	string rxBuffer = dataReader.ReadString(bytesToRead);
+    /* Read data in from the serial port */
+    const uint maxReadLength = 1024;
+    DataReader dataReader = new DataReader(SerialPort.InputStream);
+    uint bytesToRead = await dataReader.LoadAsync(maxReadLength);
+    string rxBuffer = dataReader.ReadString(bytesToRead);
 }
 ```
 
@@ -136,7 +136,7 @@ Note that you must add the following capability to the **Package.appxmanifest** 
 
 Visual Studio 2017 has a known bug in the Manifest Designer (the visual editor for appxmanifest files) that affects the serialcommunication capability.  If your appxmanifest adds the serialcommunication capability, modifying your appxmanifest with the designer will corrupt your appxmanifest (the Device xml child will be lost).  You can work around this problem by hand editing the appxmanifest by right-clicking your appxmanifest and selecting View Code from the context menu.
 
-```
+```xml
   <Capabilities>
     <DeviceCapability Name="serialcommunication">
       <Device Id="any">
@@ -205,7 +205,6 @@ There is one SPI controller **SPI0** available on the MBM:
 * Pin 7 - **SPI0 MISO**
 * Pin 11 - **SPI0 SCLK**
 * Pin 5 - **SPI0 CS0**
-
 
 ### SPI Sample
 

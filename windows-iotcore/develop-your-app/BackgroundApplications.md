@@ -1,6 +1,6 @@
 ---
 title: Background Applications
-ms.date: 01/29/2019
+ms.date: 04/01/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -87,41 +87,42 @@ To invoke a background application, you can either:
 
 1. Start a PowerShell (PS) session with your Windows IoT Core device as described [here](../connect-your-device/PowerShell.md).
 
-2. From the PS session, type:
+1. From the PS session, type:
 
-`[<your IP address>]: PS C:\> iotstartup list BackgroundApplication1`
+    `[<your IP address>]: PS C:\> iotstartup list BackgroundApplication1`
 
-3. You should see the full name of your background application, i.e. something like:
+1. You should see the full name of your background application, i.e. something like:
 
-`Headed   : BackgroundApplication1-uwp_cqewk5knvpvee!App
-Headless : BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee`
+    `Headed   : BackgroundApplication1-uwp_cqewk5knvpvee!App
+    Headless : BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee`
 
-4. The utility is confirming that your background application is an 'headless' application, and is installed correctly.  You will likely see a Headed entry as well for your Background Applications, but this can be disregarded.
+1. The utility is confirming that your background application is an 'headless' application, and is installed correctly.  You will likely see a Headed entry as well for your Background Applications, but this can be disregarded.
 
-5. Now, it's easy to set this app as a 'Startup App'. Just type the command:
+1. Now, it's easy to set this app as a 'Startup App'. Just type the command:
 
-`[<your IP address>]: PS C:\> iotstartup add headless BackgroundApplication1`
+    `[<your IP address>]: PS C:\> iotstartup add headless BackgroundApplication1`
 
-6. The utility will confirm that your background application has been added to the list of headless 'Startup Apps':
+1. The utility will confirm that your background application has been added to the list of headless 'Startup Apps':
 
-`Added Headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpveeplication1`
+    `Added Headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpveeplication1`
 
-7. Go ahead and restart your Windows IoT Core device. From the PS session, you can issue the shutdown command:
+1. Go ahead and restart your Windows IoT Core device. From the PS session, you can issue the shutdown command:
 
-`[<your IP address>]: PS C:\> shutdown /r /t 0`
+    `[<your IP address>]: PS C:\> shutdown /r /t 0`
 
-8. Once the device has restarted, your background application will start automatically and Windows 10 IoT Core will make sure that it gets restarted anytime it stops.  
+1. Once the device has restarted, your background application will start automatically and Windows 10 IoT Core will make sure that it gets restarted anytime it stops.  
 
-> [!NOTE]
-> Once a background app is registered to run automatically, if the app exits or crashes it will be automatically restarted.  The app isn't informed of the reason that it's being started or restarted so if you want to take special action on a restart you will need to track the app state in your app.
+    > [!NOTE]
+    > Once a background app is registered to run automatically, if the app exits or crashes it will be automatically restarted.  The app isn't informed of the reason that it's being started or restarted so if you want to take special action on a restart you will need to track the app state in your app.
 
-9. You can remove your background application from the list of headless Startup Apps by typing the command:
+1. You can remove your background application from the list of headless Startup Apps by typing the command:
 
-`[<your IP address>]: PS C:\> iotstartup remove headless BackgroundApplication1`
+    `[<your IP address>]: PS C:\> iotstartup remove headless BackgroundApplication1`
 
-10. The utility will confirm that your background application has been removed from the list of headless 'Startup Apps':
+1. The utility will confirm that your background application has been removed from the list of headless 'Startup Apps':
 
-`Removed headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee`
+    `Removed headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee`
 
 ## See Also
+
 To add a background app when building a custom image see [Create an Appx package](/windows-hardware/manufacture/iot/create-install-package)

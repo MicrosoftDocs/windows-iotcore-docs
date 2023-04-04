@@ -1,13 +1,14 @@
 ---
 description: 'Troubleshoot different development-related issues in Windows 10 IoT Core, such as problems with specific hardware devices.'
 title: 'Troubleshooting'
-ms.date: 08/28/2018
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
 ---
 
 # Troubleshooting
+
 This is an article that contains common troubleshooting issues that people have come across. To find something specific, use Ctrl+F to find a word or phrase. Have any insight you want to add? Create a PR for this documentation or provident content feedback below.
 
 > [!TIP]
@@ -22,59 +23,59 @@ While the ASUS Tinkerboard and Rockchip are not officially supported by us, ther
 There are two things to consider when enabling roaming:
 
 1. The profile.xml configures roaming and sets the behavior to automatically establish a connection to the cellular network.
-To set a profile for roaming, please refer to [this article](/windows/desktop/mbn/schema-root).
+    To set a profile for roaming, please refer to [this article](/windows/desktop/mbn/schema-root).
 
-```
-  <!-- applicability to any combination of home carrier, partner MOs and non-partner MOs, except for HomeAndNonPartner -->
-  <xs:simpleType name="roamApplicabilityType">
-    <xs:restriction base="xs:token">
-       <xs:enumeration value="NonPartnerOnly"/>
-       <xs:enumeration value="PartnerOnly"/>
-       <xs:enumeration value="HomeOnly"/>
-       <xs:enumeration value="HomeAndPartner"/>
-       <xs:enumeration value="PartnerAndNonpartner"/>
-       <xs:enumeration value="AllRoaming"/>
-    </xs:restriction>
-  </xs:simpleType>
-
-  <xs:simpleType name="roamControlType">
-    <xs:restriction base="xs:token">
-       <xs:enumeration value="AllRoamAllowed"/>
-       <xs:enumeration value="PartnerRoamAllowed"/>
-       <xs:enumeration value="NoRoamAllowed"/>
-    </xs:restriction>
-  </xs:simpleType>
-```
-
-To set a profile for automatic connection, select "auto":
-
-```  
-<!-- Connection Mode, default is "manual" -->
-    <xs:element name="ConnectionMode" minOccurs="0">
-      <xs:simpleType>
-        <xs:restriction base="xs:string">
-          <!-- manual connect always -->
-          <xs:enumeration value="manual" />
-          <!-- auto connect always -->
-          <xs:enumeration value="auto" />
-          <!-- auto connect when not roaming -->
-          <xs:enumeration value="auto-home"/>
+    ```xml
+      <!-- applicability to any combination of home carrier, partner MOs and non-partner MOs, except for HomeAndNonPartner -->
+      <xs:simpleType name="roamApplicabilityType">
+        <xs:restriction base="xs:token">
+           <xs:enumeration value="NonPartnerOnly"/>
+           <xs:enumeration value="PartnerOnly"/>
+           <xs:enumeration value="HomeOnly"/>
+           <xs:enumeration value="HomeAndPartner"/>
+           <xs:enumeration value="PartnerAndNonpartner"/>
+           <xs:enumeration value="AllRoaming"/>
         </xs:restriction>
       </xs:simpleType>
-    </xs:element>
-```
+
+      <xs:simpleType name="roamControlType">
+        <xs:restriction base="xs:token">
+           <xs:enumeration value="AllRoamAllowed"/>
+           <xs:enumeration value="PartnerRoamAllowed"/>
+           <xs:enumeration value="NoRoamAllowed"/>
+        </xs:restriction>
+      </xs:simpleType>
+    ```
+
+    To set a profile for automatic connection, select "auto":
+
+    ```  xml
+    <!-- Connection Mode, default is "manual" -->
+        <xs:element name="ConnectionMode" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <!-- manual connect always -->
+              <xs:enumeration value="manual" />
+              <!-- auto connect always -->
+              <xs:enumeration value="auto" />
+              <!-- auto connect when not roaming -->
+              <xs:enumeration value="auto-home"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+    ```
 
 2. Another factor is that the per-interface roaming policy must be satisfied. By default, that policy is set to FALSE ("home carrier only"). This can be queried and changed in command line via `netsh mbn get/set dataroamcontrol.`
 
-Example:
+    Example:
 
-```
-    netsh mbn show dataroamcontrol int=*
-    netsh mbn set dataroamcontrol interface=Cellular profileset=all state=all
-    netsh mbn set dataroamcontrol help
-```
+    ```cmd
+        netsh mbn show dataroamcontrol int=*
+        netsh mbn set dataroamcontrol interface=Cellular profileset=all state=all
+        netsh mbn set dataroamcontrol help
+    ```
 
-You may get error **0x139f (ERROR_INVALID_STATE)** in the case when the device is roaming but the roaming policy disallows data roaming - error on a connect request sent to wwansvc.
+    You may get error **0x139f (ERROR_INVALID_STATE)** in the case when the device is roaming but the roaming policy disallows data roaming - error on a connect request sent to wwansvc.
 
 ## Raspberry Pi 3B+ booting issues
 
@@ -86,6 +87,7 @@ The Raspberry Pi 3 Model B+ is the latest product in the Raspberry Pi 3 range, b
 Recently, many customers who are interested in Windows 10 IoT Core encountered a problem where the device could not boot normally after flashing Windows 10 IoT Core, but the Raspbian works fine on it. The following are some suggestions on how to troubleshoot the boot problem.
 
 There are some known issues in this Insider Preview image. Please note that:
+
 * This image is only meant for the Raspberry Pi 3B+ and will not boot on the Raspberry Pi 2.
 * F5 driver deployment from Visual Studio does not work on Windows 10 IoT Core.
 * Onboard Wi-Fi and Bluetooth do not work on the Raspberry Pi 3B+.
@@ -93,6 +95,7 @@ There are some known issues in this Insider Preview image. Please note that:
 * SD card activity LED is disabled.
 
 There are only two requirements when choosing which SD cards to use with Windows 10 IoT Core. You need to use a class 10 SD card and make sure the card has enough space - at least 8 GB of space. There are a couple of SD cards that have been verified by Microsoft to be compatible with Windows 10 IoT Core:
+
 * Samsung EVO 32 GB class 10 Micros SDHC card
 * SanDisk Ultra Micro SDHC, 16 GB card
 
@@ -122,7 +125,7 @@ If you encounter that the device cannot read/write data through the serial port,
 
 1. Connect the TX to RX with Jumper - shown below - then run the sample code to check if the app can read/write data. If this does not work, the IC on the board may be broken.
 
-![TX to RX on Raspberry Pi](media/Troubleshooting/txrx.png)
+    ![TX to RX on Raspberry Pi](media/Troubleshooting/txrx.png)
 
 2. Make sure the BaudRate, Handshaking, and StopBits are configured correctly. If the serial port to be tested has a complete RS232 interface (e.g. DB9), use a DB plug with the RxTx crossover wires connected with the typical handshaking crossovers. Some RS232 ports (or USB adapters) require signals such as Carrier Detect (DCD) and DCE Ready (DSR) to be asserted before they function properly.
 
@@ -133,23 +136,25 @@ If you encounter that the device cannot read/write data through the serial port,
 * FTDI
 * Generic usbser.sys
 
-You can also use the devcon.exe stack * and devcon.exe status* cmdlet to check the expected drivers stack and drivers status on Windows 10 IoT Core.
+You can also use the devcon.exe stack *and devcon.exe status* cmdlet to check the expected drivers stack and drivers status on Windows 10 IoT Core.
 
-```
+```text
 USB\VID_10C4&PID_EA60\0001
     Name: Silicon Labs CP210x USB to UART Bridge
     Setup Class: {4d36e978-e325-11ce-bfc1-08002be10318} Ports
     Controlling service:
         silabser
 ```
+
 [Mincomm](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/BusTools/MinComm) is another helpful tool to troubleshoot serial port issues. This tool can enumerate ports, give you their friendly name and Device ID, open ports, configure settings (i.e. baud rate, stop bits, etc.) and send and receive data.
 
 ## Sirep Test service
+
 Even though the Sirep Test service is not enabled by default in retail images, in case you still want to disable the Sirep service on startup, you can login and disable Sirep from autostart.
 
 You can use the following PowerShell commands to do so, as shown below:
 
-```
+```text
 administrator@MINWINPC C:\Data\Users\administrator>sc stop TestSirepSvc
 
 SERVICE_NAME: TestSirepSvc
@@ -180,7 +185,6 @@ administrator@MINWINPC C:\Data\Users\administrator>sc config TestSirepSvc start=
 "Tablet Mode" is a concept that only exists on Desktop shell and doesn’t apply to IoT Core.
 
 If the device has supported hardware (either through I2C or USB HID touch), touch should function automatically using the inbox class drivers. You can read more about this [here](/windows-hardware/design/component-guidelines/touchscreen-device-bus-connectivity).
-
 
 ## Yubikey support
 

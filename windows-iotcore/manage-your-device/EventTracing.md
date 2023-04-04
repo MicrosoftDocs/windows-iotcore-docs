@@ -1,6 +1,6 @@
 ---
 title: Event Tracing for Windows IoT Core
-ms.date: 10/04/2017
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -31,23 +31,24 @@ Use [FTP](../connect-your-device/FTP.md) or [Windows File Sharing](../manage-you
 
 [Windows Assessment and Deployment Kit](https://go.microsoft.com/fwlink/p/?LinkId=526740) includes three tools to help capture and analyze events.
 
-
 1. **Windows Performance Analyzer** visualizes ETL files on desktop, with a step-by-step guide [here](/windows-hardware/test/wpt/wpa-step-by-step-guide).
 
-2. **Xperf command-line tool** captures real-time events and writes them to an ETL file. This tool is already installed on Windows IoT Core devices, just run the following commands on the devices:
-```
-        // Start capturing events from specific GUID and save them to an ETL file
-        xperf -start <Session Name> -f <ETL File> -on <GUID>
+1. **Xperf command-line tool** captures real-time events and writes them to an ETL file. This tool is already installed on Windows IoT Core devices, just run the following commands on the devices:
 
-        // Stop capturing events with the specified session name
-        xperf -stop <Session Name>
-```
+    ```cmd
+    // Start capturing events from specific GUID and save them to an ETL file
+    xperf -start <Session Name> -f <ETL File> -on <GUID>
 
-3. **Tracerpt command-line tool** converts ETL files into xml files.
-```
-        // Generate dumpfile.xml from ETL file
-        tracerpt <ETL File>
-```
+    // Stop capturing events with the specified session name
+    xperf -stop <Session Name>
+    ```
+
+1. **Tracerpt command-line tool** converts ETL files into xml files.
+
+    ```cmd
+    // Generate dumpfile.xml from ETL file
+    tracerpt <ETL File>
+    ```
 
 ## Use Device Portal
 

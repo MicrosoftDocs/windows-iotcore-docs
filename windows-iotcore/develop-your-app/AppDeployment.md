@@ -2,7 +2,7 @@
 title: Deploying an App with Visual Studio
 author: bfjelds
 ms.author: bfjelds
-ms.date: 04/02/2019
+ms.date: 03/31/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -24,22 +24,22 @@ Deploying and debugging your application is straightforward with Visual Studio. 
 
 1. With the application open in Visual Studio, set the architecture in the toolbar dropdown. If you're building for a Minnowboard Max, select `x86`. If you're building for Raspberry Pi 2, Raspberry Pi 3 or the Dragonboard, select `ARM`.
 
-2. Next, in the Visual Studio toolbar, click on the `Local Machine` dropdown and select `Remote Machine`.
+1. Next, in the Visual Studio toolbar, click on the `Local Machine` dropdown and select `Remote Machine`.
 
-![Remote machine in Visual Studio](../media/AppDeployment/remote-vs.png)
+    ![Remote machine in Visual Studio](../media/AppDeployment/remote-vs.png)
 
-3. At this point, Visual Studio will present the **Remote Connections** dialog. If you previously used [PowerShell](../connect-your-device/PowerShell.md) to set a unique name for your device, you can enter it here (in this example, we're using **my device**). Otherwise, use the IP address of your Windows IoT Core device.
+1. At this point, Visual Studio will present the **Remote Connections** dialog. If you previously used [PowerShell](../connect-your-device/PowerShell.md) to set a unique name for your device, you can enter it here (in this example, we're using **my device**). Otherwise, use the IP address of your Windows IoT Core device.
 
-4. After entering the device name/IP select `Universal (Unencrypted Protocol)` Authentication Mode, then click **Select**.
+1. After entering the device name/IP select `Universal (Unencrypted Protocol)` Authentication Mode, then click **Select**.
 
-![Universal authentication mode](../media/AppDeployment/remote-connections.png)
+    ![Universal authentication mode](../media/AppDeployment/remote-connections.png)
 
-You can verify or modify these values by navigating to the project properties (select **Properties** in the Solution Explorer) and choosing the `Debug` tab on the left:
+    You can verify or modify these values by navigating to the project properties (select **Properties** in the Solution Explorer) and choosing the `Debug` tab on the left:
 
-![Debug tab](../media/AppDeployment/debug-tab.png)
+    ![Debug tab](../media/AppDeployment/debug-tab.png)
 
-5. Now we're ready to deploy. Simply press F5 (or select Debug | Start Debugging) to start debugging our app. You should see the app come up on your device's screen.
+1. Now we're ready to deploy. Simply press F5 (or select Debug | Start Debugging) to start debugging our app. You should see the app come up on your device's screen.
 
-6. Once deployed, you can set breakpoints, see variable values, etc. To stop the app press on the 'Stop Debugging' button (or select Debug | Stop Debugging).
+1. Once deployed, you can set breakpoints, see variable values, etc. To stop the app press on the 'Stop Debugging' button (or select Debug | Stop Debugging).
 
-7. After successfully deploying and debugging your UWP application, create a Release version - change the Visual Studio toolbar configuration dropdown from `Debug` to `Release`.  You can now build and deploy your app to your device by selecting Build | Rebuild Solution and Build | Deploy Solution.
+1. After successfully deploying and debugging your UWP application, create a Release version - change the Visual Studio toolbar configuration dropdown from `Debug` to `Release`.  You can now build and deploy your app to your device by selecting Build | Rebuild Solution and Build | Deploy Solution.

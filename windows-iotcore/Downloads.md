@@ -1,13 +1,14 @@
 ---
 title: 'Downloads'
 description: Develop unit tests, and learn about Universal Windows Platform (UWP) unit testing that's supported on Windows 10 IoT Core.
-ms.date: 10/05/2018
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
 ---
 
 # Downloads
+
 Download the tools and software you need to get started with Windows 10 IoT Core.
 
 ## Windows 10 IoT Core Dashboard
@@ -35,7 +36,6 @@ When commercializing your IoT Solution, you will need to download builds from th
 * [DragonBoard 410c](https://go.microsoft.com/fwlink/?LinkId=846059)
 * [MinnowBoard Turbot/Max](https://go.microsoft.com/fwlink/?linkid=846057)
 
-
 ## Previous Windows 10 IoT Core releases
 
 ### April 2018 Update
@@ -45,7 +45,6 @@ When commercializing your IoT Solution, you will need to download builds from th
 * [DragonBoard 410c](https://software-download.microsoft.com/download/pr/17134.1.180410-1804.rs4_release_amd64fre_IOTCORE_QCDB410C.iso)
 * [MinnowBoard Turbot/Max](https://software-download.microsoft.com/download/pr/17134.1.180410-1804.rs4_release_amd64fre_IOTCORE_MBM.iso)
 
-
 ### Fall Creators Update
 
 * [Windows 10 IoT Core Packages](https://software-download.microsoft.com/download/pr/16299.15.170928-1534.rs3_release_amd64fre_IOTCORE_PACKAGES.iso)
@@ -53,20 +52,24 @@ When commercializing your IoT Solution, you will need to download builds from th
 * [DragonBoard 410c](https://download.microsoft.com/download/1/0/C/10CAECC2-3B60-45BF-BF0D-D0BACF4072E5/16299.15.170928-1534.rs3_release_amd64fre_IOTCORE_QCDB410C.iso)
 * [MinnowBoard Turbot/Max](https://download.microsoft.com/download/5/F/9/5F917B68-020E-4993-A972-F1A7038510CF/16299.15.170928-1534.rs3_release_amd64fre_IOTCORE_MBM.iso)
 
-
 ## Other downloads
 
 ### [mDNS Responder](https://go.microsoft.com/fwlink/?linkid=2077676)
+
 Download the Bonjour-compatible mDNS Responder for Windows IoT (sample source). Learn more [here](mDNS.md).
 
 ### [Firmware Update](http://firmware.intel.com/projects/minnowboard-max)
+
 Download firmware components and updates for the MinnowBoard Max reference board from Intel.
 
 ### [Visual Studio 2019](https://www.visualstudio.com/downloads/)
+
 State-of-the-art IDE, tools, and services that you can use to create great IoT apps.
 
 ### [Windows Driver Kit 2017](/windows-hardware/drivers/download-the-wdk)
+
 Provides an integrated development environment for creating efficient high-quality drivers for devices running Windows 10.
 
 ### [Windows Developer Tools for Visual Studio](https://developer.microsoft.com/windows/downloads/)
+
 Tools that integrate with Visual Studio 2017 and are required for developing for the Universal Windows App Platform.

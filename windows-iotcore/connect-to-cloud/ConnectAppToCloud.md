@@ -1,6 +1,6 @@
 ---
 title: Connect your app to the cloud
-ms.date: 08/28/2017
+ms.date: 03/31/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -16,7 +16,7 @@ connects to Azure IoT Hub.
 
 ## Step 1: Prepare your device
 
-You can find instructions on how to prepare your device on the [Get Started Page](https://developer.microsoft.com/en-us/windows/iot/getstarted) 
+You can find instructions on how to prepare your device on the [Get Started Page](https://developer.microsoft.com/windows/iot/getstarted)
 Make sure you [provision the TPM of your device](../connect-to-cloud/ConnectDeviceToCloud.md)
 
 ## Step 2: Install Visual Studio 2017 and tools
@@ -50,4 +50,3 @@ In the New Project dialog that comes up, select **Blank App (Universal Windows) 
 ## Use the Connected Services for Azure IoT Hub to connect to Azure IoT Hub
 
 Follow the instructions from the [Connected Services tool](https://aka.ms/azure-iot-hub-vs-2017-cs-vs-gallery) to connect your project to Azure IoT Hub. The tool will generate two functions, `SendDeviceToCloudMessageAsync` and `ReceiveCloudToDeviceMessageAsync` that you can invoke anywhere in your app. You can modify these functions as you see fit.  
-

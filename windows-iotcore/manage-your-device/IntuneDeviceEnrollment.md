@@ -2,7 +2,7 @@
 title: Enroll Windows IoT Core Devices in Intune
 author: msmimart
 ms.author: mimart
-ms.date: 04/25/2022
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot

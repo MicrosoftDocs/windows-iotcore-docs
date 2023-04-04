@@ -1,6 +1,6 @@
 ---
 title: Miracast on IoT Core 
-ms.date: 11/30/2017
+ms.date: 03/31/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -20,10 +20,12 @@ A Miracast connection is made up of two components: the Source and the Sink. The
 
 ## Hardware requirements
 
-Both Source and Sink devices require Miracast-compatible Wi-Fi and Graphics drivers and chipsets to function properly. To find out if your device has Miracast-compatible hardware, run: 
-```
+Both Source and Sink devices require Miracast-compatible Wi-Fi and Graphics drivers and chipsets to function properly. To find out if your device has Miracast-compatible hardware, run:
+
+```cmd
 netsh wlan show driver
 ```
+
 in the device's command prompt.
 
 If the device supports Miracast, you should see the output below:
@@ -39,7 +41,6 @@ The below table shows Miracast compatibility for the IoT Core reference platform
 | Minnowboard Max | Intel Atom E3825 | Yes | No | No |
 | UP Squared | Intel Celeron N3350 | Yes | Yes | Yes |
 
-
 ### Wi-Fi
 
 The Wi-Fi driver and chipset for the device must support Wi-Fi Direct, among other capabilities, to support Miracast. If your device does not have these features, you can use a USB Wi-Fi dongle instead. We recommend the [300M Wireless USB Adapter](http://a.co/fdhEhV9).
@@ -54,21 +55,22 @@ To enable your device as a Miracast sink, you will need to enable the Connect ap
 
 ### Enable the Connect App
 
-To enable the Connect app, you'll need to include the **IOT_MIRACAST_RX_APP** feature to your image. 
-You'll also need to include  **Microsoft-Connect-Package.cab** and **Microsoft-Connect-Package_Lang_XXXX.cab** in your image (where XXXX is a language, i.e. "enUS"). 
+To enable the Connect app, you'll need to include the **IOT_MIRACAST_RX_APP** feature to your image.
+You'll also need to include  **Microsoft-Connect-Package.cab** and **Microsoft-Connect-Package_Lang_XXXX.cab** in your image (where XXXX is a language, i.e. "enUS").
 
 Check out the [IoT Core Manufacturing Guide](/windows-hardware/manufacture/iot/deploy-your-app-with-a-standard-board#update-the-feature-manifest) for more details about how to add features and packages to your image. You can also side-load the package and features to existing images by following [these instructions](/windows-hardware/manufacture/iot/create-install-package). Keep in mind that side-loading this feature will prevent it from receiving updates.
-
 
 ### Enable Miracast
 
 Connect to your device through [PowerShell](./powershell.md) or the [Windows Device Portal](../manage-your-device/deviceportal.md) and run the following commands:
-```
+
+```cmd
 reg add HKLM\Software\Microsoft\PlayToReceiver /v AutoEnabled /t REG_DWORD /d 1  
 reg add HKLM\Software\Microsoft\MiracastReceiver /v  ConsentToast /t REG_DWORD /d 0  
 reg add HKLM\Software\Microsoft\MiracastReceiver /v NetworkQualificationEnabled /t REG_DWORD /d 1  
 reg add HKLM\Software\Microsoft\MiracastReceiver /v EnabledOnACOnly /t REG_DWORD /d 1  
 ```
+
 This will enable Miracast without a consent notification, only on secure networks, and only while connected to A/C power. This is the recommended way to run a Miracast receiver on IoT Core.
 
 ## Windows IoT as a Miracast Source
@@ -82,6 +84,7 @@ This will enable Miracast without a consent notification, only on secure network
 You can set up Miracast casting on your compatible device through public APIs from the `Windows.Media.Casting` namespace in your app.
 
 To see these APIs in action, download the [BasicMediaCasting UWP sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/BasicMediaCasting) and run it on your device. The APIs in the sample cover the following scenarios, all of which run on Miracast-compatible IoT Core devices:
+
 1. Basic Media Casting, which uses the built-in casting to send content to Miracast, DLNA, and Bluetooth devices
 2. Casting Using the Casting Picker, which allows you to further customize the Device Picker
 3. Casting Using a Custom Picker, which illustrates how to build custom UX for selecting devices

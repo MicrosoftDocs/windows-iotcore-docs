@@ -2,7 +2,7 @@
 title: Set up a Default App
 author: bfjelds
 ms.author: bfjelds
-ms.date: 04/02/2019
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -11,6 +11,7 @@ keywords: windows iot, default app, PowerShell, iot
 ---
 
 # Set up a default app
+
 Here you'll learn the ways to set your application as the default application. The default application is the one that is launched when the system boots.  
 
 > [!NOTE]
@@ -31,10 +32,9 @@ Steps to set the default app using the shell
 
 1. Connect to the device via [PowerShell](../connect-your-device/PowerShell.md)
 
-2. List the applications installed using `iotstartup list`
+1. List the applications installed using `iotstartup list`
 
-3. Note the appid for the application you want to make as default and set it using `iotstartup add headed <appid>`. For headless app, you should use `iotstartup add headless <appid>`.
-
+1. Note the appid for the application you want to make as default and set it using `iotstartup add headed <appid>`. For headless app, you should use `iotstartup add headless <appid>`.
 
 ## Build time option
 

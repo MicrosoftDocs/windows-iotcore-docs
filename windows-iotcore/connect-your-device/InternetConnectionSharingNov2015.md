@@ -1,6 +1,6 @@
 ---
 title: Internet Connection Sharing Tutorial (November 2015 Release)
-ms.date: 09/06/2017
+ms.date: 03/31/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -17,7 +17,6 @@ This document describes the steps to enable Internet Connection Sharing (ICS) on
 * Device running Windows 10 IoT Core November 2015 Release.
 * Wi-Fi USB device capable of starting a SoftAP. Please refer to the [Hardware Compatibility List](../learn-about-hardware/HardwareCompatList.md) for supported Wi-Fi USB devices.
 * Ethernet connection with Internet Access.
-
 
 ## Setup
 
@@ -43,7 +42,7 @@ This document describes the steps to enable Internet Connection Sharing (ICS) on
    ![route print](../media/InternetConnectionSharing/internetconnectionsharing_route.png)
 
    On device, run **ipconfig /all** and collect the following data:
-	
+
    * Record PRIVATE Interface network adapter name for the SoftAP
 
    For example, running "ipconfig /all" finds the specific adapter named “Local Area Connection* 3” that has a description of “Microsoft Wi-Fi Direct Virtual Adapter #2”. Use this method to manually find Adapter Name from the Description returned in “route print”.
@@ -61,12 +60,11 @@ Starting Internet Connection Sharing between two networks requires the following
 * Starts SharedAccess service.
 * Sends command code “129” to SharedAccess service.
 
-
 #### Create a script to automate the ICS settings
 
 Below is an example of a scripts and code to automate the steps listed above that can be integrated into the device startup sequence. Create a script file (e.g. **ConfigureICS.cmd**) with the following content:
 
-```
+```cmd
 echo off
 
 set START_OR_STOP=%1
@@ -134,6 +132,7 @@ ECHO e.g. %0 start 1 2 "Ethernet"
 This script will do everything but start/stop SharedAccess service, and does not send service command. For those tasks it calls to SharedAccessUtility.exe, which needs to be created.
 
 #### Build the SharedAccessUtility application
+
 In Visual Studio with [Windows IoT Core Project Templates extensions](https://go.microsoft.com/fwlink/?linkid=847472) installed, create a new “Blank Windows IoT Core Console Application” Visual C++ project, named **SharedAccessUtility**.
 
 ![VS new project](../media/InternetConnectionSharing/internetconnectionsharing_vs.png)
@@ -350,6 +349,6 @@ Build for target architecture, e.g. Release x86, and locate output **SharedAcces
 1. Copy **ConfigICS.cmd** script created in Step 2 to the device in some location, e.g. to `C:\test\`
 2. Copy **SharedAccessUtility.exe** created in Step 2 to the device in the same location, e.g. `C:\test`\
 3. On the device, run **C:\test\ConfigureICS.cmd start [public index] [private index] [private adapter name]**
-    In this example, this would mean <strong>C:\test\ConfigureICS.cmd start 4 5 "Local Area Connection* 3"</strong>
+    In this example, this would mean **C:\test\ConfigureICS.cmd start 4 5 "Local Area Connection* 3"**
 
 At this point the device has enabled Internet Connection Sharing for any client connected to the device’s advertised SSID.

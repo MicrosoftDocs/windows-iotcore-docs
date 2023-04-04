@@ -2,7 +2,7 @@
 title: Windows 10 IoT Core Language Support
 author: msalehmsft
 ms.author: msaleh
-ms.date: 08/05/2019
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -15,6 +15,7 @@ keywords: windows iot, languages, app types, UWP, OS
 Language support can be enabled at two levels, Application level and OS level, depending on the language resources made available on the image.
 
 ## Languages in UWP Applications
+
 UWP application languages are not limited to the languages included in the OS.  In fact, an IoT device that does not trigger shell UI or utilize speech resources can provide a device experience in many different languages through its UWP applications even though the underlying Windows 10 IoT Core OS is built simply in the en-US default mode.
 
 UWP applications must provide the resources for the languages that are required to be supported. [Windows.Globalization.ApplicationLanguage](/uwp/api/windows.globalization.applicationlanguages) APIs can be used to specify the language-related preferences.
@@ -24,7 +25,6 @@ See the below sample applications:
 * [IoTDefaultApp sample](/samples/microsoft/windows-iotcore-samples/iotcore-defaultapp)
 
 * [ApplicationResources sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/ApplicationResources)
-
 
 ## Languages in OS
 
@@ -49,12 +49,13 @@ Windows 10 IoTCore kits now include the language resources for the following lan
 > | Romanian | ro-RO | Europe |
 > | Russian | ru-RU | Europe |
 > | Greek | el-GR | Europe |
-> | Portugese (Brazil) | pt-BR | South America/Europe |
-> | Portuese (Portugal) | pt-PT | South America/Europe |
+> | Portuguese (Brazil) | pt-BR | South America/Europe |
+> | Portuguese (Portugal) | pt-PT | South America/Europe |
 
 These language resources contain UI strings, speech language, and voices (speech synthesis). Windows IoT images can be built with one or more of these resources and they must be specified during the image time and cannot be modified later. Note that UI language-related resources are independent than speech language and voice resources.
 
 ### Specifying UI and Speech resources
+
 In the OEM Input xml file, the required UI and speech languages are specified as shown below
 
 ``` xml
@@ -88,8 +89,8 @@ In the OEM Input xml file, the required UI and speech languages are specified as
   <BootLocale>en-us</BootLocale>
 ```
 
-
 ### Specifying Speech Data resources
+
 In the OEM Input xml file, the required speech data resources are specified as shown below,
 
 ``` xml
@@ -108,9 +109,11 @@ In the OEM Input xml file, the required speech data resources are specified as s
 > By default, en-US speech data is included in the image.
 
 ### Samples
+
 * See [MultiLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/MultiLangSample) for multiple languages support
 * See [SingleLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/SingleLangSample) for fr-FR language with en-US as fallback language.
-	* Note that when the boot UI language is changed, the `administrator` account name is also translated in the boot UI language. So, in fr-FR it is `administrateur`. See [OEMCustomization.cmd](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/SingleLangSample/oemcustomization.cmd)
+    >[!Note]  
+    > When the boot UI language is changed, the `administrator` account name is also translated in the boot UI language. So, in fr-FR it is `administrateur`. See [OEMCustomization.cmd](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/SingleLangSample/oemcustomization.cmd)
 
 ## Changing user preferences (language, region, speech and voice)
 

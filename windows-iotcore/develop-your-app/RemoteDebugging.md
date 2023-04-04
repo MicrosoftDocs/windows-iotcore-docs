@@ -2,7 +2,7 @@
 title: Debug your app using Remote Console App Debugging
 author: bfjelds
 ms.author: bfjelds
-ms.date: 01/03/2019
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -24,7 +24,7 @@ Here's how to debug your IoT Core console application remotely in Visual Studio:
 
 * This will show pop-up a message box and give you the connection information.
 
-*  In Visual Studio, you can configure your target by editing your project's properties (be sure to make all of the highlighted changes as appropriate to your board's name or IP address):
+* In Visual Studio, you can configure your target by editing your project's properties (be sure to make all of the highlighted changes as appropriate to your board's name or IP address):
 
     ![ConsoleApplication Remote Machine Project Settings](../media/Console/console_project_settings.png)
 

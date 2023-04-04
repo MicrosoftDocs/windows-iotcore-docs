@@ -1,11 +1,11 @@
 ---
 title: Speech resources and samples
-ms.date: 08/28/2017
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
 description: Learn more about how to build a complete speech interface with IoT Core.
-keywords: windows iot, speech, speech recongnition, TTS, dictation
+keywords: windows iot, speech, speech recognition, TTS, dictation
 ---
 
 # Speech resources and samples
@@ -25,16 +25,16 @@ Here is the list of the available services and API on Windows 10 IoT Core:
 * [Quick start speech interaction](/previous-versions/windows/apps/dn630426(v=win.10))
 
 * Speech platform, uses simple commands with constrained grammars (TTS, SSML)
-  * [Video](https://www.youtube.com/watch?v=GiDvBhfNnjU) 
-  * [Code](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis) 
+  * [Video](https://www.youtube.com/watch?v=GiDvBhfNnjU)
+  * [Code](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)
 
 * [Windows 10 IoT Core speech and speech synthesizer demo (phone calls, toggle lights) on Raspberry Pi](https://www.youtube.com/watch?v=HstKdcP9XRA)
 
-* Speech controlled Robot car 
-  * [Video](https://www.youtube.com/watch?v=vxUOTgechd4) 
+* Speech controlled Robot car
+  * [Video](https://www.youtube.com/watch?v=vxUOTgechd4)
   * [Code](https://www.hackster.io/AnuragVasanwala/speech-controlled-robot-49744c)
 
-* Home automation of controlling light with SRGS grammars 
+* Home automation of controlling light with SRGS grammars
   * [Video](https://www.youtube.com/watch?v=MN18Uo_063g)
 
 * [Speech translator sample](/samples/microsoft/windows-iotcore-samples/speech-translator)

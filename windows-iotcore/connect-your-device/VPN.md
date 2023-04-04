@@ -1,6 +1,6 @@
 ---
 title: VPN on Windows 10 IoT Core
-ms.date: 11/19/2018
+ms.date: 03/31/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -19,51 +19,53 @@ In order to leverage the VPN capabilities of Windows 10 IoT Core, follow the ins
 
 1. Obtain the necessary certs and copy to your IoT device (e.g. to a \vpntest folder).
 
-* RASTest.pfx
-* IssuingCA.crl
-* RootCA.crl
+    * RASTest.pfx
+    * IssuingCA.crl
+    * RootCA.crl
 
-2. Apply local machine certs
-a. PowerShell into device as administrator
+1. Apply local machine certs
 
-```powershell
-certmgr -add .\IssuingCA.crl -r localmachine -s root
-certmgr -add .\RootCA.crl -r localmachine -s root
-```
+    PowerShell into device as administrator
 
-3. Apply user certs
-a. Login to the IoT Device using SSH as "DefaultAccount".
-b. From the command prompt, type "PowerShell".
-c. Issue the following commands from PowerShell (while logged in as "Default Account"):
+    ```powershell
+    certmgr -add .\IssuingCA.crl -r localmachine -s root
+    certmgr -add .\RootCA.crl -r localmachine -s root
+    ```
 
-```powershell
-$mypwd = ConvertTo-SecureString -String "<password>" -Force -AsPlainText
-import-pfxcertificate -FilePath RasTest.pfx -CertStoreLocation cert:currentUser\my -Password $mypwd
+1. Apply user certs
 
-Cert -add .\IssuingCA.crl -r currentuser -s my
-certmgr -add .\RootCA.crl -r currentuser -s my
-```
+    * Login to the IoT Device using SSH as "DefaultAccount".
+    * From the command prompt, type "PowerShell".
+    * Issue the following commands from PowerShell (while logged in as "Default Account"):
 
-4. Fix hosts file
+    ```powershell
+    $mypwd = ConvertTo-SecureString -String "<password>" -Force -AsPlainText
+    import-pfxcertificate -FilePath RasTest.pfx -CertStoreLocation cert:currentUser\my -Password $mypwd
+    
+    Cert -add .\IssuingCA.crl -r currentuser -s my
+    certmgr -add .\RootCA.crl -r currentuser -s my
+    ```
+
+1. Fix hosts file
 Add an entry into c:\windows\system32\driverS\etc\hosts file (example shown below);
 
-> | IP Address | Domain Name | Note |
-> |----|----| ---|
-> | 10.10.10.10 | MyVPN.DomainName.org | Replace with IP address and domain name as needed |
+    | IP Address | Domain Name | Note |
+    |----|----| ---|
+    | 10.10.10.10 | MyVPN.DomainName.org | Replace with IP address and domain name as needed |
 
-5. Build the VPN test app
-Replace the "MyVPN.DomainName.org" in the source code. Augment further as needed.
+1. Build the VPN test app
 
-6. Deploy the code below in the "Starting and stopping a VPN Connection" section to the Windows 10 IoT device.
-Enter an arbitrary "Profile name" and press the "Connect to VPN" button.
+    Replace the "MyVPN.DomainName.org" in the source code. Augment further as needed.
 
+1. Deploy the code below in the "Starting and stopping a VPN Connection" section to the Windows 10 IoT device.
+
+    Enter an arbitrary "Profile name" and press the "Connect to VPN" button.
 
 ## Starting and stopping a VPN connection
 
 Use the code below to start and stop a VPN connection.
 
 ```csharp
-
   private async Task ConnectVPNProfile()
         {
             string vpnProfileName = "MyVPNProfileName";

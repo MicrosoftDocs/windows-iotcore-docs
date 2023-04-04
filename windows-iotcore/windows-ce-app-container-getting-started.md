@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Windows CE App Container
-ms.date: 08/25/2020
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -19,6 +19,7 @@ The solution is built in two stages. The first stage creates a Windows CE 2013 i
 For more information about this architecture, please review this video: [Modernizing Windows CE Devices](/Shows/Internet-of-Things-Show/Modernizing-Windows-CE-Devices).
 
 ## Prerequisites
+
 The Windows CE App Container software requires an updated version of [Windows Compact 2013 (Build number 6294 from June 2020 or later)](https://support.microsoft.com/help/4566035/update-for-windows-embedded-compact-2013) along with updated [Windows 10 IoT Core Packages for x64 and ARM32 (August 2020 update or later)](https://support.microsoft.com/help/4565349/windows-10-update-kb4565349). To obtain the latest packages for Windows 10 IoT Core, please contact your Microsoft distributor.
 
 > [!NOTE]
@@ -38,7 +39,6 @@ Additionally, you will need the following:
 - The tools referenced in the [Windows IoT Manufacturing
     Guide](/windows-hardware/manufacture/iot/set-up-your-pc-to-customize-iot-core)
 - Remember to install the updated components in place of the ones referenced in this guide (Windows 10 ADK and Windows 10 ADK PE Add-on, IoT Core ADK Add-ons, Windows 10 IoT Core Dashboard)
-
 
 ## Configuring, Building, and Packaging CE for the Windows CE App Container
 
@@ -123,7 +123,6 @@ The Windows CE App Container is created using PB as discussed above and imported
 #### Step 4 - Create your product definition
 
 Review the documentation, [Create a Basic Image](/windows-hardware/manufacture/iot/create-a-basic-image), in the IoT Core Manufacturing Guide to create your product definition.
-
 
 #### Step 5 - Adding CE App Container to a product
 
@@ -311,7 +310,6 @@ Options:
 | FactoryReset             | Used by the config app to signal the CE App Container to dump persistent state.          |
 | PlatformBuilderDebugMode | Used to boot the CE App Container with KITL support for debugging with Platform Builder. |
 | NetInterface             | Select a Network Interface for CE based on profile name.                                 |
-
 
 ## References
 

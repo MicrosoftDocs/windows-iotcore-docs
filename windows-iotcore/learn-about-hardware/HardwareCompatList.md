@@ -1,6 +1,6 @@
 ---
 title: Hardware Compatibility List
-ms.date: 08/02/2019
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -15,12 +15,12 @@ Windows 10 IoT Core supports a variety of peripheral interfaces and protocols, i
 > [!IMPORTANT]
 > This list is not exhaustive. There are many other peripherals not listed on this page that are compatible with Windows 10 IoT Core. If a device you don't see listed but is class-compliant with what's already supported in Windows 10 IoT Core, then it will work. Please check with the IHVs to see if specific drivers are compatible and supported for mentioned architectures.
 
-
 Looking for information about supported hardware platforms? Check out [SoCs and Custom Boards](./socsandcustomboards.md) for a list of development boards compatible with Windows.
 
 ## USB Devices
 
 ### WiFi Adapters
+
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  |
 > |----------------|-------------------|-------------|---------------|------------------------------|
 > | Official Raspberry Pi WiFi dongle | ARM32, x64, x86 | The official Raspberry Pi WiFi dongle offers the best possible WiFi performance for its diminutive size. | | &#10004;  |
@@ -36,12 +36,13 @@ Looking for information about supported hardware platforms? Check out [SoCs and 
 > | D-Link DWA-172 | ARM32 | Wireless AC600 Dual-Band High-Gain USB Adapter | [Datasheet](ftp://ftp.dlink.de/dwa/dwa-172/documentation/DWA-172_ds_en_Datasheet.pdf) |
 
 ### Ethernet Adapters
+
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  |
 > |----------------|-------------------|-------------|---------------|------------------------------|
 > | ASIX AX88772 USB 2.0 Fast Ethernet Adapter | ARM32, x64, x86 | This is a high performance and high integrated ASIC with embedded 28 KB SRAM for packet buffering.  | | &#10004;  |
 
-
 ### Bluetooth Dongles
+
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  |
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | CSR Mini USB Bluetooth V 4.0 Adapter | ARM32, x64, x86 | Class 2 Bluetooth 4.0 Smart Ready Adapter, low energy, dual power |  | &#10004;
@@ -49,6 +50,7 @@ Looking for information about supported hardware platforms? Check out [SoCs and 
 > | CSR Mini USB Bluetooth V 4.0 Adapter | x64, x86 | Class 2 Bluetooth 4.0 Smart Ready Adapter, low energy, dual power |  | &#10004;|
 
 ### Cameras
+
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  |
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | Microsoft Lifecam 3000 USB Camera | ARM32, x64, x86 | USB Webcam | [Home Security Camera Project](https://github.com/ms-iot/content/blob/50c7defc256f6055d37720c0b9f3b8f4b87f929b/en-US/Samples/WebcamApp.md)|&#10004;|
@@ -57,30 +59,34 @@ Looking for information about supported hardware platforms? Check out [SoCs and 
 > | Logitech Webcam C210 | ARM32, x64, x86 | USB Webcam, 1.3mp photo |  |&#10004; |
 
 ### Audio
+
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified |
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | Sabrent USB External Stereo Sound Adapter, Model AU-EMAC1 | ARM32, x64, x86 | Converts USB to 3.5mm audio and microphone signals | | &#10004;
 
-### Miscellaneous
+### Miscellaneous USB Devices
+
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  |
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | Aeon Labs Z-Wave Z-Stick Series 2 USB Dongle DSA02203-ZWUS | ARM32 | Series 2 Z-Wave USB Z-Stick Controller |  | &#10004; |
 > | [Chalkboard Electronics 7” LCD Capacitive Touchscreen Display](https://www.chalk-elec.com/?page_id=1280#!/7-black-frame-universal-HDMI-LCD-with-capacitive-multi-touch/p/21750201/category=3094861) | ARM32 | | [Updating firmware](https://www.chalk-elec.com/?p=1826) | &#10004; |
 > | Vodafone (Huawei) K5150 | ARM32, x64, x86 | Vodafone (Huawei) K5150 150Mbps 4G LTE FDD USB Mobile Broadband Modem |  | &#10004;  |
 > | Vodafone (Huawei) K5160 | ARM32, x64, x86 | Vodafone (Huawei) K5160 150Mbps GSM/EDGE/3G/HSPA+/LTE-CAT4 USB Mobile Broadband Modem |  | |
-> | Sierra Wireless Beam (AirCard 340U) | x64, x86 | 	Sierra Wireless Beam (AirCard 340U) 4G LTE USB Mobile Broadband Modem |  |&#10004; |
+> | Sierra Wireless Beam (AirCard 340U) | x64, x86 | Sierra Wireless Beam (AirCard 340U) 4G LTE USB Mobile Broadband Modem |  |&#10004; |
 > | Microsoft Xbox 360 Controller | ARM32 | An HID-compliant USB gamepad for Microsoft's Xbox 360 | [Robot Kit](https://microsoft.hackster.io/en-US/windowsiot/robot-kit-6dd474) |  &#10004; |
 > | [MyTeletouch](http://www.myteletouch.com/) | ARM, x32 | An HID-compliant USB wireless mouse, keyboard and gamepad |  | &#10004; |
 
 ## Other Hardware Peripherals
 
 ### NFC/RFID/Proximity
+
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified |
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | NXP OM5577 demo board | ARM32 | Demo board for the NXP PN7120 NFC chip. | [ProximityDevice documentation](/uwp/api/Windows.Networking.Proximity.ProximityDevice) | &#10004; |
 > | NXP PN547/PN548/PN7120 | ARM32, x64, x86 | Supported NXP NFC chips. | | &#10004; |
 
 ### Pi Hats
+
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  |
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | [Adafruit 16-Channel PWM](https://www.adafruit.com/product/2327#description-anchor) | ARM32 | Adds the capability to control up to 16 servos with no additional Raspberry Pi processing overhead. Capable of doing PWM up to 1.6KHz with 12 bit precision. | [Adafruit Tutorial C# IoT Sample](https://github.com/golaat/Adafruit.Pwm) | |
@@ -90,6 +96,7 @@ Looking for information about supported hardware platforms? Check out [SoCs and 
 > | [SeeedStudio Grove Base Hat for Raspberry PI Zero](https://www.seeedstudio.com/Grove-Base-Hat-for-Raspberry-Pi-Zero-p-3187.html) |ARM| The Grove Base Hat for RPI Zero provides support for the Seeedstudio Grove System on the Raspbery PI platform.| [Library and Samples](https://github.com/KiwiBryn/GroveBaseHatWindows10IoTCore) | |
 
 ### [Semtech SX127X based LoRa® Pi Hats](https://www.semtech.com/products/wireless-rf/lora-transceivers)
+
 Semtech's LoRa® ultra-long range (100M to 10KM) spread spectrum communications technology has high interference immunity and provides a low-cost solution for connecting battery/solar powered devices to conventional network infrastructure.
 
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  |
@@ -103,8 +110,8 @@ Semtech's LoRa® ultra-long range (100M to 10KM) spread spectrum communications 
 > | [uputronics Raspberry Pi+ LoRa(TM) Expansion Board](https://store.uputronics.com/index.php?route=product/product&path=61&product_id=68) | ARM32 | 433/868/915MHz LoRa connectivity options. | [Library and Samples](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
 > | [uputronics Raspberry PiZero LoRa(TM) Expansion Board](https://store.uputronics.com/index.php?route=product/product&path=61&product_id=99) | ARM32 | Dual 433/868/915MHz LoRa connectivity options. | [Library and Samples](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
 
-
 ### [Nordic Semiconductor nRF24L01 Wireless Pi Hats](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF24-series)
+
 Worldwide 2.5GHz ISM band, 250Kbps, 1Mbps and 2Mbps data rates. Low-power modules 10's of meters range, high-power modules up 1KM.
 
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  |
@@ -112,20 +119,22 @@ Worldwide 2.5GHz ISM band, 250Kbps, 1Mbps and 2Mbps data rates. Low-power module
 > | [Ceech Raspberry Pi nRF24l01+ Shield](https://www.tindie.com/products/ceech/new-raspberry-pi-to-nrf24l01-shield/) |ARM| The Raspberry Pi NRF24l01+ Shield Add-on for the Raspberry Pi's, supports a single NRF24l01+ module plus a buzzer and prototyping area.| [Library](https://github.com/techfooninja/Radios.RF24), [Sample application](https://github.com/KiwiBryn/nRF24L01Windows10IoTCoreDuinoDemo), [required modification](https://blog.devmobile.co.nz/2017/07/31/nrf24-windows-10-iot-core-hardware/) | |
 > | [Boros Rf2-Dual nRF24L01 pHat](https://www.tindie.com/products/boros/borosrf2-dual-nrf24l01-phathat-rtc-for-pis/) |ARM| The Boros RF2 supports up to two NRF24L01+ radios and an optional RTC.| [Library](https://github.com/techfooninja/Radios.RF24), [Sample application](https://github.com/KiwiBryn/nRF24L01Windows10IoTCoreDuinoDemo) | |
 
-
 ### Port Expanders
+
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  |
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | MCP23008 8-bit I/O Port Expander | ARM32, x64, x86 | I2C Interface Chip, GPIO Port Expander. 8 ports, 18-PDIP package | [SPI Port Explander Sample](https://www.hackster.io/4803/i2c-port-expander-sample-0a6d4f) | &#10004; |
 > | MCP23S17 16-bit I/O Port Expander | ARM32, x64, x86 | I2C Interface Chip, GPIO Port Expander. 16 ports, 28-SPDIP package | [Interactive Piano sample](https://www.hackster.io/windowsiot/build-2014-piano-3b449c) | &#10004; |
 
 ### Storage Media
+
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  |
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | [Samsung 32GB EVO Class 10 Micro SDHC](https://www.amazon.com/gp/product/B00IVPU786) | AARM32, x64, x86 | A recommended SD card for devices that can have Windows 10 IoT Core flashed. | | &#10004;|
 > | [SanDisk Ultra Micro SDHC 16GB](https://www.amazon.com/SanDisk-Ultra-Micro-SDHC-16GB/dp/9966573445) | ARM32, x64, x86 | A recommended SD card for devices that can have Windows 10 IoT Core flashed. | | &#10004; |
 
 ### Sensors
+
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  |
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | DHT11 basic temperature-humidity sensor | ARM32, x64, x86 | A basic, ultra low-cost digital temperature and humidity sensor. It uses a capacities humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed).  | [GpioOneWireSample (DHT11)](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/GpioOneWire)| &#10004; |
@@ -139,12 +148,13 @@ Worldwide 2.5GHz ISM band, 250Kbps, 1Mbps and 2Mbps data rates. Low-power module
 > | Honeywell HMC5883L digital 3-axis compass/magnetometer | ARM32 | A small 3-axis magnetometer for digital compass use and magnetic field measurements | [I2C Samples](https://github.com/mickut/Win10-IoT-Sensors) | |
 
 ### Touchpanel solutions
+
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified |
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | [SECO](https://north.seco.com/en) [i-PAN M7](https://edge.seco.com/usa/i-pan-m7.html) | ARM32 | 7.0 inch Touchpanel Computer for industrial use with Qualcomm Snapdragon 410E CPU, resolution 800x480px, brightness 850cd/qm, USB 2.0, SD card, POE | [i-PAN M7 information](https://edge.seco.com/usa/i-pan-m7.html) | &#10004; |
 
-
 ### Miscellaneous
+
 > | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified |
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | Official Pi display | ARM32 | 7" 800x480 touch display. | [Raspberry Pi 7" Touch Screen](https://www.raspberrypi.org/products/raspberry-pi-touch-display/) | &#10004; |

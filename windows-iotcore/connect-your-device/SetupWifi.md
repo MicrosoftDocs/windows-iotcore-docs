@@ -1,6 +1,6 @@
 ---
 title: Using WiFi on your Windows 10 IoT Core device
-ms.date: 08/28/2017
+ms.date: 03/31/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -16,10 +16,12 @@ including [SSH](../connect-your-device/SSH.md), [PowerShell](../connect-your-dev
 > [!NOTE]
 > Plugging in a wired Ethernet cable will override WiFi as the default network interface.
 
-### Supported Adapters
+## Supported Adapters
+
 A list of WiFi adapters that have been tested on Windows 10 IoT Core can be found on our [Supported Hardware](../learn-about-hardware/HardwareCompatList.md) page.
 
-### Configuring WiFi
+## Configuring WiFi
+
 To use WiFi, you'll need to provide Windows 10 IoT core with the WiFi network credentials. In addition to documentation on how to build companion app and WPS custom solutions, there are a few different options for doing so listed below.
 
 ## Custom Companion App & WPS Wi-Fi Onboarding Samples
@@ -33,9 +35,10 @@ Currently, we offer a number of ways for developers to build a custom wifi onboa
 > | [IoT Onboarding with AllJoyn](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTOnboarding) | Remotely join your headless IoT device with your home Wi-Fi network. | Works with AllJoyn | Some support for AllJoyn is deprecated |
 > | Wi-Fi Protected Setup (WPS) APIs for devices | Perform WPS discovery to query the WPS methods supported by the network. | Simply leverage the [WiFiAdapter.GetWpsConfigurationAsync(WiFiAvailableNetwork](/uwp/api/windows.devices.wifi.wifiadapter.getwpsconfigurationasync) and [WiFiAdapter.ConnectAsync](/uwp/api/windows.devices.wifi.wifiadapter.connectasync) methods to connect wi-fi devices to specific networks. | You will need to become familiar with these APIs to leverage them.; only compatible with WPS-enabled routers|
 
-## Headed Options:
+## Headed Options
 
 ### Option 1: Startup Configuration
+
 **Prerequisite:** The Windows 10 IoT core device needs a mouse, keyboard, display, and USB WiFi Adapter plugged in
 
 The first time you boot Windows 10 IoT Core with a supported USB WiFi adapter, you will be presented with a configuration screen.
@@ -44,6 +47,7 @@ On the configuration screen, select the WiFi network you would like to connect t
 ![Startup WiFi Configuration Screen](../media/SetupWiFi/WiFiStartupConfig.png)
 
 ### Option 2: Default App Configuration
+
 **Prerequisite:** The Windows 10 IoT core device needs a mouse, keyboard, display, and USB WiFi Adapter plugged in
 
 An alternative way to configure WiFi is to use the default app. You can use this to configure or modify WiFi settings after the device has booted.
@@ -54,12 +58,10 @@ An alternative way to configure WiFi is to use the default app. You can use this
 
 ![Default App WiFi Configuration](../media/SetupWiFi/DefaultAppWiFiConfig.png)
 
-## Headless Options:
-
-
-
+## Headless Options
 
 ### Option 1: Web-Based Configuration
+
 **Prerequisite:** Your device will already need to be connected to your local network through Ethernet and should have a USB WiFi Adapter plugged in
 
 If you have a device with no UI, display, or input devices, you can still configure it through the [Windows Device Portal](../manage-your-device/DevicePortal.md).
@@ -75,7 +77,6 @@ In **Windows 10 IoT Core Dashboard**, *Click* on the **Open in Device Portal** i
 
 <!-- End of Replicated Content -->
 
-
 ### Option 2: Connect using WiFi Profiles
 
 **Prerequisite:** Your device will already need to be connected to your local network through Ethernet and should have a USB WiFi Adapter plugged in. You also need a Windows PC with WiFi capability.
@@ -88,40 +89,44 @@ Setting up WiFi using wireless profiles is supported in Windows 10 IoT Core. See
 
     * `netsh wlan export profile name=<your profilename>`. This will export the profile to an XML file
 
-2. Open up a **File Explorer** window, and in the address bar type `\\<TARGET_DEVICE>\C$\` and then hit enter.  In this particular case, `<TARGET_DEVICE>` is either the name or the IP address of your Windows 10 IoT Core device:
+1. Open up a **File Explorer** window, and in the address bar type `\\<TARGET_DEVICE>\C$\` and then hit enter.  In this particular case, `<TARGET_DEVICE>` is either the name or the IP address of your Windows 10 IoT Core device:
 
     ![SMB with File Explorer](../media/SetupWifi/smb1.png)
 
     If you are prompted for a user name and password, use the following credentials:
-```
-        User Name: <TARGET_DEVICE>\Administrator
-        Password:  p@ssw0rd
-```
-![SMB with File Explorer 1](../media/SetupWifi/cred1.png)
 
-> [!NOTE]
-> It is **highly recommended** that you update the default password for the Administrator account.  Please follow the instructions found [here](../connect-your-device/PowerShell.md).
+    ```cmd
+    User Name: <TARGET_DEVICE>\Administrator
+    Password:  p@ssw0rd
+    ```
 
-3. Copy the exported WiFi profile XML file from the Windows PC to your Windows 10 IoT Core device
+    ![SMB with File Explorer 1](../media/SetupWifi/cred1.png)
 
-4. Connect to your device using [PowerShell](../connect-your-device/PowerShell.md) and add the new WiFi profile to your device by executing the following commands
+    > [!NOTE]
+    > It is **highly recommended** that you update the default password for the Administrator account.  Please follow the instructions found [here](../connect-your-device/PowerShell.md).
 
-    * `netsh wlan add profile filename=<copied XML path>`
+1. Copy the exported WiFi profile XML file from the Windows PC to your Windows 10 IoT Core device
 
-    * `netsh wlan show profiles`
+1. Connect to your device using [PowerShell](../connect-your-device/PowerShell.md) and add the new WiFi profile to your device by executing the following commands
 
-5. Connect the Windows 10 IoT Core device to wireless network via netsh
+    ```cmd
+    netsh wlan add profile filename=<copied XML path>
+    netsh wlan show profiles
+    ```
 
-    * `netsh wlan connect name=<profile name>`
+1. Connect the Windows 10 IoT Core device to wireless network via netsh
 
-6. Verify that your device is connected to the wireless network and can reach the internet
+    ```cmd
+    netsh wlan connect name=<profile name>
+    ```
 
-    * `netsh wlan show interfaces`
+1. Verify that your device is connected to the wireless network and can reach the internet
 
-    * `ipconfig /all`
-
-    * `ping /S <your WiFi adapter ip address> bing.com`
-
+    ```cmd
+    netsh wlan show interfaces
+    ipconfig /all
+    ping /S <your WiFi adapter ip address> bing.com
+    ```
 
 #### Connecting to WPA2-PSK Personal networks
 
@@ -131,7 +136,8 @@ If you need to connect to a WPA2-PSK Personal WiFi network, follow the instructi
 > This will make your connection insecure.
 
 Profile XML exported from Windows PC:
-```
+
+```xml
     <sharedKey>
         <keyType>passPhrase</keyType>
         <protected>true</protected>
@@ -140,7 +146,8 @@ Profile XML exported from Windows PC:
 ```
 
 Changes needed to work on Windows 10 IoT Core:
-```
+
+```xml
     <sharedKey>
         <keyType>passPhrase</keyType>
         <protected>false</protected>

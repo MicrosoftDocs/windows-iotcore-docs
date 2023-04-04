@@ -2,7 +2,7 @@
 title: Configure the title bar height for sign in dialog boxes
 author: johntasler
 ms.author: jtasler
-ms.date: 10/12/2018
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -32,6 +32,7 @@ greater than 50 will be clamped to 50. The height can be less than 25, but consi
 on the user's experience when deciding the height of the close button.
 
 As an example, to set the title bar height to 32 pixels, in PowerShell you could do the following:
+
 ```powershell
 # Note that we're only using the variable to make the sample code more narrow
 Set-Variable IoTRootKey "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension"

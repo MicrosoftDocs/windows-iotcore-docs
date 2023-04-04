@@ -2,7 +2,7 @@
 title: Embedded mode
 author: lilyhou
 ms.author: lihou
-ms.date: 05/28/2019
+ms.date: 04/01/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -59,6 +59,7 @@ If you are debugging on a device that is not running Windows IoT Core and you se
 * This program is blocked by group policy. For more information, contact your system administrator.
 
 ## Changing the mode
+
 To enable embedded mode, you will need to create a provisioning package in Imaging and Configuration Designer (ICD) that sets AllowEmbeddedMode=1.  To install ICD, you need to download and install the Windows ADK for Windows 10.
 
 * [Download the Windows ADK for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=526740)
@@ -112,35 +113,46 @@ To enable embedded mode, you will need to create a provisioning package in Imagi
     Click yes on the LUA dialog if it appears, and the click **Yes, add it** on the dialog shown below.
     ![Step #14 Standard](../media/EmbeddedMode/Step14Standard.png)
 
-
 ## Configuring a Background Application to Run automatically
+
 1. To configure a Background Application to automatically run, you will need to follow the directions to [create an MinnowBoardMax SD Card](https://developer.microsoft.com/windows/iot/getstarted) and copy `D:\windows\system32\iotstartup.exe` (where D: is your SD Card).
 
-2. To get a list of installed Background Applications type:
-```
-        C:\> iotstartup list BackgroundApplication1
-```
-3. The output should include the full name of each installed Background Application, which will look like this:
-```
-        Headless : BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee
-```
-5. To configure this app to run at boot type:
-```
-        C:\> iotstartup add headless BackgroundApplication1
-```
-6. If the Background Application has been successfully added to the startup list, you should see this:
-```
-        Added Headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpveeplication1
-```
-7. Restart the embedded mode device:
+1. To get a list of installed Background Applications type:
 
-8. Once the device has restarted, your Background Application will start automatically.  The Embedded Mode service that manages Background Applications can take a few minutes to start.  The embedded mode service will monitor Background Applications on the startup list and make sure they get restarted if they stop.  If a Background Application stops several times in a short period of time, it will no longer be restarted.
+    ```cmd
+    C:\> iotstartup list BackgroundApplication1
+    ```
 
-9. To remove your Background Application from the startup list type:
-```
-        C:\> iotstartup remove headless BackgroundApplication1
-```
-10. If the Background Application is removed from the startup list the output will look like this:
-```
-        Removed headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee
-```
+1. The output should include the full name of each installed Background Application, which will look like this:
+
+    ```cmd
+    Headless : BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee
+    ```
+
+1. To configure this app to run at boot type:
+
+    ```cmd
+    C:\> iotstartup add headless BackgroundApplication1
+    ```
+
+1. If the Background Application has been successfully added to the startup list, you should see this:
+
+    ```cmd
+    Added Headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpveeplication1
+    ```
+
+1. Restart the embedded mode device:
+
+1. Once the device has restarted, your Background Application will start automatically.  The Embedded Mode service that manages Background Applications can take a few minutes to start.  The embedded mode service will monitor Background Applications on the startup list and make sure they get restarted if they stop.  If a Background Application stops several times in a short period of time, it will no longer be restarted.
+
+1. To remove your Background Application from the startup list type:
+
+    ```cmd
+    C:\> iotstartup remove headless BackgroundApplication1
+    ```
+
+1. If the Background Application is removed from the startup list the output will look like this:
+
+    ```cmd
+    Removed headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee
+    ```

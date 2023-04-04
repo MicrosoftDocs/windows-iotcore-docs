@@ -2,7 +2,7 @@
 title: UEFI Requirements
 author: parameshbabu
 ms.author: pabab
-ms.date: 06/08/2018
+ms.date: 03/31/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -12,8 +12,7 @@ keywords: windows iot, image creation, image customizations, OEM customizations,
 
 # UEFI Requirements
 
-
-The UEFI requirements for IoT Core are similar to other Windows editions like desktop. See [UEFI in Windows](/windows-hardware/drivers/bringup/uefi-in-windows) for details and specifically see [UEFI requirements for Windows editions on SoC platforms](/windows-hardware/drivers/bringup/uefi-requirements-that-apply-to-all-windows-platforms). 
+The UEFI requirements for IoT Core are similar to other Windows editions like desktop. See [UEFI in Windows](/windows-hardware/drivers/bringup/uefi-in-windows) for details and specifically see [UEFI requirements for Windows editions on SoC platforms](/windows-hardware/drivers/bringup/uefi-requirements-that-apply-to-all-windows-platforms).
 
 ## ACPI Design
 
@@ -40,6 +39,6 @@ Review [Windows 10 IoT Core Recovery Options](/windows-hardware/service/iot/reco
 
 The bootsequence required to boot into the recovery OS is given below
 
-```
+```cmd
 bcdedit /set {bootmgr} bootsequence {a5935ff2-32ba-4617-bf36-5ac314b3f9bf}
 ```

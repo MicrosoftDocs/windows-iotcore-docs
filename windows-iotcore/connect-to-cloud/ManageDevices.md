@@ -1,6 +1,6 @@
 ---
 title: Manage your Windows devices with the Azure IoT Hub
-ms.date: 01/08/2018
+ms.date: 03/31/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -11,6 +11,7 @@ keywords: windows iot, Azure, DM, device management, Azure IoT Hub, IoT Hub, dev
 # Manage your Windows devices with the Azure IoT Hub
 
 ## Overview
+
 Device Management (DM) allows operators to remotely configure and monitor very high volumes of IoT devices simultaneously.
 
 Configuration for the devices can be pushed to devices, whether the target devices are online or offline. If the device is offline it will pick up the new configuration when it reconnects. Device operators can also retrieve the status of each device, including whether device configuration updates have been successfully applied or not.

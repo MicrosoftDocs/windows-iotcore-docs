@@ -2,7 +2,7 @@
 title: Python
 author: paulmon
 ms.author: riameser
-ms.date: 08/13/2019
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -11,11 +11,14 @@ keywords: windows iot, python
 ---
 
 # Python
+
 Python is a scripting language that is popular for system automation and machine learning (ML).
 You can learn more about Python at [python.org](https://www.python.org/).
 
 ## Using Python on x64 or x86
+
 To install Python on Windows IoT Core:
+
 1. Download the Python NuGet package, and then install the files using [PowerShell](../connect-your-device/powershell.md).
 
     ```powershell
@@ -96,7 +99,7 @@ To get Python for Windows, you will need to build the binaries yourself.
     cd ..
     ```
 
-2. Clone and build libffi.
+1. Clone and build libffi.
 
     ```cmd
     git clone https://github.com/libffi/libffi
@@ -115,13 +118,13 @@ To get Python for Windows, you will need to build the binaries yourself.
     if not exist externals\libffi\arm64\libffi-7.dll echo ERROR: libffi not built! & exit /b 1
     ```
 
-3. Build Python for ARM64.
+1. Build Python for ARM64.
 
     ```cmd
     pcbuild\build.bat -p ARM64 --no-tkinter
     ```
 
-4. Build Python .zip file for Windows IoT Core ARM64.  The same version of Python must be used to run PC/layout. This step builds Python for x86 and uses it to build the .zip file(s).  If you want the standard library tests in your .zip file add the `--include-tests` parameter.
+1. Build Python .zip file for Windows IoT Core ARM64.  The same version of Python must be used to run PC/layout. This step builds Python for x86 and uses it to build the .zip file(s).  If you want the standard library tests in your .zip file add the `--include-tests` parameter.
 
     ```cmd
     REM Build Python for x86 to use for building the .zip file.
@@ -132,14 +135,14 @@ To get Python for Windows, you will need to build the binaries yourself.
     pcbuild\win32\python.exe PC/layout -vv -s "." -b ".\PCBuild\arm64" -t ".\PCBuild\temp" --preset-iot --include-venv --copy P:\python
     ```
 
-3. Add Python to the system path.
+1. Add Python to the system path.
 
     ```cmd
     setx PATH "%PATH%";c:\python;c:\python\scripts /M
     set PATH=%PATH%;c:\python;c:\python\scripts
     ```
 
-4. Verify that `print('Hello World')` works.
+1. Verify that `print('Hello World')` works.
 
     ```cmd
     python -c "print('Hello World!');quit()"
@@ -153,31 +156,31 @@ To get Python for Windows, you will need to build the binaries yourself.
     python -m pip install azure-iot-device
     ```
 
-In the output for the `pip install` there may be errors: `Download error on https://pypi.org/simple/pbr/`. If you see this then, otherwise skip to `Set up an IoT Hub and create a Device Identity`:
+    In the output for the `pip install` there may be errors: `Download error on https://pypi.org/simple/pbr/`. If you see this then, otherwise skip to `Set up an IoT Hub and create a Device Identity`:
 
-2. Navigate to `https://pypi.org/simple/pbr/` in your favorite browser. Inspect the web site's certificate and noticed that it issued by `DigiCert`.
+1. Navigate to `https://pypi.org/simple/pbr/` in your favorite browser. Inspect the web site's certificate and noticed that it issued by `DigiCert`.
 
-3. Create a directory named `c:\test`.
+1. Create a directory named `c:\test`.
 
-4. Run `certmgr.msc` from a command prompt on a desktop Windows machine.  
+1. Run `certmgr.msc` from a command prompt on a desktop Windows machine.  
 
-5. Navigate to `Trusted Root Certification Authorities` in the treeview.  Expand the node and choose `Certificates`.
+1. Navigate to `Trusted Root Certification Authorities` in the treeview.  Expand the node and choose `Certificates`.
 
-6. In the right pane find the `DigiCert High Assurance EV Root`, right-click and select `All Tasks` > `Export`.  Note that there are multiple `DigiCert` certs and I identified this one by trying each one, one at a time.
+1. In the right pane find the `DigiCert High Assurance EV Root`, right-click and select `All Tasks` > `Export`.  Note that there are multiple `DigiCert` certs and I identified this one by trying each one, one at a time.
 
-7. In the dialog that pops up click `Next`.
+1. In the dialog that pops up click `Next`.
 
-8. Select `DER encoded binary X.509 (.CER)` (this should be the default) and click `Next`.
+1. Select `DER encoded binary X.509 (.CER)` (this should be the default) and click `Next`.
 
-9. In the `File name:` edit box type `c:\test\DigiCert High Assurance EV Root.cer`
+1. In the `File name:` edit box type `c:\test\DigiCert High Assurance EV Root.cer`
 
-![Certificate Export Wizard](../media/Python/global_sign_cert.png)
+    ![Certificate Export Wizard](../media/Python/global_sign_cert.png)
 
-10. Click `Next`.
+1. Click `Next`.
 
-11. Click `Finish`.
+1. Click `Finish`.
 
-12. Copy `c:\test\DigiCert High Assurance EV Root.cer` to the device by running the following command on your desktop machine:
+1. Copy `c:\test\DigiCert High Assurance EV Root.cer` to the device by running the following command on your desktop machine:
 
     ```cmd
     net use X: \\host\c$ /user:host\administrator
@@ -185,70 +188,72 @@ In the output for the `pip install` there may be errors: `Download error on http
     copy "c:\test\GlobalSign Root CA.cer" X:\test
     ```
 
-13. On the device, import the certificate into the root store using [PowerShell](../connect-your-device/PowerShell.md).
+1. On the device, import the certificate into the root store using [PowerShell](../connect-your-device/PowerShell.md).
 
     ```cmd
     certmgr -add "c:\test\DigiCert High Assurance EV Root.cer" -s root -r localMachine -c
     certmgr -add "c:\test\GlobalSign Root CA.cer" -s root -r localMachine -c
     ```
 
-14. Try to install the `azure-iot-device` again
+1. Try to install the `azure-iot-device` again
 
     ``` cmd
     python -m pip install azure-iot-device --no-color
     ```
 
-15.  In the output for the `pip install` there may be errors: `Download error for https://files.pythonhosted.org/`.  If you don't see this, then skip to `Set up an IoT Hub and create a Device Identity`
+1. In the output for the `pip install` there may be errors: `Download error for https://files.pythonhosted.org/`.  If you don't see this, then skip to `Set up an IoT Hub and create a Device Identity`
 
-16. Navigate to `https://files.pythonhosted.org/` in your favorite browser. Inspect the web site's certificate and noticed that it issued by `GlobalSign`.
+1. Navigate to `https://files.pythonhosted.org/` in your favorite browser. Inspect the web site's certificate and noticed that it issued by `GlobalSign`.
 
-17. Repeat the steps to export the `GlobalSign Root CA` certificate from your desktop machine and import it on the device.
+1. Repeat the steps to export the `GlobalSign Root CA` certificate from your desktop machine and import it on the device.
 
-18. Try to install the `azure-iot-device` again.
+1. Try to install the `azure-iot-device` again.
 
 ### Set up an IoT Hub and create a Device Identity
 
-19. Install the [Azure CLI](/cli/azure/install-azure-cli?preserve-view=true&view=azure-cli-latest) (or use the [Azure Cloud Shell](https://shell.azure.com/)) and use it to [create an Azure IoT Hub](/cli/azure/iot/hub?preserve-view=true&view=azure-cli-latest#az-iot-hub-create).
+1. Install the [Azure CLI](/cli/azure/install-azure-cli?preserve-view=true&view=azure-cli-latest) (or use the [Azure Cloud Shell](https://shell.azure.com/)) and use it to [create an Azure IoT Hub](/cli/azure/iot/hub?preserve-view=true&view=azure-cli-latest#az-iot-hub-create).
 
     ```powershell
     az iot hub create --resource-group <your resource group> --name <your IoT Hub name>
     ```
+
     * Note that this operation may take a few minutes.
 
-20. Add the IoT Extension to the Azure CLI, and then [register a device identity](/cli/azure/iot/hub/device-identity)
+1. Add the IoT Extension to the Azure CLI, and then [register a device identity](/cli/azure/iot/hub/device-identity)
 
     ```powershell
     az extension add --name azure-cli-iot-ext
     az iot hub device-identity create --hub-name <your IoT Hub name> --device-id <your device id>
     ```
 
-21. [Retrieve your Device Connection String](/cli/azure/iot/hub/device-identity) using the Azure CLI
+1. [Retrieve your Device Connection String](/cli/azure/iot/hub/device-identity) using the Azure CLI
 
     ```powershell
     az iot hub device-identity show-connection-string --device-id <your device id> --hub-name <your IoT Hub name>
     ```
 
     It should be in the format:
-    ```
+
+    ``` text
     HostName=<your IoT Hub name>.azure-devices.net;DeviceId=<your device id>;SharedAccessKey=<some value>
     ```
 
 ### Send a simple telemetry message
 
-22. [Begin monitoring for telemetry](/cli/azure/iot/hub) on your IoT Hub using the Azure CLI
+1. [Begin monitoring for telemetry](/cli/azure/iot/hub) on your IoT Hub using the Azure CLI
 
     ```powershell
     az iot hub monitor-events --hub-name <your IoT Hub name> --output table
     ```
 
-23. On your device, set the Device Connection String as an environment variable called `IOTHUB_DEVICE_CONNECTION_STRING`.
+1. On your device, set the Device Connection String as an environment variable called `IOTHUB_DEVICE_CONNECTION_STRING`.
 
     ```cmd
     REM NOTE: there are no quotes
     set IOTHUB_DEVICE_CONNECTION_STRING=<your connection string here>
     ```
 
-24. Copy simple_send_d2c_message.py and run it on the device.
+1. Copy simple_send_d2c_message.py and run it on the device.
 
     ```cmd
     cmd /c "if not exist c:\test md c:\test"
@@ -269,8 +274,9 @@ In the output for the `pip install` there may be errors: `Download error on http
     net start docker
     ```
 
-2.  Create Dockerfile
-    ```
+1. Create Dockerfile
+
+    ``` powershell
     # escape = `
     FROM mcr.microsoft.com/windows/nanoserver:1809-amd64
 
@@ -301,7 +307,7 @@ In the output for the `pip install` there may be errors: `Download error on http
     CMD cmd /k c:\test\start.cmd
     ```
 
-3. Copy Dockerfile to c:\docker on device. Also copy any certificates to P:\docker\test.  1.txt is a file with the number 1 and a carriage return.
+1. Copy Dockerfile to c:\docker on device. Also copy any certificates to P:\docker\test.  1.txt is a file with the number 1 and a carriage return.
 
     ```cmd
     net use P: \\[device IP address]\c$ /user:administrator
@@ -311,21 +317,22 @@ In the output for the `pip install` there may be errors: `Download error on http
     copy 1.txt P:\docker\test
     ```
 
-4.  Connect to the device using SSH.  Remote PowerShell will not work for an interactive docker session.
+1. Connect to the device using SSH.  Remote PowerShell will not work for an interactive docker session.
 
     ```powershell
     docker build --isolation==process . -t python
     docker run --isolation==process python
     ```
 
-5. Print hello world
+1. Print hello world
 
-    ```
+    ```powershell
     python -c "print('Hello Python in Containers!')"
     ```
 
-6. See Azure IoT SDK directions above to test cloud to device messages.
+1. See Azure IoT SDK directions above to test cloud to device messages.
 
 ## Additional Python Developer Resources
-- [Python Developer's Guide](https://devguide.python.org/setup/#setup)
-- [Build CPython on Windows](https://cpython-core-tutorial.readthedocs.io/en/latest/build_cpython_windows.html)
+
+* [Python Developer's Guide](https://devguide.python.org/setup/#setup)
+* [Build CPython on Windows](https://cpython-core-tutorial.readthedocs.io/en/latest/build_cpython_windows.html)

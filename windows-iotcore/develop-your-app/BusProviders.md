@@ -2,7 +2,7 @@
 title: Bus Providers
 author: msalehmsft
 ms.author: msaleh
-ms.date: 05/10/2019
+ms.date: 04/01/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -24,8 +24,7 @@ Starting with Windows 10, Windows has had in-box UWP APIs that provide direct ac
 
 Someone building a provider implements a set of interfaces into a UWP class library and then any developer who wants to talk to that hardware simply includes the component and tells the in-box APIs about it. If you look at the sample code from the [Remote Arduino provider](https://github.com/ms-iot/BusProviders/tree/develop/Arduino) you can see how easy it is to configure the provider and, once set as the default provider for that app, the rest of the code in the client app is identical to the code required to access an on-soc bus.
 
-
-```
+```c#
 ArduinoProviders.ArduinoProvider.Configuration =
     new ArduinoProviders.ArduinoConnectionConfiguration("VID_2341", "PID_0043", 57600);
 Windows.Devices.LowLevelDevicesController.DefaultProvider =  new ArduinoProviders.ArduinoProvider();

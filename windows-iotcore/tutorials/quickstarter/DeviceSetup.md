@@ -1,6 +1,6 @@
 ---
 title: Setting up your device
-ms.date: 07/26/2019
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -21,8 +21,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 
 ## Using the IoT Dashboard (Raspberry Pi, MinnowBoard, NXP)
 
-> [!Video https://www.youtube.com/embed/JPRUbGIyODY]
-
+> [!VIDEO https://www.youtube.com/embed/JPRUbGIyODY]
 
 > [!IMPORTANT]
 > The latest 64-bit firmware for MinnowBoard Turbot can be found on the [MinnowBoard website](https://minnowboard.org/tutorials/updating-the-firmware) (skip step 4 on the MinnowBoard site's instructions).
@@ -36,19 +35,16 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 > [!TIP]
 > We recommend using a high-performance SD card, such as a SanDisk SD card, for increased stability as well as plugging your device into an external display to see the default application booting up.
 
-
 1. Download the Windows 10 IoT Core Dashboard [here](../../downloads.md).
 2. Once downloaded, open the Dashboard and click on _set up a new device_ and insert an SD card into your computer.
 3. Fill out all of the fields as indicated.
 4. Accept the software license terms and click _Download and install_. You'll see that Windows 10 IoT Core is now flashing your SD card.
 
-
 ![Dashboard screenshot](../../media/DeviceSetup/Dashboard-Screenshot.jpg)
-
 
 ## Using the IoT Dashboard (DragonBoard 410c)
 
-> [!Video https://www.youtube.com/embed/iPm57hGq-Q8]
+> [!VIDEO https://www.youtube.com/embed/iPm57hGq-Q8]
 
 > [!TIP]
 > We recommend plugging your device into an external display to see the default application booting up.
@@ -69,9 +65,7 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 5. The device should now be visible on the Dashboard as shown below. Select the appropriate device.
 6. Accept the software license terms and click _Download and install_. You'll see that Windows 10 IoT Core is now flashing onto your device.
 
-
 ![DragonBoard in flash mode](../../media/DeviceSetup/db4.png)
-
 
 ## Flashing with eMMC (for DragonBoard 410c, other Qualcomm devices)
 
@@ -88,37 +82,37 @@ Below you'll find four different ways to flash your device with Windows 10 IoT C
 > [!NOTE]
 > Make sure the device is now booting from the eMMC memory by entering the BIOS setup again and switching the Boot Drive order to load from the Hard Drive instead of from the USB Drive.
 
-
 ## Flashing with eMMC (for Up Squared, other Intel devices)
 
-#### Download and Install Tools
+### Download and Install Tools
 
 1. Download and install the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install)  (Windows ADK) with the correlating version of Windows 10 you're running on your machine.
-2. Download and install the [Windows PE add-on for the ADK](https://go.microsoft.com/fwlink/?linkid=2087112).
+1. Download and install the [Windows PE add-on for the ADK](https://go.microsoft.com/fwlink/?linkid=2087112).
 
-#### Create a USB-bootable [Windows PE](/windows-hardware/manufacture/desktop/winpe-intro) image
+### Create a USB-bootable [Windows PE](/windows-hardware/manufacture/desktop/winpe-intro) image
 
-3. Insert a USB drive into your machine.
-4. Start the Deployment and Imaging Tools Environment as an administrator. The default installation path is `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\DandISetEnv.bat`.
-5. Use [`Copype`](/windows-hardware/manufacture/desktop/copype-command-line-options) to create a working copy of the Windows PE files. You must specify either x86, amd64 or ARM architectures (e.g. `Copype amd64 C:\WINPE_amd64`)
-6. Install Windows PE to the USB flash drive using [`MakeWinPEMedia`](/windows-hardware/manufacture/desktop/makewinpemedia-command-line-options). You must specify the destination USB drive (e.g. `MakeWinPEMedia /UFD C:\WinPE_amd64 P:`).
-7. Download the [Windows 10 IoT Core image](https://downloads.up-community.org) by double-clicking on the downloaded ISO file and locating the mounted Virtual CD-drive.
-8. This drive will contain an install file (.msi); double click it. This will create a new directory on your PC under `C:\Program Files (x86)\Microsoft IoT\FFU\` in which you should see an image file `flash.ffu`.
-9. Download, unzip and copy the [eMMC Installer script](https://github.com/ms-iot/content/blob/develop/Resources/eMMCInstaller.zip) to the USB device's root directory, along with the device's FFU.
-10. Connect the USB drive, mouse, and keyboard to the USB hub. Attach the HDMI display to your device, the device to the USB hub, and the power cord to the device.
-11. If necessary, go to the BIOS setup of the device. Select *Windows* as the Operating system and set the device to boot from your uSB drive. When the system reboots, you will see the WinPE command prompt. Switch the WinPE prompt to the USB Drive. This is usually C: or D: but you may need to try other driver letters.
-12. Run the eMMC Installer script, which will install the Windows 10 IoT Core image to the device's eMMC memory. When it completes, press any key and run `wpeutil reboot`. The system should boot into Windows 10 IoT Core, start the configuration process, and load the default application.
+1. Insert a USB drive into your machine.
+1. Start the Deployment and Imaging Tools Environment as an administrator. The default installation path is `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\DandISetEnv.bat`.
+1. Use [`Copype`](/windows-hardware/manufacture/desktop/copype-command-line-options) to create a working copy of the Windows PE files. You must specify either x86, amd64 or ARM architectures (e.g. `Copype amd64 C:\WINPE_amd64`)
+1. Install Windows PE to the USB flash drive using [`MakeWinPEMedia`](/windows-hardware/manufacture/desktop/makewinpemedia-command-line-options). You must specify the destination USB drive (e.g. `MakeWinPEMedia /UFD C:\WinPE_amd64 P:`).
+1. Download the [Windows 10 IoT Core image](https://downloads.up-community.org) by double-clicking on the downloaded ISO file and locating the mounted Virtual CD-drive.
+1. This drive will contain an install file (.msi); double click it. This will create a new directory on your PC under `C:\Program Files (x86)\Microsoft IoT\FFU\` in which you should see an image file `flash.ffu`.
+1. Download, unzip and copy the [eMMC Installer script](https://github.com/ms-iot/content/blob/develop/Resources/eMMCInstaller.zip) to the USB device's root directory, along with the device's FFU.
+1. Connect the USB drive, mouse, and keyboard to the USB hub. Attach the HDMI display to your device, the device to the USB hub, and the power cord to the device.
+1. If necessary, go to the BIOS setup of the device. Select _Windows_ as the Operating system and set the device to boot from your uSB drive. When the system reboots, you will see the WinPE command prompt. Switch the WinPE prompt to the USB Drive. This is usually C: or D: but you may need to try other driver letters.
+1. Run the eMMC Installer script, which will install the Windows 10 IoT Core image to the device's eMMC memory. When it completes, press any key and run `wpeutil reboot`. The system should boot into Windows 10 IoT Core, start the configuration process, and load the default application.
 
 > [!NOTE]
 > Make sure the device is now booting from the eMMC memory by entering the BIOS setup again and switching the Boot Drive order to load from the Hard Drive instead of from the USB Drive.
 
-
 ## Connecting to a network
 
-#### Wired connection
+### Wired connection
+
 If your device comes with an Ethernet port or USB Ethernet adapter support to enable a wired connection, attach an Ethernet cable to connect it to your network.
 
-#### Wireless connection
+### Wireless connection
+
 If your device supports Wi-Fi connectivity and you've connected a display to it, you'll need to:
 
 1. Go into your default application and click the settings button next to the clock.

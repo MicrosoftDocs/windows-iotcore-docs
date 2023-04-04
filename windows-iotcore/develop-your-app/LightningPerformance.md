@@ -2,7 +2,7 @@
 title: Lightning Performance Testing
 author: msalehmsft
 ms.author: msaleh
-ms.date: 08/28/2017
+ms.date: 04/03/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
