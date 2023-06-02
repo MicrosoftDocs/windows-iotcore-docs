@@ -1,6 +1,6 @@
 ---
 title: SoCs and Custom Boards for Windows 10 IoT Core
-ms.date: 04/03/2023
+ms.date: 06/02/2023
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
