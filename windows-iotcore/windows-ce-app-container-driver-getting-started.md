@@ -8,7 +8,7 @@ keywords: Windows 10 IoT Core, Windows CE, application migration, CE App Contain
 
 # Getting Started Building Drivers for Windows CE App Container
 
-The Windows CE App Container is a technology that allows most CE applications to run on top of Windows 10 IoT Core. More information on how to get started can be found in the article, [Getting Started with CE App Container](windows-ce-app-container-getting-started.md).
+The Windows CE App Container is a technology that allows most CE applications to run on top of Windows 10 IoT Core. More information on how to get started can be found in the article, [Getting Started with CE App Container](windows-ce-app-container-getting-started.md)
 
 > [!NOTE]
 > PRERELEASE - This technology is currently in prerelease. If you would like to explore creating a CE App Container Plug-in Driver
