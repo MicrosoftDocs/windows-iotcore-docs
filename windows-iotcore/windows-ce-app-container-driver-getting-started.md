@@ -22,7 +22,7 @@ As you migrate your CE application you can provide matched drivers that make use
 
 ![CE App Container Driver Plug-in Architecture](.//media/WindowsCEAppContainer/image3.png)
 
-The recommended way to deploy this driver pair is to include the CE App Container driver as part of the CE App Container OS Design and to include the plug-in and Windows IoT Core drivers in the Board Support Package (BSP) for the specific Windows IoT Core device. By including the drivers this way you will have the required components included as part of the device install image. Additionally you may include the drivers in `.CAB` files that can be deployed to an existing device. More information about this ability is covered in [Deploying the Windows CE App Container to a device when using an existing FFU](https://docs.microsoft.com/windows/iot-core/windows-ce-app-container-getting-started#deploying-the-windows-ce-app-container-to-a-device-when-using-an-existing-ffu).
+The recommended way to deploy this driver pair is to include the CE App Container driver as part of the CE App Container OS Design and to include the plug-in and Windows IoT Core drivers in the Board Support Package (BSP) for the specific Windows IoT Core device. By including the drivers this way you will have the required components included as part of the device install image. Additionally you may include the drivers in `.CAB` files that can be deployed to an existing device. More information about this ability is covered in [Deploying the Windows CE App Container to a device when using an existing FFU](windows-ce-app-container-getting-started.md#deploying-the-windows-ce-app-container-to-a-device-when-using-an-existing-ffu).
 
 ## The CE App Container Driver Interface
 
@@ -91,7 +91,7 @@ The CE App Container can support multiple plug-in drivers that each define their
 
 ## References
 
-- [Getting Started with CE App Container](/windows/iot-core/windows-ce-app-container-getting-started)
+- [Getting Started with CE App Container](windows-ce-app-container-getting-started.md)
 - [Get the tools needed to customize Windows 10 IoT Core](/windows-hardware/manufacture/iot/set-up-your-pc-to-customize-iot-core)
 - [IoT Core Board Supported Packages (BSP)](/windows-hardware/manufacture/iot/bsphardware)
 - [IoT Core Manufacturing Guide](/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)
