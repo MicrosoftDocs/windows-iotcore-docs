@@ -1,5 +1,5 @@
 ---
-title: SoCs and Custom Boards for Windows 10 IoT Core
+title: Processor, SoCs and Custom Boards for Windows 10 IoT Core
 ms.date: 06/02/2023
 ms.topic: article
 ms.prod: windows-iot
@@ -8,7 +8,19 @@ description: Learn about the hardware features for a variety of suggested boards
 keywords: windows iot, development devices, boards, SOC, SOM, system on chips, Raspberry Pi 2, Raspberry Pi 3, Minnowboard Max, DragonBoard
 ---
 
-# SoCs and custom boards
+# Processor, SoCs and custom boards
+
+## Supported Processors
+
+| Windows Edition | Intel| Qualcomm | Broadcom | NXP |
+| --------------- | ---- | -------- | -------- | --- |
+| Windows&nbsp;10&nbsp;IoT&nbsp;Core&nbsp;1703 | &#10004;<sup>[1]</sup> | &#10004;<sup>[1]</sup> | &#10004;<sup>[1]</sup> | N/A |
+| Windows&nbsp;10&nbsp;IoT&nbsp;Core&nbsp;1709 | &#10004;<sup>[1]</sup> | &#10004;<sup>[1]</sup> | &#10004;<sup>[1]</sup> | N/A |
+| Windows&nbsp;10&nbsp;IoT&nbsp;Core&nbsp;1803 | &#10004;<sup>[1]</sup> | &#10004;<sup>[1]</sup> | &#10004;<sup>[1]</sup> | N/A |
+| Windows&nbsp;10&nbsp;IoT&nbsp;Core&nbsp;1809&nbsp;(SAC) | &#10004;<sup>[1]</sup> | &#10004;<sup>[1]</sup> | &#10004;<sup>[1]</sup> | &#10004;<sup>[1]</sup> |
+| Windows&nbsp;10&nbsp;IoT&nbsp;Core&nbsp;1809&nbsp;(LTSC) | &#10004;<sup>[1]</sup> | &#10004;<sup>[1]</sup> | &#10004;<sup>[1]</sup> | &#10004;<sup>[1]</sup> |
+
+<sup>[1]</sup> For more Information on which processors are currently enabled see [Microsoft-enabled SoCs for Windows IoT Core](/windows/iot-core/learn-about-hardware/socsandcustomboards#microsoft-enabled-socs).
 
 ## Microsoft-enabled SoCs
 

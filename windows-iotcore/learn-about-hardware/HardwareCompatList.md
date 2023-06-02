@@ -17,18 +17,6 @@ Windows 10 IoT Core supports a variety of peripheral interfaces and protocols, i
 
 Looking for information about supported hardware platforms? Check out [SoCs and Custom Boards](./socsandcustomboards.md) for a list of development boards compatible with Windows.
 
-## Processors
-
-| Windows Edition | Intel| Qualcomm | Broadcom | NXP |
-| --------------- | ---- | -------- | -------- | --- |
-| Windows&nbsp;10&nbsp;IoT&nbsp;Core&nbsp;1703 | &#10004;<sup>[3]</sup> | &#10004;<sup>[3]</sup> | &#10004;<sup>[3]</sup> | N/A |
-| Windows&nbsp;10&nbsp;IoT&nbsp;Core&nbsp;1709 | &#10004;<sup>[3]</sup> | &#10004;<sup>[3]</sup> | &#10004;<sup>[3]</sup> | N/A |
-| Windows&nbsp;10&nbsp;IoT&nbsp;Core&nbsp;1803 | &#10004;<sup>[3]</sup> | &#10004;<sup>[3]</sup> | &#10004;<sup>[3]</sup> | N/A |
-| Windows&nbsp;10&nbsp;IoT&nbsp;Core&nbsp;1809&nbsp;(SAC) | &#10004;<sup>[3]</sup> | &#10004;<sup>[3]</sup> | &#10004;<sup>[3]</sup> | &#10004;<sup>[3]</sup> |
-| Windows&nbsp;10&nbsp;IoT&nbsp;Core&nbsp;1809&nbsp;(LTSC) | &#10004;<sup>[3]</sup> | &#10004;<sup>[3]</sup> | &#10004;<sup>[3]</sup> | &#10004;<sup>[3]</sup> |
-
-<sup>[3]</sup> For more Information on which processors are currently enabled see [Microsoft-enabled SoCs for Windows IoT Core](/windows/iot-core/learn-about-hardware/socsandcustomboards#microsoft-enabled-socs).
-
 ## USB Devices
 
 ### WiFi Adapters
