@@ -17,18 +17,6 @@ Windows 10 IoT Core supports a variety of peripheral interfaces and protocols, i
 
 Looking for information about supported hardware platforms? Check out [SoCs and Custom Boards](./socsandcustomboards.md) for a list of development boards compatible with Windows.
 
-## Processors
-
-| Windows Edition | Intel| Qualcomm | Broadcom | NXP |
-| --------------- | ---- | -------- | -------- | --- |
-| Windows&nbsp;10&nbsp;IoT&nbsp;Core&nbsp;1703 | &#x2714;<sup>[3]</sup| &#x2714;<sup>[3]</sup| &#x2714;<sup>[3]</sup| N/A |
-| Windows&nbsp;10&nbsp;IoT&nbsp;Core&nbsp;1709 | &#x2714;<sup>[3]</sup| &#x2714;<sup>[3]</sup| &#x2714;<sup>[3]</sup| N/A |
-| Windows&nbsp;10&nbsp;IoT&nbsp;Core&nbsp;1803 | &#x2714;<sup>[3]</sup| &#x2714;<sup>[3]</sup| &#x2714;<sup>[3]</sup| N/A |
-| Windows&nbsp;10&nbsp;IoT&nbsp;Core&nbsp;1809&nbsp;(SAC) | &#x2714;<sup>[3]</sup| &#x2714;<sup>[3]</sup| &#x2714;<sup>[3]</sup| &#x2714;<sup>[3]</sup|
-| Windows&nbsp;10&nbsp;IoT&nbsp;Core&nbsp;1809&nbsp;(LTSC) | &#x2714;<sup>[3]</sup| &#x2714;<sup>[3]</sup| &#x2714;<sup>[3]</sup| &#x2714;<sup>[3]</sup|
-
-<sup>[3]</sup> For more Information on which processors are currently enabled see [Microsoft-enabled SoCs for Windows IoT Core](/windows/iot-core/learn-about-hardware/socsandcustomboards#microsoft-enabled-socs).
-
 ## USB Devices
 
 ### WiFi Adapters
@@ -36,15 +24,15 @@ Looking for information about supported hardware platforms? Check out [SoCs and 
 | Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  |
 |----------------|-------------------|-------------|---------------|------------------------------|
 | Official Raspberry Pi WiFi dongle | ARM32, x64, x86 | The official Raspberry Pi WiFi dongle offers the best possible WiFi performance for its diminutive size. | | &#10004;  |
-| Airlink Wireless N 150 Mini USB Adapter | x64, x86 | Airlink 101 AWL5077 Golden 150Mbps Wireless Mini USB Adapter with WPA2, WPA, and WEP enhanced wireless security | | &#10004;  
-| Panda PAU06 | x64, x86 |  Panda 300Mbps Wireless N USB Adapter with High Gain Antenna | |  &#10004;  
+| Airlink Wireless N 150 Mini USB Adapter | x64, x86 | Airlink 101 AWL5077 Golden 150Mbps Wireless Mini USB Adapter with WPA2, WPA, and WEP enhanced wireless security | | &#10004;  |
+| Panda PAU06 | x64, x86 |  Panda 300Mbps Wireless N USB Adapter with High Gain Antenna | |  &#10004;  |
 | TP-LINK TL_WN725N |  ARM32, x64, x86 | TP-LINK TL-WN725N Wireless N Nano USB Adapter 150 Mbps `(USB/VID_0BDA&PID_8179)` |  | &#10004;  
-| NET-DYN USB WiFi Adapter | MBM | WiFi USB Adapter NET-DYN | |  &#10004;  
-|  Realtek 8191 USB Wireless WiFi | ARM32, x64, x86 | Realtek 8191 300Mbps 802.11n/g/b/ USB Wireless WiFi LAN Network Card Adapter | | &#10004;  
+| NET-DYN USB WiFi Adapter | MBM | WiFi USB Adapter NET-DYN | |  &#10004;  |
+|  Realtek 8191 USB Wireless WiFi | ARM32, x64, x86 | Realtek 8191 300Mbps 802.11n/g/b/ USB Wireless WiFi LAN Network Card Adapter | | &#10004;  |
 |  Realtek 8192 USB Wireless WiFi | ARM32, x64, x86 | Realtek Single-Chip IEEE 802.11b/g/n 2T2R WLAN Controller with USB 2.0 Interface | | &#10004; |
 |  Realtek 8188EU USB Wireless WiFi | ARM32, Mx64, x86BM | Realtek RTL8188EU Wireless LAN 802.11n/g/b USB 2.0 Network Adapter | | &#10004; |
 |  Realtek 8192EU USB Wireless WiFi | ARM32, x64, x86 | Realtek RTL8192EU Wireless LAN 802.11n/g/b USB 2.0 Network Adapter | | &#10004; |
-|  CanaKit USB Wireless WiFi | x64, x86 | Chipset Ralink 5370 | | &#10004;
+|  CanaKit USB Wireless WiFi | x64, x86 | Chipset Ralink 5370 | | &#10004;  |
 |  D-Link DWA-172 | ARM32 | Wireless AC600 Dual-Band High-Gain USB Adapter | [Datasheet](ftp://ftp.dlink.de/dwa/dwa-172/documentation/DWA-172_ds_en_Datasheet.pdf) |
 
 ### Ethernet Adapters
@@ -57,8 +45,8 @@ Looking for information about supported hardware platforms? Check out [SoCs and 
 
  Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified  |
 ----------------|-------------------|-------------|--------|------------------------------|
-|  CSR Mini USB Bluetooth V 4.0 Adapter | ARM32, x64, x86 | Class 2 Bluetooth 4.0 Smart Ready Adapter, low energy, dual power |  | &#10004;
-|  ORICO BTA-403 Mini Bluetooth 4.0 USB Dongle | ARM32, x64, x86 | Low-energy Bluetooth 4.0 adapter USB Micro Adapter Dongle |  | &#10004;
+|  CSR Mini USB Bluetooth V 4.0 Adapter | ARM32, x64, x86 | Class 2 Bluetooth 4.0 Smart Ready Adapter, low energy, dual power |  | &#10004; |
+|  ORICO BTA-403 Mini Bluetooth 4.0 USB Dongle | ARM32, x64, x86 | Low-energy Bluetooth 4.0 adapter USB Micro Adapter Dongle |  | &#10004; |
 |  CSR Mini USB Bluetooth V 4.0 Adapter | x64, x86 | Class 2 Bluetooth 4.0 Smart Ready Adapter, low energy, dual power |  | &#10004;|
 
 ### Cameras
@@ -74,7 +62,7 @@ Looking for information about supported hardware platforms? Check out [SoCs and 
 
 |  Part Name / No. | Compatible Architecture | Description | Relevant Links | Microsoft Verified |
 | ----------------|-------------------|-------------|--------|------------------------------|
-|  Sabrent USB External Stereo Sound Adapter, Model AU-EMAC1 | ARM32, x64, x86 | Converts USB to 3.5mm audio and microphone signals | | &#10004;
+|  Sabrent USB External Stereo Sound Adapter, Model AU-EMAC1 | ARM32, x64, x86 | Converts USB to 3.5mm audio and microphone signals | | &#10004; |
 
 ### Miscellaneous USB Devices
 
