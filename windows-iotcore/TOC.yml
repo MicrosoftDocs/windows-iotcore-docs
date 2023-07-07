@@ -195,6 +195,77 @@
     href: connect-to-cloud/ConnectAppToCloud.md
   - name: Azure IoT Device Agent
     href: manage-your-device/AzureIoTDA.md
+- name: Manufacturing Guide
+  expanded: false
+  items:
+  - name: IoT Core Manufacturing
+    href: manufacture/index.md
+  - name: OEM license requirements
+    href: manufacture/license-requirements.md
+  - name: Create and install packages
+    href: manufacture/create-install-package.md
+  - name: Windows 10 IoT Core services
+    href: manufacture/iotcoreservicesoverview.md
+  - name: IoT Core manufacturing Guide
+    expanded: false
+    items:
+    - name: Overview
+      href: manufacture/iot-core-manufacturing-guide.md
+    - name: Get the tools needed to customize Windows IoT Core
+      href: manufacture/set-up-your-pc-to-customize-iot-core.md
+    - name: Lab 1a - Create a basic image]
+      href: manufacture/create-a-basic-image.md
+    - name: Lab 1b - Add an app to your image
+      href: manufacture/deploy-your-app-with-a-standard-board.md
+    - name: Lab 1c - Add file(s) and registry settings to an image
+      href: manufacture/add-a-registry-setting-to-an-image.md
+    - name: Lab 1d - Add a provisioning package to an image
+      href: manufacture/add-a-provisioning-package-to-an-image.md
+    - name: Lab 1e - Add a driver to an image
+      href: manufacture/add-a-driver-to-an-image.md
+    - name: Lab 1f - Add Win32 services to an image
+      href: manufacture/add-win32-services.md
+    - name: Lab 1g - Build a retail image
+      href: manufacture/build-retail-image.md
+    - name: Lab 2 - Create a board support package
+      expanded: false
+      items:
+      - name: Overview
+        href: manufacture/create-a-new-bsp.md
+      - name: BSP for hardware
+        href: manufacture/BSPHardware.md
+      - name: IoT device layout
+        href: manufacture/device-layout.md
+  - name: OS customizations
+    href: manufacture/OSCustomizations.md
+  - name: IoT Core feature list
+    href: manufacture/iot-core-feature-list.md
+  - name: IoT Core Add-ons
+    href: manufacture/iot-core-adk-addons.md
+  - name: IoT Core Add-ons Powershell commands
+    href: manufacture/iot-core-adk-addons-command-line-options.md
+  - name: IoT Core image wizard
+    href: manufacture/iot-core-image-wizard.md
+  - name: Update the time server
+    href: manufacture/update-the-time-server.md
+  - name: Add a recovery mechanism
+    href: manufacture/recovery-mechanism.md
+  - name: Frequently Asked Questions
+    href: manufacture/commercializationfaq.yml
+  - name: Troubleshooting
+    href: manufacture/Troubleshooting.md
+  - name: Create Windows Universal OEM Packages
+    expanded: false
+    items:
+      - name: Overview
+        href: manufacture/create-packages.md
+      - name: Windows Universal OEM Package Schema
+        href: manufacture/package-schema.md
+  - name: References
+    expanded: false
+    items:
+      - name: Azure PowerShell
+        href: /powershell/module/Az.WindowsIotServices
 - name: Release notes
   expanded: false
   items:
