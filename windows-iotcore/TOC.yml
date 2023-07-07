@@ -213,7 +213,7 @@
       href: manufacture/iot-core-manufacturing-guide.md
     - name: Get the tools needed to customize Windows IoT Core
       href: manufacture/set-up-your-pc-to-customize-iot-core.md
-    - name: Lab 1a - Create a basic image]
+    - name: Lab 1a - Create a basic image
       href: manufacture/create-a-basic-image.md
     - name: Lab 1b - Add an app to your image
       href: manufacture/deploy-your-app-with-a-standard-board.md
