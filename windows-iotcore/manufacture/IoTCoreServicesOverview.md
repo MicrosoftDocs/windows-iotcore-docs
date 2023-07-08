@@ -2,7 +2,6 @@
 author: mirobb
 description: 'Learn more about what Windows 10 IoT Core Services can do for your devices.'
 title: 'Windows 10 IoT Core Services'
-ms.author: themar
 ms.date: 12/9/2020
 ms.topic: article
 ms.custom: RS5, devx-track-azurepowershell

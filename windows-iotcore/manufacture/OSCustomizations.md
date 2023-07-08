@@ -111,7 +111,7 @@ InitUserGlobalConsentDenied set to 0
 Kit builders should refer to /windows-hardware/manufacture/iot/add-a-registry-setting-to-an-image for instructions on building a custom image with these registry settings
 
 ## BCD Settings
-Boot Configuration Database settings can be used to configure various features. See [BCDEdit Command-LineOptions](/windows-hardware/manufacture/desktop/bcdedit-command-line-options.md) for the various settings and options available.
+Boot Configuration Database settings can be used to configure various features. See [BCDEdit Command-LineOptions](/windows-hardware/manufacture/desktop/bcdedit-command-line-options) for the various settings and options available.
 
 A few key features are listed below
 

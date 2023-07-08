@@ -15,7 +15,7 @@ When modifying an IoT Core board support package (BSP), you can change the drive
 
 ## Partition layout
 
-IoT Core supports UEFI (GPT) and legacy BIOS (MBR) partition layouts. Most IoT Core devices use UEFI and GPT-style partitions, though Raspberry Pi 2 uses MBR-style partitions. To learn more about UEFI, read [Boot and UEFI](/windows-hardware/drivers/bringup/boot-and-uefi) and the [Windows and GPT FAQ](/windows-hardware/manufacture/desktop/windows-and-gpt-faq.yml).  
+IoT Core supports UEFI (GPT) and legacy BIOS (MBR) partition layouts. Most IoT Core devices use UEFI and GPT-style partitions, though Raspberry Pi 2 uses MBR-style partitions. To learn more about UEFI, read [Boot and UEFI](/windows-hardware/drivers/bringup/boot-and-uefi) and the [Windows and GPT FAQ](/windows-hardware/manufacture/desktop/windows-and-gpt-faq).  
 
 Sample partition layouts included in the ADK Add-Ons:
 -  \iot-adk-addonkit\Common\Packages\DeviceLayout.GPT4GB\devicelayout.xml

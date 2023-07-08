@@ -17,7 +17,7 @@ Have questions about commercialization? Check out our Commercialization FAQ [her
 [Windows 10 IoT Core Services](./iotcoreservicesoverview.md) is a new cloud services subscription that provides the essential services needed to commercialize a device on Windows 10 IoT Core. For optimal security, update control, and device health, we highly recommend subscribing to Windows 10 IoT Core Services. Through this subscription, OEMs have access to 10 years of support on Windows 10 IoT Core Long Term Servicing Channel (LTSC) releases along with services to manage device updates and assess device health.
 
 ## Semi-Annual Channel (SAC)
-Windows 10 IoT Core is no longer supported in the Semi-Annual Channel (SAC). Please review the [IoT Core SAC Modern Lifecycle Policy](/lifecycle/products/windows-10-iot-core) for details. Commercialization licenses for Windows 10 IoT Core are available through IoT Core Services with Long Term Servicing Channel (LTSC) support per the [IoT Core Services Modern Lifecycle Policy](/windows/iot/product-family/product-lifecycle).
+Windows 10 IoT Core is no longer supported in the Semi-Annual Channel (SAC). Please review the [IoT Core SAC Modern Lifecycle Policy](/lifecycle/products/windows-10-iot-core) for details. Commercialization licenses for Windows 10 IoT Core are available through IoT Core Services with Long Term Servicing Channel (LTSC) support per the [IoT Core Services Modern Lifecycle Policy](/lifecycle/products/windows-10-iot-core-services).
 
 ## SMBIOS Support
 

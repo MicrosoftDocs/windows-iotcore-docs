@@ -248,10 +248,10 @@ Once the flashing process is complete, disconnect power from the board, as well 
 #### <span id="Flash_an_image"></span>Intel
 ##### <span id="Flash_an_image"></span>Apollo Lake/Braswell/Cherry Trail
 
-We will be using the DISM (Deployment Image and Servicing Management Tool) and a bootable USB stick to flash the FFU image file to the specified Intel device (Apollo Lake/Braswell/Cherry Trail). Addition information on DISM can be found [here](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows.md).
+We will be using the DISM (Deployment Image and Servicing Management Tool) and a bootable USB stick to flash the FFU image file to the specified Intel device (Apollo Lake/Braswell/Cherry Trail). Addition information on DISM can be found [here](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).
 
 ##### <span id="Flash_an_image"></span>Creating a USB Bootable Drive
-We first need to create a bootable USB drive that we can use to boot on the specified Intel hardware device. We can use Window PE (WinPE) for this (addition info on WinPE is [here](/windows-hardware/manufacture/desktop/winpe-intro.md)).
+We first need to create a bootable USB drive that we can use to boot on the specified Intel hardware device. We can use Window PE (WinPE) for this (addition info on WinPE is [here](/windows-hardware/manufacture/desktop/winpe-intro)).
 
 1. Install WinPE from the [Windows ADK Windows Preinstallation Environment Add-ons](/windows-hardware/get-started/adk-install#winADK).
 
