@@ -252,8 +252,8 @@
     href: manufacture/recovery-mechanism.md
   - name: Frequently Asked Questions
     href: manufacture/commercializationfaq.yml
-  - name: Troubleshooting
-    href: manufacture/Troubleshooting.md
+#  - name: Troubleshooting
+#    href: manufacture/Troubleshooting.md
   - name: Create Windows Universal OEM Packages
     expanded: false
     items:
