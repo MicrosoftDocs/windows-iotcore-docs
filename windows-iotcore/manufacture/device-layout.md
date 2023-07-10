@@ -149,9 +149,7 @@ OEMDevicePlatform.xml specifies the amount of free blocks available in the devic
 
 ## Related topics
 
-[Windows 10 IoT Core BSPs](/windows/iot-core/build-your-image/createbsps)
-
-[Creating your own board support package (BSP)](create-a-new-bsp.md)
-
-[Boot and UEFI](/windows-hardware/drivers/bringup/boot-and-uefi) 
-[Windows and GPT FAQ](/windows-hardware/manufacture/desktop/windows-and-gpt-faq.yml).
+- [Windows 10 IoT Core BSPs](/windows/iot-core/build-your-image/createbsps)
+- [Creating your own board support package (BSP)](create-a-new-bsp.md)
+- [Boot and UEFI](/windows-hardware/drivers/bringup/boot-and-uefi)
+- [Windows and GPT FAQ](/windows-hardware/manufacture/desktop/windows-and-gpt-faq)

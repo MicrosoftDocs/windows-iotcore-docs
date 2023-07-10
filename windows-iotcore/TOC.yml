@@ -244,8 +244,8 @@
     href: manufacture/iot-core-adk-addons.md
   - name: IoT Core Add-ons Powershell commands
     href: manufacture/iot-core-adk-addons-command-line-options.md
-  - name: IoT Core image wizard
-    href: manufacture/iot-core-image-wizard.md
+#  - name: IoT Core image wizard
+#    href: manufacture/iot-core-image-wizard.md
   - name: Update the time server
     href: manufacture/update-the-time-server.md
   - name: Add a recovery mechanism
