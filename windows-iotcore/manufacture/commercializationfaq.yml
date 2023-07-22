@@ -1,0 +1,31 @@
+### YamlMime:FAQ
+metadata:
+  author: saraclay
+  description: 'Read some of the frequently-asked questions regarding commercializing with Windows 10 IoT Core.'
+  title: 'Commercialization FAQ'
+  ms.author: saclayt
+  ms.date: 10/03/2018
+  ms.topic: faq
+  ms.custom: RS5
+title: Windows 10 IoT Core Commercialization Frequently Asked Questions (FAQ)
+summary: If you're looking to get a few questions answered regarding the commercialization process, you've come to the right place.
+
+sections:
+  - name: Ignored
+    questions:
+      - question: |
+          Has Windows IoT replaced Embedded?
+        answer: |
+          Windows IoT is the replacement for the Windows Embedded product lines.
+
+      - question: |
+          How is Windows 10 IoT Core supported today?
+        answer: |
+          [Windows 10 IoT Core](/windows/iot-core/windows-iot-core) is supported through [Windows 10 IoT Core Services](./iotcoreservicesoverview.md?tabs=azure-portal).
+
+          Windows 10 IoT Core Services is a new cloud services subscription that provides the essential services needed to commercialize a device on Windows 10 IoT Core. Through this subscription, OEMs have access to long term support on [Windows 10 IoT Core Long Term Servicing Channel (LTSC) releases](/lifecycle/products/windows-10-iot-core) along with services to publish device updates and assess device health.
+          
+      - question: |
+          Do my devices have to update automatically?
+        answer: |
+          There is not a requirement that a device be connected to the internet. The license does require that you provide a mechanism to provide an update to the device if needed, but there are non-internet connected methods of delivering updates. You can learn more [here](/windows-hardware/service/iot/managing-iot-device-update).
