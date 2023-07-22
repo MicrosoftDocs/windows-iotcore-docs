@@ -57,11 +57,6 @@ When developing your own board, see the [Minimum hardware requirements for IoT C
 <td align="left"><p><a href="iot-core-adk-addons-command-line-options.md" data-raw-source="[IoT Core Add-ons Powershell Commands](iot-core-adk-addons-command-line-options.md)">IoT Core Add-ons Powershell Commands</a></p></td>
 <td align="left"><p>These tools are part of the <a href="https://go.microsoft.com/fwlink/?LinkId=735028" data-raw-source="[IoT Core ADK Add-Ons](https://go.microsoft.com/fwlink/?LinkId=735028)">IoT Core ADK Add-Ons</a>, in the \Tools folder. To learn more about these tools, see <a href="iot-core-adk-addons.md" data-raw-source="[Windows ADK IoT Core Add-ons](iot-core-adk-addons.md)">Windows ADK IoT Core Add-ons</a>.</p></td>
 </tr>
-<tr class="odd">
-<td align="left"><p><a href="iot-core-image-wizard.md">IoT Core Image Wizard</a></p></td>
-<td align="left"><p>The <a href="iot-core-image-wizard.md">IoT Core Image Wizard</a> is a GUI tool to help you create a new workspace and image for your device.</p></td>
-</tr>
-
 </tbody>
 </table>
 
@@ -75,5 +70,3 @@ When developing your own board, see the [Minimum hardware requirements for IoT C
 [Learn about Windows 10 IoT Core](/windows/iot-core/windows-iot-core)
 
 [IoT Core Developer Resources](https://developer.microsoft.com/windows/iot)
- 
-

@@ -320,6 +320,4 @@ Checks if the file is properly signed.
 
 [IoT Core Add-ons](iot-core-adk-addons.md)
 
-[IoT Core Image Wizard](iot-core-image-wizard.md)
-
 [IoT Core manufacturing guide](iot-core-manufacturing-guide.md)
