@@ -18,7 +18,7 @@ Windows 10 IoT Core (IoT Core) is a version of Windows 10 that is optimized fo
 
 OEMs can manufacture and deploy IoT Core using existing or custom-built hardware. To see existing recommended hardware, see [device options](/windows-hardware/design/) and the [Hardware Compatibility List](/windows/iot-core/learn-about-hardware/HardwareCompatList).
 
-When developing your own board, see the [Minimum hardware requirements for IoT Core](/windows-hardware/design/minimum/minimum-hardware-requirements-overview#iotcore).
+When developing your own board, see the [Minimum hardware requirements for IoT Core](../learn-about-hardware/SoCsAndCustomBoards.md).
 
 ## <span id="in_this_section"></span>In this section
 
@@ -37,12 +37,7 @@ When developing your own board, see the [Minimum hardware requirements for IoT C
 <tbody>
 
 <tr class="odd">
-<td align="left"><p><a href="/windows-hardware/get-started/what-s-new-in-windows" data-raw-source="[What&#39;s new in IoT Manufacturing](/windows-hardware/get-started/what-s-new-in-windows)">What&#39;s new in IoT Manufacturing</a></p></td>
-<td align="left"><p>Find out what we&#39;ve been working on.</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="iot-core-manufacturing-guide.md" data-raw-source="[IoT Core manufacturing guides](iot-core-manufacturing-guide.md)">IoT Core manufacturing guides</a></p></td>
+<td align="left"><p><a href="iot-core-manufacturing-guide.md" data-raw-source="[IoT Core manufacturing guides](iot-core-manufacturing-guide.md)">Manufacturing Guide</a></p></td>
 <td align="left"><p>This guide walks you through creating IoT Core images that can be flashed to retail devices and maintained after they have been delivered to your customers.</p></td>
 </tr>
 <tr class="even">
