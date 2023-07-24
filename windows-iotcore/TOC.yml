@@ -195,10 +195,10 @@
     href: connect-to-cloud/ConnectAppToCloud.md
   - name: Azure IoT Device Agent
     href: manage-your-device/AzureIoTDA.md
-- name: Manufacturing Guide
+- name: Manufacturing
   expanded: false
   items:
-  - name: IoT Core Manufacturing
+  - name: Manufacturing Overview
     href: manufacture/index.md
   - name: OEM license requirements
     href: manufacture/license-requirements.md
@@ -206,7 +206,7 @@
     href: manufacture/create-install-package.md
   - name: Windows 10 IoT Core services
     href: manufacture/iotcoreservicesoverview.md
-  - name: IoT Core manufacturing Guide
+  - name: Manufacturing Guide
     expanded: false
     items:
     - name: Overview
@@ -266,9 +266,28 @@
     items:
       - name: Azure PowerShell
         href: /powershell/module/Az.WindowsIotServices
-- name: Release notes
+- name: Servicing
   expanded: false
   items:
+  - name: Servicing Overview
+    href: service/index.md
+  - name: Device Update Center
+    href: service/using-device-update-center.md
+  - name: OS Updates
+    href: service/iot-core-update.md
+  - name: Managing device Updates
+    href: service/managing-iot-device-update.md
+  - name: Updating applications
+    href: service/updating-iot-core-apps.md
+  - name: Install and service applications
+    href: service/servicing-MSstore.md
+  - name: IoT Core Reset
+    href: service/reset.md
+  - name: IoT Core Recovery
+    href: service/recovery.md    
+- name: Release notes
+  expanded: false
+  items: 
   - name: Insider previews
     items:
     - name: "Current: Build 17744"
