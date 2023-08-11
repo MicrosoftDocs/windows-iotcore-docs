@@ -38,8 +38,6 @@ keywords: windows iot, csp, mdm
 
 ## Policies in Policy CSP supported by Windows 10 IoT Core
 
-camera
-
 - [Camera/AllowCamera](/windows/client-management/mdm/policy-csp-camera#allowcamera)
 - [Cellular/ShowAppCellularAccessUI](/windows/client-management/mdm/policy-csp-cellular#showappcellularaccessui)
 - [CredentialProviders/AllowPINLogon](/windows/client-management/mdm/policy-csp-credentialproviders#allowpinlogon)
