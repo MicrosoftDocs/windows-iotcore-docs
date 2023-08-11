@@ -171,6 +171,8 @@
     href: manage-your-device/IntuneDeviceEnrollment.md
   - name: Azure IoT Device Agent
     href: manage-your-device/AzureIoTDA.md
+  - name: Configuration Service Providers (CSP)
+    href: manage-your-device/CSP-support.md
 - name: Secure devices
   expanded: false
   items:
