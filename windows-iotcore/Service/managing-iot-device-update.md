@@ -11,7 +11,7 @@ ms.topic: article
 
 # Manage IoT Core device updates
 
-OEM and enterprise customers using Windows 10 IoT Core can take advantage of device management configuration service providers (CSPs) that allow some control over the device update process.
+OEM and enterprise customers using Windows 10 IoT Core can take advantage of device management [configuration service providers (CSPs)](../manage-your-device/CSP-support.md) that allow some control over the device update process.
 
 >[!NOTE]
 >Starting with Windows 10 version 1703, IoT Core Pro is discontinued and update control is enabled in IoT Core. WSUS support is also removed.

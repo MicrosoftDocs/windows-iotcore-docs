@@ -203,4 +203,4 @@ In addition to the static customizations discussed above, you can also customize
 - See [Provisioning.Auto](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Common/ProdPackages/Provisioning.Auto) package and [sample Customizations.xml](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/SampleA/prov/customizations.xml)
 - For more details, refer to:
 - [Add a provisioning package](./add-a-provisioning-package-to-an-image.md)
-- [Provisioning](/windows/client-management/mdm/configuration-service-provider-reference) for supported Configuration Service Providers (CSPs) in IoT Core
+- [Provisioning](CSP-support.md) for supported Configuration Service Providers (CSPs) in IoT Core
