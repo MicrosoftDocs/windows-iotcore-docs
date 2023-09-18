@@ -34,7 +34,7 @@
     "globalMetadata": {
       "layout": "Conceptual",
       "feedback_system": "None",
-      "breadcrumb_path": "/windows/iot-core/breadcrumb/toc.json",
+      "breadcrumb_path": "/**previous-versions**/windows/iot-core/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Windows-IoT",
       "searchScope": [
         "windows-iot"
@@ -43,7 +43,11 @@
       "ms.technology": "iot",
       "ms.author": "twarwick",
       "author": "TerryWarwick",
-      "titleSuffix": "Windows IoT"
+      "titleSuffix": "Windows IoT",
+      "ROBOTS": "NOINDEX,NOFOLLOW",
+      "is_archived": true,
+      "is_retired": false,
+      "learn_archive": "manual" 
     },
     "fileMetadata": {},
     "template": [],
