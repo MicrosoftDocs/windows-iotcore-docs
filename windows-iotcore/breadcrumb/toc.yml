@@ -12,74 +12,74 @@
       items:
       - name: Windows for IoT  
         tocHref: /previous-versions/windows/iot-core/
-        topicHref: "/previous-versions/windows/iot/"  
+        topicHref: /previous-versions/windows/iot/  
         items:
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/Accessibility
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/Downloads
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/GetStarted
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/Glossary
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/Resources
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/Troubleshooting
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/windows-ce-app-container-getting-started
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/windows-ce-app-container
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/windows-iot-core
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/windows-ce-migration-faq
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
-          tocHref: /previous-versions/windows/iot-core/windiows-iot-core
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          tocHref: /previous-versions/windows/iot-core/windows-iot-core
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/commercialize-your-device/
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/connect-to-cloud/
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/connect-your-device/
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/develop-your-app/
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/developer-tools/
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/extend-your-app/
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/learn-about-hardware/
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/manage-your-device/
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/media/
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/release-notes/
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/secure-your-device/
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
         - name: Windows IoT Core
           tocHref: /previous-versions/windows/iot-core/tutorials/
-          topicHref: "/previous-versions/windows/iot-core/windows-iot-core"
+          topicHref: /previous-versions/windows/iot-core/windows-iot-core
