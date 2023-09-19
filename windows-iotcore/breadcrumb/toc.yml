@@ -12,5 +12,4 @@
       items:
       - name: Previous Versions
         tocHref: /previous-version/windows/iot-core
-        topicHref: /previous-version/windows/iot-core/windows-iot-core
-        
+        topicHref: /previous-versions/windows/iot-core/windows-iot-core
