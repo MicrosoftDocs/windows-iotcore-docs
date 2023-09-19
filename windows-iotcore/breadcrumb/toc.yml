@@ -2,10 +2,15 @@
   tocHref: /
   topicHref: /
   items:
-  - name: Previous Versions
+  - name: Windows for IoT
     tocHref: /previous-versions/
-    topicHref: /previous-versions/
+    topicHref: /windows/iot
     items:
     - name: Windows IoT Core
-      tocHref: /previous-versions/windows/iot-core/
-      topicHref: /previous-versions/windows/iot-core/windows-iot-core
+      tocHref: /previous-versions/windows/
+      topicHref: /previous-versions/windows/iot-core
+      items:
+      - name: Previous Versions
+        tocHref: /previous-version/windows/iot-core
+        topicHref: /previous-version/windows/iot-core/windows-iot-core
+        
