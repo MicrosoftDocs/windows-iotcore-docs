@@ -8,9 +8,9 @@
     items: 
     - name: Windows for IoT
       tocHref: /previous-versions/windows/
-      topicHref: /windows/iot
+      topicHref: /windows/iot/
       items:
       - name: Windows IoT Core
         tocHref: /previous-versions/windows/iot-core/
-        topicHref: /previous-versions/windows/iot-core
+        topicHref: /previous-versions/windows/iot-core/
 
