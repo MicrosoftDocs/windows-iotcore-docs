@@ -1,35 +1,31 @@
 ### YamlMime:Landing
 
-title: Windows for IoT documentation
-summary: The Windows for IoT platform has multiple editions, each optimized for specific scenarios. They all share the security, manageability, support and cloud connectivity you expect from Windows.
+title: Windows IoT Core
+summary: Windows 10 IoT Core is a version of Windows 10 that is optimized for smaller devices with or without a display that run on both ARM and x86/x64 devices. The Windows IoT Core documentation provides information on connecting, managing, updating, securing your devices, and more.
 
 metadata:
-  description: Learn about Windows for IoT for developing your own connected, embedded solutions.
+  description: Learn about Windows IoT Core.
   ms.topic: landing-page
   ms.date: 09/04/2019
 
 landingContent:
-  - title: About Windows for IoT
+  - title: About Windows IoT Core
     linkLists: 
       - linkListType: overview
         links: 
           - text: Windows 10 IoT Core
             url: windows-iot-core.md
-          - text: Windows 10 IoT Enterprise
-            url: /windows/iot/iot-enterprise/getting_started
-          - text: Windows Server IoT 2019
-            url: ./windows-server.md
           - text: Windows 10 IoT Core Services
-            url: /windows-hardware/manufacture/iot/iotcoreservicesoverview
+            url: manufacture/iotcoreservicesoverview
+          - text: Support Lifecycle
+            url: /lifecycle/products/?terms=IoT%20Core
             
   - title: Get started
     linkLists: 
       - linkListType: tutorial
         links: 
           - text: Windows 10 IoT Core Manufacturing Guide
-            url: /windows-hardware/manufacture/iot/iot-core-manufacturing-guide
-          - text: Windows 10 IoT Enterprise Manufacturing Guide
-            url: /windows-hardware/manufacture/desktop/iot-ent-overview
+            url: manufacture/iot-core-manufacturing-guide
       - linkListType: reference
         links: 
           - text: Prototype boards
@@ -41,11 +37,3 @@ landingContent:
           - text: NXP i.MX SoCs
             url: learn-about-hardware/iotnxp.md
             
-  - title: Resources
-    linkLists:
-      - linkListType: learn
-        links:
-          - text: Windows for IoT training and books
-            url: http://www.annabooks.com/index.html
-          - text: Windows for IoT forums
-            url: https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=WindowsIoT
