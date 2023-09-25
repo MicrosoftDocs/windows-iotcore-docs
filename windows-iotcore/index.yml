@@ -24,16 +24,47 @@ landingContent:
     linkLists: 
       - linkListType: tutorial
         links: 
+          - text: Prototype boards
+            url: tutorials/quickstarter/prototypeboards
+          - text: SoCs and custom boards
+            url: learn-about-hardware/socsandcustomboards
+          - text: Hardware compatibility list
+            url: learn-about-hardware/hardwarecompatlist
+          - text: NXP i.MX SoCs
+            url: learn-about-hardware/iotnxp
+            
+  - title: Manufacturing Guide
+    linkLists: 
+      - linkListType: tutorial
+        links: 
           - text: Windows 10 IoT Core Manufacturing Guide
             url: manufacture/iot-core-manufacturing-guide
       - linkListType: reference
+        links:
+        - text: Frequently Asked Questions
+          url: manufacture/commercializationfaq 
+        - text: Troubleshooting
+          url: Troubleshooting
+        - text: Resources
+          url: Resources
+
+  - title: Servicing
+    linkLists: 
+      - linkListType: overview
+        links:
+        - text: Servicing Overview
+          url:  service/index
+      - linkListType: reference
         links: 
-          - text: Prototype boards
-            url: tutorials/quickstarter/prototypeboards.md
-          - text: SoCs and custom boards
-            url: learn-about-hardware/socsandcustomboards.md
-          - text: Hardware compatibility list
-            url: learn-about-hardware/hardwarecompatlist.md
-          - text: NXP i.MX SoCs
-            url: learn-about-hardware/iotnxp.md
-            
+          - text: IoT Core updates
+            url: service/iot-core-update
+          - text: Manage device updates
+            url: service/managing-iot-device-update
+          - text: Application updates
+            url: service/updating-iot-core-apps
+          - text: Device Update Center
+            url: service/using-device-update-center
+          - text: Reset 
+            url: service/reset
+          - text: Recovery
+            url: service/recovery     
