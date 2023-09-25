@@ -16,7 +16,7 @@ landingContent:
           - text: Windows 10 IoT Core
             url: windows-iot-core.md
           - text: Windows 10 IoT Core Services
-            url: manufacture/iotcoreservicesoverview
+            url: manufacture/iotcoreservicesoverview.md
           - text: Support Lifecycle
             url: /lifecycle/products/?terms=IoT%20Core
             
@@ -25,46 +25,46 @@ landingContent:
       - linkListType: tutorial
         links: 
           - text: Prototype boards
-            url: tutorials/quickstarter/prototypeboards
+            url: tutorials/quickstarter/prototypeboards.md
           - text: SoCs and custom boards
-            url: learn-about-hardware/socsandcustomboards
+            url: learn-about-hardware/socsandcustomboards.md
           - text: Hardware compatibility list
-            url: learn-about-hardware/hardwarecompatlist
+            url: learn-about-hardware/hardwarecompatlist.md
           - text: NXP i.MX SoCs
-            url: learn-about-hardware/iotnxp
+            url: learn-about-hardware/iotnxp.md
             
   - title: Manufacturing Guide
     linkLists: 
       - linkListType: tutorial
         links: 
           - text: Windows 10 IoT Core Manufacturing Guide
-            url: manufacture/iot-core-manufacturing-guide
+            url: manufacture/iot-core-manufacturing-guide.md
       - linkListType: reference
         links:
         - text: Frequently Asked Questions
-          url: manufacture/commercializationfaq 
+          url: manufacture/commercializationfaq.yml
         - text: Troubleshooting
-          url: Troubleshooting
+          url: Troubleshooting.md
         - text: Resources
-          url: Resources
+          url: Resources.md
 
   - title: Servicing
     linkLists: 
       - linkListType: overview
         links:
         - text: Servicing Overview
-          url:  service/index
+          url:  service/index.md
       - linkListType: reference
         links: 
           - text: IoT Core updates
-            url: service/iot-core-update
+            url: service/iot-core-update.md
           - text: Manage device updates
-            url: service/managing-iot-device-update
+            url: service/managing-iot-device-update.md
           - text: Application updates
-            url: service/updating-iot-core-apps
+            url: service/updating-iot-core-apps.md
           - text: Device Update Center
-            url: service/using-device-update-center
+            url: service/using-device-update-center.md
           - text: Reset 
-            url: service/reset
+            url: service/reset.md
           - text: Recovery
-            url: service/recovery     
+            url: service/recovery.md     
