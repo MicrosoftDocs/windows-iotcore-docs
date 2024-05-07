@@ -25,9 +25,9 @@ A more detailed list of the requirements can be found under [Prerequisites](./wi
 
 ## Is Windows CE App Container the right choice for me
 
-For designs that need to leverage ARM32 or have complex CE applications that will require multiple development cycles to migrate, the CE App Container with [Windows 10 IoT Core Services](/windows-hardware/manufacture/iot/iotcoreservicesoverview) offers a great solution for gradual migration.
+For designs that need to use ARM32 or have complex CE applications that require multiple development cycles to migrate, the [CE App Container](/previous-versions/windows/iot-core/windows-ce-app-container) with [Windows 10 IoT Core Services](/previous-versions/windows/iot-core/manufacture/iotcoreservicesoverview) offers a solution for gradual migration to Windows 10 IoT Core. 
 
-Developers place a special ARM32 or x86 Windows CE2013 platform image within their IoT Core system image, which they deploy on Windows 10 IoT Core compatible hardware. Developers have access to begin adding functionality, like Azure cloud connectivity or modern peripherals, though the Windows 10 layer and can move portions of the CE application over as well aiming for complete migration before 2029.
+The Windows CE App Migration technology works by running a Windows CE 2013 instance on top of Windows 10 IoT Core. With Windows 10 IoT Core Services, you receive licenses for both Windows Embedded Compact 2013 and Windows 10 IoT Core. As of October 2023, the Windows Embedded Compact 2013 component no longer receives support patches ([Windows Embedded Compact 2013 - Microsoft Lifecycle | Microsoft Learn](/lifecycle/products/windows-embedded-compact-2013)). Windows 10 IoT Core OS when used with the Windows 10 IoT Core Services product continues to receive security updates until 2029 ([Windows 10 IoT Core Services - Microsoft Lifecycle | Microsoft Learn](/lifecycle/products/windows-10-iot-core-services)).
 
 With IoT Core Services, your Windows 10 IoT Core OS will continue to receive security updates until 2029. And, with capabilities like Device Update Center, OEMs can manage the timing of the OS updates as well as distribute application updates easily.
 
