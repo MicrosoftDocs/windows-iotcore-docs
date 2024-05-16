@@ -1,7 +1,9 @@
 ---
-title: Getting Started Building Drivers for Windows CE App Container
-ms.date: 10/1/2020
+title: Getting Started with Drivers for Windows CE App Container
+ms.date: 05/16/2024
 ms.topic: article
+ms.service: windows-iot
+ms.subservice: iot
 description: Windows CE App Container Migration Getting Started with Drivers Guide
 keywords: Windows 10 IoT Core, Windows CE, application migration, CE App Container
 ---
@@ -16,11 +18,11 @@ The Windows CE App Container is a technology that allows most CE applications to
 
 The architecture for the CE App Container provides a way for existing Windows CE developers to provide custom stream drivers that can be access by your CE application.
 
-![CE App Container Architecture](.//media/WindowsCEAppContainer/image1.png)
+![CE App Container Architecture](./media/image1.png)
 
 As you migrate your CE application you can provide matched drivers that make use of the driver plug-in capability of the CE App Container. This capability enables you as a developer to create a custom driver for your CE application that communicates to `CEPALDRV.DLL`. This dll communicates across the Pico Process boundary to `PALCORE.SYS` and eventually to the second part of your custom driver pair under `DKMON.EXE`. This driver makes use of the driver plug-in capability in `DKMON.EXE` to communicate not only with your custom Windows IoT Core device but also back to the CE Application running in the CE App Container. The following diagram shows this typical architecture.
 
-![CE App Container Driver Plug-in Architecture](.//media/WindowsCEAppContainer/image3.png)
+![CE App Container Driver Plug-in Architecture](./media/image3.png)
 
 The recommended way to deploy this driver pair is to include the CE App Container driver as part of the CE App Container OS Design and to include the plug-in and Windows IoT Core drivers in the Board Support Package (BSP) for the specific Windows IoT Core device. By including the drivers this way you will have the required components included as part of the device install image. Additionally you may include the drivers in `.CAB` files that can be deployed to an existing device. More information about this ability is covered in [Deploying the Windows CE App Container to a device when using an existing FFU](windows-ce-app-container-getting-started.md#deploying-the-windows-ce-app-container-to-a-device-when-using-an-existing-ffu).
 
@@ -87,7 +89,7 @@ Your plug-in driver needs to export the `PlugInInitialize` entry point where you
 ```
 
 The CE App Container can support multiple plug-in drivers that each define their own stream and communicate via the public device driver API:
-![CE App Container Multiple Drivers](.//media/WindowsCEAppContainer/image4.png)
+![CE App Container Multiple Drivers](./media/image4.png)
 
 ## References
 
