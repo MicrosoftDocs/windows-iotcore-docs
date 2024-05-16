@@ -1,0 +1,8 @@
+- name: Windows CE App Container Overview
+  href: windows-ce-app-container.md
+- name: Getting Started with Windows CE App Container
+  href: windows-ce-app-container-getting-started.md
+- name: Getting Started Building Drivers for Windows CE App Container
+  href: windows-ce-app-container-driver-getting-started.md
+- name: Windows CE Migration FAQ
+  href: windows-ce-migration-faq.yml

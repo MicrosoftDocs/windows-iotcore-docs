@@ -1,6 +1,6 @@
 ---
 title: Overview of Windows CE App Container
-ms.date: 04/03/2023
+ms.date: 05/16/2024
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -25,7 +25,7 @@ A more detailed list of the requirements can be found under [Prerequisites](./wi
 
 ## Is Windows CE App Container the right choice for me
 
-For designs that need to use ARM32 or have complex CE applications that require multiple development cycles to migrate, the [CE App Container](/previous-versions/windows/iot-core/windows-ce-app-container) with [Windows 10 IoT Core Services](/previous-versions/windows/iot-core/manufacture/iotcoreservicesoverview) offers a solution for gradual migration to Windows 10 IoT Core. 
+For designs that need to use ARM32 or have complex CE applications that require multiple development cycles to migrate, the [CE App Container](/previous-versions/windows/iot-core/windows-ce-app-container) with [Windows 10 IoT Core Services](/previous-versions/windows/iot-core/manufacture/iotcoreservicesoverview) offers a solution for gradual migration to Windows 10 IoT Core.
 
 The Windows CE App Migration technology works by running a Windows CE 2013 instance on top of Windows 10 IoT Core. With Windows 10 IoT Core Services, you receive licenses for both Windows Embedded Compact 2013 and Windows 10 IoT Core. As of October 2023, the Windows Embedded Compact 2013 component no longer receives support patches ([Windows Embedded Compact 2013 - Microsoft Lifecycle | Microsoft Learn](/lifecycle/products/windows-embedded-compact-2013)). Windows 10 IoT Core OS when used with the Windows 10 IoT Core Services product continues to receive security updates until 2029 ([Windows 10 IoT Core Services - Microsoft Lifecycle | Microsoft Learn](/lifecycle/products/windows-10-iot-core-services)).
 
