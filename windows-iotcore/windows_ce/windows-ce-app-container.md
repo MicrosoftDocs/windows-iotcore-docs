@@ -18,7 +18,7 @@ To help these customers move to Windows 10 IoT and harness the full power of the
 
 The Windows CE App Migration technology works by running a Windows CE 2013 instance on top of Windows 10 IoT Core.
 
-The solution works with 32-bit application code and requires an ARM32 or x64 base platform that is [compatible](./learn-about-hardware/socsandcustomboards.md) with Windows 10 IoT Core.
+The solution works with 32-bit application code and requires an ARM32 or x64 base platform that is [compatible](../learn-about-hardware/socsandcustomboards.md) with Windows 10 IoT Core.
 You should be comfortable building a Windows CE 2013 system image using platform builder as well as building an image for Windows 10 IoT Core.
 
 A more detailed list of the requirements can be found under [Prerequisites](./windows-ce-app-container-getting-started.md#prerequisites) in the article, [Getting Started with CE App Container](./windows-ce-app-container-getting-started.md).
