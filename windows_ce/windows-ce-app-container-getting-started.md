@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Windows CE App Container
-ms.date: 04/03/2023
+ms.date: 05/16/2024
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
@@ -14,7 +14,7 @@ The Windows CE App Container is a technology that allows most CE applications to
 
 The solution is built in two stages. The first stage creates a Windows CE 2013 image using a BSP for either x86 or ARM32 architecture. Then in the second stage, this image is included in a Windows 10 IoT Core image that utilizes the x64 or ARM32 BSP for the specific device hardware where the solution will be installed.
 
-![CE App Container Architecture](.//media/WindowsCEAppContainer/image1.png)
+![CE App Container Architecture](./media/image1.png)
 
 For more information about this architecture, please review this video: [Modernizing Windows CE Devices](/Shows/Internet-of-Things-Show/Modernizing-Windows-CE-Devices).
 
