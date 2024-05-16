@@ -2,8 +2,6 @@
 title: Getting Started with Drivers for Windows CE App Container
 ms.date: 05/16/2024
 ms.topic: article
-ms.service: windows-iot
-ms.subservice: iot
 description: Windows CE App Container Migration Getting Started with Drivers Guide
 keywords: Windows 10 IoT Core, Windows CE, application migration, CE App Container
 ---
