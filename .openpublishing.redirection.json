@@ -178,25 +178,25 @@
 },
 
 {
-    "source_path": "windows-iotcore/windows-ce-app-container.md",
+    "source_path_from_root": "/windows-iotcore/windows-ce-app-container.md",
     "redirect_url": "/previous-versions/windows/iot-core/windows_ce/windows-ce-app-container",
     "redirect_document_id": false
 },
 
 {
-    "source_path": "windows-iotcore/windows-ce-container-driver-getting-started.md",
-    "redirect_url": "/previous-versions/windows/iot-core/windows_ce/windows-ce-container-driver-getting-started",
+    "source_path_from_root": "/windows-iotcore/windows-ce-app-container-driver-getting-started.md",
+    "redirect_url": "/previous-versions/windows/iot-core/windows_ce/windows-ce-app-container-driver-getting-started",
     "redirect_document_id": false
 },
 
 {
-    "source_path": "windows-iotcore/windows-ce-container-getting-started.md",
-    "redirect_url": "/previous-versions/windows/iot-core/windows_ce/windows-ce-container-getting-started",
+    "source_path_from_root": "/windows-iotcore/windows-ce-app-container-getting-started.md",
+    "redirect_url": "/previous-versions/windows/iot-core/windows_ce/windows-ce-app-container-getting-started",
     "redirect_document_id": false
 },
 
 {
-    "source_path": "windows-iotcore/windows-ce-migration-faq.yml",
+    "source_path_from_root": "/windows-iotcore/windows-ce-migration-faq.yml",
     "redirect_url": "/previous-versions/windows/iot-core/windows_ce/windows-ce-migration-faq",
     "redirect_document_id": false
 }
