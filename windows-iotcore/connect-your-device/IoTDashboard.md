@@ -1,6 +1,6 @@
 ---
 title: Windows 10 IoT Core Dashboard
-ms.date: 03/31/2023
+ms.date: 09/26/2024
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
